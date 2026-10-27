@@ -19,6 +19,9 @@ Empat karakter AI untuk ceruk *beauty* Indonesia. Bukan empat variasi dari wajah
 | [`playbook/02-kepatuhan-dan-etika.md`](playbook/02-kepatuhan-dan-etika.md) | Label AI (IG, TikTok, Permendag 19/2026), klaim BPOM, aturan "no fake before-after". |
 | [`playbook/03-rencana-90-hari.md`](playbook/03-rencana-90-hari.md) | Kalender launch, KPI, rate card, urutan monetisasi. |
 | [`strategy/01-strategi-tercepat.md`](strategy/01-strategi-tercepat.md) | **Keputusan: jalur pendapatan tercepat & paling efisien** + desain fase uji 10 konten. |
+| [`playbook/04-tools-video-avatar.md`](playbook/04-tools-video-avatar.md) | **Tool untuk karakter yang benar-benar "hidup"** — perbandingan MuseTalk/LatentSync/SadTalker, lisensi, VRAM, runbook GPU. |
+| [`scripts/alya-01-storyboard.md`](scripts/alya-01-storyboard.md) | **Storyboard 7 adegan** Skrip 01 — framing, gerak kamera, aksi, teks, catatan lipsync. |
+| [`video/alya-01-shade-paling-gelap.mp4`](video/alya-01-shade-paling-gelap.mp4) | Video 71 detik 1080×1920 — animatic (still + gerak kamera + audio + subtitle). |
 | [`scripts/alya-01-10.md`](scripts/alya-01-10.md) | **10 skrip video siap produksi** untuk Alya — hook, intonasi, teks layar, closing. |
 | [`scripts/alya-01-preview.html`](scripts/alya-01-preview.html) | **Preview sinkron** skrip 01: audio + subtitle + timeline adegan. |
 | [`audio/`](audio/) | Take audio terpilih (Skrip 01, 71 detik). |
@@ -26,6 +29,8 @@ Empat karakter AI untuk ceruk *beauty* Indonesia. Bukan empat variasi dari wajah
 | [`data/characters.json`](data/characters.json) | Versi mesin dari keempat profil (untuk pipeline konten). |
 | [`index.html`](index.html) | Brand book visual — buka di browser. |
 | `assets/characters/*.jpg` | Foto referensi tiap karakter (AI-generated, 896×1200). |
+| `assets/scene/` | 7 shot *Alya* + audio per adegan + `manifest.json` — input pipeline lipsync. |
+| `assets/scene/audio/` | Audio dipotong per adegan (siap untuk SadTalker / MuseTalk). |
 
 ---
 

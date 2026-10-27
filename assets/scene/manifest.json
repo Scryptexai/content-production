@@ -1,0 +1,82 @@
+{
+  "character": "alya",
+  "master_audio": "audio/alya-01-shade-paling-gelap.mp3",
+  "total_duration": 71.3,
+  "fps": 30,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "tag": "HOOK",
+      "start": 0.0,
+      "end": 8.7,
+      "shot": "alya-shot-01-hook.jpg",
+      "motion": "push-in lambat 1.02→1.10",
+      "duration": 8.7,
+      "audio": "assets/scene/audio/scene-01.mp3"
+    },
+    {
+      "id": "scene-02",
+      "tag": "CERITA",
+      "start": 8.7,
+      "end": 20.1,
+      "shot": "alya-shot-02-story.jpg",
+      "motion": "push-in 1.02→1.09, gestur tangan",
+      "duration": 11.4,
+      "audio": "assets/scene/audio/scene-02.mp3"
+    },
+    {
+      "id": "scene-03",
+      "tag": "REVEAL",
+      "start": 20.1,
+      "end": 26.6,
+      "shot": "alya-shot-03-reveal.jpg",
+      "motion": "push-in 1.03→1.11, dagu turun",
+      "duration": 6.5,
+      "audio": "assets/scene/audio/scene-03.mp3"
+    },
+    {
+      "id": "scene-04",
+      "tag": "TENSI",
+      "start": 26.6,
+      "end": 39.5,
+      "shot": "alya-shot-04-tension.jpg",
+      "motion": "dua potongan: 1.04→1.12 lalu 1.17→1.07",
+      "duration": 12.9,
+      "audio": "assets/scene/audio/scene-04.mp3"
+    },
+    {
+      "id": "scene-05",
+      "tag": "TURN",
+      "start": 39.5,
+      "end": 45.5,
+      "shot": "alya-shot-05-turn.jpg",
+      "motion": "push-in pelan 1.02→1.09",
+      "duration": 6.0,
+      "audio": "assets/scene/audio/scene-05.mp3"
+    },
+    {
+      "id": "scene-06",
+      "tag": "VALUE",
+      "start": 45.5,
+      "end": 62.7,
+      "shot": "alya-shot-06-value.jpg",
+      "motion": "dua potongan, gerak tangan ke rahang",
+      "duration": 17.2,
+      "audio": "assets/scene/audio/scene-06.mp3"
+    },
+    {
+      "id": "scene-07",
+      "tag": "CTA",
+      "start": 62.7,
+      "end": 71.3,
+      "shot": "alya-shot-07-cta.jpg",
+      "motion": "push-in 1.02→1.08 lalu 1.13→1.04",
+      "duration": 8.6,
+      "audio": "assets/scene/audio/scene-07.mp3"
+    }
+  ]
+}
