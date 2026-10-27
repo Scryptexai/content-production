@@ -18,6 +18,11 @@ Empat karakter AI untuk ceruk *beauty* Indonesia. Bukan empat variasi dari wajah
 | [`playbook/01-produksi-ai.md`](playbook/01-produksi-ai.md) | Master prompt, identity lock, LoRA, QC 12 poin, *voice design*. |
 | [`playbook/02-kepatuhan-dan-etika.md`](playbook/02-kepatuhan-dan-etika.md) | Label AI (IG, TikTok, Permendag 19/2026), klaim BPOM, aturan "no fake before-after". |
 | [`playbook/03-rencana-90-hari.md`](playbook/03-rencana-90-hari.md) | Kalender launch, KPI, rate card, urutan monetisasi. |
+| [`strategy/01-strategi-tercepat.md`](strategy/01-strategi-tercepat.md) | **Keputusan: jalur pendapatan tercepat & paling efisien** + desain fase uji 10 konten. |
+| [`scripts/alya-01-10.md`](scripts/alya-01-10.md) | **10 skrip video siap produksi** untuk Alya — hook, intonasi, teks layar, closing. |
+| [`scripts/alya-01-preview.html`](scripts/alya-01-preview.html) | **Preview sinkron** skrip 01: audio + subtitle + timeline adegan. |
+| [`audio/`](audio/) | Take audio terpilih (Skrip 01, 71 detik). |
+| [`assets/frames/`](assets/frames/) | Frame pembuka vertikal 9:16 untuk Skrip 01. |
 | [`data/characters.json`](data/characters.json) | Versi mesin dari keempat profil (untuk pipeline konten). |
 | [`index.html`](index.html) | Brand book visual — buka di browser. |
 | `assets/characters/*.jpg` | Foto referensi tiap karakter (AI-generated, 896×1200). |
