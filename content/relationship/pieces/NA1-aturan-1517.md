@@ -133,7 +133,7 @@ sejak 1517 dan masih jalan.
 
 Kuncinya bukan orangnya baik. Kuncinya desainnya.
 
-#ruangantara #commons #alam
+#knottheory #commons #alam
 ```
 
 **Instagram**
@@ -150,7 +150,7 @@ Nobel ekonomi 2009.
 Batas yang jujur: banyak commons juga gagal — dan sebagian gagal karena aturannya
 diganti dari luar.
 
-#ruangantara #manusiadansekitarnya #commons #lingkungan
+#knottheory #manusiadansekitarnya #commons #lingkungan
 ```
 
 **YouTube (judul ≤ 60)**
@@ -175,7 +175,7 @@ Balancing on an Alp (1981).
 Batas: sampel Ostrom dipilih dari kasus yang bertahan, jadi tidak bisa dipakai untuk
 menghitung berapa persen commons yang gagal. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #lingkungan
+#knottheory #lingkungan
 ```
 
 ---

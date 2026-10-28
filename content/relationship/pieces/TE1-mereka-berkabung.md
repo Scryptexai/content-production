@@ -130,7 +130,7 @@ chatbot-nya.
 
 Yang berakhir bukan aplikasinya. Yang berakhir adalah orang yang mereka kenal.
 
-#ruangantara #ai #teknologi
+#knottheory #ai #teknologi
 ```
 
 **Instagram**
@@ -147,7 +147,7 @@ Dan pola yang sama muncul di komunitas ChatGPT, yang bukan aplikasi romantis.
 
 Batas: unggahan forum bukan sampel acak.
 
-#ruangantara #manusiadansekitarnya #ai #teknologi
+#knottheory #manusiadansekitarnya #ai #teknologi
 ```
 
 **YouTube (judul ≤ 60)**
@@ -172,7 +172,7 @@ mental. Pola yang sama muncul di komunitas ChatGPT — yang bukan aplikasi penda
 Batas: Reddit adalah sampel yang memilih dirinya sendiri. Studi mengukur sentimen yang
 diungkapkan, bukan diagnosis. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #teknologi
+#knottheory #teknologi
 ```
 
 ---

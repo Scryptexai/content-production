@@ -60,7 +60,7 @@
 
 **Caption:** Bukan bebas konflik, tapi rasio yang menjaga.
 
-**Hashtag inti:** #ruangantara #gottman #hubungansehat
+**Hashtag inti:** #knottheory #gottman #hubungansehat
 
 **Sumber:** Gottman & Levenson — rasio interaksi positif:negatif sekitar 5:1 pada pasangan yang stabil
 
@@ -115,7 +115,7 @@
 
 **Caption:** Uang jarang jadi masalah karena angkanya. Biasanya karena informasinya.
 
-**Hashtag inti:** #ruangantara #keuangankeluarga #pasangan
+**Hashtag inti:** #knottheory #keuangankeluarga #pasangan
 
 **Sumber:** Dew, Britt & Huston (2012) — ketidaksepakatan finansial sebagai prediktor perceraian
 

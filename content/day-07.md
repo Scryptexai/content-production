@@ -60,7 +60,7 @@
 
 **Caption:** Ruang yang sehat punya waktu kembali. Jarak tidak.
 
-**Hashtag inti:** #ruangantara #otonomi #batas
+**Hashtag inti:** #knottheory #otonomi #batas
 
 **Sumber:** Kebutuhan otonomi dalam teori motivasi diri (Deci & Ryan) — diterapkan pada pola hubungan
 
@@ -116,7 +116,7 @@
 
 **Caption:** Bukan berapa banyak, tapi seberapa jelas aturannya.
 
-**Hashtag inti:** #ruangantara #keuangan #menikah
+**Hashtag inti:** #knottheory #keuangan #menikah
 
 **Sumber:** Temuan Dew, Britt & Huston (2012) + praktik perencanaan keuangan pasangan
 

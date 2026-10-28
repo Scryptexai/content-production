@@ -60,7 +60,7 @@
 
 **Caption:** Waktu yang sudah keluar tidak bisa jadi alasan untuk menambahnya.
 
-**Hashtag inti:** #ruangantara #sunkcost #selfawareness
+**Hashtag inti:** #knottheory #sunkcost #selfawareness
 
 **Sumber:** Arkes & Blumer (1985) — eskalasi komitmen pada sunk cost
 
@@ -116,7 +116,7 @@
 
 **Caption:** Yang bertahan bukan yang paling intens, tapi yang paling konsisten.
 
-**Hashtag inti:** #ruangantara #konsistensi #batas
+**Hashtag inti:** #knottheory #konsistensi #batas
 
 **Sumber:** Pola perilaku (intensitas vs konsistensi) — 'love bombing' dipakai sebagai deskripsi perilaku, bukan diagnosis
 

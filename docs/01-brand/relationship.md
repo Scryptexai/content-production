@@ -3,30 +3,38 @@
 > **Bukan** akun psikologi pasangan. Kanal ini soal **ketergantungan antar manusia**:
 > pada pasangan, keluarga, rekan kerja, negara, lingkungan, mesin, dan diri sendiri.
 
-**Nama:** **Ruang Antara** · `@ruangantara`
+**Nama:** **Knot Theory** · `@knottheory` (TikTok · Instagram · YouTube)
 **Tagline:** *manusia dan ikatannya*
 **Janji:** memperlihatkan relasi yang sedang bekerja di balik sesuatu — lalu menunjukkan
 apa yang menopangnya dan di mana ia bisa runtuh.
 
 ---
 
-## 1. Kenapa nama ini masih cocok untuk cakupan yang jauh lebih luas
+## 1. Kenapa namanya "Knot Theory"
 
-"Ruang antara" menunjuk pada **jarak** — dan jarak itu ada di semua relasi: antara dua
-orang, antara janji dan perilaku, antara warga dan institusi, antara aturan lama dan
-kenyataan baru. Namanya tidak mengunci ke romansa, tidak berbau motivasi, dan tidak
-menjanjikan nasihat.
+Simpul adalah bentuk paling jujur dari sebuah relasi: tidak ada yang diikat kalau tidak
+ada dua ujung, dan setiap ikatan punya harga — tali yang menahan juga tali yang membatasi.
 
-Alternatif yang dipertimbangkan dan ditolak:
+"Knot theory" juga harfiah. Dalam matematika, teori simpul mempelajari apakah dua simpul
+bisa dilepas menjadi satu garis lurus. Pertanyaan itu persis pertanyaan kanal ini tentang
+hubungan manusia: **ikatan mana yang masih bisa dilepas, ikatan mana yang memutus sesuatu
+lain kalau dipaksa lepas.**
+
+Mark-nya trefoil (2,3) — simpul paling sederhana yang benar-benar tersimpul. Detail
+visual dan berkasnya ada di [`knot-theory-brand.md`](knot-theory-brand.md).
+
+Nama-nama yang dipertimbangkan dan ditolak:
 
 | Nama | Kenapa ditolak |
 |---|---|
-| Ruang Hati | langsung terbaca sebagai akun cinta |
-| Sudut Pandang | terlalu umum, tidak menyebut relasi |
-| Ikatan | bagus, tapi terdengar seperti nama organisasi |
-| Seberapa Dekat | menarik, tapi mengunci ke kedekatan personal |
+| Ruang Antara | bagus untuk kanal romansa, terlalu sempit untuk spektrum penuh |
+| Ruang Hati | langsung mengunci ke perasaan; menutup wilayah kerja, institusi, ekonomi |
+| Sudut Pandang | terdengar seperti kanal opini, bukan kanal bukti |
+| Seberapa Dekat | pertanyaan bagus, tapi jadi merek yang lemah — tidak bisa dipanggil |
+| Ikatan | sudah dipakai banyak akun motivasi; maknanya sudah aus |
 
----
+Kriteria yang dipakai: harus bisa diucapkan dalam dua detik, tidak mengandung kata
+"hati/pasangan/cinta", dan sudah punya makna sebelum dijelaskan.
 
 ## 2. Peta spektrum
 
@@ -95,22 +103,29 @@ Sengaja dibedakan total dari kanal beauty (hitam hangat + serif tebal + terra):
 
 ## 5. Format & panjang
 
-| Format | Panjang | Dipakai untuk |
-|---|---|---|
-| Short (TikTok/Reels/Shorts) | 55–90 dtk | satu temuan, satu mekanisme |
-| Long-form YouTube | 6–10 menit | cerita yang butuh urutan & bukti |
-| Carousel IG | 8–12 kartu | peta data, perbandingan, garis waktu |
+Satu topik per hari → **tiga video**, satu per platform, masing-masing dengan format
+dan hook yang berbeda. Bukan satu video yang diunggah tiga kali.
 
-Setiap naskah di `content/relationship/` menyertakan **outline long-form**-nya,
-supaya Short dan video panjang tidak menceritakan hal yang sama dengan cara yang sama.
+| Platform | Panjang | Bentuk | Hook (1–3 dtk pertama) |
+|---|---|---|---|
+| YouTube | **8–10 menit** | satu argumen utuh: adegan → bukti → batas → pertanyaan | **adegan**: satu orang/tempat/waktu yang spesifik, tanpa tesis di depan |
+| TikTok | **55–75 dtk** | satu temuan, satu mekanisme, potong cepat | **ketegangan**: kalimat yang membuat orang bertahan karena ada yang belum selesai |
+| Instagram Reels | **45–60 dtk** | satu proposisi, visual dulu, teks layar besar | **proposisi**: satu kalimat yang berdiri sendiri di frame pertama, terbaca tanpa suara |
+
+Aturan: **tiga hook itu harus berbeda bentuknya**, bukan tiga versi kalimat yang sama.
+Kalau kalimat TikTok bisa ditempel ke Reels tanpa perubahan, berarti tidak ada adaptasi.
+
+Setiap naskah di `content/relationship/pieces/` sudah memuat naskah short bertimecode,
+tiga varian hook, caption per platform, dan **outline long-form** — bahan untuk tiga
+potongan itu, bukan tiga kali pekerjaan yang sama.
 
 ---
 
 ## 6. Hashtag
 
-**TikTok:** `#ruangantara` `#manusia` `#sosial` + 1–2 tag topik (`#kerja` `#kepercayaan` `#teknologi`)
-**Instagram:** `#ruangantara` `#manusiadansekitarnya` `#sosiologi` `#observasi` + 2 tag topik
-**YouTube:** `#ruangantara` `#dokumenter` + 2 tag topik
+**TikTok:** `#knottheory` `#manusia` `#sosial` + 1–2 tag topik (`#kerja` `#kepercayaan` `#teknologi`)
+**Instagram:** `#knottheory` `#manusiadansekitarnya` `#sosiologi` `#observasi` + 2 tag topik
+**YouTube:** `#knottheory` `#dokumenter` + 2 tag topik
 
 Aturan: **tag topik mengikuti isi, bukan tag populer.** Kalau tidak ada tag yang tepat,
 pakai dua saja.
@@ -131,9 +146,10 @@ pakai dua saja.
 
 | | |
 |---|---|
-| Nama & handle | **Ruang Antara** / `@ruangantara` |
-| Dikanalkan | belum (cek ketersediaan handle di ketiga platform) |
-| Slate pertama | 7 naskah, 7 wilayah berbeda — lihat `content/relationship/` |
+| Nama & handle | **Knot Theory** / `@knottheory` di TikTok, Instagram, YouTube |
+| Aset merek | `brand/knot-theory/assets/` · aturan di `knot-theory-brand.md` |
+| Dikanalkan | belum (cek ketersediaan handle di ketiga platform sebelum produksi) |
+| Slate pertama | 7 topik → 21 video (1 topik/hari × 3 platform) — lihat `content/relationship/` |
 | Kanal kedua | **Kulit Tropis** (beauty) tetap jalan terpisah; lihat `beauty.md` |
 
 > Keputusan yang belum diambil: apakah dua kanal ini dijalankan bersamaan atau

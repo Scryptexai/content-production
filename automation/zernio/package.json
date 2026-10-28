@@ -2,7 +2,7 @@
   "name": "tropical-zernio",
   "private": true,
   "type": "module",
-  "description": "Jembatan draf lokal → Zernio untuk akun Kulit Tropis & Ruang Antara",
+  "description": "Jembatan draf lokal → Zernio untuk akun Kulit Tropis & Knot Theory",
   "scripts": {
     "zernio:accounts": "node runner/zernio.mjs accounts",
     "zernio:connect": "node runner/zernio.mjs connect",

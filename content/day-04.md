@@ -60,7 +60,7 @@
 
 **Caption:** Kamu tidak sedang berdebat. Kamu sedang menjalankan pola.
 
-**Hashtag inti:** #ruangantara #kelekatan #attachment
+**Hashtag inti:** #knottheory #kelekatan #attachment
 
 **Sumber:** Teori kelekatan dewasa (Hazan & Shaver; Brennan, Clark & Shaver) — strategi hyperactivating/deactivating
 
@@ -116,7 +116,7 @@
 
 **Caption:** Satu kalimat jeda bisa menyelamatkan percakapan yang sudah panas.
 
-**Hashtag inti:** #ruangantara #repair #komunikasi
+**Hashtag inti:** #knottheory #repair #komunikasi
 
 **Sumber:** Gottman — repair attempts dan penerimaannya sebagai penanda kestabilan interaksi konflik
 

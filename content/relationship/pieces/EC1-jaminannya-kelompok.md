@@ -123,7 +123,7 @@ Bunga 0%. Tanpa kontrak. Tanpa agunan. Dan tetap jalan puluhan tahun.
 
 Jaminannya: kamu akan bertemu orang-orang itu lagi bulan depan.
 
-#ruangantara #arisan #ekonomi
+#knottheory #arisan #ekonomi
 ```
 
 **Instagram**
@@ -136,7 +136,7 @@ berarti bertemu orang-orang itu lagi bulan depan.
 Kelompoknya adalah agunannya. Buktinya justru dari cara ia gagal: arisan online
 mempertahankan jadwal setoran tapi menghapus kelompoknya, dan yang tersisa hanya Ponzi.
 
-#ruangantara #manusiadansekitarnya #ekonomi #komunitas
+#knottheory #manusiadansekitarnya #ekonomi #komunitas
 ```
 
 **YouTube (judul ≤ 60)**
@@ -160,7 +160,7 @@ skema Ponzi — OJK sudah berulang kali memberi peringatan.
 Batas: hubungan aset–arisan bisa berjalan dua arah; metode panel mengurangi tapi tidak
 menghapus masalah itu. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #ekonomi
+#knottheory #ekonomi
 ```
 
 ---

@@ -60,7 +60,7 @@
 
 **Caption:** Yang diuji bukan kesabarannya, tapi cara kalian menangani tekanan kecil.
 
-**Hashtag inti:** #ruangantara #liburan #pasangan
+**Hashtag inti:** #knottheory #liburan #pasangan
 
 **Sumber:** Observasi pola penanganan stres dalam interaksi sehari-hari (bukan prediksi hubungan)
 
@@ -116,7 +116,7 @@
 
 **Caption:** Kamu tidak memilih pola ini. Tapi kamu bisa memilih untuk menyadarinya.
 
-**Hashtag inti:** #ruangantara #keluarga #pola
+**Hashtag inti:** #knottheory #keluarga #pola
 
 **Sumber:** Pembelajaran sosial pola konflik antar generasi (Bandura; transmisi pola keluarga)
 

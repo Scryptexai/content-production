@@ -19,6 +19,10 @@ errs, warns = [], []
 # --- 1. indeks ------------------------------------------------------------
 if len(pieces) != 7:
     errs.append(f"indeks harus 7 naskah, ada {len(pieces)}")
+for p in pieces:
+    for k in ("ytTitle", "hookForm", "publishDate", "durationSec"):
+        if not p.get(k):
+            errs.append(f"{p['id']}: field indeks kosong {k}")
 
 ids = [p["id"] for p in pieces]
 if len(set(ids)) != len(ids):
@@ -152,5 +156,6 @@ if errs:
     sys.exit(1)
 
 total = sum(p["durationSec"] for p in pieces)
-print(f"✓ {len(pieces)} naskah · {total} dtk naskah · "
-      f"{len(pieces) * 3} draf (3 platform) · struktur S1–S7 sekali pakai")
+print(f"✓ {len(pieces)} topik · {len(pieces) * 3} video "
+      f"(1 YouTube + 1 TikTok + 1 Reels per topik) · {total} dtk short · "
+      f"struktur S1–S7 sekali pakai")

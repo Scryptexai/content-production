@@ -118,7 +118,7 @@ menunjukkan orang justru menolong di 9 dari 10 konflik.
 
 Tapi dua-duanya mengukur hal berbeda.
 
-#ruangantara #psikologi #sosial
+#knottheory #psikologi #sosial
 ```
 
 **Instagram**
@@ -132,7 +132,7 @@ seseorang campur tangan.
 
 Bukan berarti manusia itu baik. Berarti situasinya lebih jelas daripada di laboratorium.
 
-#ruangantara #manusiadansekitarnya #sosiologi #psikologi
+#knottheory #manusiadansekitarnya #sosiologi #psikologi
 ```
 
 **YouTube (judul ≤ 60)**
@@ -157,7 +157,7 @@ American Psychologist 75(1), 2020.
 Batas: rekaman hanya mencakup konflik di ruang publik yang dikamera. Studi ini tidak
 mengukur tingkat cedera korban. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #psikologi
+#knottheory #psikologi
 ```
 
 ---

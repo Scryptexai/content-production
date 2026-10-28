@@ -1,12 +1,12 @@
-# Ruang Antara — slate v2
+# Knot Theory — slate v1
 
-Tujuh naskah, tujuh wilayah, tujuh struktur. Satu naskah per hari, tiga platform per
-naskah. Ini **bukan** kumpulan ide; tiap berkas sudah berisi naskah bertimecode, fact
-ledger berlabel, caption yang diadaptasi per platform, outline long-form, dan catatan
-visual.
+Tujuh topik, tujuh wilayah, tujuh struktur. **Satu topik per hari → tiga video**, satu
+untuk tiap platform, dengan format dan hook yang berbeda. Total 21 video dalam 7 hari.
 
-Aturan yang dipakai saat menulis ada di [`docs/05-editorial-bible.md`](../../docs/05-editorial-bible.md).
-Identitas & palet ada di [`docs/01-brand/relationship.md`](../../docs/01-brand/relationship.md).
+Aturan menulis: [`docs/05-editorial-bible.md`](../../docs/05-editorial-bible.md).
+Identitas & merek: [`docs/01-brand/relationship.md`](../../docs/01-brand/relationship.md) ·
+[`docs/01-brand/knot-theory-brand.md`](../../docs/01-brand/knot-theory-brand.md).
+Aset logo/banner: `brand/knot-theory/assets/`.
 
 ```bash
 python3 automation/validate_pieces.py     # QC slate ini
@@ -14,137 +14,125 @@ python3 automation/validate_pieces.py     # QC slate ini
 
 ---
 
-## 1. Slate
+## 1. Cara tiga video itu dibuat dari satu topik
 
-| Hari | Tanggal | Kode | Naskah | Dtk | Wilayah | Struktur | Berkas |
-|---|---|---|---|---|---|---|---|
-| 1 | Sen 2026-11-09 | RW1 | Orang yang paling bagus menjual biasanya jadi manajer yang paling mahal | 78 | C · kerja | S1 | `pieces/RW1-promosi.md` |
-| 2 | Sel 2026-11-10 | IN1 | Satu dari 260 orang yang kamu kenal | 82 | E · institusi | S2 | `pieces/IN1-satu-dari-260.md` |
-| 3 | Rab 2026-11-11 | FR1 | Persahabatan jarang berakhir. Ia berhenti. | 76 | B · pertemanan | S3 | `pieces/FR1-teman-yang-berhenti.md` |
-| 4 | Kam 2026-11-12 | SO1 | 38 saksi yang tidak pernah ada | 84 | D · masyarakat | S4 | `pieces/SO1-38-saksi.md` |
-| 5 | Jum 2026-11-13 | NA1 | Aturan tahun 1517 yang masih dipakai | 80 | F · alam | S5 | `pieces/NA1-aturan-1517.md` |
-| 6 | Sab 2026-11-14 | TE1 | Mereka berkabung untuk sebuah fitur yang dimatikan | 86 | G · teknologi | S6 | `pieces/TE1-mereka-berkabung.md` |
-| 7 | Min 2026-11-15 | EC1 | Uang yang jaminannya bukan hukum, tapi rasa malu | 80 | I · ekonomi | S7 | `pieces/EC1-jaminannya-kelompok.md` |
+Bukan satu video diunggah tiga kali. Satu topik punya **satu set bukti** (fact ledger di
+tiap naskah) dan **tiga potongan** yang berbeda bentuk:
 
-Total 566 detik naskah → 21 draf (7 naskah × 3 platform).
-
----
-
-## 2. Peta wilayah
-
-Spektrum A–I dari brand brief. Yang jadi **wilayah primer**:
-
-```
-A  romantis            — (sekunder di TE1)
-B  keluarga/pertemanan — FR1
-C  kerja & karier      — RW1
-D  masyarakat          — SO1
-E  politik/institusi   — IN1
-F  manusia & alam      — NA1
-G  manusia & teknologi — TE1
-H  diri sendiri        — (sekunder di FR1, TE1)
-I  ekonomi & uang      — EC1
-```
-
-Wilayah A sengaja **tidak** dijadikan primer di slate pertama. Bukan karena romansa
-tidak penting, tapi karena kanal ini tidak ingin dibaca sebagai akun pacaran dalam
-tujuh hari pertama. Romansa masuk sebagai lapisan sekunder (TE1: kontinuitas sebagai
-syarat kedekatan), bukan sebagai subjek.
-
-Wilayah H juga belum primer: "diri sendiri" paling mudah jatuh jadi konten motivasi,
-dan itu ada di daftar tolak.
-
----
-
-## 3. Peta struktur
-
-| # | Struktur | Dipakai | Ketegangan yang dipakai |
+| | YouTube | TikTok | Instagram Reels |
 |---|---|---|---|
-| S1 | studi kasus → penjelasan | RW1 | seleksi vs hadiah |
-| S2 | pengamatan → konteks → konsekuensi | IN1 | keamanan vs kepercayaan |
-| S3 | kontradiksi → data → mekanisme | FR1 | hilang pelan-pelan vs berakhir |
-| S4 | mitos → koreksi → bukti lebih baik | SO1 | cerita yang benar vs cerita yang berguna |
-| S5 | urutan sejarah → logika aturan | NA1 | hak memakai vs biaya merawat |
-| S6 | peristiwa → bukti → apa yang terungkap | TE1 | kontinuitas vs pembaruan |
-| S7 | mekanisme → cara bekerja → cara gagal | EC1 | jaminan sosial vs jaminan hukum |
+| Panjang | 8–10 menit | 55–75 dtk | 45–60 dtk |
+| Isi | argumen utuh: adegan → bukti → batas → pertanyaan | satu temuan + satu mekanisme | satu proposisi, visual dulu |
+| Hook | **adegan**: tempat, tahun, atau angka yang spesifik | **ketegangan**: ada yang belum selesai | **proposisi**: satu kalimat yang terbaca tanpa suara |
+| Teks | judul + sumber di deskripsi | satu angka besar per adegan | teks layar besar, ≥60% frame |
+| Akhir | pertanyaan yang butuh 8 menit untuk dijawab | potong tanpa kesimpulan | satu kalimat yang bisa disimpan |
+| Caption | deskripsi panjang + sumber + batas data | 1–3 baris, hashtag topik | cerita 4–6 baris, tanpa hashtag berlebihan |
 
-Aturan: **tidak ada struktur yang dipakai dua kali** dalam satu slate, dan tidak boleh
-sama dua kali berturut-turut lintas slate. Slate berikutnya mulai dari S1 lagi.
-
----
-
-## 4. Peta hook
-
-| Kode | Bentuk | Baris pertama |
-|---|---|---|
-| RW1 | temuan | "Data dari 131 perusahaan menunjukkan pola yang sulit diterima…" |
-| IN1 | angka turunan | "Satu dari 260 orang yang kamu kenal…" |
-| FR1 | kontradiksi | "Persahabatan jarang berakhir dengan pertengkaran." |
-| SO1 | koreksi mitos | "38 orang melihat, tidak ada yang menolong. Cerita itu salah…" |
-| NA1 | tanggal | "Ada aturan tertulis dari tahun 1517 yang masih dipakai…" |
-| TE1 | peristiwa | "Pada Februari 2023, sebuah perusahaan mematikan satu fitur…" |
-| EC1 | paradoks | "Jaminannya bukan kontrak. Jaminannya rasa malu." |
-
-Tiap berkas punya tiga varian hook (A/B/C) untuk uji. Varian B/C boleh berbeda bentuk
-dari varian A — itu tujuannya.
+Uji cepat: **kalau hook TikTok bisa ditempel ke Reels tanpa diubah, berarti belum
+diadaptasi.** Tiga hook harus berbeda bentuk, bukan tiga versi kalimat yang sama.
 
 ---
 
-## 5. Jadwal tayang (WIB)
+## 2. Slate
 
-Satu naskah per hari, tiga platform, tiga jam berbeda:
+| Hari | Tanggal | Kode | Topik | Wilayah | Struktur | YT | TikTok | IG |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Sen 2026-11-09 | RW1 | Orang yang paling bagus menjual jadi manajer termahal | C kerja | S1 | 8:30 | 78 dtk | 52 dtk |
+| 2 | Sel 2026-11-10 | IN1 | Satu dari 260 orang yang kamu kenal | E institusi | S2 | 9:00 | 82 dtk | 55 dtk |
+| 3 | Rab 2026-11-11 | FR1 | Persahabatan jarang berakhir, ia berhenti | B pertemanan | S3 | 8:00 | 76 dtk | 50 dtk |
+| 4 | Kam 2026-11-12 | SO1 | 38 saksi yang tidak pernah ada | D masyarakat | S4 | 8:30 | 84 dtk | 58 dtk |
+| 5 | Jum 2026-11-13 | NA1 | Aturan tahun 1517 yang masih dipakai | F alam | S5 | 8:00 | 80 dtk | 55 dtk |
+| 6 | Sab 2026-11-14 | TE1 | Mereka berkabung untuk sebuah fitur yang dimatikan | G teknologi | S6 | 9:00 | 86 dtk | 58 dtk |
+| 7 | Min 2026-11-15 | EC1 | Uang yang jaminannya bukan hukum, tapi rasa malu | I ekonomi | S7 | 8:00 | 80 dtk | 55 dtk |
+
+Berkas naskah: `pieces/{KODE}-*.md`. Naskah short di dalamnya adalah versi TikTok;
+potongan Instagram diambil dari naskah yang sama dengan memotong bagian tengah dan
+mengganti hook (lihat §3); outline long-form adalah kerangka YouTube.
+
+---
+
+## 3. Tiga hook per topik
+
+Diambil dari varian yang sudah ada di tiap naskah, tapi ditulis ulang agar bentuknya
+berbeda per platform. **Yang dipakai hook A di TikTok belum tentu hook A di Reels.**
+
+| Kode | TikTok (ketegangan) | Instagram (proposisi) | YouTube (adegan) |
+|---|---|---|---|
+| RW1 | "Perusahaan ini tahu penjual terbaiknya jadi manajer buruk. Mereka tetap melakukannya." | "Naik jabatan dan menjadi atasan itu dua pekerjaan berbeda. Yang satu dipakai untuk memilih yang lain." | "131 perusahaan, 38.843 tenaga penjualan, 1.553 promosi. Yang dipromosikan adalah yang penjualannya tertinggi — dan timnya kemudian menjual lebih sedikit." |
+| IN1 | "Satu dari 260 orang yang kamu kenal mungkin sedang mencatat apa yang kamu bilang." | "Pengawasannya berakhir. Ketidakpercayaannya tidak." | "Di Jerman Timur pada 1980-an, 0,38 persen penduduk tercatat sebagai informan resmi. Tiga dekade setelah negaranya bubar, tetangganya masih tidak saling percaya." |
+| FR1 | "Persahabatanmu tidak berakhir. Ia berhenti — dan tidak ada yang memutuskan." | "Tidak ada pertengkaran. Hanya dua orang yang berhenti punya alasan untuk bertemu." | "1990: tiga persen orang Amerika menjawab mereka tidak punya teman dekat. 2021: dua belas persen. Tidak ada yang memutuskan apa pun di antara kedua angka itu." |
+| SO1 | "38 orang melihat dan tidak ada yang menolong. Itu tidak pernah terjadi." | "Cerita yang salah bisa bertahan enam puluh tahun kalau ia berguna." | "Pada 13 Maret 1964, New York Times menulis satu artikel tentang pembunuhan di depan 38 saksi. Enam dekade kemudian, hampir setiap detailnya sudah direvisi." |
+| NA1 | "Ada aturan tertulis dari tahun 1517 yang masih dipakai hari ini. Isinya satu kalimat." | "Hak memakai diikat ke kewajiban merawat. Di satu desa, ikatan itu bertahan lima abad." | "Di Valais, Swiss, sekitar 600 orang mengelola padang dan hutan bersama. Aturan tertulisnya lebih tua daripada negara Swiss." |
+| TE1 | "Mereka berkabung untuk sebuah fitur yang dimatikan." | "Yang berakhir bukan aplikasinya. Yang berakhir adalah orang yang mereka kenal." | "3 Februari 2023: otoritas Italia memerintahkan penghentian pemrosesan data. Dalam hitungan jam, pengguna di seluruh dunia kehilangan sesuatu yang bukan fitur." |
+| EC1 | "Bunga nol persen. Tanpa kontrak. Tanpa agunan. Dan tetap jalan puluhan tahun." | "Jaminannya bukan hukum. Jaminannya adalah kamu akan bertemu orang itu lagi bulan depan." | "Sekitar 29 persen orang dalam sampel survei rumah tangga Indonesia ikut setidaknya satu arisan. Tidak ada bunga, tidak ada kontrak, tidak ada agunan." |
+
+Aturan tambahan untuk hook YouTube: **jangan buka dengan tesis.** Buka dengan tempat,
+tahun, atau angka — biarkan penonton menunggu 40 detik pertama untuk tahu mengapa itu
+penting.
+
+---
+
+## 4. Jadwal tayang (WIB)
 
 | Platform | Jam | Alasan |
 |---|---|---|
 | TikTok | 11:45 | konsumsi cepat di jam makan siang |
 | Instagram | 20:00 | prime time, simpan & share |
-| YouTube | 21:30 | penonton siap menonton lebih lama |
+| YouTube | 21:30 | penonton siap menonton 8 menit |
 
-Jam berbeda juga memastikan **caption tidak terposting serentak** — kalau identik,
-berarti tidak ada adaptasi (lihat editorial bible §8).
-
-Naskah dibaca sebagai satu paket: b-roll dan plate yang dipakai short bisa dipakai
-ulang di long-form minggu yang sama, tapi naskahnya bukan potongan naskah yang sama.
+Jamnya sengaja tidak sama supaya caption tidak pernah terposting serentak, dan supaya
+komentar di satu platform bisa dipakai memperbaiki hook di platform berikutnya di hari
+yang sama.
 
 ---
 
-## 6. Status QC
+## 5. Beban produksi — baca ini sebelum mulai
+
+3 video/hari = **21 video/7 hari**, dengan 7 di antaranya video 8–10 menit yang
+masing-masing butuh 1 sumber primer baru. Itu bukan beban yang sama dengan 21 short.
+
+Urutan yang realistis:
+
+| Minggu | Output | Catatan |
+|---|---|---|
+| 1 | 7 TikTok + 7 Reels (short), **3 YouTube** | long-form dibuat untuk topik terkuat dulu; 4 sisanya ditunda, bukan dipaksa |
+| 2 | +4 YouTube dari topik sisa | short sudah tayang, komentarnya dipakai memperbaiki naskah panjang |
+| 3 | siklus penuh 3/hari | hanya kalau batch pertama lolos QC tanpa revisi besar |
+
+Kalau pemilik kanal ingin 3 video/hari di **setiap** platform sejak hari pertama
+(9 video/hari), itu butuh penulis/riset tambahan — bukan penambahan jam kerja. Naskah
+dengan bukti primer tidak bisa dipercepat dengan cara itu.
+
+---
+
+## 6. QC
 
 `automation/validate_pieces.py` memeriksa:
 
 - 7 naskah, id unik, tanggal berurutan dari `startDate`
-- struktur tidak berulang (dan tidak berurutan sama), bentuk hook unik, wilayah primer unik
-- tiap berkas: durasi cocok dengan indeks, ada "Kenapa ini layak", fact ledger,
-  minimal satu `FAKTA`, minimal satu baris `TIDAK-DIKETAHUI`, sumber yang bisa dicek
+- struktur tidak berulang, bentuk hook unik, wilayah primer unik
+- tiap berkas: durasi cocok dengan indeks, "Kenapa ini layak", fact ledger, ≥1 `FAKTA`,
+  ≥1 baris `TIDAK-DIKETAHUI`, sumber yang bisa dicek
 - tiga varian hook A/B/C
-- caption TikTok ≠ Instagram, panjang caption wajar, judul YouTube ≤ 60
-- daftar frasa terlarang (editorial bible §4) tidak muncul
+- caption TikTok ≠ Instagram, judul YouTube ≤ 60 karakter
+- frasa terlarang (editorial bible §4) tidak muncul
 
-Perintah: `python3 automation/validate_pieces.py` → `✓ 7 naskah · 566 dtk …`
+Yang tetap harus dibaca manusia:
 
-Yang **tidak** diperiksa mesin, dan tetap harus dibaca manusia:
-
-1. Apakah angka di naskah cocok dengan sumber aslinya (validator tidak membuka paper).
-2. Apakah kalimat terakhir benar-benar pertanyaan, bukan kesimpulan yang menyamar.
-3. Apakah ada satu kalimat yang bisa dipindah ke naskah lain tanpa berubah — kalau ada, potong.
+1. Angka di naskah cocok dengan sumber aslinya.
+2. Kalimat terakhir pertanyaan asli, bukan kesimpulan yang menyamar.
+3. Tidak ada kalimat yang bisa dipindah ke naskah lain tanpa berubah.
+4. Tiga hook satu topik benar-benar berbeda bentuk (validator hanya cek varian, bukan bentuk).
 
 ---
 
-## 7. Hubungan dengan slate lama
+## 7. Hubungan dengan slate M2
 
 `content/scripts.json` (35 konten, 105 draf, mulai 2026-11-02) adalah slate M2 yang
-sudah ter-commit dan terjadwal. Slate itu ditulis dengan standar lama: 2 konten
-relationship/hari, salah satunya masih berbau psikologi pasangan.
+sudah ter-commit. Hashtag relationship-nya sudah diganti `#knottheory`, kalender
+diregenerasi dan lolos `validate.py`. Isi naskahnya **tidak** diubah — 14 naskah lama
+itu tetap memakai standar M2, bukan standar editorial bible.
 
-Slate v2 ini **menggantikan bagian relationship** mulai 2026-11-09 dengan laju 1/hari.
-Tiga konsekuensi yang perlu diputuskan pemilik kanal:
-
-1. **Minggu 1 (2–8 Nov)** masih memakai 14 naskah relationship lama. Kalau standar baru
-   berlaku surut, slot relationship minggu itu perlu dikosongkan atau diganti.
-2. Laju turun dari 2/hari jadi 1/hari. Itu disengaja: naskah dengan bukti primer butuh
-   riset per topik, dan 2/hari akan memaksa kembali ke pola "10 fakta".
-3. Slot 21:30 yang tadinya beauty dipakai YouTube relationship. Beauty tidak kehilangan
-   slot; ia berbagi hari.
-
-Kalau keputusannya mempertahankan dua kanal berjalan paralel, `content/relationship/`
-tetap bisa divalidasi sendiri tanpa menyentuh kalender beauty.
+Konsekuensi yang perlu diputuskan: minggu 1 (2–8 Nov) masih memakai 14 naskah tersebut,
+sementara standar baru mulai 9 Nov. Pilihannya: kosongkan slot relationship minggu itu,
+atau jalankan sebagai arsip dengan catatan standar baru berlaku 9 Nov.

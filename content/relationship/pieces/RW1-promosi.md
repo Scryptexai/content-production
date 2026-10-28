@@ -116,7 +116,7 @@ Perusahaan tahu penjual terbaik belum tentu manajer bagus. Mereka tetap melakuka
 
 Sumber: Benson, Li & Shue, QJE 2019 (131 perusahaan, 38.843 pekerja)
 
-#ruangantara #kerja #manajemen
+#knottheory #kerja #manajemen
 ```
 
 **Instagram**
@@ -129,7 +129,7 @@ Bukan karena bodoh — karena promosi juga dipakai sebagai hadiah untuk yang men
 
 Sumber lengkap di deskripsi. Ini analisis, bukan nasihat karier.
 
-#ruangantara #manusiadansekitarnya #sosiologi #kerja #manajemen
+#knottheory #manusiadansekitarnya #sosiologi #kerja #manajemen
 ```
 
 **YouTube (judul ≤ 60)**
@@ -151,7 +151,7 @@ Quarterly Journal of Economics 134(4), 2019. https://doi.org/10.1093/qje/qjz022
 Batas data: sampel terbatas pada tenaga penjualan di perusahaan AS dengan kinerja
 terukur. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #kerja
+#knottheory #kerja
 ```
 
 ---

@@ -122,7 +122,7 @@ dianggap aman untuk diajak bicara.
 
 Sumber: Lichter, Löffler & Siegloch, JEEA 2021
 
-#ruangantara #kepercayaan #sejarah
+#knottheory #kepercayaan #sejarah
 ```
 
 **Instagram**
@@ -135,7 +135,7 @@ yang hanya 14%.
 
 Yang rusak bukan hubungan warga-negara. Yang rusak hubungan tetangga.
 
-#ruangantara #manusiadansekitarnya #sosiologi #kepercayaan #sejarah
+#knottheory #manusiadansekitarnya #sosiologi #kepercayaan #sejarah
 ```
 
 **YouTube (judul ≤ 60)**
@@ -160,7 +160,7 @@ European Economic Association 19(2), 2021.
 Batas: data berhenti di akhir 2000-an. Kita tidak tahu apakah efeknya pulih setelah
 satu generasi. Narasi & grafik dibuat dengan bantuan AI.
 
-#ruangantara #kepercayaan
+#knottheory #kepercayaan
 ```
 
 ---

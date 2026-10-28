@@ -1,7 +1,7 @@
 {
   "meta": {
-    "channel": "Ruang Antara",
-    "handles": { "tiktok": "@ruangantara", "instagram": "@ruangantara", "youtube": "@ruangantara" },
+    "channel": "Knot Theory",
+    "handles": { "tiktok": "@knottheory", "instagram": "@knottheory", "youtube": "@knottheory" },
     "version": 2,
     "note": "Slate v2 — indeks ringkas untuk penjadwalan & QC. Isi lengkap tiap naskah ada di pieces/*.md. Divalidasi oleh automation/validate_pieces.py",
     "startDate": "2026-11-09",

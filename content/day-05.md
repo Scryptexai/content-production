@@ -60,7 +60,7 @@
 
 **Caption:** Yang membedakan bukan seberapa sering bertengkar, tapi apakah kamu boleh menolak.
 
-**Hashtag inti:** #ruangantara #batas #hubungansehat
+**Hashtag inti:** #knottheory #batas #hubungansehat
 
 **Sumber:** Kerangka batas & keselamatan hubungan (bukan diagnosis); rujukan bantuan profesional untuk kekerasan
 
@@ -116,7 +116,7 @@
 
 **Caption:** Kecepatan membalas itu sinyal cemas, bukan sinyal sayang.
 
-**Hashtag inti:** #ruangantara #kelekatancemas #relasi
+**Hashtag inti:** #knottheory #kelekatancemas #relasi
 
 **Sumber:** Mikulincer & Shaver — strategi hyperactivating pada kelekatan cemas
 

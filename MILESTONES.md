@@ -50,7 +50,7 @@ Definisi selesai:
 
 - [x] `docs/05-editorial-bible.md` — definisi relasi, 7 uji suara, sistem label fakta,
       7 struktur, gerbang 10 pertanyaan, aturan adaptasi platform, daftar tolak
-- [x] `docs/01-brand/relationship.md` ditulis ulang: Ruang Antara sebagai spektrum A–I
+- [x] `docs/01-brand/relationship.md` ditulis ulang: spektrum A–I (nama kanal kini Knot Theory)
 - [x] 7 naskah jadi (`content/relationship/pieces/`): 7 wilayah primer, struktur S1–S7
       masing-masing sekali, 566 detik, 3 varian hook per naskah
 - [x] Fact ledger berlabel di tiap naskah, dengan minimal satu `TIDAK-DIKETAHUI`

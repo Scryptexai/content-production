@@ -60,54 +60,51 @@ Tanpa review berbayar · label AI selalu aktif
 
 ---
 
-## 2. RELATIONSHIP — "Ruang Antara"
+## 2. RELATIONSHIP — "Knot Theory"
 
 ### YouTube
 | Field | Isi |
 |---|---|
-| Nama channel | `Ruang Antara — Pola, Bukan Vonis` |
-| Handle | `@ruangantara` |
-| Kata kunci | `psikologi hubungan, komunikasi pasangan, beban mental, attachment` |
+| Nama channel | `Knot Theory` |
+| Handle | `@knottheory` |
+| Kata kunci | `relasi manusia, kekuasaan, institusi, ekonomi, antropologi, sosiologi` |
 
 ```
-Ruang Antara membedah pola hubungan dengan mekanisme dan angka — bukan nasihat
-moral, bukan ramalan.
+Knot Theory membedah ikatan yang tidak bisa dilepas sebelah pihak — di tempat kerja,
+di institusi, di pasar, di alam, di layar.
 
-Satu video: satu angka dari riset, satu mekanisme, satu alat (pertanyaan atau tes
-60 detik). Tanpa menghakimi orang, tanpa kata "toxic" sebagai label.
+Satu topik, tiga video: satu argumen panjang di YouTube, satu temuan di TikTok, satu
+proposisi di Reels. Tanpa wajah, tanpa nasihat, tanpa vonis pada orang.
 
-Seri: Beban Tak Terlihat · Uang & Rumah Tangga · Pola dari Keluarga · Tes 60 Detik
+Setiap angka punya sumber primer, dan setiap naskah menyebut apa yang tidak diketahui.
 
-Bukan pengganti terapi. Untuk kekerasan dalam rumah tangga, hubungi layanan
-profesional (LISA 129 / psikolog klinis).
-
-Kerja sama: hello@ruangantara.id
+Kerja sama: hello@knottheory.id
 ```
 
 ### TikTok
 | Field | Isi |
 |---|---|
-| Username | `@ruangantara` |
-| Nama tampilan (30) | `Ruang Antara · pola hubungan` |
-| Bio (80) | `Hubungan dibedah dengan angka, bukan vonis. Satu alat per video.` |
+| Username | `@knottheory` |
+| Nama tampilan (30) | `Knot Theory` |
+| Bio (80) | `Ikatan yang tidak bisa dilepas sebelah pihak. Satu temuan per video.` |
 
 ### Instagram
 | Field | Isi |
 |---|---|
-| Username | `@ruangantara` |
-| Nama (30) | `Ruang Antara | Psikologi Hubungan` |
+| Username | `@knottheory` |
+| Nama (30) | `Knot Theory` |
 | Bio | lihat blok |
 
 ```
-Pola hubungan, dibedah dengan angka.
-Bukan terapi, bukan vonis.
-Satu video = satu alat.
-↓ Tes 60 detik tiap Rabu
+manusia dan ikatannya.
+Satu topik, tiga format, sumber di deskripsi.
+↓ Argumen panjang tiap Senin di YouTube
 ```
 
-**Sorotan:** `Mulai` · `Beban Mental` · `Uang` · `Keluarga` · `Tes`
+**Sorotan (highlights):** `Episode` · `Sumber` · `Tanya`
 
----
+**Aset profil:** avatar `avatar-1080.png`, pinned `ig-pinned-1080x1350.jpg`,
+cover sorotan `ig-highlight-*-1080x1920.jpg` — semuanya di `brand/knot-theory/assets/`.
 
 ## 3. SEO konten (berlaku untuk semua akun)
 
@@ -165,7 +162,7 @@ dengan kalender Zernio dan mudah dicari saat analitik.
    channel id Zernio di `.env` (tidak pernah di repo).
 
 ### Domain email (opsional, disarankan)
-`kulittropis.id` dan `ruangantara.id` — dipakai untuk email + landing page
+`kulittropis.id` dan `knottheory.id` — dipakai untuk email + landing page
 (link-in-bio sendiri: lebih cepat, bisa lacak klik, tidak kena batas Linktree).
 
 ---

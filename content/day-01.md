@@ -60,7 +60,7 @@
 
 **Caption:** Kerja yang tak terlihat juga kerja — dan biasanya hanya dipegang satu orang.
 
-**Hashtag inti:** #ruangantara #bebanmental #kerjatakterlihat
+**Hashtag inti:** #knottheory #bebanmental #kerjatakterlihat
 
 **Sumber:** Daminger, 'The Cognitive Dimension of Household Labor', American Sociological Review (2019) — kerja kognitif sebagai dimensi terpisah
 
@@ -116,7 +116,7 @@
 
 **Caption:** Damai yang tidak pernah diuji bukan damai, tapi penundaan.
 
-**Hashtag inti:** #ruangantara #konflik #komunikasipasangan
+**Hashtag inti:** #knottheory #konflik #komunikasipasangan
 
 **Sumber:** Pola demand-withdraw (Christensen & Heavey); stonewalling sebagai salah satu pola destruktif (Gottman)
 

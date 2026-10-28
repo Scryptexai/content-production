@@ -116,6 +116,20 @@ Sebelum produksi, jawab di kepala naskah (bagian "Kenapa ini layak"):
 
 ## 8. Adaptasi platform (bukan repost)
 
+**Satu topik = tiga video, bukan satu video tiga unggahan.** Tiap topik menghasilkan
+satu YouTube panjang, satu TikTok, satu Reels — dengan **hook yang berbeda bentuk**:
+
+| | YouTube (8–10 mnt) | TikTok (55–75 dtk) | Instagram (45–60 dtk) |
+|---|---|---|---|
+| Hook | **adegan**: tempat, tahun, angka | **ketegangan**: ada yang belum selesai | **proposisi**: satu kalimat yang terbaca tanpa suara |
+| Buka dengan | fakta yang tidak butuh tesis | kalimat yang menggantung | teks layar di frame pertama |
+| Isi | argumen utuh + batas data | satu temuan, satu mekanisme | satu proposisi + bukti visual |
+| Akhir | pertanyaan yang butuh 8 menit | potong tanpa kesimpulan | kalimat yang bisa disimpan |
+
+Uji: kalau hook TikTok bisa ditempel ke Reels tanpa diubah, itu bukan adaptasi.
+Kalau hook YouTube sudah menyebut kesimpulannya di 10 detik pertama, itu bukan adegan.
+
+
 | | YouTube | TikTok | Instagram |
 |---|---|---|---|
 | Panjang | 3–10 menit (long-form), Shorts 45–60 dtk | 55–90 dtk | 45–70 dtk Reels, carousel untuk data |

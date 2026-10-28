@@ -25,11 +25,13 @@ Lihat [`MILESTONES.md`](MILESTONES.md) untuk definisi "selesai" tiap milestone.
 ## Peta repo
 
 ```
+brand/knot-theory/           aset merek Knot Theory (logo, banner, avatar) + renderer
 docs/
   00-roadmap.md              roadmap teknis + rencana variasi visual
   01-brand/beauty.md         identitas niche beauty
   01-brand/relationship.md   identitas niche relationship
   01-brand/accounts.md       nama, handle, bio SEO per platform
+  01-brand/knot-theory-brand.md  logo, warna, tipografi, ukuran & safe area per platform
   02-monetization.md         jalur pendapatan tercepat + produk yang cocok
   03-publishing-zernio.md    setup MCP Zernio + jadwal 7 hari
   04-production-pipeline.md  Remotion + Blender + FFmpeg

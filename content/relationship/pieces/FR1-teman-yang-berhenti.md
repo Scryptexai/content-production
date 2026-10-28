@@ -114,7 +114,7 @@ tidak dipisahkan oleh survei ini.
 
 Arahnya kuat. Besarannya jangan dianggap presisi — pembandingnya survei berbeda.
 
-#ruangantara #pertemanan #kesepian
+#knottheory #pertemanan #kesepian
 ```
 
 **Instagram**
@@ -127,7 +127,7 @@ Yang tidak punya sama sekali naik 3% → 15%.
 Salah satu penjelasan: persahabatan yang diikat aktivitas mati ketika institusinya mati.
 Ini hipotesis — data ini tidak mengujinya.
 
-#ruangantara #manusiadansekitarnya #pertemanan #sosiologi
+#knottheory #manusiadansekitarnya #pertemanan #sosiologi
 ```
 
 **YouTube (judul ≤ 60)**
@@ -150,7 +150,7 @@ Batas: data AS; pembanding 1990 memakai instrumen berbeda, jadi besaran perubaha
 tidak presisi. Klaim tentang mekanisme masih hipotesis. Narasi & grafik dibuat
 dengan bantuan AI.
 
-#ruangantara #pertemanan
+#knottheory #pertemanan
 ```
 
 ---
