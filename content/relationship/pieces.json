@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "channel": "Ruang Antara",
+    "handles": { "tiktok": "@ruangantara", "instagram": "@ruangantara", "youtube": "@ruangantara" },
+    "version": 2,
+    "note": "Slate v2 — indeks ringkas untuk penjadwalan & QC. Isi lengkap tiap naskah ada di pieces/*.md. Divalidasi oleh automation/validate_pieces.py",
+    "startDate": "2026-11-09",
+    "cadence": "1 naskah per hari; 3 platform per naskah dengan jam berbeda (bukan repost serentak)",
+    "slotsWib": { "tiktok": "11:45", "instagram": "20:00", "youtube": "21:30" }
+  },
+  "pieces": [
+    {
+      "id": "RW1",
+      "file": "RW1-promosi.md",
+      "title": "Orang yang paling bagus menjual biasanya jadi manajer yang paling mahal",
+      "ytTitle": "Kenapa Penjual Terbaik Sering Jadi Manajer Terburuk",
+      "territory": "C",
+      "secondary": ["I", "B"],
+      "structure": "S1",
+      "hookForm": "temuan",
+      "durationSec": 78,
+      "day": 1,
+      "publishDate": "2026-11-09"
+    },
+    {
+      "id": "IN1",
+      "file": "IN1-satu-dari-260.md",
+      "title": "Satu dari 260 orang yang kamu kenal",
+      "ytTitle": "Harga Pengawasan: Kepercayaan yang Tidak Kembali",
+      "territory": "E",
+      "secondary": ["D", "B"],
+      "structure": "S2",
+      "hookForm": "angka turunan",
+      "durationSec": 82,
+      "day": 2,
+      "publishDate": "2026-11-10"
+    },
+    {
+      "id": "FR1",
+      "file": "FR1-teman-yang-berhenti.md",
+      "title": "Persahabatan jarang berakhir. Ia berhenti.",
+      "ytTitle": "Persahabatan Tidak Berakhir, Ia Berhenti",
+      "territory": "B",
+      "secondary": ["D", "H"],
+      "structure": "S3",
+      "hookForm": "kontradiksi",
+      "durationSec": 76,
+      "day": 3,
+      "publishDate": "2026-11-11"
+    },
+    {
+      "id": "SO1",
+      "file": "SO1-38-saksi.md",
+      "title": "38 saksi yang tidak pernah ada",
+      "ytTitle": "38 Saksi Itu Tidak Pernah Ada",
+      "territory": "D",
+      "secondary": ["E"],
+      "structure": "S4",
+      "hookForm": "koreksi mitos",
+      "durationSec": 84,
+      "day": 4,
+      "publishDate": "2026-11-12"
+    },
+    {
+      "id": "NA1",
+      "file": "NA1-aturan-1517.md",
+      "title": "Aturan tahun 1517 yang masih dipakai",
+      "ytTitle": "Aturan 1517: Cara Desa Ini Bertahan 500 Tahun",
+      "territory": "F",
+      "secondary": ["E", "I"],
+      "structure": "S5",
+      "hookForm": "tanggal",
+      "durationSec": 80,
+      "day": 5,
+      "publishDate": "2026-11-13"
+    },
+    {
+      "id": "TE1",
+      "file": "TE1-mereka-berkabung.md",
+      "title": "Mereka berkabung untuk sebuah fitur yang dimatikan",
+      "ytTitle": "Ketika Perusahaan Mengubah Orang yang Kau Kenal",
+      "territory": "G",
+      "secondary": ["H", "A"],
+      "structure": "S6",
+      "hookForm": "peristiwa bertanggal",
+      "durationSec": 86,
+      "day": 6,
+      "publishDate": "2026-11-14"
+    },
+    {
+      "id": "EC1",
+      "file": "EC1-jaminannya-kelompok.md",
+      "title": "Uang yang jaminannya bukan hukum, tapi rasa malu",
+      "ytTitle": "Arisan: Ketika Kelompok Menjadi Agunan",
+      "territory": "I",
+      "secondary": ["B", "E"],
+      "structure": "S7",
+      "hookForm": "paradoks",
+      "durationSec": 80,
+      "day": 7,
+      "publishDate": "2026-11-15"
+    }
+  ]
+}

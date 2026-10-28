@@ -3,6 +3,11 @@
 Sumber tunggal: **`scripts.json`** (35 entri). Semua file lain di folder ini
 dibangkitkan, jangan diedit manual.
 
+> **Catatan:** `relationship/` adalah slate terpisah (v2, mulai 2026-11-09) dengan
+> standar editorial baru — 7 naskah riset primer, 1/hari. Ia tidak dibangkitkan dari
+> `scripts.json` dan tidak mengubah kalender 105 draf di atas.
+> Lihat `relationship/README.md` dan `docs/05-editorial-bible.md`.
+
 ```bash
 python3 automation/build_schedule.py   # scripts.json → day-*.md, calendar-7-days.md, calendar.json, schedule.csv
 python3 automation/validate.py         # QC: 35×3 draf, slot, urutan, panjang caption

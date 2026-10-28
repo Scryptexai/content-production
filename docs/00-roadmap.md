@@ -1,6 +1,7 @@
 # 00 — Roadmap
 
-Empat lapis pekerjaan. M1 selesai; M2 = dokumen ini + 35 draf; M3 = variasi visual.
+Empat lapis pekerjaan. M1 selesai; M2 = 35 draf kalender; M2.5 = repositioning editorial
+relationship (7 naskah riset primer); M3 = variasi visual.
 
 ```
 L1  NASKAH        hook → klaim → bukti → konsekuensi → pertanyaan
@@ -105,3 +106,27 @@ sebagai keputusan.
 
 Semua jadwal disimpan sebagai UTC di `automation/zernio/content/calendar.json`
 (WIB = UTC+7).
+
+---
+
+## 7. Slate v2 — relationship (mulai 2026-11-09)
+
+Bagian relationship tidak lagi ditulis dengan standar "2 konten/hari, sudut psikologi
+pasangan". Sejak 9 November, laju turun jadi **1 naskah/hari, 3 platform/jam berbeda**,
+dengan syarat: sumber primer, fact ledger berlabel, minimal satu baris `TIDAK-DIKETAHUI`,
+dan struktur naratif yang tidak berulang.
+
+| Bergeser dari | Menjadi |
+|---|---|
+| 2 konten relationship/hari | 1 naskah/hari, riset per topik |
+| sudut psikologi pasangan | spektrum A–I: kerja, institusi, masyarakat, alam, teknologi, ekonomi |
+| "5 tanda…" | mekanisme + bukti + batas data |
+| penutup berisi pelajaran | penutup berupa pertanyaan terbuka |
+| caption sama di 3 platform | caption diadaptasi per platform, jam tayang berbeda |
+
+Aturan tulis: `docs/05-editorial-bible.md`. Indeks & jadwal: `content/relationship/README.md`.
+QC: `python3 automation/validate_pieces.py`.
+
+**Keputusan terbuka:** 14 naskah relationship lama di minggu 1 (2–8 Nov) masih memakai
+standar lama. Pilihannya mengosongkan slot itu, atau menjalankannya sebagai arsip dengan
+catatan bahwa standar baru berlaku mulai 9 Nov.

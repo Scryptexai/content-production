@@ -40,6 +40,27 @@ Definisi selesai:
 
 ---
 
+## M2.5 — Repositioning editorial relationship 🚧
+
+Alasan: kanal relationship M2 masih terbaca sebagai akun psikologi pasangan. Brief baru
+meminta spektrum relasi & saling ketergantungan manusia, dengan standar bukti yang lebih
+tinggi dan larangan eksplisit terhadap gaya tulis AI generik.
+
+Definisi selesai:
+
+- [x] `docs/05-editorial-bible.md` — definisi relasi, 7 uji suara, sistem label fakta,
+      7 struktur, gerbang 10 pertanyaan, aturan adaptasi platform, daftar tolak
+- [x] `docs/01-brand/relationship.md` ditulis ulang: Ruang Antara sebagai spektrum A–I
+- [x] 7 naskah jadi (`content/relationship/pieces/`): 7 wilayah primer, struktur S1–S7
+      masing-masing sekali, 566 detik, 3 varian hook per naskah
+- [x] Fact ledger berlabel di tiap naskah, dengan minimal satu `TIDAK-DIKETAHUI`
+- [x] `automation/validate_pieces.py` — QC struktur, label, sumber, caption, frasa terlarang
+- [x] Indeks & jadwal 9–15 Nov di `content/relationship/README.md`
+- [ ] Keputusan pemilik kanal: 14 naskah hubungan lama minggu 1 dikosongkan atau dijalankan
+- [ ] Produksi TTS + plate untuk 7 naskah, lalu approve 21 draf
+
+---
+
 ## M3 — Variasi visual & siklus uji 🚧 rencana
 
 - [ ] Plate latar bergerak (Blender) untuk 8 tema latar
