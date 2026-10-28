@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   Img,
+  OffthreadVideo,
   Sequence,
   interpolate,
   staticFile,
@@ -10,21 +11,53 @@ import {
   useVideoConfig,
   Easing,
 } from "remotion";
-import { Backdrop } from "./Backdrop";
 import { useFonts } from "./fonts";
-import { CREAM, LILAC, MUTED, ROSE, SAGE } from "./palette";
+import { ACCENTS, CREAM, MUTED, ROSE, SAGE, LILAC } from "./palette";
 
-const EASE = Easing.bezier(0.22, 1, 0.36, 1);
-const M = 120; // margin aman 16:9
+/* ------------------------------------------------------------------ tipe */
+
+export type Beat = {
+  key: string;
+  block: string;
+  kind:
+    | "stat"
+    | "pair"
+    | "line"
+    | "word"
+    | "quote"
+    | "chips"
+    | "bars"
+    | "split"
+    | "grid30"
+    | "list"
+    | "question";
+  plate: string;
+  plateFrom: number;
+  light?: boolean;
+  shot?: string;
+  accent: keyof typeof ACCENTS | "cream";
+  kicker?: string;
+  big?: string;
+  mid?: string;
+  sub?: string[];
+  who?: string;
+  chips?: string[];
+  items?: string[];
+  pairs?: [string, string][];
+  bars?: [string, number, string, string][];
+  before?: string;
+  after?: string;
+  labelBefore?: string;
+  labelAfter?: string;
+  from: number;
+  to: number;
+};
 
 export type Block = {
   key: string;
-  scene: string;
-  kicker?: string;
   vo: string;
   from: number;
   to: number;
-  [k: string]: unknown;
 };
 
 export type LongProps = {
@@ -32,303 +65,432 @@ export type LongProps = {
   tone: string;
   chapter: string;
   source: string;
-  preview?: boolean;
+  preview: boolean;
   blocks: Block[];
+  beats: Beat[];
 };
 
-/* ---------------------------------------------------------------- helpers */
-const rise = (frame: number, delay: number, dist = 22) => ({
-  opacity: interpolate(frame - delay, [0, 16], [0, 1], {
+/* ------------------------------------------------------------------ dasar */
+
+const EASE = Easing.bezier(0.16, 1, 0.3, 1);
+const X = 132;
+const TOP = 108;
+const BOTTOM = 96;
+
+type Accent = keyof typeof ACCENTS | "cream";
+
+type Skin = {
+  text: string;
+  soft: string;
+  muted: string;
+  rose: string;
+  sage: string;
+  hair: string;
+};
+
+const DARK_SKIN: Skin = {
+  text: CREAM,
+  soft: "rgba(239,231,220,0.90)",
+  muted: MUTED,
+  rose: ROSE,
+  sage: SAGE,
+  hair: "rgba(239,231,220,0.26)",
+};
+
+const LIGHT_SKIN: Skin = {
+  text: "#141821",
+  soft: "rgba(20,24,33,0.86)",
+  muted: "rgba(20,24,33,0.52)",
+  rose: "#A85B3E",
+  sage: "#4A6647",
+  hair: "rgba(20,24,33,0.24)",
+};
+
+const skinOf = (light?: boolean) => (light ? LIGHT_SKIN : DARK_SKIN);
+const accentOf = (a: Accent, s: Skin) => (a === "cream" ? s.text : a === "rose" ? s.rose : a === "sage" ? s.sage : LILAC);
+
+/** masuk: naik + pudar, bertahap antar elemen */
+const enter = (f: number, delay: number, dist = 26) => ({
+  opacity: interpolate(f - delay, [0, 11], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: EASE,
   }),
-  transform: `translateY(${interpolate(frame - delay, [0, 24], [dist, 0], {
+  transform: `translateY(${interpolate(f - delay, [0, 16], [dist, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: EASE,
   })}px)`,
 });
 
-const SERIF = { fontFamily: "Instrument Serif", color: CREAM } as const;
-const MONO = { fontFamily: "Plex Mono", color: MUTED } as const;
-
-const Kicker: React.FC<{ children?: React.ReactNode; color?: string }> = ({
-  children,
-  color,
-}) => (
-  <div
-    style={{
-      ...MONO,
-      fontSize: 22,
-      letterSpacing: "0.26em",
-      textTransform: "uppercase",
-      color: color ?? MUTED,
-      marginBottom: 22,
-    }}
-  >
-    {children}
+const Kicker: React.FC<{ text: string; accent: string; muted: string }> = ({ text, accent, muted }) => (
+  <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 30 }}>
+    <div style={{ width: 26, height: 4, background: accent, borderRadius: 2 }} />
+    <div
+      style={{
+        fontFamily: "Plex Mono",
+        fontSize: 25,
+        letterSpacing: "0.30em",
+        color: muted,
+        textTransform: "uppercase",
+      }}
+    >
+      {text}
+    </div>
   </div>
 );
 
-const Headline: React.FC<{ children?: React.ReactNode; size?: number }> = ({
-  children,
-  size = 72,
-}) => (
-  <div style={{ ...SERIF, fontSize: size, lineHeight: 1.1, maxWidth: 1240 }}>
-    {children}
-  </div>
-);
+/* ------------------------------------------------------------------ adegan */
 
-/* ---------------------------------------------------------------- scenes */
-const Adegan: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div style={rise(f, 4)}>
-      <Headline size={76}>{b.headline}</Headline>
-    </div>
-    <div style={{ display: "flex", gap: 84, marginTop: 78 }}>
-      {b.stats.map((s: any, i: number) => (
-        <div key={s.label} style={rise(f, 16 + i * 9)}>
-          <div
-            style={{
-              fontFamily: "Plex Mono",
-              fontWeight: 500,
-              fontSize: 96,
-              color: i === 0 ? ROSE : CREAM,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            {s.value}
+const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
+  const f = useCurrentFrame();
+  const accent = accentOf(b.accent, s);
+
+  if (b.kind === "stat" || b.kind === "pair") {
+    const rows = b.pairs
+      ? b.pairs.map(([v, l]) => ({ v, l }))
+      : [{ v: b.big ?? "", l: b.mid ?? "" }];
+    const biggest = rows.length > 1;
+    return (
+      <div>
+        {b.kicker ? (
+          <div style={enter(f, 0)}>
+            <Kicker text={b.kicker} accent={accent} muted={s.muted} />
           </div>
-          <div style={{ ...MONO, fontSize: 26, marginTop: 10 }}>{s.label}</div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const Metode: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div style={rise(f, 4)}>
-      <Headline>{b.headline}</Headline>
-    </div>
-    <div style={{ display: "flex", alignItems: "center", gap: 46, marginTop: 76 }}>
-      <div
-        style={{
-          ...rise(f, 18),
-          border: "1px solid rgba(239,231,220,0.22)",
-          borderRadius: 6,
-          padding: "34px 42px",
-          minWidth: 330,
-        }}
-      >
-        <div style={{ ...MONO, fontSize: 22, letterSpacing: "0.14em" }}>
-          {b.before.t}
-        </div>
-        <div style={{ ...SERIF, fontSize: 54, marginTop: 8 }}>{b.before.v}</div>
-      </div>
-      <div style={{ ...rise(f, 26), ...MONO, fontSize: 44, color: ROSE }}>→</div>
-      <div
-        style={{
-          ...rise(f, 30),
-          border: "1px solid rgba(239,231,220,0.35)",
-          borderRadius: 6,
-          padding: "34px 42px",
-          minWidth: 330,
-          background: "rgba(239,231,220,0.05)",
-        }}
-      >
-        <div style={{ ...MONO, fontSize: 22, letterSpacing: "0.14em" }}>
-          {b.after.t}
-        </div>
-        <div style={{ ...SERIF, fontSize: 54, marginTop: 8 }}>{b.after.v}</div>
-      </div>
-    </div>
-    <div style={{ ...rise(f, 44), ...MONO, fontSize: 26, marginTop: 34 }}>
-      {b.note}
-    </div>
-  </div>
-);
-
-const Bar: React.FC<{ b: any; f: number }> = ({ b, f }) => {
-  const grow = interpolate(f, [6, 14], [0.86, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: EASE,
-  });
-  return (
-    <div>
-      <div style={rise(f, 0)}>
-        <Kicker>{b.kicker}</Kicker>
-      </div>
-      <div style={rise(f, 4)}>
-        <Headline>{b.headline}</Headline>
-      </div>
-      <div style={{ marginTop: 78, maxWidth: 1180 }}>
-        {b.bars.map((bar: any) => (
-          <div key={bar.label} style={{ marginBottom: 30 }}>
+        ) : null}
+        {rows.map((r, i) => (
+          <div key={r.l} style={{ ...enter(f, 4 + i * 6), marginBottom: biggest ? 26 : 10 }}>
             <div
               style={{
-                display: "flex",
-                justifyContent: "space-between",
-                ...MONO,
-                fontSize: 24,
-                marginBottom: 12,
+                fontFamily: "Plex Mono",
+                fontSize: biggest ? 210 : 300,
+                fontWeight: 500,
+                lineHeight: biggest ? 0.98 : 0.9,
+                letterSpacing: "-0.045em",
+                color: i === 0 ? accent : s.text,
+                fontVariantNumeric: "tabular-nums",
               }}
             >
-              <span>{bar.label}</span>
-              <span style={{ color: bar.accent === "sage" ? SAGE : ROSE }}>
-                {bar.display}
-              </span>
+              {r.v}
             </div>
             <div
               style={{
-                height: 18,
-                background: "rgba(239,231,220,0.10)",
-                borderRadius: 9,
-                overflow: "hidden",
+                fontFamily: "Instrument Serif",
+                fontSize: biggest ? 44 : 48,
+                color: s.text,
+                opacity: 0.92,
+                marginTop: 6,
               }}
             >
-              <div
-                style={{
-                  width: `${Math.min(100, bar.value * 5.4) * grow}%`,
-                  height: "100%",
-                  background: bar.accent === "sage" ? SAGE : ROSE,
-                  borderRadius: 9,
-                }}
-              />
+              {r.l}
             </div>
           </div>
         ))}
-        <div style={{ ...rise(f, 46), ...MONO, fontSize: 24 }}>{b.footnote}</div>
+        {b.sub?.length ? (
+          <div style={{ ...enter(f, 20, 16), marginTop: 34 }}>
+            {b.sub.map((line) => (
+              <div
+                key={line}
+                style={{
+                  fontFamily: "Plex Mono",
+                  fontSize: 28,
+                  letterSpacing: "0.05em",
+                  color: s.muted,
+                }}
+              >
+                {line}
+              </div>
+            ))}
+          </div>
+        ) : null}
       </div>
-    </div>
-  );
-};
+    );
+  }
 
-const Kurva: React.FC<{ b: any; f: number }> = ({ b, f }) => {
-  const draw = interpolate(f, [10, 55], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: EASE,
-  });
-  return (
-    <div>
-      <div style={rise(f, 0)}>
-        <Kicker>{b.kicker}</Kicker>
+  if (b.kind === "word") {
+    return (
+      <div style={{ ...enter(f, 0, 40) }}>
+        <div
+          style={{
+            fontFamily: "Instrument Serif",
+            fontSize: 240,
+            lineHeight: 0.94,
+            letterSpacing: "-0.03em",
+            color: accent,
+            maxWidth: 1500,
+          }}
+        >
+          {b.big}
+        </div>
       </div>
-      <div style={rise(f, 4)}>
-        <Headline size={64}>{b.headline}</Headline>
+    );
+  }
+
+  if (b.kind === "quote") {
+    return (
+      <div style={{ maxWidth: 1450 }}>
+        <div style={enter(f, 0, 34)}>
+          <div
+            style={{
+              fontFamily: "Instrument Serif",
+              fontStyle: "italic",
+              fontSize: 96,
+              lineHeight: 1.16,
+              color: s.text,
+              letterSpacing: "-0.01em",
+            }}
+          >
+            “{b.big}”
+          </div>
+        </div>
+        {b.who ? (
+          <div
+            style={{
+              ...enter(f, 14, 18),
+              marginTop: 40,
+              display: "flex",
+              alignItems: "center",
+              gap: 18,
+            }}
+          >
+            <div style={{ width: 74, height: 3, background: accent }} />
+            <div
+              style={{
+                fontFamily: "Plex Mono",
+                fontSize: 28,
+                letterSpacing: "0.06em",
+                color: s.muted,
+              }}
+            >
+              {b.who}
+            </div>
+          </div>
+        ) : null}
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 60, marginTop: 60 }}>
-        <svg width={820} height={330} style={{ overflow: "visible" }}>
-          <line x1="0" y1="310" x2="820" y2="310" stroke="rgba(239,231,220,0.18)" />
-          <line x1="0" y1="0" x2="0" y2="310" stroke="rgba(239,231,220,0.18)" />
-          <path
-            d="M 0 270 C 240 250, 430 170, 820 34"
-            fill="none"
-            stroke={CREAM}
-            strokeWidth={3}
-            strokeDasharray={900}
-            strokeDashoffset={900 * (1 - draw)}
-          />
-          <path
-            d="M 0 210 C 250 250, 470 290, 820 296"
-            fill="none"
-            stroke={ROSE}
-            strokeWidth={3}
-            strokeDasharray={900}
-            strokeDashoffset={900 * (1 - draw)}
-          />
-          <text x="430" y="26" fill={CREAM} fontFamily="Plex Mono" fontSize="20">
-            {b.labelA}
-          </text>
-          <text x="470" y="318" fill={ROSE} fontFamily="Plex Mono" fontSize="20">
-            {b.labelB}
-          </text>
-        </svg>
+    );
+  }
+
+  if (b.kind === "question") {
+    return (
+      <div style={{ maxWidth: 1420 }}>
+        <div style={enter(f, 0, 36)}>
+          <div
+            style={{
+              fontFamily: "Instrument Serif",
+              fontSize: 140,
+              lineHeight: 1.06,
+              letterSpacing: "-0.025em",
+              color: s.text,
+            }}
+          >
+            {b.big}
+          </div>
+        </div>
+        <div style={{ ...enter(f, 14, 18), marginTop: 46 }}>
+          <div style={{ width: 210, height: 5, background: accent, borderRadius: 3 }} />
+        </div>
+      </div>
+    );
+  }
+
+  if (b.kind === "chips") {
+    return (
+      <div>
+        <div style={{ display: "flex", gap: 18, flexWrap: "wrap", maxWidth: 1400 }}>
+          {(b.chips ?? []).map((c, i) => (
+            <div
+              key={c}
+              style={{
+                ...enter(f, 2 + i * 5, 18),
+                fontFamily: "Plex Mono",
+                fontSize: 34,
+                letterSpacing: "0.04em",
+                color: s.text,
+                border: `1.5px solid ${s.hair}`,
+                borderRadius: 999,
+                padding: "18px 34px",
+              }}
+            >
+              {c}
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (b.kind === "list") {
+    return (
+      <div style={{ maxWidth: 1400 }}>
+        {b.kicker ? (
+          <div style={enter(f, 0)}>
+            <Kicker text={b.kicker} accent={accent} muted={s.muted} />
+          </div>
+        ) : null}
+        {(b.items ?? []).map((it, i) => (
+          <div
+            key={it}
+            style={{
+              ...enter(f, 6 + i * 7, 22),
+              display: "flex",
+              gap: 26,
+              alignItems: "baseline",
+              marginBottom: 30,
+            }}
+          >
+            <div
+              style={{
+                fontFamily: "Plex Mono",
+                fontSize: 30,
+                color: accent,
+                minWidth: 52,
+              }}
+            >
+              0{i + 1}
+            </div>
+            <div
+              style={{
+                fontFamily: "Instrument Serif",
+                fontSize: 72,
+                lineHeight: 1.1,
+                color: s.text,
+              }}
+            >
+              {it}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (b.kind === "bars") {
+    const bars = b.bars ?? [];
+    return (
+      <div style={{ maxWidth: 1350 }}>
+        {b.kicker ? (
+          <div style={enter(f, 0)}>
+            <Kicker text={b.kicker} accent={accent} muted={s.muted} />
+          </div>
+        ) : null}
+        {bars.map(([label, value, display, ac], i) => {
+          const w = interpolate(f - 4 - i * 5, [0, 18], [0, Math.min(100, value * 5.6)], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+            easing: EASE,
+          });
+          return (
+            <div key={label} style={{ ...enter(f, 4 + i * 5, 18), marginBottom: 34 }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "baseline",
+                  marginBottom: 12,
+                }}
+              >
+                <span
+                  style={{ fontFamily: "Plex Mono", fontSize: 31, color: s.text, letterSpacing: "0.04em" }}
+                >
+                  {label}
+                </span>
+                <span
+                  style={{
+                    fontFamily: "Plex Mono",
+                    fontSize: 62,
+                    fontWeight: 500,
+                    color: ac === "sage" ? s.sage : s.rose,
+                    letterSpacing: "-0.02em",
+                  }}
+                >
+                  {display}
+                </span>
+              </div>
+              <div style={{ height: 14, background: s.hair, borderRadius: 7 }}>
+                <div
+                  style={{
+                    width: `${w}%`,
+                    height: "100%",
+                    borderRadius: 7,
+                    background: ac === "sage" ? s.sage : s.rose,
+                  }}
+                />
+              </div>
+            </div>
+          );
+        })}
+        {b.sub?.length ? (
+          <div style={{ ...enter(f, 18, 14), marginTop: 26 }}>
+            {b.sub.map((line) => (
+              <div key={line} style={{ fontFamily: "Plex Mono", fontSize: 28, color: s.muted }}>
+                {line}
+              </div>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (b.kind === "split") {
+    const box = (label?: string, value?: string, delay = 0, accentBox = false) => (
+      <div style={{ ...enter(f, delay, 22), flex: 1 }}>
         <div
           style={{
             fontFamily: "Plex Mono",
-            fontWeight: 500,
-            fontSize: 128,
-            color: ROSE,
-            letterSpacing: "-0.03em",
-            ...rise(f, 40),
+            fontSize: 25,
+            letterSpacing: "0.16em",
+            color: s.muted,
+            textTransform: "uppercase",
+            marginBottom: 14,
           }}
         >
-          {b.value}
+          {label}
         </div>
-      </div>
-    </div>
-  );
-};
-
-const Prediktor: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div style={rise(f, 4)}>
-      <Headline size={64}>{b.headline}</Headline>
-    </div>
-    <div style={{ marginTop: 74, maxWidth: 1120 }}>
-      {b.rows.map((r: any, i: number) => (
-        <div
-          key={r.label}
-          style={{
-            ...rise(f, 16 + i * 14),
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "baseline",
-            padding: "26px 0",
-            borderTop: "1px solid rgba(239,231,220,0.16)",
-          }}
-        >
-          <span style={{ ...SERIF, fontSize: 44 }}>{r.label}</span>
-          <span
-            style={{
-              fontFamily: "Plex Mono",
-              fontWeight: 500,
-              fontSize: 58,
-              color: r.tone === "sage" ? SAGE : ROSE,
-            }}
-          >
-            {r.value}
-          </span>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const Kontrafaktual: React.FC<{ b: any; f: number }> = ({ b, f }) => {
-  const cells = Array.from({ length: 100 }, (_, i) => i);
-  return (
-    <div>
-      <div style={rise(f, 0)}>
-        <Kicker>{b.kicker}</Kicker>
-      </div>
-      <div style={rise(f, 4)}>
-        <Headline>{b.headline}</Headline>
-      </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 90, marginTop: 66 }}>
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(10, 44px)",
-            gap: 9,
+            border: `1.5px solid ${accentBox ? accent : s.hair}`,
+            borderRadius: 10,
+            padding: "34px 36px",
+            background: accentBox ? "rgba(217,142,115,0.10)" : "transparent",
           }}
         >
+          <div style={{ fontFamily: "Instrument Serif", fontSize: 62, color: CREAM }}>
+            {value}
+          </div>
+        </div>
+      </div>
+    );
+    return (
+      <div style={{ maxWidth: 1420 }}>
+        <div style={{ display: "flex", alignItems: "flex-end", gap: 30 }}>
+          {box(b.labelBefore, b.before, 0, false)}
+          <div style={{ ...enter(f, 8, 0), paddingBottom: 56 }}>
+            <div style={{ fontFamily: "Plex Mono", fontSize: 56, color: s.rose }}>→</div>
+          </div>
+          {box(b.labelAfter, b.after, 4, true)}
+        </div>
+        {b.sub?.length ? (
+          <div style={{ ...enter(f, 18, 14), marginTop: 40 }}>
+            {b.sub.map((line) => (
+              <div key={line} style={{ fontFamily: "Plex Mono", fontSize: 30, color: s.muted }}>
+                {line}
+              </div>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (b.kind === "grid30") {
+    const cells = Array.from({ length: 100 }, (_, i) => i);
+    return (
+      <div style={{ display: "flex", alignItems: "center", gap: 84 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(10, 44px)", gap: 9 }}>
           {cells.map((i) => {
-            const on = i < 30;   // 30 dari 100 kotak = "+30%"
-            const appear = interpolate(f, [6 + i * 0.25, 12 + i * 0.25], [0, 1], {
+            const on = i < 30;
+            const appear = interpolate(f, [2 + i * 0.22, 8 + i * 0.22], [0, 1], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             });
@@ -338,9 +500,9 @@ const Kontrafaktual: React.FC<{ b: any; f: number }> = ({ b, f }) => {
                 style={{
                   width: 44,
                   height: 44,
-                  borderRadius: 3,
-                  background: on ? SAGE : "rgba(239,231,220,0.10)",
-                  opacity: on ? appear : 0.55,
+                  borderRadius: 4,
+                  background: on ? s.sage : s.hair,
+                  opacity: appear,
                 }}
               />
             );
@@ -349,196 +511,267 @@ const Kontrafaktual: React.FC<{ b: any; f: number }> = ({ b, f }) => {
         <div>
           <div
             style={{
+              ...enter(f, 8, 26),
               fontFamily: "Plex Mono",
+              fontSize: 210,
               fontWeight: 500,
-              fontSize: 132,
-              color: SAGE,
-              letterSpacing: "-0.03em",
-              ...rise(f, 14),
+              letterSpacing: "-0.05em",
+              color: s.sage,
+              lineHeight: 0.9,
             }}
           >
-            {b.value}
+            {b.big}
           </div>
-          <div style={{ ...MONO, fontSize: 24, maxWidth: 420, marginTop: 10 }}>
-            {b.note}
+          <div
+            style={{
+              ...enter(f, 16, 18),
+              fontFamily: "Instrument Serif",
+              fontSize: 52,
+              color: s.text,
+              marginTop: 12,
+            }}
+          >
+            {b.mid}
           </div>
         </div>
+      </div>
+    );
+  }
+
+  // line (default)
+  const long = (b.big ?? "").length > 34;
+  return (
+    <div style={{ maxWidth: 1330 }}>
+      {b.kicker ? (
+        <div style={enter(f, 0)}>
+          <Kicker text={b.kicker} accent={accent} muted={s.muted} />
+        </div>
+      ) : null}
+      <div style={{ ...enter(f, b.kicker ? 4 : 0, 30) }}>
+        <div
+          style={{
+            fontFamily: "Instrument Serif",
+            fontSize: long ? 112 : 138,
+            lineHeight: 1.08,
+            letterSpacing: "-0.022em",
+            color: s.text,
+          }}
+        >
+          {b.big}
+        </div>
+      </div>
+      {b.sub?.length ? (
+        <div style={{ ...enter(f, 12, 18), marginTop: 32 }}>
+          {b.sub.map((line) => (
+            <div
+              key={line}
+              style={{
+                fontFamily: "Plex Mono",
+                fontSize: 33,
+                color: b.accent === "rose" ? s.rose : s.sage,
+                letterSpacing: "0.03em",
+                marginTop: 6,
+              }}
+            >
+              {line}
+            </div>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ latar */
+
+const Plate: React.FC<{ b: Beat; duration: number }> = ({ b, duration }) => {
+  const f = useCurrentFrame();
+  const zoom = interpolate(f, [0, duration], [1.055, 1.0], {
+    extrapolateRight: "clamp",
+  });
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <OffthreadVideo
+        src={staticFile(`backdrop/plate-${b.plate}.mp4`)}
+        startFrom={b.plateFrom}
+        muted
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          transform: `scale(${zoom})`,
+        }}
+      />
+      {/* jaminan keterbacaan: gelapkan sisi teks */}
+      <AbsoluteFill
+        style={{
+          background: b.light
+            ? "linear-gradient(100deg, rgba(239,231,220,0.97) 0%, rgba(239,231,220,0.90) 46%, rgba(239,231,220,0.35) 100%)"
+            : "linear-gradient(100deg, rgba(8,11,18,0.90) 0%, rgba(8,11,18,0.62) 52%, rgba(8,11,18,0.10) 100%)",
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
+
+/* ------------------------------------------------------------------ footage */
+
+/**
+ * Foto sebagai footage: zoom + pan pelan selama beat berjalan, jadi tidak
+ * terasa seperti gambar diam. Gerakannya sengaja sangat kecil (2-8%) supaya
+ * mata membaca teks, bukan menonton gerakan.
+ */
+const Footage: React.FC<{ shot: string; duration: number; index: number }> = ({
+  shot,
+  duration,
+  index,
+}) => {
+  const f = useCurrentFrame();
+  const p = interpolate(f, [0, duration], [0, 1], { extrapolateRight: "clamp" });
+  // arah gerak berganti tiap beat supaya tidak monoton
+  const dir = index % 4;
+  const scale = 1.06 + p * (dir % 2 === 0 ? 0.07 : -0.045);
+  const tx = (dir === 0 ? -1 : dir === 1 ? 1 : dir === 2 ? -0.6 : 0.6) * p * 26;
+  const ty = (dir < 2 ? -1 : 1) * p * 18;
+  const fade = interpolate(f, [0, 7], [0, 1], { extrapolateRight: "clamp" });
+
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0A0D14" }}>
+      <Img
+        src={staticFile(`footage/${shot}.jpg`)}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          opacity: fade,
+          transform: `scale(${scale}) translate(${tx}px, ${ty}px)`,
+        }}
+      />
+      {/* scrim: gelap di kiri tempat teks, foto tetap terbaca di kanan */}
+      <AbsoluteFill
+        style={{
+          background:
+            "linear-gradient(97deg, rgba(8,11,18,0.95) 0%, rgba(8,11,18,0.88) 30%, rgba(8,11,18,0.55) 58%, rgba(8,11,18,0.18) 100%)",
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
+
+/* ------------------------------------------------------------------ aside */
+
+const Aside: React.FC<{
+  block: string;
+  index: number;
+  total: number;
+  accent: string;
+  s: Skin;
+}> = ({ block, index, total, accent, s }) => {
+  const f = useCurrentFrame();
+  const o = interpolate(f, [6, 20], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  return (
+    <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 250, opacity: o }}>
+      {/* garis vertikal tipis + label diputar */}
+      <div
+        style={{
+          position: "absolute",
+          right: 96,
+          top: 120,
+          bottom: 140,
+          width: 1,
+          background: s.hair,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          right: 52,
+          top: "50%",
+          transform: "translateY(-50%) rotate(90deg)",
+          transformOrigin: "center",
+          fontFamily: "Plex Mono",
+          fontSize: 20,
+          letterSpacing: "0.42em",
+          color: s.muted,
+          whiteSpace: "nowrap",
+        }}
+      >
+        BAB {block.toUpperCase()}
+      </div>
+      {/* nomor besar samar */}
+      <div
+        style={{
+          position: "absolute",
+          right: 96,
+          bottom: 92,
+          fontFamily: "Plex Mono",
+          fontSize: 150,
+          fontWeight: 500,
+          letterSpacing: "-0.06em",
+          color: accent,
+          opacity: 0.09,
+          lineHeight: 0.8,
+        }}
+      >
+        {String(index).padStart(2, "0")}
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          right: 96,
+          bottom: 66,
+          fontFamily: "Plex Mono",
+          fontSize: 17,
+          letterSpacing: "0.2em",
+          color: MUTED,
+          opacity: 0.6,
+        }}
+      >
+        /{String(total).padStart(2, "0")}
       </div>
     </div>
   );
 };
 
-const Mekanisme: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div style={rise(f, 4)}>
-      <Headline>{b.headline}</Headline>
-    </div>
-    <div style={{ display: "flex", gap: 40, marginTop: 74 }}>
-      {[b.left, b.right].map((side: any, i: number) => (
-        <div
-          key={side.t}
-          style={{
-            ...rise(f, 18 + i * 12),
-            flex: 1,
-            border: "1px solid rgba(239,231,220,0.20)",
-            borderRadius: 6,
-            padding: "40px 44px",
-            background: i === 1 ? "rgba(217,142,115,0.06)" : "transparent",
-          }}
-        >
-          <div
-            style={{
-              ...SERIF,
-              fontSize: 58,
-              color: i === 1 ? ROSE : CREAM,
-            }}
-          >
-            {side.t}
-          </div>
-          <div style={{ ...MONO, fontSize: 24, marginTop: 12, lineHeight: 1.5 }}>
-            {side.d}
-          </div>
-        </div>
-      ))}
-    </div>
-    <div
-      style={{
-        ...rise(f, 46),
-        ...MONO,
-        fontSize: 26,
-        marginTop: 30,
-        color: LILAC,
-      }}
-    >
-      {b.note}
-    </div>
-  </div>
-);
+/* ------------------------------------------------------------------ kerangka */
 
-const Kutipan: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div style={{ maxWidth: 1260 }}>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div
-      style={{
-        fontFamily: "Instrument Serif",
-        fontStyle: "italic",
-        fontSize: 78,
-        lineHeight: 1.18,
-        color: CREAM,
-        ...rise(f, 10),
-      }}
-    >
-      “{b.quote}”
-    </div>
-    <div style={{ ...rise(f, 34), ...MONO, fontSize: 24, marginTop: 34 }}>
-      {b.attrib}
-    </div>
-  </div>
-);
-
-const Batas: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div>
-    <div style={rise(f, 0)}>
-      <Kicker color={LILAC}>{b.kicker}</Kicker>
-    </div>
-    <div style={rise(f, 4)}>
-      <Headline size={62}>{b.headline}</Headline>
-    </div>
-    <div style={{ display: "flex", gap: 16, marginTop: 54, flexWrap: "wrap" }}>
-      {b.chips.map((c: string, i: number) => (
-        <div
-          key={c}
-          style={{
-            ...rise(f, 18 + i * 10),
-            ...MONO,
-            fontSize: 24,
-            color: CREAM,
-            border: "1px solid rgba(239,231,220,0.25)",
-            borderRadius: 999,
-            padding: "12px 26px",
-          }}
-        >
-          {c}
-        </div>
-      ))}
-    </div>
-    <div
-      style={{
-        ...rise(f, 48),
-        marginTop: 44,
-        borderLeft: `3px solid ${LILAC}`,
-        paddingLeft: 22,
-        maxWidth: 900,
-      }}
-    >
-      <div style={{ ...MONO, fontSize: 20, letterSpacing: "0.2em", color: LILAC }}>
-        TIDAK DIKETAHUI
-      </div>
-      <div style={{ ...SERIF, fontSize: 38, marginTop: 10 }}>{b.unknown}</div>
-    </div>
-  </div>
-);
-
-const Tanya: React.FC<{ b: any; f: number }> = ({ b, f }) => (
-  <div style={{ maxWidth: 1300 }}>
-    <div style={rise(f, 0)}>
-      <Kicker>{b.kicker}</Kicker>
-    </div>
-    <div style={{ ...SERIF, fontSize: 78, lineHeight: 1.16, ...rise(f, 8) }}>
-      {b.question}
-    </div>
-    <div
-      style={{
-        width: 180,
-        height: 4,
-        background: ROSE,
-        borderRadius: 2,
-        marginTop: 52,
-        ...rise(f, 30),
-      }}
-    />
-  </div>
-);
-
-const SCENES: Record<string, React.FC<any>> = {
-  adegan: Adegan,
-  metode: Metode,
-  bar: Bar,
-  kurva: Kurva,
-  prediktor: Prediktor,
-  kontrafaktual: Kontrafaktual,
-  mekanisme: Mekanisme,
-  kutipan: Kutipan,
-  batas: Batas,
-  tanya: Tanya,
-};
-
-/* ---------------------------------------------------------------- frame */
-export const LongForm: React.FC<LongProps> = ({
-  tone,
-  chapter,
-  source,
-  preview,
-  blocks,
-}) => {
+export const LongForm: React.FC<LongProps> = ({ source, preview, blocks, beats }) => {
   const ready = useFonts();
   const frame = useCurrentFrame();
-  const { fps, durationInFrames } = useVideoConfig();
-  if (!ready) return <AbsoluteFill style={{ backgroundColor: "#0C1018" }} />;
+  const { fps } = useVideoConfig();
+  const total = blocks.length ? blocks[blocks.length - 1].to : 1;
 
-  const active = blocks.find((b) => frame >= b.from && frame < b.to) ?? blocks[0];
-  const Scene = SCENES[active.scene] ?? Adegan;
+  if (!ready) return <AbsoluteFill style={{ backgroundColor: "#0A0D14" }} />;
+
+  const active = beats.find((b) => frame >= b.from && frame < b.to) ?? beats[0];
+  const dur = active.to - active.from;
   const local = frame - active.from;
+  const skin = skinOf(active.light);
+
+  // kilat krem 3 frame di awal tiap bab: penanda potong, bukan transisi lambat
+  const blockStart = blocks.find((b) => b.key === active.block)?.from ?? -999;
+  const flash = interpolate(frame - blockStart, [0, 3, 7], [0.55, 0.35, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  const showSource = frame - blockStart < fps * 4.5;
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#0C1018" }}>
-      <Backdrop tone={tone} knotSize={1500} />
+    <AbsoluteFill style={{ backgroundColor: "#0A0D14" }}>
+      {/* latar per beat */}
+      <Sequence key={`pl-${active.key}`} from={active.from} durationInFrames={dur}>
+        {active.shot ? (
+          <Footage shot={active.shot} duration={dur} index={beats.indexOf(active)} />
+        ) : (
+          <Plate b={active} duration={dur} />
+        )}
+      </Sequence>
 
+      {/* narasi: satu klip per blok, tanpa dipotong */}
       {!preview &&
         blocks.map((b, i) => (
           <Sequence key={i} from={b.from} durationInFrames={b.to - b.from}>
@@ -546,94 +779,79 @@ export const LongForm: React.FC<LongProps> = ({
           </Sequence>
         ))}
 
-      {/* isi adegan, dipotong keras per blok supaya tidak ada transisi lambat */}
-      <Sequence key={active.key} from={active.from} durationInFrames={active.to - active.from}>
-        <AbsoluteFill
-          style={{
-            opacity: interpolate(local, [0, 8], [0, 1], {
-              extrapolateLeft: "clamp",
-              extrapolateRight: "clamp",
-            }),
-          }}
-        >
-        <AbsoluteFill
-          style={{
-            paddingLeft: M,
-            paddingRight: M,
-            paddingTop: 150,
-            paddingBottom: 170,
-            justifyContent: "center",
-          }}
-        >
-          <Scene b={active} f={local} />
-        </AbsoluteFill>
+      {/* isi beat */}
+      <Sequence key={active.key} from={active.from} durationInFrames={dur}>
+        <AbsoluteFill style={{ padding: `${TOP}px ${X}px ${BOTTOM}px ${X}px`, justifyContent: "center" }}>
+          <div
+            style={{
+              transform: `scale(${interpolate(local, [0, dur], [1.012, 1.0], {
+                extrapolateRight: "clamp",
+              })})`,
+              transformOrigin: "left center",
+            }}
+          >
+            <Scene b={active} s={skin} />
+          </div>
         </AbsoluteFill>
       </Sequence>
 
-      {/* kepala & kaki: identitas + bab + sumber */}
+      <Aside
+        block={active.block}
+        index={blocks.findIndex((b) => b.key === active.block) + 1}
+        total={blocks.length}
+        accent={accentOf(active.accent, skin)}
+        s={skin}
+      />
+
+      {/* kilat potong */}
+      <AbsoluteFill style={{ background: skin.text, opacity: flash * 0.5, pointerEvents: "none" }} />
+
+      {/* identitas: kecil, di sudut */}
       <div
         style={{
           position: "absolute",
-          top: 56,
-          left: M,
-          right: M,
+          left: X,
+          top: 46,
           display: "flex",
-          justifyContent: "space-between",
           alignItems: "center",
-          opacity: 0.75,
+          gap: 12,
+          opacity: 0.62,
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <Img src={staticFile("logo-mark.png")} style={{ width: 38, height: 38 }} />
-          <span
-            style={{
-              ...MONO,
-              color: CREAM,
-              fontSize: 20,
-              letterSpacing: "0.30em",
-            }}
-          >
-            KNOT THEORY
-          </span>
-        </div>
-        <span style={{ ...MONO, fontSize: 19, letterSpacing: "0.22em" }}>
-          {chapter}
+        <Img src={staticFile("logo-mark.png")} style={{ width: 26, height: 26 }} />
+        <span
+          style={{
+            fontFamily: "Plex Mono",
+            fontSize: 20,
+            letterSpacing: "0.34em",
+            color: skin.text,
+          }}
+        >
+          KNOT THEORY
         </span>
       </div>
 
+      {/* sumber: muncul sebentar di awal tiap bab */}
       <div
         style={{
           position: "absolute",
-          bottom: 62,
-          left: M,
-          right: M,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
+          left: X,
+          bottom: 54,
+          opacity: interpolate(showSource ? 1 : 0, [0, 1], [0, 0.55]),
         }}
       >
-        <span style={{ ...MONO, fontSize: 17, maxWidth: 1180 }}>{source}</span>
-        <span style={{ ...MONO, fontSize: 17 }}>
-          {String(Math.floor(frame / fps / 60)).padStart(2, "0")}:
-          {String(Math.floor(frame / fps) % 60).padStart(2, "0")}
+        <span style={{ fontFamily: "Plex Mono", fontSize: 21, letterSpacing: "0.06em", color: skin.muted }}>
+          {source}
         </span>
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          bottom: 0,
-          height: 3,
-          background: "rgba(239,231,220,0.10)",
-        }}
-      >
+      {/* progres tipis */}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 3, background: skin.hair }}>
         <div
           style={{
-            width: `${Math.min(100, (frame / durationInFrames) * 100)}%`,
+            width: `${Math.min(1, frame / Math.max(1, total)) * 100}%`,
             height: "100%",
-            background: ROSE,
+            background: active.light ? "#8B7FB0" : LILAC,
             opacity: 0.8,
           }}
         />
