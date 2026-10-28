@@ -41,9 +41,11 @@ Empat karakter AI untuk ceruk *beauty* Indonesia. Bukan empat variasi dari wajah
 | [`projects/tropical-climate/`](projects/tropical-climate/) | **"Kulit Tropis, Formula Subtropis"** — video 3:11, 10 adegan, narasi saja, tanpa karakter. |
 | [`projects/tropical-climate/research.md`](projects/tropical-climate/research.md) | Riset 13 sumber: zona iklim IVb, sains humektan/oklusif, UV, stabilitas panas. |
 | [`projects/tropical-climate/shots.md`](projects/tropical-climate/shots.md) | Pemetaan shot dari video-shotcraft + aturan gerak yang diterapkan. |
-| [`projects/tropical-climate/out/tropical-subtropis-web.mp4`](projects/tropical-climate/out/tropical-subtropis-web.mp4) | Film final. |
+| [`projects/tropical-climate/out/tropical-subtropis-COMPLETE.mp4`](projects/tropical-climate/out/tropical-subtropis-COMPLETE.mp4) | Film final 3:16 — bumper Remotion + 10 adegan + musik + sound design. |
+| [`projects/tropical-climate/chromium-notes.md`](projects/tropical-climate/chromium-notes.md) | Koreksi: Chromium **bisa** jalan; cara render Remotion di sandbox ini. |
+| [`projects/tropical-climate/audio_build.py`](projects/tropical-climate/audio_build.py) | Sintesis musik + SFX, ducking, loudnorm -16 LUFS. |
 
-> Catatan jujur: `video-shotcraft` adalah skill Remotion dan butuh Chromium — tidak bisa dirender di lingkungan ini (dibuktikan di `projects/tropical-climate/README.md`). Yang dipakai adalah tata bahasa geraknya, diimplementasikan ulang dengan Pillow + ffmpeg.
+> **Koreksi penting:** saya sempat menyimpulkan Chromium tidak bisa jalan di sini. **Itu salah.** `@sparticuz/chromium` membawa `libnspr4.so`/`libnss3.so` di dalam paketnya, hanya saja tidak diekstrak di Debian. Setelah diekstrak manual + `LD_LIBRARY_PATH`, **Remotion render normal** — bumper film ini dibuat dengan komponen asli `PaperTitleCard` dari video-shotcraft. Detail: [`chromium-notes.md`](projects/tropical-climate/chromium-notes.md).
 
 ---
 

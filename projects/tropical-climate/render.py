@@ -579,13 +579,13 @@ def scene10(t, dur, img):
     img.paste(Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB"), (0, 0))
 
     band(img, 520, 1010, 0.70)
-    words_reveal(img, "KULIT TROPIS.", font(SERIF, 104), 560, PAPER, t, 0.3, maxw=940)
-    words_reveal(img, "FORMULA TROPIS.", font(SERIF, 104), 690, TERRA, t, 1.2, maxw=940)
-    rule(img, 860, t, 2.4, 620, GOLD)
+    words_reveal(img, "KULIT TROPIS.", font(SERIF, 96), 560, PAPER, t, 0.3, maxw=940)
+    words_reveal(img, "FORMULA TROPIS.", font(SERIF, 96), 680, TERRA, t, 1.2, maxw=940)
+    rule(img, 900, t, 2.4, 620, GOLD)
 
     a = int(255 * clamp((t - 4.6) / 0.6))
     if a > 2:
-        text_center(img, "kotamu mana?", font(SANS_B, 66), 940, GOLD, a)
+        text_center(img, "kotamu mana?", font(SANS_B, 64), 960, GOLD, a)
 
     a2 = int(255 * clamp((t - 6.4) / 0.7))
     if a2 > 2:
