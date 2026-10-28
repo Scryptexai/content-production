@@ -3,3 +3,11 @@ build/
 __pycache__/
 *.pyc
 projects/*/build/
+
+# Remotion / Node
+node_modules/
+projects/*/remotion/.cache/
+
+# Hasil render besar → simpan di Drive, jangan di git
+projects/*/remotion/out/
+projects/*/out/*.mp4

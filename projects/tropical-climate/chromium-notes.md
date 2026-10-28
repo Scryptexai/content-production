@@ -120,9 +120,26 @@ Efek yang diwarisi dari komponen itu: *letterpress word-by-word*, aksen amber it
 | Batasan | Dampak | Jalan keluar |
 |---|---|---|
 | Chromium **shell** (tanpa GPU) | render lambat, 12 fps | pakai `--concurrency` lebih tinggi di mesin >2 core |
-| 2 vCPU / 3 GB RAM | 10 menit untuk 3 menit video | sama |
+| 2 vCPU / 4 GB RAM | ~10 menit untuk 3 menit video | naikkan core |
 | `/tmp` tidak persis | lib harus diekstrak ulang tiap sesi | taruh ekstraksi di skrip build |
-| Renderer dua lapis (Remotion + Pillow) | dua sumber gaya | migrasikan 10 scene ke Remotion bila ingin satu pipeline |
+| ~~Renderer dua lapis~~ | **sudah beres** — 10 adegan kini Remotion | — |
+| `delayRender` font menggantung di tab kedua | render mati di frame ~400 (pesan menyesatkan: "loadFont requires url") | jangan pakai `@remotion/fonts`; tanam woff2 sebagai data URI + gate yang selalu `continueRender` |
+| Satu tab merender 6.000 frame | tab makin berat, render panjang rawan mati | pecah jadi chunk 800 frame (`remotion/render-chunks.sh`), gabung `-c copy` |
+| Frame JPEG keluar `yuvj420p` | player bisa salah baca range → warna pudar/pekat | re-encode final `-pix_fmt yuv420p -colorspace bt709 -color_range tv` |
+
+## 5b. Dua jebakan yang baru ketemu saat migrasi penuh
+
+**1. `@remotion/fonts` + `--concurrency=2` = render mati di tengah.**
+Gejalanya: `A delayRender() "Loading font …" was called but not cleared after 28000ms`,
+selalu sekitar frame 395–405 (tab kedua mulai dari frame itu). Pesan errornya
+menyesatkan — seolah `url` kosong, padahal masalahnya `font.load()` tidak pernah
+resolve. Gantinya: woff2 ditanam sebagai data URI (`scripts/embed-fonts.mjs` →
+`src/film/fontData.ts`) dan sebuah `FontGate` yang melepas handle di `finally`
+plus timeout pengaman 8 detik. Setelah itu 800 frame selesai tanpa gagal.
+
+**2. `remotion render` penuh (5.909 frame) tidak stabil di 2 vCPU/4 GB.**
+Solusi: render per 800 frame lewat `render-chunks.sh` (tiap potongan mulai dari
+browser baru), lalu `ffmpeg -f concat -c copy`. Waktu total ~10 menit.
 
 ---
 

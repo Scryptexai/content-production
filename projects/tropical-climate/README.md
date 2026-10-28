@@ -3,8 +3,10 @@
 
 > **Tesis:** produk yang kamu pakai pagi ini kemungkinan dibuat untuk kulit yang hidup di 12 °C. Kamu tinggal di 30 °C dengan kelembapan 80%.
 
-**Film final:** [`out/tropical-subtropis-COMPLETE.mp4`](out/tropical-subtropis-COMPLETE.mp4)
-**Durasi:** 3 menit 16 detik · 1080×1920 · 30 fps · -16 LUFS · audio stereo
+**Film final:** `out/tropical-remotion-COMPLETE.mp4` — dirender penuh oleh **Remotion** (`remotion/`), 3 menit 16 detik · 1080×1920 · 30 fps · −16 LUFS · audio stereo.
+
+> File MP4 berukuran besar **tidak disimpan di git**. Hasil render ada di folder Drive proyek; repo ini hanya berisi kode, aset kecil, dan dokumen.
+> Versi Pillow sebelumnya (`out/tropical-subtropis-COMPLETE.mp4`) tetap ada di riwayat commit sebagai arsip.
 
 ---
 
@@ -22,7 +24,7 @@ Riset lengkap + 13 sumber: [`research.md`](research.md).
 
 | Bagian | Isi | Durasi |
 |---|---|---|
-| **Bumper** | **Remotion** — `PaperTitleCard` dari video-shotcraft, di-reskin | 0:05 |
+| **Bumper** | **Remotion** — kartu judul editorial, reskin palet film | 0:05 |
 | 01 Cold open | 12 °C Eropa → *hard cut* Jakarta | 0:15 |
 | 02 Data | 27–30 °C · 74–84% RH · UV 11 | 0:14 |
 | 03 Frame | "Bukan detail kecil. Dua lingkungan, dua kimia." | 0:11 |
@@ -54,12 +56,18 @@ Hasil ukur: **-16.0 LUFS, true peak -1.4 dBTP, LRA 2.2 LU**.
 
 ## Teknis
 
-### Dua renderer, satu film
+### Satu renderer: Remotion
 
 | Bagian | Renderer | Alasan |
 |---|---|---|
-| **Bumper (5 detik)** | **Remotion 4.0** + Chromium — komponen asli video-shotcraft | teks vektor, letterpress animation, presisi frame |
-| **10 adegan (3:11)** | **Pillow + ffmpeg** (`render.py`) | motion graphics 2D + data viz; 40–90 detik per adegan |
+| **Bumper + 10 adegan (3:17)** | **Remotion 4.0** + Chromium (`remotion/`) | semua teks & diagram vektor/DOM, presisi frame, satu timeline |
+| Audio | `audio_build.py` (numpy + ffmpeg) | musik & SFX disintesis sendiri, lalu dimux setelah render |
+
+Versi lama memakai Pillow (`render.py`) untuk 10 adegan — rasterisasi per frame.
+Pillow mewarnai teks setelah resize, jadi huruf kehilangan ketajaman. Remotion
+menggambar DOM pada ukuran akhir: tidak ada teks yang diskalakan sebagai gambar,
+dan karena itu tidak ada lagi kompromi "huruf harus digambar ulang". `render.py`
+masih disimpan sebagai acuan copy/layout.
 
 ### Chromium: koreksi penting
 
@@ -74,21 +82,26 @@ Detail lengkap, termasuk dua jebakan Remotion lain (`--concurrency=2` wajib di 2
 ```
 riset 13 sumber → narasi 10 segmen → TTS per segmen (durasi presisi)
         ↓
-8 gambar AI 9:16 → render.py (Pillow motion graphics) → 10 klip
+8 gambar AI 9:16 → Remotion (bumper + 10 adegan, DOM/SVG) → MP4 senyap
         ↓                                    ↓
-   audio_build.py (musik + SFX + ducking)  ─┘
-        ↓
-   Remotion (bumper) → concat → encode 3 Mbps → MP4
+   audio_build.py (musik + SFX + ducking)  ─┘ → mux → MP4 final
 ```
 
 ### Jalankan ulang
 
 ```bash
-python3 -m pip install --break-system-packages numpy pillow imageio-ffmpeg
-python3 render.py            # 10 adegan
-python3 audio_build.py       # musik + mix
-# bumper: lihat chromium-notes.md §3
+npm --prefix remotion install
+# Chromium: lihat remotion/README.md §2 (ekstrak al2023.tar.br)
+LD_LIBRARY_PATH=/tmp/al2023/lib npx --prefix remotion remotion render \
+  remotion/src/index.ts TropicalFilm remotion/out/film-silent.mp4 \
+  --browser-executable=/tmp/chromium --concurrency=2 --muted --crf=20
+
+python3 audio_build.py       # → build/mix.wav (musik + narasi + SFX)
+# mux: lihat remotion/README.md §5
 ```
+
+Detail perintah, tabel durasi per adegan, dan catatan jebakan Remotion:
+[`remotion/README.md`](remotion/README.md).
 
 ---
 
@@ -99,11 +112,12 @@ projects/tropical-climate/
 ├── research.md          # 13 sumber: WHO TRS 953, ICH Q1A(R2), iklim Jakarta, sains humektan
 ├── shots.md             # pemetaan shot + aturan shotcraft yang dipakai
 ├── chromium-notes.md    # koreksi Chromium + cara render Remotion
-├── render.py            # 10 adegan (Pillow → ffmpeg)
+├── remotion/            # renderer aktif: src/film/{Bumper,scenes,Film,atoms,fonts}
+├── render.py            # arsip renderer Pillow (acuan copy & layout)
 ├── audio_build.py       # sintesis musik + SFX + mix
 ├── assets/              # 8 gambar AI 9:16
 ├── audio/               # 10 narasi
-└── out/                 # film final
+└── out/                 # film final (di-.gitignore, ada di Drive)
 ```
 
 ---
@@ -116,7 +130,7 @@ Tanpa merek, tanpa afiliasi, tanpa klaim khasiat. Tidak ada "menyembuhkan/menghi
 
 ## Yang bisa ditingkatkan berikutnya
 
-1. **Migrasikan 10 adegan ke Remotion** — satu pipeline, dan semua motion graphics jadi vektor (tajam di semua ukuran). Chromium sudah terbukti jalan.
-2. **Subtitle burned-in** — mayoritas penonton menonton tanpa suara.
-3. **Potong 3 klip pendek** 30–45 detik untuk feed.
-4. **Versi 16:9** untuk YouTube.
+1. **Subtitle burned-in** — mayoritas penonton menonton tanpa suara.
+2. **Potong 3 klip pendek** 30–45 detik untuk feed.
+3. **Versi 16:9** untuk YouTube (cukup tambah composition di `remotion/src/Root.tsx`).
+4. **VO bahasa Inggris** + timing yang sama untuk pasar ekspat.
