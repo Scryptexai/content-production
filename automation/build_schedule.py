@@ -100,7 +100,7 @@ def caption_for(c, platform: str) -> tuple[str, str]:
         return c["title"], body
     body = (
         f"{c['caption']}\n\n"
-        f"{c['promise']}\n\n"
+        f"{c['tool']}\n\n"
         f"Sumber: {c['source']}\n\n"
         f"Seri: {c['series']}\n\n"
         f"{DISCLOSURE}\n"
