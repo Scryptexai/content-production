@@ -1,13 +1,24 @@
-build/
-.ffmpeg-path
+# Python
 __pycache__/
 *.pyc
-projects/*/build/
+build/
 
-# Remotion / Node
+# Node / Remotion
 node_modules/
-projects/*/remotion/.cache/
-
-# Hasil render besar → simpan di Drive, jangan di git
+.cache/
 projects/*/remotion/out/
 projects/*/out/*.mp4
+
+# Hasil produksi besar → Drive, bukan git
+assets/video/
+assets/plates/*.mp4
+out/
+
+# Rahasia — tidak pernah masuk repo
+.env
+.env.*
+!.env.example
+automation/zernio/.zernio-mapping.json
+
+# OS
+.DS_Store

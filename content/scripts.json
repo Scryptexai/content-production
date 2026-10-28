@@ -1,0 +1,1061 @@
+{
+  "meta": {
+    "version": 1,
+    "note": "Sumber tunggal skrip M2. Dibaca automation/build_schedule.py"
+  },
+  "contents": [
+    {
+      "id": "B01",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "durationSec": 62,
+      "title": "Kenapa krim yang sama terasa beda di Jakarta dan Seoul",
+      "hook": "Krim yang kamu puji di Tokyo bisa jadi lengket di Jakarta. Bukan produknya yang berubah.",
+      "vo": [
+        "Krim yang sama, dua kota, dua hasil.",
+        "Di Seoul, kelembapan udara sekitar 55 persen. Krim menahan air di kulit.",
+        "Di Jakarta, kelembapan 75 sampai 84 persen. Krim yang sama menahan keringat, bukan air.",
+        "Jadi yang kamu rasakan bukan 'produknya jelek', tapi produk itu dibuat untuk udara yang lebih kering.",
+        "Satu pertanyaan: produkmu dibuat untuk kelembapan berapa persen?"
+      ],
+      "onscreen": [
+        "55% RH",
+        "74–84% RH",
+        "bukan produknya — iklimnya"
+      ],
+      "visual": "Split-screen dua jendela (Seoul dingin / Jakarta lembap) + garis RH bergerak, angka besar di tengah.",
+      "caption": "Produk yang sama, dua iklim, dua hasil. Cek RH kotamu dulu sebelum menyalahkan produk.",
+      "hashtags": [
+        "#kulittropis",
+        "#kelembapanudara",
+        "#skincaretropis"
+      ],
+      "source": "Data RH Jakarta 74–84% (BMKG/Weather2Travel 2026); prinsip humektan-oklusif pada RH tinggi (WHO TRS 953, zona IVb)",
+      "tool": "Pertanyaan penutup: 'produkmu dibuat untuk RH berapa?'",
+      "promise": "Satu klaim: tekstur produk berubah menurut kelembapan udara, bukan menurut merek."
+    },
+    {
+      "id": "B02",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "durationSec": 58,
+      "title": "Kenapa wajahmu lengket jam 10 pagi",
+      "hook": "Kalau wajahmu lengket dua jam setelah skincare, itu bukan karena kamu pakai terlalu banyak.",
+      "vo": [
+        "Humektan seperti gliserin bekerja dengan menarik air.",
+        "Di udara lembap, ada banyak air di sekitar kulit. Gliserin menariknya ke permukaan.",
+        "Hasilnya lapisan tipis yang tidak menguap. Itu yang terasa lengket.",
+        "Di atas lima sampai delapan persen gliserin, efek lengketnya naik tajam.",
+        "Pertanyaannya: kamu butuh menarik air, atau menahan air?"
+      ],
+      "onscreen": [
+        "humektan = menarik air",
+        ">5–8% gliserin → lengket",
+        "lembap ≠ butuh humektan"
+      ],
+      "visual": "Diagram tetes: panah masuk dari udara ke kulit, lapisan lengket disorot warna terra.",
+      "caption": "Lengket jam 10 pagi biasanya bukan dosis, tapi arah kerja bahannya.",
+      "hashtags": [
+        "#kulittropis",
+        "#gliserin",
+        "#ilmukulit"
+      ],
+      "source": "Sifat humektan gliserin & ambang lengket >5–8% (literatur formulasi kosmetik)",
+      "tool": "Pertanyaan: 'kamu butuh menarik air atau menahan air?'",
+      "promise": "Satu klaim: lengket berasal dari humektan yang menarik air dari udara lembap."
+    },
+    {
+      "id": "B03",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "durationSec": 65,
+      "title": "SPF 50 bukan berarti 50 kali lebih aman",
+      "hook": "SPF 50 bukan 50 kali lebih kuat dari SPF 1. Ini arti angkanya sebenarnya.",
+      "vo": [
+        "SPF mengukur seberapa lama kulitmu terlindungi dari UVB.",
+        "SPF 30 memblokir sekitar 97 persen UVB. SPF 50 sekitar 98 persen.",
+        "Selisihnya satu persen, bukan dua puluh kali.",
+        "Yang berubah drastis bukan angkanya, tapi cara kamu memakainya: dua jam sekali, dua ruas jari.",
+        "Jadi pertanyaannya bukan SPF berapa, tapi berapa kali kamu pakai ulang?"
+      ],
+      "onscreen": [
+        "SPF 30 ≈ 97%",
+        "SPF 50 ≈ 98%",
+        "selisih 1%, bukan 20×"
+      ],
+      "visual": "Dua lingkaran proteksi bertumpuk dengan label persen; angka besar '1%' muncul di akhir.",
+      "caption": "Selisih SPF 30 dan 50 cuma sekitar satu persen UVB. Yang menentukan adalah reapply.",
+      "hashtags": [
+        "#kulittropis",
+        "#spf",
+        "#uvb"
+      ],
+      "source": "Definisi SPF & persentase blokir UVB standar (SPF 30 ≈ 96,7%, SPF 50 ≈ 98%)",
+      "tool": "Pertanyaan: 'berapa kali kamu reapply hari ini?'",
+      "promise": "Satu klaim: perbedaan SPF 30 vs 50 kecil; kepatuhan memakai ulang lebih menentukan."
+    },
+    {
+      "id": "B04",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "durationSec": 60,
+      "title": "PA++++ itu UV apa, dan kenapa wajib di Indonesia",
+      "hook": "SPF melindungi dari terbakar. PA melindungi dari yang membuatmu menua.",
+      "vo": [
+        "Matahari mengirim dua hal: UVB dan UVA.",
+        "UVB yang membuat kulit terbakar. SPF mengukurnya.",
+        "UVA menembus kaca, sampai ke dermis, dan itu yang membuat bercak serta kerutan.",
+        "Di garis khatulistiwa, UVA tidak ikut musim. Sepanjang tahun levelnya tinggi.",
+        "PA++++ adalah label untuk perlindungan UVA tertinggi. Bukan kemewahan, syarat minimum."
+      ],
+      "onscreen": [
+        "UVB → terbakar (SPF)",
+        "UVA → menua & bercak (PA)",
+        "PA++++ = level tertinggi"
+      ],
+      "visual": "Gauge setengah lingkaran bergerak ke kanan; ikon jendela memperlihatkan UVA menembus kaca.",
+      "caption": "SPF menjawab 'terbakar'. PA menjawab 'menua'. Di Indonesia dua-duanya perlu.",
+      "hashtags": [
+        "#kulittropis",
+        "#pa",
+        "#uva",
+        "#spfsetiaphari"
+      ],
+      "source": "ICH/ISO pengukuran PPD & pelabelan PA; karakteristik UVA di lintang rendah",
+      "tool": "Pertanyaan: 'sunscreenmu punya PA berapa?'",
+      "promise": "Satu klaim: SPF dan PA mengukur dua hal berbeda; di tropis keduanya wajib."
+    },
+    {
+      "id": "B05",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "durationSec": 63,
+      "title": "Oklusif saat kelembapan 80% = rumah kaca",
+      "hook": "Di udara yang sudah 80% lembap, oklusif bukan menyelamatkan. Ia mengurung.",
+      "vo": [
+        "Oklusif seperti petrolatum bekerja dengan membentuk lapisan yang menahan air keluar.",
+        "Itu bagus di udara kering, saat air kulit mudah menguap.",
+        "Di kelembapan 80 persen, penguapan sudah lambat. Menambah lapisan penutup berarti keringat dan panas ikut tertahan.",
+        "Yang muncul bukan lembap, tapi rasa sesak dan jerawat kecil.",
+        "Pertanyaannya: kamu memakai oklusif karena butuh, atau karena rutinitas?"
+      ],
+      "onscreen": [
+        "oklusif = menahan keluar",
+        "RH 80% → penguapan sudah lambat",
+        "terkurung ≠ terhidrasi"
+      ],
+      "visual": "Diagram lapisan: keringat naik lalu tertahan garis terra; termometer kecil naik.",
+      "caption": "Oklusif bukan musuh — cuma salah waktu. Di RH 80% ia menahan yang seharusnya keluar.",
+      "hashtags": [
+        "#kulittropis",
+        "#oklusif",
+        "#petrolatum"
+      ],
+      "source": "Mekanisme oklusif & efeknya pada RH tinggi (WHO TRS 953; literatur barrier function)",
+      "tool": "Pertanyaan: 'butuh atau kebiasaan?'",
+      "promise": "Satu klaim: oklusif bekerja berlawanan arah pada kelembapan sangat tinggi."
+    },
+    {
+      "id": "B06",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "durationSec": 67,
+      "title": "Produk 'lulus uji stabilitas' tapi gagal di kamu",
+      "hook": "Produk ini lulus uji stabilitas. Tapi ujinya dilakukan di ruangan 25 derajat.",
+      "vo": [
+        "Uji stabilitas kosmetik punya peta zona iklim.",
+        "Zona dua, Eropa: 25 derajat, kelembapan 60 persen.",
+        "Zona empat B, Indonesia: 30 derajat, kelembapan 75 persen.",
+        "Lima derajat dan lima belas persen bukan angka kecil untuk emulsi. Pemisahan fase, oksidasi, dan bau tengik lebih cepat terjadi.",
+        "Jadi 'lulus uji' itu benar — untuk ruangan yang bukan kamarmu."
+      ],
+      "onscreen": [
+        "Zona II · 25°C / 60%",
+        "Zona IVb · 30°C / 75%",
+        "lulus di mana?"
+      ],
+      "visual": "Peta zona iklim dunia dengan dua kotak menyala (Eropa, Indonesia) + dua bar suhu/kelembapan.",
+      "caption": "'Lulus uji stabilitas' tidak berarti lulus di iklimmu. Zona II dan IVb beda 5°C dan 15% RH.",
+      "hashtags": [
+        "#kulittropis",
+        "#stabilitas",
+        "#zonaklim"
+      ],
+      "source": "ICH Q1A(R2) & WHO TRS 953 — zona iklim II (25°C/60% RH) dan IVb (30°C/75% RH); ASEAN Stability Guideline",
+      "tool": "Pertanyaan: 'produkmu diuji di zona berapa?'",
+      "promise": "Satu klaim: syarat lulus uji stabilitas bergantung zona iklim."
+    },
+    {
+      "id": "B07",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "durationSec": 59,
+      "title": "Setiap +10 derajat, reaksi kimia berlipat dua",
+      "hook": "Setiap kenaikan 10 derajat, reaksi kimia di produkmu berjalan dua kali lebih cepat.",
+      "vo": [
+        "Aturan kasar dalam kimia: laju reaksi berlipat dua setiap kenaikan 10 derajat Celsius.",
+        "Suatu produk yang stabil 24 bulan di 25 derajat, bisa kehilangan setengah waktunya di 35 derajat.",
+        "Di dalam mobil yang terparkir, suhu bisa lewat 40 derajat.",
+        "Itu bukan 'produknya kadaluarsa', itu produknya menua lebih cepat dari yang kamu kira.",
+        "Pertanyaan: produkmu disimpan di mana?"
+      ],
+      "onscreen": [
+        "+10°C → 2× laju",
+        "25°C: 24 bulan",
+        "40°C: jauh lebih singkat"
+      ],
+      "visual": "Kurva eksponensial gold tumbuh ke kanan; penanda 25°, 30°, 40° menyala.",
+      "caption": "Aturan Q10: +10°C ≈ 2× laju reaksi. Lemari kamar mandi bisa jadi tempat produkmu menua cepat.",
+      "hashtags": [
+        "#kulittropis",
+        "#q10",
+        "#penyimpanan"
+      ],
+      "source": "Aturan Q10 / van't Hoff (laju reaksi ≈ 2× per +10°C); skenario suhu kabin mobil",
+      "tool": "Pertanyaan: 'produkmu disimpan di mana?'",
+      "promise": "Satu klaim: suhu penyimpanan mengubah umur produk secara eksponensial."
+    },
+    {
+      "id": "B08",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "durationSec": 61,
+      "title": "Skincare di dalam mobil 40 derajat",
+      "hook": "Kamu meninggalkan serum di mobil dua jam. Suhunya bukan 30 derajat.",
+      "vo": [
+        "Kabin mobil yang terparkir di Jakarta bisa melewati 40 derajat.",
+        "Di suhu itu, laju oksidasi dan pemisahan emulsi berjalan jauh lebih cepat daripada di kamar.",
+        "Vitamin C, retinol, dan minyak nabati adalah yang paling cepat berubah.",
+        "Tandanya bukan selalu bau. Kadang hanya warna yang menguning dan tekstur yang pecah.",
+        "Pertanyaan: berapa lama produkmu ada di dalam tas, di mobil, di motor?"
+      ],
+      "onscreen": [
+        "kabin > 40°C",
+        "vitamin C · retinol · minyak",
+        "berubah tanpa bau"
+      ],
+      "visual": "Dashboard mobil dengan panas bergelombang; ikon molekul pecah berkedip terra.",
+      "caption": "Dua jam di mobil bisa lebih merusak daripada dua bulan di lemari.",
+      "hashtags": [
+        "#kulittropis",
+        "#vitaminc",
+        "#penyimpanan"
+      ],
+      "source": "Skenario suhu kabin kendaraan terparkir; aturan Q10; stabilitas asam askorbat",
+      "tool": "Pertanyaan: 'di mana produkmu berada hari ini?'",
+      "promise": "Satu klaim: panas kabin mempercepat kerusakan bahan aktif."
+    },
+    {
+      "id": "B09",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "durationSec": 57,
+      "title": "Yang membunuh vitamin C bukan matahari, tapi oksigen",
+      "hook": "Kamu menyimpan vitamin C di tempat gelap. Itu bagus. Tapi masalah utamanya bukan cahaya.",
+      "vo": [
+        "Asam askorbat rusak terutama karena oksigen, bukan hanya karena cahaya.",
+        "Setiap kali botol dibuka, udara masuk. Setiap tetes yang menempel di ujung pipet juga.",
+        "Itu sebabnya botol gelap dan tutup rapat membantu, tapi tidak menyelesaikan.",
+        "Yang menyelesaikan: botol kecil, cepat habis, dan disimpan di lemari, bukan kamar mandi.",
+        "Pertanyaan: berapa bulan satu botol bertahan di mejamu?"
+      ],
+      "onscreen": [
+        "oksigen > cahaya",
+        "botol kecil = lebih cepat habis",
+        "lemari, bukan kamar mandi"
+      ],
+      "visual": "Botol serum terbuka dengan aliran udara masuk; timer 3 bulan berjalan di sudut.",
+      "caption": "Oksigen, bukan matahari, yang paling cepat membunuh vitamin C.",
+      "hashtags": [
+        "#kulittropis",
+        "#vitaminc",
+        "#oksidasi"
+      ],
+      "source": "Degradasi asam askorbat: oksidasi sebagai jalur utama; praktik pengemasan kedap udara",
+      "tool": "Pertanyaan: 'satu botol bertahan berapa bulan?'",
+      "promise": "Satu klaim: oksigen adalah penyebab utama kerusakan vitamin C, bukan cahaya saja."
+    },
+    {
+      "id": "B10",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "durationSec": 64,
+      "title": "Niacinamide 5% vs 10%: kapan naik dosis berhenti menolong",
+      "hook": "Niacinamide dua persen sudah bekerja. Sepuluh persen belum tentu dua kali lebih baik.",
+      "vo": [
+        "Niacinamide membantu barrier dan produksi sebum pada kadar rendah.",
+        "Studi klinis umumnya memakai dua sampai lima persen.",
+        "Di atas itu, kurvanya mendatar sementara risiko iritasi naik.",
+        "Jadi 'lebih tinggi lebih baik' bukan aturan umum dalam kosmetik.",
+        "Pertanyaan: kamu menaikkan kadar karena hasil, atau karena label?"
+      ],
+      "onscreen": [
+        "2–5% cukup",
+        "di atas itu kurva mendatar",
+        "iritasi ↑"
+      ],
+      "visual": "Kurva dosis-respons: naik lalu datar; dua penanda 5% dan 10% dengan label 'plateau'.",
+      "caption": "Bukan soal berapa persen, tapi di titik mana manfaat berhenti bertambah.",
+      "hashtags": [
+        "#kulittropis",
+        "#niacinamide",
+        "#bahanaktif"
+      ],
+      "source": "Rentang kadar niacinamide pada studi klinis (2–5%); prinsip dose-response kosmetik",
+      "tool": "Pertanyaan: 'naik kadar karena hasil atau label?'",
+      "promise": "Satu klaim: manfaat niacinamide mendatar di atas kadar tertentu."
+    },
+    {
+      "id": "B11",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "durationSec": 66,
+      "title": "Tiga tanda skin barrier rusak (dan satu yang sering salah dibaca)",
+      "hook": "Kulit perih saat pakai air? Itu bukan tanda produknya kuat.",
+      "vo": [
+        "Barrier kulit bekerja seperti dinding bata: sel kulit dan lemak di antaranya.",
+        "Tanda rusaknya: perih saat kena air, kemerahan yang tidak turun, dan kulit terasa kencang meski lembap.",
+        "Yang sering salah dibaca: minyak berlebih. Kulit bisa memproduksi minyak lebih banyak saat barrier terganggu.",
+        "Jadi menambah eksfoliasi saat barrier rusak memperparah, bukan memperbaiki.",
+        "Pertanyaan: tiga hari terakhir, kamu menambah produk atau mengurangi?"
+      ],
+      "onscreen": [
+        "perih kena air",
+        "merah tak turun",
+        "kencang meski lembap",
+        "minyak ≠ sehat"
+      ],
+      "visual": "Diagram dinding bata retak, lalu animasi retak makin lebar; warna terra untuk kerusakan.",
+      "caption": "Barrier rusak tidak selalu kering. Kadang justru berminyak.",
+      "hashtags": [
+        "#kulittropis",
+        "#skinbarrier",
+        "#ilmukulit"
+      ],
+      "source": "Konsep barrier function (stratum corneum, lipid matrix); tanda klinis gangguan barrier",
+      "tool": "Pertanyaan: 'kamu menambah atau mengurangi?'",
+      "promise": "Satu klaim: minyak berlebih bisa menjadi tanda barrier terganggu, bukan kulit kuat."
+    },
+    {
+      "id": "B12",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "durationSec": 56,
+      "title": "Busa banyak bukan berarti lebih bersih",
+      "hook": "Kalau cleansermu berbusa banyak, itu belum tentu tanda kulitmu bersih.",
+      "vo": [
+        "Busa berasal dari surfaktan. Jumlah busa tidak mengukur jumlah kotoran yang terangkat.",
+        "Cleanser berbusa kuat cocok untuk kulit berminyak tebal, bukan untuk barrier yang sedang sensitif.",
+        "Di iklim lembap, banyak orang justru butuh cleanser yang lebih lembut, bukan lebih kuat.",
+        "Yang perlu diukur: apakah kulit terasa kencang lima menit setelah cuci?",
+        "Kalau iya, cleansermu terlalu kuat."
+      ],
+      "onscreen": [
+        "busa bukan kebersihan",
+        "kencang 5 menit = terlalu kuat",
+        "lembut bukan berarti tidak bersih"
+      ],
+      "visual": "Gelembung busa besar vs tetesan lembut; stopwatch 5 menit berjalan di sudut.",
+      "caption": "Busa itu surfaktan, bukan pengukur kebersihan.",
+      "hashtags": [
+        "#kulittropis",
+        "#cleanser",
+        "#surfaktan"
+      ],
+      "source": "Kimia surfaktan & sensasi after-feel sebagai indikator kekuatan cleanser",
+      "tool": "Pertanyaan: 'kulitmu terasa kencang setelah cuci?'",
+      "promise": "Satu klaim: volume busa tidak berkorelasi dengan kebersihan kulit."
+    },
+    {
+      "id": "B13",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "durationSec": 63,
+      "title": "Humektan, emolien, oklusif: tiga lapis yang sering tertukar",
+      "hook": "Pelembap bukan satu bahan. Ia tiga peran yang berbeda.",
+      "vo": [
+        "Humektan menarik air. Gliserin, asam hialuronat.",
+        "Emolien mengisi celah antar sel dan membuat kulit terasa halus. Biasanya lipid atau ester.",
+        "Oklusif menahan penguapan. Petrolatum, lilin, silikon tebal.",
+        "Urutannya bukan selera: humektan dulu saat kulit masih lembap, lalu emolien, oklusif hanya bila perlu.",
+        "Pertanyaan: produkmu mengisi peran yang mana?"
+      ],
+      "onscreen": [
+        "humektan = tarik",
+        "emolien = isi",
+        "oklusif = tahan"
+      ],
+      "visual": "Tiga lapisan bertumpuk yang menyala bergantian; label peran muncul satu per satu.",
+      "caption": "Kalau kamu tahu tiga peran ini, kamu bisa membaca semua label pelembap.",
+      "hashtags": [
+        "#kulittropis",
+        "#pelembap",
+        "#bahanaktif"
+      ],
+      "source": "Klasifikasi humektan/emolien/oklusif dalam formulasi kosmetik",
+      "tool": "Pertanyaan: 'produkmu mengisi peran yang mana?'",
+      "promise": "Satu klaim: pelembap adalah tiga fungsi berbeda yang sering dicampur."
+    },
+    {
+      "id": "B14",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "durationSec": 62,
+      "title": "Jerawat bukan karena wajahmu kotor",
+      "hook": "Jerawat bukan bukti kamu kurang bersih. Ini empat penyebab yang lebih sering.",
+      "vo": [
+        "Jerawat terbentuk dari sumbatan folikel, produksi sebum, dan peradangan.",
+        "Penyebab yang lebih sering: gesekan helm atau masker, produk oklusif berlebih, hormon, dan tekanan.",
+        "Mencuci lebih sering tidak mengubah satu pun dari itu, dan bisa merusak barrier.",
+        "Yang mengubah: mengurangi oklusif, mengganti tekstur, dan memberi waktu.",
+        "Pertanyaan: berapa jam sehari kulitmu bergesekan dengan kain atau helm?"
+      ],
+      "onscreen": [
+        "sumbatan + sebum + radang",
+        "gesekan · oklusif · hormon",
+        "bukan soal kebersihan"
+      ],
+      "visual": "Diagram folikel tersumbat; ikon helm dan masker muncul dengan garis gesekan terra.",
+      "caption": "Empat penyebab ini lebih sering daripada 'kurang bersih'.",
+      "hashtags": [
+        "#kulittropis",
+        "#jerawat",
+        "#breakout"
+      ],
+      "source": "Patogenesis akne (folikel, sebum, inflamasi); faktor mekanis (akne mekanika)",
+      "tool": "Pertanyaan: 'berapa jam kulit bergesekan?'",
+      "promise": "Satu klaim: jerawat adalah sumbatan + sebum + radang, bukan indikator kebersihan."
+    },
+    {
+      "id": "B15",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "durationSec": 61,
+      "title": "AHA dan BHA di iklim lembap: bedanya bukan kuat-lemah",
+      "hook": "AHA dan BHA bekerja di tempat berbeda. Salah pilih, efeknya cuma perih.",
+      "vo": [
+        "AHA larut air. Ia bekerja di permukaan dan bagus untuk tekstur serta warna.",
+        "BHA larut minyak. Ia masuk ke pori dan lebih cocok untuk komedo.",
+        "Di iklim lembap, penumpukan minyak lebih sering, jadi BHA punya tempat.",
+        "Tapi keduanya meningkatkan sensitivitas matahari. Di UV 11, itu bukan detail.",
+        "Pertanyaan: kamu memakai eksfoliasi untuk tekstur atau untuk pori?"
+      ],
+      "onscreen": [
+        "AHA → permukaan (air)",
+        "BHA → pori (minyak)",
+        "UV 11 = wajib SPF"
+      ],
+      "visual": "Dua lapisan kulit terbelah; AHA berhenti di atas, BHA turun ke pori.",
+      "caption": "Pilih berdasarkan masalah, bukan berdasarkan 'yang paling kuat'.",
+      "hashtags": [
+        "#kulittropis",
+        "#aha",
+        "#bha",
+        "#eksfoliasi"
+      ],
+      "source": "Kelarutan AHA (air) vs BHA (lipid); peningkatan fotosensitivitas pasca-eksfoliasi",
+      "tool": "Pertanyaan: 'untuk tekstur atau untuk pori?'",
+      "promise": "Satu klaim: perbedaan AHA/BHA adalah tempat kerja, bukan kekuatan."
+    },
+    {
+      "id": "B16",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "durationSec": 58,
+      "title": "Double cleansing: kapan perlu, kapan cuma buang uang",
+      "hook": "Double cleansing bukan wajib. Ia alat untuk kondisi tertentu.",
+      "vo": [
+        "Langkah pertama berbasis minyak untuk melarutkan sunscreen dan makeup.",
+        "Langkah kedua berbasis air untuk membersihkan sisa.",
+        "Kalau kamu tidak memakai sunscreen tebal atau makeup, langkah pertama sering tidak perlu.",
+        "Di kulit berminyak, dua langkah dengan cleanser kuat bisa menghabisi barrier.",
+        "Pertanyaan: hari ini kamu memakai apa yang butuh dilarutkan minyak?"
+      ],
+      "onscreen": [
+        "oil → sunscreen & makeup",
+        "air → sisa",
+        "tidak selalu perlu"
+      ],
+      "visual": "Dua fase pembersihan; ikon sunscreen larut di fase minyak, lalu bilas.",
+      "caption": "Double cleansing itu alat, bukan kewajiban.",
+      "hashtags": [
+        "#kulittropis",
+        "#doublecleansing",
+        "#rutin"
+      ],
+      "source": "Prinsip like-dissolves-like pada sunscreen water-resistant dan makeup",
+      "tool": "Pertanyaan: 'apa yang butuh dilarutkan hari ini?'",
+      "promise": "Satu klaim: double cleansing hanya perlu bila ada lapisan larut minyak."
+    },
+    {
+      "id": "B17",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "durationSec": 60,
+      "title": "Reapply tiap 2 jam: dari mana angka itu datang",
+      "hook": "Angka dua jam itu bukan aturan sembarangan. Tapi artinya bukan yang kamu kira.",
+      "vo": [
+        "Dua jam berasal dari perhitungan dosis eritema di bawah kondisi uji terkontrol.",
+        "Artinya: setelah dua jam paparan, lapisan pelindung mulai tidak lagi sesuai label.",
+        "Kalau kamu di dalam ruangan jauh dari jendela, kebutuhan itu berbeda.",
+        "Kalau kamu berkeringat atau berenang, lebih cepat lagi.",
+        "Pertanyaan: hari ini kamu lebih banyak di mana?"
+      ],
+      "onscreen": [
+        "2 jam = kondisi uji",
+        "keringat → lebih cepat",
+        "dalam ruangan tidak sama"
+      ],
+      "visual": "Timer dua jam dengan latar jendela; garis kuning menurun seperti lapisan menipis.",
+      "caption": "Dua jam adalah patokan, bukan hukum. Keringat mempercepat semuanya.",
+      "hashtags": [
+        "#kulittropis",
+        "#spf",
+        "#reapply"
+      ],
+      "source": "Dasar perhitungan reapply (dosis eritema, kondisi uji); water/sweat resistance",
+      "tool": "Pertanyaan: 'hari ini kamu lebih banyak di mana?'",
+      "promise": "Satu klaim: angka dua jam berasal dari kondisi uji, bukan dari semua situasi."
+    },
+    {
+      "id": "B18",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "durationSec": 59,
+      "title": "Kantor ber-AC 40% RH: humektan bekerja terbalik",
+      "hook": "Di ruang ber-AC, kulitmu bisa kehilangan air ke udara. Bukan mendapatkannya.",
+      "vo": [
+        "AC menurunkan kelembapan ruangan, kadang sampai 40 persen.",
+        "Pada kelembapan rendah, humektan tanpa oklusif bisa menarik air dari lapisan kulit yang lebih dalam ke permukaan, lalu menguap.",
+        "Hasilnya: terasa kering lagi satu jam kemudian.",
+        "Solusinya bukan menambah humektan, tapi menutupnya dengan emolien ringan.",
+        "Pertanyaan: kantormu lembap atau kering?"
+      ],
+      "onscreen": [
+        "AC sekitar 40% RH",
+        "humektan tanpa penutup",
+        "kering lagi 1 jam"
+      ],
+      "visual": "Split: ruang AC dingin kering / ruang tropis lembap; arah panah air berbalik.",
+      "caption": "Humektan butuh penutup. Tanpa itu, ia menarik air ke tempat yang salah.",
+      "hashtags": [
+        "#kulittropis",
+        "#ruangac",
+        "#humektan"
+      ],
+      "source": "Perilaku humektan pada RH rendah; kebutuhan emolien/oklusif sebagai penutup",
+      "tool": "Pertanyaan: 'kantormu lembap atau kering?'",
+      "promise": "Satu klaim: humektan tanpa penutup bisa membuat kulit lebih kering di ruang ber-AC."
+    },
+    {
+      "id": "B19",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "durationSec": 62,
+      "title": "Toner, essence, serum: urutan yang masuk akal",
+      "hook": "Urutan skincare bukan aturan sakral. Ia soal tekstur dan ukuran molekul.",
+      "vo": [
+        "Aturan yang bertahan: dari yang paling encer ke yang paling tebal.",
+        "Toner biasanya paling encer. Essence di tengah. Serum lebih pekat. Pelembap menutup.",
+        "Kalau kamu membalik urutannya, bahan yang lebih tebal menghalangi yang encer masuk.",
+        "Tapi kalau produkmu hanya tiga, urutannya sederhana: bersih, aktif, tutup.",
+        "Pertanyaan: berapa produk yang benar-benar kamu pakai tiap hari?"
+      ],
+      "onscreen": [
+        "encer → tebal",
+        "bersih · aktif · tutup",
+        "sedikit tapi konsisten"
+      ],
+      "visual": "Lima lapisan bertumpuk menyala berurutan; label tekstur di kanan (encer ke tebal).",
+      "caption": "Urutan itu soal tekstur, bukan merek.",
+      "hashtags": [
+        "#kulittropis",
+        "#rutinskincare",
+        "#urutan"
+      ],
+      "source": "Prinsip urutan berdasarkan viskositas/tekstur dalam formulasi",
+      "tool": "Pertanyaan: 'berapa produk harianmu?'",
+      "promise": "Satu klaim: urutan skincare ditentukan tekstur, bukan nama kategori."
+    },
+    {
+      "id": "B20",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "durationSec": 57,
+      "title": "PAO 12M: tanggal yang lebih penting dari expired date",
+      "hook": "Kotak kecil bertuliskan 12M itu bukan hiasan. Itu yang menentukan umur setelah dibuka.",
+      "vo": [
+        "PAO atau period after opening menghitung sejak segel dibuka, bukan sejak produksi.",
+        "Di iklim panas dan lembap, waktu itu tidak bertambah, hanya bisa berkurang.",
+        "Tanda paling jelas: bau berubah, warna bergeser, tekstur memisah.",
+        "Menyimpan di kamar mandi mempercepat semuanya.",
+        "Pertanyaan: produk mana di rakmu yang sudah lewat 12 bulan?"
+      ],
+      "onscreen": [
+        "PAO = setelah dibuka",
+        "bau · warna · tekstur",
+        "kamar mandi bukan lemari"
+      ],
+      "visual": "Ikon stoples terbuka dengan timer 12M; uap kamar mandi menyelimuti.",
+      "caption": "Cek tanggal buka, bukan cuma tanggal produksi.",
+      "hashtags": [
+        "#kulittropis",
+        "#pao",
+        "#kedaluwarsa"
+      ],
+      "source": "Definisi PAO (period after opening) pada label kosmetik; pengaruh kelembapan penyimpanan",
+      "tool": "Pertanyaan: 'mana yang sudah lewat 12 bulan?'",
+      "promise": "Satu klaim: PAO dihitung sejak dibuka dan bisa menyusut karena panas/lembap."
+    },
+    {
+      "id": "B21",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "durationSec": 64,
+      "title": "Tiga perubahan yang benar-benar mengubah hasil",
+      "hook": "Kalau kamu hanya mau mengubah tiga hal, ubah ini.",
+      "vo": [
+        "Pertama, tekstur. Gel, essence, atau water-break, bukan krim tebal di siang hari.",
+        "Kedua, urutan. Humektan di kulit yang masih lembap, lalu emolien ringan.",
+        "Ketiga, penyimpanan. Lemari, bukan kamar mandi. Botol kecil, tutup rapat.",
+        "Tiga hal ini tidak menambah produk baru. Mereka mengubah cara produk yang sudah ada bekerja.",
+        "Pertanyaan: dari tiga ini, mana yang akan kamu ubah minggu ini?"
+      ],
+      "onscreen": [
+        "01 TEKSTUR",
+        "02 URUTAN",
+        "03 PENYIMPANAN"
+      ],
+      "visual": "Tiga kartu muncul berurutan; latar makro kulit dengan gerak lambat.",
+      "caption": "Tiga perubahan, tanpa beli produk baru.",
+      "hashtags": [
+        "#kulittropis",
+        "#rutin",
+        "#skincaretropis"
+      ],
+      "source": "Rangkuman seri Iklim & Stabilitas (ICH Q1A(R2), WHO TRS 953, prinsip humektan/oklusif)",
+      "tool": "Pertanyaan: 'mana yang kamu ubah minggu ini?'",
+      "promise": "Satu klaim: tiga perubahan perilaku lebih berdampak daripada menambah produk."
+    },
+    {
+      "id": "R01",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 72,
+      "title": "Beban mental bukan soal siapa lebih capek",
+      "hook": "Beban mental bukan soal siapa lebih capek. Soal siapa yang mengingat.",
+      "vo": [
+        "Ada tiga jenis kerja di rumah: kerja fisik, kerja emosional, dan kerja kognitif.",
+        "Kerja kognitif adalah yang tidak terlihat: mengantisipasi, mengingat, memutuskan, memantau.",
+        "Riset sosiologi menyebutnya sebagai lapisan tersendiri, bukan bagian dari dua yang lain.",
+        "Karena tidak terlihat, ia juga tidak pernah dihitung dan tidak pernah dibagi.",
+        "Alatnya satu pertanyaan: siapa di rumah ini yang mengingat jadwal vaksin, stok sabun, dan ultah ibumu?"
+      ],
+      "onscreen": [
+        "fisik",
+        "emosional",
+        "kognitif (tak terlihat)"
+      ],
+      "visual": "Tiga lapisan bertumpuk; hanya lapisan kognitif yang berdenyut dan tidak pernah padam.",
+      "caption": "Kerja yang tak terlihat juga kerja — dan biasanya hanya dipegang satu orang.",
+      "hashtags": [
+        "#ruangantara",
+        "#bebanmental",
+        "#kerjatakterlihat"
+      ],
+      "source": "Daminger, 'The Cognitive Dimension of Household Labor', American Sociological Review (2019) — kerja kognitif sebagai dimensi terpisah",
+      "tool": "Pertanyaan: siapa yang mengingat jadwal, stok, dan tanggal?",
+      "promise": "Satu klaim: beban mental adalah jenis kerja ketiga yang tidak terlihat, bukan soal siapa lebih lelah."
+    },
+    {
+      "id": "R02",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 68,
+      "title": "Pasangan yang tidak pernah bertengkar",
+      "hook": "Pasangan yang tidak pernah bertengkar tidak selalu sehat. Kadang salah satunya berhenti bicara.",
+      "vo": [
+        "Konflik tidak hilang kalau tidak diucapkan. Ia berpindah bentuk.",
+        "Pola yang paling sering: satu pihak menuntut, satu pihak menarik diri.",
+        "Dalam jangka pendek, menarik diri terasa menenangkan. Dalam jangka panjang, jaraknya yang bertambah.",
+        "Yang berbahaya bukan pertengkaran, tapi tidak ada percakapan sama sekali.",
+        "Alatnya: kapan terakhir kali kalian membicarakan hal yang tidak nyaman, bukan hanya jadwal?"
+      ],
+      "onscreen": [
+        "tidak bertengkar bukan berarti aman",
+        "tuntut ↔ tarik diri",
+        "jarak tumbuh diam-diam"
+      ],
+      "visual": "Dua garis: satu mendekat lalu mundur, satu diam di tempat; jarak antar garis melebar.",
+      "caption": "Damai yang tidak pernah diuji bukan damai, tapi penundaan.",
+      "hashtags": [
+        "#ruangantara",
+        "#konflik",
+        "#komunikasipasangan"
+      ],
+      "source": "Pola demand-withdraw (Christensen & Heavey); stonewalling sebagai salah satu pola destruktif (Gottman)",
+      "tool": "Pertanyaan: kapan terakhir bicara hal yang tidak nyaman?",
+      "promise": "Satu klaim: menghindari konflik memindahkan masalah, bukan menyelesaikannya."
+    },
+    {
+      "id": "R03",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 66,
+      "title": "Rasio 5 banding 1 saat bertengkar",
+      "hook": "Yang membedakan pasangan yang bertahan bukan jumlah pertengkaran, tapi rasionya.",
+      "vo": [
+        "Dalam observasi interaksi pasangan, yang bertahan punya sekitar lima interaksi positif untuk setiap satu yang negatif saat berkonflik.",
+        "Ini bukan rumus cinta. Ini pola yang muncul berulang di data.",
+        "Artinya: satu kritik tidak menghapus hubungan. Tapi lima pujian yang tulus bisa menahan beratnya.",
+        "Yang sering terjadi justru sebaliknya: satu kesalahan dibahas lima kali.",
+        "Alatnya: dalam pertengkaran terakhir, berapa kali kamu mengakui hal yang benar dari pasanganmu?"
+      ],
+      "onscreen": [
+        "5 : 1",
+        "positif : negatif saat konflik",
+        "bukan rumus, tapi pola"
+      ],
+      "visual": "Lima batang kecil menyala, satu batang terra; rasio ditampilkan sebagai timbangan.",
+      "caption": "Bukan bebas konflik, tapi rasio yang menjaga.",
+      "hashtags": [
+        "#ruangantara",
+        "#gottman",
+        "#hubungansehat"
+      ],
+      "source": "Gottman & Levenson — rasio interaksi positif:negatif sekitar 5:1 pada pasangan yang stabil",
+      "tool": "Pertanyaan: berapa kali kamu mengakui hal yang benar?",
+      "promise": "Satu klaim: kestabilan hubungan lebih ditentukan rasio positif-negatif daripada frekuensi konflik."
+    },
+    {
+      "id": "R04",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "durationSec": 70,
+      "title": "Tiga pola pembagian uang yang berisiko",
+      "hook": "Pertengkaran soal uang bukan soal jumlahnya. Soal siapa yang memegang kendali.",
+      "vo": [
+        "Riset longitudinal menemukan bahwa ketidaksepakatan soal keuangan adalah prediktor perpisahan yang lebih kuat daripada topik lain.",
+        "Tiga pola yang sering berisiko: satu orang memegang semua informasi, pengeluaran disembunyikan, dan kontribusi dihitung tapi tidak pernah dibicarakan.",
+        "Yang menolong bukan transparansi total, tapi kesepakatan tentang apa yang boleh privat.",
+        "Alatnya: tiga pertanyaan. Siapa yang tahu total pengeluaran bulan ini? Siapa yang bisa melihat tabungan? Apa yang boleh tidak dibicarakan?"
+      ],
+      "onscreen": [
+        "info dipegang satu orang",
+        "pengeluaran disembunyikan",
+        "kontribusi tidak pernah dibahas"
+      ],
+      "visual": "Tiga kartu pola; kartu ketiga menampilkan dua kolom yang tidak pernah bertemu.",
+      "caption": "Uang jarang jadi masalah karena angkanya. Biasanya karena informasinya.",
+      "hashtags": [
+        "#ruangantara",
+        "#keuangankeluarga",
+        "#pasangan"
+      ],
+      "source": "Dew, Britt & Huston (2012) — ketidaksepakatan finansial sebagai prediktor perceraian",
+      "tool": "Tiga pertanyaan: siapa tahu total, siapa bisa lihat tabungan, apa yang boleh privat?",
+      "promise": "Satu klaim: pola informasi keuangan lebih menentukan daripada besar penghasilan."
+    },
+    {
+      "id": "R05",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "durationSec": 69,
+      "title": "Kenapa kamu bertahan tiga tahun lebih lama dari seharusnya",
+      "hook": "Kamu sudah tahu harus berhenti setahun lalu. Ini alasan kamu masih di sana.",
+      "vo": [
+        "Dalam ekonomi, ini disebut sunk cost: biaya yang sudah keluar membuat orang meneruskan proyek yang jelas merugi.",
+        "Hubungan tidak berbeda. Waktu yang sudah diinvestasikan terasa seperti alasan untuk bertahan.",
+        "Masalahnya, waktu yang sudah lewat tidak bisa kembali, apa pun keputusanmu sekarang.",
+        "Pertanyaan yang lebih jujur bukan 'sudah berapa lama', tapi 'kalau baru mulai hari ini, apakah aku memilih ini?'",
+        "Itu satu-satunya pertanyaan yang tidak menghitung masa lalu."
+      ],
+      "onscreen": [
+        "sunk cost",
+        "3 tahun terasa seperti alasan",
+        "kalau mulai hari ini?"
+      ],
+      "visual": "Garis waktu dengan tumpukan investasi; garis putus-putus menandai 'hari ini'.",
+      "caption": "Waktu yang sudah keluar tidak bisa jadi alasan untuk menambahnya.",
+      "hashtags": [
+        "#ruangantara",
+        "#sunkcost",
+        "#selfawareness"
+      ],
+      "source": "Arkes & Blumer (1985) — eskalasi komitmen pada sunk cost",
+      "tool": "Pertanyaan: kalau mulai hari ini, apakah aku memilih ini?",
+      "promise": "Satu klaim: durasi hubungan bukan bukti nilainya; sunk cost mendorong kita bertahan keliru."
+    },
+    {
+      "id": "R06",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 71,
+      "title": "Intensitas bukan konsistensi: cara membedakannya",
+      "hook": "Perhatian besar di awal bukan bukti. Yang membuktikan adalah yang bertahan setelah enam minggu.",
+      "vo": [
+        "Ada pola yang sering disalahartikan sebagai cinta besar: perhatian intens, cepat, dan tanpa jarak.",
+        "Istilah 'love bombing' populer, tapi bukan diagnosis. Yang bisa diamati hanya perilakunya.",
+        "Dua hal yang membedakan: konsistensi dan ruang.",
+        "Konsistensi artinya perhatiannya tidak turun drastis saat kamu mulai punya batas. Ruang artinya kamu tetap boleh punya hidup sendiri.",
+        "Alatnya: catat satu tanggal. Enam minggu kemudian, bandingkan intensitas dengan konsistensinya."
+      ],
+      "onscreen": [
+        "intensitas ≠ konsistensi",
+        "6 minggu",
+        "batas menguji, bukan mengancam"
+      ],
+      "visual": "Dua kurva: satu melonjak lalu jatuh, satu datar naik; garis enam minggu di tengah.",
+      "caption": "Yang bertahan bukan yang paling intens, tapi yang paling konsisten.",
+      "hashtags": [
+        "#ruangantara",
+        "#konsistensi",
+        "#batas"
+      ],
+      "source": "Pola perilaku (intensitas vs konsistensi) — 'love bombing' dipakai sebagai deskripsi perilaku, bukan diagnosis",
+      "tool": "Catat tanggal, bandingkan intensitas vs konsistensi setelah 6 minggu",
+      "promise": "Satu klaim: konsistensi dan ruang lebih menentukan daripada intensitas awal."
+    },
+    {
+      "id": "R07",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "durationSec": 73,
+      "title": "Tiga pola yang muncul saat bertengkar",
+      "hook": "Saat bertengkar, kamu tidak sedang berdebat. Kamu sedang menjalankan pola lama.",
+      "vo": [
+        "Riset kelekatan menyebut tiga respons khas saat merasa terancam: mengejar, menarik diri, dan membeku.",
+        "Pengejar butuh penyelesaian segera. Penarik butuh waktu. Pembeku berhenti merespons sama sekali.",
+        "Biasanya dua orang bertemu dengan pola berlawanan, dan itu yang membuat lingkaran tanpa ujung.",
+        "Yang menolong bukan mengubah pola, tapi menamainya saat terjadi.",
+        "Alatnya: lain kali, sebut satu kalimat. 'Aku sedang butuh waktu' atau 'Aku sedang takut ditinggal'."
+      ],
+      "onscreen": [
+        "mengejar",
+        "menarik diri",
+        "membeku"
+      ],
+      "visual": "Tiga ikon pola dengan panah melingkar; satu lingkaran penuh ditandai terra.",
+      "caption": "Kamu tidak sedang berdebat. Kamu sedang menjalankan pola.",
+      "hashtags": [
+        "#ruangantara",
+        "#kelekatan",
+        "#attachment"
+      ],
+      "source": "Teori kelekatan dewasa (Hazan & Shaver; Brennan, Clark & Shaver) — strategi hyperactivating/deactivating",
+      "tool": "Sebut satu kalimat saat pola muncul: 'aku butuh waktu' / 'aku takut ditinggal'",
+      "promise": "Satu klaim: saat konflik, yang bekerja adalah pola kelekatan, bukan topiknya."
+    },
+    {
+      "id": "R08",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "durationSec": 67,
+      "title": "Kalimat kecil yang memperbaiki pertengkaran",
+      "hook": "Pertengkaran jarang berakhir karena solusi. Biasanya karena satu kalimat kecil.",
+      "vo": [
+        "Dalam pengamatan interaksi pasangan, ada yang disebut repair attempt: kalimat yang mencoba menurunkan ketegangan.",
+        "Bentuknya sederhana. 'Aku perlu jeda lima menit.' 'Maksudku bukan begitu.' 'Kamu benar soal itu.'",
+        "Yang menentukan berhasil atau tidak bukan kalimatnya, tapi apakah pasangan menerimanya.",
+        "Kalau kalimat itu selalu ditolak, masalahnya bukan komunikasi. Masalahnya kepercayaan.",
+        "Alatnya: sepakati satu kalimat jeda sekarang, saat tidak sedang bertengkar."
+      ],
+      "onscreen": [
+        "repair attempt",
+        "jeda 5 menit",
+        "diterima atau ditolak?"
+      ],
+      "visual": "Tegangan berupa garis bergerigi, lalu satu kalimat masuk dan garis menjadi halus.",
+      "caption": "Satu kalimat jeda bisa menyelamatkan percakapan yang sudah panas.",
+      "hashtags": [
+        "#ruangantara",
+        "#repair",
+        "#komunikasi"
+      ],
+      "source": "Gottman — repair attempts dan penerimaannya sebagai penanda kestabilan interaksi konflik",
+      "tool": "Sepakati satu kalimat jeda saat sedang tenang",
+      "promise": "Satu klaim: keberhasilan perbaikan bergantung pada penerimaan, bukan kalimatnya."
+    },
+    {
+      "id": "R09",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 68,
+      "title": "Beda nilai atau red flag? Tiga pertanyaan",
+      "hook": "Tidak semua yang mengganggu adalah tanda bahaya. Sebagian hanya beda nilai.",
+      "vo": [
+        "Beda nilai: kalian tidak sepakat soal cara membelanjakan uang, dan itu bisa dinegosiasikan.",
+        "Tanda bahaya: satu pihak tidak boleh punya pendapat, atau batas yang kamu pasang selalu dibalas hukuman.",
+        "Tiga pertanyaan pemisah. Apakah kamu boleh bilang tidak? Apakah penolakanmu dihormati? Apakah polanya berulang dan makin berat?",
+        "Kalau dua dari tiga jawabannya tidak, itu bukan beda nilai.",
+        "Kalau kamu merasa tidak aman, hentikan analisis dan cari bantuan profesional."
+      ],
+      "onscreen": [
+        "beda nilai = bisa dinegosiasi",
+        "bahaya = tidak boleh menolak",
+        "3 pertanyaan"
+      ],
+      "visual": "Dua kolom: kiri 'nilai' dengan garis bisa dilipat, kanan 'bahaya' dengan garis tebal terra.",
+      "caption": "Yang membedakan bukan seberapa sering bertengkar, tapi apakah kamu boleh menolak.",
+      "hashtags": [
+        "#ruangantara",
+        "#batas",
+        "#hubungansehat"
+      ],
+      "source": "Kerangka batas & keselamatan hubungan (bukan diagnosis); rujukan bantuan profesional untuk kekerasan",
+      "tool": "3 pertanyaan: boleh bilang tidak? penolakan dihormati? pola berulang?",
+      "promise": "Satu klaim: izin menolak adalah pembeda utama antara beda nilai dan bahaya."
+    },
+    {
+      "id": "R10",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "durationSec": 66,
+      "title": "Balas cepat bukan tanda cinta",
+      "hook": "Dia balas dalam sepuluh detik. Itu bukan bukti cinta, dan kamu tahu itu.",
+      "vo": [
+        "Kecepatan membalas lebih banyak bicara tentang kecemasan daripada tentang kedekatan.",
+        "Pada pola kelekatan cemas, orang memakai respons cepat sebagai cara menenangkan diri sendiri.",
+        "Efeknya sementara. Ketenangan sepuluh menit, lalu cemas lagi saat balasan berikutnya lambat.",
+        "Yang lebih sehat bukan balas lebih cepat, tapi sepakat tentang ritme.",
+        "Alatnya: sepakati satu hal. Berapa lama jeda yang masih terasa aman bagi kalian berdua?"
+      ],
+      "onscreen": [
+        "cepat ≠ dekat",
+        "kecemasan memakai kecepatan",
+        "sepakat ritme"
+      ],
+      "visual": "Grafik denyut pesan masuk: rapat lalu renggang; garis tenang muncul di akhir.",
+      "caption": "Kecepatan membalas itu sinyal cemas, bukan sinyal sayang.",
+      "hashtags": [
+        "#ruangantara",
+        "#kelekatancemas",
+        "#relasi"
+      ],
+      "source": "Mikulincer & Shaver — strategi hyperactivating pada kelekatan cemas",
+      "tool": "Sepakati ritme balas yang aman untuk kalian",
+      "promise": "Satu klaim: kecepatan respons lebih mencerminkan kecemasan daripada kedekatan."
+    },
+    {
+      "id": "R11",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "durationSec": 70,
+      "title": "Liburan bareng bukan ramalan, tapi tiga momen ini jujur",
+      "hook": "Liburan bareng tidak meramalkan hubungan. Tapi tiga momen ini memperlihatkan polanya.",
+      "vo": [
+        "Momen pertama: saat rencana berubah. Siapa yang menyesuaikan, siapa yang menyalahkan?",
+        "Kedua: saat salah satu lelah. Apakah kelelahan boleh diakui, atau harus disembunyikan?",
+        "Ketiga: saat uang keluar tak terduga. Apakah jadi bahan lelucon, atau bahan tuduhan?",
+        "Tiga momen ini bukan ujian cinta. Ini contoh kecil dari cara kalian menangani tekanan.",
+        "Alatnya: setelah liburan, tanyakan momen mana yang paling kamu ingat. Jawabannya biasanya jujur."
+      ],
+      "onscreen": [
+        "rencana berubah",
+        "lelah",
+        "uang tak terduga"
+      ],
+      "visual": "Tiga bingkai foto kosong berurutan, masing-masing menampilkan satu garis stres.",
+      "caption": "Yang diuji bukan kesabarannya, tapi cara kalian menangani tekanan kecil.",
+      "hashtags": [
+        "#ruangantara",
+        "#liburan",
+        "#pasangan"
+      ],
+      "source": "Observasi pola penanganan stres dalam interaksi sehari-hari (bukan prediksi hubungan)",
+      "tool": "Tanyakan: momen mana yang paling kamu ingat?",
+      "promise": "Satu klaim: liburan menampilkan pola penanganan tekanan, bukan meramalkan hasil hubungan."
+    },
+    {
+      "id": "R12",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "durationSec": 72,
+      "title": "Tiga kalimat dari masa kecil yang membentuk cara kamu bertengkar",
+      "hook": "Cara kamu bertengkar hari ini dibentuk oleh tiga kalimat yang kamu dengar saat kecil.",
+      "vo": [
+        "Anak belajar mengelola konflik dengan meniru, bukan dengan diajari.",
+        "Kalau yang kamu lihat adalah diam berhari-hari, itu yang jadi bahasa default saat konflik.",
+        "Kalau yang kamu lihat adalah ledakan lalu lupa, itu juga.",
+        "Ini bukan menyalahkan orang tua. Ini menjelaskan mengapa responsmu terasa otomatis.",
+        "Alatnya: tulis satu kalimat yang dulu sering kamu dengar saat ada masalah. Lalu tanyakan, apakah kamu mengulanginya?"
+      ],
+      "onscreen": [
+        "meniru, bukan diajari",
+        "diam berhari-hari",
+        "ledakan lalu lupa"
+      ],
+      "visual": "Tiga kalimat muncul dari bayangan, lalu satu kalimat disorot dan diulang hari ini.",
+      "caption": "Kamu tidak memilih pola ini. Tapi kamu bisa memilih untuk menyadarinya.",
+      "hashtags": [
+        "#ruangantara",
+        "#keluarga",
+        "#pola"
+      ],
+      "source": "Pembelajaran sosial pola konflik antar generasi (Bandura; transmisi pola keluarga)",
+      "tool": "Tulis satu kalimat yang dulu sering kamu dengar; tanyakan apakah kamu mengulanginya",
+      "promise": "Satu klaim: pola konflik dipelajari dari lingkungan awal dan bisa dikenali."
+    },
+    {
+      "id": "R13",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "durationSec": 65,
+      "title": "Ruang bukan jarak: cara membedakannya",
+      "hook": "Butuh waktu sendiri bukan tanda menjauh. Tapi ada versi yang memang menjauh.",
+      "vo": [
+        "Ruang yang sehat punya tiga tanda: ada batas waktu, ada penjelasan, dan ada kembalinya.",
+        "Jarak yang tidak sehat juga tiga: tanpa batas waktu, tanpa penjelasan, dan dijadikan hukuman.",
+        "Kebutuhan otonomi itu normal. Yang membuatnya merusak adalah ketika ia dipakai sebagai alat negosiasi.",
+        "Alatnya: sepakati satu kalimat. 'Aku butuh dua jam, nanti aku kabari.'",
+        "Kalimat itu mengubah penarikan diri menjadi informasi."
+      ],
+      "onscreen": [
+        "ruang: batas waktu + penjelasan + kembali",
+        "jarak: tanpa itu semua",
+        "kalimat jeda"
+      ],
+      "visual": "Dua pintu: satu terbuka dengan cahaya, satu tertutup tanpa gagang.",
+      "caption": "Ruang yang sehat punya waktu kembali. Jarak tidak.",
+      "hashtags": [
+        "#ruangantara",
+        "#otonomi",
+        "#batas"
+      ],
+      "source": "Kebutuhan otonomi dalam teori motivasi diri (Deci & Ryan) — diterapkan pada pola hubungan",
+      "tool": "Kalimat: 'Aku butuh dua jam, nanti aku kabari.'",
+      "promise": "Satu klaim: pembeda ruang sehat dan jarak adalah batas waktu, penjelasan, dan kembalinya."
+    },
+    {
+      "id": "R14",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "durationSec": 69,
+      "title": "Empat pertanyaan uang sebelum menikah",
+      "hook": "Sebelum menikah, empat pertanyaan ini lebih penting daripada besarnya tabungan.",
+      "vo": [
+        "Satu: siapa yang akan memegang catatan pengeluaran, dan siapa yang boleh melihatnya?",
+        "Dua: utang siapa yang menjadi utang bersama, dan sampai batas apa?",
+        "Tiga: kalau salah satu berhenti bekerja, apa yang berubah?",
+        "Empat: berapa jumlah yang boleh dibelanjakan tanpa perlu bertanya?",
+        "Empat pertanyaan ini tidak punya jawaban benar. Yang penting kalian punya jawaban yang sama."
+      ],
+      "onscreen": [
+        "01 catatan",
+        "02 utang",
+        "03 berhenti kerja",
+        "04 batas tanpa tanya"
+      ],
+      "visual": "Empat kartu muncul; setiap kartu menampilkan dua kolom yang harus bertemu.",
+      "caption": "Bukan berapa banyak, tapi seberapa jelas aturannya.",
+      "hashtags": [
+        "#ruangantara",
+        "#keuangan",
+        "#menikah"
+      ],
+      "source": "Temuan Dew, Britt & Huston (2012) + praktik perencanaan keuangan pasangan",
+      "tool": "Empat pertanyaan untuk dijawab berdua sebelum menikah",
+      "promise": "Satu klaim: kejelasan aturan keuangan lebih menentukan daripada besar tabungan."
+    }
+  ]
+}

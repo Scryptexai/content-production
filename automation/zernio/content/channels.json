@@ -1,0 +1,56 @@
+[
+  {
+    "id": "beauty-youtube",
+    "niche": "beauty",
+    "platform": "youtube",
+    "label": "KULIT TROPIS // YOUTUBE SHORTS",
+    "voice": "formulator yang menghitung: satu klaim, satu angka, satu sumber; judul <=60 karakter dengan kata kunci di depan; tanpa superlatif; akhiri dengan pertanyaan yang bisa dijawab di komentar",
+    "cadence": "3 per hari",
+    "autoPublish": false
+  },
+  {
+    "id": "beauty-tiktok",
+    "niche": "beauty",
+    "platform": "tiktok",
+    "label": "KULIT TROPIS // TIKTOK",
+    "voice": "sama, lebih langsung: hook 3 detik, bahasa lisan, caption baris pertama berbeda dari VO, maksimal 6 hashtag",
+    "cadence": "3 per hari",
+    "autoPublish": false
+  },
+  {
+    "id": "beauty-instagram",
+    "niche": "beauty",
+    "platform": "instagram",
+    "label": "KULIT TROPIS // INSTAGRAM REELS",
+    "voice": "sama, sedikit lebih tenang; baris pertama caption harus selesai sebelum 'lebih'; 8-12 hashtag; sorotan disesuaikan seri",
+    "cadence": "3 per hari",
+    "autoPublish": false
+  },
+  {
+    "id": "relationship-youtube",
+    "niche": "relationship",
+    "platform": "youtube",
+    "label": "RUANG ANTARA // YOUTUBE SHORTS",
+    "voice": "forensik bukan hakim: satu angka riset, satu mekanisme, satu alat; tanpa kata 'toxic' untuk orang; judul <=60 karakter",
+    "cadence": "2 per hari",
+    "autoPublish": false
+  },
+  {
+    "id": "relationship-tiktok",
+    "niche": "relationship",
+    "platform": "tiktok",
+    "label": "RUANG ANTARA // TIKTOK",
+    "voice": "sama, kalimat lebih pendek; jangan rage-bait; satu pertanyaan reflektif di akhir",
+    "cadence": "2 per hari",
+    "autoPublish": false
+  },
+  {
+    "id": "relationship-instagram",
+    "niche": "relationship",
+    "platform": "instagram",
+    "label": "RUANG ANTARA // INSTAGRAM REELS",
+    "voice": "sama; caption berbentuk kutipan 2 baris + alat 60 detik; 8-12 hashtag",
+    "cadence": "2 per hari",
+    "autoPublish": false
+  }
+]
