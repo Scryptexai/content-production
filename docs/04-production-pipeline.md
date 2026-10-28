@@ -161,3 +161,38 @@ Target akhir: **−16 LUFS, true peak ≤ −1,5 dBFS**, audio 48 kHz stereo.
 
 Dengan 2 vCPU, 35 video ≈ 2 jam render + 1 jam QC. Itu sebabnya produksi
 dilakukan **batch per hari** (5 video), bukan menunggu semua selesai.
+
+---
+
+## 7. Pipeline nyata yang dipakai: Knot Theory (`projects/knot-theory/`)
+
+Bagian 1–6 di atas adalah rencana M2. Yang benar-benar dijalankan untuk kanal
+Knot Theory ada di `projects/knot-theory/` dan berbeda di beberapa titik penting:
+
+| Rencana §1–6 | Yang dipakai | Alasan |
+|---|---|---|
+| plate Blender | `plates/make_plate.py` (numpy + ffmpeg) | Blender tidak tersedia di mesin render; plate tetap bergerak 3 lapis |
+| aset gambar AI | tidak dipakai | aturan kanal: tanpa wajah, tanpa stok foto |
+| TTS per beat | TTS per beat (sama) | — |
+| musik dari `audio_build.py` | `make_music.py` (4 varian, disintesis) | tidak butuh file sampel, bebas lisensi |
+| `Short.tsx` generik | `remotion/src/Short.tsx` — komposisi `KnotShort` | tipe beat: hook/statement/number/pair/note/close |
+| ffprobe | `ffmpeg -i` + regex | ffprobe tidak tersedia di image ini |
+
+### Angka terukur (2 vCPU, 1080×1920, 30 fps)
+
+| Tahap | Waktu |
+|---|---|
+| plate 12 dtk, satu varian | 25 dtk |
+| musik 4 varian × 130 dtk | 10 dtk |
+| Remotion render 106 dtk | **±13 mnt** (±0,2 dtk/frame) |
+| mix + loudnorm + QC | 40 dtk |
+
+Konsekuensi: 21 video (7 topik × 3 platform) ≈ 5 jam render. Render dijalankan
+sebagai proses latar, bukan di dalam satu perintah tunggal.
+
+### QC yang dijalankan `render.py`
+
+durasi ≥ 40 dtk · resolusi tepat 1080×1920 · loudness −16 LUFS ±1,5 ·
+true peak ≤ −1,5 dBTP
+
+Panduan lengkap: `projects/knot-theory/README.md`.

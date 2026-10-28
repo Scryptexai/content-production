@@ -22,3 +22,13 @@ automation/zernio/.zernio-mapping.json
 
 # OS
 .DS_Store
+
+# Knot Theory — hasil render & aset yang dibangkitkan skrip
+projects/knot-theory/out/
+projects/knot-theory/remotion/out/
+projects/knot-theory/remotion/public/music/*.mp3
+projects/knot-theory/remotion/public/music/*.wav
+projects/knot-theory/remotion/public/plates/*.mp4
+projects/knot-theory/remotion/public/audio/*.mp3
+projects/knot-theory/remotion/src/shots.ts
+projects/knot-theory/remotion/node_modules/
