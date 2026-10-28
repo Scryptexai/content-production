@@ -5,7 +5,9 @@
 
 **Film final:** `out/tropical-remotion-COMPLETE.mp4` — dirender penuh oleh **Remotion** (`remotion/`), 3 menit 16 detik · 1080×1920 · 30 fps · −16 LUFS · audio stereo.
 
-> File MP4 berukuran besar **tidak disimpan di git**. Hasil render ada di folder Drive proyek; repo ini hanya berisi kode, aset kecil, dan dokumen.
+> File MP4 berukuran besar **tidak disimpan di git**. Hasil render ada di Drive:
+> [`tropical-subtropis-remotion-3m17-1080x1920.mp4`](https://drive.google.com/file/d/1yNZTvviCyy7mDI6M_s2iat_IuLraLlMw/view)
+> (folder `movie/tropical-climate`, 38,7 MB). Repo ini hanya berisi kode, aset kecil, dan dokumen.
 > Versi Pillow sebelumnya (`out/tropical-subtropis-COMPLETE.mp4`) tetap ada di riwayat commit sebagai arsip.
 
 ---
