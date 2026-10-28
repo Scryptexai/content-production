@@ -4,68 +4,75 @@
   "plate": "ink",
   "accent": "rose",
   "format": "tiktok",
-  "targetSec": 78,
+  "targetSec": 72,
   "beats": [
     {
       "key": "b1",
       "kind": "hook",
-      "vo": "Data dari 131 perusahaan di Amerika Serikat menunjukkan pola yang sulit diterima: perusahaan secara sistematis memilih manajer yang lebih buruk.",
-      "text": "Perusahaan ini memilih manajer yang lebih buruk. Secara sistematis.",
-      "screen": ["131 perusahaan"]
+      "vo": "131 perusahaan. Semuanya memilih manajer yang lebih buruk.",
+      "text": "131 perusahaan. Semuanya memilih manajer yang lebih buruk.",
+      "screen": []
     },
     {
       "key": "b2",
       "kind": "statement",
-      "vo": "Bukan sampel kecil. 38.843 tenaga penjualan, 1.553 di antaranya dipromosikan jadi manajer. Tiga ekonom mengikuti mereka lintas waktu di dalam perusahaan yang sama. Pertanyaannya sederhana: apa yang membuat seseorang dipromosikan?",
+      "vo": "Bukan sampel kecil: 38.843 tenaga penjualan, 1.553 promosi. Tiga ekonom mengikuti mereka dari dalam.",
       "text": "Bukan sampel kecil.",
-      "screen": ["38.843 penjual → 1.553 promosi"]
+      "screen": ["38.843 penjual", "1.553 promosi"]
     },
     {
       "key": "b3",
       "kind": "number",
-      "vo": "Jawabannya: penjualan. Menggandakan penjualan seseorang menaikkan peluangnya dipromosikan sekitar 14 persen.",
+      "vo": "Yang menentukan promosi: penjualan. Penjualan berlipat dua menaikkan peluang promosi 14 persen.",
       "text": "Yang menentukan promosi: penjualan.",
       "screen": ["+14%"]
     },
     {
       "key": "b4",
       "kind": "number",
-      "vo": "Lalu yang kedua. Setelah jadi manajer, orang dengan penjualan terbaik justru menurunkan performa timnya. Setiap kali penjualan sebelum promosi berlipat dua, penjualan anak buahnya rata-rata 7,5 persen lebih rendah.",
-      "text": "Setelah jadi manajer, yang terbaik justru menurunkan timnya.",
+      "vo": "Tapi setelah jadi manajer, yang penjualannya terbaik menurunkan performa timnya. Setiap kali penjualannya berlipat dua, timnya menjual 7,5 persen lebih rendah.",
+      "text": "Setelah promosi, yang terbaik justru menurunkan timnya.",
       "screen": ["−7,5%"]
     },
     {
       "key": "b5",
       "kind": "number",
-      "vo": "Yang memprediksi manajer bagus ternyata hal lain: pengalaman bekerja lintas tim. Setiap kali pengalaman itu berlipat dua, nilai tambah manajer naik hampir 16 persen.",
-      "text": "Yang sebenarnya memprediksi: pengalaman lintas tim.",
+      "vo": "Yang sebenarnya memprediksi manajer bagus: pengalaman lintas tim. Berlipat dua, nilainya naik hampir 16 persen.",
+      "text": "Yang benar-benar memprediksi: pengalaman lintas tim.",
       "screen": ["+16%"]
     },
     {
       "key": "b6",
       "kind": "number",
-      "vo": "Para penulis lalu menghitung: kalau perusahaan mempromosikan berdasarkan potensi manajerial, bukan penjualan, kualitas manajer bisa naik sekitar 30 persen.",
-      "text": "Kalau memilih dengan benar, kualitas manajer naik.",
+      "vo": "Kalau perusahaan memilih berdasarkan potensi manajerial, kualitas manajer naik 30 persen.",
+      "text": "Kalau memilih dengan benar.",
       "screen": ["+30%"]
     },
     {
       "key": "b7",
       "kind": "statement",
-      "vo": "Di sini kesimpulan yang mudah gagal. Para penulis tidak menyebut perusahaan bodoh. Mereka menemukan sesuatu: perusahaan mengurangi bobot penjualan dalam keputusan promosi justru ketika jabatan manajerialnya lebih berat, dan ketika gaji anak buah sangat bergantung pada performa.",
-      "text": "Mereka tidak bodoh. Bobot penjualan justru diturunkan saat jabatannya lebih berat.",
-      "screen": ["seleksi ↓ penjualan"]
+      "vo": "Yang menarik: bobot penjualan justru diturunkan ketika jabatannya lebih berat. Jadi promosi bukan cuma seleksi.",
+      "text": "Bobot penjualan justru diturunkan saat jabatannya lebih berat.",
+      "screen": ["seleksi ⇄ hadiah"]
     },
     {
       "key": "b8",
       "kind": "statement",
-      "vo": "Artinya promosi tidak hanya memilih manajer. Promosi juga memberi hadiah kepada orang yang masih di lapangan dan sedang menonton.",
-      "text": "Promosi bukan cuma memilih manajer. Ia juga memberi hadiah kepada yang menonton.",
-      "screen": ["seleksi ⇄ hadiah"]
+      "vo": "Promosi juga hadiah untuk orang yang masih di lapangan, dan sedang menonton.",
+      "text": "Promosi juga hadiah untuk yang menonton.",
+      "screen": []
     },
     {
       "key": "b9",
+      "kind": "note",
+      "vo": "Batasnya: sampel ini tenaga penjualan di perusahaan Amerika. Belum tentu berlaku untuk pekerjaan yang hasilnya sulit diukur.",
+      "text": "Batas data.",
+      "screen": ["tenaga penjualan · AS · kinerja terukur"]
+    },
+    {
+      "key": "b10",
       "kind": "close",
-      "vo": "Seleksi dan hadiah menginginkan orang yang berbeda. Kalau promosi di tempatmu sebenarnya hadiah, siapa yang sedang kamu pilih?",
+      "vo": "Kalau promosi di tempatmu sebenarnya hadiah, siapa yang sedang kamu pilih?",
       "text": "Kalau promosi di tempatmu sebenarnya hadiah — siapa yang sedang kamu pilih?",
       "screen": []
     }

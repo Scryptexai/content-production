@@ -144,3 +144,34 @@ node -e "require('@sparticuz/chromium').default.executablePath().then(console.lo
 
 Tanpa `LD_LIBRARY_PATH`, Chromium gagal start dan Remotion berhenti dengan
 "browser executable not found" — bukan masalah Remotion.
+
+## Video panjang (benchmark)
+
+Satu video 3–4 menit 16:9, dipakai sebagai patokan video berikutnya.
+
+```bash
+FF=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())")
+python3 make_backdrop_assets.py                      # knot-mark, bloom, grain
+python3 make_backdrop_loop.py --ffmpeg "$FF"          # backdrop/loop-<tone>.mp4 + -long.mp4
+python3 build_long.py RW1-long --ffmpeg "$FF"         # timing dari durasi audio nyata
+python3 make_music.py --sec 230 --ffmpeg "$FF"        # bed musik (di-gitignore)
+
+cd remotion
+export LD_LIBRARY_PATH=/tmp/al2023/lib
+npx remotion render src/index.ts KTL-benchmark out/RW1L-silent.mp4 \
+  --browser-executable=/tmp/chromium --concurrency=2 --crf=19 --log=error
+cd ..
+python3 mix.py --video remotion/out/RW1L-silent.mp4 \
+  --music remotion/public/music/ink.mp3 --out out/RW1L.mp4 --ffmpeg "$FF"
+```
+
+Catatan teknis (jangan diulang):
+
+- Latar **tidak** digambar sebagai lapisan gambar ber-animasi di Remotion —
+  itu 1,6 dtk/frame. Latar dibakar jadi video oleh `make_backdrop_loop.py`
+  (0,2–0,4 dtk/frame).
+- `<OffthreadVideo loop>` di versi ini **membeku di frame pertama**
+  (selisih antar frame 0,000). Karena itu berkasnya diulang jadi
+  `loop-<tone>-long.mp4` dan diputar lurus tanpa `loop`.
+- Simpul di latar harus kecil dan di kanan. Versi besar-di-tengah membuat teks
+  tenggelam dan tidak terbaca di ponsel.

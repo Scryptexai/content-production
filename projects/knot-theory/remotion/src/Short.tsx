@@ -1,7 +1,8 @@
-import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
+import { AbsoluteFill, Audio, Img, Sequence, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import React from "react";
 import { useFonts } from "./fonts";
 import { ACCENTS, CREAM, MUTED, ROSE, SAGE, LILAC } from "./palette";
+import { Backdrop } from "./Backdrop";
 
 export type BeatKind = "hook" | "statement" | "number" | "pair" | "note" | "close";
 
@@ -19,6 +20,8 @@ export type ShortProps = {
   plate: string;
   accent: keyof typeof ACCENTS;
   beats: Beat[];
+  /** pratinjau desain tanpa audio (dipakai saat narasi belum direkam) */
+  preview?: boolean;
 };
 
 const EASE = Easing.bezier(0.22, 1, 0.36, 1);
@@ -165,7 +168,7 @@ const Slide: React.FC<{ beat: Beat }> = ({ beat }) => {
 };
 
 /* ------------------------------------------------------------------ root */
-export const KnotShort: React.FC<ShortProps> = ({ id, plate, accent, beats }) => {
+export const KnotShort: React.FC<ShortProps> = ({ plate, accent, beats, preview }) => {
   const fontsReady = useFonts();
   const { fps } = useVideoConfig();
   const total = beats.length ? beats[beats.length - 1].to : 1;
@@ -174,31 +177,12 @@ export const KnotShort: React.FC<ShortProps> = ({ id, plate, accent, beats }) =>
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0C1018" }}>
-      {/* plate bergerak: tidak pernah statis */}
-      <OffthreadVideo
-        src={staticFile(`plates/${plate}-loop.mp4`)}
-        muted
-        loop
-        style={{
-          position: "absolute",
-          inset: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      />
-
-      {/* vignette tipis + scrim bawah untuk teks */}
-      <AbsoluteFill
-        style={{
-          background:
-            "radial-gradient(120% 80% at 50% 42%, rgba(0,0,0,0) 38%, rgba(4,6,10,0.55) 100%)",
-        }}
-      />
+      {/* latar bergerak (vektor, bukan video) */}
+      <Backdrop tone={plate} />
 
       {beats.map((b, i) => (
         <Sequence key={i} from={b.from} durationInFrames={b.to - b.from}>
-          <Audio src={staticFile(`audio/${b.vo}`)} />
+          {preview ? null : <Audio src={staticFile(`audio/${b.vo}`)} />}
           <AbsoluteFill
             style={{
               paddingTop: SAFE.top,

@@ -41,7 +41,7 @@ def estimate(text: str) -> float:
     return max(2.4, len(text) / 15.0)
 
 
-def build(shot_id: str, ffmpeg: str, strict: bool):
+def build(shot_id: str, ffmpeg: str, strict: bool, estimate_only: bool = False):
     data = json.loads((SHOTS / f"{shot_id}.json").read_text(encoding="utf-8"))
     frames = []
     t = 0.0
@@ -49,7 +49,7 @@ def build(shot_id: str, ffmpeg: str, strict: bool):
     for b in data["beats"]:
         name = f"{shot_id}-{b['key']}.mp3"
         path = AUDIO / name
-        if path.exists():
+        if path.exists() and not estimate_only:
             d = duration(path, ffmpeg)
         else:
             missing.append(name)
@@ -73,6 +73,8 @@ def build(shot_id: str, ffmpeg: str, strict: bool):
         "accent": data["accent"],
         "beats": frames,
     }
+    if estimate_only:
+        props["preview"] = True          # pratinjau desain: audio tidak dimuat
     OUT.mkdir(exist_ok=True)
     (OUT / f"{shot_id}-props.json").write_text(
         json.dumps(props, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -103,6 +105,8 @@ if __name__ == "__main__":
     ap.add_argument("--strict", action="store_true",
                     help="gagal kalau ada audio yang belum ada")
     ap.add_argument("--ffmpeg", default="ffmpeg")
+    ap.add_argument("--estimate", action="store_true",
+                    help="abaikan audio, pakai estimasi panjang teks (pratinjau desain)")
     args = ap.parse_args()
 
     ids = args.ids or ([p.stem for p in sorted(SHOTS.glob("*.json"))] if args.all else [])
@@ -118,7 +122,7 @@ if __name__ == "__main__":
             existing = json.loads(m.group(1))
 
     for sid in ids:
-        props = build(sid, args.ffmpeg, args.strict)
+        props = build(sid, args.ffmpeg, args.strict, args.estimate)
         if props:
             existing[sid] = props
     write_ts(existing)

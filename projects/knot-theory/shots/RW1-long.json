@@ -1,0 +1,147 @@
+{
+  "id": "RW1L",
+  "title": "Manajer yang lebih buruk, dipilih secara sistematis",
+  "format": "youtube",
+  "aspect": "16:9",
+  "tone": "ink",
+  "targetSec": 210,
+  "chapter": "01 / KERJA",
+  "source": "Benson, Li & Shue — Promotions and the Peter Principle, QJE 134(4), 2019",
+  "blocks": [
+    {
+      "key": "b1",
+      "scene": "adegan",
+      "kicker": "2019 · DATA PERUSAHAAN",
+      "vo": "Pada 2019, tiga ekonom membuka data 131 perusahaan Amerika. Di dalamnya ada 38.843 tenaga penjualan, dan 1.553 orang yang pernah dipromosikan jadi manajer. Bukan sampel kecil — dan yang mereka temukan berlaku di hampir semua perusahaan itu.",
+      "headline": "Tiga ekonom. 131 perusahaan.",
+      "stats": [
+        {
+          "value": "131",
+          "label": "perusahaan"
+        },
+        {
+          "value": "38.843",
+          "label": "tenaga penjualan"
+        },
+        {
+          "value": "1.553",
+          "label": "promosi jadi manajer"
+        }
+      ]
+    },
+    {
+      "key": "b2",
+      "scene": "metode",
+      "kicker": "CARA MENGUKUR",
+      "vo": "Caranya tidak rumit, tapi jarang dilakukan. Mereka tidak menilai manajer dari kesan atau dari wawancara atasan. Mereka menghitung satu hal yang bisa diukur: berapa nilai tambah manajer itu terhadap penjualan anak buahnya, dibandingkan dengan penjualan tim yang sama sebelum ia menjabat.",
+      "headline": "Yang dihitung bukan kesan, tapi selisih.",
+      "before": {
+        "t": "sebelum ia menjabat",
+        "v": "penjualan tim"
+      },
+      "after": {
+        "t": "sesudah ia menjabat",
+        "v": "penjualan tim"
+      },
+      "note": "selisihnya = nilai tambah manajer"
+    },
+    {
+      "key": "b3",
+      "scene": "bar",
+      "kicker": "APA YANG MEMBUAT DIPROMOSIKAN",
+      "vo": "Lalu pertanyaannya: apa yang membuat seseorang dipromosikan? Jawabannya penjualan. Kalau penjualan seseorang berlipat dua, peluangnya dipromosikan naik sekitar empat belas persen. Artinya yang diukur saat memilih adalah performa di pekerjaan lama, bukan kemampuan di pekerjaan baru.",
+      "headline": "Penjualan berlipat dua.",
+      "bars": [
+        {
+          "label": "peluang promosi",
+          "value": 14.3,
+          "display": "+14%",
+          "accent": "sage"
+        }
+      ],
+      "footnote": "relatif terhadap laju dasar promosi"
+    },
+    {
+      "key": "b4",
+      "scene": "kurva",
+      "kicker": "SETELAH PROMOSI",
+      "vo": "Dan sesudah promosi, hal yang aneh terjadi. Orang dengan penjualan terbaik justru menurunkan timnya. Setiap kali penjualan sebelum promosi berlipat dua, penjualan rata-rata anak buahnya tujuh setengah persen lebih rendah. Semakin hebat ia menjual sendiri, semakin besar penurunan yang ia bawa.",
+      "headline": "Yang terbaik saat menjual, terburuk saat memimpin tim.",
+      "labelA": "penjualan sebelum promosi",
+      "labelB": "penjualan tim sesudahnya",
+      "value": "−7,5%"
+    },
+    {
+      "key": "b5",
+      "scene": "prediktor",
+      "kicker": "YANG SEBENARNYA MEMPREDIKSI",
+      "vo": "Yang ternyata memprediksi manajer bagus adalah hal lain: pengalaman bekerja lintas tim. Berlipat dua, nilai tambah manajer naik hampir enam belas persen. Ini bukan bakat mistis. Ini soal pernah melihat pekerjaan orang lain dari dekat, dan tahu bagian mana yang gampang rusak.",
+      "headline": "Bukan bakat. Pernah melihat pekerjaan orang lain dari dekat.",
+      "rows": [
+        {
+          "label": "penjualan sebelum promosi",
+          "value": "−7,5%",
+          "tone": "rose"
+        },
+        {
+          "label": "pengalaman lintas tim",
+          "value": "+15,8%",
+          "tone": "sage"
+        }
+      ]
+    },
+    {
+      "key": "b6",
+      "scene": "kontrafaktual",
+      "kicker": "SATU SKENARIO YANG DIHITUNG PENULIS",
+      "vo": "Para penulis lalu menghitung satu skenario. Kalau perusahaan mempromosikan berdasarkan potensi manajerial, bukan penjualan, kualitas manajer di perusahaan-perusahaan itu bisa naik sekitar tiga puluh persen. Perhatikan: bukan tiga puluh persen lebih banyak promosi. Kualitas orang yang dipilih.",
+      "headline": "Kalau memilih dengan benar.",
+      "value": "+30%",
+      "note": "bukan lebih banyak promosi — kualitas manajernya"
+    },
+    {
+      "key": "b7",
+      "scene": "mekanisme",
+      "kicker": "KENAPA PERUSAHAAN TETAP MELAKUKANNYA",
+      "vo": "Di sini kesimpulan yang paling mudah diambil justru gagal. Para penulis tidak menyimpulkan perusahaan itu bodoh. Mereka menemukan bahwa bobot penjualan justru diturunkan ketika jabatan manajerialnya lebih berat, dan ketika gaji anak buah sangat bergantung pada performa. Artinya promosi bukan hanya alat memilih orang. Promosi juga alat memberi hadiah kepada orang yang masih di lapangan dan sedang menonton.",
+      "headline": "Promosi mengerjakan dua hal sekaligus.",
+      "left": {
+        "t": "seleksi",
+        "d": "siapa yang akan jadi manajer bagus"
+      },
+      "right": {
+        "t": "hadiah",
+        "d": "siapa yang layak diberi imbalan"
+      },
+      "note": "dua tujuan ini menginginkan orang yang berbeda"
+    },
+    {
+      "key": "b8",
+      "scene": "kutipan",
+      "kicker": "BUKAN GAGASAN BARU",
+      "vo": "Gagasannya bukan baru. Pada 1969, Laurence Peter menuliskannya sebagai lelucon: setiap karyawan cenderung naik ke tingkat ketidakmampuannya, lalu berhenti di sana. Selama lima puluh tahun, itu dibaca sebagai sindiran tentang birokrasi. Data 131 perusahaan ini membuatnya jadi lebih dari sekadar sindiran.",
+      "quote": "Setiap karyawan cenderung naik ke tingkat ketidakmampuannya.",
+      "attrib": "Laurence J. Peter, 1969 — ditulis sebagai satire"
+    },
+    {
+      "key": "b9",
+      "scene": "batas",
+      "kicker": "BATAS DATA",
+      "vo": "Tapi batasnya harus disebut. Sampelnya tenaga penjualan di perusahaan Amerika, dengan kinerja yang bisa diukur rapi dan dibandingkan dari waktu ke waktu. Untuk pekerjaan yang hasilnya sulit dihitung, seperti guru, perawat, atau perancang, efek ini belum diuji. Dan kita juga tidak tahu apakah perusahaan yang memilih dengan benar benar-benar lebih untung.",
+      "headline": "Yang tidak bisa dijawab data ini.",
+      "chips": [
+        "tenaga penjualan",
+        "perusahaan Amerika",
+        "kinerja terukur"
+      ],
+      "unknown": "apakah memilih dengan tepat membuat perusahaan lebih untung — itu tidak diuji"
+    },
+    {
+      "key": "b10",
+      "scene": "tanya",
+      "kicker": "PENUTUP",
+      "vo": "Yang kita tahu: seleksi dan hadiah menginginkan orang yang berbeda. Jadi pertanyaannya bukan apakah promosi itu adil. Pertanyaannya: kalau promosi di tempatmu selama ini lebih banyak bekerja sebagai hadiah, siapa yang sebenarnya sedang dipilih?",
+      "question": "Kalau promosi di tempatmu ternyata bekerja sebagai hadiah — siapa yang sebenarnya sedang dipilih?"
+    }
+  ]
+}

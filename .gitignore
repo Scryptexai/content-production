@@ -32,3 +32,5 @@ projects/knot-theory/remotion/public/plates/*.mp4
 projects/knot-theory/remotion/public/audio/*.mp3
 projects/knot-theory/remotion/src/shots.ts
 projects/knot-theory/remotion/node_modules/
+# Latar yang dibakar (dibangkitkan make_backdrop_loop.py, puluhan MB → bukan git)
+projects/knot-theory/remotion/public/backdrop/*.mp4
