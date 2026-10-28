@@ -34,6 +34,19 @@ Empat karakter AI untuk ceruk *beauty* Indonesia. Bukan empat variasi dari wajah
 
 ---
 
+## Proyek aktif: video narasi tanpa karakter
+
+| File | Isi |
+|---|---|
+| [`projects/tropical-climate/`](projects/tropical-climate/) | **"Kulit Tropis, Formula Subtropis"** — video 3:11, 10 adegan, narasi saja, tanpa karakter. |
+| [`projects/tropical-climate/research.md`](projects/tropical-climate/research.md) | Riset 13 sumber: zona iklim IVb, sains humektan/oklusif, UV, stabilitas panas. |
+| [`projects/tropical-climate/shots.md`](projects/tropical-climate/shots.md) | Pemetaan shot dari video-shotcraft + aturan gerak yang diterapkan. |
+| [`projects/tropical-climate/out/tropical-subtropis-web.mp4`](projects/tropical-climate/out/tropical-subtropis-web.mp4) | Film final. |
+
+> Catatan jujur: `video-shotcraft` adalah skill Remotion dan butuh Chromium — tidak bisa dirender di lingkungan ini (dibuktikan di `projects/tropical-climate/README.md`). Yang dipakai adalah tata bahasa geraknya, diimplementasikan ulang dengan Pillow + ffmpeg.
+
+---
+
 ## Matriks pembeda
 
 Ini bagian terpenting. Empat karakter ini dirancang supaya **tidak saling memakan audiens**.
