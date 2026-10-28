@@ -103,7 +103,7 @@ Satu topik, tiga format, sumber di deskripsi.
 
 **Sorotan (highlights):** `Episode` · `Sumber` · `Tanya`
 
-**Aset profil:** avatar `avatar-1080.png`, pinned `ig-pinned-1080x1350.jpg`,
+**Aset profil:** avatar `avatar-1080.jpg`, pinned `ig-pinned-1080x1350.jpg`,
 cover sorotan `ig-highlight-*-1080x1920.jpg` — semuanya di `brand/knot-theory/assets/`.
 
 ## 3. SEO konten (berlaku untuk semua akun)

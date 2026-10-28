@@ -170,14 +170,16 @@ def avatar(size=1080, ratio=0.58, stroke=0.098, accent=False):
     draw_mark_accent(im, S * ratio, (S / 2, S / 2), stroke, accent)
     im = im.resize((size, size), Image.LANCZOS)
     name = "avatar-rose-" if accent else "avatar-"
-    im.save(OUT / f"{name}{size}.png")
+    # avatar tidak butuh transparansi -> JPEG (kualitas setara, ukuran ~1/8)
+    im.save(OUT / f"{name}{size}.jpg", quality=94, subsampling=1)
     # pratinjau potongan bulat seperti di aplikasi
     mask = Image.new("L", (size * 2, size * 2), 0)
     ImageDraw.Draw(mask).ellipse([0, 0, size * 2 - 1, size * 2 - 1], fill=255)
     mask = mask.resize((size, size), Image.LANCZOS)
     prev = Image.new("RGB", (size, size), (8, 11, 17))
     prev.paste(im, (0, 0), mask)
-    prev.save(OUT / f"{name}{size}-circular-preview.png")
+    prev.resize((540, 540), Image.LANCZOS).save(
+        OUT / f"{name}{size}-circular-preview.jpg", quality=90, subsampling=1)
     return im
 
 
@@ -233,29 +235,211 @@ def yt_watermark(px=150):
     return im
 
 
-def youtube_banner(w=2560, h=1440):
+# --- geometri crop YouTube (sumber: dokumentasi banner channel) --------------
+# Kanvas 2560x1440. Semua crop dipusatkan.
+YT_CROPS = {
+    "tv":      (2560, 1440, "TV"),
+    "desktop": (2560, 423,  "Desktop"),
+    "tablet":  (1855, 423,  "Tablet"),
+    "mobile":  (1546, 423,  "Mobile"),
+}
+# area aman = irisan semua crop di atas
+YT_SAFE = (1546, 423)
+
+
+def lockup_layer(width):
+    """Lockup pada kanvas transparan, dipangkas ke bounding box tinta.
+
+    Digambar pada `width` lalu di-crop, supaya pemanggil bisa fit-to-box
+    tanpa menebak tinggi font vs tinggi tinta.
+    """
+    H = int(width * 0.55)
+    layer = Image.new("RGBA", (width, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    mark = width * 0.135
+    gap1 = width * 0.020
+    f_word = font(SERIF, width * 0.062)
+    track = f_word.size * 0.20
+    gap2 = width * 0.024
+    rule_w, rule_t = width * 0.16, max(2, width * 0.0017)
+    gap3 = width * 0.018
+    f_tag = font(SERIF_IT, width * 0.0245)
+
+    total = mark + gap1 + f_word.size + gap2 + rule_t + gap3 + f_tag.size
+    y = (H - total) / 2
+    draw_mark(layer, mark, (width / 2, y + mark / 2), stroke_ratio=0.088,
+              color=CREAM + (255,))
+    y += mark + gap1
+    tracked(d, "KNOT THEORY", f_word, track, CREAM + (255,),
+            center=(width / 2, y + f_word.size / 2))
+    y += f_word.size + gap2
+    rule(d, width / 2, y + rule_t / 2, rule_w, ROSE + (255,), rule_t)
+    y += rule_t + gap3
+    tracked(d, "manusia dan ikatannya", f_tag, f_tag.size * 0.02, CREAM + (255,),
+            center=(width / 2, y + f_tag.size / 2))
+    return layer.crop(layer.getbbox())
+
+
+def fit_lockup(im, bw, bh, center):
+    """Skala lockup agar masuk kotak (bw, bh) tanpa memotong apa pun."""
+    base = lockup_layer(1600)
+    k = min(bw / base.width, bh / base.height)
+    w, h = int(base.width * k), int(base.height * k)
+    lay = base.resize((w, h), Image.LANCZOS)
+    im.alpha_composite(lay, (int(center[0] - w / 2), int(center[1] - h / 2)))
+
+
+def _wing_knots(W, H, strength=0.55, cy=None):
+    """Ornamen di sayap kiri/kanan — hanya terlihat di desktop & TV."""
+    ghost = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    cy = cy if cy is not None else H * 0.5
+    for fx in (0.115, 0.885):
+        draw_mark(ghost, H * 0.92, (W * fx, cy), stroke_ratio=0.042,
+                  color=(74, 90, 122, 255), inset=0.0)
+    ghost.putalpha(ghost.getchannel("A").point(lambda a: int(a * strength)))
+    return ghost
+
+
+def youtube_banner(w=2560, h=1440, variant="master"):
+    """Banner 2560x1440. Isi utama selalu di dalam 1546x423.
+
+    variant="master" : komposisi tenang, fokus di area aman.
+    variant="tv"     : sama di area aman + atmosfer tambahan di atas/bawah
+                       yang hanya muncul di TV (opsional).
+    """
     ss = 2
     W, H = w * ss, h * ss
-    im = background(W, H, glow=0.5, at=(0.5, 0.5))
+    im = background(W, H, glow=0.5, at=(0.5, 0.5)).convert("RGBA")
 
-    # knot raksasa samar di dua sisi, di luar area aman
-    ghost = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    draw_mark(ghost, H * 0.98, (W * 0.085, H * 0.50), stroke_ratio=0.045,
-              color=(60, 74, 102, 255), inset=0.0)
-    draw_mark(ghost, H * 0.98, (W * 0.915, H * 0.50), stroke_ratio=0.045,
-              color=(60, 74, 102, 255), inset=0.0)
-    ghost.putalpha(ghost.getchannel("A").point(lambda a: int(a * 0.5)))
-    im = Image.alpha_composite(im.convert("RGBA"), ghost).convert("RGB")
+    if variant == "tv":
+        # TV menampilkan 16:9 penuh. Tambahan hanya atmosfer: gradien gelap
+        # halus di atas & bawah (tanpa garis), jadi tidak ada "seam" yang
+        # terlihat seperti gambar rusak.
+        grad = Image.new("RGBA", (1, H))
+        gp = grad.load()
+        edge = 0.26
+        for y in range(H):
+            f = y / (H - 1)
+            d_edge = min(f, 1 - f) / edge
+            a = int(120 * max(0.0, 1.0 - d_edge) ** 1.7)
+            gp[0, y] = (6, 9, 15, a)
+        im = Image.alpha_composite(im, grad.resize((W, H), Image.BILINEAR))
 
-    safe_w = 1546 / 2560 * W
-    lockup(im, W / 2, H / 2, safe_w * 0.90, with_bg=True)
-    im = im.resize((w, h), Image.LANCZOS)
-    im.save(OUT / "yt-banner-2560x1440.jpg", quality=93, subsampling=1)
+    im = Image.alpha_composite(im, _wing_knots(W, H, 0.55 if variant == "master" else 0.62))
 
-    x0, y0 = (w - 1546) // 2, (h - 423) // 2
-    im.crop((x0, y0, x0 + 1546, y0 + 423)).save(
-        OUT / "yt-banner-safe-1546x423.jpg", quality=93, subsampling=1)
+    sw, sh = YT_SAFE[0] / 2560 * W, YT_SAFE[1] / 1440 * H
+    pad_x, pad_y = sw * 0.045, sh * 0.085
+    fit_lockup(im, sw - 2 * pad_x, sh - 2 * pad_y, (W / 2, H / 2))
+
+    im = im.convert("RGB").resize((w, h), Image.LANCZOS)
+    name = "yt-banner-2560x1440.jpg" if variant == "master" else \
+        f"yt-banner-tv-2560x1440.jpg"
+    im.save(OUT / name, quality=93, subsampling=1)
     return im
+
+
+def yt_device_previews(master=2560, height=1440):
+    """Potongan persis seperti tab Desktop / Tablet / Mobile / TV di YouTube."""
+    im = Image.open(OUT / "yt-banner-2560x1440.jpg")
+    mw, mh = im.size
+    cx, cy = mw // 2, mh // 2
+    for key, (cw, ch, label) in YT_CROPS.items():
+        cw = round(cw / 2560 * mw)
+        ch = round(ch / 1440 * mh)
+        box = (cx - cw // 2, cy - ch // 2, cx - cw // 2 + cw, cy - ch // 2 + ch)
+        im.crop(box).save(OUT / f"yt-preview-{key}-{cw}x{ch}.jpg",
+                          quality=93, subsampling=1)
+
+
+def yt_device_sheet(path_out="yt-banner-spec-sheet.jpg"):
+    """Lembar spek: banner penuh + peta zona + potongan tiap device.
+
+    Tujuannya satu: sebelum upload, kelihatan bahwa tidak ada teks yang
+    terpotong di device mana pun.
+    """
+    banner = Image.open(OUT / "yt-banner-2560x1440.jpg").convert("RGB")
+    W = 1800
+    m = 64
+    bw = W - 2 * m
+    bh = int(bw * 1440 / 2560)
+
+    f_title = font(MONO_MED, 40)
+    f_sub = font(MONO, 26)
+    f_lbl = font(MONO_MED, 24)
+    f_dim = font(MONO, 22)
+
+    crops = {}
+    for key, (cw, ch, label) in YT_CROPS.items():
+        crops[key] = (Image.open(OUT / f"yt-preview-{key}-{round(cw)}x{round(ch)}.jpg"),
+                      label, cw, ch)
+
+    crop_w = bw
+    rows = []
+    for key in ("desktop", "tablet", "mobile"):
+        _, _, cw, ch = crops[key]
+        rows.append(round(crop_w * ch / cw))
+
+    H = (m + 130 + bh + 62 + 34 + sum(h + 46 for h in rows) + 96)
+    sheet = Image.new("RGB", (W, H), (8, 11, 17))
+    d = ImageDraw.Draw(sheet)
+
+    d.text((m, m), "BANNER YOUTUBE — satu file, empat potongan", font=f_title, fill=CREAM)
+    d.text((m, m + 50), "2560 × 1440  ·  isi utama di dalam 1546 × 423  ·  satu file untuk semua device",
+           font=f_sub, fill=(150, 158, 175))
+
+    # --- banner penuh + peta zona -------------------------------------------
+    top = m + 130
+    prev = banner.resize((bw, bh), Image.LANCZOS)
+    sheet.paste(prev, (m, top))
+
+    cx, cy = m + bw // 2, top + bh // 2
+    k = bw / 2560
+    for key, col, tw in (("desktop", (188, 158, 200), 2),
+                         ("tablet", (143, 169, 139), 2),
+                         ("mobile", (217, 142, 115), 3)):
+        cw, ch, _ = YT_CROPS[key]
+        cw, ch = round(cw * k), round(ch * k)
+        d.rectangle([cx - cw // 2, cy - ch // 2, cx + cw // 2, cy + ch // 2],
+                    outline=col, width=tw)
+    d.rectangle([m, top, m + bw - 1, top + bh - 1], outline=(120, 130, 150), width=2)
+
+    # legenda di bawah banner
+    ly = top + bh + 18
+    legend = [((188, 158, 200), "DESKTOP 2560 × 423"),
+              ((143, 169, 139), "TABLET 1855 × 423"),
+              ((217, 142, 115), "MOBILE 1546 × 423"),
+              ((120, 130, 150), "TV 2560 × 1440 (penuh)")]
+    lx = m
+    for col, txt in legend:
+        d.rectangle([lx, ly + 4, lx + 26, ly + 18], outline=col, width=2)
+        d.text((lx + 36, ly), txt, font=f_dim, fill=(170, 178, 194))
+        lx += 36 + d.textlength(txt, font=f_dim) + 40
+
+    # --- potongan tiap device ------------------------------------------------
+    y = ly + 62
+    d.text((m, y - 6), "PRATINJAU POTONGAN ASLI (persis seperti tab di YouTube Studio)",
+           font=f_lbl, fill=CREAM)
+    y += 34
+    for key in ("desktop", "tablet", "mobile"):
+        c, label, cw, ch = crops[key]
+        h = round(crop_w * ch / cw)
+        img = c.resize((crop_w, h), Image.LANCZOS)
+        sheet.paste(img, (m, y))
+        d.rectangle([m, y, m + crop_w, y + h], outline=(46, 56, 74), width=1)
+        tag = f"{label.upper()}  ·  {cw} × {ch}"
+        d.rectangle([m, y + h - 30, m + d.textlength(tag, font=f_dim) + 24, y + h],
+                    fill=(8, 11, 17))
+        d.text((m + 12, y + h - 26), tag, font=f_dim, fill=(200, 208, 222))
+        y += h + 46
+
+    note = ("Kalau teks atau logo menyentuh tepi potongan MANA PUN di atas, "
+            "YouTube akan memotongnya di device itu.")
+    d.text((m, H - 60), note, font=f_dim, fill=(217, 142, 115))
+
+    sheet.save(OUT / path_out, quality=90, subsampling=1)
+    sheet.resize((900, round(H * 900 / W)), Image.LANCZOS).save(
+        OUT / "yt-banner-spec-sheet-small.jpg", quality=88, subsampling=1)
+    return sheet
 
 
 def tt_cover(title, ep, w=1080, h=1920):
@@ -437,7 +621,7 @@ def preview_sheet():
           "logo utama (transparan) — ditaruh di atas ink", panel=(14, 18, 27))
     paste("yt-thumb-template-1280x720.jpg", (1480, 170, 560, 315),
           "YT thumbnail 1280×720")
-    paste("avatar-1080.png", (880, 170, 260, 260), "avatar 1080×1080")
+    paste("avatar-1080.jpg", (880, 170, 260, 260), "avatar 1080×1080")
     paste("yt-watermark-150.png", (1180, 170, 150, 150), "watermark 150×150")
     paste("tt-cover-1080x1920.jpg", (60, 700, 300, 534), "TikTok cover 1080×1920")
     paste("ig-pinned-1080x1350.jpg", (400, 700, 300, 375), "IG pinned 1080×1350")
@@ -447,7 +631,7 @@ def preview_sheet():
           "YouTube banner 2560×1440")
     paste("yt-banner-safe-1546x423.jpg", (1040, 1470, 600, 164),
           "safe area 1546×423 (yang terlihat di mobile)")
-    im.save(OUT / "preview-sheet.png")
+    im.save(OUT / "preview-sheet.jpg", quality=90, subsampling=1)
     return im
 
 
