@@ -48,3 +48,7 @@ projects/knot-theory/out/*.wav
 
 # Hasil render Remotion (besar)
 projects/knot-theory/remotion/out/
+
+# Film (mg-styles-15 harness) — node_modules & hasil render
+projects/knot-theory/film/node_modules/
+projects/knot-theory/film/scenes/*/out/

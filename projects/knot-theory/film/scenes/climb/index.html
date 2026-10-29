@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Knot Theory — The Climb</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #05070F; overflow: hidden;
+               width: 1920px; height: 1080px; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080"
+     viewBox="0 0 1920 1080"></svg>
+
+<script>window.DEMO = { width: 1920, height: 1080, fps: 30, duration: 12 };</script>
+
+<script type="module">
+/* ==========================================================================
+   The Climb — satu shot, 12 detik, empat bidikan.
+   Semua gambar adalah kode. Tidak ada aset dari pihak lain.
+   ========================================================================== */
+import { C, E, POP, camStyle, clamp, inv, lerp, mk, pop, rng, smooth } from "../../lib.js";
+
+const S = document.getElementById("S");
+const el = mk(S);
+const DUR = 12;
+
+/* ------------------------------------------------------------------ defs */
+const defs = el("defs");
+const gid = (n) => `u-${n}`;
+
+const sky = el("linearGradient", { id: "sky", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+[[0, "#05070F"], [26, "#0B1024"], [46, "#1B1B38"], [58, "#37263F"],
+ [69, "#5E3547"], [80, "#8E4F4E"], [91, "#C0705A"], [100, "#E09168"]]
+  .forEach(([o, c]) => el("stop", { offset: `${o}%`, "stop-color": c }, sky));
+
+const sunCore = el("radialGradient", { id: "sun" }, defs);
+el("stop", { offset: "0%", "stop-color": "#FFF6E2" }, sunCore);
+el("stop", { offset: "58%", "stop-color": "#FFD9A8" }, sunCore);
+el("stop", { offset: "100%", "stop-color": "#F0A46E" }, sunCore);
+const sunHalo = el("radialGradient", { id: "halo" }, defs);
+el("stop", { offset: "0%", "stop-color": "#FFC389", "stop-opacity": 0.5 }, sunHalo);
+el("stop", { offset: "58%", "stop-color": "#E08B63", "stop-opacity": 0.12 }, sunHalo);
+el("stop", { offset: "100%", "stop-color": "#E08B63", "stop-opacity": 0 }, sunHalo);
+
+/* vignette + grain lapis layar */
+const vig = el("radialGradient", { id: "vig" }, defs);
+el("stop", { offset: "42%", "stop-color": "#000", "stop-opacity": 0 }, vig);
+el("stop", { offset: "100%", "stop-color": "#000", "stop-opacity": 0.62 }, vig);
+
+/* ------------------------------------------------------- geometri panggung
+   WAJIB sama dengan export_figure.py: x0=430 y0=940 tread=158 riser=54 n=6 */
+const X0 = 430, Y0 = 940, TR = 158, RI = 54, N = 6, PW = 240, TH = 38;
+
+/* ------------------------------------------------------------------ lapis */
+const LAYERS = {};
+const layer = (name, z) => {
+  const g = el("g");
+  LAYERS[name] = { g, z };
+  return g;
+};
+
+/* 1. langit */
+const gSky = layer("sky", 4000);
+el("rect", { x: -500, y: -500, width: 2920, height: 2080, fill: "url(#sky)" }, gSky);
+
+/* 2. bintang */
+const gStars = layer("stars", 3200);
+{
+  const r = rng(7);
+  for (let i = 0; i < 150; i++) {
+    const y = r() * 600;
+    el("circle", {
+      cx: (r() * 1920).toFixed(1), cy: y.toFixed(1),
+      r: (0.7 + r() * 1.4).toFixed(2), fill: "#DCE6FF",
+      opacity: ((1 - y / 600) * (0.35 + r() * 0.6)).toFixed(3),
+    }, gStars);
+  }
+}
+
+/* 3. matahari */
+const gSun = layer("sun", 2600);
+el("circle", { cx: 1330, cy: 352, r: 300, fill: "url(#halo)" }, gSun);
+el("circle", { cx: 1330, cy: 352, r: 74, fill: "url(#sun)" }, gSun);
+
+/* 4-6. bukit berlapis — makin jauh makin pucat, kabut dibakar ke warna */
+const ridge = (seed, baseY, amp, step) => {
+  let s = seed >>> 0;
+  const rn = () => { s = (s * 1103515245 + 12345) >>> 0; return s / 4294967296; };
+  let d = `M -500 1400 L -500 ${baseY}`;
+  for (let x = -500; x <= 2420; x += step) {
+    const y = baseY - Math.sin(x * 0.0021 + seed) * amp - rn() * amp * 0.5;
+    d += ` L ${x.toFixed(0)} ${y.toFixed(1)}`;
+  }
+  return d + " L 2420 1400 Z";
+};
+const gFar = layer("ridgeFar", 1800);
+el("path", { d: ridge(3, 690, 104, 120), fill: "#3A3550", opacity: 0.85 }, gFar);
+el("path", { d: ridge(9, 742, 66, 110), fill: "#2A2742" }, gFar);
+
+const gMid = layer("ridgeMid", 900);
+el("path", { d: ridge(15, 806, 58, 120), fill: "#1B1A30" }, gMid);
+
+const gNear = layer("ridgeNear", 1300);
+el("path", { d: ridge(21, 872, 46, 130), fill: "#101120" }, gNear);
+
+/* 7. tangga: pita dengan tepi hangat */
+const gStairs = layer("stairs", 360);
+{
+  let d = `M ${X0 - 70} ${Y0 + 34} L ${X0 - 70} ${Y0}`;
+  for (let i = 0; i < N; i++) {
+    const x = X0 + i * TR, y = Y0 - i * RI;
+    d += ` L ${x + TR} ${y} L ${x + TR} ${y - RI}`;
+  }
+  const topX = X0 + N * TR, topY = Y0 - N * RI;
+  d += ` L ${topX + PW} ${topY} L ${topX + PW} ${topY + TH} L ${X0 - 70} ${Y0 + TH + 34} Z`;
+  el("path", { d, fill: C.stone }, gStairs);
+  for (let i = 0; i < N; i++) {
+    const x = X0 + i * TR, y = Y0 - i * RI;
+    el("rect", { x, y: y - 9, width: TR, height: 9, fill: C.stoneTop }, gStairs);
+    el("rect", { x, y: y - 10.4, width: TR, height: 1.9, fill: C.edge }, gStairs);
+    el("rect", { x: x + TR - 1.6, y: y - RI, width: 1.6, height: RI - 9,
+                 fill: "#3A3348" }, gStairs);
+  }
+  el("rect", { x: topX, y: topY - 9, width: PW, height: 9, fill: C.stoneTop }, gStairs);
+  el("rect", { x: topX, y: topY - 10.4, width: PW, height: 1.9, fill: C.edge }, gStairs);
+}
+
+/* 8. figur — dari rig Python yang sudah tervalidasi (pijakan 0,00 px) */
+const gFig = layer("figure", 360);
+
+/* 9. debu */
+const gDust = layer("dust", 240);
+const DUST = (() => {
+  const r = rng(11);
+  return Array.from({ length: 60 }, () => ({
+    x: r() * 1920, y: r() * 1080, s: 1.2 + r() * 2.2, sp: 8 + r() * 22, ph: r() * 6.283,
+  }));
+})();
+const dustNodes = DUST.map((d) =>
+  el("circle", { r: d.s.toFixed(2), fill: "#FFE9CC" }, gDust));
+
+/* 10. bingkai depan */
+const gFg = layer("fg", 90);
+{
+  const r = rng(5);
+  let d = "M -320 1400 L -320 1070";
+  for (let x = -320; x <= 2320; x += 140) {
+    const y = 1052 - Math.sin(x * 0.0016) * 26 - r() * 26;
+    d += ` L ${x.toFixed(0)} ${y.toFixed(0)}`;
+  }
+  el("path", { d: d + " L 2320 1400 Z", fill: "#04050A" }, gFg);
+}
+
+/* lapis layar (tidak ikut parallax) */
+const gScreen = el("g");
+el("rect", { x: 0, y: 0, width: 1920, height: 1080, fill: "url(#vig)",
+             "pointer-events": "none" }, gScreen);
+
+/* ------------------------------------------------------------------ kamera
+   Seleksi shot: wide → medium → close feet → close upper.
+   Setiap bidikan punya target dan zoom sendiri, dengan easing terpisah. */
+/* target = titik dunia yang diletakkan di TENGAH frame.
+   Bidikan dekat wajib lebih rendah ikut turun, karena figur ada di kanan. */
+const SHOTS = [
+  { t0: 0.0, t1: 4.2, zoom: 1.00, tx: 700, ty: 520, push: 0.05 },
+  { t0: 4.2, t1: 8.3, zoom: 1.22, tx: 780, ty: 600, push: -0.04 },
+  { t0: 8.3, t1: 10.1, zoom: 1.45, tx: 900, ty: 780, push: 0.05 },
+  { t0: 10.1, t1: 12.0, zoom: 1.38, tx: 840, ty: 470, push: -0.03 },
+];
+
+const shotAt = (t) => {
+  for (const s of SHOTS) if (t < s.t1) return s;
+  return SHOTS[SHOTS.length - 1];
+};
+
+/* transisi kamera: 0.55s, jadi potongan terasa disengaja, bukan melompat */
+const CAM_TRANS = 0.55;
+const camAt = (t) => {
+  const s = shotAt(t);
+  const q = E.ioC(inv(s.t0, s.t1, t));
+  const zoom = s.zoom * (1 + s.push * q);
+  let tx = s.tx, ty = s.ty;
+  // sapuan kecil di dalam shot (bukan zoom seragam tiap shot)
+  tx += (s.push > 0 ? 26 : -20) * q;
+  ty += (s.push > 0 ? -12 : 10) * q;
+
+  // sambung halus dengan shot sebelumnya
+  const idx = SHOTS.indexOf(s);
+  if (idx > 0 && t < s.t0 + CAM_TRANS) {
+    const prev = SHOTS[idx - 1];
+    const p = E.ioC(inv(s.t0, s.t0 + CAM_TRANS, t));
+    const pq = 1;
+    const pzoom = prev.zoom * (1 + prev.push * pq);
+    const ptx = prev.tx + (prev.push > 0 ? 26 : -20) * pq;
+    const pty = prev.ty + (prev.push > 0 ? -12 : 10) * pq;
+    return { x: lerp(ptx, tx, p), y: lerp(pty, ty, p), zoom: lerp(pzoom, zoom, p) };
+  }
+  return { x: tx, y: ty, zoom };
+};
+
+/** kamera → transform lapis, dengan kamera dinormalisasi ke pusat frame */
+const applyCam = (t) => {
+  const c = camAt(t);
+  const cam = { x: c.x - 960, y: c.y - 540, zoom: c.zoom };
+  for (const k in LAYERS) {
+    const { g, z } = LAYERS[k];
+    const st = camStyle(cam, z, 360, k === "sun" || k === "stars" ? 0 : 1);
+    g.setAttribute("transform", st.transform);
+    if (k !== "stars" && k !== "sun" && k !== "sky") g.style.filter = st.filter;
+  }
+};
+
+/* ----------------------------------------------------------------- figur */
+const FIG = await (await fetch("/assets/figure.json")).json();
+const figNodes = [];
+function buildFigure() {
+  while (gFig.firstChild) gFig.removeChild(gFig.firstChild);
+  figNodes.length = 0;
+  for (let i = 0; i < FIG.poses[0].draw.length; i++) {
+    const p = FIG.poses[0].draw[i];
+    let node;
+    if (p.t === "seg") node = el("line", { stroke: p.c, "stroke-linecap": "round" }, gFig);
+    else if (p.t === "dot") node = el("circle", { fill: p.c }, gFig);
+    else if (p.t === "ell") node = el("ellipse", { fill: p.c }, gFig);
+    else node = el("polygon", { fill: p.c }, gFig);
+    figNodes.push(node);
+  }
+}
+
+function drawFigure(frame) {
+  const pose = FIG.poses[Math.min(FIG.poses.length - 1, frame)].draw;
+  for (let i = 0; i < pose.length; i++) {
+    const p = pose[i], n = figNodes[i];
+    if (!n) continue;
+    if (p.t === "seg") {
+      n.setAttribute("x1", p.x1); n.setAttribute("y1", p.y1);
+      n.setAttribute("x2", p.x2); n.setAttribute("y2", p.y2);
+      n.setAttribute("stroke-width", (p.r1 * 2).toFixed(2));
+    } else if (p.t === "dot") {
+      n.setAttribute("cx", p.x); n.setAttribute("cy", p.y);
+      n.setAttribute("r", p.r);
+    } else if (p.t === "ell") {
+      n.setAttribute("cx", p.x); n.setAttribute("cy", p.y);
+      n.setAttribute("rx", p.rx); n.setAttribute("ry", p.ry);
+    } else {
+      n.setAttribute("points", p.pts.map((q) => q.join(",")).join(" "));
+    }
+  }
+}
+
+/* --------------------------------------------------------------- renderAt */
+window.renderAt = async (t) => {
+  applyCam(t);
+
+  // debu: drift naik, kedip pelan
+  for (let i = 0; i < DUST.length; i++) {
+    const d = DUST[i];
+    const y = ((d.y - t * d.sp) % 1080 + 1080) % 1080;
+    const x = d.x + Math.sin(t * 0.35 + d.ph) * 26;
+    dustNodes[i].setAttribute("cx", x.toFixed(1));
+    dustNodes[i].setAttribute("cy", y.toFixed(1));
+    dustNodes[i].setAttribute("opacity",
+      (0.10 + 0.28 * (0.5 + 0.5 * Math.sin(t * 0.8 + d.ph))).toFixed(3));
+  }
+
+  drawFigure(Math.round(t * FIG.fps));
+
+  // fade masuk/keluar
+  const fade = Math.min(1, E.ioQ(inv(0, 0.9, t)), E.ioQ(inv(11.1, 12, t) === 0 ? 1 : 1 - E.ioQ(inv(11.1, 12, t))));
+  S.style.opacity = fade.toFixed(3);
+};
+
+buildFigure();
+await window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>

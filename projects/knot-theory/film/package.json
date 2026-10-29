@@ -1,0 +1,17 @@
+{
+  "name": "knot-theory-film",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node harness/render.mjs scenes"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
