@@ -57,6 +57,7 @@ def build(shot_id: str, ffmpeg: str, estimate: bool):
         b_from, b_to = round(t * FPS), round((t + d) * FPS)
         blocks.append({
             **{k: v for k, v in b.items() if k != "vo"},
+            "anim": b.get("anim", ""),
             "vo": name,
             "from": b_from,
             "to": b_to,

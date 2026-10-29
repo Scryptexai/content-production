@@ -27,7 +27,8 @@
           "value": "1.553",
           "label": "promosi jadi manajer"
         }
-      ]
+      ],
+      "anim": "s1_hall"
     },
     {
       "key": "b2",
@@ -43,7 +44,8 @@
         "t": "sesudah ia menjabat",
         "v": "penjualan tim"
       },
-      "note": "selisihnya = nilai tambah manajer"
+      "note": "selisihnya = nilai tambah manajer",
+      "anim": "s2_measure"
     },
     {
       "key": "b3",
@@ -59,7 +61,8 @@
           "accent": "sage"
         }
       ],
-      "footnote": "relatif terhadap laju dasar promosi"
+      "footnote": "relatif terhadap laju dasar promosi",
+      "anim": "s3_sales"
     },
     {
       "key": "b4",
@@ -69,7 +72,8 @@
       "headline": "Yang terbaik saat menjual, terburuk saat memimpin tim.",
       "labelA": "penjualan sebelum promosi",
       "labelB": "penjualan tim sesudahnya",
-      "value": "−7,5%"
+      "value": "−7,5%",
+      "anim": "s4_team_drop"
     },
     {
       "key": "b5",
@@ -88,7 +92,8 @@
           "value": "+15,8%",
           "tone": "sage"
         }
-      ]
+      ],
+      "anim": "s5_cross_team"
     },
     {
       "key": "b6",
@@ -97,7 +102,8 @@
       "vo": "Para penulis lalu menghitung satu skenario. Kalau perusahaan mempromosikan berdasarkan potensi manajerial, bukan penjualan, kualitas manajer di perusahaan-perusahaan itu bisa naik sekitar tiga puluh persen. Perhatikan: bukan tiga puluh persen lebih banyak promosi. Kualitas orang yang dipilih.",
       "headline": "Kalau memilih dengan benar.",
       "value": "+30%",
-      "note": "bukan lebih banyak promosi — kualitas manajernya"
+      "note": "bukan lebih banyak promosi — kualitas manajernya",
+      "anim": "s6_towers"
     },
     {
       "key": "b7",
@@ -113,7 +119,8 @@
         "t": "hadiah",
         "d": "siapa yang layak diberi imbalan"
       },
-      "note": "dua tujuan ini menginginkan orang yang berbeda"
+      "note": "dua tujuan ini menginginkan orang yang berbeda",
+      "anim": "s7_reward"
     },
     {
       "key": "b8",
@@ -121,7 +128,8 @@
       "kicker": "BUKAN GAGASAN BARU",
       "vo": "Gagasannya bukan baru. Pada 1969, Laurence Peter menuliskannya sebagai lelucon: setiap karyawan cenderung naik ke tingkat ketidakmampuannya, lalu berhenti di sana. Selama lima puluh tahun, itu dibaca sebagai sindiran tentang birokrasi. Data 131 perusahaan ini membuatnya jadi lebih dari sekadar sindiran.",
       "quote": "Setiap karyawan cenderung naik ke tingkat ketidakmampuannya.",
-      "attrib": "Laurence J. Peter, 1969 — ditulis sebagai satire"
+      "attrib": "Laurence J. Peter, 1969 — ditulis sebagai satire",
+      "anim": "s8_peter"
     },
     {
       "key": "b9",
@@ -134,14 +142,16 @@
         "perusahaan Amerika",
         "kinerja terukur"
       ],
-      "unknown": "apakah memilih dengan tepat membuat perusahaan lebih untung — itu tidak diuji"
+      "unknown": "apakah memilih dengan tepat membuat perusahaan lebih untung — itu tidak diuji",
+      "anim": "s9_bounds"
     },
     {
       "key": "b10",
       "scene": "tanya",
       "kicker": "PENUTUP",
       "vo": "Yang kita tahu: seleksi dan hadiah menginginkan orang yang berbeda. Jadi pertanyaannya bukan apakah promosi itu adil. Pertanyaannya: kalau promosi di tempatmu selama ini lebih banyak bekerja sebagai hadiah, siapa yang sebenarnya sedang dipilih?",
-      "question": "Kalau promosi di tempatmu ternyata bekerja sebagai hadiah — siapa yang sebenarnya sedang dipilih?"
+      "question": "Kalau promosi di tempatmu ternyata bekerja sebagai hadiah — siapa yang sebenarnya sedang dipilih?",
+      "anim": "s10_question"
     }
   ]
 }

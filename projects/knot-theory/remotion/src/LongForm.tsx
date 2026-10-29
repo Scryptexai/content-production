@@ -55,6 +55,7 @@ export type Beat = {
 export type Block = {
   key: string;
   vo: string;
+  anim: string;
   from: number;
   to: number;
 };
@@ -162,7 +163,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
             <div
               style={{
                 fontFamily: "Plex Mono",
-                fontSize: biggest ? 210 : 300,
+                fontSize: biggest ? 108 : 150,
                 fontWeight: 500,
                 lineHeight: biggest ? 0.98 : 0.9,
                 letterSpacing: "-0.045em",
@@ -175,7 +176,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
             <div
               style={{
                 fontFamily: "Instrument Serif",
-                fontSize: biggest ? 44 : 48,
+                fontSize: biggest ? 30 : 34,
                 color: s.text,
                 opacity: 0.92,
                 marginTop: 6,
@@ -212,8 +213,8 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
         <div
           style={{
             fontFamily: "Instrument Serif",
-            fontSize: 240,
-            lineHeight: 0.94,
+            fontSize: 128,
+            lineHeight: 1.0,
             letterSpacing: "-0.03em",
             color: accent,
             maxWidth: 1500,
@@ -233,7 +234,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
             style={{
               fontFamily: "Instrument Serif",
               fontStyle: "italic",
-              fontSize: 96,
+              fontSize: 52,
               lineHeight: 1.16,
               color: s.text,
               letterSpacing: "-0.01em",
@@ -276,8 +277,8 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
           <div
             style={{
               fontFamily: "Instrument Serif",
-              fontSize: 140,
-              lineHeight: 1.06,
+              fontSize: 64,
+              lineHeight: 1.12,
               letterSpacing: "-0.025em",
               color: s.text,
             }}
@@ -396,7 +397,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
                 <span
                   style={{
                     fontFamily: "Plex Mono",
-                    fontSize: 62,
+                    fontSize: 40,
                     fontWeight: 500,
                     color: ac === "sage" ? s.sage : s.rose,
                     letterSpacing: "-0.02em",
@@ -512,7 +513,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
             style={{
               ...enter(f, 8, 26),
               fontFamily: "Plex Mono",
-              fontSize: 210,
+              fontSize: 120,
               fontWeight: 500,
               letterSpacing: "-0.05em",
               color: s.sage,
@@ -550,7 +551,7 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
         <div
           style={{
             fontFamily: "Instrument Serif",
-            fontSize: long ? 112 : 138,
+            fontSize: long ? 44 : 56,
             lineHeight: 1.08,
             letterSpacing: "-0.022em",
             color: s.text,
@@ -584,26 +585,38 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
 /* ------------------------------------------------------------------ latar */
 
 /**
- * Latar = klip 3D hasil Blender (render still + peta kedalaman, digerakkan di
- * render_plates3d.py). Empat plate: grid, columns, tunnel, wire.
+ * Latar = animasi 2D ber-rig (make_anim.py): karakter manusia yang berjalan,
+ * memanjat, bekerja — bukan teks dan bukan gradient.
  *
- * Catatan: JANGAN pakai `loop` pada OffthreadVideo — di versi Remotion ini
- * `loop` membeku di frame pertama. Klip 20 dtk, beat terpanjang 9,4 dtk, jadi
- * pemutaran lurus selalu cukup.
+ * Tiap blok punya satu adegan 14 dtk. Klip itu diputar MULAI dari titik yang
+ * sesuai dengan posisi beat di dalam blok, lalu diputar dengan laju 1:1 —
+ * jadi gerakannya nyambung antar-beat dalam satu blok, dan kamera tetap hidup.
+ *
+ * Catatan: `loop` pada OffthreadVideo membeku di versi ini, jadi tidak dipakai.
  */
-const Plate: React.FC<{ b: Beat; duration: number; index: number }> = ({
+const Anim: React.FC<{ b: Beat; block: Block; duration: number; blockDur: number }> = ({
   b,
+  block,
   duration,
-  index,
+  blockDur,
 }) => {
   const f = useCurrentFrame();
-  const zoom = interpolate(f, [0, duration], [1.035, 1.0], { extrapolateRight: "clamp" });
-  const startFrom = (index * 41) % 420;
+  const { fps } = useVideoConfig();
+  const clipFrames = Math.round(14 * fps);
+  // posisi di dalam klip: mengikuti waktu berjalan di dalam blok (bisa > klip,
+  // karena itu di-modulo supaya tetap sinkron dan tidak menabrak ujung)
+  const offsetInBlock = b.from - block.from;
+  const startFrom = Math.min(
+    Math.max(0, clipFrames - 2),
+    ((block.from * 7) % 60) + (offsetInBlock % Math.max(1, clipFrames - 60)),
+  );
+
+  const zoom = interpolate(f, [0, duration], [1.06, 1.0], { extrapolateRight: "clamp" });
 
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0A0D14" }}>
       <OffthreadVideo
-        src={staticFile(`backdrop/plate3d-${b.plate}.mp4`)}
+        src={staticFile(`anim/${block.anim}.mp4`)}
         startFrom={startFrom}
         muted
         style={{
@@ -613,15 +626,16 @@ const Plate: React.FC<{ b: Beat; duration: number; index: number }> = ({
           transform: `scale(${zoom})`,
         }}
       />
+      {/* scrim tipis di kiri + bawah: teks kecil tetap terbaca, animasi tetap terlihat */}
       <AbsoluteFill
         style={{
           background:
-            "linear-gradient(99deg, rgba(7,10,17,0.94) 0%, rgba(7,10,17,0.86) 34%, rgba(7,10,17,0.46) 62%, rgba(7,10,17,0.12) 100%)",
+            "linear-gradient(96deg, rgba(7,10,17,0.72) 0%, rgba(7,10,17,0.42) 30%, rgba(7,10,17,0.04) 62%, rgba(7,10,17,0) 100%)",
         }}
       />
       <AbsoluteFill
         style={{
-          background: "linear-gradient(0deg, rgba(7,10,17,0.72) 0%, rgba(7,10,17,0) 18%)",
+          background: "linear-gradient(0deg, rgba(7,10,17,0.78) 0%, rgba(7,10,17,0) 26%)",
         }}
       />
     </AbsoluteFill>
@@ -678,7 +692,7 @@ const Aside: React.FC<{
           right: 96,
           bottom: 92,
           fontFamily: "Plex Mono",
-          fontSize: 150,
+          fontSize: 84,
           fontWeight: 500,
           letterSpacing: "-0.06em",
           color: accent,
@@ -734,7 +748,12 @@ export const LongForm: React.FC<LongProps> = ({ source, preview, blocks, beats }
     <AbsoluteFill style={{ backgroundColor: "#0A0D14" }}>
       {/* latar per beat */}
       <Sequence key={`pl-${active.key}`} from={active.from} durationInFrames={dur}>
-        <Plate b={active} duration={dur} index={beats.indexOf(active)} />
+        <Anim
+          b={active}
+          block={blocks.find((x) => x.key === active.block) ?? blocks[0]}
+          duration={dur}
+          blockDur={(blocks.find((x) => x.key === active.block)?.to ?? 0) - (blocks.find((x) => x.key === active.block)?.from ?? 0)}
+        />
       </Sequence>
 
       {/* narasi: satu klip per blok, tanpa dipotong */}
@@ -747,7 +766,7 @@ export const LongForm: React.FC<LongProps> = ({ source, preview, blocks, beats }
 
       {/* isi beat */}
       <Sequence key={active.key} from={active.from} durationInFrames={dur}>
-        <AbsoluteFill style={{ padding: `${TOP}px ${X}px ${BOTTOM}px ${X}px`, justifyContent: "center" }}>
+        <AbsoluteFill style={{ padding: `${TOP}px ${X}px ${BOTTOM}px ${X}px`, justifyContent: "flex-end" }}>
           <div
             style={{
               transform: `scale(${interpolate(local, [0, dur], [1.012, 1.0], {

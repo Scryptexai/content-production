@@ -5,7 +5,7 @@ export const LONG: LongProps = {
   "tone": "ink",
   "chapter": "01 / KERJA",
   "source": "Benson, Li & Shue — Promotions and the Peter Principle, QJE 134(4), 2019",
-  "preview": false,
+  "preview": true,
   "blocks": [
     {
       "key": "b1",
@@ -26,9 +26,10 @@ export const LONG: LongProps = {
           "label": "promosi jadi manajer"
         }
       ],
+      "anim": "s1_hall",
       "vo": "RW1L-b1.mp3",
       "from": 24,
-      "to": 668
+      "to": 504
     },
     {
       "key": "b2",
@@ -44,9 +45,10 @@ export const LONG: LongProps = {
         "v": "penjualan tim"
       },
       "note": "selisihnya = nilai tambah manajer",
+      "anim": "s2_measure",
       "vo": "RW1L-b2.mp3",
-      "from": 682,
-      "to": 1201
+      "from": 518,
+      "to": 1090
     },
     {
       "key": "b3",
@@ -62,9 +64,10 @@ export const LONG: LongProps = {
         }
       ],
       "footnote": "relatif terhadap laju dasar promosi",
+      "anim": "s3_sales",
       "vo": "RW1L-b3.mp3",
-      "from": 1215,
-      "to": 1792
+      "from": 1103,
+      "to": 1667
     },
     {
       "key": "b4",
@@ -74,9 +77,10 @@ export const LONG: LongProps = {
       "labelA": "penjualan sebelum promosi",
       "labelB": "penjualan tim sesudahnya",
       "value": "−7,5%",
+      "anim": "s4_team_drop",
       "vo": "RW1L-b4.mp3",
-      "from": 1805,
-      "to": 2334
+      "from": 1680,
+      "to": 2266
     },
     {
       "key": "b5",
@@ -95,9 +99,10 @@ export const LONG: LongProps = {
           "tone": "sage"
         }
       ],
+      "anim": "s5_cross_team",
       "vo": "RW1L-b5.mp3",
-      "from": 2348,
-      "to": 2857
+      "from": 2280,
+      "to": 2830
     },
     {
       "key": "b6",
@@ -106,9 +111,10 @@ export const LONG: LongProps = {
       "headline": "Kalau memilih dengan benar.",
       "value": "+30%",
       "note": "bukan lebih banyak promosi — kualitas manajernya",
+      "anim": "s6_towers",
       "vo": "RW1L-b6.mp3",
-      "from": 2870,
-      "to": 3418
+      "from": 2844,
+      "to": 3430
     },
     {
       "key": "b7",
@@ -124,9 +130,10 @@ export const LONG: LongProps = {
         "d": "siapa yang layak diberi imbalan"
       },
       "note": "dua tujuan ini menginginkan orang yang berbeda",
+      "anim": "s7_reward",
       "vo": "RW1L-b7.mp3",
-      "from": 3432,
-      "to": 4162
+      "from": 3443,
+      "to": 4259
     },
     {
       "key": "b8",
@@ -134,9 +141,10 @@ export const LONG: LongProps = {
       "kicker": "BUKAN GAGASAN BARU",
       "quote": "Setiap karyawan cenderung naik ke tingkat ketidakmampuannya.",
       "attrib": "Laurence J. Peter, 1969 — ditulis sebagai satire",
+      "anim": "s8_peter",
       "vo": "RW1L-b8.mp3",
-      "from": 4176,
-      "to": 4858
+      "from": 4272,
+      "to": 4880
     },
     {
       "key": "b9",
@@ -149,18 +157,20 @@ export const LONG: LongProps = {
         "kinerja terukur"
       ],
       "unknown": "apakah memilih dengan tepat membuat perusahaan lebih untung — itu tidak diuji",
+      "anim": "s9_bounds",
       "vo": "RW1L-b9.mp3",
-      "from": 4872,
-      "to": 5554
+      "from": 4894,
+      "to": 5604
     },
     {
       "key": "b10",
       "scene": "tanya",
       "kicker": "PENUTUP",
       "question": "Kalau promosi di tempatmu ternyata bekerja sebagai hadiah — siapa yang sebenarnya sedang dipilih?",
+      "anim": "s10_question",
       "vo": "RW1L-b10.mp3",
-      "from": 5568,
-      "to": 6049
+      "from": 5618,
+      "to": 6106
     }
   ],
   "beats": [
@@ -172,17 +182,16 @@ export const LONG: LongProps = {
       "kicker": "2019 · DATA PERUSAHAAN",
       "big": "131",
       "mid": "perusahaan Amerika",
-      "shot": "f01-office",
       "key": "b1-1",
       "block": "b1",
       "from": 24,
-      "to": 184,
+      "to": 143,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "pair",
-      "plate": "bars",
+      "plate": "columns",
       "accent": "rose",
       "kicker": "ISI DATANYA",
       "pairs": [
@@ -197,63 +206,60 @@ export const LONG: LongProps = {
       ],
       "key": "b1-2",
       "block": "b1",
-      "from": 184,
-      "to": 441,
+      "from": 143,
+      "to": 335,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "knot",
+      "plate": "grid",
       "accent": "cream",
       "big": "Bukan sampel kecil.",
       "sub": [
         "berlaku di hampir semua perusahaan itu"
       ],
-      "shot": "f05-city",
       "key": "b1-3",
       "block": "b1",
-      "from": 441,
-      "to": 682,
+      "from": 335,
+      "to": 518,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "bars",
+      "plate": "columns",
       "accent": "sage",
       "kicker": "CARA MENGUKUR",
       "big": "Caranya sederhana.",
       "sub": [
         "tapi hampir tidak pernah dilakukan"
       ],
-      "shot": "f06-planning",
       "key": "b2-1",
       "block": "b2",
-      "from": 682,
-      "to": 761,
+      "from": 518,
+      "to": 605,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "streak",
+      "plate": "tunnel",
       "accent": "rose",
       "big": "Bukan kesan.",
       "sub": [
         "bukan wawancara atasan"
       ],
-      "shot": "f07-chart",
       "key": "b2-2",
       "block": "b2",
-      "from": 761,
-      "to": 883,
+      "from": 605,
+      "to": 740,
       "plateFrom": 97
     },
     {
       "span": 0.55,
       "kind": "split",
-      "plate": "field",
+      "plate": "columns",
       "accent": "sage",
       "kicker": "YANG DIHITUNG",
       "before": "penjualan tim",
@@ -262,57 +268,54 @@ export const LONG: LongProps = {
       "labelAfter": "sesudah ia menjabat",
       "key": "b2-3",
       "block": "b2",
-      "from": 883,
-      "to": 1058,
+      "from": 740,
+      "to": 932,
       "plateFrom": 194
     },
     {
       "span": 0.45,
       "kind": "line",
-      "plate": "knot",
+      "plate": "tunnel",
       "accent": "sage",
       "big": "Selisihnya,",
       "sub": [
         "nilai tambah manajer"
       ],
-      "shot": "f02-numbers",
       "key": "b2-4",
       "block": "b2",
-      "from": 1058,
-      "to": 1215,
+      "from": 932,
+      "to": 1103,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "grid",
+      "plate": "columns",
       "accent": "cream",
       "kicker": "PERTANYAANNYA",
       "big": "Apa yang membuat seseorang dipromosikan?",
-      "shot": "f01-office",
       "key": "b3-1",
       "block": "b3",
-      "from": 1215,
-      "to": 1339,
+      "from": 1103,
+      "to": 1224,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "word",
-      "plate": "paper",
+      "plate": "tunnel",
       "accent": "rose",
       "big": "Penjualan.",
-      "light": true,
       "key": "b3-2",
       "block": "b3",
-      "from": 1339,
-      "to": 1383,
+      "from": 1224,
+      "to": 1267,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "bars",
-      "plate": "streak",
+      "plate": "columns",
       "accent": "sage",
       "kicker": "PENJUALAN BERLIPAT DUA",
       "bars": [
@@ -328,188 +331,181 @@ export const LONG: LongProps = {
       ],
       "key": "b3-3",
       "block": "b3",
-      "from": 1383,
-      "to": 1581,
+      "from": 1267,
+      "to": 1461,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "field",
+      "plate": "tunnel",
       "accent": "cream",
       "big": "Yang dinilai: pekerjaan lama.",
       "sub": [
         "bukan kemampuan di pekerjaan baru"
       ],
-      "shot": "f08-promoted",
       "key": "b3-4",
       "block": "b3",
-      "from": 1581,
-      "to": 1805,
+      "from": 1461,
+      "to": 1680,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "band",
+      "plate": "wire",
       "accent": "cream",
       "kicker": "SESUDAH PROMOSI",
       "big": "Dan hal aneh terjadi.",
-      "shot": "f09-night",
       "key": "b4-1",
       "block": "b4",
-      "from": 1805,
-      "to": 1883,
+      "from": 1680,
+      "to": 1767,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "band",
+      "plate": "tunnel",
       "accent": "rose",
       "big": "Penjual terbaik, pemimpin terburuk.",
       "sub": [
         "saat memimpin tim"
       ],
-      "shot": "f10-tense",
       "key": "b4-2",
       "block": "b4",
-      "from": 1883,
-      "to": 1986,
+      "from": 1767,
+      "to": 1880,
       "plateFrom": 97
     },
     {
       "span": 0.6,
       "kind": "stat",
-      "plate": "bars",
+      "plate": "wire",
       "accent": "rose",
       "kicker": "PENJUALAN PRA-PROMOSI BERLIPAT DUA",
       "big": "−7,5%",
       "mid": "penjualan rata-rata anak buahnya",
       "key": "b4-3",
       "block": "b4",
-      "from": 1986,
-      "to": 2117,
+      "from": 1880,
+      "to": 2026,
       "plateFrom": 194
     },
     {
       "span": 0.4,
       "kind": "line",
-      "plate": "knot",
+      "plate": "tunnel",
       "accent": "rose",
       "big": "Makin hebat menjual,",
       "sub": [
         "makin besar penurunan timnya"
       ],
-      "shot": "f03-meeting",
       "key": "b4-4",
       "block": "b4",
-      "from": 2117,
-      "to": 2204,
+      "from": 2026,
+      "to": 2123,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "band",
+      "plate": "wire",
       "accent": "cream",
       "big": "Semakin hebat ia menjual,",
       "sub": [
         "semakin besar penurunan yang ia bawa"
       ],
-      "shot": "f10-tense",
       "key": "b4-5",
       "block": "b4",
-      "from": 2204,
-      "to": 2348,
+      "from": 2123,
+      "to": 2280,
       "plateFrom": 388
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "grid",
+      "plate": "columns",
       "accent": "sage",
       "kicker": "YANG SEBENARNYA MEMPREDIKSI",
       "big": "Ternyata hal lain.",
-      "shot": "f02-numbers",
       "key": "b5-1",
       "block": "b5",
-      "from": 2348,
-      "to": 2511,
+      "from": 2280,
+      "to": 2456,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "stat",
-      "plate": "streak",
+      "plate": "tunnel",
       "accent": "sage",
       "kicker": "PENGALAMAN LINTAS TIM BERLIPAT DUA",
       "big": "+15,8%",
       "mid": "nilai tambah manajer",
       "key": "b5-2",
       "block": "b5",
-      "from": 2511,
-      "to": 2632,
+      "from": 2456,
+      "to": 2587,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "word",
-      "plate": "field",
+      "plate": "columns",
       "accent": "cream",
       "big": "Bukan bakat mistis.",
       "key": "b5-3",
       "block": "b5",
-      "from": 2632,
-      "to": 2675,
+      "from": 2587,
+      "to": 2634,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "knot",
+      "plate": "tunnel",
       "accent": "cream",
       "big": "Pernah melihat pekerjaan orang lain dari dekat.",
       "sub": [
         "dan tahu bagian mana yang gampang rusak"
       ],
-      "shot": "f06-planning",
       "key": "b5-4",
       "block": "b5",
-      "from": 2675,
-      "to": 2870,
+      "from": 2634,
+      "to": 2844,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "bars",
+      "plate": "wire",
       "accent": "cream",
       "kicker": "SATU SKENARIO DIHITUNG",
       "big": "Kalau memilih dengan benar.",
       "key": "b6-1",
       "block": "b6",
-      "from": 2870,
-      "to": 2951,
+      "from": 2844,
+      "to": 2931,
       "plateFrom": 0
     },
     {
       "span": 0.5,
       "kind": "grid30",
-      "plate": "field",
+      "plate": "grid",
       "accent": "sage",
       "big": "+30%",
       "mid": "kualitas manajer",
       "key": "b6-2",
       "block": "b6",
-      "from": 2951,
-      "to": 3104,
+      "from": 2931,
+      "to": 3095,
       "plateFrom": 97
     },
     {
       "span": 0.5,
       "kind": "line",
-      "plate": "band",
+      "plate": "wire",
       "accent": "sage",
       "big": "Dipilih dari potensi manajerial.",
       "sub": [
@@ -517,65 +513,63 @@ export const LONG: LongProps = {
       ],
       "key": "b6-3",
       "block": "b6",
-      "from": 3104,
-      "to": 3257,
+      "from": 3095,
+      "to": 3258,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "streak",
+      "plate": "grid",
       "accent": "rose",
       "big": "Bukan 30% lebih banyak promosi.",
       "key": "b6-4",
       "block": "b6",
-      "from": 3257,
-      "to": 3365,
+      "from": 3258,
+      "to": 3373,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "word",
-      "plate": "knot",
+      "plate": "wire",
       "accent": "cream",
       "big": "Kualitas orangnya.",
       "key": "b6-5",
       "block": "b6",
-      "from": 3365,
-      "to": 3432,
+      "from": 3373,
+      "to": 3443,
       "plateFrom": 388
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "paper",
+      "plate": "tunnel",
       "accent": "rose",
       "kicker": "KESIMPULAN TERMUDAH",
       "big": "Justru gagal di sini.",
-      "light": true,
-      "shot": "f09-night",
       "key": "b7-1",
       "block": "b7",
-      "from": 3432,
-      "to": 3537,
+      "from": 3443,
+      "to": 3560,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "word",
-      "plate": "field",
+      "plate": "wire",
       "accent": "cream",
       "big": "Perusahaan tidak bodoh.",
       "key": "b7-2",
       "block": "b7",
-      "from": 3537,
-      "to": 3633,
+      "from": 3560,
+      "to": 3667,
       "plateFrom": 97
     },
     {
       "span": 0.5,
       "kind": "list",
-      "plate": "bars",
+      "plate": "tunnel",
       "accent": "sage",
       "kicker": "BOBOT PENJUALAN DITURUNKAN SAAT",
       "items": [
@@ -583,14 +577,14 @@ export const LONG: LongProps = {
       ],
       "key": "b7-3",
       "block": "b7",
-      "from": 3633,
-      "to": 3774,
+      "from": 3667,
+      "to": 3826,
       "plateFrom": 194
     },
     {
       "span": 0.5,
       "kind": "list",
-      "plate": "bars",
+      "plate": "wire",
       "accent": "sage",
       "kicker": "BOBOT PENJUALAN DITURUNKAN SAAT",
       "items": [
@@ -599,39 +593,35 @@ export const LONG: LongProps = {
       ],
       "key": "b7-4",
       "block": "b7",
-      "from": 3774,
-      "to": 3916,
+      "from": 3826,
+      "to": 3984,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "paper",
+      "plate": "tunnel",
       "accent": "cream",
       "big": "Promosi bukan cuma alat memilih.",
-      "light": true,
-      "shot": "f08-promoted",
       "key": "b7-5",
       "block": "b7",
-      "from": 3916,
-      "to": 4001,
+      "from": 3984,
+      "to": 4079,
       "plateFrom": 388
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "paper",
+      "plate": "wire",
       "accent": "rose",
       "big": "Promosi juga hadiah.",
       "sub": [
         "bagi yang masih di lapangan dan sedang menonton"
       ],
-      "light": true,
-      "shot": "f03-meeting",
       "key": "b7-6",
       "block": "b7",
-      "from": 4001,
-      "to": 4176,
+      "from": 4079,
+      "to": 4272,
       "plateFrom": 65
     },
     {
@@ -643,28 +633,27 @@ export const LONG: LongProps = {
       "big": "Ditulis pada 1969.",
       "key": "b8-1",
       "block": "b8",
-      "from": 4176,
-      "to": 4226,
+      "from": 4272,
+      "to": 4316,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "quote",
-      "plate": "paper",
+      "plate": "wire",
       "accent": "cream",
       "big": "Setiap karyawan cenderung naik ke tingkat ketidakmampuannya.",
       "who": "Laurence J. Peter, 1969 — ditulis sebagai satir",
-      "light": true,
       "key": "b8-2",
       "block": "b8",
-      "from": 4226,
-      "to": 4543,
+      "from": 4316,
+      "to": 4599,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "field",
+      "plate": "grid",
       "accent": "cream",
       "big": "Lima puluh tahun: cuma sindiran.",
       "sub": [
@@ -672,21 +661,20 @@ export const LONG: LongProps = {
       ],
       "key": "b8-3",
       "block": "b8",
-      "from": 4543,
-      "to": 4704,
+      "from": 4599,
+      "to": 4743,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "streak",
+      "plate": "wire",
       "accent": "sage",
       "big": "Datanya mengubah itu.",
-      "shot": "f02-numbers",
       "key": "b8-4",
       "block": "b8",
-      "from": 4704,
-      "to": 4872,
+      "from": 4743,
+      "to": 4894,
       "plateFrom": 291
     },
     {
@@ -698,14 +686,14 @@ export const LONG: LongProps = {
       "big": "Batasnya harus disebut.",
       "key": "b9-1",
       "block": "b9",
-      "from": 4872,
-      "to": 4926,
+      "from": 4894,
+      "to": 4950,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "chips",
-      "plate": "field",
+      "plate": "columns",
       "accent": "cream",
       "chips": [
         "tenaga penjualan",
@@ -714,14 +702,14 @@ export const LONG: LongProps = {
       ],
       "key": "b9-2",
       "block": "b9",
-      "from": 4926,
-      "to": 5166,
+      "from": 4950,
+      "to": 5201,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "bars",
+      "plate": "grid",
       "accent": "cream",
       "big": "Guru, perawat, perancang.",
       "sub": [
@@ -729,14 +717,14 @@ export const LONG: LongProps = {
       ],
       "key": "b9-3",
       "block": "b9",
-      "from": 5166,
-      "to": 5372,
+      "from": 5201,
+      "to": 5414,
       "plateFrom": 194
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "knot",
+      "plate": "columns",
       "accent": "rose",
       "big": "Apakah lebih untung?",
       "sub": [
@@ -744,47 +732,45 @@ export const LONG: LongProps = {
       ],
       "key": "b9-4",
       "block": "b9",
-      "from": 5372,
-      "to": 5568,
+      "from": 5414,
+      "to": 5618,
       "plateFrom": 291
     },
     {
       "span": 1,
       "kind": "line",
-      "plate": "grid",
+      "plate": "wire",
       "accent": "cream",
       "kicker": "PENUTUP",
       "big": "Seleksi dan hadiah menginginkan orang yang berbeda.",
-      "shot": "f10-tense",
       "key": "b10-1",
       "block": "b10",
-      "from": 5568,
-      "to": 5701,
+      "from": 5618,
+      "to": 5753,
       "plateFrom": 0
     },
     {
       "span": 1,
       "kind": "word",
-      "plate": "field",
+      "plate": "grid",
       "accent": "cream",
       "big": "Bukan soal adil.",
       "key": "b10-2",
       "block": "b10",
-      "from": 5701,
-      "to": 5799,
+      "from": 5753,
+      "to": 5852,
       "plateFrom": 97
     },
     {
       "span": 1,
       "kind": "question",
-      "plate": "knot",
+      "plate": "wire",
       "accent": "rose",
       "big": "Siapa yang sebenarnya sedang dipilih?",
-      "shot": "f04-corridor",
       "key": "b10-3",
       "block": "b10",
-      "from": 5799,
-      "to": 6097,
+      "from": 5852,
+      "to": 6154,
       "plateFrom": 194
     }
   ]

@@ -40,3 +40,5 @@ projects/knot-theory/remotion/public/backdrop/*.mp4
 projects/knot-theory/out/*.mp4
 # Klip 3D hasil render Blender (dibangkitkan ulang: blender_scene.py → render_plates3d.py)
 projects/knot-theory/remotion/public/backdrop/plate3d-*.mp4
+# Animasi 2D hasil render (dibangkitkan: make_anim.py)
+projects/knot-theory/remotion/public/anim/*.mp4
