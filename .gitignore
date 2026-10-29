@@ -45,3 +45,6 @@ projects/knot-theory/remotion/public/anim/*.mp4
 
 # SFX prosedural (dibangkitkan: make_sfx.py)
 projects/knot-theory/out/*.wav
+
+# Hasil render Remotion (besar)
+projects/knot-theory/remotion/out/

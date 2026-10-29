@@ -470,12 +470,8 @@ def climb_pose(phase, x, y, h, lead=1, rise=0.0):
     # badan ke atas mengayun dari tergantung (12) ke menjangkau (150).
     reach = 10 + 142 * swing
     elbow = -44 * swing - 6
-    if lead > 0:
-        p.arm_r, p.elbow_r = reach, elbow
-        p.arm_l, p.elbow_l = 12, 10
-    else:
-        p.arm_l, p.elbow_l = reach, elbow
-        p.arm_r, p.elbow_r = 12, 10
+    p.arm_l, p.elbow_l = reach, elbow
+    p.arm_r, p.elbow_r = 12, 10
     p.spine = 10 - 4 * rise_c
     p.head = -7
     p.coat = -0.5 * swing

@@ -3,6 +3,8 @@ import { KnotShort, ShortProps } from "./Short";
 import { LongForm, LongProps } from "./LongForm";
 import { SHOTS } from "./shots";
 import { LONG } from "./shots-long";
+import { ParallaxScene } from "./parallax/ParallaxScene";
+import { ParallaxProbe } from "./parallax/ParallaxProbe";
 
 const FPS = 30;
 
@@ -29,6 +31,24 @@ export const RemotionRoot: React.FC = () => (
       width={1920}
       height={1080}
       defaultProps={LONG as LongProps}
+    />
+
+    <Composition
+      id="KT-Parallax"
+      component={ParallaxScene}
+      durationInFrames={300}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+
+    <Composition
+      id="KT-Probe"
+      component={ParallaxProbe}
+      durationInFrames={300}
+      fps={30}
+      width={1920}
+      height={1080}
     />
   </>
 );

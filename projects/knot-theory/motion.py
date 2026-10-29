@@ -168,12 +168,10 @@ class Climb:
         p.head = -8
         reach = 10 + 138 * sw
         elbow = -40 * sw - 6
-        if lead > 0:
-            p.arm_r, p.elbow_r = reach, elbow
-            p.arm_l, p.elbow_l = 14, 8
-        else:
-            p.arm_l, p.elbow_l = reach, elbow
-            p.arm_r, p.elbow_r = 14, 8
+        # arah naik selalu ke KANAN layar; lengan yang menjangkau harus di sisi
+        # itu juga, kalau tidak ia menyeberang di depan kepala.
+        p.arm_l, p.elbow_l = reach, elbow
+        p.arm_r, p.elbow_r = 14, 8
         p.coat = -0.5 * sw
         # mengalir ke belakang hampir mendatar, dengan sedikit naik-turun
         gust = 258 - 18 * sw + 6 * math.sin(t * 2.1)
