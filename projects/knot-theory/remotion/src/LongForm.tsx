@@ -32,7 +32,6 @@ export type Beat = {
     | "list"
     | "question";
   plate: string;
-  plateFrom: number;
   light?: boolean;
   shot?: string;
   accent: keyof typeof ACCENTS | "cream";
@@ -584,16 +583,28 @@ const Scene: React.FC<{ b: Beat; s: Skin }> = ({ b, s }) => {
 
 /* ------------------------------------------------------------------ latar */
 
-const Plate: React.FC<{ b: Beat; duration: number }> = ({ b, duration }) => {
+/**
+ * Latar = klip 3D hasil Blender (render still + peta kedalaman, digerakkan di
+ * render_plates3d.py). Empat plate: grid, columns, tunnel, wire.
+ *
+ * Catatan: JANGAN pakai `loop` pada OffthreadVideo — di versi Remotion ini
+ * `loop` membeku di frame pertama. Klip 20 dtk, beat terpanjang 9,4 dtk, jadi
+ * pemutaran lurus selalu cukup.
+ */
+const Plate: React.FC<{ b: Beat; duration: number; index: number }> = ({
+  b,
+  duration,
+  index,
+}) => {
   const f = useCurrentFrame();
-  const zoom = interpolate(f, [0, duration], [1.055, 1.0], {
-    extrapolateRight: "clamp",
-  });
+  const zoom = interpolate(f, [0, duration], [1.035, 1.0], { extrapolateRight: "clamp" });
+  const startFrom = (index * 41) % 420;
+
   return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0A0D14" }}>
       <OffthreadVideo
-        src={staticFile(`backdrop/plate-${b.plate}.mp4`)}
-        startFrom={b.plateFrom}
+        src={staticFile(`backdrop/plate3d-${b.plate}.mp4`)}
+        startFrom={startFrom}
         muted
         style={{
           width: "100%",
@@ -602,56 +613,15 @@ const Plate: React.FC<{ b: Beat; duration: number }> = ({ b, duration }) => {
           transform: `scale(${zoom})`,
         }}
       />
-      {/* jaminan keterbacaan: gelapkan sisi teks */}
-      <AbsoluteFill
-        style={{
-          background: b.light
-            ? "linear-gradient(100deg, rgba(239,231,220,0.97) 0%, rgba(239,231,220,0.90) 46%, rgba(239,231,220,0.35) 100%)"
-            : "linear-gradient(100deg, rgba(8,11,18,0.90) 0%, rgba(8,11,18,0.62) 52%, rgba(8,11,18,0.10) 100%)",
-        }}
-      />
-    </AbsoluteFill>
-  );
-};
-
-/* ------------------------------------------------------------------ footage */
-
-/**
- * Foto sebagai footage: zoom + pan pelan selama beat berjalan, jadi tidak
- * terasa seperti gambar diam. Gerakannya sengaja sangat kecil (2-8%) supaya
- * mata membaca teks, bukan menonton gerakan.
- */
-const Footage: React.FC<{ shot: string; duration: number; index: number }> = ({
-  shot,
-  duration,
-  index,
-}) => {
-  const f = useCurrentFrame();
-  const p = interpolate(f, [0, duration], [0, 1], { extrapolateRight: "clamp" });
-  // arah gerak berganti tiap beat supaya tidak monoton
-  const dir = index % 4;
-  const scale = 1.06 + p * (dir % 2 === 0 ? 0.07 : -0.045);
-  const tx = (dir === 0 ? -1 : dir === 1 ? 1 : dir === 2 ? -0.6 : 0.6) * p * 26;
-  const ty = (dir < 2 ? -1 : 1) * p * 18;
-  const fade = interpolate(f, [0, 7], [0, 1], { extrapolateRight: "clamp" });
-
-  return (
-    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0A0D14" }}>
-      <Img
-        src={staticFile(`footage/${shot}.jpg`)}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          opacity: fade,
-          transform: `scale(${scale}) translate(${tx}px, ${ty}px)`,
-        }}
-      />
-      {/* scrim: gelap di kiri tempat teks, foto tetap terbaca di kanan */}
       <AbsoluteFill
         style={{
           background:
-            "linear-gradient(97deg, rgba(8,11,18,0.95) 0%, rgba(8,11,18,0.88) 30%, rgba(8,11,18,0.55) 58%, rgba(8,11,18,0.18) 100%)",
+            "linear-gradient(99deg, rgba(7,10,17,0.94) 0%, rgba(7,10,17,0.86) 34%, rgba(7,10,17,0.46) 62%, rgba(7,10,17,0.12) 100%)",
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          background: "linear-gradient(0deg, rgba(7,10,17,0.72) 0%, rgba(7,10,17,0) 18%)",
         }}
       />
     </AbsoluteFill>
@@ -764,11 +734,7 @@ export const LongForm: React.FC<LongProps> = ({ source, preview, blocks, beats }
     <AbsoluteFill style={{ backgroundColor: "#0A0D14" }}>
       {/* latar per beat */}
       <Sequence key={`pl-${active.key}`} from={active.from} durationInFrames={dur}>
-        {active.shot ? (
-          <Footage shot={active.shot} duration={dur} index={beats.indexOf(active)} />
-        ) : (
-          <Plate b={active} duration={dur} />
-        )}
+        <Plate b={active} duration={dur} index={beats.indexOf(active)} />
       </Sequence>
 
       {/* narasi: satu klip per blok, tanpa dipotong */}

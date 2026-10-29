@@ -9,14 +9,13 @@
    "accent": "cream",
    "kicker": "2019 · DATA PERUSAHAAN",
    "big": "131",
-   "mid": "perusahaan Amerika",
-   "shot": "f01-office"
+   "mid": "perusahaan Amerika"
   },
   {
    "block": "b1",
    "span": 1,
    "kind": "pair",
-   "plate": "bars",
+   "plate": "columns",
    "accent": "rose",
    "kicker": "ISI DATANYA",
    "pairs": [
@@ -34,44 +33,41 @@
    "block": "b1",
    "span": 1,
    "kind": "line",
-   "plate": "knot",
+   "plate": "grid",
    "accent": "cream",
    "big": "Bukan sampel kecil.",
    "sub": [
     "berlaku di hampir semua perusahaan itu"
-   ],
-   "shot": "f05-city"
+   ]
   },
   {
    "block": "b2",
    "span": 1,
    "kind": "line",
-   "plate": "bars",
+   "plate": "columns",
    "accent": "sage",
    "kicker": "CARA MENGUKUR",
    "big": "Caranya sederhana.",
    "sub": [
     "tapi hampir tidak pernah dilakukan"
-   ],
-   "shot": "f06-planning"
+   ]
   },
   {
    "block": "b2",
    "span": 1,
    "kind": "line",
-   "plate": "streak",
+   "plate": "tunnel",
    "accent": "rose",
    "big": "Bukan kesan.",
    "sub": [
     "bukan wawancara atasan"
-   ],
-   "shot": "f07-chart"
+   ]
   },
   {
    "block": "b2",
    "span": 0.55,
    "kind": "split",
-   "plate": "field",
+   "plate": "columns",
    "accent": "sage",
    "kicker": "YANG DIHITUNG",
    "before": "penjualan tim",
@@ -83,38 +79,35 @@
    "block": "b2",
    "span": 0.45,
    "kind": "line",
-   "plate": "knot",
+   "plate": "tunnel",
    "accent": "sage",
    "big": "Selisihnya,",
    "sub": [
     "nilai tambah manajer"
-   ],
-   "shot": "f02-numbers"
+   ]
   },
   {
    "block": "b3",
    "span": 1,
    "kind": "line",
-   "plate": "grid",
+   "plate": "columns",
    "accent": "cream",
    "kicker": "PERTANYAANNYA",
-   "big": "Apa yang membuat seseorang dipromosikan?",
-   "shot": "f01-office"
+   "big": "Apa yang membuat seseorang dipromosikan?"
   },
   {
    "block": "b3",
    "span": 1,
    "kind": "word",
-   "plate": "paper",
+   "plate": "tunnel",
    "accent": "rose",
-   "big": "Penjualan.",
-   "light": true
+   "big": "Penjualan."
   },
   {
    "block": "b3",
    "span": 1,
    "kind": "bars",
-   "plate": "streak",
+   "plate": "columns",
    "accent": "sage",
    "kicker": "PENJUALAN BERLIPAT DUA",
    "bars": [
@@ -133,41 +126,38 @@
    "block": "b3",
    "span": 1,
    "kind": "line",
-   "plate": "field",
+   "plate": "tunnel",
    "accent": "cream",
    "big": "Yang dinilai: pekerjaan lama.",
    "sub": [
     "bukan kemampuan di pekerjaan baru"
-   ],
-   "shot": "f08-promoted"
+   ]
   },
   {
    "block": "b4",
    "span": 1,
    "kind": "line",
-   "plate": "band",
+   "plate": "wire",
    "accent": "cream",
    "kicker": "SESUDAH PROMOSI",
-   "big": "Dan hal aneh terjadi.",
-   "shot": "f09-night"
+   "big": "Dan hal aneh terjadi."
   },
   {
    "block": "b4",
    "span": 1,
    "kind": "line",
-   "plate": "band",
+   "plate": "tunnel",
    "accent": "rose",
    "big": "Penjual terbaik, pemimpin terburuk.",
    "sub": [
     "saat memimpin tim"
-   ],
-   "shot": "f10-tense"
+   ]
   },
   {
    "block": "b4",
    "span": 0.6,
    "kind": "stat",
-   "plate": "bars",
+   "plate": "wire",
    "accent": "rose",
    "kicker": "PENJUALAN PRA-PROMOSI BERLIPAT DUA",
    "big": "−7,5%",
@@ -177,41 +167,38 @@
    "block": "b4",
    "span": 0.4,
    "kind": "line",
-   "plate": "knot",
+   "plate": "tunnel",
    "accent": "rose",
    "big": "Makin hebat menjual,",
    "sub": [
     "makin besar penurunan timnya"
-   ],
-   "shot": "f03-meeting"
+   ]
   },
   {
    "block": "b4",
    "span": 1,
    "kind": "line",
-   "plate": "band",
+   "plate": "wire",
    "accent": "cream",
    "big": "Semakin hebat ia menjual,",
    "sub": [
     "semakin besar penurunan yang ia bawa"
-   ],
-   "shot": "f10-tense"
+   ]
   },
   {
    "block": "b5",
    "span": 1,
    "kind": "line",
-   "plate": "grid",
+   "plate": "columns",
    "accent": "sage",
    "kicker": "YANG SEBENARNYA MEMPREDIKSI",
-   "big": "Ternyata hal lain.",
-   "shot": "f02-numbers"
+   "big": "Ternyata hal lain."
   },
   {
    "block": "b5",
    "span": 1,
    "kind": "stat",
-   "plate": "streak",
+   "plate": "tunnel",
    "accent": "sage",
    "kicker": "PENGALAMAN LINTAS TIM BERLIPAT DUA",
    "big": "+15,8%",
@@ -221,7 +208,7 @@
    "block": "b5",
    "span": 1,
    "kind": "word",
-   "plate": "field",
+   "plate": "columns",
    "accent": "cream",
    "big": "Bukan bakat mistis."
   },
@@ -229,19 +216,18 @@
    "block": "b5",
    "span": 1,
    "kind": "line",
-   "plate": "knot",
+   "plate": "tunnel",
    "accent": "cream",
    "big": "Pernah melihat pekerjaan orang lain dari dekat.",
    "sub": [
     "dan tahu bagian mana yang gampang rusak"
-   ],
-   "shot": "f06-planning"
+   ]
   },
   {
    "block": "b6",
    "span": 1,
    "kind": "line",
-   "plate": "bars",
+   "plate": "wire",
    "accent": "cream",
    "kicker": "SATU SKENARIO DIHITUNG",
    "big": "Kalau memilih dengan benar."
@@ -250,7 +236,7 @@
    "block": "b6",
    "span": 0.5,
    "kind": "grid30",
-   "plate": "field",
+   "plate": "grid",
    "accent": "sage",
    "big": "+30%",
    "mid": "kualitas manajer"
@@ -259,7 +245,7 @@
    "block": "b6",
    "span": 0.5,
    "kind": "line",
-   "plate": "band",
+   "plate": "wire",
    "accent": "sage",
    "big": "Dipilih dari potensi manajerial.",
    "sub": [
@@ -270,7 +256,7 @@
    "block": "b6",
    "span": 1,
    "kind": "line",
-   "plate": "streak",
+   "plate": "grid",
    "accent": "rose",
    "big": "Bukan 30% lebih banyak promosi."
   },
@@ -278,7 +264,7 @@
    "block": "b6",
    "span": 1,
    "kind": "word",
-   "plate": "knot",
+   "plate": "wire",
    "accent": "cream",
    "big": "Kualitas orangnya."
   },
@@ -286,18 +272,16 @@
    "block": "b7",
    "span": 1,
    "kind": "line",
-   "plate": "paper",
+   "plate": "tunnel",
    "accent": "rose",
    "kicker": "KESIMPULAN TERMUDAH",
-   "big": "Justru gagal di sini.",
-   "light": true,
-   "shot": "f09-night"
+   "big": "Justru gagal di sini."
   },
   {
    "block": "b7",
    "span": 1,
    "kind": "word",
-   "plate": "field",
+   "plate": "wire",
    "accent": "cream",
    "big": "Perusahaan tidak bodoh."
   },
@@ -305,7 +289,7 @@
    "block": "b7",
    "span": 0.5,
    "kind": "list",
-   "plate": "bars",
+   "plate": "tunnel",
    "accent": "sage",
    "kicker": "BOBOT PENJUALAN DITURUNKAN SAAT",
    "items": [
@@ -316,7 +300,7 @@
    "block": "b7",
    "span": 0.5,
    "kind": "list",
-   "plate": "bars",
+   "plate": "wire",
    "accent": "sage",
    "kicker": "BOBOT PENJUALAN DITURUNKAN SAAT",
    "items": [
@@ -328,24 +312,20 @@
    "block": "b7",
    "span": 1,
    "kind": "line",
-   "plate": "paper",
+   "plate": "tunnel",
    "accent": "cream",
-   "big": "Promosi bukan cuma alat memilih.",
-   "light": true,
-   "shot": "f08-promoted"
+   "big": "Promosi bukan cuma alat memilih."
   },
   {
    "block": "b7",
    "span": 1,
    "kind": "line",
-   "plate": "paper",
+   "plate": "wire",
    "accent": "rose",
    "big": "Promosi juga hadiah.",
    "sub": [
     "bagi yang masih di lapangan dan sedang menonton"
-   ],
-   "light": true,
-   "shot": "f03-meeting"
+   ]
   },
   {
    "block": "b8",
@@ -360,17 +340,16 @@
    "block": "b8",
    "span": 1,
    "kind": "quote",
-   "plate": "paper",
+   "plate": "wire",
    "accent": "cream",
    "big": "Setiap karyawan cenderung naik ke tingkat ketidakmampuannya.",
-   "who": "Laurence J. Peter, 1969 — ditulis sebagai satir",
-   "light": true
+   "who": "Laurence J. Peter, 1969 — ditulis sebagai satir"
   },
   {
    "block": "b8",
    "span": 1,
    "kind": "line",
-   "plate": "field",
+   "plate": "grid",
    "accent": "cream",
    "big": "Lima puluh tahun: cuma sindiran.",
    "sub": [
@@ -381,10 +360,9 @@
    "block": "b8",
    "span": 1,
    "kind": "line",
-   "plate": "streak",
+   "plate": "wire",
    "accent": "sage",
-   "big": "Datanya mengubah itu.",
-   "shot": "f02-numbers"
+   "big": "Datanya mengubah itu."
   },
   {
    "block": "b9",
@@ -399,7 +377,7 @@
    "block": "b9",
    "span": 1,
    "kind": "chips",
-   "plate": "field",
+   "plate": "columns",
    "accent": "cream",
    "chips": [
     "tenaga penjualan",
@@ -411,7 +389,7 @@
    "block": "b9",
    "span": 1,
    "kind": "line",
-   "plate": "bars",
+   "plate": "grid",
    "accent": "cream",
    "big": "Guru, perawat, perancang.",
    "sub": [
@@ -422,7 +400,7 @@
    "block": "b9",
    "span": 1,
    "kind": "line",
-   "plate": "knot",
+   "plate": "columns",
    "accent": "rose",
    "big": "Apakah lebih untung?",
    "sub": [
@@ -433,17 +411,16 @@
    "block": "b10",
    "span": 1,
    "kind": "line",
-   "plate": "grid",
+   "plate": "wire",
    "accent": "cream",
    "kicker": "PENUTUP",
-   "big": "Seleksi dan hadiah menginginkan orang yang berbeda.",
-   "shot": "f10-tense"
+   "big": "Seleksi dan hadiah menginginkan orang yang berbeda."
   },
   {
    "block": "b10",
    "span": 1,
    "kind": "word",
-   "plate": "field",
+   "plate": "grid",
    "accent": "cream",
    "big": "Bukan soal adil."
   },
@@ -451,10 +428,9 @@
    "block": "b10",
    "span": 1,
    "kind": "question",
-   "plate": "knot",
+   "plate": "wire",
    "accent": "rose",
-   "big": "Siapa yang sebenarnya sedang dipilih?",
-   "shot": "f04-corridor"
+   "big": "Siapa yang sebenarnya sedang dipilih?"
   }
  ]
 }
