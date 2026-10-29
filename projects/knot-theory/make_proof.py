@@ -26,12 +26,14 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
+from motion import Climb
+
 import cine
 from cine import (H, INK, SS, SUN, W, Cam, Pen, Pose, clamp, draw_figure, lerp,
                   mix, place_feet, seg, smooth, sole_y)
 
 FPS = 30
-DUR = 15.0
+DUR = 12.0
 NF = int(FPS * DUR)
 
 # ------------------------------------------------------------------ dunia
@@ -68,48 +70,56 @@ def climb_u(t):
     return clamp((t - CLIMB_T0) / STEP_SEC, 0.0, NSTEP)
 
 
+CLIP = None
+
+
 def person_at(t):
+    """Pose dari klip retargeting (IK + pijakan di tapak)."""
     u = climb_u(t)
-    i = min(int(u), NSTEP)
-    base_x = X0 + i * TREAD + TREAD * 0.50
-    base_y = Y0 - i * RISER
     if u >= NSTEP:
         tt = t - (CLIMB_T0 + NSTEP * STEP_SEC)
-        k = smooth(clamp(tt / 1.7))
-        p = cine.idle_pose(t, base_x - TREAD * 0.45, base_y + RISER, HFIG, breathe=0.9)
-        p.spine = lerp(10.0, 0.0, k)
-        p.head = lerp(-8.0, -16.0, k)
-        # tahan badan, lalu angkat lengan ke arah matahari (lantas tahan)
-        raise_ = smooth(clamp((tt - 1.6) / 1.5))
-        p.arm_r = lerp(16, 166, raise_)
-        p.elbow_r = lerp(6, -12, raise_)
-        p.arm_l = lerp(-16, 4, k)
-        p.elbow_l = 6
-        p.hair = 1
-        p.body = FIG
-        p.scarf = (248 + 8 * math.sin(t * 1.7), 12 * math.sin(t * 2.2))
-        place_feet(p, base_y + RISER)
-        return p, (base_x - TREAD * 0.45, base_y + RISER)
+        k = smooth(clamp((tt - 1.4) / 1.4))
+        return CLIP.standing(NSTEP, t, raise_arm=k), CLIP.ankle_target(NSTEP)
+    p = CLIP.pose(u, t)
+    return p, (p.foot_l[0] if p.foot_l else 0.0, 0.0)
 
-    f = smooth(u - i)
-    px = base_x + f * TREAD
-    py = base_y - f * RISER
-    p = cine.climb_pose(u, px, py, HFIG, lead=(1 if i % 2 == 0 else -1))
-    p.hair = 1
-    p.body = FIG
-    # selendang tertinggal dari gerak: makin cepat naik, makin ke belakang,
-    # lalu berayun balik saat berhenti (follow-through).
-    ph = (u % 1.0)
-    # mengalir ke belakang-kiri (270 = kiri), tertinggal saat badan naik
-    gust = 262 - 26 * math.sin(math.pi * clamp(ph)) + 7 * math.sin(t * 2.1)
-    p.scarf = (gust, 16 * math.sin(t * 2.7 + 1.0) - 8)
-    place_feet(p, py)
-    return p, (px, py)
+
+def foot_sole_of(pose):
+    import cine as _c
+    sk = _c.skeleton(pose)
+    return [a[1] + _c.sole_offset(pose.h) for _, _, a in sk["legs"]]
+
+
+SHOTS = [
+    # (nama, t0, t1, zoom, target: 'body' | 'feet' | 'upper' | 'world')
+    ("wide", 0.00, 4.20, 1.00, "world"),
+    ("medium", 4.20, 8.30, 1.55, "body"),
+    ("feet", 8.30, 10.10, 1.55, "feet"),
+    ("upper", 10.10, 12.00, 1.42, "upper"),
+]
+
+
+def shot_of(t):
+    for k, sh in enumerate(SHOTS):
+        if sh[1] <= t < sh[2]:
+            return k, sh
+    return len(SHOTS) - 1, SHOTS[-1]
 
 
 def targets(t):
-    p, (fx, fy) = person_at(t)
-    return fx + 300.0, fy - 250.0
+    """Titik yang dibidik kamera untuk detik t."""
+    pose, _ = person_at(t)
+    sk = cine.skeleton(pose)
+    idx, sh = shot_of(t)
+    kind = sh[4]
+    if kind == "feet":
+        a, b = [a for _, _, a in sk["legs"]]
+        return (a[0] + b[0]) * 0.5, max(a[1], b[1]) - 110
+    if kind == "upper":
+        return sk["head"][0] - 40, sk["head"][1] + 250
+    if kind == "body":
+        return pose.x + 40, pose.y - 200
+    return pose.x + 300, pose.y - 250
 
 
 # --------------------------------------------------------------- langit
@@ -262,7 +272,9 @@ def layer_stairs(cam, t, pose, feet):
         a = int(150 * q ** 1.5)
         pen.rect(X0 - 260 - q * 260, y0 + 10, 240, TH + 40, (*HORIZON, a))
 
-    pen.soft_shadow(feet[0] - 10, feet[1] + 3, 50, 7, alpha=0.72)
+    for f in (pose.foot_l, pose.foot_r):
+        if f is not None:
+            pen.soft_shadow(f[0] + 8, f[1] + 22, 34, 6, alpha=0.75)
     draw_figure(pen, pose, far_mul=1.0)
     return pen, 2.2, 0.02
 
@@ -334,8 +346,9 @@ def frame(i):
             # tepi tanpa supersample dihaluskan 1px: cukup, dan 4x lebih murah
             a[:, :, 3] = cine.blur_img(a[:, :, 3:4].repeat(3, 2), 0.7)[:, :, 0]
         if dof > 0.4:
-            a[:, :, :3] = cine.blur_img(a[:, :, :3], dof)
-            a[:, :, 3] = cine.blur_img(a[:, :, 3:4].repeat(3, 2), dof)[:, :, 0]
+            dz = dof * (cam.z ** 1.6 if name != "stairs" else 1.0)
+            a[:, :, :3] = cine.blur_img(a[:, :, :3], dz)
+            a[:, :, 3] = cine.blur_img(a[:, :, 3:4].repeat(3, 2), dz)[:, :, 0]
         if haze > 0:
             hc = np.array(HORIZON, np.float32)[None, None, :]
             a[:, :, :3] = a[:, :, :3] * (1 - haze) + hc * haze
@@ -343,32 +356,39 @@ def frame(i):
             # bayangan antar-lapis: potongan kertas menumpuk di ruang nyata
             sh = cine.drop_shadow(a, dx=8, dy=13, blur=10, alpha=0.55)
             out = out * (1 - sh * np.clip(a[:, :, 3:4] / 255.0 + 0.55, 0, 1))
-            a = cine.rim_light(a, SUN, dx=4.0, dy=4.0, strength=0.95, width=1.1)
+            a = cine.rim_light(a, SUN, dx=4.0, dy=4.0,
+                               strength=0.95 / (1 + 0.5 * max(0.0, cam.z - 1.4)),
+                               width=1.1)
         out = cine.over(out, a)
 
     out = cine.bloom(out, thresh=0.72, strength=0.40, radius=30)
     out = cine.chroma(out, 0.0009)
     out = cine.grade(out, i, exposure=1.05)
-    fade = min(1.0, seg(t, 0.0, 1.0), 1.0 - seg(t, 14.1, 15.0))
+    fade = min(1.0, seg(t, 0.0, 0.9), 1.0 - seg(t, 11.1, 12.0))
     out = out * fade
     return (np.clip(out, 0, 1) * 255).astype(np.uint8)
 
 
 def build_camera():
     cams = []
-    cx = cy = cz = None
+    cx = cy = None
     for i in range(NF):
         t = i / FPS
         tx, ty = targets(t)
-        z = 1.0 + 0.085 * smooth(clamp(t / 11.5)) - 0.02 * smooth(clamp((t - 11.5) / 3.5))
+        idx, sh = shot_of(t)
+        z = sh[3]
         if cx is None:
-            cx, cy, cz = tx, ty, z
+            cx, cy = tx, ty
         else:
-            k = 1 - math.exp(-1.0 / (0.45 * FPS))
+            # tiap shot punya pergerakan kamera sendiri: pelan, tidak seragam
+            span = max(0.1, sh[2] - sh[1])
+            k = 1 - math.exp(-1.0 / (0.55 * FPS))
             cx += (tx - cx) * k
             cy += (ty - cy) * k
-            cz += (z - cz) * (1 - math.exp(-1.0 / (1.2 * FPS)))
-        cams.append(Cam(cx, cy, cz))
+        # dorongan halus di dalam shot (bukan zoom yang sama tiap shot)
+        prog = clamp((t - sh[1]) / max(0.1, sh[2] - sh[1]))
+        zz = z * (1.0 + (0.045 if idx % 2 == 0 else -0.035) * smooth(prog))
+        cams.append(Cam(cx, cy, zz))
     return cams
 
 
@@ -392,9 +412,38 @@ def main():
     ap.add_argument("--still", type=float, default=None)
     ap.add_argument("--sheet", default=None)
     ap.add_argument("--workers", type=int, default=2)
+    ap.add_argument("--qc", action="store_true", help="ukur galat pijakan + uji retargeting")
     a = ap.parse_args()
 
+    global CLIP
+    CLIP = Climb(X0, Y0, TREAD, RISER, NSTEP, HFIG)
     CAM = build_camera()
+
+    if a.qc:
+        worst = 0.0
+        for k in range(0, int(DUR * FPS), 3):
+            tt = k / FPS
+            u = climb_u(tt)
+            if u >= NSTEP:
+                continue
+            i = int(u)
+            soles = foot_sole_of(CLIP.pose(u, tt))
+            surf = CLIP.surface_y(i)
+            err = min(abs(s_ - surf) for s_ in soles)      # kaki penopang terdekat
+            worst = max(worst, err)
+        print(f"QC pijakan: galat maksimum kaki penopang vs permukaan = {worst:.2f} px")
+        # bukti retargeting: ubah geometri tangga, cek ulang
+        for tread, riser, h in ((120, 62, 430), (172, 74, 500), (240, 96, 560)):
+            c = Climb(-540, 250, tread, riser, 6, h)
+            w = 0.0
+            for k in range(1200):
+                u = k / 200
+                if u >= 6:
+                    break
+                soles = foot_sole_of(c.pose(u, k / 60))
+                w = max(w, min(abs(s_ - c.surface_y(int(u))) for s_ in soles))
+            print(f"  tangga {tread}x{riser}, figur {h}px → galat {w:.2f} px")
+        return
 
     if a.sheet:
         times = [0.8, 2.6, 4.4, 6.6, 9.4, 12.8]

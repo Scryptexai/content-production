@@ -1,0 +1,122 @@
+{
+  "id": "RW2L",
+  "title": "Orang yang naik bukan yang paling pintar — dan itu bisa diukur",
+  "format": "youtube",
+  "aspect": "16:9",
+  "tone": "ink",
+  "targetSec": 210,
+  "chapter": "02 / KERJA",
+  "source": "Benson, Li & Shue — Promotions and the Peter Principle, QJE 134(4), 2019, doi:10.1093/qje/qjz022; NBER Working Paper 24343",
+  "legal": "Penelitian ini diterbitkan publik dan angkanya dikutip di video. Tidak ada rekaman, grafik, atau gambar dari paper yang dipakai ulang — semua visual digambar sendiri dari angka yang dikutip. Klaim dibatasi pada apa yang diukur paper (tenaga penjualan & manajer penjualan di 131 perusahaan), bukan teori umum tentang semua pekerjaan.",
+  "visualGrammar": "silhouette-papercut-2.5d",
+  "blocks": [
+    {
+      "key": "b1",
+      "scene": "kartu_tesis",
+      "kicker": "2019 · PASAR TENAGA KERJA",
+      "vo": "Kalau Anda pernah dipromosikan lalu merasa tidak siap, ada kemungkinan besar itu bukan salah Anda. Dan kalau Anda pernah punya atasan yang hebat di pekerjaan lama, lalu kacau setelah jadi manajer, itu juga bukan kebetulan. Ada penelitian yang mengukur keduanya sekaligus.",
+      "headline": "Promosi memilih keterampilan yang salah.",
+      "anim": "climb",
+      "textPolicy": "satu kalimat, muncul setelah 60% shot"
+    },
+    {
+      "key": "b2",
+      "scene": "bongkar_metode",
+      "kicker": "CARA MEREKA MENGUKUR",
+      "vo": "Mereka mengambil data satu perusahaan besar di bidang penjualan. Bukan survei, bukan kuesioner. Yang dilihat adalah angka: berapa nilai penjualan tiap orang sebelum dipromosikan, dan bagaimana kinerja tim yang dipimpinnya sesudah itu.",
+      "headline": "Bukan opini. Angka penjualan.",
+      "anim": "climb",
+      "textPolicy": "muncul di akhir shot"
+    },
+    {
+      "key": "b3",
+      "scene": "angka_utama",
+      "kicker": "UKURAN SAMPEL",
+      "vo": "Seratus tiga puluh satu perusahaan. Tiga puluh delapan ribu delapan ratus empat puluh tiga tenaga penjualan. Seribu lima ratus lima puluh tiga promosi menjadi manajer. Ini salah satu kumpulan data terbesar yang pernah dipakai untuk menjawab pertanyaan sederhana: siapa yang naik, dan apakah naiknya itu keputusan yang tepat.",
+      "headline": "131 · 38.843 · 1.553",
+      "stats": [
+        { "value": "131", "label": "perusahaan" },
+        { "value": "38.843", "label": "tenaga penjualan" },
+        { "value": "1.553", "label": "promosi jadi manajer" }
+      ],
+      "anim": "climb",
+      "textPolicy": "angka saja, satu per satu"
+    },
+    {
+      "key": "b4",
+      "scene": "temuan_pertama",
+      "kicker": "TEMUAN 1",
+      "vo": "Temuan pertama: yang dipakai untuk memilih manajer adalah prestasi individu, dan prestasi individu diukur dari penjualan. Masuk akal. Masalahnya, jadi manajer bukan pekerjaan menjual. Setelah dihitung, orang yang penjualannya dua kali lebih tinggi punya peluang dipromosikan empat belas koma tiga persen lebih besar.",
+      "headline": "Penjualan ×2 → peluang promosi +14,3%",
+      "before": "penjualan",
+      "after": "peluang promosi",
+      "note": "+14,3%",
+      "anim": "climb",
+      "textPolicy": "satu angka, ditaruh setelah tangga terlihat"
+    },
+    {
+      "key": "b5",
+      "scene": "temuan_kedua",
+      "kicker": "TEMUAN 2",
+      "vo": "Temuan kedua, dan ini yang paling tidak nyaman. Setelah dipromosikan, kinerja bawahan justru turun. Orang yang sebelumnya penjualannya dua kali lebih tinggi dari rekan-rekannya, setelah jadi manajer, membuat timnya berkinerja tujuh koma lima persen lebih rendah.",
+      "headline": "Penjualan ×2 → tim −7,5%",
+      "rows": [
+        { "label": "sebelum promosi", "value": "×2" },
+        { "label": "sesudah promosi", "value": "−7,5%" }
+      ],
+      "anim": "climb",
+      "textPolicy": "angka di kanan bawah, kecil"
+    },
+    {
+      "key": "b6",
+      "scene": "penjelasan",
+      "kicker": "KENAPA TERJADI",
+      "vo": "Penjelasannya tidak rumit. Untuk menjual, yang dipuji adalah menutup transaksi hari ini. Untuk memimpin, yang dibutuhkan justru hal yang tidak pernah diukur dalam penjualan: mengajari orang, membagi waktu, dan memilih balik apa yang harus ditolak. Ketiga hal itu tidak muncul di angka penjualan, jadi tidak ikut terpilih.",
+      "headline": "Keterampilan yang diukur ≠ keterampilan yang dibutuhkan",
+      "anim": "climb",
+      "textPolicy": "baris kunci saja"
+    },
+    {
+      "key": "b7",
+      "scene": "kontrafaktual",
+      "kicker": "KALAU DIKOREKSI",
+      "vo": "Para peneliti lalu mencoba hitungan lain. Kalau promosi memperhitungkan seberapa baik calon itu mengajar dan membantu orang lain, bukan hanya seberapa banyak ia menjual, hasilnya berbeda. Ada tambahan sekitar tiga puluh persen pada kinerja keseluruhan.",
+      "headline": "Koreksi yang sama → +30% kinerja",
+      "value": "+30%",
+      "anim": "climb",
+      "textPolicy": "satu angka besar"
+    },
+    {
+      "key": "b8",
+      "scene": "kutipan",
+      "kicker": "YANG TIDAK DIKLAIM PENELITIAN",
+      "vo": "Yang perlu dipegang: ini berlaku untuk pekerjaan yang kinerjanya bisa diukur jelas, seperti penjualan. Penelitian ini tidak mengatakan semua manajer buruk. Yang dikatakan lebih sempit dan lebih tajam: sistem yang memilih berdasarkan angka yang salah akan konsisten memilih orang yang salah, tanpa ada yang berniat buruk.",
+      "headline": "Sistemnya konsisten. Bukan orangnya jahat.",
+      "quote": "Sistem memilih dengan benar berdasarkan ukuran yang salah.",
+      "attrib": "Ringkasan temuan Benson, Li & Shue, QJE 2019",
+      "anim": "climb",
+      "textPolicy": "kutipan nanti, dengan atribusi"
+    },
+    {
+      "key": "b9",
+      "scene": "batas_knowledge",
+      "kicker": "BATAS KEJELASAN",
+      "vo": "Ada tiga hal yang tidak bisa dijawab data ini. Pertama, apakah hal yang sama berlaku di pekerjaan yang hasilnya tidak berupa angka, seperti perawatan atau guru. Kedua, apakah masalahnya di sistem promosi atau di pelatihan setelah promosi. Ketiga, seberapa besar ini terjadi di Indonesia, karena datanya dari perusahaan Amerika.",
+      "headline": "Yang tidak bisa dijawab",
+      "chips": ["pekerjaan non-angka", "sistem atau pelatihan", "konteks Indonesia"],
+      "unknown": "Tidak diklaim oleh data",
+      "anim": "climb",
+      "textPolicy": "tiga label pendek"
+    },
+    {
+      "key": "b10",
+      "scene": "pertanyaan",
+      "kicker": "UNTUK DIPIKIRKAN",
+      "vo": "Jadi pertanyaannya bukan siapa yang paling pintar memimpin. Pertanyaannya: ukuran apa yang dipakai tempat kerja Anda untuk menaikkan orang. Kalau ukurannya hanya hal yang mudah dihitung, sistem Anda sedang bekerja dengan sangat rapi. Hanya mungkin menuju tempat yang salah.",
+      "headline": "",
+      "question": "Ukuran apa yang dipakai kantor Anda?",
+      "anim": "climb",
+      "textPolicy": "hanya pertanyaan di akhir"
+    }
+  ]
+}

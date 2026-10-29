@@ -139,6 +139,21 @@ class Pen:
     def s(self, v):
         return self.tf.s(v)
 
+    def taper(self, x1, y1, x2, y2, r1, r2, fill):
+        """Batang mengecil dari r1 ke r2. Tanpa ini, ujung kapsul yang
+        bertumpuk di sendi membuat tonjolan bola saat kaki menekuk."""
+        a, b = self.p(x1, y1), self.p(x2, y2)
+        R1, R2 = max(1.0, self.s(r1)), max(1.0, self.s(r2))
+        dx, dy = b[0] - a[0], b[1] - a[1]
+        L = math.hypot(dx, dy) or 1.0
+        nx, ny = -dy / L, dx / L
+        self.d.polygon([(a[0] + nx * R1, a[1] + ny * R1),
+                        (b[0] + nx * R2, b[1] + ny * R2),
+                        (b[0] - nx * R2, b[1] - ny * R2),
+                        (a[0] - nx * R1, a[1] - ny * R1)], fill=fill)
+        self.d.ellipse([a[0] - R1, a[1] - R1, a[0] + R1, a[1] + R1], fill=fill)
+        self.d.ellipse([b[0] - R2, b[1] - R2, b[0] + R2, b[1] + R2], fill=fill)
+
     def capsule(self, x1, y1, x2, y2, r, fill):
         a, b = self.p(x1, y1), self.p(x2, y2)
         rr = max(1.0, self.s(r))
@@ -187,7 +202,8 @@ class Pose:
     __slots__ = ("x", "y", "h", "spine", "head",
                  "arm_l", "elbow_l", "arm_r", "elbow_r",
                  "hip_l", "knee_l", "hip_r", "knee_r",
-                 "coat", "alpha", "body", "hair", "scarf")
+                 "coat", "alpha", "body", "hair", "scarf",
+                 "foot_l", "foot_r")
 
     def __init__(self, x=0.0, y=0.0, h=420.0):
         self.x, self.y, self.h = x, y, h
@@ -203,17 +219,40 @@ class Pose:
         self.hair = 0
         # selendang: [sudut1, sudut2] derajat untuk dua segmen yang tertinggal
         self.scarf = None
+        # target mata kaki di koordinat dunia (retargeting IK). None = sudut manual
+        self.foot_l = None
+        self.foot_r = None
 
 
 # proporsi (fraksi tinggi badan). Dibuat lebih langsing dari v4: torso tidak
 # lagi selebar kepala, lengan & kaki tidak menempel badan.
 P = dict(
-    torso=0.272, neck=0.030, head_r=0.084, head_lift=0.076,
+    torso=0.272, neck=0.030, head_r=0.077, head_lift=0.074,
     hip_r=0.076, torso_r=0.064, shoulder=0.084, shoulder_r=0.046,
     upper=0.160, fore=0.148, arm_r=0.031, hand_r=0.034,
     thigh=0.236, shin=0.226, leg_r=0.045, foot_r=0.029,
     hip_dx=0.026, sh_dx=0.074, sole=0.046,
 )
+
+
+def _ik(hip_xy, target_xy, l1, l2):
+    """IK dua tulang; lutut menekuk ke belakang seperti lutut manusia."""
+    dx = target_xy[0] - hip_xy[0]
+    dy = target_xy[1] - hip_xy[1]
+    d = max(abs(l1 - l2) + 0.5, min(l1 + l2 - 0.5, math.hypot(dx, dy)))
+    ang = math.degrees(math.atan2(dx, dy))
+    cos_a = max(-1.0, min(1.0, (l1 * l1 + d * d - l2 * l2) / (2 * l1 * d)))
+    a = math.degrees(math.acos(cos_a))
+    hip_a = ang - a
+    kx = hip_xy[0] + _dir(hip_a)[0] * l1
+    ky = hip_xy[1] + _dir(hip_a)[1] * l1
+    shin_a = math.degrees(math.atan2(target_xy[0] - kx, target_xy[1] - ky))
+    knee_a = shin_a - hip_a
+    while knee_a > 180:
+        knee_a -= 360
+    while knee_a < -180:
+        knee_a += 360
+    return hip_a, knee_a
 
 
 def skeleton(ps: Pose):
@@ -224,13 +263,17 @@ def skeleton(ps: Pose):
     chest = (hip[0] + sd[0] * P["torso"] * h, hip[1] - sd[1] * P["torso"] * h)
 
     legs = []
-    for ha, ka, dx in ((ps.hip_r, ps.knee_r, -P["hip_dx"]),
-                       (ps.hip_l, ps.knee_l, P["hip_dx"])):
+    for ha, ka, dx, tgt in ((ps.hip_r, ps.knee_r, -P["hip_dx"], ps.foot_r),
+                            (ps.hip_l, ps.knee_l, P["hip_dx"], ps.foot_l)):
         hp = (hip[0] + dx * h, hip[1])
+        if tgt is not None:
+            ha, ka = _ik(hp, tgt, P["thigh"] * h, P["shin"] * h)
         d1 = _dir(ha)
         knee = (hp[0] + d1[0] * P["thigh"] * h, hp[1] + d1[1] * P["thigh"] * h)
         d2 = _dir(ha + ka)
         ankle = (knee[0] + d2[0] * P["shin"] * h, knee[1] + d2[1] * P["shin"] * h)
+        if tgt is not None:            # jepit sisa pembulatan: telapak harus di target
+            ankle = tgt
         legs.append((hp, knee, ankle))
 
     arms = []
@@ -251,10 +294,15 @@ def skeleton(ps: Pose):
                 legs=legs, arms=arms, sh=sh)
 
 
+def sole_offset(h):
+    """Jarak mata kaki → telapak (sama persis dengan gambar kapsul sepatu)."""
+    return (0.018 + P["foot_r"] * 0.92) * h
+
+
 def sole_y(ps: Pose):
     """Titik terendah telapak kaki — untuk menempelkan figur ke permukaan."""
     sk = skeleton(ps)
-    return max(a[1] for _, _, a in sk["legs"]) + P["sole"] * ps.h
+    return max(a[1] for _, _, a in sk["legs"]) + sole_offset(ps.h)
 
 
 def place_feet(ps: Pose, ground_y):
@@ -298,10 +346,11 @@ def _draw_body(pen: Pen, ps: Pose, col, far, grow=0.0):
     def cir(p, r, c):
         pen.circle(p[0], p[1], r + g, c)
 
-    # --- kaki (sisi jauh dulu)
+    # --- kaki (sisi jauh dulu): mengecil dari paha ke pergelangan
+    rl = P["leg_r"] * h
     for (hp, knee, ankle), c in zip(sk["legs"], (far, col)):
-        cap(hp, knee, P["leg_r"] * h, c)
-        cap(knee, ankle, P["leg_r"] * h * 0.83, c)
+        pen.taper(hp[0], hp[1], knee[0], knee[1], rl * 1.06 + g, rl * 0.92 + g, c)
+        pen.taper(knee[0], knee[1], ankle[0], ankle[1], rl * 0.92 + g, rl * 0.70 + g, c)
         cap((ankle[0] - 0.016 * h, ankle[1] + 0.018 * h),
             (ankle[0] + 0.042 * h, ankle[1] + 0.018 * h), P["foot_r"] * h * 0.92, c)
 
@@ -320,24 +369,25 @@ def _draw_body(pen: Pen, ps: Pose, col, far, grow=0.0):
         cx, cy = hip[0] + ps.coat * 0.03 * h, hip[1] + 0.035 * h
         pen.ellipse(cx, cy, 0.062 * h + g, 0.072 * h + g, col)
 
-    # --- lengan
+    # --- lengan: mengecil dari bahu ke pergelangan
+    ra = P["arm_r"] * h
     for (s0, elbow, wrist), c in zip(sk["arms"], (far, col)):
-        cap(s0, elbow, P["arm_r"] * h, c)
-        cap(elbow, wrist, P["arm_r"] * h * 0.86, c)
+        pen.taper(s0[0], s0[1], elbow[0], elbow[1], ra * 1.12 + g, ra * 0.92 + g, c)
+        pen.taper(elbow[0], elbow[1], wrist[0], wrist[1], ra * 0.92 + g, ra * 0.74 + g, c)
         cir(wrist, P["hand_r"] * h * 0.72, c)
 
     # --- selendang: dua segmen yang tertinggal dari badan (follow-through)
     if ps.scarf:
         a1, a2 = ps.scarf           # derajat absolut: 270 = kiri, 180 = atas
+        # pangkal di PUNGGUNG (bukan leher), supaya tidak menyeberang wajah
         d1 = _dir(a1)
-        sx = chest[0] + sk["sd"][0] * 0.01 * h
-        sy = chest[1] + 0.02 * h
-        p1 = (sx + d1[0] * 0.090 * h, sy + d1[1] * 0.090 * h)
+        sx = chest[0] - sk["sd"][0] * 0.02 * h
+        sy = chest[1] + 0.045 * h
+        p1 = (sx + d1[0] * 0.080 * h, sy + d1[1] * 0.080 * h)
         d2 = _dir(a1 + a2)
-        p2 = (p1[0] + d2[0] * 0.080 * h, p1[1] + d2[1] * 0.080 * h)
-        pen.capsule(sx, sy, p1[0], p1[1], 0.021 * h + g, col)
-        pen.capsule(p1[0], p1[1], p2[0], p2[1], 0.017 * h + g, col)
-        pen.circle(p2[0], p2[1], 0.024 * h + g, col)
+        p2 = (p1[0] + d2[0] * 0.070 * h, p1[1] + d2[1] * 0.070 * h)
+        pen.taper(sx, sy, p1[0], p1[1], 0.019 * h + g, 0.015 * h + g, col)
+        pen.taper(p1[0], p1[1], p2[0], p2[1], 0.015 * h + g, 0.010 * h + g, col)
 
     # --- leher (menyambung, bukan celah) + kepala
     cap(chest, sk["neck"], 0.032 * h, col)

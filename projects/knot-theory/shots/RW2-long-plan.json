@@ -1,0 +1,281 @@
+{
+  "episode": "RW2-long",
+  "totalSec": 202,
+  "keyframes": {
+    "kf_base": {
+      "u": 0.0,
+      "arm": 0.1,
+      "gaze": 0.0,
+      "note": "berdiri di dasar tangga"
+    },
+    "kf_lift1": {
+      "u": 0.35,
+      "arm": 0.45,
+      "gaze": 0.1,
+      "note": "kaki terangkat, tangan mulai naik"
+    },
+    "kf_land2": {
+      "u": 2.0,
+      "arm": 0.35,
+      "gaze": 0.1,
+      "note": "tapak kedua"
+    },
+    "kf_mid": {
+      "u": 3.0,
+      "arm": 0.3,
+      "gaze": 0.15,
+      "note": "tengah tangga, ritme stabil"
+    },
+    "kf_mid_up": {
+      "u": 3.6,
+      "arm": 0.6,
+      "gaze": 0.2,
+      "note": "menjangkau anak tangga berikut"
+    },
+    "kf_high": {
+      "u": 4.6,
+      "arm": 0.25,
+      "gaze": 0.3,
+      "note": "hampir puncak"
+    },
+    "kf_high_up": {
+      "u": 5.2,
+      "arm": 0.7,
+      "gaze": 0.35,
+      "note": "tarikan terakhir"
+    },
+    "kf_top": {
+      "u": 6.0,
+      "arm": 0.15,
+      "gaze": 0.45,
+      "note": "berdiri di pelataran puncak"
+    },
+    "kf_top_still": {
+      "u": 6.0,
+      "arm": 0.1,
+      "gaze": 0.6,
+      "note": "diam, menatap matahari"
+    },
+    "kf_top_open": {
+      "u": 6.0,
+      "arm": 0.32,
+      "gaze": 0.55,
+      "note": "lengan sedikit terbuka"
+    },
+    "kf_end": {
+      "u": 6.0,
+      "arm": 0.28,
+      "gaze": 0.5,
+      "note": "tahan, fade out"
+    }
+  },
+  "shots": [
+    {
+      "kf_from": "kf_base",
+      "kf_to": "kf_lift1",
+      "dur": 9,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "push-in lambat",
+      "blok": "b1",
+      "isi": "dunia: tangga tergantung, matahari"
+    },
+    {
+      "kf_from": "kf_lift1",
+      "kf_to": "kf_land2",
+      "dur": 10,
+      "framing": "medium",
+      "variation": "medium",
+      "cam": "ikuti badan",
+      "blok": "b1",
+      "isi": "orang mulai naik"
+    },
+    {
+      "kf_from": "kf_land2",
+      "kf_to": "kf_mid",
+      "dur": 10,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "tarik mundur",
+      "blok": "b2",
+      "isi": "tangga penuh terlihat"
+    },
+    {
+      "kf_from": "kf_mid",
+      "kf_to": "kf_mid_up",
+      "dur": 9,
+      "framing": "close-feet",
+      "variation": "small",
+      "cam": "statis, fokus tapak",
+      "blok": "b2",
+      "isi": "tapak menempel, debu jatuh"
+    },
+    {
+      "kf_from": "kf_mid_up",
+      "kf_to": "kf_high",
+      "dur": 11,
+      "framing": "medium",
+      "variation": "medium",
+      "cam": "dorong masuk",
+      "blok": "b3",
+      "isi": "ritme naik stabil"
+    },
+    {
+      "kf_from": "kf_high",
+      "kf_to": "kf_high_up",
+      "dur": 9,
+      "framing": "close-hand",
+      "variation": "small",
+      "cam": "statis",
+      "blok": "b3",
+      "isi": "tangan meraih tepi anak tangga"
+    },
+    {
+      "kf_from": "kf_high_up",
+      "kf_to": "kf_top",
+      "dur": 12,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "tarik mundur, buka langit",
+      "blok": "b4",
+      "isi": "puncak terlihat"
+    },
+    {
+      "kf_from": "kf_top",
+      "kf_to": "kf_top_still",
+      "dur": 10,
+      "framing": "medium",
+      "variation": "small",
+      "cam": "dorong pelan",
+      "blok": "b4",
+      "isi": "berhenti, dada turun-naik"
+    },
+    {
+      "kf_from": "kf_top_still",
+      "kf_to": "kf_top_open",
+      "dur": 11,
+      "framing": "close-upper",
+      "variation": "medium",
+      "cam": "statis",
+      "blok": "b5",
+      "isi": "siluet lawan matahari"
+    },
+    {
+      "kf_from": "kf_top_open",
+      "kf_to": "kf_end",
+      "dur": 9,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "tahan, jangan gerak",
+      "blok": "b5",
+      "isi": "ruang kosong di sekeliling"
+    },
+    {
+      "kf_from": "kf_end",
+      "kf_to": "kf_top_open",
+      "dur": 10,
+      "framing": "medium",
+      "variation": "small",
+      "cam": "sangat lambat keluar",
+      "blok": "b6",
+      "isi": "kamera menjauh, figur mengecil"
+    },
+    {
+      "kf_from": "kf_top_open",
+      "kf_to": "kf_top_still",
+      "dur": 10,
+      "framing": "close-feet",
+      "variation": "medium",
+      "cam": "statis",
+      "blok": "b6",
+      "isi": "tapak di batu, dua kaki rapat"
+    },
+    {
+      "kf_from": "kf_top_still",
+      "kf_to": "kf_top_open",
+      "dur": 11,
+      "framing": "medium",
+      "variation": "medium",
+      "cam": "orbit kecil",
+      "blok": "b7",
+      "isi": "badan berputar sedikit"
+    },
+    {
+      "kf_from": "kf_top_open",
+      "kf_to": "kf_end",
+      "dur": 9,
+      "framing": "close-upper",
+      "variation": "small",
+      "cam": "statis",
+      "blok": "b7",
+      "isi": "wajah siluet, tidak terlihat"
+    },
+    {
+      "kf_from": "kf_end",
+      "kf_to": "kf_top_open",
+      "dur": 12,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "kembali ke lebar",
+      "blok": "b8",
+      "isi": "tangga + langit utuh"
+    },
+    {
+      "kf_from": "kf_top_open",
+      "kf_to": "kf_top_still",
+      "dur": 10,
+      "framing": "medium",
+      "variation": "small",
+      "cam": "dorong",
+      "blok": "b8",
+      "isi": "diam"
+    },
+    {
+      "kf_from": "kf_top_still",
+      "kf_to": "kf_end",
+      "dur": 11,
+      "framing": "close-feet",
+      "variation": "medium",
+      "cam": "statis",
+      "blok": "b9",
+      "isi": "pijakan: satu-satunya yang pasti"
+    },
+    {
+      "kf_from": "kf_end",
+      "kf_to": "kf_end",
+      "dur": 10,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "tarik jauh",
+      "blok": "b9",
+      "isi": "figur kecil, dunia besar"
+    },
+    {
+      "kf_from": "kf_end",
+      "kf_to": "kf_top_open",
+      "dur": 10,
+      "framing": "medium",
+      "variation": "medium",
+      "cam": "dorong terakhir",
+      "blok": "b10",
+      "isi": "kembali ke figur"
+    },
+    {
+      "kf_from": "kf_top_open",
+      "kf_to": "kf_end",
+      "dur": 9,
+      "framing": "wide",
+      "variation": "large",
+      "cam": "tahan",
+      "blok": "b10",
+      "isi": "fade"
+    }
+  ],
+  "rules": [
+    "R1 rantai keyframe",
+    "R2 variasi",
+    "R3 framing",
+    "R4 durasi 6-13",
+    "R5 buka babak dengan large"
+  ]
+}
