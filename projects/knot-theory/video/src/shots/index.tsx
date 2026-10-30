@@ -127,12 +127,14 @@ export const Shot1: React.FC = () => {
 /* Surat suara: mulai DI DALAM zona (y ≥ -250 dunia) supaya ujung atasnya
    tidak pernah masuk pita angka (layar y 496). Satu tabrakan teks-benda
    sudah cukup untuk merusak satu shot. */
+/* Ukuran surat suara dibuat BESAR (190–206) supaya kertasnya terbaca sebagai
+   kertas, bukan gumpalan putih: pada 120 px tekstur kertas hilang jadi blob. */
 const BALLOTS = [
-  { at: 112, from: -196, to: -92, h: 186, rot: -16 },
-  { at: 142, from: 182, to: 88, h: 178, rot: 13 },
-  { at: 172, from: -126, to: -32, h: 172, rot: 6 },
-  { at: 202, from: 130, to: 38, h: 168, rot: -10 },
-  { at: 232, from: -38, to: -8, h: 164, rot: 3 },
+  { at: 104, from: -172, to: -96, h: 176, rot: -9 },
+  { at: 122, from: 152, to: 86, h: 168, rot: 8 },
+  { at: 140, from: -78, to: -12, h: 174, rot: 3 },
+  { at: 158, from: 88, to: 138, h: 164, rot: -6 },
+  { at: 176, from: -134, to: -56, h: 172, rot: 2 },
 ];
 
 export const Shot2: React.FC = () => {
@@ -147,7 +149,8 @@ export const Shot2: React.FC = () => {
   /* Kotak sudah ada di frame 0 — shot tidak boleh dibuka dengan layar kosong.
      Yang bergerak adalah surat suara dan angka, bukan kehadiran bendanya. */
   const boxDrop = 1;
-  const boxY = -30;
+  const boxY = 105;
+  const BOX_H = 500;
   const land = ramp(frame, 48, 34, EASE.linear);
 
   return (
@@ -183,10 +186,10 @@ export const Shot2: React.FC = () => {
           vignette={0.56}
         >
           <Table back={0.715} pan={frame * 0.05} shine={0.6} />
-          <Silhouette src="ballot-box" w={fitW('ballot-box', 610)} at={{ x: -4, y: 300 }} cam={cam} center={CENTER} squash={0.24} opacity={0.6} blur={20} />
+          <Silhouette src="ballot-box" w={fitW('ballot-box', BOX_H)} at={{ x: -4, y: 385 }} cam={cam} center={CENTER} squash={0.24} opacity={0.6} blur={20} />
           <Photo
             src="ballot-box"
-            w={fitW('ballot-box', 610)}
+            w={fitW('ballot-box', BOX_H)}
             at={{ x: -4, y: boxY, z: 0 }}
             cam={cam}
             center={CENTER}
@@ -196,30 +199,40 @@ export const Shot2: React.FC = () => {
             shadow={0.8}
             opacity={1}
           />
-          <GroundRipple at={{ x: -4, y: 320 }} cam={cam} center={CENTER} progress={land} size={560} />
+          <GroundRipple at={{ x: -4, y: 392 }} cam={cam} center={CENTER} progress={land} size={560} />
 
           {/* surat suara jatuh ke celah kotak */}
           {BALLOTS.map((b, i) => {
             if (frame < b.at - 4) return null;
-            const p = clamp01((frame - b.at) / 26);
+            const p = clamp01((frame - b.at) / 12);
             const drop = 1 - EASE.snappy(p);
-            const y = -196 + (1 - drop) * 176;
-            const x = mix(b.from, b.to, EASE.out(clamp01((frame - b.at) / 26)));
+            /* Garis siluet tutup kotak di y = 105 − 250 = −145. Surat suara
+               turun dari −168 ke −24: badannya melewati garis itu dan ditutup
+               kotak (behind), jadi terbaca MASUK ke celah — bukan menguap di
+               udara, bukan menumpuk di atas tutup, dan tidak menyentuh angka. */
+            const y = -168 + EASE.snappy(p) * 144;
+            /* x bergeser sedikit saat turun supaya jatuhnya tidak lurus mekanis. */
+            const x = mix(b.from, b.to, EASE.out(p));
             return (
               <Photo
                 key={i}
-                src="ballots"
-                w={fitW('ballots', b.h)}
+                src="ballot-sheet"
+                w={fitW('ballot-sheet', b.h)}
                 at={{ x, y, z: -0.06 - i * 0.01 }}
                 cam={cam}
                 center={CENTER}
-                rz={b.rot + 12 * (1 - p)}
-                ry={12 * drop}
-                lift={0.2 + 0.9 * drop}
+                behind
+                rz={b.rot + 9 * (1 - p)}
+                rx={44 + 20 * drop}
+                ry={16 * drop}
+                lift={0.1 + 0.3 * drop}
                 rim={0.5}
-                shadow={0.42}
-                blur={7 * drop}
-                opacity={(1 - clamp01((frame - b.at - 18) / 10)) * 0.97}
+                shadow={0.22}
+                blur={1.3 * drop}
+                /* Pudar 2 frame terakhir: kalau sudut kertas sedikit melewati
+                   siluet kotak, sisa 20 px itu hilang sebelum sempat terbaca
+                   sebagai kertas yang tersangkut di sisi kotak. */
+                opacity={0.98 * (1 - clamp01((p - 0.82) / 0.18))}
               />
             );
           })}
@@ -498,7 +511,7 @@ export const Shot5: React.FC = () => {
               dengan urutan berbeda supaya terbaca rak benda, bukan grid */}
           <Photo src="fin" w={fitW('fin', 470)} at={{ x: 268, y: -104, z: 0.42 }} cam={cam} center={CENTER} rz={12} lift={0.6} dim={0.55} blur={6} rim={0.24} shadow={0.2} behind opacity={0.85} />
           <Photo src="newspaper" w={fitW('newspaper', 420)} at={{ x: -246, y: -66 + bob, z: 0.18 }} cam={cam} center={CENTER} ry={-18} rz={-9} lift={0.3} dim={0.3} blur={2.4} rim={0.4} shadow={0.5} opacity={rise(0)} />
-          <Photo src="ballots" w={fitW('ballots', 300)} at={{ x: -214, y: 168, z: 0 }} cam={cam} center={CENTER} rz={-14} lift={0.26} rim={0.45} shadow={0.5} opacity={rise(1)} />
+          <Photo src="ballot-sheet" w={fitW('ballot-sheet', 250)} at={{ x: -214, y: 168, z: 0 }} cam={cam} center={CENTER} rz={-14} lift={0.26} rim={0.45} shadow={0.5} opacity={rise(1)} />
           <Photo src="magnifier" w={fitW('magnifier', 236)} at={{ x: 18, y: 214, z: -0.04 }} cam={cam} center={CENTER} rz={-26} lift={0.28} rim={0.42} shadow={0.45} opacity={rise(2)} />
           <Photo src="ballot-box" w={fitW('ballot-box', 360)} at={{ x: 252, y: 132, z: 0.02 }} cam={cam} center={CENTER} rz={5} lift={0.22} rim={0.58} shadow={0.62} opacity={rise(3)} />
           <Photo src="thread-knot" w={fitW('thread-knot', 350)} at={{ x: 2, y: -6 + bob * 1.2, z: -0.12 }} cam={cam} center={CENTER} rz={-5} ry={frame * 0.2} lift={0.85} rim={0.62} rimColor={C.roseLit} shadow={0.32} opacity={rise(0)} />

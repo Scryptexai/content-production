@@ -45,9 +45,10 @@ lapisan jauh bergerak lebih lambat dan hampir larut ke kabut (dim 0,6 · blur 8)
 - Badan: "poin di kota pantai, dibanding kabupaten lain"
 - Aksen: *Bukan karena kebijakannya.*
 
-Gerak: lima surat suara jatuh satu per satu (f112–250) ke mulut kotak, masing-masing
-dengan rotasi dan kecepatan berbeda; bayangan kontak melebar saat benda turun.
-Kotak sudah ada di frame pertama — shot tidak pernah dibuka dengan layar kosong.
+Gerak: lima surat suara jatuh satu per satu (f104–192) ke celah kotak. Kertas
+digambar **di belakang kotak** (`behind`), jadi saat badannya melewati garis
+siluet tutup, kotak yang menutupinya — terbaca masuk ke celah, bukan menguap.
+Kotak sudah ada di frame pertama; shot tidak pernah dibuka dengan layar kosong.
 
 ### Shot 03 · 20,5–32,5 dtk — kaca pembesar
 - Kicker: `2018 · uji ulang 1872–2012`

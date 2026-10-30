@@ -38,7 +38,7 @@ ruang** yang punya parallax, bayangan kontak, rim light, dan defokus sendiri.
 | `newspaper` | 01, 02, 05 | kliping peristiwa 1916 |
 | `fin` | 01, 05 | ancaman yang datang dari luar kendali |
 | `ballot-box` | 02, 05 | kotak suara, tempat akibat diukur |
-| `ballots` | 02, 05 | suara yang jatuh satu per satu |
+| `ballot-sheet` | 02, 05 | satu surat suara bertanda X — jatuh satu per satu ke celah kotak |
 | `magnifier` | 03, 05 | memeriksa ulang angka |
 | `thread-knot` | 04, 05, 06 | simpul: sesuatu yang diikat dan dikendorkan |
 
@@ -99,6 +99,11 @@ Empat kesalahan nyata di percobaan pertama, semuanya sudah ditutup di kode:
    pita teks** (batas: layar y 1452 untuk pita isi).
 4. **Grade warna disamakan.** Semua objek lewat `saturate(0,74) sepia(0,34)
    hue-rotate(-9°)` supaya enam foto berbeda terbaca satu keluarga.
+5. **Kertas kecil tidak boleh diputar 3D.** `ballots.png` (kipas kertas) menjadi
+   gumpalan tanpa bentuk saat diberi `rx` 40° dan `blur`. Diganti `ballot-sheet`
+   (satu lembar, tepi sobek, tanda X) — benda kecil butuh siluet yang jelas.
+6. **Benda yang harus "masuk" digambar `behind`.** Dengan zIndex di bawah kotak,
+   bagian yang melewati siluet tertutup sendiri; jangan mengandalkan fade.
 
 ## Yang belum ada
 

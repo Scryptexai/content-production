@@ -13,6 +13,7 @@ export const ASPECT_HW: Record<string, number> = {
   fin: 1.823,
   'ballot-box': 1.2165,
   ballots: 1.2913,
+  'ballot-sheet': 0.8832,
   magnifier: 0.8558,
   'thread-knot': 1.1257,
 };
