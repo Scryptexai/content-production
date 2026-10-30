@@ -1,0 +1,16 @@
+{
+  "_catatan": "Dua lapis. zernio-drafts = baca kalender lokal (offline, tanpa token). zernio = MCP hosted untuk publish/analitik, butuh API key.",
+  "mcpServers": {
+    "zernio-drafts": {
+      "command": "node",
+      "args": ["automation/zernio/runner/zernio.mjs"]
+    },
+    "zernio": {
+      "type": "http",
+      "url": "https://mcp.zernio.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ZERNIO_API_KEY}"
+      }
+    }
+  }
+}

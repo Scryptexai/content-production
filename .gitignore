@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+build/
+
+# Node / Remotion
+node_modules/
+.cache/
+projects/*/remotion/out/
+projects/*/out/*.mp4
+
+# Hasil produksi besar → Drive, bukan git
+assets/video/
+assets/plates/*.mp4
+out/
+
+# Rahasia — tidak pernah masuk repo
+.env
+.env.*
+!.env.example
+automation/zernio/.zernio-mapping.json
+
+# OS
+.DS_Store
+
+# Knot Theory — produksi video (video-shotcraft / Remotion)
+projects/knot-theory/video/node_modules/
+projects/knot-theory/video/out/
+# Foto objek dengan latar hijau: sumber mentah, bisa dibuat ulang
+projects/knot-theory/video/public/objects/raw/
+# Hasil render besar → Drive, bukan git
+projects/knot-theory/out/
+
+# OS
+.DS_Store

@@ -1,0 +1,15 @@
+{
+  "name": "tropical-zernio",
+  "private": true,
+  "type": "module",
+  "description": "Jembatan draf lokal → Zernio untuk akun Kulit Tropis & Knot Theory",
+  "scripts": {
+    "zernio:accounts": "node runner/zernio.mjs accounts",
+    "zernio:connect": "node runner/zernio.mjs connect",
+    "zernio:push": "node runner/zernio.mjs push",
+    "zernio:push:dry": "node runner/zernio.mjs push --dry-run",
+    "zernio:status": "node runner/zernio.mjs status",
+    "zernio:sync": "node runner/zernio.mjs sync",
+    "schedule": "python3 ../build_schedule.py"
+  }
+}

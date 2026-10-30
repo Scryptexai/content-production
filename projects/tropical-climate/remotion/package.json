@@ -1,0 +1,24 @@
+{
+  "name": "tropical-subtropis-remotion",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts TropicalFilm out/film.mp4"
+  },
+  "dependencies": {
+    "@fontsource/dm-serif-display": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@fontsource/inter": "^5.2.5",
+    "@remotion/cli": "4.0.484",
+    "@remotion/fonts": "^4.0.484",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.484"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "@types/react": "19.2.17",
+    "puppeteer-core": "^24.0.0",
+    "typescript": "6.0.3"
+  }
+}

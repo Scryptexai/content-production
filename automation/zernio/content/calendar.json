@@ -1,0 +1,2113 @@
+{
+  "meta": {
+    "generatedBy": "automation/build_schedule.py",
+    "startDate": "2026-11-02",
+    "days": 7,
+    "contents": 35,
+    "drafts": 105,
+    "timezone": "UTC",
+    "note": "Semua draf berstatus DRAFT. Tidak ada autoPublish."
+  },
+  "drafts": [
+    {
+      "id": "b01-in",
+      "contentId": "B01",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-01T23:30:00Z",
+      "publishAtWib": "2026-11-02 06:30",
+      "status": "DRAFT",
+      "title": "Kenapa krim yang sama terasa beda di Jakarta dan Seoul",
+      "body": "Produk yang sama, dua iklim, dua hasil. Cek RH kotamu dulu sebelum menyalahkan produk.\n\nPertanyaan penutup: 'produkmu dibuat untuk RH berapa?'\n\n#kulittropis #kelembapanudara #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Krim yang kamu puji di Tokyo bisa jadi lengket di Jakarta. Bukan produknya yang berubah.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B01.mp4",
+        "poster": "/assets/video/B01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b01-ti",
+      "contentId": "B01",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-01T23:30:00Z",
+      "publishAtWib": "2026-11-02 06:30",
+      "status": "DRAFT",
+      "title": "Kenapa krim yang sama terasa beda di Jakarta dan Seoul",
+      "body": "Produk yang sama, dua iklim, dua hasil. Cek RH kotamu dulu sebelum menyalahkan produk.\n\n#kulittropis #kelembapanudara #skincaretropis #skincareindonesia #ilmukulit",
+      "hook": "Krim yang kamu puji di Tokyo bisa jadi lengket di Jakarta. Bukan produknya yang berubah.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B01.mp4",
+        "poster": "/assets/video/B01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b01-yo",
+      "contentId": "B01",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-01T23:30:00Z",
+      "publishAtWib": "2026-11-02 06:30",
+      "status": "DRAFT",
+      "title": "Kenapa krim yang sama terasa beda di Jakarta dan Seoul",
+      "body": "Produk yang sama, dua iklim, dua hasil. Cek RH kotamu dulu sebelum menyalahkan produk.\n\nPertanyaan penutup: 'produkmu dibuat untuk RH berapa?'\n\nSumber: Data RH Jakarta 74–84% (BMKG/Weather2Travel 2026); prinsip humektan-oklusif pada RH tinggi (WHO TRS 953, zona IVb)\n\nSeri: Iklim & Tekstur\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #kelembapanudara #skincaretropis #skincare",
+      "hook": "Krim yang kamu puji di Tokyo bisa jadi lengket di Jakarta. Bukan produknya yang berubah.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B01.mp4",
+        "poster": "/assets/video/B01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r01-in",
+      "contentId": "R01",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-02T04:45:00Z",
+      "publishAtWib": "2026-11-02 11:45",
+      "status": "DRAFT",
+      "title": "Beban mental bukan soal siapa lebih capek",
+      "body": "Kerja yang tak terlihat juga kerja — dan biasanya hanya dipegang satu orang.\n\nPertanyaan: siapa yang mengingat jadwal, stok, dan tanggal?\n\n#knottheory #bebanmental #kerjatakterlihat #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Beban mental bukan soal siapa lebih capek. Soal siapa yang mengingat.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R01.mp4",
+        "poster": "/assets/video/R01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r01-ti",
+      "contentId": "R01",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-02T04:45:00Z",
+      "publishAtWib": "2026-11-02 11:45",
+      "status": "DRAFT",
+      "title": "Beban mental bukan soal siapa lebih capek",
+      "body": "Kerja yang tak terlihat juga kerja — dan biasanya hanya dipegang satu orang.\n\n#knottheory #bebanmental #kerjatakterlihat #psikologihubungan #hubungansehat",
+      "hook": "Beban mental bukan soal siapa lebih capek. Soal siapa yang mengingat.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R01.mp4",
+        "poster": "/assets/video/R01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r01-yo",
+      "contentId": "R01",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-02T04:45:00Z",
+      "publishAtWib": "2026-11-02 11:45",
+      "status": "DRAFT",
+      "title": "Beban mental bukan soal siapa lebih capek",
+      "body": "Kerja yang tak terlihat juga kerja — dan biasanya hanya dipegang satu orang.\n\nPertanyaan: siapa yang mengingat jadwal, stok, dan tanggal?\n\nSumber: Daminger, 'The Cognitive Dimension of Household Labor', American Sociological Review (2019) — kerja kognitif sebagai dimensi terpisah\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #bebanmental #kerjatakterlihat #psikologihubungan #hubungansehat",
+      "hook": "Beban mental bukan soal siapa lebih capek. Soal siapa yang mengingat.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R01.mp4",
+        "poster": "/assets/video/R01.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b02-in",
+      "contentId": "B02",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-02T09:30:00Z",
+      "publishAtWib": "2026-11-02 16:30",
+      "status": "DRAFT",
+      "title": "Kenapa wajahmu lengket jam 10 pagi",
+      "body": "Lengket jam 10 pagi biasanya bukan dosis, tapi arah kerja bahannya.\n\nPertanyaan: 'kamu butuh menarik air atau menahan air?'\n\n#kulittropis #gliserin #ilmukulit #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kalau wajahmu lengket dua jam setelah skincare, itu bukan karena kamu pakai terlalu banyak.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B02.mp4",
+        "poster": "/assets/video/B02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b02-ti",
+      "contentId": "B02",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-02T09:30:00Z",
+      "publishAtWib": "2026-11-02 16:30",
+      "status": "DRAFT",
+      "title": "Kenapa wajahmu lengket jam 10 pagi",
+      "body": "Lengket jam 10 pagi biasanya bukan dosis, tapi arah kerja bahannya.\n\n#kulittropis #gliserin #ilmukulit #skincareindonesia",
+      "hook": "Kalau wajahmu lengket dua jam setelah skincare, itu bukan karena kamu pakai terlalu banyak.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B02.mp4",
+        "poster": "/assets/video/B02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b02-yo",
+      "contentId": "B02",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-02T09:30:00Z",
+      "publishAtWib": "2026-11-02 16:30",
+      "status": "DRAFT",
+      "title": "Kenapa wajahmu lengket jam 10 pagi",
+      "body": "Lengket jam 10 pagi biasanya bukan dosis, tapi arah kerja bahannya.\n\nPertanyaan: 'kamu butuh menarik air atau menahan air?'\n\nSumber: Sifat humektan gliserin & ambang lengket >5–8% (literatur formulasi kosmetik)\n\nSeri: Iklim & Tekstur\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #gliserin #ilmukulit #skincare #skincaretropis",
+      "hook": "Kalau wajahmu lengket dua jam setelah skincare, itu bukan karena kamu pakai terlalu banyak.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B02.mp4",
+        "poster": "/assets/video/B02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r02-in",
+      "contentId": "R02",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-02T13:00:00Z",
+      "publishAtWib": "2026-11-02 20:00",
+      "status": "DRAFT",
+      "title": "Pasangan yang tidak pernah bertengkar",
+      "body": "Damai yang tidak pernah diuji bukan damai, tapi penundaan.\n\nPertanyaan: kapan terakhir bicara hal yang tidak nyaman?\n\n#knottheory #konflik #komunikasipasangan #psikologihubungan #hubungansehat #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Pasangan yang tidak pernah bertengkar tidak selalu sehat. Kadang salah satunya berhenti bicara.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R02.mp4",
+        "poster": "/assets/video/R02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r02-ti",
+      "contentId": "R02",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-02T13:00:00Z",
+      "publishAtWib": "2026-11-02 20:00",
+      "status": "DRAFT",
+      "title": "Pasangan yang tidak pernah bertengkar",
+      "body": "Damai yang tidak pernah diuji bukan damai, tapi penundaan.\n\n#knottheory #konflik #komunikasipasangan #psikologihubungan #hubungansehat",
+      "hook": "Pasangan yang tidak pernah bertengkar tidak selalu sehat. Kadang salah satunya berhenti bicara.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R02.mp4",
+        "poster": "/assets/video/R02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r02-yo",
+      "contentId": "R02",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-02T13:00:00Z",
+      "publishAtWib": "2026-11-02 20:00",
+      "status": "DRAFT",
+      "title": "Pasangan yang tidak pernah bertengkar",
+      "body": "Damai yang tidak pernah diuji bukan damai, tapi penundaan.\n\nPertanyaan: kapan terakhir bicara hal yang tidak nyaman?\n\nSumber: Pola demand-withdraw (Christensen & Heavey); stonewalling sebagai salah satu pola destruktif (Gottman)\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #konflik #komunikasipasangan #psikologihubungan #hubungansehat",
+      "hook": "Pasangan yang tidak pernah bertengkar tidak selalu sehat. Kadang salah satunya berhenti bicara.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R02.mp4",
+        "poster": "/assets/video/R02.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b03-in",
+      "contentId": "B03",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-02T14:30:00Z",
+      "publishAtWib": "2026-11-02 21:30",
+      "status": "DRAFT",
+      "title": "SPF 50 bukan berarti 50 kali lebih aman",
+      "body": "Selisih SPF 30 dan 50 cuma sekitar satu persen UVB. Yang menentukan adalah reapply.\n\nPertanyaan: 'berapa kali kamu reapply hari ini?'\n\n#kulittropis #spf #uvb #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "SPF 50 bukan 50 kali lebih kuat dari SPF 1. Ini arti angkanya sebenarnya.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/B03.mp4",
+        "poster": "/assets/video/B03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b03-ti",
+      "contentId": "B03",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-02T14:30:00Z",
+      "publishAtWib": "2026-11-02 21:30",
+      "status": "DRAFT",
+      "title": "SPF 50 bukan berarti 50 kali lebih aman",
+      "body": "Selisih SPF 30 dan 50 cuma sekitar satu persen UVB. Yang menentukan adalah reapply.\n\n#kulittropis #spf #uvb #skincareindonesia #ilmukulit",
+      "hook": "SPF 50 bukan 50 kali lebih kuat dari SPF 1. Ini arti angkanya sebenarnya.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/B03.mp4",
+        "poster": "/assets/video/B03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b03-yo",
+      "contentId": "B03",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-02T14:30:00Z",
+      "publishAtWib": "2026-11-02 21:30",
+      "status": "DRAFT",
+      "title": "SPF 50 bukan berarti 50 kali lebih aman",
+      "body": "Selisih SPF 30 dan 50 cuma sekitar satu persen UVB. Yang menentukan adalah reapply.\n\nPertanyaan: 'berapa kali kamu reapply hari ini?'\n\nSumber: Definisi SPF & persentase blokir UVB standar (SPF 30 ≈ 96,7%, SPF 50 ≈ 98%)\n\nSeri: UV & Pigmentasi\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #spf #uvb #skincare #skincaretropis",
+      "hook": "SPF 50 bukan 50 kali lebih kuat dari SPF 1. Ini arti angkanya sebenarnya.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/B03.mp4",
+        "poster": "/assets/video/B03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b04-in",
+      "contentId": "B04",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-02T23:30:00Z",
+      "publishAtWib": "2026-11-03 06:30",
+      "status": "DRAFT",
+      "title": "PA++++ itu UV apa, dan kenapa wajib di Indonesia",
+      "body": "SPF menjawab 'terbakar'. PA menjawab 'menua'. Di Indonesia dua-duanya perlu.\n\nPertanyaan: 'sunscreenmu punya PA berapa?'\n\n#kulittropis #pa #uva #spfsetiaphari #skincaretropis #skintellectual #skincareindonesia #bahanaktif\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "SPF melindungi dari terbakar. PA melindungi dari yang membuatmu menua.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B04.mp4",
+        "poster": "/assets/video/B04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b04-ti",
+      "contentId": "B04",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-02T23:30:00Z",
+      "publishAtWib": "2026-11-03 06:30",
+      "status": "DRAFT",
+      "title": "PA++++ itu UV apa, dan kenapa wajib di Indonesia",
+      "body": "SPF menjawab 'terbakar'. PA menjawab 'menua'. Di Indonesia dua-duanya perlu.\n\n#kulittropis #pa #uva #spfsetiaphari #skincareindonesia #ilmukulit",
+      "hook": "SPF melindungi dari terbakar. PA melindungi dari yang membuatmu menua.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B04.mp4",
+        "poster": "/assets/video/B04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b04-yo",
+      "contentId": "B04",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-02T23:30:00Z",
+      "publishAtWib": "2026-11-03 06:30",
+      "status": "DRAFT",
+      "title": "PA++++ itu UV apa, dan kenapa wajib di Indonesia",
+      "body": "SPF menjawab 'terbakar'. PA menjawab 'menua'. Di Indonesia dua-duanya perlu.\n\nPertanyaan: 'sunscreenmu punya PA berapa?'\n\nSumber: ICH/ISO pengukuran PPD & pelabelan PA; karakteristik UVA di lintang rendah\n\nSeri: UV & Pigmentasi\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #pa #uva #spfsetiaphari #skincare",
+      "hook": "SPF melindungi dari terbakar. PA melindungi dari yang membuatmu menua.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B04.mp4",
+        "poster": "/assets/video/B04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r03-in",
+      "contentId": "R03",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-03T04:45:00Z",
+      "publishAtWib": "2026-11-03 11:45",
+      "status": "DRAFT",
+      "title": "Rasio 5 banding 1 saat bertengkar",
+      "body": "Bukan bebas konflik, tapi rasio yang menjaga.\n\nPertanyaan: berapa kali kamu mengakui hal yang benar?\n\n#knottheory #gottman #hubungansehat #psikologihubungan #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Yang membedakan pasangan yang bertahan bukan jumlah pertengkaran, tapi rasionya.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R03.mp4",
+        "poster": "/assets/video/R03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r03-ti",
+      "contentId": "R03",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-03T04:45:00Z",
+      "publishAtWib": "2026-11-03 11:45",
+      "status": "DRAFT",
+      "title": "Rasio 5 banding 1 saat bertengkar",
+      "body": "Bukan bebas konflik, tapi rasio yang menjaga.\n\n#knottheory #gottman #hubungansehat #psikologihubungan",
+      "hook": "Yang membedakan pasangan yang bertahan bukan jumlah pertengkaran, tapi rasionya.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R03.mp4",
+        "poster": "/assets/video/R03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r03-yo",
+      "contentId": "R03",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-03T04:45:00Z",
+      "publishAtWib": "2026-11-03 11:45",
+      "status": "DRAFT",
+      "title": "Rasio 5 banding 1 saat bertengkar",
+      "body": "Bukan bebas konflik, tapi rasio yang menjaga.\n\nPertanyaan: berapa kali kamu mengakui hal yang benar?\n\nSumber: Gottman & Levenson — rasio interaksi positif:negatif sekitar 5:1 pada pasangan yang stabil\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #gottman #hubungansehat #psikologihubungan",
+      "hook": "Yang membedakan pasangan yang bertahan bukan jumlah pertengkaran, tapi rasionya.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R03.mp4",
+        "poster": "/assets/video/R03.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b05-in",
+      "contentId": "B05",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-03T09:30:00Z",
+      "publishAtWib": "2026-11-03 16:30",
+      "status": "DRAFT",
+      "title": "Oklusif saat kelembapan 80% = rumah kaca",
+      "body": "Oklusif bukan musuh — cuma salah waktu. Di RH 80% ia menahan yang seharusnya keluar.\n\nPertanyaan: 'butuh atau kebiasaan?'\n\n#kulittropis #oklusif #petrolatum #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Di udara yang sudah 80% lembap, oklusif bukan menyelamatkan. Ia mengurung.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B05.mp4",
+        "poster": "/assets/video/B05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b05-ti",
+      "contentId": "B05",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-03T09:30:00Z",
+      "publishAtWib": "2026-11-03 16:30",
+      "status": "DRAFT",
+      "title": "Oklusif saat kelembapan 80% = rumah kaca",
+      "body": "Oklusif bukan musuh — cuma salah waktu. Di RH 80% ia menahan yang seharusnya keluar.\n\n#kulittropis #oklusif #petrolatum #skincareindonesia #ilmukulit",
+      "hook": "Di udara yang sudah 80% lembap, oklusif bukan menyelamatkan. Ia mengurung.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B05.mp4",
+        "poster": "/assets/video/B05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b05-yo",
+      "contentId": "B05",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-03T09:30:00Z",
+      "publishAtWib": "2026-11-03 16:30",
+      "status": "DRAFT",
+      "title": "Oklusif saat kelembapan 80% = rumah kaca",
+      "body": "Oklusif bukan musuh — cuma salah waktu. Di RH 80% ia menahan yang seharusnya keluar.\n\nPertanyaan: 'butuh atau kebiasaan?'\n\nSumber: Mekanisme oklusif & efeknya pada RH tinggi (WHO TRS 953; literatur barrier function)\n\nSeri: Iklim & Tekstur\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #oklusif #petrolatum #skincare #skincaretropis",
+      "hook": "Di udara yang sudah 80% lembap, oklusif bukan menyelamatkan. Ia mengurung.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B05.mp4",
+        "poster": "/assets/video/B05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r04-in",
+      "contentId": "R04",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-03T13:00:00Z",
+      "publishAtWib": "2026-11-03 20:00",
+      "status": "DRAFT",
+      "title": "Tiga pola pembagian uang yang berisiko",
+      "body": "Uang jarang jadi masalah karena angkanya. Biasanya karena informasinya.\n\nTiga pertanyaan: siapa tahu total, siapa bisa lihat tabungan, apa yang boleh privat?\n\n#knottheory #keuangankeluarga #pasangan #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Pertengkaran soal uang bukan soal jumlahnya. Soal siapa yang memegang kendali.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R04.mp4",
+        "poster": "/assets/video/R04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r04-ti",
+      "contentId": "R04",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-03T13:00:00Z",
+      "publishAtWib": "2026-11-03 20:00",
+      "status": "DRAFT",
+      "title": "Tiga pola pembagian uang yang berisiko",
+      "body": "Uang jarang jadi masalah karena angkanya. Biasanya karena informasinya.\n\n#knottheory #keuangankeluarga #pasangan #psikologihubungan #hubungansehat",
+      "hook": "Pertengkaran soal uang bukan soal jumlahnya. Soal siapa yang memegang kendali.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R04.mp4",
+        "poster": "/assets/video/R04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r04-yo",
+      "contentId": "R04",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-03T13:00:00Z",
+      "publishAtWib": "2026-11-03 20:00",
+      "status": "DRAFT",
+      "title": "Tiga pola pembagian uang yang berisiko",
+      "body": "Uang jarang jadi masalah karena angkanya. Biasanya karena informasinya.\n\nTiga pertanyaan: siapa tahu total, siapa bisa lihat tabungan, apa yang boleh privat?\n\nSumber: Dew, Britt & Huston (2012) — ketidaksepakatan finansial sebagai prediktor perceraian\n\nSeri: Uang & Rumah Tangga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #keuangankeluarga #pasangan #psikologihubungan #hubungansehat",
+      "hook": "Pertengkaran soal uang bukan soal jumlahnya. Soal siapa yang memegang kendali.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R04.mp4",
+        "poster": "/assets/video/R04.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b06-in",
+      "contentId": "B06",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-03T14:30:00Z",
+      "publishAtWib": "2026-11-03 21:30",
+      "status": "DRAFT",
+      "title": "Produk 'lulus uji stabilitas' tapi gagal di kamu",
+      "body": "'Lulus uji stabilitas' tidak berarti lulus di iklimmu. Zona II dan IVb beda 5°C dan 15% RH.\n\nPertanyaan: 'produkmu diuji di zona berapa?'\n\n#kulittropis #stabilitas #zonaklim #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Produk ini lulus uji stabilitas. Tapi ujinya dilakukan di ruangan 25 derajat.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/B06.mp4",
+        "poster": "/assets/video/B06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b06-ti",
+      "contentId": "B06",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-03T14:30:00Z",
+      "publishAtWib": "2026-11-03 21:30",
+      "status": "DRAFT",
+      "title": "Produk 'lulus uji stabilitas' tapi gagal di kamu",
+      "body": "'Lulus uji stabilitas' tidak berarti lulus di iklimmu. Zona II dan IVb beda 5°C dan 15% RH.\n\n#kulittropis #stabilitas #zonaklim #skincareindonesia #ilmukulit",
+      "hook": "Produk ini lulus uji stabilitas. Tapi ujinya dilakukan di ruangan 25 derajat.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/B06.mp4",
+        "poster": "/assets/video/B06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b06-yo",
+      "contentId": "B06",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-03T14:30:00Z",
+      "publishAtWib": "2026-11-03 21:30",
+      "status": "DRAFT",
+      "title": "Produk 'lulus uji stabilitas' tapi gagal di kamu",
+      "body": "'Lulus uji stabilitas' tidak berarti lulus di iklimmu. Zona II dan IVb beda 5°C dan 15% RH.\n\nPertanyaan: 'produkmu diuji di zona berapa?'\n\nSumber: ICH Q1A(R2) & WHO TRS 953 — zona iklim II (25°C/60% RH) dan IVb (30°C/75% RH); ASEAN Stability Guideline\n\nSeri: Iklim & Stabilitas\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #stabilitas #zonaklim #skincare #skincaretropis",
+      "hook": "Produk ini lulus uji stabilitas. Tapi ujinya dilakukan di ruangan 25 derajat.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/B06.mp4",
+        "poster": "/assets/video/B06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b07-in",
+      "contentId": "B07",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-03T23:30:00Z",
+      "publishAtWib": "2026-11-04 06:30",
+      "status": "DRAFT",
+      "title": "Setiap +10 derajat, reaksi kimia berlipat dua",
+      "body": "Aturan Q10: +10°C ≈ 2× laju reaksi. Lemari kamar mandi bisa jadi tempat produkmu menua cepat.\n\nPertanyaan: 'produkmu disimpan di mana?'\n\n#kulittropis #q10 #penyimpanan #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Setiap kenaikan 10 derajat, reaksi kimia di produkmu berjalan dua kali lebih cepat.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B07.mp4",
+        "poster": "/assets/video/B07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b07-ti",
+      "contentId": "B07",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-03T23:30:00Z",
+      "publishAtWib": "2026-11-04 06:30",
+      "status": "DRAFT",
+      "title": "Setiap +10 derajat, reaksi kimia berlipat dua",
+      "body": "Aturan Q10: +10°C ≈ 2× laju reaksi. Lemari kamar mandi bisa jadi tempat produkmu menua cepat.\n\n#kulittropis #q10 #penyimpanan #skincareindonesia #ilmukulit",
+      "hook": "Setiap kenaikan 10 derajat, reaksi kimia di produkmu berjalan dua kali lebih cepat.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B07.mp4",
+        "poster": "/assets/video/B07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b07-yo",
+      "contentId": "B07",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-03T23:30:00Z",
+      "publishAtWib": "2026-11-04 06:30",
+      "status": "DRAFT",
+      "title": "Setiap +10 derajat, reaksi kimia berlipat dua",
+      "body": "Aturan Q10: +10°C ≈ 2× laju reaksi. Lemari kamar mandi bisa jadi tempat produkmu menua cepat.\n\nPertanyaan: 'produkmu disimpan di mana?'\n\nSumber: Aturan Q10 / van't Hoff (laju reaksi ≈ 2× per +10°C); skenario suhu kabin mobil\n\nSeri: Iklim & Stabilitas\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #q10 #penyimpanan #skincare #skincaretropis",
+      "hook": "Setiap kenaikan 10 derajat, reaksi kimia di produkmu berjalan dua kali lebih cepat.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B07.mp4",
+        "poster": "/assets/video/B07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r05-in",
+      "contentId": "R05",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-04T04:45:00Z",
+      "publishAtWib": "2026-11-04 11:45",
+      "status": "DRAFT",
+      "title": "Kenapa kamu bertahan tiga tahun lebih lama dari seharusnya",
+      "body": "Waktu yang sudah keluar tidak bisa jadi alasan untuk menambahnya.\n\nPertanyaan: kalau mulai hari ini, apakah aku memilih ini?\n\n#knottheory #sunkcost #selfawareness #psikologihubungan #hubungansehat #komunikasipasangan #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kamu sudah tahu harus berhenti setahun lalu. Ini alasan kamu masih di sana.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R05.mp4",
+        "poster": "/assets/video/R05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r05-ti",
+      "contentId": "R05",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-04T04:45:00Z",
+      "publishAtWib": "2026-11-04 11:45",
+      "status": "DRAFT",
+      "title": "Kenapa kamu bertahan tiga tahun lebih lama dari seharusnya",
+      "body": "Waktu yang sudah keluar tidak bisa jadi alasan untuk menambahnya.\n\n#knottheory #sunkcost #selfawareness #psikologihubungan #hubungansehat",
+      "hook": "Kamu sudah tahu harus berhenti setahun lalu. Ini alasan kamu masih di sana.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R05.mp4",
+        "poster": "/assets/video/R05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r05-yo",
+      "contentId": "R05",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-04T04:45:00Z",
+      "publishAtWib": "2026-11-04 11:45",
+      "status": "DRAFT",
+      "title": "Kenapa kamu bertahan tiga tahun lebih lama dari seharusnya",
+      "body": "Waktu yang sudah keluar tidak bisa jadi alasan untuk menambahnya.\n\nPertanyaan: kalau mulai hari ini, apakah aku memilih ini?\n\nSumber: Arkes & Blumer (1985) — eskalasi komitmen pada sunk cost\n\nSeri: Pola dari Keluarga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #sunkcost #selfawareness #psikologihubungan #hubungansehat",
+      "hook": "Kamu sudah tahu harus berhenti setahun lalu. Ini alasan kamu masih di sana.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R05.mp4",
+        "poster": "/assets/video/R05.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b08-in",
+      "contentId": "B08",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-04T09:30:00Z",
+      "publishAtWib": "2026-11-04 16:30",
+      "status": "DRAFT",
+      "title": "Skincare di dalam mobil 40 derajat",
+      "body": "Dua jam di mobil bisa lebih merusak daripada dua bulan di lemari.\n\nPertanyaan: 'di mana produkmu berada hari ini?'\n\n#kulittropis #vitaminc #penyimpanan #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kamu meninggalkan serum di mobil dua jam. Suhunya bukan 30 derajat.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B08.mp4",
+        "poster": "/assets/video/B08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b08-ti",
+      "contentId": "B08",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-04T09:30:00Z",
+      "publishAtWib": "2026-11-04 16:30",
+      "status": "DRAFT",
+      "title": "Skincare di dalam mobil 40 derajat",
+      "body": "Dua jam di mobil bisa lebih merusak daripada dua bulan di lemari.\n\n#kulittropis #vitaminc #penyimpanan #skincareindonesia #ilmukulit",
+      "hook": "Kamu meninggalkan serum di mobil dua jam. Suhunya bukan 30 derajat.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B08.mp4",
+        "poster": "/assets/video/B08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b08-yo",
+      "contentId": "B08",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-04T09:30:00Z",
+      "publishAtWib": "2026-11-04 16:30",
+      "status": "DRAFT",
+      "title": "Skincare di dalam mobil 40 derajat",
+      "body": "Dua jam di mobil bisa lebih merusak daripada dua bulan di lemari.\n\nPertanyaan: 'di mana produkmu berada hari ini?'\n\nSumber: Skenario suhu kabin kendaraan terparkir; aturan Q10; stabilitas asam askorbat\n\nSeri: Iklim & Stabilitas\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #vitaminc #penyimpanan #skincare #skincaretropis",
+      "hook": "Kamu meninggalkan serum di mobil dua jam. Suhunya bukan 30 derajat.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B08.mp4",
+        "poster": "/assets/video/B08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r06-in",
+      "contentId": "R06",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-04T13:00:00Z",
+      "publishAtWib": "2026-11-04 20:00",
+      "status": "DRAFT",
+      "title": "Intensitas bukan konsistensi: cara membedakannya",
+      "body": "Yang bertahan bukan yang paling intens, tapi yang paling konsisten.\n\nCatat tanggal, bandingkan intensitas vs konsistensi setelah 6 minggu\n\n#knottheory #konsistensi #batas #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Perhatian besar di awal bukan bukti. Yang membuktikan adalah yang bertahan setelah enam minggu.",
+      "durationSec": 71,
+      "media": {
+        "video": "/assets/video/R06.mp4",
+        "poster": "/assets/video/R06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r06-ti",
+      "contentId": "R06",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-04T13:00:00Z",
+      "publishAtWib": "2026-11-04 20:00",
+      "status": "DRAFT",
+      "title": "Intensitas bukan konsistensi: cara membedakannya",
+      "body": "Yang bertahan bukan yang paling intens, tapi yang paling konsisten.\n\n#knottheory #konsistensi #batas #psikologihubungan #hubungansehat",
+      "hook": "Perhatian besar di awal bukan bukti. Yang membuktikan adalah yang bertahan setelah enam minggu.",
+      "durationSec": 71,
+      "media": {
+        "video": "/assets/video/R06.mp4",
+        "poster": "/assets/video/R06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r06-yo",
+      "contentId": "R06",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-04T13:00:00Z",
+      "publishAtWib": "2026-11-04 20:00",
+      "status": "DRAFT",
+      "title": "Intensitas bukan konsistensi: cara membedakannya",
+      "body": "Yang bertahan bukan yang paling intens, tapi yang paling konsisten.\n\nCatat tanggal, bandingkan intensitas vs konsistensi setelah 6 minggu\n\nSumber: Pola perilaku (intensitas vs konsistensi) — 'love bombing' dipakai sebagai deskripsi perilaku, bukan diagnosis\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #konsistensi #batas #psikologihubungan #hubungansehat",
+      "hook": "Perhatian besar di awal bukan bukti. Yang membuktikan adalah yang bertahan setelah enam minggu.",
+      "durationSec": 71,
+      "media": {
+        "video": "/assets/video/R06.mp4",
+        "poster": "/assets/video/R06.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b09-in",
+      "contentId": "B09",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-04T14:30:00Z",
+      "publishAtWib": "2026-11-04 21:30",
+      "status": "DRAFT",
+      "title": "Yang membunuh vitamin C bukan matahari, tapi oksigen",
+      "body": "Oksigen, bukan matahari, yang paling cepat membunuh vitamin C.\n\nPertanyaan: 'satu botol bertahan berapa bulan?'\n\n#kulittropis #vitaminc #oksidasi #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kamu menyimpan vitamin C di tempat gelap. Itu bagus. Tapi masalah utamanya bukan cahaya.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B09.mp4",
+        "poster": "/assets/video/B09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b09-ti",
+      "contentId": "B09",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-04T14:30:00Z",
+      "publishAtWib": "2026-11-04 21:30",
+      "status": "DRAFT",
+      "title": "Yang membunuh vitamin C bukan matahari, tapi oksigen",
+      "body": "Oksigen, bukan matahari, yang paling cepat membunuh vitamin C.\n\n#kulittropis #vitaminc #oksidasi #skincareindonesia #ilmukulit",
+      "hook": "Kamu menyimpan vitamin C di tempat gelap. Itu bagus. Tapi masalah utamanya bukan cahaya.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B09.mp4",
+        "poster": "/assets/video/B09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b09-yo",
+      "contentId": "B09",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-04T14:30:00Z",
+      "publishAtWib": "2026-11-04 21:30",
+      "status": "DRAFT",
+      "title": "Yang membunuh vitamin C bukan matahari, tapi oksigen",
+      "body": "Oksigen, bukan matahari, yang paling cepat membunuh vitamin C.\n\nPertanyaan: 'satu botol bertahan berapa bulan?'\n\nSumber: Degradasi asam askorbat: oksidasi sebagai jalur utama; praktik pengemasan kedap udara\n\nSeri: Iklim & Stabilitas\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #vitaminc #oksidasi #skincare #skincaretropis",
+      "hook": "Kamu menyimpan vitamin C di tempat gelap. Itu bagus. Tapi masalah utamanya bukan cahaya.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B09.mp4",
+        "poster": "/assets/video/B09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b10-in",
+      "contentId": "B10",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-04T23:30:00Z",
+      "publishAtWib": "2026-11-05 06:30",
+      "status": "DRAFT",
+      "title": "Niacinamide 5% vs 10%: kapan naik dosis berhenti menolong",
+      "body": "Bukan soal berapa persen, tapi di titik mana manfaat berhenti bertambah.\n\nPertanyaan: 'naik kadar karena hasil atau label?'\n\n#kulittropis #niacinamide #bahanaktif #skincaretropis #skintellectual #skincareindonesia #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Niacinamide dua persen sudah bekerja. Sepuluh persen belum tentu dua kali lebih baik.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B10.mp4",
+        "poster": "/assets/video/B10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b10-ti",
+      "contentId": "B10",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-04T23:30:00Z",
+      "publishAtWib": "2026-11-05 06:30",
+      "status": "DRAFT",
+      "title": "Niacinamide 5% vs 10%: kapan naik dosis berhenti menolong",
+      "body": "Bukan soal berapa persen, tapi di titik mana manfaat berhenti bertambah.\n\n#kulittropis #niacinamide #bahanaktif #skincareindonesia #ilmukulit",
+      "hook": "Niacinamide dua persen sudah bekerja. Sepuluh persen belum tentu dua kali lebih baik.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B10.mp4",
+        "poster": "/assets/video/B10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b10-yo",
+      "contentId": "B10",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-04T23:30:00Z",
+      "publishAtWib": "2026-11-05 06:30",
+      "status": "DRAFT",
+      "title": "Niacinamide 5% vs 10%: kapan naik dosis berhenti menolong",
+      "body": "Bukan soal berapa persen, tapi di titik mana manfaat berhenti bertambah.\n\nPertanyaan: 'naik kadar karena hasil atau label?'\n\nSumber: Rentang kadar niacinamide pada studi klinis (2–5%); prinsip dose-response kosmetik\n\nSeri: Dasar Bahan\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #niacinamide #bahanaktif #skincare #skincaretropis",
+      "hook": "Niacinamide dua persen sudah bekerja. Sepuluh persen belum tentu dua kali lebih baik.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B10.mp4",
+        "poster": "/assets/video/B10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r07-in",
+      "contentId": "R07",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-05T04:45:00Z",
+      "publishAtWib": "2026-11-05 11:45",
+      "status": "DRAFT",
+      "title": "Tiga pola yang muncul saat bertengkar",
+      "body": "Kamu tidak sedang berdebat. Kamu sedang menjalankan pola.\n\nSebut satu kalimat saat pola muncul: 'aku butuh waktu' / 'aku takut ditinggal'\n\n#knottheory #kelekatan #attachment #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Saat bertengkar, kamu tidak sedang berdebat. Kamu sedang menjalankan pola lama.",
+      "durationSec": 73,
+      "media": {
+        "video": "/assets/video/R07.mp4",
+        "poster": "/assets/video/R07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r07-ti",
+      "contentId": "R07",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-05T04:45:00Z",
+      "publishAtWib": "2026-11-05 11:45",
+      "status": "DRAFT",
+      "title": "Tiga pola yang muncul saat bertengkar",
+      "body": "Kamu tidak sedang berdebat. Kamu sedang menjalankan pola.\n\n#knottheory #kelekatan #attachment #psikologihubungan #hubungansehat",
+      "hook": "Saat bertengkar, kamu tidak sedang berdebat. Kamu sedang menjalankan pola lama.",
+      "durationSec": 73,
+      "media": {
+        "video": "/assets/video/R07.mp4",
+        "poster": "/assets/video/R07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r07-yo",
+      "contentId": "R07",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-05T04:45:00Z",
+      "publishAtWib": "2026-11-05 11:45",
+      "status": "DRAFT",
+      "title": "Tiga pola yang muncul saat bertengkar",
+      "body": "Kamu tidak sedang berdebat. Kamu sedang menjalankan pola.\n\nSebut satu kalimat saat pola muncul: 'aku butuh waktu' / 'aku takut ditinggal'\n\nSumber: Teori kelekatan dewasa (Hazan & Shaver; Brennan, Clark & Shaver) — strategi hyperactivating/deactivating\n\nSeri: Pola dari Keluarga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #kelekatan #attachment #psikologihubungan #hubungansehat",
+      "hook": "Saat bertengkar, kamu tidak sedang berdebat. Kamu sedang menjalankan pola lama.",
+      "durationSec": 73,
+      "media": {
+        "video": "/assets/video/R07.mp4",
+        "poster": "/assets/video/R07.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b11-in",
+      "contentId": "B11",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-05T09:30:00Z",
+      "publishAtWib": "2026-11-05 16:30",
+      "status": "DRAFT",
+      "title": "Tiga tanda skin barrier rusak (dan satu yang sering salah dibaca)",
+      "body": "Barrier rusak tidak selalu kering. Kadang justru berminyak.\n\nPertanyaan: 'kamu menambah atau mengurangi?'\n\n#kulittropis #skinbarrier #ilmukulit #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kulit perih saat pakai air? Itu bukan tanda produknya kuat.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/B11.mp4",
+        "poster": "/assets/video/B11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b11-ti",
+      "contentId": "B11",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-05T09:30:00Z",
+      "publishAtWib": "2026-11-05 16:30",
+      "status": "DRAFT",
+      "title": "Tiga tanda skin barrier rusak (dan satu yang sering salah dibaca)",
+      "body": "Barrier rusak tidak selalu kering. Kadang justru berminyak.\n\n#kulittropis #skinbarrier #ilmukulit #skincareindonesia",
+      "hook": "Kulit perih saat pakai air? Itu bukan tanda produknya kuat.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/B11.mp4",
+        "poster": "/assets/video/B11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b11-yo",
+      "contentId": "B11",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-05T09:30:00Z",
+      "publishAtWib": "2026-11-05 16:30",
+      "status": "DRAFT",
+      "title": "Tiga tanda skin barrier rusak (dan satu yang sering salah dibaca)",
+      "body": "Barrier rusak tidak selalu kering. Kadang justru berminyak.\n\nPertanyaan: 'kamu menambah atau mengurangi?'\n\nSumber: Konsep barrier function (stratum corneum, lipid matrix); tanda klinis gangguan barrier\n\nSeri: Dasar Bahan\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #skinbarrier #ilmukulit #skincare #skincaretropis",
+      "hook": "Kulit perih saat pakai air? Itu bukan tanda produknya kuat.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/B11.mp4",
+        "poster": "/assets/video/B11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r08-in",
+      "contentId": "R08",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-05T13:00:00Z",
+      "publishAtWib": "2026-11-05 20:00",
+      "status": "DRAFT",
+      "title": "Kalimat kecil yang memperbaiki pertengkaran",
+      "body": "Satu kalimat jeda bisa menyelamatkan percakapan yang sudah panas.\n\nSepakati satu kalimat jeda saat sedang tenang\n\n#knottheory #repair #komunikasi #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Pertengkaran jarang berakhir karena solusi. Biasanya karena satu kalimat kecil.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/R08.mp4",
+        "poster": "/assets/video/R08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r08-ti",
+      "contentId": "R08",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-05T13:00:00Z",
+      "publishAtWib": "2026-11-05 20:00",
+      "status": "DRAFT",
+      "title": "Kalimat kecil yang memperbaiki pertengkaran",
+      "body": "Satu kalimat jeda bisa menyelamatkan percakapan yang sudah panas.\n\n#knottheory #repair #komunikasi #psikologihubungan #hubungansehat",
+      "hook": "Pertengkaran jarang berakhir karena solusi. Biasanya karena satu kalimat kecil.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/R08.mp4",
+        "poster": "/assets/video/R08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r08-yo",
+      "contentId": "R08",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-05T13:00:00Z",
+      "publishAtWib": "2026-11-05 20:00",
+      "status": "DRAFT",
+      "title": "Kalimat kecil yang memperbaiki pertengkaran",
+      "body": "Satu kalimat jeda bisa menyelamatkan percakapan yang sudah panas.\n\nSepakati satu kalimat jeda saat sedang tenang\n\nSumber: Gottman — repair attempts dan penerimaannya sebagai penanda kestabilan interaksi konflik\n\nSeri: Pola dari Keluarga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #repair #komunikasi #psikologihubungan #hubungansehat",
+      "hook": "Pertengkaran jarang berakhir karena solusi. Biasanya karena satu kalimat kecil.",
+      "durationSec": 67,
+      "media": {
+        "video": "/assets/video/R08.mp4",
+        "poster": "/assets/video/R08.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b12-in",
+      "contentId": "B12",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-05T14:30:00Z",
+      "publishAtWib": "2026-11-05 21:30",
+      "status": "DRAFT",
+      "title": "Busa banyak bukan berarti lebih bersih",
+      "body": "Busa itu surfaktan, bukan pengukur kebersihan.\n\nPertanyaan: 'kulitmu terasa kencang setelah cuci?'\n\n#kulittropis #cleanser #surfaktan #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kalau cleansermu berbusa banyak, itu belum tentu tanda kulitmu bersih.",
+      "durationSec": 56,
+      "media": {
+        "video": "/assets/video/B12.mp4",
+        "poster": "/assets/video/B12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b12-ti",
+      "contentId": "B12",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-05T14:30:00Z",
+      "publishAtWib": "2026-11-05 21:30",
+      "status": "DRAFT",
+      "title": "Busa banyak bukan berarti lebih bersih",
+      "body": "Busa itu surfaktan, bukan pengukur kebersihan.\n\n#kulittropis #cleanser #surfaktan #skincareindonesia #ilmukulit",
+      "hook": "Kalau cleansermu berbusa banyak, itu belum tentu tanda kulitmu bersih.",
+      "durationSec": 56,
+      "media": {
+        "video": "/assets/video/B12.mp4",
+        "poster": "/assets/video/B12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b12-yo",
+      "contentId": "B12",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-05T14:30:00Z",
+      "publishAtWib": "2026-11-05 21:30",
+      "status": "DRAFT",
+      "title": "Busa banyak bukan berarti lebih bersih",
+      "body": "Busa itu surfaktan, bukan pengukur kebersihan.\n\nPertanyaan: 'kulitmu terasa kencang setelah cuci?'\n\nSumber: Kimia surfaktan & sensasi after-feel sebagai indikator kekuatan cleanser\n\nSeri: Rutin 3 Langkah\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #cleanser #surfaktan #skincare #skincaretropis",
+      "hook": "Kalau cleansermu berbusa banyak, itu belum tentu tanda kulitmu bersih.",
+      "durationSec": 56,
+      "media": {
+        "video": "/assets/video/B12.mp4",
+        "poster": "/assets/video/B12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b13-in",
+      "contentId": "B13",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-05T23:30:00Z",
+      "publishAtWib": "2026-11-06 06:30",
+      "status": "DRAFT",
+      "title": "Humektan, emolien, oklusif: tiga lapis yang sering tertukar",
+      "body": "Kalau kamu tahu tiga peran ini, kamu bisa membaca semua label pelembap.\n\nPertanyaan: 'produkmu mengisi peran yang mana?'\n\n#kulittropis #pelembap #bahanaktif #skincaretropis #skintellectual #skincareindonesia #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Pelembap bukan satu bahan. Ia tiga peran yang berbeda.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B13.mp4",
+        "poster": "/assets/video/B13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b13-ti",
+      "contentId": "B13",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-05T23:30:00Z",
+      "publishAtWib": "2026-11-06 06:30",
+      "status": "DRAFT",
+      "title": "Humektan, emolien, oklusif: tiga lapis yang sering tertukar",
+      "body": "Kalau kamu tahu tiga peran ini, kamu bisa membaca semua label pelembap.\n\n#kulittropis #pelembap #bahanaktif #skincareindonesia #ilmukulit",
+      "hook": "Pelembap bukan satu bahan. Ia tiga peran yang berbeda.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B13.mp4",
+        "poster": "/assets/video/B13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b13-yo",
+      "contentId": "B13",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-05T23:30:00Z",
+      "publishAtWib": "2026-11-06 06:30",
+      "status": "DRAFT",
+      "title": "Humektan, emolien, oklusif: tiga lapis yang sering tertukar",
+      "body": "Kalau kamu tahu tiga peran ini, kamu bisa membaca semua label pelembap.\n\nPertanyaan: 'produkmu mengisi peran yang mana?'\n\nSumber: Klasifikasi humektan/emolien/oklusif dalam formulasi kosmetik\n\nSeri: Rutin 3 Langkah\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #pelembap #bahanaktif #skincare #skincaretropis",
+      "hook": "Pelembap bukan satu bahan. Ia tiga peran yang berbeda.",
+      "durationSec": 63,
+      "media": {
+        "video": "/assets/video/B13.mp4",
+        "poster": "/assets/video/B13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r09-in",
+      "contentId": "R09",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-06T04:45:00Z",
+      "publishAtWib": "2026-11-06 11:45",
+      "status": "DRAFT",
+      "title": "Beda nilai atau red flag? Tiga pertanyaan",
+      "body": "Yang membedakan bukan seberapa sering bertengkar, tapi apakah kamu boleh menolak.\n\n3 pertanyaan: boleh bilang tidak? penolakan dihormati? pola berulang?\n\n#knottheory #batas #hubungansehat #psikologihubungan #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Tidak semua yang mengganggu adalah tanda bahaya. Sebagian hanya beda nilai.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R09.mp4",
+        "poster": "/assets/video/R09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r09-ti",
+      "contentId": "R09",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-06T04:45:00Z",
+      "publishAtWib": "2026-11-06 11:45",
+      "status": "DRAFT",
+      "title": "Beda nilai atau red flag? Tiga pertanyaan",
+      "body": "Yang membedakan bukan seberapa sering bertengkar, tapi apakah kamu boleh menolak.\n\n#knottheory #batas #hubungansehat #psikologihubungan",
+      "hook": "Tidak semua yang mengganggu adalah tanda bahaya. Sebagian hanya beda nilai.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R09.mp4",
+        "poster": "/assets/video/R09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r09-yo",
+      "contentId": "R09",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-06T04:45:00Z",
+      "publishAtWib": "2026-11-06 11:45",
+      "status": "DRAFT",
+      "title": "Beda nilai atau red flag? Tiga pertanyaan",
+      "body": "Yang membedakan bukan seberapa sering bertengkar, tapi apakah kamu boleh menolak.\n\n3 pertanyaan: boleh bilang tidak? penolakan dihormati? pola berulang?\n\nSumber: Kerangka batas & keselamatan hubungan (bukan diagnosis); rujukan bantuan profesional untuk kekerasan\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #batas #hubungansehat #psikologihubungan",
+      "hook": "Tidak semua yang mengganggu adalah tanda bahaya. Sebagian hanya beda nilai.",
+      "durationSec": 68,
+      "media": {
+        "video": "/assets/video/R09.mp4",
+        "poster": "/assets/video/R09.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b14-in",
+      "contentId": "B14",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-06T09:30:00Z",
+      "publishAtWib": "2026-11-06 16:30",
+      "status": "DRAFT",
+      "title": "Jerawat bukan karena wajahmu kotor",
+      "body": "Empat penyebab ini lebih sering daripada 'kurang bersih'.\n\nPertanyaan: 'berapa jam kulit bergesekan?'\n\n#kulittropis #jerawat #breakout #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Jerawat bukan bukti kamu kurang bersih. Ini empat penyebab yang lebih sering.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B14.mp4",
+        "poster": "/assets/video/B14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b14-ti",
+      "contentId": "B14",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-06T09:30:00Z",
+      "publishAtWib": "2026-11-06 16:30",
+      "status": "DRAFT",
+      "title": "Jerawat bukan karena wajahmu kotor",
+      "body": "Empat penyebab ini lebih sering daripada 'kurang bersih'.\n\n#kulittropis #jerawat #breakout #skincareindonesia #ilmukulit",
+      "hook": "Jerawat bukan bukti kamu kurang bersih. Ini empat penyebab yang lebih sering.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B14.mp4",
+        "poster": "/assets/video/B14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b14-yo",
+      "contentId": "B14",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-06T09:30:00Z",
+      "publishAtWib": "2026-11-06 16:30",
+      "status": "DRAFT",
+      "title": "Jerawat bukan karena wajahmu kotor",
+      "body": "Empat penyebab ini lebih sering daripada 'kurang bersih'.\n\nPertanyaan: 'berapa jam kulit bergesekan?'\n\nSumber: Patogenesis akne (folikel, sebum, inflamasi); faktor mekanis (akne mekanika)\n\nSeri: Dasar Bahan\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #jerawat #breakout #skincare #skincaretropis",
+      "hook": "Jerawat bukan bukti kamu kurang bersih. Ini empat penyebab yang lebih sering.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B14.mp4",
+        "poster": "/assets/video/B14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r10-in",
+      "contentId": "R10",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-06T13:00:00Z",
+      "publishAtWib": "2026-11-06 20:00",
+      "status": "DRAFT",
+      "title": "Balas cepat bukan tanda cinta",
+      "body": "Kecepatan membalas itu sinyal cemas, bukan sinyal sayang.\n\nSepakati ritme balas yang aman untuk kalian\n\n#knottheory #kelekatancemas #relasi #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Dia balas dalam sepuluh detik. Itu bukan bukti cinta, dan kamu tahu itu.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R10.mp4",
+        "poster": "/assets/video/R10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r10-ti",
+      "contentId": "R10",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-06T13:00:00Z",
+      "publishAtWib": "2026-11-06 20:00",
+      "status": "DRAFT",
+      "title": "Balas cepat bukan tanda cinta",
+      "body": "Kecepatan membalas itu sinyal cemas, bukan sinyal sayang.\n\n#knottheory #kelekatancemas #relasi #psikologihubungan #hubungansehat",
+      "hook": "Dia balas dalam sepuluh detik. Itu bukan bukti cinta, dan kamu tahu itu.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R10.mp4",
+        "poster": "/assets/video/R10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r10-yo",
+      "contentId": "R10",
+      "niche": "relationship",
+      "series": "Beban Tak Terlihat",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-06T13:00:00Z",
+      "publishAtWib": "2026-11-06 20:00",
+      "status": "DRAFT",
+      "title": "Balas cepat bukan tanda cinta",
+      "body": "Kecepatan membalas itu sinyal cemas, bukan sinyal sayang.\n\nSepakati ritme balas yang aman untuk kalian\n\nSumber: Mikulincer & Shaver — strategi hyperactivating pada kelekatan cemas\n\nSeri: Beban Tak Terlihat\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #kelekatancemas #relasi #psikologihubungan #hubungansehat",
+      "hook": "Dia balas dalam sepuluh detik. Itu bukan bukti cinta, dan kamu tahu itu.",
+      "durationSec": 66,
+      "media": {
+        "video": "/assets/video/R10.mp4",
+        "poster": "/assets/video/R10.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b15-in",
+      "contentId": "B15",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-06T14:30:00Z",
+      "publishAtWib": "2026-11-06 21:30",
+      "status": "DRAFT",
+      "title": "AHA dan BHA di iklim lembap: bedanya bukan kuat-lemah",
+      "body": "Pilih berdasarkan masalah, bukan berdasarkan 'yang paling kuat'.\n\nPertanyaan: 'untuk tekstur atau untuk pori?'\n\n#kulittropis #aha #bha #eksfoliasi #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "AHA dan BHA bekerja di tempat berbeda. Salah pilih, efeknya cuma perih.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B15.mp4",
+        "poster": "/assets/video/B15.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b15-ti",
+      "contentId": "B15",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-06T14:30:00Z",
+      "publishAtWib": "2026-11-06 21:30",
+      "status": "DRAFT",
+      "title": "AHA dan BHA di iklim lembap: bedanya bukan kuat-lemah",
+      "body": "Pilih berdasarkan masalah, bukan berdasarkan 'yang paling kuat'.\n\n#kulittropis #aha #bha #eksfoliasi #skincareindonesia #ilmukulit",
+      "hook": "AHA dan BHA bekerja di tempat berbeda. Salah pilih, efeknya cuma perih.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B15.mp4",
+        "poster": "/assets/video/B15.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b15-yo",
+      "contentId": "B15",
+      "niche": "beauty",
+      "series": "Dasar Bahan",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-06T14:30:00Z",
+      "publishAtWib": "2026-11-06 21:30",
+      "status": "DRAFT",
+      "title": "AHA dan BHA di iklim lembap: bedanya bukan kuat-lemah",
+      "body": "Pilih berdasarkan masalah, bukan berdasarkan 'yang paling kuat'.\n\nPertanyaan: 'untuk tekstur atau untuk pori?'\n\nSumber: Kelarutan AHA (air) vs BHA (lipid); peningkatan fotosensitivitas pasca-eksfoliasi\n\nSeri: Dasar Bahan\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #aha #bha #eksfoliasi #skincare",
+      "hook": "AHA dan BHA bekerja di tempat berbeda. Salah pilih, efeknya cuma perih.",
+      "durationSec": 61,
+      "media": {
+        "video": "/assets/video/B15.mp4",
+        "poster": "/assets/video/B15.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b16-in",
+      "contentId": "B16",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-06T23:30:00Z",
+      "publishAtWib": "2026-11-07 06:30",
+      "status": "DRAFT",
+      "title": "Double cleansing: kapan perlu, kapan cuma buang uang",
+      "body": "Double cleansing itu alat, bukan kewajiban.\n\nPertanyaan: 'apa yang butuh dilarutkan hari ini?'\n\n#kulittropis #doublecleansing #rutin #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Double cleansing bukan wajib. Ia alat untuk kondisi tertentu.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B16.mp4",
+        "poster": "/assets/video/B16.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b16-ti",
+      "contentId": "B16",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-06T23:30:00Z",
+      "publishAtWib": "2026-11-07 06:30",
+      "status": "DRAFT",
+      "title": "Double cleansing: kapan perlu, kapan cuma buang uang",
+      "body": "Double cleansing itu alat, bukan kewajiban.\n\n#kulittropis #doublecleansing #rutin #skincareindonesia #ilmukulit",
+      "hook": "Double cleansing bukan wajib. Ia alat untuk kondisi tertentu.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B16.mp4",
+        "poster": "/assets/video/B16.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b16-yo",
+      "contentId": "B16",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-06T23:30:00Z",
+      "publishAtWib": "2026-11-07 06:30",
+      "status": "DRAFT",
+      "title": "Double cleansing: kapan perlu, kapan cuma buang uang",
+      "body": "Double cleansing itu alat, bukan kewajiban.\n\nPertanyaan: 'apa yang butuh dilarutkan hari ini?'\n\nSumber: Prinsip like-dissolves-like pada sunscreen water-resistant dan makeup\n\nSeri: Rutin 3 Langkah\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #doublecleansing #rutin #skincare #skincaretropis",
+      "hook": "Double cleansing bukan wajib. Ia alat untuk kondisi tertentu.",
+      "durationSec": 58,
+      "media": {
+        "video": "/assets/video/B16.mp4",
+        "poster": "/assets/video/B16.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r11-in",
+      "contentId": "R11",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-07T04:45:00Z",
+      "publishAtWib": "2026-11-07 11:45",
+      "status": "DRAFT",
+      "title": "Liburan bareng bukan ramalan, tapi tiga momen ini jujur",
+      "body": "Yang diuji bukan kesabarannya, tapi cara kalian menangani tekanan kecil.\n\nTanyakan: momen mana yang paling kamu ingat?\n\n#knottheory #liburan #pasangan #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Liburan bareng tidak meramalkan hubungan. Tapi tiga momen ini memperlihatkan polanya.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R11.mp4",
+        "poster": "/assets/video/R11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r11-ti",
+      "contentId": "R11",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-07T04:45:00Z",
+      "publishAtWib": "2026-11-07 11:45",
+      "status": "DRAFT",
+      "title": "Liburan bareng bukan ramalan, tapi tiga momen ini jujur",
+      "body": "Yang diuji bukan kesabarannya, tapi cara kalian menangani tekanan kecil.\n\n#knottheory #liburan #pasangan #psikologihubungan #hubungansehat",
+      "hook": "Liburan bareng tidak meramalkan hubungan. Tapi tiga momen ini memperlihatkan polanya.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R11.mp4",
+        "poster": "/assets/video/R11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r11-yo",
+      "contentId": "R11",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-07T04:45:00Z",
+      "publishAtWib": "2026-11-07 11:45",
+      "status": "DRAFT",
+      "title": "Liburan bareng bukan ramalan, tapi tiga momen ini jujur",
+      "body": "Yang diuji bukan kesabarannya, tapi cara kalian menangani tekanan kecil.\n\nTanyakan: momen mana yang paling kamu ingat?\n\nSumber: Observasi pola penanganan stres dalam interaksi sehari-hari (bukan prediksi hubungan)\n\nSeri: Uang & Rumah Tangga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #liburan #pasangan #psikologihubungan #hubungansehat",
+      "hook": "Liburan bareng tidak meramalkan hubungan. Tapi tiga momen ini memperlihatkan polanya.",
+      "durationSec": 70,
+      "media": {
+        "video": "/assets/video/R11.mp4",
+        "poster": "/assets/video/R11.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b17-in",
+      "contentId": "B17",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-07T09:30:00Z",
+      "publishAtWib": "2026-11-07 16:30",
+      "status": "DRAFT",
+      "title": "Reapply tiap 2 jam: dari mana angka itu datang",
+      "body": "Dua jam adalah patokan, bukan hukum. Keringat mempercepat semuanya.\n\nPertanyaan: 'hari ini kamu lebih banyak di mana?'\n\n#kulittropis #spf #reapply #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Angka dua jam itu bukan aturan sembarangan. Tapi artinya bukan yang kamu kira.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B17.mp4",
+        "poster": "/assets/video/B17.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b17-ti",
+      "contentId": "B17",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-07T09:30:00Z",
+      "publishAtWib": "2026-11-07 16:30",
+      "status": "DRAFT",
+      "title": "Reapply tiap 2 jam: dari mana angka itu datang",
+      "body": "Dua jam adalah patokan, bukan hukum. Keringat mempercepat semuanya.\n\n#kulittropis #spf #reapply #skincareindonesia #ilmukulit",
+      "hook": "Angka dua jam itu bukan aturan sembarangan. Tapi artinya bukan yang kamu kira.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B17.mp4",
+        "poster": "/assets/video/B17.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b17-yo",
+      "contentId": "B17",
+      "niche": "beauty",
+      "series": "UV & Pigmentasi",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-07T09:30:00Z",
+      "publishAtWib": "2026-11-07 16:30",
+      "status": "DRAFT",
+      "title": "Reapply tiap 2 jam: dari mana angka itu datang",
+      "body": "Dua jam adalah patokan, bukan hukum. Keringat mempercepat semuanya.\n\nPertanyaan: 'hari ini kamu lebih banyak di mana?'\n\nSumber: Dasar perhitungan reapply (dosis eritema, kondisi uji); water/sweat resistance\n\nSeri: UV & Pigmentasi\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #spf #reapply #skincare #skincaretropis",
+      "hook": "Angka dua jam itu bukan aturan sembarangan. Tapi artinya bukan yang kamu kira.",
+      "durationSec": 60,
+      "media": {
+        "video": "/assets/video/B17.mp4",
+        "poster": "/assets/video/B17.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r12-in",
+      "contentId": "R12",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-07T13:00:00Z",
+      "publishAtWib": "2026-11-07 20:00",
+      "status": "DRAFT",
+      "title": "Tiga kalimat dari masa kecil yang membentuk cara kamu bertengkar",
+      "body": "Kamu tidak memilih pola ini. Tapi kamu bisa memilih untuk menyadarinya.\n\nTulis satu kalimat yang dulu sering kamu dengar; tanyakan apakah kamu mengulanginya\n\n#knottheory #keluarga #pola #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Cara kamu bertengkar hari ini dibentuk oleh tiga kalimat yang kamu dengar saat kecil.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R12.mp4",
+        "poster": "/assets/video/R12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r12-ti",
+      "contentId": "R12",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-07T13:00:00Z",
+      "publishAtWib": "2026-11-07 20:00",
+      "status": "DRAFT",
+      "title": "Tiga kalimat dari masa kecil yang membentuk cara kamu bertengkar",
+      "body": "Kamu tidak memilih pola ini. Tapi kamu bisa memilih untuk menyadarinya.\n\n#knottheory #keluarga #pola #psikologihubungan #hubungansehat",
+      "hook": "Cara kamu bertengkar hari ini dibentuk oleh tiga kalimat yang kamu dengar saat kecil.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R12.mp4",
+        "poster": "/assets/video/R12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r12-yo",
+      "contentId": "R12",
+      "niche": "relationship",
+      "series": "Pola dari Keluarga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-07T13:00:00Z",
+      "publishAtWib": "2026-11-07 20:00",
+      "status": "DRAFT",
+      "title": "Tiga kalimat dari masa kecil yang membentuk cara kamu bertengkar",
+      "body": "Kamu tidak memilih pola ini. Tapi kamu bisa memilih untuk menyadarinya.\n\nTulis satu kalimat yang dulu sering kamu dengar; tanyakan apakah kamu mengulanginya\n\nSumber: Pembelajaran sosial pola konflik antar generasi (Bandura; transmisi pola keluarga)\n\nSeri: Pola dari Keluarga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #keluarga #pola #psikologihubungan #hubungansehat",
+      "hook": "Cara kamu bertengkar hari ini dibentuk oleh tiga kalimat yang kamu dengar saat kecil.",
+      "durationSec": 72,
+      "media": {
+        "video": "/assets/video/R12.mp4",
+        "poster": "/assets/video/R12.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b18-in",
+      "contentId": "B18",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-07T14:30:00Z",
+      "publishAtWib": "2026-11-07 21:30",
+      "status": "DRAFT",
+      "title": "Kantor ber-AC 40% RH: humektan bekerja terbalik",
+      "body": "Humektan butuh penutup. Tanpa itu, ia menarik air ke tempat yang salah.\n\nPertanyaan: 'kantormu lembap atau kering?'\n\n#kulittropis #ruangac #humektan #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Di ruang ber-AC, kulitmu bisa kehilangan air ke udara. Bukan mendapatkannya.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B18.mp4",
+        "poster": "/assets/video/B18.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b18-ti",
+      "contentId": "B18",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-07T14:30:00Z",
+      "publishAtWib": "2026-11-07 21:30",
+      "status": "DRAFT",
+      "title": "Kantor ber-AC 40% RH: humektan bekerja terbalik",
+      "body": "Humektan butuh penutup. Tanpa itu, ia menarik air ke tempat yang salah.\n\n#kulittropis #ruangac #humektan #skincareindonesia #ilmukulit",
+      "hook": "Di ruang ber-AC, kulitmu bisa kehilangan air ke udara. Bukan mendapatkannya.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B18.mp4",
+        "poster": "/assets/video/B18.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b18-yo",
+      "contentId": "B18",
+      "niche": "beauty",
+      "series": "Iklim & Tekstur",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-07T14:30:00Z",
+      "publishAtWib": "2026-11-07 21:30",
+      "status": "DRAFT",
+      "title": "Kantor ber-AC 40% RH: humektan bekerja terbalik",
+      "body": "Humektan butuh penutup. Tanpa itu, ia menarik air ke tempat yang salah.\n\nPertanyaan: 'kantormu lembap atau kering?'\n\nSumber: Perilaku humektan pada RH rendah; kebutuhan emolien/oklusif sebagai penutup\n\nSeri: Iklim & Tekstur\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #ruangac #humektan #skincare #skincaretropis",
+      "hook": "Di ruang ber-AC, kulitmu bisa kehilangan air ke udara. Bukan mendapatkannya.",
+      "durationSec": 59,
+      "media": {
+        "video": "/assets/video/B18.mp4",
+        "poster": "/assets/video/B18.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b19-in",
+      "contentId": "B19",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-07T23:30:00Z",
+      "publishAtWib": "2026-11-08 06:30",
+      "status": "DRAFT",
+      "title": "Toner, essence, serum: urutan yang masuk akal",
+      "body": "Urutan itu soal tekstur, bukan merek.\n\nPertanyaan: 'berapa produk harianmu?'\n\n#kulittropis #rutinskincare #urutan #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Urutan skincare bukan aturan sakral. Ia soal tekstur dan ukuran molekul.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B19.mp4",
+        "poster": "/assets/video/B19.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b19-ti",
+      "contentId": "B19",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-07T23:30:00Z",
+      "publishAtWib": "2026-11-08 06:30",
+      "status": "DRAFT",
+      "title": "Toner, essence, serum: urutan yang masuk akal",
+      "body": "Urutan itu soal tekstur, bukan merek.\n\n#kulittropis #rutinskincare #urutan #skincareindonesia #ilmukulit",
+      "hook": "Urutan skincare bukan aturan sakral. Ia soal tekstur dan ukuran molekul.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B19.mp4",
+        "poster": "/assets/video/B19.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b19-yo",
+      "contentId": "B19",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-07T23:30:00Z",
+      "publishAtWib": "2026-11-08 06:30",
+      "status": "DRAFT",
+      "title": "Toner, essence, serum: urutan yang masuk akal",
+      "body": "Urutan itu soal tekstur, bukan merek.\n\nPertanyaan: 'berapa produk harianmu?'\n\nSumber: Prinsip urutan berdasarkan viskositas/tekstur dalam formulasi\n\nSeri: Rutin 3 Langkah\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #rutinskincare #urutan #skincare #skincaretropis",
+      "hook": "Urutan skincare bukan aturan sakral. Ia soal tekstur dan ukuran molekul.",
+      "durationSec": 62,
+      "media": {
+        "video": "/assets/video/B19.mp4",
+        "poster": "/assets/video/B19.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r13-in",
+      "contentId": "R13",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-08T04:45:00Z",
+      "publishAtWib": "2026-11-08 11:45",
+      "status": "DRAFT",
+      "title": "Ruang bukan jarak: cara membedakannya",
+      "body": "Ruang yang sehat punya waktu kembali. Jarak tidak.\n\nKalimat: 'Aku butuh dua jam, nanti aku kabari.'\n\n#knottheory #otonomi #batas #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Butuh waktu sendiri bukan tanda menjauh. Tapi ada versi yang memang menjauh.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/R13.mp4",
+        "poster": "/assets/video/R13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r13-ti",
+      "contentId": "R13",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-08T04:45:00Z",
+      "publishAtWib": "2026-11-08 11:45",
+      "status": "DRAFT",
+      "title": "Ruang bukan jarak: cara membedakannya",
+      "body": "Ruang yang sehat punya waktu kembali. Jarak tidak.\n\n#knottheory #otonomi #batas #psikologihubungan #hubungansehat",
+      "hook": "Butuh waktu sendiri bukan tanda menjauh. Tapi ada versi yang memang menjauh.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/R13.mp4",
+        "poster": "/assets/video/R13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r13-yo",
+      "contentId": "R13",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-08T04:45:00Z",
+      "publishAtWib": "2026-11-08 11:45",
+      "status": "DRAFT",
+      "title": "Ruang bukan jarak: cara membedakannya",
+      "body": "Ruang yang sehat punya waktu kembali. Jarak tidak.\n\nKalimat: 'Aku butuh dua jam, nanti aku kabari.'\n\nSumber: Kebutuhan otonomi dalam teori motivasi diri (Deci & Ryan) — diterapkan pada pola hubungan\n\nSeri: Uang & Rumah Tangga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #otonomi #batas #psikologihubungan #hubungansehat",
+      "hook": "Butuh waktu sendiri bukan tanda menjauh. Tapi ada versi yang memang menjauh.",
+      "durationSec": 65,
+      "media": {
+        "video": "/assets/video/R13.mp4",
+        "poster": "/assets/video/R13.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b20-in",
+      "contentId": "B20",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-08T09:30:00Z",
+      "publishAtWib": "2026-11-08 16:30",
+      "status": "DRAFT",
+      "title": "PAO 12M: tanggal yang lebih penting dari expired date",
+      "body": "Cek tanggal buka, bukan cuma tanggal produksi.\n\nPertanyaan: 'mana yang sudah lewat 12 bulan?'\n\n#kulittropis #pao #kedaluwarsa #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kotak kecil bertuliskan 12M itu bukan hiasan. Itu yang menentukan umur setelah dibuka.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B20.mp4",
+        "poster": "/assets/video/B20.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b20-ti",
+      "contentId": "B20",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-08T09:30:00Z",
+      "publishAtWib": "2026-11-08 16:30",
+      "status": "DRAFT",
+      "title": "PAO 12M: tanggal yang lebih penting dari expired date",
+      "body": "Cek tanggal buka, bukan cuma tanggal produksi.\n\n#kulittropis #pao #kedaluwarsa #skincareindonesia #ilmukulit",
+      "hook": "Kotak kecil bertuliskan 12M itu bukan hiasan. Itu yang menentukan umur setelah dibuka.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B20.mp4",
+        "poster": "/assets/video/B20.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b20-yo",
+      "contentId": "B20",
+      "niche": "beauty",
+      "series": "Iklim & Stabilitas",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-08T09:30:00Z",
+      "publishAtWib": "2026-11-08 16:30",
+      "status": "DRAFT",
+      "title": "PAO 12M: tanggal yang lebih penting dari expired date",
+      "body": "Cek tanggal buka, bukan cuma tanggal produksi.\n\nPertanyaan: 'mana yang sudah lewat 12 bulan?'\n\nSumber: Definisi PAO (period after opening) pada label kosmetik; pengaruh kelembapan penyimpanan\n\nSeri: Iklim & Stabilitas\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #pao #kedaluwarsa #skincare #skincaretropis",
+      "hook": "Kotak kecil bertuliskan 12M itu bukan hiasan. Itu yang menentukan umur setelah dibuka.",
+      "durationSec": 57,
+      "media": {
+        "video": "/assets/video/B20.mp4",
+        "poster": "/assets/video/B20.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r14-in",
+      "contentId": "R14",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-08T13:00:00Z",
+      "publishAtWib": "2026-11-08 20:00",
+      "status": "DRAFT",
+      "title": "Empat pertanyaan uang sebelum menikah",
+      "body": "Bukan berapa banyak, tapi seberapa jelas aturannya.\n\nEmpat pertanyaan untuk dijawab berdua sebelum menikah\n\n#knottheory #keuangan #menikah #psikologihubungan #hubungansehat #komunikasipasangan #selfawareness #mentalhealthindonesia\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Sebelum menikah, empat pertanyaan ini lebih penting daripada besarnya tabungan.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R14.mp4",
+        "poster": "/assets/video/R14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r14-ti",
+      "contentId": "R14",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-08T13:00:00Z",
+      "publishAtWib": "2026-11-08 20:00",
+      "status": "DRAFT",
+      "title": "Empat pertanyaan uang sebelum menikah",
+      "body": "Bukan berapa banyak, tapi seberapa jelas aturannya.\n\n#knottheory #keuangan #menikah #psikologihubungan #hubungansehat",
+      "hook": "Sebelum menikah, empat pertanyaan ini lebih penting daripada besarnya tabungan.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R14.mp4",
+        "poster": "/assets/video/R14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "r14-yo",
+      "contentId": "R14",
+      "niche": "relationship",
+      "series": "Uang & Rumah Tangga",
+      "channelId": "relationship-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-08T13:00:00Z",
+      "publishAtWib": "2026-11-08 20:00",
+      "status": "DRAFT",
+      "title": "Empat pertanyaan uang sebelum menikah",
+      "body": "Bukan berapa banyak, tapi seberapa jelas aturannya.\n\nEmpat pertanyaan untuk dijawab berdua sebelum menikah\n\nSumber: Temuan Dew, Britt & Huston (2012) + praktik perencanaan keuangan pasangan\n\nSeri: Uang & Rumah Tangga\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#knottheory #keuangan #menikah #psikologihubungan #hubungansehat",
+      "hook": "Sebelum menikah, empat pertanyaan ini lebih penting daripada besarnya tabungan.",
+      "durationSec": 69,
+      "media": {
+        "video": "/assets/video/R14.mp4",
+        "poster": "/assets/video/R14.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b21-in",
+      "contentId": "B21",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-instagram",
+      "platform": "instagram",
+      "publishAt": "2026-11-08T14:30:00Z",
+      "publishAtWib": "2026-11-08 21:30",
+      "status": "DRAFT",
+      "title": "Tiga perubahan yang benar-benar mengubah hasil",
+      "body": "Tiga perubahan, tanpa beli produk baru.\n\nPertanyaan: 'mana yang kamu ubah minggu ini?'\n\n#kulittropis #rutin #skincaretropis #skintellectual #skincareindonesia #bahanaktif #spfsetiaphari\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi",
+      "hook": "Kalau kamu hanya mau mengubah tiga hal, ubah ini.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B21.mp4",
+        "poster": "/assets/video/B21.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b21-ti",
+      "contentId": "B21",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-tiktok",
+      "platform": "tiktok",
+      "publishAt": "2026-11-08T14:30:00Z",
+      "publishAtWib": "2026-11-08 21:30",
+      "status": "DRAFT",
+      "title": "Tiga perubahan yang benar-benar mengubah hasil",
+      "body": "Tiga perubahan, tanpa beli produk baru.\n\n#kulittropis #rutin #skincaretropis #skincareindonesia #ilmukulit",
+      "hook": "Kalau kamu hanya mau mengubah tiga hal, ubah ini.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B21.mp4",
+        "poster": "/assets/video/B21.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    },
+    {
+      "id": "b21-yo",
+      "contentId": "B21",
+      "niche": "beauty",
+      "series": "Rutin 3 Langkah",
+      "channelId": "beauty-youtube",
+      "platform": "youtube",
+      "publishAt": "2026-11-08T14:30:00Z",
+      "publishAtWib": "2026-11-08 21:30",
+      "status": "DRAFT",
+      "title": "Tiga perubahan yang benar-benar mengubah hasil",
+      "body": "Tiga perubahan, tanpa beli produk baru.\n\nPertanyaan: 'mana yang kamu ubah minggu ini?'\n\nSumber: Rangkuman seri Iklim & Stabilitas (ICH Q1A(R2), WHO TRS 953, prinsip humektan/oklusif)\n\nSeri: Rutin 3 Langkah\n\nBukan saran medis · narasi & grafik dibuat dengan bantuan AI · tidak ada afiliasi tersembunyi\n#kulittropis #rutin #skincaretropis #skincare",
+      "hook": "Kalau kamu hanya mau mengubah tiga hal, ubah ini.",
+      "durationSec": 64,
+      "media": {
+        "video": "/assets/video/B21.mp4",
+        "poster": "/assets/video/B21.jpg"
+      },
+      "reviewNote": "Draf otomatis M2; butuh approve pemilik sebelum dijadwalkan."
+    }
+  ]
+}
