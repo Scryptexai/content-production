@@ -119,3 +119,26 @@ mengikuti stasiun, jadi perpindahan terasa sebagai satu perjalanan.
 - **Karakter belum memegang simpul secara fisik.** Yang terlihat adalah titik
   krem di tangan + simpul di atasnya. Kalau nanti butuh pegangan sungguhan,
   perlu klip `grip`.
+
+---
+
+## Revisi setelah render penuh (v4)
+
+Tiga hal ditemukan saat menonton hasil utuh, bukan pada still:
+
+1. **Dua teks berbagi pita yang sama.** "Empat orang tewas diserang hiu." (7,6)
+   dan "Pantai yang berkuasa kehilangan suara..." (9,4) tumpang tindih 4 detik
+   di pita tengah. Jendela waktu sekarang 7,6–10,2 dan 9,4–13,4 → tetap
+   bersambung, tidak lagi bertumpuk.
+2. **Teks replikasi bertumpuk di pita bawah.** 50,6–56,2 digeser jadi
+   50,6–55,1 karena kalimat penutup masuk 55,6.
+3. **Simpul terbaca mengapung.** Trefoil digambar 240 px di atas tangan tanpa
+   penghubung, sehingga gagasan "dia yang mengikat" hilang dan penonton hanya
+   melihat logo melayang. Ditambahkan benang lilac kuadratik dari tangan ke
+   simpul, dengan glow 12 px di bawah garis 3 px, muncul 39,8 dtk dan ikut
+   bergerak bersama tangan.
+
+Aturan turunan untuk episode berikutnya, ditambahkan ke `docs/FACELESS-QUALITY.md`:
+**setiap objek yang "dipegang" karakter wajib punya penghubung fisik ke tangan**,
+dan **tidak boleh ada dua elemen teks dengan jendela waktu bertumpuk di pita
+yang sama**.
