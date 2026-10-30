@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Knot Theory — EP02: yang dipakai mengukur kursi lama</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #04060C; overflow: hidden;
+               width: 1080px; height: 1920px; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920"
+     viewBox="0 0 1080 1920"></svg>
+<script>window.DEMO = { width: 1080, height: 1920, fps: 30, duration: 60 };</script>
+<script type="module">
+/* ==========================================================================
+   EP02 — "Yang dipakai mengukur kursi lama" · 60 dtk · 1080×1920
+   Satu pengambilan tanpa potongan. Mesin scene sama dengan EP01
+   (kit/kit.js + char/character.js); yang berbeda lingkungan, tipe scene,
+   dan buktinya.
+
+   BUKTI (semua dari Benson, Li & Shue, QJE 134(4) 2019, doi:10.1093/qje/qjz022):
+     131 perusahaan · 38.843 penjual · 1.553 dipromosikan · 2005–2011
+     peluang promosi di dalam sampel = 4,00 %
+     penjualan dua kali lipat  → peluang naik +14,3 % dari dasar
+     manajer dengan penjualan dua kali lipat → penjualan TIAP bawahan −7,5 %
+     kebijakan memilih calon manajer terbaik → kualitas manajer +30 %
+        (penulis menyebutnya batas bawah, bukan janji)
+   Data ini penjualan perusahaan Amerika, BUKAN instansi pemerintah.
+   Perbedaan itu disebut di layar, tidak disembunyikan.
+
+   GRID (sama dengan EP01 — jangan digeser per episode):
+     pita atas     y 170–330    kicker + angka utama
+     grafik        y 380–940    board / banding / tangga
+     kepala        y ≥ 990
+     pita bawah    y 1580–1820  kalimat + sumber
+   Lantai dunia y=1400.
+   ========================================================================== */
+import { KIN, PAL, E, clamp, el, inv, lerp, dotPct, barPair, board, thread } from "../../kit/kit.js";
+import { Character } from "../../char/character.js";
+
+const W = 1080, H = 1920, FPS = 30, DUR = 60;
+const S = document.getElementById("S");
+const CX = W / 2;
+
+const Y_KICK = 210, Y_STAT = 300;
+const Y_CHART = 660;
+const GROUND = 1400;
+const Y_TEXT1 = 1600, Y_TEXT2 = 1660, Y_TEXT3 = 1716, Y_SRC = 1792;
+
+/* ------------------------------------------------------------------ defs */
+const defs = el("defs", {}, S);
+const grad = (id, stops, attrs = {}) => {
+  const g = el("linearGradient", { id, ...attrs }, defs);
+  stops.forEach(([o, c, op]) => el("stop", {
+    offset: `${o}%`, "stop-color": c, "stop-opacity": op === undefined ? 1 : op,
+  }, g));
+  return g;
+};
+/* Kantor malam: langit-langit gelap di atas, cahaya kota di garis horizon,
+   lantai hampir hitam. EP01 memakai senja pesisir; ini interior, jadi
+   gradiennya jauh lebih sempit dan sumber cahayanya dari bawah. */
+grad("room", [[0, "#05070E"], [22, "#0A1020"], [44, "#141B33"], [62, "#1E2643"],
+              [78, "#2C3352"], [88, "#3A3E5C"], [100, "#0B0F1B"]],
+     { x1: 0, y1: 0, x2: 0, y2: 1 });
+const vig = el("radialGradient", { id: "vig" }, defs);
+el("stop", { offset: "30%", "stop-color": "#000", "stop-opacity": 0 }, vig);
+el("stop", { offset: "100%", "stop-color": "#000", "stop-opacity": 0.66 }, vig);
+const pool = el("radialGradient", { id: "pool" }, defs);
+el("stop", { offset: "0%", "stop-color": PAL.roseLit, "stop-opacity": 0.16 }, pool);
+el("stop", { offset: "100%", "stop-color": PAL.roseLit, "stop-opacity": 0 }, pool);
+
+/* --------------------------------------------------------------- lapisan */
+const LAYERS = {};
+const layer = (name, z) => { const g = el("g", {}, S); LAYERS[name] = { g, z }; return g; };
+
+const gRoom = layer("room", 4200);
+el("rect", { x: -1800, y: -1400, width: 5000, height: 4800, fill: "url(#room)" }, gRoom);
+
+/* Kota di luar jendela: lambat, buram, hanya bintik cahaya. Ini lapisan
+   paling jauh, jadi ia hampir tidak bergerak saat kamera berjalan — itulah
+   yang memberi kamera sebuah ruang, bukan sekadar gambar yang di-zoom. */
+const gCity = layer("city", 3000);
+{
+  let s = 7717;
+  const r = () => { s = (s * 1103515245 + 12345) >>> 0; return s / 4294967296; };
+  const sky = 980;
+  for (let b = 0; b < 16; b++) {
+    const bx = -500 + b * 150 + r() * 40;
+    const bh = 90 + r() * 300;
+    el("rect", { x: bx.toFixed(0), y: (sky - bh).toFixed(0), width: (70 + r() * 90).toFixed(0),
+      height: (bh + 500).toFixed(0), fill: "#0B1224", opacity: 0.95 }, gCity);
+    for (let i = 0; i < 26; i++) {
+      const wx = bx + 8 + r() * 60, wy = sky - bh + 12 + r() * (bh - 20);
+      if (r() > 0.62) {
+        el("rect", { x: wx.toFixed(1), y: wy.toFixed(1), width: 3.2, height: 5.4,
+          fill: r() > 0.5 ? "#C9A98F" : "#8FA3C4",
+          opacity: (0.18 + r() * 0.46).toFixed(3) }, gCity);
+      }
+    }
+  }
+}
+
+/* Dinding jendela interior: tiang-tiang tipis. Ditaruh di lapisan tengah,
+   jadi saat kamera bergerak tiang bergeser lebih lambat dari lantai. */
+const gMull = layer("mull", 1700);
+for (let i = 0; i < 7; i++) {
+  const x = -260 + i * 300;
+  el("rect", { x, y: -120, width: 15, height: 1250, fill: "#0A0E1A", opacity: 0.62 }, gMull);
+  el("rect", { x: x + 12, y: -120, width: 2.4, height: 1250, fill: "#55618A", opacity: 0.45 }, gMull);
+}
+el("rect", { x: -400, y: 118, width: 2200, height: 12, fill: "#05070E", opacity: 0.7 }, gMull);
+/* lampu langit-langit: sumber cahaya di atas, menjatuhkan kolam di lantai */
+for (let i = 0; i < 6; i++) {
+  el("rect", { x: -200 + i * 300, y: 96, width: 120, height: 7, rx: 3,
+    fill: PAL.roseLit, opacity: 0.16 }, gMull);
+}
+
+/* ------------------------------------------------------------------ dunia */
+const WORLD = el("g", {}, S);
+const gFloor = el("g", {}, WORLD);
+const gProp = el("g", {}, WORLD);
+const gStations = el("g", {}, WORLD);
+const gChar = el("g", {}, WORLD);
+
+el("rect", { x: -4000, y: GROUND, width: 14000, height: 1200, fill: "#06090F" }, gFloor);
+el("rect", { x: -4000, y: GROUND - 2, width: 14000, height: 2.2,
+  fill: PAL.lilac, opacity: 0.26 }, gFloor);
+/* nat lantai: garis-garis yang lewat = satu-satunya cara penonton tahu
+   kamera benar-benar berjalan, bukan menggeser gambar */
+for (let i = 0; i < 110; i++) {
+  el("rect", { x: -1600 + i * 150, y: GROUND + 30 + (i % 4) * 26,
+    width: 90, height: 1.6, fill: "#6F7A96",
+    opacity: (0.04 + (i % 5) * 0.016).toFixed(3) }, gFloor);
+}
+/* Kolam cahaya. Dua lapis: satu di lantai (tempat karakter berdiri),
+   satu lagi sebagai alas grafik — tanpa alas, grafik di ruangan gelap
+   terbaca sebagai noise, bukan sebagai benda yang diterangi. */
+for (const sx of [2200, 3800, 5400]) {
+  el("ellipse", { cx: sx, cy: GROUND + 24, rx: 470, ry: 64, fill: "url(#pool)",
+    opacity: 0.75 }, gProp);
+  el("ellipse", { cx: sx - 40, cy: Y_CHART + 30, rx: 500, ry: 330, fill: "url(#pool)",
+    opacity: 0.5 }, gProp);
+}
+
+const gFog = layer("fog", 200);
+{
+  const fg = el("linearGradient", { id: "fog", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+  el("stop", { offset: "0%", "stop-color": "#04060C", "stop-opacity": 0 }, fg);
+  el("stop", { offset: "100%", "stop-color": "#04060C", "stop-opacity": 0.9 }, fg);
+  el("rect", { x: -1800, y: 1450, width: 5000, height: 700, fill: "url(#fog)" }, gFog);
+}
+const gScreen = el("g", {}, S);
+el("rect", { x: 0, y: 0, width: W, height: H, fill: "url(#vig)" }, gScreen);
+
+/* ======================================================= STASIUN 1: COUNT
+   100 titik = 100 pekerja. Yang naik jadi manajer 4. Penyebutnya terlihat,
+   jadi "4 dari 100" punya berat: penonton melihat 96 yang tidak naik.     */
+const S1X = 2200;
+const S1 = dotPct(gStations, { cx: S1X, cy: Y_CHART - 34, cols: 10, rows: 10, gap: 42, r: 11.5, colorOff: "#4C5878" });
+
+/* ======================================================= STASIUN 2: BOARD
+   Enam jenjang. Satu titik naik satu baris, lalu baris yang ditinggalkannya
+   meredup — karena yang diukur sesudah promosi adalah kerja bawahan,
+   bukan kerja orang yang naik.                                            */
+const S2X = 3800;
+/* garis jenjang: enam garis tipis supaya board terbaca sebagai hierarki,
+   bukan sebagai kumpulan titik biasa */
+for (let rr = 0; rr < 6; rr++) {
+  const y = Y_CHART + 40 + (rr - 2.5) * 60;
+  el("rect", { x: S2X - 316, y: y + 24, width: 632, height: 1.4, fill: "#5A6788",
+    opacity: 0.85 }, gStations);
+}
+const S2 = board(gStations, { cx: S2X, cy: Y_CHART + 40, cols: 8, rows: 6, gapX: 74,
+  gapY: 60, r: 11, colorOff: "#4C5878" });
+const s2path = el("path", { fill: "none", stroke: PAL.rose, "stroke-width": 2,
+  "stroke-dasharray": "7 9", opacity: 0 }, gStations);
+
+/* ======================================================= STASIUN 3: SPLIT
+   Dua kebijakan, satu garis nol. Skala 1 penuh = 40 poin persentase, jadi
+   +30 tampil 75 % lebar dan tidak ada batang yang digambar "biar bagus".   */
+const S3X = 5400;
+const SCALE_TICKS = [];
+const S3 = barPair(gStations, { cx: S3X, cy: Y_CHART + 60, w: 420, h: 30, gap: 120 });
+const s3txt = (y, t, size, col, anchor = "start", ls = 1.6) => {
+  const n = el("text", { x: S3X, y, fill: col, "font-family": "Helvetica, Arial, sans-serif",
+    "font-size": size, "letter-spacing": ls, "text-anchor": anchor }, gStations);
+  n.textContent = t;
+  return n;
+};
+const BAR_A = Y_CHART + 60 - 60;
+const BAR_B = Y_CHART + 60 + 60;
+const s3a = s3txt(BAR_A - 26, "SEKARANG", 24, PAL.muted);
+const s3b = s3txt(BAR_B - 26, "PILIH CALON MANAJER", 24, PAL.cream);
+const s3va = s3txt(BAR_A + 11, "0", 28, PAL.cream, "start");
+const s3vb = s3txt(BAR_B + 11, "+30 %", 30, PAL.rose, "start");
+s3vb.setAttribute("x", S3X + 336);   // tepat di ujung batang (0,75 x 420 + jarak)
+s3va.setAttribute("x", S3X + 24);
+/* Sumbu: 0 sampai 40 poin persentase. Tanpa sumbu, batang hanya gambar;
+   dengan sumbu, +30 terbaca sebagai tiga perempat jalan ke 40. */
+for (let v = 0; v <= 40; v += 10) {
+  const x = S3X + (v / 40) * 420;
+  el("rect", { x: x - 1, y: BAR_B + 44, width: 2, height: v === 0 ? 16 : 9,
+    fill: "#5A6788", opacity: v === 0 ? 0.9 : 0.55 }, gStations);
+  const lab = el("text", { x, y: BAR_B + 84, fill: "#6C7691",
+    "font-family": "Helvetica, Arial, sans-serif", "font-size": 16,
+    "text-anchor": "middle", opacity: 0 }, gStations);
+  lab.textContent = String(v);
+  SCALE_TICKS.push(lab);
+}
+S3.setColors(PAL.slateLit, PAL.rose);
+for (const b of S3.bars) b.fill.setAttribute("opacity", 0.07);
+/* trek juga harus ikut warna, kalau tidak batang "0" tetap terbaca merah */
+S3.bars[0].fill.setAttribute("fill", PAL.slateLit);
+S3.bars[1].fill.setAttribute("fill", PAL.rose);
+for (const n of [s3a, s3b]) n.setAttribute("x", S3X - 210);
+
+/* -------------------------------------------------------------- karakter */
+const J = await (await fetch("/assets/char-joints.json")).json();
+const CL = J.clips;
+const SC = 470 / 390;
+const figG = el("g", {}, gChar);
+const FIG = new Character(figG);
+
+const poseOf = (name, t) => {
+  const ps = CL[name].poses;
+  return ps[Math.max(0, Math.min(ps.length - 1, Math.round(t * FPS)))];
+};
+const WALK_V = 207.4 * SC;
+
+/* --------------------------------------------------------------- jadwal */
+const T = [
+  { walk: [0.0, 6.4] },
+  { hold: [6.4, 18.0], sx: S1X },
+  { walk: [18.0, 22.6] },
+  { hold: [22.6, 34.0], sx: S2X },
+  { walk: [34.0, 38.6] },
+  { hold: [38.6, DUR], sx: S3X },
+];
+{
+  let x = 0;
+  for (const seg of T) {
+    if (seg.walk) { seg.x0 = x; seg.x1 = x + (seg.walk[1] - seg.walk[0]) * WALK_V; x = seg.x1; }
+  }
+  for (const seg of T) if (seg.hold) seg.hipX = seg.sx - 190;
+}
+
+function stateAt(t) {
+  for (let i = 0; i < T.length; i++) {
+    const s = T[i];
+    if (s.walk && t >= s.walk[0] && t < s.walk[1]) {
+      return { mode: "walk", clip: "walk", tt: (t - s.walk[0]) % 12,
+        hipW: s.x0 + (t - s.walk[0]) * WALK_V, seg: i, local: t - s.walk[0] };
+    }
+    if (s.hold && t >= s.hold[0] && t < s.hold[1]) {
+      const local = t - s.hold[0];
+      return { mode: "hold", clip: "idle", tt: (local * 1.0) % 8, hipW: s.hipX,
+        seg: i, local };
+    }
+  }
+  const last = T[T.length - 1];
+  return { mode: "hold", clip: "idle", tt: 6, hipW: last.hipX, seg: 5, local: 20 };
+}
+
+/* ---------------------------------------------------------------- kamera
+   Konvensi sama dengan EP01: cam = titik dunia di tengah frame.
+   Saat berjalan cam.x mengikuti pinggul (kaki menapak di tempat);
+   saat berhenti cam.y = 900 supaya grid atas dan karakter masuk bersama. */
+function camAt(t, st) {
+  const p = poseOf(st.clip, st.tt);
+  const soleRig = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const hipWy = GROUND + SC * (p.hip[1] - soleRig);
+  if (st.mode === "walk") {
+    return { x: st.hipW + 40, y: hipWy - 250,
+      zoom: 1.02 + 0.05 * E.ioC(clamp(st.local / 6)) };
+  }
+  const push = E.ioC(clamp(st.local / 11));
+  return { x: st.hipW + 190, y: 900, zoom: 1.10 + 0.07 * push };
+}
+
+function applyCam(t, st) {
+  const c = camAt(t, st);
+  WORLD.setAttribute("transform",
+    `translate(${W / 2} ${H / 2}) scale(${c.zoom.toFixed(4)}) `
+    + `translate(${(-c.x).toFixed(2)} ${(-c.y).toFixed(2)})`);
+  for (const k in LAYERS) {
+    const { g, z } = LAYERS[k];
+    const p = 1000 / z;
+    const tx = -(c.x - W / 2) * 0.085 * p;
+    const ty = -(c.y - H / 2) * 0.085 * p;
+    const sc = 1 + (c.zoom - 1) * p * 0.42;
+    g.setAttribute("transform",
+      `translate(${tx.toFixed(2)} ${ty.toFixed(2)}) translate(${W / 2} ${H / 2}) `
+      + `scale(${sc.toFixed(4)}) translate(${-W / 2} ${-H / 2})`);
+    let blur = 0;
+    if (z > 520) blur = Math.max(0, Math.min(1.6, 1 - 520 / z) - 0.04) * 11;
+    g.style.filter = blur > 0.25 ? `blur(${blur.toFixed(2)}px)` : "none";
+  }
+}
+
+/* ------------------------------------------------------------------ teks
+   Semua di koordinat LAYAR. Ukuran ≤ 46 px kecuali angka utama (58–62),
+   karena di short vertikal teks di atas 56 px berhenti jadi keterangan.  */
+const K = new KIN(S);
+
+/* --- 0–6,4 masuk --- */
+K.line({ text: "Setiap naik satu jenjang,", at: 1.6, until: 6.2, x: CX, y: Y_TEXT1,
+  size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "yang dinilai kerja di jenjang sebelumnya.", at: 2.6, until: 6.2, x: CX, y: Y_TEXT2,
+  size: 30, color: PAL.muted, anchor: "middle", easing: "fade" });
+
+/* --- Stasiun 1: 4 dari 100 --- */
+K.line({ text: "2005–2011 · 131 PERUSAHAAN", at: 6.9, until: 12.6, x: CX, y: Y_KICK,
+  size: 24, ls: 3.0, color: PAL.muted, weight: 700, anchor: "middle", easing: "fade" });
+K.line({ text: "38.843 penjual. 1.553 di antaranya naik.", at: 7.3, until: 12.6, x: CX,
+  y: Y_TEXT1, size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "4 dari 100", at: 12.8, until: 18.0, x: CX, y: Y_STAT,
+  size: 58, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "naik jadi manajer dalam satu tahun.", at: 13.2, until: 18.0, x: CX, y: Y_TEXT1,
+  size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Benson, Li & Shue, QJE 2019", at: 14.0, until: 18.0, x: CX, y: Y_SRC,
+  size: 19, ls: 1.2, color: "#6E7789", anchor: "middle", easing: "fade" });
+
+/* --- Stasiun 2: satu titik naik, bawahannya meredup --- */
+K.line({ text: "YANG DIPAKAI MENILAI: PENJUALAN", at: 23.2, until: 34.0, x: CX, y: Y_KICK,
+  size: 23, ls: 2.6, color: PAL.muted, weight: 700, anchor: "middle", easing: "fade" });
+K.line({ text: "Penjualan dua kali lipat", at: 24.6, until: 29.2, x: CX, y: Y_TEXT1,
+  size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "menaikkan peluang promosi 14,3 %.", at: 25.4, until: 29.2, x: CX, y: Y_TEXT2,
+  size: 30, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "−7,5 %", at: 29.4, until: 34.0, x: CX, y: Y_STAT,
+  size: 58, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "penjualan tiap bawahan, sesudah dia jadi manajer.", at: 29.8, until: 34.0,
+  x: CX, y: Y_TEXT1, size: 30, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "makin tinggi penjualannya, makin turun timnya.", at: 30.8, until: 34.0,
+  x: CX, y: Y_TEXT2, size: 27, color: PAL.muted, anchor: "middle", easing: "fade" });
+K.line({ text: "Benson, Li & Shue, QJE 2019", at: 30.2, until: 34.0, x: CX, y: Y_SRC,
+  size: 19, ls: 1.2, color: "#6E7789", anchor: "middle", easing: "fade" });
+
+/* --- Stasiun 3: kebijakan alternatif --- */
+K.line({ text: "BILA YANG DIPILIH BUKAN PENJUAL TERBAIK", at: 39.2, until: 47.6, x: CX,
+  y: Y_KICK, size: 22, ls: 2.4, color: PAL.muted, weight: 700, anchor: "middle", easing: "fade" });
+K.line({ text: "Kualitas manajemen 30 % lebih tinggi", at: 41.0, until: 47.6, x: CX, y: Y_TEXT1,
+  size: 31, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "bila yang dipilih adalah calon manajer terbaik.", at: 41.8, until: 47.6,
+  x: CX, y: Y_TEXT2, size: 29, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Benson, Li & Shue, QJE 2019 · hitungan kontrafaktual", at: 43.0, until: 52.0,
+  x: CX, y: Y_SRC, size: 17, ls: 0.6, color: "#6E7789", anchor: "middle", easing: "fade" });
+
+/* --- penutup --- */
+K.line({ text: "Yang salah bukan orang yang naik.", at: 48.6, until: DUR + 0.4, x: CX,
+  y: Y_TEXT1, size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Yang salah ukuran yang dipakai menaikkan.", at: 49.8, until: DUR + 0.4, x: CX,
+  y: Y_TEXT2, size: 34, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "Ini data penjualan perusahaan Amerika, bukan instansi pemerintah.", at: 53.0,
+  until: DUR + 0.4, x: CX, y: Y_TEXT3, size: 22, color: PAL.muted, anchor: "middle",
+  easing: "fade" });
+K.line({ text: "Benson, Li & Shue, QJE 2019 · Peter & Hull, 1969", at: 56.6, until: DUR + 0.4,
+  x: CX, y: Y_SRC, size: 17, ls: 0.4, color: "#5E6678", anchor: "middle", easing: "fade" });
+
+/* ---------------------------------------------------------------- render */
+window.renderAt = async (t) => {
+  const st = stateAt(t);
+  applyCam(t, st);
+
+  const p = poseOf(st.clip, st.tt);
+  const soleRig = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const hipY = GROUND + SC * (p.hip[1] - soleRig);
+
+  figG.setAttribute("transform",
+    `translate(${st.hipW.toFixed(2)} ${hipY.toFixed(2)}) scale(${SC.toFixed(4)}) `
+    + `translate(${(-p.hip[0]).toFixed(2)} ${(-p.hip[1]).toFixed(2)})`);
+  FIG.draw(CL[st.clip], st.tt, { ground: () => 940 });
+
+  /* S1 — 4 dari 100 */
+  const s1 = clamp((t - 8.4) / 4.0);
+  /* frac = JUMLAH titik, bukan pecahan: 4 dari 100 */
+  S1.update(4 * E.ioC(s1), t, 1 + 0.09 * Math.sin(Math.PI * clamp(s1)));
+
+  /* S2 — board: muncul, satu naik, baris ditinggal meredup */
+  const rev = clamp((t - 23.2) / 2.4);
+  S2.show(E.outQ(rev));
+  /* Satu titik naik dari jenjang paling bawah ke paling atas, 2,8 dtk.
+     Setiap jenjang yang dilewatinya meredup — tangga yang dinaikinya
+     sekaligus menjadi orang-orang yang sekarang diukur dengan ukurannya. */
+  const lift = E.ioC(clamp((t - 26.2) / 2.8));
+  if (t > 23.4) S2.lift(3, 5, 0, lift, 30);
+  for (let rr = 1; rr < 6; rr++) {
+    const pass = clamp((lift - (1 - rr / 6)) / 0.18);
+    S2.dimRow(rr, pass * 0.95);
+  }
+  const sx2 = S2X + (3 - 3.5) * 74, sy2 = Y_CHART + 40;
+  s2path.setAttribute("d",
+    `M${(sx2).toFixed(1)} ${(sy2 + 150).toFixed(1)} `
+    + `Q${(sx2 + 66).toFixed(1)} ${(sy2).toFixed(1)} ${(sx2).toFixed(1)} ${(sy2 - 150).toFixed(1)}`);
+  s2path.setAttribute("opacity", (0.32 * Math.sin(Math.PI * clamp(t < 26.2 ? 0 : (t - 26.2) / 2.8))).toFixed(3));
+
+  /* S3 — dua kebijakan. Skala penuh = 40 poin. */
+  const k3 = E.ioC(clamp((t - 39.6) / 2.6));
+  S3.update(0, 0.75 * k3, t);
+  const s3vis = clamp((t - 39.4) / 0.8) * (1 - clamp((t - 58.4) / 1.2));
+  S3.show(s3vis);
+  for (const n of [s3a, s3b, ...SCALE_TICKS]) n.setAttribute("opacity", (s3vis * 0.92).toFixed(3));
+  s3va.setAttribute("opacity", s3vis.toFixed(3));
+  s3vb.setAttribute("opacity", clamp((t - 41.0) / 0.6).toFixed(3));
+
+  K.update(t);
+
+  const fin = E.ioQ(inv(0, 0.7, t));
+  const fout = 1 - E.ioQ(inv(DUR - 0.7, DUR, t));
+  S.style.opacity = Math.min(fin, fout).toFixed(3);
+};
+
+await window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>

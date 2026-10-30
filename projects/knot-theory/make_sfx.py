@@ -492,7 +492,145 @@ def build_ep01(dur):
     return st
 
 
-PRESETS = {"climb": build_climb, "reel": build_reel, "promo": build_promo, "ep01": build_ep01}
+
+def build_ep02(dur):
+    """Bunyi EP02 — kantor malam. Tempatnya interior, jadi ambience-nya
+    dengung ruangan, bukan angin. Mikro-SFX hanya di titik perubahan:
+    titik menyala, satu orang naik, dua batang tumbuh, satu kalimat penutup.
+
+    Peta waktu:
+      0.0–6.4   jalan     : dengung ruangan + 12 langkah di lantai keras
+      6.4–18    hitung    : 4 klik tipis saat titik menyala, lalu nada rendah
+                            saat "4 dari 100" masuk
+      18–22.6   jalan     : langkah, dengung sama
+      22.6–34   board     : satu nada naik pelan (titik menembus 5 jenjang),
+                            ketukan kecil tiap jenjang, lalu satu thud saat
+                            baris di bawahnya meredup
+      34–38.6   jalan     : langkah
+      38.6–52   banding   : gesekan batang tumbuh + satu nada saat +30 %
+      52–60     penutup   : dua nada rendah untuk dua baris terakhir, ekor
+                            dengung memudar
+    """
+    n = int(dur * SR)
+    L = np.zeros(n, np.float32)
+    R = np.zeros(n, np.float32)
+
+    def place(buf, x, at, gain):
+        i = int(at * SR)
+        if i >= n:
+            return
+        m = min(len(x), n - i)
+        buf[i:i + m] += x[:m] * gain
+
+    # --- ambience ruangan: dengung 58 Hz + derau pita lebar yang sangat tipis
+    tt = np.arange(n) / SR
+    rng = np.random.default_rng(3307)
+    air = bandpass(rng.normal(0, 1, n).astype(np.float32), 140, 1500)
+    air *= (0.6 + 0.4 * np.sin(2 * np.pi * 0.045 * tt)) * 0.045
+    L += air
+    R += np.roll(air, 2200) * 0.9
+    hum = (np.sin(2 * np.pi * 58 * tt) * 0.030
+           + np.sin(2 * np.pi * 116 * tt) * 0.012).astype(np.float32)
+    L += hum
+    R += np.roll(hum, 700) * 0.95
+
+    # --- langkah: lantai keras, lebih pendek dan lebih terang dari EP01
+    rng2 = np.random.default_rng(6120)
+    step = bandpass(rng2.normal(0, 1, int(0.10 * SR)).astype(np.float32), 320, 3800)
+    step *= np.exp(-np.arange(len(step)) / SR * 58)
+    for t0, t1 in ((0.15, 6.3), (18.05, 22.5), (34.05, 38.5)):
+        t = t0
+        while t < t1:
+            g = 0.055 * (0.8 + 0.2 * math.sin(t * 2.1))
+            place(L, step, t, g)
+            place(R, step, t + 0.005, g * 0.94)
+            t += 0.52
+
+    # --- 4 titik menyala
+    rng3 = np.random.default_rng(191)
+    tick = bandpass(rng3.normal(0, 1, int(0.045 * SR)).astype(np.float32), 2400, 8200)
+    tick *= np.exp(-np.arange(len(tick)) / SR * 105)
+    for at in (9.2, 10.4, 11.6, 12.7):
+        place(L, tick, at, 0.070)
+        place(R, tick, at + 0.003, 0.066)
+
+    # --- "4 dari 100": nada rendah pendek
+    m = int(1.2 * SR)
+    t2 = np.arange(m) / SR
+    low = np.sin(2 * np.pi * 98 * t2).astype(np.float32)
+    low *= np.exp(-t2 * 2.6) * np.clip(t2 / 0.04, 0, 1)
+    place(L, low, 12.9, 0.10)
+    place(R, low, 12.92, 0.10)
+
+    # --- satu orang naik: glide naik 5 jenjang, ketukan tiap jenjang
+    m = int(2.9 * SR)
+    t3 = np.arange(m) / SR
+    f0, f1 = 196.0, 392.0
+    glide = np.sin(2 * np.pi * (f0 * t3 + (f1 - f0) * t3 * t3 / (2 * 2.9))).astype(np.float32)
+    glide *= np.clip(t3 / 0.5, 0, 1) * np.clip((2.9 - t3) / 0.35, 0, 1) * 0.055
+    place(L, glide, 26.2, 1.0)
+    place(R, glide, 26.24, 0.95)
+    for k in range(5):
+        m = int(0.3 * SR)
+        t4 = np.arange(m) / SR
+        click = bandpass(rng3.normal(0, 1, m).astype(np.float32), 900, 5000)
+        click *= np.exp(-t4 * 60)
+        place(L, click, 26.4 + k * 0.56, 0.045)
+        place(R, click, 26.41 + k * 0.56, 0.042)
+
+    # --- thud saat baris di bawahnya meredup
+    m = int(0.7 * SR)
+    t5 = np.arange(m) / SR
+    thud = (np.sin(2 * np.pi * 72 * t5) * 0.9).astype(np.float32) * np.exp(-t5 * 7)
+    place(L, thud, 29.0, 0.085)
+    place(R, thud, 29.01, 0.08)
+
+    # --- dua batang tumbuh: gesekan pendek + satu nada saat +30 %
+    m = int(2.6 * SR)
+    rng5 = np.random.default_rng(7702)
+    rub = bandpass(rng5.normal(0, 1, m).astype(np.float32), 500, 3200)
+    rub *= (np.sin(np.linspace(0, np.pi, m)) ** 1.4) * 0.040
+    place(L, rub, 39.7, 1.0)
+    place(R, rub, 39.75, 0.95)
+    m = int(1.8 * SR)
+    t6 = np.arange(m) / SR
+    tone = (np.sin(2 * np.pi * 261.6 * t6) * 0.45
+            + np.sin(2 * np.pi * 392.0 * t6) * 0.22).astype(np.float32)
+    tone *= np.exp(-t6 * 1.9) * np.clip(t6 / 0.05, 0, 1)
+    place(L, tone, 41.0, 0.085)
+    place(R, tone, 41.02, 0.082)
+
+    # --- penutup: dua nada, lalu akor rendah yang tidak menggelembung
+    for f, at in ((146.8, 48.6), (110.0, 49.9)):
+        m = int(1.6 * SR)
+        t7 = np.arange(m) / SR
+        v = (np.sin(2 * np.pi * f * t7) * 0.6 + np.sin(2 * np.pi * f * 2 * t7) * 0.15)
+        v = v.astype(np.float32) * np.exp(-t7 * 1.8) * np.clip(t7 / 0.05, 0, 1)
+        place(L, v, at, 0.085)
+        place(R, v, at + 0.008, 0.082)
+    m = int(5.0 * SR)
+    t8 = np.arange(m) / SR
+    close = (np.sin(2 * np.pi * 73.4 * t8) * 0.5 + np.sin(2 * np.pi * 110 * t8) * 0.28
+             + np.sin(2 * np.pi * 146.8 * t8) * 0.16).astype(np.float32)
+    close *= np.exp(-t8 * 0.5) * np.clip(t8 / 0.6, 0, 1)
+    place(L, close, 54.8, 0.11)
+    place(R, close, 54.85, 0.105)
+
+    L = reverb(L, 0.30)
+    R = reverb(R, 0.30)
+
+    st = np.stack([L, R], axis=1)
+    fade = int(0.6 * SR)
+    st[:fade] *= np.linspace(0, 1, fade)[:, None]
+    st[-int(1.2 * SR):] *= np.linspace(1, 0, int(1.2 * SR))[:, None]
+    pk = np.abs(st).max()
+    if pk > 0:
+        st = st / pk * 0.74
+    return st
+
+
+PRESETS = {"climb": build_climb, "reel": build_reel, "promo": build_promo,
+           "ep01": build_ep01, "ep02": build_ep02}
 
 
 def main():

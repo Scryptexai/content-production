@@ -124,7 +124,7 @@ export class KIN {
    membedakan "count" dari sekadar angka besar.                            */
 export function dotPct(parent, cfg) {
   const { cx, cy, cols = 10, rows = 10, gap = 34, r = 9, colorOn = PAL.rose,
-          colorOff = "#38425C" } = cfg;
+          colorOff = "#38425C", opOff = 0.38 } = cfg;
   const n = cols * rows;
   const nodes = [];
   for (let i = 0; i < n; i++) {
@@ -160,7 +160,7 @@ export function dotPct(parent, cfg) {
           q.ring.setAttribute("opacity", (0.55 * part).toFixed(2));
         } else {
           q.node.setAttribute("fill", colorOff);
-          q.node.setAttribute("opacity", 0.30);
+          q.node.setAttribute("opacity", opOff);
           q.node.setAttribute("r", r);
           q.ring.setAttribute("opacity", 0);
         }
@@ -307,4 +307,109 @@ export function stairs(parent, cfg) {
 export function worldTransform(cam, W, H) {
   return `translate(${W / 2} ${H / 2}) scale(${cam.zoom.toFixed(4)}) `
     + `translate(${(-cam.x).toFixed(2)} ${(-cam.y).toFixed(2)})`;
+}
+
+/* ============================================================ BOARD
+   "board": banyak entitas dalam satu jenjang, plus satu yang bergerak
+   di antaranya. Dipakai untuk cerita promosi: satu titik naik satu baris,
+   lalu baris yang ditinggalkannya meredup — karena itu yang diukur
+   sesudahnya, bukan yang dinaikkan.
+
+   Versi sebelumnya hanya ada 16:9 (scenes/promo). Di sini baris = jenjang,
+   jadi board vertikal membaca atas-bawah sebagai hierarki, bukan tabel. */
+export function board(parent, cfg = {}) {
+  const { cx, cy, cols = 8, rows = 6, gapX = 74, gapY = 60, r = 9,
+          colorOn = PAL.rose, colorOff = "#3A4560", stagger = 0.35 } = cfg;
+  const nodes = [];
+  const total = cols * rows;
+  for (let rr = 0; rr < rows; rr++) {
+    const row = [];
+    for (let cc = 0; cc < cols; cc++) {
+      const x = cx + (cc - (cols - 1) / 2) * gapX;
+      const y = cy + (rr - (rows - 1) / 2) * gapY;
+      const dot = el("circle", { cx: x, cy: y, r, fill: colorOff, opacity: 0 }, parent);
+      row.push({ x, y, dot, i: rr * cols + cc, dim: 0, hi: 0 });
+    }
+    nodes.push(row);
+  }
+  const token = el("circle", { cx: 0, cy: 0, r: r + 3.4, fill: colorOn, opacity: 0 }, parent);
+  const tokenRing = el("circle", { cx: 0, cy: 0, r: r + 12, fill: "none", stroke: colorOn,
+    "stroke-width": 1.6, opacity: 0 }, parent);
+
+  let reveal = 0;
+
+  const paint = () => {
+    for (const row of nodes) for (const n of row) {
+      const t0 = n.i / total;
+      const rev = clamp((reveal * 1.45 - t0 * 0.45));
+      const base = 0.72 * rev;
+      n.dot.setAttribute("opacity", (base * (1 - 0.50 * n.dim)).toFixed(3));
+      n.dot.setAttribute("fill", n.hi > 0.5 ? colorOn : colorOff);
+    }
+  };
+
+  return {
+    nodes,
+    token,
+    tokenRing,
+    /** 0..1 — titik muncul berurutan, bukan serentak */
+    show(u) { reveal = clamp(u); paint(); },
+    /** tandai satu titik sebagai "yang dipilih" */
+    mark(rr, cc, k) { nodes[rr][cc].hi = clamp(k); paint(); },
+    /** redam satu baris: 0..1 seberapa redup */
+    dimRow(rr, k) { for (const n of nodes[rr]) n.dim = clamp(k); paint(); },
+    dimAll(k) { for (const row of nodes) for (const n of row) n.dim = clamp(k); paint(); },
+    /**
+     * Titik terpilih naik `levels` baris. `u` 0..1 menggerakkan token di
+     * sepanjang busur; titik asal dikosongkan supaya terbaca pindah,
+     * bukan bertambah.
+     */
+    lift(cc, fromRow, toRow, u, sway = 26) {
+      const a = nodes[fromRow][cc], b = nodes[toRow][cc];
+      const k = E.ioC(clamp(u));
+      const x = lerp(a.x, b.x, k) + Math.sin(Math.PI * k) * sway;
+      const y = lerp(a.y, b.y, k);
+      token.setAttribute("cx", x.toFixed(1));
+      token.setAttribute("cy", y.toFixed(1));
+      token.setAttribute("opacity", (k > 0.001 ? 1 : 0));
+      tokenRing.setAttribute("cx", x.toFixed(1));
+      tokenRing.setAttribute("cy", y.toFixed(1));
+      tokenRing.setAttribute("opacity", (0.55 * Math.sin(Math.PI * clamp(u))).toFixed(3));
+      a.dot.setAttribute("opacity", (0.72 * (1 - k * 0.9)).toFixed(3));
+      b.dot.setAttribute("opacity", (0.72 * k).toFixed(3));
+    },
+    hide() {
+      reveal = 0; paint();
+      token.setAttribute("opacity", 0);
+      tokenRing.setAttribute("opacity", 0);
+    },
+  };
+}
+
+/* ============================================================ THREAD
+   Penghubung antara tangan karakter dan objek yang "dipegangnya".
+   Aturan turunan dari EP01 (docs/SCRIPT-EP01.md, Revisi v4): objek yang
+   seolah dipegang tidak boleh mengapung tanpa garis ke tangan — tanpa
+   penghubung, penonton membaca objek itu sebagai logo, bukan sebagai
+   sesuatu yang sedang dikerjakan karakter.                                */
+export function thread(parent, cfg = {}) {
+  const { color = PAL.lilac, w = 3, glowW = 12, op = 0.75, glowOp = 0.12, sag = 46 } = cfg;
+  const glow = el("path", { fill: "none", stroke: color, "stroke-width": glowW,
+    opacity: 0, "stroke-linecap": "round" }, parent);
+  const core = el("path", { fill: "none", stroke: color, "stroke-width": w,
+    opacity: 0, "stroke-linecap": "round" }, parent);
+  return {
+    update(ax, ay, bx, by, vis, t = 0) {
+      const gx = Math.max(ay, by) + sag + 9 * Math.sin(t * 1.6);
+      const mx = (ax + bx) / 2;
+      const d = `M${ax.toFixed(1)} ${ay.toFixed(1)}Q${mx.toFixed(1)} ${gx.toFixed(1)} `
+        + `${bx.toFixed(1)} ${by.toFixed(1)}`;
+      core.setAttribute("d", d);
+      glow.setAttribute("d", d);
+      const v = clamp(vis);
+      core.setAttribute("opacity", (op * v).toFixed(3));
+      glow.setAttribute("opacity", (glowOp * v).toFixed(3));
+    },
+    hide() { core.setAttribute("opacity", 0); glow.setAttribute("opacity", 0); },
+  };
 }

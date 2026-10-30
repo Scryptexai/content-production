@@ -71,11 +71,11 @@ Semua ada di `film/kit/kit.js` dan dipakai di `film/scenes/`.
 
 | Tipe | Fungsi naratif | Kode | Dipakai di |
 |---|---|---|---|
-| **climb** | perpindahan, perjalanan, "naik" | `scenes/climb`, `stairs()` | EP01 (transisi), RW2 (metafora Peter Principle) |
-| **count** | angka yang perlu **penyebut** (3 dari 100) | `dotPct()` | EP01 (3,2 dari 100) |
-| **split** | dua hal dibandingkan, berubah bentuk | `barPair()` | EP01 (−10 vs −0,5) |
-| **board** | banyak entitas + satu yang bergerak di antaranya | `scenes/promo` | RW2 (promosi 1.553 orang), EP02 (anggaran) |
-| **knot** | sesuatu yang diikat / mengendor / lepas | `trefoil()` | EP01 (temuan yang mengendor) |
+| **climb** | perpindahan, perjalanan, "naik" | `stairs()` | belum dipakai di episode jadi |
+| **count** | angka yang perlu **penyebut** (3 dari 100) | `dotPct()` | EP01 (3,2 dari 100) · EP02 (4 dari 100) |
+| **split** | dua hal dibandingkan, berubah bentuk | `barPair()` | EP01 (−10 vs −0,5) · EP02 (0 vs +30 %) |
+| **board** | banyak entitas + satu yang bergerak di antaranya | `board()` | EP02 (satu orang naik lima jenjang) |
+| **knot** | sesuatu yang diikat / mengendor / lepas | `trefoil()` + `thread()` | EP01 (temuan yang mengendor) |
 
 Aturan pemakaian:
 
@@ -86,6 +86,13 @@ Aturan pemakaian:
   Kalau menyebut proses yang bisa dibatalkan → `knot`.
 - **Teks tidak pernah jadi tipe scene.** Di riset sendiri: teks di atas 56 px
   (16:9) / 46 px (9:16) membuat penonton membaca, bukan menonton.
+- **Grafik selesai sebelum 940 px layar.** Versi pertama EP02 melanggar ini:
+  grid 10×10 dengan jarak 50 px menembus kepala karakter.
+- **Setiap objek yang seolah dipegang karakter wajib punya penghubung ke
+  tangan** (`thread()`). Tanpa itu penonton membacanya sebagai logo melayang.
+- **`dotPct.update()` menerima JUMLAH titik, bukan pecahan.** `0.04` tidak
+  menyalakan 4 titik — itu menyalakan nol koma nol empat titik. Untuk "4 dari
+  100" tulis `4`. Kesalahan ini sempat terjadi di EP02.
 
 ---
 
@@ -140,8 +147,13 @@ mengikat: tidak ada angka tanpa sumber primer.
 
 - **VO belum ada.** Naskah siap dibaca, tapi belum direkam. Tanpa VO, video ini
   masih "video bergerak dengan teks", bukan narasi.
-- **Hanya satu episode yang benar-benar jadi.** EP02–04 masih rencana.
-- **Tipe `board` belum punya versi vertikal.** Yang ada baru 16:9 (promo),
-  jadi EP02 perlu penataan ulang grid, bukan crop.
+- **Dua episode jadi (EP01, EP02).** EP03–04 masih rencana.
+- **`board` vertikal sudah ada** (ditulis untuk EP02), tapi baru diuji sampai
+  6 jenjang × 8 kolom. Di atas itu jarak antar titik jatuh di bawah 40 px dan
+  board berhenti terbaca di 9:16.
 - **Karakter belum bisa memegang objek.** Semua interaksi masih berupa
   benang; butuh klip `grip` kalau scene berikutnya butuh pegangan.
+- **Belum ada episode yang memakai instansi pemerintah sebagai data.** EP01
+  dan EP02 sama-sama meminjam data dari Amerika (pemilu kota, penjualan
+  perusahaan) dan menyebutnya di layar. Ini jujur, tapi belum menjawab
+  pertanyaan "bagaimana di Indonesia".
