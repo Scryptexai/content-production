@@ -88,10 +88,16 @@ class Climb:
     otomatis menyesuaikan langkah dan tinggi panggul.
     """
 
-    def __init__(self, x0, y0, tread, riser, n, h, edge=0.42, hip_frac=0.470):
+    def __init__(self, x0, y0, tread, riser, n, h, edge=0.42, hip_frac=0.470,
+                 lift=None):
         self.x0, self.y0 = x0, y0
         self.tread, self.riser, self.n = tread, riser, n
         self.h = h
+        # Tinggi angkat kaki saat melangkah. Default = 62% tinggi anak tangga,
+        # jadi untuk tangga hasilnya sama seperti sebelumnya. Untuk jalan di
+        # tanah DATAR (riser=0) angkat kaki harus diberikan eksplisit, kalau
+        # tidak telapak menyeret lantai.
+        self.lift = lift if lift is not None else riser * 0.62
         self.edge = edge          # posisi telapak relatif terhadap tapak (0..1)
         self.hip_frac = hip_frac  # tinggi panggul sebagai fraksi tinggi badan
 
@@ -132,7 +138,7 @@ class Climb:
         else:
             q = 1.0
         # busur angkat: kaki naik melewati tanjakan, tidak menabrak
-        lift = math.sin(math.pi * clamp((ph - 0.16) / 0.46)) * self.riser * 0.62
+        lift = math.sin(math.pi * clamp((ph - 0.16) / 0.46)) * self.lift
         swing = (lerp(swing_from[0], swing_to[0], q),
                  lerp(swing_from[1], swing_to[1], q) - lift)
 

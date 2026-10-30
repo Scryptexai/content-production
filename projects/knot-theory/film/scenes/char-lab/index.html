@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Knot Theory — lembar identitas karakter</title>
+<style>
+  html, body { margin: 0; background: #0A0E18; width: 1920px; height: 1080px; overflow: hidden; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+<script>window.DEMO = { width: 1920, height: 1080, fps: 30, duration: 3 };</script>
+<script type="module">
+/* ==========================================================================
+   LEMBAR IDENTITAS KARAKTER — "SIMPUL"
+   Dokumen rujukan. Kalau nanti ada scene baru, karakternya harus tetap
+   cocok dengan lembar ini; kalau tidak cocok, yang salah adalah scene-nya.
+
+   Kisi: header 40–120 · pita 1 (siluet & pose) 130–560 ·
+         pita 2 (detail & varian) 590–830 · pita 3 (palet & aturan) 860–1040
+   ========================================================================== */
+import { mk } from "../../lib.js";
+import { Character, CT, mix } from "../../char/character.js";
+
+const S = document.getElementById("S");
+const el = mk(S);
+const defs = el("defs");
+
+const INK = "#0A0E18", CREAM = "#EFE7DC", MUTED = "#7C86A0", DIM = "#4A5468";
+
+const bg = el("linearGradient", { id: "bg", x1: 0, y1: 0, x2: 0.6, y2: 1 }, defs);
+[[0, "#111827"], [45, "#0D1420"], [100, "#080B13"]].forEach(([o, c]) =>
+  el("stop", { offset: `${o}%`, "stop-color": c }, bg));
+el("rect", { x: 0, y: 0, width: 1920, height: 1080, fill: "url(#bg)" }, S);
+
+const glow = el("radialGradient", { id: "glow" }, defs);
+el("stop", { offset: "0%", "stop-color": CT.rose, "stop-opacity": 0.15 }, glow);
+el("stop", { offset: "100%", "stop-color": CT.rose, "stop-opacity": 0 }, glow);
+el("circle", { cx: 230, cy: 400, r: 520, fill: "url(#glow)" }, S);
+
+const txt = (x, y, t, size = 15, col = MUTED, ls = 1.0, weight = 400, anchor = "start") => {
+  const n = el("text", { x, y, fill: col, "font-family": "Helvetica, Arial, sans-serif",
+    "font-size": size, "letter-spacing": ls, "font-weight": weight, "text-anchor": anchor }, S);
+  n.textContent = t;
+};
+const rule = (x, y, w, col = "#212940") =>
+  el("rect", { x, y, width: w, height: 1, fill: col }, S);
+const panel = (x, y, w, h, fill = "#0D1320", op = 0.94) => {
+  el("rect", { x, y, width: w, height: h, fill, opacity: op }, S);
+  el("rect", { x, y, width: w, height: h, fill: "none", stroke: "#1C2437" }, S);
+};
+
+const J = await (await fetch("/assets/char-joints.json")).json();
+const CL = J.clips;
+
+function place(clipName, t, x, baseline, hpx, parent = S) {
+  const clip = CL[clipName];
+  const p = clip.poses[Math.round(t * 30) % clip.poses.length];
+  const sole = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const g = el("g", {}, parent);
+  const c = new Character(g);
+  g.setAttribute("transform",
+    `translate(${x} ${baseline}) scale(${hpx / 390}) translate(${-p.hip[0]} ${-sole})`);
+  c.draw(clip, t, {});
+  return { g, c };
+}
+
+/* ------------------------------------------------------------------ header */
+txt(64, 66, "KNOT THEORY", 15, CREAM, 5.5, 700);
+txt(64, 96, "LEMBAR IDENTITAS KARAKTER  ·  “SIMPUL”", 14, "#8A93A3", 3.2);
+txt(1856, 66, "v1  ·  1080p  ·  karakter tanpa wajah", 13, "#5C6780", 1.6, 400, "end");
+rule(64, 118, 1792);
+
+/* ---------------------------------------------------- PITA 1 · siluet utama */
+place("walk", 2.6, 268, 556, 415);
+txt(64, 150, "01", 12, "#5C6780", 2.8, 700);
+txt(96, 150, "SILUET", 12, "#5C6780", 2.8, 700);
+rule(64, 566, 420);
+txt(64, 592, "jas lonceng, hem depan pendek & belakang panjang", 14, MUTED, 0.3);
+txt(64, 612, "ekor tertinggal saat bergerak · ujung sepatu krem", 14, MUTED, 0.3);
+
+/* tiga pose kanonik */
+const POSES = [
+  ["walk", 1.9, 600, "JALAN"],
+  ["climb", 5.9, 760, "NAIK TANGGA"],
+  ["tie", 2.05, 920, "MENGIKAT"],
+];
+POSES.forEach(([cn, t, x, label]) => {
+  place(cn, t, x, 556, 300);
+  txt(x, 584, label, 11, "#5C6780", 2.4, 700, "middle");
+});
+txt(548, 150, "02", 12, "#5C6780", 2.8, 700);
+txt(580, 150, "POSE KANONIK", 12, "#5C6780", 2.8, 700);
+
+/* close-up kepala */
+{
+  const R = 108, cx = 1250, cy = 300;
+  el("circle", { cx, cy, r: R, fill: "#0F1725" }, S);
+  el("circle", { cx, cy, r: R, fill: "none", stroke: "#2C3549", "stroke-width": 1.4 }, S);
+  const cid = "headclip";
+  const cp = el("clipPath", { id: cid }, defs);
+  el("circle", { cx, cy, r: R }, cp);
+  const g = el("g", { "clip-path": `url(#${cid})` }, S);
+  const clip = CL.idle, t = 1.4;
+  const p = clip.poses[Math.round(t * 30)];
+  const cg = el("g", {}, g);
+  new Character(cg).draw(clip, t, {});
+  cg.setAttribute("transform",
+    `translate(${cx} ${cy + 44}) scale(2.95) translate(${-p.head[0]} ${-p.head[1]})`);
+  txt(1250, 162, "03  KEPALA", 12, "#5C6780", 2.8, 700, "middle");
+  txt(1250, 436, "pita visor + satu lensa", 13, MUTED, 0.3, 400, "middle");
+  txt(1250, 456, "tanpa mulut → mustahil lipsync", 13, MUTED, 0.3, 400, "middle");
+  txt(1250, 476, "mata bergerak 3 px saat memandang", 13, "#5C6780", 0.3, 400, "middle");
+}
+
+/* aturan bentuk */
+txt(1470, 168, "ATURAN BENTUK", 12, "#5C6780", 2.8, 700);
+const RULES = [
+  ["Kepala krem", "satu-satunya bidang terang di badan"],
+  ["Satu lensa", "menggantikan seluruh wajah"],
+  ["Simpul di kerah", "mengacu pada nama kanal"],
+  ["Benang + manik", "alat menyentuh diagram"],
+  ["Cahaya kanan-atas", "sama di semua scene"],
+  ["Tiga warna badan", "ink · slate · krem"],
+];
+RULES.forEach(([a, b], i) => {
+  const y = 200 + i * 52;
+  el("circle", { cx: 1477, cy: y - 5, r: 3, fill: CT.rose, opacity: 0.85 }, S);
+  txt(1494, y, a, 14, CREAM, 0.4, 700);
+  txt(1494, y + 19, b, 12.5, "#6E7A90", 0.2);
+});
+
+/* ----------------------------------------------- PITA 2 · keterbacaan + varian */
+panel(64, 640, 700, 200, CREAM, 0.97);
+txt(88, 668, "04  KETERBACAAN — siluet hitam, tanpa warna", 11, "#8B8270", 2.4, 700);
+[["walk", 2.6, 150, 120], ["climb", 5.9, 268, 88], ["tie", 2.05, 356, 58],
+ ["idle", 1.0, 412, 34], ["idle", 2.2, 448, 26]].forEach(([cn, t, x, hpx]) => {
+  const clip = CL[cn], p = clip.poses[Math.round(t * 30) % clip.poses.length];
+  const sole = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const g = el("g", {}, S);
+  new Character(g).draw(clip, t, {});
+  g.setAttribute("transform",
+    `translate(${x} 812) scale(${hpx / 390}) translate(${-p.hip[0]} ${-sole})`);
+  g.querySelectorAll("path,circle,ellipse").forEach((n) => {
+    const f = n.getAttribute("fill");
+    if (f && f !== "none") n.setAttribute("fill", "#0A0D16");
+    const st = n.getAttribute("stroke");
+    if (st && st !== "none") n.setAttribute("stroke", "#0A0D16");
+  });
+});
+txt(88, 830, "120 px", 10, "#A79F8C", 0.6);
+txt(232, 830, "88", 10, "#A79F8C", 0.6);
+txt(330, 830, "58", 10, "#A79F8C", 0.6);
+txt(396, 830, "34", 10, "#A79F8C", 0.6);
+txt(430, 830, "26", 10, "#A79F8C", 0.6);
+txt(560, 830, "masih terbaca sampai 26 px", 11, "#8B8270", 0.2);
+
+/* varian warna */
+panel(788, 640, 1068, 200, "#0D1320", 0.95);
+txt(812, 668, "05  VARIAN WARNA JAS — yang dipakai: SLATE", 11, "#5C6780", 2.4, 700);
+const VARIANTS = [
+  [CT.slate, "slate (dasar)", true],
+  [mix(CT.slate, CT.rose, 0.42), "slate-rose · topik hangat", false],
+  [mix(CT.slate, CT.lilac, 0.55), "lilac · topik sistem", false],
+];
+VARIANTS.forEach(([col, label, chosen], i) => {
+  const x = 950 + i * 340;
+  const r = place("idle", 1.2 + i * 0.8, x, 802, 126);
+  r.g.querySelectorAll("path,circle,ellipse").forEach((n) => {
+    const f = n.getAttribute("fill") || "";
+    if (f.startsWith("url")) { n.setAttribute("fill", col); n.setAttribute("opacity", 1); }
+  });
+  r.g.querySelectorAll("path").forEach((n) => {
+    const st = n.getAttribute("stroke") || "";
+    if (st.startsWith("url")) n.setAttribute("stroke", col);
+  });
+  txt(x, 830, label, 11.5, chosen ? CREAM : "#6E7A90", 0.6, chosen ? 700 : 400, "middle");
+  if (chosen) el("rect", { x: x - 54, y: 838, width: 108, height: 1.6, fill: CT.rose }, S);
+});
+
+/* --------------------------------------------- PITA 3 · palet & catatan pemakaian */
+rule(64, 868, 1792, "#1A2135");
+txt(64, 900, "06  PALET", 11, "#5C6780", 2.4, 700);
+const SW = [
+  ["#0A0E18", "ink"], ["#2B3650", "slate"], ["#EFE7DC", "krem"],
+  ["#D98E73", "rose"], ["#8FA98B", "sage"], ["#A79BC8", "lilac"], ["#7C86A0", "muted"],
+];
+SW.forEach(([c, name], i) => {
+  const x = 64 + i * 96;
+  el("rect", { x, y: 918, width: 76, height: 44, fill: c }, S);
+  el("rect", { x, y: 918, width: 76, height: 44, fill: "none", stroke: "#232B3E" }, S);
+  txt(x, 978, name, 11, MUTED, 1.2);
+});
+
+txt(760, 900, "CARA PAKAI", 11, "#5C6780", 2.4, 700);
+txt(760, 926, "Badan tidak pernah memakai sage atau lilac — keduanya aksen scene. "
+  + "Kalau badan diberi warna aksen, karakter terbaca sebagai mainan.", 13, MUTED, 0.2);
+txt(760, 948, "Tinggi karakter 30–45% tinggi frame. Di bawah 26 px ia berhenti terbaca; "
+  + "jangan dipakai lebih kecil dari itu kecuali sebagai titik penanda.", 13, MUTED, 0.2);
+txt(760, 970, "Lensa adalah satu-satunya bagian yang boleh bergerak sendiri (maks 4 px). "
+  + "Anggota tubuh lain hanya bergerak lewat klip.", 13, MUTED, 0.2);
+
+txt(64, 1030, "Karakter tidak punya wajah, nama diri, atau suara. Ia membaca lewat gerak; "
+  + "identitasnya dibawa siluet, lensa, dan benang yang selalu tertinggal.",
+  13, "#4A5468", 0.2);
+txt(1856, 1030, "film/char/character.js  ·  film/assets/char-joints.json", 11, "#39415A", 0.6, 400, "end");
+
+window.renderAt = async () => {};
+await window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>

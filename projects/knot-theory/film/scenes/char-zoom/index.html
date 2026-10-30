@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><title>zoom</title>
+<style>html,body{margin:0;background:#0B1020;width:1920px;height:1080px;overflow:hidden}svg{display:block}</style>
+</head><body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+<script>window.DEMO={width:1920,height:1080,fps:30,duration:4};</script>
+<script type="module">
+import { mk } from "../../lib.js";
+import { Character, CT } from "../../char/character.js";
+const S=document.getElementById("S"), el=mk(S);
+el("rect",{x:0,y:0,width:1920,height:1080,fill:"#0C1220"},S);
+el("rect",{x:0,y:1000,width:1920,height:80,fill:"#0A0E18"},S);
+el("rect",{x:0,y:998,width:1920,height:2,fill:"#E9A87C","fill-opacity":.35},S);
+const J=await (await fetch("/assets/char-joints.json")).json(), CL=J.clips;
+function place(name,t,x,hpx,ground=1000){const clip=CL[name],p=clip.poses[Math.round(t*30)%clip.poses.length];
+  const g=el("g",{},S);const c=new Character(g);const sole=Math.max(p.legL[2][1],p.legR[2][1])+19.2;
+  const s=hpx/390;g.setAttribute("transform",`translate(${x} ${ground}) scale(${s}) translate(${-p.hip[0]} ${-sole})`);
+  c.draw(clip,t,{});return g;}
+place("walk",3.5,420,860);
+place("idle",1.2,1180,700);
+window.renderAt=async()=>{};await window.renderAt(0);window.__ready=true;
+</script></body></html>

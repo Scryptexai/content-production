@@ -198,7 +198,101 @@ def build_climb(dur):
     return st
 
 
-PRESETS = {"climb": build_climb}
+def build_reel(dur):
+    """Bunyi untuk reel identitas 14 dtk dengan tiga beat.
+
+    Aturannya: bunyi hanya di titik gerak yang nyata.
+      * beat 1 (jalan)   : ambience angin tipis + sepatu di lantai, pelan
+      * potongan 4.7 dtk : satu hentakan rendah, bukan whoosh
+      * beat 2 (tangga)  : naik, ambience menebal sedikit
+      * potongan 9.5 dtk : hentakan kedua, lebih pelan
+      * 11.0 dtk         : nada simpul (dua sinus, kuint) — satu-satunya nada
+      * ekor             : dengung rendah yang memudar
+    """
+    n = int(dur * SR)
+    L = np.zeros(n, np.float32)
+    R = np.zeros(n, np.float32)
+
+    def place(buf, x, at, gain):
+        i = int(at * SR)
+        if i >= n:
+            return
+        m = min(len(x), n - i)
+        buf[i:i + m] += x[:m] * gain
+
+    # --- ambience: angin malam, sangat pelan
+    rng = np.random.default_rng(1201)
+    wind = bandpass(rng.normal(0, 1, n).astype(np.float32), 120, 900)
+    swell = 0.5 + 0.5 * np.sin(np.linspace(0, 5.2, n))
+    wind *= swell * 0.055
+    L += wind
+    R += np.roll(wind, 900) * 0.95
+
+    # --- hentakan potongan: sinus 58 Hz turun cepat — bukan whoosh
+    for at, g in ((4.70, 0.42), (9.50, 0.34)):
+        m = int(0.55 * SR)
+        tt = np.arange(m) / SR
+        f = 58 * np.exp(-tt * 4.0) + 34
+        boom = np.sin(2 * np.pi * np.cumsum(f) / SR).astype(np.float32)
+        boom *= np.exp(-tt * 7.5)
+        place(L, boom, at, g)
+        place(R, boom, at, g)
+
+    # --- sepatu di lantai: klik pendek tiap langkah (0.5 dtk)
+    rng2 = np.random.default_rng(77)
+    step = bandpass(rng2.normal(0, 1, int(0.09 * SR)).astype(np.float32), 240, 2400)
+    step *= np.exp(-np.arange(len(step)) / SR * 55)
+    t = 0.18
+    while t < 4.6:
+        g = 0.055 * (0.7 + 0.3 * math.sin(t * 2.1))
+        place(L, step, t, g)
+        place(R, step, t + 0.004, g * 0.9)
+        t += 0.52
+
+    # --- langkah di tangga: lebih berat, lebih rendah
+    rng3 = np.random.default_rng(78)
+    st2 = bandpass(rng3.normal(0, 1, int(0.14 * SR)).astype(np.float32), 150, 1500)
+    st2 *= np.exp(-np.arange(len(st2)) / SR * 32)
+    t = 5.15
+    while t < 9.3:
+        place(L, st2, t, 0.075)
+        place(R, st2, t + 0.006, 0.068)
+        t += 0.86
+
+    # --- nada simpul: 392 + 587 Hz (kuint), masuk pelan, bergetar
+    at = 11.05
+    m = int(2.4 * SR)
+    tt = np.arange(m) / SR
+    tone = (np.sin(2 * np.pi * 392 * tt) * 0.5 + np.sin(2 * np.pi * 587.3 * tt) * 0.34
+            + np.sin(2 * np.pi * 784 * tt) * 0.12)
+    vib = 1 + 0.012 * np.sin(2 * np.pi * 5.1 * tt)
+    tone = (tone * vib).astype(np.float32) * np.exp(-tt * 1.25)
+    tone *= np.clip(tt / 0.08, 0, 1)
+    place(L, tone, at, 0.16)
+    place(R, tone, at + 0.012, 0.15)
+
+    # --- dengung bawah dari tabrakan senar (mengisi ekor)
+    m = int(3.2 * SR)
+    tt = np.arange(m) / SR
+    hum = np.sin(2 * np.pi * 98 * tt + 0.4 * np.sin(2 * np.pi * 0.7 * tt)).astype(np.float32)
+    hum *= np.exp(-tt * 0.75) * 0.075
+    place(L, hum, 11.1, 1.0)
+    place(R, hum, 11.16, 1.0)
+
+    L = reverb(L, 0.34)
+    R = reverb(R, 0.34)
+
+    st = np.stack([L, R], axis=1)
+    fade = int(0.35 * SR)
+    st[:fade] *= np.linspace(0, 1, fade)[:, None]
+    st[-int(0.9 * SR):] *= np.linspace(1, 0, int(0.9 * SR))[:, None]
+    pk = np.abs(st).max()
+    if pk > 0:
+        st = st / pk * 0.72
+    return st
+
+
+PRESETS = {"climb": build_climb, "reel": build_reel}
 
 
 def main():
