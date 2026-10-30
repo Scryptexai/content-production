@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Knot Theory — EP01: yang menghukum bukan yang berwenang</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #05070F; overflow: hidden;
+               width: 1080px; height: 1920px; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920"
+     viewBox="0 0 1080 1920"></svg>
+<script>window.DEMO = { width: 1080, height: 1920, fps: 30, duration: 60 };</script>
+<script type="module">
+/* ==========================================================================
+   EP01 — "Yang menghukum bukan yang berwenang" · 60 dtk · 1080×1920
+   Satu pengambilan tanpa potongan. Naskah: docs/SCRIPT-EP01.md
+
+   GRID (dipakai tetap, jangan digeser per scene):
+     pita atas     y 170–330    kicker + angka utama
+     grafik        y 380–940    hitung / banding / simpul
+     kepala        y ≥ 990      tinggi karakter 470 → kepala di atas 990
+     pita bawah    y 1580–1820  kalimat + sumber
+   Lantai dunia di y=1400. Kamera menahan titik dunia (u, 900) di tengah,
+   jadi seluruh grid di atas selalu terlihat utuh di 1080×1920.
+
+   Klaim & sumber (semua diverifikasi, lihat docs/SCRIPT-EP01.md):
+     Healy, Malhotra & Mo, PNAS 107(29) 2010 — 1,61 poin
+     Achen & Bartels, Democracy for Realists (2016), bab 5 — serangan hiu
+       1916, sekitar 10 poin di kota pantai; kabupaten lain hampir 0
+     Fowler & Hall (2018) — uji ulang seluruh serangan 1872–2012: hampir nol
+   ========================================================================== */
+import { KIN, PAL, E, clamp, el, inv, lerp, dotPct, barPair, trefoil } from "../../kit/kit.js";
+import { Character } from "../../char/character.js";
+
+const W = 1080, H = 1920, FPS = 30, DUR = 60;
+const S = document.getElementById("S");
+const CX = W / 2;
+
+/* grid bersama */
+const Y_KICK = 210, Y_STAT = 300;
+const Y_CHART = 660;
+const GROUND = 1400;
+const Y_TEXT1 = 1600, Y_TEXT2 = 1660, Y_TEXT3 = 1716, Y_SRC = 1792;
+
+/* ------------------------------------------------------------------ defs */
+const defs = el("defs", {}, S);
+const grad = (id, stops, attrs = {}) => {
+  const g = el("linearGradient", { id, ...attrs }, defs);
+  stops.forEach(([o, c, op]) => el("stop", {
+    offset: `${o}%`, "stop-color": c, "stop-opacity": op === undefined ? 1 : op,
+  }, g));
+  return g;
+};
+grad("sky", [[0, "#05070F"], [24, "#0A1024"], [46, "#191B36"], [64, "#37233C"],
+             [80, "#6B3B46"], [93, "#A85C4D"], [100, "#D0805C"]],
+     { x1: 0, y1: 0, x2: 0, y2: 1 });
+const vig = el("radialGradient", { id: "vig" }, defs);
+el("stop", { offset: "34%", "stop-color": "#000", "stop-opacity": 0 }, vig);
+el("stop", { offset: "100%", "stop-color": "#000", "stop-opacity": 0.62 }, vig);
+const glowG = el("radialGradient", { id: "glow" }, defs);
+el("stop", { offset: "0%", "stop-color": PAL.rose, "stop-opacity": 0.45 }, glowG);
+el("stop", { offset: "100%", "stop-color": PAL.rose, "stop-opacity": 0 }, glowG);
+
+/* --------------------------------------------------------------- lapisan */
+const LAYERS = {};
+const layer = (name, z) => { const g = el("g", {}, S); LAYERS[name] = { g, z }; return g; };
+
+const gSky = layer("sky", 4200);
+el("rect", { x: -1800, y: -1400, width: 5000, height: 4800, fill: "url(#sky)" }, gSky);
+
+const gStars = layer("stars", 3200);
+{
+  let s = 91;
+  const r = () => { s = (s * 1103515245 + 12345) >>> 0; return s / 4294967296; };
+  for (let i = 0; i < 190; i++) {
+    const y = r() * 1000;
+    el("circle", { cx: (r() * 4000 - 1400).toFixed(0), cy: (y - 300).toFixed(0),
+      r: (0.7 + r() * 1.4).toFixed(2), fill: "#D8E2FF",
+      opacity: ((1 - y / 1000) * (0.22 + r() * 0.5)).toFixed(3) }, gStars);
+  }
+}
+
+const gFar = layer("far", 1500);
+const ridge = (seed, baseY, amp, step) => {
+  let s = seed >>> 0;
+  const r = () => { s = (s * 1103515245 + 12345) >>> 0; return s / 4294967296; };
+  let d = `M -1800 2800 L -1800 ${baseY}`;
+  for (let x = -1800; x <= 5000; x += step) {
+    d += ` L ${x} ${(baseY - Math.sin(x * 0.0016 + seed) * amp - r() * amp * 0.4).toFixed(1)}`;
+  }
+  return d + " L 5000 2800 Z";
+};
+el("path", { d: ridge(4, 1190, 90, 120), fill: "#3B2E4E", opacity: 0.85 }, gFar);
+el("path", { d: ridge(11, 1258, 54, 110), fill: "#261F38" }, gFar);
+const gMid = layer("mid", 860);
+el("path", { d: ridge(19, 1336, 34, 130), fill: "#141326" }, gMid);
+
+/* ------------------------------------------------------------------ dunia */
+const WORLD = el("g", {}, S);
+const gFloor = el("g", {}, WORLD);
+const gStations = el("g", {}, WORLD);
+const gChar = el("g", {}, WORLD);
+
+el("rect", { x: -4000, y: GROUND, width: 14000, height: 1000, fill: "#080B14" }, gFloor);
+el("rect", { x: -4000, y: GROUND - 2, width: 14000, height: 2.4,
+  fill: PAL.rose, opacity: 0.30 }, gFloor);
+for (let i = 0; i < 110; i++) {
+  el("rect", { x: -1600 + i * 150, y: GROUND + 44 + (i % 3) * 16,
+    width: 54 + (i % 4) * 16, height: 2, fill: "#7C88A4",
+    opacity: (0.05 + (i % 5) * 0.02).toFixed(3) }, gFloor);
+}
+
+const gFog = layer("fog", 200);
+{
+  const fg = el("linearGradient", { id: "fog", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+  el("stop", { offset: "0%", "stop-color": "#05070F", "stop-opacity": 0 }, fg);
+  el("stop", { offset: "100%", "stop-color": "#05070F", "stop-opacity": 0.92 }, fg);
+  el("rect", { x: -1800, y: 1440, width: 5000, height: 700, fill: "url(#fog)" }, gFog);
+}
+const gScreen = el("g", {}, S);
+el("rect", { x: 0, y: 0, width: W, height: H, fill: "url(#vig)" }, gScreen);
+
+/* ======================================================== STASIUN 1: COUNT
+   100 titik = 100 persen. Yang menyala 3,2. Penyebutnya ikut terlihat —
+   itu yang membuat angka "3,2 poin" punya berat.                            */
+const S1X = 2200;
+const S1 = dotPct(gStations, { cx: S1X, cy: Y_CHART + 40, cols: 10, rows: 10, gap: 50, r: 12.5 });
+const s1Halo = el("circle", { cx: S1X, cy: Y_CHART + 40, r: 360, fill: "url(#glow)", opacity: 0 }, gStations);
+
+/* ======================================================= STASIUN 2: SPLIT */
+const S2X = 3800;
+const S2 = barPair(gStations, { cx: S2X, cy: Y_CHART + 40, w: 420, h: 30, gap: 108 });
+const s2txt = (y, t, size, col, anchor = "middle") => {
+  const n = el("text", { x: S2X, y, fill: col, "font-family": "Helvetica, Arial, sans-serif",
+    "font-size": size, "letter-spacing": 1.4, "text-anchor": anchor }, gStations);
+  n.textContent = t;
+  return n;
+};
+/* Label: nama di kiri-atas tiap batang, angka di kanan garis nol.
+   Versi pertama menaruh angka di ujung kiri batang, jadi tertimpa batangnya. */
+const BAR_A = Y_CHART - 14, BAR_B = Y_CHART + 94;
+const s2a = s2txt(BAR_A - 26, "KOTA PANTAI", 26, PAL.cream);
+s2a.setAttribute("x", S2X - 220); s2a.setAttribute("text-anchor", "start");
+const s2b = s2txt(BAR_B - 26, "KABUPATEN LAIN", 26, PAL.muted);
+s2b.setAttribute("x", S2X - 220); s2b.setAttribute("text-anchor", "start");
+const s2va = s2txt(BAR_A + 10, "−10", 30, PAL.rose);
+s2va.setAttribute("x", S2X + 232); s2va.setAttribute("text-anchor", "start");
+const s2vb = s2txt(BAR_B + 10, "−0,5", 26, PAL.sage);
+s2vb.setAttribute("x", S2X + 232); s2vb.setAttribute("text-anchor", "start");
+const s2zero = s2txt(Y_CHART + 178, "nol", 18, "#5A6480");
+s2zero.setAttribute("x", S2X);
+
+/* ======================================================= STASIUN 3: KNOT */
+const S3X = 5400;
+const knot = trefoil(gStations, { cx: S3X, cy: Y_CHART + 10, R: 165, thick: 10 });
+const s3Halo = el("circle", { cx: S3X, cy: Y_CHART + 10, r: 300, fill: "url(#glow)", opacity: 0 }, gStations);
+const RETEST = [];
+for (let i = 0; i < 10; i++) {
+  RETEST.push(el("circle", { cx: S3X - 243 + i * 54, cy: Y_CHART + 300, r: 8,
+    fill: "#38425C", opacity: 0 }, gStations));
+}
+const s3hand = el("circle", { cx: S3X, cy: Y_CHART, r: 4.5, fill: PAL.cream, opacity: 0 }, gStations);
+const s3threadGlow = el("path", { fill: "none", stroke: PAL.lilac, "stroke-width": 12,
+  opacity: 0, "stroke-linecap": "round" }, gStations);
+const s3thread = el("path", { fill: "none", stroke: PAL.lilac, "stroke-width": 3,
+  opacity: 0, "stroke-linecap": "round" }, gStations);
+const s3cap = el("text", { x: S3X, y: Y_CHART + 372, fill: PAL.muted,
+  "font-family": "Helvetica, Arial, sans-serif", "font-size": 22,
+  "letter-spacing": 1.2, "text-anchor": "middle", opacity: 0 }, gStations);
+s3cap.textContent = "10 cara menguji · 1872–2012";
+
+/* -------------------------------------------------------------- karakter */
+const J = await (await fetch("/assets/char-joints.json")).json();
+const CL = J.clips;
+const SC = 470 / 390;
+const figG = el("g", {}, gChar);
+const FIG = new Character(figG);
+
+const poseOf = (name, t) => {
+  const ps = CL[name].poses;
+  return ps[Math.max(0, Math.min(ps.length - 1, Math.round(t * FPS)))];
+};
+const WALK_V = 207.4 * SC;
+
+/* --------------------------------------------------------------- jadwal */
+const T = [
+  { walk: [0.0, 6.4] },
+  { hold: [6.4, 18.0], sx: S1X },
+  { walk: [18.0, 22.6] },
+  { hold: [22.6, 34.0], sx: S2X },
+  { walk: [34.0, 38.6] },
+  { hold: [38.6, DUR], sx: S3X, tie: true },
+];
+{
+  let x = 0;
+  for (const seg of T) {
+    if (seg.walk) { seg.x0 = x; seg.x1 = x + (seg.walk[1] - seg.walk[0]) * WALK_V; x = seg.x1; }
+  }
+  // pinggul stasiun: mundur sedikit dari tengah grafik supaya karakter di kiri
+  for (const seg of T) if (seg.hold) seg.hipX = seg.sx - 190;
+}
+
+function stateAt(t) {
+  for (let i = 0; i < T.length; i++) {
+    const s = T[i];
+    if (s.walk && t >= s.walk[0] && t < s.walk[1]) {
+      const tt = (t - s.walk[0]) % 12;
+      return { mode: "walk", clip: "walk", tt, hipW: s.x0 + (t - s.walk[0]) * WALK_V, seg: i, local: t - s.walk[0] };
+    }
+    if (s.hold && t >= s.hold[0] && t < s.hold[1]) {
+      const local = t - s.hold[0];
+      if (!s.tie) {
+        return { mode: "hold", clip: "idle", tt: (local * 1.0) % 8, hipW: s.hipX, seg: i, local };
+      }
+      return { mode: "tie", clip: "tie", tt: clamp(local * 0.85, 0, 3.15), hipW: s.hipX, seg: i, local };
+    }
+  }
+  const last = T[T.length - 1];
+  return { mode: "tie", clip: "tie", tt: 3.15, hipW: last.hipX, seg: 5, local: 20 };
+}
+
+/* ---------------------------------------------------------------- kamera
+   Konvensi tunggal: cam = titik dunia di tengah frame.
+   Saat berjalan cam.x = pinggul (kaki menapak di tempat). Saat berhenti
+   cam.x tetap, cam.y = 900 → grid atas & karakter masuk frame bersamaan. */
+function camAt(t, st) {
+  const p = poseOf(st.clip, st.tt);
+  const soleRig = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const hipWy = GROUND + SC * (p.hip[1] - soleRig);
+  if (st.mode === "walk") {
+    return { x: st.hipW + 40, y: hipWy - 250, zoom: 1.02 + 0.05 * E.ioC(clamp(st.local / 6)) };
+  }
+  const push = E.ioC(clamp(st.local / 11));
+  return { x: st.hipW + 190, y: 900, zoom: 1.10 + 0.07 * push };
+}
+
+function applyCam(t, st) {
+  const c = camAt(t, st);
+  WORLD.setAttribute("transform",
+    `translate(${W / 2} ${H / 2}) scale(${c.zoom.toFixed(4)}) `
+    + `translate(${(-c.x).toFixed(2)} ${(-c.y).toFixed(2)})`);
+  for (const k in LAYERS) {
+    const { g, z } = LAYERS[k];
+    const p = 1000 / z;
+    const tx = -(c.x - W / 2) * 0.085 * p;
+    const ty = -(c.y - H / 2) * 0.085 * p;
+    const sc = 1 + (c.zoom - 1) * p * 0.42;
+    g.setAttribute("transform",
+      `translate(${tx.toFixed(2)} ${ty.toFixed(2)}) translate(${W / 2} ${H / 2}) `
+      + `scale(${sc.toFixed(4)}) translate(${-W / 2} ${-H / 2})`);
+    let blur = 0;
+    if (z > 520) blur = Math.max(0, Math.min(1.6, 1 - 520 / z) - 0.04) * 11;
+    g.style.filter = blur > 0.25 ? `blur(${blur.toFixed(2)}px)` : "none";
+  }
+}
+
+/* ------------------------------------------------------------------ teks
+   Semua di koordinat LAYAR (bukan dunia), jadi selalu di pita yang sama.
+   Ukuran max 46 px — keterangan, bukan subjek.                             */
+const K = new KIN(S);
+K.line({ text: "1916 · PESISIR NEW JERSEY", at: 6.8, until: 13.2, x: CX, y: Y_KICK,
+  size: 25, ls: 3.2, color: PAL.muted, weight: 700, anchor: "middle", easing: "fade" });
+K.line({ text: "−3,2 poin", at: 12.6, until: 18.0, x: CX, y: Y_STAT,
+  size: 62, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "Empat orang tewas diserang hiu.", at: 7.6, until: 10.2, x: CX, y: Y_TEXT1,
+  size: 36, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Partai yang berkuasa kehilangan suara", at: 10.4, until: 18.0, x: CX, y: Y_TEXT1,
+  size: 33, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "di kota-kota pantai itu.", at: 11.2, until: 18.0, x: CX, y: Y_TEXT2,
+  size: 33, color: PAL.cream, anchor: "middle", easing: "slide" });
+
+K.line({ text: "SELISIH PER BANDINGAN", at: 23.4, until: 34.0, x: CX, y: Y_KICK,
+  size: 24, ls: 3.0, color: PAL.muted, weight: 700, anchor: "middle", easing: "fade" });
+K.line({ text: "yang dihukum tidak selalu", at: 26.6, until: 34.0, x: CX, y: Y_TEXT1,
+  size: 34, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "yang punya wewenang.", at: 27.4, until: 34.0, x: CX, y: Y_TEXT2,
+  size: 38, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "Achen & Bartels, 2016", at: 29.6, until: 34.0, x: CX, y: Y_SRC,
+  size: 19, ls: 1.2, color: "#6E7789", anchor: "middle", easing: "fade" });
+
+K.line({ text: "Lalu seluruh angkanya diperiksa ulang.", at: 39.4, until: 46.4, x: CX, y: Y_TEXT1,
+  size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Fowler & Hall, 2018", at: 44.0, until: 52.0, x: CX, y: Y_SRC,
+  size: 19, ls: 1.2, color: "#6E7789", anchor: "middle", easing: "fade" });
+K.line({ text: "Hampir nol.", at: 47.0, until: 53.0, x: CX, y: Y_STAT,
+  size: 56, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "Satu dari sepuluh uji tampak berhasil.", at: 50.6, until: 55.1, x: CX, y: Y_TEXT1,
+  size: 30, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Kebetulan juga bisa begitu.", at: 51.8, until: 56.2, x: CX, y: Y_TEXT2,
+  size: 28, color: PAL.muted, anchor: "middle", easing: "fade" });
+
+K.line({ text: "Yang tersisa bukan angkanya.", at: 55.4, until: DUR + 0.4, x: CX, y: Y_TEXT1,
+  size: 32, color: PAL.cream, anchor: "middle", easing: "slide" });
+K.line({ text: "Tapi caranya kita menilai.", at: 56.4, until: DUR + 0.4, x: CX, y: Y_TEXT2,
+  size: 42, color: PAL.rose, weight: 700, anchor: "middle", easing: "pop" });
+K.line({ text: "Healy, Malhotra & Mo, PNAS 2010 · Achen & Bartels bab 5, 2016 · Fowler & Hall, 2018",
+  at: 57.4, until: DUR + 0.4, x: CX, y: Y_SRC, size: 16, ls: 0.2, color: "#5E6678",
+  anchor: "middle", easing: "fade" });
+
+/* ---------------------------------------------------------------- render */
+window.renderAt = async (t) => {
+  const st = stateAt(t);
+  applyCam(t, st);
+
+  const p = poseOf(st.clip, st.tt);
+  const soleRig = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const hipY = GROUND + SC * (p.hip[1] - soleRig);
+
+  figG.setAttribute("transform",
+    `translate(${st.hipW.toFixed(2)} ${hipY.toFixed(2)}) scale(${SC.toFixed(4)}) `
+    + `translate(${(-p.hip[0]).toFixed(2)} ${(-p.hip[1]).toFixed(2)})`);
+  FIG.draw(CL[st.clip], st.tt, { ground: () => 940 });
+
+  /* S1 — hitung */
+  const s1 = clamp((t - 8.2) / 4.6);
+  S1.update(3.2 * E.ioC(s1), t, 1 + 0.10 * Math.sin(Math.PI * clamp(s1)));
+  s1Halo.setAttribute("opacity", (0.26 * Math.sin(Math.PI * clamp(s1 * 1.3))).toFixed(3));
+
+  /* S2 — banding (morph) */
+  const k2 = E.ioC(clamp((t - 24.2) / 3.2));
+  S2.update(-1.0 * k2, -0.05 * k2, t);
+  const s2vis = clamp((t - 24.0) / 0.7) * (1 - clamp((t - 33.4) / 0.6));
+  S2.show(s2vis);
+  for (const n of [s2a, s2b, s2va, s2vb, s2zero]) n.setAttribute("opacity", s2vis.toFixed(3));
+
+  /* S3 — simpul diikat, lalu mengendor */
+  const draw = clamp((t - 39.4) / 2.2);
+  const slip = clamp((t - 47.2) / 2.4);
+  const spin = 0.55 * (1 - E.outQ(clamp((t - 39.2) / 3.0))) - 0.16 * (t - 39.2);
+  if (t > 39.2) knot.update(0.10 + 0.9 * E.ioC(slip), spin, draw, 1 + 0.05 * Math.sin(2.6 * (t - 44)));
+  else knot.hide();
+  s3Halo.setAttribute("opacity",
+    (0.30 * Math.sin(Math.PI * clamp(slip)) * (1 - 0.5 * clamp((t - 52) / 2))).toFixed(3));
+
+  const handX = st.hipW + SC * (p.armL[2][0] - p.hip[0]);
+  const handY = hipY + SC * (p.armL[2][1] - p.hip[1]);
+  const handVis = clamp((t - 40.2) / 0.5) * (1 - clamp((t - 51) / 2));
+  s3hand.setAttribute("opacity", (0.9 * handVis).toFixed(3));
+  s3hand.setAttribute("cx", handX.toFixed(1));
+  s3hand.setAttribute("cy", handY.toFixed(1));
+
+  /* Benang penghubung tangan → simpul. Tanpa ini simpul terbaca mengapung,
+     dan seluruh gagasan "dia mengikatnya" hilang. */
+  const knotX = S3X, knotY = Y_CHART + 10;
+  const sagY = Math.max(handY, knotY) + 46 + 10 * Math.sin(t * 1.6);
+  const midX = (handX + knotX) / 2;
+  const th = `M${handX.toFixed(1)} ${handY.toFixed(1)}`
+    + `Q${midX.toFixed(1)} ${sagY.toFixed(1)} ${knotX.toFixed(1)} ${knotY.toFixed(1)}`;
+  s3thread.setAttribute("d", th);
+  s3threadGlow.setAttribute("d", th);
+  const thVis = clamp((t - 39.8) / 0.8) * handVis;
+  s3thread.setAttribute("opacity", (0.75 * thVis).toFixed(3));
+  s3threadGlow.setAttribute("opacity", (0.12 * thVis).toFixed(3));
+
+  for (let i = 0; i < RETEST.length; i++) {
+    const on = clamp((t - 50.2 - i * 0.09) / 0.22);
+    RETEST[i].setAttribute("opacity", (on * 0.95).toFixed(3));
+    const hero = i === 3;
+    RETEST[i].setAttribute("fill", hero ? PAL.rose : "#38425C");
+    RETEST[i].setAttribute("r", (8 + (hero ? 2.6 * on : 0)).toFixed(2));
+  }
+  s3cap.setAttribute("opacity", clamp((t - 50.0) / 0.6).toFixed(3));
+
+  K.update(t);
+
+  const fin = E.ioQ(inv(0, 0.7, t));
+  const fout = 1 - E.ioQ(inv(DUR - 0.7, DUR, t));
+  S.style.opacity = Math.min(fin, fout).toFixed(3);
+};
+
+await window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>
