@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Knot Theory — papan promosi</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #05070F; overflow: hidden;
+               width: 1920px; height: 1080px; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="S" xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+<script>window.DEMO = { width: 1920, height: 1080, fps: 30, duration: 13 };</script>
+<script type="module">
+/* ==========================================================================
+   PAPAN PROMOSI — bukti bahwa karakter bisa MENYENTUH ide, bukan hanya
+   berjalan di latar.
+
+   Yang dibuktikan di sini, empat sekaligus:
+     1. diagram yang hidup di dalam ruang 3D-semu (kisi mundur + parallax),
+     2. karakter mengikat benangnya ke satu simpul diagram — interaksi nyata,
+     3. satu simpul itu naik setingkat demi setingkat (promosi), meninggalkan
+        jejak, lalu di puncak berubah jadi kosong,
+     4. kamera mengikuti pinggul saat berjalan, jadi kaki tidak tergelincir,
+        lalu meninggalkan karakter untuk masuk ke diagram.
+
+   Tidak ada teks sama sekali. Kalau ide ini tidak terbaca tanpa teks, maka
+   idenya belum cukup kuat — dan itu justru yang sedang diuji.
+   ========================================================================== */
+import { E, camStyle, clamp, inv, lerp, mk, rng } from "../../lib.js";
+import { Character, CT } from "../../char/character.js";
+
+const S = document.getElementById("S");
+const el = mk(S);
+const DUR = 13, FPS = 30;
+
+/* ------------------------------------------------------------------ latar */
+const defs = el("defs");
+const sky = el("linearGradient", { id: "sky", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+[[0, "#05070F"], [30, "#0B1226"], [58, "#1B1D3A"], [78, "#3B2A44"], [100, "#7A4450"]]
+  .forEach(([o, c]) => el("stop", { offset: `${o}%`, "stop-color": c }, sky));
+const vig = el("radialGradient", { id: "vig" }, defs);
+el("stop", { offset: "36%", "stop-color": "#000", "stop-opacity": 0 }, vig);
+el("stop", { offset: "100%", "stop-color": "#000", "stop-opacity": 0.66 }, vig);
+const glowG = el("radialGradient", { id: "glow" }, defs);
+el("stop", { offset: "0%", "stop-color": "#F6C7A8", "stop-opacity": 0.85 }, glowG);
+el("stop", { offset: "38%", "stop-color": CT.rose, "stop-opacity": 0.32 }, glowG);
+el("stop", { offset: "100%", "stop-color": CT.rose, "stop-opacity": 0 }, glowG);
+
+/* --------------------------------------------------------------- lapisan */
+const LAYERS = {};
+const layer = (name, z) => {
+  const g = el("g");
+  LAYERS[name] = { g, z };
+  return g;
+};
+
+const gSky = layer("sky", 4200);
+el("rect", { x: -1200, y: -900, width: 4400, height: 3000, fill: "url(#sky)" }, gSky);
+
+/* bintang tipis di belakang kisi jauh */
+const gStars = layer("stars", 3400);
+{
+  const r = rng(31);
+  for (let i = 0; i < 150; i++) {
+    el("circle", { cx: (r() * 2600 - 340).toFixed(0), cy: (r() * 620).toFixed(0),
+      r: (0.6 + r() * 1.2).toFixed(2), fill: "#D6E2FF",
+      opacity: (0.12 + r() * 0.4).toFixed(2) }, gStars);
+  }
+}
+
+/* KISI JAUH: organisasi sebagai medan titik. z tinggi → kabur + parallax besar */
+const gFar = layer("latticeFar", 1500);
+const FAR = [];
+{
+  const r = rng(77);
+  for (let i = 0; i < 130; i++) {
+    const x = (r() * 2600 - 340), y = 120 + r() * 700;
+    FAR.push([x, y, 1.4 + r() * 2.4, 0.10 + r() * 0.30]);
+    el("circle", { cx: x.toFixed(0), cy: y.toFixed(0), r: (1.4 + r() * 2.4).toFixed(2),
+      fill: "#9FB2DE", opacity: (0.10 + r() * 0.28).toFixed(2) }, gFar);
+  }
+}
+
+/* LAPISAN DUNIA (1:1). Isinya: lantai, kisi org, karakter. */
+const WORLD = el("g");
+const gFloor = el("g", {}, WORLD);
+const gGrid = el("g", {}, WORLD);
+const gThread = el("g", {}, WORLD);
+const gChar = el("g", {}, WORLD);
+
+/* lantai: kisi titik dengan spasi membesar ke depan (perspektif) */
+const GROUND = 900;
+{
+  for (let r = 0; r < 7; r++) {
+    const y = GROUND + Math.round(r * r * 15 + r * 9);
+    for (let c = -14; c <= 26; c++) {
+      const x = c * (128 + r * 16) + 960;
+      el("circle", { cx: x, cy: y, r: (2.6 - r * 0.22).toFixed(2), fill: "#8FA3C4",
+        opacity: (0.30 - r * 0.035).toFixed(3) }, gFloor);
+    }
+  }
+  // kabut lantai: gradien yang memudar ke depan, supaya bawah frame tidak kosong
+  const fog = el("linearGradient", { id: "fog", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+  el("stop", { offset: "0%", "stop-color": "#7A4450", "stop-opacity": 0.30 }, fog);
+  el("stop", { offset: "55%", "stop-color": "#2A1E33", "stop-opacity": 0.20 }, fog);
+  el("stop", { offset: "100%", "stop-color": "#05070F", "stop-opacity": 0 }, fog);
+  el("rect", { x: -2000, y: GROUND, width: 6000, height: 620, fill: "url(#fog)" }, gFloor);
+  el("rect", { x: -2000, y: GROUND - 1, width: 6000, height: 1.6,
+    fill: "#E9A87C", opacity: 0.22 }, gFloor);
+  // kolam cahaya di bawah kolom tengah: memberi tahu mata ke mana harus fokus
+  const pool = el("radialGradient", { id: "pool", cx: "50%", cy: "50%", r: "50%" }, defs);
+  el("stop", { offset: "0%", "stop-color": "#F6C7A8", "stop-opacity": 0.20 }, pool);
+  el("stop", { offset: "100%", "stop-color": "#F6C7A8", "stop-opacity": 0 }, pool);
+  el("ellipse", { cx: 1000, cy: GROUND + 40, rx: 340, ry: 90, fill: "url(#pool)" }, gFloor);
+}
+
+/* --------------------------------------------------------------- org kisi
+   Papan promosi: 5 kolom × 6 baris. Titik = jabatan, garis tipis = jalur
+   promosi vertikal. Semua digambar dalam KOORDINAT DUNIA, bukan layar. */
+const ROSELIT = "#F2B79C";
+const COL = [660, 830, 1000, 1170, 1340];
+const ROW = [860, 730, 600, 470, 340, 210];   // makin ke atas makin tinggi, jarak sama
+const NODES = [];
+for (let c = 0; c < COL.length; c++) {
+  for (let r = 0; r < ROW.length; r++) {
+    NODES.push({ c, r, x: COL[c], y: ROW[r] });
+  }
+}
+// jalur promosi (garis vertikal tipis)
+for (let c = 0; c < COL.length; c++) {
+  el("rect", { x: COL[c] - 0.5, y: ROW[ROW.length - 1], width: 1,
+    height: ROW[0] - ROW[ROW.length - 1], fill: "#5E6C8C", opacity: 0.22 }, gGrid);
+}
+/* Kisi ini bukan grafik abstrak: tiap titik adalah satu meja kerja —
+   dudukan (garis pendek) + pundak (kapsul kecil). Pada ukuran kecil terbaca
+   sebagai deretan orang; dari dekat terbaca sebagai diagram. */
+const nodeNodes = NODES.map((n) => {
+  const g = el("g", {}, gGrid);
+  const halo = el("circle", { cx: n.x, cy: n.y, r: 17, fill: "url(#glow)", opacity: 0.12 }, g);
+  // kedalaman semu: kolom luar lebih redup (jauh dari pusat perhatian) dan
+  // baris atas lebih redup (terpapar kabut)
+  const depthK = (1 - Math.abs(n.c - 2) / 4) * 0.55 + 0.45;
+  const heightK = 0.62 + 0.38 * (n.r / (ROW.length - 1));
+  const k = depthK * heightK;
+  const seat = el("rect", { x: n.x - 8, y: n.y + 6, width: 16, height: 1.6,
+    rx: 0.8, fill: "#6F7E9C", opacity: (0.34 * k).toFixed(3) }, g);
+  const body = el("rect", { x: n.x - 5.6, y: n.y - 4, width: 11.2, height: 9,
+    rx: 4.6, fill: "#8B9AB8", opacity: (0.5 * k).toFixed(3) }, g);
+  const head = el("circle", { cx: n.x, cy: n.y - 8, r: 3.1, fill: "#A8B6D2",
+    opacity: (0.55 * k).toFixed(3) }, g);
+  const dot = el("circle", { cx: n.x, cy: n.y, r: 0, fill: CT.rose }, g);
+  return { ...n, g, halo, seat, body, head, dot };
+});
+
+// kolom tengah: jalur promosi digambar lebih tegas + garis rongga di tiap jenjang
+for (let r = 0; r < ROW.length - 1; r++) {
+  el("rect", { x: COL[2] - 0.8, y: ROW[r + 1], width: 1.6, height: ROW[r] - ROW[r + 1],
+    fill: CT.rose, opacity: 0.16 }, gGrid);
+}
+
+/* satu simpul istimewa: kolom tengah, baris bawah */
+const HERO = nodeNodes.find((n) => n.c === 2 && n.r === 0);
+HERO.content = el("circle", { cx: HERO.x, cy: HERO.y, r: 8.5, fill: CT.cream }, gGrid);
+
+/* ---------------------------------------------------------------- karakter */
+const J = await (await fetch("/assets/char-joints.json")).json();
+const CL = J.clips;
+
+const trailGlow = el("path", { fill: "none", stroke: CT.lilac, "stroke-width": 11,
+  opacity: 0.10, "stroke-linecap": "round" }, gThread);
+const trail = el("path", { fill: "none", stroke: CT.lilac, "stroke-width": 2.8,
+  "stroke-linecap": "round" }, gThread);
+
+const figG = el("g", {}, gChar);
+const FIG = new Character(figG);
+
+/* ------------------------------------------------------------- dunia nyata
+   Gerak karakter: berjalan masuk (0–3.4), berhenti & mengikat (3.4–6.6),
+   lalu berdiri menahan benang (6.6–13).                                        */
+const hipX = (name, t) => {
+  const ps = CL[name].poses;
+  return ps[Math.max(0, Math.min(ps.length - 1, Math.round(t * FPS)))].hip[0];
+};
+const WALK_IN = 3.4;
+const START_X = 300;
+const STOP_X = 760;                     // pinggul berhenti di sini (dunia)
+
+function charState(t) {
+  if (t < WALK_IN) {
+    const tt = t;
+    const hipW = START_X + (hipX("walk", tt) - hipX("walk", 0));
+    return { clip: "walk", tt, hipW, mode: "walk" };
+  }
+  if (t < WALK_IN + 3.2) {
+    const tt = clamp((t - WALK_IN) * 1.0, 0, 3.15);
+    return { clip: "tie", tt, hipW: STOP_X, mode: "tie" };
+  }
+  return { clip: "idle", tt: (t - WALK_IN - 3.2) % 8, hipW: STOP_X, mode: "idle" };
+}
+
+/* ---------------------------------------------------------------- kamera
+   cam = titik DUNIA yang diletakkan di tengah frame. Saat berjalan, cam
+   mengikuti pinggul → kaki tidak tergelincir. Setelah berhenti, kamera
+   meninggalkan karakter sedikit dan naik mengikuti simpul yang dipromosikan. */
+const NODE_START = [COL[2], ROW[0]];
+const riseAt = (t) => {
+  // promosi: 5 kenaikan, mulai 6.2 dtk, tiap kenaikan 1.05 dtk
+  const u = clamp((t - 6.2) / 5.6);
+  const s = E.ioC(u) * 5;
+  const i = Math.floor(s), f = s - i;
+  const y0 = ROW[Math.min(5, i)], y1 = ROW[Math.min(5, i + 1)];
+  const pop = 1 + 0.22 * Math.sin(Math.PI * Math.min(1, f * 1.6));
+  return { y: lerp(y0, y1, E.outQ(clamp(f * 1.25))), step: i, f, pop };
+};
+
+function camAt(t) {
+  const cs = charState(t);
+  const p = CL[cs.clip].poses[Math.max(0, Math.min(CL[cs.clip].poses.length - 1,
+    Math.round(cs.tt * FPS)))];
+  const hipXW = cs.hipW;
+  const hipYW = (cs.mode === "walk" ? GROUND - 940 : 0) + p.hip[1];
+
+  if (t < WALK_IN) {
+    return { x: hipXW + 210, y: 700, z: lerp(1.02, 1.10, E.ioC(t / WALK_IN)) };
+  }
+  if (t < 6.0) {
+    const u = E.ioC(clamp((t - WALK_IN) / 2.6));
+    return { x: lerp(hipXW + 210, 880, u), y: lerp(700, 720, u), z: lerp(1.10, 1.06, u) };
+  }
+  /* Kamera akhir harus memuat DUA hal sekaligus: kaki karakter (y=900) dan
+     simpul di puncak (y=210). Rentang itu 690 px — pas di 1080 pada zoom 1.
+     Jadi kamera akhir adalah zoom-out yang tenang, bukan push-in: kalau
+     di-push, salah satu ujung hilang dari frame. */
+  const r = riseAt(t);
+  const u = E.ioC(clamp((t - 6.0) / 5.2));
+  return {
+    x: lerp(900, 940, u),
+    y: lerp(620, lerp(560, 500, E.ioC(clamp((t - 11.4) / 1.4))), u),
+    z: lerp(1.20, lerp(0.94, 0.88, E.ioC(clamp((t - 11.4) / 1.4))), u),
+  };
+}
+
+function applyCam(t) {
+  const c = camAt(t);
+  const cam = { x: c.x - 960, y: c.y - 540, zoom: c.z };
+  for (const k in LAYERS) {
+    const { g, z } = LAYERS[k];
+    const st = camStyle(cam, z, 700, (k === "sky" || k === "stars") ? 0 : 1);
+    g.setAttribute("transform", st.transform);
+    if (k !== "sky" && k !== "stars") g.style.filter = st.filter;
+  }
+  WORLD.setAttribute("transform",
+    `translate(960 540) scale(${c.z.toFixed(4)}) translate(${(-c.x).toFixed(2)} ${(-c.y).toFixed(2)})`);
+}
+
+/* ---------------------------------------------------------------- render */
+window.renderAt = async (t) => {
+  applyCam(t);
+  const cs = charState(t);
+  const clip = CL[cs.clip];
+  const p = clip.poses[Math.max(0, Math.min(clip.poses.length - 1, Math.round(cs.tt * FPS)))];
+  /* PENEMPATAN. Kaki boleh menapak di ketinggian berbeda tergantung klip
+     (tie berdiri di puncak tangga rig, walk di lantai). Jadi permukaan acuan
+     diambil dari DATA frame ini, bukan dari konstanta 940: telapak terendah
+     pada frame itu diletakkan tepat di GROUND.
+     Dua kesalahan sebelumnya: (a) lupa suku skala, (b) memakai 940 tetap. */
+  const s = 0.92;
+  const soleRig = Math.max(p.legL[2][1], p.legR[2][1]) + 19.2;
+  const hipY = GROUND + s * (p.hip[1] - soleRig);
+  figG.setAttribute("transform",
+    `translate(${cs.hipW.toFixed(2)} ${hipY.toFixed(2)}) scale(${s}) translate(${(-p.hip[0]).toFixed(2)} ${(-p.hip[1]).toFixed(2)})`);
+  FIG.draw(clip, cs.tt, { ground: () => 940 });
+
+  /* ---- benang: dari tangan ke simpul, dan simpul itu naik ---- */
+  const handW = [cs.hipW + s * (p.armL[2][0] - p.hip[0]),
+                 hipY + s * (p.armL[2][1] - p.hip[1])];
+  const tieMoment = 4.9;                       // saat simpul benar-benar terikat
+  const tied = t > tieMoment;
+
+  const r = riseAt(t);
+  const heroX = COL[2];
+  const heroY = tied ? r.y : ROW[0];
+
+  if (tied) {
+    const sag = 26 + 12 * Math.sin(t * 1.7);
+    const cx = (handW[0] + heroX) * 0.5;
+    const cy = (handW[1] + heroY) * 0.5 + sag;
+    const d = `M${handW[0].toFixed(1)} ${handW[1].toFixed(1)}`
+      + `Q${cx.toFixed(1)} ${cy.toFixed(1)} ${heroX.toFixed(1)} ${heroY.toFixed(1)}`;
+    trail.setAttribute("d", d);
+    trailGlow.setAttribute("d", d);
+    trail.setAttribute("opacity", 0.62);
+  } else {
+    // sebelum terikat: benang menggantung dari tangan, belum menyentuh apa pun
+    const d = `M${handW[0].toFixed(1)} ${handW[1].toFixed(1)}`
+      + `Q${(handW[0] - 40).toFixed(1)} ${(handW[1] + 60).toFixed(1)} `
+      + `${(handW[0] - 76).toFixed(1)} ${(handW[1] + 44).toFixed(1)}`;
+    trail.setAttribute("d", d);
+    trailGlow.setAttribute("d", d);
+    trail.setAttribute("opacity", 0.4);
+  }
+
+  /* ---- simpul istimewa ---- */
+  HERO.content.setAttribute("cx", heroX);
+  HERO.content.setAttribute("cy", heroY);
+  HERO.content.setAttribute("r", (8.5 * (tied ? r.pop : 1)).toFixed(2));
+  HERO.halo.setAttribute("cx", heroX);
+  HERO.halo.setAttribute("cy", heroY);
+  HERO.halo.setAttribute("r", (tied ? 26 + 6 * Math.sin(t * 3) : 16).toFixed(1));
+  HERO.halo.setAttribute("opacity", tied ? 0.5 : 0.22);
+
+  // di puncak (setelah 5 kenaikan) simpul jadi KOSONG: cangkang, bukan isi
+  const reachedTop = tied && r.step >= 5 && t > 11.6;
+  if (reachedTop) {
+    HERO.content.setAttribute("fill", "none");
+    HERO.content.setAttribute("stroke", CT.cream);
+    HERO.content.setAttribute("stroke-width", 2.6);
+    HERO.content.setAttribute("opacity", 0.95);
+    HERO.content.setAttribute("r", (8.5 * (1 + 0.06 * Math.sin(t * 2.4))).toFixed(2));
+    HERO.halo.setAttribute("r", (34 + 8 * Math.sin(t * 2.4)).toFixed(1));
+    HERO.halo.setAttribute("opacity", 0.34);
+  } else {
+    HERO.content.setAttribute("fill", CT.cream);
+    HERO.content.setAttribute("stroke", "none");
+    HERO.content.setAttribute("opacity", 1);
+  }
+
+  // jejak: setiap jabatan yang ditinggalkan jadi titik rose pudar
+  if (tied) {
+    for (let i = 0; i < 6; i++) {
+      const n = nodeNodes.find((q) => q.c === 2 && q.r === i);
+      const passed = r.step > i || (r.step === i && r.f > 0.15);
+      const col = passed ? CT.rose : "#8B9AB8";
+      if (!passed) { continue; }
+      n.body.setAttribute("fill", col);
+      n.head.setAttribute("fill", ROSELIT);
+      n.body.setAttribute("opacity", 0.9);
+      n.halo.setAttribute("opacity", 0.3);
+    }
+  }
+
+  // node lain berdenyut pelan, tidak sinkron — supaya kisi terasa hidup
+  for (let i = 0; i < nodeNodes.length; i++) {
+    const n = nodeNodes[i];
+    if (n.c === 2) continue;
+    const ph = (i * 1.7) % 6.283;
+    const k = 0.34 + 0.16 * (0.5 + 0.5 * Math.sin(t * 1.1 + ph));
+    n.body.setAttribute("opacity", k.toFixed(3));
+    n.head.setAttribute("opacity", (k + 0.1).toFixed(3));
+  }
+
+  const fin = E.ioQ(inv(0, 0.7, t));
+  const fout = 1 - E.ioQ(inv(DUR - 0.8, DUR, t));
+  S.style.opacity = Math.min(fin, fout).toFixed(3);
+};
+
+await window.renderAt(0);
+window.__ready = true;
+</script>
+</body>
+</html>

@@ -292,7 +292,82 @@ def build_reel(dur):
     return st
 
 
-PRESETS = {"climb": build_climb, "reel": build_reel}
+def build_promo(dur):
+    """Bunyi untuk scene papan promosi 13 dtk.
+
+    Tiga lapis, sesuai isi gambarnya:
+      * ambience ruang besar (dengung rendah, bukan angin)
+      * langkah kaki: 6 langkah saat masuk, lalu diam (dia berhenti mengikat)
+      * nada naik: tiap kali simpul naik satu jenjang, satu nada — tangga
+        pentatonik, jadi rasanya menanjak, bukan acak
+      * satu nada tinggi kosong saat simpul berubah jadi cincin kosong
+    """
+    n = int(dur * SR)
+    L = np.zeros(n, np.float32)
+    R = np.zeros(n, np.float32)
+
+    def place(buf, x, at, gain):
+        i = int(at * SR)
+        if i >= n:
+            return
+        m = min(len(x), n - i)
+        buf[i:i + m] += x[:m] * gain
+
+    # ambience: dengung ruang, dua sinus rendah yang saling bergeser
+    tt = np.arange(n) / SR
+    room = (0.5 * np.sin(2 * np.pi * 55 * tt + 0.6 * np.sin(2 * np.pi * 0.13 * tt))
+            + 0.3 * np.sin(2 * np.pi * 82.5 * tt + 0.9 * np.sin(2 * np.pi * 0.09 * tt)))
+    room = room.astype(np.float32) * 0.05
+    L += room
+    R += np.roll(room, 2400) * 0.9
+
+    # langkah: 6 langkah dari 0.2 sampai 3.2 dtk
+    rng = np.random.default_rng(311)
+    step = bandpass(rng.normal(0, 1, int(0.11 * SR)).astype(np.float32), 200, 2200)
+    step *= np.exp(-np.arange(len(step)) / SR * 46)
+    for k in range(6):
+        at = 0.22 + k * 0.52
+        place(L, step, at, 0.06)
+        place(R, step, at + 0.005, 0.055)
+
+    # nada naik: pentatonik 5 jenjang, mulai saat simpul mulai naik
+    PENT = [392.0, 440.0, 523.25, 587.33, 698.46]
+    for k, f in enumerate(PENT):
+        at = 6.30 + k * 1.06
+        m = int(1.5 * SR)
+        t2 = np.arange(m) / SR
+        tone = (np.sin(2 * np.pi * f * t2) * 0.6
+                + np.sin(2 * np.pi * f * 2 * t2) * 0.16
+                + np.sin(2 * np.pi * f * 3 * t2) * 0.05).astype(np.float32)
+        tone *= np.exp(-t2 * 2.0) * np.clip(t2 / 0.05, 0, 1)
+        place(L, tone, at, 0.13)
+        place(R, tone, at + 0.014, 0.12)
+
+    # cincin kosong: nada tinggi tanpa dasar (hanya harmonik ganjil)
+    at = 11.62
+    m = int(1.7 * SR)
+    t3 = np.arange(m) / SR
+    hollow = (np.sin(2 * np.pi * 1174.7 * t3) * 0.4
+              + np.sin(2 * np.pi * 1760 * t3) * 0.22
+              + np.sin(2 * np.pi * 2349 * t3) * 0.1).astype(np.float32)
+    hollow *= np.exp(-t3 * 1.5) * np.clip(t3 / 0.25, 0, 1)
+    place(L, hollow, at, 0.085)
+    place(R, hollow, at + 0.02, 0.08)
+
+    L = reverb(L, 0.42)
+    R = reverb(R, 0.42)
+
+    st = np.stack([L, R], axis=1)
+    fade = int(0.4 * SR)
+    st[:fade] *= np.linspace(0, 1, fade)[:, None]
+    st[-int(0.9 * SR):] *= np.linspace(1, 0, int(0.9 * SR))[:, None]
+    pk = np.abs(st).max()
+    if pk > 0:
+        st = st / pk * 0.70
+    return st
+
+
+PRESETS = {"climb": build_climb, "reel": build_reel, "promo": build_promo}
 
 
 def main():
