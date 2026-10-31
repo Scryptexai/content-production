@@ -42,11 +42,14 @@ content/
   relationship/              slate v2: 7 naskah riset primer, 7 wilayah, 7 struktur
 automation/zernio/           kanal, kalender 105 post, runner lokal
 automation/validate_pieces.py  QC slate v2 (struktur, label fakta, frasa terlarang)
-automation/credential-broker/  jalur permintaan kredensial API pihak ketiga
-                             (Permit.io sebagai PDP, runtime Vercel, rahasia di server)
 playbook/kepatuhan.md        label AI, klaim, disclosure affiliate
 projects/tropical-climate/   M1: pipeline film panjang (Remotion), acuan gaya
 ```
+
+> **Credential broker pindah.** Jalur permintaan kredensial API (Permit.io sebagai
+> PDP, runtime Vercel) tidak lagi di repo ini. Sekarang berdiri sendiri sebagai
+> repo infra terpisah, karena ia tidak ada hubungannya dengan produksi konten dan
+> punya siklus deploy sendiri.
 
 ---
 
