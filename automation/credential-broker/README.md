@@ -6,6 +6,10 @@ tinggal di vault dan **tidak pernah sampai ke klien**.
 
 Runtime: **Vercel** (Node serverless, tanpa dependensi runtime).
 
+> **Baru mulai di sini?** Baca [`SETUP.md`](SETUP.md) — langkah demi langkah,
+> termasuk ke mana tiap jenis rahasia harus ditaruh dan cara membuktikan
+> koneksi ke akun Permit benar-benar jalan.
+
 ```
 klien (agent / service / app)
    │
@@ -192,7 +196,7 @@ Balasannya adalah balasan OpenAI apa adanya. Kunci tidak muncul di mana pun.
 | `action` | tidak | default dari registry |
 | `attributes` | tidak | atribut ABAC untuk Permit |
 | `context` | tidak | context ABAC untuk Permit |
-| `mode` | tidak | `proxy` (default) atau `claim` |
+| `mode` | tidak | `proxy` (default), `claim`, atau `probe` |
 
 ---
 
@@ -279,8 +283,16 @@ revoke all on function public.get_secret(text) from public, anon, authenticated;
 ## 8. Uji
 
 ```bash
-npm test               # 53 unit + integrasi, fetch di-mock
+npm test               # 56 unit + integrasi, fetch di-mock
 node scripts/smoke.mjs # 13 pemeriksaan lewat HTTP sungguhan di loopback
+```
+
+Skrip bantu untuk menyiapkan dan memeriksa akun Permit asli:
+
+```bash
+node --env-file=.env scripts/verify.mjs         # uji koneksi + diagnosis per kode HTTP
+node --env-file=.env scripts/seed-permit.mjs    # rencana resource/action/role (dry run)
+node --env-file=.env scripts/seed-permit.mjs --apply
 ```
 
 Keduanya berjalan tanpa internet dan tanpa kredensial asli: PDP dan upstream
@@ -307,6 +319,9 @@ src/upstreams.js     registry upstream + validasi path + penyaringan header
 src/vault.js         pembacaan rahasia (env / Supabase Vault)
 src/audit.js         pencatatan audit
 src/http.js          helper HTTP kecil
+SETUP.md             panduan setup: rahasia mana di mana, cara uji bertahap
 scripts/smoke.mjs    uji end-to-end lewat socket sungguhan
+scripts/verify.mjs   uji koneksi ke Permit + diagnosis kode HTTP
+scripts/seed-permit.mjs  buat resource/action/role sesuai registry (dry run default)
 test/                unit + integrasi (node:test, tanpa dependensi)
 ```

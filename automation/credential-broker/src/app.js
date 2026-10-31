@@ -89,8 +89,12 @@ export function createApp({
       const upstream = resolveUpstream(upstreamName, registry);
 
       mode = body.mode === undefined ? 'proxy' : body.mode;
-      if (mode !== 'proxy' && mode !== 'claim') {
-        throw new HttpError(400, 'invalid_mode', "Field \"mode\" harus 'proxy' atau 'claim'");
+      if (mode !== 'proxy' && mode !== 'claim' && mode !== 'probe') {
+        throw new HttpError(
+          400,
+          'invalid_mode',
+          "Field \"mode\" harus 'proxy', 'claim', atau 'probe'",
+        );
       }
 
       const tenant = typeof body.tenant === 'string' && body.tenant ? body.tenant : 'default';
@@ -109,6 +113,27 @@ export function createApp({
         attributes,
         context,
       });
+
+      // 3b. Mode probe — hanya melaporkan keputusan policy.
+      // Tidak menyentuh vault dan tidak memanggil upstream, jadi aman dipakai
+      // untuk mendiagnosis koneksi ke Permit tanpa membocorkan rahasia apa pun.
+      if (mode === 'probe') {
+        outcome = decision.allow ? 'allowed' : 'denied';
+        detail = 'probe';
+        await finish(200, {
+          allow: decision.allow,
+          pdp: config.permitPdpUrl,
+          subject,
+          action,
+          resource: {
+            type: upstream.resourceType,
+            key: upstream.resourceKey,
+            tenant,
+          },
+          request_id: requestId,
+        });
+        return;
+      }
 
       if (!decision.allow) {
         outcome = 'denied';

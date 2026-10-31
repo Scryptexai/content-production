@@ -270,3 +270,46 @@ test('kegagalan audit tidak menggagalkan permintaan yang sudah allow', async () 
 
   assert.equal(res.statusCode, 200);
 });
+
+test('mode probe → 200 dengan keputusan, tanpa menyentuh vault atau upstream', async () => {
+  delete process.env.DUMMY_API_KEY; // kalau probe menyentuh vault, ini akan meledak
+  const { app, fetchImpl } = build({ routes: [PDP_ALLOW] });
+
+  const res = makeRes();
+  await app(
+    makeReq({ headers: goodAuth, body: { upstream: 'dummy', mode: 'probe' } }),
+    res,
+  );
+
+  process.env.DUMMY_API_KEY = 'rahasia-asli-dummy';
+
+  assert.equal(res.statusCode, 200);
+  assert.equal(res.json.allow, true);
+  assert.equal(res.json.pdp, 'https://pdp.test');
+  assert.deepEqual(res.json.resource, {
+    type: 'third_party_api',
+    key: 'dummy',
+    tenant: 'default',
+  });
+  assert.equal(fetchImpl.callsTo('https://dummy.test').length, 0, 'upstream tidak boleh dihubungi');
+});
+
+test('mode probe saat policy menolak tetap 200, allow:false', async () => {
+  const { app, fetchImpl } = build({ routes: [PDP_DENY] });
+
+  const res = makeRes();
+  await app(makeReq({ headers: goodAuth, body: { upstream: 'dummy', mode: 'probe' } }), res);
+
+  assert.equal(res.statusCode, 200);
+  assert.equal(res.json.allow, false);
+  assert.equal(fetchImpl.callsTo('https://dummy.test').length, 0);
+});
+
+test('mode probe tidak membocorkan rahasia', async () => {
+  const { app } = build({ routes: [PDP_ALLOW] });
+
+  const res = makeRes();
+  await app(makeReq({ headers: goodAuth, body: { upstream: 'dummy', mode: 'probe' } }), res);
+
+  assert.ok(!res.body.includes('rahasia-asli-dummy'));
+});
