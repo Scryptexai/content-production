@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="ODDCHAPTER concept 02 — construction">
+<title>ODDCHAPTER concept 02 — construction</title>
+<defs></defs>
+<rect width="1200" height="1200" fill="#F4F0E8"/>
+<line x1="281.633" y1="114.49" x2="281.633" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="361.225" y1="114.49" x2="361.225" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="440.817" y1="114.49" x2="440.817" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="520.408" y1="114.49" x2="520.408" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="600" y1="114.49" x2="600" y2="1085.51" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="679.592" y1="114.49" x2="679.592" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="759.184" y1="114.49" x2="759.184" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="838.776" y1="114.49" x2="838.776" y2="1085.51" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="122.449" x2="870.612" y2="122.449" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="202.041" x2="870.612" y2="202.041" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="329.388" y1="281.633" x2="870.612" y2="281.633" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="361.225" x2="870.612" y2="361.225" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="440.817" x2="870.612" y2="440.817" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="520.408" x2="870.612" y2="520.408" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="600" x2="870.612" y2="600" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="329.388" y1="679.592" x2="870.612" y2="679.592" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="759.184" x2="870.612" y2="759.184" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="838.776" x2="870.612" y2="838.776" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="918.368" x2="870.612" y2="918.368" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="329.388" y1="997.959" x2="870.612" y2="997.959" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="329.388" y1="1077.551" x2="870.612" y2="1077.551" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="410.898" y1="210" x2="438.898" y2="210" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="424.898" y1="196" x2="424.898" y2="224" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="761.102" y1="990" x2="789.102" y2="990" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="775.102" y1="976" x2="775.102" y2="1004" stroke="#F26A3D" stroke-width="1.4"/>
+<g transform="translate(202.041 202.041) scale(7.959184)"><path d="M 72 23 A 22 22 0 1 1 28 23 A 22 22 0 1 1 72 23 Z M 60 23 A 10 10 0 1 0 40 23 A 10 10 0 1 0 60 23 Z" fill="#17191D" fill-rule="evenodd"/>
+    <path d="M 67.336 90.545 A 22 22 0 1 1 67.336 63.455 L 57.88 70.843 A 10 10 0 1 0 57.88 83.157 Z" fill="#17191D"/>
+    <path d="M 34.5 45.5 H 65.5 A 4.5 4.5 0 0 1 70 50 V 50 A 4.5 4.5 0 0 1 65.5 54.5 H 34.5 A 4.5 4.5 0 0 1 30 50 V 50 A 4.5 4.5 0 0 1 34.5 45.5 Z" fill="#F26A3D"/></g>
+<rect x="424.898" y="210" width="350.204" height="780" fill="none" stroke="#F26A3D" stroke-width="1.4" stroke-dasharray="10 8"/>
+<line x1="583" y1="385.102" x2="617" y2="385.102" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="600" y1="368.102" x2="600" y2="402.102" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="583" y1="814.898" x2="617" y2="814.898" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="600" y1="797.898" x2="600" y2="831.898" stroke="#F26A3D" stroke-width="1.8"/>
+<text x="210" y="96" font-family="Space Grotesk" font-weight="700" font-size="40" fill="#17191D" text-anchor="start">02 — STACK</text>
+<text x="210" y="130" font-family="Inter" font-weight="600" font-size="14" letter-spacing="2.4" fill="#17191D" text-anchor="start" opacity="0.55">GEOMETRIC CONSTRUCTION · 100 UNIT GRID</text>
+<text x="210" y="1092" font-family="Inter" font-weight="400" font-size="16" fill="#17191D" text-anchor="start" opacity="0.68">gap, so the joint is a real space, not an overlap.</text>
+<text x="210" y="1066" font-family="Inter" font-weight="400" font-size="16" fill="#17191D" text-anchor="start" opacity="0.68">Both letters belong to one radius family (outer 22, counter 10, stroke 12). The rule sits in the 10-unit</text>
+<text x="210" y="1138" font-family="Inter" font-weight="400" font-size="14" fill="#17191D" text-anchor="start" opacity="0.5">Drawing box 44 × 98 u  ·  outer radius 22  ·  counter 10  ·  stroke 12 u  ·  rule 40 × 9 u  ·  mouth 76°</text>
+<text x="990" y="96" font-family="Inter" font-weight="600" font-size="13" letter-spacing="2.2" fill="#F26A3D" text-anchor="end">CONCEPT — NOT A FINAL ASSET</text>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="ODDCHAPTER — social post template 1080 x 1080">
+<title>ODDCHAPTER — social post template 1080 x 1080</title>
+<defs></defs>
+
+<rect width="1080" height="1080" fill="#17191D"/>
+<clipPath id="imgslot"><rect x="72" y="72" width="936" height="560" rx="0"/></clipPath>
+<g clip-path="url(#imgslot)">
+<rect x="72" y="72" width="936" height="560" fill="#0F1114"/>
+<text x="100" y="604" font-family="Inter" font-weight="600" font-size="15" letter-spacing="2.6" fill="#A7B0A1" opacity="0.75">IMAGE SLOT · 936 × 560</text>
+</g>
+<rect x="72" y="72" width="936" height="560" fill="none" stroke="#A7B0A1" stroke-width="1.4" opacity="0.35"/>
+<rect x="72" y="688" width="196" height="34" fill="#F26A3D"/>
+<text x="170" y="711" font-family="Inter" font-weight="700" font-size="15" letter-spacing="2.2" fill="#17191D" text-anchor="middle">KATEGORI</text>
+<text x="72" y="804" font-family="Space Grotesk" font-weight="700" font-size="62" fill="#F4F0E8">Judul cerita</text>
+<text x="72" y="872" font-family="Space Grotesk" font-weight="700" font-size="62" fill="#F4F0E8">dalam dua baris.</text>
+<rect x="72" y="950" width="936" height="2" fill="#A7B0A1" opacity="0.45"/>
+<g transform="translate(71.259 946.963) scale(0.740741)"><path d="M 55 50 A 27 27 0 1 1 1 50 A 27 27 0 1 1 55 50 Z M 42 50 A 14 14 0 1 0 14 50 A 14 14 0 1 0 42 50 Z M 92.065 68.067 A 27 27 0 1 1 92.065 31.933 L 82.404 40.632 A 14 14 0 1 0 82.404 59.368 Z" fill="#F4F0E8" fill-rule="evenodd"/></g>
+<text x="1008" y="976" font-family="Inter" font-weight="500" font-size="17" letter-spacing="2.4" fill="#A7B0A1" text-anchor="end">ODDCHAPTER</text>
+</svg>

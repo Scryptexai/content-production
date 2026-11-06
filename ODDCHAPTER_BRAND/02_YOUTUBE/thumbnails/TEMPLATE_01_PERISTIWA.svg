@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="ODDCHAPTER thumbnail template — extraordinary event">
+<title>ODDCHAPTER thumbnail template — extraordinary event</title>
+<defs></defs>
+
+<rect width="1280" height="720" fill="#17191D"/>
+<clipPath id="slot1"><rect x="0" y="0" width="1280" height="484"/></clipPath>
+<g clip-path="url(#slot1)">
+<rect id="image-slot" x="0" y="0" width="1280" height="484" fill="#0F1114"/>
+<line x1="-484" y1="484" x2="0" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="-388" y1="484" x2="96" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="-292" y1="484" x2="192" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="-196" y1="484" x2="288" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="-100" y1="484" x2="384" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="-4" y1="484" x2="480" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="92" y1="484" x2="576" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="188" y1="484" x2="672" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="284" y1="484" x2="768" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="380" y1="484" x2="864" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="476" y1="484" x2="960" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="572" y1="484" x2="1056" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="668" y1="484" x2="1152" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="764" y1="484" x2="1248" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="860" y1="484" x2="1344" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="956" y1="484" x2="1440" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1052" y1="484" x2="1536" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1148" y1="484" x2="1632" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1244" y1="484" x2="1728" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1340" y1="484" x2="1824" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1436" y1="484" x2="1920" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1532" y1="484" x2="2016" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1628" y1="484" x2="2112" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<line x1="1724" y1="484" x2="2208" y2="0" stroke="#A7B0A1" stroke-width="1" opacity="0.10"/>
+<rect x="20" y="20" width="1240" height="444" fill="none" stroke="#A7B0A1" stroke-width="1.4" opacity="0.22" stroke-dasharray="10 8"/>
+<text x="1248" y="456" font-family="Inter" font-weight="600" font-size="14" letter-spacing="2.6" fill="#A7B0A1" opacity="0.55" text-anchor="end">FOTO · SLOT GAMBAR</text>
+</g>
+<rect x="0" y="484" width="1280" height="236" fill="#17191D"/>
+<rect x="0" y="484" width="1280" height="3" fill="#F26A3D"/>
+<text x="64" y="526" font-family="Inter" font-weight="600" font-size="15" letter-spacing="3.2" fill="#A7B0A1">01 · PERISTIWA LUAR BIASA</text>
+<text x="64" y="596" font-family="Space Grotesk" font-weight="700" font-size="62" fill="#F4F0E8">KAPAL YANG HILANG</text>
+<text x="64" y="662" font-family="Space Grotesk" font-weight="700" font-size="62" fill="#F26A3D">TANPA JEJAK</text>
+<g transform="translate(1102.333 517.593) scale(1.148148)"><path d="M 55 50 A 27 27 0 1 1 1 50 A 27 27 0 1 1 55 50 Z M 42 50 A 14 14 0 1 0 14 50 A 14 14 0 1 0 42 50 Z M 92.065 68.067 A 27 27 0 1 1 92.065 31.933 L 82.404 40.632 A 14 14 0 1 0 82.404 59.368 Z" fill="#F4F0E8" fill-rule="evenodd"/></g>
+<rect x="1120" y="634" width="96" height="3" fill="#A7B0A1" opacity="0.5"/>
+<rect x="64" y="40" width="135" height="36" fill="#F26A3D"/><text x="131.5" y="63.4" font-family="Inter" font-weight="700" font-size="15" letter-spacing="2" fill="#17191D" text-anchor="middle">DOKUMENTER</text>
+</svg>
