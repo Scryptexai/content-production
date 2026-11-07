@@ -1,6 +1,6 @@
 # ODDCHAPTER — Final Delivery Report
 
-**Date:** 2026-11-07 · **Scope:** Phases 1–6 of the brief + Phase 7 extension
+**Date:** 2026-11-07 · **Scope:** Phases 1–6 of the brief + Phase 7 (digital extension) + Phase 8 (print)
 **Status:** Complete and verified, with the open items in §6.
 
 ---
@@ -19,8 +19,9 @@ cannot drift apart. Change a radius there and the whole set rebuilds consistentl
 | `04_MOTION/` | 3 layer files, storyboard, `MOTION_IDENTITY.md`, and `preview/` — 38-frame GIF, 1920 poster, SMIL opener | 5 SVG · 2 PNG · 1 GIF |
 | `05_PREVIEWS/` | concept overview, small-size test, approved refinement, usage sheet, contact sheet | 3 SVG · 5 PNG |
 | `06_EXPORTS/` | favicons 512/192/32, transparent icon 512, primary logo 2000 | 5 PNG |
+| `07_PRINT/` | one-colour 100 K masters, letterhead, card front/back, A2 poster, die-cut sticker, tee art, minimum-size sheet + `PRINT_SPEC.md` | 9 SVG · 7 PNG |
 
-Total: **51 SVG · 54 PNG · 1 GIF · 11 documents.** Everything is on the branch and reproducible.
+Total: **60 SVG · 61 PNG · 1 GIF · 12 documents.** Everything is on the branch and reproducible.
 
 ---
 
@@ -42,6 +43,7 @@ Every claim below was measured in this environment, not assumed.
 | Motion build | 38 frames rendered at 25 fps, coalesced and inspected as a strip | Arrive → lock → wipe → rule → tagline, exactly as timed |
 | SMIL opener | XML parse + timing constants asserted against the spec | Well-formed; `ffmpeg` absent, so it is not video-verified |
 | Phase 7 surfaces | rendered and inspected at true size | Story, cover, OG card and end card all clean; slot hatch fills correctly |
+| Print artwork | parsed mm, rendered at 300/150/90 dpi, inspected | All nine files measure as specified; card, letterhead, poster, sticker, tee and 100 K masters inspected |
 | Font licensing | `LICENSE` inside each `@fontsource` package | Space Grotesk + Inter = SIL OFL 1.1 |
 
 ---
@@ -89,7 +91,7 @@ bash tools/render_all.sh                     # every PNG at its documented size
 | **Original visual reference** | Never supplied. Nothing in these documents claims to measure it. The written brand spec was treated as authoritative. |
 | **MP4 / Lottie** | Still not produced: this host has no `ffmpeg` and installing one was not approved. The build **is** delivered as a rendered 38-frame GIF, a 1920 poster and a self-contained SMIL file, and `tools/build_motion.py` holds the exact frame source — an editor can export a master from any of those in one step. |
 | Stories / reels (1080 × 1920) | Delivered in Phase 7 as real 9:16 layouts, not crops of the square. Animated story templates are not produced (they need their own timing pass). |
-| Print-ready PDF / CMYK | Not produced. The SVGs are the print source; convert to CMYK at the printer's profile and test the orange (`#F26A3D` sits outside CMYK gamut and will shift). |
+| Print colour | Artwork is delivered as **mm-authored SVG**, not PDF/X. CMYK builds in `07_PRINT/PRINT_SPEC.md` are naive conversions, not ICC-managed; the spot match for Signal Orange (Pantone 1655 C / 172 C) is **UNKNOWN until proofed**. |
 | Font files | Deliberately not bundled (OFL prefers linking). Install Space Grotesk + Inter locally to edit the *templates*; the logo files need neither. |
 | Anything uploaded | Nothing has been uploaded, published or connected to a channel account. |
 

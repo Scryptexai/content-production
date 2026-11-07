@@ -40,6 +40,9 @@ R 03_SOCIAL/stories/SOCIAL_STORY_1080x1920.svg       03_SOCIAL/stories/SOCIAL_ST
 R 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.svg 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.png 1080
 R 03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.svg      03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.png 1200
 
+# --- print artwork
+python3 tools/build_print.py
+
 # --- documentation sheets
 python3 tools/build_sheets.py
 R 05_PREVIEWS/USAGE_DO_DONT.svg   05_PREVIEWS/USAGE_DO_DONT.png 2400
@@ -48,6 +51,15 @@ R 04_MOTION/animation_reference/ANIMATION_STORYBOARD.svg 04_MOTION/animation_ref
 
 # --- motion (frames + gif + poster + smil)
 python3 tools/build_motion.py
+
+# --- print previews (SVG is the master; these are for review on screen)
+R 07_PRINT/stationery/BUSINESS_CARD_FRONT_91x61.svg 07_PRINT/previews/BUSINESS_CARD_FRONT_PREVIEW.png 1075
+R 07_PRINT/stationery/BUSINESS_CARD_BACK_91x61.svg  07_PRINT/previews/BUSINESS_CARD_BACK_PREVIEW.png 1075
+R 07_PRINT/stationery/LETTERHEAD_A4_210x297.svg     07_PRINT/previews/LETTERHEAD_PREVIEW.png 1240
+R 07_PRINT/poster/POSTER_A2_420x594.svg             07_PRINT/previews/POSTER_A2_PREVIEW.png 1500
+R 07_PRINT/merch/STICKER_DIECUT_75mm.svg            07_PRINT/previews/STICKER_PREVIEW.png 956
+R 07_PRINT/merch/TEE_ART_A3_297x420.svg             07_PRINT/previews/TEE_ART_PREVIEW.png 1000
+R 07_PRINT/PRINT_SCALE_TEST.svg                     07_PRINT/PRINT_SCALE_TEST.png 1800
 
 # --- favicons / delivery
 R 01_LOGO/dark/ICON_SQUARE_DARK.svg  06_EXPORTS/FAVICON_512.png 512

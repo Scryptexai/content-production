@@ -21,6 +21,7 @@ be rebuilt from that source.
 | 5 | `04_MOTION/MOTION_IDENTITY.md`, `04_MOTION/` | **Complete** — storyboard + 3 layer files |
 | 6 | `BRAND_GUIDELINES.md`, `05_PREVIEWS/` sheets | **Complete** — usage sheet + contact sheet |
 | 7 | Extended surfaces + motion delivery | **Complete** — stories, OG card, end card; rendered 38-frame build + SMIL |
+| 8 | Print & physical applications | **Complete** — 9 mm-authored artworks + `07_PRINT/PRINT_SPEC.md` |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -45,6 +46,7 @@ ODDCHAPTER_BRAND/
 │   ├── build_sheets.py          storyboard, usage sheet, contact sheet
 │   ├── build_extra.py           Phase 7: stories, OG card, end card
 │   ├── build_motion.py          Phase 7: frames, GIF, poster, SMIL opener
+│   ├── build_print.py           Phase 8: mm-authored print artwork
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -59,7 +61,8 @@ ODDCHAPTER_BRAND/
 ├── 03_SOCIAL/   profile · post_templates · stories · link_preview     + README.md
 ├── 04_MOTION/   MOTION_IDENTITY.md · svg_components · animation_reference · preview
 ├── 05_PREVIEWS/ concept overview · small-size test · approved refinement · usage sheet · contact sheet
-└── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
+├── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
+└── 07_PRINT/    PRINT_SPEC.md · one_colour · stationery · poster · merch · previews
 ```
 
 ---
@@ -92,6 +95,7 @@ python3 tools/build_thumbs.py     # thumbnails
 python3 tools/build_sheets.py     # sheets
 python3 tools/build_extra.py      # stories, OG card, end card
 python3 tools/build_motion.py     # 38 frames → GIF + poster + SMIL
+python3 tools/build_print.py      # print artwork (mm) + previews
 bash tools/render_all.sh          # every PNG at its documented size (chains the above)
 ```
 
@@ -124,6 +128,9 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 18 | Motion delivered as GIF + SMIL + poster, not MP4 | No ffmpeg on this host and installing one was not approved; the frame source is in the repo | Done, MP4 open |
 | 19 | Story/vertical assets are separate layouts, not crops | A 9:16 crop of a 16:9 band leaves the headline in the platform's UI zone | Applied |
 | 20 | Hatch segments for image slots are computed inside the box | The naive full-plane hatch crashes resvg on tall canvases | Fixed |
+| 21 | Print artwork is authored in millimetres, never pixels | A printer needs physical measurements; `210mm` cannot be misread as 72 dpi | Applied |
+| 22 | Poster headline is outlined and auto-fitted to the margin | The first render overflowed the trim — live text cannot be size-checked by eye | Fixed |
+| 23 | One-colour masters are true 100 % K, not brand Ink | Ink `#17191D` is a four-colour build; stamps, foil and screen print need one plate | Applied |
 
 ---
 
