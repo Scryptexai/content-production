@@ -34,7 +34,7 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H1  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 146 kata ≈ 60 detik (target 56 s)
+**Durasi:** 110 kata ≈ 45 detik (target 56 s)
 
 ---
 
@@ -62,17 +62,14 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 
 | bagian | VO |
 |---|---|
-| SETUP | Eilean Mòr. Satu pulau batu di lepas Skotlandia. |
-| SETUP | Yang ada hanya menara, dan tiga orang yang tinggal di dalamnya. |
+| SETUP | Eilean Mòr. Satu pulau batu di lepas Skotlandia. Tiga penjaga tinggal di menaranya. |
 | TENSION | Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati. |
-| TENSION | Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari. |
+| TENSION | Laporan itu sampai ke darat. Tidak ada yang naik selama sebelas hari. |
 | TENSION | 26 Desember, kapal tender akhirnya sampai. Pintunya terkunci dari dalam. |
-| TENSION | Jam di menara berhenti. Pekerjaan pagi itu selesai semua. |
+| TENSION | Jam di menara berhenti. Kerja pagi itu selesai semua. |
 | TURN | Dia keluar cepat, dalam hujan, tanpa pakaian itu. |
 | TURN | Kalimat indah yang kita kutip seratus tahun itu tidak ada di arsip. |
-| TURN | Kalimat itu tidak pernah ada di arsip. Buku harian itu ditambahkan puluhan tahun kemudian. |
-| CONSEQUENCE | Yang tercatat hanya badai, dermaga barat yang rusak, dan tiga pria yang turun menjaganya. |
-| CONSEQUENCE | Tidak satu pun mayat pernah ditemukan. Yang tertinggal hanya pakaian itu. |
+| CONSEQUENCE | Tidak satu pun mayat ditemukan. Yang tertinggal hanya pakaian itu. |
 
 ## 3 · TURN
 

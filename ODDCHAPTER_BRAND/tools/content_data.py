@@ -35,23 +35,21 @@ EPISODES = [
         celah="Kenapa satu penjaga keluar tanpa pakaian tahan airnya?",
         gambar_melekat="Satu set pakaian tahan air tergantung di gantungan, tidak ada yang mengambilnya.",
         beats=[
-            ("setup", "Eilean Mòr. Satu pulau batu di lepas Skotlandia."),
-            ("setup", "Yang ada hanya menara, dan tiga orang yang tinggal di dalamnya."),
+            ("setup", "Eilean Mòr. Satu pulau batu di lepas Skotlandia. Tiga penjaga tinggal di menaranya."),
             ("tension", "Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati."),
-            ("tension", "Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari."),
+            ("tension", "Laporan itu sampai ke darat. Tidak ada yang naik selama sebelas hari."),
             ("tension", "26 Desember, kapal tender akhirnya sampai. Pintunya terkunci dari dalam."),
-            ("tension", "Jam di menara berhenti. Pekerjaan pagi itu selesai semua."),
+            ("tension", "Jam di menara berhenti. Kerja pagi itu selesai semua."),
             ("turn", "Dia keluar cepat, dalam hujan, tanpa pakaian itu."),
             ("turn", "Kalimat indah yang kita kutip seratus tahun itu tidak ada di arsip."),
-            ("turn", "Kalimat itu tidak pernah ada di arsip. Buku harian itu ditambahkan puluhan tahun kemudian."),
-            ("consequence", "Yang tercatat hanya badai, dermaga barat yang rusak, dan tiga pria yang turun menjaganya."),
-            ("consequence", "Tidak satu pun mayat pernah ditemukan. Yang tertinggal hanya pakaian itu."),
+            ("consequence", "Tidak satu pun mayat ditemukan. Yang tertinggal hanya pakaian itu."),
         ],
         turn_quote="“Laut tenang. Tuhan di atas semua.”",
         turn_verdict="Sesuatu terjadi setelah kerja selesai. Kalimat dramatisnya ditambahkan kemudian.",
         loop="Pakaian itu masih di gantungan, dan laut menyimpan sisanya seratus dua puluh enam tahun.",
-        cues=["DES 1900", "SEBELAS HARI", "LAMPU SUDAH BERSIH", "PAKAIAN TERTINGGAL", "TANPA MAYAT"],
+        cues=["DES 1900 · LAMPU MATI", "SEBELAS HARI", "PINTU TERKUNCI", "JAM BERHENTI", "TANPA MAYAT"],
         visual="Menara di garis horizon; satu gantungan kosong di dalam; laut yang tidak bergerak.",
+        plate="tower",
         sumber="VERIFIED — Northern Lighthouse Board, nlb.org.uk/history/flannan-isles/. Hilang setelah kerja pagi 15 Des 1900; Archtor mencatat lampu mati; laporan diterima 18 Des; Hesperus tiba 26 Des; lampu bersih, minyak penuh; satu set oilskins tertinggal. Buku harian dramatis = tambahan fiktif (Mike Dash, Fortean Times).",
     ),
     dict(
@@ -85,6 +83,7 @@ EPISODES = [
         loop="Sembilan orang keluar dari tenda mereka sendiri, dan satu pertanyaan tetap tinggal.",
         cues=["URAL 1959", "TENDA DIPOTONG", "9 ORANG", "-30°C", "4 DI JURANG"],
         visual="Tenda tunggal di salju; kain sobek terbuka ke arah kamera; jejak kaki tanpa sepatu.",
+        plate="shelter",
         sumber="NEEDS-SOURCE — Insiden Celah Dyatlov 1959; hipotesis longsoran 2021 (Communications Earth & Environment) belum dibaca langsung.",
     ),
     dict(
@@ -117,6 +116,7 @@ EPISODES = [
         loop="Sepuluh orang memilih sekoci. Pilihan itu yang tidak pernah bisa dijelaskan.",
         cues=["5 DES 1872", "MARY CELESTE", "MUATAN UTUH", "JURNAL BERHENTI", "SEKOCI HILANG"],
         visual="Lambung kapal di kabut; deret tong di palka; sekoci kosong di atas air.",
+        plate="vessel",
         sumber="NEEDS-SOURCE — Kasus Mary Celeste 1872; laporan admiralty belum dibaca langsung.",
     ),
     dict(
@@ -150,6 +150,7 @@ EPISODES = [
         loop="Pintu mobil itu dibiarkan tidak dikunci. Dan pria kelima tidak pernah turun dari bukit.",
         cues=["FEB 1978", "PINTU TERBUKA", "TANGKI PENUH", "9 MIL", "1 TIDAK DITEMUKAN"],
         visual="Mobil tertutup salju dari belakang; jejak kaki menanjak; pos jaga hutan gelap.",
+        plate="road",
         sumber="NEEDS-SOURCE — Yuba County Five 1978; laporan resmi belum dibaca langsung.",
     ),
     dict(
@@ -183,6 +184,7 @@ EPISODES = [
         loop="Rumah-rumah itu dibongkar rapi karena mereka memang pindah. Seratus lima belas orang berjalan ke selatan.",
         cues=["1587", "115 ORANG", "CROATOAN", "TANPA SALIB", "TANPA KUBURAN"],
         visual="Pagar kayu dengan satu kata; rumah yang dibongkar rapi; pesisir kosong.",
+        plate="ridge",
         sumber="NEEDS-SOURCE — Koloni Roanoke 1587–1590; teori asimilasi Croatoan/Lumbee masih hipotesis.",
     ),
     dict(
@@ -215,6 +217,7 @@ EPISODES = [
         loop="Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.",
         cues=["1962", "CENTRALIA", "CO DI JALAN", "1992 DIKOSONGKAN", "MASIH MENYALA"],
         visual="Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah yang dibongkar.",
+        plate="road",
         sumber="NEEDS-SOURCE — Kebakaran tambang Centralia 1962–sekarang; data sensus 2020 belum dikutip.",
     ),
     dict(
@@ -248,6 +251,7 @@ EPISODES = [
         loop="Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.",
         cues=["31 MAR 1922", "6 ORANG", "JEJAK 1 ARAH", "LOTENG", "KASUS TERBUKA"],
         visual="Atap bersalju dengan satu jalur jejak; denah rumah dengan loteng disorot; perapian dingin.",
+        plate="shelter",
         sumber="NEEDS-SOURCE — Pembunuhan Hinterkaifeck 1922; berkas investigasi belum dibaca langsung.",
     ),
     dict(
@@ -280,6 +284,7 @@ EPISODES = [
         loop="Sembilan nama, satu wajah, dan tidak satu pun yang benar.",
         cues=["NOV 1970", "9 NAMA", "LABEL DIPOTONG", "KODE ANGKA", "TANPA NAMA"],
         visual="Koper terbuka di lantai stasiun; label pakaian yang dipotong; lembah berbatu berkabut.",
+        plate="paper",
         sumber="NEEDS-SOURCE — Isdal Woman 1970; investigasi NRK/BBC belum dibaca langsung.",
     ),
     dict(
@@ -312,6 +317,7 @@ EPISODES = [
         loop="Kertas di sakunya masih dua kata, dan namanya baru diketahui setelah tujuh puluh empat tahun.",
         cues=["1 DES 1948", "TAMAM SHUD", "TANPA ID", "2022: DNA", "CARL WEBB"],
         visual="Pantai fajar dengan satu sosok; buku puisi terbuka dengan huruf acak.",
+        plate="paper",
         sumber="NEEDS-SOURCE — Kasus Somerton Man; identifikasi 2022 (Colleen Fitzpatrick) belum dibaca langsung.",
     ),
     dict(
@@ -344,6 +350,7 @@ EPISODES = [
         loop="Dua orang. Satu bahasa. Dan satu keputusan yang mengakhiri keduanya.",
         cues=["1963 WALES", "BAHASA SENDIRI", "NOVEL & PUISI", "DIPISAHKAN", "1993 · 1994"],
         visual="Dua sosok identik membelakangi kamera; buku catatan dengan tulisan tak terbaca.",
+        plate="paper",
         sumber="NEEDS-SOURCE — June dan Jennifer Gibbons; liputan Marjorie Wallace belum dibaca langsung.",
     ),
 
@@ -379,6 +386,7 @@ EPISODES = [
         loop="Tujuh puluh dua detik. Sejak itu, tidak ada apa-apa. Hanya satu kata di pinggir kertas.",
         cues=["15 AGU 1977", "6EQUJ5", "1420 MHz", "72 DETIK", "TIDAK PERNAH LAGI"],
         visual="Kertas printer dengan huruf 6EQUJ5; grafik 72 detik; peta langit kosong.",
+        plate="signal",
         sumber="NEEDS-SOURCE — Wow! signal, Ohio State 1977; semua pencarian ulang gagal.",
     ),
     dict(
@@ -411,6 +419,7 @@ EPISODES = [
         loop="Mereka berhenti menari. Tapi tidak ada yang tahu bagaimana tarian itu dimulai.",
         cues=["JULI 1518", "STRASBOURG", "400 ORANG", "TANPA MUSIK", "SEBAGIAN MENINGGAL"],
         visual="Kaki di batu jalan; siluet orang menari tanpa wajah; panggung kosong.",
+        plate="road",
         sumber="NEEDS-SOURCE — Dancing plague 1518; kronik kota belum dibaca langsung.",
     ),
     dict(
@@ -443,6 +452,7 @@ EPISODES = [
         loop="Dua pria menunggu di bukit itu. Sampai sekarang tidak ada yang tahu siapa yang mereka tunggu.",
         cues=["20 AGU 1966", "2 PRIA", "MASKER TIMAH", "CATATAN", "UANG HILANG"],
         visual="Bukit dengan dua siluet; catatan tangan tak terbaca; dua masker timah di batu.",
+        plate="ridge",
         sumber="NEEDS-SOURCE — Kasus Morro do Vintém 1966; terjemahan catatan perlu verifikasi.",
     ),
     dict(
@@ -475,6 +485,7 @@ EPISODES = [
         loop="Sembilan puluh detik, dua saluran, nol tersangka.",
         cues=["22 NOV 1987", "CHICAGO", "90 DETIK", "2 KALI", "TIDAK TERTANGKAP"],
         visual="Layar TV analog penuh derau; siluet kepala di bingkai 4:3; ruang kontrol gelap.",
+        plate="signal",
         sumber="NEEDS-SOURCE — Max Headroom broadcast incident 1987; laporan FCC belum dibaca langsung.",
     ),
     dict(
@@ -507,6 +518,7 @@ EPISODES = [
         loop="Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.",
         cues=["2003", "LIANG BUA", "1 METER", "18.000 TAHUN", "BUKAN KITA"],
         visual="Penampang gua; siluet satu meter di samping skala manusia modern; alat batu.",
+        plate="ridge",
         sumber="NEEDS-SOURCE — Homo floresiensis, Liang Bua; stratigrafi direvisi 2016 (Nature), belum dibaca langsung.",
     ),
     dict(
@@ -540,6 +552,7 @@ EPISODES = [
         loop="Seribu orang tertawa karena tidak punya cara lain untuk bicara.",
         cues=["JAN 1962", "KASHASHA", "1.000 ORANG", "18 BULAN", "TANPA VIRUS"],
         visual="Kelas dengan bangku kosong; gelombang abstrak menyebar antar bangku; koridor sekolah.",
+        plate="shelter",
         sumber="NEEDS-SOURCE — Tanganyika laughter epidemic 1962; laporan jurnal medis belum dibaca langsung.",
     ),
 
@@ -574,6 +587,7 @@ EPISODES = [
         loop="Suara itu tidak berhenti di 4.800 kilometer. Ia berputar mengelilingi dunia, dan langit Eropa berubah.",
         cues=["27 AGU 1883", "KRAKATAU", "4.800 KM", "30 METER", "DUNIA BERUBAH"],
         visual="Kolom abu di garis pantai; peta radius suara; grafik barometer dunia.",
+        plate="plume",
         sumber="NEEDS-SOURCE — Letusan Krakatau 1883; catatan barometer global perlu dikutip langsung.",
     ),
     dict(
@@ -607,6 +621,7 @@ EPISODES = [
         loop="Satu gunung di Sumbawa. Satu musim yang hilang di benua lain.",
         cues=["APR 1815", "TAMBORA", "1816", "TANPA MUSIM PANAS", "ROTI MAHAL"],
         visual="Lapisan abu di stratosfer; peta aliran sulfur; ladang gagal panen.",
+        plate="plume",
         sumber="NEEDS-SOURCE — Tambora 1815 dan Year Without a Summer 1816; literatur vulkanologi belum dikutip langsung.",
     ),
     dict(
@@ -640,6 +655,7 @@ EPISODES = [
         loop="Hutan rebah menjauhi satu titik kosong. Sampai sekarang, titik itu tetap kosong.",
         cues=["30 JUN 1908", "TUNGUSKA", "2.000 KM²", "TANPA KAWAH", "MELEDAK DI UDARA"],
         visual="Pola pohon rebah radial dari atas; satu titik kosong di pusatnya; hutan Siberia.",
+        plate="ridge",
         sumber="NEEDS-SOURCE — Peristiwa Tunguska 1908; laporan ekspedisi Kulik belum dibaca langsung.",
     ),
     dict(
@@ -672,6 +688,7 @@ EPISODES = [
         loop="Sebuah danau bernapas sekali, dan satu lembah tidak pernah bangun.",
         cues=["21 AGU 1986", "DANAU NYOS", "CO₂", "1.700 ORANG", "PIPA DEGASSING"],
         visual="Danau dari atas; lapisan gas turun ke lembah; pipa degassing di permukaan.",
+        plate="water",
         sumber="NEEDS-SOURCE — Danau Nyos 1986; program degassing sejak 2001; mekanisme limnik belum dikutip langsung.",
     ),
 
@@ -707,6 +724,7 @@ EPISODES = [
         loop="Mereka menjilat kuas itu setiap hari, dan hukumnya berubah hanya setelah mereka mati.",
         cues=["1917", "ORANGE, NJ", "RADIUM", "JILAT KUAS", "HUKUM BERUBAH"],
         visual="Meja kerja dengan kuas kecil; dial jam bercahaya di kegelapan; rahang pada rontgen.",
+        plate="dial",
         sumber="NEEDS-SOURCE — Radium Girls 1917–1930an; gugatan 1927 dan preseden hukum belum dikutip langsung.",
     ),
 ]

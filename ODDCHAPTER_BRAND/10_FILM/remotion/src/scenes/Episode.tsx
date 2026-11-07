@@ -1,7 +1,8 @@
 import React from "react";
-import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, H, MARGIN, W } from "../theme";
 import data from "../episodes.generated.json";
+import { PlateArt, PlateKind } from "./PlateArt";
 import timing from "../timing.generated.json";
 
 /**
@@ -29,6 +30,7 @@ type Ep = {
   loop: string;
   cues: string[];
   durasi: number;
+  plate?: PlateKind;
 };
 type Seg = {
   kind: "hook" | "beat" | "turn" | "loop";
@@ -89,46 +91,19 @@ const Grain: React.FC<{ seed: number }> = ({ seed }) => {
   );
 };
 
-/** PLATE — langit, laut, menara. Tiga lapis vektor, satu aksen oranye. */
-const Plate: React.FC<{ lamp: number; dim: number; totalFrames: number }> = ({ lamp, dim, totalFrames }) => {
+/** PLATE — langit + satu bentuk dasar (PlateArt) + grain + vignette. */
+const Plate: React.FC<{ lamp: number; dim: number; totalFrames: number; kind: PlateKind }> = ({ lamp, dim, totalFrames, kind }) => {
   const frame = useCurrentFrame();
   const p = interpolate(frame, [0, totalFrames], [0, 1], clamp);
   const scale = 1 + p * 0.045;
-  const horizonY = H * 0.70;
-  const g = 0.6 + 0.4 * Math.sin(frame / 34);
+  const horizonY = H * 0.7;
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink }}>
       <AbsoluteFill style={{ transform: `scale(${scale})`, background: `radial-gradient(120% 60% at 50% ${horizonY}px, #24282E 0%, #17191D 48%, #0D0F12 100%)` }} />
       <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute" }}>
-        {new Array(9).fill(0).map((_, i) => {
-          const y = horizonY + 10 + i * 15 + i * i * 1.6;
-          const op = 0.20 - i * 0.021;
-          return <line key={i} x1={0} y1={y} x2={W} y2={y} stroke={C.sage} strokeWidth={i === 0 ? 1.6 : 1} opacity={Math.max(0.02, op)} />;
-        })}
         <g opacity={0.28 + 0.72 * dim}>
-          {/* badan menara */}
-          <path
-            d={`M ${W / 2 - 96} ${horizonY} L ${W / 2 - 34} ${H * 0.52} L ${W / 2 + 34} ${H * 0.52} L ${W / 2 + 96} ${horizonY} Z`}
-            fill="#0A0C0F"
-            stroke={C.ivory}
-            strokeWidth={2.2}
-            strokeOpacity={0.6}
-          />
-          {/* volume: satu bidang terang di sisi kiri */}
-          <path d={`M ${W / 2 - 96} ${horizonY} L ${W / 2 - 34} ${H * 0.52} L ${W / 2 - 6} ${H * 0.52} L ${W / 2 - 40} ${horizonY} Z`} fill={C.ivory} opacity={0.045} />
-          {/* galeri + lampu */}
-          <rect x={W / 2 - 48} y={H * 0.52 - 13} width={96} height={9} fill={C.ivory} opacity={0.5} />
-          <rect x={W / 2 - 44} y={H * 0.52 - 62} width={88} height={49} fill="#0A0C0F" stroke={C.ivory} strokeWidth={2} strokeOpacity={0.55} />
-          <path d={`M ${W / 2 - 56} ${H * 0.52 - 62} L ${W / 2} ${H * 0.52 - 112} L ${W / 2 + 56} ${H * 0.52 - 62} Z`} fill="#0A0C0F" stroke={C.ivory} strokeWidth={2} strokeOpacity={0.55} />
-          {/* dua celah jendela: memberi skala manusia */}
-          <rect x={W / 2 - 4} y={H * 0.56} width={8} height={26} fill={C.ivory} opacity={0.22} />
-          <rect x={W / 2 - 4} y={H * 0.63} width={8} height={26} fill={C.ivory} opacity={0.16} />
-          {/* berkas */}
-          <path d={`M ${W / 2 - 10} ${H * 0.52 - 38} L ${0} ${H * 0.52 - 96} L ${0} ${H * 0.52 - 14} Z`} fill={C.orange} opacity={0.05 * lamp} />
-          <path d={`M ${W / 2 + 10} ${H * 0.52 - 38} L ${W} ${H * 0.52 - 96} L ${W} ${H * 0.52 - 14} Z`} fill={C.orange} opacity={0.024 * lamp} />
-          <circle cx={W / 2} cy={H * 0.52 - 37} r={44 * g} fill={C.orange} opacity={0.09 * lamp} />
-          <circle cx={W / 2} cy={H * 0.52 - 37} r={7} fill={C.orange} opacity={lamp} />
+          <PlateArt kind={kind} lamp={lamp} />
         </g>
       </svg>
       <Grain seed={5} />
@@ -165,22 +140,38 @@ const Line: React.FC<{ text: string; born: number; hold: number; size?: number; 
         lineHeight: family === "inter" ? 1.26 : 1.02,
         letterSpacing: family === "inter" ? "0.09em" : "-0.03em",
         color,
+        width: W - MARGIN * 2,
         clipPath: `inset(0 ${out}% 0 0)`,
-        display: "flex",
-        flexWrap: "wrap",
-        gap: family === "inter" ? "0 20px" : "0 22px",
+        overflowWrap: "normal",
       }}
     >
       {words.map((w, i) => {
         const p = interpolate(frame, [born + i * 2, born + i * 2 + 7], [0, 1], { ...clamp, easing: ease });
         return (
-          <span key={i} style={{ opacity: p, transform: `translateY(${(1 - p) * 10}px)`, display: "inline-block" }}>
+          <span
+            key={i}
+            style={{
+              opacity: p,
+              transform: `translateY(${(1 - p) * 10}px)`,
+              display: "inline-block",
+              marginRight: family === "inter" ? 20 : 22,
+            }}
+          >
             {w}
           </span>
         );
       })}
     </div>
   );
+};
+
+/** Ukuran huruf menyesuaikan panjang teks: baris panjang tidak boleh menyentuh tepi. */
+const fit = (text: string, base: number) => {
+  const n = text.length;
+  if (n > 104) return Math.round(base * 0.62);
+  if (n > 84) return Math.round(base * 0.72);
+  if (n > 64) return Math.round(base * 0.84);
+  return base;
 };
 
 /** Titik balik: satu kutipan besar, satu coretan, satu kalimat pembalik. */
@@ -229,49 +220,104 @@ const Footer: React.FC<{ ep: string; series: string }> = ({ ep, series }) => (
  * Semua segmen punya awal dan akhir yang eksplisit, jadi tidak ada dua blok
  * teks yang bisa hidup bersamaan.
  */
+/** Caption narasi: teks segmen, durasi dari audio nyata (bukan estimasi). */
+const Caption: React.FC<{ text: string; born: number; hold: number }> = ({ text, born, hold }) => {
+  const frame = useCurrentFrame();
+  if (frame < born || frame > born + hold) return null;
+  const inn = interpolate(frame, [born, born + 6], [0, 1], clamp);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: MARGIN,
+        right: MARGIN,
+        bottom: 520,
+        fontFamily: "Inter",
+        fontWeight: 600,
+        fontSize: 52,
+        lineHeight: 1.32,
+        letterSpacing: "0.01em",
+        color: C.ivory,
+        opacity: inn,
+        textShadow: "0 2px 24px rgba(0,0,0,0.85)",
+      }}
+    >
+      {text}
+    </div>
+  );
+};
+
 export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
   const ep = getEpisode(epId);
   const tm = getTiming(epId);
   const totalFrames = tm.totalFrames;
 
   const active = tm.segments.find((s) => frame >= s.startFrame && frame < s.startFrame + s.durFrames);
-  const idx = active ? tm.segments.indexOf(active) : -1;
-  const segStart = active ? active.startFrame : 0;
 
-  // lampu: menyala di hook, meredup sepanjang bukti, padam di loop
-  const lamp = interpolate(
-    frame,
-    [0, totalFrames * 0.55, totalFrames * 0.78, totalFrames * 0.86],
-    [1, 0.7, 0.35, 0],
-    clamp,
-  );
-  const dim = interpolate(frame, [0, totalFrames * 0.5, totalFrames * 0.7], [1, 1, 0.3], clamp);
+  // turn dirender sebagai satu blok, bukan per segmen — dua segmen turn = satu momen
+  const turnSegs = tm.segments.filter((s) => s.part === "turn");
+  const turnStart = turnSegs.length ? turnSegs[0].startFrame : -1;
+  const turnEnd = turnSegs.length ? turnSegs[turnSegs.length - 1].startFrame + turnSegs[turnSegs.length - 1].durFrames : -1;
+  const inTurn = frame >= turnStart && frame < turnEnd;
+  const turnQuote = turnSegs[0]?.quote || "";
+  const turnVerdict = turnSegs[0]?.verdict || "";
+
+  const inHook = active?.kind === "hook";
+  const inLoop = active?.kind === "loop";
+
+  // lampu: menyala di hook, meredup selama bukti, padam di loop
+  const lamp = interpolate(frame, [0, totalFrames * 0.55, totalFrames * 0.8, totalFrames * 0.9], [1, 0.72, 0.4, 0], clamp);
+  const dim = interpolate(frame, [0, totalFrames * 0.5, totalFrames * 0.72], [1, 1, 0.28], clamp);
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink }}>
-      <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} />
+      {/* audio: satu file per segmen, ditempatkan di frame mulai yang terukur */}
+      {tm.segments.map((s) => (
+        <Sequence key={s.key} from={s.startFrame} durationInFrames={s.durFrames} name={s.key}>
+          <Audio src={staticFile(`audio/${epId}/${s.key}.mp3`)} />
+        </Sequence>
+      ))}
 
-      {active?.kind === "hook" && (
-        <Line text={ep.title} born={segStart + 4} hold={active.durFrames - 4} size={92} family="grotesk" weight={700} top={H * 0.24} />
+      <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />
+
+      {inHook && (
+        <Line text={ep.title} born={active!.startFrame + 4} hold={active!.durFrames - 4} size={fit(ep.title, 92)} family="grotesk" weight={700} top={H * 0.22} />
       )}
 
-      {active?.kind === "beat" && active.cue && (
-        <Line text={active.cue} born={segStart + 3} hold={active.durFrames - 3} size={62} top={H * 0.33} />
+      {inLoop && (
+        <Line text={active!.text} born={active!.startFrame + 3} hold={active!.durFrames - 3} size={fit(active!.text, 74)} family="grotesk" weight={700} top={H * 0.24} />
       )}
 
-      {active?.kind === "turn" && (
-        <Turn quote={active.quote || ""} verdict={active.verdict || ""} born={segStart} hold={active.durFrames} />
+      {inTurn && <Turn quote={turnQuote} verdict={turnVerdict} born={turnStart} hold={turnEnd - turnStart} />}
+
+      {/* label editorial: hanya saat beat punya cue, di bawah nomor urut */}
+      {active && active.kind === "beat" && active.cue && !inTurn && (
+        <Line
+          text={active.cue}
+          born={active.startFrame + 3}
+          hold={active.durFrames - 3}
+          size={40}
+          top={H * 0.30}
+          color={C.sage}
+        />
       )}
 
-      {active?.kind === "loop" && (
-        <Line text={active.text} born={segStart + 3} hold={active.durFrames - 3} size={70} family="grotesk" weight={700} top={H * 0.26} />
+      {/* scrim: menjaga caption tetap terbaca di atas siluet */}
+      <AbsoluteFill
+        style={{
+          background: "linear-gradient(180deg, rgba(13,15,18,0) 58%, rgba(13,15,18,0.72) 74%, rgba(13,15,18,0.94) 100%)",
+          pointerEvents: "none",
+        }}
+      />
+
+      {/* caption: teks narasi, mengikuti durasi audio nyata tiap segmen */}
+      {active && !inHook && !inTurn && !inLoop && (
+        <Caption text={active.text} born={active.startFrame} hold={active.durFrames} />
       )}
 
-      {/* nomor urut kecil, penanda posisi di seri — satu-satunya elemen tetap */}
       <div style={{ position: "absolute", left: MARGIN, top: 300, fontFamily: "Inter", fontWeight: 600, fontSize: 24, letterSpacing: "0.28em", color: C.sage, opacity: 0.8 }}>
-        {String(idx + 1).padStart(2, "0")} / {String(tm.segments.length).padStart(2, "0")}
+        {String(tm.segments.filter((s) => s.startFrame <= frame).length).padStart(2, "0")} / {String(tm.segments.length).padStart(2, "0")}
       </div>
 
       <Footer ep={ep.id.replace("EP", "EP ")} series={ep.series} />

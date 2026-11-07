@@ -26,12 +26,22 @@ AUDIO_DIR = ROOT / "10_FILM" / "remotion" / "public" / "audio"
 OUT = ROOT / "10_FILM" / "remotion" / "src" / "timing.generated.json"
 FPS = 30
 WPS = 2.45          # kata per detik
-GAP = 0.42          # jeda antar segmen
+GAP = 0.30          # jeda antar segmen
 HOOK_HOLD = 0.5     # nafas setelah hook
-TAIL = 1.6          # ekor sebelum loop menutup
+TAIL = 1.2          # ekor sebelum loop menutup
+
+
+def _ffmpeg():
+    """ffprobe tidak ada di image ini; ffmpeg ada lewat imageio_ffmpeg."""
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return "ffmpeg"
 
 
 def audio_duration(path):
+    """Durasi audio nyata. ffprobe kalau ada, kalau tidak parse stderr ffmpeg."""
     try:
         out = subprocess.run(
             ["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -40,7 +50,17 @@ def audio_duration(path):
         )
         return float(out.stdout.strip())
     except Exception:
+        pass
+    try:
+        out = subprocess.run([_ffmpeg(), "-i", str(path)], capture_output=True, text=True)
+        for line in out.stderr.splitlines():
+            if "Duration:" in line:
+                hms = line.split("Duration:")[1].split(",")[0].strip()
+                h, m, sec = hms.split(":")
+                return int(h) * 3600 + int(m) * 60 + float(sec)
+    except Exception:
         return None
+    return None
 
 
 def dur_of(text, wps=WPS):
@@ -65,6 +85,8 @@ def build(ep):
     add("hook", ep["hook"], "00_hook")
     for i, (part, txt) in enumerate(ep["beats"]):
         add("beat", txt, f"{i + 1:02d}_{part}", part)
+
+    add("loop", ep["loop"], "99_loop")
 
     # kutipan + pembalik dipasang di segmen turn pertama
     for s in segs:

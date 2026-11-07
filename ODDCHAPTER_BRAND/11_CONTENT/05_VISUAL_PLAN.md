@@ -1,204 +1,202 @@
 # 05 — VISUAL PLAN
 
-Dokumen ini dibuat **setelah** 21 script (`02_SCRIPT/`) dan 21 thumbnail
-(`03_THUMBNAIL/`) selesai, sesuai urutan kerja yang diminta. Isinya bukan mood
-board: ini instruksi produksi — setiap bidikan punya waktu, subjek, dan cara
-membuatnya dengan tool yang benar-benar ada di mesin ini.
+**Status: dibangun ulang dari yang benar-benar dirender.** Versi sebelumnya adalah
+rencana; dokumen ini adalah deskripsi sistem yang sudah jalan. Kalau keduanya
+berbeda, yang ini yang benar — karena EP01 sudah dirender jadi master 1080×1920
+dengan audio nyata, dan setiap angka di bawah ini diambil dari kode dan dari file
+hasil render, bukan dari perkiraan.
 
-Batas nyata yang membentuk seluruh rencana ini: **sandbox tidak bisa mengunduh
-dari internet terbuka** (hanya GitHub/npm/PyPI + jalur `footage.yml`). Karena itu
-visual dibangun dari tiga bahan yang pasti tersedia — vektor, tipografi, dan
-gambar yang dibuat sendiri — bukan dari footage stok.
+Yang dibatalkan dari rencana lama, dan alasannya:
+
+| rencana lama | status | alasan |
+|---|---|---|
+| plate gambar generasi (`GEN`) sebagai lapis utama tiap episode | **dibatalkan** | gambar generasi tidak akurat secara faktual; kalau ia penuh layar, penonton melihat "gambar AI", dan efek yang kita kejar (percaya → terasa ada yang salah) langsung hilang |
+| peta/grafik `ARC` dari GeoJSON | **dibatalkan** untuk 21 episode ini | menambah waktu render dan satu lapis kesalahan fakta (skala, proyeksi) yang tidak sepadan dengan durasi 58 detik |
+| 8 komponen baru (`HairGrid`, `CountUp`, `MapDiagram`, `CrossSection`, `Radial`, `Dial`, `Keyword`, `LoopBack`) | **diganti** oleh 1 komponen plate + 4 komponen teks | sembilan komponen = sembilan gaya. Satu bahasa visual lebih kuat dan lebih murah dirawat |
+| footage stok | tetap tidak dipakai | egress sandbox diblokir; rencana ini tidak bergantung padanya |
+
+Yang dipertahankan: satu master vertikal per episode, 30 fps, 1080×1920, semua
+teks dibakar, tidak ada dissolve — potongan keras.
 
 ---
 
-## 1 · TIGA LAPIS, TIDAK PERNAH SATU GAMBAR PENUH
+## 1 · TIGA LAPIS, DAN TIDAK ADA YANG PENUH LAYAR
 
-Setiap frame adalah komposisi dari tiga lapis. Tidak ada satu pun bidikan yang
-berupa "satu foto besar yang mengisi layar".
-
-| lapis | isi | sumber | catatan |
+| lapis | isi | dibuat oleh | catatan |
 |---|---|---|---|
-| **PLATE** | bentuk dasar: langit, air, dinding, salju, asap | vektor/SVG + gradien yang digambar di Remotion | selalu bergerak pelan (skala 1.00→1.06 dalam 8 s) |
-| **OBJEK** | benda yang dibicarakan: menara, tenda, pintu, danau | `generate_image` (potongan), atau SVG presisi | dipotong `sharp`, tidak pernah full-frame |
-| **TEKS** | angka, tanggal, label, caption | Space Grotesk / Inter, dibakar | satu pesan per frame |
+| **PLATE** | satu bentuk dasar: menara, kapal, tenda, jalan, kertas, sinyal, gunung, air, dial, bukit | `src/scenes/PlateArt.tsx` — SVG, 10 bentuk | napas skala 1.000 → 1.045 sepanjang episode, 1 warna aksen |
+| **TEKS** | hook, cue, caption narasi, kartu titik balik, loop | `src/scenes/Episode.tsx` | satu pesan per frame, tidak pernah dua blok bersaing |
+| **ATMOSFER** | grain 44 baris, vignette bawah, gradien radial di garis horizon | `Grain` + dua `AbsoluteFill` | membuat SVG datar terasa seperti film, bukan slide |
 
-Alasan aturannya sekeras ini: gambar hasil generasi tidak pernah akurat secara
-faktual. Kalau ia jadi seluruh layar, penonton melihat "gambar AI". Kalau ia jadi
-satu lapis di balik angka dan garis presisi, ia jadi tekstur.
-
----
-
-## 2 · SISTEM PER SERI
-
-Lima seri, lima cara memandang. Penonton harus bisa menebak seri hanya dari
-warna gerak dan ritme potong.
-
-| seri | warna dominan | tekstur | kamera | ritme potong | suara |
-|---|---|---|---|---|---|
-| **HILANG** | Ink + Sage, satu aksen Orange | garis horizon, kabut tipis, butir halus | statis, hanya napas skala | 2,5–3 s | angin rendah, tanpa musik |
-| **TERSEMBUNYI** | Ink hampir hitam, Ivory dingin | vignette kuat, cincin konsentris | dorong pelan ke dalam (push-in) | 3–4 s | drone rendah, satu nada |
-| **ANEH** | Ink + Orange | garis-garis teknis, grid, osiloskop | geser horizontal (tracks) | 1,5–2 s | pulsa synth, klik |
-| **BENCANA** | Ink + Sage, Orange hanya di inti | gradien vertikal, partikel | tarikan ke belakang (pull-out) | 2–2,5 s | sub-bass, gemuruh |
-| **HARGA** | Ivory di atas Ink, Orange sebagai luka | garis halus, satu garis putus | statis, teks yang bergerak | 3 s | senyap, satu ketukan |
-
-Aturan aksen: **satu Orange per frame, maksimal.** Orange selalu berarti "ini
-bagian yang penting" — kalau ada dua, tidak ada yang penting.
+Aturannya: **tidak ada satu pun frame yang berupa satu gambar besar**. Plate
+selalu garis dan bidang tipis di atas latar gelap; teks selalu punya ruang
+kosong di sekitarnya. Kalau sebuah frame bisa dibingkai jadi poster tanpa
+kehilangan apa pun, frame itu gagal.
 
 ---
 
-## 3 · TIMELINE UNIVERSAL
+## 2 · SEPULUH BENTUK DASAR
 
-Semua episode memakai kerangka waktu yang sama. Yang berubah hanya isinya.
+Semua episode memakai aturan gambar yang sama: latar `#17191D`, garis rambut
+`sage` 1–1.6 px, siluet `ivory` 2–2.4 px dengan opasitas 0.16–0.62, dan **satu**
+aksen `orange` yang mewakili satu benda penting di episode itu.
 
-```
-0 ─ 3 s    HOOK        satu plate, satu objek, teks hook muncul 1 frame per kata
-3 ─ 7 s    STAKE       plate berganti, angka/tanggal masuk, kamera mulai bergerak
-7 ─ 20 s   BUKTI       potongan tercepat di episode ini: 3–4 bidikan
-20 ─ 35 s  TITIK BALIK plate berhenti bergerak; semua elemen lain menghilang
-35 ─ 50 s   SISA        satu bidikan panjang, tidak ada potongan
-50 ─ 60 s  LOOP        kembali ke plate pertama, teks hook terakhir
-```
-
-Titik balik adalah satu-satunya momen di mana **tidak ada gerakan**. Itu jeda
-yang membuat penonton mendengar kalimatnya.
-
----
-
-## 4 · SHOT LIST PER EPISODE
-
-Empat plate per episode. Kolom "cara" menyebut bahan yang dipakai: `VEC` = vektor
-presisi di Remotion, `GEN` = potongan gambar generasi, `TTL` = tipografi besar,
-`ARC` = arsip/berkas yang boleh ditampilkan (peta, grafik, surat).
-
-| EP | 0–7 s | 7–20 s | 20–35 s | 35–60 s |
+| # | bentuk | apa yang digambar | dipakai | aksen oranye = |
 |---|---|---|---|---|
-| **01** | VEC menara + horizon, kabut | VEC denah pulau 3 titik | TTL "PINTU TERKUNCI" di atas plate gelap | VEC menara padam, satu titik Orange |
-| **02** | GEN kain tenda sobek, makro | VEC peta jalur 9 titik | VEC potongan tenda dari dalam (garis putus) | GEN salju kosong, jejak kaki |
-| **03** | GEN lambung kapal di kabut | ARC peta Atlantik 1872 | VEC daftar muatan (1.701 tong) | VEC sekoci kosong, laut |
-| **04** | GEN mobil tertutup salju | VEC profil elevasi (naik, bukan turun) | TTL "MEREKA MENDAKI" | GEN pos jaga hutan, satu pintu |
-| **05** | GEN pagar kayu, satu kata | VEC peta Roanoke–Croatoan | ARC ukiran "CROATOAN" | GEN kampung pesisir kosong |
-| **06** | GEN retakan aspal berasap | VEC penampang tanah + lapisan bara | VEC peta kota yang menyusut | GEN jalan kosong, lampu jalan |
-| **07** | GEN atap bersalju, satu jalur jejak | VEC denah rumah, loteng disorot | TTL "6 ORANG · 1 JEJAK" | GEN perapian dingin |
-| **08** | GEN koper terbuka di lantai | VEC sembilan label nama | ARC halaman kode angka | GEN lembah berbatu, kabut |
-| **09** | GEN pantai fajar, satu sosok | VEC buku terbuka, huruf acak | TTL "TAMAM SHUD" | ARC peta Adelaide 1948 |
-| **10** | GEN dua sosok membelakangi | VEC dua lingkaran yang bertumpuk | VEC dua lingkaran terpisah | GEN kamar tidur, dua tempat tidur |
-| **11** | VEC kertas printer "6EQUJ5" | VEC grafik 72 detik | ARC peta langit kosong | VEC satu garis datar |
-| **12** | GEN kaki di batu jalan | VEC gelombang orang (siluet berulang) | ARC peta Strasbourg 1518 | GEN jalan kosong |
-| **13** | GEN dua sosok di bukit | VEC kertas catatan, tulisan tak terbaca | TTL "MASKER TIMAH" | GEN bukit berkabut |
-| **14** | VEC layar TV analog, derau | VEC tiga titik transmisi | TTL "90 DETIK" | GEN ruang kontrol gelap |
-| **15** | VEC siluet 1 m vs 1,7 m | VEC penampang gua Liang Bua | ARC skala tengkorak | VEC satu siluet kecil memudar |
-| **16** | VEC 12 bangku kelas | VEC gelombang tawa menyebar | TTL "18 BULAN" | GEN kelas kosong |
-| **17** | GEN kolom abu di garis pantai | ARC peta radius suara 4.800 km | VEC barometer dunia (gelombang) | VEC matahari terbenam merah |
-| **18** | VEC lapisan stratosfer | ARC peta aliran sulfur | VEC grafik suhu global 1816 | GEN ladang gagal panen |
-| **19** | VEC pola pohon rebah, radial | VEC satu titik kosong di pusat | TTL "TANPA KAWAH" | GEN hutan Siberia |
-| **20** | VEC danau dari atas | VEC penampang danau + lapisan CO₂ | VEC gas turun ke lembah | GEN lembah fajar, diam |
-| **21** | GEN meja kerja, kuas, pot cat | VEC dial jam bercahaya | TTL "JILAT KUAS" | VEC satu dial padam |
+| 01 | `tower` | badan menara trapesium, galeri, lentera, dua celah jendela | EP01 | lampu yang masih menyala |
+| 02 | `vessel` | lambung, dua tiang, tali, lentera tiang depan | EP03 | lentera yang tidak dijaga |
+| 03 | `shelter` | tenda dengan tali pasak, pintu terlipat, satu sisi disobek | EP02, EP07, EP16 | kain yang terbuka dari dalam |
+| 04 | `road` | jalur menyempit ke satu titik di ufuk, garis tengah putus | EP04, EP06, EP12 | titik tujuan yang tidak masuk akal |
+| 05 | `paper` | lembar miring, 12 garis tulis, satu garis digarisbawahi | EP08, EP09, EP10 | kata yang tidak bisa dijelaskan |
+| 06 | `signal` | enam busur konsentris + satu garis datar di bawah | EP11, EP14 | sumber sinyal |
+| 07 | `plume` | kerucut gunung, kawah, kolom abu vertikal | EP17, EP18 | pijar di kawah |
+| 08 | `water` | permukaan bergaris, dua tebing, refleksi terbalik | EP20 | garis pijar di permukaan |
+| 09 | `dial` | 60 takik, dua jarum, satu angka berbahaya | EP21 | angka tempat jarum berhenti |
+| 10 | `ridge` | tiga lapis punggung bukit, satu tiang berdiri | EP05, EP13, EP15, EP19 | ujung tiang |
 
-`ARC` bukan gambar stok: itu peta/grafik yang saya gambar ulang sebagai SVG di
-Remotion, supaya garis, label, dan skalanya bisa dipertanggungjawabkan.
+Plate dipilih lewat field `plate` di `tools/content_data.py` dan divalidasi oleh
+`tools/build_episodes_json.py` (nama plate yang tidak ada langsung gagal).
 
----
-
-## 5 · ASET YANG HARUS DIBUAT
-
-### 5.1 Gambar generasi (dipotong, bukan full-frame)
-
-Enam belas plate `GEN`. Semua dibuat dengan satu instruksi gaya yang sama supaya
-terlihat satu keluarga:
-
-> "Cinematic plate, 16:9, very low contrast, near-monochrome charcoal and bone
-> palette, one small warm accent, heavy atmosphere, no people's faces, no text,
-> shallow depth of field, film grain, underexposed, negative space in the upper
-> third."
-
-Daftar plate: kain tenda sobek · salju kosong + jejak · lambung kapal di kabut ·
-mobil bersalju · pagar kayu · retakan aspal berasap · atap bersalju · koper di
-lantai · pantai fajar · dua sosok membelakangi · kaki di batu jalan · sosok di
-bukit · ruang kontrol · kelas kosong · ladang gagal panen · meja kerja kuas.
-
-Setiap plate masuk `sharp` → di-resize ke 1440 px, di-desaturasi ke ~12 % saturasi,
-di-blur 0,6 px di tepi, lalu disimpan sebagai WebP. Plate tidak pernah dipakai
-lebih dari 8 detik berturut-turut.
-
-### 5.2 Komponen Remotion yang harus dibangun
-
-| komponen | dipakai di | isi |
-|---|---|---|
-| `Plate` | semua | gambar/vektor + napas skala + grain, satu API |
-| `HairGrid` | ANEH, BENCANA | grid tipis yang bergerak satu piksel per detik |
-| `CountUp` | semua | angka naik dari 0 ke nilai nyata, easing `spring` |
-| `MapDiagram` | 01,02,05,06,14,17,18 | SVG dari GeoJSON `d3-geo`, proyeksi tetap |
-| `CrossSection` | 06,15,18,20 | potongan vertikal berlapis, label di kiri |
-| `Radial` | 19 | pola pohon rebah + satu titik kosong |
-| `Dial` | 21 | dial jam bercahaya, jarum berhenti di satu detik |
-| `Keyword` | semua | teks cue: masuk per kata, keluar dengan `clipPath` |
-| `LoopBack` | semua | mengembalikan frame ke plate hook di 2 detik terakhir |
-
-Semua deterministik: `useCurrentFrame()` + `interpolate` + `spring`. Tidak ada
-`Math.random()`, `Date.now()`, atau fetch di dalam komposisi.
-
-### 5.3 Komposisi Remotion
-
-Satu komposisi parameterized, bukan 21 komposisi:
+Cara memeriksa kesepuluhnya dalam satu menit:
 
 ```
-ODDCHAPTER-EP          props: { ep, series, shots[], cues[], audio }
+node scripts/still-plates.mjs      # -> output/plates/plate_00..09.png
 ```
 
-Nama tanpa garis bawah (Remotion menolaknya). 1080×1920, 30 fps, durasi mengikuti
-`durasi` di `content_data.py`.
+`PLATE-GALLERY` adalah komposisi 10 frame di `Root.tsx`; frame ke-n = bentuk ke-n.
+Kalau salah satu bentuk tidak lagi terlihat satu keluarga dengan yang lain, itu
+terlihat di sini sebelum 21 episode dirender.
 
 ---
 
-## 6 · TIPOGRAFI & CAPTION
+## 3 · TIPOGRAFI
 
-- Headline di layar: **Space Grotesk 700**, 96–120 px, tracking −2, maksimal 3 baris.
-- Angka besar: **Space Grotesk 700**, 200–260 px, tabular.
-- Cue teks: **Inter 600**, 44 px, huruf kapital, tracking +2, muncul 1 frame per kata.
-- Caption bicara: **Inter 600**, 54 px, dasar bawah y = 1420, dua baris maksimal,
-  kata aktif Ivory, kata lain Sage 45 %.
-- Zona aman: x 96–984, y 300–1500. Tidak ada teks di luar itu, titik.
+Space Grotesk 700 untuk pernyataan, Inter 600 untuk keterangan. Tidak ada font
+ketiga, tidak ada italic, tidak ada drop shadow selain scrim caption.
 
-Warna caption tidak pernah Orange — Orange hanya untuk satu hal penting per frame.
+| elemen | font | ukuran | letak | catatan |
+|---|---|---|---|---|
+| hook (judul episode) | Space Grotesk 700 | 92 px, turun ke 84/72/62 untuk teks panjang | atas, `top: H×0.22` | muncul per kata, 2 frame per kata, keluar dengan `clipPath` |
+| loop (penutup) | Space Grotesk 700 | 74 px, sama, `fit()` | `top: H×0.24` | kalimat yang mengembalikan penonton ke hook |
+| kutipan titik balik | Space Grotesk 700 | 96 px | tengah vertikal | satu coretan oranye 9 px menimpa kutipan |
+| kalimat pembalik | Inter 600 | 44 px, orange | bawah kutipan, +56 px | satu baris, tidak pernah lebih |
+| label "yang selama ini dikutip" | Inter 600 | 25 px, tracking 0.32em, sage | atas kutipan | satu-satunya label yang boleh mendahului kutipan |
+| cue | Inter 600 | 24 px, tracking 0.28em, sage | `top: 300`, kiri | mis. `SEBELAS HARI` |
+| caption narasi | Inter 600 | 52 px, line-height 1.32 | `bottom: 520` | durasi = durasi audio segmen itu |
+| nomor segmen | Space Grotesk 700 | 30 px, tracking 0.34em | `top: 300`, kiri | `04 / 10` — memberi penonton rasa "hampir selesai" |
+| footer | Space Grotesk 700 + Inter 600 | 30 / 22 px | `top: 1470` | `ODDCHAPTER` kiri, `HILANG · EP 01` kanan |
+
+**Aturan yang lahir dari kegagalan nyata:** setiap teks yang panjangnya tidak
+diketahui saat menulis kode wajib melewati `fit()` (auto-downscale 4 tingkat).
+Tanpa itu, satu kata panjang (`…dua puluh delapan…`) melewati tepi kanan dan
+terpotong di master — sudah terjadi, sudah diperbaiki, jangan diulang.
+
+Zona aman: **x 96–984, y 300–1500.** Footer di 1470 masih di dalam; caption
+tidak pernah turun di bawah 520 karena area 0–1500 dipakai plate.
+
+Warna caption tidak pernah orange. Orange hanya untuk satu hal penting per frame.
 
 ---
 
-## 7 · SUARA
+## 4 · RITME: SEGMEN, BUKAN DURASI
 
-Satu narator untuk semua 21 episode: perempuan, Indonesia netral, tempo 4,4
-suku kata/detik. Kalau TTS Indonesia tidak tersedia, `edge-tts`
-`id-ID-GadisNeural` adalah fallback yang tercatat.
+Satu episode = 9–10 segmen, dan setiap segmen adalah satu file audio. Yang
+menentukan kapan sebuah teks muncul bukan perkiraan, tapi durasi file itu.
 
-Per seri: satu bed musik 60 detik yang di-loop (bukan 21 lagu), ditambah tiga SFX
-lapis — angin, klik, sub-bass. Mix: voice −16 LUFS, bed −28 LUFS, master −14 LUFS
-/ −1,5 dBTP. Caption dibangun dari timing audio nyata, bukan dari perkiraan.
+```
+hook → setup → tension ×4 → turn ×2 → consequence → loop
+```
+
+| bagian | jumlah | fungsi efek | durasi khas |
+|---|---|---|---|
+| hook | 1 | berhenti menggulir | 5–7 s |
+| setup | 1 | dunia terbentuk, satu benda konkret | 6–8 s |
+| tension | 4 | sesuatu salah, tidak dijelaskan | 4–9 s masing-masing |
+| turn | 2 | kutipan yang selama ini dipercaya, lalu dibalik | 4–5 s + 4–5 s |
+| consequence | 1 | apa artinya kalau pembalikan itu benar | 4–5 s |
+| loop | 1 | kembali ke benda di hook, dengan makna baru | 5–6 s |
+
+Jarak antar segmen 0.30 s, ekor 1.2 s. Diukur oleh `tools/build_timing.py`, yang
+membaca durasi audio nyata lewat `ffprobe` (fallback: stderr `ffmpeg`), lalu
+menulis `timing.generated.json` — satu-satunya sumber waktu untuk video.
+
+EP01, terukur: 1748 frame = **58,2 detik**, 10 segmen.
+`hook 18 · setup 238 · tension 442/628/777/957 · turn 1092/1222 · consequence 1368 · loop 1520`.
+
+Konsekuensi desain: durasi episode **tidak boleh** ditetapkan lebih dulu. Narasi
+yang menentukan; `durasi` di content_data hanya perkiraan untuk kalender.
 
 ---
 
-## 8 · YANG BELUM BISA DIKERJAKAN
+## 5 · SUARA
 
-| kebutuhan | status | jalan keluar |
+Satu narator untuk 21 episode (`voice-01`, Indonesia netral), tempo dinaikkan
+`atempo=1.12` setelah pengukuran — TTS keluar terlalu lambat untuk format 1 menit.
+
+| tahap | perintah | hasil |
 |---|---|---|
-| footage stok (Pexels/Pixabay) | **tidak bisa** — egress diblokir | tidak dipakai sama sekali; rencana ini tidak bergantung padanya |
-| footage domain publik (Commons/Archive) | **tidak bisa** dari sandbox | `footage.yml` dijalankan manual olehmu → `FOOTAGE/` |
-| arsip foto asli peristiwa | **tidak bisa** diverifikasi | digambar ulang sebagai `ARC` vektor |
-| peta GeoJSON | bisa dari npm (`world-atlas`) | dipakai untuk `MapDiagram` |
+| sintesis | 9–10 klip per episode, satu per segmen | 4.5–8 s per klip |
+| kecepatan | `ffmpeg -filter:a "atempo=1.12" -c:a libmp3lame -q:a 4` | asli disimpan di `audio/EPxx/raw/` |
+| ukur | `ffprobe` → `timing.generated.json` | `audioMeasured: true` |
+| master | `loudnorm=I=-14:TP=-1.5:LRA=11` + `+faststart` | mean −17.3 dB, max −1.5 dB (terukur di EP01) |
 
-Artinya: 21 episode ini **tidak menunggu** footage apa pun. Kalau nanti footage
-asli datang, ia masuk sebagai lapis PLATE tambahan — struktur bidikan tidak berubah.
+Belum ada musik dan belum ada SFX di master EP01. Itu keputusan, bukan
+keterlambatan: di 58 detik dengan satu suara, musik hanya menambah lapisan yang
+harus diadili sendiri. Kalau nanti ditambahkan, bed masuk di −28 LUFS.
 
 ---
 
-## 9 · URUTAN PRODUKSI (per episode)
+## 6 · RENDER
 
-1. Animasikan satu frame statis → `npx remotion still`
-2. Lihat frame itu. Kalau buruk di satu frame, buruk di 1.800 frame.
-3. Animasikan satu shot (hook) → render 3 detik
-4. Tambah satu transisi → render 8 detik
-5. Tambah audio hook → render 8 detik dengan suara
-6. Rakit penuh → render 1080×1920
-7. `ffprobe` validasi + cek LUFS
+```
+node scripts/still-plates.mjs            # 10 bentuk dasar
+node scripts/still-ep01.mjs 24 150 760   # frame kunci EP01
+node scripts/render-episode.mjs EP01     # master
+```
 
-Satu episode diperkirakan 25–40 menit render di sandbox ini (≈25 fps). 21 episode
-tidak dirender sekaligus; tiga per hari, sesuai jadwal tayang.
+`render-episode.mjs` melakukan: bundle → pilih komposisi `ODDCHAPTER-EPxx` →
+render h264 + aac → `loudnorm` → `+faststart` → `ffprobe` → tulis
+`output/episodes/EPxx.report.json`.
+
+Angka nyata EP01 (Chromium `@sparticuz/chromium` 153, `gl: swangle`, concurrency 2):
+
+| | |
+|---|---|
+| resolusi / fps | 1080×1920 / 30 |
+| durasi | 58.28 s |
+| video | h264 High, yuv420p |
+| audio | aac 48 kHz stereo 192k |
+| ukuran master | 6.79 MB |
+| waktu render | ≈13–15 menit per episode di sandbox ini |
+
+Catatan operasional: dengan concurrency default, browser sempat mati di frame 378
+(`target closed`). Concurrency 2 + `imageFormat: jpeg` stabil. Kalau render gagal,
+ulangi — jangan turunkan resolusi.
+
+---
+
+## 7 · QA SEBELUM SEBUAH EPISODE DISEBUT SELESAI
+
+1. `python3 tools/check_story.py EPxx` → 0 masalah (gerbang lima efek).
+2. Tiga still dari master (hook, titik balik, loop) dilihat dengan mata:
+   tidak ada teks yang menyentuh tepi, tidak ada teks menabrak footer.
+3. `ffprobe` master: 1080×1920, 30 fps, ada stream audio, durasi ±1 s dari rencana.
+4. `volumedetect`: max ≤ −1.0 dB, mean antara −20 dan −14 dB.
+5. `audioMeasured: true` di `timing.generated.json`.
+6. Judul di layar = judul di script (`build_episodes_json.py` sudah dijalankan).
+
+Poin 6 punya sejarah: `episodes.generated.json` dulu tidak punya generator,
+sehingga EP01 sempat dirender dengan judul lama sementara script-nya sudah
+berubah. Sekarang file itu dihasilkan, bukan ditulis tangan.
+
+---
+
+## 8 · STATUS PER EPISODE
+
+| plate | siap | timing + audio | master |
+|---|---|---|---|
+| EP01 `tower` | ya | ya (terukur) | **ya** — 58.28 s |
+| EP02–EP21 | ya (bentuk sudah ada) | belum — butuh 9–10 klip narasi | belum |
+
+Bentuk untuk 21 episode sudah ada semua; yang belum ada hanya suara. Urutan
+produksi per episode karena itu: narasi → ukur → still → master → QA.
