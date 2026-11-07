@@ -18,3 +18,6 @@ ODDCHAPTER_BRAND/10_FILM/remotion/.cache/
 
 # fonts are re-fetched, never vendored (SIL OFL: link, don't redistribute)
 ODDCHAPTER_BRAND/.build/
+
+# derived: contact sheet SVG embeds all 21 PNGs (\~4 MB); regenerate with build_content_kit.py
+ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/CONTACT_SHEET.svg
