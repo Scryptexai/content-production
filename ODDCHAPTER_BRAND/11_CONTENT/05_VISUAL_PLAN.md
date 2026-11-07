@@ -63,8 +63,8 @@ di sepertiga atas.
 | setup | `02_island` | pulau batu di laut luas, satu menara | tarik-out |
 | tension 1 | `03_ship` | dek kapal uap, menara di balik kabut | geser kiri |
 | tension 2 | `04_door` | pintu besi menara, tertutup, ombak | geser kanan |
-| tension 3 | `06_lamp` | lensa fresnel bersih, minyak penuh, tak ada yang menjaga | push-in |
-| tension 4 | `05_table` | meja makan ditinggal, tiga kursi mundur | tarik-out |
+| tension 3 | `06_lamp` | lensa fresnel bersih, minyak penuh, tak ada yang menjaga — sebelas hari | push-in |
+| tension 4 | `05_table` | meja makan ditinggal, tiga kursi mundur — kerja pagi selesai | tarik-out |
 | turn 1 | `08_logbook` | buku harian terbuka, jam berhenti | geser kiri |
 | turn 2 | `07_oilskins` | pakaian itu, dari dekat | push-in |
 | consequence | `09_sea_night` | laut malam, menara tanpa cahaya | geser kanan |
