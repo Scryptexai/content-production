@@ -18,7 +18,10 @@ from content_data import EPISODES  # noqa: E402
 # kata yang "meminta" perhatian alih-alih menunjukkan sesuatu
 BANNED = {"misteri", "rahasia", "aneh", "menakjubkan", "mengerikan", "terpecahkan", "misterius"}
 STOP = {"yang", "dan", "itu", "ini", "dengan", "untuk", "dari", "tidak", "tapi",
-        "mereka", "dalam", "pada", "adalah", "lebih", "akan", "sudah", "hanya"}
+        "mereka", "dalam", "pada", "adalah", "lebih", "akan", "sudah", "hanya",
+        "masih", "kembali", "sendiri", "begitu", "sekarang", "memang", "tetapi",
+        "sampai", "setelah", "sebelum", "karena", "kalau", "harus", "bisa", "orang",
+        "tahun", "banyak", "semua", "juga", "atau", "punya", "pernah"}
 
 
 def words(t):

@@ -1,11 +1,11 @@
 EP01  LULUS  60s  echo="gantungan, pakaian"
     · (1) hook tidak menyebut benda konkret — cek manual
-EP02  LULUS  56s  echo="keluar, orang, sembilan, tenda"
+EP02  LULUS  56s  echo="keluar, sembilan, tenda"
 EP03  LULUS  51s  echo="sekoci, sepuluh"
-EP04  LULUS  51s  echo="masih"
+EP04  LULUS  53s  echo="dikunci, pintu"
 EP05  LULUS  50s  echo="dibongkar, rumah"
     · (1) hook tidak menyebut benda konkret — cek manual
-EP06  LULUS  50s  echo="orang, tinggal"
+EP06  LULUS  50s  echo="tinggal"
 EP07  LULUS  53s  echo="jejak, keluar"
 EP08  LULUS  53s  echo="sembilan"
 EP09  LULUS  51s  echo="kertas"
@@ -19,7 +19,7 @@ EP14  LULUS  47s  echo="saluran"
     · (1) hook tidak menyebut benda konkret — cek manual
 EP15  LULUS  54s  echo="meter, tingginya"
     · (1) hook tidak menyebut benda konkret — cek manual
-EP16  LULUS  45s  echo="orang, seribu, tertawa"
+EP16  LULUS  45s  echo="seribu, tertawa"
     · (1) hook tidak menyebut benda konkret — cek manual
 EP17  LULUS  51s  echo="dunia, kilometer, suara"
 EP18  LULUS  51s  echo="gunung, sumbawa"

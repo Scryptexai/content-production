@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H4  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 126 kata ≈ 51 detik (target 55 s)
+**Durasi:** 129 kata ≈ 53 detik (target 55 s)
 
 ---
 
@@ -53,7 +53,7 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Empat puluh tujuh tahun, dan satu keluarga masih menunggu satu nama.
+> Pintu mobil itu dibiarkan tidak dikunci. Dan pria kelima tidak pernah turun dari bukit.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 

@@ -147,7 +147,7 @@ EPISODES = [
         ],
         turn_quote="“Mereka tersesat.”",
         turn_verdict="Tersesat tidak membuat orang berjalan ke atas, menjauhi makanan, dan menjauhi jalan.",
-        loop="Empat puluh tujuh tahun, dan satu keluarga masih menunggu satu nama.",
+        loop="Pintu mobil itu dibiarkan tidak dikunci. Dan pria kelima tidak pernah turun dari bukit.",
         cues=["FEB 1978", "PINTU TERBUKA", "TANGKI PENUH", "9 MIL", "1 TIDAK DITEMUKAN"],
         visual="Mobil tertutup salju dari belakang; jejak kaki menanjak; pos jaga hutan gelap.",
         sumber="NEEDS-SOURCE — Yuba County Five 1978; laporan resmi belum dibaca langsung.",
