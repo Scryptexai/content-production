@@ -2,7 +2,7 @@
 
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 129 kata ≈ 53 detik (target 57 s)
+**Durasi:** 123 kata ≈ 50 detik (target 57 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Tinggal di rumah mereka. |
 | **Hambatan** | Tanah di bawah rumah mereka terbakar. |
 | **Tanaman** (detail yang berubah makna di turn) | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Asap tipis keluar dari retakan aspal di jalan yang kosong. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Di bawah kota ini ada api. Ia menyala sebelum ayahmu lahir, dan akan tetap menyala setelah kamu mati.
+> Kota ini dikosongkan tahun 1992. Lima orang masih tinggal. Tanahnya masih hangat.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP06` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

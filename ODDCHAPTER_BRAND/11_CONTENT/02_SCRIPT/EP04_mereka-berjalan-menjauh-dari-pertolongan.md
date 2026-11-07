@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H4  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 127 kata ≈ 52 detik (target 55 s)
+**Durasi:** 126 kata ≈ 51 detik (target 55 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Pulang setelah menonton pertandingan basket. |
 | **Hambatan** | Jalan pegunungan, Februari 1978, salju turun. |
 | **Tanaman** (detail yang berubah makna di turn) | Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Jejak kaki menanjak ke bukit, menjauhi mobil yang mereka tinggalkan. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Pintu mobil itu tidak dikunci. Kuncinya masih di dalam. Mereka memilih naik ke gunung.
+> Tangki penuh, pintu tidak dikunci, kunci masih di dalam. Mereka berjalan ke atas.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Empat puluh tujuh tahun, dan satu keluarga masih menunggu satu nama.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP04` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

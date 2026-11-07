@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H4  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 119 kata ≈ 49 detik (target 52 s)
+**Durasi:** 116 kata ≈ 47 detik (target 52 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menjaga siaran tetap di jalurnya. |
 | **Hambatan** | Seseorang memotong transmisinya, dan dia tidak bisa menghentikannya. |
 | **Tanaman** (detail yang berubah makna di turn) | Pembajakan terjadi dua kali dalam satu malam, di dua saluran berbeda. |
+| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana satu orang bisa memotong dua transmisi, lalu hilang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Layar TV penuh derau dengan siluet kepala di tengahnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama sembilan puluh detik, dua saluran TV di Chicago menayangkan orang yang tidak bisa ditangkap siapa pun.
+> Dua siaran dibajak dalam satu malam, di dua saluran berbeda. Tidak ada yang tertangkap.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Sembilan puluh detik, dua saluran, nol tersangka.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Bagaimana satu orang bisa memotong dua transmisi, lalu hilang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP14` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

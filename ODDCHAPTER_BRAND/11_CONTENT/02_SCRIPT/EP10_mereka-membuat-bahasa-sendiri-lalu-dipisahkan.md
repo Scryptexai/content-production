@@ -14,13 +14,15 @@
 | **Mau** | Punya dunia tempat dia bisa bicara. |
 | **Hambatan** | Dunia luar hanya punya satu cara untuk menyebut mereka: sakit. |
 | **Tanaman** (detail yang berubah makna di turn) | Mereka menulis novel dan puisi dalam bahasa yang mereka buat sendiri. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa memisahkan dua orang yang hanya bicara satu sama lain? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Dua buku catatan penuh huruf yang tidak bisa dibaca siapa pun. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka membuat bahasa sendiri, lalu berhenti bicara pada semua orang lain.
+> Mereka membuat bahasa sendiri dan menulis novel di dalamnya. Lalu dipisahkan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Dua orang. Satu bahasa. Dan satu keputusan yang mengakhiri keduanya.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 11 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa memisahkan dua orang yang hanya bicara satu sama lain?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP10` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

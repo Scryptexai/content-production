@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 122 kata ≈ 50 detik (target 54 s)
+**Durasi:** 125 kata ≈ 51 detik (target 54 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Mengantar 1.701 tong alkohol ke Genoa, lalu pulang. |
 | **Hambatan** | Atlantik Utara, November 1872. |
 | **Tanaman** (detail yang berubah makna di turn) | Sekoci hilang, kompas hilang. Kapalnya sendiri utuh. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa awak meninggalkan kapal yang masih bisa berlayar? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Sekoci kosong di atas air tenang, talinya terkulai. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kapal itu ditemukan kosong. Muatannya utuh. Yang hilang justru sekocinya.
+> 1.701 tong alkohol utuh. Makanan cukup enam bulan. Sepuluh orangnya hilang bersama sekoci.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Sepuluh orang memilih sekoci. Pilihan itu yang tidak pernah bisa dijelaskan.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa awak meninggalkan kapal yang masih bisa berlayar?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP03` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

@@ -16,6 +16,8 @@ dan thumbnail tidak bisa berbeda satu sama lain.
 | `03_THUMBNAIL/*.png` | 21 thumbnail 1080×1920 siap upload |
 | `03_THUMBNAIL/*.svg` | versi vektor yang bisa diedit |
 | `03_THUMBNAIL/CONTACT_SHEET.png` | semua 21 dalam satu grid |
+| `00B_KERANGKA_STORYTELLING.md` | kerangka cerita (Franklin) + rujukan |
+| `00C_MESIN_5_EFEK.md` | lima efek yang diminta, mekanismenya, dan gerbangnya |
 | `05_VISUAL_PLAN.md` | shot list per episode, sistem visual per seri, aset yang harus dibuat, urutan produksi |
 
 ## Cara memperbarui

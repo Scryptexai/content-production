@@ -2,7 +2,7 @@
 
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 136 kata ≈ 56 detik (target 57 s)
+**Durasi:** 131 kata ≈ 53 detik (target 57 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menjalani hidup biasa di pertanian terpencil. |
 | **Hambatan** | Seseorang tinggal di loteng rumah mereka, dan mereka tahu. |
 | **Tanaman** (detail yang berubah makna di turn) | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau pembunuhnya tidak keluar, dari mana dia datang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu baris jejak menuju pintu, dan salju di belakangnya bersih. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Jejak kaki di salju itu hanya mengarah ke rumah. Tidak ada satu pun yang mengarah keluar.
+> Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -51,9 +53,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Langka kaki di loteng itu nyata. Tidak ada yang percaya sampai enam orang sudah mati.
+> Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau pembunuhnya tidak keluar, dari mana dia datang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP07` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 136 kata ≈ 56 detik (target 53 s)
+**Durasi:** 132 kata ≈ 54 detik (target 53 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menunggu seseorang di tempat yang disebutkan dalam catatan. |
 | **Hambatan** | Waktunya tertulis jelas. Orangnya tidak pernah datang. |
 | **Tanaman** (detail yang berubah makna di turn) | Catatan itu menyuruh mereka menunggu, menelan kapsul, lalu memakai masker. |
+| **Celah** (pertanyaan yang dipegang penonton) | Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Dua masker timah di atas batu, menghadap langit. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dua pria ditemukan dengan masker timah di wajah. Di saku salah satunya: catatan yang menyuruh mereka menunggu.
+> Masker timah di wajah mereka. Di saku: catatan berisi jam, tempat, perintah menunggu.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Dua pria menunggu di bukit itu. Sampai sekarang tidak ada yang tahu siapa yang mereka tunggu.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP13` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

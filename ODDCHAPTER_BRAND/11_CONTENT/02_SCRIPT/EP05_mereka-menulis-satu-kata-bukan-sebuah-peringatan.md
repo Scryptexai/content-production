@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 125 kata ≈ 51 detik (target 55 s)
+**Durasi:** 123 kata ≈ 50 detik (target 55 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Bertahan sampai gubernurnya kembali dengan bahan makanan. |
 | **Hambatan** | Gubernurnya pergi ke Inggris dan baru bisa kembali tiga tahun kemudian. |
 | **Tanaman** (detail yang berubah makna di turn) | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka menulis nama tempat, bukan tanda bahaya yang sudah disepakati? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu kata terpahat di tiang pagar, dan tidak ada salib di atasnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Seratus lima belas orang hilang. Tidak ada mayat. Hanya satu kata di pagar: CROATOAN.
+> Rumah dibongkar rapi, bukan dihancurkan. Di pagar: CROATOAN. Tidak ada salib.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -51,9 +53,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Seratus lima belas orang berjalan ke selatan. Empat ratus tahun kemudian, kita baru membacanya.
+> Rumah-rumah itu dibongkar rapi karena mereka memang pindah. Seratus lima belas orang berjalan ke selatan.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 11 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka menulis nama tempat, bukan tanda bahaya yang sudah disepakati?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP05` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

@@ -1,0 +1,31 @@
+EP01  LULUS  60s  echo="gantungan, pakaian"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP02  LULUS  56s  echo="keluar, orang, sembilan, tenda"
+EP03  LULUS  51s  echo="sekoci, sepuluh"
+EP04  LULUS  51s  echo="masih"
+EP05  LULUS  50s  echo="dibongkar, rumah"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP06  LULUS  50s  echo="orang, tinggal"
+EP07  LULUS  53s  echo="jejak, keluar"
+EP08  LULUS  53s  echo="sembilan"
+EP09  LULUS  51s  echo="kertas"
+EP10  LULUS  48s  echo="bahasa"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP11  LULUS  60s  echo="detik"
+EP12  LULUS  43s  echo="menari"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP13  LULUS  54s  echo="menunggu"
+EP14  LULUS  47s  echo="saluran"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP15  LULUS  54s  echo="meter, tingginya"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP16  LULUS  45s  echo="orang, seribu, tertawa"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP17  LULUS  51s  echo="dunia, kilometer, suara"
+EP18  LULUS  51s  echo="gunung, sumbawa"
+EP19  LULUS  49s  echo="hutan, menjauhi, rebah, titik"
+    · (1) hook tidak menyebut benda konkret — cek manual
+EP20  LULUS  49s  echo="bangun"
+EP21  LULUS  44s  echo="menjilat"
+
+21/21 lulus · 0 masalah

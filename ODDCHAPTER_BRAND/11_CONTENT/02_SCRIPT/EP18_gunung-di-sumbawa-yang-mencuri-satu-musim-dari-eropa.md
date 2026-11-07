@@ -2,7 +2,7 @@
 
 **Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H7  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 123 kata ≈ 50 detik (target 57 s)
+**Durasi:** 125 kata ≈ 51 detik (target 57 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Memanen seperti tahun-tahun sebelumnya. |
 | **Hambatan** | Musimnya tidak datang, dan tidak ada yang tahu kenapa. |
 | **Tanaman** (detail yang berubah makna di turn) | Debu dari sebuah gunung di Sumbawa terbang ke stratosfer dan memantulkan sinar matahari. |
+| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Ladang gandum tertutup salju di bulan Juni. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tahun 1816, salju turun di bulan Juni. Penyebabnya gunung di Indonesia.
+> Setahun setelah gunung di Sumbawa meletus, salju turun di bulan Juni di Amerika.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Satu gunung di Sumbawa. Satu musim yang hilang di benua lain.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP18` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

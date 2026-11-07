@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H2  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 134 kata ≈ 55 detik (target 56 s)
+**Durasi:** 136 kata ≈ 56 detik (target 56 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Membawa sembilan orang menyeberangi celah gunung dan pulang. |
 | **Hambatan** | Malam 1 Februari 1959. Suhu di bawah minus tiga puluh. |
 | **Tanaman** (detail yang berubah makna di turn) | Tenda itu disobek dari sisi dalam, dengan pisau. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka memotong tenda sendiri lalu berlari ke salju tanpa sepatu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kain tenda terbuka dari dalam, menganga ke arah kamera. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka memotong tenda itu dari dalam. Lalu keluar ke salju tanpa alas kaki.
+> Tenda itu disobek dari dalam, dengan pisau. Sembilan orang keluar tanpa alas kaki.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -36,7 +38,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Dua mayat ditemukan di bawah pohon. Tiga di antara tenda dan hutan. |
 | TENSION | Empat lainnya baru ditemukan dua bulan kemudian, di dasar jurang. |
 | TURN | Enam puluh tahun teorinya militer, monster, senjata rahasia. |
-| TURN | Pada 2021, ilmuwan memodelkan longsoran lempeng salju. Hampir semua luka itu cocok. |
+| TURN | Enam puluh tahun kemudian, ilmuwan memodelkan longsoran lempeng salju. Hampir semua luka itu cocok. |
 | CONSEQUENCE | Tapi tidak ada model yang menjelaskan kenapa mereka keluar tanpa alas kaki. |
 | CONSEQUENCE | Berkas kasusnya ditutup. Isinya tidak pernah dibuka untuk umum. |
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Sembilan orang keluar dari tenda mereka sendiri, dan satu pertanyaan tetap tinggal.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka memotong tenda sendiri lalu berlari ke salju tanpa sepatu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP02` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

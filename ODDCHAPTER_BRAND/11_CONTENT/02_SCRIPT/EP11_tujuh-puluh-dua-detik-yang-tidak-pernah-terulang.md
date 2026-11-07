@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 148 kata ≈ 60 detik (target 52 s)
+**Durasi:** 147 kata ≈ 60 detik (target 52 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menemukan sesuatu di antara derau yang tidak berarti. |
 | **Hambatan** | Selama lima puluh tahun, tidak ada yang muncul dua kali. |
 | **Tanaman** (detail yang berubah makna di turn) | Sinyal itu datang tepat di frekuensi hidrogen — frekuensi paling masuk akal untuk mengirim pesan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Huruf 6EQUJ5 tercetak di kertas printer, dikelilingi angka. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama tujuh puluh dua detik, teleskop itu menangkap sesuatu. Lalu ia berhenti, selamanya.
+> Sinyal itu datang tepat di frekuensi hidrogen, 72 detik, lalu berhenti selamanya.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Tujuh puluh dua detik. Sejak itu, tidak ada apa-apa. Hanya satu kata di pinggir kertas.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP11` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

@@ -2,7 +2,7 @@
 
 **Seri:** HARGA · **Slot:** MALAM 19.30 WIB · **Hari:** H6  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 110 kata ≈ 45 detik (target 58 s)
+**Durasi:** 108 kata ≈ 44 detik (target 58 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Mendapat upah, dan tetap sehat. |
 | **Hambatan** | Perusahaannya mengajari dia menjilat kuas berisi radium. |
 | **Tanaman** (detail yang berubah makna di turn) | Dokter perusahaan punya satu diagnosis untuk semua gejala itu: sifilis. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa perusahaan punya diagnosis sendiri untuk penyakit yang ia sebabkan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kuas kecil di dekat bibir, dan pot cat yang menyala dalam gelap. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Perusahaan itu mengajari mereka menjilat kuas. Untuk membuat ujungnya runcing. Setiap kali.
+> Mereka diajari menjilat kuas berisi radium. Dokter perusahaan menyebutnya sifilis.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Mereka menjilat kuas itu setiap hari, dan hukumnya berubah hanya setelah mereka mati.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 10 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa perusahaan punya diagnosis sendiri untuk penyakit yang ia sebabkan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP21` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

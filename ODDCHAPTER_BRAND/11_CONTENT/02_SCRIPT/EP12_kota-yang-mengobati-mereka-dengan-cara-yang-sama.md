@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 104 kata ≈ 42 detik (target 54 s)
+**Durasi:** 105 kata ≈ 43 detik (target 54 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Berhenti menari. |
 | **Hambatan** | Tubuhnya tidak mau berhenti, dan kota memberinya satu-satunya obat yang salah. |
 | **Tanaman** (detail yang berubah makna di turn) | Kota itu tidak menghentikan mereka. Dokter menyarankan sebaliknya. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa kota memilih menambah musik, bukan menghentikan mereka? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kaki telanjang berlumur darah di atas batu jalan. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kamu tidak sedang menari. Kamu tidak bisa berhenti. Dan kakimu sudah penuh luka.
+> Kota itu menyuruh mereka terus menari. Ratusan orang menari sampai tidak bisa berdiri.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -50,9 +52,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Tarian itu berhenti. Tapi tidak ada yang tahu bagaimana ia dimulai.
+> Mereka berhenti menari. Tapi tidak ada yang tahu bagaimana tarian itu dimulai.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa kota memilih menambah musik, bukan menghentikan mereka?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP12` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

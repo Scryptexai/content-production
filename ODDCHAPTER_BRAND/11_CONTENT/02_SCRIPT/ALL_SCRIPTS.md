@@ -34,7 +34,7 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H1  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 147 kata ≈ 60 detik (target 56 s)
+**Durasi:** 146 kata ≈ 60 detik (target 56 s)
 
 ---
 
@@ -46,13 +46,15 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | **Mau** | Menyelesaikan pekerjaan pagi dan menunggu kapal yang datang menjemputnya. |
 | **Hambatan** | Desember 1900. Pulau batu tanpa pohon, tanpa jalan, tanpa radio. |
 | **Tanaman** (detail yang berubah makna di turn) | Satu set pakaian tahan air tertinggal di gantungan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa satu penjaga keluar tanpa pakaian tahan airnya? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu set pakaian tahan air tergantung di gantungan, tidak ada yang mengambilnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Satu set pakaian tahan air tertinggal di gantungan. Pemiliknya tidak pernah kembali.
+> Kerja pagi selesai, jendela tertutup. Satu set pakaian tahan air tertinggal di gantungan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -65,9 +67,9 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati. |
 | TENSION | Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari. |
 | TENSION | 26 Desember, kapal tender akhirnya sampai. Pintunya terkunci dari dalam. |
-| TENSION | Lampu sudah dibersihkan. Minyaknya penuh. Jendelanya tertutup. |
 | TENSION | Jam di menara berhenti. Pekerjaan pagi itu selesai semua. |
-| TURN | Selama seratus tahun kita dikutip kalimat yang lebih indah: laut tenang, Tuhan di atas semua. |
+| TURN | Dia keluar cepat, dalam hujan, tanpa pakaian itu. |
+| TURN | Kalimat indah yang kita kutip seratus tahun itu tidak ada di arsip. |
 | TURN | Kalimat itu tidak pernah ada di arsip. Buku harian itu ditambahkan puluhan tahun kemudian. |
 | CONSEQUENCE | Yang tercatat hanya badai, dermaga barat yang rusak, dan tiga pria yang turun menjaganya. |
 | CONSEQUENCE | Tidak satu pun mayat pernah ditemukan. Yang tertinggal hanya pakaian itu. |
@@ -76,16 +78,28 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 
 Dugaan yang dipatahkan: **“Laut tenang. Tuhan di atas semua.”**
 
-Pembalik: Tidak ada di arsip. Ditambahkan puluhan tahun kemudian.
+Pembalik: Sesuatu terjadi setelah kerja selesai. Kalimat dramatisnya ditambahkan kemudian.
 
 Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
 dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Tiga pria turun ke dermaga, dan laut menyimpan jawabannya seratus dua puluh enam tahun.
+> Pakaian itu masih di gantungan, dan laut menyimpan sisanya seratus dua puluh enam tahun.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa satu penjaga keluar tanpa pakaian tahan airnya?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP01` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -128,7 +142,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H2  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 134 kata ≈ 55 detik (target 56 s)
+**Durasi:** 136 kata ≈ 56 detik (target 56 s)
 
 ---
 
@@ -140,13 +154,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Membawa sembilan orang menyeberangi celah gunung dan pulang. |
 | **Hambatan** | Malam 1 Februari 1959. Suhu di bawah minus tiga puluh. |
 | **Tanaman** (detail yang berubah makna di turn) | Tenda itu disobek dari sisi dalam, dengan pisau. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka memotong tenda sendiri lalu berlari ke salju tanpa sepatu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kain tenda terbuka dari dalam, menganga ke arah kamera. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka memotong tenda itu dari dalam. Lalu keluar ke salju tanpa alas kaki.
+> Tenda itu disobek dari dalam, dengan pisau. Sembilan orang keluar tanpa alas kaki.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -162,7 +178,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Dua mayat ditemukan di bawah pohon. Tiga di antara tenda dan hutan. |
 | TENSION | Empat lainnya baru ditemukan dua bulan kemudian, di dasar jurang. |
 | TURN | Enam puluh tahun teorinya militer, monster, senjata rahasia. |
-| TURN | Pada 2021, ilmuwan memodelkan longsoran lempeng salju. Hampir semua luka itu cocok. |
+| TURN | Enam puluh tahun kemudian, ilmuwan memodelkan longsoran lempeng salju. Hampir semua luka itu cocok. |
 | CONSEQUENCE | Tapi tidak ada model yang menjelaskan kenapa mereka keluar tanpa alas kaki. |
 | CONSEQUENCE | Berkas kasusnya ditutup. Isinya tidak pernah dibuka untuk umum. |
 
@@ -180,6 +196,18 @@ dilihat penonton sejak detik pertama.
 > Sembilan orang keluar dari tenda mereka sendiri, dan satu pertanyaan tetap tinggal.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka memotong tenda sendiri lalu berlari ke salju tanpa sepatu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP02` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -222,7 +250,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 122 kata ≈ 50 detik (target 54 s)
+**Durasi:** 125 kata ≈ 51 detik (target 54 s)
 
 ---
 
@@ -234,13 +262,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Mengantar 1.701 tong alkohol ke Genoa, lalu pulang. |
 | **Hambatan** | Atlantik Utara, November 1872. |
 | **Tanaman** (detail yang berubah makna di turn) | Sekoci hilang, kompas hilang. Kapalnya sendiri utuh. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa awak meninggalkan kapal yang masih bisa berlayar? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Sekoci kosong di atas air tenang, talinya terkulai. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kapal itu ditemukan kosong. Muatannya utuh. Yang hilang justru sekocinya.
+> 1.701 tong alkohol utuh. Makanan cukup enam bulan. Sepuluh orangnya hilang bersama sekoci.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -273,6 +303,18 @@ dilihat penonton sejak detik pertama.
 > Sepuluh orang memilih sekoci. Pilihan itu yang tidak pernah bisa dijelaskan.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa awak meninggalkan kapal yang masih bisa berlayar?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP03` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -315,7 +357,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H4  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 127 kata ≈ 52 detik (target 55 s)
+**Durasi:** 126 kata ≈ 51 detik (target 55 s)
 
 ---
 
@@ -327,13 +369,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Pulang setelah menonton pertandingan basket. |
 | **Hambatan** | Jalan pegunungan, Februari 1978, salju turun. |
 | **Tanaman** (detail yang berubah makna di turn) | Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Jejak kaki menanjak ke bukit, menjauhi mobil yang mereka tinggalkan. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Pintu mobil itu tidak dikunci. Kuncinya masih di dalam. Mereka memilih naik ke gunung.
+> Tangki penuh, pintu tidak dikunci, kunci masih di dalam. Mereka berjalan ke atas.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -367,6 +411,18 @@ dilihat penonton sejak detik pertama.
 > Empat puluh tujuh tahun, dan satu keluarga masih menunggu satu nama.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP04` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -409,7 +465,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 125 kata ≈ 51 detik (target 55 s)
+**Durasi:** 123 kata ≈ 50 detik (target 55 s)
 
 ---
 
@@ -421,13 +477,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Bertahan sampai gubernurnya kembali dengan bahan makanan. |
 | **Hambatan** | Gubernurnya pergi ke Inggris dan baru bisa kembali tiga tahun kemudian. |
 | **Tanaman** (detail yang berubah makna di turn) | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka menulis nama tempat, bukan tanda bahaya yang sudah disepakati? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu kata terpahat di tiang pagar, dan tidak ada salib di atasnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Seratus lima belas orang hilang. Tidak ada mayat. Hanya satu kata di pagar: CROATOAN.
+> Rumah dibongkar rapi, bukan dihancurkan. Di pagar: CROATOAN. Tidak ada salib.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -458,9 +516,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Seratus lima belas orang berjalan ke selatan. Empat ratus tahun kemudian, kita baru membacanya.
+> Rumah-rumah itu dibongkar rapi karena mereka memang pindah. Seratus lima belas orang berjalan ke selatan.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 11 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka menulis nama tempat, bukan tanda bahaya yang sudah disepakati?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP05` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -503,7 +573,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 129 kata ≈ 53 detik (target 57 s)
+**Durasi:** 123 kata ≈ 50 detik (target 57 s)
 
 ---
 
@@ -515,13 +585,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Tinggal di rumah mereka. |
 | **Hambatan** | Tanah di bawah rumah mereka terbakar. |
 | **Tanaman** (detail yang berubah makna di turn) | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Asap tipis keluar dari retakan aspal di jalan yang kosong. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Di bawah kota ini ada api. Ia menyala sebelum ayahmu lahir, dan akan tetap menyala setelah kamu mati.
+> Kota ini dikosongkan tahun 1992. Lima orang masih tinggal. Tanahnya masih hangat.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -554,6 +626,18 @@ dilihat penonton sejak detik pertama.
 > Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP06` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -596,7 +680,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 136 kata ≈ 56 detik (target 57 s)
+**Durasi:** 131 kata ≈ 53 detik (target 57 s)
 
 ---
 
@@ -608,13 +692,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menjalani hidup biasa di pertanian terpencil. |
 | **Hambatan** | Seseorang tinggal di loteng rumah mereka, dan mereka tahu. |
 | **Tanaman** (detail yang berubah makna di turn) | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau pembunuhnya tidak keluar, dari mana dia datang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu baris jejak menuju pintu, dan salju di belakangnya bersih. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Jejak kaki di salju itu hanya mengarah ke rumah. Tidak ada satu pun yang mengarah keluar.
+> Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -645,9 +731,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Langka kaki di loteng itu nyata. Tidak ada yang percaya sampai enam orang sudah mati.
+> Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau pembunuhnya tidak keluar, dari mana dia datang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP07` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -702,13 +800,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Tidak ditemukan. |
 | **Hambatan** | Seseorang atau sesuatu membuatnya harus menghilang. |
 | **Tanaman** (detail yang berubah makna di turn) | Semua label di pakaiannya dipotong. Termasuk di sepatu. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Label pakaian yang dipotong rapi, satu per satu. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Semua label di pakaiannya dipotong. Termasuk di sepatu. Dia tidak ingin ditemukan.
+> Semua label di pakaiannya dipotong, termasuk di sepatu. Dia memakai sembilan nama.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -741,6 +841,18 @@ dilihat penonton sejak detik pertama.
 > Sembilan nama, satu wajah, dan tidak satu pun yang benar.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP08` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -795,13 +907,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | — |
 | **Hambatan** | — |
 | **Tanaman** (detail yang berubah makna di turn) | Secarik kertas di saku: TAMAM SHUD. Tidak ada dompet, tidak ada tanda pengenal. |
+| **Celah** (pertanyaan yang dipegang penonton) | Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Secarik kertas dengan dua kata, terlipat di saku jas. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dia ditemukan dengan dua kata di saku: TAMAM SHUD. Butuh 74 tahun untuk tahu siapa dia.
+> Tidak ada dompet, tidak ada nama. Hanya kertas di saku: TAMAM SHUD.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -815,7 +929,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Beberapa bulan kemudian, seseorang menemukan buku puisi Omar Khayyam. |
 | TENSION | Di dalamnya ada deretan huruf yang sampai sekarang belum dipecahkan. |
 | TENSION | Selama tujuh puluh tahun, teorinya: mata-mata Perang Dingin. |
-| TURN | Pada 2022, peneliti memakai silsilah DNA. |
+| TURN | Puluhan tahun kemudian, peneliti memakai silsilah DNA. |
 | TURN | Pria itu seorang teknisi listrik dari Melbourne bernama Carl Webb. |
 | CONSEQUENCE | Bukan mata-mata. Bukan siapa-siapa yang penting. |
 | CONSEQUENCE | Yang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu. |
@@ -831,9 +945,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Dua kata, satu kode, dan satu pertanyaan yang tidak dijawab oleh namanya.
+> Kertas di sakunya masih dua kata, dan namanya baru diketahui setelah tujuh puluh empat tahun.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP09` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -888,13 +1014,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Punya dunia tempat dia bisa bicara. |
 | **Hambatan** | Dunia luar hanya punya satu cara untuk menyebut mereka: sakit. |
 | **Tanaman** (detail yang berubah makna di turn) | Mereka menulis novel dan puisi dalam bahasa yang mereka buat sendiri. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa memisahkan dua orang yang hanya bicara satu sama lain? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Dua buku catatan penuh huruf yang tidak bisa dibaca siapa pun. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka membuat bahasa sendiri, lalu berhenti bicara pada semua orang lain.
+> Mereka membuat bahasa sendiri dan menulis novel di dalamnya. Lalu dipisahkan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -927,6 +1055,18 @@ dilihat penonton sejak detik pertama.
 > Dua orang. Satu bahasa. Dan satu keputusan yang mengakhiri keduanya.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 11 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa memisahkan dua orang yang hanya bicara satu sama lain?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP10` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -969,7 +1109,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 148 kata ≈ 60 detik (target 52 s)
+**Durasi:** 147 kata ≈ 60 detik (target 52 s)
 
 ---
 
@@ -981,13 +1121,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menemukan sesuatu di antara derau yang tidak berarti. |
 | **Hambatan** | Selama lima puluh tahun, tidak ada yang muncul dua kali. |
 | **Tanaman** (detail yang berubah makna di turn) | Sinyal itu datang tepat di frekuensi hidrogen — frekuensi paling masuk akal untuk mengirim pesan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Huruf 6EQUJ5 tercetak di kertas printer, dikelilingi angka. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama tujuh puluh dua detik, teleskop itu menangkap sesuatu. Lalu ia berhenti, selamanya.
+> Sinyal itu datang tepat di frekuensi hidrogen, 72 detik, lalu berhenti selamanya.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1021,6 +1163,18 @@ dilihat penonton sejak detik pertama.
 > Tujuh puluh dua detik. Sejak itu, tidak ada apa-apa. Hanya satu kata di pinggir kertas.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP11` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1063,7 +1217,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 104 kata ≈ 42 detik (target 54 s)
+**Durasi:** 105 kata ≈ 43 detik (target 54 s)
 
 ---
 
@@ -1075,13 +1229,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Berhenti menari. |
 | **Hambatan** | Tubuhnya tidak mau berhenti, dan kota memberinya satu-satunya obat yang salah. |
 | **Tanaman** (detail yang berubah makna di turn) | Kota itu tidak menghentikan mereka. Dokter menyarankan sebaliknya. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa kota memilih menambah musik, bukan menghentikan mereka? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kaki telanjang berlumur darah di atas batu jalan. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kamu tidak sedang menari. Kamu tidak bisa berhenti. Dan kakimu sudah penuh luka.
+> Kota itu menyuruh mereka terus menari. Ratusan orang menari sampai tidak bisa berdiri.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1111,9 +1267,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Tarian itu berhenti. Tapi tidak ada yang tahu bagaimana ia dimulai.
+> Mereka berhenti menari. Tapi tidak ada yang tahu bagaimana tarian itu dimulai.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa kota memilih menambah musik, bukan menghentikan mereka?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP12` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1156,7 +1324,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 136 kata ≈ 56 detik (target 53 s)
+**Durasi:** 132 kata ≈ 54 detik (target 53 s)
 
 ---
 
@@ -1168,13 +1336,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menunggu seseorang di tempat yang disebutkan dalam catatan. |
 | **Hambatan** | Waktunya tertulis jelas. Orangnya tidak pernah datang. |
 | **Tanaman** (detail yang berubah makna di turn) | Catatan itu menyuruh mereka menunggu, menelan kapsul, lalu memakai masker. |
+| **Celah** (pertanyaan yang dipegang penonton) | Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Dua masker timah di atas batu, menghadap langit. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dua pria ditemukan dengan masker timah di wajah. Di saku salah satunya: catatan yang menyuruh mereka menunggu.
+> Masker timah di wajah mereka. Di saku: catatan berisi jam, tempat, perintah menunggu.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1207,6 +1377,18 @@ dilihat penonton sejak detik pertama.
 > Dua pria menunggu di bukit itu. Sampai sekarang tidak ada yang tahu siapa yang mereka tunggu.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP13` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1249,7 +1431,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H4  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 119 kata ≈ 49 detik (target 52 s)
+**Durasi:** 116 kata ≈ 47 detik (target 52 s)
 
 ---
 
@@ -1261,13 +1443,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menjaga siaran tetap di jalurnya. |
 | **Hambatan** | Seseorang memotong transmisinya, dan dia tidak bisa menghentikannya. |
 | **Tanaman** (detail yang berubah makna di turn) | Pembajakan terjadi dua kali dalam satu malam, di dua saluran berbeda. |
+| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana satu orang bisa memotong dua transmisi, lalu hilang? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Layar TV penuh derau dengan siluet kepala di tengahnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama sembilan puluh detik, dua saluran TV di Chicago menayangkan orang yang tidak bisa ditangkap siapa pun.
+> Dua siaran dibajak dalam satu malam, di dua saluran berbeda. Tidak ada yang tertangkap.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1300,6 +1484,18 @@ dilihat penonton sejak detik pertama.
 > Sembilan puluh detik, dua saluran, nol tersangka.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Bagaimana satu orang bisa memotong dua transmisi, lalu hilang?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP14` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1342,7 +1538,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 133 kata ≈ 54 detik (target 57 s)
+**Durasi:** 132 kata ≈ 54 detik (target 57 s)
 
 ---
 
@@ -1354,13 +1550,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Mencari bukti manusia purba yang bermigrasi lewat Indonesia. |
 | **Hambatan** | Yang mereka temukan tidak cocok dengan apa pun di buku teks. |
 | **Tanaman** (detail yang berubah makna di turn) | Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Tengkorak kecil di samping alat batu, di lantai gua. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kita diajarkan bahwa setelah mereka punah, hanya kita yang tersisa. Tulang ini membuktikan itu salah.
+> Tingginya satu meter, otaknya sepertiga otak kita. Dan dia hidup saat kita sudah ada.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1393,6 +1591,18 @@ dilihat penonton sejak detik pertama.
 > Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP15` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1435,7 +1645,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H6  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 112 kata ≈ 46 detik (target 52 s)
+**Durasi:** 110 kata ≈ 45 detik (target 52 s)
 
 ---
 
@@ -1447,13 +1657,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menjalani hari sekolah seperti biasa. |
 | **Hambatan** | Tubuh mereka mulai tertawa, dan tidak berhenti. |
 | **Tanaman** (detail yang berubah makna di turn) | Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan penyakit, apa yang menular di sekolah itu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Bangku kelas kosong dengan papan tulis penuh tulisan pudar. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tiga murid mulai tertawa. Dalam dua bulan, seribu orang ikut. Sekolahnya ditutup.
+> Seribu orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1487,6 +1699,18 @@ dilihat penonton sejak detik pertama.
 > Seribu orang tertawa karena tidak punya cara lain untuk bicara.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 10 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau bukan penyakit, apa yang menular di sekolah itu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP16` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1541,13 +1765,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Melewati selat itu dan sampai di pelabuhan berikutnya. |
 | **Hambatan** | Gunung di depannya sedang membelah dirinya sendiri. |
 | **Tanaman** (detail yang berubah makna di turn) | Suara itu tidak hanya terdengar. Gelombang tekanannya tercatat di barometer seluruh dunia. |
+| **Celah** (pertanyaan yang dipegang penonton) | Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Barometer di Eropa mencatat gelombang dari gunung di Selat Sunda. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Pukul 10.02, 27 Agustus 1883, suara itu terdengar di Australia. Dan 4.800 kilometer jauhnya.
+> Suara itu terdengar 4.800 kilometer jauhnya. Gelombang tekanannya tercatat di seluruh dunia.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1577,9 +1803,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Satu gunung di Selat Sunda, dan langit di Eropa berubah warna selama bertahun-tahun.
+> Suara itu tidak berhenti di 4.800 kilometer. Ia berputar mengelilingi dunia, dan langit Eropa berubah.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP17` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1622,7 +1860,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H7  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 123 kata ≈ 50 detik (target 57 s)
+**Durasi:** 125 kata ≈ 51 detik (target 57 s)
 
 ---
 
@@ -1634,13 +1872,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Memanen seperti tahun-tahun sebelumnya. |
 | **Hambatan** | Musimnya tidak datang, dan tidak ada yang tahu kenapa. |
 | **Tanaman** (detail yang berubah makna di turn) | Debu dari sebuah gunung di Sumbawa terbang ke stratosfer dan memantulkan sinar matahari. |
+| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Ladang gandum tertutup salju di bulan Juni. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tahun 1816, salju turun di bulan Juni. Penyebabnya gunung di Indonesia.
+> Setahun setelah gunung di Sumbawa meletus, salju turun di bulan Juni di Amerika.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1674,6 +1914,18 @@ dilihat penonton sejak detik pertama.
 > Satu gunung di Sumbawa. Satu musim yang hilang di benua lain.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP18` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1716,7 +1968,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** BENCANA · **Slot:** SIANG 12.30 WIB · **Hari:** H7  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 120 kata ≈ 49 detik (target 54 s)
+**Durasi:** 119 kata ≈ 49 detik (target 54 s)
 
 ---
 
@@ -1728,13 +1980,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Menemukan kawah meteorit dan besinya. |
 | **Hambatan** | Tidak ada kawah, tidak ada pecahan, tidak ada logam. |
 | **Tanaman** (detail yang berubah makna di turn) | Dua ribu kilometer persegi hutan rebah menjauhi satu titik — dan di titik itu tidak ada apa-apa. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau ada ledakan sebesar itu, di mana batunya? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Ribuan pohon rebah radial, dan satu titik kosong di tengahnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Sebuah ledakan meratakan dua ribu kilometer persegi hutan. Tidak ada kawah. Tidak ada pecahan.
+> Dua ribu kilometer persegi hutan rebah, semua menjauhi satu titik. Tidak ada kawah.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1768,6 +2022,18 @@ dilihat penonton sejak detik pertama.
 > Hutan rebah menjauhi satu titik kosong. Sampai sekarang, titik itu tetap kosong.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau ada ledakan sebesar itu, di mana batunya?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP19` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1810,7 +2076,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** BENCANA · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 120 kata ≈ 49 detik (target 58 s)
+**Durasi:** 119 kata ≈ 49 detik (target 58 s)
 
 ---
 
@@ -1822,13 +2088,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Tidur seperti malam-malam sebelumnya. |
 | **Hambatan** | Malam itu, danau di atas mereka mengeluarkan napas. |
 | **Tanaman** (detail yang berubah makna di turn) | Tidak ada letusan, tidak ada lava, tidak ada api. Tidak ada yang bisa dilihat. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan gunung, apa yang membunuh satu lembah dalam satu malam? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Danau hitam yang tenang, dan lembah di bawahnya yang sunyi. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama satu malam, sebuah danau mengeluarkan napas. Pagi berikutnya, 1.700 orang tidak bangun.
+> Tidak ada letusan, tidak ada lava. Pagi berikutnya 1.700 orang tidak bangun.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1861,6 +2129,18 @@ dilihat penonton sejak detik pertama.
 > Sebuah danau bernapas sekali, dan satu lembah tidak pernah bangun.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau bukan gunung, apa yang membunuh satu lembah dalam satu malam?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP20` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
@@ -1903,7 +2183,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 **Seri:** HARGA · **Slot:** MALAM 19.30 WIB · **Hari:** H6  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 110 kata ≈ 45 detik (target 58 s)
+**Durasi:** 108 kata ≈ 44 detik (target 58 s)
 
 ---
 
@@ -1915,13 +2195,15 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Mau** | Mendapat upah, dan tetap sehat. |
 | **Hambatan** | Perusahaannya mengajari dia menjilat kuas berisi radium. |
 | **Tanaman** (detail yang berubah makna di turn) | Dokter perusahaan punya satu diagnosis untuk semua gejala itu: sifilis. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa perusahaan punya diagnosis sendiri untuk penyakit yang ia sebabkan? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Kuas kecil di dekat bibir, dan pot cat yang menyala dalam gelap. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Perusahaan itu mengajari mereka menjilat kuas. Untuk membuat ujungnya runcing. Setiap kali.
+> Mereka diajari menjilat kuas berisi radium. Dokter perusahaan menyebutnya sifilis.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -1955,6 +2237,18 @@ dilihat penonton sejak detik pertama.
 > Mereka menjilat kuas itu setiap hari, dan hukumnya berubah hanya setelah mereka mati.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 10 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa perusahaan punya diagnosis sendiri untuk penyakit yang ia sebabkan?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP21` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

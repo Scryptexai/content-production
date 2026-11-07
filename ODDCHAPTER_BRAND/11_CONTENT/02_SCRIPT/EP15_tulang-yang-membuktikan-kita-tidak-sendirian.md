@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 133 kata ≈ 54 detik (target 57 s)
+**Durasi:** 132 kata ≈ 54 detik (target 57 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Mencari bukti manusia purba yang bermigrasi lewat Indonesia. |
 | **Hambatan** | Yang mereka temukan tidak cocok dengan apa pun di buku teks. |
 | **Tanaman** (detail yang berubah makna di turn) | Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Tengkorak kecil di samping alat batu, di lantai gua. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kita diajarkan bahwa setelah mereka punah, hanya kita yang tersisa. Tulang ini membuktikan itu salah.
+> Tingginya satu meter, otaknya sepertiga otak kita. Dan dia hidup saat kita sudah ada.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -53,6 +55,18 @@ dilihat penonton sejak detik pertama.
 > Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP15` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

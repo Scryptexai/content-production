@@ -14,13 +14,15 @@
 | **Mau** | — |
 | **Hambatan** | — |
 | **Tanaman** (detail yang berubah makna di turn) | Secarik kertas di saku: TAMAM SHUD. Tidak ada dompet, tidak ada tanda pengenal. |
+| **Celah** (pertanyaan yang dipegang penonton) | Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Secarik kertas dengan dua kata, terlipat di saku jas. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dia ditemukan dengan dua kata di saku: TAMAM SHUD. Butuh 74 tahun untuk tahu siapa dia.
+> Tidak ada dompet, tidak ada nama. Hanya kertas di saku: TAMAM SHUD.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -34,7 +36,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Beberapa bulan kemudian, seseorang menemukan buku puisi Omar Khayyam. |
 | TENSION | Di dalamnya ada deretan huruf yang sampai sekarang belum dipecahkan. |
 | TENSION | Selama tujuh puluh tahun, teorinya: mata-mata Perang Dingin. |
-| TURN | Pada 2022, peneliti memakai silsilah DNA. |
+| TURN | Puluhan tahun kemudian, peneliti memakai silsilah DNA. |
 | TURN | Pria itu seorang teknisi listrik dari Melbourne bernama Carl Webb. |
 | CONSEQUENCE | Bukan mata-mata. Bukan siapa-siapa yang penting. |
 | CONSEQUENCE | Yang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu. |
@@ -50,9 +52,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Dua kata, satu kode, dan satu pertanyaan yang tidak dijawab oleh namanya.
+> Kertas di sakunya masih dua kata, dan namanya baru diketahui setelah tujuh puluh empat tahun.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP09` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

@@ -2,7 +2,7 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H6  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 112 kata ≈ 46 detik (target 52 s)
+**Durasi:** 110 kata ≈ 45 detik (target 52 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menjalani hari sekolah seperti biasa. |
 | **Hambatan** | Tubuh mereka mulai tertawa, dan tidak berhenti. |
 | **Tanaman** (detail yang berubah makna di turn) | Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan penyakit, apa yang menular di sekolah itu? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Bangku kelas kosong dengan papan tulis penuh tulisan pudar. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tiga murid mulai tertawa. Dalam dua bulan, seribu orang ikut. Sekolahnya ditutup.
+> Seribu orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -54,6 +56,18 @@ dilihat penonton sejak detik pertama.
 > Seribu orang tertawa karena tidak punya cara lain untuk bicara.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 10 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kalau bukan penyakit, apa yang menular di sekolah itu?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP16` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

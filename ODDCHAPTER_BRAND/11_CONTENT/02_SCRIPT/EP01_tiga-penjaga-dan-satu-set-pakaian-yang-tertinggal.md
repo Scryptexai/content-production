@@ -2,7 +2,7 @@
 
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H1  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 147 kata ≈ 60 detik (target 56 s)
+**Durasi:** 146 kata ≈ 60 detik (target 56 s)
 
 ---
 
@@ -14,13 +14,15 @@
 | **Mau** | Menyelesaikan pekerjaan pagi dan menunggu kapal yang datang menjemputnya. |
 | **Hambatan** | Desember 1900. Pulau batu tanpa pohon, tanpa jalan, tanpa radio. |
 | **Tanaman** (detail yang berubah makna di turn) | Satu set pakaian tahan air tertinggal di gantungan. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa satu penjaga keluar tanpa pakaian tahan airnya? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Satu set pakaian tahan air tergantung di gantungan, tidak ada yang mengambilnya. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Satu set pakaian tahan air tertinggal di gantungan. Pemiliknya tidak pernah kembali.
+> Kerja pagi selesai, jendela tertutup. Satu set pakaian tahan air tertinggal di gantungan.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -33,9 +35,9 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TENSION | Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati. |
 | TENSION | Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari. |
 | TENSION | 26 Desember, kapal tender akhirnya sampai. Pintunya terkunci dari dalam. |
-| TENSION | Lampu sudah dibersihkan. Minyaknya penuh. Jendelanya tertutup. |
 | TENSION | Jam di menara berhenti. Pekerjaan pagi itu selesai semua. |
-| TURN | Selama seratus tahun kita dikutip kalimat yang lebih indah: laut tenang, Tuhan di atas semua. |
+| TURN | Dia keluar cepat, dalam hujan, tanpa pakaian itu. |
+| TURN | Kalimat indah yang kita kutip seratus tahun itu tidak ada di arsip. |
 | TURN | Kalimat itu tidak pernah ada di arsip. Buku harian itu ditambahkan puluhan tahun kemudian. |
 | CONSEQUENCE | Yang tercatat hanya badai, dermaga barat yang rusak, dan tiga pria yang turun menjaganya. |
 | CONSEQUENCE | Tidak satu pun mayat pernah ditemukan. Yang tertinggal hanya pakaian itu. |
@@ -44,16 +46,28 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 
 Dugaan yang dipatahkan: **“Laut tenang. Tuhan di atas semua.”**
 
-Pembalik: Tidak ada di arsip. Ditambahkan puluhan tahun kemudian.
+Pembalik: Sesuatu terjadi setelah kerja selesai. Kalimat dramatisnya ditambahkan kemudian.
 
 Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
 dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Tiga pria turun ke dermaga, dan laut menyimpan jawabannya seratus dua puluh enam tahun.
+> Pakaian itu masih di gantungan, dan laut menyimpan sisanya seratus dua puluh enam tahun.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa satu penjaga keluar tanpa pakaian tahan airnya?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP01` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 

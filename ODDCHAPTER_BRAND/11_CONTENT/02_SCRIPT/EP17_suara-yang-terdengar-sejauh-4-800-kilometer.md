@@ -14,13 +14,15 @@
 | **Mau** | Melewati selat itu dan sampai di pelabuhan berikutnya. |
 | **Hambatan** | Gunung di depannya sedang membelah dirinya sendiri. |
 | **Tanaman** (detail yang berubah makna di turn) | Suara itu tidak hanya terdengar. Gelombang tekanannya tercatat di barometer seluruh dunia. |
+| **Celah** (pertanyaan yang dipegang penonton) | Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Barometer di Eropa mencatat gelombang dari gunung di Selat Sunda. |
 
 Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
 wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Pukul 10.02, 27 Agustus 1883, suara itu terdengar di Australia. Dan 4.800 kilometer jauhnya.
+> Suara itu terdengar 4.800 kilometer jauhnya. Gelombang tekanannya tercatat di seluruh dunia.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -50,9 +52,21 @@ dilihat penonton sejak detik pertama.
 
 ## 4 · ECHO
 
-> Satu gunung di Selat Sunda, dan langit di Eropa berubah warna selama bertahun-tahun.
+> Suara itu tidak berhenti di 4.800 kilometer. Ia berputar mengelilingi dunia, dan langit Eropa berubah.
 
 Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+
+## 4b · KONTRAK LIMA EFEK
+
+| # | efek | perangkat di episode ini |
+|---|---|---|
+| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak?_ |
+| 3 | bertahan | satu loop, ditutup hanya di turn |
+| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
+| 5 | diingat | gambar melekat + echo kata di penutup |
+
+Gerbang otomatis: `python3 ../tools/check_story.py EP17` (lihat `00C_MESIN_5_EFEK.md`).
 
 ## 5 · TEKS DI LAYAR
 
