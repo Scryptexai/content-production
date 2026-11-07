@@ -21,8 +21,9 @@ cannot drift apart. Change a radius there and the whole set rebuilds consistentl
 | `06_EXPORTS/` | favicons 512/192/32, transparent icon 512, primary logo 2000 | 5 PNG |
 | `07_PRINT/` | one-colour 100 K masters, letterhead, card front/back, A2 poster, die-cut sticker, tee art, minimum-size sheet + `PRINT_SPEC.md` | 9 SVG · 7 PNG |
 | `08_AUDIO/` | `AUDIO_IDENTITY.md` + spoken signature (ID 5.93 s, EN 3.70 s) + 20.54 s cold-open reference read | 3 MP3 |
+| `portal/` | `index.html` — the whole system as one browsable page (mark, colour, type, usage, motion, audio, channel, print, file index) | 1 HTML |
 
-Total: **60 SVG · 61 PNG · 1 GIF · 3 MP3 · 13 documents.** Everything is on the branch and reproducible.
+Total: **60 SVG · 61 PNG · 1 GIF · 3 MP3 · 13 documents · 1 portal page.** Everything is on the branch and reproducible.
 
 ---
 
@@ -47,6 +48,7 @@ Every claim below was measured in this environment, not assumed.
 | Print artwork | parsed mm, rendered at 300/150/90 dpi, inspected | All nine files measure as specified; card, letterhead, poster, sticker, tee and 100 K masters inspected |
 | Audio durations | frame-count parse of the MPEG stream (`tools/audio_info.py`) | 5.93 s / 3.70 s / 20.54 s; pacing 140 words/min |
 | Audio pronunciation | — | **NOT VERIFIED** — nothing here can listen; the owner must check *ODDCHAPTER* against the guide |
+| Portal | `tools/check_portal.py`: markup closes, 30 local refs resolve, 27 images/audio decode, only Google Fonts loaded remotely; served over HTTP and fetched (200 + correct MIME) | VERIFIED structurally — **not** visually: there is no browser in this sandbox |
 | Font licensing | `LICENSE` inside each `@fontsource` package | Space Grotesk + Inter = SIL OFL 1.1 |
 
 ---

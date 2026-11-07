@@ -23,6 +23,7 @@ be rebuilt from that source.
 | 7 | Extended surfaces + motion delivery | **Complete** — stories, OG card, end card; rendered 38-frame build + SMIL |
 | 8 | Print & physical applications | **Complete** — 9 mm-authored artworks + `07_PRINT/PRINT_SPEC.md` |
 | 9 | Audio identity | **Complete** — voice auditioned, spoken signature delivered + `08_AUDIO/AUDIO_IDENTITY.md` |
+| 10 | Brand portal | **Complete** — `portal/index.html`, every asset browsable, link-checked |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -49,6 +50,7 @@ ODDCHAPTER_BRAND/
 │   ├── build_motion.py          Phase 7: frames, GIF, poster, SMIL opener
 │   ├── build_print.py           Phase 8: mm-authored print artwork
 │   ├── audio_info.py            MP3 duration parser (no ffprobe on this host)
+│   ├── check_portal.py          validates portal markup + every asset link
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -65,7 +67,8 @@ ODDCHAPTER_BRAND/
 ├── 05_PREVIEWS/ concept overview · small-size test · approved refinement · usage sheet · contact sheet
 ├── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
 ├── 07_PRINT/    PRINT_SPEC.md · one_colour · stationery · poster · merch · previews
-└── 08_AUDIO/    AUDIO_IDENTITY.md · assets/ (signature ID + EN, cold-open read)
+├── 08_AUDIO/    AUDIO_IDENTITY.md · assets/ (signature ID + EN, cold-open read)
+└── portal/      index.html — the whole system on one page, asset-links verified
 ```
 
 ---
@@ -137,6 +140,8 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 24 | Brand voice is auditioned, not assumed | The brand docs fix the *profile*, not the person; the owner picks the voice | Done |
 | 25 | Spoken signature, not a sonic logo | A musical mark needs a composer or a music model — neither is in this toolchain | Documented |
 | 26 | Delivered MP3s are reference quality (24 kHz mono) | Enough to judge timing and tone; masters must be re-recorded at 48 kHz | Open |
+| 27 | Portal is one static HTML file, no build step | It has to open from a folder, a URL or a zip without npm | Applied |
+| 28 | Portal links are checked at build time | A broken hero image is worse than no portal; `check_portal.py` fails `render_all.sh` | Applied |
 
 ---
 

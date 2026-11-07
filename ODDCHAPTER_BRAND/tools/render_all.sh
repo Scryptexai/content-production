@@ -67,3 +67,6 @@ R 01_LOGO/dark/ICON_SQUARE_DARK.svg  06_EXPORTS/FAVICON_192.png 192
 R 01_LOGO/dark/ICON_SQUARE_DARK.svg  06_EXPORTS/FAVICON_32.png 32
 R 01_LOGO/master/ICON_SQUARE.svg     06_EXPORTS/ICON_TRANSPARENT_512.png 512
 R 01_LOGO/master/LOGO_MASTER.svg     06_EXPORTS/LOGO_PRIMARY_2000.png 2000
+
+# --- brand portal: fail the build if the page references a missing or broken asset
+python3 tools/check_portal.py
