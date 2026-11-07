@@ -35,8 +35,13 @@ export const Photo: React.FC<{ src: string; i: number; dur: number }> = ({ src, 
   const shakeY = Math.cos(frame / 8.1 + i * 2.3) * 1.4;
   const flicker = 0.015 + 0.018 * Math.sin(frame / 9.3 + i * 2.1) + 0.01 * Math.sin(frame / 2.7);
 
-  // masuk cepat 3 frame dari hitam: potongan keras, bukan dissolve
-  const inn = interpolate(frame, [0, 3], [0.35, 1], { extrapolateRight: "clamp" });
+  // masuk cepat: 3 frame dari hitam + dorongan 70 px dari arah gerak.
+  // Ini yang membuat cut terasa memukul, bukan berganti pelan-pelan.
+  const inn = interpolate(frame, [0, 3], [0.3, 1], { extrapolateRight: "clamp" });
+  const punch = interpolate(frame, [0, 7], [1, 0], { extrapolateRight: "clamp" });
+  const punchX = (mode === "panLeft" ? 70 : mode === "panRight" ? -70 : 0) * punch;
+  const punchY = (mode === "pushIn" ? 60 : mode === "pullOut" ? -60 : 0) * punch;
+  const punchBright = 1 + 0.28 * punch;
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink, overflow: "hidden" }}>
@@ -46,8 +51,8 @@ export const Photo: React.FC<{ src: string; i: number; dur: number }> = ({ src, 
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          transform: `scale(${scale}) translate(${txRaw + shakeX}px, ${tyRaw + shakeY}px)`,
-          filter: "saturate(0.62) contrast(1.06) brightness(0.94)",
+          transform: `scale(${scale}) translate(${txRaw + shakeX + punchX}px, ${tyRaw + shakeY + punchY}px)`,
+          filter: `saturate(0.62) contrast(1.06) brightness(${0.94 * punchBright})`,
           opacity: inn,
         }}
       />

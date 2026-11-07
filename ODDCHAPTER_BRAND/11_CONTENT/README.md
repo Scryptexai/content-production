@@ -37,7 +37,8 @@ Video punya jalur sendiri, dan tidak ada teks yang ditulis ulang di kode:
 
 ```bash
 python3 tools/build_episodes_json.py      # content_data -> src/episodes.generated.json
-python3 tools/build_timing.py EP01        # durasi audio nyata -> src/timing.generated.json
+python3 tools/build_timing.py EP01        # durasi audio nyata + caption pendek -> timing.generated.json
+python3 tools/build_sfx.py EP01           # efek suara per segmen -> public/audio/EP01/sfx.wav
 cd 10_FILM/remotion
 node scripts/still-plates.mjs             # QA 10 bentuk dasar
 node scripts/still-ep01.mjs 150 760 1560  # QA frame kunci

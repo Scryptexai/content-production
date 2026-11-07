@@ -91,9 +91,19 @@ ketiga, tidak ada italic, tidak ada drop shadow selain scrim caption.
 | kalimat pembalik | Inter 600 | 44 px, orange | bawah kutipan, +56 px | satu baris, tidak pernah lebih |
 | label "yang selama ini dikutip" | Inter 600 | 25 px, tracking 0.32em, sage | atas kutipan | satu-satunya label yang boleh mendahului kutipan |
 | cue | Inter 600 | 24 px, tracking 0.28em, sage | `top: 300`, kiri | mis. `SEBELAS HARI` |
-| caption narasi | Inter 600 | 52 px, line-height 1.32 | `bottom: 520` | durasi = durasi audio segmen itu |
+| caption | Inter 600 | 54 px, line-height 1.30 | `bottom: 520` | **bukan transkrip**: satu kalimat ≤ 9 kata, muncul per kata (1,6 frame/kata), satu kata kunci oranye |
+| angka besar (`Stamp`) | Space Grotesk 700 | 200–260 px, opasitas 0,14 | kanan atas, `top: 236` | angka dari beat itu menghantam masuk lalu menggeser 26 px; gerak grafis tanpa menambah teks |
 | nomor segmen | Space Grotesk 700 | 30 px, tracking 0.34em | `top: 300`, kiri | `04 / 10` — memberi penonton rasa "hampir selesai" |
 | footer | Space Grotesk 700 + Inter 600 | 30 / 22 px | `top: 1470` | `ODDCHAPTER` kiri, `HILANG · EP 01` kanan |
+
+Tiga aturan teks, semuanya karena versi pertama terlalu banyak bicara di layar:
+
+1. **Narasi panjang, caption pendek.** Yang didengar 14 kata; yang dibaca 7. Kalau
+   keduanya sama, penonton membaca dan berhenti mendengar.
+2. **Satu kata kunci oranye per caption.** Bukan untuk hiasan — itu yang tersisa
+   di ingatan setelah scroll.
+3. **Angka tidak ditulis dua kali.** Kalau ada `Stamp` besar (1900, 11, 26), cue
+   tidak mengulanginya. Cue hanya label: `LAMPU MATI`, `SEBELAS HARI`.
 
 **Aturan yang lahir dari kegagalan nyata:** setiap teks yang panjangnya tidak
 diketahui saat menulis kode wajib melewati `fit()` (auto-downscale 4 tingkat).
@@ -155,9 +165,25 @@ dentuman sub di titik-titik balik (hook 1,5 s · kutipan 36,4 s · pembalik 45,6
 loop 50,7 s). Level bed mean −31 dB, puncak −10 dB — cukup terasa di speaker
 kecil, tidak menutupi narasi.
 
-Yang belum ada: musik tonal dan SFX per benda. Di 58 detik, musik tonal cepat
-jadi "stok video"; angin + sub sudah cukup memberi ruang. Kalau nanti ditambah,
-bed masuk −28 LUFS dan tetap di bawah narasi.
+**Efek per benda** dibuat oleh `tools/build_sfx.py` — disintesis dari osilator
+dan noise ffmpeg, bukan sampel unduhan, lalu ditempatkan di frame segmennya
+memakai timing nyata (mean −34,6 dB, puncak −12,9 dB):
+
+| efek | resep | dipakai di EP01 |
+|---|---|---|
+| `rustle` | noise putih, band 600–3,2 kHz, tremolo 7 Hz | hook, pembalik (pakaian) |
+| `gust` | pink noise, lowpass 520 Hz, swell 2,4 s | setup, sebelas hari |
+| `engine` | dua sine 58/87 Hz + noise rendah | dek kapal |
+| `clunk` | sine 120 Hz turun cepat + noise burst | pintu terkunci |
+| `tick` | dua tick 2,6 kHz lalu hening | jam berhenti |
+| `page` | noise band 2–6 kHz, 0,22 s | buku harian |
+| `boom` | sine 42 Hz, decay 2,4 s | consequence, loop |
+
+Menambah efek = menambah satu baris di `sfx` (`content_data.py`), lalu jalankan
+`python3 tools/build_sfx.py EPxx`. Tidak ada file yang diunduh.
+
+Yang belum ada: musik tonal. Di 58 detik, musik tonal cepat jadi "stok video";
+angin + sub + efek benda sudah cukup memberi ruang.
 
 ---
 

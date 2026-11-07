@@ -34,6 +34,7 @@ type Ep = {
   plate?: PlateKind;
   photos?: string[];
   bed?: string;
+  sfx?: string;
 };
 type Seg = {
   kind: "hook" | "beat" | "turn" | "loop";
@@ -250,26 +251,82 @@ const Footer: React.FC<{ ep: string; series: string }> = ({ ep, series }) => (
  * Semua segmen punya awal dan akhir yang eksplisit, jadi tidak ada dua blok
  * teks yang bisa hidup bersamaan.
  */
-/** Caption narasi: teks segmen, durasi dari audio nyata (bukan estimasi). */
-const Caption: React.FC<{ text: string; born: number; hold: number }> = ({ text, born, hold }) => {
+/**
+ * Caption di layar: kalimat pendek, bukan transkrip narasi.
+ * Muncul per kata (1,6 frame/kata) supaya mata punya alasan bergerak, dan satu
+ * kata kunci diberi warna oranye — itulah yang diingat setelah scroll.
+ */
+const Caption: React.FC<{ text: string; hi?: string; born: number; hold: number }> = ({ text, hi, born, hold }) => {
   const frame = useCurrentFrame();
   if (frame < born || frame > born + hold) return null;
-  const inn = interpolate(frame, [born, born + 6], [0, 1], clamp);
+  const words = text.split(" ");
+  const hiSet = new Set(
+    (hi || "")
+      .toLowerCase()
+      .split(" ")
+      .filter(Boolean)
+      .map((w) => w.replace(/[.,:;!?"“”]/g, "")),
+  );
   return (
     <div
       style={{
         position: "absolute",
         left: MARGIN,
-        right: MARGIN,
+        width: W - MARGIN * 2,
         bottom: 520,
         fontFamily: "Inter",
         fontWeight: 600,
-        fontSize: 52,
-        lineHeight: 1.32,
-        letterSpacing: "0.01em",
+        fontSize: 54,
+        lineHeight: 1.3,
+        letterSpacing: "0.005em",
+        textShadow: "0 2px 24px rgba(0,0,0,0.9)",
+      }}
+    >
+      {words.map((w, i) => {
+        const p = interpolate(frame, [born + 2 + i * 1.6, born + 8 + i * 1.6], [0, 1], clamp);
+        const key = w.toLowerCase().replace(/[.,:;!?"“”]/g, "");
+        return (
+          <span
+            key={i}
+            style={{
+              display: "inline-block",
+              marginRight: 14,
+              opacity: p,
+              transform: `translateY(${(1 - p) * 6}px)`,
+              color: hiSet.has(key) ? C.orange : C.ivory,
+            }}
+          >
+            {w}
+          </span>
+        );
+      })}
+    </div>
+  );
+};
+
+/** Angka besar yang menghantam masuk lalu menggeser pelan: gerak grafis, bukan teks. */
+const Stamp: React.FC<{ text: string; born: number; dur: number }> = ({ text, born, dur }) => {
+  const frame = useCurrentFrame();
+  if (frame < born) return null;
+  const p = interpolate(frame, [born, born + 9], [0, 1], { ...clamp, easing: ease });
+  const scale = interpolate(frame, [born, born + 11], [1.42, 1], { ...clamp, easing: ease });
+  const drift = interpolate(frame, [born, born + dur], [0, -26], clamp);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        right: MARGIN,
+        top: 236,
+        fontFamily: "Space Grotesk",
+        fontWeight: 700,
+        fontSize: String(text).length <= 3 ? 260 : 200,
+        letterSpacing: "-0.055em",
+        lineHeight: 0.86,
         color: C.ivory,
-        opacity: inn,
-        textShadow: "0 2px 24px rgba(0,0,0,0.85)",
+        opacity: 0.14 * p,
+        transform: `translateY(${drift}px) scale(${scale})`,
+        transformOrigin: "right top",
+        mixBlendMode: "screen",
       }}
     >
       {text}
@@ -312,6 +369,7 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
       {/* bed: angin + drone + dentuman di titik balik. Bukan dekorasi — ini yang
           membuat gambar diam terasa punya ruang. */}
       {ep.bed ? <Audio src={staticFile(ep.bed)} /> : null}
+      {ep.sfx ? <Audio src={staticFile(ep.sfx)} /> : null}
 
       {/* gambar: satu foto per segmen, semuanya bergerak. Kalau episode belum
           punya foto, jatuh ke plate vektor — tidak pernah layar kosong. */}
@@ -363,9 +421,14 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
       />
 
       {/* caption: teks narasi, mengikuti durasi audio nyata tiap segmen */}
-      {active && !inHook && !inTurn && !inLoop && (
-        <Caption text={active.text} born={active.startFrame} hold={active.durFrames} />
+      {active && !inHook && !inTurn && !inLoop && (active as any).caption && (
+        <Caption text={(active as any).caption} hi={(active as any).hi} born={active.startFrame} hold={active.durFrames} />
       )}
+
+      {/* angka besar: satu per beat, hanya kalau beat itu memang tentang angka */}
+      {active && ((active as any).stamps || []).map((st: string) => (
+        <Stamp key={st} text={st} born={active.startFrame + 6} dur={active.durFrames} />
+      ))}
 
       <div style={{ position: "absolute", left: MARGIN, top: 300, fontFamily: "Inter", fontWeight: 600, fontSize: 24, letterSpacing: "0.28em", color: C.sage, opacity: 0.8 }}>
         {String(tm.segments.filter((s) => s.startFrame <= frame).length).padStart(2, "0")} / {String(tm.segments.length).padStart(2, "0")}

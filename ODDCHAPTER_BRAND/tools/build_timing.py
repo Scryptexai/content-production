@@ -88,6 +88,21 @@ def build(ep):
 
     add("loop", ep["loop"], "99_loop")
 
+    # caption di layar: kalimat pendek, bukan transkrip. Narasi tetap panjang;
+    # yang dibaca mata harus selesai dalam ~1,5 detik.
+    caps = ep.get("captions") or []
+    his = ep.get("caption_hi") or []
+    for i, seg in enumerate(segs):
+        if i < len(caps) and caps[i]:
+            seg["caption"] = caps[i]
+        if i < len(his) and his[i]:
+            seg["hi"] = his[i]
+
+    # cap angka besar: (teks, indeks segmen)
+    for text, idx in ep.get("stamps") or []:
+        if 0 <= idx < len(segs):
+            segs[idx].setdefault("stamps", []).append(text)
+
     # kutipan + pembalik dipasang di segmen turn pertama
     for s in segs:
         if s["part"] == "turn":

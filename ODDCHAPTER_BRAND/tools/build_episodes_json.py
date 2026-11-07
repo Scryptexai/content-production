@@ -50,6 +50,7 @@ def build():
                 "plate": plate,
                 "photos": [f"plates/{e['ep']}/{n}.jpg" for n in e.get("photos", [])],
                 "bed": e.get("bed", ""),
+                "sfx": (f"audio/{e['ep']}/sfx.wav" if (HERE.parent / "10_FILM" / "remotion" / "public" / "audio" / e["ep"] / "sfx.wav").exists() else ""),
                 "sumber": e["sumber"],
             }
         )
