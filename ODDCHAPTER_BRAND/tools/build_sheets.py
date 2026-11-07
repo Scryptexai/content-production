@@ -312,8 +312,24 @@ def contact_sheet():
         b.append(f'<rect x="{f(x)}" y="{f(y)}" width="{f(tw3)}" height="{f(tw3*9/16)}" fill="{INK}"/>')
         b.append(img(f"02_YOUTUBE/thumbnails/{name}.png", x, y, tw3, tw3 * 9 / 16))
 
-    # 5 · palette
-    y3 = y + tw3 * 9 / 16 + 90
+    # 5 · extended surfaces (Phase 7)
+    y = y + tw3 * 9 / 16 + 90
+    b.append(text(PAD, y - 18, "EXTENDED SURFACES", "inter", 600, 12, INK, tracking=2.4, caps=True,
+                  opacity=0.45))
+    rows = [("STORY 1080 × 1920", "03_SOCIAL/stories/SOCIAL_STORY_1080x1920.png", 300, 533),
+            ("STORY COVER", "03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.png", 300, 533),
+            ("END CARD 1920 × 1080", "02_YOUTUBE/end_card/YOUTUBE_END_CARD_1920x1080.png", 860, 484),
+            ("OPEN GRAPH 1200 × 630", "03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.png", 860, 452)]
+    base = y + 533
+    x = PAD
+    for label, path, w, h in rows:
+        ty = base - h
+        b.append(f'<rect x="{f(x)}" y="{f(ty)}" width="{f(w)}" height="{f(h)}" fill="{INK}"/>')
+        b.append(img(path, x, ty, w, h))
+        b.append(text(x, base + 24, label, "inter", 500, 12, INK, tracking=1.8, caps=True,
+                      opacity=0.5))
+        x += w + 30
+    y3 = y + 533 + 90
     b.append(f'<rect x="{PAD}" y="{y3}" width="{W-2*PAD}" height="1.2" fill="{SAGE}"/>')
     px = PAD
     for hexv, name, code in [(INK, "INK", "#17191D"), (IVORY, "IVORY", "#F4F0E8"),

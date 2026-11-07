@@ -14,6 +14,7 @@ script and re-run `bash tools/render_all.sh`.
 | `thumbnails/` | `TEMPLATE_01_PERISTIWA` | 1280 × 720 | documentary / investigation |
 | `thumbnails/` | `TEMPLATE_02_BERTAHAN_HIDUP` | 1280 × 720 | survival / endurance |
 | `thumbnails/` | `TEMPLATE_03_SAINS_ANEH` | 1280 × 720 | strange science |
+| `end_card/` | `YOUTUBE_END_CARD_1920x1080` | 1920 × 1080 | last 20 s of an episode (drop-in clip or static plate) |
 
 ## Banner safe area
 
@@ -45,3 +46,16 @@ Each template is a **layout with a slot**, not a finished image:
 
 Ink ground, Ivory type, one Signal Orange element. Sage only for hairlines and captions. A
 thumbnail with two orange elements is off-system.
+
+## End card
+
+`YOUTUBE_END_CARD_1920x1080` is the plate the last 20 seconds cut to. Left third: eyebrow, lockup,
+one line of direction. Right third: a 660 × 371 slot for the next episode — either drop a still in,
+or leave the slot empty and let YouTube's end-screen editor place its own video element there.
+
+Drawn rules:
+
+- Nothing essential inside the outer 120 px — that band carries YouTube's title bar and controls.
+- The bottom bar (monogram + tagline) survives the end-screen overlay at any player width.
+- If you use YouTube's editor instead of the slot, remove the slot and its two caption lines from
+  the SVG; do not leave an empty frame under a real card.

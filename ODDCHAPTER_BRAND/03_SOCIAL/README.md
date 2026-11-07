@@ -9,6 +9,9 @@ ODDCHAPTER uses; anything else re-crops from the 1080 square.
 | `profile/SOCIAL_HEADER_DARK` | 1500 × 500 | X / YouTube / Facebook header, dark |
 | `profile/SOCIAL_HEADER_LIGHT` | 1500 × 500 | header for light contexts, print, deck title |
 | `post_templates/SOCIAL_POST_1080` | 1080 × 1080 | square post / carousel base |
+| `stories/SOCIAL_STORY_1080x1920` | 1080 × 1920 | story / reel cover with photo slot |
+| `stories/SOCIAL_STORY_COVER_1080x1920` | 1080 × 1920 | story teaser, no photo — lockup only |
+| `link_preview/OPEN_GRAPH_1200x630` | 1200 × 630 | link preview / Open Graph card |
 
 ## Crop safety
 
@@ -24,7 +27,24 @@ Headline and episode label stay live text so the copy can change per post withou
 
 Rule of one: **one** orange element per post — the episode number chip, or one word, never both.
 
+## Stories (9:16)
+
+- All content sits between y = 120 and y = 1800. The top 120 px and bottom 120 px are where the
+  platform draws the profile header and the reply bar.
+- The photo slot occupies y = 0 → 1180 so the ink band below it always carries the headline, the
+  rule and the CTA chip without fighting the image.
+- The monogram sits on the band's right, level with the CTA chip — the same relationship as the
+  1080 square, so a story and a post look like siblings.
+
+## Link preview
+
+1200 × 630 is the Open Graph / Twitter large-card size. It is intentionally typographic — a
+preview that already contains a photograph gets softened next to a thumbnail; a preview that is
+just the lockup reads as a publisher.
+
 ## What is not here
 
-Stories/reels (1080 × 1920) and link-preview cards are not produced. If they are needed, they
-should be derived from the 1080 square rather than improvised, so the safe areas stay consistent.
+- **Reels/tik-tok safe-area variant with the UI baked in** — not produced, because the platforms
+  move their UI twice a year; the 120 px rule above is the durable version.
+- **Animated story templates** — the motion system is video-first; a 9:16 build would need its own
+  timing pass, not a re-crop of the 16:9 opener.

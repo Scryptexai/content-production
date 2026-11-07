@@ -1,6 +1,6 @@
 # ODDCHAPTER — Final Delivery Report
 
-**Date:** 2026-11-07 · **Scope:** Phases 1–6 of the brand identity brief
+**Date:** 2026-11-07 · **Scope:** Phases 1–6 of the brief + Phase 7 extension
 **Status:** Complete and verified, with the open items in §6.
 
 ---
@@ -13,14 +13,14 @@ cannot drift apart. Change a radius there and the whole set rebuilds consistentl
 
 | Folder | Contents | Files |
 |---|---|---|
-| `01_LOGO/` | monogram + lockup masters, dark/light/mono variants, tagline versions, square icon, compact avatar + `LOGO_SYSTEM.md` | 14 SVG · 12 PNG |
-| `02_YOUTUBE/` | avatar, banner, crop check, 2 watermarks, 3 thumbnail systems | 9 SVG · 11 PNG |
-| `03_SOCIAL/` | profile, 2 headers, post template | 4 SVG · 4 PNG |
-| `04_MOTION/` | 3 layer files + storyboard + `MOTION_IDENTITY.md` | 4 SVG · 1 PNG |
-| `05_PREVIEWS/` | concept overview, small-size test, approved refinement, usage sheet, contact sheet | 8 |
+| `01_LOGO/` | production masters (14 SVG · 12 PNG) + the Phase 2 concept record (13 · 13) + `LOGO_SYSTEM.md` | 27 SVG · 25 PNG |
+| `02_YOUTUBE/` | avatar, banner, crop check, 2 watermarks, 3 thumbnail systems, end card | 9 SVG · 10 PNG |
+| `03_SOCIAL/` | profile, 2 headers, post template, 2 stories, OG card | 7 SVG · 7 PNG |
+| `04_MOTION/` | 3 layer files, storyboard, `MOTION_IDENTITY.md`, and `preview/` — 38-frame GIF, 1920 poster, SMIL opener | 5 SVG · 2 PNG · 1 GIF |
+| `05_PREVIEWS/` | concept overview, small-size test, approved refinement, usage sheet, contact sheet | 3 SVG · 5 PNG |
 | `06_EXPORTS/` | favicons 512/192/32, transparent icon 512, primary logo 2000 | 5 PNG |
 
-Total: **46 SVG · 49 PNG · 11 documents.** Everything is on the branch and reproducible.
+Total: **51 SVG · 54 PNG · 1 GIF · 11 documents.** Everything is on the branch and reproducible.
 
 ---
 
@@ -39,6 +39,9 @@ Every claim below was measured in this environment, not assumed.
 | Banner safe area | diagram + crops rendered (`BANNER_CROP_CHECK`) | Lockup 1080 px = 70 % of the 1546 px safe width, fully inside the mobile band |
 | Contrast | WCAG 2.1 relative luminance | Ivory/Ink 15.48, Sage/Ink 7.85, Orange/Ink 5.79, Orange/Ivory 2.68 (fails) |
 | Thumbnails | rendered and visually inspected at 1280 × 720 | All three read at full size, no clipping or collision |
+| Motion build | 38 frames rendered at 25 fps, coalesced and inspected as a strip | Arrive → lock → wipe → rule → tagline, exactly as timed |
+| SMIL opener | XML parse + timing constants asserted against the spec | Well-formed; `ffmpeg` absent, so it is not video-verified |
+| Phase 7 surfaces | rendered and inspected at true size | Story, cover, OG card and end card all clean; slot hatch fills correctly |
 | Font licensing | `LICENSE` inside each `@fontsource` package | Space Grotesk + Inter = SIL OFL 1.1 |
 
 ---
@@ -84,8 +87,8 @@ bash tools/render_all.sh                     # every PNG at its documented size
 | Item | State |
 |---|---|
 | **Original visual reference** | Never supplied. Nothing in these documents claims to measure it. The written brand spec was treated as authoritative. |
-| Animated files (MP4 / Lottie) | **Not produced.** The storyboard and layer SVGs are the specification; rendering an animation needs a motion tool or a build step that is outside this package's toolchain. |
-| Stories / reels (1080 × 1920) | Not produced — derive from the 1080 square rather than improvising safe areas. |
+| **MP4 / Lottie** | Still not produced: this host has no `ffmpeg` and installing one was not approved. The build **is** delivered as a rendered 38-frame GIF, a 1920 poster and a self-contained SMIL file, and `tools/build_motion.py` holds the exact frame source — an editor can export a master from any of those in one step. |
+| Stories / reels (1080 × 1920) | Delivered in Phase 7 as real 9:16 layouts, not crops of the square. Animated story templates are not produced (they need their own timing pass). |
 | Print-ready PDF / CMYK | Not produced. The SVGs are the print source; convert to CMYK at the printer's profile and test the orange (`#F26A3D` sits outside CMYK gamut and will shift). |
 | Font files | Deliberately not bundled (OFL prefers linking). Install Space Grotesk + Inter locally to edit the *templates*; the logo files need neither. |
 | Anything uploaded | Nothing has been uploaded, published or connected to a channel account. |

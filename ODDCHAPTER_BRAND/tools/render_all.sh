@@ -28,12 +28,26 @@ R 02_YOUTUBE/watermark/WATERMARK_LIGHT_150.svg       02_YOUTUBE/watermark/WATERM
 R 02_YOUTUBE/thumbnails/TEMPLATE_01_PERISTIWA.svg    02_YOUTUBE/thumbnails/TEMPLATE_01_PERISTIWA.png 1280
 R 02_YOUTUBE/thumbnails/TEMPLATE_02_BERTAHAN_HIDUP.svg 02_YOUTUBE/thumbnails/TEMPLATE_02_BERTAHAN_HIDUP.png 1280
 R 02_YOUTUBE/thumbnails/TEMPLATE_03_SAINS_ANEH.svg   02_YOUTUBE/thumbnails/TEMPLATE_03_SAINS_ANEH.png 1280
+R 02_YOUTUBE/end_card/YOUTUBE_END_CARD_1920x1080.svg 02_YOUTUBE/end_card/YOUTUBE_END_CARD_1920x1080.png 1920
 
-# --- social
+# --- social (stories + OG card come from build_extra)
+python3 tools/build_extra.py
 R 03_SOCIAL/profile/SOCIAL_PROFILE_1024.svg   03_SOCIAL/profile/SOCIAL_PROFILE_1024.png 1024
 R 03_SOCIAL/profile/SOCIAL_HEADER_DARK.svg    03_SOCIAL/profile/SOCIAL_HEADER_DARK.png 1500
 R 03_SOCIAL/profile/SOCIAL_HEADER_LIGHT.svg   03_SOCIAL/profile/SOCIAL_HEADER_LIGHT.png 1500
 R 03_SOCIAL/post_templates/SOCIAL_POST_1080.svg 03_SOCIAL/post_templates/SOCIAL_POST_1080.png 1080
+R 03_SOCIAL/stories/SOCIAL_STORY_1080x1920.svg       03_SOCIAL/stories/SOCIAL_STORY_1080x1920.png 1080
+R 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.svg 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.png 1080
+R 03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.svg      03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.png 1200
+
+# --- documentation sheets
+python3 tools/build_sheets.py
+R 05_PREVIEWS/USAGE_DO_DONT.svg   05_PREVIEWS/USAGE_DO_DONT.png 2400
+R 05_PREVIEWS/CONTACT_SHEET.svg   05_PREVIEWS/CONTACT_SHEET.png 2000
+R 04_MOTION/animation_reference/ANIMATION_STORYBOARD.svg 04_MOTION/animation_reference/ANIMATION_STORYBOARD.png 2400
+
+# --- motion (frames + gif + poster + smil)
+python3 tools/build_motion.py
 
 # --- favicons / delivery
 R 01_LOGO/dark/ICON_SQUARE_DARK.svg  06_EXPORTS/FAVICON_512.png 512

@@ -1,7 +1,8 @@
 # ODDCHAPTER — Motion Identity
 
-**Status:** Phase 5 complete · reference only (no animations published)
+**Status:** Phase 5 spec + Phase 7 delivery
 **Reference sheet:** `animation_reference/ANIMATION_STORYBOARD.png` (2400 × 1680)
+**Rendered proof:** `preview/OPENER_BUILD_960x540.gif` · `preview/OPENER_POSTER_1920x1080.png`
 
 ODDCHAPTER does not do logo stings. The identity animates the way an editor cuts: something
 arrives, it locks, and we leave. Total build **1.2 s**, then a **0.3 s** hold and a hard cut into
@@ -60,3 +61,35 @@ font install and without text-conversion artifacts.
 | End card | full lockup, static | no build — the card is already on screen |
 | Shorts / vertical | monogram only, 180 ms | no wordmark under 420 px width |
 | Social video watermark | static | see `02_YOUTUBE/watermark/` |
+
+---
+
+## 6. Delivered motion files
+
+| File | What it is | State |
+|---|---|---|
+| `preview/OPENER_BUILD_960x540.gif` | the build, **38 frames at 25 fps**, rendered from this timing spec | VERIFIED — frames inspected, 960 × 540, 18 KB |
+| `preview/OPENER_POSTER_1920x1080.png` | the final state at 1.2 s, full size | VERIFIED — 1920 × 1080 |
+| `preview/OPENER_ANIMATED.svg` | the same build as declarative SMIL, self-contained | VERIFIED structure (well-formed, timing matches); it is **not** rendered by resvg, which does not evaluate SMIL |
+| `svg_components/*.svg` | the layer sources for After Effects / Rive / Lottie | VERIFIED — outlines only, stable ids |
+
+The GIF is the proof that the timing reads correctly at 25 fps. The SMIL file is the version you
+can drop straight into a web page or hand to an editor who has no motion tool; the GIF is the
+version you can send to someone who has nothing at all.
+
+### Why there is no MP4
+
+There is no `ffmpeg` on this machine, and installing one is outside what was approved. The GIF and
+the frame sequence in `tools/build_motion.py` are the complete source of truth: any editor can
+export a ProRes or H.264 master from `OPENER_ANIMATED.svg` or from the frame sequence in one step.
+If an MP4 is required, the honest answer is that it needs a render box with ffmpeg — the design
+decisions are all already made.
+
+### Rebuilding
+
+```bash
+python3 tools/build_motion.py     # SMIL + poster + 38 frames + GIF
+```
+
+Change the four timing constants at the top of `tools/build_motion.py` and the GIF, the poster and
+the SMIL file all move together — the same single-source rule as the static assets.

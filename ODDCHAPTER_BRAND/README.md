@@ -20,6 +20,7 @@ be rebuilt from that source.
 | 4 | `02_YOUTUBE/`, `03_SOCIAL/`, thumbnails | **Complete** — 12 channel/social assets at platform sizes |
 | 5 | `04_MOTION/MOTION_IDENTITY.md`, `04_MOTION/` | **Complete** — storyboard + 3 layer files |
 | 6 | `BRAND_GUIDELINES.md`, `05_PREVIEWS/` sheets | **Complete** — usage sheet + contact sheet |
+| 7 | Extended surfaces + motion delivery | **Complete** — stories, OG card, end card; rendered 38-frame build + SMIL |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -42,6 +43,8 @@ ODDCHAPTER_BRAND/
 │   ├── build_channel.py         avatar, banner, watermark, social
 │   ├── build_thumbs.py          the three thumbnail systems
 │   ├── build_sheets.py          storyboard, usage sheet, contact sheet
+│   ├── build_extra.py           Phase 7: stories, OG card, end card
+│   ├── build_motion.py          Phase 7: frames, GIF, poster, SMIL opener
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -52,9 +55,9 @@ ODDCHAPTER_BRAND/
 │   ├── REFINEMENT_NOTES.md      Phase 2.5 spec
 │   ├── master/  dark/  light/  monochrome/     production SVGs + PNGs
 │   └── concepts/                Phase 2 record of the three directions
-├── 02_YOUTUBE/  avatar · banner · watermark · thumbnails   + README.md
-├── 03_SOCIAL/   profile · post_templates                   + README.md
-├── 04_MOTION/   MOTION_IDENTITY.md · svg_components · animation_reference
+├── 02_YOUTUBE/  avatar · banner · watermark · thumbnails · end_card   + README.md
+├── 03_SOCIAL/   profile · post_templates · stories · link_preview     + README.md
+├── 04_MOTION/   MOTION_IDENTITY.md · svg_components · animation_reference · preview
 ├── 05_PREVIEWS/ concept overview · small-size test · approved refinement · usage sheet · contact sheet
 └── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
 ```
@@ -87,7 +90,9 @@ python3 tools/build_system.py     # logo + motion
 python3 tools/build_channel.py    # YouTube + social
 python3 tools/build_thumbs.py     # thumbnails
 python3 tools/build_sheets.py     # sheets
-bash tools/render_all.sh          # every PNG at its documented size
+python3 tools/build_extra.py      # stories, OG card, end card
+python3 tools/build_motion.py     # 38 frames → GIF + poster + SMIL
+bash tools/render_all.sh          # every PNG at its documented size (chains the above)
 ```
 
 Change `DIST` in `tools/brand.py` and every asset — logo, avatar, banner, thumbnail, watermark,
@@ -116,6 +121,9 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 15 | Motion: 1.2 s build, one orange animation, hard cut | No logo stings; the identity behaves like an edit | Documented |
 | 16 | No MP4/Lottie produced | Outside this toolchain; the storyboard + layers are the spec | Open, documented |
 | 17 | Square assets centre the monogram on its *ink*, not its 98-unit box | The C mouth carves the box's right edge; box-centring left the mark visibly off-centre | Applied |
+| 18 | Motion delivered as GIF + SMIL + poster, not MP4 | No ffmpeg on this host and installing one was not approved; the frame source is in the repo | Done, MP4 open |
+| 19 | Story/vertical assets are separate layouts, not crops | A 9:16 crop of a 16:9 band leaves the headline in the platform's UI zone | Applied |
+| 20 | Hatch segments for image slots are computed inside the box | The naive full-plane hatch crashes resvg on tall canvases | Fixed |
 
 ---
 
