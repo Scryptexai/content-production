@@ -28,3 +28,4 @@ ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/CONTACT_SHEET.svg
 # thumbnail 1080x1920 hasil generate_image (~2,4 MB/file). Ada di Drive dan di
 # workspace; jangan di git. Prompt-nya ada di 03_THUMBNAIL/MANIFEST.json.
 ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/*.png
+ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/*.jpg
