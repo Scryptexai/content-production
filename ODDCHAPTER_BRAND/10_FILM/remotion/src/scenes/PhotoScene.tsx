@@ -71,6 +71,24 @@ export const Photo: React.FC<{ src: string; i: number; dur: number }> = ({ src, 
   );
 };
 
+/**
+ * Frame pertama = thumbnail, persis seperti yang diunggah.
+ * Frame 0 tidak punya lapisan apa pun di atasnya: kalau kanal menampilkan
+ * thumbnail dari frame ini, gambarnya identik. Setelah 1,5 detik ia mendorong
+ * masuk 5 % lalu hilang dalam 3 frame — jadi penonton yang datang dari thumbnail
+ * merasa "masuk ke dalam gambar yang tadi saya klik".
+ */
+export const ThumbIntro: React.FC<{ src: string; frames: number }> = ({ src, frames }) => {
+  const frame = useCurrentFrame();
+  const s = frame < 2 ? 1 : 1 + Math.min(0.05, (frame / frames) * 0.05);
+  const out = interpolate(frame, [frames - 3, frames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#000000", opacity: out }}>
+      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s})` }} />
+    </AbsoluteFill>
+  );
+};
+
 /** Bar progres: penonton tahu ini hampir selesai — dan itu yang menahan mereka. */
 export const Progress: React.FC<{ frame: number; total: number }> = ({ frame, total }) => {
   const p = Math.min(1, Math.max(0, frame / Math.max(1, total - 1)));

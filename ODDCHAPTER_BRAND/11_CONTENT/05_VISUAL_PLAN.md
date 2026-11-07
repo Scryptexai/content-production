@@ -22,6 +22,38 @@ ada perubahan yang bisa dilihat**, dan tidak pernah ada frame yang diam.
 
 ---
 
+## 0 · FRAME PERTAMA ADALAH THUMBNAIL
+
+Frame 0 video **harus identik dengan file thumbnail yang diunggah**: `thumbs/EPxx.png`
+(1080×1920) dirender tanpa satu overlay pun selama 45 frame (1,5 detik), lalu
+mendorong masuk 5 % dan hilang dalam 3 frame.
+
+Kenapa: penonton yang datang dari thumbnail harus merasa "masuk ke dalam gambar
+yang tadi saya klik". Kalau frame pertama sudah berbeda dari thumbnail, klik itu
+terasa dibohongi dan mereka keluar sebelum detik ketiga.
+
+| aturan | angka |
+|---|---|
+| teks thumbnail | **1–3 kata**, dipertahankan oleh gate (`check_story.py` butir 1c) |
+| durasi frame thumbnail | 45 frame = 1,5 s |
+| overlay di atas thumbnail | **nol** — tidak ada nomor, cue, caption, footer, progres |
+| transisi keluar | dorongan skala 1.000 → 1.050, potong 3 frame ke foto hook |
+| hook narasi | mulai di 0,6 s, **di atas** frame thumbnail (suara masuk lebih dulu dari gambar) |
+
+---
+
+## 0b · HOOK: SATU PERTANYAAN ATAU SATU FAKTA
+
+Kalimat pertama hook harus **pertanyaan** atau **fakta yang bisa dicek** (ada
+angka: tahun, jumlah, jarak). Kalimat suasana tidak boleh jadi pembuka — ia
+terdengar seperti penulis yang belum memutuskan mau bilang apa. Dijaga gate
+butir 1b.
+
+EP01 sekarang: `15 Desember 1900. Tiga penjaga menghilang. Pakaian tahan air
+mereka masih di gantungan.` → tanggal, peristiwa, benda. Tiga hal dalam 13 kata.
+
+---
+
 ## 1 · EMPAT LAPIS: FOTO, GERAK, TEKS, ATMOSFER
 
 | lapis | isi | dibuat oleh | catatan |
@@ -61,10 +93,10 @@ di sepertiga atas.
 |---|---|---|---|
 | hook | `01_hook` | pakaian tahan air di gantungan, boots kosong, lampu minyak | push-in |
 | setup | `02_island` | pulau batu di laut luas, satu menara | tarik-out |
-| tension 1 | `03_ship` | dek kapal uap, menara di balik kabut | geser kiri |
-| tension 2 | `04_door` | pintu besi menara, tertutup, ombak | geser kanan |
-| tension 3 | `06_lamp` | lensa fresnel bersih, minyak penuh, tak ada yang menjaga — sebelas hari | push-in |
-| tension 4 | `05_table` | meja makan ditinggal, tiga kursi mundur — kerja pagi selesai | tarik-out |
+| tension 1 | `03_ship` | dek kapal uap, menara di balik kabut, lampu menara mati | geser kiri |
+| tension 2 | `11_lighthouse_far` | menara dari jauh di laut kosong, lampu mati — sebelas hari | geser kanan |
+| tension 3 | `04_door` | pintu besi menara, tertutup dari dalam | push-in |
+| tension 4 | `12_clock` | jam kuningan berhenti, berdebu — kerja pagi selesai | tarik-out |
 | turn 1 | `08_logbook` | buku harian terbuka, jam berhenti | geser kiri |
 | turn 2 | `07_oilskins` | pakaian itu, dari dekat | push-in |
 | consequence | `09_sea_night` | laut malam, menara tanpa cahaya | geser kanan |
@@ -73,6 +105,12 @@ di sepertiga atas.
 Aturan pemilihan gambar, bukan selera: **satu segmen = satu benda atau satu
 ruang yang bisa disebut dalam satu kata.** Kalau sebuah gambar butuh dijelaskan,
 ia salah untuk frame 2 detik.
+
+**Dan gambar harus menyebut hal yang sama dengan kalimatnya.** Versi sebelumnya
+melanggar ini dua kali: foto lensa dipakai untuk kalimat "sebelas hari" dan foto
+meja dipakai untuk kalimat "jam berhenti". Penonton tidak membaca caption sebagai
+keterangan gambar — ia mencarinya di gambar. Kalau tidak ketemu, kepercayaan
+turun tanpa ia bisa menjelaskan kenapa.
 
 Sepuluh bentuk vektor (`tower`, `vessel`, `shelter`, `road`, `paper`, `signal`,
 `plume`, `water`, `dial`, `ridge`) tetap ada sebagai cadangan dan sebagai bahasa

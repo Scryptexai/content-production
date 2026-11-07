@@ -57,6 +57,17 @@ def check(e):
     if not re.search(r"\d|\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|pohon)\b", e["hook"].lower()):
         notes.append("(1) hook tidak menyebut benda konkret — cek manual")
 
+    # 1b · kalimat pertama harus pertanyaan ATAU fakta yang bisa dicek (ada angka)
+    first = re.split(r"(?<=[.!?])\s+", e["hook"].strip())[0]
+    if not (first.rstrip().endswith("?") or re.search(r"\d", first)):
+        fails.append("(1b) kalimat pertama hook bukan pertanyaan dan tidak memuat angka — buka dengan pertanyaan atau fakta")
+
+    # 1c · teks thumbnail 1–3 kata
+    tt = (e.get("thumb_text") or "").strip()
+    ntt = len(tt.split())
+    if not 1 <= ntt <= 3:
+        fails.append(f"(1c) teks thumbnail {ntt} kata, harus 1–3: '{tt}'")
+
     # 2 · ada yang salah, belum paham apa
     celah = e.get("celah", "")
     if not celah:

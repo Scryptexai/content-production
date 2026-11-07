@@ -3,7 +3,7 @@ import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurr
 import { C, H, MARGIN, W } from "../theme";
 import data from "../episodes.generated.json";
 import { PlateArt, PlateKind } from "./PlateArt";
-import { CutFlash, Photo, Progress, Scan } from "./PhotoScene";
+import { CutFlash, Photo, Progress, Scan, ThumbIntro } from "./PhotoScene";
 import timing from "../timing.generated.json";
 
 /**
@@ -35,6 +35,8 @@ type Ep = {
   photos?: string[];
   bed?: string;
   sfx?: string;
+  thumb?: string;
+  thumbText?: string;
 };
 type Seg = {
   kind: "hook" | "beat" | "turn" | "loop";
@@ -350,6 +352,10 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
   const turnQuote = turnSegs[0]?.quote || "";
   const turnVerdict = turnSegs[0]?.verdict || "";
 
+  // 45 frame pertama adalah thumbnail: frame 0 harus identik dengan file thumbnail
+  const INTRO = 45;
+  const intro = frame < INTRO && !!ep.thumb;
+
   const inHook = active?.kind === "hook";
   const inLoop = active?.kind === "loop";
 
@@ -383,25 +389,25 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
         : <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />}
 
       {/* kedip potongan: keras di titik balik, halus di setiap beat */}
-      {active ? <CutFlash age={frame - active.startFrame} strong={inTurn} /> : null}
+      {active && !intro ? <CutFlash age={frame - active.startFrame} strong={inTurn} /> : null}
 
-      {inHook && (
+      {inHook && !intro && (
         <Line text={ep.title} born={active!.startFrame + 4} hold={active!.durFrames - 4} size={fit(ep.title, 92)} family="grotesk" weight={700} top={H * 0.22} />
       )}
 
-      {inLoop && (
+      {inLoop && !intro && (
         <Line text={active!.text} born={active!.startFrame + 3} hold={active!.durFrames - 3} size={fit(active!.text, 74)} family="grotesk" weight={700} top={H * 0.24} />
       )}
 
-      {turnSegs[0] && frame >= turnSegs[0].startFrame && frame < turnSegs[0].startFrame + turnSegs[0].durFrames ? (
+      {!intro && turnSegs[0] && frame >= turnSegs[0].startFrame && frame < turnSegs[0].startFrame + turnSegs[0].durFrames ? (
         <TurnQuote quote={turnQuote} born={turnSegs[0].startFrame} hold={turnSegs[0].durFrames} />
       ) : null}
-      {turnSegs[1] && frame >= turnSegs[1].startFrame && frame < turnSegs[1].startFrame + turnSegs[1].durFrames ? (
+      {!intro && turnSegs[1] && frame >= turnSegs[1].startFrame && frame < turnSegs[1].startFrame + turnSegs[1].durFrames ? (
         <TurnVerdict quote={turnQuote} verdict={turnVerdict} born={turnSegs[1].startFrame} hold={turnSegs[1].durFrames} />
       ) : null}
 
       {/* label editorial: hanya saat beat punya cue, di bawah nomor urut */}
-      {active && active.kind === "beat" && active.cue && !inTurn && (
+      {active && !intro && active.kind === "beat" && active.cue && !inTurn && (
         <Line
           text={active.cue}
           born={active.startFrame + 3}
@@ -413,30 +419,33 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
       )}
 
       {/* scrim: menjaga caption tetap terbaca di atas siluet */}
-      <AbsoluteFill
+      {!intro && <AbsoluteFill
         style={{
           background: "linear-gradient(180deg, rgba(13,15,18,0) 58%, rgba(13,15,18,0.72) 74%, rgba(13,15,18,0.94) 100%)",
           pointerEvents: "none",
         }}
-      />
+      />}
 
       {/* caption: teks narasi, mengikuti durasi audio nyata tiap segmen */}
-      {active && !inHook && !inTurn && !inLoop && (active as any).caption && (
+      {active && !intro && !inHook && !inTurn && !inLoop && (active as any).caption && (
         <Caption text={(active as any).caption} hi={(active as any).hi} born={active.startFrame} hold={active.durFrames} />
       )}
 
       {/* angka besar: satu per beat, hanya kalau beat itu memang tentang angka */}
-      {active && ((active as any).stamps || []).map((st: string) => (
+      {active && !intro && ((active as any).stamps || []).map((st: string) => (
         <Stamp key={st} text={st} born={active.startFrame + 6} dur={active.durFrames} />
       ))}
 
-      <div style={{ position: "absolute", left: MARGIN, top: 300, fontFamily: "Inter", fontWeight: 600, fontSize: 24, letterSpacing: "0.28em", color: C.sage, opacity: 0.8 }}>
+      {!intro && <div style={{ position: "absolute", left: MARGIN, top: 300, fontFamily: "Inter", fontWeight: 600, fontSize: 24, letterSpacing: "0.28em", color: C.sage, opacity: 0.8 }}>
         {String(tm.segments.filter((s) => s.startFrame <= frame).length).padStart(2, "0")} / {String(tm.segments.length).padStart(2, "0")}
-      </div>
+      </div>}
 
-      <Progress frame={frame} total={totalFrames} />
+      {!intro && <Progress frame={frame} total={totalFrames} />}
 
-      <Footer ep={ep.id.replace("EP", "EP ")} series={ep.series} />
+      {!intro && <Footer ep={ep.id.replace("EP", "EP ")} series={ep.series} />}
+
+      {/* frame pertama = thumbnail yang diunggah; tidak ada satu pun overlay di atasnya */}
+      {intro && <ThumbIntro src={ep.thumb!} frames={INTRO} />}
     </AbsoluteFill>
   );
 };
