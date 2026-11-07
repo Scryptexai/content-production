@@ -40,6 +40,13 @@ R 03_SOCIAL/stories/SOCIAL_STORY_1080x1920.svg       03_SOCIAL/stories/SOCIAL_ST
 R 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.svg 03_SOCIAL/stories/SOCIAL_STORY_COVER_1080x1920.png 1080
 R 03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.svg      03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.png 1200
 
+# --- episode kit (on-screen graphics)
+python3 tools/build_episode_kit.py
+R 09_EPISODE_KIT/onscreen/CHAPTER_CARD.svg          09_EPISODE_KIT/onscreen/CHAPTER_CARD_PREVIEW.png 1920
+R 09_EPISODE_KIT/onscreen/LOWER_THIRD_NAME.svg      09_EPISODE_KIT/onscreen/LOWER_THIRD_NAME_PREVIEW.png 1920
+R 09_EPISODE_KIT/onscreen/LOWER_THIRD_LOCATION.svg  09_EPISODE_KIT/onscreen/LOWER_THIRD_LOCATION_PREVIEW.png 1920
+R 09_EPISODE_KIT/onscreen/SUBTITLE_SAMPLE.svg       09_EPISODE_KIT/onscreen/SUBTITLE_SAMPLE_PREVIEW.png 1920
+
 # --- print artwork
 python3 tools/build_print.py
 

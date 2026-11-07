@@ -87,6 +87,7 @@
     <a href="#usage">Usage</a>
     <a href="#motion">Motion</a>
     <a href="#audio">Audio</a>
+    <a href="#onscreen">On screen</a>
     <a href="#channel">Channel</a>
     <a href="#print">Print</a>
     <a href="#files">Files</a>
@@ -299,9 +300,33 @@
   </div>
 </section>
 
+<section id="onscreen" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">08 — On screen</p>
+    <h2 style="margin-top:12px">The graphics that only exist inside a cut</h2>
+    <p class="lede">Lower thirds, chapter cards and the subtitle plate — all 1920 × 1080, all inside
+      the 120 px title-safe margin, all from the same tokens as the logo.</p>
+    <div class="asset-grid" style="margin-top:32px">
+      <figure><img src="../09_EPISODE_KIT/onscreen/CHAPTER_CARD_PREVIEW.png" alt="">
+        <figcaption>Chapter card</figcaption></figure>
+      <figure><img src="../09_EPISODE_KIT/onscreen/SUBTITLE_SAMPLE_PREVIEW.png" alt="">
+        <figcaption>Subtitles — 42 px over a 90 % plate</figcaption></figure>
+    </div>
+    <div class="asset-grid" style="margin-top:20px">
+      <figure><div class="asset"><img src="../09_EPISODE_KIT/onscreen/LOWER_THIRD_NAME_PREVIEW.png" alt=""></div>
+        <figcaption>Name strap</figcaption></figure>
+      <figure><div class="asset"><img src="../09_EPISODE_KIT/onscreen/LOWER_THIRD_LOCATION_PREVIEW.png" alt=""></div>
+        <figcaption>Location strap</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:24px">Every episode runs through
+      <code>09_EPISODE_KIT/PIPELINE.md</code>: seven stages, seven gates, and a beat sheet budgeted at
+      140 words per minute — the pacing measured from the reference read.</p>
+  </div>
+</section>
+
 <section id="channel" class="on-dark">
   <div class="wrap">
-    <p class="eyebrow" style="color:var(--sage)">08 — Channel &amp; social</p>
+    <p class="eyebrow" style="color:var(--sage)">09 — Channel &amp; social</p>
     <h2 style="margin-top:12px">Every surface, at the size the platform asks for</h2>
 
     <div class="asset-grid" style="margin-top:36px">
@@ -342,7 +367,7 @@
 
 <section id="print" class="on-ivory">
   <div class="wrap">
-    <p class="eyebrow">09 — Print</p>
+    <p class="eyebrow">10 — Print</p>
     <h2 style="margin-top:12px">Authored in millimetres, not pixels</h2>
     <div class="grid two" style="margin-top:32px;align-items:start">
       <figure><img src="../07_PRINT/previews/POSTER_A2_PREVIEW.png" alt="">
@@ -375,7 +400,7 @@
 
 <section id="files" class="on-dark">
   <div class="wrap">
-    <p class="eyebrow" style="color:var(--sage)">10 — Files</p>
+    <p class="eyebrow" style="color:var(--sage)">11 — Files</p>
     <h2 style="margin-top:12px">Where everything lives</h2>
     <table style="margin-top:28px">
       <tr><th>Folder</th><th>Contents</th><th>Files</th></tr>
@@ -387,6 +412,7 @@
       <tr><td><code>06_EXPORTS/</code></td><td>Favicons 512 / 192 / 32, transparent icon, logo 2000</td><td>5 PNG</td></tr>
       <tr><td><code>07_PRINT/</code></td><td>One-colour 100 K, stationery, poster, merch, <code>PRINT_SPEC.md</code></td><td>9 SVG · 7 PNG</td></tr>
       <tr><td><code>08_AUDIO/</code></td><td><code>AUDIO_IDENTITY.md</code> + three reads</td><td>3 MP3</td></tr>
+      <tr><td><code>09_EPISODE_KIT/</code></td><td><code>PIPELINE.md</code>, on-screen graphics, beat sheet / publish / thumbnail templates</td><td>4 SVG · 4 PNG · 4 MD</td></tr>
     </table>
     <p class="note" style="margin-top:26px;color:var(--sage)">Everything is rebuilt by
       <code>bash tools/render_all.sh</code> from <code>tools/brand.py</code>. Change one radius there and

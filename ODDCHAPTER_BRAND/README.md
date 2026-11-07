@@ -24,6 +24,7 @@ be rebuilt from that source.
 | 8 | Print & physical applications | **Complete** — 9 mm-authored artworks + `07_PRINT/PRINT_SPEC.md` |
 | 9 | Audio identity | **Complete** — voice auditioned, spoken signature delivered + `08_AUDIO/AUDIO_IDENTITY.md` |
 | 10 | Brand portal | **Complete** — `portal/index.html`, every asset browsable, link-checked |
+| 11 | Episode production kit | **Complete** — `09_EPISODE_KIT/PIPELINE.md` + on-screen graphics + 3 templates |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -51,6 +52,7 @@ ODDCHAPTER_BRAND/
 │   ├── build_print.py           Phase 8: mm-authored print artwork
 │   ├── audio_info.py            MP3 duration parser (no ffprobe on this host)
 │   ├── check_portal.py          validates portal markup + every asset link
+│   ├── build_episode_kit.py     Phase 11: on-screen graphics (1920 × 1080)
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -68,6 +70,7 @@ ODDCHAPTER_BRAND/
 ├── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
 ├── 07_PRINT/    PRINT_SPEC.md · one_colour · stationery · poster · merch · previews
 ├── 08_AUDIO/    AUDIO_IDENTITY.md · assets/ (signature ID + EN, cold-open read)
+├── 09_EPISODE_KIT/ PIPELINE.md · onscreen/ (straps, chapter card, subtitles) · templates/
 └── portal/      index.html — the whole system on one page, asset-links verified
 ```
 
@@ -142,6 +145,8 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 26 | Delivered MP3s are reference quality (24 kHz mono) | Enough to judge timing and tone; masters must be re-recorded at 48 kHz | Open |
 | 27 | Portal is one static HTML file, no build step | It has to open from a folder, a URL or a zip without npm | Applied |
 | 28 | Portal links are checked at build time | A broken hero image is worse than no portal; `check_portal.py` fails `render_all.sh` | Applied |
+| 29 | Episode pacing is budgeted at 140 words/min, not guessed | Measured from the reference read; a 10-minute film carries ~1,250 words of VO | Applied |
+| 30 | On-screen graphics live inside a 120 px safe margin | YouTube's player chrome and the subtitle zone would otherwise eat the straps | Applied |
 
 ---
 
