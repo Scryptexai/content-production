@@ -6,68 +6,77 @@ berbeda, yang ini yang benar — karena EP01 sudah dirender jadi master 1080×19
 dengan audio nyata, dan setiap angka di bawah ini diambil dari kode dan dari file
 hasil render, bukan dari perkiraan.
 
-Yang dibatalkan dari rencana lama, dan alasannya:
+Koreksi kedua, dan ini yang paling penting: **versi pertama EP01 ternyata
+cuma teks di atas latar statis.** Secara naskah ia lulus, secara tontonan ia mati
+— tidak ada yang bergerak, tidak ada yang berubah, tidak ada alasan untuk tinggal.
+Rencana ini sekarang dibangun di atas satu aturan: **setiap 1,5–2,5 detik harus
+ada perubahan yang bisa dilihat**, dan tidak pernah ada frame yang diam.
 
-| rencana lama | status | alasan |
+| keputusan | status | alasan |
 |---|---|---|
-| plate gambar generasi (`GEN`) sebagai lapis utama tiap episode | **dibatalkan** | gambar generasi tidak akurat secara faktual; kalau ia penuh layar, penonton melihat "gambar AI", dan efek yang kita kejar (percaya → terasa ada yang salah) langsung hilang |
-| peta/grafik `ARC` dari GeoJSON | **dibatalkan** untuk 21 episode ini | menambah waktu render dan satu lapis kesalahan fakta (skala, proyeksi) yang tidak sepadan dengan durasi 58 detik |
-| 8 komponen baru (`HairGrid`, `CountUp`, `MapDiagram`, `CrossSection`, `Radial`, `Dial`, `Keyword`, `LoopBack`) | **diganti** oleh 1 komponen plate + 4 komponen teks | sembilan komponen = sembilan gaya. Satu bahasa visual lebih kuat dan lebih murah dirawat |
-| footage stok | tetap tidak dipakai | egress sandbox diblokir; rencana ini tidak bergantung padanya |
-
-Yang dipertahankan: satu master vertikal per episode, 30 fps, 1080×1920, semua
-teks dibakar, tidak ada dissolve — potongan keras.
+| plate vektor saja, teks di atas latar statis | **dibatalkan** | itulah keluhan penonton pertama: "pasif". Naskah yang bagus tidak menahan siapa pun di layar yang tidak berubah |
+| foto generasi sebagai gambar penuh, tanpa gerak | **dibatalkan** | gambar yang diam tetap diam, sekalipun fotonya bagus |
+| foto generasi + gerak kamera + grade + tipografi di atasnya | **dipakai** | foto memberi tempat, gerak memberi hidup, tipografi memberi arti. Satu foto tidak pernah tampil lebih dari 6 detik tanpa perubahan |
+| rencana lama: `CountUp`, `MapDiagram`, `CrossSection`, 9 komponen | dibatalkan | sembilan gaya berbeda = tidak ada gaya. Diganti 2 komponen: `Photo` dan teks |
+| footage stok | tidak dipakai | egress sandbox diblokir; semua gambar dibuat di mesin ini |
 
 ---
 
-## 1 · TIGA LAPIS, DAN TIDAK ADA YANG PENUH LAYAR
+## 1 · EMPAT LAPIS: FOTO, GERAK, TEKS, ATMOSFER
 
 | lapis | isi | dibuat oleh | catatan |
 |---|---|---|---|
-| **PLATE** | satu bentuk dasar: menara, kapal, tenda, jalan, kertas, sinyal, gunung, air, dial, bukit | `src/scenes/PlateArt.tsx` — SVG, 10 bentuk | napas skala 1.000 → 1.045 sepanjang episode, 1 warna aksen |
-| **TEKS** | hook, cue, caption narasi, kartu titik balik, loop | `src/scenes/Episode.tsx` | satu pesan per frame, tidak pernah dua blok bersaing |
-| **ATMOSFER** | grain 44 baris, vignette bawah, gradien radial di garis horizon | `Grain` + dua `AbsoluteFill` | membuat SVG datar terasa seperti film, bukan slide |
+| **FOTO** | satu gambar per segmen: ruang, benda, laut, langit | `generate_image`, 768×1376, disimpan di `public/plates/EPxx/` | selalu bergerak; tidak pernah tampil diam |
+| **GERAK** | push-in / tarik-out / geser kiri / geser kanan, goyang handheld, flicker exposure, garis sapuan | `src/scenes/PhotoScene.tsx` | dipilih bergiliran supaya dua segmen berurutan tidak bergerak ke arah yang sama |
+| **TEKS** | hook, cue, caption, kutipan, pembalik, loop, nomor segmen, progres | `src/scenes/Episode.tsx` | satu pesan per frame |
+| **ATMOSFER** | grade dingin, grain, vignette, kedip potongan | `Photo` + `CutFlash` | yang membuat potongan terasa, bukan patah |
 
-Aturannya: **tidak ada satu pun frame yang berupa satu gambar besar**. Plate
-selalu garis dan bidang tipis di atas latar gelap; teks selalu punya ruang
-kosong di sekitarnya. Kalau sebuah frame bisa dibingkai jadi poster tanpa
-kehilangan apa pun, frame itu gagal.
+Kalau sebuah episode belum punya foto, ia jatuh ke plate vektor (`PlateArt.tsx`,
+10 bentuk) — tidak pernah layar kosong, tapi juga belum boleh disebut selesai.
 
----
+Aturan gerak, dan ini yang menentukan penonton tinggal atau tidak:
 
-## 2 · SEPULUH BENTUK DASAR
+| aturan | angka | kenapa |
+|---|---|---|
+| kamera tidak pernah diam | skala bergerak 0.11–0.13 sepanjang segmen | mata menangkap gerak sebelum menangkap isi |
+| arah gerak berganti tiap segmen | 4 mode bergiliran | dua push-in berturut-turut terasa seperti berhenti |
+| potongan | 10 potongan dalam 58 s (rata-rata 5,8 s) | cukup lama untuk dibaca, cukup pendek untuk tidak bosan |
+| kedip potongan | 4 frame gelap (0.13 s), 34 % saat titik balik | membuat cut terasa disengaja |
+| teks bergerak | per kata, 2 frame per kata | teks yang muncul sekaligus terasa seperti slide |
+| progres terlihat | garis oranye di bawah, mengisi sepanjang durasi | penonton tahu "hampir selesai" — itu yang menahan mereka |
 
-Semua episode memakai aturan gambar yang sama: latar `#17191D`, garis rambut
-`sage` 1–1.6 px, siluet `ivory` 2–2.4 px dengan opasitas 0.16–0.62, dan **satu**
-aksen `orange` yang mewakili satu benda penting di episode itu.
-
-| # | bentuk | apa yang digambar | dipakai | aksen oranye = |
-|---|---|---|---|---|
-| 01 | `tower` | badan menara trapesium, galeri, lentera, dua celah jendela | EP01 | lampu yang masih menyala |
-| 02 | `vessel` | lambung, dua tiang, tali, lentera tiang depan | EP03 | lentera yang tidak dijaga |
-| 03 | `shelter` | tenda dengan tali pasak, pintu terlipat, satu sisi disobek | EP02, EP07, EP16 | kain yang terbuka dari dalam |
-| 04 | `road` | jalur menyempit ke satu titik di ufuk, garis tengah putus | EP04, EP06, EP12 | titik tujuan yang tidak masuk akal |
-| 05 | `paper` | lembar miring, 12 garis tulis, satu garis digarisbawahi | EP08, EP09, EP10 | kata yang tidak bisa dijelaskan |
-| 06 | `signal` | enam busur konsentris + satu garis datar di bawah | EP11, EP14 | sumber sinyal |
-| 07 | `plume` | kerucut gunung, kawah, kolom abu vertikal | EP17, EP18 | pijar di kawah |
-| 08 | `water` | permukaan bergaris, dua tebing, refleksi terbalik | EP20 | garis pijar di permukaan |
-| 09 | `dial` | 60 takik, dua jarum, satu angka berbahaya | EP21 | angka tempat jarum berhenti |
-| 10 | `ridge` | tiga lapis punggung bukit, satu tiang berdiri | EP05, EP13, EP15, EP19 | ujung tiang |
-
-Plate dipilih lewat field `plate` di `tools/content_data.py` dan divalidasi oleh
-`tools/build_episodes_json.py` (nama plate yang tidak ada langsung gagal).
-
-Cara memeriksa kesepuluhnya dalam satu menit:
-
-```
-node scripts/still-plates.mjs      # -> output/plates/plate_00..09.png
-```
-
-`PLATE-GALLERY` adalah komposisi 10 frame di `Root.tsx`; frame ke-n = bentuk ke-n.
-Kalau salah satu bentuk tidak lagi terlihat satu keluarga dengan yang lain, itu
-terlihat di sini sebelum 21 episode dirender.
+Kalau sebuah frame bisa dibingkai jadi poster tanpa kehilangan apa pun, frame itu
+gagal — karena berarti tidak ada yang bergerak di dalamnya.
 
 ---
+
+## 2 · FOTO PER SEGMEN (EP01)
+
+Sepuluh segmen, sepuluh gambar, satu gambar per segmen — tidak ada yang dipakai
+dua kali kecuali kalau maknanya berubah. Semua dalam satu resep: gelap, hampir
+monokrom arang–tulang, satu aksen hangat, tanpa wajah, tanpa teks, ruang kosong
+di sepertiga atas.
+
+| segmen | gambar | isi | gerak kamera |
+|---|---|---|---|
+| hook | `01_hook` | pakaian tahan air di gantungan, boots kosong, lampu minyak | push-in |
+| setup | `02_island` | pulau batu di laut luas, satu menara | tarik-out |
+| tension 1 | `03_ship` | dek kapal uap, menara di balik kabut | geser kiri |
+| tension 2 | `04_door` | pintu besi menara, tertutup, ombak | geser kanan |
+| tension 3 | `06_lamp` | lensa fresnel bersih, minyak penuh, tak ada yang menjaga | push-in |
+| tension 4 | `05_table` | meja makan ditinggal, tiga kursi mundur | tarik-out |
+| turn 1 | `08_logbook` | buku harian terbuka, jam berhenti | geser kiri |
+| turn 2 | `07_oilskins` | pakaian itu, dari dekat | push-in |
+| consequence | `09_sea_night` | laut malam, menara tanpa cahaya | geser kanan |
+| loop | `10_loop` | lemari museum, pakaian yang sama, 126 tahun kemudian | push-in |
+
+Aturan pemilihan gambar, bukan selera: **satu segmen = satu benda atau satu
+ruang yang bisa disebut dalam satu kata.** Kalau sebuah gambar butuh dijelaskan,
+ia salah untuk frame 2 detik.
+
+Sepuluh bentuk vektor (`tower`, `vessel`, `shelter`, `road`, `paper`, `signal`,
+`plume`, `water`, `dial`, `ridge`) tetap ada sebagai cadangan dan sebagai bahasa
+grafis untuk episode yang fotonya belum dibuat.
 
 ## 3 · TIPOGRAFI
 
@@ -109,7 +118,7 @@ hook → setup → tension ×4 → turn ×2 → consequence → loop
 
 | bagian | jumlah | fungsi efek | durasi khas |
 |---|---|---|---|
-| hook | 1 | berhenti menggulir | 5–7 s |
+| hook | 1 | berhenti menggulir | 5–7 s (foto sudah bergerak sejak frame 1) |
 | setup | 1 | dunia terbentuk, satu benda konkret | 6–8 s |
 | tension | 4 | sesuatu salah, tidak dijelaskan | 4–9 s masing-masing |
 | turn | 2 | kutipan yang selama ini dipercaya, lalu dibalik | 4–5 s + 4–5 s |
@@ -140,9 +149,15 @@ Satu narator untuk 21 episode (`voice-01`, Indonesia netral), tempo dinaikkan
 | ukur | `ffprobe` → `timing.generated.json` | `audioMeasured: true` |
 | master | `scale=in_range=full:out_range=tv,format=yuv420p` + `loudnorm=I=-14:TP=-1.5:LRA=11` + `crf 18` + `+faststart` | mean −17.3 dB, max −1.5 dB (terukur di EP01) |
 
-Belum ada musik dan belum ada SFX di master EP01. Itu keputusan, bukan
-keterlambatan: di 58 detik dengan satu suara, musik hanya menambah lapisan yang
-harus diadili sendiri. Kalau nanti ditambahkan, bed masuk di −28 LUFS.
+**Bed sudah ada di master EP01** dan dibuat di mesin ini, bukan diunduh:
+angin pink-noise yang disaring (45–380 Hz), dua drone 48/121 Hz, dan empat
+dentuman sub di titik-titik balik (hook 1,5 s · kutipan 36,4 s · pembalik 45,6 s ·
+loop 50,7 s). Level bed mean −31 dB, puncak −10 dB — cukup terasa di speaker
+kecil, tidak menutupi narasi.
+
+Yang belum ada: musik tonal dan SFX per benda. Di 58 detik, musik tonal cepat
+jadi "stok video"; angin + sub sudah cukup memberi ruang. Kalau nanti ditambah,
+bed masuk −28 LUFS dan tetap di bawah narasi.
 
 ---
 
@@ -184,6 +199,8 @@ ulangi — jangan turunkan resolusi.
 4. `volumedetect`: max ≤ −1.0 dB, mean antara −20 dan −14 dB.
 5. `audioMeasured: true` di `timing.generated.json`.
 6. Judul di layar = judul di script (`build_episodes_json.py` sudah dijalankan).
+7. **Uji gerak:** ambil dua frame berjarak 2 detik di tengah setiap segmen; kalau
+   keduanya identik, segmen itu statis dan tidak boleh lolos.
 
 Poin 6 punya sejarah: `episodes.generated.json` dulu tidak punya generator,
 sehingga EP01 sempat dirender dengan judul lama sementara script-nya sudah

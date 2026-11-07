@@ -48,6 +48,8 @@ def build():
                 "cues": e["cues"],
                 "durasi": e["durasi"],
                 "plate": plate,
+                "photos": [f"plates/{e['ep']}/{n}.jpg" for n in e.get("photos", [])],
+                "bed": e.get("bed", ""),
                 "sumber": e["sumber"],
             }
         )

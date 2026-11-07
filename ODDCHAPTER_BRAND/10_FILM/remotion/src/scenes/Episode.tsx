@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurr
 import { C, H, MARGIN, W } from "../theme";
 import data from "../episodes.generated.json";
 import { PlateArt, PlateKind } from "./PlateArt";
+import { CutFlash, Photo, Progress, Scan } from "./PhotoScene";
 import timing from "../timing.generated.json";
 
 /**
@@ -31,6 +32,8 @@ type Ep = {
   cues: string[];
   durasi: number;
   plate?: PlateKind;
+  photos?: string[];
+  bed?: string;
 };
 type Seg = {
   kind: "hook" | "beat" | "turn" | "loop";
@@ -174,31 +177,58 @@ const fit = (text: string, base: number) => {
   return base;
 };
 
-/** Titik balik: satu kutipan besar, satu coretan, satu kalimat pembalik. */
-const Turn: React.FC<{ quote: string; verdict: string; born: number; hold: number }> = ({ quote, verdict, born, hold }) => {
+/**
+ * Titik balik, dua tahap — dan ini yang membuatnya terasa seperti video:
+ *   tahap 1 (foto logbook) : kutipan besar, lalu dicoret oranye
+ *   tahap 2 (foto pakaian) : kutipan mengecil di atas, kalimat pembalik masuk
+ * Gambar berganti di antara keduanya, jadi pembalikan punya potongan, bukan
+ * hanya perubahan teks.
+ */
+const TurnQuote: React.FC<{ quote: string; born: number; hold: number }> = ({ quote, born, hold }) => {
   const frame = useCurrentFrame();
   if (frame < born || frame > born + hold) return null;
-  const q = interpolate(frame, [born + 4, born + 24], [0, 1], { ...clamp, easing: ease });
-  const strike = interpolate(frame, [born + Math.round(hold * 0.42), born + Math.round(hold * 0.42) + 22], [0, 1], clamp);
-  const v = interpolate(frame, [born + Math.round(hold * 0.58), born + Math.round(hold * 0.58) + 18], [0, 1], clamp);
-  const outAll = interpolate(frame, [born + hold - 12, born + hold], [1, 0], clamp);
+  const q = interpolate(frame, [born + 3, born + 22], [0, 1], { ...clamp, easing: ease });
+  const strike = interpolate(frame, [born + Math.round(hold * 0.46), born + Math.round(hold * 0.46) + 20], [0, 1], clamp);
+  const out = interpolate(frame, [born + hold - 8, born + hold], [1, 0], clamp);
 
   return (
-    <AbsoluteFill style={{ paddingLeft: MARGIN, paddingRight: MARGIN, justifyContent: "center", opacity: outAll }}>
-      <div style={{ fontFamily: "Inter", fontWeight: 600, fontSize: 25, letterSpacing: "0.32em", color: C.sage, marginBottom: 34 }}>
+    <AbsoluteFill style={{ paddingLeft: MARGIN, paddingRight: MARGIN, justifyContent: "center", opacity: out }}>
+      <AbsoluteFill style={{ background: "radial-gradient(78% 40% at 50% 47%, rgba(8,10,13,0.9) 0%, rgba(8,10,13,0.6) 60%, rgba(8,10,13,0) 100%)" }} />
+      <div style={{ fontFamily: "Inter", fontWeight: 600, fontSize: 25, letterSpacing: "0.32em", color: C.ivory, opacity: 0.7, marginBottom: 34 }}>
         YANG SELAMA INI DIKUTIP
       </div>
-      <div style={{ position: "relative", opacity: q, transform: `translateY(${(1 - q) * 14}px)` }}>
-        <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 96, lineHeight: 1.04, letterSpacing: "-0.035em", color: C.ivory }}>
+      <div style={{ position: "relative", opacity: q, transform: `translateY(${(1 - q) * 16}px)` }}>
+        <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: fit(quote, 96), lineHeight: 1.04, letterSpacing: "-0.035em", color: C.ivory, textShadow: "0 4px 30px rgba(0,0,0,0.9)" }}>
           {quote}
         </div>
         <div style={{ position: "absolute", left: -8, top: "50%", height: 9, width: `calc(${strike * 100}% + 8px)`, backgroundColor: C.orange }} />
       </div>
-      {verdict ? (
-        <div style={{ marginTop: 56, fontFamily: "Inter", fontWeight: 600, fontSize: 44, lineHeight: 1.3, letterSpacing: "0.02em", color: C.orange, opacity: v }}>
-          {verdict}
+    </AbsoluteFill>
+  );
+};
+
+const TurnVerdict: React.FC<{ quote: string; verdict: string; born: number; hold: number }> = ({ quote, verdict, born, hold }) => {
+  const frame = useCurrentFrame();
+  if (frame < born || frame > born + hold) return null;
+  const small = interpolate(frame, [born, born + 8], [0, 1], clamp);
+  const v = interpolate(frame, [born + 6, born + 26], [0, 1], { ...clamp, easing: ease });
+
+  return (
+    <AbsoluteFill style={{ paddingLeft: MARGIN, paddingRight: MARGIN, justifyContent: "center" }}>
+      <AbsoluteFill style={{ background: "radial-gradient(80% 44% at 50% 52%, rgba(8,10,13,0.9) 0%, rgba(8,10,13,0.6) 62%, rgba(8,10,13,0) 100%)" }} />
+      {/* kutipan yang tadi besar, sekarang kecil dan sudah tercoret */}
+      <div style={{ opacity: small, marginBottom: 44 }}>
+        <div style={{ position: "relative", display: "inline-block" }}>
+          <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 40, letterSpacing: "-0.01em", color: C.sage }}>{quote}</div>
+          <div style={{ position: "absolute", left: -6, top: "52%", height: 5, width: "calc(100% + 6px)", backgroundColor: C.orange }} />
         </div>
-      ) : null}
+      </div>
+      <div style={{ fontFamily: "Inter", fontWeight: 600, fontSize: 25, letterSpacing: "0.32em", color: C.orange, marginBottom: 30 }}>
+        YANG SEBENARNYA
+      </div>
+      <div style={{ opacity: v, transform: `translateY(${(1 - v) * 20}px)`, fontFamily: "Space Grotesk", fontWeight: 700, fontSize: fit(verdict, 68), lineHeight: 1.12, letterSpacing: "-0.02em", color: C.ivory, textShadow: "0 4px 30px rgba(0,0,0,0.9)" }}>
+        {verdict}
+      </div>
     </AbsoluteFill>
   );
 };
@@ -279,7 +309,23 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
         </Sequence>
       ))}
 
-      <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />
+      {/* bed: angin + drone + dentuman di titik balik. Bukan dekorasi — ini yang
+          membuat gambar diam terasa punya ruang. */}
+      {ep.bed ? <Audio src={staticFile(ep.bed)} /> : null}
+
+      {/* gambar: satu foto per segmen, semuanya bergerak. Kalau episode belum
+          punya foto, jatuh ke plate vektor — tidak pernah layar kosong. */}
+      {ep.photos && ep.photos.length
+        ? tm.segments.map((s, i) => (
+            <Sequence key={`p-${s.key}`} from={s.startFrame} durationInFrames={s.durFrames} name={`photo-${s.key}`}>
+              <Photo src={ep.photos![Math.min(i, ep.photos!.length - 1)]} i={i} dur={s.durFrames} />
+              <Scan dur={s.durFrames} />
+            </Sequence>
+          ))
+        : <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />}
+
+      {/* kedip potongan: keras di titik balik, halus di setiap beat */}
+      {active ? <CutFlash age={frame - active.startFrame} strong={inTurn} /> : null}
 
       {inHook && (
         <Line text={ep.title} born={active!.startFrame + 4} hold={active!.durFrames - 4} size={fit(ep.title, 92)} family="grotesk" weight={700} top={H * 0.22} />
@@ -289,7 +335,12 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
         <Line text={active!.text} born={active!.startFrame + 3} hold={active!.durFrames - 3} size={fit(active!.text, 74)} family="grotesk" weight={700} top={H * 0.24} />
       )}
 
-      {inTurn && <Turn quote={turnQuote} verdict={turnVerdict} born={turnStart} hold={turnEnd - turnStart} />}
+      {turnSegs[0] && frame >= turnSegs[0].startFrame && frame < turnSegs[0].startFrame + turnSegs[0].durFrames ? (
+        <TurnQuote quote={turnQuote} born={turnSegs[0].startFrame} hold={turnSegs[0].durFrames} />
+      ) : null}
+      {turnSegs[1] && frame >= turnSegs[1].startFrame && frame < turnSegs[1].startFrame + turnSegs[1].durFrames ? (
+        <TurnVerdict quote={turnQuote} verdict={turnVerdict} born={turnSegs[1].startFrame} hold={turnSegs[1].durFrames} />
+      ) : null}
 
       {/* label editorial: hanya saat beat punya cue, di bawah nomor urut */}
       {active && active.kind === "beat" && active.cue && !inTurn && (
@@ -319,6 +370,8 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
       <div style={{ position: "absolute", left: MARGIN, top: 300, fontFamily: "Inter", fontWeight: 600, fontSize: 24, letterSpacing: "0.28em", color: C.sage, opacity: 0.8 }}>
         {String(tm.segments.filter((s) => s.startFrame <= frame).length).padStart(2, "0")} / {String(tm.segments.length).padStart(2, "0")}
       </div>
+
+      <Progress frame={frame} total={totalFrames} />
 
       <Footer ep={ep.id.replace("EP", "EP ")} series={ep.series} />
     </AbsoluteFill>

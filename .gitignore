@@ -30,3 +30,7 @@ ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/CONTACT_SHEET.svg
 ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/*.png
 ODDCHAPTER_BRAND/11_CONTENT/03_THUMBNAIL/*.jpg
 image-search/
+
+# foto plate video (hasil generate_image, ~0,2 MB/file × 21 episode × 10).
+# Tinggal di workspace dan di Drive; resep prompt-nya ada di 05_VISUAL_PLAN.md §2.
+ODDCHAPTER_BRAND/10_FILM/remotion/public/plates/**/*.jpg

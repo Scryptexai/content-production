@@ -49,6 +49,8 @@ EPISODES = [
         loop="Pakaian itu masih di gantungan, dan laut menyimpan sisanya seratus dua puluh enam tahun.",
         cues=["DES 1900 · LAMPU MATI", "SEBELAS HARI", "PINTU TERKUNCI", "JAM BERHENTI", "TANPA MAYAT"],
         visual="Menara di garis horizon; satu gantungan kosong di dalam; laut yang tidak bergerak.",
+        photos=['01_hook', '02_island', '03_ship', '04_door', '06_lamp', '05_table', '08_logbook', '07_oilskins', '09_sea_night', '10_loop'],
+        bed="audio/EP01/bed.wav",
         plate="tower",
         sumber="VERIFIED — Northern Lighthouse Board, nlb.org.uk/history/flannan-isles/. Hilang setelah kerja pagi 15 Des 1900; Archtor mencatat lampu mati; laporan diterima 18 Des; Hesperus tiba 26 Des; lampu bersih, minyak penuh; satu set oilskins tertinggal. Buku harian dramatis = tambahan fiktif (Mike Dash, Fortean Times).",
     ),
