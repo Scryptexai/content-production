@@ -22,6 +22,7 @@ be rebuilt from that source.
 | 6 | `BRAND_GUIDELINES.md`, `05_PREVIEWS/` sheets | **Complete** — usage sheet + contact sheet |
 | 7 | Extended surfaces + motion delivery | **Complete** — stories, OG card, end card; rendered 38-frame build + SMIL |
 | 8 | Print & physical applications | **Complete** — 9 mm-authored artworks + `07_PRINT/PRINT_SPEC.md` |
+| 9 | Audio identity | **Complete** — voice auditioned, spoken signature delivered + `08_AUDIO/AUDIO_IDENTITY.md` |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -47,6 +48,7 @@ ODDCHAPTER_BRAND/
 │   ├── build_extra.py           Phase 7: stories, OG card, end card
 │   ├── build_motion.py          Phase 7: frames, GIF, poster, SMIL opener
 │   ├── build_print.py           Phase 8: mm-authored print artwork
+│   ├── audio_info.py            MP3 duration parser (no ffprobe on this host)
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -62,7 +64,8 @@ ODDCHAPTER_BRAND/
 ├── 04_MOTION/   MOTION_IDENTITY.md · svg_components · animation_reference · preview
 ├── 05_PREVIEWS/ concept overview · small-size test · approved refinement · usage sheet · contact sheet
 ├── 06_EXPORTS/  favicons (512/192/32) · transparent icon · primary logo 2000
-└── 07_PRINT/    PRINT_SPEC.md · one_colour · stationery · poster · merch · previews
+├── 07_PRINT/    PRINT_SPEC.md · one_colour · stationery · poster · merch · previews
+└── 08_AUDIO/    AUDIO_IDENTITY.md · assets/ (signature ID + EN, cold-open read)
 ```
 
 ---
@@ -131,6 +134,9 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 21 | Print artwork is authored in millimetres, never pixels | A printer needs physical measurements; `210mm` cannot be misread as 72 dpi | Applied |
 | 22 | Poster headline is outlined and auto-fitted to the margin | The first render overflowed the trim — live text cannot be size-checked by eye | Fixed |
 | 23 | One-colour masters are true 100 % K, not brand Ink | Ink `#17191D` is a four-colour build; stamps, foil and screen print need one plate | Applied |
+| 24 | Brand voice is auditioned, not assumed | The brand docs fix the *profile*, not the person; the owner picks the voice | Done |
+| 25 | Spoken signature, not a sonic logo | A musical mark needs a composer or a music model — neither is in this toolchain | Documented |
+| 26 | Delivered MP3s are reference quality (24 kHz mono) | Enough to judge timing and tone; masters must be re-recorded at 48 kHz | Open |
 
 ---
 
