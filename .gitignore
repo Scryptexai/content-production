@@ -3,3 +3,18 @@ EPISODES/**/*.mp4
 EPISODES/**/*.mov
 EPISODES/**/*.wav
 EPISODES/**/*.aiff
+
+# ---------------------------------------------------------------- film pipeline
+# The finished pilot is committed (the publish workflow uploads it as a release
+# asset, ~1.2 MB). Everything generated around it is not.
+ODDCHAPTER_BRAND/10_FILM/remotion/node_modules/
+ODDCHAPTER_BRAND/10_FILM/remotion/output/
+ODDCHAPTER_BRAND/10_FILM/remotion/.chromium-libs/
+ODDCHAPTER_BRAND/10_FILM/remotion/public/fonts/
+ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/
+ODDCHAPTER_BRAND/10_FILM/remotion/src/captions.generated.json
+ODDCHAPTER_BRAND/10_FILM/remotion/src/brand.json
+ODDCHAPTER_BRAND/10_FILM/remotion/.cache/
+
+# fonts are re-fetched, never vendored (SIL OFL: link, don't redistribute)
+ODDCHAPTER_BRAND/.build/

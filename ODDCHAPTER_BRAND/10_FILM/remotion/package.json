@@ -1,0 +1,29 @@
+{
+  "name": "oddchapter-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ODDCHAPTER brand film — Remotion + Sparticuz Chromium render pipeline",
+  "scripts": {
+    "assets": "node scripts/prepare-assets.mjs",
+    "dev": "npm run assets && remotion studio src/index.ts --port 3333",
+    "preview": "npm run assets && node scripts/still.mjs",
+    "test:browser": "node scripts/chromium-test.mjs",
+    "render": "npm run assets && node scripts/render.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@ffprobe-installer/ffprobe": "2.1.2",
+    "@remotion/bundler": "4.0.541",
+    "@remotion/captions": "4.0.541",
+    "@remotion/cli": "4.0.541",
+    "@remotion/renderer": "4.0.541",
+    "@remotion/transitions": "4.0.541",
+    "@sparticuz/chromium": "153.0.0",
+    "d3": "7.9.2",
+    "puppeteer-core": "25.16.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.541"
+  }
+}
