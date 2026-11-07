@@ -138,7 +138,7 @@ Satu narator untuk 21 episode (`voice-01`, Indonesia netral), tempo dinaikkan
 | sintesis | 9–10 klip per episode, satu per segmen | 4.5–8 s per klip |
 | kecepatan | `ffmpeg -filter:a "atempo=1.12" -c:a libmp3lame -q:a 4` | asli disimpan di `audio/EPxx/raw/` |
 | ukur | `ffprobe` → `timing.generated.json` | `audioMeasured: true` |
-| master | `loudnorm=I=-14:TP=-1.5:LRA=11` + `+faststart` | mean −17.3 dB, max −1.5 dB (terukur di EP01) |
+| master | `scale=in_range=full:out_range=tv,format=yuv420p` + `loudnorm=I=-14:TP=-1.5:LRA=11` + `crf 18` + `+faststart` | mean −17.3 dB, max −1.5 dB (terukur di EP01) |
 
 Belum ada musik dan belum ada SFX di master EP01. Itu keputusan, bukan
 keterlambatan: di 58 detik dengan satu suara, musik hanya menambah lapisan yang
@@ -164,9 +164,9 @@ Angka nyata EP01 (Chromium `@sparticuz/chromium` 153, `gl: swangle`, concurrency
 |---|---|
 | resolusi / fps | 1080×1920 / 30 |
 | durasi | 58.28 s |
-| video | h264 High, yuv420p |
+| video | h264 High, yuv420p (konversi full→tv range saat normalisasi) |
 | audio | aac 48 kHz stereo 192k |
-| ukuran master | 6.79 MB |
+| ukuran master | 3,1 MB (CRF 18; konten gelap-statistik terkompresi sangat efisien) |
 | waktu render | ≈13–15 menit per episode di sandbox ini |
 
 Catatan operasional: dengan concurrency default, browser sempat mati di frame 378

@@ -18,7 +18,8 @@ dan thumbnail tidak bisa berbeda satu sama lain.
 | `03_THUMBNAIL/CONTACT_SHEET.png` | semua 21 dalam satu grid |
 | `00B_KERANGKA_STORYTELLING.md` | kerangka cerita (Franklin) + rujukan |
 | `00C_MESIN_5_EFEK.md` | lima efek yang diminta, mekanismenya, dan gerbangnya |
-| `05_VISUAL_PLAN.md` | shot list per episode, sistem visual per seri, aset yang harus dibuat, urutan produksi |
+| `05_VISUAL_PLAN.md` | sistem visual yang benar-benar dirender: 10 bentuk plate, tipografi, ritme segmen, render, QA |
+| `10_FILM/remotion/` | kode video: `PlateArt.tsx` (10 bentuk), `Episode.tsx` (satu komposisi untuk 21 episode) |
 
 ## Cara memperbarui
 
@@ -32,13 +33,26 @@ python3 tools/build_content_kit.py thumbs    # hanya gambar
 Edit `tools/content_data.py`, bukan file hasil generate. Kalau script diubah,
 thumbnail ikut berubah (subline-nya diambil dari kalimat pertama hook).
 
+Video punya jalur sendiri, dan tidak ada teks yang ditulis ulang di kode:
+
+```bash
+python3 tools/build_episodes_json.py      # content_data -> src/episodes.generated.json
+python3 tools/build_timing.py EP01        # durasi audio nyata -> src/timing.generated.json
+cd 10_FILM/remotion
+node scripts/still-plates.mjs             # QA 10 bentuk dasar
+node scripts/still-ep01.mjs 150 760 1560  # QA frame kunci
+node scripts/render-episode.mjs EP01      # master 1080x1920 + loudnorm -14 LUFS
+```
+
 ## Status
 
 - 21 ide: selesai.
 - 21 script: selesai, semuanya `NEEDS-SOURCE`.
 - 21 thumbnail: selesai, 1080×1920, kontak sheet tersedia.
 - Visual plan: selesai.
-- Video: belum. `05_VISUAL_PLAN.md` §9 berisi urutannya.
+- Video: **EP01 selesai** — 58,28 s, 1080×1920, 30 fps, narasi terukur, master di
+  `10_FILM/remotion/output/episodes/EP01_1080x1920_master.mp4`.
+- Video EP02–EP21: menunggu narasi (9–10 klip per episode); bentuk plate-nya sudah ada.
 
 **`NEEDS-SOURCE` adalah gerbang, bukan label.** Tidak ada episode yang boleh
 dirender jadi video final sebelum rujukan primernya dibaca dan statusnya diubah
