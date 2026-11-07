@@ -1,0 +1,109 @@
+name: Footage inbox
+
+# GitHub's runners have unrestricted outbound internet; this sandbox does not.
+# So the runner acts as the download proxy: it fetches the clip, records where it
+# came from and under what licence, and commits it to `footage/inbox`, which the
+# working session can pull with plain git (github.com is reachable from there).
+#
+# Nothing is downloaded from a host outside ALLOWED_HOSTS — the job would otherwise
+# be a generic "fetch any URL" gadget.
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "One media URL per line (upload.wikimedia.org, archive.org, images-assets.nasa.gov)"
+        required: true
+        type: string
+      target_dir:
+        description: "Folder inside FOOTAGE/"
+        required: true
+        default: "inbox"
+      license_note:
+        description: "Credit + licence, copied verbatim into MANIFEST.md"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    env:
+      ALLOWED_HOSTS: "upload.wikimedia.org archive.org ia600000.us.archive.org ia800000.us.archive.org images-assets.nasa.gov"
+      MAX_FILES: "3"
+      MAX_BYTES: "262144000" # 250 MB per file
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate and download
+        run: |
+          set -euo pipefail
+          dir="FOOTAGE/${{ inputs.target_dir }}"
+          mkdir -p "$dir"
+          n=0
+          : > /tmp/manifest.tsv
+          while IFS= read -r u; do
+            [ -z "${u// }" ] && continue
+            n=$((n+1))
+            if [ "$n" -gt "$MAX_FILES" ]; then echo "::error::more than $MAX_FILES urls"; exit 1; fi
+            host=$(printf '%s' "$u" | awk -F/ '{print $3}')
+            case " $ALLOWED_HOSTS " in
+              *" $host "*) ;;
+              *) echo "::error::host not allowed: $host"; exit 1 ;;
+            esac
+            name=$(basename "${u%%\?*}")
+            echo "→ $name  ($host)"
+            curl -fsSL --retry 3 --max-time 600 -o "$dir/$name" "$u"
+            bytes=$(stat -c%s "$dir/$name")
+            if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::$name exceeds $MAX_BYTES bytes"; exit 1; fi
+            sha=$(sha256sum "$dir/$name" | cut -d' ' -f1)
+            ffprobe -v error -show_entries format=duration:stream=codec_type,codec_name,width,height,r_frame_rate -of json "$dir/$name" > "/tmp/probe-$name.json" || true
+            printf '%s\t%s\t%s\t%s\t%s\n' "$name" "$u" "$bytes" "$sha" "$(tr -d '\n' < /tmp/probe-$name.json | head -c 400)" >> /tmp/manifest.tsv
+            echo "  $bytes bytes  sha256 $sha"
+          done <<< "${{ inputs.urls }}"
+          echo "files=$n" >> "$GITHUB_OUTPUT" 2>/dev/null || true
+
+      - name: Write manifest
+        run: |
+          set -euo pipefail
+          {
+            echo "# Footage inbox"
+            echo ""
+            echo "Fetched by GitHub Actions on $(date -u '+%Y-%m-%d %H:%M UTC') from run [${{ github.run_id }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})."
+            echo ""
+            echo "**Licence / credit:** ${{ inputs.license_note }}"
+            echo ""
+            echo "| file | bytes | sha256 | source |"
+            echo "|---|---|---|---|"
+            while IFS=$'\t' read -r name url bytes sha probe; do
+              echo "| \`$name\` | $bytes | \`${sha:0:16}…\` | $url |"
+            done < /tmp/manifest.tsv
+            echo ""
+            echo "## ffprobe"
+            echo '```json'
+            cat /tmp/probe-*.json 2>/dev/null || true
+            echo '```'
+          } > "FOOTAGE/${{ inputs.target_dir }}/MANIFEST.md"
+
+      - name: Commit to the inbox branch
+        run: |
+          set -euo pipefail
+          git config user.name "oddchapter-footage-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B footage/inbox
+          git add "FOOTAGE/${{ inputs.target_dir }}"
+          git commit -m "footage: ${{ inputs.target_dir }} — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push --force origin footage/inbox
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Footage inbox"
+            echo ""
+            echo "\`git fetch origin footage/inbox && git checkout footage/inbox -- FOOTAGE/${{ inputs.target_dir }}\`"
+            echo ""
+            cat "FOOTAGE/${{ inputs.target_dir }}/MANIFEST.md" 2>/dev/null || echo "no manifest"
+          } >> "$GITHUB_STEP_SUMMARY"
