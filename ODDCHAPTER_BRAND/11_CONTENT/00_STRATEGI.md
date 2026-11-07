@@ -1,5 +1,12 @@
 # ODDCHAPTER — STRATEGI KONTEN 21 HARI
 
+> **Revisi.** Bagian §2–§4 di dokumen ini (H·R·R, enam tipe hook, struktur
+> 45–60 s) sudah **digantikan** oleh `00B_KERANGKA_STORYTELLING.md`. Alasan:
+> H·R·R adalah struktur retensi, bukan struktur cerita. Yang dipakai sekarang
+> adalah model narrative nonfiction (komplikasi → gagal → bingung → wawasan →
+> resolusi) dengan satu protagonis, satu keinginan, dan satu tanaman per episode.
+
+
 Dokumen ini adalah aturan mainnya. Semua script, thumbnail, dan visual plan di
 folder ini tunduk pada aturan di bawah — bukan sebaliknya.
 

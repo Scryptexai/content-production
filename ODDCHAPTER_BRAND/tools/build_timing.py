@@ -50,11 +50,12 @@ def dur_of(text, wps=WPS):
 def build(ep):
     segs = []
 
-    def add(kind, text, key):
+    def add(kind, text, key, part=None):
         path = AUDIO_DIR / ep["ep"] / f"{key}.mp3"
         measured = audio_duration(path) if path.exists() else None
         segs.append({
             "kind": kind,
+            "part": part,
             "key": key,
             "text": text,
             "dur": round(measured if measured else dur_of(text), 3),
@@ -62,19 +63,24 @@ def build(ep):
         })
 
     add("hook", ep["hook"], "00_hook")
-    for i, (t, txt) in enumerate(ep["beats"]):
-        add("beat", txt, f"{i + 1:02d}_beat")
-    add("turn", ep["turn"], "90_turn")
-    segs[-1]["quote"] = ep.get("turn_quote", "")
-    segs[-1]["verdict"] = ep.get("turn_verdict", "")
-    add("loop", ep["loop"], "99_loop")
+    for i, (part, txt) in enumerate(ep["beats"]):
+        add("beat", txt, f"{i + 1:02d}_{part}", part)
 
-    # cue diambil berurutan, satu cue per satu-dua segmen beat
-    cues = ep["cues"]
-    beat_idx = [i for i, s in enumerate(segs) if s["kind"] == "beat"]
-    for n, i in enumerate(beat_idx):
-        if n % 2 == 0 and n // 2 < len(cues):
-            segs[i]["cue"] = cues[n // 2]
+    # kutipan + pembalik dipasang di segmen turn pertama
+    for s in segs:
+        if s["part"] == "turn":
+            s["quote"] = ep.get("turn_quote", "")
+            s["verdict"] = ep.get("turn_verdict", "")
+            break
+
+    # cue menempel di beat tension, satu per satu, lalu di consequence kalau sisa
+    cues = list(ep["cues"])
+    for part in ("tension", "consequence", "setup"):
+        for s in segs:
+            if cues and s.get("part") == part and "cue" not in s:
+                s["cue"] = cues.pop(0)
+        if not cues:
+            break
 
     t = 0.6  # lead-in
     for s in segs:

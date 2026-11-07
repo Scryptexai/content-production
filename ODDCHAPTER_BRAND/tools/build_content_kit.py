@@ -59,40 +59,58 @@ def slug(s):
 # ---------------------------------------------------------------- script docs
 def episode_md(e):
     n = int(e["ep"][2:])
-    total = e["durasi"]
+    words = len(e["hook"].split()) + sum(len(t.split()) for _, t in e["beats"]) + len(e["loop"].split())
+    part_label = {"setup": "SETUP", "tension": "TENSION", "turn": "TURN", "consequence": "CONSEQUENCE"}
     lines = [
         f"# {e['ep']} — {e['title']}",
         "",
-        f"**Headline:** {e['title']}  ",
         f"**Seri:** {e['series']} · **Slot:** {SLOT_LABEL[e['slot']]} · **Hari:** H{e['day']}  ",
         f"**POV:** {POV_LABEL[e['pov']]}  ",
-        f"**Durasi target:** {total} detik · **Kata VO:** {sum(len(b[1].split()) for b in e['beats'])}",
+        f"**Durasi:** {words} kata ≈ {round(words / 2.45)} detik (target {e['durasi']} s)",
         "",
         "---",
+        "",
+        "## 0 · KERANGKA (isi dulu, baru ditulis)",
+        "",
+        "| unsur | isi |",
+        "|---|---|",
+        f"| **Protagonis** | {e['protagonis']} |",
+        f"| **Mau** | {e['mau']} |",
+        f"| **Hambatan** | {e['hambatan']} |",
+        f"| **Tanaman** (detail yang berubah makna di turn) | {e['tanaman']} |",
+        "",
+        "Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →",
+        "wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.",
         "",
         "## 1 · HOOK (0–3 s)",
         "",
         f"> {e['hook']}",
         "",
-        "Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama",
-        "dengan kalimat VO — teks di layar memotong, bukan mengulang.",
+        "Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.",
         "",
-        "## 2 · BEAT (3 s → selesai)",
+        "## 2 · BEAT",
         "",
-        "| detik | VO |",
+        "| bagian | VO |",
         "|---|---|",
     ]
-    for t, txt in e["beats"]:
-        lines.append(f"| {t:02d} | {txt} |")
+    for part, txt in e["beats"]:
+        lines.append(f"| {part_label[part]} | {txt} |")
     lines += [
         "",
-        f"## 3 · TITIK BALIK",
+        "## 3 · TURN",
         "",
-        f"> {e['turn']}",
+        f"Dugaan yang dipatahkan: **{e.get('turn_quote', '')}**",
         "",
-        "## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)",
+        f"Pembalik: {e.get('turn_verdict', '')}",
+        "",
+        "Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah",
+        "dilihat penonton sejak detik pertama.",
+        "",
+        "## 4 · ECHO",
         "",
         f"> {e['loop']}",
+        "",
+        "Kalimat terakhir memanggil kembali detail yang ditanam di hook.",
         "",
         "## 5 · TEKS DI LAYAR",
         "",
@@ -101,39 +119,33 @@ def episode_md(e):
         lines.append(f"{i}. `{c}`")
     lines += [
         "",
-        "Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.",
+        "Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.",
         "",
         "## 6 · VISUAL SIGNATURE",
         "",
         e["visual"],
-        "",
-        "Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).",
         "",
         "## 7 · DISTRIBUSI",
         "",
         "| platform | format |",
         "|---|---|",
     ]
-    for p, note in PLATFORMS:
-        lines.append(f"| {p} | {note} |")
+    for p_, note in PLATFORMS:
+        lines.append(f"| {p_} | {note} |")
     lines += [
         "",
-        "Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.",
+        "Satu episode, tiga platform, satu file master vertikal.",
         "",
         "## 8 · SUMBER",
         "",
-        f"`SRC: NEEDS-SOURCE` — {e['sumber']}",
+        f"`SRC: {e['sumber'].split(' — ')[0]}` — {e['sumber'].split(' — ', 1)[-1]}",
         "",
-        "Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan",
+        "Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan",
         "primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).",
         "",
-        "## 9 · HOOK ALTERNATIF (untuk A/B)",
+        "## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)",
         "",
         f"- {e['hook_alt']}",
-        "",
-        "---",
-        "",
-        f"*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*",
     ]
     return "\n".join(lines), n
 
@@ -182,11 +194,13 @@ def write_calendar():
                 "headline": e["title"],
                 "seri": e["series"],
                 "pov": e["pov"],
+                "protagonis": e["protagonis"],
+                "tanaman": e["tanaman"],
                 "platform": platform,
                 "format": note,
                 "durasi_detik": e["durasi"],
                 "status_sumber": "NEEDS-SOURCE",
-                "thumbnail": f"03_THUMBNAIL/{e['ep']}_{slug(e['title'])}.png",
+                "thumbnail": f"03_THUMBNAIL/{e['ep']}.png",
                 "script": f"02_SCRIPT/{e['ep']}_{slug(e['title'])}.md",
             })
     path = IDEAS / "CONTENT_CALENDAR.csv"
@@ -432,11 +446,96 @@ def contact_sheet(paths):
     print("contact sheet:", W, "x", H)
 
 
+THUMB_PROMPT = (
+    "Vertical cinematic poster photograph, 9:16, portrait orientation. {scene} "
+    "Extremely dark charcoal atmosphere, deep shadows, one single warm orange light source, "
+    "fine film grain, photoreal, shallow depth of field, high contrast, moody documentary still. "
+    "Overlaid on the lower third: huge bold condensed sans-serif all-caps white text reading exactly "
+    "\"{text}\", very tight letter spacing, crisp edges, perfectly legible, absolutely no other words, "
+    "no letters, no numbers, no logos, no watermark, no borders."
+)
+
+
+def write_thumb_manifest():
+    """Manifest untuk generate_image: teks hook + prompt per episode."""
+    import json
+    rows = []
+    for e in EPISODES:
+        rows.append({
+            "ep": e["ep"],
+            "file": f"03_THUMBNAIL/{e['ep']}.png",
+            "text": e["thumb_text"],
+            "series": e["series"],
+            "headline": e["title"],
+            "prompt": THUMB_PROMPT.format(text=e["thumb_text"], scene=e["visual"]),
+        })
+    (THUMBS / "MANIFEST.json").write_text(json.dumps(rows, ensure_ascii=False, indent=2))
+    print(f"thumb manifest: {len(rows)} prompt")
+
+
+
+SERI_ORDER = ["HILANG", "TERSEMBUNYI", "ANEH", "BENCANA", "HARGA"]
+SERI_DESC = {
+    "HILANG": "Orang hilang, dan jejak yang ditinggalkan justru membingungkan.",
+    "TERSEMBUNYI": "Sesuatu yang berlangsung lama tepat di depan mata orang.",
+    "ANEH": "Anomali nyata yang terasa fiksi, tapi tercatat.",
+    "BENCANA": "Kekuatan yang jauh lebih besar dari manusia — dan salah paham tentangnya.",
+    "HARGA": "Yang harus dibayar seseorang supaya orang lain aman.",
+}
+
+
+def write_ideas():
+    IDEAS.mkdir(parents=True, exist_ok=True)
+    L = [
+        "# 21 IDE KONTEN — 7 HARI x 3 SLOT",
+        "",
+        "Setiap episode punya satu protagonis, satu keinginan, dan satu **tanaman**:",
+        "detail kecil yang ditanam di awal lalu berubah maknanya di turn. Kalau kolom",
+        "tanaman kosong, ide itu dibuang. Kerangkanya di `00B_KERANGKA_STORYTELLING.md`.",
+        "",
+        "Legenda: **POV** A = “kamu” · B = “saksi/arsip” · D = “kita”.",
+        "**SRC** = status sumber (lihat `00_STRATEGI.md` §6).",
+        "",
+    ]
+    for seri in SERI_ORDER:
+        eps = [e for e in EPISODES if e["series"] == seri]
+        if not eps:
+            continue
+        L += [f"## {seri} — {SERI_DESC[seri]}", "",
+              "| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |",
+              "|---|---|---|---|---|---|---|"]
+        for e in eps:
+            src = e["sumber"].split(" — ")[0]
+            L.append(
+                f"| {e['ep']} | H{e['day']} {e['slot']} | **{e['title']}** | {e['pov']} | "
+                f"{e['protagonis']} | {e['tanaman']} | {src} |"
+            )
+        L.append("")
+    L += ["---", "", "## Peta hari", "",
+          "| Hari | 07.00 | 12.30 | 19.30 |", "|---|---|---|---|"]
+    for day in range(1, 8):
+        row = []
+        for slot in ("pagi", "siang", "malam"):
+            m = [e for e in EPISODES if e["day"] == day and e["slot"] == slot]
+            row.append(f"{m[0]['ep']} {m[0]['title'][:34]}" if m else "—")
+        L.append(f"| **H{day}** | {row[0]} | {row[1]} | {row[2]} |")
+    L += ["", "**Prinsip urutan:** H1 dan H7 dibuka episode terkuat di serinya.",
+          "Kategori dicampur tiap hari supaya feed tidak monoton; slot malam selalu",
+          "yang paling atmosferik.", "", "---", "", "## Catatan", "",
+          f"- {sum(1 for e in EPISODES if e['sumber'].startswith('VERIFIED'))} episode `VERIFIED`, "
+          f"{sum(1 for e in EPISODES if e['sumber'].startswith('NEEDS'))} `NEEDS-SOURCE`.",
+          "  Yang `NEEDS-SOURCE` belum boleh tayang — kerangkanya siap, verifikasinya belum.",
+          "- Urutan kerja: ide → script → thumbnail (gambar hasil generasi) → visual plan."]
+    (IDEAS / "21_IDEA_CONTENT.md").write_text("\n".join(L) + "\n")
+    print("ideas: 21 baris, dikelompokkan per seri")
+
+
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
     if what in ("all", "scripts"):
         write_scripts()
         write_calendar()
+        write_ideas()
     if what in ("all", "thumbs"):
-        paths = build_thumbs()
-        contact_sheet(paths)
+        THUMBS.mkdir(parents=True, exist_ok=True)
+        write_thumb_manifest()

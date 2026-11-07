@@ -6,82 +6,100 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 
 | # | Hari | Slot | Seri | Headline | POV | Detik |
 |---|---|---|---|---|---|---|
-| 1 | H1 | pagi | HILANG | TIGA PENJAGA YANG TIDAK PERNAH PULANG | A | 58 |
-| 2 | H2 | pagi | HILANG | SEMBILAN ORANG, SATU TENDA YANG DIPOTONG DARI DALAM | B | 55 |
-| 3 | H3 | pagi | HILANG | KAPAL YANG MASIH UTUH, AWAK YANG HILANG | B | 50 |
-| 4 | H4 | pagi | HILANG | EMPAT PRIA, SATU MOBIL, DAN SEBUAH JALAN KE ATAS | A | 52 |
-| 5 | H5 | pagi | HILANG | KOLONI YANG HILANG TANPA SATU PUN MAYAT | D | 55 |
-| 6 | H1 | malam | TERSEMBUNYI | API DI BAWAH KOTA YANG TIDAK PERNAH MATI | B | 58 |
-| 7 | H2 | malam | TERSEMBUNYI | RUMAH YANG PENUH ORANG, DAN TIDAK ADA SATU PUN YANG KELUAR | A | 57 |
-| 8 | H3 | malam | TERSEMBUNYI | PEREMPUAN TANPA NAMA YANG MEMAKAI SEMBILAN IDENTITAS | B | 56 |
-| 9 | H4 | malam | TERSEMBUNYI | PRIA YANG MEMBAWA DUA KATA YANG TIDAK BISA DIBACA | D | 58 |
-| 10 | H5 | malam | TERSEMBUNYI | DUA KEMBAR YANG HANYA BERBICARA SATU SAMA LAIN | B | 57 |
-| 11 | H1 | siang | ANEH | 72 DETIK SINYAL YANG TIDAK PERNAH TERULANG | B | 52 |
-| 12 | H2 | siang | ANEH | KOTA YANG MENARI SAMPAI MATI | A | 54 |
-| 13 | H3 | siang | ANEH | DUA PRIA, MASKER TIMAH, DAN SATU PESAN TENTANG KEMATIAN | B | 53 |
-| 14 | H4 | siang | ANEH | SIAPA PUN YANG MENEROBOS SIARAN INI TIDAK PERNAH TERTANGKAP | D | 52 |
-| 15 | H5 | siang | ANEH | TENGKORAK 18.000 TAHUN YANG MENGGUNCANG BUKU SEJARAH | D | 57 |
-| 16 | H6 | siang | ANEH | DUA BELAS ORANG TERTAWA, DAN TIDAK ADA YANG BISA BERHENTI | B | 52 |
-| 17 | H6 | pagi | BENCANA | SUARA PALING KERAS DALAM SEJARAH TERDENGAR 4.800 KM JAUHNYA | A | 56 |
-| 18 | H7 | pagi | BENCANA | LETUSAN DI INDONESIA YANG MENGHAPUS MUSIM PANAS DI EROPA | D | 57 |
-| 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK PERNAH DICATAT SEBAGAI LEDAKAN | B | 54 |
-| 20 | H7 | malam | BENCANA | DANAU YANG MENGELUARKAN NAPAS DAN MEMBUNUH 1.700 ORANG | B | 58 |
-| 21 | H6 | malam | HARGA | MEREKA DIMINTA MENJILAT KUAS, LALU RAHANG MEREKA RONTOK | A | 58 |
+| 1 | H1 | pagi | HILANG | TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL | A | 56 |
+| 2 | H2 | pagi | HILANG | MEREKA MEMOTONG TENDA ITU DARI DALAM | B | 56 |
+| 3 | H3 | pagi | HILANG | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | B | 54 |
+| 4 | H4 | pagi | HILANG | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN | A | 55 |
+| 5 | H5 | pagi | HILANG | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN | D | 55 |
+| 6 | H1 | malam | TERSEMBUNYI | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN | B | 57 |
+| 7 | H2 | malam | TERSEMBUNYI | JEJAK KAKI ITU HANYA SATU ARAH | A | 57 |
+| 8 | H3 | malam | TERSEMBUNYI | SEMUA LABEL DI PAKAIANNYA DIPOTONG | B | 56 |
+| 9 | H4 | malam | TERSEMBUNYI | DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK | D | 57 |
+| 10 | H5 | malam | TERSEMBUNYI | MEREKA MEMBUAT BAHASA SENDIRI, LALU DIPISAHKAN | B | 57 |
+| 11 | H1 | siang | ANEH | TUJUH PULUH DUA DETIK YANG TIDAK PERNAH TERULANG | B | 52 |
+| 12 | H2 | siang | ANEH | KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA | A | 54 |
+| 13 | H3 | siang | ANEH | MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG | B | 53 |
+| 14 | H4 | siang | ANEH | DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP | D | 52 |
+| 15 | H5 | siang | ANEH | TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN | D | 57 |
+| 16 | H6 | siang | ANEH | TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS | B | 52 |
+| 17 | H6 | pagi | BENCANA | SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER | A | 56 |
+| 18 | H7 | pagi | BENCANA | GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA | D | 57 |
+| 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG | B | 54 |
+| 20 | H7 | malam | BENCANA | YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN | B | 58 |
+| 21 | H6 | malam | HARGA | MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI | A | 58 |
 
 ---
 
-## EP01 — TIGA PENJAGA YANG TIDAK PERNAH PULANG
+## EP01 — TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL
 
-**Headline:** TIGA PENJAGA YANG TIDAK PERNAH PULANG  
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H1  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 58 detik · **Kata VO:** 67
+**Durasi:** 147 kata ≈ 60 detik (target 56 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Donald McArthur, penjaga pengganti di Eilean Mòr. |
+| **Mau** | Menyelesaikan pekerjaan pagi dan menunggu kapal yang datang menjemputnya. |
+| **Hambatan** | Desember 1900. Pulau batu tanpa pohon, tanpa jalan, tanpa radio. |
+| **Tanaman** (detail yang berubah makna di turn) | Satu set pakaian tahan air tertinggal di gantungan. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka sudah menyiapkan lampu untuk malam itu. Lalu mereka keluar, dan tidak kembali.
+> Satu set pakaian tahan air tertinggal di gantungan. Pemiliknya tidak pernah kembali.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 00 | Eilean Mòr. Satu pulau batu di lepas Skotlandia. |
-| 00 | Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati. |
-| 00 | Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari. |
-| 00 | 26 Desember, kapal tender akhirnya sampai. |
-| 00 | Lampu sudah dibersihkan. Minyaknya penuh. Jendelanya tertutup. |
-| 00 | Jam di menara berhenti. Pekerjaan pagi itu sudah selesai. |
-| 00 | Di gantungan, satu set pakaian tahan air masih ada. |
-| 00 | Berarti satu orang keluar tanpa membawanya. |
+| SETUP | Eilean Mòr. Satu pulau batu di lepas Skotlandia. |
+| SETUP | Yang ada hanya menara, dan tiga orang yang tinggal di dalamnya. |
+| TENSION | Desember 1900. Sebuah kapal lewat dan mencatat: lampunya mati. |
+| TENSION | Laporan itu sampai ke darat. Tapi tidak ada yang naik selama sebelas hari. |
+| TENSION | 26 Desember, kapal tender akhirnya sampai. Pintunya terkunci dari dalam. |
+| TENSION | Lampu sudah dibersihkan. Minyaknya penuh. Jendelanya tertutup. |
+| TENSION | Jam di menara berhenti. Pekerjaan pagi itu selesai semua. |
+| TURN | Selama seratus tahun kita dikutip kalimat yang lebih indah: laut tenang, Tuhan di atas semua. |
+| TURN | Kalimat itu tidak pernah ada di arsip. Buku harian itu ditambahkan puluhan tahun kemudian. |
+| CONSEQUENCE | Yang tercatat hanya badai, dermaga barat yang rusak, dan tiga pria yang turun menjaganya. |
+| CONSEQUENCE | Tidak satu pun mayat pernah ditemukan. Yang tertinggal hanya pakaian itu. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Kita dikutip versi yang lebih dramatis: badai terburuk, pria menangis, doa, lalu 'laut tenang, Tuhan di atas semua'. Kalimat itu tidak ada di arsip.
+Dugaan yang dipatahkan: **“Laut tenang. Tuhan di atas semua.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada di arsip. Ditambahkan puluhan tahun kemudian.
 
-> Yang tercatat hanya badai, kerusakan di dermaga barat, dan tiga pria yang turun. Tidak ada mayat.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Tiga pria turun ke dermaga, dan laut menyimpan jawabannya seratus dua puluh enam tahun.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
-1. `DES 1900 · LAMPU MATI`
+1. `DES 1900`
 2. `SEBELAS HARI`
 3. `LAMPU SUDAH BERSIH`
 4. `PAKAIAN TERTINGGAL`
 5. `TANPA MAYAT`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Pulau batu, menara, dan laut yang terlalu tenang — garis horizon sebagai satu-satunya elemen.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Menara di garis horizon; satu gantungan kosong di dalam; laut yang tidak bergerak.
 
 ## 7 · DISTRIBUSI
 
@@ -91,79 +109,91 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — VERIFIED — Northern Lighthouse Board, "Flannan Isles" (nlb.org.uk/history/flannan-isles/): hilang setelah pekerjaan pagi 15 Desember 1900; Archtor mencatat lampu mati; laporan diterima 18 Desember; Hesperus tiba 26 Desember; lampu bersih dan minyak penuh; satu set oilskins tertinggal; kesimpulan resmi tersapu gelombang di dermaga barat. Buku harian dramatis terbukti tambahan fiktif (Mike Dash, Fortean Times).
+`SRC: VERIFIED` — Northern Lighthouse Board, nlb.org.uk/history/flannan-isles/. Hilang setelah kerja pagi 15 Des 1900; Archtor mencatat lampu mati; laporan diterima 18 Des; Hesperus tiba 26 Des; lampu bersih, minyak penuh; satu set oilskins tertinggal. Buku harian dramatis = tambahan fiktif (Mike Dash, Fortean Times).
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Jam di menara itu berhenti. Pekerjaan pagi harinya sudah selesai. Hanya orangnya yang hilang.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Pekerjaan pagi itu sudah selesai semua. Jamnya berhenti. Orangnya hilang.
 
 ---
 
-## EP02 — SEMBILAN ORANG, SATU TENDA YANG DIPOTONG DARI DALAM
+## EP02 — MEREKA MEMOTONG TENDA ITU DARI DALAM
 
-**Headline:** SEMBILAN ORANG, SATU TENDA YANG DIPOTONG DARI DALAM  
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H2  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 55 detik · **Kata VO:** 103
+**Durasi:** 134 kata ≈ 55 detik (target 56 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Igor Dyatlov, 23 tahun, pemimpin kelompok pendaki Ural. |
+| **Mau** | Membawa sembilan orang menyeberangi celah gunung dan pulang. |
+| **Hambatan** | Malam 1 Februari 1959. Suhu di bawah minus tiga puluh. |
+| **Tanaman** (detail yang berubah makna di turn) | Tenda itu disobek dari sisi dalam, dengan pisau. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Mereka memotong tenda itu dari dalam. Dengan pisau. Di suhu minus tiga puluh.
+> Mereka memotong tenda itu dari dalam. Lalu keluar ke salju tanpa alas kaki.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 03 | Pegunungan Ural, Februari 1959. Sembilan orang mendaki. Semuanya berpengalaman. |
-| 08 | Mereka tidak pernah kembali ke tenda itu. |
-| 12 | Tim pencari menemukan tenda masih berdiri. Isinya masih ada: sepatu, makanan, jaket. |
-| 17 | Dan ada lubang di kainnya. Dipotong dari dalam, dengan pisau. |
-| 22 | Mereka keluar ke salju tanpa alas kaki, sebagian hanya memakai kaus kaki. |
-| 27 | Dua mayat ditemukan di bawah pohon. Tiga lainnya di antara tenda dan hutan. |
-| 32 | Empat lainnya ditemukan dua bulan kemudian, di dasar jurang. |
-| 37 | Salah satunya kehilangan lidah. Tiga lainnya punya patah tulang dada yang tidak wajar. |
-| 42 | Tidak ada tanda perkelahian. Tidak ada luka dari senjata. |
-| 47 | Enam puluh tahun teorinya militer, monster, dan senjata rahasia. |
+| SETUP | Ural, Februari 1959. Sembilan orang mendaki. Semuanya berpengalaman. |
+| SETUP | Igor Dyatlov mencatat rencana mereka di buku harian kelompok. |
+| TENSION | Mereka tidak pernah kembali ke tenda itu. |
+| TENSION | Tim pencari menemukan tenda masih berdiri. Sepatu, makanan, jaket masih di dalam. |
+| TENSION | Dan ada lubang di kainnya. Dipotong dari dalam, dengan pisau. |
+| TENSION | Dua mayat ditemukan di bawah pohon. Tiga di antara tenda dan hutan. |
+| TENSION | Empat lainnya baru ditemukan dua bulan kemudian, di dasar jurang. |
+| TURN | Enam puluh tahun teorinya militer, monster, senjata rahasia. |
+| TURN | Pada 2021, ilmuwan memodelkan longsoran lempeng salju. Hampir semua luka itu cocok. |
+| CONSEQUENCE | Tapi tidak ada model yang menjelaskan kenapa mereka keluar tanpa alas kaki. |
+| CONSEQUENCE | Berkas kasusnya ditutup. Isinya tidak pernah dibuka untuk umum. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Lalu pada 2021, sekelompok ilmuwan memodelkan longsoran lempeng salju. Hasilnya cocok dengan hampir semua luka itu.
+Dugaan yang dipatahkan: **“Mereka dibunuh.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Luka mereka cocok dengan longsoran salju. Yang tidak cocok: mereka keluar tanpa alas kaki.
 
-> Tapi tidak ada model yang bisa menjelaskan kenapa mereka keluar tanpa alas kaki.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Sembilan orang keluar dari tenda mereka sendiri, dan satu pertanyaan tetap tinggal.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
-1. `URAL, 1959`
+1. `URAL 1959`
 2. `TENDA DIPOTONG`
 3. `9 ORANG`
 4. `-30°C`
 5. `4 DI JURANG`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Tenda sebagai siluet tunggal di salju; potongan kain yang terbuka ke arah kamera.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Tenda tunggal di salju; kain sobek terbuka ke arah kamera; jejak kaki tanpa sepatu.
 
 ## 7 · DISTRIBUSI
 
@@ -173,62 +203,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Insiden Celah Dyatlov, 1959; makalah 2021 di Communications Earth & Environment (avalanche hypothesis) — perlu dibaca langsung sebelum tayang.
+`SRC: NEEDS-SOURCE` — Insiden Celah Dyatlov 1959; hipotesis longsoran 2021 (Communications Earth & Environment) belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Sembilan pendaki berpengalaman. Satu tenda. Dan satu lubang yang dibuat dari sisi dalam.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP03 — KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA
 
----
-
-## EP03 — KAPAL YANG MASIH UTUH, AWAK YANG HILANG
-
-**Headline:** KAPAL YANG MASIH UTUH, AWAK YANG HILANG  
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 50 detik · **Kata VO:** 96
+**Durasi:** 122 kata ≈ 50 detik (target 54 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Benjamin Briggs, kapten Mary Celeste. Istrinya dan anaknya ikut di kapal. |
+| **Mau** | Mengantar 1.701 tong alkohol ke Genoa, lalu pulang. |
+| **Hambatan** | Atlantik Utara, November 1872. |
+| **Tanaman** (detail yang berubah makna di turn) | Sekoci hilang, kompas hilang. Kapalnya sendiri utuh. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kapal itu ditemukan di tengah Atlantik. Kosong. Barang bawaannya utuh. Sekoci dan semua orangnya hilang.
+> Kapal itu ditemukan kosong. Muatannya utuh. Yang hilang justru sekocinya.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 04 | 5 Desember 1872. Sebuah kapal bernama Dei Gratia melihat kapal lain mengapung aneh. |
-| 09 | Namanya Mary Celeste. Tidak ada yang berdiri di dek. |
-| 13 | Kaptennya tidak ada. Tujuh awaknya tidak ada. Istrinya dan anaknya juga tidak ada. |
-| 18 | Tapi muatannya utuh: 1.701 tong alkohol, tidak satu pun hilang. |
-| 23 | Ada makanan untuk enam bulan. Ada air tawar. |
-| 28 | Jurnal kapal berhenti di tanggal 25 November. Delapan hari sebelum ia ditemukan. |
-| 33 | Yang hilang justru sekoci kecil dan sebuah kompas. |
-| 38 | Bajak laut tidak menyentuh barang berharga. Badai tidak merusak kapalnya. |
-| 43 | Teori paling masuk akal justru membosankan: pompa air, dan satu pagi yang panik. |
+| SETUP | 5 Desember 1872. Kapal Dei Gratia melihat kapal lain mengapung aneh. |
+| SETUP | Namanya Mary Celeste. Tidak ada yang berdiri di dek. |
+| TENSION | Kaptennya tidak ada. Tujuh awaknya tidak ada. Istri dan anaknya juga tidak ada. |
+| TENSION | Muatannya utuh: 1.701 tong alkohol, tidak satu pun hilang. |
+| TENSION | Ada makanan untuk enam bulan. Ada air tawar. |
+| TENSION | Jurnal kapal berhenti di 25 November. Delapan hari sebelum ia ditemukan. |
+| TURN | Bajak laut? Barang berharga tidak disentuh. Badai? Kapalnya tidak rusak. |
+| TURN | Yang mereka tinggalkan bukan kapal yang tenggelam. Kapal yang masih bisa berlayar. |
+| CONSEQUENCE | Sepuluh orang naik ke sekoci kecil di tengah laut. |
+| CONSEQUENCE | Dan laut tidak pernah mengembalikan satu pun dari mereka. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Sepuluh orang naik ke sekoci kecil di tengah laut. Kapal mereka sebenarnya masih bisa berlayar.
+Dugaan yang dipatahkan: **“Mereka tenggelam bersama kapalnya.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Kapalnya ditemukan utuh dan masih bisa berlayar. Mereka pergi dengan sekoci.
 
-> Dan laut tidak pernah mengembalikan satu pun dari mereka.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Sepuluh orang memilih sekoci. Pilihan itu yang tidak pernah bisa dijelaskan.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -238,13 +282,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `JURNAL BERHENTI`
 5. `SEKOCI HILANG`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Kapal tunggal di garis horizon; lambung kayu, layar setengah terkulai.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Lambung kapal di kabut; deret tong di palka; sekoci kosong di atas air.
 
 ## 7 · DISTRIBUSI
 
@@ -254,62 +296,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kasus Mary Celeste 1872 — dicatat dalam laporan admiralty; rekonstruksi penyebab masih perdebatan.
+`SRC: NEEDS-SOURCE` — Kasus Mary Celeste 1872; laporan admiralty belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Sebuah kapal berlayar tanpa satu pun manusia di atasnya. Dan isinya tidak berkurang sedikit pun.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Sepuluh orang meninggalkan kapal yang masih bisa berlayar. Tidak ada yang tahu kenapa.
 
 ---
 
-## EP04 — EMPAT PRIA, SATU MOBIL, DAN SEBUAH JALAN KE ATAS
+## EP04 — MEREKA BERJALAN MENJAUH DARI PERTOLONGAN
 
-**Headline:** EMPAT PRIA, SATU MOBIL, DAN SEBUAH JALAN KE ATAS  
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H4  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 52 detik · **Kata VO:** 90
+**Durasi:** 127 kata ≈ 52 detik (target 55 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Lima pria muda dari Yuba County, California. Salah satunya, Gary Mathias. |
+| **Mau** | Pulang setelah menonton pertandingan basket. |
+| **Hambatan** | Jalan pegunungan, Februari 1978, salju turun. |
+| **Tanaman** (detail yang berubah makna di turn) | Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Empat pria meninggalkan mobil mereka di salju. Pintunya tidak dikunci. Kuncinya masih di dalam.
+> Pintu mobil itu tidak dikunci. Kuncinya masih di dalam. Mereka memilih naik ke gunung.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 04 | Februari 1978. Lima pria muda pergi menonton pertandingan basket di California. |
-| 09 | Mereka tidak pernah sampai rumah. |
-| 13 | Empat hari kemudian, mobil mereka ditemukan di jalan pegunungan, tertahan salju. |
-| 18 | Pintunya tidak dikunci. Kuncinya masih di dalam. Tangki bahan bakar masih penuh. |
-| 23 | Mereka tidak menunggu di dalam mobil. Mereka mendaki. |
-| 28 | Salah satu dari mereka ditemukan di dekat sebuah pos jaga hutan. Ada makanan di dalam pos itu. |
-| 33 | Dia tidak memakannya. |
-| 38 | Tiga lainnya ditemukan sembilan mil jauhnya, di tempat yang jauh lebih tinggi. |
-| 43 | Mereka berjalan menjauh dari jalan raya. Menuju tempat yang lebih dingin. |
+| SETUP | Februari 1978. Lima pria muda pergi menonton basket di California. |
+| SETUP | Mereka tidak pernah sampai rumah. |
+| TENSION | Empat hari kemudian, mobil mereka ditemukan tertahan salju. |
+| TENSION | Pintunya tidak dikunci. Kuncinya masih di dalam. Tangki bahan bakar penuh. |
+| TENSION | Mereka tidak menunggu di dalam mobil. |
+| TENSION | Mereka berjalan ke atas. Ke tempat yang lebih dingin, lebih jauh dari jalan raya. |
+| TENSION | Satu dari mereka ditemukan di dekat pos jaga hutan. Ada makanan di dalam pos itu. |
+| TURN | Dia tidak memakannya. |
+| TURN | Bukan karena mereka tersesat. Tersesat tidak membuat orang berjalan menjauhi pertolongan. |
+| CONSEQUENCE | Tiga lainnya ditemukan sembilan mil jauhnya, di ketinggian. |
+| CONSEQUENCE | Yang kelima tidak pernah ditemukan. Bukan tahun itu. Tidak sampai sekarang. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Pria kelima tidak pernah ditemukan. Bukan tahun itu, bukan sepuluh tahun kemudian, tidak sampai sekarang.
+Dugaan yang dipatahkan: **“Mereka tersesat.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tersesat tidak membuat orang berjalan ke atas, menjauhi makanan, dan menjauhi jalan.
 
-> Lebih dari empat puluh tujuh tahun, dan satu keluarga masih menunggu jawaban.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Empat puluh tujuh tahun, dan satu keluarga masih menunggu satu nama.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -317,15 +374,13 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 2. `PINTU TERBUKA`
 3. `TANGKI PENUH`
 4. `9 MIL`
-5. `1 TIDAK PERNAH DITEMUKAN`
+5. `1 TIDAK DITEMUKAN`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Mobil tua di jalan bersalju, dilihat dari belakang; jejak kaki menuju ke atas bukit.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Mobil tertutup salju dari belakang; jejak kaki menanjak; pos jaga hutan gelap.
 
 ## 7 · DISTRIBUSI
 
@@ -335,62 +390,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Yuba County Five, 1978 — kasus terbuka; detail rute dan penemuan perlu dikutip dari laporan resmi.
+`SRC: NEEDS-SOURCE` — Yuba County Five 1978; laporan resmi belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Mobil itu ditemukan utuh, tangki hampir penuh. Yang hilang hanya lima orang di dalamnya.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Mereka menemukan makanan di pos jaga hutan. Dan tidak memakannya.
 
 ---
 
-## EP05 — KOLONI YANG HILANG TANPA SATU PUN MAYAT
+## EP05 — MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN
 
-**Headline:** KOLONI YANG HILANG TANPA SATU PUN MAYAT  
 **Seri:** HILANG · **Slot:** PAGI 07.00 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi target:** 55 detik · **Kata VO:** 76
+**Durasi:** 125 kata ≈ 51 detik (target 55 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seratus lima belas orang koloni Roanoke, termasuk seorang bayi bernama Virginia Dare. |
+| **Mau** | Bertahan sampai gubernurnya kembali dengan bahan makanan. |
+| **Hambatan** | Gubernurnya pergi ke Inggris dan baru bisa kembali tiga tahun kemudian. |
+| **Tanaman** (detail yang berubah makna di turn) | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Seratus lima belas orang hilang dari koloni itu. Tidak ada mayat. Hanya satu kata di pagar: CROATOAN.
+> Seratus lima belas orang hilang. Tidak ada mayat. Hanya satu kata di pagar: CROATOAN.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 1587. Seratus lima belas orang Inggris mendarat di tempat yang sekarang bernama Carolina Utara. |
-| 11 | Gubernurnya berlayar ke Inggris untuk mengambil bahan makanan. |
-| 16 | Perang membuat dia baru bisa kembali tiga tahun kemudian. |
-| 21 | Yang ia temukan bukan koloni. Rumah-rumah sudah dibongkar, bukan dihancurkan. |
-| 27 | Di pagar, terpahat satu kata: CROATOAN. |
-| 32 | Di pohon, dua huruf lagi: C R O. |
-| 37 | Mereka sudah sepakat sebelumnya: kalau pergi karena terpaksa, ukir salib. |
-| 42 | Tidak ada salib. |
-| 47 | Selama empat ratus tahun orang percaya mereka dibantai. |
+| SETUP | 1587. Seratus lima belas orang Inggris mendarat di Carolina Utara. |
+| SETUP | Gubernurnya berlayar ke Inggris mengambil bahan makanan. |
+| TENSION | Perang membuat dia baru bisa kembali tiga tahun kemudian. |
+| TENSION | Yang ia temukan bukan koloni. Rumah-rumah sudah dibongkar, bukan dihancurkan. |
+| TENSION | Di pagar, terpahat satu kata: CROATOAN. |
+| TENSION | Mereka sudah sepakat sebelumnya: kalau pergi karena terpaksa, ukir salib. |
+| TURN | Tidak ada salib. |
+| TURN | Selama empat ratus tahun kita membaca kata itu sebagai pesan terakhir. |
+| TURN | Padahal tidak ada tulang, tidak ada kuburan, tidak ada sisa perkelahian. |
+| CONSEQUENCE | Croatoan bukan pesan terakhir. Itu alamat. |
+| CONSEQUENCE | Mereka tidak dibantai. Mereka pindah, dan bergabung dengan orang yang sudah ada di sana. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Tapi tidak ada tulang, tidak ada lubang kubur, tidak ada sisa perkelahian. Bukti terbaru mengarah ke hal yang lebih biasa: mereka pindah, dan bergabung dengan penduduk asli.
+Dugaan yang dipatahkan: **“Mereka dibantai.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada satu pun tulang. Yang ada: nama tempat. Itu alamat, bukan peringatan.
 
-> Croatoan bukan pesan terakhir. Itu alamat.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Seratus lima belas orang berjalan ke selatan. Empat ratus tahun kemudian, kita baru membacanya.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -400,13 +470,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `TANPA SALIB`
 5. `TANPA KUBURAN`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Pagar kayu dengan satu kata terpahat; di belakangnya rumah-rumah yang dibongkar rapi.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Pagar kayu dengan satu kata; rumah yang dibongkar rapi; pesisir kosong.
 
 ## 7 · DISTRIBUSI
 
@@ -416,62 +484,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Koloni Roanoke 1587–1590; teori asimilasi dengan warga Croatoan (Lumbee) masih hipotesis, bukan fakta.
+`SRC: NEEDS-SOURCE` — Koloni Roanoke 1587–1590; teori asimilasi Croatoan/Lumbee masih hipotesis.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Mereka menulis satu kata di tiang pagar sebelum pergi. Butuh empat ratus tahun untuk membaca artinya.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Mereka meninggalkan satu kata sebelum pergi. Butuh empat ratus tahun untuk membacanya benar.
 
 ---
 
-## EP06 — API DI BAWAH KOTA YANG TIDAK PERNAH MATI
+## EP06 — API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN
 
-**Headline:** API DI BAWAH KOTA YANG TIDAK PERNAH MATI  
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 58 detik · **Kata VO:** 87
+**Durasi:** 129 kata ≈ 53 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Warga terakhir Centralia, Pennsylvania. |
+| **Mau** | Tinggal di rumah mereka. |
+| **Hambatan** | Tanah di bawah rumah mereka terbakar. |
+| **Tanaman** (detail yang berubah makna di turn) | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Di bawah kota ini ada api. Ia menyala sebelum ayahmu lahir. Dan akan tetap menyala setelah kamu mati.
+> Di bawah kota ini ada api. Ia menyala sebelum ayahmu lahir, dan akan tetap menyala setelah kamu mati.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | Centralia, Pennsylvania. 1962. Sebuah api pembakaran sampah menyalakan lapisan batu bara di bawah kota. |
-| 12 | Tidak ada yang menganggapnya serius. |
-| 16 | Sembilan belas tahun kemudian, sebuah lubang di jalan tiba-tiba terbuka. |
-| 21 | Dari dalamnya keluar karbon monoksida. Pada kadar yang bisa membunuh orang di kamar tidurnya. |
-| 27 | 1984. Pemerintah membeli rumah-rumah warga dan memindahkan mereka. |
-| 32 | 1992. Seluruh kota dinyatakan tidak layak huni. |
-| 37 | 2020. Lima orang masih tinggal di sana. |
-| 42 | Api itu tidak butuh kota. Ia butuh batu bara. |
-| 47 | Dan batu bara itu masih ada, di bawah jalan yang kamu lihat kosong. |
+| SETUP | Centralia, Pennsylvania, 1962. Sebuah api pembakaran sampah menyalakan batu bara di bawah kota. |
+| SETUP | Tidak ada yang menganggapnya serius. |
+| TENSION | Sembilan belas tahun kemudian, sebuah lubang di jalan tiba-tiba terbuka. |
+| TENSION | Dari dalamnya keluar karbon monoksida. Pada kadar yang bisa membunuh orang di kamar tidur. |
+| TENSION | 1984. Pemerintah membeli rumah-rumah warga dan memindahkan mereka. |
+| TENSION | 1992. Seluruh kota dinyatakan tidak layak huni. |
+| TURN | Semua mengira bencana itu selesai saat kotanya dikosongkan. |
+| TURN | Yang dikosongkan hanya permukaannya. Api itu tidak butuh kota. Ia butuh batu bara. |
+| CONSEQUENCE | 2020. Lima orang masih tinggal di sana. |
+| CONSEQUENCE | Di beberapa titik, tanahnya masih hangat. Retaknya bertambah satu sentimeter setiap tahun. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Orang mengira bencana ini selesai begitu kotanya dikosongkan. Yang dikosongkan hanya permukaannya.
+Dugaan yang dipatahkan: **“Kotanya sudah dikosongkan. Selesai.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Yang dikosongkan hanya permukaannya. Api itu masih menyala di bawah jalan yang kosong.
 
-> Di beberapa titik, tanahnya masih hangat. Dan retaknya bertambah satu sentimeter setiap tahun.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -481,13 +563,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `1992 DIKOSONGKAN`
 5. `MASIH MENYALA`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Jalan kosong dengan asap tipis keluar dari retakan aspal; garis jalan yang putus.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah yang dibongkar.
 
 ## 7 · DISTRIBUSI
 
@@ -497,78 +577,91 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kebakaran tambang Centralia, 1962–sekarang; data populasi dan status borough dari sensus/berita.
+`SRC: NEEDS-SOURCE` — Kebakaran tambang Centralia 1962–sekarang; data sensus 2020 belum dikutip.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Sebuah kota di Amerika dikosongkan karena sesuatu yang berlangsung di bawah tanahnya.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Pemerintah membeli semua rumah di kota ini. Bukan karena banjir, bukan karena perang.
 
 ---
 
-## EP07 — RUMAH YANG PENUH ORANG, DAN TIDAK ADA SATU PUN YANG KELUAR
+## EP07 — JEJAK KAKI ITU HANYA SATU ARAH
 
-**Headline:** RUMAH YANG PENUH ORANG, DAN TIDAK ADA SATU PUN YANG KELUAR  
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 57 detik · **Kata VO:** 92
+**Durasi:** 136 kata ≈ 56 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Keluarga Gruber di pertanian Hinterkaifeck, Bavaria. Enam orang, dua di antaranya balita. |
+| **Mau** | Menjalani hidup biasa di pertanian terpencil. |
+| **Hambatan** | Seseorang tinggal di loteng rumah mereka, dan mereka tahu. |
+| **Tanaman** (detail yang berubah makna di turn) | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama enam bulan sebelum pembunuhan itu, seseorang tinggal di loteng rumah itu. Dan keluarga itu tahu.
+> Jejak kaki di salju itu hanya mengarah ke rumah. Tidak ada satu pun yang mengarah keluar.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | Hinterkaifeck. Sebuah pertanian di Bavaria, Jerman. Tiga puluh satu Maret 1922. |
-| 11 | Enam orang ditemukan tewas: dua orang tua, seorang janda, anaknya, dan dua balita. |
-| 17 | Tapi bukan itu yang paling aneh. |
-| 21 | Jejak kaki di salju hanya mengarah dari hutan ke rumah. Tidak ada jejak yang keluar. |
-| 27 | Pembunuhnya tidak langsung pergi. Dia tinggal di sana beberapa hari. |
-| 32 | Dia makan. Dia memberi makan sapi. Dia menyalakan api di perapian. |
-| 38 | Enam bulan sebelumnya, pelayan lama keluarga itu berhenti kerja. |
-| 43 | Alasannya: rumah itu berhantu. Dia mendengar langkah kaki di loteng. |
-| 48 | Dan kunci yang hilang tidak pernah ditemukan. |
+| SETUP | Hinterkaifeck. Pertanian terpencil di Bavaria. 31 Maret 1922. |
+| SETUP | Enam orang tinggal di sana. Dua di antaranya masih balita. |
+| TENSION | Enam bulan sebelumnya, pelayan lama keluarga itu berhenti kerja. |
+| TENSION | Alasannya: rumah itu berhantu. Dia mendengar langkah kaki di loteng. |
+| TENSION | Pagi 31 Maret, orang-orang itu ditemukan tewas. Semuanya. |
+| TENSION | Tapi bukan itu yang paling aneh. |
+| TENSION | Jejak kaki di salju hanya mengarah dari hutan ke rumah. |
+| TURN | Pembunuhnya tidak datang malam itu lalu pergi. |
+| TURN | Dia tinggal di sana beberapa hari. Dia makan. Dia memberi makan sapi. Dia menyalakan api. |
+| CONSEQUENCE | Polisi mencari orang yang datang malam itu. Tidak ada yang pernah ditangkap. |
+| CONSEQUENCE | Dan kunci yang hilang tidak pernah ditemukan sampai hari ini. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Polisi mencari orang yang datang malam itu. Tapi bukti bilang pelakunya sudah ada di dalam, tinggal, dan menunggu.
+Dugaan yang dipatahkan: **“Pembunuh datang malam itu.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada jejak yang keluar. Pelakunya sudah di dalam rumah, dan tinggal beberapa hari.
 
-> Tidak ada yang pernah keluar dari hutan itu. Kasusnya ditutup tanpa satu pun nama.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Langka kaki di loteng itu nyata. Tidak ada yang percaya sampai enam orang sudah mati.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
 1. `31 MAR 1922`
 2. `6 ORANG`
 3. `JEJAK 1 ARAH`
-4. `TINGGAL BERHARI-HARI`
+4. `LOTENG`
 5. `KASUS TERBUKA`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Rumah pertanian dari jauh, salju bersih, satu baris jejak menuju pintu.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Atap bersalju dengan satu jalur jejak; denah rumah dengan loteng disorot; perapian dingin.
 
 ## 7 · DISTRIBUSI
 
@@ -578,77 +671,90 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Pembunuhan Hinterkaifeck, 1922 — kasus tidak terpecahkan; detail jejak dan masa tinggal pelaku dari laporan investigasi.
+`SRC: NEEDS-SOURCE` — Pembunuhan Hinterkaifeck 1922; berkas investigasi belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Enam bulan sebelum pembunuhan itu, pelayan lama mereka berhenti kerja. Alasannya: langkah kaki di loteng.
 
 ---
 
-## EP08 — PEREMPUAN TANPA NAMA YANG MEMAKAI SEMBILAN IDENTITAS
+## EP08 — SEMUA LABEL DI PAKAIANNYA DIPOTONG
 
-**Headline:** PEREMPUAN TANPA NAMA YANG MEMAKAI SEMBILAN IDENTITAS  
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 56 detik · **Kata VO:** 85
+**Durasi:** 130 kata ≈ 53 detik (target 56 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seorang perempuan tanpa nama, ditemukan di lembah Isdalen, Norwegia. |
+| **Mau** | Tidak ditemukan. |
+| **Hambatan** | Seseorang atau sesuatu membuatnya harus menghilang. |
+| **Tanaman** (detail yang berubah makna di turn) | Semua label di pakaiannya dipotong. Termasuk di sepatu. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dia membakar hampir semua barangnya sebelum mati. Yang tersisa justru sembilan identitas palsu.
+> Semua label di pakaiannya dipotong. Termasuk di sepatu. Dia tidak ingin ditemukan.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | November 1970. Seorang perempuan ditemukan tewas di lembah Isdalen, Norwegia. |
-| 11 | Di sekitarnya ada bensin. Dia membakar barang-barangnya sendiri sebelum mati. |
-| 16 | Semua label di pakaiannya sudah dipotong. Tidak ada nama. Tidak ada inisial. |
-| 22 | Dua koper miliknya ditemukan di stasiun kereta. Isinya wig, kacamata, dan uang tunai. |
-| 28 | Dia memakai sembilan nama berbeda di sembilan tempat berbeda. |
-| 33 | Di buku catatannya, ada deretan angka yang tidak pernah berhasil dipecahkan. |
-| 39 | Analisis isotop tulang dan giginya bilang satu hal: dia tidak tumbuh di Norwegia. |
-| 45 | Selama lima puluh tahun, dia disebut korban. |
+| SETUP | November 1970. Seorang perempuan ditemukan tewas di lembah Isdalen, Norwegia. |
+| SETUP | Di sekitarnya ada bensin. Dia membakar barang-barangnya sendiri sebelum mati. |
+| TENSION | Semua label di pakaiannya sudah dipotong. Tidak ada nama. Tidak ada inisial. |
+| TENSION | Dua koper miliknya ditemukan di stasiun kereta. Isinya wig, kacamata, dan uang tunai. |
+| TENSION | Dia memakai sembilan nama berbeda di sembilan tempat berbeda. |
+| TENSION | Di buku catatannya, ada deretan angka yang tidak pernah bisa dipecahkan. |
+| TURN | Selama lima puluh tahun, dia disebut korban. |
+| TURN | Tapi orang yang jadi korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri. |
+| CONSEQUENCE | Dia bukan sedang bersembunyi dari pembunuh. Dia sedang bersembunyi dari ditemukan. |
+| CONSEQUENCE | Dia dimakamkan tanpa nama. Sampai hari ini belum ada yang mengaku mengenalnya. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Tapi orang yang jadi korban tidak menyiapkan sembilan nama, uang tunai, dan rute perjalanan. Dia bersiap untuk tidak ditemukan.
+Dugaan yang dipatahkan: **“Dia korban.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri lebih dulu.
 
-> Dia dimakamkan tanpa nama. Sampai hari ini belum ada yang mengaku mengenalnya.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Sembilan nama, satu wajah, dan tidak satu pun yang benar.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
 1. `NOV 1970`
 2. `9 NAMA`
-3. `LABEL DIHAPUS`
+3. `LABEL DIPOTONG`
 4. `KODE ANGKA`
 5. `TANPA NAMA`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Koper tua terbuka di lantai stasiun; label pakaian yang dipotong.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Koper terbuka di lantai stasiun; label pakaian yang dipotong; lembah berbatu berkabut.
 
 ## 7 · DISTRIBUSI
 
@@ -658,61 +764,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Isdal Woman, 1970 — investigasi NRK/BBC; analisis isotop dan daftar alias dari laporan resmi.
+`SRC: NEEDS-SOURCE` — Isdal Woman 1970; investigasi NRK/BBC belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Semua label di pakaiannya dihapus. Semua. Termasuk di sepatu.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Dia membakar hampir semua barangnya sendiri. Yang tersisa justru sembilan identitas.
 
 ---
 
-## EP09 — PRIA YANG MEMBAWA DUA KATA YANG TIDAK BISA DIBACA
+## EP09 — DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK
 
-**Headline:** PRIA YANG MEMBAWA DUA KATA YANG TIDAK BISA DIBACA  
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H4  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi target:** 58 detik · **Kata VO:** 84
+**Durasi:** 125 kata ≈ 51 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Pria tanpa nama di pantai Somerton, Australia Selatan. |
+| **Mau** | — |
+| **Hambatan** | — |
+| **Tanaman** (detail yang berubah makna di turn) | Secarik kertas di saku: TAMAM SHUD. Tidak ada dompet, tidak ada tanda pengenal. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dia ditemukan dengan secarik kertas di saku: TAMAM SHUD. Butuh tujuh puluh empat tahun untuk tahu siapa dia.
+> Dia ditemukan dengan dua kata di saku: TAMAM SHUD. Butuh 74 tahun untuk tahu siapa dia.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 1 Desember 1948. Seorang pria ditemukan tewas di pantai Somerton, Australia Selatan. |
-| 11 | Tidak ada dompet. Tidak ada tanda pengenal. Pakaiannya rapi, tanpa label. |
-| 17 | Di sakunya: sebungkus rokok, tiket kereta, dan secarik kertas bertuliskan TAMAM SHUD. |
-| 23 | Beberapa bulan kemudian, seseorang menemukan buku puisi Omar Khayyam. |
-| 29 | Di dalamnya ada deretan huruf yang sampai sekarang belum dipecahkan. |
-| 35 | Selama tujuh puluh tahun, teorinya: mata-mata Perang Dingin. |
-| 41 | Dia punya kode, dia tidak punya identitas, dan dia mati di tempat yang tidak dia kenal. |
-| 47 | Pada 2022, peneliti memakai silsilah DNA. |
+| SETUP | 1 Desember 1948. Seorang pria ditemukan tewas di pantai Somerton, Australia Selatan. |
+| SETUP | Tidak ada dompet. Tidak ada tanda pengenal. Pakaiannya rapi, tanpa label. |
+| TENSION | Di sakunya: sebungkus rokok, tiket kereta, dan secarik kertas bertuliskan TAMAM SHUD. |
+| TENSION | Beberapa bulan kemudian, seseorang menemukan buku puisi Omar Khayyam. |
+| TENSION | Di dalamnya ada deretan huruf yang sampai sekarang belum dipecahkan. |
+| TENSION | Selama tujuh puluh tahun, teorinya: mata-mata Perang Dingin. |
+| TURN | Pada 2022, peneliti memakai silsilah DNA. |
+| TURN | Pria itu seorang teknisi listrik dari Melbourne bernama Carl Webb. |
+| CONSEQUENCE | Bukan mata-mata. Bukan siapa-siapa yang penting. |
+| CONSEQUENCE | Yang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Pria itu seorang teknisi listrik dari Melbourne bernama Carl Webb. Bukan mata-mata. Bukan siapa-siapa yang penting.
+Dugaan yang dipatahkan: **“Dia mata-mata Perang Dingin.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Dia teknisi listrik dari Melbourne. Yang tersisa: kenapa dia ada di pantai itu.
 
-> Yang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Dua kata, satu kode, dan satu pertanyaan yang tidak dijawab oleh namanya.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -722,13 +843,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `2022: DNA`
 5. `CARL WEBB`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Pantai fajar, satu sosok terbaring, buku puisi terbuka dengan huruf acak.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Pantai fajar dengan satu sosok; buku puisi terbuka dengan huruf acak.
 
 ## 7 · DISTRIBUSI
 
@@ -738,61 +857,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kasus Somerton Man; identifikasi 2022 oleh Colleen Fitzpatrick/Derek Abbott; kode masih belum terpecahkan.
+`SRC: NEEDS-SOURCE` — Kasus Somerton Man; identifikasi 2022 (Colleen Fitzpatrick) belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Selama tujuh puluh tahun dia disebut mata-mata. Ternyata dia bukan siapa-siapa yang penting.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP10 — MEREKA MEMBUAT BAHASA SENDIRI, LALU DIPISAHKAN
 
----
-
-## EP10 — DUA KEMBAR YANG HANYA BERBICARA SATU SAMA LAIN
-
-**Headline:** DUA KEMBAR YANG HANYA BERBICARA SATU SAMA LAIN  
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H5  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 57 detik · **Kata VO:** 80
+**Durasi:** 117 kata ≈ 48 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | June Gibbons, satu dari dua kembar identik di Wales. |
+| **Mau** | Punya dunia tempat dia bisa bicara. |
+| **Hambatan** | Dunia luar hanya punya satu cara untuk menyebut mereka: sakit. |
+| **Tanaman** (detail yang berubah makna di turn) | Mereka menulis novel dan puisi dalam bahasa yang mereka buat sendiri. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dua anak ini menciptakan bahasa yang tidak dimengerti siapa pun. Lalu berhenti bicara ke semua orang.
+> Mereka membuat bahasa sendiri, lalu berhenti bicara pada semua orang lain.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | Wales, 1963. Dua anak kembar identik, June dan Jennifer Gibbons. |
-| 11 | Mereka tumbuh sebagai satu-satunya anak kulit hitam di sekolah mereka. |
-| 16 | Mereka berhenti bicara ke orang lain. Tapi tetap bicara satu sama lain, dengan cepat dan tidak jelas. |
-| 23 | Bahasa itu punya aturan, kosakata, dan nama. |
-| 28 | Mereka menulis novel, puisi, dan naskah sandiwara di kamar tidur. |
-| 34 | Dunia luar menyebutnya gangguan. Mereka menyebutnya dunia. |
-| 40 | Pada usia empat belas tahun, mereka dirawat di rumah sakit jiwa. |
-| 46 | Di sana, mereka dipisahkan. Supaya masing-masing belajar mandiri. |
+| SETUP | Wales, 1963. Dua anak kembar identik, June dan Jennifer Gibbons. |
+| SETUP | Mereka tumbuh sebagai satu-satunya anak kulit hitam di sekolah mereka. |
+| TENSION | Mereka berhenti bicara ke orang lain. Tapi tetap bicara satu sama lain. |
+| TENSION | Bahasa itu punya aturan, kosakata, dan nama. |
+| TENSION | Mereka menulis novel, puisi, dan naskah sandiwara di kamar tidur. |
+| TENSION | Dunia luar menyebutnya gangguan. Mereka menyebutnya dunia. |
+| TURN | Pada usia empat belas tahun, mereka dirawat di rumah sakit jiwa. |
+| TURN | Di sana mereka dipisahkan — supaya masing-masing belajar mandiri. |
+| CONSEQUENCE | Yang tidak dipahami siapa pun: dunia itu hanya hidup kalau mereka berdua ada. |
+| CONSEQUENCE | June meninggal 1993. Jennifer meninggal setahun kemudian. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang tidak dipahami siapa pun: mereka bukan sedang sakit. Mereka sedang menjaga satu dunia yang hanya bisa hidup kalau mereka berdua ada.
+Dugaan yang dipatahkan: **“Mereka harus dipisahkan supaya sembuh.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Yang mereka bangun bukan penyakit. Dunia itu runtuh justru saat mereka dipisahkan.
 
-> June meninggal tahun 1993. Jennifer meninggal setahun kemudian.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Dua orang. Satu bahasa. Dan satu keputusan yang mengakhiri keduanya.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -802,13 +936,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `DIPISAHKAN`
 5. `1993 · 1994`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Dua sosok identik membelakangi kamera; satu buku catatan terbuka dengan tulisan tak terbaca.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Dua sosok identik membelakangi kamera; buku catatan dengan tulisan tak terbaca.
 
 ## 7 · DISTRIBUSI
 
@@ -818,61 +950,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — June dan Jennifer Gibbons; liputan Marjorie Wallace (The Silent Twins); detail medis perlu dikutip hati-hati.
+`SRC: NEEDS-SOURCE` — June dan Jennifer Gibbons; liputan Marjorie Wallace belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Mereka menulis novel, puisi, dan sandiwara. Semuanya dalam bahasa yang mereka buat sendiri.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Mereka menulis novel dalam bahasa yang tidak dimengerti siapa pun. Lalu dipisahkan.
 
 ---
 
-## EP11 — 72 DETIK SINYAL YANG TIDAK PERNAH TERULANG
+## EP11 — TUJUH PULUH DUA DETIK YANG TIDAK PERNAH TERULANG
 
-**Headline:** 72 DETIK SINYAL YANG TIDAK PERNAH TERULANG  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H1  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 52 detik · **Kata VO:** 78
+**Durasi:** 148 kata ≈ 60 detik (target 52 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Jerry Ehman, astronom yang membaca hasil cetak teleskop. |
+| **Mau** | Menemukan sesuatu di antara derau yang tidak berarti. |
+| **Hambatan** | Selama lima puluh tahun, tidak ada yang muncul dua kali. |
+| **Tanaman** (detail yang berubah makna di turn) | Sinyal itu datang tepat di frekuensi hidrogen — frekuensi paling masuk akal untuk mengirim pesan. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Selama tujuh puluh dua detik, teleskop itu menangkap sesuatu dari luar angkasa. Lalu tidak pernah lagi.
+> Selama tujuh puluh dua detik, teleskop itu menangkap sesuatu. Lalu ia berhenti, selamanya.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 15 Agustus 1977. Teleskop Big Ear di Ohio sedang menyapu langit seperti biasa. |
-| 11 | Pukul 22.16, komputer mencetak satu urutan aneh: 6 E Q U J 5. |
-| 17 | Itu bukan pesan. Itu kode kekuatan sinyal, naik turun dalam 72 detik. |
-| 23 | Sinyalnya datang di frekuensi 1420 MHz. |
-| 28 | Frekuensi yang sama yang dipancarkan hidrogen di seluruh alam semesta. |
-| 34 | Itu frekuensi yang paling masuk akal untuk dipakai mengirim pesan. |
-| 40 | Selama 40 tahun, teleskop lain mencari ke titik yang sama. |
-| 46 | Tidak pernah ada lagi. |
+| SETUP | 15 Agustus 1977. Teleskop Big Ear di Ohio menyapu langit, seperti biasa. |
+| SETUP | Semalam itu, komputer mencetak satu urutan aneh: 6 E Q U J 5. |
+| TENSION | Itu bukan pesan. Itu kode kekuatan sinyal, naik lalu turun, dalam 72 detik. |
+| TENSION | Sinyalnya datang di frekuensi 1420 MHz. |
+| TENSION | Frekuensi yang sama yang dipancarkan hidrogen di seluruh alam semesta. |
+| TENSION | Frekuensi yang paling masuk akal untuk dipakai mengirim pesan. |
+| TENSION | Ehman menulis satu kata di pinggir kertas itu: Wow. |
+| TURN | Selama empat puluh tahun, teleskop lain mencari ke titik yang sama. |
+| TURN | Tidak pernah ada lagi. Dan sinyal itu datang dari arah tanpa bintang. |
+| CONSEQUENCE | Dia cukup lama untuk dicatat. Tidak cukup lama untuk dipahami. |
+| CONSEQUENCE | Yang tersisa hanya satu kata di pinggir kertas, ditulis oleh orang yang juga tidak tahu. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang paling aneh bukan sinyalnya. Yang paling aneh: sinyal itu datang dari arah tanpa bintang yang diketahui.
+Dugaan yang dipatahkan: **“Itu pesan dari peradaban lain.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Sinyal itu tidak pernah terulang, dan datang dari arah tanpa bintang yang diketahui.
 
-> Dia cukup lama untuk dicatat. Tidak cukup lama untuk dipahami.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Tujuh puluh dua detik. Sejak itu, tidak ada apa-apa. Hanya satu kata di pinggir kertas.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -882,13 +1030,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `72 DETIK`
 5. `TIDAK PERNAH LAGI`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Grafik pena printer dengan huruf 6EQUJ5; latar peta langit kosong.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Kertas printer dengan huruf 6EQUJ5; grafik 72 detik; peta langit kosong.
 
 ## 7 · DISTRIBUSI
 
@@ -898,61 +1044,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Wow! signal, Ohio State 1977; frekuensi hidrogen 1420 MHz; semua pencarian ulang gagal.
+`SRC: NEEDS-SOURCE` — Wow! signal, Ohio State 1977; semua pencarian ulang gagal.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Sebuah sinyal datang dari arah yang kosong. Tidak ada bintang di sana.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Satu urutan huruf di kertas printer: 6 E Q U J 5. Itu bukan pesan.
 
 ---
 
-## EP12 — KOTA YANG MENARI SAMPAI MATI
+## EP12 — KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA
 
-**Headline:** KOTA YANG MENARI SAMPAI MATI  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H2  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 54 detik · **Kata VO:** 64
+**Durasi:** 104 kata ≈ 42 detik (target 54 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Frau Troffea, perempuan pertama yang menari di jalan Strasbourg. |
+| **Mau** | Berhenti menari. |
+| **Hambatan** | Tubuhnya tidak mau berhenti, dan kota memberinya satu-satunya obat yang salah. |
+| **Tanaman** (detail yang berubah makna di turn) | Kota itu tidak menghentikan mereka. Dokter menyarankan sebaliknya. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
 > Kamu tidak sedang menari. Kamu tidak bisa berhenti. Dan kakimu sudah penuh luka.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | Juli 1518. Strasbourg, wilayah yang sekarang masuk Prancis. |
-| 10 | Seorang perempuan bernama Frau Troffea mulai menari di jalan. |
-| 16 | Dia menari berhari-hari. Tanpa musik. Tanpa berhenti. |
-| 21 | Dalam sebulan, ratusan orang ikut menari. |
-| 26 | Kota itu tidak menghentikan mereka. Dokter justru menyarankan: biarkan mereka menari. |
-| 32 | Mereka menari sampai tubuh mereka tidak bisa berdiri. |
-| 38 | Beberapa meninggal karena kelelahan dan serangan panas. |
-| 44 | Kota itu kelaparan, dilanda wabah, dan penuh ketakutan. |
+| SETUP | Juli 1518. Strasbourg, wilayah yang sekarang masuk Prancis. |
+| SETUP | Seorang perempuan bernama Frau Troffea mulai menari di jalan. |
+| TENSION | Dia menari berhari-hari. Tanpa musik. Tanpa berhenti. |
+| TENSION | Dalam sebulan, ratusan orang ikut menari. |
+| TENSION | Kota itu tidak menghentikan mereka. |
+| TENSION | Dokter justru menyarankan: biarkan mereka menari. Bangun panggung. Panggil musisi. |
+| TURN | Obat itu justru makanan penyakitnya. |
+| TURN | Mereka menari sampai tubuh mereka tidak bisa berdiri. |
+| CONSEQUENCE | Beberapa meninggal karena kelelahan dan serangan panas. |
+| CONSEQUENCE | Kota itu kelaparan, dilanda wabah, dan penuh ketakutan. Tarian itu berhenti ketika kotanya berhenti panik. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Mereka tidak menari karena bahagia. Tubuh mereka melakukan sesuatu yang tidak bisa dijelaskan dengan kata-kata.
+Dugaan yang dipatahkan: **“Mereka kesurupan.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Mereka kelaparan, ketakutan, dan tidak punya cara lain untuk mengatakannya. Obatnya justru memperburuk.
 
-> Wabah tarian itu berhenti. Tapi sampai sekarang tidak ada yang tahu bagaimana ia dimulai.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Tarian itu berhenti. Tapi tidak ada yang tahu bagaimana ia dimulai.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -962,13 +1123,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `TANPA MUSIK`
 5. `SEBAGIAN MENINGGAL`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Bidikan sudut rendah: kaki-kaki di batu jalan; siluet orang menari tanpa wajah.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Kaki di batu jalan; siluet orang menari tanpa wajah; panggung kosong.
 
 ## 7 · DISTRIBUSI
 
@@ -978,61 +1137,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Dancing plague 1518, Strasbourg — dicatat dalam kronik kota; penyebab masih diperdebatkan (histeria massa vs ergotisme).
+`SRC: NEEDS-SOURCE` — Dancing plague 1518; kronik kota belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Ratusan orang menari di jalan selama berhari-hari. Sebagian tidak selamat.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP13 — MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG
 
----
-
-## EP13 — DUA PRIA, MASKER TIMAH, DAN SATU PESAN TENTANG KEMATIAN
-
-**Headline:** DUA PRIA, MASKER TIMAH, DAN SATU PESAN TENTANG KEMATIAN  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H3  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 53 detik · **Kata VO:** 68
+**Durasi:** 136 kata ≈ 56 detik (target 53 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Miguel Viana dan Manoel Cruz, dua pria di Bukit Vintém, Rio de Janeiro. |
+| **Mau** | Menunggu seseorang di tempat yang disebutkan dalam catatan. |
+| **Hambatan** | Waktunya tertulis jelas. Orangnya tidak pernah datang. |
+| **Tanaman** (detail yang berubah makna di turn) | Catatan itu menyuruh mereka menunggu, menelan kapsul, lalu memakai masker. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Dua pria ditemukan di bukit dengan masker timah di wajah. Di saku salah satunya, catatan yang menyuruh mereka menunggu.
+> Dua pria ditemukan dengan masker timah di wajah. Di saku salah satunya: catatan yang menyuruh mereka menunggu.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 20 Agustus 1966. Dua pria ditemukan tewas di sebuah bukit di Rio de Janeiro. |
-| 11 | Mereka memakai setelan resmi. Di wajah mereka, masker timah buatan sendiri. |
-| 17 | Tidak ada luka. Tidak ada tanda perkelahian. |
-| 22 | Di saku salah satunya, ada catatan tulisan tangan. |
-| 27 | Isinya: jam, tempat, dan instruksi untuk menunggu seseorang. |
-| 33 | Ada juga instruksi untuk menelan kapsul, lalu memakai masker. |
-| 39 | Dan daftar uang dalam jumlah besar. |
-| 45 | Uang itu tidak pernah ditemukan. |
+| SETUP | 20 Agustus 1966. Dua pria ditemukan tewas di sebuah bukit di Rio de Janeiro. |
+| SETUP | Mereka memakai setelan resmi. Di wajah mereka, masker timah buatan sendiri. |
+| TENSION | Tidak ada luka. Tidak ada tanda perkelahian. |
+| TENSION | Di saku salah satunya, ada catatan tulisan tangan. |
+| TENSION | Isinya: jam, tempat, dan instruksi untuk menunggu seseorang. |
+| TENSION | Ada juga instruksi untuk menelan kapsul, lalu memakai masker. |
+| TURN | Mereka melakukan semuanya. Tepat waktu. |
+| TURN | Orang yang menulis instruksi itu tidak pernah datang — dan uang yang disebut di catatan itu tidak pernah ditemukan. |
+| CONSEQUENCE | Selama enam puluh tahun, teorinya bunuh diri atau ritual. |
+| CONSEQUENCE | Tapi catatan itu bukan surat perpisahan. Itu jadwal. Dan jadwal butuh orang kedua. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Teorinya bunuh diri atau ritual. Tapi catatan itu seperti instruksi dari orang lain, yang belum pernah muncul.
+Dugaan yang dipatahkan: **“Itu bunuh diri.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Catatan itu jadwal pertemuan, bukan surat perpisahan. Orang kedua tidak pernah datang.
 
-> Orang yang menulis instruksi itu tidak pernah ditemukan. Bukit itu sekarang disebut Bukit Masker.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Dua pria menunggu di bukit itu. Sampai sekarang tidak ada yang tahu siapa yang mereka tunggu.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1042,13 +1216,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `CATATAN`
 5. `UANG HILANG`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Dua siluet di bukit; satu lembar catatan dengan tulisan tangan tak terbaca.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Bukit dengan dua siluet; catatan tangan tak terbaca; dua masker timah di batu.
 
 ## 7 · DISTRIBUSI
 
@@ -1058,62 +1230,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kasus Morro do Vintém (Lead Masks Case), 1966; isi catatan dari terjemahan yang beredar — perlu verifikasi.
+`SRC: NEEDS-SOURCE` — Kasus Morro do Vintém 1966; terjemahan catatan perlu verifikasi.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Mereka memakai setelan resmi dan masker timah. Tidak ada yang tahu untuk apa.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP14 — DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP
 
----
-
-## EP14 — SIAPA PUN YANG MENEROBOS SIARAN INI TIDAK PERNAH TERTANGKAP
-
-**Headline:** SIAPA PUN YANG MENEROBOS SIARAN INI TIDAK PERNAH TERTANGKAP  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H4  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi target:** 52 detik · **Kata VO:** 73
+**Durasi:** 119 kata ≈ 49 detik (target 52 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seorang teknisi siaran di Chicago yang melihat sinyalnya diambil alih. |
+| **Mau** | Menjaga siaran tetap di jalurnya. |
+| **Hambatan** | Seseorang memotong transmisinya, dan dia tidak bisa menghentikannya. |
+| **Tanaman** (detail yang berubah makna di turn) | Pembajakan terjadi dua kali dalam satu malam, di dua saluran berbeda. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
 > Selama sembilan puluh detik, dua saluran TV di Chicago menayangkan orang yang tidak bisa ditangkap siapa pun.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 22 November 1987, Chicago. Pukul sembilan malam, saluran WGN sedang menayangkan film. |
-| 11 | Gambarnya tiba-tiba hilang. |
-| 15 | Yang muncul: seseorang memakai topeng kepala, dengan suara yang dirusak. |
-| 21 | Dia bergerak, bicara, dan menempelkan sesuatu ke layar. |
-| 26 | Sembilan puluh detik kemudian, siaran kembali normal. |
-| 31 | Itu belum selesai. |
-| 36 | Dua jam kemudian, saluran lain dibajak lagi. Kali ini lebih lama. |
-| 41 | Untuk membajak siaran analog, kamu harus tahu di titik mana sinyal bisa dipotong. |
-| 46 | Itu bukan lelucon. Itu pengetahuan teknis. |
+| SETUP | 22 November 1987, Chicago. Pukul sembilan malam, saluran WGN menayangkan film. |
+| SETUP | Gambarnya tiba-tiba hilang. |
+| TENSION | Yang muncul: seseorang memakai topeng kepala, dengan suara yang dirusak. |
+| TENSION | Dia bergerak, bicara, dan menempelkan sesuatu ke layar. |
+| TENSION | Sembilan puluh detik kemudian, siaran kembali normal. |
+| TENSION | Dua jam kemudian, saluran lain dibajak lagi. Kali ini lebih lama. |
+| TURN | Untuk membajak siaran analog, kamu harus tahu di titik mana sinyal bisa dipotong. |
+| TURN | Itu bukan lelucon. Itu pengetahuan teknis — dan orangnya tidak pernah tertangkap. |
+| CONSEQUENCE | FCC menyelidiki bertahun-tahun. Tidak ada nama. Tidak ada tuntutan. |
+| CONSEQUENCE | Tiga puluh delapan tahun kemudian, orang itu masih tidak punya wajah. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> FCC menyelidiki selama bertahun-tahun. Tidak ada nama, tidak ada tuntutan, tidak ada pengakuan.
+Dugaan yang dipatahkan: **“Itu iseng anak-anak.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Dua pembajakan dalam satu malam butuh pengetahuan teknis. Dan pelakunya tidak pernah tertangkap.
 
-> Tiga puluh delapan tahun kemudian, orang itu masih tidak punya wajah.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Sembilan puluh detik, dua saluran, nol tersangka.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1123,13 +1309,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `2 KALI`
 5. `TIDAK TERTANGKAP`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Layar TV analog dengan gangguan; siluet kepala di tengah bingkai 4:3.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Layar TV analog penuh derau; siluet kepala di bingkai 4:3; ruang kontrol gelap.
 
 ## 7 · DISTRIBUSI
 
@@ -1139,77 +1323,90 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Max Headroom broadcast incident, 1987; investigasi FCC tidak pernah menghasilkan tersangka.
+`SRC: NEEDS-SOURCE` — Max Headroom broadcast incident 1987; laporan FCC belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Di tengah film, gambarnya hilang. Yang muncul: seseorang dengan kepala palsu dan suara rusak.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP15 — TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN
 
----
-
-## EP15 — TENGKORAK 18.000 TAHUN YANG MENGGUNCANG BUKU SEJARAH
-
-**Headline:** TENGKORAK 18.000 TAHUN YANG MENGGUNCANG BUKU SEJARAH  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H5  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi target:** 57 detik · **Kata VO:** 76
+**Durasi:** 133 kata ≈ 54 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Tim penggalian Gua Liang Bua, Flores, 2003. |
+| **Mau** | Mencari bukti manusia purba yang bermigrasi lewat Indonesia. |
+| **Hambatan** | Yang mereka temukan tidak cocok dengan apa pun di buku teks. |
+| **Tanaman** (detail yang berubah makna di turn) | Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Kita diajarkan bahwa setelah mereka punah, hanya kita yang tersisa. Di sebuah gua di Flores, ada bukti bahwa itu tidak benar.
+> Kita diajarkan bahwa setelah mereka punah, hanya kita yang tersisa. Tulang ini membuktikan itu salah.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 06 | 2003. Sebuah tim penggalian bekerja di Gua Liang Bua, Flores. |
-| 12 | Mereka menemukan kerangka yang tidak sesuai dengan apa pun yang ada di buku. |
-| 18 | Tingginya sekitar satu meter. Volume otaknya sepertiga otak kita. |
-| 24 | Di sekitarnya ada alat batu. Ada bukti perburuan. |
-| 30 | Umurnya ditaksir sekitar 18.000 tahun. |
-| 36 | Saat itu, manusia modern sudah ada. Bahkan sudah membuat lukisan di gua. |
-| 42 | Sebagian ilmuwan bersikeras: ini bukan spesies baru. Ini manusia modern yang sakit. |
-| 48 | Perdebatan itu berlangsung lebih dari sepuluh tahun. |
+| SETUP | 2003. Sebuah tim penggalian bekerja di Gua Liang Bua, Flores. |
+| SETUP | Mereka mencari jejak migrasi manusia purba lewat Indonesia. |
+| TENSION | Mereka menemukan kerangka yang tidak sesuai dengan apa pun yang ada di buku. |
+| TENSION | Tingginya sekitar satu meter. Volume otaknya sepertiga otak kita. |
+| TENSION | Di sekitarnya ada alat batu. Ada bukti perburuan. |
+| TENSION | Umurnya ditaksir sekitar 18.000 tahun — saat manusia modern sudah membuat lukisan gua. |
+| TURN | Sebagian ilmuwan bersikeras: ini bukan spesies baru. Ini manusia modern yang sakit. |
+| TURN | Perdebatan itu berlangsung lebih dari sepuluh tahun. |
+| CONSEQUENCE | Analisis gigi dan rahang menyimpulkan: ini bukan kita. |
+| CONSEQUENCE | Mereka hidup di pulau itu puluhan ribu tahun. Lalu menghilang, dan ceritanya ikut hilang. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Analisis gigi dan rahang menyimpulkan satu hal yang sulit diterima: ini bukan kita. Ini kerabat yang berpisah jauh lebih lama.
+Dugaan yang dipatahkan: **“Itu manusia modern yang sakit.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Gigi dan rahangnya bukan milik kita. Ini kerabat yang berpisah jauh lebih lama.
 
-> Mereka hidup di pulau itu puluhan ribu tahun. Lalu menghilang. Begitu juga cerita mereka.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
 1. `2003`
 2. `LIANG BUA`
 3. `1 METER`
-4. `380 cc`
+4. `18.000 TAHUN`
 5. `BUKAN KITA`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Potongan penampang gua; siluet manusia kecil di samping skala tinggi manusia modern.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Penampang gua; siluet satu meter di samping skala manusia modern; alat batu.
 
 ## 7 · DISTRIBUSI
 
@@ -1219,62 +1416,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Homo floresiensis, Liang Bua; temuan 2003, stratigrafi direvisi 2016 (Nature). Detail angka perlu dikutip dari makalah.
+`SRC: NEEDS-SOURCE` — Homo floresiensis, Liang Bua; stratigrafi direvisi 2016 (Nature), belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Ada manusia lain di Indonesia. Tingginya satu meter. Dan mereka hidup saat manusia modern sudah ada.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Tingginya satu meter. Otaknya sepertiga otak kita. Dan dia hidup saat manusia modern sudah ada.
 
 ---
 
-## EP16 — DUA BELAS ORANG TERTAWA, DAN TIDAK ADA YANG BISA BERHENTI
+## EP16 — TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS
 
-**Headline:** DUA BELAS ORANG TERTAWA, DAN TIDAK ADA YANG BISA BERHENTI  
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H6  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 52 detik · **Kata VO:** 73
+**Durasi:** 112 kata ≈ 46 detik (target 52 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Tiga murid perempuan di sekolah Kashasha, Tanganyika. |
+| **Mau** | Menjalani hari sekolah seperti biasa. |
+| **Hambatan** | Tubuh mereka mulai tertawa, dan tidak berhenti. |
+| **Tanaman** (detail yang berubah makna di turn) | Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tiga anak murid mulai tertawa. Dalam dua bulan, seribu orang ikut. Dan sekolah harus ditutup.
+> Tiga murid mulai tertawa. Dalam dua bulan, seribu orang ikut. Sekolahnya ditutup.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | Januari 1962. Sebuah sekolah di desa Kashasha, Tanganyika. |
-| 11 | Tiga murid perempuan mulai tertawa. |
-| 15 | Tawanya tidak berhenti di jam pelajaran. |
-| 19 | Dalam beberapa hari, puluhan murid ikut tertawa. Beberapa menangis. |
-| 24 | Dalam dua bulan, sekolah itu ditutup. |
-| 29 | Wabahnya pindah ke sekolah lain. Dan sekolah berikutnya. |
-| 34 | Sebagian murid tertawa selama berhari-hari, bahkan berminggu-minggu. |
-| 39 | Tidak ada virus yang ditemukan. Tidak ada racun. Tidak ada penyebab fisik. |
-| 44 | Yang ada: sekolah baru, aturan baru, dan anak-anak yang tidak dimintai pendapat. |
+| SETUP | Januari 1962. Sebuah sekolah di desa Kashasha, Tanganyika. |
+| SETUP | Tiga murid perempuan mulai tertawa. |
+| TENSION | Tawanya tidak berhenti di jam pelajaran. |
+| TENSION | Dalam beberapa hari, puluhan murid ikut tertawa. Beberapa menangis. |
+| TENSION | Dalam dua bulan, sekolah itu ditutup. |
+| TENSION | Wabahnya pindah ke sekolah lain. Dan sekolah berikutnya. |
+| TENSION | Sebagian murid tertawa selama berhari-hari, bahkan berminggu-minggu. |
+| TURN | Tidak ada virus yang ditemukan. Tidak ada racun. Tidak ada penyebab fisik. |
+| TURN | Yang ada: sekolah baru, aturan baru, dan anak-anak yang tidak pernah dimintai pendapat. |
+| CONSEQUENCE | Yang menyebar bukan penyakit. Yang menyebar adalah tekanan. |
+| CONSEQUENCE | Tawanya berhenti setelah delapan belas bulan. Tekanannya tidak. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang menyebar bukan penyakit. Yang menyebar adalah tekanan — dalam bentuk yang bisa dilihat semua orang.
+Dugaan yang dipatahkan: **“Itu wabah penyakit.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada virus, tidak ada racun. Yang menyebar adalah tekanan, dalam bentuk yang bisa dilihat semua orang.
 
-> Tawanya berhenti. Tekanannya tidak.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Seribu orang tertawa karena tidak punya cara lain untuk bicara.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1284,13 +1496,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `18 BULAN`
 5. `TANPA VIRUS`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Kelas kosong dengan bangku-bangku kosong; gelombang abstrak yang menyebar antar bangku.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Kelas dengan bangku kosong; gelombang abstrak menyebar antar bangku; koridor sekolah.
 
 ## 7 · DISTRIBUSI
 
@@ -1300,61 +1510,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Tanganyika laughter epidemic 1962 — dilaporkan dalam jurnal medis sebagai mass psychogenic illness.
+`SRC: NEEDS-SOURCE` — Tanganyika laughter epidemic 1962; laporan jurnal medis belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Tidak ada virus. Yang menyebar hanya tawa — dan tidak ada yang bisa menghentikannya.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP17 — SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER
 
----
-
-## EP17 — SUARA PALING KERAS DALAM SEJARAH TERDENGAR 4.800 KM JAUHNYA
-
-**Headline:** SUARA PALING KERAS DALAM SEJARAH TERDENGAR 4.800 KM JAUHNYA  
 **Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H6  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 56 detik · **Kata VO:** 63
+**Durasi:** 124 kata ≈ 51 detik (target 56 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seorang kapten kapal di Selat Sunda, pagi 27 Agustus 1883. |
+| **Mau** | Melewati selat itu dan sampai di pelabuhan berikutnya. |
+| **Hambatan** | Gunung di depannya sedang membelah dirinya sendiri. |
+| **Tanaman** (detail yang berubah makna di turn) | Suara itu tidak hanya terdengar. Gelombang tekanannya tercatat di barometer seluruh dunia. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Pukul 10.02 pagi, 27 Agustus 1883, suara itu terdengar di Australia. Dan di pulau yang 4.800 kilometer jauhnya.
+> Pukul 10.02, 27 Agustus 1883, suara itu terdengar di Australia. Dan 4.800 kilometer jauhnya.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 06 | Krakatau. Sebuah gunung kecil di Selat Sunda, antara Jawa dan Sumatra. |
-| 12 | Sejak Mei 1883, gunung itu sudah mengeluarkan asap dan abu. |
-| 18 | Pada 27 Agustus, empat ledakan besar terjadi dalam beberapa jam. |
-| 24 | Ledakan terbesar terdengar sampai Australia dan Pulau Rodrigues. |
-| 30 | Itu seperdelapan permukaan bumi. |
-| 36 | Gelombang tekanannya tercatat di barometer di seluruh dunia. |
-| 42 | Gelombang itu berputar mengelilingi bumi beberapa kali. |
-| 48 | Tsunaminya mencapai tiga puluh meter. |
+| SETUP | Krakatau. Gunung kecil di Selat Sunda, antara Jawa dan Sumatra. |
+| SETUP | Sejak Mei 1883, gunung itu mengeluarkan asap dan abu. |
+| TENSION | 27 Agustus, empat ledakan besar terjadi dalam beberapa jam. |
+| TENSION | Ledakan terbesar terdengar sampai Australia dan Pulau Rodrigues. |
+| TENSION | Itu seperdelapan permukaan bumi. |
+| TENSION | Gelombang tekanannya tercatat di barometer di seluruh dunia. |
+| TURN | Yang paling mengejutkan bukan ledakannya. |
+| TURN | Gelombang tekanan itu berputar mengelilingi bumi beberapa kali — udara di atas kita bergerak seperti air. |
+| CONSEQUENCE | Tsunaminya mencapai tiga puluh meter. Lebih dari tiga puluh enam ribu orang meninggal. |
+| CONSEQUENCE | Bertahun-tahun setelah itu, matahari terbenam di Eropa berwarna merah menyala. Tidak ada yang tahu kenapa. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang paling mengejutkan bukan ledakannya. Yang paling mengejutkan: setelah itu, matahari terbenam di Eropa berwarna merah menyala selama bertahun-tahun.
+Dugaan yang dipatahkan: **“Gunungnya meletus.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Gelombang tekanannya berputar mengelilingi bumi beberapa kali. Udara di atas kita bergerak seperti air.
 
-> Debu itu naik ke stratosfer dan tinggal di sana. Langit dunia berubah, dan tidak ada yang tahu kenapa.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Satu gunung di Selat Sunda, dan langit di Eropa berubah warna selama bertahun-tahun.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1364,13 +1589,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `30 METER`
 5. `DUNIA BERUBAH`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Garis pantai gelap; kolom abu vertikal; peta Selat Sunda dengan radius suara.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Kolom abu di garis pantai; peta radius suara; grafik barometer dunia.
 
 ## 7 · DISTRIBUSI
 
@@ -1380,77 +1603,91 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Letusan Krakatau 1883 — gelombang tekanan tercatat global; jarak dengar dan tinggi tsunami dari catatan historis.
+`SRC: NEEDS-SOURCE` — Letusan Krakatau 1883; catatan barometer global perlu dikutip langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Suara itu adalah suara paling keras yang pernah dicatat manusia. Sebagian orang yang mendengarnya tidak pernah mendengar lagi.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Itu suara paling keras yang pernah dicatat manusia. Sebagian orang yang mendengarnya tidak pernah mendengar lagi.
 
 ---
 
-## EP18 — LETUSAN DI INDONESIA YANG MENGHAPUS MUSIM PANAS DI EROPA
+## EP18 — GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA
 
-**Headline:** LETUSAN DI INDONESIA YANG MENGHAPUS MUSIM PANAS DI EROPA  
 **Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H7  
 **POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi target:** 57 detik · **Kata VO:** 66
+**Durasi:** 123 kata ≈ 50 detik (target 57 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seorang petani di Eropa, 1816, yang menanam di bulan yang salah. |
+| **Mau** | Memanen seperti tahun-tahun sebelumnya. |
+| **Hambatan** | Musimnya tidak datang, dan tidak ada yang tahu kenapa. |
+| **Tanaman** (detail yang berubah makna di turn) | Debu dari sebuah gunung di Sumbawa terbang ke stratosfer dan memantulkan sinar matahari. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Tahun 1816, salju turun di bulan Juni di Amerika. Penyebabnya bukan cuaca. Penyebabnya gunung di Indonesia.
+> Tahun 1816, salju turun di bulan Juni. Penyebabnya gunung di Indonesia.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 06 | April 1815. Gunung Tambora di Sumbawa meletus. |
-| 12 | Itu letusan terbesar yang tercatat dalam sejarah modern. |
-| 18 | Abu dan gas sulfurnya naik ke stratosfer. |
-| 23 | Di stratosfer, sulfur berubah menjadi partikel yang memantulkan sinar matahari. |
-| 29 | Selama setahun berikutnya, bumi menerima lebih sedikit panas. |
-| 35 | 1816 dikenal sebagai tahun tanpa musim panas. |
-| 41 | Di Amerika, salju turun di bulan Juni. Tanaman gagal. |
-| 47 | Di Eropa, harga roti meledak. Kerusuhan terjadi di banyak kota. |
+| SETUP | April 1815. Gunung Tambora di Sumbawa meletus. |
+| SETUP | Itu letusan terbesar yang tercatat dalam sejarah modern. |
+| TENSION | Abu dan gas sulfurnya naik ke stratosfer. |
+| TENSION | Di sana, sulfur berubah menjadi partikel yang memantulkan sinar matahari. |
+| TENSION | Selama setahun berikutnya, bumi menerima lebih sedikit panas. |
+| TENSION | 1816 dikenal sebagai tahun tanpa musim panas. |
+| TENSION | Di Amerika, salju turun di bulan Juni. Tanaman gagal. |
+| TURN | Kita menyebut letusan itu bencana lokal. |
+| TURN | Tapi debunya terbang setengah bumi dan mencuri satu musim dari seluruh benua. |
+| CONSEQUENCE | Di Eropa, harga roti meledak. Kerusuhan terjadi di banyak kota. |
+| CONSEQUENCE | Satu gunung di Sumbawa mengubah harga roti di London, dan tidak ada yang melihat hubungannya saat itu. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Kita menyebut letusan itu bencana lokal. Tapi debunya terbang setengah bumi dan mencuri satu musim dari seluruh benua.
+Dugaan yang dipatahkan: **“Itu bencana lokal di Indonesia.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Debunya terbang setengah bumi, mencuri satu musim, dan membuat orang Eropa kelaparan.
 
-> Satu gunung di Sumbawa mengubah harga roti di London. Dan tidak ada yang melihat hubungannya saat itu.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Satu gunung di Sumbawa. Satu musim yang hilang di benua lain.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
 1. `APR 1815`
 2. `TAMBORA`
-3. `VEI 7`
-4. `1816`
-5. `TANPA MUSIM PANAS`
+3. `1816`
+4. `TANPA MUSIM PANAS`
+5. `ROTI MAHAL`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Lapisan abu di stratosfer sebagai bidang tipis; peta dunia dengan panah partikel.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Lapisan abu di stratosfer; peta aliran sulfur; ladang gagal panen.
 
 ## 7 · DISTRIBUSI
 
@@ -1460,61 +1697,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Letusan Tambora 1815 dan Year Without a Summer 1816 — kaitan iklim global sudah lama diterima dalam literatur vulkanologi.
+`SRC: NEEDS-SOURCE` — Tambora 1815 dan Year Without a Summer 1816; literatur vulkanologi belum dikutip langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Satu gunung di Sumbawa meledak. Setahun kemudian, orang di Eropa kelaparan.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP19 — LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG
 
----
-
-## EP19 — LEDAKAN YANG TIDAK PERNAH DICATAT SEBAGAI LEDAKAN
-
-**Headline:** LEDAKAN YANG TIDAK PERNAH DICATAT SEBAGAI LEDAKAN  
 **Seri:** BENCANA · **Slot:** SIANG 12.30 WIB · **Hari:** H7  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 54 detik · **Kata VO:** 60
+**Durasi:** 120 kata ≈ 49 detik (target 54 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Leonid Kulik, ilmuwan yang memimpin ekspedisi pertama ke Siberia, 1927. |
+| **Mau** | Menemukan kawah meteorit dan besinya. |
+| **Hambatan** | Tidak ada kawah, tidak ada pecahan, tidak ada logam. |
+| **Tanaman** (detail yang berubah makna di turn) | Dua ribu kilometer persegi hutan rebah menjauhi satu titik — dan di titik itu tidak ada apa-apa. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
-> Sebuah ledakan meratakan dua ribu kilometer persegi hutan. Tidak ada kawah. Tidak ada pecahan. Tidak ada yang pernah menemukannya.
+> Sebuah ledakan meratakan dua ribu kilometer persegi hutan. Tidak ada kawah. Tidak ada pecahan.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 05 | 30 Juni 1908. Pagi. Siberia tengah. |
-| 10 | Saksi melihat langit terbelah. Lalu ada cahaya, dan angin panas. |
-| 16 | Delapan ratus kilometer jauhnya, orang mendengar ledakan. |
-| 22 | Gelombang tekanannya tercatat di stasiun cuaca di Inggris. |
-| 28 | Hutan di bawahnya rebah. Dua ribu kilometer persegi. |
-| 34 | Semua pohon jatuh menjauhi satu titik pusat. |
-| 40 | Ekspedisi pertama baru datang sembilan belas tahun kemudian. |
-| 46 | Mereka mencari kawah. Mereka mencari batu. |
+| SETUP | 30 Juni 1908. Pagi. Siberia tengah. |
+| SETUP | Saksi melihat langit terbelah. Lalu ada cahaya, dan angin panas. |
+| TENSION | Delapan ratus kilometer jauhnya, orang mendengar ledakan. |
+| TENSION | Gelombang tekanannya tercatat di stasiun cuaca di Inggris. |
+| TENSION | Hutan di bawahnya rebah. Dua ribu kilometer persegi. |
+| TENSION | Semua pohon jatuh menjauhi satu titik pusat. |
+| TENSION | Ekspedisi pertama baru datang sembilan belas tahun kemudian. |
+| TURN | Kulik mencari kawah. Dia mencari batu. Dia mencari besi. |
+| TURN | Yang dia temukan justru sebaliknya: benda itu tidak pernah sampai ke tanah. |
+| CONSEQUENCE | Ia meledak di udara, beberapa kilometer di atas hutan. |
+| CONSEQUENCE | Ledakan sekuat itu, dan tidak meninggalkan apa pun untuk dipegang. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang mereka temukan justru sebaliknya: benda itu tidak pernah sampai ke tanah. Ia meledak di udara, beberapa kilometer di atas hutan.
+Dugaan yang dipatahkan: **“Ada meteorit yang menabrak bumi.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada kawah dan tidak ada pecahan. Benda itu meledak di udara sebelum menyentuh tanah.
 
-> Ledakan sekuat itu, dan tidak meninggalkan apa pun untuk dipegang.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Hutan rebah menjauhi satu titik kosong. Sampai sekarang, titik itu tetap kosong.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1524,13 +1777,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `TANPA KAWAH`
 5. `MELEDAK DI UDARA`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Pola pohon rebah radial dari atas; satu titik kosong di tengahnya.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Pola pohon rebah radial dari atas; satu titik kosong di pusatnya; hutan Siberia.
 
 ## 7 · DISTRIBUSI
 
@@ -1540,61 +1791,76 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Peristiwa Tunguska 1908; ketiadaan kawah dan pecahan meteorit adalah temuan ekspedisi, bukan dugaan.
+`SRC: NEEDS-SOURCE` — Peristiwa Tunguska 1908; laporan ekspedisi Kulik belum dibaca langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Pohon-pohon rebah serentak, semua ke arah yang sama. Dan di tengahnya, tidak ada apa-apa.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+- Pohon-pohon rebah serentak, semua menjauhi satu titik. Di tengahnya, kosong.
 
 ---
 
-## EP20 — DANAU YANG MENGELUARKAN NAPAS DAN MEMBUNUH 1.700 ORANG
+## EP20 — YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN
 
-**Headline:** DANAU YANG MENGELUARKAN NAPAS DAN MEMBUNUH 1.700 ORANG  
 **Seri:** BENCANA · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
 **POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi target:** 58 detik · **Kata VO:** 66
+**Durasi:** 120 kata ≈ 49 detik (target 58 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Warga desa di lembah Danau Nyos, Kamerun. |
+| **Mau** | Tidur seperti malam-malam sebelumnya. |
+| **Hambatan** | Malam itu, danau di atas mereka mengeluarkan napas. |
+| **Tanaman** (detail yang berubah makna di turn) | Tidak ada letusan, tidak ada lava, tidak ada api. Tidak ada yang bisa dilihat. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
 > Selama satu malam, sebuah danau mengeluarkan napas. Pagi berikutnya, 1.700 orang tidak bangun.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 06 | 21 Agustus 1986. Danau Nyos, Kamerun. |
-| 12 | Malam itu, danau mengeluarkan awan gas karbon dioksida. |
-| 18 | Gas itu tidak berwarna. Tidak berbau. Lebih berat dari udara. |
-| 24 | Ia turun ke lembah, tempat orang-orang tidur. |
-| 30 | Pagi berikutnya, 1.700 orang meninggal. Bersama ribuan ternak. |
-| 36 | Yang selamat bangun dengan luka, tanpa tahu apa yang terjadi. |
-| 42 | Penyebabnya bukan gunung. Tidak ada letusan. |
-| 48 | Gas itu tersimpan di dasar danau selama bertahun-tahun, di bawah tekanan. |
+| SETUP | 21 Agustus 1986. Danau Nyos, Kamerun. |
+| SETUP | Malam itu, danau mengeluarkan awan gas karbon dioksida. |
+| TENSION | Gas itu tidak berwarna. Tidak berbau. Lebih berat dari udara. |
+| TENSION | Ia turun ke lembah, tempat orang-orang tidur. |
+| TENSION | Pagi berikutnya, 1.700 orang meninggal. Bersama ribuan ternak. |
+| TENSION | Yang selamat bangun dengan luka, tanpa tahu apa yang terjadi. |
+| TURN | Semua orang pertama mengira gunung meletus. |
+| TURN | Tidak ada letusan. Gas itu tersimpan di dasar danau selama bertahun-tahun, di bawah tekanan. |
+| CONSEQUENCE | Yang membunuh mereka bukan air, bukan api, bukan gunung. Yang membunuh mereka adalah udara. |
+| CONSEQUENCE | Danau itu masih menyimpan gasnya. Pipa yang dipasang sekarang satu-satunya alasan ia masih tenang. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Yang membunuh mereka bukan air, bukan api, bukan gunung. Yang membunuh mereka adalah udara yang tidak bisa mereka lihat.
+Dugaan yang dipatahkan: **“Gunungnya meletus.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Tidak ada letusan. Gas tersimpan di dasar danau, lalu turun ke lembah saat orang tidur.
 
-> Danau itu masih menyimpan gasnya. Pipa-pipa yang dipasang sekarang satu-satunya alasan ia masih tenang.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Sebuah danau bernapas sekali, dan satu lembah tidak pernah bangun.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1604,13 +1870,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `1.700 ORANG`
 5. `PIPA DEGASSING`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Danau tenang dari atas; lapisan gas yang turun ke lembah seperti kabut tipis.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Danau dari atas; lapisan gas turun ke lembah; pipa degassing di permukaan.
 
 ## 7 · DISTRIBUSI
 
@@ -1620,61 +1884,77 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Bencana limnik Danau Nyos 1986; program degassing sejak 2001; mekanisme limnic eruption terdokumentasi ilmiah.
+`SRC: NEEDS-SOURCE` — Danau Nyos 1986; program degassing sejak 2001; mekanisme limnik belum dikutip langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Tidak ada letusan. Tidak ada lava. Tidak ada api. Hanya udara yang turun ke lembah.
 
 ---
 
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*
+## EP21 — MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI
 
----
-
-## EP21 — MEREKA DIMINTA MENJILAT KUAS, LALU RAHANG MEREKA RONTOK
-
-**Headline:** MEREKA DIMINTA MENJILAT KUAS, LALU RAHANG MEREKA RONTOK  
 **Seri:** HARGA · **Slot:** MALAM 19.30 WIB · **Hari:** H6  
 **POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi target:** 58 detik · **Kata VO:** 59
+**Durasi:** 110 kata ≈ 45 detik (target 58 s)
 
 ---
+
+## 0 · KERANGKA (isi dulu, baru ditulis)
+
+| unsur | isi |
+|---|---|
+| **Protagonis** | Seorang pelukis dial jam di pabrik Orange, New Jersey, 1917. |
+| **Mau** | Mendapat upah, dan tetap sehat. |
+| **Hambatan** | Perusahaannya mengajari dia menjilat kuas berisi radium. |
+| **Tanaman** (detail yang berubah makna di turn) | Dokter perusahaan punya satu diagnosis untuk semua gejala itu: sifilis. |
+
+Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
+wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
 
 ## 1 · HOOK (0–3 s)
 
 > Perusahaan itu mengajari mereka menjilat kuas. Untuk membuat ujungnya runcing. Setiap kali.
 
-Visual pembuka: satu objek, tanpa gerakan kamera. Teks hook tidak boleh sama
-dengan kalimat VO — teks di layar memotong, bukan mengulang.
+Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
-## 2 · BEAT (3 s → selesai)
+## 2 · BEAT
 
-| detik | VO |
+| bagian | VO |
 |---|---|
-| 06 | 1917. Sebuah pabrik jam di Orange, New Jersey. |
-| 12 | Perempuan muda melukis angka di dial jam dengan cat yang menyala dalam gelap. |
-| 18 | Cat itu mengandung radium. |
-| 23 | Untuk membuat ujung kuas runcing, mereka diajari menjilatnya. |
-| 29 | Setiap kali selesai satu angka. |
-| 35 | Bertahun-tahun kemudian, gigi mereka mulai lepas sendiri. |
-| 41 | Rahang mereka membusuk. Anemia. Tulang mereka patah tanpa sebab. |
-| 47 | Dokter perusahaan menyebut penyebabnya: sifilis. |
+| SETUP | 1917. Sebuah pabrik jam di Orange, New Jersey. |
+| SETUP | Perempuan muda melukis angka di dial jam dengan cat yang menyala dalam gelap. |
+| TENSION | Cat itu mengandung radium. |
+| TENSION | Untuk membuat ujung kuas runcing, mereka diajari menjilatnya. |
+| TENSION | Setiap kali selesai satu angka. |
+| TENSION | Bertahun-tahun kemudian, gigi mereka mulai lepas sendiri. |
+| TENSION | Rahang mereka membusuk. Anemia. Tulang mereka patah tanpa sebab. |
+| TURN | Dokter perusahaan menyebut penyebabnya: sifilis. |
+| TURN | Padahal perusahaan sudah mengukur radiasi di tubuh para pekerja itu sejak lama. |
+| CONSEQUENCE | Mereka menggugat. Dan menang. |
+| CONSEQUENCE | Hukum ketenagakerjaan Amerika berubah karena mereka. Mereka tidak sempat menikmatinya. |
 
-## 3 · TITIK BALIK
+## 3 · TURN
 
-> Perusahaan tahu. Mereka sudah mengukur radiasi di tubuh para pekerja itu sejak lama — dan tetap membiarkan mereka menjilat kuas.
+Dugaan yang dipatahkan: **“Penyebabnya sifilis.”**
 
-## 4 · LOOP (kalimat terakhir, harus menyambung ke hook)
+Pembalik: Perusahaan sudah mengukur radiasi di tubuh mereka. Diagnosis itu bukan kesalahan — itu tameng.
 
-> Hukum ketenagakerjaan Amerika berubah karena mereka. Mereka tidak sempat menikmatinya.
+Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
+dilihat penonton sejak detik pertama.
+
+## 4 · ECHO
+
+> Mereka menjilat kuas itu setiap hari, dan hukumnya berubah hanya setelah mereka mati.
+
+Kalimat terakhir memanggil kembali detail yang ditanam di hook.
 
 ## 5 · TEKS DI LAYAR
 
@@ -1684,13 +1964,11 @@ dengan kalimat VO — teks di layar memotong, bukan mengulang.
 4. `JILAT KUAS`
 5. `HUKUM BERUBAH`
 
-Maksimal lima cue. Setiap cue tampil 1,5–2 detik, huruf kapital, Inter 600.
+Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
 
 ## 6 · VISUAL SIGNATURE
 
-Meja kerja dengan kuas kecil dan pot cat; satu dial jam bercahaya di kegelapan.
-
-Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
+Meja kerja dengan kuas kecil; dial jam bercahaya di kegelapan; rahang pada rontgen.
 
 ## 7 · DISTRIBUSI
 
@@ -1700,19 +1978,15 @@ Detail lengkap ada di `05_VISUAL_PLAN.md` (dibuat setelah thumbnail disetujui).
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal. Tidak ada versi horizontal.
+Satu episode, tiga platform, satu file master vertikal.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Radium Girls, 1917–1930an; gugatan 1927 dan preseden hukumnya terdokumentasi; kutipan medis perlu rujukan primer.
+`SRC: NEEDS-SOURCE` — Radium Girls 1917–1930an; gugatan 1927 dan preseden hukum belum dikutip langsung.
 
-Status `NEEDS-SOURCE` berarti script ini **belum boleh tayang** sampai rujukan
+Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
 primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
 
-## 9 · HOOK ALTERNATIF (untuk A/B)
+## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Mereka diberi tahu cat itu aman. Mereka bahkan diberi tahu bahwa cat itu menyehatkan.
-
----
-
-*Hook A/B diuji di 3 detik pertama. Yang menang di retensi 3 detik dipakai permanen.*

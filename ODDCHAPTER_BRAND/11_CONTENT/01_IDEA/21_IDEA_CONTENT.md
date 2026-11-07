@@ -1,95 +1,80 @@
-# 21 IDE KONTEN — 7 HARI × 3 POST
+# 21 IDE KONTEN — 7 HARI x 3 SLOT
 
-Semua episode bertumpu pada peristiwa nyata yang terdokumentasi. Kolom **BALIK**
-adalah janji episode: dugaan yang penonton bawa masuk → kenyataan yang dia bawa
-keluar. Kalau kolom itu kosong, ide itu dibuang.
+Setiap episode punya satu protagonis, satu keinginan, dan satu **tanaman**:
+detail kecil yang ditanam di awal lalu berubah maknanya di turn. Kalau kolom
+tanaman kosong, ide itu dibuang. Kerangkanya di `00B_KERANGKA_STORYTELLING.md`.
 
-Legenda: **POV** A = "kamu", B = "saksi/arsip", D = "kita".
-**SRC** = status sumber saat ini (lihat `00_STRATEGI.md` §6).
+Legenda: **POV** A = “kamu” · B = “saksi/arsip” · D = “kita”.
+**SRC** = status sumber (lihat `00_STRATEGI.md` §6).
 
----
+## HILANG — Orang hilang, dan jejak yang ditinggalkan justru membingungkan.
 
-## Seri 1 — HILANG (slot pagi, 40–45 s)
-
-Orang hilang tanpa jejak, dan jejak yang ditinggalkan justru membingungkan.
-
-| # | Hari/slot | Judul kerja | POV | Hook | BALIK (dugaan → kenyataan) | SRC |
+| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |
 |---|---|---|---|---|---|---|
-| EP01 | H1 pagi | **TIGA PENJAGA YANG TIDAK PERNAH PULANG** | A | detail 1 | "Diterjang badai" → tidak ada badai; yang hilang justru satu orang yang punya alasan pergi | NEEDS-SOURCE |
-| EP02 | H2 pagi | **SEMBILAN ORANG, SATU TENDA YANG DIPOTONG DARI DALAM** | B | angka 2 | "Dibunuh" → tidak ada luka perkelahian; tubuh mereka menunjukkan upaya menyelamatkan diri | NEEDS-SOURCE |
-| EP03 | H3 pagi | **KAPAL YANG MASIH UTUH, AWAK YANG HILANG** | B | kontradiksi 3 | "Diserang bajak laut" → barang berharga utuh, sekoci yang hilang | NEEDS-SOURCE |
-| EP04 | H4 pagi | **EMPAT PRIA, SATU MOBIL, DAN SEBUAH JALAN YANG TIDAK ADA** | A | adegan 6 | "Kabur" → mereka justru mendaki ke tempat yang lebih berbahaya | NEEDS-SOURCE |
-| EP05 | H5 pagi | **KOLONI YANG HILANG TANPA SATU PUN MAYAT** | D | pengakuan 5 | "Dibantai" → tidak ada kuburan, tidak ada sisa perkelahian, tidak ada apa pun | NEEDS-SOURCE |
+| EP01 | H1 pagi | **TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL** | A | Donald McArthur, penjaga pengganti di Eilean Mòr. | Satu set pakaian tahan air tertinggal di gantungan. | VERIFIED |
+| EP02 | H2 pagi | **MEREKA MEMOTONG TENDA ITU DARI DALAM** | B | Igor Dyatlov, 23 tahun, pemimpin kelompok pendaki Ural. | Tenda itu disobek dari sisi dalam, dengan pisau. | NEEDS-SOURCE |
+| EP03 | H3 pagi | **KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA** | B | Benjamin Briggs, kapten Mary Celeste. Istrinya dan anaknya ikut di kapal. | Sekoci hilang, kompas hilang. Kapalnya sendiri utuh. | NEEDS-SOURCE |
+| EP04 | H4 pagi | **MEREKA BERJALAN MENJAUH DARI PERTOLONGAN** | A | Lima pria muda dari Yuba County, California. Salah satunya, Gary Mathias. | Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh. | NEEDS-SOURCE |
+| EP05 | H5 pagi | **MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN** | D | Seratus lima belas orang koloni Roanoke, termasuk seorang bayi bernama Virginia Dare. | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. | NEEDS-SOURCE |
 
-## Seri 2 — TERSEMBUNYI (slot malam, 55–60 s)
+## TERSEMBUNYI — Sesuatu yang berlangsung lama tepat di depan mata orang.
 
-Sesuatu yang berlangsung lama tepat di depan mata orang.
-
-| # | Hari/slot | Judul kerja | POV | Hook | BALIK | SRC |
+| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |
 |---|---|---|---|---|---|---|
-| EP06 | H1 malam | **API DI BAWAH KOTA YANG TIDAK PERNAH MATI** | B | angka 2 | "Kebakaran yang sudah padam" → api masih menyala, dan akan menyala lebih lama dari usia kita | NEEDS-SOURCE |
-| EP07 | H2 malam | **RUMAH YANG PENUH ORANG, DAN TIDAK ADA SATU PUN YANG KELUAR** | A | detail 1 | "Pembunuh datang malam itu" → pelakunya sudah ada di dalam sejak berhari-hari | NEEDS-SOURCE |
-| EP08 | H3 malam | **PEREMPUAN TANPA NAMA YANG MEMAKAI SEMBILAN IDENTITAS** | B | kontradiksi 3 | "Dia korban" → dia menyiapkan semuanya sendiri, dengan sangat rapi | NEEDS-SOURCE |
-| EP09 | H4 malam | **PRIA YANG MEMBAWA KERTAS DENGAN DUA KATA YANG TIDAK BISA DIBACA** | D | pengakuan 5 | "Misteri abadi" → identitasnya terpecahkan 74 tahun kemudian, oleh keturunan | NEEDS-SOURCE |
-| EP10 | H5 malam | **DUA KEMBAR YANG HANYA BERBICARA SATU SAMA LAIN** | B | detail 1 | "Gangguan jiwa" → mereka menciptakan bahasa dan dunia sendiri, lalu berhenti bicara ke dunia | NEEDS-SOURCE |
+| EP06 | H1 malam | **API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN** | B | Warga terakhir Centralia, Pennsylvania. | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. | NEEDS-SOURCE |
+| EP07 | H2 malam | **JEJAK KAKI ITU HANYA SATU ARAH** | A | Keluarga Gruber di pertanian Hinterkaifeck, Bavaria. Enam orang, dua di antaranya balita. | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. | NEEDS-SOURCE |
+| EP08 | H3 malam | **SEMUA LABEL DI PAKAIANNYA DIPOTONG** | B | Seorang perempuan tanpa nama, ditemukan di lembah Isdalen, Norwegia. | Semua label di pakaiannya dipotong. Termasuk di sepatu. | NEEDS-SOURCE |
+| EP09 | H4 malam | **DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK** | D | Pria tanpa nama di pantai Somerton, Australia Selatan. | Secarik kertas di saku: TAMAM SHUD. Tidak ada dompet, tidak ada tanda pengenal. | NEEDS-SOURCE |
+| EP10 | H5 malam | **MEREKA MEMBUAT BAHASA SENDIRI, LALU DIPISAHKAN** | B | June Gibbons, satu dari dua kembar identik di Wales. | Mereka menulis novel dan puisi dalam bahasa yang mereka buat sendiri. | NEEDS-SOURCE |
 
-## Seri 3 — ANEH (slot siang, 50–60 s)
+## ANEH — Anomali nyata yang terasa fiksi, tapi tercatat.
 
-Anomali nyata yang terasa fiksi, tapi tercatat.
-
-| # | Hari/slot | Judul kerja | POV | Hook | BALIK | SRC |
+| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |
 |---|---|---|---|---|---|---|
-| EP11 | H1 siang | **72 DETIK SINYAL YANG TIDAK PERNAH TERULANG** | B | angka 2 | "Pesan alien" → belum pernah terdeteksi lagi, dari arah yang tidak bisa dijelaskan | NEEDS-SOURCE |
-| EP12 | H2 siang | **KOTA YANG MENARI SAMPAI MATI** | A | adegan 6 | "Histeria massal" → mereka menari berhari-hari dan sebagian benar-benar meninggal | NEEDS-SOURCE |
-| EP13 | H3 siang | **DUA PRIA, MASKER TIMAH, DAN SEBUAH PESAN TENTANG KEMATIAN** | B | detail 1 | "Bunuh diri" → uang, pesan, dan jam yang tidak cocok dengan bunuh diri | NEEDS-SOURCE |
-| EP14 | H4 siang | **SIAPA PUN YANG MENEROBOS SIARAN TV INI TIDAK PERNAH TERTANGKAP** | D | kontradiksi 3 | "Aksi iseng" → pelakunya paham infrastruktur siaran, dan sampai sekarang tak dikenal | NEEDS-SOURCE |
-| EP15 | H5 siang | **TENGKORAK 18.000 TAHUN YANG MENGGUNCANG SEMUA BUKU SEJARAH** | D | pengakuan 5 | "Manusia modern menyebar dari satu tempat" → di Flores ada spesies manusia lain, sebesar anak-anak | NEEDS-SOURCE |
-| EP16 | H6 siang | **DUA BELAS ORANG TERTAWA, DAN TIDAK ADA YANG BISA BERHENTI** | B | angka 2 | "Lucu" → tawanya menular seperti wabah, selama berbulan-bulan | NEEDS-SOURCE |
+| EP11 | H1 siang | **TUJUH PULUH DUA DETIK YANG TIDAK PERNAH TERULANG** | B | Jerry Ehman, astronom yang membaca hasil cetak teleskop. | Sinyal itu datang tepat di frekuensi hidrogen — frekuensi paling masuk akal untuk mengirim pesan. | NEEDS-SOURCE |
+| EP12 | H2 siang | **KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA** | A | Frau Troffea, perempuan pertama yang menari di jalan Strasbourg. | Kota itu tidak menghentikan mereka. Dokter menyarankan sebaliknya. | NEEDS-SOURCE |
+| EP13 | H3 siang | **MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG** | B | Miguel Viana dan Manoel Cruz, dua pria di Bukit Vintém, Rio de Janeiro. | Catatan itu menyuruh mereka menunggu, menelan kapsul, lalu memakai masker. | NEEDS-SOURCE |
+| EP14 | H4 siang | **DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP** | D | Seorang teknisi siaran di Chicago yang melihat sinyalnya diambil alih. | Pembajakan terjadi dua kali dalam satu malam, di dua saluran berbeda. | NEEDS-SOURCE |
+| EP15 | H5 siang | **TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN** | D | Tim penggalian Gua Liang Bua, Flores, 2003. | Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan. | NEEDS-SOURCE |
+| EP16 | H6 siang | **TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS** | B | Tiga murid perempuan di sekolah Kashasha, Tanganyika. | Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan. | NEEDS-SOURCE |
 
-## Seri 4 — BENCANA (slot pagi/malam, 45–60 s)
+## BENCANA — Kekuatan yang jauh lebih besar dari manusia — dan salah paham tentangnya.
 
-Kekuatan yang jauh lebih besar dari manusia — dan salah paham tentangnya.
-
-| # | Hari/slot | Judul kerja | POV | Hook | BALIK | SRC |
+| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |
 |---|---|---|---|---|---|---|
-| EP17 | H6 pagi | **SUARA PALING KERAS DALAM SEJARAH TERDENGAR 4.800 KM JAUHNYA** | A | angka 2 | "Gunung meletus biasa" → tekanan udaranya memecahkan gendang telinga orang di benua lain | NEEDS-SOURCE |
-| EP18 | H7 pagi | **LETUSAN DI INDONESIA YANG MENGHAPUS MUSIM PANAS DI EROPA** | D | pengakuan 5 | "Bencana lokal" → seluruh dunia kehilangan panen selama setahun | NEEDS-SOURCE |
-| EP19 | H7 siang | **LEDAKAN YANG TIDAK PERNAH DICATAT SEBAGAI LEDAKAN** | B | kontradiksi 3 | "Meteor" → sampai hari ini tidak ada kawah, tidak ada pecahan, hanya pohon yang rebah seragam | NEEDS-SOURCE |
-| EP20 | H7 malam | **DANAU YANG MENGELUARKAN NAPAS DAN MEMBUNUH 1.700 ORANG DALAM SATU MALAM** | B | detail 1 | "Letusan gunung" → tidak ada letusan, tidak ada lava, hanya gas tak berwarna | NEEDS-SOURCE |
+| EP17 | H6 pagi | **SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER** | A | Seorang kapten kapal di Selat Sunda, pagi 27 Agustus 1883. | Suara itu tidak hanya terdengar. Gelombang tekanannya tercatat di barometer seluruh dunia. | NEEDS-SOURCE |
+| EP18 | H7 pagi | **GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA** | D | Seorang petani di Eropa, 1816, yang menanam di bulan yang salah. | Debu dari sebuah gunung di Sumbawa terbang ke stratosfer dan memantulkan sinar matahari. | NEEDS-SOURCE |
+| EP19 | H7 siang | **LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG** | B | Leonid Kulik, ilmuwan yang memimpin ekspedisi pertama ke Siberia, 1927. | Dua ribu kilometer persegi hutan rebah menjauhi satu titik — dan di titik itu tidak ada apa-apa. | NEEDS-SOURCE |
+| EP20 | H7 malam | **YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN** | B | Warga desa di lembah Danau Nyos, Kamerun. | Tidak ada letusan, tidak ada lava, tidak ada api. Tidak ada yang bisa dilihat. | NEEDS-SOURCE |
 
-## Seri 5 — HARGA (penutup, slot malam)
+## HARGA — Yang harus dibayar seseorang supaya orang lain aman.
 
-| # | Hari/slot | Judul kerja | POV | Hook | BALIK | SRC |
+| # | Hari/slot | Judul | POV | Protagonis | Tanaman → berubah jadi | SRC |
 |---|---|---|---|---|---|---|
-| EP21 | H6 malam | **MEREKA DIMINTA MENJILAT KUAS, LALU RAHANG MEREKA RONTOK** | A | detail 1 | "Kecelakaan kerja" → perusahaannya tahu, dan menyembunyikannya selama bertahun-tahun | NEEDS-SOURCE |
+| EP21 | H6 malam | **MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI** | A | Seorang pelukis dial jam di pabrik Orange, New Jersey, 1917. | Dokter perusahaan punya satu diagnosis untuk semua gejala itu: sifilis. | NEEDS-SOURCE |
 
 ---
 
 ## Peta hari
 
-| Hari | 07.00 (pagi) | 12.30 (siang) | 19.30 (malam) |
+| Hari | 07.00 | 12.30 | 19.30 |
 |---|---|---|---|
-| **H1** | EP01 Tiga Penjaga | EP11 72 Detik | EP06 Api Bawah Kota |
-| **H2** | EP02 Sembilan Orang | EP12 Kota Menari | EP07 Rumah Penuh |
-| **H3** | EP03 Kapal Utuh | EP13 Masker Timah | EP08 Perempuan Tanpa Nama |
-| **H4** | EP04 Empat Pria | EP14 Siaran Dibajak | EP09 Dua Kata |
-| **H5** | EP05 Koloni Hilang | EP15 Tengkorak Flores | EP10 Dua Kembar |
-| **H6** | EP17 Suara Terkeras | EP16 Dua Belas Tawa | EP21 Kuas Beracun |
-| **H7** | EP18 Musim yang Hilang | EP19 Ledakan Tanpa Kawah | EP20 Danau Bernapas |
+| **H1** | EP01 TIGA PENJAGA DAN SATU SET PAKAIAN  | EP11 TUJUH PULUH DUA DETIK YANG TIDAK P | EP06 API DI BAWAH KOTA YANG TIDAK PERNA |
+| **H2** | EP02 MEREKA MEMOTONG TENDA ITU DARI DAL | EP12 KOTA YANG MENGOBATI MEREKA DENGAN  | EP07 JEJAK KAKI ITU HANYA SATU ARAH |
+| **H3** | EP03 KAPAL YANG MASIH BISA BERLAYAR, AW | EP13 MEREKA MENUNGGU SESEORANG YANG TID | EP08 SEMUA LABEL DI PAKAIANNYA DIPOTONG |
+| **H4** | EP04 MEREKA BERJALAN MENJAUH DARI PERTO | EP14 DUA KALI DALAM SATU MALAM, DAN TID | EP09 DUA KATA YANG MENYEMBUNYIKAN SEORA |
+| **H5** | EP05 MEREKA MENULIS SATU KATA, BUKAN SE | EP15 TULANG YANG MEMBUKTIKAN KITA TIDAK | EP10 MEREKA MEMBUAT BAHASA SENDIRI, LAL |
+| **H6** | EP17 SUARA YANG TERDENGAR SEJAUH 4.800  | EP16 TAWA YANG MENYEBAR SEPERTI WABAH,  | EP21 MEREKA DIAJARI MENJILAT KUAS, SETI |
+| **H7** | EP18 GUNUNG DI SUMBAWA YANG MENCURI SAT | EP19 LEDAKAN YANG TIDAK MENINGGALKAN AP | EP20 YANG MEMBUNUH MEREKA ADALAH UDARA  |
 
-**Prinsip urutan:** H1 dan H7 adalah hari penentu — masing-masing dibuka episode
-terkuat di serinya. Kategori dicampur tiap hari supaya feed tidak terasa monoton,
-dan slot malam selalu yang paling atmosferik.
+**Prinsip urutan:** H1 dan H7 dibuka episode terkuat di serinya.
+Kategori dicampur tiap hari supaya feed tidak monoton; slot malam selalu
+yang paling atmosferik.
 
 ---
 
-## Catatan produksi
+## Catatan
 
-- **Semua 21 baris `SRC` masih `NEEDS-SOURCE`.** Itu bukan kelalaian: peristiwa
-  ini nyata dan terdokumentasi luas, tetapi saya tidak akan menandainya
-  `VERIFIED` sebelum rujukan primer/ilmiahnya benar-benar dibaca di sesi ini.
-  Aturan mainnya ada di `00_STRATEGI.md` §6 — gate `evidence` di
-  `tools/episode.py check` akan menolak tayang kalau baris ini kosong.
-- Urutan kerja yang diminta dipatuhi: **ide → script (headline) → thumbnail →
-  baru visual plan** (`05_VISUAL_PLAN.md`), dan visual plan tidak ada di dokumen
-  ini.
+- 1 episode `VERIFIED`, 20 `NEEDS-SOURCE`.
+  Yang `NEEDS-SOURCE` belum boleh tayang — kerangkanya siap, verifikasinya belum.
+- Urutan kerja: ide → script → thumbnail (gambar hasil generasi) → visual plan.
