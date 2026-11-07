@@ -19,7 +19,7 @@ Orang hilang tanpa jejak, dan jejak yang ditinggalkan justru membingungkan.
 | EP02 | H2 pagi | **SEMBILAN ORANG, SATU TENDA YANG DIPOTONG DARI DALAM** | B | angka 2 | "Dibunuh" → tidak ada luka perkelahian; tubuh mereka menunjukkan upaya menyelamatkan diri | NEEDS-SOURCE |
 | EP03 | H3 pagi | **KAPAL YANG MASIH UTUH, AWAK YANG HILANG** | B | kontradiksi 3 | "Diserang bajak laut" → barang berharga utuh, sekoci yang hilang | NEEDS-SOURCE |
 | EP04 | H4 pagi | **EMPAT PRIA, SATU MOBIL, DAN SEBUAH JALAN YANG TIDAK ADA** | A | adegan 6 | "Kabur" → mereka justru mendaki ke tempat yang lebih berbahaya | NEEDS-SOURCE |
-| EP05 | H5 pagi | **KOLONI YANG HILANG TANPA SATU PUN MAYAT** | D | pengakuan 5 | "Dibantai" → tidak ada kuburan, tidak ada sisa perkelahian, tidak ada apa pun | LEGEND |
+| EP05 | H5 pagi | **KOLONI YANG HILANG TANPA SATU PUN MAYAT** | D | pengakuan 5 | "Dibantai" → tidak ada kuburan, tidak ada sisa perkelahian, tidak ada apa pun | NEEDS-SOURCE |
 
 ## Seri 2 — TERSEMBUNYI (slot malam, 55–60 s)
 
