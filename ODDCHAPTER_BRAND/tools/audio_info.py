@@ -22,7 +22,26 @@ BITRATES[(2, 3)] = [0, 8, 16, 24, 32, 40, 48, 56, 64, 80, 96, 112, 128, 144, 160
 RATES = {3: [44100, 48000, 32000], 2: [22050, 24000, 16000], 0: [11025, 12000, 8000]}
 
 
+def parse_wav(path):
+    """RIFF/WAVE header: byte rate at 28, data size at 40 → exact duration."""
+    b = Path(path).read_bytes()[:64]
+    if b[:4] != b"RIFF" or b[8:12] != b"WAVE":
+        return None
+    byte_rate = int.from_bytes(b[28:32], "little")
+    channels = int.from_bytes(b[22:24], "little")
+    rate = int.from_bytes(b[24:28], "little")
+    size = Path(path).stat().st_size
+    i = b.find(b"data")
+    data_len = int.from_bytes(Path(path).read_bytes()[i+4:i+8], "little") if i >= 0 else size - 44
+    if not byte_rate:
+        return None
+    return dict(duration=data_len / byte_rate, rate=rate, bitrate=byte_rate * 8 // 1000,
+                channels=channels, mode="WAV/PCM", frames=0, byte_est=data_len / byte_rate)
+
+
 def parse(path):
+    if Path(path).suffix.lower() == ".wav":
+        return parse_wav(path)
     data = Path(path).read_bytes()
     i = 0
     if data[:3] == b"ID3":
@@ -105,7 +124,7 @@ if __name__ == "__main__":
             continue
         size = Path(f).stat().st_size / 1024
         eff = (Path(f).stat().st_size * 8) / info["duration"] / 1000
-        bpf = Path(f).stat().st_size / info["frames"]
+        bpf = Path(f).stat().st_size / max(info["frames"], 1)
         print(f"{Path(f).name:30} {info['duration']:6.2f} s  "
               f"{info['frames']:4d} frames @ {bpf:5.1f} B/frame  "
               f"{info['rate']} Hz  {info['channels']} ch  "

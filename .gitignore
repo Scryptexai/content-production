@@ -1,0 +1,5 @@
+# episode media stays out of git; the text artifacts stay in
+EPISODES/**/*.mp4
+EPISODES/**/*.mov
+EPISODES/**/*.wav
+EPISODES/**/*.aiff

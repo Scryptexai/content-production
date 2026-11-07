@@ -25,6 +25,7 @@ be rebuilt from that source.
 | 9 | Audio identity | **Complete** — voice auditioned, spoken signature delivered + `08_AUDIO/AUDIO_IDENTITY.md` |
 | 10 | Brand portal | **Complete** — `portal/index.html`, every asset browsable, link-checked |
 | 11 | Episode production kit | **Complete** — `09_EPISODE_KIT/PIPELINE.md` + on-screen graphics + 3 templates |
+| 12 | Episode tooling | **Complete** — `tools/episode.py new|check`, gates run as a command |
 
 Full verification table and open items: **`FINAL_DELIVERY_REPORT.md`**.
 
@@ -53,6 +54,7 @@ ODDCHAPTER_BRAND/
 │   ├── audio_info.py            MP3 duration parser (no ffprobe on this host)
 │   ├── check_portal.py          validates portal markup + every asset link
 │   ├── build_episode_kit.py     Phase 11: on-screen graphics (1920 × 1080)
+│   ├── episode.py               Phase 12: scaffold an episode + run the pipeline gates
 │   ├── build_concepts.py        Phase 2 record (kept for history)
 │   ├── build_link.py            Phase 2.5 refinement preview
 │   ├── render_all.sh            re-renders every PNG at its documented size
@@ -147,6 +149,8 @@ storyboard — moves together. That is what keeps the geometry from drifting bet
 | 28 | Portal links are checked at build time | A broken hero image is worse than no portal; `check_portal.py` fails `render_all.sh` | Applied |
 | 29 | Episode pacing is budgeted at 140 words/min, not guessed | Measured from the reference read; a 10-minute film carries ~1,250 words of VO | Applied |
 | 30 | On-screen graphics live inside a 120 px safe margin | YouTube's player chrome and the subtitle zone would otherwise eat the straps | Applied |
+| 31 | Budgets are computed in seconds, then converted to words | 10 minutes is not 1,400 words of speech — 35 s is title card and sign-off | Applied |
+| 32 | The checker reports structure only, and says so | It can pass a bad film with a tidy folder; claiming otherwise would be a lie | Applied |
 
 ---
 

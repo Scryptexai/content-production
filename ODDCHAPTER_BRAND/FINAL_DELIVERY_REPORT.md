@@ -22,6 +22,7 @@ cannot drift apart. Change a radius there and the whole set rebuilds consistentl
 | `07_PRINT/` | one-colour 100 K masters, letterhead, card front/back, A2 poster, die-cut sticker, tee art, minimum-size sheet + `PRINT_SPEC.md` | 9 SVG · 7 PNG |
 | `08_AUDIO/` | `AUDIO_IDENTITY.md` + spoken signature (ID 5.93 s, EN 3.70 s) + 20.54 s cold-open reference read | 3 MP3 |
 | `09_EPISODE_KIT/` | `PIPELINE.md` (7 stages + gates), on-screen graphics (name/location straps, chapter card, subtitle plate), beat sheet / publish checklist / thumbnail brief | 4 SVG · 4 PNG · 4 MD |
+| `tools/episode.py` | scaffold + gate checker for episode folders (`new` / `check`) | 1 script |
 | `portal/` | `index.html` — the whole system as one browsable page (mark, colour, type, usage, motion, audio, on-screen, channel, print, file index) | 1 HTML |
 
 Total: **64 SVG · 65 PNG · 1 GIF · 3 MP3 · 17 documents · 1 portal page.** Everything is on the branch and reproducible.
@@ -49,6 +50,7 @@ Every claim below was measured in this environment, not assumed.
 | Print artwork | parsed mm, rendered at 300/150/90 dpi, inspected | All nine files measure as specified; card, letterhead, poster, sticker, tee and 100 K masters inspected |
 | Audio durations | frame-count parse of the MPEG stream (`tools/audio_info.py`) | 5.93 s / 3.70 s / 20.54 s; pacing 140 words/min |
 | Audio pronunciation | — | **NOT VERIFIED** — nothing here can listen; the owner must check *ODDCHAPTER* against the guide |
+| Episode tooling | dry run: scaffolded an empty episode, ran the gates (7 FAIL), filled it, re-ran (8 PASS), then deleted the folder | Works end to end; the checker refuses an incomplete episode and passes a complete one |
 | On-screen graphics | rendered at 1920 × 1080 and inspected; text checked against the 120 px margin and the subtitle zone | Cards, straps and subtitle plate clean; chapter card re-spaced after the first render |
 | Portal | `tools/check_portal.py`: markup closes, 30 local refs resolve, 27 images/audio decode, only Google Fonts loaded remotely; served over HTTP and fetched (200 + correct MIME) | VERIFIED structurally — **not** visually: there is no browser in this sandbox |
 | Font licensing | `LICENSE` inside each `@fontsource` package | Space Grotesk + Inter = SIL OFL 1.1 |

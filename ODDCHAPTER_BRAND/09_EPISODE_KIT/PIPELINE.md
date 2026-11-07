@@ -123,6 +123,39 @@ template, ≤ 4 words, one orange element · end card in the last 20 s.
 
 ---
 
+## 7b. The gates as a command
+
+The gates above are executable — the folder either passes or it does not:
+
+```bash
+python3 tools/episode.py new kapal-hilang --minutes 10 --chapters 3   # scaffold + word budgets
+python3 tools/episode.py check ../EPISODES/EP_kapal-hilang            # run the gates
+```
+
+`new` writes the episode folder from these templates and computes the beat sheet at 140 words/min —
+45 s of speech is 105 words, and the arithmetic is not left to the scriptwriter to guess.
+`check` reads the folder and reports each gate:
+
+| Gate | What it actually checks |
+|---|---|
+| `episode.json` | the plan exists (was it scaffolded, or improvised?) |
+| evidence sheet | at least one row with claim **and** source **and** date |
+| script word count | within ±5 % of the plan's VO budget |
+| voice-over | a `.wav`/`.mp3` exists and its duration parses |
+| thumbnail | exactly 1280 × 720 |
+| subtitles | ≤ 2 lines per cue, ≤ 42 characters per line |
+| master | an `.mp4` exists — **existence only**, dimensions are not verified (no `ffprobe` here) |
+| metadata | a title ≤ 60 characters and chapters starting at `00:00` |
+
+It is deliberately a *structural* check. It will pass a badly written, badly lit, badly acted film
+with a perfect folder — and it says so when it passes. Use it to stop forgetting things, not to feel
+finished.
+
+Media is git-ignored (`EPISODES/**/*.mp4|mov|wav`); the script, evidence sheet and metadata stay in
+version control, because those are the parts you will want to read again.
+
+---
+
 ## 8. The timeline
 
 | When | Stage | Output |
