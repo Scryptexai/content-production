@@ -132,6 +132,27 @@ satu aksen hangat, tanpa wajah, tanpa teks, ruang kosong di sepertiga atas.
 | consequence | `13_empty_sea` | laut kosong: tidak satu pun mayat | geser kanan |
 | loop | `07_oilskins` | pakaian yang sama, kembali — lingkaran menutup | push-in |
 
+### EP02 — 12 segmen, 12 gambar
+
+| segmen | gambar | isi | why it matches the line |
+|---|---|---|---|
+| hook | `00_hikers` | sembilan pendaki berbaris dari belakang, sorot lampu kepala, malam | entitas pembuka: sembilan orang itu |
+| tanya | `01_tent_cut` | kain tenda terpotong dari dalam, menganga | pertanyaannya tentang potongan itu |
+| relate | `02_tent_inside` | dalam tenda: bunga es, lampu, kantung tidur | "tidur di tempat asing" |
+| setup | `03_group` | sembilan orang berbaris di lereng, wajah tidak terbaca | "mereka mahasiswa Ural" |
+| tension 1 | `04_train` | satu orang di peron, tangan di pinggang, kereta uap | "pulang karena sakit punggung" |
+| tension 2 | `05_slope` | tenda sendirian di lereng, masih berdiri | "ditemukan masih berdiri" |
+| tension 3 | `06_footprints` | jejak telanjang turun ke garis hutan | "jejak kaki turun ke hutan" |
+| tension 4 | `07b_ravine` | jurang bersalju, rongga di salju | "empat di jurang" |
+| turn 1 | `08_casefile` | berkas kasus di meja, teks tidak terbaca | "enam puluh tahun dugaan" |
+| turn 2 | `09_avalanche` | garis patahan salju, lempeng menjauh | "memodelkan longsoran salju" |
+| consequence | `10_tent_dark` | tenda gelap di kejauhan, tidak ada jejak pulang | "tidak kembali ke tenda" |
+| loop | `01_tent_cut` | potongan yang sama, kembali | lingkaran menutup |
+
+Catatan QA EP02: cue "1 DARI 9" dipasang di beat Yudin, bukan "TENDA DIPOTONG" —
+cue harus menyebut hal yang memang ada di beat itu. Foto beat 4 memakai jurang,
+bukan cedar, karena caption-nya "Empat di jurang. Tulang retak."
+
 Aturan pemilihan gambar, bukan selera: **satu segmen = satu benda atau satu
 ruang yang bisa disebut dalam satu kata.** Kalau sebuah gambar butuh dijelaskan,
 ia salah untuk frame 2 detik.
