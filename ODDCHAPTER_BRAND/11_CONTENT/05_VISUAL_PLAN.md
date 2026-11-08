@@ -334,7 +334,8 @@ berubah. Sekarang file itu dihasilkan, bukan ditulis tangan.
 |---|---|---|---|
 | EP01 `tower` | ya — 11 foto, klimaks-di-awal + relate | ya (terukur, 11 segmen) | **ya** — 64,85 s · 1945 f · `18u4GwSOAMVIsCtnPIGBAjvc-Axy-Nrur` |
 | EP02 `shelter` | ya — 12 foto, klimaks-di-awal + relate | ya (terukur, 12 segmen) | **ya** — 72,32 s · 2169 f · `1WF4yQQkg02pctkJ8QsX-xls37gQCvoyJ` |
-| EP03–EP21 | bentuk sudah ada | `tanya` + `entitas` sudah ditulis, beat belum distruktur | belum |
+| EP03 `vessel` | ya — 10 foto + 2 reprise | 10 dari 12 segmen terukur (2 baris menyusul) | belum — siap render |
+| EP04–EP21 | bentuk sudah ada | `tanya` + `entitas` sudah ditulis, beat belum distruktur | belum |
 
 Status struktur per episode: **EP01 sudah klimaks-di-awal** (gate butir 0 lulus).
 EP02–EP21 punya `hook` bertanggal, `tanya`, dan `entitas`, tetapi beatnya masih

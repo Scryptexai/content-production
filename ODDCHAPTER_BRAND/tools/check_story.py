@@ -30,7 +30,7 @@ SUMMARY = ("bertahun-tahun", "selama bertahun", "sampai sekarang", "hingga kini"
 
 # Benda yang bisa dilihat penonton. Satu baris wajib punya salah satunya (atau angka).
 CONCRETE = set("""
-orang pria perempuan anak ibu ayah bayi mahasiswa pendaki penjaga awak kapten penumpang pekerja
+orang pria perempuan anak ibu ayah istri bayi mahasiswa pendaki penjaga awak kapten penumpang pekerja
 dokter ilmuwan insinyur tentara pasukan warga keluarga saudara mayat senjata tubuh tangan kaki kepala mata mulut
 gigi tulang dada darah rambut wajah kulit otak jantung
 tenda sepatu kaus jaket pakaian topi masker kuas kertas buku jurnal arsip surat peta kunci pintu
@@ -40,6 +40,7 @@ sungai hutan api asap gas angin hujan kabut langit bintang tanah lantai atap din
 pulau desa kota kampung darat pantai pelabuhan stasiun pabrik tambang terowongan gereja kuburan pos
 sinyal radio suara frekuensi sirene nada rekaman film foto kamera label nama angka alamat kamar
 karpet botol obat jarum timah nampan piring sendok pisau tali sekop bendera
+makanan kompas palka sekstan kronometer jangkar layar kemudi dayung pelampung
 """.split())
 
 STOP = {"yang", "dan", "itu", "ini", "dengan", "untuk", "dari", "tidak", "tapi",
@@ -168,7 +169,9 @@ def check(e):
         for ph in SUMMARY:
             if ph in ln.lower():
                 line_bad.append(f"{name}: kalimat ringkasan '{ph}'")
-        if not (re.search(r"\d", ln) or any(w in CONCRETE for w in words(ln))):
+        def concrete(w):
+            return w in CONCRETE or re.sub(r"(nya|ku|mu)$", "", w) in CONCRETE
+        if not (re.search(r"\d", ln) or any(concrete(w) for w in words(ln))):
             line_bad.append(f"{name}: tidak ada benda konkret — '{ln[:44]}…'")
     if line_bad:
         if header:
