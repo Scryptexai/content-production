@@ -42,15 +42,35 @@ terasa dibohongi dan mereka keluar sebelum detik ketiga.
 
 ---
 
-## 0b · HOOK: SATU PERTANYAAN ATAU SATU FAKTA
+## 0b · URUTAN PEMBUKA: KLIMAKS + ENTITAS → CUT → CERITA
 
-Kalimat pertama hook harus **pertanyaan** atau **fakta yang bisa dicek** (ada
-angka: tahun, jumlah, jarak). Kalimat suasana tidak boleh jadi pembuka — ia
-terdengar seperti penulis yang belum memutuskan mau bilang apa. Dijaga gate
+Kalimat pertama hook harus **pertanyaan** atau **fakta yang bisa dicek** (angka:
+tahun, jumlah, jarak). Kalimat suasana tidak boleh jadi pembuka. Dijaga gate
 butir 1b.
 
-EP01 sekarang: `15 Desember 1900. Tiga penjaga menghilang. Pakaian tahan air
-mereka masih di gantungan.` → tanggal, peristiwa, benda. Tiga hal dalam 13 kata.
+Lebih dari itu, urutan gambarnya juga punya aturan (lengkap di `00B` §0):
+
+| detik | gambar | suara |
+|---|---|---|
+| 0–1,5 | **file thumbnail**, tanpa overlay | — |
+| 1,5–9 | **entitas**: tiga penjaga di kaki menara, punggung menghadap kamera | fakta bertanggal: masuk, tidak ada yang keluar |
+| 9–15 | **cut** ke ruang jaga yang kosong — tiga cangkir, tiga kursi, tidak ada orang | pertanyaan: *apa yang terjadi? bagaimana bisa?* |
+| 15+ | cerita dari awal: `Sebelas hari sebelumnya…` | — |
+
+Kenapa entitas dulu: penonton menempel pada **orang**, bukan pada pemandangan.
+Menara di laut kosong boleh muncul belakangan sebagai tempat; kalau ia jadi
+frame pertama, tidak ada yang bisa ditunjuk dan tidak ada yang bisa hilang.
+
+Larangan yang dijaga gate (butir 0):
+
+- `entitas` wajib ada dan **disebut di hook** — kalau tidak bisa ditunjuk, bukan entitas.
+- foto pembuka tidak boleh lanskap (`island`, `sea`, `sky`, `horizon`).
+- `tanya` wajib berupa pertanyaan dan **tidak sama dengan hook** — cut harus menambah sesuatu.
+- struktur `klimaks-awal`: beat pertama berpart `tanya`, teksnya sama dengan field `tanya`.
+
+EP01 (v6): `15 Desember 1900. Tiga penjaga masuk ke menara. Tidak ada yang melihat
+mereka keluar.` → `Apa yang terjadi di dalam? Bagaimana tiga orang hilang dari
+pulau batu tanpa satu pun jejak?` → `Sebelas hari sebelumnya.`
 
 ---
 
@@ -84,23 +104,24 @@ gagal — karena berarti tidak ada yang bergerak di dalamnya.
 
 ## 2 · FOTO PER SEGMEN (EP01)
 
-Sepuluh segmen, sepuluh gambar, satu gambar per segmen — tidak ada yang dipakai
-dua kali kecuali kalau maknanya berubah. Semua dalam satu resep: gelap, hampir
-monokrom arang–tulang, satu aksen hangat, tanpa wajah, tanpa teks, ruang kosong
-di sepertiga atas.
+Sebelas segmen, sebelas gambar — satu gambar per segmen, dan hanya `07_oilskins`
+dipakai dua kali karena di loop maknanya berubah: dari "yang tidak dia bawa" jadi
+"yang tertinggal". Semua dalam satu resep: gelap, hampir monokrom arang–tulang,
+satu aksen hangat, tanpa wajah, tanpa teks, ruang kosong di sepertiga atas.
 
 | segmen | gambar | isi | gerak kamera |
 |---|---|---|---|
-| hook | `01_hook` | pakaian tahan air di gantungan, boots kosong, lampu minyak | push-in |
-| setup | `02_island` | pulau batu di laut luas, satu menara | tarik-out |
+| hook | `00_keepers` | tiga penjaga di kaki menara, punggung menghadap kamera | push-in |
+| tanya | `01_empty_room` | ruang jaga kosong: tiga cangkir, tiga kursi, lampu menyala | tarik-out |
+| setup | `02_island` | pulau batu di laut luas, satu menara | geser kanan |
 | tension 1 | `03_ship` | dek kapal uap, menara di balik kabut, lampu menara mati | geser kiri |
-| tension 2 | `11_lighthouse_far` | menara dari jauh di laut kosong, lampu mati — sebelas hari | geser kanan |
-| tension 3 | `04_door` | pintu besi menara, tertutup dari dalam | push-in |
+| tension 2 | `11_lighthouse_far` | menara dari jauh di laut kosong — sebelas hari | geser kanan |
+| tension 3 | `04_door` | pintu besi menara, terkunci dari dalam | push-in |
 | tension 4 | `12_clock` | jam kuningan berhenti, berdebu — kerja pagi selesai | tarik-out |
-| turn 1 | `08_logbook` | buku harian terbuka, jam berhenti | geser kiri |
-| turn 2 | `07_oilskins` | pakaian itu, dari dekat | push-in |
-| consequence | `09_sea_night` | laut malam, menara tanpa cahaya | geser kanan |
-| loop | `10_loop` | lemari museum, pakaian yang sama, 126 tahun kemudian | push-in |
+| turn 1 | `07_oilskins` | pakaian itu di gantungan, tidak diambil | push-in |
+| turn 2 | `08_logbook` | buku harian terbuka, halaman terakhir | geser kiri |
+| consequence | `13_empty_sea` | laut kosong: tidak satu pun mayat | geser kanan |
+| loop | `07_oilskins` | pakaian yang sama, kembali — lingkaran menutup | push-in |
 
 Aturan pemilihan gambar, bukan selera: **satu segmen = satu benda atau satu
 ruang yang bisa disebut dalam satu kata.** Kalau sebuah gambar butuh dijelaskan,

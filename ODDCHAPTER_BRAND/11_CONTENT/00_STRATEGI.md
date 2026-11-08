@@ -45,28 +45,30 @@ POV adalah keputusan paling menentukan retensi. Empat kandidat, tiga dipakai:
 
 ---
 
-## 3. Struktur script: H·R·R + titik balik
+## 3. Struktur script: KLIMAKS DI AWAL → CUT → CERITA
 
-Riset short-form 2026 menyimpulkan tiga hal yang menentukan retensi:
-
-- **Hook 1–3 detik** menyumbang mayoritas jangkauan. Hook yang lambat = mati.
-- **Satu ide per kalimat.** Kalimat majemuk membunuh tempo.
-- **Ganti visual tiap 2–3 detik.** Mata harus selalu punya alasan kembali.
-
-Struktur yang dipakai semua episode (45–60 detik):
+Yang menahan penonton bukan pembuka yang dihias rapi. Yang menahan penonton
+adalah **klimaks yang dipotong di tengah**, lalu ceritanya mundur ke awal. Urutan
+ini tiga langkah dan tidak boleh ditukar (lengkap: `00B` §0):
 
 ```
-HOOK        0–3 s    satu kalimat, 8–15 kata, buka loop. Tanpa sapaan, tanpa intro.
-STAKE       3–7 s    kenapa ini penting / apa taruhannya.
-BUKTI       7–20 s   fakta berurutan. Tiap 3–4 detik satu informasi baru.
-TITIK BALIK 20–35 s  dugaan pertama runtuh. Ini jantung episode.
-SISA        35–50 s  yang masih tidak terjawab — jangan tutup semua.
-LOOP        50–60 s  kalimat terakhir menyambung ke hook, memancing tonton ulang.
+KLIMAKS + ENTITAS  0–9 s    momen paling ekstrem di episode. Satu fakta bertanggal,
+                            dan yang terlihat di layar adalah ORANGNYA, bukan pemandangan.
+CUT + PERTANYAAN   9–15 s   cerita dipotong tepat di titik yang membuat orang bertanya:
+                            apa yang terjadi? bagaimana bisa? kok bisa begitu?
+CERITA DARI AWAL   15–21 s  baru sekarang "Sebelas hari sebelumnya…" — siapa, di mana, mau apa.
+BUKTI              21–42 s  fakta berurutan, tiap 3–4 detik satu informasi baru.
+TITIK BALIK        42–51 s  dugaan pertama runtuh. Detail yang ditanam di awal berubah makna.
+SISA + LOOP        51–63 s  yang masih tidak terjawab, lalu kalimat terakhir memanggil hook.
 ```
+
+Angka di atas adalah EP01 v6 yang sudah dirender; episode lain boleh 45–63 detik,
+tetapi proporsinya sama.
 
 **Yang dilarang di setiap script:**
 - "Hai guys", "selamat datang kembali", perkenalan kanal di 5 detik pertama.
-- Menjelaskan latar sebelum ketegangan dibuka.
+- Menjelaskan latar sebelum klimaksnya dipotong (detik pertama = suasana).
+- Membuka dengan pemandangan kosong; frame pertama setelah thumbnail wajib entitas.
 - Menutup dengan "like dan subscribe" — ganti dengan loop.
 - Klaim faktual tanpa status sumber.
 
@@ -86,6 +88,11 @@ sebelum dipilih. Hook final ada di file script; dua alternatifnya disimpan di
 | 4 | Perintah langsung | "Jangan cari nama orang ini di internet sebelum kamu tahu satu hal." |
 | 5 | Pengakuan salah | "Selama 70 tahun kita diberi tahu satu versi. Bukti fisiknya bilang lain." |
 | 6 | Adegan menengah-aksi | "Di tengah kalimatnya, suaranya berhenti. Rekaman masih berjalan 40 menit." |
+
+**Aturan urutan di atas semua pola:** hook bukan ringkasan cerita, melainkan
+klimaksnya — diucapkan seperti sudah terjadi, dengan entitas yang bisa ditunjuk.
+Pertanyaannya (`tanya` di `content_data.py`) harus pertanyaan yang nanti dijawab
+`turn_verdict`; pertanyaan yang tidak pernah dijawab adalah klik yang dibohongi.
 
 **Aturan kalimat:** maksimal 14 kata. Kata kerja aktif. Tanpa "sangat", "cukup",
 "banyak sekali". Satu kalimat = satu langkah cerita.

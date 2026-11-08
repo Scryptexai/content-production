@@ -112,7 +112,7 @@ def build(ep):
             chains.append(pre + f",adelay={int(round(start * 1000))}|{int(round(start * 1000))}[{out}]")
             labels.append(f"[{out}]")
             idx += 1
-    graph = ";".join(chains) + ";" + "".join(labels) + f"amix=inputs={len(labels)}:normalize=0,atrim=0:{timing['total']},alimiter=limit=0.7[out]"
+    graph = ";".join(chains) + ";" + "".join(labels) + f"amix=inputs={len(labels)}:normalize=0,apad=whole_dur={timing['total']},atrim=0:{timing['total']},volume=1.8,alimiter=limit=0.85[out]"
     dest = AUDIO / ep_id / "sfx.wav"
     dest.parent.mkdir(parents=True, exist_ok=True)
     args += ["-filter_complex", graph, "-map", "[out]", "-ac", "2", "-ar", "48000", "-c:a", "pcm_s16le", str(dest)]

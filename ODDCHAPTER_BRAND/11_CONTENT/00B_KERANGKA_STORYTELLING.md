@@ -10,6 +10,46 @@ tips. Rujukannya disebut di akhir.
 
 ---
 
+## 0. URUTAN PEMBUKA — KLIMAKS DULU, LALU CUT, LALU CERITA
+
+Urutan yang dipakai sebelum ini salah arah. Hook yang benar bukan pembuka cerita
+dari awal yang dihias; hook adalah **klimaks cerita yang dipotong di tengah**, lalu
+kita mundur ke awal. Urutannya tiga langkah dan tidak boleh ditukar:
+
+| # | langkah | isi | detik |
+|---|---|---|---|
+| 1 | **KLIMAKS + ENTITAS** | momen paling ekstrem di episode ini, dan yang terlihat di layar adalah **entitas** (orang/benda hidup/kelompok), bukan lanskap kosong. Satu fakta bertanggal. | 0–6 |
+| 2 | **CUT + PERTANYAAN** | cerita dipotong tepat di titik yang membuat penonton bertanya: *apa yang terjadi? bagaimana bisa? kok bisa begitu?* Pertanyaan diucapkan, bukan disimpulkan. | 6–12 |
+| 3 | **CERITA DARI AWAL** | baru sekarang cerita berjalan dari awal ke turn. Kata "sebelumnya" adalah pintu masuknya. | 12–60 |
+
+Kalimat pembuka pertanyaan atau fakta bukan gaya penulisan — itu pengganti
+"undangan" yang selama ini tidak ada. Penonton tidak masuk lewat suasana; dia
+masuk lewat **sesuatu yang tidak masuk akal**.
+
+Contoh EP01:
+
+```
+KLIMAKS + ENTITAS   Tiga penjaga masuk ke menara. Tidak ada yang melihat mereka keluar.
+CUT + PERTANYAAN    Apa yang terjadi di dalam? Bagaimana tiga orang hilang dari pulau batu?
+CERITA DARI AWAL    Sebelas hari sebelumnya...
+```
+
+Aturan yang lahir dari urutan ini:
+
+- **Entitas dulu.** Foto pembuka wajib memuat orang atau entitas yang bisa
+  ditunjuk penonton ("tiga penjaga ini"), bukan pemandangan. Pemandangan boleh
+  muncul di detik ke-12 sebagai *tempat*, bukan sebagai pembuka.
+- **Klimaks, bukan cuplikan.** Kalimat pembuka adalah peristiwa paling besar di
+  episode ini, diucapkan seperti sudah terjadi. Kalau pembukanya baru bagian
+  biasa dari cerita, itu ringkasan — bukan klimaks.
+- **Pertanyaan yang sama, bukan pertanyaan baru.** Pertanyaan di langkah 2 harus
+  pertanyaan yang di akhir dijawab oleh `turn_verdict`. Pertanyaan yang tidak
+  pernah dijawab adalah klik yang dibohongi.
+- **Cut-nya di detik ke-6, bukan detik ke-30.** Kalau penonton baru tahu inti
+  masalahnya di detik ke-30, dia sudah pergi.
+
+---
+
 ## 1. MODEL DASAR — Jon Franklin
 
 Jon Franklin (dua Pulitzer, *Writing for Story*) merumuskan cerita bukan sebagai

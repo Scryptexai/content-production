@@ -389,7 +389,7 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
         : <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />}
 
       {/* kedip potongan: keras di titik balik, halus di setiap beat */}
-      {active && !intro ? <CutFlash age={frame - active.startFrame} strong={inTurn} /> : null}
+      {active && !intro ? <CutFlash age={frame - active.startFrame} strong={inTurn || active.key.includes("tanya")} /> : null}
 
       {inHook && !intro && (
         <Line text={ep.title} born={active!.startFrame + 4} hold={active!.durFrames - 4} size={fit(ep.title, 92)} family="grotesk" weight={700} top={H * 0.22} />
