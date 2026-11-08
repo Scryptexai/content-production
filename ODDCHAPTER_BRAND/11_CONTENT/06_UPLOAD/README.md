@@ -72,7 +72,18 @@ tetap jalan, tapi tidak ada yang menghentikannya di tengah.
 
 ### 3. Jalankan percobaan kering
 
-Actions → **Upload episode to YouTube (Zernio)** → **Run workflow**:
+Actions → **Upload episode to YouTube (Zernio)** → **Run workflow**. Di dropdown
+**Use workflow from**, pilih branch `arena/66ec29bf-content-production` — branch
+default (`main`) masih memakai skrip dan judul yang lama. Workflow bisa dijalankan
+dari branch mana pun yang memuat file ini.
+
+Langkah pertama job adalah **Cek kredensial**: `GET /v1/profiles` dicetak, akun
+YouTube-nya ditandai, dan `ZERNIO_YOUTUBE_ACCOUNT_ID` dicocokkan. Kalau secret
+salah, job berhenti di sini — sebelum 20 MB video diunggah. Bisa diuji manual:
+
+```bash
+python3 tools/upload_zernio.py --check
+```
 
 - episode: `EP01`
 - visibility: `public`
@@ -85,7 +96,13 @@ di YouTube.
 
 ### 4. Unggah sungguhan
 
-Ulangi dengan `dry_run: false`. Hasilnya:
+Ulangi dengan `dry_run: false`. Setiap `POST /v1/posts` membawa header
+**`Idempotency-Key`** yang diturunkan dari sha256 master + judul: kalau job
+timeout lalu dijalankan ulang dalam 24 jam, Zernio mengembalikan post yang sama
+(HTTP 200), bukan membuat video kedua. Render baru = hash baru = video baru.
+Kegagalan 409/429/5xx diulang otomatis dengan kunci yang sama.
+
+Hasilnya:
 
 - ringkasan di halaman run (tabel episode/status/tautan),
 - log JSON di artifact `upload-log-*` (90 hari),

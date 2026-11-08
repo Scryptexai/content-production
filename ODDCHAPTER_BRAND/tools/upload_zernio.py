@@ -50,20 +50,54 @@ def fail(msg):
     raise SystemExit(1)
 
 
-def api_post(path, payload, key, timeout=120):
+def api_post(path, payload, key, timeout=120, extra_headers=None, attempts=4):
+    """POST JSON. 409/429/5xx dicoba ulang dengan header yang sama persis.
+
+    Zernio membuat post dalam <Idempotency-Key> selama 24 jam: percobaan ulang
+    dengan kunci yang sama mengembalikan post yang sudah ada (HTTP 200), bukan
+    membuat video kedua. Itu satu-satunya cara aman mengulang setelah timeout,
+    karena kita tidak pernah tahu apakah request pertama sampai.
+    """
     body = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        f"{API}{path}", data=body, method="POST",
-        headers={"Authorization": f"Bearer {key}",
-                 "Content-Type": "application/json",
-                 "Accept": "application/json"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode("utf-8", "replace")[:900]
-        fail(f"POST {path} → HTTP {e.code}: {detail}")
+    headers = {"Authorization": f"Bearer {key}",
+               "Content-Type": "application/json",
+               "Accept": "application/json"}
+    headers.update(extra_headers or {})
+
+    for attempt in range(1, attempts + 1):
+        req = urllib.request.Request(f"{API}{path}", data=body, method="POST", headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = json.loads(r.read().decode("utf-8") or "{}")
+                data["_http_status"] = r.status
+                return data
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "replace")[:900]
+            retry_after = e.headers.get("Retry-After") if e.headers else None
+            transient = e.code in (409, 429, 500, 502, 503, 504)
+            if transient and attempt < attempts:
+                wait = float(retry_after) if (retry_after or "").strip().isdigit() else 2 ** attempt
+                print(f"  HTTP {e.code} · coba lagi dalam {wait:.0f} dtk "
+                      f"(percobaan {attempt}/{attempts}) · {detail[:160]}")
+                time.sleep(wait)
+                continue
+            if e.code == 401:
+                fail(f"POST {path} → 401 Unauthorized. ZERNIO_API_KEY salah atau dicabut. {detail}")
+            if e.code == 403:
+                fail(f"POST {path} → 403. API key ini tidak punya akses ke accountId "
+                     f"tersebut. {detail}")
+            if e.code == 400 and "accountId" in detail:
+                fail(f"POST {path} → 400. accountId tidak dikenal Zernio — cek "
+                     f"GET /v1/profiles dan perbarui secret. {detail}")
+            fail(f"POST {path} → HTTP {e.code}: {detail}")
+        except urllib.error.URLError as e:
+            if attempt < attempts:
+                wait = 2 ** attempt
+                print(f"  jaringan gagal ({e.reason}) · coba lagi dalam {wait} dtk")
+                time.sleep(wait)
+                continue
+            fail(f"POST {path} → jaringan gagal: {e.reason}. Post mungkin sudah dibuat; "
+                 f"periksa dashboard Zernio sebelum menjalankan ulang.")
 
 
 def put_file(upload_url, path):
@@ -93,6 +127,65 @@ def upload_media(path, key, kind):
     put_file(presigned["uploadUrl"], path)
     print(f"  {kind:9s} {path.name}  {size / 1024 ** 2:6.1f} MB → {presigned['publicUrl']}")
     return presigned["publicUrl"]
+
+
+def idempotency_key(ep, meta):
+    """Kunci tetap per episode+file: aman diulang, tidak bisa jadi dua video.
+
+    Berbasis sha256 master (bukan waktu), jadi menjalankan ulang workflow untuk
+    file yang sama akan mengembalikan post yang sama selama 24 jam. Render baru
+    menghasilkan hash baru — dan memang boleh jadi video baru.
+    """
+    basis = (meta.get("sha256") or "") + "|" + meta.get("title", "")
+    digest = hashlib.sha256(basis.encode("utf-8")).hexdigest()[:32]
+    return f"oddc-{ep.lower()}-{digest}"
+
+
+def api_get(path, key, timeout=60):
+    req = urllib.request.Request(f"{API}{path}", method="GET",
+                                 headers={"Authorization": f"Bearer {key}",
+                                          "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8") or "{}")
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:400]
+        fail(f"GET {path} → HTTP {e.code}: {detail}. Kalau 401, ZERNIO_API_KEY salah.")
+
+
+def check_account():
+    """Sebelum 20 MB diunggah: pastikan key hidup dan accountId-nya memang YouTube."""
+    key = os.environ.get("ZERNIO_API_KEY", "").strip()
+    want = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+    if not key:
+        fail("ZERNIO_API_KEY kosong. Di Actions: Settings → Secrets → Actions.")
+
+    data = api_get("/profiles", key)
+    profiles = data.get("profiles") or data.get("data") or []
+    if isinstance(profiles, dict):
+        profiles = profiles.get("profiles") or []
+    found = []
+    for prof in profiles:
+        for acc in prof.get("platforms") or prof.get("accounts") or []:
+            if (acc.get("platform") or "").lower() == "youtube":
+                found.append({
+                    "accountId": acc.get("accountId") or acc.get("_id") or acc.get("id"),
+                    "name": acc.get("username") or acc.get("name") or acc.get("handle") or "?",
+                    "profile": prof.get("name") or prof.get("_id"),
+                })
+    if not found:
+        fail("Tidak ada akun YouTube di API key ini. Hubungkan kanal dulu: "
+             "Zernio → Accounts → Connect → YouTube.")
+    print(f"  {len(found)} akun YouTube di API key ini:")
+    for acc in found:
+        mark = " ← ZERNIO_YOUTUBE_ACCOUNT_ID" if acc["accountId"] == want else ""
+        print(f"    {acc['accountId']}  {acc['name']}  ({acc['profile']}){mark}")
+    if not want:
+        fail("ZERNIO_YOUTUBE_ACCOUNT_ID kosong — salin salah satu accountId di atas.")
+    if want not in {a["accountId"] for a in found}:
+        fail(f"ZERNIO_YOUTUBE_ACCOUNT_ID={want} tidak ada di daftar di atas. "
+             "Secret dan akun tidak cocok — ini penyebab 400 yang paling sering.")
+    print("  cocok. Siap mengunggah.")
 
 
 def load_meta(ep):
@@ -234,7 +327,9 @@ def run(ep, media_dir, send, visibility, check_media=True):
     thumb_url = upload_media(media_dir / meta["thumbnail"], key, "thumbnail")
 
     payload = build_payload(meta, video_url, thumb_url, visibility)
-    result = api_post("/posts", payload, key)
+    idem = idempotency_key(ep, meta)
+    print(f"  POST /v1/posts · Idempotency-Key: {idem}")
+    result = api_post("/posts", payload, key, extra_headers={"Idempotency-Key": idem})
 
     post = (result or {}).get("post", {})
     yt = next((p for p in post.get("platforms", []) if p.get("platform") == "youtube"), {})
@@ -246,6 +341,7 @@ def run(ep, media_dir, send, visibility, check_media=True):
         "status": post.get("status"),
         "youtube_url": yt.get("platformPostUrl"),
         "video_url_in_zernio": video_url,
+        "idempotency_key": idem,
         "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
     print(f"  published: {out['status']} · {out['youtube_url']}")
@@ -259,10 +355,17 @@ def main():
     ap.add_argument("--media-dir", default=str(ROOT / "10_FILM" / "remotion" / "output" / "episodes"))
     ap.add_argument("--send", action="store_true", help="benar-benar unggah (tanpa ini = dry-run)")
     ap.add_argument("--visibility", choices=["public", "unlisted", "private"])
+    ap.add_argument("--check", action="store_true",
+                    help="uji ZERNIO_API_KEY + ZERNIO_YOUTUBE_ACCOUNT_ID lewat GET /v1/profiles")
     ap.add_argument("--text-only", action="store_true",
                     help="dry-run hanya untuk teks: lewati pemeriksaan file/hash "
                          "(dipakai saat master belum ada di mesin ini)")
     args = ap.parse_args()
+
+    if args.check:
+        print("cek kredensial Zernio")
+        check_account()
+        return 0
 
     eps = ([p.stem for p in sorted(META_DIR.glob("EP*.json"))]
            if args.all else [args.episode])

@@ -56,6 +56,10 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Cek kredensial Zernio (tanpa mengunggah apa pun)
+        if: env.ZERNIO_API_KEY != ''
+        run: python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --check
+
       - name: Siapkan folder media + thumbnail dari repo
         run: |
           set -euo pipefail
