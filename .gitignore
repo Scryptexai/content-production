@@ -34,3 +34,7 @@ image-search/
 # foto plate video (hasil generate_image, ~0,2 MB/file × 21 episode × 10).
 # Tinggal di workspace dan di Drive; resep prompt-nya ada di 05_VISUAL_PLAN.md §2.
 ODDCHAPTER_BRAND/10_FILM/remotion/public/plates/**/*.jpg
+ODDCHAPTER_BRAND/10_FILM/upload/
+
+# dry-run lokal tidak perlu di-commit; yang disimpan adalah log unggah sungguhan
+ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/*-dryrun.json

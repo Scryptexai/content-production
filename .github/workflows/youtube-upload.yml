@@ -1,0 +1,110 @@
+name: Upload episode to YouTube (Zernio)
+
+# Mengunggah video tidak bisa ditarik. Karena itu workflow ini:
+#   • hanya berjalan saat seseorang menekan Run (workflow_dispatch), dan
+#   • job-nya duduk di belakang environment `production` yang punya required
+#     reviewers — tanpa klik approval, tidak ada yang diunggah.
+#
+# Kredensial tidak pernah masuk repo. Yang dibaca dari GitHub Secrets:
+#   ZERNIO_API_KEY              API key dari dashboard Zernio
+#   ZERNIO_YOUTUBE_ACCOUNT_ID   accountId kanal YouTube (GET /v1/profiles)
+#   ZERNIO_PLAYLIST_ID          opsional
+#
+# File master tidak disimpan di Git (20 MB per episode). Workflow mengunduhnya
+# dari Drive memakai drive_file_id di metadata, lalu memeriksa sha256 + ukuran
+# sebelum satu byte pun dikirim ke Zernio. Kalau hash-nya beda, job berhenti.
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode yang diunggah"
+        type: choice
+        options: ["EP01", "EP02", "EP03", "ALL"]
+        default: "EP01"
+      visibility:
+        description: "Visibilitas di YouTube"
+        type: choice
+        options: ["public", "unlisted", "private"]
+        default: "public"
+      dry_run:
+        description: "true = susun payload, tidak mengunggah apa pun"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-upload-${{ inputs.episode }}
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    name: Upload ${{ inputs.episode }} ke YouTube
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+      ZERNIO_PLAYLIST_ID: ${{ secrets.ZERNIO_PLAYLIST_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Siapkan folder media + thumbnail dari repo
+        run: |
+          set -euo pipefail
+          mkdir -p media
+          base="ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD"
+          if [ "${{ inputs.episode }}" = "ALL" ]; then
+            for f in "$base"/EP*.json; do
+              ep="$(basename "$f" .json)"
+              cp "$base/thumbs/${ep}_thumbnail.jpg" media/
+            done
+          else
+            ep="${{ inputs.episode }}"
+            test -f "$base/$ep.json" || { echo "::error::metadata $ep.json tidak ada"; exit 1; }
+            cp "$base/thumbs/${ep}_thumbnail.jpg" media/
+          fi
+          ls -lh media
+
+      - name: Unduh master dari Drive (sesuai drive_file_id di metadata)
+        env:
+          EPISODE_SELECT: ${{ inputs.episode }}
+        run: |
+          set -euo pipefail
+          pip install --quiet --disable-pip-version-check gdown
+          python3 ODDCHAPTER_BRAND/tools/fetch_masters.py
+
+      - name: Cek metadata (judul, hook, tag, deskripsi) tanpa mengirim
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.episode }}" = "ALL" ]; then
+            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --all --media-dir media
+          else
+            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ inputs.episode }}" --media-dir media
+          fi
+
+      - name: Unggah ke YouTube lewat Zernio
+        if: inputs.dry_run == 'false'
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.episode }}" = "ALL" ]; then
+            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --all --media-dir media --send --visibility "${{ inputs.visibility }}"
+          else
+            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ inputs.episode }}" --media-dir media --send --visibility "${{ inputs.visibility }}"
+          fi
+
+      - name: Simpan log unggah
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: upload-log-${{ inputs.episode }}-${{ github.run_id }}
+          path: ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/
+          if-no-files-found: warn
+          retention-days: 90
