@@ -302,8 +302,13 @@ berubah. Sekarang file itu dihasilkan, bukan ditulis tangan.
 
 | plate | siap | timing + audio | master |
 |---|---|---|---|
-| EP01 `tower` | ya | ya (terukur) | **ya** — 58.28 s |
-| EP02–EP21 | ya (bentuk sudah ada) | belum — butuh 9–10 klip narasi | belum |
+| EP01 `tower` | ya — 11 foto, klimaks-di-awal | ya (terukur, 11 segmen) | **ya** — 63,17 s · 1895 f · `1pisYEn6qLWLDMfbXQDNM59Vq6mDJ604x` |
+| EP02–EP21 | bentuk sudah ada | `tanya` + `entitas` sudah ditulis, beat belum distruktur | belum |
+
+Status struktur per episode: **EP01 sudah klimaks-di-awal** (gate butir 0 lulus).
+EP02–EP21 punya `hook` bertanggal, `tanya`, dan `entitas`, tetapi beatnya masih
+urut dari awal — gate menandainya sebagai catatan, dan itu pekerjaan pertama saat
+episode itu masuk produksi.
 
 Bentuk untuk 21 episode sudah ada semua; yang belum ada hanya suara. Urutan
 produksi per episode karena itu: narasi → ukur → still → master → QA.
