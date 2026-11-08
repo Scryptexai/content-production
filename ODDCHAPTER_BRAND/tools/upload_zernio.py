@@ -102,7 +102,28 @@ def load_meta(ep):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
-def validate(meta, media_dir):
+# Bukan aturan YouTube, aturan kanal: judul harus bisa dibaca di 40 karakter
+# pertama (di feed Shorts selebihnya terpotong), dan tanpa kata yang sudah
+# dipakai semua orang sampai tidak berarti apa-apa lagi.
+CLICHE = ("misteri", "ternyata", "fakta mengejutkan", "jangan percaya", "auto")
+WARNS = []
+
+
+def style(title):
+    w = []
+    if not any(ch.isdigit() for ch in title[:40]):
+        w.append("angka/tanggal tidak muncul di 40 karakter pertama — di feed Shorts "
+                 "sisanya terpotong, jadi detail mustahilnya tidak terbaca")
+    low = title.lower()
+    for c in CLICHE:
+        if c in low:
+            w.append(f"judul memuat “{c}” — kata yang sudah dipakai semua kanal, tidak memilih siapa pun")
+    if title.isupper():
+        w.append("judul huruf besar semua — terbaca seperti iklan, bukan cerita")
+    return w
+
+
+def validate(meta, media_dir, check_media=True):
     """Yang gagal di sini adalah yang ditolak YouTube, bukan selera kita."""
     errs = []
     title = meta.get("title", "")
@@ -126,27 +147,31 @@ def validate(meta, media_dir):
         errs.append(f"tag {joined} karakter gabungan, batas 500")
     if any(len(t) > 100 for t in tags):
         errs.append("ada tag > 100 karakter")
-    video = media_dir / meta["video"]
-    if not video.exists():
-        errs.append(f"file video tidak ada: {video}")
-    else:
-        size = video.stat().st_size
-        if size == 0:
-            errs.append("file video 0 byte")
-        # Master tinggal di Drive, bukan di Git. Kalau yang terunduh bukan file
-        # yang sama dengan yang sudah ditonton dan disetujui, jangan diunggah.
-        if meta.get("size_bytes") and size != meta["size_bytes"]:
-            errs.append(f"ukuran {meta['video']} {size} byte, metadata bilang "
-                        f"{meta['size_bytes']} — file di Drive berubah?")
-        elif meta.get("sha256") and hashlib.sha256(video.read_bytes()).hexdigest() != meta["sha256"]:
-            errs.append(f"sha256 {meta['video']} tidak cocok dengan metadata")
-    thumb = media_dir / meta["thumbnail"]
-    if not thumb.exists():
-        errs.append(f"file thumbnail tidak ada: {thumb}")
-    elif thumb.stat().st_size > THUMB_LIMIT:
-        errs.append(f"thumbnail {thumb.stat().st_size / 1024 ** 2:.1f} MB, batas YouTube 2 MB")
+    if check_media:
+        video = media_dir / meta["video"]
+        if not video.exists():
+            errs.append(f"file video tidak ada: {video}")
+        else:
+            size = video.stat().st_size
+            if size == 0:
+                errs.append("file video 0 byte")
+            # Master tinggal di Drive, bukan di Git. Kalau yang terunduh bukan file
+            # yang sama dengan yang sudah ditonton dan disetujui, jangan diunggah.
+            if meta.get("size_bytes") and size != meta["size_bytes"]:
+                errs.append(f"ukuran {meta['video']} {size} byte, metadata bilang "
+                            f"{meta['size_bytes']} — file di Drive berubah?")
+            elif meta.get("sha256") and hashlib.sha256(video.read_bytes()).hexdigest() != meta["sha256"]:
+                errs.append(f"sha256 {meta['video']} tidak cocok dengan metadata")
+        thumb = media_dir / meta["thumbnail"]
+        if not thumb.exists():
+            errs.append(f"file thumbnail tidak ada: {thumb}")
+        elif thumb.stat().st_size > THUMB_LIMIT:
+            errs.append(f"thumbnail {thumb.stat().st_size / 1024 ** 2:.1f} MB, batas YouTube 2 MB")
     if meta.get("madeForKids") is True:
         errs.append("madeForKids=true mematikan komentar — diskusi akan hilang")
+
+    if title.strip():
+        WARNS.extend(style(title))
     if errs:
         for e in errs:
             print(f"::error::{e}" if os.environ.get("GITHUB_ACTIONS") else f"  ✗ {e}")
@@ -176,18 +201,26 @@ def build_payload(meta, video_url, thumb_url, visibility=None):
     }
 
 
-def run(ep, media_dir, send, visibility):
+def run(ep, media_dir, send, visibility, check_media=True):
+    WARNS.clear()
     meta = load_meta(ep)
     print(f"\n=== {ep} · {meta['title']} ({len(meta['title'])} karakter) ===")
-    validate(meta, media_dir)
+    validate(meta, media_dir, check_media)
 
     key = os.environ.get("ZERNIO_API_KEY", "").strip()
     account = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+
+    for w in WARNS:
+        print(f"::warning file=11_CONTENT/06_UPLOAD/{ep}.json::{w}"
+              if os.environ.get("GITHUB_ACTIONS") else f"  ! {w}")
 
     if not send:
         payload = build_payload(meta, f"<publicUrl {meta['video']}>",
                                 f"<publicUrl {meta['thumbnail']}>", visibility)
         payload["platforms"][0]["accountId"] = account or "<ZERNIO_YOUTUBE_ACCOUNT_ID>"
+        if not check_media:
+            print("  catatan: --text-only — file video/thumbnail TIDAK diperiksa. "
+                  "Jalankan tanpa flag ini sebelum --send.")
         print("  dry-run: tidak ada yang dikirim. Payload POST /v1/posts:")
         print("\n".join("    " + l for l in json.dumps(payload, ensure_ascii=False, indent=2).splitlines()))
         return {"episode": ep, "dry_run": True, "payload": payload}
@@ -226,6 +259,9 @@ def main():
     ap.add_argument("--media-dir", default=str(ROOT / "10_FILM" / "remotion" / "output" / "episodes"))
     ap.add_argument("--send", action="store_true", help="benar-benar unggah (tanpa ini = dry-run)")
     ap.add_argument("--visibility", choices=["public", "unlisted", "private"])
+    ap.add_argument("--text-only", action="store_true",
+                    help="dry-run hanya untuk teks: lewati pemeriksaan file/hash "
+                         "(dipakai saat master belum ada di mesin ini)")
     args = ap.parse_args()
 
     eps = ([p.stem for p in sorted(META_DIR.glob("EP*.json"))]
@@ -235,7 +271,10 @@ def main():
 
     media_dir = pathlib.Path(args.media_dir)
     LOG_DIR.mkdir(parents=True, exist_ok=True)
-    results = [run(ep, media_dir, args.send, args.visibility) for ep in eps]
+    if args.text_only and args.send:
+        fail("--text-only hanya untuk dry-run; jangan digabung dengan --send")
+    results = [run(ep, media_dir, args.send, args.visibility, not args.text_only)
+               for ep in eps]
 
     stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
     log = LOG_DIR / f"{stamp}{'' if args.send else '-dryrun'}.json"

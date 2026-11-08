@@ -104,6 +104,8 @@ cd ODDCHAPTER_BRAND
 export ZERNIO_API_KEY=...  ZERNIO_YOUTUBE_ACCOUNT_ID=...
 
 python3 tools/upload_zernio.py EP01                         # dry-run, baca payload
+python3 tools/upload_zernio.py --all --text-only            # cek judul/hook/tag saja,
+                                                            # tanpa master di mesin ini
 python3 tools/upload_zernio.py EP01 --send --visibility unlisted
 python3 tools/upload_zernio.py --all --send                 # EP01–EP03 berurutan
 ```
@@ -116,24 +118,50 @@ python3 tools/upload_zernio.py --all --send                 # EP01–EP03 beruru
 
 ---
 
-## Isi judul dan hook saat ini
+## Judul dan hook
 
-| EP | Judul (≤100 kar.) | Panjang | Hook (baris pertama deskripsi) |
+| EP | Judul (≤100 kar.) | Kar. | Hook — baris pertama deskripsi |
 |---|---|---|---|
-| 01 | Tiga Penjaga Masuk ke Menara Itu. Tidak Ada yang Melihat Mereka Keluar. | 71 | Tiga penjaga masuk ke menara itu pada 15 Desember 1900. Tidak ada yang melihat mereka keluar. |
-| 02 | Mereka Memotong Tenda Itu dari Dalam, Lalu Berlari ke Salju Tanpa Sepatu | 72 | 1 Februari 1959. Sembilan pendaki memotong tenda mereka sendiri dari dalam, lalu keluar tanpa sepatu. |
-| 03 | Kapal Itu Masih Bisa Berlayar. Sepuluh Awaknya Naik Sekoci dan Hilang. | 70 | 5 Desember 1872. Sepuluh awak Mary Celeste hilang. Kapal dan muatannya masih ada. |
+| 01 | 3 Penjaga Masuk Menara di Pulau Flannan. Lampunya Mati, Tak Seorang Pun Keluar. | 79 | 15 Desember 1900. Lampu menara Flannan Isles tidak dinyalakan, dan 3 penjaganya tidak pernah keluar dari menara itu. |
+| 02 | 9 Pendaki Merobek Tenda dari Dalam, Lalu Lari ke Salju Tanpa Sepatu. | 68 | 1 Februari 1959. 9 pendaki merobek tenda mereka dari dalam, lalu berlari ke salju tanpa sepatu. |
+| 03 | 10 Awak Naik Sekoci dari Kapal yang Masih Utuh. Tak Satu Pun Kembali. | 69 | 5 Desember 1872. Kapal Mary Celeste ditemukan berlayar tanpa awak. Sekocinya hilang, muatannya masih di palka. |
 
-Aturan judul yang dipakai: satu kalimat pernyataan yang memuat satu hal mustahil,
-tanpa kata "misteri", tanpa emoji, tanpa huruf kapital semua. Tiap JSON juga
-menyimpan `title_alternatives` (3 varian) — kalau judul utama tidak dapat klik,
-ganti dan uji lagi; jangan mengubah judul video yang sudah berumur lebih dari
-seminggu, karena itu memutus rekomendasi yang sedang berjalan.
+### Rumusnya, bukan selera
 
-Komentar pertama tiap episode adalah pertanyaan, bukan ajakan like. Yang dibeli
-adalah balasan, bukan tayangan.
+1. **Angka di lima kata pertama.** "3", "9", "10" — bukan "tiga", "sembilan".
+   Di feed Shorts judul terpotong sekitar 40 karakter, jadi angka yang harus
+   bertahan harus berdiri di depan, bukan di tengah kalimat.
+2. **Satu detail mustahil, bukan satu premis.** "Lampunya mati, tak seorang pun
+   keluar" lebih kuat daripada "menara misterius". Yang menjual adalah benda
+   konkret yang tidak seharusnya begitu.
+3. **Dua kalimat pendek, titik di tengah.** Kalimat pertama memasang perangkap,
+   kalimat kedua menutupnya. Titik memaksa berhenti sejenak — koma membuat
+   pembaca meluncur lewat.
+4. **Tanpa "misteri", "ternyata", "fakta mengejutkan", emoji, atau kapital semua.**
+   Kata-kata itu sudah dipakai semua kanal, jadi tidak lagi memilih siapa pun.
+   `upload_zernio.py` sekarang menegur ketiganya (`::warning::`) saat dry-run.
+5. **Hook = kalimat pertama deskripsi, dan harus memuat tanggal atau angka.**
+   Yang dibaca orang di bawah judul bukan "Hai semuanya" — dia membaca satu
+   kalimat yang membuatnya menekan *more*. Hook yang sama dibuka di detik 0,6
+   video, jadi tiga tempat (judul, deskripsi, frame pertama) mengatakan hal yang
+   sama dengan kata yang sama.
+6. **Pertanyaan disimpan untuk komentar pertama.** Judul memancing dengan fakta,
+   kolom komentar dibuka dengan pertanyaan yang benar-benar bisa dijawab orang
+   biasa: "kamu akan naik ke menara atau menunggu kapal?" Yang dibeli balasan,
+   bukan tayangan.
 
----
+### Varian cadangan (A/B)
+
+Tiap JSON menyimpan `title_alt` berisi tiga varian: satu bentuk pertanyaan
+("Kenapa ...?"), satu bentuk kronologi bertanggal, satu bentuk detail fisik.
+Aturan pemakaiannya:
+
+- Video **baru** (< 7 hari): boleh ditukar. Beri satu judul minimal 48 jam agar
+  datanya cukup untuk dibandingkan — CTR 24 jam pertama masih terlalu berisik.
+- Video **lama**: jangan disentuh. Mengganti judul memutus rekomendasi yang
+  sedang berjalan; yang lebih baik adalah memakai varian itu untuk episode baru.
+- Yang dibandingkan **CTR impresi**, bukan jumlah tayangan. Tayangan bisa naik
+  karena satu komentar viral, bukan karena judulnya.
 
 ## Kalau unggahan gagal
 
