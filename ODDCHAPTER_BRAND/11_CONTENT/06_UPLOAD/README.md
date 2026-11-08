@@ -22,6 +22,20 @@ karena itu file master harus tetap **anyone with the link → Viewer**).
 
 ---
 
+## Status: sudah tayang
+
+| EP | Judul | YouTube |
+|---|---|---|
+| 01 | 3 Penjaga Masuk Menara di Pulau Flannan. Lampunya Mati, Tak Seorang Pun Keluar. | https://www.youtube.com/watch?v=l-_uCXDQo0g |
+| 02 | 9 Pendaki Merobek Tenda dari Dalam, Lalu Lari ke Salju Tanpa Sepatu. | https://www.youtube.com/watch?v=X-OyOWaac_M |
+| 03 | 10 Awak Naik Sekoci dari Kapal yang Masih Utuh. Tak Satu Pun Kembali. | https://www.youtube.com/watch?v=C3Bc7HSwyXY |
+
+Diunggah 2026-11-08 oleh workflow, publik, kanal ODDCHAPTER (@oddchapter7).
+Ketiganya tercatat di `published.json`. Berkas di `queue/` sekarang berstatus
+`published`; kalau ditambah episode baru, buat berkas baru berstatus `requested`.
+
+---
+
 ## Kenapa unggahan ini aman walau otomatis
 
 Unggahan ke kanal orang lain tidak bisa dibatalkan dengan `Ctrl+Z`. Karena itu tiga
