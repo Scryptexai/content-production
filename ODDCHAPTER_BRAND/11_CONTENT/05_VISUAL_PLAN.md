@@ -74,6 +74,15 @@ pulau batu tanpa satu pun jejak?` → `Sebelas hari sebelumnya.`
 
 ---
 
+## 0c · SETIAP KALIMAT PUNYA PSIKOLOGI
+
+Di atas ini semua soal gambar. Soal kalimat ada di `00D_PSIKOLOGI_AUDIENS.md`:
+tiga pertanyaan wajib untuk setiap kalimat, empat jenis kail, satu baris `relate`
+sebelum tension, satu `diskusi` yang tidak dijawab, dan sepuluh aturan yang dijaga
+`check_story.py` (butir 1e, 1f, 3d).
+
+---
+
 ## 1 · EMPAT LAPIS: FOTO, GERAK, TEKS, ATMOSFER
 
 | lapis | isi | dibuat oleh | catatan |

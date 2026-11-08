@@ -94,7 +94,9 @@ klimaksnya — diucapkan seperti sudah terjadi, dengan entitas yang bisa ditunju
 Pertanyaannya (`tanya` di `content_data.py`) harus pertanyaan yang nanti dijawab
 `turn_verdict`; pertanyaan yang tidak pernah dijawab adalah klik yang dibohongi.
 
-**Aturan kalimat:** maksimal 14 kata. Kata kerja aktif. Tanpa "sangat", "cukup",
+**Aturan kalimat:** maksimal 14 kata (16 untuk baris naskah), satu benda
+konkret per baris, tanpa kata pengisi, tanpa kalimat ringkasan. Aturan lengkap
+dan gerbangnya: `00D_PSIKOLOGI_AUDIENS.md`. Kata kerja aktif. Tanpa "sangat", "cukup",
 "banyak sekali". Satu kalimat = satu langkah cerita.
 
 ---

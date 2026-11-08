@@ -17,6 +17,31 @@ from content_data import EPISODES  # noqa: E402
 
 # kata yang "meminta" perhatian alih-alih menunjukkan sesuatu
 BANNED = {"misteri", "rahasia", "aneh", "menakjubkan", "mengerikan", "terpecahkan", "misterius"}
+# ── 00D · PSIKOLOGI AUDIENS ────────────────────────────────────────────────
+# Kata pengisi: bisa dihapus tanpa kehilangan makna, jadi ia hanya menambah durasi.
+FILLER = {"sangat", "cukup", "benar-benar", "sebenarnya", "ternyata", "sungguh",
+          "amat", "banget", "sekali", "agak", "kayaknya", "sepertinya", "rupanya",
+          "mungkin", "begitu", "memang", "sangatlah"}
+
+# Kalimat ringkasan: mematikan kail karena tidak menyebut benda dan tidak menyisakan celah.
+SUMMARY = ("bertahun-tahun", "selama bertahun", "sampai sekarang", "hingga kini",
+           "sampai hari ini", "banyak teori", "para ahli masih", "tidak terpecahkan",
+           "di seluruh dunia", "selama berabad", "dianggap misteri", "banyak orang percaya")
+
+# Benda yang bisa dilihat penonton. Satu baris wajib punya salah satunya (atau angka).
+CONCRETE = set("""
+orang pria perempuan anak ibu ayah bayi mahasiswa pendaki penjaga awak kapten penumpang pekerja
+dokter ilmuwan insinyur tentara pasukan warga keluarga saudara mayat senjata tubuh tangan kaki kepala mata mulut
+gigi tulang dada darah rambut wajah kulit otak jantung
+tenda sepatu kaus jaket pakaian topi masker kuas kertas buku jurnal arsip surat peta kunci pintu
+jendela kamar rumah meja kursi cangkir lampu lilin jam menara mercusuar kapal sekoci perahu layar
+tong mobil jalan jembatan pagar pohon kayu batu gunung lereng jurang salju es air laut danau
+sungai hutan api asap gas angin hujan kabut langit bintang tanah lantai atap dinding gantungan
+pulau desa kota kampung darat pantai pelabuhan stasiun pabrik tambang terowongan gereja kuburan pos
+sinyal radio suara frekuensi sirene nada rekaman film foto kamera label nama angka alamat kamar
+karpet botol obat jarum timah nampan piring sendok pisau tali sekop bendera
+""".split())
+
 STOP = {"yang", "dan", "itu", "ini", "dengan", "untuk", "dari", "tidak", "tapi",
         "mereka", "dalam", "pada", "adalah", "lebih", "akan", "sudah", "hanya",
         "masih", "kembali", "sendiri", "begitu", "sekarang", "memang", "tetapi",
@@ -94,6 +119,62 @@ def check(e):
             fails.append("(0) beat tanya tidak sama dengan field tanya — audio dan naskah akan berbeda")
     else:
         notes.append("(0) alur belum distruktur klimaks-di-awal (00B §0) — dibereskan saat episode diproduksi")
+
+    # 1e · RELATE: satu baris yang menyapa penonton, sebelum tension (00D §3)
+    script_text = " ".join([e["hook"]] + [t for _, t in e["beats"]] + [e["loop"]])
+    rel = (e.get("relate") or "").strip()
+    header = e.get("struktur") == "klimaks-awal"
+    if header:
+        if not rel:
+            fails.append("(1e) tidak ada baris relate — penonton tidak punya tempat masuk")
+        else:
+            if rel not in script_text:
+                fails.append("(1e) relate tidak ada di naskah — harus persis salah satu kalimat yang diucapkan")
+            if not re.search(r"\b(kamu|kita|anda)\b", rel.lower()):
+                fails.append("(1e) relate tidak menyapa penonton — pakai 'kamu' atau 'kita'")
+            idx_rel = next((i for i, (_, t) in enumerate(e["beats"]) if t.strip() == rel), None)
+            idx_ten = next((i for i, (p, _) in enumerate(e["beats"]) if p == "tension"), None)
+            if idx_rel is not None and idx_ten is not None and idx_rel >= idx_ten:
+                fails.append("(1e) relate diletakkan setelah tension — penonton harus masuk lebih dulu")
+    else:
+        notes.append("(1e) relate belum diisi (00D §3)")
+
+    # 1f · DISKUSI: pertanyaan yang sengaja tidak dijawab episode (00D §4)
+    dis = (e.get("diskusi") or "").strip()
+    if header:
+        if not dis:
+            fails.append("(1f) tidak ada diskusi — tidak ada yang membuat orang berkomentar")
+        else:
+            if not dis.endswith("?"):
+                fails.append("(1f) diskusi bukan pertanyaan")
+            if len(dis.split()) > 18:
+                fails.append(f"(1f) diskusi {len(dis.split())} kata, batas 18")
+            if tanya and dis.lower() == tanya.lower():
+                fails.append("(1f) diskusi sama dengan tanya — tanya harus dijawab, diskusi harus dibiarkan")
+            if dis.rstrip("?") and dis.rstrip("?").lower() in script_text.lower():
+                fails.append("(1f) diskusi diucapkan di naskah — pertanyaan komentar tidak boleh masuk VO")
+    else:
+        notes.append("(1f) diskusi belum diisi (00D §4)")
+
+    # 3d · AUDIT KALIMAT: ≤16 kata, ada benda konkret, tanpa pengisi, tanpa ringkasan
+    lines = [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]
+    line_bad = []
+    for name, ln in lines:
+        if len(ln.split()) > 16:
+            line_bad.append(f"{name}: {len(ln.split())} kata — '{ln[:44]}…'")
+        fill = [w for w in words(ln) if w in FILLER]
+        if fill:
+            line_bad.append(f"{name}: kata pengisi {', '.join(fill)}")
+        for ph in SUMMARY:
+            if ph in ln.lower():
+                line_bad.append(f"{name}: kalimat ringkasan '{ph}'")
+        if not (re.search(r"\d", ln) or any(w in CONCRETE for w in words(ln))):
+            line_bad.append(f"{name}: tidak ada benda konkret — '{ln[:44]}…'")
+    if line_bad:
+        if header:
+            fails += [f"(3d) {b}" for b in line_bad[:6]]
+        else:
+            notes.append(f"(3d) {len(line_bad)} baris belum lolos audit kalimat (00D §5)")
 
     # 2 · ada yang salah, belum paham apa
     celah = e.get("celah", "")
