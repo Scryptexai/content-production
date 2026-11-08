@@ -1,23 +1,28 @@
 name: Upload episode to YouTube (Zernio)
 
-# Mengunggah video tidak bisa ditarik. Karena itu workflow ini:
-#   • hanya berjalan saat seseorang menekan Run (workflow_dispatch), dan
-#   • job-nya duduk di belakang environment `production` yang punya required
-#     reviewers — tanpa klik approval, tidak ada yang diunggah.
+# Otomatis, bukan diklik.
 #
-# Kredensial tidak pernah masuk repo. Yang dibaca dari GitHub Secrets:
-#   ZERNIO_API_KEY              API key dari dashboard Zernio
-#   ZERNIO_YOUTUBE_ACCOUNT_ID   accountId kanal YouTube (GET /v1/profiles)
-#   ZERNIO_PLAYLIST_ID          opsional
+# Antreannya adalah berkas JSON di ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/queue/.
+# Menambah satu berkas berstatus "requested" lalu push = video itu diunggah ke
+# Zernio lalu tayang di YouTube. Tidak ada tombol yang perlu ditekan.
 #
-# File master tidak disimpan di Git (20 MB per episode). Workflow mengunduhnya
-# dari Drive memakai drive_file_id di metadata, lalu memeriksa sha256 + ukuran
-# sebelum satu byte pun dikirim ke Zernio. Kalau hash-nya beda, job berhenti.
+# Kenapa di runner: zernio.com dan Drive tidak terjangkau dari sandbox, runner
+# punya internet penuh. Master MP4 (17–22 MB) tetap di Drive — runner yang
+# mengunduhnya, memeriksa sha256-nya, lalu mengunggahnya ke storage Zernio lewat
+# presign. Tidak ada video atau kredensial di dalam Git.
+#
+# Sekali tayang, episode dicatat di 11_CONTENT/06_UPLOAD/published.json dan
+# di-commit balik oleh job ini. Push berikutnya melewatinya, jadi tidak mungkin
+# ada dua unggahan untuk episode yang sama. (Push oleh GITHUB_TOKEN tidak
+# memicu workflow lain, jadi tidak ada lingkaran.)
 on:
+  push:
+    paths:
+      - "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/queue/*.json"
   workflow_dispatch:
     inputs:
       episode:
-        description: "Episode yang diunggah"
+        description: "Episode yang diunggah (manual)"
         type: choice
         options: ["EP01", "EP02", "EP03", "ALL"]
         default: "EP01"
@@ -33,82 +38,136 @@ on:
         default: "true"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: youtube-upload-${{ inputs.episode }}
+  group: zernio-youtube-upload
   cancel-in-progress: false
 
 jobs:
   upload:
-    name: Upload ${{ inputs.episode }} ke YouTube
+    name: QC → unggah → tayang
     runs-on: ubuntu-latest
-    environment: production
+    timeout-minutes: 45
+
     env:
-      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
-      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
-      ZERNIO_PLAYLIST_ID: ${{ secrets.ZERNIO_PLAYLIST_ID }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY || secrets.ZERNIO_KEY }}
+      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ secrets.ZERNIO_YOUTUBE_ACCOUNT_ID || vars.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+      ZERNIO_PLAYLIST_ID: ${{ secrets.ZERNIO_PLAYLIST_ID || vars.ZERNIO_PLAYLIST_ID }}
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Cek kredensial Zernio (tanpa mengunggah apa pun)
-        if: env.ZERNIO_API_KEY != ''
+      - name: Sembunyikan nilai rahasia dari log
+        run: |
+          set -euo pipefail
+          for v in ZERNIO_API_KEY ZERNIO_YOUTUBE_ACCOUNT_ID ZERNIO_PLAYLIST_ID; do
+            if [ -n "${!v:-}" ]; then echo "::add-mask::${!v}"; fi
+          done
+          exit 0
+
+      - name: Tentukan permintaan yang dijalankan
+        id: req
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+          EP_INPUT: ${{ inputs.episode }}
+          VIS_INPUT: ${{ inputs.visibility }}
+          DRY_INPUT: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/req
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            EP="$EP_INPUT"
+            echo "dry=$DRY_INPUT" >> "$GITHUB_OUTPUT"
+            if [ "$EP" = "ALL" ]; then
+              echo "::error::Pilih satu episode untuk unggahan manual; antrean otomatis memproses satu berkas per push."
+              exit 1
+            fi
+            printf '{"episode":"%s","status":"requested","visibility":"%s","source":"workflow_dispatch"}\n' \
+              "$EP" "$VIS_INPUT" > "/tmp/req/$EP.json"
+            echo "request=/tmp/req/$EP.json" >> "$GITHUB_OUTPUT"
+            echo "::notice::Permintaan manual: $EP ($VIS_INPUT)"
+            exit 0
+          fi
+
+          echo "dry=false" >> "$GITHUB_OUTPUT"
+          CHANGED=$(git diff --name-only --diff-filter=AM "$BEFORE" "$SHA" -- 'ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/queue/*.json' 2>/dev/null \
+            || git show --pretty=format: --name-only --diff-filter=AM "$SHA" -- 'ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/queue/*.json')
+          READY=""
+          for f in $CHANGED; do
+            [ -f "$f" ] || continue
+            ST=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('status',''))" "$f")
+            if [ "$ST" = "requested" ]; then READY="$READY $f"; fi
+          done
+          COUNT=$(echo $READY | wc -w | tr -d ' ')
+          if [ "$COUNT" = "0" ]; then
+            echo "::notice::Tidak ada berkas antrean berstatus requested pada push ini."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "${COUNT:-1}" -gt 1 ]; then
+            echo "::error::$COUNT permintaan dalam satu push. Lepas satu per satu supaya tiap unggahan bisa diperiksa."
+            exit 1
+          fi
+          REQ=$(echo $READY | awk '{print $1}')
+          echo "request=$REQ" >> "$GITHUB_OUTPUT"
+          echo "::notice::Permintaan dari antrean: $REQ"
+
+      - name: Cek kredensial Zernio
+        if: steps.req.outputs.skip != '1'
         run: python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --check
 
-      - name: Siapkan folder media + thumbnail dari repo
-        run: |
-          set -euo pipefail
-          mkdir -p media
-          base="ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD"
-          if [ "${{ inputs.episode }}" = "ALL" ]; then
-            for f in "$base"/EP*.json; do
-              ep="$(basename "$f" .json)"
-              cp "$base/thumbs/${ep}_thumbnail.jpg" media/
-            done
-          else
-            ep="${{ inputs.episode }}"
-            test -f "$base/$ep.json" || { echo "::error::metadata $ep.json tidak ada"; exit 1; }
-            cp "$base/thumbs/${ep}_thumbnail.jpg" media/
-          fi
-          ls -lh media
-
-      - name: Unduh master dari Drive (sesuai drive_file_id di metadata)
+      - name: Unduh master dari Drive + siapkan thumbnail
+        if: steps.req.outputs.skip != '1'
         env:
-          EPISODE_SELECT: ${{ inputs.episode }}
+          EPISODE_SELECT: ${{ github.event_name == 'workflow_dispatch' && inputs.episode || '' }}
         run: |
           set -euo pipefail
+          if [ -z "${EPISODE_SELECT:-}" ]; then
+            EPISODE_SELECT=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['episode'])" "${{ steps.req.outputs.request }}")
+          fi
+          export EPISODE_SELECT
           pip install --quiet --disable-pip-version-check gdown
           python3 ODDCHAPTER_BRAND/tools/fetch_masters.py
 
-      - name: Cek metadata (judul, hook, tag, deskripsi) tanpa mengirim
-        run: |
-          set -euo pipefail
-          if [ "${{ inputs.episode }}" = "ALL" ]; then
-            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --all --media-dir media
-          else
-            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ inputs.episode }}" --media-dir media
-          fi
-
       - name: Unggah ke YouTube lewat Zernio
-        if: inputs.dry_run == 'false'
+        if: steps.req.outputs.skip != '1'
+        env:
+          DRY: ${{ steps.req.outputs.dry }}
         run: |
           set -euo pipefail
-          if [ "${{ inputs.episode }}" = "ALL" ]; then
-            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --all --media-dir media --send --visibility "${{ inputs.visibility }}"
-          else
-            python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ inputs.episode }}" --media-dir media --send --visibility "${{ inputs.visibility }}"
+          ARGS=(--request "${{ steps.req.outputs.request }}" --media-dir media)
+          if [ "$DRY" != "true" ]; then ARGS+=(--send); fi
+          python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${ARGS[@]}"
+
+      - name: Catat episode yang sudah tayang
+        if: always() && steps.req.outputs.skip != '1'
+        run: |
+          set -euo pipefail
+          LEDGER=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/published.json
+          if [ ! -f "$LEDGER" ] || git diff --quiet -- "$LEDGER"; then
+            echo "::notice::Buku besar tidak berubah."
+            exit 0
           fi
+          git config user.name "oddchapter-upload"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$LEDGER"
+          git commit -m "published.json: catat unggahan $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
 
       - name: Simpan log unggah
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: upload-log-${{ inputs.episode }}-${{ github.run_id }}
+          name: upload-log-${{ github.run_id }}
           path: ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/
           if-no-files-found: warn
           retention-days: 90

@@ -153,39 +153,115 @@ def api_get(path, key, timeout=60):
         fail(f"GET {path} → HTTP {e.code}: {detail}. Kalau 401, ZERNIO_API_KEY salah.")
 
 
-def check_account():
-    """Sebelum 20 MB diunggah: pastikan key hidup dan accountId-nya memang YouTube."""
-    key = os.environ.get("ZERNIO_API_KEY", "").strip()
-    want = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
-    if not key:
-        fail("ZERNIO_API_KEY kosong. Di Actions: Settings → Secrets → Actions.")
+def discover_accounts(key):
+    """Cari akun YouTube dari API, bukan dari tebakan di secret.
 
-    data = api_get("/profiles", key)
-    profiles = data.get("profiles") or data.get("data") or []
-    if isinstance(profiles, dict):
-        profiles = profiles.get("profiles") or []
-    found = []
-    for prof in profiles:
-        for acc in prof.get("platforms") or prof.get("accounts") or []:
-            if (acc.get("platform") or "").lower() == "youtube":
-                found.append({
-                    "accountId": acc.get("accountId") or acc.get("_id") or acc.get("id"),
-                    "name": acc.get("username") or acc.get("name") or acc.get("handle") or "?",
-                    "profile": prof.get("name") or prof.get("_id"),
-                })
-    if not found:
+    Bentuk respons Zernio berbeda antar endpoint (/accounts datar, /profiles
+    berisi platforms[]), jadi keduanya dicoba dan hasilnya disamaratakan.
+    """
+    out = []
+    for path in ("/accounts", "/profiles"):
+        try:
+            data = api_get(path, key)
+        except SystemExit:
+            continue
+        raw = data.get("accounts") or data.get("profiles") or data.get("data") or []
+        if isinstance(raw, dict):
+            raw = raw.get("accounts") or raw.get("profiles") or []
+        for item in raw if isinstance(raw, list) else []:
+            if not isinstance(item, dict):
+                continue
+            if (item.get("platform") or "").lower() == "youtube":
+                out.append(item)
+            for child in (item.get("platforms") or item.get("accounts") or []):
+                if isinstance(child, dict) and (child.get("platform") or "").lower() == "youtube":
+                    merged = {**item, **child}
+                    merged.setdefault("profileName", item.get("name"))
+                    out.append(merged)
+        if out:
+            break
+    seen, uniq = set(), []
+    for acc in out:
+        aid = acc.get("accountId") or acc.get("_id") or acc.get("id")
+        if not aid or aid in seen:
+            continue
+        if acc.get("isActive") is False or acc.get("status") == "inactive":
+            continue
+        seen.add(aid)
+        uniq.append({
+            "accountId": aid,
+            "name": acc.get("username") or acc.get("name") or acc.get("handle") or "?",
+            "profile": acc.get("profileName") or acc.get("profile") or "-",
+        })
+    return uniq
+
+
+def resolve_account(key, want=None):
+    """env → permintaan → pencarian otomatis. Yang terakhir jadi andalan."""
+    want = (want or os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "")).strip()
+    accounts = discover_accounts(key)
+    ids = {a["accountId"] for a in accounts}
+
+    if want and want in ids:
+        return want
+    if want and not ids:
+        print(f"  ! daftar akun tidak terbaca; memakai ZERNIO_YOUTUBE_ACCOUNT_ID={want}")
+        return want
+    if want and want not in ids:
+        print(f"  ! ZERNIO_YOUTUBE_ACCOUNT_ID={want} tidak ada di akun Zernio; "
+              f"memakai akun yang ditemukan otomatis.")
+    if not accounts:
         fail("Tidak ada akun YouTube di API key ini. Hubungkan kanal dulu: "
              "Zernio → Accounts → Connect → YouTube.")
-    print(f"  {len(found)} akun YouTube di API key ini:")
-    for acc in found:
-        mark = " ← ZERNIO_YOUTUBE_ACCOUNT_ID" if acc["accountId"] == want else ""
-        print(f"    {acc['accountId']}  {acc['name']}  ({acc['profile']}){mark}")
-    if not want:
-        fail("ZERNIO_YOUTUBE_ACCOUNT_ID kosong — salin salah satu accountId di atas.")
-    if want not in {a["accountId"] for a in found}:
-        fail(f"ZERNIO_YOUTUBE_ACCOUNT_ID={want} tidak ada di daftar di atas. "
-             "Secret dan akun tidak cocok — ini penyebab 400 yang paling sering.")
-    print("  cocok. Siap mengunggah.")
+    chosen = accounts[0]
+    print(f"  akun YouTube dipakai: {chosen['accountId']} ({chosen['name']})")
+    return chosen["accountId"]
+
+
+def check_account():
+    """Sebelum 20 MB diunggah: pastikan key hidup dan kanal YouTube-nya ketemu."""
+    key = os.environ.get("ZERNIO_API_KEY", "").strip() or os.environ.get("ZERNIO_KEY", "").strip()
+    if not key:
+        fail("ZERNIO_API_KEY kosong. Di Actions: Settings → Secrets → Actions.")
+    accounts = discover_accounts(key)
+    if not accounts:
+        fail("API key hidup, tapi tidak ada akun YouTube yang tersambung.")
+    print(f"  {len(accounts)} akun YouTube di API key ini:")
+    want = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+    for acc in accounts:
+        mark = "  ← dipakai" if acc["accountId"] == want else ""
+        print(f"    {acc['accountId']}  {acc['name']}  [{acc['profile']}]{mark}")
+    if want and want not in {a["accountId"] for a in accounts}:
+        print("  ! secret ZERNIO_YOUTUBE_ACCOUNT_ID tidak cocok — akun pertama akan "
+              "dipakai otomatis, jadi unggahan tetap jalan.")
+    print("  siap.")
+
+
+# ---------- buku besar: mencegah satu episode terunggah dua kali ----------
+LEDGER = ROOT / "11_CONTENT" / "06_UPLOAD" / "published.json"
+
+
+def load_ledger():
+    if not LEDGER.exists():
+        return {}
+    try:
+        data = json.loads(LEDGER.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def save_ledger(ledger):
+    LEDGER.write_text(json.dumps(ledger, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                      encoding="utf-8")
+
+
+def load_request(path):
+    req = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+    ep = req.get("episode")
+    if not ep:
+        fail(f"{path}: tidak ada field 'episode'")
+    return ep, req
 
 
 def load_meta(ep):
@@ -294,14 +370,20 @@ def build_payload(meta, video_url, thumb_url, visibility=None):
     }
 
 
-def run(ep, media_dir, send, visibility, check_media=True):
+def run(ep, media_dir, send, visibility, check_media=True, request=None, force=False):
     WARNS.clear()
     meta = load_meta(ep)
     print(f"\n=== {ep} · {meta['title']} ({len(meta['title'])} karakter) ===")
     validate(meta, media_dir, check_media)
 
-    key = os.environ.get("ZERNIO_API_KEY", "").strip()
-    account = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+    key = (os.environ.get("ZERNIO_API_KEY", "").strip()
+           or os.environ.get("ZERNIO_KEY", "").strip())
+    visibility = visibility or (request or {}).get("visibility")
+    ledger = load_ledger()
+    if send and ep in ledger and not force:
+        print(f"  dilewati: {ep} sudah tayang {ledger[ep].get('uploaded_at')} · "
+              f"{ledger[ep].get('youtube_url')} (pakai --force untuk mengulang)")
+        return {"episode": ep, "skipped": True, **ledger[ep]}
 
     for w in WARNS:
         print(f"::warning file=11_CONTENT/06_UPLOAD/{ep}.json::{w}"
@@ -310,7 +392,9 @@ def run(ep, media_dir, send, visibility, check_media=True):
     if not send:
         payload = build_payload(meta, f"<publicUrl {meta['video']}>",
                                 f"<publicUrl {meta['thumbnail']}>", visibility)
-        payload["platforms"][0]["accountId"] = account or "<ZERNIO_YOUTUBE_ACCOUNT_ID>"
+        payload["platforms"][0]["accountId"] = (
+            os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+            or "<akun YouTube, dicari otomatis dari GET /v1/accounts>")
         if not check_media:
             print("  catatan: --text-only — file video/thumbnail TIDAK diperiksa. "
                   "Jalankan tanpa flag ini sebelum --send.")
@@ -320,8 +404,8 @@ def run(ep, media_dir, send, visibility, check_media=True):
 
     if not key:
         fail("ZERNIO_API_KEY kosong — tambahkan sebagai secret repo, jangan di file")
-    if not account:
-        fail("ZERNIO_YOUTUBE_ACCOUNT_ID kosong — lihat GET /v1/profiles di dashboard Zernio")
+    account = resolve_account(key, (request or {}).get("accountId"))
+    os.environ["ZERNIO_YOUTUBE_ACCOUNT_ID"] = account
 
     video_url = upload_media(media_dir / meta["video"], key, "video")
     thumb_url = upload_media(media_dir / meta["thumbnail"], key, "thumbnail")
@@ -345,6 +429,10 @@ def run(ep, media_dir, send, visibility, check_media=True):
         "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
     print(f"  published: {out['status']} · {out['youtube_url']}")
+    ledger[ep] = {"post_id": out["post_id"], "status": out["status"],
+                  "youtube_url": out["youtube_url"], "uploaded_at": out["uploaded_at"],
+                  "title": out["title"]}
+    save_ledger(ledger)
     return out
 
 
@@ -355,6 +443,9 @@ def main():
     ap.add_argument("--media-dir", default=str(ROOT / "10_FILM" / "remotion" / "output" / "episodes"))
     ap.add_argument("--send", action="store_true", help="benar-benar unggah (tanpa ini = dry-run)")
     ap.add_argument("--visibility", choices=["public", "unlisted", "private"])
+    ap.add_argument("--request", help="berkas antrean (11_CONTENT/06_UPLOAD/queue/*.json)")
+    ap.add_argument("--force", action="store_true",
+                    help="abaikan buku besar: unggah walau episode sudah tayang")
     ap.add_argument("--check", action="store_true",
                     help="uji ZERNIO_API_KEY + ZERNIO_YOUTUBE_ACCOUNT_ID lewat GET /v1/profiles")
     ap.add_argument("--text-only", action="store_true",
@@ -367,6 +458,13 @@ def main():
         check_account()
         return 0
 
+    request = None
+    if args.request:
+        ep_from_request, request = load_request(args.request)
+        args.episode = ep_from_request
+        print(f"permintaan: {args.request} → {ep_from_request} "
+              f"(status {(request.get('status') or '?')})")
+
     eps = ([p.stem for p in sorted(META_DIR.glob("EP*.json"))]
            if args.all else [args.episode])
     if not eps or not eps[0]:
@@ -376,7 +474,8 @@ def main():
     LOG_DIR.mkdir(parents=True, exist_ok=True)
     if args.text_only and args.send:
         fail("--text-only hanya untuk dry-run; jangan digabung dengan --send")
-    results = [run(ep, media_dir, args.send, args.visibility, not args.text_only)
+    results = [run(ep, media_dir, args.send, args.visibility, not args.text_only,
+                   request, args.force)
                for ep in eps]
 
     stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())

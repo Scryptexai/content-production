@@ -1,4 +1,4 @@
-# 06_UPLOAD — dari master jadi YouTube, tanpa upload otomatis
+# 06_UPLOAD — dari master jadi YouTube, otomatis lewat antrean
 
 Folder ini bukan video. Ini **instruksi unggah**: judul, hook, deskripsi, tag,
 komentar pertama, dan id file Drive untuk tiap episode. Yang mengeksekusi adalah
@@ -10,6 +10,8 @@ GitHub Actions (`.github/workflows/youtube-upload.yml`) lewat API Zernio.
 │   EP02.json             categoryId, drive_file_id, size_bytes, sha256, video, thumbnail)
 ├── EP03.json
 ├── thumbs/EP0n_thumbnail.jpg    yang benar-benar dikirim ke YouTube (±0,3 MB, ikut repo)
+├── queue/EP0n.json      antrean: push berkas berstatus "requested" = unggah episode itu
+├── published.json       buku besar: episode yang sudah tayang, ditulis balik oleh job
 └── README.md
 ```
 
@@ -20,17 +22,17 @@ karena itu file master harus tetap **anyone with the link → Viewer**).
 
 ---
 
-## Kenapa tidak ada yang bisa terunggah sendiri
+## Kenapa unggahan ini aman walau otomatis
 
 Unggahan ke kanal orang lain tidak bisa dibatalkan dengan `Ctrl+Z`. Karena itu tiga
 lapis:
 
-1. Workflow hanya punya pemicu `workflow_dispatch` — tidak ada `push`, tidak ada
-   jadwal. Tidak ada yang berjalan tanpa satu orang menekan **Run workflow**.
-2. Job terikat ke environment `production` yang punya **required reviewers**.
-   Tanpa klik *Approve*, langkah unduh pun tidak mulai.
-3. Default input `dry_run: true`. Dry-run menyusun payload penuh dan mencetaknya,
-   lalu berhenti — nol request ke Zernio.
+1. **Antrean berkas.** Tidak ada yang diunggah sampai ada berkas di
+   `06_UPLOAD/queue/` berstatus `requested`. Berkas itu yang menjadi izin.
+2. **Buku besar.** Episode yang sudah tayang tercatat di `published.json`;
+   push berikutnya melewatinya. Satu episode, satu unggahan.
+3. **Hash master.** sha256 dan ukuran file dicocokkan dengan metadata sebelum
+   satu byte pun dikirim. File yang bukan yang disetujui tidak akan diunggah.
 
 Dan sebelum `--send` menyentuh jaringan, `upload_zernio.py` memeriksa: ukuran file
 sama dengan `size_bytes`, sha256 sama dengan `sha256`, judul ≤ 100 karakter, hook
@@ -70,49 +72,49 @@ Settings → Environments → **New environment** → nama `production` →
 centang **Required reviewers** → pilih akun sendiri. Tanpa langkah ini workflow
 tetap jalan, tapi tidak ada yang menghentikannya di tengah.
 
-### 3. Jalankan percobaan kering
+### 3. Unggah otomatis lewat antrean
 
-Actions → **Upload episode to YouTube (Zernio)** → **Run workflow**. Di dropdown
-**Use workflow from**, pilih branch `arena/66ec29bf-content-production` — branch
-default (`main`) masih memakai skrip dan judul yang lama. Workflow bisa dijalankan
-dari branch mana pun yang memuat file ini.
+Tidak ada tombol yang perlu ditekan. Antreannya adalah berkas JSON di
+`queue/`; menambah satu berkas berstatus `requested` lalu push = episode itu
+diunggah.
 
-Langkah pertama job adalah **Cek kredensial**: `GET /v1/profiles` dicetak, akun
-YouTube-nya ditandai, dan `ZERNIO_YOUTUBE_ACCOUNT_ID` dicocokkan. Kalau secret
-salah, job berhenti di sini — sebelum 20 MB video diunggah. Bisa diuji manual:
-
-```bash
-python3 tools/upload_zernio.py --check
+```json
+{ "episode": "EP01", "status": "requested", "visibility": "public" }
 ```
 
-- episode: `EP01`
-- visibility: `public`
-- dry_run: **`true`**
+Push berkas itu memicu `.github/workflows/youtube-upload.yml` (jalur
+`06_UPLOAD/queue/*.json`). Urutan job:
 
-Setelah approve, langkah *Cek metadata* mencetak payload lengkap: judul, deskripsi,
-tag, judul playlist, dan `mediaItems`. **Baca judulnya di situ.** Kalau ada yang
-salah, perbaiki `EP0n.json` dan ulangi dry-run — bukan mengunggah lalu mengedit
-di YouTube.
+1. **Cek kredensial** — `GET /v1/accounts` + `/v1/profiles`; akun YouTube dicari
+   otomatis. Kalau secret `ZERNIO_YOUTUBE_ACCOUNT_ID` kosong atau tidak cocok,
+   akun pertama yang ditemukan dipakai, jadi unggahan tetap jalan.
+2. **Unduh master dari Drive** memakai `drive_file_id`, lalu **sha256 + ukuran
+   dicocokkan** dengan metadata. Bedanya satu byte → berhenti.
+3. **Presign + PUT + `POST /v1/posts`** dengan `Idempotency-Key` dari sha256 +
+   judul (berlaku 24 jam, jadi timeout yang diulang tidak membuat video kedua;
+   409/429/5xx diulang otomatis).
+4. **`published.json`** dicatat dan di-commit balik oleh job. Push berikutnya
+   melewati episode yang sudah ada di situ — satu episode tidak mungkin tayang
+   dua kali. Push oleh `GITHUB_TOKEN` tidak memicu workflow lain, jadi tidak ada
+   lingkaran.
 
-### 4. Unggah sungguhan
+Satu berkas antrean per push. `visibility` boleh `public`, `unlisted`, atau
+`private`.
 
-Ulangi dengan `dry_run: false`. Setiap `POST /v1/posts` membawa header
-**`Idempotency-Key`** yang diturunkan dari sha256 master + judul: kalau job
-timeout lalu dijalankan ulang dalam 24 jam, Zernio mengembalikan post yang sama
-(HTTP 200), bukan membuat video kedua. Render baru = hash baru = video baru.
-Kegagalan 409/429/5xx diulang otomatis dengan kunci yang sama.
+### 4. Menjalankan manual (opsional)
 
-Hasilnya:
+Actions → **Upload episode to YouTube (Zernio)** → **Run workflow** →
+**Use workflow from**: `arena/66ec29bf-content-production`. Isi `dry_run: true`
+untuk melihat payload lengkap tanpa mengunggah, lalu `false` untuk mengunggah.
 
-- ringkasan di halaman run (tabel episode/status/tautan),
+Setiap `POST /v1/posts` tetap membawa `Idempotency-Key`, jadi menjalankan ulang
+episode yang sama dalam 24 jam mengembalikan post yang sama, bukan video kedua.
+
+Hasil unggahan:
+
+- tabel episode/status/tautan di halaman run,
 - log JSON di artifact `upload-log-*` (90 hari),
-- tautan video di `post.platforms[].platformPostUrl`.
-
-Mulai dengan `visibility: unlisted` untuk episode pertama, tonton di YouTube asli,
-lalu ubah ke publik dari YouTube Studio. Video yang belum siap lebih murah
-di-unlisted-kan daripada dihapus setelah ditonton.
-
----
+- `published.json` di repo: post id, status, tautan YouTube, judul.
 
 ## Unggah dari laptop (kalau tidak mau lewat Actions)
 

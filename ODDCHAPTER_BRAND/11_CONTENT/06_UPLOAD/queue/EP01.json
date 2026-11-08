@@ -1,0 +1,7 @@
+{
+  "episode": "EP01",
+  "status": "requested",
+  "visibility": "public",
+  "requested_at": "2026-11-08T15:28:23Z",
+  "catatan": "Push berkas ini = EP01 diunduh dari Drive, diperiksa sha256-nya, diunggah ke storage Zernio, lalu tayang publik di YouTube. Hapus berkas ini setelah published.json mencatat EP01."
+}
