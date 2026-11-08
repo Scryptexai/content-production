@@ -1,0 +1,150 @@
+name: Publish pilot to YouTube / Facebook Reel / TikTok
+
+# Human approval is structural, not procedural:
+#   • this workflow only runs when a person starts it (workflow_dispatch), and
+#   • the publishing job sits behind the `production` environment, which must be
+#     configured with required reviewers. Without an approval click, no job runs.
+on:
+  workflow_dispatch:
+    inputs:
+      video_path:
+        description: "Repo path of the MP4 to publish"
+        required: true
+        default: "ODDCHAPTER_BRAND/10_FILM/final/ODDCHAPTER_PILOT_001_CAPTIONS_1080x1920_29s.mp4"
+      release_tag:
+        description: "GitHub release tag that hosts the public file"
+        required: true
+        default: "pilot-001"
+      title:
+        description: "YouTube title (≤100 chars)"
+        required: true
+        default: "ODDCHAPTER — Kisah nyata yang berakhir jauh dari dugaan"
+      caption:
+        description: "Post text (used on YouTube description, Facebook and TikTok)"
+        required: true
+        default: "Setiap minggu, satu kisah nyata yang berakhir jauh dari dugaan."
+      targets:
+        description: "Comma-separated: youtube,facebook,tiktok"
+        required: true
+        default: "youtube,facebook,tiktok"
+      thumbnail_offset_ms:
+        description: "Frame used as video thumbnail (ms)"
+        required: true
+        default: "2000"
+      dry_run:
+        description: "true = print the Buffer payloads, send nothing"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-${{ inputs.release_tag }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify the file exists and is publishable
+    runs-on: ubuntu-latest
+    outputs:
+      sha256: ${{ steps.sum.outputs.sha256 }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the video
+        run: |
+          set -euo pipefail
+          f="${{ inputs.video_path }}"
+          test -f "$f" || { echo "::error::missing file $f"; exit 1; }
+          ls -l "$f"
+          size=$(stat -c%s "$f")
+          if [ "$size" -gt 100000000 ]; then echo "::error::file exceeds the 100 MB release-asset limit"; exit 1; fi
+          echo "size ok: $size bytes"
+
+      - name: Checksum
+        id: sum
+        run: echo "sha256=$(sha256sum '${{ inputs.video_path }}' | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+
+  publish:
+    name: Publish (requires approval)
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: production   # ← required reviewers are configured on this environment
+    env:
+      BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      BUFFER_CHANNEL_YOUTUBE: ${{ secrets.BUFFER_CHANNEL_YOUTUBE }}
+      BUFFER_CHANNEL_FACEBOOK: ${{ secrets.BUFFER_CHANNEL_FACEBOOK }}
+      BUFFER_CHANNEL_TIKTOK: ${{ secrets.BUFFER_CHANNEL_TIKTOK }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Confirm this run was approved by a human
+        run: |
+          echo "Approved by: ${{ github.actor }}"
+          echo "Environment: production"
+          echo "Checksum verified upstream: ${{ needs.verify.outputs.sha256 }}"
+
+      # Buffer cannot read Google Drive share links and has no upload endpoint:
+      # the media must sit at a public, direct, stable HTTPS URL. A release asset
+      # is the cheapest such host that travels with the repository.
+      - name: Host the video as a public release asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="${{ inputs.release_tag }}"
+          FILE="${{ inputs.video_path }}"
+          NAME=$(basename "$FILE")
+          if ! gh release view "$TAG" >/dev/null 2>&1; then
+            gh release create "$TAG" --title "ODDCHAPTER $TAG" \
+              --notes "Published asset for $TAG. Public so Buffer can fetch it." 
+          fi
+          if ! gh release view "$TAG" --json assets --jq '.assets[].name' | grep -qx "$NAME"; then
+            gh release upload "$TAG" "$FILE"
+          else
+            echo "asset already present: $NAME"
+          fi
+          echo "VIDEO_URL=https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/${NAME}" >> "$GITHUB_ENV"
+
+      - name: Verify the URL is public, direct and returns video/mp4
+        run: |
+          set -euo pipefail
+          echo "URL: $VIDEO_URL"
+          code=$(curl -sS -o /dev/null -w '%{http_code}' -L "$VIDEO_URL")
+          type=$(curl -sS -o /dev/null -w '%{content_type}' -L "$VIDEO_URL")
+          echo "status=$code type=$type"
+          test "$code" = "200" || { echo "::error::video URL is not reachable ($code)"; exit 1; }
+          case "$type" in
+            video/mp4*|application/octet-stream*) echo "content type acceptable" ;;
+            *) echo "::warning::unexpected content type: $type — Buffer may reject it" ;;
+          esac
+
+      - name: Publish through Buffer
+        run: |
+          set -euo pipefail
+          ARGS=(--video-url "$VIDEO_URL" --targets "${{ inputs.targets }}"
+                --title "${{ inputs.title }}" --caption "${{ inputs.caption }}"
+                --thumbnail-offset "${{ inputs.thumbnail_offset_ms }}")
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS+=(--dry-run); fi
+          node .github/scripts/buffer-publish.mjs "${ARGS[@]}"
+
+      - name: Summarise
+        if: always()
+        run: |
+          {
+            echo "### Publish run"
+            echo ""
+            echo "| field | value |"
+            echo "|---|---|"
+            echo "| tag | \`${{ inputs.release_tag }}\` |"
+            echo "| targets | \`${{ inputs.targets }}\` |"
+            echo "| dry run | \`${{ inputs.dry_run }}\` |"
+            echo "| approved by | \`${{ github.actor }}\` |"
+            echo "| video url | $VIDEO_URL |"
+          } >> "$GITHUB_STEP_SUMMARY"

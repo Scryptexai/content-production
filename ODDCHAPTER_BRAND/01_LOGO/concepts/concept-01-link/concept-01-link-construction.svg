@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="ODDCHAPTER concept 01 — construction">
+<title>ODDCHAPTER concept 01 — construction</title>
+<defs></defs>
+<rect width="1200" height="1200" fill="#F4F0E8"/>
+<line x1="112.5" y1="283.125" x2="112.5" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="193.75" y1="283.125" x2="193.75" y2="916.875" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="275" y1="283.125" x2="275" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="356.25" y1="283.125" x2="356.25" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="437.5" y1="283.125" x2="437.5" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="518.75" y1="283.125" x2="518.75" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="600" y1="283.125" x2="600" y2="916.875" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="681.25" y1="283.125" x2="681.25" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="762.5" y1="283.125" x2="762.5" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="843.75" y1="283.125" x2="843.75" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="925" y1="283.125" x2="925" y2="916.875" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="1006.25" y1="283.125" x2="1006.25" y2="916.875" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="112.5" y1="275" x2="1087.5" y2="275" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="356.25" x2="1087.5" y2="356.25" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="437.5" x2="1087.5" y2="437.5" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="518.75" x2="1087.5" y2="518.75" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="600" x2="1087.5" y2="600" stroke="#A7B0A1" stroke-width="1.6" opacity="0.55"/>
+<line x1="112.5" y1="681.25" x2="1087.5" y2="681.25" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="762.5" x2="1087.5" y2="762.5" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="843.75" x2="1087.5" y2="843.75" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="112.5" y1="925" x2="1087.5" y2="925" stroke="#A7B0A1" stroke-width="0.8" opacity="0.32"/>
+<line x1="196" y1="380.625" x2="224" y2="380.625" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="210" y1="366.625" x2="210" y2="394.625" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="976" y1="819.375" x2="1004" y2="819.375" stroke="#F26A3D" stroke-width="1.4"/>
+<line x1="990" y1="805.375" x2="990" y2="833.375" stroke="#F26A3D" stroke-width="1.4"/>
+<g transform="translate(193.75 193.75) scale(8.125)"><path d="M 56 50 A 27 27 0 1 1 2 50 A 27 27 0 1 1 56 50 Z M 43 50 A 14 14 0 1 0 15 50 A 14 14 0 1 0 43 50 Z M 91.065 68.067 A 27 27 0 1 1 91.065 31.933 L 81.404 40.632 A 14 14 0 1 0 81.404 59.368 Z" fill="#17191D" fill-rule="evenodd"/></g>
+<rect x="210" y="380.625" width="780" height="438.75" fill="none" stroke="#F26A3D" stroke-width="1.4" stroke-dasharray="10 8"/>
+<line x1="412.375" y1="600" x2="446.375" y2="600" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="429.375" y1="583" x2="429.375" y2="617" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="753.625" y1="600" x2="787.625" y2="600" stroke="#F26A3D" stroke-width="1.8"/>
+<line x1="770.625" y1="583" x2="770.625" y2="617" stroke="#F26A3D" stroke-width="1.8"/>
+<text x="210" y="96" font-family="Space Grotesk" font-weight="700" font-size="40" fill="#17191D" text-anchor="start">01 — LINK</text>
+<text x="210" y="130" font-family="Inter" font-weight="600" font-size="14" letter-spacing="2.4" fill="#17191D" text-anchor="start" opacity="0.55">GEOMETRIC CONSTRUCTION · 100 UNIT GRID</text>
+<text x="210" y="1092" font-family="Inter" font-weight="400" font-size="16" fill="#17191D" text-anchor="start" opacity="0.68">two annuli — produced by fill-rule, not drawn, so it stays exact at any size.</text>
+<text x="210" y="1066" font-family="Inter" font-weight="400" font-size="16" fill="#17191D" text-anchor="start" opacity="0.68">Orange crosses mark the two letter centres on the 10-unit grid. The junction lens is the intersection of</text>
+<text x="210" y="1138" font-family="Inter" font-weight="400" font-size="14" fill="#17191D" text-anchor="start" opacity="0.5">Drawing box 96 × 54 u  ·  outer radius 27  ·  counter 14  ·  stroke 13 u  ·  centres 42 u apart  ·  mouth 84°</text>
+<text x="990" y="96" font-family="Inter" font-weight="600" font-size="13" letter-spacing="2.2" fill="#F26A3D" text-anchor="end">CONCEPT — NOT A FINAL ASSET</text>
+</svg>

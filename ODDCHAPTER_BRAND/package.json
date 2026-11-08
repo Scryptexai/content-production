@@ -1,0 +1,7 @@
+{
+  "name": "oddchapter-brand-build",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for ODDCHAPTER brand assets (not a shipped package).",
+  "dependencies": { "@resvg/resvg-js": "^2.6.2" }
+}

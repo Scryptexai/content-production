@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ODDCHAPTER — Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17191D; --ivory:#F4F0E8; --orange:#F26A3D; --sage:#A7B0A1;
+    --display:"Space Grotesk",system-ui,sans-serif;
+    --text:"Inter",system-ui,-apple-system,sans-serif;
+    --pad:clamp(20px,5vw,72px);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--text);
+       font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1;margin:0;letter-spacing:-.01em}
+  h1{font-size:clamp(40px,7vw,96px)}
+  h2{font-size:clamp(28px,3.4vw,44px);margin-bottom:8px}
+  h3{font-size:clamp(18px,1.6vw,24px);margin-bottom:6px}
+  p{margin:0 0 14px;max-width:64ch}
+  a{color:inherit}
+  .wrap{padding:0 var(--pad)}
+  .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;opacity:.72}
+  .lede{font-size:clamp(17px,1.5vw,21px);opacity:.75;max-width:60ch}
+  .on-dark{background:var(--ink);color:var(--ivory)}
+  .on-ivory{background:var(--ivory);color:var(--ink)}
+  section{padding:clamp(48px,7vw,96px) 0;border-top:1px solid rgba(167,176,161,.35)}
+  .on-dark{border-color:rgba(244,240,232,.14)}
+  .grid{display:grid;gap:clamp(16px,2vw,28px)}
+  .two{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  .three{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .four{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+  figure{margin:0}
+  figure img{display:block;width:100%;height:auto}
+  figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.68;margin-top:10px}
+  .plate{background:var(--ink);display:flex;align-items:center;justify-content:center;
+         padding:clamp(20px,4vw,44px)}
+  .plate img{max-height:120px;width:auto;max-width:100%}
+  .plate.light{background:var(--ivory);border:1px solid rgba(167,176,161,.5)}
+  .plate.light img{max-height:120px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid rgba(167,176,161,.4);
+        vertical-align:top}
+  th{font-family:var(--display);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+     font-weight:700;opacity:.68;padding-bottom:8px}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;
+       background:rgba(167,176,161,.18);padding:1px 5px;border-radius:2px}
+  .swatch{aspect-ratio:1;display:flex;flex-direction:column;justify-content:flex-end;
+          padding:14px;border:1px solid rgba(167,176,161,.45)}
+  .swatch b{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+  .swatch span{font-size:12px;opacity:.7;font-variant-numeric:tabular-nums}
+  .note{border-left:2px solid var(--orange);padding:2px 0 2px 16px;font-size:14px;opacity:.8;
+        max-width:66ch}
+  nav{position:sticky;top:0;z-index:9;background:rgba(244,240,232,.94);backdrop-filter:blur(8px);
+      border-bottom:1px solid rgba(167,176,161,.45);font-size:13px}
+  nav .wrap{display:flex;gap:18px;align-items:center;height:52px;overflow-x:auto;
+            white-space:nowrap;scrollbar-width:none}
+  nav a{text-decoration:none;letter-spacing:.04em;opacity:.75}
+  nav a:hover{opacity:1}
+  nav .brandmark{margin-left:auto;display:flex;align-items:center;gap:8px;opacity:.9}
+  nav .brandmark img{height:16px;width:auto}
+  audio{width:100%;max-width:420px;margin-top:10px}
+  .kicker{display:inline-block;background:var(--orange);color:var(--ink);font-size:11px;
+          font-weight:600;letter-spacing:.18em;text-transform:uppercase;padding:6px 10px}
+  footer{padding:48px 0 72px;font-size:13px;opacity:.72}
+  .asset-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .asset{background:#0F1114;overflow:hidden}
+  .asset img{display:block;width:100%;height:auto}
+  .asset.contain{padding:14px;display:flex;align-items:center;justify-content:center;min-height:150px}
+  .asset.contain img{width:auto;max-width:100%;max-height:150px}
+  .asset.tall img{height:420px;width:100%;object-fit:contain}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#mark">Mark</a>
+    <a href="#variants">Variants</a>
+    <a href="#colour">Colour</a>
+    <a href="#type">Type</a>
+    <a href="#usage">Usage</a>
+    <a href="#motion">Motion</a>
+    <a href="#audio">Audio</a>
+    <a href="#onscreen">On screen</a>
+    <a href="#channel">Channel</a>
+    <a href="#print">Print</a>
+    <a href="#files">Files</a>
+    <span class="brandmark"><img src="../01_LOGO/master/MONOGRAM_MASTER_2048.png" alt=""> ODDCHAPTER</span>
+  </div>
+</nav>
+
+<header class="on-dark" style="padding:clamp(64px,10vw,120px) 0">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">Brand system · v1.0 · 2026-11-07</p>
+    <h1 style="margin:18px 0 26px">REAL STORIES.<br>UNEXPECTED<br>CHAPTERS.</h1>
+    <p class="lede" style="color:var(--ivory)">
+      One geometry, every surface. The mark, the channel, the motion, the print and the voice —
+      all generated from a single source so nothing can drift.
+    </p>
+    <p style="margin-top:28px"><img src="../01_LOGO/dark/LOGO_DARK_TAGLINE_2400.png"
+      alt="ODDCHAPTER lockup" style="width:min(680px,100%);height:auto"></p>
+  </div>
+</header>
+
+<section id="mark" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">01 — The mark</p>
+    <h2 style="margin-top:12px">An O that closes, a C that doesn't</h2>
+    <p class="lede">Same 13-unit stroke, same grid, overlapping by 9 units so the two edges meet in a
+      lens. That lens is the whole idea — it is not a symbol, it is what happens when the two letters
+      are drawn by the same hand.</p>
+
+    <div class="plate" style="margin:36px 0">
+      <img src="../01_LOGO/dark/MONOGRAM_DARK_1200.png" alt="OC monogram" style="max-height:200px">
+    </div>
+
+    <div class="grid two" style="margin-top:36px">
+      <table>
+        <tr><th>Property</th><th>Value</th></tr>
+        <tr><td>Outer / counter radius</td><td>27 / 14 units</td></tr>
+        <tr><td>Stroke</td><td>13 units</td></tr>
+        <tr><td>C mouth</td><td>84°</td></tr>
+        <tr><td>Centre distance</td><td>44 units</td></tr>
+        <tr><td>Bounding box</td><td>98 × 54 units</td></tr>
+        <tr><td>Construction</td><td>one <code>&lt;path&gt;</code>, <code>fill-rule="evenodd"</code></td></tr>
+      </table>
+      <div>
+        <table>
+          <tr><th>Minimum size</th><th>Floor</th></tr>
+          <tr><td>Monogram</td><td>32 px · 8 mm</td></tr>
+          <tr><td>Lockup</td><td>240 px · 60 mm</td></tr>
+          <tr><td>Lockup with tagline</td><td>420 px · 105 mm</td></tr>
+          <tr><td>Clear space</td><td>13.3 % of monogram height</td></tr>
+        </table>
+        <p class="note" style="margin-top:18px">Below 24 px the junction fills in and the mark reads
+          as a blob. The 32 px favicon carries the mark at 25 px of ink — the absolute floor, and
+          the smallest this identity is ever allowed to appear.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="variants" class="on-dark">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">02 — Variants</p>
+    <h2 style="margin-top:12px">Four colourways, one geometry</h2>
+    <div class="grid two" style="margin-top:36px">
+      <figure>
+        <div class="plate"><img src="../01_LOGO/dark/LOGO_DARK_TAGLINE_2400.png" alt=""></div>
+        <figcaption>Dark — video, thumbnails, dark UI</figcaption>
+      </figure>
+      <figure>
+        <div class="plate light"><img src="../01_LOGO/light/LOGO_LIGHT_TAGLINE_2400.png" alt=""></div>
+        <figcaption>Light — print, documents, light web</figcaption>
+      </figure>
+      <figure>
+        <div class="plate light"><img src="../01_LOGO/light/LOGO_LIGHT_2400.png" alt=""></div>
+        <figcaption>Light, no tagline</figcaption>
+      </figure>
+      <figure>
+        <div class="plate light"><img src="../01_LOGO/monochrome/LOGO_MONO_2400.png" alt=""></div>
+        <figcaption>Monochrome — one ink, no tagline</figcaption>
+      </figure>
+    </div>
+    <p class="note" style="margin-top:28px;color:var(--sage)">Every logo file is pure paths and rects:
+      no live text, no raster, no embedded fonts. The wordmark is Space Grotesk 700 at +0.02 em, the
+      tagline Inter 600 at +0.17 em, both converted to outlines — so the files open identically on a
+      machine with neither font installed.</p>
+  </div>
+</section>
+
+<section id="colour" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">03 — Colour</p>
+    <h2 style="margin-top:12px">Ink ground, Ivory type, one orange signal</h2>
+    <div class="grid four" style="margin-top:32px">
+      <div class="swatch" style="background:var(--ink);color:var(--ivory)">
+        <b>Ink</b><span>#17191D</span><span>15.48 : 1 on Ivory</span></div>
+      <div class="swatch" style="background:var(--ivory);color:var(--ink)">
+        <b>Ivory</b><span>#F4F0E8</span><span>15.48 : 1 on Ink</span></div>
+      <div class="swatch" style="background:var(--orange);color:var(--ink)">
+        <b>Signal Orange</b><span>#F26A3D</span><span>5.79 : 1 on Ink</span></div>
+      <div class="swatch" style="background:var(--sage);color:var(--ink)">
+        <b>Sage</b><span>#A7B0A1</span><span>7.85 : 1 on Ink</span></div>
+    </div>
+    <table style="margin-top:32px">
+      <tr><th>Pair</th><th>Ratio</th><th>Verdict</th></tr>
+      <tr><td>Ivory on Ink · Ink on Ivory</td><td>15.48 : 1</td><td>AAA — the default pairing</td></tr>
+      <tr><td>Sage on Ink</td><td>7.85 : 1</td><td>AAA for body text</td></tr>
+      <tr><td>Orange on Ink</td><td>5.79 : 1</td><td>AA — accent and rules only, never the wordmark</td></tr>
+      <tr><td>Orange on Ivory</td><td>2.68 : 1</td><td><b>Fails</b> — graphic elements only, never text</td></tr>
+    </table>
+    <p class="note" style="margin-top:24px">Orange is a signal, not a colour scheme: one orange element
+      per composition. If you want a second, delete the first. No gradients, no tints — a 40 % Ink is a
+      different colour and it is not ours.</p>
+  </div>
+</section>
+
+<section id="type" class="on-dark">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">04 — Typography</p>
+    <h2 style="margin-top:12px">Space Grotesk for the statement, Inter for everything else</h2>
+    <div class="grid two" style="margin-top:36px">
+      <div>
+        <p style="font-family:var(--display);font-size:clamp(40px,5vw,68px);font-weight:700;
+                  letter-spacing:-.02em;line-height:.95;margin:0">Aa<br>Space<br>Grotesk 700</p>
+        <p class="eyebrow" style="margin-top:16px;color:var(--sage)">Display · headlines, wordmark, numbers</p>
+      </div>
+      <div>
+        <p style="font-size:clamp(22px,2.4vw,32px);line-height:1.4;margin:0">
+          Aa Inter — body, captions, tagline.<br>
+          <span style="font-weight:400;opacity:.6">400 regular for reading,</span>
+          <span style="font-weight:600">600 for labels and the tagline.</span></p>
+        <p class="eyebrow" style="margin-top:16px;color:var(--sage)">Text · both SIL OFL 1.1</p>
+      </div>
+    </div>
+    <table style="margin-top:36px">
+      <tr><th>Style</th><th>Face</th><th>Size</th><th>Tracking</th></tr>
+      <tr><td>Headline</td><td>Space Grotesk 700</td><td>56–72 px</td><td>−0.01 em</td></tr>
+      <tr><td>Thumbnail line</td><td>Space Grotesk 700</td><td>72 / 52 px</td><td>0</td></tr>
+      <tr><td>Body</td><td>Inter 400</td><td>16–18 px</td><td>0</td></tr>
+      <tr><td>Label</td><td>Inter 600</td><td>11–13 px</td><td>+0.16 em, upper</td></tr>
+      <tr><td>Tagline</td><td>Inter 600</td><td>15–18 px</td><td>+0.17 em, upper</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="usage" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">05 — Usage</p>
+    <h2 style="margin-top:12px">Twelve panels, three of them allowed</h2>
+    <p class="lede">Everything on the sheet is rendered, not described. Each rejection states why.</p>
+    <figure style="margin-top:32px">
+      <img src="../05_PREVIEWS/USAGE_DO_DONT.png" alt="Logo usage sheet">
+    </figure>
+    <p class="note" style="margin-top:24px">The most common failure is not colour — it is non-uniform
+      scaling. Stretch the mark and the circles become ellipses; the identity is drawn on arcs and arcs
+      do not stretch.</p>
+  </div>
+</section>
+
+<section id="motion" class="on-dark">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">06 — Motion</p>
+    <h2 style="margin-top:12px">1.2 seconds, then a hard cut</h2>
+    <p class="lede" style="color:var(--ivory)">Arrive, lock, wipe, one orange rule, tagline. No sting,
+      no bounce, no dissolve into the episode.</p>
+    <div class="grid two" style="margin-top:36px;align-items:start">
+      <figure>
+        <img src="../04_MOTION/preview/OPENER_BUILD_960x540.gif" alt="The 1.2 second build">
+        <figcaption>38 frames · 25 fps · rendered, not storyboarded</figcaption>
+      </figure>
+      <div>
+        <table>
+          <tr><th>Time</th><th>State</th></tr>
+          <tr><td>0 ms</td><td>Monogram scales 92 → 100 %, fades in · 180 ms</td></tr>
+          <tr><td>180 ms</td><td>Junction locks · hold 120 ms</td></tr>
+          <tr><td>300 ms</td><td>Wordmark wipes left to right · 240 ms</td></tr>
+          <tr><td>540 ms</td><td>Orange rule draws · 180 ms, linear</td></tr>
+          <tr><td>720 ms</td><td>Tagline rises 12 px, fades in · 180 ms</td></tr>
+          <tr><td>1200 ms</td><td>Hold 300 ms, then cut</td></tr>
+        </table>
+        <p class="note" style="margin-top:20px;color:var(--sage)">Orange animates once. The monogram
+          never rotates or draws itself in pieces — the O and the C arrive together because they are
+          one shape.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audio" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">07 — Audio</p>
+    <h2 style="margin-top:12px">Someone explaining, not announcing</h2>
+    <div class="grid two" style="margin-top:32px">
+      <div>
+        <h3>Indonesian signature</h3>
+        <p style="opacity:.7;font-size:14px">“Kisah nyata. Di luar dugaan. Ini ODDCHAPTER.” — 5.93 s</p>
+        <audio controls preload="none" src="../08_AUDIO/assets/SIGNATURE_ID.mp3"></audio>
+        <h3 style="margin-top:28px">English signature</h3>
+        <p style="opacity:.7;font-size:14px">“Real stories. Unexpected chapters.” — 3.70 s</p>
+        <audio controls preload="none" src="../08_AUDIO/assets/SIGNATURE_EN.mp3"></audio>
+      </div>
+      <div>
+        <h3>Cold-open reference</h3>
+        <p style="opacity:.7;font-size:14px">48 words · 20.54 s · <b>140 words per minute</b> — write to
+          that number, not to a feeling.</p>
+        <audio controls preload="none" src="../08_AUDIO/assets/COLD_OPEN_SAMPLE_ID.mp3"></audio>
+        <p class="note" style="margin-top:24px">One signature per episode. No music under the logo
+          build. Minimum 0.6 s of clean silence before the first word — silence is part of the
+          identity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="onscreen" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">08 — On screen</p>
+    <h2 style="margin-top:12px">The graphics that only exist inside a cut</h2>
+    <p class="lede">Lower thirds, chapter cards and the subtitle plate — all 1920 × 1080, all inside
+      the 120 px title-safe margin, all from the same tokens as the logo.</p>
+    <div class="asset-grid" style="margin-top:32px">
+      <figure><img src="../09_EPISODE_KIT/onscreen/CHAPTER_CARD_PREVIEW.png" alt="">
+        <figcaption>Chapter card</figcaption></figure>
+      <figure><img src="../09_EPISODE_KIT/onscreen/SUBTITLE_SAMPLE_PREVIEW.png" alt="">
+        <figcaption>Subtitles — 42 px over a 90 % plate</figcaption></figure>
+    </div>
+    <div class="asset-grid" style="margin-top:20px">
+      <figure><div class="asset"><img src="../09_EPISODE_KIT/onscreen/LOWER_THIRD_NAME_PREVIEW.png" alt=""></div>
+        <figcaption>Name strap</figcaption></figure>
+      <figure><div class="asset"><img src="../09_EPISODE_KIT/onscreen/LOWER_THIRD_LOCATION_PREVIEW.png" alt=""></div>
+        <figcaption>Location strap</figcaption></figure>
+    </div>
+    <p class="note" style="margin-top:24px">Every episode runs through
+      <code>09_EPISODE_KIT/PIPELINE.md</code>: seven stages, seven gates, and a beat sheet budgeted at
+      140 words per minute — the pacing measured from the reference read.</p>
+  </div>
+</section>
+
+<section id="channel" class="on-dark">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">09 — Channel &amp; social</p>
+    <h2 style="margin-top:12px">Every surface, at the size the platform asks for</h2>
+
+    <div class="asset-grid" style="margin-top:36px">
+      <figure><div class="asset contain"><img src="../02_YOUTUBE/avatar/YOUTUBE_AVATAR_800.png" alt=""></div>
+        <figcaption>Avatar · 800 × 800</figcaption></figure>
+      <figure><div class="asset contain"><img src="../03_SOCIAL/profile/SOCIAL_PROFILE_1024.png" alt=""></div>
+        <figcaption>Profile · 1024 × 1024</figcaption></figure>
+      <figure><div class="asset contain"><img src="../06_EXPORTS/FAVICON_512.png" alt=""></div>
+        <figcaption>App icon · 512 × 512</figcaption></figure>
+      <figure><div class="asset contain"><img src="../06_EXPORTS/FAVICON_32.png" alt="" style="image-rendering:pixelated"></div>
+        <figcaption>Favicon · 32 × 32, true size</figcaption></figure>
+    </div>
+
+    <figure style="margin-top:28px">
+      <div class="asset"><img src="../02_YOUTUBE/banner/YOUTUBE_BANNER_2560x1440.png" alt=""></div>
+      <figcaption>Banner · 2560 × 1440 — lockup at 70 % of the 1546 px safe width</figcaption>
+    </figure>
+
+    <div class="asset-grid" style="margin-top:28px">
+      <figure><div class="asset"><img src="../02_YOUTUBE/thumbnails/TEMPLATE_01_PERISTIWA.png" alt=""></div>
+        <figcaption>Thumbnail 01 · event</figcaption></figure>
+      <figure><div class="asset"><img src="../02_YOUTUBE/thumbnails/TEMPLATE_02_BERTAHAN_HIDUP.png" alt=""></div>
+        <figcaption>Thumbnail 02 · survival</figcaption></figure>
+      <figure><div class="asset"><img src="../02_YOUTUBE/thumbnails/TEMPLATE_03_SAINS_ANEH.png" alt=""></div>
+        <figcaption>Thumbnail 03 · strange science</figcaption></figure>
+    </div>
+
+    <div class="asset-grid" style="margin-top:28px">
+      <figure><div class="asset"><img src="../02_YOUTUBE/end_card/YOUTUBE_END_CARD_1920x1080.png" alt=""></div>
+        <figcaption>End card · 1920 × 1080</figcaption></figure>
+      <figure><div class="asset"><img src="../03_SOCIAL/link_preview/OPEN_GRAPH_1200x630.png" alt=""></div>
+        <figcaption>Link preview · 1200 × 630</figcaption></figure>
+      <figure><div class="asset tall"><img src="../03_SOCIAL/stories/SOCIAL_STORY_1080x1920.png" alt=""></div>
+        <figcaption>Story · 1080 × 1920</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="print" class="on-ivory">
+  <div class="wrap">
+    <p class="eyebrow">10 — Print</p>
+    <h2 style="margin-top:12px">Authored in millimetres, not pixels</h2>
+    <div class="grid two" style="margin-top:32px;align-items:start">
+      <figure><img src="../07_PRINT/previews/POSTER_A2_PREVIEW.png" alt="">
+        <figcaption>Poster A2 — trim 420 × 594 mm</figcaption></figure>
+      <div>
+        <div class="grid two">
+          <figure><img src="../07_PRINT/previews/BUSINESS_CARD_FRONT_PREVIEW.png" alt="">
+            <figcaption>Card front</figcaption></figure>
+          <figure><img src="../07_PRINT/previews/BUSINESS_CARD_BACK_PREVIEW.png" alt="">
+            <figcaption>Card back</figcaption></figure>
+        </div>
+        <figure style="margin-top:20px">
+          <img src="../07_PRINT/previews/STICKER_PREVIEW.png" alt="">
+          <figcaption>Die-cut sticker · Ø 75 mm + 3 mm bleed</figcaption>
+        </figure>
+      </div>
+    </div>
+    <table style="margin-top:36px">
+      <tr><th>Token</th><th>CMYK build</th><th>Note</th></tr>
+      <tr><td>Ink</td><td>21 / 14 / 0 / 89</td><td>Large areas: rich black 60 / 50 / 40 / 100. Small text: 100 K</td></tr>
+      <tr><td>Ivory</td><td>0 / 2 / 5 / 4</td><td>Warms slightly on uncoated stock — that is the point</td></tr>
+      <tr><td>Signal Orange</td><td>0 / 56 / 75 / 5</td><td>Out of CMYK gamut. Proof it, or match a spot</td></tr>
+      <tr><td>Sage</td><td>5 / 0 / 9 / 31</td><td>Hairlines and captions only</td></tr>
+    </table>
+    <p class="note" style="margin-top:22px">These are naive conversions, not ICC-managed. The spot match
+      for the orange (Pantone 1655 C / 172 C) is a candidate, not a verified match — settle it on a
+      drawdown with the printer.</p>
+  </div>
+</section>
+
+<section id="files" class="on-dark">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sage)">11 — Files</p>
+    <h2 style="margin-top:12px">Where everything lives</h2>
+    <table style="margin-top:28px">
+      <tr><th>Folder</th><th>Contents</th><th>Files</th></tr>
+      <tr><td><code>01_LOGO/</code></td><td>Masters, dark / light / mono, tagline versions, square icon, <code>LOGO_SYSTEM.md</code></td><td>27 SVG · 25 PNG</td></tr>
+      <tr><td><code>02_YOUTUBE/</code></td><td>Avatar, banner, crop check, watermarks, thumbnails, end card</td><td>9 SVG · 10 PNG</td></tr>
+      <tr><td><code>03_SOCIAL/</code></td><td>Profile, headers, post, stories, link preview</td><td>7 SVG · 7 PNG</td></tr>
+      <tr><td><code>04_MOTION/</code></td><td>Storyboard, layer files, GIF, poster, SMIL opener</td><td>5 SVG · 2 PNG · 1 GIF</td></tr>
+      <tr><td><code>05_PREVIEWS/</code></td><td>Concept record, usage sheet, contact sheet</td><td>3 SVG · 5 PNG</td></tr>
+      <tr><td><code>06_EXPORTS/</code></td><td>Favicons 512 / 192 / 32, transparent icon, logo 2000</td><td>5 PNG</td></tr>
+      <tr><td><code>07_PRINT/</code></td><td>One-colour 100 K, stationery, poster, merch, <code>PRINT_SPEC.md</code></td><td>9 SVG · 7 PNG</td></tr>
+      <tr><td><code>08_AUDIO/</code></td><td><code>AUDIO_IDENTITY.md</code> + three reads</td><td>3 MP3</td></tr>
+      <tr><td><code>09_EPISODE_KIT/</code></td><td><code>PIPELINE.md</code>, on-screen graphics, beat sheet / publish / thumbnail templates</td><td>4 SVG · 4 PNG · 4 MD</td></tr>
+    </table>
+    <p class="note" style="margin-top:26px;color:var(--sage)">Everything is rebuilt by
+      <code>bash tools/render_all.sh</code> from <code>tools/brand.py</code>. Change one radius there and
+      the whole system moves together.</p>
+  </div>
+</section>
+
+<footer class="on-ivory">
+  <div class="wrap">
+    <p><b>Colophon.</b> Geometry, colour, type and motion verified in this environment — dimensions
+      measured, contrast calculated, every export inspected. Print colour is not ICC-managed and the
+      spot match is unproven. Audio files are reference reads, not masters, and pronunciation has not
+      been checked by ear. No asset has been uploaded to any platform account.</p>
+    <p style="margin-top:14px">ODDCHAPTER · brand system v1.0 · 2026-11-07 ·
+      <a href="../FINAL_DELIVERY_REPORT.md">delivery report</a> ·
+      <a href="../BRAND_GUIDELINES.md">brand guidelines</a> ·
+      <a href="../01_LOGO/LOGO_SYSTEM.md">logo system</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

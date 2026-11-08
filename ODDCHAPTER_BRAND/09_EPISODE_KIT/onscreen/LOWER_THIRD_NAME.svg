@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="ODDCHAPTER — name strap">
+<title>ODDCHAPTER — name strap</title>
+<defs></defs>
+
+<rect x="120" y="690" width="620" height="148" fill="#17191D" opacity="0.92"/>
+<rect x="120" y="690" width="6" height="148" fill="#F26A3D"/>
+<text x="154" y="730" font-family="Inter" font-weight="600" font-size="19" letter-spacing="4.4" fill="#F26A3D" text-anchor="start">NARASUMBER</text>
+<text x="154" y="782" font-family="Space Grotesk" font-weight="700" font-size="44" fill="#F4F0E8" text-anchor="start">NAMA NARASUMBER</text>
+<text x="154" y="818" font-family="Inter" font-weight="400" font-size="24" fill="#A7B0A1" text-anchor="start">Jabatan · Institusi</text>
+</svg>
