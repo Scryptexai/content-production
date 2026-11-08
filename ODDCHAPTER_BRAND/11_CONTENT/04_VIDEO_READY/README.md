@@ -1,32 +1,61 @@
-# video ready
+# video ready — isi folder ini
 
-Folder ini untuk file **master jadi** — siap upload ke TikTok / YouTube Shorts /
-Facebook Reels. Satu file per episode, 1080×1920, H.264, AAC 48 kHz, −14 LUFS.
+Master siap upload ke TikTok / YouTube Shorts / Facebook Reels.
+1080×1920 · H.264 (yuv420p, tv range) · 30 fps · AAC 48 kHz stereo · −14 LUFS (mean −15,7 dB, max −1,4 dB).
 
-## Status saat ini
+File binernya **tidak** disimpan di Git (folder `10_FILM/remotion/output/` di-ignore,
+supaya repo tidak membengkak 20 MB per episode). Yang tersimpan: sumber, naskah,
+dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`.
 
-Belum ada satu pun dari 21 episode yang masuk ke sini. Itu bukan karena
-tertinggal — ada dua gerbang yang belum dibuka:
+## Daftar master
 
-1. **Gerbang sumber.** 21 script masih berstatus `NEEDS-SOURCE`. Peristiwanya
-   nyata, tetapi rujukan primernya belum dibaca dan dicocokkan di sesi ini.
-   Merender video final dari script yang belum terverifikasi berarti
-   mempublikasikan klaim yang tidak bisa dipertanggungjawabkan.
-2. **Gerbang render.** Belum ada satu komposisi Remotion yang dibangun untuk
-   episode-episode ini. `05_VISUAL_PLAN.md` §9 berisi urutan produksinya.
+| episode | judul | durasi | ukuran | Drive file id | file lokal |
+|---|---|---|---|---|---|
+| EP01 v7 | TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL | 64,85 s | 17,9 MB | `18u4GwSOAMVIsCtnPIGBAjvc-Axy-Nrur` | `10_FILM/remotion/output/episodes/EP01_1080x1920_master.mp4` |
+| EP02 | MEREKA MEMOTONG TENDA ITU DARI DALAM | 72,32 s | 21,1 MB | `1WF4yQQkg02pctkJ8QsX-xls37gQCvoyJ` | `10_FILM/remotion/output/episodes/EP02_1080x1920_master.mp4` |
+| EP03 | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | 71,80 s | 21,9 MB | `1chsdzAkdplfm3JdmBHOefj5MQP_khUiZ` | `10_FILM/remotion/output/episodes/EP03_1080x1920_master.mp4` |
 
-## Isi folder sekarang
+Buka Drive: `https://drive.google.com/file/d/<file id>/view`
+Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`
 
-`REFERENSI_standar_visual_ODDCHAPTER_PILOT_001_captions_1080x1920.mp4` — pilot
-dari fase sebelumnya. Ini **bukan** salah satu dari 21 episode. Fungsinya satu:
-menjadi patokan mutu. Kualitas gerak, tipografi, caption, dan warna di file ini
-adalah standar minimum yang harus dicapai setiap episode.
+Master lama (v3–v6) sudah di-trash supaya tidak ada dua file dengan nama sama.
 
-## Konvensi nama file
+## Cara membuat ulang satu master
 
 ```
-EP01_TIGA-PENJAGA_1080x1920_v1.mp4
+cd ODDCHAPTER_BRAND
+python3 tools/build_timing.py EP03      # durasi nyata tiap segmen
+python3 tools/build_bed.py EP03         # angin + drone + dentuman di titik balik
+python3 tools/build_sfx.py EP03         # efek per segmen
+python3 tools/build_episodes_json.py    # teks + daftar foto ke Remotion
+cd 10_FILM/remotion
+node scripts/still-episode.mjs EP03     # QA frame sebelum encode
+node scripts/render-episode.mjs EP03    # render + loudnorm → *_master.mp4
 ```
 
-Versi naik setiap ada perbaikan. File dengan suffix `_CAPTIONS` adalah master
-dengan caption terbakar; tanpa suffix adalah master bersih untuk arsip.
+Encode akhir (kalau mau dari `_raw.mp4` dengan CRF sendiri):
+
+```
+ffmpeg -i EP03_raw.mp4 \
+  -vf "scale=in_range=full:out_range=tv,format=yuv420p" \
+  -af "loudnorm=I=-14:TP=-1.5:LRA=11" \
+  -c:v libx264 -preset slow -crf 21 -maxrate 6M -bufsize 12M \
+  -pix_fmt yuv420p -c:a aac -b:a 160k -ar 48000 -movflags +faststart \
+  EP03_1080x1920_master.mp4
+```
+
+## Isi lain di folder ini
+
+`REFERENSI_standar_visual_ODDCHAPTER_PILOT_001_captions_1080x1920.mp4` — pilot fase
+sebelumnya. Bukan salah satu dari 21 episode; patokan mutu minimum (gerak,
+tipografi, caption, warna).
+
+## Konvensi nama
+
+```
+EP01_1080x1920_master.mp4        ← satu file per episode, selalu nama ini
+EP01_raw.mp4                     ← render mentah 8 Mbps, bahan encode ulang
+```
+
+Satu nama per episode, tanpa nomor versi di nama file: versi dicatat di tabel di
+atas dan di commit Git, supaya Drive tidak pernah punya dua "EP01".
