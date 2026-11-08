@@ -14,7 +14,9 @@ GitHub Actions (`.github/workflows/youtube-upload.yml`) lewat API Zernio.
 ```
 
 Master MP4 **tidak** ada di Git (17–22 MB per episode). Master tinggal di Drive
-folder `video ready`; workflow mengunduhnya sendiri dari `drive_file_id`.
+folder `video ready`; workflow mengunduhnya sendiri dari `drive_file_id`
+(dicoba lewat `gdown`, lalu unduhan langsung `drive.usercontent.google.com` —
+karena itu file master harus tetap **anyone with the link → Viewer**).
 
 ---
 
@@ -141,6 +143,7 @@ adalah balasan, bukan tayangan.
 | `HTTP 400 ... accountId` | kanal YouTube belum tersambung / id berubah | cek `GET /v1/profiles`, perbarui secret |
 | `ukuran … byte, metadata bilang …` | master di Drive di-render ulang, metadata belum diperbarui | perbarui `size_bytes` + `sha256` di JSON |
 | `sha256 … tidak cocok` | unduhan Drive terpotong / file lain | hapus `media/`, jalankan ulang |
+| `Drive mengembalikan HTML` | master tidak lagi publik | Drive → klik kanan file → Share → *Anyone with the link* → Viewer |
 | `file thumbnail tidak ada` | `thumbs/EP0n_thumbnail.jpg` hilang | salin dari `11_CONTENT/03_THUMBNAIL/EP0n.jpg` |
 | `judul … karakter, batas YouTube 100` | judul diedit melewati batas | potong, uji ulang dry-run |
 | Video jadi, thumbnail tidak | thumbnail > 2 MB | kompres JPEG; `thumbs/` saat ini ±0,1–0,3 MB |
