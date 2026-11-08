@@ -265,6 +265,11 @@ ulangi — jangan turunkan resolusi.
 6. Judul di layar = judul di script (`build_episodes_json.py` sudah dijalankan).
 7. **Uji gerak:** ambil dua frame berjarak 2 detik di tengah setiap segmen; kalau
    keduanya identik, segmen itu statis dan tidak boleh lolos.
+8. **Uji thumbnail:** frame 0 master dibandingkan dengan `03_THUMBNAIL/EPxx.png`.
+   Boleh beda kompresi, tidak boleh beda gambar — kalau thumbnail yang diunggah
+   tidak sama dengan frame pertama, klik itu terasa dibohongi.
+9. **Uji kata-vs-gambar:** buka tiap segmen, sebut benda yang disebut caption;
+   kalau benda itu tidak ada di foto, ganti fotonya (bukan captionnya).
 
 Poin 6 punya sejarah: `episodes.generated.json` dulu tidak punya generator,
 sehingga EP01 sempat dirender dengan judul lama sementara script-nya sudah
