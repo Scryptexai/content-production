@@ -20,6 +20,7 @@ import os
 import pathlib
 import shutil
 import sys
+import urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -36,6 +37,47 @@ def selected_episodes(sel):
     return [sel]
 
 
+def gdown_download(fid, target):
+    """Jalur utama: gdown menangani halaman konfirmasi Drive."""
+    try:
+        import gdown
+    except ImportError:
+        return False
+    try:
+        gdown.download(id=fid, output=str(target), quiet=True, fuzzy=False)
+    except Exception as e:                     # noqa: BLE001 — apa pun, kita punya cadangan
+        print(f"  gdown gagal: {e}")
+        return False
+    return target.exists() and target.stat().st_size > 0
+
+
+def direct_download(fid, target):
+    """Cadangan untuk file yang sudah publik (anyone with the link).
+
+    Tidak butuh cookie; kalau Drive mengembalikan halaman HTML, artinya file
+    tidak publik dan cadangan ini juga akan gagal dengan pesan yang jelas.
+    """
+    url = (f"https://drive.usercontent.google.com/download?id={fid}"
+           f"&export=download&confirm=t")
+    req = urllib.request.Request(url, headers={"User-Agent": "oddchapter-upload/1"})
+    with urllib.request.urlopen(req, timeout=600) as r, open(target, "wb") as f:
+        ctype = r.headers.get("Content-Type", "")
+        if "text/html" in ctype:
+            target.unlink(missing_ok=True)
+            sys.exit(f"::error::Drive mengembalikan HTML untuk {fid} — file tidak publik. "
+                     "Buka Drive → bagikan (anyone with the link → Viewer), lalu ulangi.")
+        shutil.copyfileobj(r, f, length=4 * 1024 * 1024)
+    return target.exists() and target.stat().st_size > 0
+
+
+def fetch(fid, target):
+    if gdown_download(fid, target):
+        return
+    print("  gdown tidak jalan, coba unduh langsung")
+    if not direct_download(fid, target):
+        sys.exit(f"::error::gagal mengunduh {fid}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--media-dir", default="media")
@@ -45,11 +87,6 @@ def main():
     media = pathlib.Path(args.media_dir)
     media.mkdir(parents=True, exist_ok=True)
 
-    try:
-        import gdown
-    except ImportError:
-        sys.exit("::error::gdown belum terpasang — pip install gdown")
-
     for ep in selected_episodes(sel):
         meta = json.loads((META_DIR / f"{ep}.json").read_text(encoding="utf-8"))
         video = media / meta["video"]
@@ -58,7 +95,7 @@ def main():
             if not fid:
                 sys.exit(f"::error::{ep}: drive_file_id kosong di metadata")
             print(f"unduh {ep} ← Drive {fid}", flush=True)
-            gdown.download(id=fid, output=str(video), quiet=True, fuzzy=False)
+            fetch(fid, video)
             if not video.exists() or video.stat().st_size == 0:
                 sys.exit(f"::error::{ep}: unduhan gagal atau kosong")
         print(f"  {ep}  {video.name}  {video.stat().st_size / 1024 ** 2:.1f} MB")
