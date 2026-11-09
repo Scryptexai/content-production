@@ -146,6 +146,13 @@ jobs:
           set -euo pipefail
           ARGS=(--request "${{ steps.req.outputs.request }}" --media-dir media)
           if [ "$DRY" != "true" ]; then ARGS+=(--send); fi
+          # "force": true di berkas antrean = unggah walau episode sudah tercatat.
+          # Hanya untuk salinan uji; catatan asli di published.json tidak ditimpa.
+          if python3 -c "import json,sys;sys.exit(0 if json.load(open(sys.argv[1])).get('force') else 1)" \
+               "${{ steps.req.outputs.request }}"; then
+            echo "::warning::force=true — episode ini diunggah ulang sebagai salinan uji."
+            ARGS+=(--force)
+          fi
           python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${ARGS[@]}"
 
       - name: Catat episode yang sudah tayang

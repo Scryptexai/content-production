@@ -379,6 +379,7 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
     key = (os.environ.get("ZERNIO_API_KEY", "").strip()
            or os.environ.get("ZERNIO_KEY", "").strip())
     visibility = visibility or (request or {}).get("visibility")
+    force = force or bool((request or {}).get("force"))
     ledger = load_ledger()
     if send and ep in ledger and not force:
         print(f"  dilewati: {ep} sudah tayang {ledger[ep].get('uploaded_at')} · "
@@ -429,10 +430,14 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
         "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
     print(f"  published: {out['status']} · {out['youtube_url']}")
-    ledger[ep] = {"post_id": out["post_id"], "status": out["status"],
-                  "youtube_url": out["youtube_url"], "uploaded_at": out["uploaded_at"],
-                  "title": out["title"]}
-    save_ledger(ledger)
+    if ep in ledger:
+        print(f"  catatan: {ep} sudah ada di buku besar ({ledger[ep].get('youtube_url')}); "
+              f"catatan lama TIDAK ditimpa. Salinan ini: {out['youtube_url']}")
+    else:
+        ledger[ep] = {"post_id": out["post_id"], "status": out["status"],
+                      "youtube_url": out["youtube_url"], "uploaded_at": out["uploaded_at"],
+                      "title": out["title"]}
+        save_ledger(ledger)
     return out
 
 
