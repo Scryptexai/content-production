@@ -1,9 +1,11 @@
 {
   "episode": "EP01",
-  "status": "requested",
+  "status": "done",
   "visibility": "unlisted",
   "force": true,
   "requested_at": "2026-11-09T13:49:26Z",
   "catatan": "Ambil ulang master EP01 dari Drive, periksa sha256, lalu post ke YouTube sebagai salinan uji unlisted. Catatan publik di published.json tidak ditimpa.",
-  "attempt": 2
+  "attempt": 2,
+  "finished_at": "2026-11-09T13:50:22Z",
+  "hasil": "Selesai: master EP01 diambil ulang dari Drive (sha256 cocok), diunggah ke storage Zernio, lalu POST /v1/posts dijawab dengan post yang SAMA karena Idempotency-Key masih dalam 24 jam. Tidak ada video kedua."
 }

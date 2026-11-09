@@ -115,6 +115,19 @@ Push berkas itu memicu `.github/workflows/youtube-upload.yml` (jalur
 Satu berkas antrean per push. `visibility` boleh `public`, `unlisted`, atau
 `private`.
 
+### Idempotensi: mengapa mengulang tidak membuat video kedua
+
+Uji 2026-11-09: EP01 diambil ulang dari Drive (`sha256` cocok), diunggah ke
+storage Zernio, lalu `POST /v1/posts` dijalankan lagi dengan `"force": true`.
+Hasilnya **post yang sama**, `post_id 6af0954333e414fd437af3ca`,
+`https://www.youtube.com/watch?v=l-_uCXDQo0g` — bukan video baru.
+
+Sebabnya `Idempotency-Key` yang diturunkan dari sha256 master + judul: selama
+24 jam, request dengan kunci sama mengembalikan post yang sudah ada (HTTP 200).
+Ini yang membuat "jalankan ulang karena timeout" aman. Kalau memang ingin video
+persis sama terbit dua kali, tunggu lebih dari 24 jam — dan itu hampir selalu
+bukan yang diinginkan.
+
 ### 4. Menjalankan manual (opsional)
 
 Actions → **Upload episode to YouTube (Zernio)** → **Run workflow** →
