@@ -45,6 +45,33 @@ Gaya: arsip abad ke-19 yang diferensial, grain halus, warna tanah.
 | V21 | dua peta alur sungai ditumpuk (1865 vs sekarang) | overlay, bukan dua gambar terpisah |
 | V22 | ladang kedelai dari udara, matahari rendah, satu jalur tanah | penutup, gambar yang diingat |
 
+## Status plate (batch 1 — 8 dari 22)
+
+| plate | berkas | status | catatan QC |
+|---|---|---|---|
+| V01 | `plates/V01_steamboat_night.jpg` | ✅ dipakai | entitas jelas di frame pertama; asap, kabut, jendela menyala |
+| V02 | `plates/V02_deck_crowd.jpg` | ✅ dipakai (versi 2) | versi 1 **ditolak**: tahanan memegang senapan dan dek bertali-temali — tahanan yang dibebaskan tidak bersenjata |
+| V06 | `plates/V06_boiler_patch.jpg` | ✅ dipakai | tambalan tipis + paku keling baru terbaca; ini gambar "sebab" |
+| V12 | `plates/V12_steam_burst.jpg` | ✅ dipakai | uap putih, bukan bola api — sesuai fakta ketel |
+| V13 | `plates/V13_hand_on_wreckage.jpg` | ✅ dipakai | tanpa wajah, jadi tidak melampaui arsip |
+| V16 | `plates/V16_newspaper.jpg` | ✅ dipakai | kolom koran sengaja tidak terbaca (model menghasilkan huruf palsu) |
+| V19 | `plates/V19_soybean_field.jpg` | ✅ dipakai | gambar kunci turn: kayu hangus di bawah permukaan ladang |
+| V22 | `plates/V22_field_aerial.jpg` | ✅ dipakai | penutup; kosong, tanpa manusia |
+
+Belum dibuat: V03, V04, V05, V07, V08, V09, V10, V11, V14, V15, V17, V18, V20, V21.
+
+### Kunci gaya (supaya plate ke-9 sampai ke-22 tidak melenceng)
+
+1. **Tahanan tidak pernah membawa senjata.** Mereka paroled, kurus, sebagian bertelanjang kaki.
+2. **Dek steamboat bukan kapal layar**: tidak ada tiang, tali-temali, atau roda kemudi besar.
+3. **Ledakan = uap putih + pecahan kayu**, bukan bola api oranye. Api menyusul, kecil.
+4. **Tidak ada huruf yang terbaca** di koran, papan, atau label. Kalau perlu teks, masuk lewat Remotion.
+5. **Warna**: sepia/abu dingin untuk 1865; hijau-tanah alami untuk 1982. Dua zaman, dua palet —
+   itu yang membuat turn terasa pindah waktu, bukan pindah filter.
+6. **Resolusi**: model mengembalikan 1376×768. Semua plate di-upscale ke 1920×1080
+   (lanczos) lalu diberi grain halus; tanpa grain, upscale terlihat lunak. Detail
+   tidak bertambah — karena itu tidak ada plate yang boleh bergantung pada detail kecil.
+
 ## Urutan kerja
 
 1. Plate V01–V02 dulu (dua ini menentukan apakah episode ini layak dilanjutkan:

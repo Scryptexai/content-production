@@ -38,3 +38,6 @@ ODDCHAPTER_BRAND/10_FILM/upload/
 
 # dry-run lokal tidak perlu di-commit; yang disimpan adalah log unggah sungguhan
 ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/*-dryrun.json
+
+# plate uji LF01 ikut repo (kecil, ±1,7 MB total) supaya look-nya tidak hilang
+!ODDCHAPTER_BRAND/11_CONTENT/07_LONGFORM/**/plates/*.jpg
