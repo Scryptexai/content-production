@@ -45,7 +45,7 @@ Gaya: arsip abad ke-19 yang diferensial, grain halus, warna tanah.
 | V21 | dua peta alur sungai ditumpuk (1865 vs sekarang) | overlay, bukan dua gambar terpisah |
 | V22 | ladang kedelai dari udara, matahari rendah, satu jalur tanah | penutup, gambar yang diingat |
 
-## Status plate (18 dari 22 — sudah 1920×1080)
+## Status plate (22 dari 22 — semua 1920×1080)
 
 Semua plate di bawah sudah di-upscale ke **1920×1080** dengan
 `tools/upscale_plates.py` (Lanczos + grain 5,5% + unsharp halus). Asli 1376×768
@@ -72,10 +72,14 @@ disimpan di `plates_src/` (tidak masuk Git).
 | V19 | `V19_soybean_field.jpg` | galian di ladang kedelai, kayu hangus | ✅ gambar kunci turn |
 | V22 | `V22_field_aerial.jpg` | aerial baris kedelai saat matahari rendah | ✅ penutup, kosong |
 
-**Belum dibuat (4):** V17 ruang sidang militer, V18 sungai kosong setelah bencana,
-V20 potongan kayu hangus di tangan, V21 dua peta alur sungai ditumpuk.
-Batas 10 gambar per turn tercapai; empat ini dikerjakan pada turn berikutnya, lalu
-di-upscale dengan perintah yang sama.
+| V17 | `V17_courtroom.jpg` | ruang sidang militer: tiga perwira, berkas, peta | ✅ kertas tak terbaca |
+| V18 | `V18_empty_river.jpg` | sungai kosong setelah bencana, tanpa perahu | ✅ kekosongan sebagai efek |
+| V20 | `V20_charred_timber.jpg` | kayu hangus dengan paku besi, tangan menyentuh | ✅ tekstur arang, bukan arang generik |
+| V21 | `V21_two_maps.jpg` | dua peta ditumpuk, alur sungai bercabang | ✅ vellum transparan, tanpa huruf |
+
+**Semua plate selesai.** Langkah berikutnya: `timing.json` dari
+`tools/build_long_timing.py` (sudah jalan: 8 babak, 578,8 s, 17.364 frame), lalu
+komposisi Remotion 16:9 dan narasi per babak.
 
 ### Kunci gaya (supaya plate ke-9 sampai ke-22 tidak melenceng)
 
@@ -91,11 +95,12 @@ di-upscale dengan perintah yang sama.
 
 ## Urutan kerja
 
-1. Plate V01–V02 dulu (dua ini menentukan apakah episode ini layak dilanjutkan:
-   kalau kapal dan geladak tidak meyakinkan, seluruh 10 menit jatuh).
-2. Narasi babak 0–2 → dengarkan tanpa gambar. Kalau tidak menahan sampai menit 3,
-   naskahnya yang salah, bukan gambarnya.
-3. Sisa plate, lalu render 16:9, lalu QC:
+1. ~~Plate V01–V02 dulu~~ — selesai; keduanya dipakai.
+2. ~~Sisa plate~~ — selesai, 22/22.
+3. **Narasi babak 0–2 lebih dulu**, dengarkan tanpa gambar. Kalau tidak menahan
+   sampai menit 3, naskahnya yang salah, bukan gambarnya — dan itu lebih murah
+   diperbaiki sebelum render.
+4. Komposisi `LongFilm.tsx` 16:9 + `timing.json`, lalu render, lalu QC:
    - durasi ≥ 8 menit, tidak ada babak yang bisa dilewati tanpa kehilangan arti
    - suara: loudnorm `I=-14, TP=-1.5, LRA=11`
    - frame 0 wajib memuat entitas (kapal), bukan langit
