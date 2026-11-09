@@ -45,20 +45,37 @@ Gaya: arsip abad ke-19 yang diferensial, grain halus, warna tanah.
 | V21 | dua peta alur sungai ditumpuk (1865 vs sekarang) | overlay, bukan dua gambar terpisah |
 | V22 | ladang kedelai dari udara, matahari rendah, satu jalur tanah | penutup, gambar yang diingat |
 
-## Status plate (batch 1 — 8 dari 22)
+## Status plate (18 dari 22 — sudah 1920×1080)
 
-| plate | berkas | status | catatan QC |
+Semua plate di bawah sudah di-upscale ke **1920×1080** dengan
+`tools/upscale_plates.py` (Lanczos + grain 5,5% + unsharp halus). Asli 1376×768
+disimpan di `plates_src/` (tidak masuk Git).
+
+| plate | berkas | isi | QC |
 |---|---|---|---|
-| V01 | `plates/V01_steamboat_night.jpg` | ✅ dipakai | entitas jelas di frame pertama; asap, kabut, jendela menyala |
-| V02 | `plates/V02_deck_crowd.jpg` | ✅ dipakai (versi 2) | versi 1 **ditolak**: tahanan memegang senapan dan dek bertali-temali — tahanan yang dibebaskan tidak bersenjata |
-| V06 | `plates/V06_boiler_patch.jpg` | ✅ dipakai | tambalan tipis + paku keling baru terbaca; ini gambar "sebab" |
-| V12 | `plates/V12_steam_burst.jpg` | ✅ dipakai | uap putih, bukan bola api — sesuai fakta ketel |
-| V13 | `plates/V13_hand_on_wreckage.jpg` | ✅ dipakai | tanpa wajah, jadi tidak melampaui arsip |
-| V16 | `plates/V16_newspaper.jpg` | ✅ dipakai | kolom koran sengaja tidak terbaca (model menghasilkan huruf palsu) |
-| V19 | `plates/V19_soybean_field.jpg` | ✅ dipakai | gambar kunci turn: kayu hangus di bawah permukaan ladang |
-| V22 | `plates/V22_field_aerial.jpg` | ✅ dipakai | penutup; kosong, tanpa manusia |
+| V01 | `V01_steamboat_night.jpg` | kapal uap malam, asap, jendela menyala | ✅ entitas di frame pertama |
+| V02 | `V02_deck_crowd.jpg` | dek penuh, tanpa senjata, sebagian bertelanjang kaki | ✅ versi 2 (versi 1 ditolak) |
+| V03 | `V03_wharf_line.jpg` | barisan naik ke kapal di dermaga Vicksburg | ✅ tanpa senjata, ada perwira berdaftar |
+| V04 | `V04_side_on_photo.jpg` | kapal dari tepi sungai, dua dek penuh orang | ✅ paling mendekati foto Helena 1865 |
+| V05 | `V05_hold_barrels.jpg` | palka: tong gula, lentera, lorong sempit | ✅ tanpa orang |
+| V06 | `V06_boiler_patch.jpg` | tambalan dipaku di sambungan ketel | ✅ gambar "sebab" |
+| V07 | `V07_the_warning.jpg` | tukang ketel menunjuk, kapten bersedekap | ✅ adegan peringatan, tanpa dialog |
+| V08 | `V08_river_map.jpg` | peta sungai tangan, kompas kuningan | ✅ tanpa huruf terbaca |
+| V09 | `V09_memphis_dock_night.jpg` | dermaga Memphis malam, tong diturunkan | ✅ |
+| V10 | `V10_flooded_river.jpg` | sungai banjir dari atas, satu kapal kecil | ✅ litografi tint, bukan foto (1865 tak ada drone) |
+| V11 | `V11_listing_deck.jpg` | dek miring, orang berpegangan, asap dari celah | ✅ |
+| V12 | `V12_steam_burst.jpg` | uap putih + pecahan kayu, api kecil | ✅ bukan bola api |
+| V13 | `V13_hand_on_wreckage.jpg` | tangan memegang papan hangus | ✅ tanpa wajah |
+| V14 | `V14_rescue_boat.jpg` | lentera menyisir air, orang ditarik | ✅ |
+| V15 | `V15_shore_row.jpg` | barisan berselimut di tepi sungai, dua pria bertopi di tangan | ✅ tanpa wajah, tanpa luka |
+| V16 | `V16_newspaper.jpg` | tumpukan koran 1865, tangan menekan | ✅ kolom tak terbaca |
+| V19 | `V19_soybean_field.jpg` | galian di ladang kedelai, kayu hangus | ✅ gambar kunci turn |
+| V22 | `V22_field_aerial.jpg` | aerial baris kedelai saat matahari rendah | ✅ penutup, kosong |
 
-Belum dibuat: V03, V04, V05, V07, V08, V09, V10, V11, V14, V15, V17, V18, V20, V21.
+**Belum dibuat (4):** V17 ruang sidang militer, V18 sungai kosong setelah bencana,
+V20 potongan kayu hangus di tangan, V21 dua peta alur sungai ditumpuk.
+Batas 10 gambar per turn tercapai; empat ini dikerjakan pada turn berikutnya, lalu
+di-upscale dengan perintah yang sama.
 
 ### Kunci gaya (supaya plate ke-9 sampai ke-22 tidak melenceng)
 
