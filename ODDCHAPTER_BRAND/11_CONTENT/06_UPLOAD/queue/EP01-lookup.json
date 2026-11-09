@@ -1,0 +1,7 @@
+{
+  "episode": "EP01",
+  "status": "requested",
+  "lookup": true,
+  "requested_at": "2026-11-09T13:47:58Z",
+  "catatan": "Mode lookup: hanya membaca daftar post Zernio ke zernio-posts.json. Tidak mengunduh, tidak mengunggah, tidak mengubah video apa pun."
+}

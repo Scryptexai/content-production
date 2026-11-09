@@ -264,6 +264,46 @@ def load_request(path):
     return ep, req
 
 
+def lookup(limit=12):
+    """Daftar post terakhir dari Zernio. Tidak mengunggah, tidak mengubah apa pun."""
+    key = (os.environ.get("ZERNIO_API_KEY", "").strip()
+           or os.environ.get("ZERNIO_KEY", "").strip())
+    if not key:
+        fail("ZERNIO_API_KEY kosong.")
+    dump = {"fetched_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "raw": None, "posts": []}
+    try:
+        data = api_get(f"/posts?limit={limit}", key)
+    except SystemExit:
+        try:
+            data = api_get(f"/v1/posts?limit={limit}", key)
+        except SystemExit as e:
+            fail(f"tidak bisa membaca daftar post: {e}")
+    dump["raw"] = data
+    raw = data.get("posts") or data.get("data") or []
+    if isinstance(raw, dict):
+        raw = raw.get("posts") or []
+    for post in raw if isinstance(raw, list) else []:
+        if not isinstance(post, dict):
+            continue
+        yt = next((p for p in post.get("platforms", [])
+                   if isinstance(p, dict) and (p.get("platform") or "").lower() == "youtube"), {})
+        dump["posts"].append({
+            "id": post.get("_id") or post.get("id"),
+            "status": post.get("status"),
+            "createdAt": post.get("createdAt") or post.get("publishedAt"),
+            "title": post.get("title") or (post.get("platformSpecificData") or {}).get("title"),
+            "url": yt.get("platformPostUrl"),
+            "platform_status": yt.get("status"),
+        })
+    out = ROOT / "11_CONTENT" / "06_UPLOAD" / "zernio-posts.json"
+    out.write_text(json.dumps(dump, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"  {len(dump['posts'])} post terakhir → {out.relative_to(ROOT)}")
+    for item in dump["posts"]:
+        print(f"    {item['createdAt']}  {item['status']:10s}  {item['url']}  {item['title']}")
+    return dump
+
+
 def load_meta(ep):
     p = META_DIR / f"{ep}.json"
     if not p.exists():
@@ -429,10 +469,18 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
         "idempotency_key": idem,
         "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
+    if not out["youtube_url"]:
+        fail(f"{ep}: Zernio menjawab {out['status']} tapi tanpa platformPostUrl — "
+             f"buka dashboard Zernio sebelum mengulang, jangan mengunggah lagi.")
     print(f"  published: {out['status']} · {out['youtube_url']}")
+    print(f"::notice title=YOUTUBE-URL-{ep}::{out['youtube_url']}")
     if ep in ledger:
+        extra = ledger[ep].setdefault("extra", [])
+        extra.append({"post_id": out["post_id"], "status": out["status"],
+                      "youtube_url": out["youtube_url"], "uploaded_at": out["uploaded_at"]})
+        save_ledger(ledger)
         print(f"  catatan: {ep} sudah ada di buku besar ({ledger[ep].get('youtube_url')}); "
-              f"catatan lama TIDAK ditimpa. Salinan ini: {out['youtube_url']}")
+              f"catatan lama tidak ditimpa. Salinan ini: {out['youtube_url']}")
     else:
         ledger[ep] = {"post_id": out["post_id"], "status": out["status"],
                       "youtube_url": out["youtube_url"], "uploaded_at": out["uploaded_at"],
@@ -451,12 +499,19 @@ def main():
     ap.add_argument("--request", help="berkas antrean (11_CONTENT/06_UPLOAD/queue/*.json)")
     ap.add_argument("--force", action="store_true",
                     help="abaikan buku besar: unggah walau episode sudah tayang")
+    ap.add_argument("--lookup", action="store_true",
+                    help="baca daftar post Zernio (tanpa mengunggah) lalu simpan zernio-posts.json")
     ap.add_argument("--check", action="store_true",
                     help="uji ZERNIO_API_KEY + ZERNIO_YOUTUBE_ACCOUNT_ID lewat GET /v1/profiles")
     ap.add_argument("--text-only", action="store_true",
                     help="dry-run hanya untuk teks: lewati pemeriksaan file/hash "
                          "(dipakai saat master belum ada di mesin ini)")
     args = ap.parse_args()
+
+    if args.lookup:
+        print("baca daftar post Zernio")
+        lookup()
+        return 0
 
     if args.check:
         print("cek kredensial Zernio")

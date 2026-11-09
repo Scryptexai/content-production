@@ -118,6 +118,8 @@ jobs:
             exit 1
           fi
           REQ=$(echo $READY | awk '{print $1}')
+          LOOKUP=$(python3 -c "import json,sys;print(1 if json.load(open(sys.argv[1])).get('lookup') else 0)" "$REQ")
+          echo "lookup=$LOOKUP" >> "$GITHUB_OUTPUT"
           echo "request=$REQ" >> "$GITHUB_OUTPUT"
           echo "::notice::Permintaan dari antrean: $REQ"
 
@@ -125,8 +127,12 @@ jobs:
         if: steps.req.outputs.skip != '1'
         run: python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --check
 
+      - name: Baca daftar post Zernio (mode lookup, tanpa unggah)
+        if: steps.req.outputs.skip != '1' && steps.req.outputs.lookup == '1'
+        run: python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --lookup
+
       - name: Unduh master dari Drive + siapkan thumbnail
-        if: steps.req.outputs.skip != '1'
+        if: steps.req.outputs.skip != '1' && steps.req.outputs.lookup != '1'
         env:
           EPISODE_SELECT: ${{ github.event_name == 'workflow_dispatch' && inputs.episode || '' }}
         run: |
@@ -139,7 +145,7 @@ jobs:
           python3 ODDCHAPTER_BRAND/tools/fetch_masters.py
 
       - name: Unggah ke YouTube lewat Zernio
-        if: steps.req.outputs.skip != '1'
+        if: steps.req.outputs.skip != '1' && steps.req.outputs.lookup != '1'
         env:
           DRY: ${{ steps.req.outputs.dry }}
         run: |
@@ -160,13 +166,14 @@ jobs:
         run: |
           set -euo pipefail
           LEDGER=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/published.json
-          if [ ! -f "$LEDGER" ] || git diff --quiet -- "$LEDGER"; then
+          POSTS=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/zernio-posts.json
+          if git diff --quiet -- "$LEDGER" "$POSTS" 2>/dev/null && [ ! -f "$POSTS" ]; then
             echo "::notice::Buku besar tidak berubah."
             exit 0
           fi
           git config user.name "oddchapter-upload"
           git config user.email "actions@users.noreply.github.com"
-          git add "$LEDGER"
+          git add -A "$LEDGER" "$POSTS" 2>/dev/null || git add -A ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD
           git commit -m "published.json: catat unggahan $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
 
