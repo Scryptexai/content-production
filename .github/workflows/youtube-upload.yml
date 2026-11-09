@@ -159,6 +159,7 @@ jobs:
             echo "::warning::force=true — episode ini diunggah ulang sebagai salinan uji."
             ARGS+=(--force)
           fi
+          echo "::notice::ARGS: ${ARGS[*]}"
           python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${ARGS[@]}"
 
       - name: Catat episode yang sudah tayang

@@ -421,9 +421,12 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
     visibility = visibility or (request or {}).get("visibility")
     force = force or bool((request or {}).get("force"))
     ledger = load_ledger()
+    print(f"::notice title=MODE-{ep}::send={send} force={force} "
+          f"tercatat={'ya' if ep in ledger else 'tidak'}")
     if send and ep in ledger and not force:
-        print(f"  dilewati: {ep} sudah tayang {ledger[ep].get('uploaded_at')} · "
-              f"{ledger[ep].get('youtube_url')} (pakai --force untuk mengulang)")
+        print(f"::warning title=DILEWATI-{ep}::{ep} sudah tayang "
+              f"{ledger[ep].get('uploaded_at')} · {ledger[ep].get('youtube_url')} "
+              f"(pakai \"force\": true untuk mengulang)")
         return {"episode": ep, "skipped": True, **ledger[ep]}
 
     for w in WARNS:

@@ -3,6 +3,7 @@
   "status": "requested",
   "visibility": "unlisted",
   "force": true,
-  "requested_at": "2026-11-09T13:46:56Z",
-  "catatan": "Ambil ulang master EP01 dari Drive, periksa sha256, lalu post ke YouTube sebagai salinan uji unlisted. Catatan publik di published.json tidak ditimpa."
+  "requested_at": "2026-11-09T13:49:26Z",
+  "catatan": "Ambil ulang master EP01 dari Drive, periksa sha256, lalu post ke YouTube sebagai salinan uji unlisted. Catatan publik di published.json tidak ditimpa.",
+  "attempt": 2
 }
