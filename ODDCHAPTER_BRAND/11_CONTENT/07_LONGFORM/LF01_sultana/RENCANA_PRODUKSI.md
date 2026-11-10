@@ -77,6 +77,14 @@ disimpan di `plates_src/` (tidak masuk Git).
 | V20 | `V20_charred_timber.jpg` | kayu hangus dengan paku besi, tangan menyentuh | ✅ tekstur arang, bukan arang generik |
 | V21 | `V21_two_maps.jpg` | dua peta ditumpuk, alur sungai bercabang | ✅ vellum transparan, tanpa huruf |
 
+### Narasi: 3 dari 8 babak sudah terekam
+
+`audio/act0.mp3` (50,3 s), `audio/act1.mp3` (95,7 s), `audio/act2.mp3` (85,2 s).
+Tempo terukur **135 kata/menit** — bukan 150 seperti perkiraan awal. Karena itu
+`timing.json` sekarang dihitung dari audio (`tools/measure_audio.py`), bukan dari
+jumlah kata: total 10:40, 19.212 frame. Babak 3–7 masih memakai tempo terukur itu
+sebagai estimasi dan akan ditimpa begitu audionya ada.
+
 **Semua plate selesai.** Langkah berikutnya: `timing.json` dari
 `tools/build_long_timing.py` (sudah jalan: 8 babak, 578,8 s, 17.364 frame), lalu
 komposisi Remotion 16:9 dan narasi per babak.

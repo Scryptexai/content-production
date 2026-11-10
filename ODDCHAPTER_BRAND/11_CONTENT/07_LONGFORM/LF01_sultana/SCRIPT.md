@@ -141,7 +141,7 @@ dan setiap angka yang diperdebatkan ditulis sebagai rentang, bukan angka tunggal
 >
 > Kapal itu berangkat keesokan harinya.
 >
-> Ini bagian yang membuat saya berhenti: tidak ada yang menyembunyikan apa pun.
+> Ini bagian yang membuat kita berhenti: tidak ada yang menyembunyikan apa pun.
 > Tukang ketelnya mengatakan bahayanya. Kaptennya mendengar. Kapal itu tetap
 > berlayar, dan semua orang di atasnya tahu mereka naik kapal yang dikejar jadwal.
 >

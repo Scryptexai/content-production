@@ -28,7 +28,7 @@ MIN_MIN, MAX_MIN = 8.0, 12.0
 BANNED = {"misteri", "rahasia", "aneh", "menakjubkan", "mengerikan", "ternyata",
           "sebenarnya", "sungguh", "benar-benar", "sangat", "banyak orang percaya",
           "tidak terpecahkan"}
-POV_OFFENDERS = {"aku", "kalian"}
+POV_OFFENDERS = {"aku", "saya", "kalian"}
 
 
 def vo_lines(text):
