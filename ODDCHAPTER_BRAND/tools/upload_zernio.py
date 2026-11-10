@@ -14,6 +14,8 @@ harus dikelola sendiri. Kontraknya (dibaca dari docs.zernio.com, 2026-11-08):
        → {uploadUrl, publicUrl, key, expiresIn}
   2. PUT  <uploadUrl>              isi file mentah
   3. POST /v1/posts                {content, tags, mediaItems, platforms, publishNow}
+                                    atau {…, scheduledFor, timezone} kalau
+                                    antrean membawa "scheduledFor"
        → {post: {_id, status, platforms:[{platformPostUrl}]}}
 
 Kredensial (jangan pernah ditulis di repo):
@@ -387,7 +389,7 @@ def validate(meta, media_dir, check_media=True):
         raise SystemExit(1)
 
 
-def build_payload(meta, video_url, thumb_url, visibility=None):
+def build_payload(meta, video_url, thumb_url, visibility=None, schedule=None):
     account = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
     playlist = os.environ.get("ZERNIO_PLAYLIST_ID", "").strip()
     psd = {
@@ -401,12 +403,23 @@ def build_payload(meta, video_url, thumb_url, visibility=None):
         psd["playlistId"] = playlist
     if meta.get("first_comment"):
         psd["firstComment"] = meta["first_comment"]
+    when = {}
+    if schedule and schedule.get("scheduledFor"):
+        # Dijadwalkan, bukan tayang sekarang: `scheduledFor` + `timezone`
+        # menggantikan `publishNow`. Tanpa zona, Zernio membaca jam itu sebagai
+        # waktu lokal `timezone`; dengan zona, nilainya dipakai apa adanya.
+        when = {
+            "scheduledFor": schedule["scheduledFor"],
+            "timezone": schedule.get("timezone") or "Asia/Jakarta",
+        }
+    else:
+        when = {"publishNow": True}
     return {
+        **when,
         "content": meta["description"],
         "tags": meta.get("tags", []),
         "mediaItems": [{"type": "video", "url": video_url, "thumbnail": thumb_url}],
         "platforms": [{"platform": "youtube", "accountId": account, "platformSpecificData": psd}],
-        "publishNow": True,
     }
 
 
@@ -435,7 +448,8 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
 
     if not send:
         payload = build_payload(meta, f"<publicUrl {meta['video']}>",
-                                f"<publicUrl {meta['thumbnail']}>", visibility)
+                                f"<publicUrl {meta['thumbnail']}>", visibility,
+                                schedule=(request or {}))
         payload["platforms"][0]["accountId"] = (
             os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
             or "<akun YouTube, dicari otomatis dari GET /v1/accounts>")
@@ -454,7 +468,8 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
     video_url = upload_media(media_dir / meta["video"], key, "video")
     thumb_url = upload_media(media_dir / meta["thumbnail"], key, "thumbnail")
 
-    payload = build_payload(meta, video_url, thumb_url, visibility)
+    schedule = (request or {})
+    payload = build_payload(meta, video_url, thumb_url, visibility, schedule=schedule)
     idem = idempotency_key(ep, meta)
     print(f"  POST /v1/posts · Idempotency-Key: {idem}")
     result = api_post("/posts", payload, key, extra_headers={"Idempotency-Key": idem})
@@ -472,6 +487,23 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
         "idempotency_key": idem,
         "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
+    if schedule.get("scheduledFor"):
+        out["scheduled_for"] = schedule["scheduledFor"]
+        out["timezone"] = schedule.get("timezone") or "Asia/Jakarta"
+        print(f"  dijadwalkan: {out['status']} · {out['scheduled_for']} {out['timezone']}")
+        print(f"::notice title=JADWAL-{ep}::{out['scheduled_for']} {out['timezone']} "
+              f"· post {out['post_id']} · tautan muncul setelah tayang")
+        if ep in ledger:
+            extra = ledger[ep].setdefault("extra", [])
+            extra.append({"post_id": out["post_id"], "status": out["status"],
+                          "scheduled_for": out["scheduled_for"],
+                          "uploaded_at": out["uploaded_at"]})
+        else:
+            ledger[ep] = {"post_id": out["post_id"], "status": out["status"],
+                          "scheduled_for": out["scheduled_for"], "timezone": out["timezone"],
+                          "uploaded_at": out["uploaded_at"], "title": out["title"]}
+        save_ledger(ledger)
+        return out
     if not out["youtube_url"]:
         fail(f"{ep}: Zernio menjawab {out['status']} tapi tanpa platformPostUrl — "
              f"buka dashboard Zernio sebelum mengulang, jangan mengunggah lagi.")

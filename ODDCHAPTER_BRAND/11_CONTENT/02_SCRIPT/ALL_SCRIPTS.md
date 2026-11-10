@@ -365,7 +365,7 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 | **Protagonis** | Lima pria muda dari Yuba County, California. Salah satunya, Gary Mathias. |
 | **Mau** | Pulang setelah menonton pertandingan basket. |
 | **Hambatan** | Jalan pegunungan, Februari 1978, salju turun. |
-| **Tanaman** (detail yang berubah makna di turn) | Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh. |
+| **Tanaman** (detail yang berubah makna di turn) | Kunci masih di lubang kontak. Tangki setengah penuh. Mobil tidak rusak. |
 | **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan? |
 | **Gambar melekat** (satu-satunya yang harus diingat) | Jejak kaki menanjak ke bukit, menjauhi mobil yang mereka tinggalkan. |
 
@@ -374,7 +374,7 @@ wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangka
 
 ## 1 · HOOK (0–3 s)
 
-> Tangki penuh, pintu tidak dikunci, kunci masih di dalam. Mereka berjalan ke atas.
+> Kunci masih di kontak, tangki setengah penuh. Mereka berjalan ke atas.
 
 Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
 
@@ -385,13 +385,13 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | SETUP | Februari 1978. Lima pria muda pergi menonton basket di California. |
 | SETUP | Mereka tidak pernah sampai rumah. |
 | TENSION | Empat hari kemudian, mobil mereka ditemukan tertahan salju. |
-| TENSION | Pintunya tidak dikunci. Kuncinya masih di dalam. Tangki bahan bakar penuh. |
+| TENSION | Kunci masih di kontak, tangki setengah penuh. Tidak ada kerusakan. |
 | TENSION | Mereka tidak menunggu di dalam mobil. |
 | TENSION | Mereka berjalan ke atas. Ke tempat yang lebih dingin, lebih jauh dari jalan raya. |
 | TENSION | Satu dari mereka ditemukan di dekat pos jaga hutan. Ada makanan di dalam pos itu. |
 | TURN | Dia tidak memakannya. |
 | TURN | Bukan karena mereka tersesat. Tersesat tidak membuat orang berjalan menjauhi pertolongan. |
-| CONSEQUENCE | Tiga lainnya ditemukan sembilan mil jauhnya, di ketinggian. |
+| CONSEQUENCE | Tiga lainnya ditemukan di luar, di salju. Yang kelima tidak pernah ditemukan. |
 | CONSEQUENCE | Yang kelima tidak pernah ditemukan. Bukan tahun itu. Tidak sampai sekarang. |
 
 ## 3 · TURN

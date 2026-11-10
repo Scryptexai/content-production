@@ -172,39 +172,91 @@ EPISODES = [
     ),
     dict(
         ep="EP04", day=4, slot="pagi", jam="07.00", series="HILANG", pov="A",
+        struktur="klimaks-awal",
         title="MEREKA BERJALAN MENJAUH DARI PERTOLONGAN",
         thumb=["JALAN", "KE ATAS"], thumb_text="JALAN KE ATAS",
         durasi=55,
-        protagonis="Lima pria muda dari Yuba County, California. Salah satunya, Gary Mathias.",
-        mau="Pulang setelah menonton pertandingan basket.",
-        hambatan="Jalan pegunungan, Februari 1978, salju turun.",
-        tanaman="Pintu mobil tidak dikunci. Kuncinya masih di dalam. Tangkinya penuh.",
-        hook="1978. Tangki penuh, pintu tidak dikunci. Mereka berjalan ke atas, menjauhi mobil.",
-        hook_alt="Mereka menemukan makanan di pos jaga hutan. Dan tidak memakannya.",
-        tanya="Kenapa mereka berjalan ke atas, menjauhi mobil yang tangkinya masih penuh?",
-        entitas="mereka",
+        protagonis="Lima pria dari Yuba City, California. Yang kelima, Gary Mathias, tidak pernah ditemukan.",
+        mau="Pulang setelah menonton pertandingan basket di Chico.",
+        hambatan="Jalan pegunungan Plumas National Forest, Februari 1978, salju setinggi lutut.",
+        tanaman="Kunci masih di kontak, tangki masih setengah penuh, mobil tidak rusak.",
+        hook="1978. Lima pria berjalan ke atas, meninggalkan mobil yang kuncinya masih di kontak.",
+        hook_alt="Di dalam trailer itu ada makanan dan pemanas. Dia tidak memakainya.",
+        tanya="Kenapa mereka berjalan ke atas, menjauhi mobil yang masih bisa dipakai?",
+        entitas="lima pria",
+        diskusi="Kalau kamu di mobil itu, kamu akan menunggu sampai terang atau ikut berjalan ke atas?",
         celah="Kenapa mereka berjalan menjauhi jalan raya dan menjauhi pertolongan?",
+        relate="Kamu pernah ikut orang lain ke arah yang salah, karena tidak ada yang bertanya?",
         gambar_melekat="Jejak kaki menanjak ke bukit, menjauhi mobil yang mereka tinggalkan.",
         beats=[
-            ("setup", "Februari 1978. Lima pria muda pergi menonton basket di California."),
-            ("setup", "Mereka tidak pernah sampai rumah."),
-            ("tension", "Empat hari kemudian, mobil mereka ditemukan tertahan salju."),
-            ("tension", "Pintunya tidak dikunci. Kuncinya masih di dalam. Tangki bahan bakar penuh."),
-            ("tension", "Mereka tidak menunggu di dalam mobil."),
-            ("tension", "Mereka berjalan ke atas. Ke tempat yang lebih dingin, lebih jauh dari jalan raya."),
-            ("tension", "Satu dari mereka ditemukan di dekat pos jaga hutan. Ada makanan di dalam pos itu."),
-            ("turn", "Dia tidak memakannya."),
-            ("turn", "Bukan karena mereka tersesat. Tersesat tidak membuat orang berjalan menjauhi pertolongan."),
-            ("consequence", "Tiga lainnya ditemukan sembilan mil jauhnya, di ketinggian."),
-            ("consequence", "Yang kelima tidak pernah ditemukan. Bukan tahun itu. Tidak sampai sekarang."),
+            ("tanya", "Kenapa mereka berjalan ke atas, menjauhi mobil yang masih bisa dipakai?"),
+            ("relate", "Kamu pernah ikut orang lain ke arah yang salah, karena tidak ada yang bertanya?"),
+            ("setup", "Februari 1978. Lima pria dari Yuba City menonton basket di Chico."),
+            ("tension", "Pukul sepuluh malam mereka membeli makanan di toko. Setelah itu hilang."),
+            ("tension", "Empat hari kemudian, mobil mereka ditemukan di jalan salju Plumas."),
+            ("tension", "Kunci masih di kontak, tangki setengah penuh. Tidak ada kerusakan."),
+            ("tension", "Mereka berjalan ke atas, menjauhi jalan, ke tempat yang lebih dingin."),
+            ("turn", "Juni 1978. Ted Weiher ditemukan di dalam trailer penjaga hutan."),
+            ("turn", "Di dalam ada makanan, selimut, dan pemanas. Hampir tidak ada yang dibuka."),
+            ("consequence", "Tiga lainnya ditemukan di luar, membeku di atas salju."),
+            ("consequence", "Sepatu Gary Mathias ada di dalam. Tubuhnya tidak pernah ditemukan."),
         ],
-        turn_quote="“Mereka tersesat.”",
-        turn_verdict="Tersesat tidak membuat orang berjalan ke atas, menjauhi makanan, dan menjauhi jalan.",
-        loop="Pintu mobil itu dibiarkan tidak dikunci. Dan pria kelima tidak pernah turun dari bukit.",
-        cues=["FEB 1978", "PINTU TERBUKA", "TANGKI PENUH", "9 MIL", "1 TIDAK DITEMUKAN"],
-        visual="Mobil tertutup salju dari belakang; jejak kaki menanjak; pos jaga hutan gelap.",
+        turn_quote="\u201cMereka tersesat.\u201d",
+        turn_verdict="Tersesat tidak membuat orang berjalan ke atas, melewati makanan, dan menjauhi jalan.",
+        loop="Kuncinya masih di kontak. Dan pria kelima tidak pernah turun dari bukit.",
+        cues=["KUNCI DI KONTAK", "TANGKI \u00bd", "TRAILER", "1 HILANG"],
+        visual="Mobil tertutup salju dari belakang; kunci di lubang kontak; jejak kaki menanjak; trailer penjaga hutan gelap.",
+        captions=[
+            "",
+            "Kenapa ke atas?",
+            "Pernah ikut arah salah?",
+            "Basket di Chico, 1978.",
+            "Pukul sepuluh malam. Lalu hilang.",
+            "Empat hari. Mobil di salju.",
+            "Kunci di kontak. Tangki setengah.",
+            "Ke atas, menjauhi jalan.",
+            "Trailer penjaga hutan. Juni.",
+            "Makanan, selimut, pemanas. Tidak dipakai.",
+            "Tiga ditemukan di luar, membeku.",
+            "Sepatu Mathias ada. Tubuhnya tidak.",
+            "",
+        ],
+        caption_hi=["", "ke atas", "salah", "Chico", "sepuluh", "Empat hari", "setengah", "menjauhi jalan", "Trailer", "Tidak dipakai", "membeku", "Sepatu", ""],
+        stamps=[["1978", 0], ["10", 4], ["70", 5]],
+        sfx={
+            "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
+            "04_tension": "engine", "05_tension": "gust", "06_tension": "clunk", "07_tension": "page",
+            "08_turn": "boom", "09_turn": "engine", "10_consequence": "boom", "11_consequence": "gust",
+            "99_loop": "gust",
+        },
+        photos=[
+            "00_five_men", "01_car_snow", "02_wrong_road", "03_gym", "04_market_night",
+            "05_logging_road", "06_keys_ignition", "07_tracks_up", "08_trailer",
+            "09_trailer_inside", "10_snow_hollow", "11_mathias_shoes", "06_keys_ignition",
+        ],
+        bed="audio/EP04/bed.wav",
         plate="road",
-        sumber="NEEDS-SOURCE — Yuba County Five 1978; laporan resmi belum dibaca langsung.",
+        sumber=(
+            "VERIFIED pada butir utama, dengan tiga koreksi dari versi rencana. Lima pria dari Yuba City, "
+            "California, malam Jumat 24 Februari 1978 menonton pertandingan basket kampus di Chico (sekitar 50 mil "
+            "dari rumah). Terakhir terlihat sekitar pukul 22.00 di toko Behr's Market, Chico, membeli makanan ringan. "
+            "Dilaporkan hilang Sabtu 25 Februari. Mobil Jack Madruga, Mercury Montego 1969, ditemukan Selasa "
+            "28 Februari (satu ringkasan menyebut 27) di jalan logging bersalju Plumas National Forest dekat Rogers "
+            "Cow Camp, sekitar 70 mil ke timur dari jalur pulang mereka. Kondisi mobil: tidak rusak, kunci di lubang "
+            "kontak, TANGKI SEKITAR SETENGAH PENUH (bukan penuh), tanpa tanda pembongkaran atau perkelahian. "
+            "KORREKSI 1: naskah rencana menulis 'tangki penuh' - semua ringkasan menyebut setengah penuh; angka itu "
+            "yang dipakai. KORREKSI 2: 'sembilan mil' dibuang - sumber berbeda antara 11 dan 20 mil untuk jarak trailer "
+            "dari mobil, jadi tidak ada angka jarak yang diucapkan. KORREKSI 3: sebab kematian Weiher ditulis sebagai "
+            "kelaparan dan kedinginan (kesimpulan pemeriksa); laporan otopsi yang menyebut radang paru dan keracunan "
+            "darah akibat kaki membeku belum dibaca langsung. Juni 1978 (4-8 Juni) setelah salju mencair: Ted Weiher "
+            "ditemukan di tempat tidur trailer ranger US Forest Service, terbungkus selimut, berat badannya tinggal "
+            "separuh; trailer berisi makanan kaleng dan ransum, selimut, pemanas propana, lentera minyak, dan korek - "
+            "hampir semuanya tidak dipakai. Jenggotnya menunjukkan dia bertahan 8-13 minggu. Jack Madruga, Bill "
+            "Sterling, dan Jackie Huett ditemukan di hutan, di luar. Gary Mathias tidak pernah ditemukan; sepatunya "
+            "ada di dalam trailer. Ringkasan sekunder: anomalydesk.com, morbidology.com, icecoldcases.com, "
+            "talesfromtheunderworld.com; dokumen primer (laporan insiden Butte County 28 Feb 1978, otopsi Juni-Juli "
+            "1978, inventaris trailer) belum dibaca langsung."
+        ),
     ),
     dict(
         ep="EP05", day=5, slot="pagi", jam="07.00", series="HILANG", pov="D",
