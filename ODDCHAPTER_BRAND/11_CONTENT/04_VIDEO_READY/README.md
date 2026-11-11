@@ -14,6 +14,7 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP01 v7 | TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL | 64,85 s | 17,9 MB | `18u4GwSOAMVIsCtnPIGBAjvc-Axy-Nrur` | `10_FILM/remotion/output/episodes/EP01_1080x1920_master.mp4` |
 | EP02 | MEREKA MEMOTONG TENDA ITU DARI DALAM | 72,32 s | 21,1 MB | `1WF4yQQkg02pctkJ8QsX-xls37gQCvoyJ` | `10_FILM/remotion/output/episodes/EP02_1080x1920_master.mp4` |
 | EP03 | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | 71,80 s | 21,9 MB | `1chsdzAkdplfm3JdmBHOefj5MQP_khUiZ` | `10_FILM/remotion/output/episodes/EP03_1080x1920_master.mp4` |
+| EP04 | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN (JALAN KE ATAS) | 70,81 s | 17,3 MB | `1O2onobslZxZo5miA83s6d5cEHcfK1OGL` | `10_FILM/remotion/output/episodes/EP04_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`
 Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`

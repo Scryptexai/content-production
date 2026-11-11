@@ -204,7 +204,7 @@ EPISODES = [
         turn_quote="\u201cMereka tersesat.\u201d",
         turn_verdict="Tersesat tidak membuat orang berjalan ke atas, melewati makanan, dan menjauhi jalan.",
         loop="Kuncinya masih di kontak. Dan pria kelima tidak pernah turun dari bukit.",
-        cues=["KUNCI DI KONTAK", "TANGKI \u00bd", "TRAILER", "1 HILANG"],
+        cues=["TERAKHIR TERLIHAT", "ARAH SALAH", "TIDAK RUSAK", "LEBIH DINGIN"],
         visual="Mobil tertutup salju dari belakang; kunci di lubang kontak; jejak kaki menanjak; trailer penjaga hutan gelap.",
         captions=[
             "",
