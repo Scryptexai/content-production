@@ -1,7 +1,9 @@
 {
   "episode": "EP04",
-  "status": "requested",
+  "status": "published",
   "visibility": "public",
   "requested_at": "2026-11-11T13:50:13Z",
-  "catatan": "Push berkas ini = EP04 diunduh dari Drive (id 1O2onobslZxZo5miA83s6d5cEHcfK1OGL), sha256 diperiksa, lalu tayang publik di YouTube. 70,81 s · 17,3 MB."
+  "catatan": "Push berkas ini = EP04 diunduh dari Drive (id 1O2onobslZxZo5miA83s6d5cEHcfK1OGL), sha256 diperiksa, lalu tayang publik di YouTube. 70,81 s · 17,3 MB.",
+  "youtube_url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
+  "published_at": "2026-11-11T13:50:54Z"
 }

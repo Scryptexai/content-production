@@ -60,3 +60,16 @@ EP01_raw.mp4                     ← render mentah 8 Mbps, bahan encode ulang
 
 Satu nama per episode, tanpa nomor versi di nama file: versi dicatat di tabel di
 atas dan di commit Git, supaya Drive tidak pernah punya dua "EP01".
+
+## Catatan EP04 — aset kerja yang sempat masuk Git
+
+Plate (12 JPEG) dan potongan narasi (13 MP3) EP04 di-commit sementara ke repo
+saat produksi, lalu dicabut lagi setelah master jadi. Alasannya teknis, bukan
+perubahan konvensi: di sandbox tempat EP04 dibuat, berkas yang masuk
+`.gitignore` tidak bertahan antar-sesi, sementara kuota generator gambar dan
+suara (10 per giliran) tidak cukup untuk menghasilkan ulang 12 gambar + 13 klip
+setiap sesi. Setelah `EP04_1080x1920_master.mp4` ada di Drive, keduanya tidak
+lagi dibutuhkan di Git — `.gitignore` berlaku seperti sebelumnya.
+
+Yang tetap tersimpan di repo: naskah, data episode (`tools/content_data.py`),
+thumbnail 1080x1920, metadata unggah, dan indeks ini. Master ada di Drive.
