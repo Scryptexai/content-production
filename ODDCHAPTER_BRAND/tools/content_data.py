@@ -260,39 +260,92 @@ EPISODES = [
     ),
     dict(
         ep="EP05", day=5, slot="pagi", jam="07.00", series="HILANG", pov="D",
+        struktur="klimaks-awal",
         title="MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN",
         thumb=["TANPA", "MAYAT"], thumb_text="TANPA MAYAT",
-        durasi=55,
-        protagonis="Seratus lima belas orang koloni Roanoke, termasuk seorang bayi bernama Virginia Dare.",
-        mau="Bertahan sampai gubernurnya kembali dengan bahan makanan.",
-        hambatan="Gubernurnya pergi ke Inggris dan baru bisa kembali tiga tahun kemudian.",
-        tanaman="Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata.",
-        hook="1587. Rumah dibongkar rapi, bukan dihancurkan. Di pagar: CROATOAN. Tidak ada salib.",
-        hook_alt="Mereka meninggalkan satu kata sebelum pergi. Butuh empat ratus tahun untuk membacanya benar.",
-        tanya="Kenapa yang dipahat nama tempat, dan bukan salib yang sudah mereka sepakati?",
-        entitas="rumah",
+        durasi=56,
+        protagonis="Seratus lima belas orang koloni Roanoke, termasuk bayi Virginia Dare yang lahir di sana.",
+        mau="Bertahan sampai gubernurnya kembali membawa bahan makanan.",
+        hambatan="Gubernurnya berlayar ke Inggris, dan perang menahannya tiga tahun.",
+        tanaman="Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di kayu itu tidak ada salib.",
+        hook="1590. Seratus lima belas orang hilang. Rumah mereka dibongkar rapi, bukan dihancurkan.",
+        hook_alt="Satu kata terpahat di tiang pagar, dan tidak ada salib di atasnya.",
+        tanya="Kenapa mereka membongkar rumah sendiri, lalu meninggalkan satu kata di pagar?",
+        entitas="lima belas orang",
+        diskusi="Kalau kamu menemukan kata itu tanpa salib, kamu akan mencarinya atau menganggap semuanya sudah mati?",
         celah="Kenapa mereka menulis nama tempat, bukan tanda bahaya yang sudah disepakati?",
+        relate="Kamu pernah meninggalkan rumah, dan berharap ada yang mencari?",
         gambar_melekat="Satu kata terpahat di tiang pagar, dan tidak ada salib di atasnya.",
         beats=[
-            ("setup", "1587. Seratus lima belas orang Inggris mendarat di Carolina Utara."),
-            ("setup", "Gubernurnya berlayar ke Inggris mengambil bahan makanan."),
-            ("tension", "Perang membuat dia baru bisa kembali tiga tahun kemudian."),
-            ("tension", "Yang ia temukan bukan koloni. Rumah-rumah sudah dibongkar, bukan dihancurkan."),
-            ("tension", "Di pagar, terpahat satu kata: CROATOAN."),
-            ("tension", "Mereka sudah sepakat sebelumnya: kalau pergi karena terpaksa, ukir salib."),
-            ("turn", "Tidak ada salib."),
-            ("turn", "Selama empat ratus tahun kita membaca kata itu sebagai pesan terakhir."),
-            ("turn", "Padahal tidak ada tulang, tidak ada kuburan, tidak ada sisa perkelahian."),
-            ("consequence", "Croatoan bukan pesan terakhir. Itu alamat."),
-            ("consequence", "Mereka tidak dibantai. Mereka pindah, dan bergabung dengan orang yang sudah ada di sana."),
+            ("tanya", "Kenapa mereka membongkar rumah sendiri, lalu meninggalkan satu kata di pagar?"),
+            ("relate", "Kamu pernah meninggalkan rumah, dan berharap ada yang mencari?"),
+            ("setup", "1587. Seratus lima belas orang Inggris mendarat di Roanoke."),
+            ("tension", "Gubernurnya berlayar ke Inggris mengambil bahan makanan."),
+            ("tension", "Perang dengan Spanyol menahan kapal. Dia kembali tiga tahun kemudian."),
+            ("tension", "Agustus 1590. Rumah-rumah sudah dibongkar, bukan runtuh."),
+            ("tension", "Di tiang pagar terpahat satu kata: CROATOAN."),
+            ("turn", "Mereka sudah sepakat: kalau pergi terpaksa, ukir salib di atas nama itu."),
+            ("turn", "Di kayu itu tidak ada salib."),
+            ("turn", "Empat ratus tahun kata di kayu itu dibaca sebagai pesan terakhir."),
+            ("consequence", "Padahal tidak ada satu pun tulang. Tidak ada kuburan."),
+            ("consequence", "Croatoan bukan peringatan. Itu alamat, lima puluh mil ke selatan."),
         ],
-        turn_quote="“Mereka dibantai.”",
-        turn_verdict="Tidak ada satu pun tulang. Yang ada: nama tempat. Itu alamat, bukan peringatan.",
-        loop="Rumah-rumah itu dibongkar rapi karena mereka memang pindah. Seratus lima belas orang berjalan ke selatan.",
-        cues=["1587", "115 ORANG", "CROATOAN", "TANPA SALIB", "TANPA KUBURAN"],
-        visual="Pagar kayu dengan satu kata; rumah yang dibongkar rapi; pesisir kosong.",
+        turn_quote="\u201cMereka dibantai.\u201d",
+        turn_verdict="Tidak ada tulang, tidak ada kuburan, dan nama itu ditulis tanpa salib. Itu alamat.",
+        loop="Rumah itu dibongkar rapi karena mereka pindah, bukan karena dibantai.",
+        cues=["JOHN WHITE", "ARMADA SPANYOL", "AGUSTUS 1590", "8 HURUF"],
+        captions=[
+            "",
+            "Kenapa bongkar rumah sendiri?",
+            "Pernah pergi tanpa alamat?",
+            "Roanoke, 1587.",
+            "Dia pergi cari makanan.",
+            "Tiga tahun. Perang.",
+            "Rumah dibongkar, bukan runtuh.",
+            "Satu kata di tiang pagar.",
+            "Janji mereka: salib kalau terpaksa.",
+            "Tidak ada salib.",
+            "Empat ratus tahun salah baca.",
+            "Tanpa tulang. Tanpa kuburan.",
+            "",
+        ],
+        caption_hi=["", "bongkar", "alamat", "Roanoke", "makanan", "Tiga tahun", "dibongkar", "pagar", "salib", "Tidak ada salib", "salah baca", "Tanpa tulang", ""],
+        stamps=[["115", 0], ["1587", 3], ["400", 10]],
+        sfx={
+            "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
+            "04_tension": "engine", "05_tension": "gust", "06_tension": "clunk", "07_tension": "page",
+            "08_turn": "boom", "09_turn": "engine", "10_turn": "boom",
+            "11_consequence": "gust", "12_consequence": "boom", "99_loop": "gust",
+        },
+        photos=[
+            "00_houses", "01_gate", "02_shore_dusk", "03_landing", "04_ship_away",
+            "05_storm", "06_dismantled", "07_carved_post", "08_chests", "09_bare_wood",
+            "10_map", "11_empty_ground", "06_dismantled",
+        ],
+        bed="audio/EP05/bed.wav",
         plate="ridge",
-        sumber="NEEDS-SOURCE — Koloni Roanoke 1587–1590; teori asimilasi Croatoan/Lumbee masih hipotesis.",
+        sumber=(
+            "VERIFIED pada butir utama; satu klaim rencana dilunakkan. 1587: ekspedisi keluarga di bawah "
+            "gubernur John White, sekitar 115 orang, mendarat di Roanoke (kini Carolina Utara); Virginia Dare "
+            "lahir 18 Agustus 1587, anak Inggris pertama yang lahir di Amerika. White berlayar ke Inggris akhir "
+            "1587 untuk bahan makanan; perang dengan Spanyol (Armada 1588) menahan pelayaran; ia kembali dan "
+            "mendarat 18 Agustus 1590 - tiga tahun kemudian, pada ulang tahun cucunya. Yang ia temukan: rumah "
+            "sudah DIBONGKAR (bukan runtuh atau terbakar), palisade kayu dibangun, tidak ada mayat, tidak ada "
+            "kuburan, tidak ada tanda pertempuran; peti yang ia kubur sudah digali, buku/peta/zirah rusak karena "
+            "hujan, barang berat (batang besi, timah, senjata) ditinggal. Dua pahatan: 'CRO' di pohon dan "
+            "'CROATOAN' di tiang pagar; keduanya TANPA salib. Kesepakatan sebelum ia pergi: nama tempat tujuan "
+            "dipahat kalau pindah, salib Malta ditambahkan kalau perpindahan itu karena bahaya. Croatoan = pulau "
+            "(kini Hatteras, sekitar 50 mil ke selatan) dan nama orang Algonquian di sana, dengan Manteo sebagai "
+            "kepala yang bersahabat. White hendak menyeberang ke Croatoan, tetapi badai dan kerusakan jangkar "
+            "menggagalkannya; ia tidak pernah kembali ke Amerika. LUNGGUH: rencana menulis 'mereka pindah dan "
+            "bergabung dengan orang di sana' sebagai fakta - itu masih HIPOTESIS. Yang bisa dikatakan: tidak ada "
+            "bukti pembantaian di Roanoke, dan kata itu adalah alamat, bukan peringatan. Bukti pendukung "
+            "hipotesis asimilasi: temuan abad ke-16 di Hatteras (termasuk endapan kerak besi pandai besi, tim "
+            "Mark Horton), 'Site X' di Bertie County (First Colony Foundation, 2015), simbol benteng di bawah "
+            "tambalan peta La Virginea Pars (British Museum, 2012), dan laporan John Smith 1607. Ringkasan "
+            "sekunder: encyclopediavirginia.org, pagesofhistory.org, scienceinsights.org. Laporan asli White "
+            "('The fift voyage of M. John White', Hakluyt) belum dibaca langsung."
+        ),
     ),
     dict(
         ep="EP06", day=1, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="B",

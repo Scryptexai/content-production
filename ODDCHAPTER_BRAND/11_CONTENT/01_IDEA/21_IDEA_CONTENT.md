@@ -15,7 +15,7 @@ Legenda: **POV** A = “kamu” · B = “saksi/arsip” · D = “kita”.
 | EP02 | H2 pagi | **MEREKA MEMOTONG TENDA ITU DARI DALAM** | B | Igor Dyatlov, 23 tahun, pemimpin kelompok pendaki Ural. | Tenda itu disobek dari sisi dalam, dengan pisau. | NEEDS-SOURCE |
 | EP03 | H3 pagi | **KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA** | B | Benjamin Briggs, kapten Mary Celeste. Istrinya dan anaknya ikut di kapal. | Sekoci hilang, kompas hilang. Kapalnya sendiri utuh. | NEEDS-SOURCE |
 | EP04 | H4 pagi | **MEREKA BERJALAN MENJAUH DARI PERTOLONGAN** | A | Lima pria muda dari Yuba County, California. Salah satunya, Gary Mathias. | Kunci masih di lubang kontak. Tangki setengah penuh. Mobil tidak rusak. | VERIFIED |
-| EP05 | H5 pagi | **MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN** | D | Seratus lima belas orang koloni Roanoke, termasuk seorang bayi bernama Virginia Dare. | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. | NEEDS-SOURCE |
+| EP05 | H5 pagi | **MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN** | D | Seratus lima belas orang koloni Roanoke, termasuk seorang bayi bernama Virginia Dare. | Mereka sepakat: kalau pergi karena terpaksa, ukir salib. Di pagar hanya ada satu kata. | VERIFIED |
 
 ## TERSEMBUNYI — Sesuatu yang berlangsung lama tepat di depan mata orang.
 
