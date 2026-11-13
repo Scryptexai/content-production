@@ -409,7 +409,7 @@ EPISODES = [
         photos=[
             "00_dumpfire", "01_steam_crack", "02_kitchen", "03_council", "04_seam",
             "05_basement", "06_sinkhole", "07_vent", "08_town_empty", "09_documents",
-            "10_demolition", "11_route61", "12_five_houses", "01_steam_crack",
+            "10_demolition", "11_route61", "01_steam_crack",
         ],
         bed="audio/EP06/bed.wav",
         plate="plume",

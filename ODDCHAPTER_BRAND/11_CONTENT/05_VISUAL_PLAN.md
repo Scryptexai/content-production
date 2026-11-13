@@ -355,7 +355,7 @@ ulang tanpa huruf yang bisa dibaca; dari situ aturan kerasnya: **setiap prompt
 plate diakhiri "no text, no letters, no signs, no readable words"** dan tiap
 frame QA dicek mata, bukan cuma lolos skrip.
 
-**EP06 `Centralia` — 13 plate + 1 reprise**, daftar di `content_data.py`:
+**EP06 `Centralia` — 12 plate + 1 reprise**, daftar di `content_data.py`:
 
 | # | plate | isi yang harus terlihat |
 |---|---|---|
@@ -371,8 +371,11 @@ frame QA dicek mata, bukan cuma lolos skrip.
 | 9 | `09_documents` | berkas di meja, tanpa huruf terbaca |
 | 10 | `10_demolition` | rumah diruntuhkan, puing |
 | 11 | `11_route61` | jalan retak dan bergelombang, ditutup |
-| 12 | `12_five_houses` | beberapa rumah tersisa, satu lampu |
-| 13 | `01_steam_crack` | reprise untuk loop |
+| 12 | `01_steam_crack` | reprise untuk loop (memanggil hook) |
+
+Jumlah plate unik: **12** untuk 13 segmen (loop memakai reprise, sama seperti EP05
+yang memakai ulang `06_dismantled`). Sumber kebenaran tetap `len(photos) ==
+len(timing.segments)`; kalau tidak sama, frame akan bergeser dan muncul segmen kosong.
 
 Palet tetap: Ink `#17191D` · Ivory `#F4F0E8` · Sage `#A7B0A1` · Orange `#F26A3D`.
 Warna lampu/oranye hanya satu sumber per frame. Tidak ada wajah korban, tidak ada
