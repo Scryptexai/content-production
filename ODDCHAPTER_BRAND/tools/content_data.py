@@ -379,7 +379,7 @@ EPISODES = [
         turn_quote="\u201cApi itu akan padam sendiri, atau dipadamkan.\u201d",
         turn_verdict="Tidak. Yang mereka beli bukan pemadaman, tapi jarak. Apinya masih menyala di bawah jalan yang kosong.",
         loop="Apinya masih menyala. Di bawah jalan yang sekarang kosong.",
-        cues=["API DI BAWAH", "1981", "1992", "MASIH MENYALA"],
+        cues=["BATU BARA", "UAP PANAS", "TANPA PEMILIK", "MASIH MENYALA"],
         captions=[
             "",
             "Coba bayangkan.",
@@ -393,7 +393,7 @@ EPISODES = [
             "",
         ],
         caption_hi=["", "bayangkan", "bertahan", "1962", "batu bara", "1981", "dipadamkan", "1992", "Lima orang", ""],
-        stamps=[["1962", 3], ["1992", 7], ["5", 8]],
+        stamps=[["1962", 3], ["5", 8]],
         sfx={
             "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
             "04_tension": "engine", "05_tension": "clunk", "06_turn": "boom",
@@ -428,81 +428,77 @@ EPISODES = [
         struktur="klimaks-awal",
         title="JEJAK KAKI ITU HANYA SATU ARAH",
         thumb=["JEJAK", "SATU ARAH"], thumb_text="JEJAK SATU ARAH",
-        durasi=52,
+        durasi=46,
         protagonis="Keluarga Gruber di pertanian terpencil Hinterkaifeck, Bavaria.",
         mau="Melewati musim dingin di pertanian yang jauh dari kampung.",
-        hambatan="Sejak berhari-hari ada jejak kaki menuju rumah mereka, tanpa jejak yang kembali.",
-        tanaman="Kunci rumah hilang, langkah kaki terdengar di loteng, dan tidak ada pintu yang dibuka paksa.",
-        hook="1922. Ada jejak kaki menuju pertanian itu. Tidak ada yang kembali.",
-        hook_alt="Di Bavaria, seorang petani menemukan jejak kaki menuju rumahnya. Tidak ada jejak yang keluar.",
-        tanya="Kalau semua jejak masuk, siapa yang keluar dari rumah itu?",
+        hambatan="Ada jejak kaki di salju menuju rumah mereka, dan tidak ada yang kembali.",
+        tanaman="Kunci hilang, langkah terdengar di loteng, dan tidak ada pintu yang dibuka paksa.",
+        hook="1922. Lihat salju di depan rumah itu. Semua jejak menuju ke dalam.",
+        hook_alt="Salju di depan rumah itu penuh jejak. Semuanya mengarah masuk.",
+        tanya="Coba bayangkan kamu di rumah itu. Kamu akan mencari lotengnya?",
         entitas="jejak",
-        diskusi="Kalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal?",
-        celah="Kenapa tidak ada satu jejak pun yang keluar dari pertanian itu?",
-        relate="Kamu pernah pulang ke rumah dan merasa ada orang lain di dalam?",
-        gambar_melekat="Deretan jejak kaki di salju berhenti di depan pintu, dan tidak berlanjut.",
+        diskusi="Kalau rumahmu dikelilingi jejak yang masuk, kamu akan memeriksa loteng?",
+        celah="Kenapa tidak ada satu pun jejak yang keluar dari rumah itu?",
+        relate="Kita sering mengabaikan bunyi kecil di rumah sendiri.",
+        gambar_melekat="Jejak kaki di salju berhenti di depan pintu, dan tidak berlanjut.",
         beats=[
-            ("tanya", "Kalau semua jejak masuk, siapa yang keluar dari rumah itu?"),
-            ("relate", "Kamu pernah pulang ke rumah dan merasa ada orang lain di dalam?"),
-            ("setup", "Malam tiga puluh satu Maret 1922, enam orang tinggal di pertanian itu."),
-            ("tension", "Beberapa hari sebelumnya, Andreas menemukan kunci rumahnya hilang."),
-            ("tension", "Dia juga mendengar langkah kaki di loteng, dan tidak menemukan siapa pun."),
-            ("tension", "Empat hari kemudian, tetangga melihat asap dari cerobong rumah itu."),
-            ("turn", "Yang membunuh mereka tidak masuk malam itu. Dia sudah di dalam rumah."),
-            ("consequence", "Dia menyalakan api di dapur, memberi makan ternak, dan menetap di sana."),
-            ("consequence", "Tidak ada pintu yang dibuka paksa. Kuncinya ada di tangan orang lain."),
+            ("tanya", "Coba bayangkan kamu di rumah itu. Kamu akan mencari lotengnya?"),
+            ("relate", "Kita sering mengabaikan bunyi kecil di rumah sendiri."),
+            ("setup", "Malam tiga puluh satu Maret 1922, enam orang tidur di pertanian itu."),
+            ("tension", "Beberapa hari sebelumnya, kunci rumah mereka hilang."),
+            ("tension", "Andreas naik ke loteng, di bawah atap. Tidak ada siapa pun."),
+            ("tension", "Tidak ada pintu yang dirusak. Jadi bagaimana dia bisa masuk?"),
+            ("turn", "Dia tidak masuk malam itu. Dia sudah menunggu di dalam rumah."),
+            ("consequence", "Empat hari kemudian, tetangga melihat asap dari cerobong."),
+            ("consequence", "Dia menyalakan api di dapur. Kamu bisa bayangkan baunya."),
         ],
         turn_quote="\u201cSeseorang masuk malam itu.\u201d",
-        turn_verdict="Tidak ada pintu yang dirusak dan kuncinya sudah hilang berhari-hari sebelumnya. Dia tidak masuk; dia sudah di dalam.",
-        loop="Jejak kaki itu berhenti di pertanian. Yang membuatnya tidak pernah keluar.",
-        cues=["KUNCI HILANG", "LANGKAH DI LOTENG", "ASAP", "SUDAH DI DALAM"],
+        turn_verdict="Tidak ada pintu yang dirusak, dan kuncinya sudah hilang berhari-hari sebelumnya. Dia tidak masuk; dia sudah di dalam.",
+        loop="Jejak di salju itu berhenti di pintu. Yang membuatnya tidak pernah keluar.",
+        cues=["LOTENG", "KUNCI HILANG", "ASAP", "MASIH DI DALAM"],
         captions=[
             "",
-            "Siapa yang keluar?",
-            "Ada orang lain di rumah?",
-            "Malam 31 Maret 1922.",
-            "Kunci rumah hilang.",
-            "Langkah di loteng.",
-            "Empat hari. Asap.",
+            "Kamu akan cari loteng?",
+            "Kita abaikan bunyi kecil.",
+            "31 Maret 1922.",
+            "Kunci hilang.",
+            "Loteng kosong.",
+            "Bagaimana dia masuk?",
             "Dia sudah di dalam.",
-            "Ternak diberi makan.",
-            "Tidak ada pintu dirusak.",
+            "Asap empat hari.",
+            "Api di dapur.",
             "",
         ],
-        caption_hi=["", "Siapa", "orang lain", "1922", "kunci", "loteng", "Asap", "di dalam", "ternak", "pintu", ""],
-        stamps=[["1922", 3], ["6", 3]],
+        caption_hi=["", "loteng", "bunyi kecil", "1922", "kunci", "Loteng", "bagaimana", "di dalam", "Asap", "dapur", ""],
+        stamps=[["1922", 3], ["4", 8]],
         sfx={
             "00_hook": "gust", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
             "04_tension": "clunk", "05_tension": "page", "06_tension": "gust", "07_turn": "boom",
-            "08_consequence": "rustle", "09_consequence": "clunk", "99_loop": "gust",
+            "08_consequence": "gust", "09_consequence": "rustle", "99_loop": "gust",
         },
         photos=[
             "00_snow_tracks", "01_front_door", "02_window_night", "03_farm_dusk",
-            "04_key_table", "05_attic", "06_chimney_smoke", "07_barn_dark",
-            "08_stove", "09_bolted_door", "00_snow_tracks",
+            "04_key_table", "05_attic", "09_bolted_door", "07_barn_dark",
+            "06_chimney_smoke", "08_stove", "00_snow_tracks",
         ],
         bed="audio/EP07/bed.wav",
         plate="ridge",
         sumber=(
             "VERIFIED pada butir utama. Hinterkaifeck: pertanian terpencil di Bavaria, sekitar 70 km utara "
-            "Munich, antara Groebern dan Kaifeck. Malam 31 Maret - 1 April 1922 enam orang terbunuh: Andreas "
-            "Gruber (63), istrinya Caezilia (72), anak mereka Viktoria Gabriel (35), cucu Caezilia (7) dan "
-            "Josef (2), serta pembantu baru Maria Baumgartner (44) yang tiba di pertanian hari itu juga. "
-            "Beberapa hari sebelumnya Andreas melaporkan ke tetangga: jejak kaki di salju dari tepi hutan "
-            "menuju pertanian tanpa jejak kembali, langkah kaki di loteng, koran Munich yang tidak dipesan, "
-            "dan kunci rumah yang hilang. Pembantu sebelumnya berhenti sekitar enam bulan lebih awal karena "
-            "merasa rumah itu tidak tenang. Tidak ada tanda masuk paksa. Jenazah ditemukan 4 April 1922 setelah "
-            "tetangga curiga: tidak ada aktivitas, tetapi asap masih keluar dari cerobong dan ternak sudah "
-            "diberi makan dan diperah. Senjata yang diyakini dipakai adalah cangkul berat (mattock / Reuthaue); "
-            "alat itu baru ditemukan setahun kemudian saat bangunan dibongkar. Pertanian dibongkar 1923. "
-            "Tengkorak dikirim ke Munich untuk diperiksa dan hilang pada masa Perang Dunia II; korban "
-            "dimakamkan tanpa tengkorak di Waidhofen. Kasus tidak pernah selesai; tinjauan akademi polisi "
-            "Jerman 2007 menyimpulkan kasus ini tidak bisa dipecahkan dengan bukti yang tersisa. "
-            "Rincian luka dan dugaan pelaku (mis. tetangga Lorenz Schlittenbauer) sengaja TIDAK dipakai: "
-            "tidak ada putusan pengadilan, dan episode ini soal jejak, bukan tuduhan. Ringkasan sekunder: "
-            "stillunsolvedmysteriesoftheworld, anomalien.com, defrostingcoldcases, truecrimeatlas, "
-            "christian-hardinghaus.de, clutchjustice (tinjauan 2007). Berkas polisi asli dan buku "
-            "\u201cDer Mordfall Hinterkaifeck\u201d belum dibaca langsung."
+            "Munich. Malam 31 Maret - 1 April 1922 enam orang terbunuh: Andreas Gruber (63), istrinya "
+            "Caezilia (72), anak mereka Viktoria Gabriel (35), cucu Caezilia (7) dan Josef (2), serta pembantu "
+            "baru Maria Baumgartner (44) yang tiba hari itu juga. Beberapa hari sebelumnya Andreas melaporkan "
+            "ke tetangga: jejak kaki di salju dari tepi hutan menuju pertanian tanpa jejak kembali, langkah "
+            "kaki di loteng, koran Munich yang tidak dipesan, dan kunci rumah yang hilang. Pembantu sebelumnya "
+            "berhenti karena merasa rumah itu tidak tenang. Tidak ada tanda masuk paksa. Jenazah ditemukan "
+            "4 April 1922 setelah tetangga curiga: tidak ada aktivitas, tetapi asap masih keluar dari cerobong "
+            "dan ternak sudah diberi makan serta diperah. Senjata yang diyakini dipakai adalah cangkul berat "
+            "(mattock); alat itu baru ditemukan setahun kemudian saat bangunan dibongkar. Pertanian dibongkar "
+            "1923. Tengkorak dikirim ke Munich dan hilang pada masa Perang Dunia II; korban dimakamkan tanpa "
+            "tengkorak di Waidhofen. Kasus tidak pernah selesai; tinjauan akademi polisi Jerman 2007 "
+            "menyimpulkan bukti yang tersisa tidak cukup. Rincian luka dan dugaan pelaku sengaja TIDAK dipakai. "
+            "Ringkasan sekunder: stillunsolvedmysteriesoftheworld, anomalien.com, defrostingcoldcases, "
+            "truecrimeatlas, christian-hardinghaus.de, clutchjustice."
         ),
     ),
     dict(
