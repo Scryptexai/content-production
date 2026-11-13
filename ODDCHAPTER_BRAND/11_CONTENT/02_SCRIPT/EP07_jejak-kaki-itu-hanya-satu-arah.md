@@ -2,7 +2,7 @@
 
 **Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
 **POV:** A — “SAKSI MATA” (rekonstruksi, tetapi menyapa penonton — `00E_SUARA_NARATOR.md`)  
-**Durasi:** 113 kata ≈ 46 detik
+**Durasi:** 103 kata ≈ 43 detik
 
 ---
 
@@ -28,8 +28,7 @@
 | TANYA | Coba bayangkan kamu di rumah itu. Kamu akan mencari lotengnya? |
 | RELATE | Kita sering mengabaikan bunyi kecil di rumah sendiri. |
 | SETUP | Malam tiga puluh satu Maret 1922, enam orang tidur di pertanian itu. |
-| TENSION | Beberapa hari sebelumnya, kunci rumah mereka hilang. |
-| TENSION | Andreas naik ke loteng, di bawah atap. Tidak ada siapa pun. |
+| TENSION | Kunci rumah mereka hilang. Andreas naik ke loteng, dan tidak ada siapa pun. |
 | TENSION | Tidak ada pintu yang dirusak. Jadi bagaimana dia bisa masuk? |
 | TURN | Dia tidak masuk malam itu. Dia sudah menunggu di dalam rumah. |
 | CONSEQUENCE | Empat hari kemudian, tetangga melihat asap dari cerobong. |
@@ -68,7 +67,7 @@ sebelumnya. Dia tidak masuk; dia sudah di dalam.
 
 ## 5 · TEKS DI LAYAR
 
-Cue (4): `LOTENG` · `KUNCI HILANG` · `ASAP` · `MASIH DI DALAM`  
+Cue (4): `LOTENG` · `KUNCI HILANG` · `ASAP` · `MASIH DI DALAM` (10 segmen)  
 Stamp (2): `1922` · `4` (hari sampai ditemukan)
 
 ## 6 · VISUAL SIGNATURE
