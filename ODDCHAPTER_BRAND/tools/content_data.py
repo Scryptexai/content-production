@@ -435,40 +435,86 @@ EPISODES = [
         ),
     ),
     dict(
-        ep="EP07", day=2, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="A",
+        ep="EP07", day=7, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="A",
+        struktur="klimaks-awal",
         title="JEJAK KAKI ITU HANYA SATU ARAH",
-        thumb=["SATU", "ARAH"], thumb_text="JEJAK SATU ARAH",
-        durasi=57,
-        protagonis="Keluarga Gruber di pertanian Hinterkaifeck, Bavaria. Enam orang, dua di antaranya balita.",
-        mau="Menjalani hidup biasa di pertanian terpencil.",
-        hambatan="Seseorang tinggal di loteng rumah mereka, dan mereka tahu.",
-        tanaman="Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.",
-        hook="1922. Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.",
-        hook_alt="Enam bulan sebelum pembunuhan itu, pelayan lama mereka berhenti kerja. Alasannya: langkah kaki di loteng.",
-        tanya="Kalau tidak ada satu pun jejak keluar, siapa yang membunuh mereka di dalam?",
-        entitas="jejak kaki",
-        celah="Kalau pembunuhnya tidak keluar, dari mana dia datang?",
-        gambar_melekat="Satu baris jejak menuju pintu, dan salju di belakangnya bersih.",
+        thumb=["JEJAK", "SATU ARAH"], thumb_text="JEJAK SATU ARAH",
+        durasi=52,
+        protagonis="Keluarga Gruber di pertanian terpencil Hinterkaifeck, Bavaria.",
+        mau="Melewati musim dingin di pertanian yang jauh dari kampung.",
+        hambatan="Sejak berhari-hari ada jejak kaki menuju rumah mereka, tanpa jejak yang kembali.",
+        tanaman="Kunci rumah hilang, langkah kaki terdengar di loteng, dan tidak ada pintu yang dibuka paksa.",
+        hook="1922. Ada jejak kaki menuju pertanian itu. Tidak ada yang kembali.",
+        hook_alt="Di Bavaria, seorang petani menemukan jejak kaki menuju rumahnya. Tidak ada jejak yang keluar.",
+        tanya="Kalau semua jejak masuk, siapa yang keluar dari rumah itu?",
+        entitas="jejak",
+        diskusi="Kalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal?",
+        celah="Kenapa tidak ada satu jejak pun yang keluar dari pertanian itu?",
+        relate="Kamu pernah pulang ke rumah dan merasa ada orang lain di dalam?",
+        gambar_melekat="Deretan jejak kaki di salju berhenti di depan pintu, dan tidak berlanjut.",
         beats=[
-            ("setup", "Hinterkaifeck. Pertanian terpencil di Bavaria. 31 Maret 1922."),
-            ("setup", "Enam orang tinggal di sana. Dua di antaranya masih balita."),
-            ("tension", "Enam bulan sebelumnya, pelayan lama keluarga itu berhenti kerja."),
-            ("tension", "Alasannya: rumah itu berhantu. Dia mendengar langkah kaki di loteng."),
-            ("tension", "Pagi 31 Maret, orang-orang itu ditemukan tewas. Semuanya."),
-            ("tension", "Tapi bukan itu yang paling aneh."),
-            ("tension", "Jejak kaki di salju hanya mengarah dari hutan ke rumah."),
-            ("turn", "Pembunuhnya tidak datang malam itu lalu pergi."),
-            ("turn", "Dia tinggal di sana beberapa hari. Dia makan. Dia memberi makan sapi. Dia menyalakan api."),
-            ("consequence", "Polisi mencari orang yang datang malam itu. Tidak ada yang pernah ditangkap."),
-            ("consequence", "Dan kunci yang hilang tidak pernah ditemukan sampai hari ini."),
+            ("tanya", "Kalau semua jejak masuk, siapa yang keluar dari rumah itu?"),
+            ("relate", "Kamu pernah pulang ke rumah dan merasa ada orang lain di dalam?"),
+            ("setup", "Malam tiga puluh satu Maret 1922, enam orang tinggal di pertanian itu."),
+            ("tension", "Beberapa hari sebelumnya, Andreas menemukan kunci rumahnya hilang."),
+            ("tension", "Dia juga mendengar langkah kaki di loteng, dan tidak menemukan siapa pun."),
+            ("tension", "Empat hari kemudian, tetangga melihat asap dari cerobong rumah itu."),
+            ("turn", "Yang membunuh mereka tidak masuk malam itu. Dia sudah di dalam rumah."),
+            ("consequence", "Dia menyalakan api di dapur, memberi makan ternak, dan menetap di sana."),
+            ("consequence", "Tidak ada pintu yang dibuka paksa. Kuncinya ada di tangan orang lain."),
         ],
-        turn_quote="“Pembunuh datang malam itu.”",
-        turn_verdict="Tidak ada jejak yang keluar. Pelakunya sudah di dalam rumah, dan tinggal beberapa hari.",
-        loop="Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.",
-        cues=["31 MAR 1922", "6 ORANG", "JEJAK 1 ARAH", "LOTENG", "KASUS TERBUKA"],
-        visual="Atap bersalju dengan satu jalur jejak; denah rumah dengan loteng disorot; perapian dingin.",
-        plate="shelter",
-        sumber="NEEDS-SOURCE — Pembunuhan Hinterkaifeck 1922; berkas investigasi belum dibaca langsung.",
+        turn_quote="\u201cSeseorang masuk malam itu.\u201d",
+        turn_verdict="Tidak ada pintu yang dirusak dan kuncinya sudah hilang berhari-hari sebelumnya. Dia tidak masuk; dia sudah di dalam.",
+        loop="Jejak kaki itu berhenti di pertanian. Yang membuatnya tidak pernah keluar.",
+        cues=["KUNCI HILANG", "LANGKAH DI LOTENG", "ASAP", "SUDAH DI DALAM"],
+        captions=[
+            "",
+            "Siapa yang keluar?",
+            "Ada orang lain di rumah?",
+            "Malam 31 Maret 1922.",
+            "Kunci rumah hilang.",
+            "Langkah di loteng.",
+            "Empat hari. Asap.",
+            "Dia sudah di dalam.",
+            "Ternak diberi makan.",
+            "Tidak ada pintu dirusak.",
+            "",
+        ],
+        caption_hi=["", "Siapa", "orang lain", "1922", "kunci", "loteng", "Asap", "di dalam", "ternak", "pintu", ""],
+        stamps=[["1922", 3], ["6", 3]],
+        sfx={
+            "00_hook": "gust", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
+            "04_tension": "clunk", "05_tension": "page", "06_tension": "gust", "07_turn": "boom",
+            "08_consequence": "rustle", "09_consequence": "clunk", "99_loop": "gust",
+        },
+        photos=[
+            "00_snow_tracks", "01_front_door", "02_window_night", "03_farm_dusk",
+            "04_key_table", "05_attic", "06_chimney_smoke", "07_barn_dark",
+            "08_stove", "09_bolted_door", "00_snow_tracks",
+        ],
+        bed="audio/EP07/bed.wav",
+        plate="ridge",
+        sumber=(
+            "VERIFIED pada butir utama. Hinterkaifeck: pertanian terpencil di Bavaria, sekitar 70 km utara "
+            "Munich, antara Groebern dan Kaifeck. Malam 31 Maret - 1 April 1922 enam orang terbunuh: Andreas "
+            "Gruber (63), istrinya Caezilia (72), anak mereka Viktoria Gabriel (35), cucu Caezilia (7) dan "
+            "Josef (2), serta pembantu baru Maria Baumgartner (44) yang tiba di pertanian hari itu juga. "
+            "Beberapa hari sebelumnya Andreas melaporkan ke tetangga: jejak kaki di salju dari tepi hutan "
+            "menuju pertanian tanpa jejak kembali, langkah kaki di loteng, koran Munich yang tidak dipesan, "
+            "dan kunci rumah yang hilang. Pembantu sebelumnya berhenti sekitar enam bulan lebih awal karena "
+            "merasa rumah itu tidak tenang. Tidak ada tanda masuk paksa. Jenazah ditemukan 4 April 1922 setelah "
+            "tetangga curiga: tidak ada aktivitas, tetapi asap masih keluar dari cerobong dan ternak sudah "
+            "diberi makan dan diperah. Senjata yang diyakini dipakai adalah cangkul berat (mattock / Reuthaue); "
+            "alat itu baru ditemukan setahun kemudian saat bangunan dibongkar. Pertanian dibongkar 1923. "
+            "Tengkorak dikirim ke Munich untuk diperiksa dan hilang pada masa Perang Dunia II; korban "
+            "dimakamkan tanpa tengkorak di Waidhofen. Kasus tidak pernah selesai; tinjauan akademi polisi "
+            "Jerman 2007 menyimpulkan kasus ini tidak bisa dipecahkan dengan bukti yang tersisa. "
+            "Rincian luka dan dugaan pelaku (mis. tetangga Lorenz Schlittenbauer) sengaja TIDAK dipakai: "
+            "tidak ada putusan pengadilan, dan episode ini soal jejak, bukan tuduhan. Ringkasan sekunder: "
+            "stillunsolvedmysteriesoftheworld, anomalien.com, defrostingcoldcases, truecrimeatlas, "
+            "christian-hardinghaus.de, clutchjustice (tinjauan 2007). Berkas polisi asli dan buku "
+            "\u201cDer Mordfall Hinterkaifeck\u201d belum dibaca langsung."
+        ),
     ),
     dict(
         ep="EP08", day=3, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="B",
