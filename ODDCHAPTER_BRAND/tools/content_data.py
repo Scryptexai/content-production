@@ -307,9 +307,10 @@ EPISODES = [
             "Tidak ada salib.",
             "Empat ratus tahun salah baca.",
             "Tanpa tulang. Tanpa kuburan.",
+            "Itu alamat, lima puluh mil.",
             "",
         ],
-        caption_hi=["", "bongkar", "alamat", "Roanoke", "makanan", "Tiga tahun", "dibongkar", "pagar", "salib", "Tidak ada salib", "salah baca", "Tanpa tulang", ""],
+        caption_hi=["", "bongkar", "alamat", "Roanoke", "makanan", "Tiga tahun", "dibongkar", "pagar", "salib", "Tidak ada salib", "salah baca", "Tanpa tulang", "alamat", ""],
         stamps=[["115", 0], ["1587", 3], ["400", 10]],
         sfx={
             "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
@@ -319,8 +320,8 @@ EPISODES = [
         },
         photos=[
             "00_houses", "01_gate", "02_shore_dusk", "03_landing", "04_ship_away",
-            "05_storm", "06_dismantled", "07_carved_post", "08_chests", "09_bare_wood",
-            "10_map", "11_empty_ground", "06_dismantled",
+            "05_storm", "06_dismantled", "07_carved_post", "13_agreement", "09_bare_wood",
+            "10_map", "11_empty_ground", "12_island_far", "06_dismantled",
         ],
         bed="audio/EP05/bed.wav",
         plate="ridge",
@@ -348,39 +349,90 @@ EPISODES = [
         ),
     ),
     dict(
-        ep="EP06", day=1, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="B",
+        ep="EP06", day=6, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="B",
+        struktur="klimaks-awal",
         title="API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN",
         thumb=["MASIH", "MENYALA"], thumb_text="MASIH MENYALA",
         durasi=57,
-        protagonis="Warga terakhir Centralia, Pennsylvania.",
-        mau="Tinggal di rumah mereka.",
-        hambatan="Tanah di bawah rumah mereka terbakar.",
-        tanaman="Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya.",
-        hook="1992. Kota ini dikosongkan. Lima orang masih tinggal, dan tanahnya masih hangat.",
-        hook_alt="Pemerintah membeli semua rumah di kota ini. Bukan karena banjir, bukan karena perang.",
-        tanya="Kenapa lima orang itu tetap tinggal di atas tanah yang masih hangat?",
-        entitas="lima orang",
-        celah="Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat?",
-        gambar_melekat="Asap tipis keluar dari retakan aspal di jalan yang kosong.",
+        protagonis="Penduduk Centralia, Pennsylvania, yang rumahnya berdiri di atas api batu bara.",
+        mau="Membersihkan tumpukan sampah sebelum libur Memorial Day.",
+        hambatan="Sampah itu dibakar di dalam lubang bekas tambang, langsung di atas lapisan batu bara.",
+        tanaman="Api masuk lewat celah batu, dan tidak ada yang tahu sampai gasnya sampai ke rumah.",
+        hook="1962. Lima petugas membakar sampah di atas tambang. Api itu masih menyala.",
+        hook_alt="Satu keputusan kecil pada 1962 masih menyala di bawah kota ini.",
+        tanya="Kenapa api sekecil itu tidak bisa dipadamkan selama enam puluh tahun?",
+        entitas="api",
+        diskusi="Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?",
+        celah="Kenapa kota dipindahkan, bukan apinya yang dipadamkan?",
+        relate="Kamu pernah tinggal di rumah yang sudah tidak aman, tapi tetap tinggal?",
+        gambar_melekat="Celah di tanah mengeluarkan uap, dan rumah-rumah masih berdiri di atasnya.",
         beats=[
-            ("setup", "Centralia, Pennsylvania, 1962. Sebuah api pembakaran sampah menyalakan batu bara di bawah kota."),
-            ("setup", "Tidak ada yang menganggapnya serius."),
-            ("tension", "Sembilan belas tahun kemudian, sebuah lubang di jalan tiba-tiba terbuka."),
-            ("tension", "Dari dalamnya keluar karbon monoksida. Pada kadar yang bisa membunuh orang di kamar tidur."),
-            ("tension", "1984. Pemerintah membeli rumah-rumah warga dan memindahkan mereka."),
-            ("tension", "1992. Seluruh kota dinyatakan tidak layak huni."),
-            ("turn", "Semua mengira bencana itu selesai saat kotanya dikosongkan."),
-            ("turn", "Yang dikosongkan hanya permukaannya. Api itu tidak butuh kota. Ia butuh batu bara."),
-            ("consequence", "2020. Lima orang masih tinggal di sana."),
-            ("consequence", "Di beberapa titik, tanahnya masih hangat. Retaknya bertambah satu sentimeter setiap tahun."),
+            ("tanya", "Kenapa api sekecil itu tidak bisa dipadamkan selama enam puluh tahun?"),
+            ("relate", "Kamu pernah tinggal di rumah yang sudah tidak aman, tapi tetap tinggal?"),
+            ("setup", "Mei 1962. Lima petugas membakar sampah di lubang bekas tambang."),
+            ("tension", "Api masuk lewat celah di batu, ke lapisan batu bara di bawah kota."),
+            ("tension", "Tiga bulan kemudian gas karbon monoksida terdeteksi di bawah tanah."),
+            ("tension", "1981. Seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya."),
+            ("tension", "Lubang di tanah itu sedalam empat puluh lima meter."),
+            ("turn", "Negara memilih memindahkan kota, bukan memadamkan api."),
+            ("turn", "Kongres membayar empat puluh dua juta dolar untuk pindah, bukan memadamkan api."),
+            ("consequence", "1992. Negara mengambil seluruh kota. Yang tinggal dianggap bukan pemilik."),
+            ("consequence", "Dua ribu dua puluh. Lima orang masih tinggal di atas api itu."),
         ],
-        turn_quote="“Kotanya sudah dikosongkan. Selesai.”",
-        turn_verdict="Yang dikosongkan hanya permukaannya. Api itu masih menyala di bawah jalan yang kosong.",
-        loop="Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.",
-        cues=["1962", "CENTRALIA", "CO DI JALAN", "1992 DIKOSONGKAN", "MASIH MENYALA"],
-        visual="Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah yang dibongkar.",
-        plate="road",
-        sumber="NEEDS-SOURCE — Kebakaran tambang Centralia 1962–sekarang; data sensus 2020 belum dikutip.",
+        turn_quote="\u201cApinya bisa dipadamkan.\u201d",
+        turn_verdict="Biayanya terlalu besar, dan apinya sudah di bawah rumah. Yang dibeli bukan pemadaman, tapi jarak.",
+        loop="Api yang mereka nyalakan untuk membersihkan sampah masih menyala di bawah kota.",
+        cues=["BATU BARA", "TIGA BULAN", "LUBANG UAP", "DEPAN RUMAH"],
+        captions=[
+            "",
+            "Kenapa tidak padam?",
+            "Pernah tinggal di tempat tidak aman?",
+            "Mei 1962. Sampah dibakar.",
+            "Api masuk lewat celah batu.",
+            "Gas sudah di bawah tanah.",
+            "1981. Anak hampir jatuh.",
+            "Lubang 45 meter. Uap beracun.",
+            "Negara pilih pindahkan kota.",
+            "Bukan untuk memadamkan.",
+            "1992. Semua diambil negara.",
+            "2020. Lima orang tinggal.",
+            "",
+        ],
+        caption_hi=["", "tidak padam", "tidak aman", "1962", "celah batu", "Gas", "1981", "45 meter", "pindahkan kota", "memadamkan", "1992", "Lima orang", ""],
+        stamps=[["1962", 3], ["45", 7], ["5", 11]],
+        sfx={
+            "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
+            "04_tension": "engine", "05_tension": "clunk", "06_tension": "gust", "07_tension": "page",
+            "08_turn": "boom", "09_turn": "engine", "10_consequence": "boom",
+            "11_consequence": "gust", "99_loop": "gust",
+        },
+        photos=[
+            "00_dumpfire", "01_steam_crack", "02_kitchen", "03_council", "04_seam",
+            "05_basement", "06_sinkhole", "07_vent", "08_town_empty", "09_documents",
+            "10_demolition", "11_route61", "12_five_houses", "01_steam_crack",
+        ],
+        bed="audio/EP06/bed.wav",
+        plate="plume",
+        sumber=(
+            "VERIFIED pada butir utama. 27 Mei 1962: dewan Borough Centralia menyewa lima anggota pemadam "
+            "sukarela untuk membersihkan/membakar tumpukan sampah di lubang bekas tambang terbuka dekat "
+            "Odd Fellows Cemetery, menjelang Memorial Day; api masuk lewat celah terbuka di batuan penutup ke "
+            "lapisan antrasit di bawah kota. 9 Agustus 1962 tambang di sekitar Centralia ditutup setelah karbon "
+            "monoksida terdeteksi. 1981: Todd Domboski (12 tahun) hampir jatuh ke lubang uap yang terbuka di "
+            "halaman rumah neneknya; peristiwa ini yang membawa kasusnya ke media nasional - kedalaman lubang "
+            "dilaporkan sekitar 45 meter (150 kaki), suhu uap sangat tinggi. 1984: Kongres menyetujui sekitar "
+            "42 juta dolar untuk relokasi sukarela. 13 Juli 1992: Gubernur Robert Casey memakai eminent domain "
+            "atas seluruh properti borough; warga yang bertahan secara resmi dianggap penghuni tanpa hak, lalu "
+            "menggugat dan mencapai kesepakatan boleh tinggal seumur hidup. 2002: kode pos Centralia "
+            "dihentikan. Populasi: puncak sekitar 2.700 (1890), sekitar 1.000 (1980), 5 orang (sensus 2020). "
+            "Api masih membara; DEP Pennsylvania memperkirakan sekitar 400 acre terbakar, suhu hingga sekitar "
+            "540 C (1.000 F) pada kedalaman sampai 90 meter, dan masih bisa terbakar sekitar 250 tahun lagi. "
+            "Jalan Route 61 rusak dan ditutup permanen 1992. Ada perkiraan bahwa 10-20 ribu dolar pada 1962 "
+            "mungkin cukup untuk memadamkannya - angka ini disebut sebagai perkiraan, bukan fakta pasti, dan "
+            "tidak diucapkan di naskah. Ringkasan sekunder: pabook.libraries.psu.edu, centraliapa.org, "
+            "worldatlas.com, discoveryuk.com, boingboing.net. Buku David DeKok 'Fire Underground' dan laporan "
+            "DEP belum dibaca langsung."
+        ),
     ),
     dict(
         ep="EP07", day=2, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="A",
