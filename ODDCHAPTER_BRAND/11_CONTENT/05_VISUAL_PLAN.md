@@ -344,3 +344,36 @@ episode itu masuk produksi.
 
 Bentuk untuk 21 episode sudah ada semua; yang belum ada hanya suara. Urutan
 produksi per episode karena itu: narasi → ukur → still → master → QA.
+
+---
+
+## 9 · PLATE EP05–EP06 (status)
+
+**EP05 `Roanoke` — 14 plate, selesai, master tayang** (`6b4fNdsEvho`).
+`07_carved_post` pernah salah (kata "ROANOKE" terukir di kayu) dan dirender
+ulang tanpa huruf yang bisa dibaca; dari situ aturan kerasnya: **setiap prompt
+plate diakhiri "no text, no letters, no signs, no readable words"** dan tiap
+frame QA dicek mata, bukan cuma lolos skrip.
+
+**EP06 `Centralia` — 13 plate + 1 reprise**, daftar di `content_data.py`:
+
+| # | plate | isi yang harus terlihat |
+|---|---|---|
+| 0 | `00_dumpfire` | tumpukan sampah menyala di lubang tambang, malam | 
+| 1 | `01_steam_crack` | celah tanah beruap, rumah di belakang |
+| 2 | `02_kitchen` | dapur 1980-an kosong, retak di lantai |
+| 3 | `03_council` | ruang dewan 1962, lampu meja, tanpa wajah |
+| 4 | `04_seam` | lapisan batu bara terbuka, bara oranye |
+| 5 | `05_basement` | ruang bawah tanah, pipa, retak di dinding |
+| 6 | `06_sinkhole` | lubang di halaman, pagar rusak |
+| 7 | `07_vent` | uap keluar dari celah jalan |
+| 8 | `08_town_empty` | jalan kota kosong, rumah dibongkar |
+| 9 | `09_documents` | berkas di meja, tanpa huruf terbaca |
+| 10 | `10_demolition` | rumah diruntuhkan, puing |
+| 11 | `11_route61` | jalan retak dan bergelombang, ditutup |
+| 12 | `12_five_houses` | beberapa rumah tersisa, satu lampu |
+| 13 | `01_steam_crack` | reprise untuk loop |
+
+Palet tetap: Ink `#17191D` · Ivory `#F4F0E8` · Sage `#A7B0A1` · Orange `#F26A3D`.
+Warna lampu/oranye hanya satu sumber per frame. Tidak ada wajah korban, tidak ada
+tubuh, tidak ada darah — kasus ini soal tanah, bukan luka.
