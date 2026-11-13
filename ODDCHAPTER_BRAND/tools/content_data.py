@@ -22,7 +22,7 @@ Field:
 EPISODES = [
     # ─────────────────────────────────────────────── HILANG ──
     dict(
-        ep="EP01", day=1, slot="pagi", jam="07.00", series="HILANG", pov="A",
+        ep="EP01", voice_legacy=True, day=1, slot="pagi", jam="07.00", series="HILANG", pov="A",
         title="TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL", struktur="klimaks-awal",
         thumb=["TIGA", "PENJAGA"], thumb_text="TIDAK PULANG",
         durasi=56,
@@ -65,7 +65,7 @@ EPISODES = [
         sumber="VERIFIED — Northern Lighthouse Board, nlb.org.uk/history/flannan-isles/. Hilang setelah kerja pagi 15 Des 1900; Archtor mencatat lampu mati; laporan diterima 18 Des; Hesperus tiba 26 Des; lampu bersih, minyak penuh; satu set oilskins tertinggal. Buku harian dramatis = tambahan fiktif (Mike Dash, Fortean Times).",
     ),
     dict(
-        ep="EP02", day=2, slot="pagi", jam="07.00", series="HILANG", pov="B",
+        ep="EP02", voice_legacy=True, day=2, slot="pagi", jam="07.00", series="HILANG", pov="B",
         struktur="klimaks-awal",
         title="MEREKA MEMOTONG TENDA ITU DARI DALAM",
         thumb=["DIPOTONG", "DARI DALAM"], thumb_text="DIPOTONG DARI DALAM",
@@ -119,7 +119,7 @@ EPISODES = [
                 "Ringkasan sekunder: History.com. Paper asli belum dibaca langsung."),
     ),
     dict(
-        ep="EP03", day=3, slot="pagi", jam="07.00", series="HILANG", pov="B",
+        ep="EP03", voice_legacy=True, day=3, slot="pagi", jam="07.00", series="HILANG", pov="B",
         struktur="klimaks-awal",
         title="KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA",
         thumb=["KAPAL", "KOSONG"], thumb_text="KAPAL KOSONG",
@@ -171,7 +171,7 @@ EPISODES = [
                 "Laporan Admiralty Gibraltar belum dibaca langsung."),
     ),
     dict(
-        ep="EP04", day=4, slot="pagi", jam="07.00", series="HILANG", pov="A",
+        ep="EP04", voice_legacy=True, day=4, slot="pagi", jam="07.00", series="HILANG", pov="A",
         struktur="klimaks-awal",
         title="MEREKA BERJALAN MENJAUH DARI PERTOLONGAN",
         thumb=["JALAN", "KE ATAS"], thumb_text="JALAN KE ATAS",
@@ -259,7 +259,7 @@ EPISODES = [
         ),
     ),
     dict(
-        ep="EP05", day=5, slot="pagi", jam="07.00", series="HILANG", pov="D",
+        ep="EP05", voice_legacy=True, day=5, slot="pagi", jam="07.00", series="HILANG", pov="D",
         struktur="klimaks-awal",
         title="MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN",
         thumb=["TANPA", "MAYAT"], thumb_text="TANPA MAYAT",
@@ -353,63 +353,55 @@ EPISODES = [
         struktur="klimaks-awal",
         title="API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN",
         thumb=["MASIH", "MENYALA"], thumb_text="MASIH MENYALA",
-        durasi=57,
-        protagonis="Penduduk Centralia, Pennsylvania, yang rumahnya berdiri di atas api batu bara.",
+        durasi=46,
+        protagonis="Lima petugas pemadam sukarela dan kota kecil di atas lapisan batu bara.",
         mau="Membersihkan tumpukan sampah sebelum libur Memorial Day.",
-        hambatan="Sampah itu dibakar di dalam lubang bekas tambang, langsung di atas lapisan batu bara.",
-        tanaman="Api masuk lewat celah batu, dan tidak ada yang tahu sampai gasnya sampai ke rumah.",
-        hook="1962. Lima petugas membakar sampah di atas tambang. Api itu masih menyala.",
-        hook_alt="Satu keputusan kecil pada 1962 masih menyala di bawah kota ini.",
-        tanya="Kenapa api sekecil itu tidak bisa dipadamkan selama enam puluh tahun?",
+        hambatan="Sampahnya dibakar di dalam lubang bekas tambang, tepat di atas batu bara.",
+        tanaman="Api masuk lewat celah batu, dan tidak ada yang tahu sampai gasnya naik ke rumah.",
+        hook="1962. Api ini dinyalakan di bawah sebuah kota. Sekarang lihat rumahnya.",
+        hook_alt="Coba lihat jalan ini. Di bawahnya ada api yang menyala sejak 1962.",
+        tanya="Coba bayangkan api itu di bawah rumahmu. Kamu akan pindah ke mana?",
         entitas="api",
-        diskusi="Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?",
-        celah="Kenapa kota dipindahkan, bukan apinya yang dipadamkan?",
-        relate="Kamu pernah tinggal di rumah yang sudah tidak aman, tapi tetap tinggal?",
-        gambar_melekat="Celah di tanah mengeluarkan uap, dan rumah-rumah masih berdiri di atasnya.",
+        diskusi="Kalau rumahmu berdiri di atas api, kamu akan pindah atau bertahan?",
+        celah="Kenapa mereka memilih memindahkan kota, bukan memadamkan api?",
+        relate="Kita sering bertahan di rumah yang sudah tidak aman.",
+        gambar_melekat="Retakan di jalan mengeluarkan uap, dan rumah masih berdiri di atasnya.",
         beats=[
-            ("tanya", "Kenapa api sekecil itu tidak bisa dipadamkan selama enam puluh tahun?"),
-            ("relate", "Kamu pernah tinggal di rumah yang sudah tidak aman, tapi tetap tinggal?"),
+            ("tanya", "Coba bayangkan api itu di bawah rumahmu. Kamu akan pindah ke mana?"),
+            ("relate", "Kita sering bertahan di rumah yang sudah tidak aman."),
             ("setup", "Mei 1962. Lima petugas membakar sampah di lubang bekas tambang."),
-            ("tension", "Api masuk lewat celah di batu, ke lapisan batu bara di bawah kota."),
-            ("tension", "Tiga bulan kemudian gas karbon monoksida terdeteksi di bawah tanah."),
-            ("tension", "1981. Seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya."),
-            ("tension", "Lubang di tanah itu sedalam empat puluh lima meter."),
-            ("turn", "Negara memilih memindahkan kota, bukan memadamkan api."),
-            ("turn", "Kongres membayar empat puluh dua juta dolar untuk pindah, bukan memadamkan api."),
-            ("consequence", "1992. Negara mengambil seluruh kota. Yang tinggal dianggap bukan pemilik."),
-            ("consequence", "Dua ribu dua puluh. Lima orang masih tinggal di atas api itu."),
+            ("tension", "Mereka hanya membakar sampah. Api itu masuk ke lapisan batu bara."),
+            ("tension", "Tahun 1981, seorang anak hampir jatuh ke lubang uap di halaman neneknya."),
+            ("turn", "Pemerintah tidak memilih memadamkan api. Mereka membayar warga untuk pindah."),
+            ("consequence", "Tahun 1992, negara mengambil seluruh kota. Yang tinggal bukan lagi pemilik."),
+            ("consequence", "Sekarang lima orang masih tinggal di atasnya. Kalau kamu salah satunya, kamu bertahan?"),
         ],
-        turn_quote="\u201cApinya bisa dipadamkan.\u201d",
-        turn_verdict="Biayanya terlalu besar, dan apinya sudah di bawah rumah. Yang dibeli bukan pemadaman, tapi jarak.",
-        loop="Api yang mereka nyalakan untuk membersihkan sampah masih menyala di bawah kota.",
-        cues=["BATU BARA", "TIGA BULAN", "LUBANG UAP", "DEPAN RUMAH"],
+        turn_quote="\u201cApi itu akan padam sendiri, atau dipadamkan.\u201d",
+        turn_verdict="Tidak. Yang mereka beli bukan pemadaman, tapi jarak. Apinya masih menyala di bawah jalan yang kosong.",
+        loop="Apinya masih menyala. Di bawah jalan yang sekarang kosong.",
+        cues=["API DI BAWAH", "1981", "1992", "MASIH MENYALA"],
         captions=[
             "",
-            "Kenapa tidak padam?",
-            "Pernah tinggal di tempat tidak aman?",
+            "Coba bayangkan.",
+            "Kita sering bertahan.",
             "Mei 1962. Sampah dibakar.",
-            "Api masuk lewat celah batu.",
-            "Gas sudah di bawah tanah.",
+            "Api masuk ke batu bara.",
             "1981. Anak hampir jatuh.",
-            "Lubang 45 meter. Uap beracun.",
-            "Negara pilih pindahkan kota.",
-            "Bukan untuk memadamkan.",
-            "1992. Semua diambil negara.",
-            "2020. Lima orang tinggal.",
+            "Bukan dipadamkan.",
+            "1992. Kota diambil.",
+            "Lima orang tinggal.",
             "",
         ],
-        caption_hi=["", "tidak padam", "tidak aman", "1962", "celah batu", "Gas", "1981", "45 meter", "pindahkan kota", "memadamkan", "1992", "Lima orang", ""],
-        stamps=[["1962", 3], ["45", 7], ["5", 11]],
+        caption_hi=["", "bayangkan", "bertahan", "1962", "batu bara", "1981", "dipadamkan", "1992", "Lima orang", ""],
+        stamps=[["1962", 3], ["1992", 7], ["5", 8]],
         sfx={
             "00_hook": "boom", "01_tanya": "gust", "02_relate": "rustle", "03_setup": "engine",
-            "04_tension": "engine", "05_tension": "clunk", "06_tension": "gust", "07_tension": "page",
-            "08_turn": "boom", "09_turn": "engine", "10_consequence": "boom",
-            "11_consequence": "gust", "99_loop": "gust",
+            "04_tension": "engine", "05_tension": "clunk", "06_turn": "boom",
+            "07_consequence": "engine", "08_consequence": "gust", "99_loop": "gust",
         },
         photos=[
             "00_dumpfire", "01_steam_crack", "02_kitchen", "03_council", "04_seam",
-            "05_basement", "06_sinkhole", "07_vent", "08_town_empty", "09_documents",
-            "10_demolition", "11_route61", "01_steam_crack",
+            "06_sinkhole", "10_demolition", "11_route61", "01_steam_crack", "07_vent",
         ],
         bed="audio/EP06/bed.wav",
         plate="plume",
@@ -420,18 +412,15 @@ EPISODES = [
             "lapisan antrasit di bawah kota. 9 Agustus 1962 tambang di sekitar Centralia ditutup setelah karbon "
             "monoksida terdeteksi. 1981: Todd Domboski (12 tahun) hampir jatuh ke lubang uap yang terbuka di "
             "halaman rumah neneknya; peristiwa ini yang membawa kasusnya ke media nasional - kedalaman lubang "
-            "dilaporkan sekitar 45 meter (150 kaki), suhu uap sangat tinggi. 1984: Kongres menyetujui sekitar "
-            "42 juta dolar untuk relokasi sukarela. 13 Juli 1992: Gubernur Robert Casey memakai eminent domain "
-            "atas seluruh properti borough; warga yang bertahan secara resmi dianggap penghuni tanpa hak, lalu "
-            "menggugat dan mencapai kesepakatan boleh tinggal seumur hidup. 2002: kode pos Centralia "
-            "dihentikan. Populasi: puncak sekitar 2.700 (1890), sekitar 1.000 (1980), 5 orang (sensus 2020). "
-            "Api masih membara; DEP Pennsylvania memperkirakan sekitar 400 acre terbakar, suhu hingga sekitar "
-            "540 C (1.000 F) pada kedalaman sampai 90 meter, dan masih bisa terbakar sekitar 250 tahun lagi. "
-            "Jalan Route 61 rusak dan ditutup permanen 1992. Ada perkiraan bahwa 10-20 ribu dolar pada 1962 "
-            "mungkin cukup untuk memadamkannya - angka ini disebut sebagai perkiraan, bukan fakta pasti, dan "
-            "tidak diucapkan di naskah. Ringkasan sekunder: pabook.libraries.psu.edu, centraliapa.org, "
-            "worldatlas.com, discoveryuk.com, boingboing.net. Buku David DeKok 'Fire Underground' dan laporan "
-            "DEP belum dibaca langsung."
+            "dilaporkan sekitar 45 meter. 1984: Kongres menyetujui sekitar 42 juta dolar untuk relokasi sukarela. "
+            "13 Juli 1992: Gubernur Robert Casey memakai eminent domain atas seluruh properti borough; warga "
+            "yang bertahan secara resmi dianggap penghuni tanpa hak, lalu menggugat dan mencapai kesepakatan "
+            "boleh tinggal seumur hidup. 2002: kode pos Centralia dihentikan. Populasi: puncak sekitar 2.700 "
+            "(1890), sekitar 1.000 (1980), 5 orang (sensus 2020). Api masih membara; DEP Pennsylvania "
+            "memperkirakan sekitar 400 acre terbakar, suhu hingga sekitar 540 C pada kedalaman sampai 90 meter, "
+            "dan masih bisa terbakar sekitar 250 tahun lagi. Route 61 rusak dan ditutup permanen 1992. "
+            "Ringkasan sekunder: pabook.libraries.psu.edu, centraliapa.org, worldatlas.com, discoveryuk.com, "
+            "boingboing.net. Buku David DeKok 'Fire Underground' dan laporan DEP belum dibaca langsung."
         ),
     ),
     dict(

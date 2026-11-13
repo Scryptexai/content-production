@@ -70,6 +70,54 @@ def turn_numbers(e):
     return sorted(nums_turn - nums_before)
 
 
+# ── 00E · SUARA NARATOR ─────────────────────────────────────────────────────
+# Naskah yang berbunyi seperti laporan gagal bukan karena faktanya salah, tetapi
+# karena tidak ada yang diajak bicara. Aturan di bawah menjaga suara itu.
+REPORT_WORDS = {
+    "diketahui", "dilaporkan", "tercatat", "merupakan", "disebutkan", "berdasarkan",
+    "adapun", "tersebut", "sejumlah", "berbagai", "sedangkan", "namun", "sehingga",
+    "mengakibatkan", "dilakukan", "terjadi", "yakni", "yaitu", "sementara",
+}
+LOOK = {"lihat", "lihatlah", "bayangkan", "coba", "ingat", "dengar", "dengarkan",
+        "perhatikan", "pikirkan", "bayangkanlah", "ikut"}
+SECOND = ("kamu", "kita", "anda")
+
+
+def sentences(t):
+    return [x for x in re.split(r"(?<=[.!?])\s+", t.strip()) if x]
+
+
+def voice(e):
+    """(6) suara narator — menyapa penonton, bukan membacakan laporan (00E)."""
+    fails = []
+    script = " ".join([e["hook"]] + [t for _, t in e["beats"]] + [e["loop"]])
+    low = script.lower()
+
+    bad = sorted({w for w in words(script) if w in REPORT_WORDS})
+    if bad:
+        fails.append(f"(6) kosakata laporan: {', '.join(bad)} — ganti dengan kalimat orang")
+
+    looks = sorted({w for w in words(script) if w in LOOK})
+    if len(looks) < 2:
+        fails.append(f"(6) ajakan melihat cuma {len(looks)} — minimal 2 (lihat/bayangkan/coba/ingat)")
+
+    second = [s for s in sentences(script) if re.search(r"\b(kamu|kita|anda)\b", s.lower())]
+    if len(second) < 3:
+        fails.append(f"(6) kalimat yang menyapa penonton cuma {len(second)} — minimal 3")
+
+    nq = script.count("?")
+    if nq < 2:
+        fails.append(f"(6) pertanyaan di naskah cuma {nq} — minimal 2, penonton harus menjawab di kepala")
+
+    for name, ln in [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]:
+        limit = 3 if name in ("hook", "loop") else 2
+        n = len(sentences(ln))
+        if n > limit:
+            fails.append(f"(6) {name}: {n} kalimat dalam satu tarikan napas (maks {limit})")
+
+    return fails
+
+
 def check(e):
     fails, notes = [], []
 
@@ -227,6 +275,12 @@ def check(e):
         fails.append("(produksi) cue lebih dari 5")
     if not 2 <= len(tension) <= 6:
         notes.append(f"(produksi) {len(tension)} beat tension — 3–4 paling sehat")
+
+    # 6 · suara narator (00E)
+    if e.get("voice_legacy"):
+        notes.append("(6) suara laporan — episode ini tayang sebelum 00E; bukan contoh")
+    else:
+        fails += voice(e)
 
     return fails, notes, sh, secs
 
