@@ -139,7 +139,7 @@ memilih suara per episode.
 | unsur | nilai |
 |---|---|
 | penyedia | ElevenLabs |
-| **voice_id** | **`arwfiAiEfIHHZCwcYYx2`** — **Denas, High class catchy storyteller** (ditunjuk pemilik 15 Nov 2026) |
+| **voice_id** | **`ojz6ro9PB1xDu44lymdM`** — narator internal kanal (dipakai EP01–EP07; **dikembalikan pemilik 16 Nov 2026**) |
 | model | `eleven_turbo_v2_5` · **speed 0.85** (diganti 14 Nov 2026, lihat catatan di bawah) |
 | format | `mp3_44100_192` |
 | settings | stability 0.38 · similarity 0.82 · style 0.35 · speaker boost aktif · speed 1.00 |
@@ -202,7 +202,20 @@ Karena itu model kanal sekarang `eleven_turbo_v2_5`, speed 0.85.
 3. Pertanyaan harus berakhir naik. Ini diukur, bukan dirasa: `tail_semit` ≥ −1,5.
 4. Kalau satu segmen >160 wpm, pecah kalimatnya — jangan menaikkan `speed`.
 
-## 9 · ATURAN YANG LAHIR 15 NOV 2026 (keluhan pemilik pada VO EP08)
+## 9 · ATURAN 15 NOV 2026 — DAN PEMBATALANNYA 16 NOV 2026
+
+> **16 Nov 2026, perintah pemilik:** *"back to vo internal saja yg dipakai content ep
+> sebelumnya, hapus set up vo terbaru ini."* Suara **Denas dihapus seluruhnya** dari
+> kanal, termasuk `atempo`/kompresor otomatis (`polish`) yang dibuat khusus untuk
+> menambalnya. `tools/voice.json` sekarang menunjuk `ojz6ro9PB1xDu44lymdM`, model
+> `eleven_turbo_v2_5`, speed 0.85, tanpa koreksi tempo paksa.
+>
+> Yang TETAP berlaku dari pengalaman itu: (a) suara harus identik di semua segmen dan
+> dibuktikan dengan `voice_consistency.py`; (b) level antar segmen tidak diserahkan ke
+> model — `mix_master.py` menyamakan RMS; (c) bed diukur, bukan ditebak.
+> Yang DIBATALKAN: identitas Denas, `polish`/atempo, dan target 138 wpm paksa.
+
+Catatan asli 15 Nov (disimpan sebagai jejak):
 
 Yang dilaporkan: "setiap scene vo-nya beda", "tidak menuruti skill", "backsound terlalu
 nyaring", "suara turun 1–2 kata di zona yang tidak tepat", "jangan unggah sebelum saya setujui".
@@ -229,3 +242,25 @@ VO → efek → musik → ambience.
 **e · Tidak ada unggahan tanpa persetujuan.** `youtube-upload.yml` menolak berkas antrean
 yang tidak memuat `"approved": true`. Master dibuat, diukur, ditunjukkan ke pemilik,
 baru diunggah setelah pemilik menyatakan setuju.
+
+
+## 10 · ATURAN PERFORMA SHORTS (16 NOV 2026)
+
+Data kanal: Shorts berhenti di ~1.000 tayangan. Rata-rata rasio *tetap menonton*
+57,9% (42–69%), durasi 59–73 detik, likes <1,5%, **shares 0**, komentar hampir tidak
+ada. Artinya: hook kalah di 1–2 detik pertama, dan durasi terlalu panjang untuk
+diputar ulang. Aturan baru untuk EP08 ke atas — diperiksa mesin, bukan diingat:
+
+| # | aturan | di mana dijaga |
+|---|---|---|
+| a | **Durasi 35–45 detik**, bukan 50–73 | `check_story.py` (estimasi) + `build_timing.py` (hasil ukur) |
+| b | **Narasi mulai ≤0,15 dtk**, bukan 0,6 | `LEAD` di `build_timing.py` |
+| c | **Cover hanya 0,5 dtk** (15 frame), dulu 1,5 dtk | `INTRO` di `Episode.tsx` |
+| d | **Jeda antar segmen 0,22 dtk**, dulu 0,30 | `GAP` di `build_timing.py` |
+| e | **Hook boleh pernyataan** asal menyebut benda konkret — bukan hanya pertanyaan/angka | `check_story.py` butir (1b) |
+| f | **Penutup wajib pertanyaan terbuka** yang mengundang komentar | `loop` + `diskusi` |
+| g | **Prioritas share**: satu kalimat di akhir yang layak dikirim ke orang lain ("kalau kamu dipisahkan dari satu-satunya orang yang bisa kamu ajak bicara…") | naskah, dinilai manual |
+
+Yang **tidak** boleh dikorbankan demi durasi: satu ide satu kalimat, entitas konkret di
+hook, dan penutup yang memanggil kata dari hook (echo). Kalau memangkas naskah membuat
+salah satunya hilang, potong beat `consequence`, bukan hook.

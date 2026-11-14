@@ -144,3 +144,21 @@ Tempat mencatat kalau praktik berbeda dari dokumen, supaya tidak jadi kebiasaan 
 | 2026-11-14 | `elevenlabs-tts-2026` (v4) | memakai `eleven_turbo_v2_5` @ speed 0.85, bukan v4 | v4 tidak mendukung `speed`; tempo 187 wpm terlalu cepat. Turbo v2.5 memberi kendali tempo yang dibutuhkan |
 | 2026-11-14 | `AUDIO PRODUCTION.md` §5 (marker `[PAUSE]`) | tidak memakai marker | bagian dari aturan "tanpa tag": jeda dibuat dengan memecah segmen |
 | 2026-11-14 | `AUDIO PRODUCTION.md` §5 (marker `[PAUSE]`) | tidak memakai marker | tag tidak deterministik & terbaca sebagai kata pada sebagian model |
+
+
+## Aturan performa Shorts (16 Nov 2026)
+
+Data kanal: berhenti di ~1.000 tayangan, *stayed to watch* 57,9%, durasi 59–73 dtk,
+shares 0. Kesimpulan yang mengikat produksi:
+
+1. **35–45 detik.** Di atas 60 dtk hampir tidak diputar ulang; persentase tontonan
+   tidak akan melewati 100%.
+2. **Hook di frame nol.** Narasi mulai ≤0,15 dtk; cover 0,5 dtk; tidak ada jeda
+   pembuka, tidak ada teks yang muncul pelan.
+3. **Pernyataan boleh jadi hook** asal menyebut benda konkret di kalimat pertama.
+4. **Penutup = pertanyaan terbuka** supaya komentar muncul; itu satu-satunya sinyal
+   yang bisa mendorong video keluar dari fase uji.
+5. **Jeda 0,22 dtk**, tempo bicara dijaga cepat; kalau satu segmen >170 wpm, pecah
+   kalimatnya.
+6. **Suara kanal = narator internal `ojz6ro9PB1xDu44lymdM`** (dikembalikan 16 Nov 2026).
+   Setelan Denas, `polish`, dan atempo dihapus. Konsistensi tetap wajib diukur.
