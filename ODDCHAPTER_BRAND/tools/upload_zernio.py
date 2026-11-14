@@ -345,8 +345,15 @@ def validate(meta, media_dir, check_media=True):
     hook = meta.get("hook", "")
     if not hook.strip():
         errs.append("hook kosong — baris pertama deskripsi")
-    if hook and not (hook.strip().endswith("?") or any(ch.isdigit() for ch in hook)):
-        errs.append("hook bukan pertanyaan dan tidak memuat angka")
+    # Sejak 16 Nov 2026 pernyataan boleh jadi hook, asal menyebut benda konkret:
+    # "Semua label di bajunya dipotong" menghentikan jempol lebih baik daripada
+    # pertanyaan generik. Angka dan tanda tanya tetap jalur utama.
+    BENTUK = ("label", "pakaian", "buku", "kertas", "koper", "botol", "tubuh", "gigi",
+              "kapal", "api", "pintu", "kunci", "jam", "batu", "salju", "gunung", "surat")
+    if hook and not (hook.strip().endswith("?")
+                     or any(ch.isdigit() for ch in hook)
+                     or any(w in hook.lower() for w in BENTUK)):
+        errs.append("hook tidak pertanyaan, tidak berangka, dan tidak menyebut benda konkret")
     desc = meta.get("description", "")
     if len(desc) > 5000:
         errs.append(f"deskripsi {len(desc)} karakter, batas 5000")

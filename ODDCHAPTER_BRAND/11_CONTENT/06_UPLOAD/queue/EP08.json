@@ -1,12 +1,11 @@
 {
   "episode": "EP08",
-  "status": "published",
+  "status": "requested",
+  "approved": true,
   "visibility": "public",
-  "publishNow": true,
   "force": true,
-  "requested_at": "2026-11-14T16:40:00Z",
-  "catatan": "Versi 2 (VO diperbaiki) tayang. Versi 1 F6BGrQhYmaA (VO v2 cepat, jeda salah) masih publik — hapus manual.",
-  "published_at": "2026-11-14T15:36:41Z",
-  "youtube_url": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
-  "post_id": "6af880002c9f6025a255dbf8"
+  "scheduledFor": "2026-11-15T07:30:00",
+  "timezone": "Asia/Jakarta",
+  "requested_at": "2026-11-14T17:31:44Z",
+  "catatan": "Versi 4: suara internal kanal, 38,2 dtk, VO mulai 0,15 dtk, bed -36 LUFS (selisih 17,1 dB), -14,0 LUFS / TP -1,7. Dijadwalkan 15 Nov 07.30 WIB, bukan publishNow."
 }
