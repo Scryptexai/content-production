@@ -1,10 +1,12 @@
 {
   "episode": "EP09",
-  "status": "requested",
+  "status": "scheduled",
   "approved": true,
   "visibility": "public",
   "scheduledFor": "2026-11-15T12:30:00",
   "timezone": "Asia/Jakarta",
   "requested_at": "2026-11-14T17:53:11Z",
-  "catatan": "Somerton Man. 39,4 dtk, suara internal kanal, VO mulai 0,15 dtk, bed -38 LUFS (selisih 17,4 dB), -13,9 LUFS / TP -1,7. Dijadwalkan 15 Nov 12.30 WIB."
+  "catatan": "Somerton Man. 39,4 dtk, suara internal kanal, VO mulai 0,15 dtk, bed -38 LUFS (selisih 17,4 dB), -13,9 LUFS / TP -1,7. Dijadwalkan 15 Nov 12.30 WIB.",
+  "post_id": "6af8a02b588bc489d6d82eb5",
+  "scheduled_at": "2026-11-14T18:08:00Z"
 }
