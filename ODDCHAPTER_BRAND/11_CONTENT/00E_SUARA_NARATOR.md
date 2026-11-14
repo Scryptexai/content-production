@@ -128,3 +128,33 @@ dilihat (benda, bagian tubuh, cuaca), bukan penjelasan.
 
 `check_story.py` sekarang menolak hook yang diawali angka/tahun, dan mencatat
 kalau hook lebih dari 12 kata.
+
+---
+
+## 7 · IDENTITAS SUARA (dikunci 14 Nov 2026)
+
+Pemilik menetapkan satu suara untuk seluruh kanal mulai EP08 — bukan lagi
+memilih suara per episode.
+
+| unsur | nilai |
+|---|---|
+| penyedia | ElevenLabs |
+| **voice_id** | **`ojz6ro9PB1xDu44lymdM`** |
+| model | `eleven_multilingual_v2` |
+| format | `mp3_44100_192` |
+| settings | stability 0.38 · similarity 0.82 · style 0.35 · speaker boost aktif · speed 1.00 |
+| kecepatan target | ±135 kata/menit (hasil EP08: 105 kata = 43,98 s) |
+
+Sumber kebenaran: `tools/voice.json`. Naskah tidak menyimpan id suara; skrip
+`tools/eleven_audio.py` membacanya dari sana, jadi mengganti suara hanya boleh
+dilakukan di satu berkas itu dan atas perintah pemilik.
+
+**Kenapa dijalankan di GitHub Actions:** `api.elevenlabs.io` tidak terjangkau dari
+sandbox. Antrean `11_CONTENT/06_UPLOAD/audio-queue/EPxx.json` dengan
+`"status": "requested"` memicu `.github/workflows/eleven-audio.yml`; hasilnya
+mp3 per segmen (nama sama dengan yang dibaca `build_timing.py`), efek suara per
+nama di `ep["sfx"]`, lalu `timing.generated.json` dan `bed.wav`.
+
+**Efek suara & musik:** efek dibuat dari deskripsi bunyi (bukan nama kategori) di
+`SFX_PROMPTS` dalam `tools/eleven_audio.py`; musik hanya dipakai kalau memang
+perlu, karena `bed.wav` sudah mengisi ruang.
