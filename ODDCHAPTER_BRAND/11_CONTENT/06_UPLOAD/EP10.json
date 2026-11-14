@@ -1,0 +1,35 @@
+{
+  "episode": "EP10",
+  "video": "EP10_1080x1920_master.mp4",
+  "thumbnail": "EP10_thumbnail.jpg",
+  "title": "Mereka Menulis Buku dalam Bahasa yang Tak Dimengerti Siapa pun.",
+  "title_alt": [
+    "Dua Kembar, Satu Bahasa Rahasia, dan Satu Keputusan yang Memisahkan Mereka.",
+    "Bahasa Itu Cuma Dimengerti Dua Orang. Lalu Mereka Dipisahkan."
+  ],
+  "hook": "Mereka menulis buku dalam bahasa yang tidak dimengerti siapa pun.",
+  "description": "Mereka menulis buku dalam bahasa yang tidak dimengerti siapa pun.\n\nWales, 1963. June dan Jennifer Gibbons, kembar identik, tumbuh sebagai satu-satunya anak kulit hitam di sekolah mereka. Mereka berhenti bicara ke orang lain, tapi terus bicara satu sama lain — dalam bahasa yang mereka buat sendiri.\n\nBahasa itu punya aturan, kosakata, dan nama. Mereka menulis novel, puisi, dan sandiwara di kamar tidur.\n\nDunia luar menyebutnya gangguan. Pada usia empat belas tahun mereka dirawat di rumah sakit jiwa, lalu dipisahkan — supaya masing-masing belajar mandiri.\n\nJune meninggal 1993. Jennifer meninggal setahun kemudian.\n\nKalau kamu dipisahkan dari satu-satunya orang yang bisa kamu ajak bicara, kamu masih punya suara? Tulis di komentar.\n\nSumber: liputan Marjorie Wallace, \"The Silent Twins\"; catatan perawatan psikiatri 1980-an.\n\n#shorts #misteri #psikologi #kisahnyata #oddchapter",
+  "tags": [
+    "misteri",
+    "kisah nyata",
+    "silent twins",
+    "psikologi",
+    "wales",
+    "1963",
+    "bahasa",
+    "oddchapter",
+    "shorts"
+  ],
+  "first_comment": "Bahasa itu hilang saat mereka dipisahkan. Kalau kamu di posisi June, kamu masih punya suara?",
+  "categoryId": "24",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "duration_seconds": 44.6,
+  "voice": {
+    "name": "Narator internal kanal",
+    "voice_id": "ojz6ro9PB1xDu44lymdM",
+    "model": "eleven_turbo_v2_5",
+    "consistency": "LULUS (voice_consistency.py)"
+  }
+}
