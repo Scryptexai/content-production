@@ -175,7 +175,7 @@ def main():
         rows.append(r)
         print(f"{key:16s} {r['dur']:5.2f}s {r['wpm']:6.1f} wpm  jeda={r['pause_total']:4.2f}s "
               f"({len(r['pauses'])}x)  tail={r['tail_semit']:+5.2f}st"
-              + ("" if r["tail_valid"] else " (tak terukur)"))
+              + ("" if r["tail_valid"] else " (tak terukur)")
               + ("  ← pertanyaan" if r["question"] else ""))
         if r["wpm"] and not 120 <= r["wpm"] <= 160:
             flags.append(f"{key}: {r['wpm']} wpm di luar 120–160")

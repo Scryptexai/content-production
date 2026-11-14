@@ -8,8 +8,8 @@
     "Label di Pakaiannya Dipotong. Tanda di Botolnya Dikerok. Namanya Hilang.",
     "Polisi Menyebutnya Bunuh Diri. Tapi Tidak Ada Satu pun Barangnya yang Bernama."
   ],
-  "hook": "Kenapa seseorang memotong semua label dari pakaiannya sendiri, lalu menghilang?",
-  "description": "Kenapa seseorang memotong semua label dari pakaiannya sendiri, lalu menghilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+  "hook": "Kenapa semua label di bajunya dipotong, sebelum dia hilang?",
+  "description": "Kenapa semua label di bajunya dipotong, sebelum dia hilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
   "tags": [
     "misteri",
     "true crime",
@@ -27,8 +27,14 @@
   "madeForKids": false,
   "containsSyntheticMedia": true,
   "visibility": "public",
-  "drive_file_id": "10rTpHzuEnQkfXNiC8dWuVAU23TQv-oD6",
-  "duration_seconds": 48.78,
-  "size_bytes": 13710585,
-  "sha256": "afe81296fe7710112d19e35c2a593356fbe001b30576c563afdbd8954b3fc971"
+  "drive_file_id": "131CrG69yCLrczrTygjYbTV5Hs-TxIDRl",
+  "duration_seconds": 53.5,
+  "size_bytes": 15262619,
+  "sha256": "263395b152a6d5867c1fce4343ccf4c1b91c1fd5a75d81cffe792630c9284a87",
+  "voice": {
+    "voice_id": "ojz6ro9PB1xDu44lymdM",
+    "model": "eleven_turbo_v2_5",
+    "speed": 0.85,
+    "wpm_measured": 131
+  }
 }

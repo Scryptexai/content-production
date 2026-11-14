@@ -1,11 +1,9 @@
 {
   "episode": "EP08",
-  "status": "published",
+  "status": "requested",
   "visibility": "public",
   "publishNow": true,
-  "requested_at": "2026-11-14T14:00:00Z",
-  "catatan": "Drive 10rTpHzuEnQkfXNiC8dWuVAU23TQv-oD6 · 48,78 s · 13,7 MB · -14,7 LUFS / -1,4 dBTP · narasi voice ojz6ro9PB1xDu44lymdM (ElevenLabs), hook pertanyaan, efek suara ElevenLabs.",
-  "published_at": "2026-11-14T14:00:52Z",
-  "youtube_url": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
-  "post_id": "6af869870e77952e44d8fe64"
+  "force": true,
+  "requested_at": "2026-11-14T16:40:00Z",
+  "catatan": "EP08 versi 2: VO diperbaiki (turbo_v2_5 speed 0.85, 131 wpm, satu breath group per segmen). Drive 131CrG69yCLrczrTygjYbTV5Hs-TxIDRl · 53,50 s · 15,3 MB · -14,3 LUFS. Versi lama F6BGrQhYmaA masih publik dan perlu dihapus manual."
 }
