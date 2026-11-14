@@ -1,10 +1,8 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "generated",
+  "status": "requested",
   "force": true,
-  "requested_at": "2026-11-14T16:50:00Z",
-  "catatan": "01_tanya dipecah jadi dua kalimat (167 wpm → target ±140); regenerasi penuh.",
-  "finished_at": "2026-11-14T15:03:34Z",
-  "run_id": "43608009559"
+  "requested_at": "2026-11-15T03:10:00Z",
+  "catatan": "Narasi ulang dengan suara Denas (arwfiAiEfIHHZCwcYYx2). Tanpa unggah: master diukur dulu, menunggu persetujuan pemilik."
 }
