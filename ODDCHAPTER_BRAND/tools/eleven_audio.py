@@ -161,8 +161,10 @@ def cmd_check(_args):
         print(f"  akun    : {user.get('first_name', '?')} · tier {sub.get('tier', '?')}")
         print(f"  karakter: {sub.get('character_count', '? ')} / {sub.get('character_limit', '?')}")
 
-    voice = _probe("voice id", lambda: call(f"/voices/{cfg['voice_id']}", accept="application/json"),
-                   fatal=True)
+    # Kunci ber-scope sempit biasanya hanya punya text_to_speech, tanpa voices_read.
+    # Itu bukan masalah: yang menentukan suara bisa dipakai adalah satu kalimat TTS
+    # di bawah, bukan metadata voice-nya.
+    voice = _probe("metadata voice", lambda: call(f"/voices/{cfg['voice_id']}", accept="application/json"))
     if voice:
         print(f"  nama    : {voice.get('name', '?')} · kategori {voice.get('category', '?')}")
         labels = voice.get("labels") or {}
@@ -181,6 +183,7 @@ def cmd_check(_args):
         print(f"  hasil   : {size} bytes -> {out}")
         print(f"  durasi  : {audio_duration(out)}")
     print("KONEKSI OK — voice id bisa dipakai.")
+    print("catatan: metadata/kuota boleh gagal (kunci hanya berizin text_to_speech).")
 
 
 def audio_duration(path):
