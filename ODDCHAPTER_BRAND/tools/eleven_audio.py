@@ -112,6 +112,67 @@ def call(path, payload=None, *, accept="audio/mpeg", timeout=240, retries=3):
     raise SystemExit(f"GAGAL {path}: {last}")
 
 
+
+def _ff():
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return "ffmpeg"
+
+
+def polish(path, cfg, words):
+    """Rapikan satu segmen: tempo ke target, ratakan keras, jaga konsistensi.
+
+    Kenapa bukan hanya mengandalkan parameter `speed`: tidak semua model
+    menghormatinya (multilingual_v2 mengabaikannya, dan turbo pun tidak selalu
+    mencapai target). Jadi tempo diukur dari hasil nyata lalu dikoreksi dengan
+    `atempo` — perubahan tempo tanpa mengubah pitch.
+
+    Kenapa dikompres: pemilik mendengar "suara turun 1-2 kata di zona yang tidak
+    tepat". Itu dinamika model. Kompresor ringan (3:1) menaikkan kata yang
+    tertekan tanpa membuat kalimat datar, lalu RMS tiap segmen disamakan supaya
+    tidak ada segmen yang lebih pelan dari yang lain.
+    """
+    target_wpm = cfg.get("pace_wpm", 138)
+    tol = cfg.get("tempo_tolerance", 0.10)
+    dur = _probe_duration(path)
+    if not dur or not words:
+        return None
+    wpm = words / dur * 60
+    tempo = 1.0
+    if abs(wpm - target_wpm) / target_wpm > tol:
+        tempo = min(1.30, max(0.72, wpm / target_wpm))
+    chain = ["highpass=f=70", "lowpass=f=12000"]
+    if tempo != 1.0:
+        chain.append(f"atempo={tempo:.3f}")
+    if cfg.get("polish", True):
+        chain.append("acompressor=threshold=-22dB:ratio=3:attack=6:release=140:makeup=2")
+        chain.append("alimiter=limit=0.95")
+    tmp = path.with_name(path.stem + "_polish" + path.suffix)
+    subprocess.run([_ff(), "-y", "-hide_banner", "-loglevel", "error", "-i", str(path),
+                    "-af", ",".join(chain), "-ar", "48000", "-ac", "1",
+                    "-c:a", "libmp3lame", "-b:a", "192k", str(tmp)], check=True)
+    tmp.replace(path)
+    return {"wpm_before": round(wpm, 1), "tempo": round(tempo, 3),
+            "dur_after": _probe_duration(path)}
+
+
+def _probe_duration(path):
+    try:
+        out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                              "-of", "csv=p=0", str(path)], capture_output=True, text=True)
+        return float(out.stdout.strip())
+    except Exception:
+        r = subprocess.run([_ff(), "-i", str(path)], capture_output=True, text=True)
+        for line in r.stderr.splitlines():
+            if "Duration:" in line:
+                hms = line.split("Duration:")[1].split(",")[0].strip()
+                h, m, sec = hms.split(":")
+                return int(h) * 3600 + int(m) * 60 + float(sec)
+    return None
+
+
 def segments(ep):
     """(key, text) — urutan dan nama sama persis dengan build_timing.py."""
     out = [("00_hook", ep["hook"])]
@@ -283,8 +344,13 @@ def cmd_voice(args, ep):
             print(f"  = {key} (sudah ada, {out.stat().st_size} B) — pakai --force untuk menimpa")
             continue
         size = tts(text, out, cfg)
+        info = polish(out, cfg, len(text.split()))
         total += len(text)
-        print(f"  + {key}.mp3 {size} B · {len(text.split())} kata")
+        extra = ""
+        if info:
+            extra = (f" · {info['wpm_before']} wpm → tempo {info['tempo']}"
+                     f" · {info['dur_after']:.2f}s")
+        print(f"  + {key}.mp3 {size} B · {len(text.split())} kata{extra}")
         time.sleep(0.4)
     print(f"narasi {ep['ep']}: {total} karakter terpakai")
 

@@ -13,7 +13,7 @@
     "use_speaker_boost": true,
     "speed": 0.85
   },
-  "pace_wpm": 135,
+  "pace_wpm": 138,
   "language": "id",
   "notes": [
     "SUARA KANAL: Denas — High class catchy storyteller, elevenlabs.io/voices/arwfiAiEfIHHZCwcYYx2 (ditunjuk pemilik 15 Nov 2026).",
@@ -21,6 +21,9 @@
     "Konsistensi WAJIB diukur: tools/voice_consistency.py — F0 median & spectral centroid tiap segmen dibanding median episode. Menyimpang >20% = suara beda, tolak render.",
     "Model: eleven_turbo_v2_5 (mendukung speed; multilingual_v2 mengabaikan speed dan mengambil 200+ wpm).",
     "Kunci API hanya berizin text_to_speech: metadata voice tidak terbaca, jadi identitas dibuktikan lewat ukuransuara, bukan metadata.",
-    "Jangan ganti suara/model tanpa perintah pemilik. Jangan pernah push ke antrean unggah sebelum pemilik menyetujui master."
-  ]
+    "Jangan ganti suara/model tanpa perintah pemilik. Jangan pernah push ke antrean unggah sebelum pemilik menyetujui master.",
+    "Tempo dikoreksi per segmen dengan atempo bila menyimpang >10% dari pace_wpm (pitch tidak berubah). Kompresor 3:1 + RMS rata antar segmen dipakai untuk meredam kata yang tiba-tiba pelan."
+  ],
+  "tempo_tolerance": 0.1,
+  "polish": true
 }
