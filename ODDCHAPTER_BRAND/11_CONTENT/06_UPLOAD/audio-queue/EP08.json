@@ -1,11 +1,8 @@
 {
   "episode": "EP08",
-  "mode": "probe",
-  "status": "generated",
+  "mode": "all",
+  "status": "requested",
   "force": true,
-  "probe_text": "Kalau kamu punya delapan nama, yang mana yang kamu pakai pulang?",
-  "requested_at": "2026-11-14T15:35:00Z",
-  "catatan": "Matriks: v2, turbo v2.5 (speed 0.85/0.90), v4; teks apa adanya vs elipsis di koma.",
-  "finished_at": "2026-11-14T14:54:58Z",
-  "run_id": "43607281262"
+  "requested_at": "2026-11-14T15:50:00Z",
+  "catatan": "Render ulang narasi dengan model turbo_v2_5 speed 0.85 (tempo 142 wpm, tanya naik). Naskah v3: 12 segmen, satu breath group per segmen, bahasa ngobrol."
 }

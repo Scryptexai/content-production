@@ -4,22 +4,23 @@
   "status": "locked",
   "locked_at": "2026-11-14",
   "voice_id": "ojz6ro9PB1xDu44lymdM",
-  "model_id": "eleven_multilingual_v2",
+  "model_id": "eleven_turbo_v2_5",
   "output_format": "mp3_44100_192",
   "settings": {
     "stability": 0.38,
     "similarity_boost": 0.82,
     "style": 0.35,
     "use_speaker_boost": true,
-    "speed": 1.0
+    "speed": 0.85
   },
   "pace_wpm": 135,
   "language": "id",
   "notes": [
-    "Suara ini adalah identitas kanal mulai EP08 dan seterusnya. Jangan diganti tanpa perintah pemilik.",
-    "Kunci API hanya ada di GitHub Actions (secret ELEVENLABS_API_KEY); sandbox tidak menyimpannya.",
-    "Nada yang diinginkan: mengobrol dengan satu orang, bukan membacakan laporan. Lihat 11_CONTENT/00E_SUARA_NARATOR.md.",
-    "stability rendah (0.38) memberi ruang intonasi bertanya; style 0.35 cukup untuk dramatisme, tidak sampai teater.",
-    "Kalau satu episode terasa terlalu cepat/lambat, ubah settings.speed (0.95–1.05) dulu, bukan pace_wpm."
+    "Suara ini identitas kanal mulai EP08. Jangan diganti tanpa perintah pemilik.",
+    "Kunci API hanya ada di GitHub Actions (secret ELEVENLABS_API_KEY).",
+    "Nada yang diinginkan: mengobrol dengan satu orang, bukan membacakan laporan (11_CONTENT/00E).",
+    "MODEL: eleven_multilingual_v2 mengabaikan parameter speed dan mengambil tempo ~200 kata/menit — itu penyebab VO EP08 terasa cepat dan jedanya salah. Diukur 14 Nov 2026: kalimat 12 kata selesai 3,0-3,3 s (203-219 wpm).",
+    "eleven_turbo_v2_5 dengan speed 0.85 pada kalimat yang sama: 4,64 s (142 wpm), pertanyaan berakhir NAIK (+0,97 semit). Ini yang dipakai.",
+    "Kalau satu episode terasa terlalu cepat/lambat, ubah settings.speed pada model turbo (0,80-0,95), bukan pace_wpm."
   ]
 }
