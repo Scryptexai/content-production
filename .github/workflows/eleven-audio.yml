@@ -204,6 +204,57 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
 
+      - name: Simpan audio ke repo (mp3 saja, kecil)
+        # Kenapa masuk Git: artifact Actions tidak bisa diunduh dari sandbox
+        # (host blob diblokir), sedangkan render Remotion terjadi di sandbox yang
+        # butuh berkas suara ini. Yang masuk hanya mp3 (total < 25 MB) + manifest;
+        # wav hasil turunan (amb/bed/sfx) selalu dibangun ulang, tidak disimpan.
+        if: success() && (steps.req.outputs.mode == 'voice' || steps.req.outputs.mode == 'sfx' || steps.req.outputs.mode == 'all')
+        env:
+          EPISODE: ${{ steps.req.outputs.episode }}
+        run: |
+          set -euo pipefail
+          DIR="ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE"
+          [ -d "$DIR" ] || { echo "::notice::tidak ada audio untuk disimpan"; exit 0; }
+          SZ=$(du -sm "$DIR" | cut -f1)
+          echo "ukuran total: ${SZ} MB"
+          if [ "$SZ" -gt 25 ]; then
+            echo "::warning::audio ${SZ} MB — tidak disimpan ke Git, ambil dari artifact run ini."
+            exit 0
+          fi
+          python3 - "$DIR" <<'PY'
+          import hashlib, json, pathlib, subprocess, sys
+          d = pathlib.Path(sys.argv[1])
+          items = []
+          for f in sorted(p for p in d.rglob("*.mp3")):
+              try:
+                  dur = float(subprocess.run(
+                      ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                       "-of", "csv=p=0", str(f)], capture_output=True, text=True).stdout.strip())
+              except Exception:
+                  dur = None
+              items.append({
+                  "file": str(f.relative_to(d)),
+                  "bytes": f.stat().st_size,
+                  "seconds": round(dur, 3) if dur else None,
+                  "sha256": hashlib.sha256(f.read_bytes()).hexdigest(),
+              })
+          total = round(sum(i["seconds"] or 0 for i in items if i["file"].endswith(".mp3") and "/fx/" not in i["file"]), 3)
+          (d / "MANIFEST.json").write_text(json.dumps({
+              "episode": d.name,
+              "voice_id": "ojz6ro9PB1xDu44lymdM",
+              "narration_seconds": total,
+              "files": items,
+          }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"manifest: {len(items)} berkas, narasi {total} s")
+          PY
+          git config user.name "oddchapter-audio"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f "$DIR"/*.mp3 "$DIR"/fx/*.mp3 "$DIR/MANIFEST.json"
+          git diff --cached --quiet && { echo "::notice::tidak ada perubahan audio"; exit 0; }
+          git commit -m "audio $EPISODE: narasi voice ojz6ro9PB1xDu44lymdM + fx (ElevenLabs)"
+          git push
+
       - name: Catat status antrean
         if: always() && steps.req.outputs.queue != ''
         env:
