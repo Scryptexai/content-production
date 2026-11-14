@@ -1,9 +1,11 @@
 {
   "episode": "EP08",
   "mode": "probe",
-  "status": "requested",
+  "status": "failed",
   "force": true,
   "probe_text": "Kalau kamu punya delapan nama, yang mana yang kamu pakai pulang?",
   "requested_at": "2026-11-14T15:10:00Z",
-  "catatan": "EP08 gagal VO (jeda/intonasi salah, bahasa terlalu formal). Naskah v3 sudah ditulis ulang per breath group. Probe: bandingkan v2 vs v4, settings normal vs tenang, pada satu kalimat tanya."
+  "catatan": "EP08 gagal VO (jeda/intonasi salah, bahasa terlalu formal). Naskah v3 sudah ditulis ulang per breath group. Probe: bandingkan v2 vs v4, settings normal vs tenang, pada satu kalimat tanya.",
+  "finished_at": "2026-11-14T14:52:26Z",
+  "run_id": "43607075490"
 }
