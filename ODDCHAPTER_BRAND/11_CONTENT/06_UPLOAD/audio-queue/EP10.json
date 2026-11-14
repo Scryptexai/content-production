@@ -1,0 +1,10 @@
+{
+  "episode": "EP10",
+  "mode": "all",
+  "status": "generated",
+  "force": true,
+  "requested_at": "2026-11-14T17:18:36Z",
+  "catatan": "Ulang: run sebelumnya berhasil membuat audio tapi push-nya ditolak karena ada commit lain masuk bersamaan (non-fast-forward). Silakan jalankan lagi.",
+  "finished_at": "2026-11-14T17:19:57Z",
+  "run_id": "43620401725"
+}

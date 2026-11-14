@@ -1,0 +1,54 @@
+{
+  "episode": "EP08",
+  "video": "EP08_1080x1920_master.mp4",
+  "thumbnail": "EP08_thumbnail.jpg",
+  "title": "Label di Bajunya Dipotong. 1970: Dia Hilang Tanpa Nama.",
+  "title_alt": [
+    "Label di Bajunya Dipotong, Tandanya Dikerok. Namanya Tidak Ada.",
+    "Delapan Nama di Satu Koper, dan Tidak Satu pun Nyata."
+  ],
+  "hook": "Semua label di bajunya dipotong. Sebelum dia hilang.",
+  "description": "Semua label di bajunya dipotong. Sebelum dia hilang.\n\nTahun 1970, di lembah Isdalen dekat Bergen, Norwegia, seorang ayah dan dua anaknya menemukan tubuh perempuan yang terbakar dari depan. Punggungnya utuh. Rambutnya hangus.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya:\n• Semua label pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, uang asing, dan catatan berkode.\n• Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala.\n\nPolisi menyebut kemungkinan bunuh diri. Banyak yang tidak percaya: orang yang mau mati tidak menghapus namanya serapi itu. Kasus dibuka lagi tahun 2016; isotop giginya mengarah ke sekitar Jerman selatan. Namanya tetap tidak ada.\n\nMenurut kamu, apa yang sebenarnya terjadi di lembah itu? Tulis di komentar.\n\nSumber: BBC News, NRK \"Death in Ice Valley\", arsip kepolisian Bergen.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+  "tags": [
+    "misteri",
+    "true crime",
+    "cold case",
+    "isdal woman",
+    "norwegia",
+    "1970",
+    "kasus tak terpecahkan",
+    "sejarah",
+    "oddchapter",
+    "shorts"
+  ],
+  "first_comment": "Delapan nama di kopernya, dan tidak satu pun yang asli. Kalau semua jejak namamu dihapus, kamu masih bisa dicari?",
+  "categoryId": "24",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm",
+  "duration_seconds": 42.24,
+  "size_bytes": 12978639,
+  "sha256": "57b136a5fbaa7d1079f35de3497e3940d9b84a502d86ef63050e0182eb1859cf",
+  "voice": {
+    "name": "VO internal (Arena TTS, voice-04)",
+    "provider": "internal",
+    "f0_hz": 116.8,
+    "consistent": "LULUS (voice_consistency.py)",
+    "catatan": "ElevenLabs tidak dipakai lagi (perintah pemilik 16 Nov 2026)."
+  },
+  "mix": {
+    "master_lufs": -14.0,
+    "true_peak_db": -1.7,
+    "bed_lufs": -38.0,
+    "vo_bed_separation_db": 17.6,
+    "vo_rms_db": -20.0,
+    "vo_start": 0.15
+  },
+  "drive": {
+    "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
+    "file_id": "1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm",
+    "name": "EP08_1080x1920_master_v5_internal.mp4",
+    "link": "https://drive.google.com/file/d/1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm/view"
+  }
+}

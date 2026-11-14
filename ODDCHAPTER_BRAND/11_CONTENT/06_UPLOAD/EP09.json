@@ -1,0 +1,52 @@
+{
+  "episode": "EP09",
+  "video": "EP09_1080x1920_master.mp4",
+  "thumbnail": "EP09_thumbnail.jpg",
+  "title": "Kertas di Sakunya Cuma Dua Kata. 1948: Dia Tak Punya Nama.",
+  "title_alt": [
+    "Dua Kata di Saku Pria Tanpa Nama. Butuh 74 Tahun untuk Menebak Siapa Dia.",
+    "Label Pakaiannya Dipotong. Kertas di Sakunya Ditulis Tangan."
+  ],
+  "hook": "Di sakunya cuma kertas: TAMAM SHUD. Tidak ada dompet, tidak ada nama.",
+  "description": "Di sakunya cuma kertas: TAMAM SHUD. Tidak ada dompet, tidak ada nama.\n\nDesember 1948, di pantai Somerton dekat Adelaide, Australia, seorang pria ditemukan tewas dengan pakaian rapi dan tanpa luka. Setiap label pakaiannya dipotong.\n\nYang ada padanya:\n• Sebungkus rokok dan tiket kereta yang tidak dipakai.\n• Secarik kertas bertuliskan dua kata: TAMAM SHUD.\n• Belakangan, sobekan itu cocok dengan buku puisi Omar Khayyam yang ditemukan di kursi belakang sebuah mobil.\n• Di halaman belakang buku itu ada deretan huruf yang sampai sekarang belum terbaca.\n\nTujuh puluh tahun dia disebut mata-mata Perang Dingin. Tahun 2022, peneliti memakai DNA silsilah: dia Carl Webb, pembuat alat listrik dari Melbourne. Bukan mata-mata.\n\nYang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu?\n\nKalau kode di kertas itu milikmu, kenapa kamu menulisnya? Tulis teori kamu di komentar.\n\nSumber: laporan kasus Somerton Man, identifikasi DNA 2022 (Colleen Fitzpatrick), arsip koroner Australia Selatan.\n\n#shorts #misteri #truecrime #coldcase #somertonman",
+  "tags": [
+    "misteri",
+    "true crime",
+    "cold case",
+    "somerton man",
+    "tamam shud",
+    "australia",
+    "1948",
+    "kasus tak terpecahkan",
+    "oddchapter",
+    "shorts"
+  ],
+  "first_comment": "Dua kata, satu kode yang belum terbaca, dan 74 tahun tanpa nama. Teori kamu apa?",
+  "categoryId": "24",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "duration_seconds": 39.4,
+  "voice": {
+    "name": "Narator internal kanal",
+    "voice_id": "ojz6ro9PB1xDu44lymdM",
+    "model": "eleven_turbo_v2_5",
+    "consistency": "LULUS (voice_consistency.py)"
+  },
+  "drive_file_id": "1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi",
+  "size_bytes": 2057505,
+  "sha256": "5a346c5eb351310f6acfbc1606e1f90332b230cef11d45db0832a735937f8542",
+  "mix": {
+    "master_lufs": -13.9,
+    "true_peak_db": -1.7,
+    "bed_lufs": -38.0,
+    "vo_bed_separation_db": 17.4,
+    "vo_rms_db": -20.0,
+    "vo_start": 0.15
+  },
+  "drive": {
+    "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
+    "file_id": "1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi",
+    "link": "https://drive.google.com/file/d/1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi/view"
+  }
+}

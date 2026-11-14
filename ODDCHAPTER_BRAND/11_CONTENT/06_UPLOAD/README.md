@@ -1,4 +1,4 @@
-# 06_UPLOAD — dari master jadi YouTube, tanpa upload otomatis
+# 06_UPLOAD — dari master jadi YouTube, otomatis lewat antrean
 
 Folder ini bukan video. Ini **instruksi unggah**: judul, hook, deskripsi, tag,
 komentar pertama, dan id file Drive untuk tiap episode. Yang mengeksekusi adalah
@@ -10,6 +10,8 @@ GitHub Actions (`.github/workflows/youtube-upload.yml`) lewat API Zernio.
 │   EP02.json             categoryId, drive_file_id, size_bytes, sha256, video, thumbnail)
 ├── EP03.json
 ├── thumbs/EP0n_thumbnail.jpg    yang benar-benar dikirim ke YouTube (±0,3 MB, ikut repo)
+├── queue/EP0n.json      antrean: push berkas berstatus "requested" = unggah episode itu
+├── published.json       buku besar: episode yang sudah tayang, ditulis balik oleh job
 └── README.md
 ```
 
@@ -20,17 +22,31 @@ karena itu file master harus tetap **anyone with the link → Viewer**).
 
 ---
 
-## Kenapa tidak ada yang bisa terunggah sendiri
+## Status: sudah tayang
+
+| EP | Judul | YouTube |
+|---|---|---|
+| 01 | 3 Penjaga Masuk Menara di Pulau Flannan. Lampunya Mati, Tak Seorang Pun Keluar. | https://www.youtube.com/watch?v=l-_uCXDQo0g |
+| 02 | 9 Pendaki Merobek Tenda dari Dalam, Lalu Lari ke Salju Tanpa Sepatu. | https://www.youtube.com/watch?v=X-OyOWaac_M |
+| 03 | 10 Awak Naik Sekoci dari Kapal yang Masih Utuh. Tak Satu Pun Kembali. | https://www.youtube.com/watch?v=C3Bc7HSwyXY |
+
+Diunggah 2026-11-08 oleh workflow, publik, kanal ODDCHAPTER (@oddchapter7).
+Ketiganya tercatat di `published.json`. Berkas di `queue/` sekarang berstatus
+`published`; kalau ditambah episode baru, buat berkas baru berstatus `requested`.
+
+---
+
+## Kenapa unggahan ini aman walau otomatis
 
 Unggahan ke kanal orang lain tidak bisa dibatalkan dengan `Ctrl+Z`. Karena itu tiga
 lapis:
 
-1. Workflow hanya punya pemicu `workflow_dispatch` — tidak ada `push`, tidak ada
-   jadwal. Tidak ada yang berjalan tanpa satu orang menekan **Run workflow**.
-2. Job terikat ke environment `production` yang punya **required reviewers**.
-   Tanpa klik *Approve*, langkah unduh pun tidak mulai.
-3. Default input `dry_run: true`. Dry-run menyusun payload penuh dan mencetaknya,
-   lalu berhenti — nol request ke Zernio.
+1. **Antrean berkas.** Tidak ada yang diunggah sampai ada berkas di
+   `06_UPLOAD/queue/` berstatus `requested`. Berkas itu yang menjadi izin.
+2. **Buku besar.** Episode yang sudah tayang tercatat di `published.json`;
+   push berikutnya melewatinya. Satu episode, satu unggahan.
+3. **Hash master.** sha256 dan ukuran file dicocokkan dengan metadata sebelum
+   satu byte pun dikirim. File yang bukan yang disetujui tidak akan diunggah.
 
 Dan sebelum `--send` menyentuh jaringan, `upload_zernio.py` memeriksa: ukuran file
 sama dengan `size_bytes`, sha256 sama dengan `sha256`, judul ≤ 100 karakter, hook
@@ -70,32 +86,62 @@ Settings → Environments → **New environment** → nama `production` →
 centang **Required reviewers** → pilih akun sendiri. Tanpa langkah ini workflow
 tetap jalan, tapi tidak ada yang menghentikannya di tengah.
 
-### 3. Jalankan percobaan kering
+### 3. Unggah otomatis lewat antrean
 
-Actions → **Upload episode to YouTube (Zernio)** → **Run workflow**:
+Tidak ada tombol yang perlu ditekan. Antreannya adalah berkas JSON di
+`queue/`; menambah satu berkas berstatus `requested` lalu push = episode itu
+diunggah.
 
-- episode: `EP01`
-- visibility: `public`
-- dry_run: **`true`**
+```json
+{ "episode": "EP01", "status": "requested", "visibility": "public" }
+```
 
-Setelah approve, langkah *Cek metadata* mencetak payload lengkap: judul, deskripsi,
-tag, judul playlist, dan `mediaItems`. **Baca judulnya di situ.** Kalau ada yang
-salah, perbaiki `EP0n.json` dan ulangi dry-run — bukan mengunggah lalu mengedit
-di YouTube.
+Push berkas itu memicu `.github/workflows/youtube-upload.yml` (jalur
+`06_UPLOAD/queue/*.json`). Urutan job:
 
-### 4. Unggah sungguhan
+1. **Cek kredensial** — `GET /v1/accounts` + `/v1/profiles`; akun YouTube dicari
+   otomatis. Kalau secret `ZERNIO_YOUTUBE_ACCOUNT_ID` kosong atau tidak cocok,
+   akun pertama yang ditemukan dipakai, jadi unggahan tetap jalan.
+2. **Unduh master dari Drive** memakai `drive_file_id`, lalu **sha256 + ukuran
+   dicocokkan** dengan metadata. Bedanya satu byte → berhenti.
+3. **Presign + PUT + `POST /v1/posts`** dengan `Idempotency-Key` dari sha256 +
+   judul (berlaku 24 jam, jadi timeout yang diulang tidak membuat video kedua;
+   409/429/5xx diulang otomatis).
+4. **`published.json`** dicatat dan di-commit balik oleh job. Push berikutnya
+   melewati episode yang sudah ada di situ — satu episode tidak mungkin tayang
+   dua kali. Push oleh `GITHUB_TOKEN` tidak memicu workflow lain, jadi tidak ada
+   lingkaran.
 
-Ulangi dengan `dry_run: false`. Hasilnya:
+Satu berkas antrean per push. `visibility` boleh `public`, `unlisted`, atau
+`private`.
 
-- ringkasan di halaman run (tabel episode/status/tautan),
+### Idempotensi: mengapa mengulang tidak membuat video kedua
+
+Uji 2026-11-09: EP01 diambil ulang dari Drive (`sha256` cocok), diunggah ke
+storage Zernio, lalu `POST /v1/posts` dijalankan lagi dengan `"force": true`.
+Hasilnya **post yang sama**, `post_id 6af0954333e414fd437af3ca`,
+`https://www.youtube.com/watch?v=l-_uCXDQo0g` — bukan video baru.
+
+Sebabnya `Idempotency-Key` yang diturunkan dari sha256 master + judul: selama
+24 jam, request dengan kunci sama mengembalikan post yang sudah ada (HTTP 200).
+Ini yang membuat "jalankan ulang karena timeout" aman. Kalau memang ingin video
+persis sama terbit dua kali, tunggu lebih dari 24 jam — dan itu hampir selalu
+bukan yang diinginkan.
+
+### 4. Menjalankan manual (opsional)
+
+Actions → **Upload episode to YouTube (Zernio)** → **Run workflow** →
+**Use workflow from**: `arena/66ec29bf-content-production`. Isi `dry_run: true`
+untuk melihat payload lengkap tanpa mengunggah, lalu `false` untuk mengunggah.
+
+Setiap `POST /v1/posts` tetap membawa `Idempotency-Key`, jadi menjalankan ulang
+episode yang sama dalam 24 jam mengembalikan post yang sama, bukan video kedua.
+
+Hasil unggahan:
+
+- tabel episode/status/tautan di halaman run,
 - log JSON di artifact `upload-log-*` (90 hari),
-- tautan video di `post.platforms[].platformPostUrl`.
-
-Mulai dengan `visibility: unlisted` untuk episode pertama, tonton di YouTube asli,
-lalu ubah ke publik dari YouTube Studio. Video yang belum siap lebih murah
-di-unlisted-kan daripada dihapus setelah ditonton.
-
----
+- `published.json` di repo: post id, status, tautan YouTube, judul.
 
 ## Unggah dari laptop (kalau tidak mau lewat Actions)
 
@@ -104,6 +150,8 @@ cd ODDCHAPTER_BRAND
 export ZERNIO_API_KEY=...  ZERNIO_YOUTUBE_ACCOUNT_ID=...
 
 python3 tools/upload_zernio.py EP01                         # dry-run, baca payload
+python3 tools/upload_zernio.py --all --text-only            # cek judul/hook/tag saja,
+                                                            # tanpa master di mesin ini
 python3 tools/upload_zernio.py EP01 --send --visibility unlisted
 python3 tools/upload_zernio.py --all --send                 # EP01–EP03 berurutan
 ```
@@ -116,24 +164,50 @@ python3 tools/upload_zernio.py --all --send                 # EP01–EP03 beruru
 
 ---
 
-## Isi judul dan hook saat ini
+## Judul dan hook
 
-| EP | Judul (≤100 kar.) | Panjang | Hook (baris pertama deskripsi) |
+| EP | Judul (≤100 kar.) | Kar. | Hook — baris pertama deskripsi |
 |---|---|---|---|
-| 01 | Tiga Penjaga Masuk ke Menara Itu. Tidak Ada yang Melihat Mereka Keluar. | 71 | Tiga penjaga masuk ke menara itu pada 15 Desember 1900. Tidak ada yang melihat mereka keluar. |
-| 02 | Mereka Memotong Tenda Itu dari Dalam, Lalu Berlari ke Salju Tanpa Sepatu | 72 | 1 Februari 1959. Sembilan pendaki memotong tenda mereka sendiri dari dalam, lalu keluar tanpa sepatu. |
-| 03 | Kapal Itu Masih Bisa Berlayar. Sepuluh Awaknya Naik Sekoci dan Hilang. | 70 | 5 Desember 1872. Sepuluh awak Mary Celeste hilang. Kapal dan muatannya masih ada. |
+| 01 | 3 Penjaga Masuk Menara di Pulau Flannan. Lampunya Mati, Tak Seorang Pun Keluar. | 79 | 15 Desember 1900. Lampu menara Flannan Isles tidak dinyalakan, dan 3 penjaganya tidak pernah keluar dari menara itu. |
+| 02 | 9 Pendaki Merobek Tenda dari Dalam, Lalu Lari ke Salju Tanpa Sepatu. | 68 | 1 Februari 1959. 9 pendaki merobek tenda mereka dari dalam, lalu berlari ke salju tanpa sepatu. |
+| 03 | 10 Awak Naik Sekoci dari Kapal yang Masih Utuh. Tak Satu Pun Kembali. | 69 | 5 Desember 1872. Kapal Mary Celeste ditemukan berlayar tanpa awak. Sekocinya hilang, muatannya masih di palka. |
 
-Aturan judul yang dipakai: satu kalimat pernyataan yang memuat satu hal mustahil,
-tanpa kata "misteri", tanpa emoji, tanpa huruf kapital semua. Tiap JSON juga
-menyimpan `title_alternatives` (3 varian) — kalau judul utama tidak dapat klik,
-ganti dan uji lagi; jangan mengubah judul video yang sudah berumur lebih dari
-seminggu, karena itu memutus rekomendasi yang sedang berjalan.
+### Rumusnya, bukan selera
 
-Komentar pertama tiap episode adalah pertanyaan, bukan ajakan like. Yang dibeli
-adalah balasan, bukan tayangan.
+1. **Angka di lima kata pertama.** "3", "9", "10" — bukan "tiga", "sembilan".
+   Di feed Shorts judul terpotong sekitar 40 karakter, jadi angka yang harus
+   bertahan harus berdiri di depan, bukan di tengah kalimat.
+2. **Satu detail mustahil, bukan satu premis.** "Lampunya mati, tak seorang pun
+   keluar" lebih kuat daripada "menara misterius". Yang menjual adalah benda
+   konkret yang tidak seharusnya begitu.
+3. **Dua kalimat pendek, titik di tengah.** Kalimat pertama memasang perangkap,
+   kalimat kedua menutupnya. Titik memaksa berhenti sejenak — koma membuat
+   pembaca meluncur lewat.
+4. **Tanpa "misteri", "ternyata", "fakta mengejutkan", emoji, atau kapital semua.**
+   Kata-kata itu sudah dipakai semua kanal, jadi tidak lagi memilih siapa pun.
+   `upload_zernio.py` sekarang menegur ketiganya (`::warning::`) saat dry-run.
+5. **Hook = kalimat pertama deskripsi, dan harus memuat tanggal atau angka.**
+   Yang dibaca orang di bawah judul bukan "Hai semuanya" — dia membaca satu
+   kalimat yang membuatnya menekan *more*. Hook yang sama dibuka di detik 0,6
+   video, jadi tiga tempat (judul, deskripsi, frame pertama) mengatakan hal yang
+   sama dengan kata yang sama.
+6. **Pertanyaan disimpan untuk komentar pertama.** Judul memancing dengan fakta,
+   kolom komentar dibuka dengan pertanyaan yang benar-benar bisa dijawab orang
+   biasa: "kamu akan naik ke menara atau menunggu kapal?" Yang dibeli balasan,
+   bukan tayangan.
 
----
+### Varian cadangan (A/B)
+
+Tiap JSON menyimpan `title_alt` berisi tiga varian: satu bentuk pertanyaan
+("Kenapa ...?"), satu bentuk kronologi bertanggal, satu bentuk detail fisik.
+Aturan pemakaiannya:
+
+- Video **baru** (< 7 hari): boleh ditukar. Beri satu judul minimal 48 jam agar
+  datanya cukup untuk dibandingkan — CTR 24 jam pertama masih terlalu berisik.
+- Video **lama**: jangan disentuh. Mengganti judul memutus rekomendasi yang
+  sedang berjalan; yang lebih baik adalah memakai varian itu untuk episode baru.
+- Yang dibandingkan **CTR impresi**, bukan jumlah tayangan. Tayangan bisa naik
+  karena satu komentar viral, bukan karena judulnya.
 
 ## Kalau unggahan gagal
 

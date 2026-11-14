@@ -1,8 +1,12 @@
 # EP06 — API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H1  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 123 kata ≈ 50 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H6  
+**POV:** B — “SAKSI” (orang ketiga, tetapi menyapa penonton — lihat `00E_SUARA_NARATOR.md`)  
+**Durasi:** 112 kata ≈ 46 detik (master terukur 57,9 s; jeda napas ikut dihitung)
+
+> Ini episode pertama yang memakai **suara baru**: narator menyapa penonton, bukan
+> membacakan laporan. Semua episode berikutnya wajib lolos gerbang §6 di
+> `check_story.py`.
 
 ---
 
@@ -10,77 +14,82 @@
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Warga terakhir Centralia, Pennsylvania. |
-| **Mau** | Tinggal di rumah mereka. |
-| **Hambatan** | Tanah di bawah rumah mereka terbakar. |
-| **Tanaman** (detail yang berubah makna di turn) | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Asap tipis keluar dari retakan aspal di jalan yang kosong. |
-
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+| **Protagonis** | Lima petugas pemadam sukarela dan kota kecil di atas lapisan batu bara. |
+| **Mau** | Membersihkan tumpukan sampah sebelum libur Memorial Day. |
+| **Hambatan** | Sampahnya dibakar di dalam lubang bekas tambang, tepat di atas batu bara. |
+| **Tanaman** (detail yang berubah makna di turn) | Api masuk lewat celah batu, dan tidak ada yang tahu sampai gasnya naik ke rumah. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka memilih memindahkan kota, bukan memadamkan api? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Retakan di jalan mengeluarkan uap, dan rumah masih berdiri di atasnya. |
 
 ## 1 · HOOK (0–3 s)
 
-> Kota ini dikosongkan tahun 1992. Lima orang masih tinggal. Tanahnya masih hangat.
+> Pernah membayangkan tinggal di kota yang apinya tidak bisa dimatikan?
 
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+Visual: api di lubang tambang. Hook menunjuk benda di layar (*“api ini”*,
+*“rumahnya”*), bukan menjelaskan peristiwa.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Centralia, Pennsylvania, 1962. Sebuah api pembakaran sampah menyalakan batu bara di bawah kota. |
-| SETUP | Tidak ada yang menganggapnya serius. |
-| TENSION | Sembilan belas tahun kemudian, sebuah lubang di jalan tiba-tiba terbuka. |
-| TENSION | Dari dalamnya keluar karbon monoksida. Pada kadar yang bisa membunuh orang di kamar tidur. |
-| TENSION | 1984. Pemerintah membeli rumah-rumah warga dan memindahkan mereka. |
-| TENSION | 1992. Seluruh kota dinyatakan tidak layak huni. |
-| TURN | Semua mengira bencana itu selesai saat kotanya dikosongkan. |
-| TURN | Yang dikosongkan hanya permukaannya. Api itu tidak butuh kota. Ia butuh batu bara. |
-| CONSEQUENCE | 2020. Lima orang masih tinggal di sana. |
-| CONSEQUENCE | Di beberapa titik, tanahnya masih hangat. Retaknya bertambah satu sentimeter setiap tahun. |
+| TANYA | Bayangkan lantai rumahmu hangat. Kamu akan pindah, atau pura-pura tidak tahu? |
+| RELATE | Kita pintar mencari alasan untuk tetap tinggal di rumah tua itu. |
+| SETUP | Lima orang membakar sampah di lubang bekas tambang pada 1962. |
+| TENSION | Mereka cuma ingin bersih-bersih. Apinya masuk ke batu bara, dan tinggal di sana. |
+| TENSION | Sembilan belas tahun kemudian, seorang anak nyaris jatuh ke dalam lubang di halaman. |
+| TURN | Yang mereka pilih bukan memadamkan api. Mereka memindahkan kotanya. |
+| CONSEQUENCE | Lihat peta kota itu. Sejak 1992 semua rumah jadi milik negara. |
+| CONSEQUENCE | Sekarang tinggal lima orang. Kamu masih mau tinggal di atas api? |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Kotanya sudah dikosongkan. Selesai.”**
+Dugaan yang dipatahkan: **“Api itu akan padam sendiri, atau dipadamkan.”**
 
-Pembalik: Yang dikosongkan hanya permukaannya. Api itu masih menyala di bawah jalan yang kosong.
-
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Pembalik: Yang mereka beli bukan pemadaman, tapi jarak. Api tidak dipadamkan —
+kotanya yang dipindahkan.
 
 ## 4 · ECHO
 
-> Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.
+> Apinya masih menyala. Di bawah jalan yang tidak lagi dilewati siapa pun.
 
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Kalimat terakhir memanggil kata dari hook (*api*, *bawah*) dan menutup di gambar
+yang sama dengan beat pertama: api, bukan kota.
 
 ## 4b · KONTRAK LIMA EFEK
 
 | # | efek | perangkat di episode ini |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat?_ |
+| 1 | berhenti scroll | 11 kata, satu benda konkret (api di bawah kota), tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka memilih memindahkan kota, bukan memadamkan api?_ |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
 | 5 | diingat | gambar melekat + echo kata di penutup |
 
-Gerbang otomatis: `python3 ../tools/check_story.py EP06` (lihat `00C_MESIN_5_EFEK.md`).
+## 4c · SUARA (baru, wajib — `00E`)
+
+| unsur | isi di episode ini |
+|---|---|
+| Sapaan penonton | “Kamu akan pindah ke mana?” · “Kita sering bertahan…” · “Kalau kamu salah satunya, kamu bertahan?” |
+| Ajakan melihat | “Sekarang **lihat** rumahnya.” · “Coba **bayangkan** api itu di bawah rumahmu.” |
+| Pertanyaan | 3 (tanya, relate, consequence) |
+| Kalimat per baris | maksimal 2 — semua baris lolos |
+| Kosakata laporan | nol (gerbang otomatis menolak *diketahui/tercatat/merupakan/…*) |
 
 ## 5 · TEKS DI LAYAR
 
-1. `1962`
-2. `CENTRALIA`
-3. `CO DI JALAN`
-4. `1992 DIKOSONGKAN`
-5. `MASIH MENYALA`
+Cue (4): `BATU BARA` · `UAP PANAS` · `TANPA PEMILIK` · `MASIH MENYALA`
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+Hook memakai pintu **pertanyaan** (00E §6); tanggal tidak lagi jadi kata pertama.  
+Stamp angka (2): `1962` (setup) · `5` (consequence terakhir)
+
+Cue sengaja **tidak** mengulang caption. Sebelumnya `1992` muncul tiga kali dalam
+satu frame (cue, stamp, caption) — itu yang dibuang.
 
 ## 6 · VISUAL SIGNATURE
 
-Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah yang dibongkar.
+Tumpukan sampah menyala di lubang tambang; celah aspal beruap dengan rumah di
+belakangnya; dapur kosong dengan retakan di lantai; jalan yang terbelah; puing
+rumah yang dibongkar; jalan kosong yang masih berasap.
 
 ## 7 · DISTRIBUSI
 
@@ -90,15 +99,32 @@ Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal.
-
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kebakaran tambang Centralia 1962–sekarang; data sensus 2020 belum dikutip.
+`SRC: VERIFIED` (butir utama) — 27 Mei 1962: dewan Borough Centralia menyewa lima
+anggota pemadam sukarela untuk membersihkan/membakar tumpukan sampah di lubang
+bekas tambang terbuka dekat Odd Fellows Cemetery, menjelang Memorial Day; api masuk
+lewat celah di batuan penutup ke lapisan antrasit di bawah kota. 9 Agustus 1962
+tambang di sekitar Centralia ditutup setelah karbon monoksida terdeteksi. 1981:
+Todd Domboski (12 tahun) hampir jatuh ke lubang uap di halaman rumah neneknya —
+peristiwa ini yang membawa kasusnya ke media nasional; kedalaman lubang dilaporkan
+sekitar 45 meter. 1984: Kongres menyetujui sekitar 42 juta dolar untuk relokasi
+sukarela. 13 Juli 1992: Gubernur Robert Casey memakai *eminent domain* atas seluruh
+properti borough; warga yang bertahan dianggap penghuni tanpa hak, menggugat, lalu
+mendapat kesepakatan boleh tinggal seumur hidup. 2002: kode pos dihentikan.
+Populasi: puncak sekitar 2.700 (1890), sekitar 1.000 (1980), 5 orang (sensus 2020).
+Api masih membara; DEP Pennsylvania memperkirakan sekitar 400 acre terbakar, suhu
+hingga sekitar 540 °C pada kedalaman sampai 90 meter, dan masih bisa terbakar
+sekitar 250 tahun lagi. Route 61 rusak dan ditutup permanen 1992.
 
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
+Yang **tidak** diucapkan di naskah: angka 45 meter, 42 juta dolar, 400 acre, 250
+tahun. Angka-angka itu benar, tetapi menumpuknya di VO membuat episode berbunyi
+seperti laporan — dan itu justru keluhan pemilik.
+
+Ringkasan sekunder yang dibaca: pabook.libraries.psu.edu, centraliapa.org,
+worldatlas.com, discoveryuk.com, boingboing.net. Buku David DeKok *Fire Underground*
+dan laporan resmi DEP belum dibaca langsung.
 
 ## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Pemerintah membeli semua rumah di kota ini. Bukan karena banjir, bukan karena perang.
+- Coba lihat jalan ini. Di bawahnya ada api yang menyala sejak 1962.

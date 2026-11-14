@@ -40,7 +40,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TURN | Selama empat ratus tahun kita membaca kata itu sebagai pesan terakhir. |
 | TURN | Padahal tidak ada tulang, tidak ada kuburan, tidak ada sisa perkelahian. |
 | CONSEQUENCE | Croatoan bukan pesan terakhir. Itu alamat. |
-| CONSEQUENCE | Mereka tidak dibantai. Mereka pindah, dan bergabung dengan orang yang sudah ada di sana. |
+| CONSEQUENCE | Croatoan bukan peringatan. Itu alamat: sebuah pulau lima puluh mil ke selatan. |
 
 ## 3 · TURN
 
@@ -103,3 +103,25 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 ## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Mereka meninggalkan satu kata sebelum pergi. Butuh empat ratus tahun untuk membacanya benar.
+---
+
+## Koreksi setelah sumber diperiksa (fase produksi EP05)
+
+Rencana menutup episode ini dengan kalimat "mereka pindah dan bergabung dengan orang
+yang sudah ada di sana". Itu **tidak** dikatakan sumber sebagai fakta — ia hipotesis
+asimilasi, dan yang bisa dipertanggungjawabkan cuma sampai titik ini:
+
+| yang ditulis rencana | yang bisa dikatakan dari sumber | yang dipakai |
+|---|---|---|
+| "mereka bergabung dengan penduduk setempat" | hipotesis; bukti pendukung ada (artefak abad ke-16 di Hatteras, Site X di Bertie County 2015), tetapi tidak ada catatan yang menyambung | tidak diucapkan; diganti "itu alamat, lima puluh mil ke selatan" |
+| "tidak ada mayat" | benar untuk Roanoke 1590: tidak ada tubuh, tidak ada kuburan, tidak ada tanda pertempuran | dipakai |
+
+Detail yang bertahan dan bisa dicek: 115 orang, John White gubernur, Virginia Dare lahir
+18 Agustus 1587, White mendarat kembali 18 Agustus 1590, rumah **dibongkar** bukan runtuh,
+palisade baru dibangun, peti yang dikubur sudah digali, barang berat ditinggal,
+"CRO" di pohon dan "CROATOAN" di tiang pagar, keduanya **tanpa salib** padahal salib
+sudah disepakati sebagai tanda bahaya.
+
+Batasnya: laporan asli White ("The fift voyage of M. John White", Hakluyt) belum dibaca
+langsung; semua di atas berasal dari ringkasan sekunder yang saling cocok
+(encyclopediavirginia.org, pagesofhistory.org, scienceinsights.org).

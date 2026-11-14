@@ -353,7 +353,7 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
   const turnVerdict = turnSegs[0]?.verdict || "";
 
   // 45 frame pertama adalah thumbnail: frame 0 harus identik dengan file thumbnail
-  const INTRO = 45;
+  const INTRO = 15;  // 0,5 dtk: cover tetap ada, tapi hook tidak menunggu (dulu 1,5 dtk)
   const intro = frame < INTRO && !!ep.thumb;
 
   const inHook = active?.kind === "hook";
@@ -374,8 +374,12 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
 
       {/* bed: angin + drone + dentuman di titik balik. Bukan dekorasi — ini yang
           membuat gambar diam terasa punya ruang. */}
-      {ep.bed ? <Audio src={staticFile(ep.bed)} /> : null}
-      {ep.sfx ? <Audio src={staticFile(ep.sfx)} /> : null}
+      {/* Bed sudah dikalibrasi ke -32 LUFS di build_bed.py. Volume di sini
+          adalah pengaman kedua: kalau suatu hari file bed dibuat lebih keras,
+          VO tetap yang paling jelas. Hierarki mix (AUDIO PRODUCTION.md §12):
+          VO → efek → musik → ambience. */}
+      {ep.bed ? <Audio src={staticFile(ep.bed)} volume={0.85} /> : null}
+      {ep.sfx ? <Audio src={staticFile(ep.sfx)} volume={0.9} /> : null}
 
       {/* gambar: satu foto per segmen, semuanya bergerak. Kalau episode belum
           punya foto, jatuh ke plate vektor — tidak pernah layar kosong. */}

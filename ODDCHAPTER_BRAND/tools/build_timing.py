@@ -26,9 +26,12 @@ AUDIO_DIR = ROOT / "10_FILM" / "remotion" / "public" / "audio"
 OUT = ROOT / "10_FILM" / "remotion" / "src" / "timing.generated.json"
 FPS = 30
 WPS = 2.45          # kata per detik
-GAP = 0.30          # jeda antar segmen
-HOOK_HOLD = 0.5     # nafas setelah hook
-TAIL = 1.2          # ekor sebelum loop menutup
+# Dirapatkan 16 Nov 2026 setelah data performa Shorts: rasio "tetap menonton"
+# 57,9% dan durasi 59-73 detik membuat video jarang diputar ulang. Target baru
+# 35-45 detik, jadi jeda dipangkas dan narasi mulai hampir di frame nol.
+GAP = 0.22          # jeda antar segmen (dulu 0.30)
+HOOK_HOLD = 0.35    # nafas setelah hook
+TAIL = 0.9          # ekor sebelum loop menutup (dulu 1.2)
 
 
 def _ffmpeg():
@@ -119,7 +122,7 @@ def build(ep):
         if not cues:
             break
 
-    t = 0.6  # lead-in
+    t = 0.15  # lead-in: VO mulai hampir di frame nol (dulu 0.6)
     for s in segs:
         s["start"] = round(t, 3)
         t += s["dur"] + GAP

@@ -1,7 +1,7 @@
 # video ready — isi folder ini
 
 Master siap upload ke TikTok / YouTube Shorts / Facebook Reels.
-1080×1920 · H.264 (yuv420p, tv range) · 30 fps · AAC 48 kHz stereo · −14 LUFS (mean −15,7 dB, max −1,4 dB).
+1080×1920 · H.264 (yuv420p, tv range) · 30 fps · AAC 48 kHz stereo · −14 LUFS (EP05: −14,8 LUFS, −1,2 dBTP).
 
 File binernya **tidak** disimpan di Git (folder `10_FILM/remotion/output/` di-ignore,
 supaya repo tidak membengkak 20 MB per episode). Yang tersimpan: sumber, naskah,
@@ -14,6 +14,11 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP01 v7 | TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL | 64,85 s | 17,9 MB | `18u4GwSOAMVIsCtnPIGBAjvc-Axy-Nrur` | `10_FILM/remotion/output/episodes/EP01_1080x1920_master.mp4` |
 | EP02 | MEREKA MEMOTONG TENDA ITU DARI DALAM | 72,32 s | 21,1 MB | `1WF4yQQkg02pctkJ8QsX-xls37gQCvoyJ` | `10_FILM/remotion/output/episodes/EP02_1080x1920_master.mp4` |
 | EP03 | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | 71,80 s | 21,9 MB | `1chsdzAkdplfm3JdmBHOefj5MQP_khUiZ` | `10_FILM/remotion/output/episodes/EP03_1080x1920_master.mp4` |
+| EP04 | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN (JALAN KE ATAS) | 70,81 s | 17,3 MB | `1O2onobslZxZo5miA83s6d5cEHcfK1OGL` | `10_FILM/remotion/output/episodes/EP04_1080x1920_master.mp4` |
+| EP05 | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN (ROANOKE) | 68,84 s | 17,6 MB | `1ls-1EVOdp-2L81QvNpyi6QjzqmNHDdJY` | `10_FILM/remotion/output/episodes/EP05_1080x1920_master.mp4` |
+| EP06 v2 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 54,38 s | 16,0 MB | `1O4HvhK22QLjxXuLkhOzngAH-WS_jGLtH` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
+| EP07 | JEJAK KAKI ITU HANYA SATU ARAH (HINTERKAIFECK) | 48,28 s | 14,1 MB | `1OrIaFbZKj_yufo-HOSpVCYxnhmUHYKc8` | `10_FILM/remotion/output/episodes/EP07_1080x1920_master.mp4` |
+| EP08 v2 | SEMUA LABEL DI PAKAIANNYA DIPOTONG (ISDAL, 1970) — VO turbo 0.85 | 53,50 s | 15,3 MB | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` | `10_FILM/remotion/output/episodes/EP08_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`
 Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`
@@ -59,3 +64,16 @@ EP01_raw.mp4                     ← render mentah 8 Mbps, bahan encode ulang
 
 Satu nama per episode, tanpa nomor versi di nama file: versi dicatat di tabel di
 atas dan di commit Git, supaya Drive tidak pernah punya dua "EP01".
+
+## Catatan EP04 — aset kerja yang sempat masuk Git
+
+Plate (12 JPEG) dan potongan narasi (13 MP3) EP04 di-commit sementara ke repo
+saat produksi, lalu dicabut lagi setelah master jadi. Alasannya teknis, bukan
+perubahan konvensi: di sandbox tempat EP04 dibuat, berkas yang masuk
+`.gitignore` tidak bertahan antar-sesi, sementara kuota generator gambar dan
+suara (10 per giliran) tidak cukup untuk menghasilkan ulang 12 gambar + 13 klip
+setiap sesi. Setelah `EP04_1080x1920_master.mp4` ada di Drive, keduanya tidak
+lagi dibutuhkan di Git — `.gitignore` berlaku seperti sebelumnya.
+
+Yang tetap tersimpan di repo: naskah, data episode (`tools/content_data.py`),
+thumbnail 1080x1920, metadata unggah, dan indeks ini. Master ada di Drive.

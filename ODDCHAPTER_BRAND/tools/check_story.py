@@ -70,6 +70,98 @@ def turn_numbers(e):
     return sorted(nums_turn - nums_before)
 
 
+# ── 00E · SUARA NARATOR ─────────────────────────────────────────────────────
+# Naskah yang berbunyi seperti laporan gagal bukan karena faktanya salah, tetapi
+# karena tidak ada yang diajak bicara. Aturan di bawah menjaga suara itu.
+REPORT_WORDS = {
+    "diketahui", "dilaporkan", "tercatat", "merupakan", "disebutkan", "berdasarkan",
+    "adapun", "tersebut", "sejumlah", "berbagai", "sedangkan", "namun", "sehingga",
+    "mengakibatkan", "dilakukan", "terjadi", "yakni", "yaitu", "sementara",
+}
+LOOK = {"lihat", "lihatlah", "bayangkan", "coba", "ingat", "dengar", "dengarkan",
+        "perhatikan", "pikirkan", "bayangkanlah", "ikut"}
+SECOND = ("kamu", "kita", "anda")
+
+
+def sentences(t):
+    return [x for x in re.split(r"(?<=[.!?])\s+", t.strip()) if x]
+
+
+def voice(e):
+    """(6) suara narator — menyapa penonton, bukan membacakan laporan (00E)."""
+    fails = []
+    script = " ".join([e["hook"]] + [t for _, t in e["beats"]] + [e["loop"]])
+    low = script.lower()
+
+    # 00E §6 · pintu masuk: tanggal di depan = kalimat berita, bukan hook
+    hook = e["hook"].strip()
+    if re.match(r"^\s*(\d|tahun\b|pada\s+tahun\b)", hook, re.I):
+        fails.append("(6) hook dibuka dengan angka/tahun — itu kalimat berita; "
+                     "pakai pertanyaan/pernyataan/fakta/harapan/khayalan/adegan/dialog")
+    if len(hook.split()) > 12:
+        fails.append(f"(6) hook {len(hook.split())} kata — di atas 12 ia kehilangan ritme ngobrol")
+
+    bad = sorted({w for w in words(script) if w in REPORT_WORDS})
+    if bad:
+        fails.append(f"(6) kosakata laporan: {', '.join(bad)} — ganti dengan kalimat orang")
+
+    looks = sorted({w for w in words(script) if w in LOOK})
+    if len(looks) < 2:
+        fails.append(f"(6) ajakan melihat cuma {len(looks)} — minimal 2 (lihat/bayangkan/coba/ingat)")
+
+    second = [s for s in sentences(script) if re.search(r"\b(kamu|kita|anda)\b", s.lower())]
+    if len(second) < 3:
+        fails.append(f"(6) kalimat yang menyapa penonton cuma {len(second)} — minimal 3")
+
+    nq = script.count("?")
+    if nq < 2:
+        fails.append(f"(6) pertanyaan di naskah cuma {nq} — minimal 2, penonton harus menjawab di kepala")
+
+    for name, ln in [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]:
+        limit = 3 if name in ("hook", "loop") else 2
+        n = len(sentences(ln))
+        if n > limit:
+            fails.append(f"(6) {name}: {n} kalimat dalam satu tarikan napas (maks {limit})")
+
+    return fails
+
+
+
+# ── TTS (SKILLS/elevenlabs-tts-2026) ───────────────────────────────────────
+# Yang dikirim ke mesin suara hanyalah kalimat yang diucapkan. Tanda baca boleh,
+# markup tidak: tag akan terbaca sebagai kata, atau merusak prosodi.
+TTS_MARKUP = [
+    (re.compile(r"<[^>]{1,40}>"), "markup sudut (<break>, <prosody>, <emphasis>)"),
+    (re.compile(r"\[[^\]]{1,40}\]"), "tag kurung siku ([pause], [whispers], [tension])"),
+    (re.compile(r"\*\*|__|~~|`"), "penanda markdown (tebal/miring/kode)"),
+    (re.compile(r"(?m)^\s*#{1,6}\s"), "judul markdown"),
+    (re.compile(r"(?m)^\s*\d+[.)]\s"), "penomoran daftar"),
+    (re.compile(r"(?m)^\s*[-•]\s"), "butir daftar"),
+    (re.compile(r"[|\u2192\u2022\u2705\u274c]"), "simbol tabel/emoji"),
+]
+TTS_ABBREV = {"dll", "dsb", "dst", "yth", "sdr", "sdr.", "th", "thn", "km", "cm", "kg", "dgn", "spt"}
+
+
+def tts_safe(e):
+    """(TTS) naskah harus bisa dibaca mesin suara apa adanya."""
+    fails, notes = [], []
+    lines = [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]
+    for name, txt in lines:
+        for rx, label in TTS_MARKUP:
+            if rx.search(txt):
+                fails.append(f"(TTS) {name}: ada {label} — tidak boleh masuk naskah yang diucapkan")
+        low = txt.lower()
+        ab = sorted({w for w in re.findall(r"[a-zA-Z]+", low) if w in TTS_ABBREV})
+        if ab:
+            notes.append(f"(TTS) {name}: singkatan {', '.join(ab)} — tulis lengkap supaya tidak dibaca huruf per huruf")
+        if re.search(r"\d", txt):
+            notes.append(f"(TTS) {name}: ada angka — pastikan dibaca benar (mis. '1970' dibaca 'sembilan belas tujuh puluh')")
+        for sent in sentences(txt):
+            if len(sent.split()) > 18:
+                notes.append(f"(TTS) {name}: satu kalimat {len(sent.split())} kata — mesin suara butuh napas, pecah di koma")
+    return fails, notes
+
+
 def check(e):
     fails, notes = [], []
 
@@ -83,10 +175,18 @@ def check(e):
     if not re.search(r"\d|\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|pohon)\b", e["hook"].lower()):
         notes.append("(1) hook tidak menyebut benda konkret — cek manual")
 
-    # 1b · kalimat pertama harus pertanyaan ATAU fakta yang bisa dicek (ada angka)
+    # 1b · kalimat pertama harus pertanyaan, fakta berangka, atau PERNYATAAN yang
+    # menyebut benda (pintu "pernyataan"/"adegan" di 00E §6). Sejak 16 Nov 2026
+    # pernyataan datar diizinkan: yang menentukan penonton bertahan adalah benda
+    # konkret di detik pertama, bukan tanda tanya.
     first = re.split(r"(?<=[.!?])\s+", e["hook"].strip())[0]
-    if not (first.rstrip().endswith("?") or re.search(r"\d", first)):
-        fails.append("(1b) kalimat pertama hook bukan pertanyaan dan tidak memuat angka — buka dengan pertanyaan atau fakta")
+    killer = re.search(r"\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|"
+                       r"pohon|pakaian|baju|koper|botol|tubuh|gigi|jendela|kapal|api|batu|"
+                       r"gunting|nama|surat|foto|jam|darah|tulang|tanah|air|asap|dompet|buku|novel|huruf|"
+                       r"kode|rekaman|catatan)\b", first.lower())
+    if not (first.rstrip().endswith("?") or re.search(r"\d", first) or killer):
+        fails.append("(1b) hook tidak pertanyaan, tidak berangka, dan tidak menyebut benda — "
+                     "penonton tidak punya apa pun untuk dipegang di detik pertama")
 
     # 1c · teks thumbnail 1–3 kata
     tt = (e.get("thumb_text") or "").strip()
@@ -217,9 +317,14 @@ def check(e):
 
     # kelayakan produksi
     total = len(e["hook"].split()) + sum(len(t.split()) for _, t in e["beats"]) + len(e["loop"].split())
-    secs = round(total / 2.45)
-    if not 42 <= secs <= 62:
-        fails.append(f"(produksi) {secs} detik, di luar 42–62")
+    # Perkiraan = bicara + jeda + lead-in + ekor, sama dengan yang dipakai
+    # build_timing (0,22 dtk antar segmen, 0,9 dtk ekor). Tanpa jeda, hitungannya
+    # selalu terlalu pendek 2-3 detik dan gerbangnya salah menolak.
+    n_seg = len(e["beats"]) + 2
+    secs = round(total / 2.45 + 0.22 * (n_seg - 1) + 1.05)
+    if not 35 <= secs <= 45:
+        fails.append(f"(produksi) {secs} detik, di luar 35–45 "  # data performa 16 Nov 2026
+                     f"(di atas 60 dtk hampir tidak pernah diputar ulang)")
     ph = e.get("photos") or []
     if ph and e.get("entitas") and any(w in ph[0] for w in ("island", "sea", "sky", "horizon")):
         fails.append(f"(produksi) foto pembuka '{ph[0]}' lanskap, bukan entitas — pembuka harus menunjuk orang/benda")
@@ -227,6 +332,15 @@ def check(e):
         fails.append("(produksi) cue lebih dari 5")
     if not 2 <= len(tension) <= 6:
         notes.append(f"(produksi) {len(tension)} beat tension — 3–4 paling sehat")
+
+    # 6 · suara narator (00E)
+    if e.get("voice_legacy"):
+        notes.append("(6) suara laporan — episode ini tayang sebelum 00E; bukan contoh")
+    else:
+        fails += voice(e)
+        _tf, _tn = tts_safe(e)
+        fails += _tf
+        notes += _tn
 
     return fails, notes, sh, secs
 

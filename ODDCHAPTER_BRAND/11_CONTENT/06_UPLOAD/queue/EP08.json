@@ -1,0 +1,13 @@
+{
+  "episode": "EP08",
+  "status": "scheduled",
+  "approved": true,
+  "visibility": "public",
+  "force": true,
+  "scheduledFor": "2026-11-15T07:30:00",
+  "timezone": "Asia/Jakarta",
+  "requested_at": "2026-11-14T17:31:44Z",
+  "catatan": "Versi 4: suara internal kanal, 38,2 dtk, VO mulai 0,15 dtk, bed -36 LUFS (selisih 17,1 dB), -14,0 LUFS / TP -1,7. Dijadwalkan 15 Nov 07.30 WIB, bukan publishNow.",
+  "post_id": "6af89b196abb0bb79a196d29",
+  "scheduled_at": "2026-11-14T18:08:00Z"
+}

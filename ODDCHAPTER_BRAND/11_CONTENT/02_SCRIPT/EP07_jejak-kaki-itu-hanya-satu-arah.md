@@ -1,105 +1,104 @@
 # EP07 — JEJAK KAKI ITU HANYA SATU ARAH
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H2  
-**POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 131 kata ≈ 53 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
+**POV:** A — “SAKSI MATA” (rekonstruksi, tetapi menyapa penonton — `00E_SUARA_NARATOR.md`)  
+**Durasi:** 103 kata ≈ 43 detik
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Keluarga Gruber di pertanian Hinterkaifeck, Bavaria. Enam orang, dua di antaranya balita. |
-| **Mau** | Menjalani hidup biasa di pertanian terpencil. |
-| **Hambatan** | Seseorang tinggal di loteng rumah mereka, dan mereka tahu. |
-| **Tanaman** (detail yang berubah makna di turn) | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau pembunuhnya tidak keluar, dari mana dia datang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Satu baris jejak menuju pintu, dan salju di belakangnya bersih. |
-
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+| **Protagonis** | Keluarga Gruber di pertanian terpencil Hinterkaifeck, Bavaria. |
+| **Mau** | Melewati musim dingin di pertanian yang jauh dari kampung. |
+| **Hambatan** | Ada jejak kaki di salju menuju rumah mereka, dan tidak ada yang kembali. |
+| **Tanaman** (detail yang berubah makna di turn) | Kunci hilang, langkah terdengar di loteng, dan tidak ada pintu yang dibuka paksa. |
+| **Celah** | Kenapa tidak ada satu pun jejak yang keluar dari rumah itu? |
+| **Gambar melekat** | Jejak kaki di salju berhenti di depan pintu, dan tidak berlanjut. |
 
 ## 1 · HOOK (0–3 s)
 
-> Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Kalau semua jejak di salju itu mengarah masuk, siapa yang keluar?
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Hinterkaifeck. Pertanian terpencil di Bavaria. 31 Maret 1922. |
-| SETUP | Enam orang tinggal di sana. Dua di antaranya masih balita. |
-| TENSION | Enam bulan sebelumnya, pelayan lama keluarga itu berhenti kerja. |
-| TENSION | Alasannya: rumah itu berhantu. Dia mendengar langkah kaki di loteng. |
-| TENSION | Pagi 31 Maret, orang-orang itu ditemukan tewas. Semuanya. |
-| TENSION | Tapi bukan itu yang paling aneh. |
-| TENSION | Jejak kaki di salju hanya mengarah dari hutan ke rumah. |
-| TURN | Pembunuhnya tidak datang malam itu lalu pergi. |
-| TURN | Dia tinggal di sana beberapa hari. Dia makan. Dia memberi makan sapi. Dia menyalakan api. |
-| CONSEQUENCE | Polisi mencari orang yang datang malam itu. Tidak ada yang pernah ditangkap. |
-| CONSEQUENCE | Dan kunci yang hilang tidak pernah ditemukan sampai hari ini. |
+| TANYA | Coba bayangkan kamu di rumah itu. Kamu akan memeriksa atapnya, atau pura-pura tidak dengar? |
+| RELATE | Kita sering mengabaikan bunyi kecil di rumah sendiri. |
+| SETUP | Malam tiga puluh satu Maret 1922, enam orang tidur di pertanian itu. |
+| TENSION | Lihat kuncinya: hilang. Andreas naik ke atap, dan tidak ada siapa pun. |
+| TENSION | Tidak ada pintu yang dirusak. Jadi bagaimana dia bisa masuk? |
+| TURN | Dia tidak masuk malam itu. Dia sudah menunggu di dalam rumah. |
+| CONSEQUENCE | Empat hari kemudian, tetangga melihat asap dari cerobong. |
+| CONSEQUENCE | Dia menyalakan api di dapur. Kamu bisa bayangkan baunya. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Pembunuh datang malam itu.”**
+Dugaan yang dipatahkan: **“Seseorang masuk malam itu.”**
 
-Pembalik: Tidak ada jejak yang keluar. Pelakunya sudah di dalam rumah, dan tinggal beberapa hari.
-
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Pembalik: Tidak ada pintu yang dirusak, dan kuncinya sudah hilang berhari-hari
+sebelumnya. Dia tidak masuk; dia sudah di dalam.
 
 ## 4 · ECHO
 
-> Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+> Jejak di salju itu berhenti di pintu. Yang membuatnya tidak pernah keluar.
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau pembunuhnya tidak keluar, dari mana dia datang?_ |
+| 1 | berhenti scroll | 12 kata, satu benda konkret (jejak di salju) |
+| 2 | ada yang salah | _Kenapa tidak ada satu pun jejak yang keluar dari rumah itu?_ |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
 | 5 | diingat | gambar melekat + echo kata di penutup |
 
-Gerbang otomatis: `python3 ../tools/check_story.py EP07` (lihat `00C_MESIN_5_EFEK.md`).
+## 4c · SUARA (`00E`)
+
+| unsur | isi |
+|---|---|
+| Sapaan penonton | “Coba bayangkan **kamu** di rumah itu.” · “**Kita** sering mengabaikan bunyi kecil…” · “**Kamu** bisa bayangkan baunya.” |
+| Ajakan melihat | “**Lihat** salju di depan rumah itu.” · “Coba **bayangkan**…” |
+| Pertanyaan | 2 (tanya + tension: “Jadi bagaimana dia bisa masuk?”) |
+| Kalimat per baris | maksimal 2 — semua lolos |
+| Kosakata laporan | nol |
 
 ## 5 · TEKS DI LAYAR
 
-1. `31 MAR 1922`
-2. `6 ORANG`
-3. `JEJAK 1 ARAH`
-4. `LOTENG`
-5. `KASUS TERBUKA`
-
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+Cue (4): `LOTENG` · `KUNCI HILANG` · `ASAP` · `MASIH DI DALAM` (10 segmen)  
+Stamp (2): `1922` · `4` (hari sampai ditemukan)
 
 ## 6 · VISUAL SIGNATURE
 
-Atap bersalju dengan satu jalur jejak; denah rumah dengan loteng disorot; perapian dingin.
+Jejak kaki di salju yang berhenti di pintu; kunci tua di meja kayu; loteng gelap
+dengan tangga; asap dari cerobong di tengah hutan bersalju; dapur dengan api kecil.
 
 ## 7 · DISTRIBUSI
 
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
+TikTok vertikal · YouTube Shorts · Facebook Reels — satu master 1080×1920.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Pembunuhan Hinterkaifeck 1922; berkas investigasi belum dibaca langsung.
+`SRC: VERIFIED` (butir utama) — Hinterkaifeck, pertanian terpencil di Bavaria,
+sekitar 70 km utara Munich. Malam 31 Maret – 1 April 1922 enam orang terbunuh:
+Andreas Gruber (63), Cäzilia Gruber (72), Viktoria Gabriel (35), Cäzilia (7),
+Josef (2), dan pembantu Maria Baumgartner (44) yang tiba hari itu juga.
 
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
+Sebelum kejadian: jejak kaki di salju dari tepi hutan menuju pertanian tanpa jejak
+kembali; langkah di loteng; koran Munich yang tidak dipesan; kunci rumah hilang.
+Pembantu sebelumnya berhenti karena merasa rumah itu tidak tenang. Tidak ada tanda
+masuk paksa. Jenazah ditemukan 4 April 1922 setelah tetangga curiga: tidak ada
+aktivitas, tetapi asap masih keluar dari cerobong dan ternak sudah diberi makan
+serta diperah. Alat yang diyakini dipakai adalah cangkul berat (*mattock*), baru
+ditemukan setahun kemudian saat bangunan dibongkar. Pertanian dibongkar 1923;
+tengkorak dikirim ke Munich dan hilang pada masa Perang Dunia II. Tinjauan akademi
+polisi Jerman 2007 menyimpulkan bukti yang tersisa tidak cukup.
 
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
+**Yang sengaja tidak dipakai:** rincian luka, dugaan incest, nama tersangka. Tidak
+ada putusan pengadilan; episode ini soal jejak, bukan tuduhan.
 
-- Enam bulan sebelum pembunuhan itu, pelayan lama mereka berhenti kerja. Alasannya: langkah kaki di loteng.
+## 9 · HOOK ALTERNATIF
+
+- Salju di depan rumah itu penuh jejak. Semuanya mengarah masuk.

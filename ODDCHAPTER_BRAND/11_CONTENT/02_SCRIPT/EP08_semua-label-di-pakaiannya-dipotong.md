@@ -1,104 +1,68 @@
 # EP08 — SEMUA LABEL DI PAKAIANNYA DIPOTONG
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H3  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 130 kata ≈ 53 detik (target 56 s)
+**Seri:** TERSEMBUNYI · **Slot:** PAGI 07\.30 WIB · **POV:** B
+**Narasi:** 81 kata · 9 segmen · target **35–45 detik** (aturan performa 16 Nov 2026)
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
 | **Protagonis** | Seorang perempuan tanpa nama, ditemukan di lembah Isdalen, Norwegia. |
 | **Mau** | Tidak ditemukan. |
-| **Hambatan** | Seseorang atau sesuatu membuatnya harus menghilang. |
-| **Tanaman** (detail yang berubah makna di turn) | Semua label di pakaiannya dipotong. Termasuk di sepatu. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Label pakaian yang dipotong rapi, satu per satu. |
+| **Hambatan** | Semua yang bisa menyebut namanya sudah dia buang sendiri. |
+| **Tanaman** | Label dipotong, tanda di botol dikerok, dan koper berisi delapan nama. |
+| **Celah** | Kenapa dia menghapus namanya lebih rapi daripada kematiannya sendiri? |
+| **Gambar melekat** | Potongan label di atas pakaian, tanpa satu pun merek yang tersisa. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
+> Semua label di bajunya dipotong. Sebelum dia hilang.
 
-> Semua label di pakaiannya dipotong, termasuk di sepatu. Dia memakai sembilan nama.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+Cover hanya tampil 15 frame (0,5 dtk). Narasi masuk hampir di frame nol — tidak ada
+jeda pembuka, karena 30–57% penonton menggeser di 1–2 detik pertama.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | November 1970. Seorang perempuan ditemukan tewas di lembah Isdalen, Norwegia. |
-| SETUP | Di sekitarnya ada bensin. Dia membakar barang-barangnya sendiri sebelum mati. |
-| TENSION | Semua label di pakaiannya sudah dipotong. Tidak ada nama. Tidak ada inisial. |
-| TENSION | Dua koper miliknya ditemukan di stasiun kereta. Isinya wig, kacamata, dan uang tunai. |
-| TENSION | Dia memakai sembilan nama berbeda di sembilan tempat berbeda. |
-| TENSION | Di buku catatannya, ada deretan angka yang tidak pernah bisa dipecahkan. |
-| TURN | Selama lima puluh tahun, dia disebut korban. |
-| TURN | Tapi orang yang jadi korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri. |
-| CONSEQUENCE | Dia bukan sedang bersembunyi dari pembunuh. Dia sedang bersembunyi dari ditemukan. |
-| CONSEQUENCE | Dia dimakamkan tanpa nama. Sampai hari ini belum ada yang mengaku mengenalnya. |
+| TANYA | Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang? |
+| RELATE | Kita sembunyikan nama di internet. Dia pakai gunting. |
+| SETUP | Tahun 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu. |
+| TENSION | Tubuhnya hangus dari depan. Punggungnya utuh. |
+| TENSION | Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala. |
+| TURN | Orang mau mati tidak memotong label. Tidak mengerok tanda di botol. |
+| CONSEQUENCE | Lihat kopernya. Wig, uang asing, delapan nama. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Dia korban.”**
+Kutipan: **“Dia bunuh diri.”**
 
-Pembalik: Korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri lebih dulu.
+Pembalik: Mungkin. Tapi orang yang mau mati tidak memotong label, dan tidak mengerok tanda di botol.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Semua label hilang. Kamu tidak akan tahu namanya. Kenapa?
 
-> Sembilan nama, satu wajah, dan tidak satu pun yang benar.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO, dipakai di judul/komentar pertama):
+**Menurut kamu, apa yang sebenarnya terjadi di lembah itu?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang?_ |
+| 1 | berhenti scroll | hook menyebut benda konkret di detik pertama |
+| 2 | ada yang salah | Kenapa dia menghapus namanya lebih rapi daripada kematiannya sendiri? |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP08` (lihat `00C_MESIN_5_EFEK.md`).
+| 5 | diingat | Potongan label di atas pakaian, tanpa satu pun merek yang tersisa. |
 
 ## 5 · TEKS DI LAYAR
 
-1. `NOV 1970`
-2. `9 NAMA`
-3. `LABEL DIPOTONG`
-4. `KODE ANGKA`
-5. `TANPA NAMA`
+Cue: LABEL DIPOTONG · JELAGA · 8 NAMA
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
-
-Koper terbuka di lantai stasiun; label pakaian yang dipotong; lembah berbatu berkabut.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Isdal Woman 1970; investigasi NRK/BBC belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Dia membakar hampir semua barangnya sendiri. Yang tersisa justru sembilan identitas.
+VERIFIED pada butir utama. 29 November 1970: jenazah seorang perempuan ditemukan di Isdalen (lembah di kaki Ulriken, dekat Bergen, Norwegia). Tubuh terbakar hebat di bagian depan; punggung relatif utuh; jelaga di paru-paru menunjukkan dia masih hidup saat terbakar. Semua label pada pakaian dipotong dan tanda pada botol dikerok. Dua koper di penitipan barang Stasiun Bergen: pakaian tanpa label, wig, kacamata tanpa resep, lima lembar 100 Deutsche Mark, peta, buku catatan berkode. Otopsi: keracunan karbon monoksida dan fenobarbital; 50-70 tablet Fenemal. Polisi menyimpulkan kemungkinan bunuh diri; banyak pihak meragukannya. Kasus dibuka kembali 2016; analisis isotop gigi mengarah ke sekitar Nuremberg. Yang TIDAK dipakai: nama alias yang belum terverifikasi dan teori konspirasi.

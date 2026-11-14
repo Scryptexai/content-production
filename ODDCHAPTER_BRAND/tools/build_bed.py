@@ -33,6 +33,22 @@ def ffmpeg():
     return imageio_ffmpeg.get_ffmpeg_exe()
 
 
+def measure_lufs(path):
+    """Integrated loudness satu berkas, dibaca dari ebur128."""
+    try:
+        out = subprocess.run(
+            [ffmpeg(), "-hide_banner", "-nostats", "-i", str(path),
+             "-filter_complex", "ebur128=peak=true", "-f", "null", "-"],
+            capture_output=True, text=True).stderr
+        tail = out.split("Summary:")[-1]
+        for line in tail.splitlines():
+            if "I:" in line and "LUFS" in line:
+                return round(float(line.split("I:")[1].split("LUFS")[0]), 2)
+    except Exception:
+        pass
+    return None
+
+
 def build(ep_id):
     tm = json.loads(TIMING.read_text())[ep_id]
     total = tm["total"] + 2.0
@@ -56,6 +72,13 @@ def build(ep_id):
     outdir = AUDIO / ep_id
     outdir.mkdir(parents=True, exist_ok=True)
 
+    # Target kenyaringan bed. Pemilik (15 Nov 2026): "backsound terlalu nyaring,
+    # VO kurang jelas". Bed dulu dikalikan 2,2 setelah amix — tidak ada yang tahu
+    # angkanya berapa LUFS, dan ternyata menutupi VO. Sekarang: bed dibuat, lalu
+    # diukur, lalu digeser tepat ke target. -32 LUFS = sekitar 18 dB di bawah
+    # narasi, cukup terasa tanpa bersaing.
+    BED_LUFS = -32.0
+
     # 1 · angin
     amb = outdir / "amb.wav"
     subprocess.run([
@@ -63,7 +86,7 @@ def build(ep_id):
         "-f", "lavfi", "-i",
         f"anoisesrc=d={total}:c=pink:a=0.5",
         "-af", (f"lowpass=f=480,highpass=f=45,tremolo=f=0.11:d=0.35,"
-                f"afade=t=in:st=0:d=2.0,afade=t=out:st={total - 2.5}:d=2.4,volume=0.5"),
+                f"afade=t=in:st=0:d=2.0,afade=t=out:st={total - 2.5}:d=2.4,volume=0.34"),
         "-ar", "48000", "-ac", "2", str(amb),
     ], check=True)
 
@@ -74,7 +97,7 @@ def build(ep_id):
     idx = 1
 
     drone_len = total
-    for freq, vol in ((55, 0.10), (82.5, 0.055)):
+    for freq, vol in ((55, 0.055), (82.5, 0.030)):
         inputs += ["-f", "lavfi", "-i", f"sine=f={freq}:d={drone_len}"]
         filters.append(f"[{idx}:a]afade=t=in:st=0:d=3.0,afade=t=out:st={drone_len - 3}:d=3.0,"
                        f"volume={vol}[d{idx}]")
@@ -91,15 +114,26 @@ def build(ep_id):
 
     mix = "".join(f"[{l}]" for l in labels)
     filters.append(f"{mix}amix=inputs={len(labels)}:normalize=0:duration=first,"
-                   f"volume=2.2,alimiter=limit=0.9,afade=t=out:st={total - 2.0}:d=2.0[out]")
+                   f"volume=1.0,alimiter=limit=0.9,afade=t=out:st={total - 2.0}:d=2.0[out]")
 
     bed = outdir / "bed.wav"
     subprocess.run([ffmpeg(), "-y", "-v", "error", *inputs,
                     "-filter_complex", ";".join(filters), "-map", "[out]",
                     "-ar", "48000", "-ac", "2", str(bed)], check=True)
 
+    lufs = measure_lufs(bed)
+    if lufs is not None and abs(lufs - BED_LUFS) > 0.7:
+        gain = BED_LUFS - lufs
+        tmp = outdir / "bed_gain.wav"
+        subprocess.run([ffmpeg(), "-y", "-v", "error", "-i", str(bed),
+                        "-af", f"volume={gain:.2f}dB", "-ar", "48000", "-ac", "2", str(tmp)],
+                       check=True)
+        tmp.replace(bed)
+        lufs = measure_lufs(bed)
+
     print(f"{ep_id}: amb {amb.stat().st_size // 1024} kB · bed {bed.stat().st_size // 1024} kB "
-          f"· {total:.1f}s · hit di {', '.join(str(h) + 's' for h in hits)}")
+          f"· {total:.1f}s · bed {lufs if lufs is not None else '?'} LUFS "
+          f"· hit di {', '.join(str(h) + 's' for h in hits)}")
 
 
 if __name__ == "__main__":
