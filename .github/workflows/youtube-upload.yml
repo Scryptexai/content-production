@@ -123,6 +123,19 @@ jobs:
           echo "request=$REQ" >> "$GITHUB_OUTPUT"
           echo "::notice::Permintaan dari antrean: $REQ"
 
+      - name: Gerbang persetujuan pemilik
+        if: steps.req.outputs.skip != '1' && github.event_name == 'push'
+        env:
+          REQ: ${{ steps.req.outputs.request }}
+        run: |
+          set -euo pipefail
+          APPROVED=$(python3 -c "import json,sys;print(1 if json.load(open(sys.argv[1])).get('approved') is True else 0)" "$REQ")
+          if [ "$APPROVED" != "1" ]; then
+            echo "::warning title=Menunggu persetujuan::Berkas antrean $REQ belum memuat \"approved\": true. Tidak ada yang diunggah."
+            exit 1
+          fi
+          echo "::notice::Disetujui pemilik — unggahan dijalankan."
+
       - name: Cek kredensial Zernio
         if: steps.req.outputs.skip != '1'
         run: python3 ODDCHAPTER_BRAND/tools/upload_zernio.py --check

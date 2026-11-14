@@ -1,9 +1,9 @@
 {
-  "identity": "ODDCHAPTER — narator kanal",
+  "identity": "Denas — High class catchy storyteller",
   "provider": "elevenlabs",
   "status": "locked",
-  "locked_at": "2026-11-14",
-  "voice_id": "ojz6ro9PB1xDu44lymdM",
+  "locked_at": "2026-11-15",
+  "voice_id": "arwfiAiEfIHHZCwcYYx2",
   "model_id": "eleven_turbo_v2_5",
   "output_format": "mp3_44100_192",
   "settings": {
@@ -16,11 +16,11 @@
   "pace_wpm": 135,
   "language": "id",
   "notes": [
-    "Suara ini identitas kanal mulai EP08. Jangan diganti tanpa perintah pemilik.",
-    "Kunci API hanya ada di GitHub Actions (secret ELEVENLABS_API_KEY).",
-    "Nada yang diinginkan: mengobrol dengan satu orang, bukan membacakan laporan (11_CONTENT/00E).",
-    "MODEL: eleven_multilingual_v2 mengabaikan parameter speed dan mengambil tempo ~200 kata/menit — itu penyebab VO EP08 terasa cepat dan jedanya salah. Diukur 14 Nov 2026: kalimat 12 kata selesai 3,0-3,3 s (203-219 wpm).",
-    "eleven_turbo_v2_5 dengan speed 0.85 pada kalimat yang sama: 4,64 s (142 wpm), pertanyaan berakhir NAIK (+0,97 semit). Ini yang dipakai.",
-    "Kalau satu episode terasa terlalu cepat/lambat, ubah settings.speed pada model turbo (0,80-0,95), bukan pace_wpm."
+    "SUARA KANAL: Denas — High class catchy storyteller, elevenlabs.io/voices/arwfiAiEfIHHZCwcYYx2 (ditunjuk pemilik 15 Nov 2026).",
+    "Menggantikan ojz6ro9PB1xDu44lymdM yang hasilnya tidak konsisten antar segmen (periode EP08: tiap scene terdengar beda orang).",
+    "Konsistensi WAJIB diukur: tools/voice_consistency.py — F0 median & spectral centroid tiap segmen dibanding median episode. Menyimpang >20% = suara beda, tolak render.",
+    "Model: eleven_turbo_v2_5 (mendukung speed; multilingual_v2 mengabaikan speed dan mengambil 200+ wpm).",
+    "Kunci API hanya berizin text_to_speech: metadata voice tidak terbaca, jadi identitas dibuktikan lewat ukuransuara, bukan metadata.",
+    "Jangan ganti suara/model tanpa perintah pemilik. Jangan pernah push ke antrean unggah sebelum pemilik menyetujui master."
   ]
 }
