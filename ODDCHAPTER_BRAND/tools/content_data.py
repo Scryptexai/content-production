@@ -569,7 +569,26 @@ EPISODES = [
         ],
         bed="audio/EP08/bed.wav",
         plate="ridge",
-
+        sumber=(
+            "VERIFIED pada butir utama. 29 November 1970: jenazah seorang perempuan ditemukan di Isdalen "
+            "(lembah di kaki Ulriken, dekat Bergen, Norwegia) oleh seorang ayah bersama dua anaknya. Tubuh "
+            "terbakar hebat di bagian depan; punggung relatif utuh; jelaga di paru-paru menunjukkan dia masih "
+            "hidup saat terbakar. Semua label pada pakaian dipotong dan tanda pada botol dikerok. Di lokasi: "
+            "botol minuman keras St. Hallvard kosong, dua botol plastik, tempat paspor plastik, sepatu karet, "
+            "sweter, syal, stoking nilon, payung, tas, kotak korek, jam tangan, anting, cincin, dan topi bulu "
+            "yang mengandung bensin. Tiga hari kemudian polisi menemukan dua koper di penitipan barang "
+            "Stasiun Bergen: pakaian tanpa label, wig, kacamata tanpa resep, krim eksim yang stikernya dikerok, "
+            "lima lembar 100 Deutsche Mark di lapisan koper, 135 kroner Norwegia, koin Belgia/Inggris/Swiss, "
+            "peta, jadwal, buku catatan berkode. Otopsi (Gades Institutt): kematian akibat keracunan karbon "
+            "monoksida dan fenobarbital; 50-70 tablet Fenemal di lambung; ada lebam di leher. Polisi "
+            "menyimpulkan kemungkinan bunuh diri; banyak pihak meragukannya. Dimakamkan 5 Februari 1971 di "
+            "Mollendal, peti seng, makam tanpa nama. Kasus dibuka kembali 2016 (NRK + polisi); analisis isotop "
+            "gigi menunjuk wilayah Jerman selatan/sekitar Nuremberg atau perbatasan Prancis-Jerman, tetapi "
+            "belum ada identifikasi pasti. Jumlah alias dilaporkan berbeda antar sumber (paling sedikit enam, "
+            "umumnya delapan, ada yang menyebut sembilan paspor) - naskah memakai 'delapan nama' dan angka itu "
+            "disebut sebagai laporan, bukan kepastian. Ringkasan sekunder: BBC News (2017), Wikipedia, NRK/BBC "
+            "'Death in Ice Valley', mentalfloss, norwegianamerican, historicmysteries."
+        ),
     ),
     dict(
         ep="EP09", day=4, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="D",
