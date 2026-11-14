@@ -182,7 +182,8 @@ def check(e):
     first = re.split(r"(?<=[.!?])\s+", e["hook"].strip())[0]
     killer = re.search(r"\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|"
                        r"pohon|pakaian|baju|koper|botol|tubuh|gigi|jendela|kapal|api|batu|"
-                       r"gunting|nama|surat|foto|jam|darah|tulang|tanah|air|asap)\b", first.lower())
+                       r"gunting|nama|surat|foto|jam|darah|tulang|tanah|air|asap|dompet|buku|novel|huruf|"
+                       r"kode|rekaman|catatan)\b", first.lower())
     if not (first.rstrip().endswith("?") or re.search(r"\d", first) or killer):
         fails.append("(1b) hook tidak pertanyaan, tidak berangka, dan tidak menyebut benda — "
                      "penonton tidak punya apa pun untuk dipegang di detik pertama")
