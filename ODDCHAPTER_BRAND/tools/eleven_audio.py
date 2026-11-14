@@ -121,7 +121,25 @@ def segments(ep):
     return out
 
 
+def _spoken_guard(text):
+    """Tolak markup sebelum teks dikirim ke mesin suara.
+
+    Aturan dari SKILLS/elevenlabs-tts-2026: yang diucapkan hanya kalimat.
+    Tag seperti [pause] atau <break> akan terbaca sebagai kata atau merusak
+    prosodi, dan tidak ada di format keluaran kita (mp3 per segmen).
+    """
+    import re as _re
+    for rx, label in (
+        (_re.compile(r"<[^>]{1,40}>"), "markup sudut"),
+        (_re.compile(r"\[[^\]]{1,40}\]"), "tag kurung siku"),
+        (_re.compile(r"\*\*|__|`"), "penanda markdown"),
+    ):
+        if rx.search(text):
+            raise SystemExit(f"teks narasi memuat {label}: {text[:60]!r} — bersihkan dulu")
+
+
 def tts(text, out_path, cfg):
+    _spoken_guard(text)
     payload = {
         "text": text,
         "model_id": cfg["model_id"],

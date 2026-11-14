@@ -1,0 +1,132 @@
+# 00_RULEBOOK — aturan yang dipakai, bukan yang dikagumi
+
+Ringkasan kerja dari dua belas dokumen root + skill pack TTS. Setiap baris di sini
+harus bisa dijawab "ya/tidak" saat memeriksa naskah. Teori lengkapnya ada di
+dokumen masing-masing; dokumen ini yang dibaca sambil menulis.
+
+Tanda: **[M]** = diperiksa mesin (`tools/check_story.py`), **[H]** = diperiksa manusia
+sebelum rekam.
+
+---
+
+## 1 · Editorial (`EDITORIAL-FONDATION.md`)
+
+- **[H]** Satu episode = satu alasan untuk peduli. Kalau alasannya "ini sedang viral", belum cukup.
+- **[H]** Pisahkan empat hal dan jangan campur: **fakta**, **tafsir**, **opini**, **hipotesis**.
+- **[M]** Tidak ada kata yang meminta perhatian alih-alih menunjukkan bukti
+  (`misteri`, `rahasia`, `mengerikan`, …).
+- **[H]** Kritik menyerang tindakan/klaim, bukan membuat tuduhan baru pada orang nyata.
+- **[H]** Penonton harus pulang membawa: sudut pandang baru, pemahaman baru, satu pertanyaan
+  yang tidak nyaman, atau satu kaitan yang tak terduga.
+
+## 2 · Cerita (`STORYTELLING-FONDAMENTAL.md`)
+
+- **[H]** Informasi menjawab "apa yang terjadi"; cerita menjawab "kenapa itu penting".
+- **[M]** Ada satu pertanyaan dramatik yang dipegang sampai turn — bukan tiga.
+- **[H]** Progresi: pertanyaan → informasi baru → ketegangan/kontradiksi → sudut pandang baru.
+- **[H]** Setiap babak harus mengubah pemahaman penonton, bukan menambah daftar fakta.
+
+## 3 · Hook (`HOOK ENGINEERING.md` + `00E` §6)
+
+- **[M]** Satu pintu per episode: pertanyaan / pernyataan / fakta / harapan / khayalan / adegan / dialog.
+- **[M]** Tidak dibuka dengan tahun atau angka.
+- **[M]** Hook ≤ 12 kata (batas keras 14), satu tarikan napas.
+- **[M]** Kalimat pertama berupa pertanyaan atau fakta yang bisa dicek.
+- **[M]** Ada satu entitas konkret yang disebut di hook (benda/orang/tempat yang bisa ditunjuk).
+- **[H]** Tidak ada sapaan, perkenalan kanal, ringkasan berita, atau "jangan lupa subscribe" di awal.
+- **[H]** Janji hook harus ditepati naskah; kalau tidak, ganti hook, bukan tambah drama.
+- **[H]** 0–3 s: pengamatan mengejutkan. 3–6 s: ketegangan. 6–10 s: arah cerita.
+
+Enam kegagalan yang dilarang: pembuka generik ("belakangan ini sedang ramai…"), clickbait
+kosong, drama berlebihan tanpa bukti, bahasa filosofis palsu, rentetan pertanyaan tanpa
+perkembangan, tuduhan tanpa dasar.
+
+## 4 · Ketegangan & retensi (`NARRATIVE-TENSION-&-AUDIENCE-RETENTION.md`)
+
+- **[H]** Ketegangan berasal dari **kesenjangan**: yang diketahui penonton vs yang diketahui tokoh.
+- **[H]** Satu loop utama; loop kecil boleh, tapi harus ditutup atau diwariskan ke episode lain.
+- **[H]** Eskalasi: setiap belokan harus membuat posisi tokoh lebih sempit, bukan lebih ramai.
+- **[H]** Jangan menahan informasi dengan cara menipu; tahan dengan cara **mengurutkan**.
+
+## 5 · Emosi & pacing (`EMOTIONAL-PACING.md`)
+
+- **[M]** Maksimal 2 kalimat per beat (hook/loop maksimal 3).
+- **[H]** Kontras menciptakan ritme: tenang → pukulan pendek → tenang lagi.
+- **[H]** Jeda dipakai di tempat yang bermakna (sebelum pembalik, sesudah satu fakta berat),
+  bukan setelah setiap kalimat.
+- **[M]** Tidak ada kata pengisi (`sangat`, `ternyata`, `sebenarnya`, `mungkin`, …).
+- **[H]** Jangan berteriak di setiap baris; baris paling menakutkan biasanya yang paling tenang.
+
+## 6 · Penutup (`MEMORABLE-ENDING.md`)
+
+- **[M]** Loop memanggil kembali kata/benda dari hook (echo), bukan merangkum.
+- **[H]** Pilih satu teknik: pergeseran sudut pandang, kesadaran yang tidak nyaman,
+  pertanyaan terbuka, kaitan tak terduga, atau kalimat yang bisa diulang.
+- **[H]** Dilarang menutup dengan ringkasan ("begitulah kisahnya", "sampai sekarang masih misteri").
+- **[M]** Frasa ringkasan dilarang (`sampai hari ini`, `hingga kini`, `banyak teori`, …).
+
+## 7 · Bahasa Indonesia manusia (`NATURAL-INDONESIAN-WRITING-HUMAN-VOICE.md`)
+
+- **[M]** Minimal tiga kalimat menyapa penonton (`kamu`/`kita`).
+- **[M]** Minimal dua ajakan melihat (`lihat`, `bayangkan`, `coba`, `ingat`).
+- **[M]** Minimal dua pertanyaan di seluruh naskah.
+- **[M]** Tanpa kosakata laporan (`tersebut`, `adapun`, `sebagaimana`, `diketahui bahwa`, …).
+- **[H]** Baca keras. Kalau lidah tersandung, kalimatnya belum selesai.
+- **[H]** Satu ide per klausa; koma untuk mengelompokkan, titik untuk menutup.
+
+## 8 · Suara & TTS (`AUDIO PRODUCTION.md` + `elevenlabs-tts-2026/`)
+
+Naskah → suara, aturan yang mengikat:
+
+- **[M]** Teks yang diucapkan bersih dari markup: tanpa `<tag>`, tanpa `[tag]`, tanpa `**`,
+  tanpa penomoran daftar, tanpa emoji.
+- **[M]** Tidak ada SSML. Model v3/v4 memakai tag kurung siku; kita **tidak memakai tag sama
+  sekali** — naskah kanal ini mengandalkan tanda baca dan urutan kalimat.
+- **[M]** Singkatan ditulis lengkap; angka dipastikan terbaca benar (uji dengan satu kalimat).
+- **[H]** Baseline selalu "tanda baca saja"; tag/penekanan hanya kalau terbukti perlu setelah
+  perbandingan A/B pada voice yang sama.
+- **[H]** Jeda presisi (mis. 1 detik) dibuat di timeline editor, bukan dikarang dari koma.
+- **[H]** Satu suara untuk seluruh kanal (`tools/voice.json`), settings tidak diubah tanpa uji A/B.
+- **[H]** Mix: VO paling jelas → efek penting → musik → ambience. Tidak ada musik yang bersaing
+  dengan frekuensi suara.
+
+### Catatan lapangan (bukan dari dokumen, dari produksi kanal ini)
+
+- Skill pack memakai contoh **v4**; kanal ini memakai `eleven_multilingual_v2` karena voice
+  `ojz6ro9PB1xDu44lymdM` sudah terbukti stabil di Bahasa Indonesia pada model itu.
+  Model bisa diganti lewat env `ELEVEN_MODEL` untuk uji A/B — hasilnya harus dibandingkan
+  sebelum dijadikan default.
+- Kunci API kanal hanya berizin `text_to_speech`; metadata voice tidak terbaca. Jangan
+  membangun alur yang bergantung pada `/voices` atau `/user`.
+- `speed` 1.00 menghasilkan ±140 kata/menit pada naskah kanal (target 135). Kalau perlu lebih
+  tenang, ubah `settings.speed` ke 0.96 dulu — jangan mengubah tempo dengan menambah kata.
+- Durasi nyata per segmen menentukan caption; selalu jalankan `build_timing.py` sesudah rekam.
+
+## 9 · Gambar, gerak, sunting
+
+- **[H]** `VISUAL-STORYTELLING.md`: gambar menjelaskan posisi, bukan menghias. Satu plate = satu
+  informasi baru.
+- **[H]** `IMAGE-GENERATION.md`: art direction ditulis sebelum prompt (gaya, palet, cahaya,
+  komposisi, rasio); prompt produksi menyebut lensa/ruang/jarak, bukan kata sifat.
+- **[H]** Tidak ada wajah korban yang dikarang. Rekonstruksi memakai benda, ruang, jejak.
+- **[H]** `ANIMATION&MOTION.md`: setiap gerak harus menjawab "apa yang berubah dan apa yang
+  harus penonton lihat".
+- **[H]** `VIDEO_&_EDITING.md`: potongan mengikuti beat audio nyata, bukan feeling; caption
+  selesai dibaca dalam ±1,5 detik.
+
+## 10 · Alat & QC (`TOOL-ORCHESTRATION.md`)
+
+- **[H]** Urutan alat tidak boleh dibalik: teks → gerbang → gambar → suara → timing → render → tayang.
+- **[H]** Setiap alat punya satu keluaran yang bisa diperiksa; kalau gagal, berhenti dan baca
+  pesannya, jangan mengulang perintah yang sama.
+- **[M]** Sebelum render: `check_story.py` LULUS, semua segmen `measured`, `sfx.wav`/`bed.wav` ada.
+- **[M]** Sebelum tayang: master −14 LUFS ±0,5 dan true peak ≤ −1,5 dBTP, sha256 tercatat.
+
+## 11 · Catatan penyimpangan
+
+Tempat mencatat kalau praktik berbeda dari dokumen, supaya tidak jadi kebiasaan diam-diam:
+
+| tanggal | dokumen | penyimpangan | alasan |
+|---|---|---|---|
+| 2026-11-14 | `elevenlabs-tts-2026` (v4) | memakai `eleven_multilingual_v2` | voice kanal sudah diuji stabil di model itu; v4 belum diuji A/B |
+| 2026-11-14 | `AUDIO PRODUCTION.md` §5 (marker `[PAUSE]`) | tidak memakai marker | tag tidak deterministik & terbaca sebagai kata pada sebagian model |

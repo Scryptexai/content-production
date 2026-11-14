@@ -158,3 +158,28 @@ nama di `ep["sfx"]`, lalu `timing.generated.json` dan `bed.wav`.
 **Efek suara & musik:** efek dibuat dari deskripsi bunyi (bukan nama kategori) di
 `SFX_PROMPTS` dalam `tools/eleven_audio.py`; musik hanya dipakai kalau memang
 perlu, karena `bed.wav` sudah mengisi ruang.
+
+---
+
+## 8 · RUJUKAN KITAB KERJA (14 Nov 2026)
+
+Pemilik menambahkan dua set dokumen yang kini menjadi skill tetap kanal:
+
+- **Dua belas dokumen root** (`HOOK ENGINEERING.md`, `AUDIO PRODUCTION.md`,
+  `STORYTELLING-FONDAMENTAL.md`, `EMOTIONAL-PACING.md`, `MEMORABLE-ENDING.md`,
+  `VISUAL-STORYTELLING.md`, `IMAGE-GENERATION.md`, `ANIMATION&MOTION.md`,
+  `VIDEO_&_EDITING.md`, `NARRATIVE-TENSION-&-AUDIENCE-RETENTION.md`,
+  `TOOL-ORCHESTRATION.md`, `EDITORIAL-FONDATION.md`), ditambah
+  `NATURAL-INDONESIAN-WRITING-HUMAN-VOICE.md` yang sebelumnya kosong dan kini terisi.
+- **`SKILLS/elevenlabs-tts-2026/`** — skill pack TTS (v4): tanda baca dulu, tag minimal,
+  tanpa SSML, QA dengar A/B.
+
+Indeks dan aturan kerjanya ada di **`SKILLS/README.md`**, **`SKILLS/AGENTS.md`**,
+**`SKILLS/WORKFLOW.md`**, dan **`SKILLS/00_RULEBOOK.md`**.
+
+Yang mengikat tetap dokumen ini dan `00B`/`00C`: kalau dokumen baru bertentangan,
+`00B`/`00C`/`00E` yang menang, karena di situlah gerbang otomatis dipasang.
+
+Aturan tambahan yang kini diperiksa mesin (lihat `tools/check_story.py` fungsi
+`tts_safe`): teks yang diucapkan harus bersih dari `<tag>`, `[tag]`, `**`, penomoran
+daftar, dan emoji. Singkatan ditulis lengkap; angka dipastikan terbaca benar.

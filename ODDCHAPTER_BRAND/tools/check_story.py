@@ -126,6 +126,42 @@ def voice(e):
     return fails
 
 
+
+# ── TTS (SKILLS/elevenlabs-tts-2026) ───────────────────────────────────────
+# Yang dikirim ke mesin suara hanyalah kalimat yang diucapkan. Tanda baca boleh,
+# markup tidak: tag akan terbaca sebagai kata, atau merusak prosodi.
+TTS_MARKUP = [
+    (re.compile(r"<[^>]{1,40}>"), "markup sudut (<break>, <prosody>, <emphasis>)"),
+    (re.compile(r"\[[^\]]{1,40}\]"), "tag kurung siku ([pause], [whispers], [tension])"),
+    (re.compile(r"\*\*|__|~~|`"), "penanda markdown (tebal/miring/kode)"),
+    (re.compile(r"(?m)^\s*#{1,6}\s"), "judul markdown"),
+    (re.compile(r"(?m)^\s*\d+[.)]\s"), "penomoran daftar"),
+    (re.compile(r"(?m)^\s*[-•]\s"), "butir daftar"),
+    (re.compile(r"[|\u2192\u2022\u2705\u274c]"), "simbol tabel/emoji"),
+]
+TTS_ABBREV = {"dll", "dsb", "dst", "yth", "sdr", "sdr.", "th", "thn", "km", "cm", "kg", "dgn", "spt"}
+
+
+def tts_safe(e):
+    """(TTS) naskah harus bisa dibaca mesin suara apa adanya."""
+    fails, notes = [], []
+    lines = [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]
+    for name, txt in lines:
+        for rx, label in TTS_MARKUP:
+            if rx.search(txt):
+                fails.append(f"(TTS) {name}: ada {label} — tidak boleh masuk naskah yang diucapkan")
+        low = txt.lower()
+        ab = sorted({w for w in re.findall(r"[a-zA-Z]+", low) if w in TTS_ABBREV})
+        if ab:
+            notes.append(f"(TTS) {name}: singkatan {', '.join(ab)} — tulis lengkap supaya tidak dibaca huruf per huruf")
+        if re.search(r"\d", txt):
+            notes.append(f"(TTS) {name}: ada angka — pastikan dibaca benar (mis. '1970' dibaca 'sembilan belas tujuh puluh')")
+        for sent in sentences(txt):
+            if len(sent.split()) > 18:
+                notes.append(f"(TTS) {name}: satu kalimat {len(sent.split())} kata — mesin suara butuh napas, pecah di koma")
+    return fails, notes
+
+
 def check(e):
     fails, notes = [], []
 
@@ -289,6 +325,9 @@ def check(e):
         notes.append("(6) suara laporan — episode ini tayang sebelum 00E; bukan contoh")
     else:
         fails += voice(e)
+        _tf, _tn = tts_safe(e)
+        fails += _tf
+        notes += _tn
 
     return fails, notes, sh, secs
 
