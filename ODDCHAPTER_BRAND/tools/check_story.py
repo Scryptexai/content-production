@@ -93,6 +93,14 @@ def voice(e):
     script = " ".join([e["hook"]] + [t for _, t in e["beats"]] + [e["loop"]])
     low = script.lower()
 
+    # 00E §6 · pintu masuk: tanggal di depan = kalimat berita, bukan hook
+    hook = e["hook"].strip()
+    if re.match(r"^\s*(\d|tahun\b|pada\s+tahun\b)", hook, re.I):
+        fails.append("(6) hook dibuka dengan angka/tahun — itu kalimat berita; "
+                     "pakai pertanyaan/pernyataan/fakta/harapan/khayalan/adegan/dialog")
+    if len(hook.split()) > 12:
+        fails.append(f"(6) hook {len(hook.split())} kata — di atas 12 ia kehilangan ritme ngobrol")
+
     bad = sorted({w for w in words(script) if w in REPORT_WORDS})
     if bad:
         fails.append(f"(6) kosakata laporan: {', '.join(bad)} — ganti dengan kalimat orang")

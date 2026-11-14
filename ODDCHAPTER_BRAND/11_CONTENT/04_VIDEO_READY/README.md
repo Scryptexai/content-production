@@ -16,7 +16,7 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP03 | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | 71,80 s | 21,9 MB | `1chsdzAkdplfm3JdmBHOefj5MQP_khUiZ` | `10_FILM/remotion/output/episodes/EP03_1080x1920_master.mp4` |
 | EP04 | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN (JALAN KE ATAS) | 70,81 s | 17,3 MB | `1O2onobslZxZo5miA83s6d5cEHcfK1OGL` | `10_FILM/remotion/output/episodes/EP04_1080x1920_master.mp4` |
 | EP05 | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN (ROANOKE) | 68,84 s | 17,6 MB | `1ls-1EVOdp-2L81QvNpyi6QjzqmNHDdJY` | `10_FILM/remotion/output/episodes/EP05_1080x1920_master.mp4` |
-| EP06 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 57,92 s | 16,7 MB | `1NHnFpmKd2YsTPEhzuORBkQj4b4xAn-n4` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
+| EP06 v2 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 54,38 s | 16,0 MB | `1O4HvhK22QLjxXuLkhOzngAH-WS_jGLtH` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`
 Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`

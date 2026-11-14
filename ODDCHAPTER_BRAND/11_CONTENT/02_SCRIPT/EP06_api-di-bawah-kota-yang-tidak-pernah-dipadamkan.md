@@ -23,7 +23,7 @@
 
 ## 1 · HOOK (0–3 s)
 
-> 1962. Api ini dinyalakan di bawah sebuah kota. Sekarang lihat rumahnya.
+> Pernah membayangkan tinggal di kota yang apinya tidak bisa dimatikan?
 
 Visual: api di lubang tambang. Hook menunjuk benda di layar (*“api ini”*,
 *“rumahnya”*), bukan menjelaskan peristiwa.
@@ -32,14 +32,14 @@ Visual: api di lubang tambang. Hook menunjuk benda di layar (*“api ini”*,
 
 | bagian | VO |
 |---|---|
-| TANYA | Coba bayangkan api itu di bawah rumahmu. Kamu akan pindah ke mana? |
-| RELATE | Kita sering bertahan di rumah yang sudah tidak aman. |
-| SETUP | Mei 1962. Lima petugas membakar sampah di lubang bekas tambang. |
-| TENSION | Mereka hanya membakar sampah. Api itu masuk ke lapisan batu bara. |
-| TENSION | Tahun 1981, seorang anak hampir jatuh ke lubang uap di halaman neneknya. |
-| TURN | Pemerintah tidak memilih memadamkan api. Mereka membayar warga untuk pindah. |
-| CONSEQUENCE | Tahun 1992, negara mengambil seluruh kota. Yang tinggal bukan lagi pemilik. |
-| CONSEQUENCE | Sekarang lima orang masih tinggal di atasnya. Kalau kamu salah satunya, kamu bertahan? |
+| TANYA | Bayangkan lantai rumahmu hangat. Kamu akan pindah, atau pura-pura tidak tahu? |
+| RELATE | Kita pintar mencari alasan untuk tetap tinggal di rumah tua itu. |
+| SETUP | Lima orang membakar sampah di lubang bekas tambang pada 1962. |
+| TENSION | Mereka cuma ingin bersih-bersih. Apinya masuk ke batu bara, dan tinggal di sana. |
+| TENSION | Sembilan belas tahun kemudian, seorang anak nyaris jatuh ke dalam lubang di halaman. |
+| TURN | Yang mereka pilih bukan memadamkan api. Mereka memindahkan kotanya. |
+| CONSEQUENCE | Lihat peta kota itu. Sejak 1992 semua rumah jadi milik negara. |
+| CONSEQUENCE | Sekarang tinggal lima orang. Kamu masih mau tinggal di atas api? |
 
 ## 3 · TURN
 
@@ -50,7 +50,7 @@ kotanya yang dipindahkan.
 
 ## 4 · ECHO
 
-> Apinya masih menyala. Di bawah jalan yang sekarang kosong.
+> Apinya masih menyala. Di bawah jalan yang tidak lagi dilewati siapa pun.
 
 Kalimat terakhir memanggil kata dari hook (*api*, *bawah*) dan menutup di gambar
 yang sama dengan beat pertama: api, bukan kota.
@@ -77,7 +77,9 @@ yang sama dengan beat pertama: api, bukan kota.
 
 ## 5 · TEKS DI LAYAR
 
-Cue (4): `BATU BARA` · `UAP PANAS` · `TANPA PEMILIK` · `MASIH MENYALA`  
+Cue (4): `BATU BARA` · `UAP PANAS` · `TANPA PEMILIK` · `MASIH MENYALA`
+
+Hook memakai pintu **pertanyaan** (00E §6); tanggal tidak lagi jadi kata pertama.  
 Stamp angka (2): `1962` (setup) · `5` (consequence terakhir)
 
 Cue sengaja **tidak** mengulang caption. Sebelumnya `1992` muncul tiga kali dalam

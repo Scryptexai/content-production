@@ -74,3 +74,57 @@ tanpa terdengar aneh. Itu tujuannya.
 Naskah lama (EP01–EP05) sengaja dibiarkan: videonya sudah tayang, dan mengubah
 naskahnya tidak mengubah apa pun di layar. Yang wajib memakai aturan ini adalah
 setiap episode yang belum dirender, mulai EP06.
+
+---
+
+## 6 · HOOK: TUJUH PINTU MASUK, SATU LARANGAN
+
+Keluhan kedua pemilik (13 Nov 2026): *“kalimat awalnya masih tidak punya hook…
+gaya bahasanya masih terdengar orang yang baca koran, bukan yang sedang ngajak
+ngobrol.”*
+
+Penyebabnya bukan kata pembukanya, tetapi **kebiasaan membuka dengan tanggal**:
+`1962. Api ini dinyalakan…` Itu kalimat pembuka berita. Tanggal adalah fakta yang
+paling tidak menarik untuk didengar pertama, dan menaruhnya di depan memaksa
+narator berhenti, mengambil napas, lalu membacakan. Penonton mendengarnya sebagai
+pembaca, bukan sebagai teman ngobrol.
+
+**Larangan:** hook tidak boleh diawali tahun/angka. Tanggal masuk nanti — sebagai
+kejutan (“Sembilan belas tahun kemudian…”), bukan sebagai pintu.
+
+### Tujuh pintu yang boleh dipakai
+
+| pintu | bentuk | contoh untuk kasus nyata |
+|---|---|---|
+| **Pertanyaan** | pertanyaan yang penonton jawab di kepala | “Kamu pernah tinggal di rumah yang lantainya hangat, padahal di luar musim dingin?” |
+| **Pernyataan** | kalimat datar yang isinya tidak masuk akal | “Ada kota di Pennsylvania yang menyala dari bawah.” |
+| **Fakta** | satu angka yang mengejutkan, bukan tanggal | “Sebuah api sudah menyala di bawah kota ini lebih lama dari usia kamu.” |
+| **Harapan** | keinginan sederhana yang lalu dilawan | “Mereka cuma ingin kotanya bersih sebelum libur panjang.” |
+| **Khayalan** | ajakan membayangkan diri sendiri di sana | “Bayangkan lantai rumahmu hangat, dan kamu tidak tahu kenapa.” |
+| **Adegan** | satu gambar yang bergerak | “Lima orang berdiri di tepi lubang tambang, membawa korek api.” |
+| **Dialog** | kalimat yang pernah diucapkan | “‘Apinya tidak akan sampai ke rumah.’ Kalimat itu diucapkan tahun 1962.” |
+
+Aturan memilih: **satu pintu saja per episode.** Dua pintu di kalimat pertama
+terdengar seperti iklan. Sesudah pintu, langsung beri satu detail yang bisa
+dilihat (benda, bagian tubuh, cuaca), bukan penjelasan.
+
+### Ritme dan intonasi (yang membuatnya terdengar ngobrol)
+
+1. **Panjang-pendek bergantian.** Kalimat pembuka boleh 10–14 kata; kalimat
+   sesudahnya dipotong jadi 3–6 kata. Contoh: *“Ada kota di Pennsylvania yang
+   menyala dari bawah. Api itu belum pernah mati.”*
+2. **Satu kata yang ditekan per baris.** Bukan kapital di layar — pilih kata yang
+   paling mengejutkan dan letakkan di akhir kalimat.
+3. **Jeda = titik, bukan koma.** Di VO, koma hilang. Kalau butuh jeda, potong
+   kalimatnya.
+4. **Tanpa kata sambung pembuka.** “Sementara itu”, “Selain itu”, “Kemudian”
+   adalah tanda orang membaca. Mulai langsung dari subjek.
+5. **Ucapkan seperti memberi tahu teman di meja sebelah**, bukan mengumumkan di
+   panggung: tidak ada “perlu diketahui”, tidak ada “menurut catatan”.
+6. **Satu baris = satu tarikan napas.** Kalau satu baris tidak muat diucapkan
+   dalam satu napas, baris itu terlalu panjang.
+
+### Gerbang otomatis
+
+`check_story.py` sekarang menolak hook yang diawali angka/tahun, dan mencatat
+kalau hook lebih dari 12 kata.

@@ -1,11 +1,9 @@
 {
   "episode": "EP06",
-  "status": "published",
+  "status": "requested",
   "visibility": "public",
   "publishNow": true,
-  "requested_at": "2026-11-13T22:52:00Z",
-  "catatan": "Push berkas ini = EP06 diunduh dari Drive (id 1NHnFpmKd2YsTPEhzuORBkQj4b4xAn-n4), sha256 diperiksa, lalu tayang publik. 57,92 s - 16,7 MB - -14,8 LUFS. Naskah pakai suara narator baru (00E).",
-  "published_at": "2026-11-13T22:52:47Z",
-  "youtube_url": "https://www.youtube.com/watch?v=zFxJeWguVgg",
-  "post_id": "6af794b6325c9d8126ba9279"
+  "force": true,
+  "requested_at": "2026-11-14T05:25:00Z",
+  "catatan": "EP06 v2: naskah ditulis ulang dengan hook pertanyaan dan bahasa ngobrol (00E). force=true karena v1 (zFxJeWguVgg) sudah tercatat; v2 ini yang dipakai. 54,38 s - 16,0 MB - -14,9 LUFS."
 }
