@@ -1,0 +1,112 @@
+{
+  "episode": "EP08",
+  "voice_id": "ojz6ro9PB1xDu44lymdM",
+  "narration_seconds": 50.039,
+  "files": [
+    {
+      "file": "00_hook.mp3",
+      "text": "Semua label di bajunya dipotong. Sebelum dia hilang.",
+      "bytes": 90476,
+      "seconds": 3.715,
+      "sha256": "27c6a0891e6ab82b0a8d729de1273fa5cace97c387afca02e0abab03a56cc7ab"
+    },
+    {
+      "file": "01_tanya.mp3",
+      "text": "Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang?",
+      "bytes": 107180,
+      "seconds": 4.412,
+      "sha256": "56f120099eb40b6f6232065d4d3815fa1ba35c71c4293c7cfc0f149215cfb5b8"
+    },
+    {
+      "file": "02_relate.mp3",
+      "text": "Kita sembunyikan nama di internet. Dia pakai gunting.",
+      "bytes": 88172,
+      "seconds": 3.622,
+      "sha256": "7c04f8329ce8682f19c0e36cc4ba0a49dd0917822ef35cc368e66e2989ab0087"
+    },
+    {
+      "file": "03_setup.mp3",
+      "text": "Tahun 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu.",
+      "bytes": 116396,
+      "seconds": 4.787,
+      "sha256": "d73da9d23d4b657b7b9bc1d4ac2f99ac67065a7f14e4fa19c3e4539525b58fa3"
+    },
+    {
+      "file": "04_tension.mp3",
+      "text": "Tubuhnya hangus dari depan. Punggungnya utuh.",
+      "bytes": 70316,
+      "seconds": 2.879,
+      "sha256": "b66bb134580ec4eed4f0e06751ad1b11412a3f588c2127c8b06155c228324664"
+    },
+    {
+      "file": "05_tension.mp3",
+      "text": "Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala.",
+      "bytes": 103148,
+      "seconds": 4.226,
+      "sha256": "567a1929ca7d06692cc9a22800537590f10767ed968f95aa9c94059d19668239"
+    },
+    {
+      "file": "06_turn.mp3",
+      "text": "Orang mau mati tidak memotong label. Tidak mengerok tanda di botol.",
+      "bytes": 110636,
+      "seconds": 4.551,
+      "sha256": "aa9d012577846608671b7d2030199b6f4f0196fea22700724069a60e7b31841d"
+    },
+    {
+      "file": "07_consequence.mp3",
+      "text": "Lihat kopernya. Wig, uang asing, delapan nama.",
+      "bytes": 74348,
+      "seconds": 3.045,
+      "sha256": "1a7aff1fb9718a7809309a392043aad1b32f309b2cbe209a1a36445271a1eb12"
+    },
+    {
+      "file": "99_loop.mp3",
+      "text": "Semua label hilang. Kamu tidak akan tahu namanya. Kenapa?",
+      "bytes": 95660,
+      "seconds": 3.922,
+      "sha256": "5479970e6aeea7090b2a1295c18ab6833d4b08609557d9bb4c4c6f9187f42fea"
+    },
+    {
+      "file": "fx/boom.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "2e08ed92f5ed4fa91e9c03fab0bb0fabdd2340bc2d5f4b1eade665f2fea23fb6"
+    },
+    {
+      "file": "fx/clunk.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "ff5d89d8515bcd1ec9b5f558da20fd45d367bc66161705ac1a55e73d85fe1953"
+    },
+    {
+      "file": "fx/engine.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "668afd870be4d145f90962787b0a6d0984280714d6a73a85e70437c91d8dee1f"
+    },
+    {
+      "file": "fx/gust.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "09cb3d8c47e14fc6215aafc9a2ebc47e3257b5fb00c1d258c872f5f76a27f1e2"
+    },
+    {
+      "file": "fx/page.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "d20e724d3e87a26e22160d2316b5e4863d9cdd95330038216cd744428d11c76c"
+    },
+    {
+      "file": "fx/rustle.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "29c504d0df5795e92aa9eb4b4d646bb1ac5f9d80706cf106f618f760fe359e12"
+    }
+  ]
+}

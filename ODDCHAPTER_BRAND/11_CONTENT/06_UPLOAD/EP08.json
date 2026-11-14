@@ -26,6 +26,7 @@
   "madeForKids": false,
   "containsSyntheticMedia": true,
   "visibility": "public",
+<<<<<<< HEAD
   "drive_file_id": "1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm",
   "duration_seconds": 42.24,
   "size_bytes": 12978639,
@@ -36,19 +37,42 @@
     "f0_hz": 116.8,
     "consistent": "LULUS (voice_consistency.py)",
     "catatan": "ElevenLabs tidak dipakai lagi (perintah pemilik 16 Nov 2026)."
+=======
+  "drive_file_id": "1_aFdKTXtaT1ycHe2IbCHhOawUNoS3CQx",
+  "duration_seconds": 38.2,
+  "size_bytes": 11707094,
+  "sha256": "db5893725c036649fdb0ab200c0f52201a9a9701c970c34f9162bfd85d088b24",
+  "voice": {
+    "name": "Narator internal kanal",
+    "voice_id": "ojz6ro9PB1xDu44lymdM",
+    "model": "eleven_turbo_v2_5",
+    "wpm_measured": 138,
+    "consistency": "LULUS (voice_consistency.py)"
+>>>>>>> b5f2ab5ab9754f280bb4c7d681328eade80f5afb
   },
   "mix": {
     "master_lufs": -14.0,
     "true_peak_db": -1.7,
+<<<<<<< HEAD
     "bed_lufs": -38.0,
     "vo_bed_separation_db": 17.6,
+=======
+    "bed_lufs": -36.0,
+    "vo_bed_separation_db": 17.1,
+>>>>>>> b5f2ab5ab9754f280bb4c7d681328eade80f5afb
     "vo_rms_db": -20.0,
     "vo_start": 0.15
   },
   "drive": {
     "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
+<<<<<<< HEAD
     "file_id": "1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm",
     "name": "EP08_1080x1920_master_v5_internal.mp4",
     "link": "https://drive.google.com/file/d/1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm/view"
+=======
+    "file_id": "1_aFdKTXtaT1ycHe2IbCHhOawUNoS3CQx",
+    "name": "EP08_1080x1920_master_v4.mp4",
+    "link": "https://drive.google.com/file/d/1_aFdKTXtaT1ycHe2IbCHhOawUNoS3CQx/view"
+>>>>>>> b5f2ab5ab9754f280bb4c7d681328eade80f5afb
   }
 }

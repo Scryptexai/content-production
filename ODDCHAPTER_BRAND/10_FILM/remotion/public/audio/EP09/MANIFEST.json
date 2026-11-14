@@ -1,0 +1,105 @@
+{
+  "episode": "EP09",
+  "voice_id": "ojz6ro9PB1xDu44lymdM",
+  "narration_seconds": 48.77,
+  "files": [
+    {
+      "file": "00_hook.mp3",
+      "text": "Di sakunya cuma kertas: TAMAM SHUD. Tidak ada dompet, tidak ada nama.",
+      "bytes": 126764,
+      "seconds": 5.229,
+      "sha256": "0dd80412ccdd0a20656fde33eddbbf6a43fda9f15c9e3718e4e9004d78d46f94"
+    },
+    {
+      "file": "01_tanya.mp3",
+      "text": "Coba lihat dua kata ini. Ada yang bisa kamu baca?",
+      "bytes": 104876,
+      "seconds": 4.318,
+      "sha256": "f42ea107d0f8fa2b204f70f5bd74934adcb29b1d8c596f3a3d6bfe6c5142e6c6"
+    },
+    {
+      "file": "02_relate.mp3",
+      "text": "Kita tinggalkan nama di setiap benda. Dia mencopot semuanya.",
+      "bytes": 97388,
+      "seconds": 3.994,
+      "sha256": "bb5ff64345dcd29c82c3cf2385c1725fec01d254676d1db7d5b1f6dfca976d62"
+    },
+    {
+      "file": "03_setup.mp3",
+      "text": "Desember 1948, pantai Somerton, Australia. Pria rapi, tanpa luka.",
+      "bytes": 110636,
+      "seconds": 4.546,
+      "sha256": "c69c9d63b827fb02ce5cf659cfa469f56d7ff0ef8dd1f0fc7e26f33688c34691"
+    },
+    {
+      "file": "04_tension.mp3",
+      "text": "Lihat pakaiannya. Setiap label dipotong.",
+      "bytes": 55916,
+      "seconds": 2.268,
+      "sha256": "e4f204e648865a10f1efdf647ab266a4bb5f54c805d22856ce9310ba51788dad"
+    },
+    {
+      "file": "05_tension.mp3",
+      "text": "Kertas itu sobekan dari buku puisi. Sisa halaman penuh huruf acak.",
+      "bytes": 111788,
+      "seconds": 4.598,
+      "sha256": "75418b040590d85008fc0c8b7b819c71a711b2e3049c21dc41083e9bb05ab67c"
+    },
+    {
+      "file": "06_turn.mp3",
+      "text": "Tujuh puluh tahun dia disebut mata-mata. Lalu DNA bilang lain.",
+      "bytes": 108332,
+      "seconds": 4.458,
+      "sha256": "78fd39a4d1a09f34e2289477e68b5e682b228f16a8f50fe9214e0751807cd33f"
+    },
+    {
+      "file": "07_consequence.mp3",
+      "text": "Dia teknisi listrik dari Melbourne. Namanya Carl Webb.",
+      "bytes": 85292,
+      "seconds": 3.492,
+      "sha256": "9dc5f628b8bf94fca29ec11f557982c148536e2542ef45344c67023e3b30ea30"
+    },
+    {
+      "file": "99_loop.mp3",
+      "text": "Kertas itu masih dua kata. Kamu punya tebakan?",
+      "bytes": 84716,
+      "seconds": 3.467,
+      "sha256": "65a5c7b5b901761fc2088497384aded402c6187ced52cc8a8af6ca34ed3798c7"
+    },
+    {
+      "file": "fx/boom.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "1c5fc0c4c02d636e7745b193717aec3711350897a077a3b1b6090067d45cdd3c"
+    },
+    {
+      "file": "fx/clunk.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "000ede93ab2d12c2abfc1bb51b3a194428fb318fa55f60015e3f407d8568c8b6"
+    },
+    {
+      "file": "fx/gust.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "21131ecb6b6bc398cee46a7fc774f647e945dcfc94763a45b9a6e14ae5dd9cee"
+    },
+    {
+      "file": "fx/page.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "2110fbe45e7dfa2bcd3604bcc9d0c314113ade74a4b23939b081ab922c48bb50"
+    },
+    {
+      "file": "fx/rustle.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "9cba210493c1c0b7af84f68c193911306b36980ac955b5fbb01be186ad652863"
+    }
+  ]
+}
