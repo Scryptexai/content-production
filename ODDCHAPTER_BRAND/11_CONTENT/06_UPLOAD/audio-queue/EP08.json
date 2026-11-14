@@ -1,10 +1,8 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "generated",
+  "status": "requested",
   "force": true,
-  "requested_at": "2026-11-15T03:40:00Z",
-  "catatan": "Narasi ulang: Denas + koreksi tempo otomatis (atempo ke 138 wpm) + kompresor ringan. Tanpa unggah.",
-  "finished_at": "2026-11-14T16:26:57Z",
-  "run_id": "43615559482"
+  "requested_at": "2026-11-15T04:05:00Z",
+  "catatan": "Narasi Denas + atempo arah benar (target/wpm) + kompresor. Tanpa unggah."
 }

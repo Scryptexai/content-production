@@ -142,7 +142,9 @@ def polish(path, cfg, words):
     wpm = words / dur * 60
     tempo = 1.0
     if abs(wpm - target_wpm) / target_wpm > tol:
-        tempo = min(1.30, max(0.72, wpm / target_wpm))
+        # atempo > 1 = lebih cepat. Jadi rasio yang benar adalah target/wpm:
+        # segmen 200 wpm harus DIPERLAMBAT (0,69), bukan dipercepat.
+        tempo = min(1.30, max(0.70, target_wpm / wpm))
     chain = ["highpass=f=70", "lowpass=f=12000"]
     if tempo != 1.0:
         chain.append(f"atempo={tempo:.3f}")
