@@ -162,6 +162,7 @@ jobs:
             printf '::error title=audio gagal::%s\n' "$MSG"
             exit "$RC"
           fi
+          echo "::notice::berkas setelah generate: $(ls -1 "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE" 2>/dev/null | tr '\n' ' ')"
           echo "--- durasi tiap segmen"
           for f in "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE"/*.mp3; do
             [ -f "$f" ] || continue
@@ -277,12 +278,14 @@ jobs:
           }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
           print(f"manifest: {len(items)} berkas, narasi {total} s")
           PY
+          echo "::notice::git sebelum simpan: $(git status --porcelain "$DIR" | head -8 | tr '\n' ';')"
           git config user.name "oddchapter-audio"
           git config user.email "actions@users.noreply.github.com"
           git add -f "$DIR"/*.mp3 "$DIR"/fx/*.mp3 "$DIR/MANIFEST.json"
           git diff --cached --quiet && { echo "::notice::tidak ada perubahan audio"; exit 0; }
           git commit -m "audio $EPISODE: narasi voice ojz6ro9PB1xDu44lymdM + fx (ElevenLabs)"
-          git push
+          echo "::notice::commit: $(git log --oneline -1)"
+          git push || { echo "::error::push audio ditolak"; exit 1; }
 
       - name: Catat status antrean
         if: always() && steps.req.outputs.queue != ''
