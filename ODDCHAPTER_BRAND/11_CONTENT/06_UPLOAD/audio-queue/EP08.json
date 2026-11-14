@@ -1,10 +1,8 @@
 {
   "episode": "EP08",
   "mode": "check",
-  "status": "failed",
+  "status": "requested",
   "force": false,
-  "requested_at": "2026-11-14T11:20:00Z",
-  "catatan": "Uji koneksi ElevenLabs + voice_id ojz6ro9PB1xDu44lymdM. Setelah ini mode diganti all (narasi + efek + timing + bed).",
-  "finished_at": "2026-11-14T13:25:39Z",
-  "run_id": "43599656731"
+  "requested_at": "2026-11-14T11:32:00Z",
+  "catatan": "Uji koneksi ElevenLabs + voice_id ojz6ro9PB1xDu44lymdM. Setelah ini mode diganti all (narasi + efek + timing + bed)."
 }
