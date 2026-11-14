@@ -92,10 +92,16 @@ Naskah → suara, aturan yang mengikat:
 
 ### Catatan lapangan (bukan dari dokumen, dari produksi kanal ini)
 
-- Skill pack memakai contoh **v4**; kanal ini memakai `eleven_multilingual_v2` karena voice
-  `ojz6ro9PB1xDu44lymdM` sudah terbukti stabil di Bahasa Indonesia pada model itu.
-  Model bisa diganti lewat env `ELEVEN_MODEL` untuk uji A/B — hasilnya harus dibandingkan
-  sebelum dijadikan default.
+- **Model kanal: `eleven_turbo_v2_5`, speed 0.85.** Bukan pilihan selera: `eleven_multilingual_v2`
+  terbukti mengambil 203–219 kata/menit pada kalimat 12 kata dan **mengabaikan `speed`**
+  (berkas byte-identik pada dua nilai speed berbeda). Turbo v2.5 @0.85 = 142 wpm dan
+  pertanyaan berakhir naik. Diukur dengan `tools/speech_prosody.py`, 14 Nov 2026.
+- **Jeda di dalam satu berkas bukan milik kita.** Model yang menaruhnya. Karena itu jeda
+  dikendalikan dengan memecah naskah menjadi satu breath group per segmen, lalu mengatur
+  `GAP` di timeline — bukan dengan menambah koma atau elipsis.
+- **Setiap rekaman diukur, bukan dikira.** `python3 tools/speech_prosody.py EPxx` mencetak
+  wpm, jeda ≥140 ms, dan arah nada 300 ms terakhir. Target: 120–160 wpm, tanpa jeda
+  ≥400 ms di tengah frasa, pertanyaan tidak jatuh di bawah −1,5 semit.
 - Kunci API kanal hanya berizin `text_to_speech`; metadata voice tidak terbaca. Jangan
   membangun alur yang bergantung pada `/voices` atau `/user`.
 - `speed` 1.00 menghasilkan ±140 kata/menit pada naskah kanal (target 135). Kalau perlu lebih
@@ -128,5 +134,6 @@ Tempat mencatat kalau praktik berbeda dari dokumen, supaya tidak jadi kebiasaan 
 
 | tanggal | dokumen | penyimpangan | alasan |
 |---|---|---|---|
-| 2026-11-14 | `elevenlabs-tts-2026` (v4) | memakai `eleven_multilingual_v2` | voice kanal sudah diuji stabil di model itu; v4 belum diuji A/B |
+| 2026-11-14 | `elevenlabs-tts-2026` (v4) | memakai `eleven_turbo_v2_5` @ speed 0.85, bukan v4 | v4 tidak mendukung `speed`; tempo 187 wpm terlalu cepat. Turbo v2.5 memberi kendali tempo yang dibutuhkan |
+| 2026-11-14 | `AUDIO PRODUCTION.md` §5 (marker `[PAUSE]`) | tidak memakai marker | bagian dari aturan "tanpa tag": jeda dibuat dengan memecah segmen |
 | 2026-11-14 | `AUDIO PRODUCTION.md` §5 (marker `[PAUSE]`) | tidak memakai marker | tag tidak deterministik & terbaca sebagai kata pada sebagian model |

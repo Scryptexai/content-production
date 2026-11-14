@@ -140,10 +140,10 @@ memilih suara per episode.
 |---|---|
 | penyedia | ElevenLabs |
 | **voice_id** | **`ojz6ro9PB1xDu44lymdM`** |
-| model | `eleven_multilingual_v2` |
+| model | `eleven_turbo_v2_5` · **speed 0.85** (diganti 14 Nov 2026, lihat catatan di bawah) |
 | format | `mp3_44100_192` |
 | settings | stability 0.38 · similarity 0.82 · style 0.35 · speaker boost aktif · speed 1.00 |
-| kecepatan target | ±135 kata/menit (hasil EP08: 105 kata = 43,98 s) |
+| kecepatan target | 125–145 kata/menit (terukur EP08 v2: 131 wpm) |
 
 Sumber kebenaran: `tools/voice.json`. Naskah tidak menyimpan id suara; skrip
 `tools/eleven_audio.py` membacanya dari sana, jadi mengganti suara hanya boleh
@@ -183,3 +183,21 @@ Yang mengikat tetap dokumen ini dan `00B`/`00C`: kalau dokumen baru bertentangan
 Aturan tambahan yang kini diperiksa mesin (lihat `tools/check_story.py` fungsi
 `tts_safe`): teks yang diucapkan harus bersih dari `<tag>`, `[tag]`, `**`, penomoran
 daftar, dan emoji. Singkatan ditulis lengkap; angka dipastikan terbaca benar.
+
+**Kenapa model diganti (14 Nov 2026).** VO EP08 pertama terdengar terlalu cepat,
+jedanya salah tempat, dan pertanyaan berakhir turun. Setelah diukur
+(`tools/speech_prosody.py`): `eleven_multilingual_v2` mengambil tempo 203–219
+kata/menit pada kalimat 12 kata **dan mengabaikan parameter `speed` sepenuhnya**
+(dua berkas dengan speed berbeda byte-identik). `eleven_turbo_v2_5` pada kalimat
+yang sama dengan speed 0.85: 142 wpm, dan pertanyaan berakhir naik (+0,97 semit).
+Karena itu model kanal sekarang `eleven_turbo_v2_5`, speed 0.85.
+
+**Aturan naskah yang lahir dari kejadian itu:**
+
+1. Satu **breath group** per segmen. Kalau satu segmen memuat dua gagasan besar,
+   jeda akan jatuh di tempat yang salah — dan kita tidak bisa memindahkannya,
+   karena jeda di dalam berkas ditentukan model, bukan kita.
+2. Jeda antar kalimat dikendalikan di timeline (`GAP` di `build_timing.py`),
+   bukan dikarang lewat koma.
+3. Pertanyaan harus berakhir naik. Ini diukur, bukan dirasa: `tail_semit` ≥ −1,5.
+4. Kalau satu segmen >160 wpm, pecah kalimatnya — jangan menaikkan `speed`.

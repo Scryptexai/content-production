@@ -21,7 +21,7 @@ brief → premis → karakter/entitas → beat kausal → naskah (suara kanal)
 | 6 | audit | `EDITORIAL-FONDATION.md` §5 + tabel audit `AGENTS.md` §3 | catatan revisi | tidak ada klaim tanpa sumber |
 | 7 | gambar | `VISUAL-STORYTELLING.md` + `IMAGE-GENERATION.md` | 9–10 plate 9:16 | satu gambar melekat, tanpa wajah karangan |
 | 8 | thumbnail | `03_THUMBNAIL` + aturan 1–3 kata | jpg 1080×1920 | teks ≤3 kata, terbaca di layar kecil |
-| 9 | suara | `elevenlabs-tts-2026/SKILL.md` + `voice.json` | mp3 per segmen | markup bersih, `MANIFEST.json` ada |
+| 9 | suara | `elevenlabs-tts-2026/SKILL.md` + `voice.json` | mp3 per segmen | markup bersih, `MANIFEST.json` ada, **prosodi terukur** (`speech_prosody.py`) |
 | 10 | efek & bed | `eleven_audio.py --only sfx/place`, `build_bed.py` | `sfx.wav`, `bed.wav` | efek tidak menutupi kata |
 | 11 | timing | `build_timing.py` | `timing.generated.json` | semua segmen `measured: true` |
 | 12 | render | `render-episode.mjs` | mp4 1080×1920 | masih + frame cek visual |
