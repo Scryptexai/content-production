@@ -632,11 +632,20 @@ EPISODES = [
         bed="audio/EP09/bed.wav",
         plate="paper",
         sumber=(
-            "NEEDS-SOURCE — Kasus Somerton Man (1 Desember 1948, pantai Somerton, Australia Selatan). "
-            "Yang dipakai: tanpa dompet/tanda pengenal, label pakaian dipotong, secarik kertas "
-            "TAMAM SHUD dari Rubaiyat Omar Khayyam, kode tak terpecahkan, identifikasi 2022 lewat DNA "
-            "silsilah sebagai Carl Webb, pembuat alat listrik dari Melbourne. Belum dibaca langsung: "
-            "laporan Colleen Fitzpatrick/Derek Abbott dan berkas koroner asli — verifikasi sebelum tayang."
+            "VERIFIED 2026-11-06 — 1 Desember 1948, pantai Somerton, Adelaide: pria tak dikenal tewas; tanpa dompet atau "
+            "tanda pengenal; label pakaian dipotong, termasuk merek 'Keane'. Berbulan kemudian, di fob pocket yang "
+            "dijahit di celana, ditemukan gulungan kertas 'Tamám Shud' (Persia: 'sudah berakhir') dari halaman terakhir "
+            "Rubaiyat Omar Khayyam, edisi FitzGerald cetakan Whitcombe & Tombs 1941; buku itu lalu ditemukan di mobil tak "
+            "terkunci dekat pantai, dengan lima baris huruf kapital di belakangnya (tak pernah dipecahkan secara resmi) "
+            "dan satu nomor telepon. Otopsi: organ membengkak, limpa membesar, tanpa racun terdeteksi; pemeriksa yakin "
+            "kematian tak wajar; di sidang disebut obat yang sulit dideteksi (kemudian diidentifikasi sebagai digitalis "
+            "dan ouabain). Putusan koroner: identitas tak dikenal, kematian tak wajar, kemungkinan racun, bunuh diri "
+            "mungkin tapi keadaan tak biasa, pembunuhan tetap mungkin. Mei 2021 jenazah digali untuk DNA; Juli 2022 Derek "
+            "Abbott dan Colleen Fitzpatrick mengumumkan identifikasi lewat genealogi genetik dari rambut di topeng gips: "
+            "Carl 'Charles' Webb, lahir 16 November 1905 di Footscray, Melbourne, anak termuda dari enam, teknisi "
+            "listrik/pembuat instrumen. SAPOL dan Forensic Science SA belum mengonfirmasi resmi (2026: laporan ke koroner "
+            "disebut 'segera'). Abbott: tak ada jejak intelijen; kode mungkin catatan taruhan kuda. Sumber: ABC News 26 "
+            "Jul 2022; IEEE Spectrum (Abbott, April 2023); StrangeOutdoors."
         ),
     ),
     dict(
@@ -664,7 +673,7 @@ EPISODES = [
             ("tension", "Bahasa itu punya aturan, kosakata, dan nama sendiri."),
             ("tension", "Coba lihat buku catatan mereka. Novel, puisi, sandiwara."),
             ("turn", "Rumah sakit jiwa memisahkan mereka. Supaya sembuh."),
-            ("consequence", "June meninggal 1993. Jennifer setahun kemudian."),
+            ("consequence", "Sebelas tahun di Broadmoor. Jennifer meninggal 9 Maret 1993."),
         ],
         turn_quote="\u201cMereka harus dipisahkan supaya sembuh.\u201d",
         turn_verdict="Yang mereka bangun bukan penyakit. Dunia itu runtuh justru saat mereka dipisahkan.",
@@ -679,7 +688,7 @@ EPISODES = [
             "Aturan dan kosakata sendiri.",
             "Novel dan puisi.",
             "Dipisahkan supaya sembuh.",
-            "1993. 1994.",
+            "9 Maret 1993.",
             "Masih punya suara?",
         ],
         caption_hi=["", "bahasa", "menghilang", "1963", "berhenti", "kosakata", "novel", "dipisahkan", "1993", "suara"],
@@ -699,11 +708,16 @@ EPISODES = [
         bed="audio/EP10/bed.wav",
         plate="paper",
         sumber=(
-            "NEEDS-SOURCE — June dan Jennifer Gibbons (kembar identik, Haverfordwest, Wales). Yang "
-            "dipakai: bahasa buatan mereka sendiri (idioglossia), novel/puisi/sandiwara yang mereka tulis, "
-            "perawatan psikiatri sejak 14 tahun, pemisahan di Broadmoor, June meninggal 1993 dan Jennifer "
-            "1994. Belum dibaca langsung: liputan Marjorie Wallace (The Silent Twins) — verifikasi angka "
-            "dan tanggal sebelum tayang."
+            "VERIFIED 2026-11-06 — June-Alison dan Jennifer Gibbons, kembar identik, lahir 11 April 1963 di rumah sakit "
+            "militer Aden (orang tua Aubrey dan Gloria, keturunan Barbados), besar di Haverfordwest, Wales; berkomunikasi "
+            "hanya satu sama lain; istilah pers: idioglossia/cryptophasia. Menulis fiksi di kamar bersama: June 'The "
+            "Pepsi-Cola Addict' (1982), Jennifer 'Discomania'. 1981 tindak pidana remaja; 1982 dijatuhi penahanan tak "
+            "tentu di Broadmoor (Mental Health Act), total 11 tahun. Jennifer meninggal 9 Maret 1993, usia 29, saat "
+            "dipindahkan ke Caswell Clinic, Bridgend; sebab resmi miokarditis akut, tanpa jejak obat/racun, tanpa kondisi "
+            "jantung sebelumnya. June masih hidup (BBC 2023; Wales Barat). KOREKSI: bukan June yang meninggal 1993. Klaim "
+            "'bahasa rahasia' dibantah June (2023): mereka bicara Inggris dengan gangguan wicara berat + slang Kreol "
+            "Bajan, sehingga tak terdengar seperti bahasa Inggris. Sumber: Wikipedia (en) June and Jennifer Gibbons; BBC "
+            "News 26 Des 2023; MIT Press. Buku Marjorie Wallace belum dibaca langsung."
         ),
     ),
 
@@ -742,7 +756,18 @@ EPISODES = [
         cues=["15 AGU 1977", "6EQUJ5", "1420 MHz", "72 DETIK", "TIDAK PERNAH LAGI"],
         visual="Kertas printer dengan huruf 6EQUJ5; grafik 72 detik; peta langit kosong.",
         plate="signal",
-        sumber="NEEDS-SOURCE — Wow! signal, Ohio State 1977; semua pencarian ulang gagal.",
+        sumber=(
+            "VERIFIED 2026-11-06 — 15 Agustus 1977, ±22.16 waktu lokal, teleskop Big Ear Ohio State (transit, tak bisa "
+            "digerakkan) merekam sinyal pita sempit 72 detik — durasi maksimum satu titik langit melintas di berkas "
+            "teleskop — dekat 1420 MHz, garis hidrogen netral (acuan Cocconi–Morrison 1959). Intensitas dicatat skala 0-9 "
+            "lalu A-Z; Jerry R. Ehman melihat deret '6EQUJ5', melingkarinya dengan tinta merah, menulis 'Wow!' di margin. "
+            "Puncak 'U' ±30 kali derau. Arah Sagitarius, dekat Tau Sagittarii. Muncul hanya di satu dari dua tanduk "
+            "penerima (terpisah ±3 menit sapuan) — argumen melawan interferensi lokal; tanpa drift frekuensi selama 72 "
+            "detik. Lebih dari 50 pengamatan ulang gagal, termasuk survei Breakthrough Listen 2020. Hipotesis komet "
+            "Antonio Paris (2016/2017; 266P/Christensen, P/2008 Y2) ditolak sebagian besar astronom; reanalisis data asli "
+            "2024 (kolaborasi 'Arecibo Wow') menyimpulkan sinyal lebih kuat dari perkiraan 1977 sehingga model komet "
+            "makin sulit. Sumber: esovitae; decodingtheunknown; monkeyandelf (ringkasan 2026). Makalah asli belum dibaca."
+        ),
     ),
     dict(
         ep="EP12", day=2, slot="siang", jam="12.30", series="ANEH", pov="A",
@@ -777,7 +802,21 @@ EPISODES = [
         cues=["JULI 1518", "STRASBOURG", "400 ORANG", "TANPA MUSIK", "SEBAGIAN MENINGGAL"],
         visual="Kaki di batu jalan; siluet orang menari tanpa wajah; panggung kosong.",
         plate="road",
-        sumber="NEEDS-SOURCE — Dancing plague 1518; kronik kota belum dibaca langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Strasbourg, Alsace (kota bebas Kekaisaran Romawi Suci; kini Prancis), Juli-September "
+            "1518. Kronik: perempuan yang dikenal sebagai Frau Troffea mulai menari 14 Juli di jalan berbatu depan "
+            "rumahnya tanpa musik; menari terus, berhenti hanya untuk tidur, lalu mulai lagi; 4-6 hari. Dalam beberapa "
+            "hari lebih dari 30 orang ikut; dalam sebulan perkiraan 50-400 (kronik keluarga Imlin: 400). Otoritas kota "
+            "mulanya menanggapinya sebagai penyakit, bukan kerasukan: menyewa musisi dan membangun panggung besar — "
+            "diduga justru mengundang lebih banyak penari. Troffea diangkut kereta ±30 mil ke Saverne, ke kuil Santo "
+            "Vitus; ritual: sepatu merah, salib kecil di tangan, salib minyak suci di sol dan punggung sepatu, dupa dan "
+            "mantra Latin. Gelombang berhenti akhir Agustus/September 1518. Angka '15 kematian per hari' hanya dari "
+            "catatan yang lebih kemudian (Waller) dan diperdebatkan; dari enam kronik sezaman, empat menyebut Troffea "
+            "penari pertama. Penjelasan utama (Waller 2008): psikosis massal akibat stres — panen gagal, kelaparan, "
+            "wabah, sifilis, ketidakstabilan politik — di dalam kerangka kepercayaan bahwa Santo Vitus mengutuk orang "
+            "dengan menari. Sumber: Wikipedia (en); Public Domain Review (Ned Pennant-Rea); Observatory.wiki; Sherman "
+            "Theatre."
+        ),
     ),
     dict(
         ep="EP13", day=3, slot="siang", jam="12.30", series="ANEH", pov="B",
@@ -812,7 +851,21 @@ EPISODES = [
         cues=["20 AGU 1966", "2 PRIA", "MASKER TIMAH", "CATATAN", "UANG HILANG"],
         visual="Bukit dengan dua siluet; catatan tangan tak terbaca; dua masker timah di batu.",
         plate="ridge",
-        sumber="NEEDS-SOURCE — Kasus Morro do Vintém 1966; terjemahan catatan perlu verifikasi.",
+        sumber=(
+            "VERIFIED 2026-11-06 — 'Caso das Máscaras de Chumbo', Morro do Vintém, Niterói, Rio. Dua teknisi elektronik "
+            "dari Campos dos Goytacazes: Manoel Pereira da Cruz dan Miguel José Viana. 17 Agustus 1966 mereka berangkat "
+            "dengan alasan membeli bahan elektronik dan mobil di São Paulo; naik bus ke Niterói, membeli jas hujan, air "
+            "mineral, dua handuk kecil; ±15.15 berjalan ke jalur bukit, terlihat ±17.00. Jenazah ditemukan 20 Agustus "
+            "1966 oleh remaja yang menerbangkan layang-layang. Di lokasi: dua lempeng timah penutup mata (masker), jas "
+            "hujan, botol air kosong, handuk, dan catatan di kantong Miguel berbunyi '16:30 estar no local determinado. "
+            "18:30 ingerir cápsulas, após efeito proteger metais aguardar sinal máscara'. Pemeriksaan tulisan tangan 1967 "
+            "menyimpulkan catatan ditulis Miguel sendiri. Otopsi: tanpa luka, tanpa tanda kekerasan, tanpa racun "
+            "terdeteksi, tanpa kontaminasi radioaktif; tubuh berwarna kemerahan. Sebab kematian tak pernah ditetapkan. "
+            "Hipotesis yang pernah dipakai polisi (perwira Idovam Ferreira): keduanya mati saat mencoba eksperimen "
+            "parapsikologi dengan kapsul tak diketahui isinya. Klaim saksi soal objek di atas bukit 17 Agustus dan uang "
+            "yang hilang TIDAK terverifikasi — jangan dipakai sebagai fakta. Sumber: Mega Curioso; Portal Fenomenum; "
+            "clubedeastronomia; strangehappen (tinjauan 2026). Laporan polisi 1966/1967 belum dibaca langsung."
+        ),
     ),
     dict(
         ep="EP14", day=4, slot="siang", jam="12.30", series="ANEH", pov="D",

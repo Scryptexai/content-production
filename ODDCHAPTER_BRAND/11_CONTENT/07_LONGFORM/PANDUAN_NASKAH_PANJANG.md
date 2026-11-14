@@ -98,8 +98,8 @@ penonton kehilangan satu-satunya jangkar yang ia punya.
 
 ## 5. Status pengerjaan
 
-Delapan episode pertama sudah selesai. Kata dihitung dari berkas `.txt`
-(bukan dari `.md` yang memuat catatan 🎬).
+Tiga belas episode sudah selesai. Kata dihitung dari berkas `.txt` (bukan `.md`
+yang memuat catatan 🎬).
 
 | berkas | episode | paragraf | kata | 150 kpm | setelan 0,88 (≈130 kpm) |
 |---|---|---|---|---|---|
@@ -111,13 +111,18 @@ Delapan episode pertama sudah selesai. Kata dihitung dari berkas `.txt`
 | `EP06_PANJANG.md` | Api di bawah kota | 48 | 1.225 | 8,2 mnt | ±9,4 mnt |
 | `EP07_PANJANG.md` | Jejak kaki itu hanya satu arah | 53 | 1.255 | 8,4 mnt | ±9,7 mnt |
 | `EP08_PANJANG.md` | Semua label di pakaiannya dipotong | 54 | 1.239 | 8,3 mnt | ±9,5 mnt |
+| `EP09_PANJANG.md` | Dua kata yang menyembunyikan teknisi listrik | 57 | 1.287 | 8,6 mnt | ±9,9 mnt |
+| `EP10_PANJANG.md` | Bahasa sendiri, lalu dipisahkan | 55 | 1.262 | 8,4 mnt | ±9,7 mnt |
+| `EP11_PANJANG.md` | Tujuh puluh dua detik | 52 | 1.254 | 8,4 mnt | ±9,6 mnt |
+| `EP12_PANJANG.md` | Kota yang mengobati dengan cara yang sama | 51 | 1.177 | 7,8 mnt | ±9,1 mnt |
+| `EP13_PANJANG.md` | Menunggu seseorang yang tidak datang | 55 | 1.221 | 8,1 mnt | ±9,4 mnt |
 
 Durasi bergantung pada pace render. Pada setelan yang dipakai kanal (speed 0,88),
 pace-nya jatuh di sekitar 128–132 kata/menit, jadi semua berkas di atas berada di
-**9,4–10,2 menit**. Naikkan ke speed 0,92 kalau ingin lebih pendek, atau pakai
-"lapisan" di `PETA_21_EPISODE.md` untuk versi 20–30 menit.
+**9,1–10,2 menit**. EP12 paling tipis; tambahkan satu barang bukti di bab 3 kalau
+ingin melewati 10 menit dengan aman. Untuk versi 20–30 menit, pakai "lapisan" di
+`PETA_21_EPISODE.md`.
 
-EP09–EP21: kerangka, pertanyaan, dan urutan babnya sudah dikunci di
-`PETA_21_EPISODE.md`, tetapi naskahnya **belum ditulis** karena fakta episode itu
-masih berstatus `NEEDS-SOURCE` di `tools/content_data.py`. Menulis naskah panjang
-dari sumber yang belum dibaca sama dengan mengarang.
+EP14–EP21: kerangka dan pertanyaannya sudah dikunci di `PETA_21_EPISODE.md`,
+tetapi naskahnya belum ditulis karena fakta episode itu masih berstatus
+`NEEDS-SOURCE` di `tools/content_data.py`.
