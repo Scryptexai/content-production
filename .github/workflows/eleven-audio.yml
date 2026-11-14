@@ -145,7 +145,7 @@ jobs:
           exit "$RC"
 
       - name: Buat audio
-        if: steps.req.outputs.skip != '1' && steps.req.outputs.mode != 'check' && steps.req.outputs.mode != 'musik'
+        if: steps.req.outputs.skip != '1' && steps.req.outputs.mode != 'check' && steps.req.outputs.mode != 'musik' && steps.req.outputs.mode != 'probe'
         env:
           MODE: ${{ steps.req.outputs.mode }}
           FORCE: ${{ steps.req.outputs.force }}
