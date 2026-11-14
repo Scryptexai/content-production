@@ -127,7 +127,16 @@ jobs:
 
       - name: Uji koneksi ElevenLabs + identitas suara
         if: steps.req.outputs.skip != '1'
-        run: python3 ODDCHAPTER_BRAND/tools/eleven_audio.py --check
+        run: |
+          set +e
+          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py --check 2>&1 | tee /tmp/check.log
+          RC=${PIPESTATUS[0]}
+          if [ "$RC" -ne 0 ]; then
+            # Log mentah tidak terbaca dari luar, jadi pesan penting dijadikan annotation.
+            MSG=$(tail -c 700 /tmp/check.log | tr '\n' ' ')
+            printf '::error title=ElevenLabs check gagal::%s\n' "$MSG"
+          fi
+          exit "$RC"
 
       - name: Buat audio
         if: steps.req.outputs.skip != '1' && steps.req.outputs.mode != 'check' && steps.req.outputs.mode != 'musik'
@@ -139,7 +148,14 @@ jobs:
           set -euo pipefail
           ARGS=(--episode "$EPISODE" --only "$MODE")
           if [ "$FORCE" = "true" ]; then ARGS+=(--force); fi
-          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py "${ARGS[@]}"
+          set +e
+          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py "${ARGS[@]}" 2>&1 | tee /tmp/audio.log
+          RC=${PIPESTATUS[0]}
+          if [ "$RC" -ne 0 ]; then
+            MSG=$(tail -c 700 /tmp/audio.log | tr '\n' ' ')
+            printf '::error title=audio gagal::%s\n' "$MSG"
+            exit "$RC"
+          fi
           echo "--- durasi tiap segmen"
           for f in "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE"/*.mp3; do
             [ -f "$f" ] || continue

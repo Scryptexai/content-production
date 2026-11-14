@@ -133,24 +133,64 @@ def tts(text, out_path, cfg):
     return len(data)
 
 
+def _probe(label, fn, *, fatal=False):
+    """Satu pemeriksaan; kegagalan yang tidak fatal dicetak, bukan mematikan."""
+    try:
+        return fn()
+    except SystemExit as exc:  # call() melempar SystemExit saat HTTP gagal
+        print(f"{label}: GAGAL — {exc}")
+        if fatal:
+            raise
+        return None
+
+
 def cmd_check(_args):
+    """Uji kunci, voice id, dan satu kalimat TTS.
+
+    /user butuh izin 'user_read' dan sering tidak ada di kunci terbatas — itu
+    bukan alasan gagal. Yang wajib lolos hanya voice id + satu kalimat TTS.
+    """
     cfg = voice_cfg()
-    user = call("/user", accept="application/json")
-    sub = user.get("subscription") or {}
-    print(f"kunci     : OK ({user.get('first_name','?')} / tier {sub.get('tier','?')})")
-    print(f"kuota     : {sub.get('character_count','?')} / {sub.get('character_limit','?')} karakter")
-    voice = call(f"/voices/{cfg['voice_id']}", accept="application/json")
     print(f"voice_id  : {cfg['voice_id']}")
-    print(f"nama suara: {voice.get('name','?')} · kategori {voice.get('category','?')}")
-    labels = voice.get("labels") or {}
-    if labels:
-        print("label     : " + ", ".join(f"{k}={v}" for k, v in labels.items()))
-    if voice.get("description"):
-        print(f"deskripsi : {voice['description'][:160]}")
-    sample = ROOT / "10_FILM" / "remotion" / "public" / "audio" / "_voicecheck.mp3"
-    size = tts("Suara ini yang akan bercerita di setiap episode.", sample, cfg)
-    print(f"uji tts   : {size} bytes -> {sample} (boleh dihapus)")
-    print("model     :", cfg["model_id"], "| settings:", json.dumps(cfg["settings"], ensure_ascii=False))
+    print(f"model     : {cfg['model_id']}")
+    print(f"settings  : {json.dumps(cfg['settings'], ensure_ascii=False)}")
+
+    user = _probe("kuota", lambda: call("/user", accept="application/json"))
+    if user:
+        sub = user.get("subscription") or {}
+        print(f"  akun    : {user.get('first_name', '?')} · tier {sub.get('tier', '?')}")
+        print(f"  karakter: {sub.get('character_count', '? ')} / {sub.get('character_limit', '?')}")
+
+    voice = _probe("voice id", lambda: call(f"/voices/{cfg['voice_id']}", accept="application/json"),
+                   fatal=True)
+    if voice:
+        print(f"  nama    : {voice.get('name', '?')} · kategori {voice.get('category', '?')}")
+        labels = voice.get("labels") or {}
+        if labels:
+            print("  label   : " + ", ".join(f"{k}={v}" for k, v in labels.items()))
+        if voice.get("description"):
+            print(f"  deskripsi: {voice['description'][:160]}")
+
+    out = ROOT / "10_FILM" / "remotion" / "public" / "audio" / "_voicecheck.mp3"
+    size = _probe(
+        "uji tts",
+        lambda: tts("Suara ini yang akan bercerita di setiap episode.", out, cfg),
+        fatal=True,
+    )
+    if size:
+        print(f"  hasil   : {size} bytes -> {out}")
+        print(f"  durasi  : {audio_duration(out)}")
+    print("KONEKSI OK — voice id bisa dipakai.")
+
+
+def audio_duration(path):
+    try:
+        import subprocess as sp
+        r = sp.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                    "-of", "csv=p=0", str(path)], capture_output=True, text=True)
+        return round(float(r.stdout.strip()), 2)
+    except Exception:
+        return "?"
 
 
 def cmd_voice(args, ep):
