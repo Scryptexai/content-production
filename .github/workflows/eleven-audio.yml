@@ -1,0 +1,205 @@
+name: Audio ElevenLabs (narasi, efek, musik)
+
+# Kenapa di runner: api.elevenlabs.io tidak terjangkau dari sandbox, runner
+# punya internet penuh. Skrip yang menentukan apa yang dibuat ada di repo
+# (ODDCHAPTER_BRAND/tools/eleven_audio.py), jadi hasilnya sama kalau dijalankan
+# di tempat lain yang punya kunci.
+#
+# Identitas suara kanal dikunci di ODDCHAPTER_BRAND/tools/voice.json:
+#   voice_id = ojz6ro9PB1xDu44lymdM   (mulai EP08, semua episode berikutnya)
+#
+# Dua cara memicu:
+#   1. Push berkas antrean ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/audio-queue/*.json
+#      berstatus "requested" — otomatis, tanpa klik.
+#   2. Run workflow manual (mode check / voice / sfx / all / musik).
+#
+# Audio tidak masuk Git (lihat .gitignore). Hasilnya diunggah sebagai artifact
+# per run; yang dicatat di repo hanya status antrean + laporan kecil.
+
+on:
+  push:
+    paths:
+      - "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/audio-queue/*.json"
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Episode (EP08, EP09, …)"
+        type: string
+        default: "EP08"
+      mode:
+        description: "check = uji kunci + voice id saja"
+        type: choice
+        options: ["check", "voice", "sfx", "all", "musik"]
+        default: "check"
+      force:
+        description: "true = timpa audio yang sudah ada"
+        type: choice
+        options: ["false", "true"]
+        default: "false"
+      music_prompt:
+        description: "Prompt musik (hanya untuk mode musik)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eleven-audio
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    name: Uji koneksi → buat audio
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+
+    env:
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY || secrets.ELEVENLABS_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Alat bantu (ffmpeg lewat imageio, numpy untuk bed)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --quiet --disable-pip-version-check imageio-ffmpeg numpy
+
+      - name: Sembunyikan nilai rahasia dari log
+        run: |
+          set -euo pipefail
+          if [ -n "${ELEVENLABS_API_KEY:-}" ]; then
+            echo "::add-mask::${ELEVENLABS_API_KEY}"
+            echo "::notice::secret ELEVENLABS_API_KEY terbaca."
+          else
+            echo "::error::secret ELEVENLABS_API_KEY belum ada di repo ini. Tambahkan di Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+
+      - name: Tentukan permintaan
+        id: req
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+          EP_INPUT: ${{ inputs.episode }}
+          MODE_INPUT: ${{ inputs.mode }}
+          FORCE_INPUT: ${{ inputs.force }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            echo "episode=${EP_INPUT:-EP08}" >> "$GITHUB_OUTPUT"
+            echo "mode=${MODE_INPUT:-check}" >> "$GITHUB_OUTPUT"
+            echo "force=${FORCE_INPUT:-false}" >> "$GITHUB_OUTPUT"
+            echo "queue=" >> "$GITHUB_OUTPUT"
+            echo "::notice::Permintaan manual: ${EP_INPUT:-EP08} / ${MODE_INPUT:-check}"
+            exit 0
+          fi
+          CHANGED=$(git diff --name-only --diff-filter=AM "$BEFORE" "$SHA" -- 'ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/audio-queue/*.json' 2>/dev/null \
+            || git show --pretty=format: --name-only --diff-filter=AM "$SHA" -- 'ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/audio-queue/*.json')
+          REQ=""
+          for f in $CHANGED; do
+            [ -f "$f" ] || continue
+            ST=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('status',''))" "$f")
+            if [ "$ST" = "requested" ]; then REQ="$f"; fi
+          done
+          if [ -z "$REQ" ]; then
+            echo "::notice::Tidak ada permintaan audio berstatus requested pada push ini."
+            echo "skip=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 - "$REQ" <<'PY' >> "$GITHUB_OUTPUT"
+          import json, sys
+          d = json.load(open(sys.argv[1], encoding="utf-8"))
+          print(f"episode={d.get('episode','EP08')}")
+          print(f"mode={d.get('mode','all')}")
+          print(f"force={'true' if d.get('force') else 'false'}")
+          print(f"queue={sys.argv[1]}")
+          PY
+          echo "::notice::Permintaan audio dari antrean: $REQ"
+
+      - name: Uji koneksi ElevenLabs + identitas suara
+        if: steps.req.outputs.skip != '1'
+        run: python3 ODDCHAPTER_BRAND/tools/eleven_audio.py --check
+
+      - name: Buat audio
+        if: steps.req.outputs.skip != '1' && steps.req.outputs.mode != 'check' && steps.req.outputs.mode != 'musik'
+        env:
+          MODE: ${{ steps.req.outputs.mode }}
+          FORCE: ${{ steps.req.outputs.force }}
+          EPISODE: ${{ steps.req.outputs.episode }}
+        run: |
+          set -euo pipefail
+          ARGS=(--episode "$EPISODE" --only "$MODE")
+          if [ "$FORCE" = "true" ]; then ARGS+=(--force); fi
+          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py "${ARGS[@]}"
+          echo "--- durasi tiap segmen"
+          for f in "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE"/*.mp3; do
+            [ -f "$f" ] || continue
+            D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f")
+            printf '%-16s %6.2f s\n' "$(basename "$f")" "$D"
+          done
+
+      - name: Musik (kalau diminta)
+        if: steps.req.outputs.mode == 'musik'
+        env:
+          PROMPT: ${{ inputs.music_prompt }}
+          EPISODE: ${{ steps.req.outputs.episode }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PROMPT:-}" ]; then echo "::error::music_prompt kosong."; exit 1; fi
+          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py --music "$PROMPT" \
+            --out "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE/music.mp3" --ms 48000
+
+      - name: Ringkas hasil
+        if: always() && steps.req.outputs.skip != '1'
+        run: |
+          set -euo pipefail
+          {
+            echo "## Audio ElevenLabs — ${{ steps.req.outputs.episode }}"
+            echo ""
+            echo "- mode: \`${{ steps.req.outputs.mode }}\` · force: \`${{ steps.req.outputs.force }}\`"
+            echo "- voice_id: \`ojz6ro9PB1xDu44lymdM\` (tools/voice.json)"
+            echo "- kunci: tersedia sebagai secret"
+            find "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/${{ steps.req.outputs.episode }}" \
+              -name '*.mp3' -o -name '*.wav' 2>/dev/null | sort | sed 's/^/  - `/' | sed 's/$/`/'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Unggah audio sebagai artifact
+        if: always() && steps.req.outputs.skip != '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio-${{ steps.req.outputs.episode }}-${{ github.run_id }}
+          path: |
+            ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/${{ steps.req.outputs.episode }}/
+            ODDCHAPTER_BRAND/10_FILM/remotion/src/timing.generated.json
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Catat status antrean
+        if: always() && steps.req.outputs.queue != ''
+        env:
+          QUEUE: ${{ steps.req.outputs.queue }}
+        run: |
+          set -euo pipefail
+          python3 - "$QUEUE" "${{ job.status }}" <<'PY'
+          import datetime, json, sys
+          path, status = sys.argv[1], sys.argv[2]
+          d = json.load(open(path, encoding="utf-8"))
+          d["status"] = "generated" if status == "success" else "failed"
+          d["finished_at"] = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          d["run_id"] = "${{ github.run_id }}"
+          open(path, "w", encoding="utf-8").write(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
+          PY
+          git config user.name "oddchapter-audio"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$QUEUE"
+          git diff --cached --quiet || git commit -m "audio-queue: $(basename "$QUEUE") → ${{ job.status }}"
+          git push

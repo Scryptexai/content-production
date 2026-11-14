@@ -1,0 +1,296 @@
+"""eleven_audio.py — narasi, efek suara, dan musik lewat ElevenLabs.
+
+Kenapa skrip ini ada di repo padahal ia butuh internet: sandbox tidak bisa
+menjangkau api.elevenlabs.io, runner GitHub Actions bisa. Jadi semua panggilan
+nyata terjadi di `.github/workflows/eleven-audio.yml`, dan skrip ini yang
+menentukan *apa* yang dibuat — satu sumber kebenaran, dipakai lokal maupun CI.
+
+Identitas suara dikunci di `tools/voice.json`:
+    voice_id = ojz6ro9PB1xDu44lymdM   (narator kanal, mulai EP08)
+
+Perintah:
+
+    python3 tools/eleven_audio.py --check
+        Uji kunci + voice id: siapa namanya, sisa kuota karakter, dan satu
+        contoh 5 detik (ditulis ke /tmp, tidak masuk repo).
+
+    python3 tools/eleven_audio.py --episode EP08 --only voice [--force]
+        Sepuluh segmen narasi -> public/audio/EP08/{00_hook,...,99_loop}.mp3
+        Nama berkas sama dengan yang dibaca build_timing.py, jadi timing,
+        caption, dan Remotion tidak perlu diubah.
+
+    python3 tools/eleven_audio.py --episode EP08 --only sfx [--force]
+        Satu efek per nama di ep["sfx"] -> public/audio/EP08/fx/<nama>.mp3
+
+    python3 tools/eleven_audio.py --episode EP08 --only place
+        Menempelkan fx ke timeline nyata (timing.generated.json) -> sfx.wav
+
+    python3 tools/eleven_audio.py --episode EP08 --only all
+        voice -> build_timing -> sfx -> place -> build_bed, berurutan.
+
+    python3 tools/eleven_audio.py --music "prompt" --out bed_music.mp3 --ms 48000
+        Musik latar (hanya kalau memang perlu; bed.wav sudah cukup di banyak
+        episode, dan dua lapisan musik bersamaan akan saling menutupi).
+"""
+
+import argparse
+import json
+import os
+import pathlib
+import subprocess
+import sys
+import time
+import urllib.error
+import urllib.request
+
+HERE = pathlib.Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
+
+API = "https://api.elevenlabs.io/v1"
+AUDIO = ROOT / "10_FILM" / "remotion" / "public" / "audio"
+TIMING = ROOT / "10_FILM" / "remotion" / "src" / "timing.generated.json"
+VOICE_FILE = HERE / "voice.json"
+
+# Efek -> prompt. Ditulis sebagai bunyi yang terjadi, bukan nama kategori:
+# model efek bekerja jauh lebih tepat kalau diberi sumber, ruang, dan jarak.
+SFX_PROMPTS = {
+    "rustle": "close-miked heavy wool clothing shifting, one short movement, dry room, no music",
+    "gust": "cold wind pressing against a wooden house, gust swelling and fading, distant, no music",
+    "engine": "distant steam ship engine, low chug, muffled through fog, no music",
+    "clunk": "heavy iron door bolt sliding shut, one solid metallic clunk, small stone room",
+    "tick": "a clock ticking twice then stopping, close, quiet room, no music",
+    "page": "a single page of old paper turned close to the microphone, dry, no music",
+    "boom": "deep cinematic sub drop, 40 hertz, long decay, felt more than heard, no music",
+    "footstep": "boots stepping on packed snow, three slow steps, cold open air, no music",
+    "door": "old wooden door creaking open slowly, close, night interior, no music",
+    "fire": "small fire burning in an iron stove, close, dry crackle, no music",
+    "water": "slow drip of water in a stone tunnel, echoing, distant, no music",
+    "crowd": "muffled distant crowd murmur behind glass, no words, no music",
+}
+
+
+def api_key():
+    key = os.environ.get("ELEVENLABS_API_KEY") or os.environ.get("ELEVENLABS_KEY")
+    if not key:
+        raise SystemExit("ELEVENLABS_API_KEY kosong. Di CI: secrets.ELEVENLABS_API_KEY.")
+    return key.strip()
+
+
+def voice_cfg():
+    cfg = json.loads(VOICE_FILE.read_text(encoding="utf-8"))
+    cfg["voice_id"] = os.environ.get("ELEVEN_VOICE_ID") or cfg["voice_id"]
+    cfg["model_id"] = os.environ.get("ELEVEN_MODEL") or cfg["model_id"]
+    return cfg
+
+
+def call(path, payload=None, *, accept="audio/mpeg", timeout=240, retries=3):
+    """Satu panggilan HTTP. Kembalikan bytes; JSON kalau accept=application/json."""
+    url = path if path.startswith("http") else API + path
+    body = json.dumps(payload).encode() if payload is not None else None
+    last = None
+    for attempt in range(retries):
+        req = urllib.request.Request(url, data=body, method="POST" if body else "GET")
+        req.add_header("xi-api-key", api_key())
+        req.add_header("accept", accept)
+        if body:
+            req.add_header("content-type", "application/json")
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as res:
+                data = res.read()
+                return json.loads(data) if accept == "application/json" else data
+        except urllib.error.HTTPError as exc:
+            detail = exc.read()[:600].decode("utf-8", "replace")
+            last = f"{exc.code} {detail}"
+            # 401/422 tidak akan berubah kalau diulang; 429/5xx layak ditunggu.
+            if exc.code in (400, 401, 403, 404, 422):
+                break
+            time.sleep(4 * (attempt + 1))
+        except Exception as exc:  # noqa: BLE001 — jaringan sandbox sering menolak
+            last = repr(exc)
+            time.sleep(3 * (attempt + 1))
+    raise SystemExit(f"GAGAL {path}: {last}")
+
+
+def segments(ep):
+    """(key, text) — urutan dan nama sama persis dengan build_timing.py."""
+    out = [("00_hook", ep["hook"])]
+    for i, (part, txt) in enumerate(ep["beats"]):
+        out.append((f"{i + 1:02d}_{part}", txt))
+    out.append(("99_loop", ep["loop"]))
+    return out
+
+
+def tts(text, out_path, cfg):
+    payload = {
+        "text": text,
+        "model_id": cfg["model_id"],
+        "voice_settings": cfg["settings"],
+    }
+    data = call(f"/text-to-speech/{cfg['voice_id']}", payload)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_bytes(data)
+    return len(data)
+
+
+def cmd_check(_args):
+    cfg = voice_cfg()
+    user = call("/user", accept="application/json")
+    sub = user.get("subscription") or {}
+    print(f"kunci     : OK ({user.get('first_name','?')} / tier {sub.get('tier','?')})")
+    print(f"kuota     : {sub.get('character_count','?')} / {sub.get('character_limit','?')} karakter")
+    voice = call(f"/voices/{cfg['voice_id']}", accept="application/json")
+    print(f"voice_id  : {cfg['voice_id']}")
+    print(f"nama suara: {voice.get('name','?')} · kategori {voice.get('category','?')}")
+    labels = voice.get("labels") or {}
+    if labels:
+        print("label     : " + ", ".join(f"{k}={v}" for k, v in labels.items()))
+    if voice.get("description"):
+        print(f"deskripsi : {voice['description'][:160]}")
+    sample = ROOT / "10_FILM" / "remotion" / "public" / "audio" / "_voicecheck.mp3"
+    size = tts("Suara ini yang akan bercerita di setiap episode.", sample, cfg)
+    print(f"uji tts   : {size} bytes -> {sample} (boleh dihapus)")
+    print("model     :", cfg["model_id"], "| settings:", json.dumps(cfg["settings"], ensure_ascii=False))
+
+
+def cmd_voice(args, ep):
+    cfg = voice_cfg()
+    total = 0
+    for key, text in segments(ep):
+        out = AUDIO / ep["ep"] / f"{key}.mp3"
+        if out.exists() and not args.force:
+            print(f"  = {key} (sudah ada, {out.stat().st_size} B) — pakai --force untuk menimpa")
+            continue
+        size = tts(text, out, cfg)
+        total += len(text)
+        print(f"  + {key}.mp3 {size} B · {len(text.split())} kata")
+        time.sleep(0.4)
+    print(f"narasi {ep['ep']}: {total} karakter terpakai")
+
+
+def cmd_sfx(args, ep):
+    cfg = voice_cfg()
+    names = []
+    for name in (ep.get("sfx") or {}).values():
+        if name not in names:
+            names.append(name)
+    for name in names:
+        prompt = SFX_PROMPTS.get(name)
+        if not prompt:
+            print(f"  ! {name}: belum ada prompt di SFX_PROMPTS — dilewati")
+            continue
+        out = AUDIO / ep["ep"] / "fx" / f"{name}.mp3"
+        if out.exists() and not args.force:
+            print(f"  = fx/{name}.mp3 (sudah ada)")
+            continue
+        payload = {"text": prompt, "duration_seconds": 2.5, "prompt_influence": 0.6}
+        data = call("/sound-generation?output_format=mp3_44100_128", payload)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(data)
+        print(f"  + fx/{name}.mp3 {len(data)} B")
+
+
+def _ffmpeg():
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except Exception:
+        return "ffmpeg"
+
+
+def cmd_place(args, ep):
+    """Tempel fx ke timeline audio nyata -> public/audio/<EP>/sfx.wav."""
+    tm = json.loads(TIMING.read_text(encoding="utf-8"))[ep["ep"]]
+    mapping = ep.get("sfx") or {}
+    fx_dir = AUDIO / ep["ep"] / "fx"
+    pieces = []
+    for seg in tm["segments"]:
+        name = mapping.get(seg["key"])
+        path = fx_dir / f"{name}.mp3"
+        if not name or not path.exists():
+            continue
+        pieces.append((path, seg["start"], 0.9 if name != "gust" else 0.7))
+    if not pieces:
+        print("tidak ada fx untuk ditempel")
+        return
+    total = tm["total"] + 2.0
+    cmd = [_ffmpeg(), "-y", "-hide_banner", "-loglevel", "error"]
+    for path, _, _ in pieces:
+        cmd += ["-i", str(path)]
+    chains, labels = [], []
+    for i, (_, start, vol) in enumerate(pieces):
+        ms = max(0, int(start * 1000))
+        chains.append(f"[{i}:a]volume={vol},adelay={ms}|{ms}[a{i}]")
+        labels.append(f"[a{i}]")
+    chains.append(
+        "".join(labels) + f"amix=inputs={len(labels)}:normalize=0,"
+        f"apad,atrim=0:{total:.3f},asetpts=N/SR/TB[out]"
+    )
+    out = AUDIO / ep["ep"] / "sfx.wav"
+    cmd += ["-filter_complex", ";".join(chains), "-map", "[out]",
+            "-ar", "48000", "-ac", "1", str(out)]
+    subprocess.run(cmd, check=True)
+    print(f"sfx.wav: {out} ({out.stat().st_size} B, {len(pieces)} efek)")
+
+
+def cmd_build(args, ep):
+    env = dict(os.environ)
+    for script in ("build_timing.py", "build_bed.py"):
+        print(f"--- {script} {ep['ep']}")
+        subprocess.run([sys.executable, str(HERE / script), ep["ep"]], check=True, env=env)
+
+
+def cmd_music(args):
+    payload = {
+        "prompt": args.music,
+        "music_length_ms": args.ms,
+        "model_id": os.environ.get("ELEVEN_MUSIC_MODEL", "music_v1"),
+    }
+    data = call("/music?output_format=mp3_44100_192", payload)
+    out = pathlib.Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(data)
+    print(f"musik: {out} ({len(data)} B)")
+
+
+def main():
+    ap = argparse.ArgumentParser(description="ElevenLabs: narasi, efek, musik.")
+    ap.add_argument("--check", action="store_true")
+    ap.add_argument("--episode", help="EP08")
+    ap.add_argument("--only", default="all", choices=["voice", "sfx", "place", "all", "build"])
+    ap.add_argument("--force", action="store_true")
+    ap.add_argument("--music")
+    ap.add_argument("--ms", type=int, default=48000)
+    ap.add_argument("--out", default="music.mp3")
+    args = ap.parse_args()
+
+    if args.check:
+        cmd_check(args)
+        return
+    if args.music:
+        cmd_music(args)
+        return
+    if not args.episode:
+        ap.error("butuh --episode, --check, atau --music")
+
+    from content_data import EPISODES  # noqa: E402
+    ep = next((e for e in EPISODES if e["ep"] == args.episode), None)
+    if not ep:
+        raise SystemExit(f"{args.episode} tidak ada di content_data.py")
+
+    if args.only in ("voice", "all"):
+        print(f"=== narasi {ep['ep']}")
+        cmd_voice(args, ep)
+    if args.only in ("sfx", "all"):
+        print(f"=== efek {ep['ep']}")
+        cmd_sfx(args, ep)
+    if args.only in ("all", "build"):
+        print(f"=== timing + bed")
+        cmd_build(args, ep)
+    if args.only in ("place", "all"):
+        print(f"=== tempel efek")
+        cmd_place(args, ep)
+
+
+if __name__ == "__main__":
+    main()
