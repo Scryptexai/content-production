@@ -1,8 +1,10 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "requested",
+  "status": "generated",
   "force": true,
   "requested_at": "2026-11-14T16:05:00Z",
-  "catatan": "Render ulang narasi turbo_v2_5 speed 0.85 + diagnostik berkas."
+  "catatan": "Render ulang narasi turbo_v2_5 speed 0.85 + diagnostik berkas.",
+  "finished_at": "2026-11-14T14:58:28Z",
+  "run_id": "43607537314"
 }
