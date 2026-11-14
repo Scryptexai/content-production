@@ -216,39 +216,54 @@ def audio_duration(path):
 
 
 VARIANTS = [
-    # (nama, model, override settings)
-    ("v2_now", None, {}),
-    ("v2_calm", None, {"speed": 0.92, "stability": 0.30, "style": 0.45}),
-    ("v4_now", "eleven_v4", {}),
-    ("v4_calm", "eleven_v4", {"speed": 0.92, "stability": 0.30, "style": 0.45}),
+    # (nama, model, override settings, ubah teks)
+    # Speed hanya berpengaruh pada model yang mendukungnya (v2.5 ke atas).
+    # multilingual_v2 mengabaikan speed sepenuhnya — dulu sempat mengira ini
+    # penyebab suara terlalu cepat, ternyata bukan: model itu memang mengambil
+    # tempo sendiri, dan satu-satunya kendali kita adalah memecah kalimat.
+    ("v2_asis", None, {}, None),
+    ("v2_ellipsis", None, {}, "ellipsis"),
+    ("turbo25_s085", "eleven_turbo_v2_5", {"speed": 0.85}, None),
+    ("turbo25_s090", "eleven_turbo_v2_5", {"speed": 0.90}, None),
+    ("turbo25_s085_ell", "eleven_turbo_v2_5", {"speed": 0.85}, "ellipsis"),
+    ("v4_asis", "eleven_v4", {}, None),
+    ("v4_ellipsis", "eleven_v4", {}, "ellipsis"),
 ]
+
+
+def _transform(text, how):
+    if how == "ellipsis":
+        return text.replace(", ", "\u2026 ")
+    return text
 
 
 def cmd_probe(args):
     """Render satu kalimat dalam beberapa varian, untuk dibandingkan dengan ukur.
 
-    Dipakai saat prosodi bermasalah: lebih murah membandingkan 4 varian satu
+    Dipakai saat prosodi bermasalah: lebih murah membandingkan 7 varian satu
     kalimat daripada me-render satu episode lalu kecewa.
     """
     cfg = voice_cfg()
-    slug = "probe"
     outdir = AUDIO / "_probe"
     outdir.mkdir(parents=True, exist_ok=True)
-    used = []
-    for name, model, override in VARIANTS:
+    for old in outdir.glob("*.mp3"):
+        old.unlink()
+    used = 0
+    for name, model, override, how in VARIANTS:
         c = json.loads(json.dumps(cfg))
         if model:
             c["model_id"] = model
         c["settings"].update(override)
-        out = outdir / f"{slug}_{name}.mp3"
+        text = _transform(args.probe, how)
+        out = outdir / f"probe_{name}.mp3"
         try:
-            size = tts(args.probe, out, c)
+            size = tts(text, out, c)
         except SystemExit as exc:
             print(f"  ! {name}: {exc}")
             continue
-        used.append(name)
-        print(f"  + {out.name} {size} B · {c['model_id']} · " + json.dumps(c["settings"], ensure_ascii=False))
-    print(f"selesai: {len(used)} varian di {outdir}")
+        used += 1
+        print(f"  + {out.name} {size} B · {c['model_id']} · {json.dumps(c['settings'], ensure_ascii=False)}")
+    print(f"selesai: {used} varian di {outdir}")
 
 
 def cmd_voice(args, ep):
