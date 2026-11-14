@@ -1,9 +1,12 @@
 {
   "episode": "EP06",
-  "status": "requested",
+  "status": "published",
   "visibility": "public",
   "publishNow": true,
   "force": true,
   "requested_at": "2026-11-14T05:25:00Z",
-  "catatan": "EP06 v2: naskah ditulis ulang dengan hook pertanyaan dan bahasa ngobrol (00E). force=true karena v1 (zFxJeWguVgg) sudah tercatat; v2 ini yang dipakai. 54,38 s - 16,0 MB - -14,9 LUFS."
+  "catatan": "EP06 v2 tayang. v1 (zFxJeWguVgg, post 6af794b6325c9d8126ba9279) masih publik; unpublish perlu keputusan pemilik karena penghapusan YouTube bersifat permanen.",
+  "published_at": "2026-11-14T05:22:23Z",
+  "youtube_url": "https://www.youtube.com/watch?v=_HB37ngpGg0",
+  "post_id": "6af7f006208448cdcf245de2"
 }
