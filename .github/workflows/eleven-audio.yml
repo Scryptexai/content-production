@@ -246,8 +246,9 @@ jobs:
           set -euo pipefail
           DIR="ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/$EPISODE"
           [ -d "$DIR" ] || { echo "::notice::tidak ada audio untuk disimpan"; exit 0; }
-          SZ=$(du -sm "$DIR" | cut -f1)
-          echo "ukuran total: ${SZ} MB"
+          # yang dihitung hanya mp3: wav turunan (amb/bed/sfx) besar dan selalu dibangun ulang
+          SZ=$(du -cm "$DIR"/*.mp3 "$DIR"/fx/*.mp3 2>/dev/null | tail -1 | cut -f1)
+          echo "ukuran mp3: ${SZ} MB"
           if [ "$SZ" -gt 25 ]; then
             echo "::warning::audio ${SZ} MB — tidak disimpan ke Git, ambil dari artifact run ini."
             exit 0

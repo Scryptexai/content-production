@@ -269,6 +269,14 @@ def cmd_probe(args):
 def cmd_voice(args, ep):
     cfg = voice_cfg()
     total = 0
+    keep = {k for k, _ in segments(ep)}
+    # Segmen yang tidak ada lagi di naskah harus dibuang, bukan ditinggal: kalau
+    # tertinggal, build_timing tidak membacanya tetapi git menyimpannya selamanya
+    # dan suatu hari ada yang salah memakainya.
+    for stray in (AUDIO / ep["ep"]).glob("*.mp3"):
+        if stray.stem not in keep:
+            stray.unlink()
+            print(f"  - {stray.name} (tidak dipakai naskah, dihapus)")
     for key, text in segments(ep):
         out = AUDIO / ep["ep"] / f"{key}.mp3"
         if out.exists() and not args.force:
