@@ -1,0 +1,103 @@
+{
+  "episode": "EP08",
+  "voice_id": "ojz6ro9PB1xDu44lymdM",
+  "narration_seconds": 58.859,
+  "files": [
+    {
+      "file": "00_hook.mp3",
+      "bytes": 79873,
+      "seconds": 4.923,
+      "sha256": "a051891738fe99f8364a7d1d26cb34df1be514ae05a2bbd6473ebac6ab57406b"
+    },
+    {
+      "file": "01_tanya.mp3",
+      "bytes": 70260,
+      "seconds": 4.319,
+      "sha256": "08cbfff00b5acabbeec5bf5cba792d35474953c72d81072b8444b50934611207"
+    },
+    {
+      "file": "02_relate.mp3",
+      "bytes": 58139,
+      "seconds": 3.576,
+      "sha256": "39422eb6a99e6012c9a6d870e9805124f34f2651ebcf48363c6a3caf95c90bcc"
+    },
+    {
+      "file": "03_setup.mp3",
+      "bytes": 112474,
+      "seconds": 6.966,
+      "sha256": "5155c00a6faf6fb37563ffe2e72aa3c480aeeb330ce482a0f4e78d6ff8550761"
+    },
+    {
+      "file": "04_tension.mp3",
+      "bytes": 78201,
+      "seconds": 4.83,
+      "sha256": "d059130d94096efc4ab068979b938cb4b2096776cbd0800c6bd54255355816a3"
+    },
+    {
+      "file": "05_tension.mp3",
+      "bytes": 63572,
+      "seconds": 3.901,
+      "sha256": "74981c974b411fe33b9ed68f80da1d11cbb755b0c70f9735018f881a7b2686b4"
+    },
+    {
+      "file": "06_turn.mp3",
+      "bytes": 77783,
+      "seconds": 4.783,
+      "sha256": "3aa80ce740f7e222ba757ea9e766eeaf3c99257997a6d36bc879524da3ffafef"
+    },
+    {
+      "file": "07_consequence.mp3",
+      "bytes": 52287,
+      "seconds": 3.204,
+      "sha256": "1f92142e05e97475c2dac3d024883d9fe7690151bb16af64f00beb57d6746678"
+    },
+    {
+      "file": "08_consequence.mp3",
+      "bytes": 71514,
+      "seconds": 4.412,
+      "sha256": "0afcdfbd257adcf32a5cfc5b6189d6bed411ffcaea8ae844650c932736078140"
+    },
+    {
+      "file": "99_loop.mp3",
+      "bytes": 50198,
+      "seconds": 3.065,
+      "sha256": "d05907e1ed42d5d2347393930fdea5156185a154987e09caf597a1b11afc56b0"
+    },
+    {
+      "file": "fx/boom.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "cd1ba6de9623888f8d0ae66ae02d33988da04a3602263a460e284901d13068dc"
+    },
+    {
+      "file": "fx/clunk.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "38905551c1fe224b0484150adc177da90fbaf6b3f470f115e4987b4ec5d94948"
+    },
+    {
+      "file": "fx/engine.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "d9ec9202e56abf062fb06c01bd7bf80e139f75229d73857abf22a2a91cf0c1ec"
+    },
+    {
+      "file": "fx/gust.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "afdacee4d8cb9497eeffe177e2a00ccc14f9d51a581d8f130a4efb4d8d3515cd"
+    },
+    {
+      "file": "fx/page.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "ecceaba506cccc8df353125ff900f6d5c41ad24450fb8df9ce390eab9b1a6189"
+    },
+    {
+      "file": "fx/rustle.mp3",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "ae4d98867ce7af5754aea223d7261b2032f5e4f839d84c71bc420e3f35f93664"
+    }
+  ]
+}
