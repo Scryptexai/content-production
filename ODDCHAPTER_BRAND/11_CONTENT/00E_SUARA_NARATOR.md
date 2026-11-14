@@ -139,11 +139,11 @@ memilih suara per episode.
 | unsur | nilai |
 |---|---|
 | penyedia | ElevenLabs |
-| **voice_id** | **`ojz6ro9PB1xDu44lymdM`** |
+| **voice_id** | **`arwfiAiEfIHHZCwcYYx2`** — **Denas, High class catchy storyteller** (ditunjuk pemilik 15 Nov 2026) |
 | model | `eleven_turbo_v2_5` · **speed 0.85** (diganti 14 Nov 2026, lihat catatan di bawah) |
 | format | `mp3_44100_192` |
 | settings | stability 0.38 · similarity 0.82 · style 0.35 · speaker boost aktif · speed 1.00 |
-| kecepatan target | 125–145 kata/menit (terukur EP08 v2: 131 wpm) |
+| kecepatan target | 138 kata/menit, dikoreksi per segmen dengan `atempo` |
 
 Sumber kebenaran: `tools/voice.json`. Naskah tidak menyimpan id suara; skrip
 `tools/eleven_audio.py` membacanya dari sana, jadi mengganti suara hanya boleh
@@ -201,3 +201,31 @@ Karena itu model kanal sekarang `eleven_turbo_v2_5`, speed 0.85.
    bukan dikarang lewat koma.
 3. Pertanyaan harus berakhir naik. Ini diukur, bukan dirasa: `tail_semit` ≥ −1,5.
 4. Kalau satu segmen >160 wpm, pecah kalimatnya — jangan menaikkan `speed`.
+
+## 9 · ATURAN YANG LAHIR 15 NOV 2026 (keluhan pemilik pada VO EP08)
+
+Yang dilaporkan: "setiap scene vo-nya beda", "tidak menuruti skill", "backsound terlalu
+nyaring", "suara turun 1–2 kata di zona yang tidak tepat", "jangan unggah sebelum saya setujui".
+
+**a · Satu suara, dibuktikan dengan ukuran.** `voice_id` lama (`ojz6ro9PB1xDu44lymdM`)
+menghasilkan F0 144 Hz pada satu segmen sementara median episode 110 Hz — itu suara lain,
+bukan variasi emosi. Sekarang dipakai **Denas** dan setiap episode wajib lulus
+`python3 tools/voice_consistency.py EPxx` (F0 median ±18%, spectral centroid ±35%,
+tilt ±4 dB). Gagal = jangan render.
+
+**b · Tempo dikoreksi, bukan diharapkan.** Parameter `speed` tidak konsisten dihormati
+model. Sesudah TTS, setiap segmen diukur; kalau menyimpang >10% dari 138 wpm, diterapkan
+`atempo` (ubah tempo tanpa ubah pitch). Hasil EP08: semua 12 segmen 126–147 wpm
+(rata-rata 138,4), dari sebelumnya 202 wpm di satu segmen.
+
+**c · Dinamika diratakan ringan.** Kompresor 3:1 (threshold −22 dB, attack 6 ms,
+release 140 ms) + limiter, supaya satu-dua kata yang tiba-tiba pelan tidak tenggelam —
+tanpa membuat kalimat datar.
+
+**d · Bed tidak boleh bersaing.** `build_bed.py` sekarang mengukur hasilnya dan menggeser
+ke **−32 LUFS** (≈18 dB di bawah narasi). Di Remotion, bed 0.85 dan efek 0.9. Hierarki:
+VO → efek → musik → ambience.
+
+**e · Tidak ada unggahan tanpa persetujuan.** `youtube-upload.yml` menolak berkas antrean
+yang tidak memuat `"approved": true`. Master dibuat, diukur, ditunjukkan ke pemilik,
+baru diunggah setelah pemilik menyatakan setuju.

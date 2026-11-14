@@ -92,6 +92,8 @@ Naskah → suara, aturan yang mengikat:
 
 ### Catatan lapangan (bukan dari dokumen, dari produksi kanal ini)
 
+- **Suara kanal: Denas — High class catchy storyteller (`arwfiAiEfIHHZCwcYYx2`).** Konsistensi
+  suara dibuktikan dengan `tools/voice_consistency.py`; segmen yang menyimpang >18% F0 ditolak.
 - **Model kanal: `eleven_turbo_v2_5`, speed 0.85.** Bukan pilihan selera: `eleven_multilingual_v2`
   terbukti mengambil 203–219 kata/menit pada kalimat 12 kata dan **mengabaikan `speed`**
   (berkas byte-identik pada dua nilai speed berbeda). Turbo v2.5 @0.85 = 142 wpm dan
@@ -99,6 +101,11 @@ Naskah → suara, aturan yang mengikat:
 - **Jeda di dalam satu berkas bukan milik kita.** Model yang menaruhnya. Karena itu jeda
   dikendalikan dengan memecah naskah menjadi satu breath group per segmen, lalu mengatur
   `GAP` di timeline — bukan dengan menambah koma atau elipsis.
+- **Tempo dikoreksi setelah rekam.** Target 138 wpm; kalau menyimpang >10%, diterapkan
+  `atempo` per segmen (pitch tetap). Model tidak bisa dipercaya untuk soal tempo.
+- **Bed −32 LUFS, volume 0.85.** Backsound yang menutupi kata adalah kesalahan produksi,
+  bukan selera.
+- **Tidak ada unggahan tanpa persetujuan pemilik** (`"approved": true` pada berkas antrean).
 - **Setiap rekaman diukur, bukan dikira.** `python3 tools/speech_prosody.py EPxx` mencetak
   wpm, jeda ≥140 ms, dan arah nada 300 ms terakhir. Target: 120–160 wpm, tanpa jeda
   ≥400 ms di tengah frasa, pertanyaan tidak jatuh di bawah −1,5 semit.
