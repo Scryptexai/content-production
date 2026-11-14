@@ -17,6 +17,7 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP04 | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN (JALAN KE ATAS) | 70,81 s | 17,3 MB | `1O2onobslZxZo5miA83s6d5cEHcfK1OGL` | `10_FILM/remotion/output/episodes/EP04_1080x1920_master.mp4` |
 | EP05 | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN (ROANOKE) | 68,84 s | 17,6 MB | `1ls-1EVOdp-2L81QvNpyi6QjzqmNHDdJY` | `10_FILM/remotion/output/episodes/EP05_1080x1920_master.mp4` |
 | EP06 v2 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 54,38 s | 16,0 MB | `1O4HvhK22QLjxXuLkhOzngAH-WS_jGLtH` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
+| EP07 | JEJAK KAKI ITU HANYA SATU ARAH (HINTERKAIFECK) | 48,28 s | 14,1 MB | `1OrIaFbZKj_yufo-HOSpVCYxnhmUHYKc8` | `10_FILM/remotion/output/episodes/EP07_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`
 Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`
