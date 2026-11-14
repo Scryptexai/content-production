@@ -32,5 +32,21 @@
     "voice_id": "ojz6ro9PB1xDu44lymdM",
     "model": "eleven_turbo_v2_5",
     "consistency": "LULUS (voice_consistency.py)"
+  },
+  "drive_file_id": "1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi",
+  "size_bytes": 2057505,
+  "sha256": "5a346c5eb351310f6acfbc1606e1f90332b230cef11d45db0832a735937f8542",
+  "mix": {
+    "master_lufs": -13.9,
+    "true_peak_db": -1.7,
+    "bed_lufs": -38.0,
+    "vo_bed_separation_db": 17.4,
+    "vo_rms_db": -20.0,
+    "vo_start": 0.15
+  },
+  "drive": {
+    "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
+    "file_id": "1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi",
+    "link": "https://drive.google.com/file/d/1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi/view"
   }
 }
