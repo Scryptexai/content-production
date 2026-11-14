@@ -1,8 +1,10 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "requested",
+  "status": "generated",
   "force": true,
   "requested_at": "2026-11-14T16:35:00Z",
-  "catatan": "Regenerasi penuh 12 segmen turbo_v2_5 speed 0.85 setelah segmen lama dibuang."
+  "catatan": "Regenerasi penuh 12 segmen turbo_v2_5 speed 0.85 setelah segmen lama dibuang.",
+  "finished_at": "2026-11-14T15:01:53Z",
+  "run_id": "43607811218"
 }
