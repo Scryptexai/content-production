@@ -1,105 +1,84 @@
 {
   "episode": "EP08",
   "voice_id": "ojz6ro9PB1xDu44lymdM",
-  "narration_seconds": 60.415,
+  "narration_seconds": 50.039,
   "files": [
     {
       "file": "00_hook.mp3",
-      "text": "Kenapa semua label di bajunya dipotong, sebelum dia hilang?",
-      "bytes": 93932,
-      "seconds": 3.855,
-      "sha256": "d9a3208be8900c104bd352fce51ae3683751a850a6659afd2b86bb9b99639798"
+      "text": "Semua label di bajunya dipotong. Sebelum dia hilang.",
+      "bytes": 90476,
+      "seconds": 3.715,
+      "sha256": "27c6a0891e6ab82b0a8d729de1273fa5cace97c387afca02e0abab03a56cc7ab"
     },
     {
       "file": "01_tanya.mp3",
-      "text": "Kalau kamu punya delapan nama. Yang mana yang kamu pakai pulang?",
-      "bytes": 115820,
-      "seconds": 4.769,
-      "sha256": "3d6ad6749b448cfa19265abf916efc0f7884cbe630b67b00fd16779d95ea32b4"
+      "text": "Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang?",
+      "bytes": 107180,
+      "seconds": 4.412,
+      "sha256": "56f120099eb40b6f6232065d4d3815fa1ba35c71c4293c7cfc0f149215cfb5b8"
     },
     {
       "file": "02_relate.mp3",
       "text": "Kita sembunyikan nama di internet. Dia pakai gunting.",
-      "bytes": 90476,
-      "seconds": 3.715,
-      "sha256": "74c04cf39a84bc9a94efa2077d8df4aa7e8158aa2237b7fcf43effb618e436c2"
+      "bytes": 88172,
+      "seconds": 3.622,
+      "sha256": "7c04f8329ce8682f19c0e36cc4ba0a49dd0917822ef35cc368e66e2989ab0087"
     },
     {
       "file": "03_setup.mp3",
-      "text": "November 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu.",
+      "text": "Tahun 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu.",
       "bytes": 116396,
-      "seconds": 4.786,
-      "sha256": "8c987e2edca112856ce7f4e924bd3921a0e713093881c1357471e7f2826a5798"
+      "seconds": 4.787,
+      "sha256": "d73da9d23d4b657b7b9bc1d4ac2f99ac67065a7f14e4fa19c3e4539525b58fa3"
     },
     {
       "file": "04_tension.mp3",
       "text": "Tubuhnya hangus dari depan. Punggungnya utuh.",
-      "bytes": 63980,
-      "seconds": 2.612,
-      "sha256": "b963eddb2c7ff018273658eec8e8f462abb017a570397d98026cd52133d06c99"
+      "bytes": 70316,
+      "seconds": 2.879,
+      "sha256": "b66bb134580ec4eed4f0e06751ad1b11412a3f588c2127c8b06155c228324664"
     },
     {
       "file": "05_tension.mp3",
       "text": "Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala.",
-      "bytes": 104876,
-      "seconds": 4.319,
-      "sha256": "48b7ccbf9177bbd3545f419f2f896c9b4a5375807fe7bcd96fbc6cb6c7544da5"
+      "bytes": 103148,
+      "seconds": 4.226,
+      "sha256": "567a1929ca7d06692cc9a22800537590f10767ed968f95aa9c94059d19668239"
     },
     {
-      "file": "06_tension.mp3",
-      "text": "Lihat botolnya. Tandanya dikerok semua.",
-      "bytes": 53612,
-      "seconds": 2.175,
-      "sha256": "72331fa6c9dcbbd1bc60e4722654e2e4a69741cf6c16e99f950f44117dd3844c"
+      "file": "06_turn.mp3",
+      "text": "Orang mau mati tidak memotong label. Tidak mengerok tanda di botol.",
+      "bytes": 110636,
+      "seconds": 4.551,
+      "sha256": "aa9d012577846608671b7d2030199b6f4f0196fea22700724069a60e7b31841d"
     },
     {
-      "file": "07_turn.mp3",
-      "text": "Polisi bilang bunuh diri. Tapi orang mau mati nggak potong label.",
-      "bytes": 109484,
-      "seconds": 4.505,
-      "sha256": "d75472dfb43322dc6bb1f66c30ff6091012408264d4143a9fd5ccf510e524b4a"
-    },
-    {
-      "file": "08_consequence.mp3",
-      "text": "Coba lihat kopernya di stasiun: wig, peta, uang asing.",
-      "bytes": 104300,
-      "seconds": 4.273,
-      "sha256": "2c56bc6de3d4be3ed772c1d16ddfa22b55c5d378c03592509ce292338b17f201"
-    },
-    {
-      "file": "09_consequence.mp3",
-      "text": "Empat puluh enam tahun kemudian, giginya bilang: Jerman.",
-      "bytes": 84716,
-      "seconds": 3.467,
-      "sha256": "f0ced1f4480904ebc63c265c0b30a3cac83fe28ec7ac1ed03c2fc80a9c52853a"
-    },
-    {
-      "file": "10_consequence.mp3",
-      "text": "Namanya nggak pernah ada. Yang hilang cuma label.",
-      "bytes": 81836,
-      "seconds": 3.344,
-      "sha256": "2c3aaa518ae32205adc7257059347a4ba0920de4f3bde5f87688591f1f6dcd6f"
+      "file": "07_consequence.mp3",
+      "text": "Lihat kopernya. Wig, uang asing, delapan nama.",
+      "bytes": 74348,
+      "seconds": 3.045,
+      "sha256": "1a7aff1fb9718a7809309a392043aad1b32f309b2cbe209a1a36445271a1eb12"
     },
     {
       "file": "99_loop.mp3",
-      "text": "Semua label hilang. Kamu nggak akan pernah tahu namanya.",
-      "bytes": 90476,
-      "seconds": 3.715,
-      "sha256": "a11fc0b588f7b3ae2d7c670cb75381140ab639a807453b941dc5208507b062d0"
+      "text": "Semua label hilang. Kamu tidak akan tahu namanya. Kenapa?",
+      "bytes": 95660,
+      "seconds": 3.922,
+      "sha256": "5479970e6aeea7090b2a1295c18ab6833d4b08609557d9bb4c4c6f9187f42fea"
     },
     {
       "file": "fx/boom.mp3",
       "text": "",
       "bytes": 40585,
       "seconds": 2.48,
-      "sha256": "6859d1891143e14e633684070970550d5f41212a355fe15ff640b72e441225f2"
+      "sha256": "2e08ed92f5ed4fa91e9c03fab0bb0fabdd2340bc2d5f4b1eade665f2fea23fb6"
     },
     {
       "file": "fx/clunk.mp3",
       "text": "",
       "bytes": 40585,
       "seconds": 2.48,
-      "sha256": "958c4fedcb2d463f216016a021a02bb5b10acfb9a1bf813f04bb7f3d8d2db38a"
+      "sha256": "ff5d89d8515bcd1ec9b5f558da20fd45d367bc66161705ac1a55e73d85fe1953"
     },
     {
       "file": "fx/engine.mp3",
@@ -113,21 +92,21 @@
       "text": "",
       "bytes": 40585,
       "seconds": 2.48,
-      "sha256": "85c41a1730c8f6cd94fb0eda57a325c388dce6b3a4c1613718054bb08f5ca647"
+      "sha256": "09cb3d8c47e14fc6215aafc9a2ebc47e3257b5fb00c1d258c872f5f76a27f1e2"
     },
     {
       "file": "fx/page.mp3",
       "text": "",
       "bytes": 40585,
       "seconds": 2.48,
-      "sha256": "81d613ee12ccc7d40db9fddb7c3c27a09ab0d8cb163b3f85c2e5bdbb2ad21246"
+      "sha256": "d20e724d3e87a26e22160d2316b5e4863d9cdd95330038216cd744428d11c76c"
     },
     {
       "file": "fx/rustle.mp3",
       "text": "",
       "bytes": 40585,
       "seconds": 2.48,
-      "sha256": "baa8bcbdea2b48c1e5487dfa9d46e0d544bc29d724f8d761265787bb2c52b9cd"
+      "sha256": "29c504d0df5795e92aa9eb4b4d646bb1ac5f9d80706cf106f618f760fe359e12"
     }
   ]
 }
