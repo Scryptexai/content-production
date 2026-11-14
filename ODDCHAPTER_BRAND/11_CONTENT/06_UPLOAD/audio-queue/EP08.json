@@ -1,8 +1,10 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "requested",
+  "status": "generated",
   "force": true,
   "requested_at": "2026-11-14T15:50:00Z",
-  "catatan": "Render ulang narasi dengan model turbo_v2_5 speed 0.85 (tempo 142 wpm, tanya naik). Naskah v3: 12 segmen, satu breath group per segmen, bahasa ngobrol."
+  "catatan": "Render ulang narasi dengan model turbo_v2_5 speed 0.85 (tempo 142 wpm, tanya naik). Naskah v3: 12 segmen, satu breath group per segmen, bahasa ngobrol.",
+  "finished_at": "2026-11-14T14:56:25Z",
+  "run_id": "43607380966"
 }
