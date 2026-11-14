@@ -126,7 +126,11 @@ def analyse(path, text):
     med = float(np.median(voiced)) if len(voiced) else 0.0
     tail_frames = f0[-int(0.30 * SR / HOP):]
     tail_v = tail_frames[tail_frames > 0]
-    tail = float(np.median(tail_v)) if len(tail_v) else 0.0
+    # Kurang dari 5 frame bersuara di 300 ms terakhir = tidak cukup bukti.
+    # Tanpa penjaga ini, segmen yang berakhir dengan konsonan pendek terbaca
+    # "naik 20 semit" padahal yang terjadi cuma jendela kosong.
+    tail = float(np.median(tail_v)) if len(tail_v) >= 5 else 0.0
+    tail_valid = len(tail_v) >= 5
     lead_frames = f0[: int(0.60 * SR / HOP)]
     lead_v = lead_frames[lead_frames > 0]
     lead = float(np.median(lead_v)) if len(lead_v) else 0.0
@@ -142,6 +146,7 @@ def analyse(path, text):
         "pauses_over_400ms": [p for p in pdur_sig if p >= 0.4],
         "f0_median": round(med, 1),
         "tail_semit": round(semit(tail, med), 2),
+        "tail_valid": bool(tail_valid),
         "lead_semit": round(semit(lead, med), 2),
         "question": text.strip().endswith("?"),
     }
@@ -170,14 +175,15 @@ def main():
         rows.append(r)
         print(f"{key:16s} {r['dur']:5.2f}s {r['wpm']:6.1f} wpm  jeda={r['pause_total']:4.2f}s "
               f"({len(r['pauses'])}x)  tail={r['tail_semit']:+5.2f}st"
+              + ("" if r["tail_valid"] else " (tak terukur)"))
               + ("  ← pertanyaan" if r["question"] else ""))
         if r["wpm"] and not 120 <= r["wpm"] <= 160:
             flags.append(f"{key}: {r['wpm']} wpm di luar 120–160")
         if r["pauses_over_400ms"]:
             flags.append(f"{key}: jeda panjang di tengah frasa {r['pauses_over_400ms']}")
-        if r["question"] and r["tail_semit"] < -1.5:
+        if r["question"] and r["tail_valid"] and r["tail_semit"] < -1.5:
             flags.append(f"{key}: pertanyaan berakhir TURUN ({r['tail_semit']:+} st)")
-        if not r["question"] and r["tail_semit"] > 3.0:
+        if not r["question"] and r["tail_valid"] and r["tail_semit"] > 3.0:
             flags.append(f"{key}: pernyataan berakhir naik tajam ({r['tail_semit']:+} st)")
 
     total = round(sum(r["dur"] for r in rows), 2)

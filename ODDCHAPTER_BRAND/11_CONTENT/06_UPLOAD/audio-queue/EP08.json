@@ -1,10 +1,8 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "generated",
+  "status": "requested",
   "force": true,
-  "requested_at": "2026-11-14T16:18:00Z",
-  "catatan": "Render ulang narasi turbo_v2_5 speed 0.85; batas ukuran menghitung mp3 saja; segmen lama dibuang.",
-  "finished_at": "2026-11-14T14:59:47Z",
-  "run_id": "43607659166"
+  "requested_at": "2026-11-14T16:35:00Z",
+  "catatan": "Regenerasi penuh 12 segmen turbo_v2_5 speed 0.85 setelah segmen lama dibuang."
 }
