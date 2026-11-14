@@ -500,39 +500,39 @@ EPISODES = [
         ),
     ),
     dict(
-        ep="EP08", day=8, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="B",
+        ep="EP08", day=8, slot="pagi", jam="07\.30", series="TERSEMBUNYI", pov="B",
         struktur="klimaks-awal",
         title="SEMUA LABEL DI PAKAIANNYA DIPOTONG",
         thumb=["SEMBILAN", "NAMA"], thumb_text="SEMBILAN NAMA",
-        durasi=50,
+        durasi=38,
         protagonis="Seorang perempuan tanpa nama, ditemukan di lembah Isdalen, Norwegia.",
         mau="Tidak ditemukan.",
         hambatan="Semua yang bisa menyebut namanya sudah dia buang sendiri.",
         tanaman="Label dipotong, tanda di botol dikerok, dan koper berisi delapan nama.",
-        hook="Kenapa semua label di bajunya dipotong, sebelum dia hilang?",
+        hook="Semua label di bajunya dipotong. Sebelum dia hilang.",
         hook_alt="Ada perempuan yang mencopot namanya dari setiap benda yang dia bawa.",
-        tanya="Kalau kamu punya delapan nama. Yang mana yang kamu pakai pulang?",
+        tanya="Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang?",
         entitas="label",
-        diskusi="Kalau semua jejak namamu dihapus, kamu masih bisa dicari?",
+        diskusi="Menurut kamu, apa yang sebenarnya terjadi di lembah itu?",
         celah="Kenapa dia menghapus namanya lebih rapi daripada kematiannya sendiri?",
         relate="Kita sembunyikan nama di internet. Dia pakai gunting.",
         gambar_melekat="Potongan label di atas pakaian, tanpa satu pun merek yang tersisa.",
+        # 9 segmen · 82 kata. Di 142 wpm + jeda 0,22 dtk = 37-38 dtk.
+        # Dipangkas 16 Nov 2026 dari 12 segmen/105 kata: di atas 60 dtk penonton
+        # hampir tidak pernah memutar ulang, jadi persentase tontonan tidak naik.
         beats=[
-            ("tanya", "Kalau kamu punya delapan nama. Yang mana yang kamu pakai pulang?"),
+            ("tanya", "Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang?"),
             ("relate", "Kita sembunyikan nama di internet. Dia pakai gunting."),
-            ("setup", "November 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu."),
+            ("setup", "Tahun 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu."),
             ("tension", "Tubuhnya hangus dari depan. Punggungnya utuh."),
             ("tension", "Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala."),
-            ("tension", "Lihat botolnya. Tandanya dikerok semua."),
-            ("turn", "Polisi bilang bunuh diri. Tapi orang mau mati nggak potong label."),
-            ("consequence", "Coba lihat kopernya di stasiun: wig, peta, uang asing."),
-            ("consequence", "Empat puluh enam tahun kemudian, giginya bilang: Jerman."),
-            ("consequence", "Namanya nggak pernah ada. Yang hilang cuma label."),
+            ("turn", "Orang mau mati tidak memotong label. Tidak mengerok tanda di botol."),
+            ("consequence", "Lihat kopernya. Wig, uang asing, delapan nama."),
         ],
         turn_quote="\u201cDia bunuh diri.\u201d",
-        turn_verdict="Mungkin. Tapi orang yang mau mati nggak motongin label, nggak ngerok tanda di botol, dan nggak nyimpen delapan nama di koper.",
-        loop="Semua label hilang. Kamu nggak akan pernah tahu namanya.",
-        cues=["LABEL DIPOTONG", "JELAGA", "8 NAMA", "TANPA NAMA"],
+        turn_verdict="Mungkin. Tapi orang yang mau mati tidak memotong label, dan tidak mengerok tanda di botol.",
+        loop="Semua label hilang. Kamu tidak akan tahu namanya. Kenapa?",
+        cues=["LABEL DIPOTONG", "JELAGA", "8 NAMA"],
         captions=[
             "",
             "Delapan nama.",
@@ -540,58 +540,43 @@ EPISODES = [
             "Isdalen, 1970.",
             "Terbakar dari depan.",
             "Jelaga di paru-paru.",
-            "Tandanya dikerok.",
-            "Bunuh diri?",
-            "Koper di stasiun.",
-            "Gigi bilang Jerman.",
-            "Cuma label yang hilang.",
-            "",
+            "Bukan bunuh diri?",
+            "Wig, uang, delapan nama.",
+            "Kenapa?",
         ],
-        caption_hi=["", "Delapan nama", "nama", "1970", "terbakar", "jelaga", "dikerok", "bunuh diri", "koper", "gigi", "label", ""],
+        caption_hi=["", "Delapan nama", "nama", "1970", "terbakar", "jelaga", "label", "koper", "kenapa"],
         stamps=[["1970", 3], ["8", 1]],
         sfx={
-            "00_hook": "gust",
-            "01_tanya": "rustle",
+            "00_hook": "rustle",
+            "01_tanya": "page",
             "02_relate": "page",
-            "03_setup": "engine",
+            "03_setup": "gust",
             "04_tension": "boom",
             "05_tension": "gust",
-            "06_tension": "clank",
-            "07_turn": "boom",
-            "08_consequence": "clunk",
-            "09_consequence": "page",
-            "10_consequence": "rustle",
-            "99_loop": "gust",
+            "06_turn": "boom",
+            "07_consequence": "clunk",
+            "99_loop": "boom",
         },
         photos=[
-            "00_labels", "01_passports", "02_wig", "03_valley", "04_scorch", "05_bottles",
-            "05_bottles", "00_labels", "06_suitcase", "08_archive", "01_passports", "00_labels",
+            "00_labels", "01_passports", "00_labels", "03_valley", "04_scorch",
+            "05_bottles", "00_labels", "06_suitcase", "00_labels",
         ],
         bed="audio/EP08/bed.wav",
         plate="ridge",
         sumber=(
             "VERIFIED pada butir utama. 29 November 1970: jenazah seorang perempuan ditemukan di Isdalen "
-            "(lembah di kaki Ulriken, dekat Bergen, Norwegia) oleh seorang ayah bersama dua anaknya. Tubuh "
-            "terbakar hebat di bagian depan; punggung relatif utuh; jelaga di paru-paru menunjukkan dia masih "
-            "hidup saat terbakar. Semua label pada pakaian dipotong dan tanda pada botol dikerok. Di lokasi: "
-            "botol minuman keras St. Hallvard kosong, dua botol plastik, tempat paspor plastik, sepatu karet, "
-            "sweter, syal, stoking nilon, payung, tas, kotak korek, jam tangan, anting, cincin, dan topi bulu "
-            "yang mengandung bensin. Tiga hari kemudian polisi menemukan dua koper di penitipan barang "
-            "Stasiun Bergen: pakaian tanpa label, wig, kacamata tanpa resep, krim eksim yang stikernya dikerok, "
-            "lima lembar 100 Deutsche Mark di lapisan koper, 135 kroner Norwegia, koin Belgia/Inggris/Swiss, "
-            "peta, jadwal, buku catatan berkode. Otopsi (Gades Institutt): kematian akibat keracunan karbon "
-            "monoksida dan fenobarbital; 50-70 tablet Fenemal di lambung; ada lebam di leher. Polisi "
-            "menyimpulkan kemungkinan bunuh diri; banyak pihak meragukannya. Dimakamkan 5 Februari 1971 di "
-            "Mollendal, peti seng, makam tanpa nama. Kasus dibuka kembali 2016 (NRK + polisi); analisis isotop "
-            "gigi menunjuk wilayah Jerman selatan/sekitar Nuremberg atau perbatasan Prancis-Jerman, tetapi "
-            "belum ada identifikasi pasti. Jumlah alias dilaporkan berbeda antar sumber (paling sedikit enam, "
-            "umumnya delapan, ada yang menyebut sembilan paspor) - naskah memakai 'delapan nama' dan angka itu "
-            "disebut sebagai laporan, bukan kepastian. Ringkasan sekunder: BBC News (2017), Wikipedia, NRK/BBC "
-            "'Death in Ice Valley', mentalfloss, norwegianamerican, historicmysteries."
+            "(lembah di kaki Ulriken, dekat Bergen, Norwegia). Tubuh terbakar hebat di bagian depan; "
+            "punggung relatif utuh; jelaga di paru-paru menunjukkan dia masih hidup saat terbakar. Semua "
+            "label pada pakaian dipotong dan tanda pada botol dikerok. Dua koper di penitipan barang "
+            "Stasiun Bergen: pakaian tanpa label, wig, kacamata tanpa resep, lima lembar 100 Deutsche Mark, "
+            "peta, buku catatan berkode. Otopsi: keracunan karbon monoksida dan fenobarbital; 50-70 tablet "
+            "Fenemal. Polisi menyimpulkan kemungkinan bunuh diri; banyak pihak meragukannya. Kasus dibuka "
+            "kembali 2016; analisis isotop gigi mengarah ke sekitar Nuremberg. Yang TIDAK dipakai: nama "
+            "alias yang belum terverifikasi dan teori konspirasi."
         ),
     ),
     dict(
-        ep="EP09", day=4, slot="malam", jam="19.30", series="TERSEMBUNYI", pov="D",
+        ep="EP09", day=4, slot="siang", jam="12.30", series="TERSEMBUNYI", pov="D",
         title="DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK",
         thumb=["DUA KATA", "TANPA NAMA"], thumb_text="DUA KATA",
         durasi=57,

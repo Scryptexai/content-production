@@ -175,10 +175,17 @@ def check(e):
     if not re.search(r"\d|\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|pohon)\b", e["hook"].lower()):
         notes.append("(1) hook tidak menyebut benda konkret — cek manual")
 
-    # 1b · kalimat pertama harus pertanyaan ATAU fakta yang bisa dicek (ada angka)
+    # 1b · kalimat pertama harus pertanyaan, fakta berangka, atau PERNYATAAN yang
+    # menyebut benda (pintu "pernyataan"/"adegan" di 00E §6). Sejak 16 Nov 2026
+    # pernyataan datar diizinkan: yang menentukan penonton bertahan adalah benda
+    # konkret di detik pertama, bukan tanda tanya.
     first = re.split(r"(?<=[.!?])\s+", e["hook"].strip())[0]
-    if not (first.rstrip().endswith("?") or re.search(r"\d", first)):
-        fails.append("(1b) kalimat pertama hook bukan pertanyaan dan tidak memuat angka — buka dengan pertanyaan atau fakta")
+    killer = re.search(r"\b(lampu|tenda|jejak|masker|kertas|pintu|kunci|label|salju|kuas|danau|"
+                       r"pohon|pakaian|baju|koper|botol|tubuh|gigi|jendela|kapal|api|batu|"
+                       r"gunting|nama|surat|foto|jam|darah|tulang|tanah|air|asap)\b", first.lower())
+    if not (first.rstrip().endswith("?") or re.search(r"\d", first) or killer):
+        fails.append("(1b) hook tidak pertanyaan, tidak berangka, dan tidak menyebut benda — "
+                     "penonton tidak punya apa pun untuk dipegang di detik pertama")
 
     # 1c · teks thumbnail 1–3 kata
     tt = (e.get("thumb_text") or "").strip()
@@ -309,9 +316,14 @@ def check(e):
 
     # kelayakan produksi
     total = len(e["hook"].split()) + sum(len(t.split()) for _, t in e["beats"]) + len(e["loop"].split())
-    secs = round(total / 2.45)
-    if not 42 <= secs <= 62:
-        fails.append(f"(produksi) {secs} detik, di luar 42–62")
+    # Perkiraan = bicara + jeda + lead-in + ekor, sama dengan yang dipakai
+    # build_timing (0,22 dtk antar segmen, 0,9 dtk ekor). Tanpa jeda, hitungannya
+    # selalu terlalu pendek 2-3 detik dan gerbangnya salah menolak.
+    n_seg = len(e["beats"]) + 2
+    secs = round(total / 2.45 + 0.22 * (n_seg - 1) + 1.05)
+    if not 35 <= secs <= 45:
+        fails.append(f"(produksi) {secs} detik, di luar 35–45 "  # data performa 16 Nov 2026
+                     f"(di atas 60 dtk hampir tidak pernah diputar ulang)")
     ph = e.get("photos") or []
     if ph and e.get("entitas") and any(w in ph[0] for w in ("island", "sea", "sky", "horizon")):
         fails.append(f"(produksi) foto pembuka '{ph[0]}' lanskap, bukan entitas — pembuka harus menunjuk orang/benda")

@@ -353,7 +353,7 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
   const turnVerdict = turnSegs[0]?.verdict || "";
 
   // 45 frame pertama adalah thumbnail: frame 0 harus identik dengan file thumbnail
-  const INTRO = 45;
+  const INTRO = 15;  // 0,5 dtk: cover tetap ada, tapi hook tidak menunggu (dulu 1,5 dtk)
   const intro = frame < INTRO && !!ep.thumb;
 
   const inHook = active?.kind === "hook";

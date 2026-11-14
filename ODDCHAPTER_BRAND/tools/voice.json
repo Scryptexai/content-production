@@ -1,9 +1,9 @@
 {
-  "identity": "Denas — High class catchy storyteller",
+  "identity": "Narator internal kanal (dipakai EP01–EP07)",
   "provider": "elevenlabs",
   "status": "locked",
-  "locked_at": "2026-11-15",
-  "voice_id": "arwfiAiEfIHHZCwcYYx2",
+  "locked_at": "2026-11-16",
+  "voice_id": "ojz6ro9PB1xDu44lymdM",
   "model_id": "eleven_turbo_v2_5",
   "output_format": "mp3_44100_192",
   "settings": {
@@ -13,17 +13,14 @@
     "use_speaker_boost": true,
     "speed": 0.85
   },
-  "pace_wpm": 138,
   "language": "id",
+  "polish": false,
   "notes": [
-    "SUARA KANAL: Denas — High class catchy storyteller, elevenlabs.io/voices/arwfiAiEfIHHZCwcYYx2 (ditunjuk pemilik 15 Nov 2026).",
-    "Menggantikan ojz6ro9PB1xDu44lymdM yang hasilnya tidak konsisten antar segmen (periode EP08: tiap scene terdengar beda orang).",
-    "Konsistensi WAJIB diukur: tools/voice_consistency.py — F0 median & spectral centroid tiap segmen dibanding median episode. Menyimpang >20% = suara beda, tolak render.",
-    "Model: eleven_turbo_v2_5 (mendukung speed; multilingual_v2 mengabaikan speed dan mengambil 200+ wpm).",
-    "Kunci API hanya berizin text_to_speech: metadata voice tidak terbaca, jadi identitas dibuktikan lewat ukuransuara, bukan metadata.",
-    "Jangan ganti suara/model tanpa perintah pemilik. Jangan pernah push ke antrean unggah sebelum pemilik menyetujui master.",
-    "Tempo dikoreksi per segmen dengan atempo bila menyimpang >10% dari pace_wpm (pitch tidak berubah). Kompresor 3:1 + RMS rata antar segmen dipakai untuk meredam kata yang tiba-tiba pelan."
-  ],
-  "tempo_tolerance": 0.1,
-  "polish": true
+    "SUARA KANAL: kembali ke narator internal yang dipakai EP01–EP07 (perintah pemilik 16 Nov 2026: \"back to vo internal saja\").",
+    "Setelan Denas (arwfiAiEfIHHZCwcYYx2) dihapus seluruhnya atas perintah pemilik — termasuk atempo/kompresor otomatis (polish) yang lahir khusus untuk menambal suara itu.",
+    "Model tetap eleven_turbo_v2_5: multilingual_v2 mengabaikan speed dan mengambil 200+ wpm (terukur 14 Nov 2026).",
+    "Pace tidak dikoreksi paksa. Kalau satu segmen terukur >170 wpm, pecah kalimatnya — jangan menaikkan speed.",
+    "Level antar segmen TIDAK diserahkan ke model: tools/mix_master.py menyamakan RMS tiap segmen sebelum campuran, dan mengukur bed terhadap narasi. Itu campuran, bukan identitas suara.",
+    "Suara tetap harus identik di semua segmen: jalankan tools/voice_consistency.py EPxx sebelum render."
+  ]
 }

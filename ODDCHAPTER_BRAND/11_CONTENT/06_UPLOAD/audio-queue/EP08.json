@@ -1,10 +1,8 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "generated",
+  "status": "requested",
   "force": true,
-  "requested_at": "2026-11-15T04:05:00Z",
-  "catatan": "Narasi Denas + atempo arah benar (target/wpm) + kompresor. Tanpa unggah.",
-  "finished_at": "2026-11-14T16:28:39Z",
-  "run_id": "43615712021"
+  "requested_at": "2026-11-14T17:10:02Z",
+  "catatan": "Naskah baru 9 segmen (81 kata, target 35-45 dtk) + suara internal kanal (ojz6ro9PB1xDu44lymdM, tanpa polish/atempo). Regenerasi penuh."
 }
