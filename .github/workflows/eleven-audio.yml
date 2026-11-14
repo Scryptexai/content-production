@@ -184,8 +184,13 @@ jobs:
             echo "- mode: \`${{ steps.req.outputs.mode }}\` · force: \`${{ steps.req.outputs.force }}\`"
             echo "- voice_id: \`ojz6ro9PB1xDu44lymdM\` (tools/voice.json)"
             echo "- kunci: tersedia sebagai secret"
-            find "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/${{ steps.req.outputs.episode }}" \
-              -name '*.mp3' -o -name '*.wav' 2>/dev/null | sort | sed 's/^/  - `/' | sed 's/$/`/'
+            DIR="ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/${{ steps.req.outputs.episode }}"
+            if [ -d "$DIR" ]; then
+              find "$DIR" \( -name '*.mp3' -o -name '*.wav' \) -printf '%P\n' 2>/dev/null \
+                | sort | sed 's/^/  - `/' | sed 's/$/`/' || true
+            else
+              echo "- belum ada berkas audio (mode check tidak menulis audio)"
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Unggah audio sebagai artifact

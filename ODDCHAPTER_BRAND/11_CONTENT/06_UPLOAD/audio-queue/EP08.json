@@ -1,8 +1,8 @@
 {
   "episode": "EP08",
-  "mode": "check",
+  "mode": "all",
   "status": "requested",
-  "force": false,
-  "requested_at": "2026-11-14T11:48:00Z",
-  "catatan": "Uji koneksi ElevenLabs + voice_id ojz6ro9PB1xDu44lymdM. Lanjut mode all kalau lolos."
+  "force": true,
+  "requested_at": "2026-11-14T11:58:00Z",
+  "catatan": "Koneksi ElevenLabs LULUS (run 43599840519: voice id ojz6ro9PB1xDu44lymdM + satu kalimat TTS berhasil; kunci hanya berizin text_to_speech). Sekarang narasi 10 segmen + efek suara + timing + bed."
 }
