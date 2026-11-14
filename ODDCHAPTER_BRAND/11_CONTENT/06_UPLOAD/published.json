@@ -71,6 +71,12 @@
         "status": "published",
         "uploaded_at": "2026-11-14T15:36:41Z",
         "youtube_url": "https://www.youtube.com/watch?v=3E2ekjMZPkc"
+      },
+      {
+        "post_id": "6af89b196abb0bb79a196d29",
+        "scheduled_for": "2026-11-15T07:30:00",
+        "status": "scheduled",
+        "uploaded_at": "2026-11-14T17:32:10Z"
       }
     ],
     "post_id": "6af869870e77952e44d8fe64",
