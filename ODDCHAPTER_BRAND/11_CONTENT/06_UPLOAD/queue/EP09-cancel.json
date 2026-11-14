@@ -1,0 +1,9 @@
+{
+  "episode": "EP09",
+  "action": "cancel",
+  "post_id": "6af8a02b588bc489d6d82eb5",
+  "status": "requested",
+  "approved": true,
+  "requested_at": "2026-11-14T23:18:09Z",
+  "catatan": "Batalkan jadwal yang masih memakai VO ElevenLabs; episode direkam ulang dengan VO internal."
+}
