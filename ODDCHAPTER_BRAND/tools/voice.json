@@ -1,26 +1,20 @@
 {
-  "identity": "Narator internal kanal (dipakai EP01–EP07)",
-  "provider": "elevenlabs",
+  "identity": "VO internal kanal (Arena TTS) — pengganti ElevenLabs",
+  "provider": "internal",
   "status": "locked",
   "locked_at": "2026-11-16",
-  "voice_id": "ojz6ro9PB1xDu44lymdM",
-  "model_id": "eleven_turbo_v2_5",
-  "output_format": "mp3_44100_192",
-  "settings": {
-    "stability": 0.38,
-    "similarity_boost": 0.82,
-    "style": 0.35,
-    "use_speaker_boost": true,
-    "speed": 0.85
-  },
+  "voice_id": "voice-04",
+  "model_id": "arena-tts",
+  "output_format": "mp3_44100 mono 64kbps",
+  "settings": {},
   "language": "id",
   "polish": false,
   "notes": [
-    "SUARA KANAL: kembali ke narator internal yang dipakai EP01–EP07 (perintah pemilik 16 Nov 2026: \"back to vo internal saja\").",
-    "Setelan Denas (arwfiAiEfIHHZCwcYYx2) dihapus seluruhnya atas perintah pemilik — termasuk atempo/kompresor otomatis (polish) yang lahir khusus untuk menambal suara itu.",
-    "Model tetap eleven_turbo_v2_5: multilingual_v2 mengabaikan speed dan mengambil 200+ wpm (terukur 14 Nov 2026).",
-    "Pace tidak dikoreksi paksa. Kalau satu segmen terukur >170 wpm, pecah kalimatnya — jangan menaikkan speed.",
-    "Level antar segmen TIDAK diserahkan ke model: tools/mix_master.py menyamakan RMS tiap segmen sebelum campuran, dan mengukur bed terhadap narasi. Itu campuran, bukan identitas suara.",
-    "Suara tetap harus identik di semua segmen: jalankan tools/voice_consistency.py EPxx sebelum render."
+    "PERINTAH PEMILIK 16 Nov 2026: 'vo nya jangan pakai elevenlabs lagi tapi pakai vo internal kamu yg kamu gunakan pada ep06-07'.",
+    "Seluruh jalur ElevenLabs (tools/eleven_audio.py + workflow eleven-audio.yml) DINONAKTIFKAN untuk narasi. audio-queue tidak lagi dipakai untuk VO.",
+    "Narasi sekarang dibuat di sesi agen (generate_speech) lalu ditulis langsung ke public/audio/<EP>/<kunci>.mp3 — nama berkas sama, jadi build_timing/Remotion tidak berubah.",
+    "Acuan bunyi EP06–EP07 (terukur): f0 median 102,2 dan 101,4 Hz · tilt ~12,5 dB. voice-04 terukur f0 116,8 Hz · tilt 12,2 dB — karakter gelapnya sama, nada dasar ~2,5 semiton lebih tinggi. Kalau pemilik mau lebih dekat lagi, audisi ulang.",
+    "Batas alat: 10 klip per giliran, jadi satu episode (9–10 segmen) = satu giliran.",
+    "Efek suara (sfx) tidak dibuat ulang: fx/*.mp3 episode tetap dipakai, ditempel lewat eleven_audio.py --only place (tidak memanggil API)."
   ]
 }
