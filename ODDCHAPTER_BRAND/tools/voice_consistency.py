@@ -116,12 +116,21 @@ def main():
                 limit = TOL[k] * 100
             if abs(d) > limit:
                 out.append((k, d, limit))
-        flag = "OK" if not out else "BEDA"
+        # Aturan dua sinyal (16 Nov 2026). f0 adalah identitas: kalau mediannya
+        # bergeser >18% itu suara lain, titik. Timbre (centroid/tilt) ikut isi
+        # kalimat — "Isdalen, Norwegia" penuh desis, "Tubuhnya hangus" penuh
+        # vokal bulat — jadi centroid yang menyimpang sendirian bukan bukti.
+        # Segmen baru dicap BEDA kalau f0 melenceng, atau kalau timbre
+        # menyimpang di dua ukuran sekaligus.
+        off = {k for k, _, _ in out}
+        judge = ("f0" in off) or {"cent", "tilt"} <= off
+        flag = "BEDA" if judge else ("ok*" if out else "OK")
         print(f"  {name:16s} f0={r['f0']:6.1f} cent={r['cent']:7.0f} tilt={r['tilt']:6.1f} "
               f"| " + (", ".join(f"{k} {d:+.1f}{'%' if k != 'tilt' else 'dB'}" for k, d, _ in out) or "-")
               + f"  {flag}")
-        for k, d, _ in out:
-            bad.append((name, k, d))
+        if judge:
+            for k, d, _ in out:
+                bad.append((name, k, d))
     if bad:
         print(f"\nTOLAK: {len(bad)} penyimpangan — kemungkinan suara berbeda:")
         for name, k, v in bad:
