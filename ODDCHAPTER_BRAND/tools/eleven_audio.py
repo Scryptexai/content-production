@@ -214,6 +214,43 @@ def audio_duration(path):
         return "?"
 
 
+
+VARIANTS = [
+    # (nama, model, override settings)
+    ("v2_now", None, {}),
+    ("v2_calm", None, {"speed": 0.92, "stability": 0.30, "style": 0.45}),
+    ("v4_now", "eleven_v4", {}),
+    ("v4_calm", "eleven_v4", {"speed": 0.92, "stability": 0.30, "style": 0.45}),
+]
+
+
+def cmd_probe(args):
+    """Render satu kalimat dalam beberapa varian, untuk dibandingkan dengan ukur.
+
+    Dipakai saat prosodi bermasalah: lebih murah membandingkan 4 varian satu
+    kalimat daripada me-render satu episode lalu kecewa.
+    """
+    cfg = voice_cfg()
+    slug = "probe"
+    outdir = AUDIO / "_probe"
+    outdir.mkdir(parents=True, exist_ok=True)
+    used = []
+    for name, model, override in VARIANTS:
+        c = json.loads(json.dumps(cfg))
+        if model:
+            c["model_id"] = model
+        c["settings"].update(override)
+        out = outdir / f"{slug}_{name}.mp3"
+        try:
+            size = tts(args.probe, out, c)
+        except SystemExit as exc:
+            print(f"  ! {name}: {exc}")
+            continue
+        used.append(name)
+        print(f"  + {out.name} {size} B · {c['model_id']} · " + json.dumps(c["settings"], ensure_ascii=False))
+    print(f"selesai: {len(used)} varian di {outdir}")
+
+
 def cmd_voice(args, ep):
     cfg = voice_cfg()
     total = 0
@@ -320,6 +357,7 @@ def main():
     ap.add_argument("--episode", help="EP08")
     ap.add_argument("--only", default="all", choices=["voice", "sfx", "place", "all", "build"])
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--probe", help="satu kalimat untuk dibandingkan antar varian model/settings")
     ap.add_argument("--music")
     ap.add_argument("--ms", type=int, default=48000)
     ap.add_argument("--out", default="music.mp3")
@@ -327,6 +365,9 @@ def main():
 
     if args.check:
         cmd_check(args)
+        return
+    if args.probe:
+        cmd_probe(args)
         return
     if args.music:
         cmd_music(args)

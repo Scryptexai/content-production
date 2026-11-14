@@ -29,13 +29,17 @@ on:
       mode:
         description: "check = uji kunci + voice id saja"
         type: choice
-        options: ["check", "voice", "sfx", "all", "musik"]
+        options: ["check", "voice", "sfx", "all", "probe", "musik"]
         default: "check"
       force:
         description: "true = timpa audio yang sudah ada"
         type: choice
         options: ["false", "true"]
         default: "false"
+      probe_text:
+        description: "Kalimat untuk mode probe (perbandingan model/settings)"
+        type: string
+        default: ""
       music_prompt:
         description: "Prompt musik (hanya untuk mode musik)"
         type: string
@@ -120,6 +124,8 @@ jobs:
           d = json.load(open(sys.argv[1], encoding="utf-8"))
           print(f"episode={d.get('episode','EP08')}")
           print(f"mode={d.get('mode','all')}")
+          txt = (d.get('probe_text') or '')
+          print("probe_text=" + txt.replace("\n", " "))
           print(f"force={'true' if d.get('force') else 'false'}")
           print(f"queue={sys.argv[1]}")
           PY
@@ -163,6 +169,16 @@ jobs:
             printf '%-16s %6.2f s\n' "$(basename "$f")" "$D"
           done
 
+      - name: Probe prosodi (bandingkan varian)
+        if: steps.req.outputs.mode == 'probe'
+        env:
+          PROBE_TEXT: ${{ inputs.probe_text || steps.req.outputs.probe_text }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PROBE_TEXT:-}" ]; then echo "::error::probe_text kosong."; exit 1; fi
+          python3 ODDCHAPTER_BRAND/tools/eleven_audio.py --probe "$PROBE_TEXT"
+          ls -l ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/_probe || true
+
       - name: Musik (kalau diminta)
         if: steps.req.outputs.mode == 'musik'
         env:
@@ -203,6 +219,19 @@ jobs:
             ODDCHAPTER_BRAND/10_FILM/remotion/src/timing.generated.json
           if-no-files-found: warn
           retention-days: 30
+
+      - name: Simpan hasil probe ke repo
+        if: steps.req.outputs.mode == 'probe'
+        run: |
+          set -euo pipefail
+          DIR=ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/_probe
+          [ -d "$DIR" ] || exit 0
+          git config user.name "oddchapter-audio"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f "$DIR"/*.mp3
+          git diff --cached --quiet && exit 0
+          git commit -m "audio probe: varian prosodi (v2/v4 × normal/tenang)"
+          git push
 
       - name: Simpan audio ke repo (mp3 saja, kecil)
         # Kenapa masuk Git: artifact Actions tidak bisa diunduh dari sandbox

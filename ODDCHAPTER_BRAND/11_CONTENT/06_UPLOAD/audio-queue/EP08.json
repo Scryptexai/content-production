@@ -1,10 +1,9 @@
 {
   "episode": "EP08",
-  "mode": "all",
-  "status": "generated",
+  "mode": "probe",
+  "status": "requested",
   "force": true,
-  "requested_at": "2026-11-14T12:05:00Z",
-  "catatan": "Ulang dengan penyimpanan mp3 ke repo. Narasi + fx ElevenLabs (voice ojz6ro9PB1xDu44lymdM).",
-  "finished_at": "2026-11-14T13:30:36Z",
-  "run_id": "43600020506"
+  "probe_text": "Kalau kamu punya delapan nama, yang mana yang kamu pakai pulang?",
+  "requested_at": "2026-11-14T15:10:00Z",
+  "catatan": "EP08 gagal VO (jeda/intonasi salah, bahasa terlalu formal). Naskah v3 sudah ditulis ulang per breath group. Probe: bandingkan v2 vs v4, settings normal vs tenang, pada satu kalimat tanya."
 }
