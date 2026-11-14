@@ -53,5 +53,13 @@
     "status": "MENUNGGU PERSETUJUAN PEMILIK",
     "note": "Jangan unggah sebelum pemilik menyetujui. Antrean unggah menolak tanpa approved:true.",
     "master": "10_FILM/remotion/output/episodes/EP08_1080x1920_master.mp4"
+  },
+  "drive": {
+    "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
+    "file_id": "1edGUtvPCLXqbPN348S-B48ho0FZ7bvv3",
+    "name": "EP08_1080x1920_master_v3.mp4",
+    "link": "https://drive.google.com/file/d/1edGUtvPCLXqbPN348S-B48ho0FZ7bvv3/view",
+    "notes_file_id": "1piQbBCt29MnMLObMV1dNkOt9v0maIyAB",
+    "visibility": "anyone with link (reader)"
   }
 }
