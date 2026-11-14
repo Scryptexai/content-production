@@ -1,0 +1,159 @@
+# EP05 — MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN
+**Seri:** HILANG · **Durasi target:** 11–12 menit · **Kata:** ±1.700
+**Pertanyaan utama:** kenapa mereka membongkar rumah sendiri, lalu meninggalkan satu kata di pagar?
+
+> 🎬 **Nada:** seperti orang membaca dokumen lama dengan lampu meja.
+> **Bed:** tanpa perkusi. Hanya nada rendah yang bergerak lambat.
+
+---
+
+## BAB 1 — PINTU MASUK
+`[00:00–00:40]`
+
+Rumah-rumah itu dibongkar, bukan dihancurkan.
+
+Ini bedanya penting, dan bedanya inilah yang membuat satu kata di tiang pagar berubah arti selama empat ratus tahun.
+
+Kalau rumah dihancurkan, ada yang menyerang. Kalau rumah dibongkar, ada yang **pindah**.
+
+Dan di tiang pagar itu, terpahat satu kata. Tanpa salib di atasnya.
+
+---
+
+## BAB 2 — ORANGNYA
+`[00:40–03:00]`
+
+Tahun 1587, seratus lima belas orang Inggris mendarat di sebuah tempat yang mereka sebut Roanoke. Sekarang tempat itu ada di Carolina Utara, tapi waktu itu ia bukan apa-apa: bukan kota, bukan pelabuhan, cuma tanah di tepi air dengan hutan di belakangnya.
+
+Mereka datang untuk tinggal. Ini bukan ekspedisi singkat yang mencari barang lalu pulang. Ini keluarga. Ada laki-laki, ada perempuan, ada anak-anak. Mereka membawa peralatan, buku, peta, zirah, batang besi, timah — barang-barang berat yang tidak dibawa orang kalau ia berencana pergi lagi dalam sebulan.
+
+Gubernurnya John White.
+
+Dan di koloni itu, pada 18 Agustus 1587, lahir seorang bayi perempuan bernama Virginia Dare. Anak Inggris pertama yang lahir di Amerika. Kalau kamu mencari satu wajah untuk seluruh cerita ini, wajah yang paling tepat adalah wajah bayi itu: ia tidak tahu apa-apa, dan ia adalah satu-satunya orang di koloni itu yang tidak bisa memilih.
+
+Beberapa waktu kemudian, White berlayar kembali ke Inggris. Bukan kabur. Ia pergi untuk mengambil bahan makanan, karena koloni baru tidak bisa bertahan tanpa pasokan dari luar.
+
+Ia berjanji kembali.
+
+Perjalanan itu memakan waktu yang tidak ia rencanakan. Inggris sedang berperang dengan Spanyol. Armada Spanyol membuat laut tertutup untuk kapal-kapal yang tidak dipakai berperang. Setiap kali White mencoba berlayar, ia ditahan oleh sesuatu yang lebih besar dari dirinya: kapal yang diambil negara, izin yang tidak keluar, perang yang tidak selesai.
+
+Tiga tahun.
+
+Ketika ia akhirnya kembali dan mendarat, tanggalnya 18 Agustus 1590. Ulang tahun cucunya yang ketiga.
+
+---
+
+## BAB 3 — YANG TIDAK COCOK
+`[03:00–06:30]`
+
+Barang bukti pertama adalah rumah-rumah itu sendiri.
+
+Orang yang pertama mendarat mengharapkan salah satu dari dua hal: koloni yang masih hidup, atau koloni yang mati. Yang mereka temukan bukan keduanya.
+
+Rumah-rumah sudah dibongkar. Bukan runtuh karena cuaca, bukan terbakar, bukan dirobohkan oleh sesuatu yang marah. Dibongkar dengan cara orang membongkar rumah yang akan ditinggal: papan dilepas, bagian yang berguna diambil, sisa yang tidak berguna ditinggal berdiri.
+
+Artinya mereka pergi dengan rencana. Artinya mereka tidak dikejar ke luar rumah.
+
+Dan di sekitar tempat itu, didirikan pagar kayu — palisade. Pagar pertahanan, yang tidak ada ketika White berangkat.
+
+Ini bagian yang saling bertabrakan. Orang yang membangun pagar pertahanan takut pada sesuatu. Orang yang membongkar rumah dengan rapi berencana pergi. Dua hal itu bisa terjadi bersamaan, tapi hanya kalau mereka punya waktu — cukup waktu untuk takut, cukup waktu untuk bersiap, cukup waktu untuk pergi.
+
+Barang bukti kedua adalah apa yang tidak ada.
+
+Tidak ada mayat. Tidak ada kuburan. Tidak ada tulang yang berserakan. Tidak ada tanda pertempuran.
+
+Kalau koloni itu dibantai, seratus lima belas tubuh tidak menghilang. Mereka dikubur, atau mereka ditinggal, dan dalam dua-duanya, ada sesuatu yang bisa ditemukan tiga tahun kemudian.
+
+Tidak ada apa pun.
+
+Barang bukti ketiga adalah dua pahatan.
+
+Yang pertama, huruf C, R, O, dipahat di sebuah pohon. Yang kedua, satu kata penuh di tiang pagar: CROATOAN.
+
+Dan di atas kedua pahatan itu, tidak ada salib.
+
+Ini bukan detail kecil. Sebelum White berangkat, mereka membuat kesepakatan. Kalau mereka pindah, mereka akan memahat nama tempat tujuan. Kalau mereka pindah karena terpaksa — karena bahaya, karena serangan — mereka akan menambahkan tanda salib Malta di atas nama itu.
+
+Salib itu artinya: kami tidak pergi karena kami mau.
+
+Di kayu itu, tidak ada salib.
+
+---
+
+## BAB 4 — YANG DITEMUKAN BELAKANGAN
+`[06:30–09:00]`
+
+Croatoan bukan kata yang dibuat-buat. Ia punya dua arti sekaligus, dan dua-duanya penting.
+
+Yang pertama: sebuah pulau. Sekarang namanya Hatteras, sekitar lima puluh mil ke selatan dari Roanoke. Di tahun 1587, lima puluh mil bukan jarak yang bisa ditempuh dengan berjalan kaki dalam sehari, tapi juga bukan benua. Itu jarak yang bisa ditempuh dengan perahu.
+
+Yang kedua: nama orang. Suku Algonquian yang tinggal di pulau itu, dengan seorang kepala bernama Manteo yang bersahabat dengan orang Inggris.
+
+Jadi kata di tiang pagar itu bukan peringatan. Itu alamat.
+
+White tahu itu. Ia langsung memutuskan menyeberang ke Croatoan. Dan di sinilah hal yang paling kejam dalam seluruh cerita ini terjadi: kapalnya tidak bisa.
+
+Badai datang. Jangkar kapal rusak. Kapten menolak melanjutkan. White, yang sudah menunggu tiga tahun untuk melihat cucunya, berdiri di dek dan melihat pulau tempat keluarganya mungkin berada, lalu berlayar kembali ke Inggris karena kapalnya tidak bisa membawanya ke sana.
+
+Ia tidak pernah kembali ke Amerika.
+
+Empat ratus tahun kemudian, yang tersisa dari cerita ini bukan lagi cerita tentang kepergian. Yang tersisa adalah penyelidikan.
+
+Pada 2012, di British Museum, sebuah peta dari abad ke-16 diperiksa dengan cara baru. Peta itu bernama La Virginea Pars, dan di salah satu bagiannya ada tambalan kertas. Di bawah tambalan itu, dengan pencitraan, terlihat sesuatu yang selama ini tersembunyi: simbol benteng.
+
+Pada 2015, First Colony Foundation mengumumkan penemuan yang mereka sebut Site X, di Bertie County, sekitar lima puluh mil ke pedalaman dari Roanoke. Tanah di sana memperlihatkan tanda-tanda pemukiman orang Eropa dari abad ke-16, jauh dari lokasi koloni aslinya.
+
+Dan di Hatteras, arkeolog Mark Horton menemukan endapan sisa pandai besi dari abad ke-16: bukti bahwa di pulau itu pernah ada orang yang mengolah besi dengan cara orang Inggris.
+
+Tidak ada satu pun dari temuan itu yang menuliskan nama. Tidak ada satu pun yang bisa menunjuk satu tubuh dan berkata: ini Virginia Dare.
+
+Tapi semuanya menunjuk ke arah yang sama.
+
+---
+
+## BAB 5 — DUGAAN YANG PALING KUAT
+`[09:00–10:30]`
+
+Dugaan yang paling kuat, dan yang paling tidak dramatis, adalah ini: mereka pindah, dan mereka berbaur.
+
+Mereka tidak punya cukup orang untuk bertahan sendiri. Mereka tidak punya pasokan dari Inggris, karena Inggris sedang berperang. Mereka dikelilingi oleh orang yang sudah tinggal di tanah itu jauh sebelum mereka datang, dan sebagian dari orang itu bersahabat dengan mereka.
+
+Dalam keadaan seperti itu, bertahan hidup berarti berhenti menjadi koloni.
+
+Ini bukan akhir yang menyenangkan untuk sebuah cerita misteri. Tidak ada hantu. Tidak ada pembantaian. Tidak ada kapal yang kembali dengan mayat. Yang ada hanyalah seratus lima belas orang yang perlahan berhenti disebut sebagai orang Inggris, dan mulai disebut sebagai orang di pulau itu.
+
+Tapi dugaan ini punya satu hal yang tidak dimiliki dugaan lain: ia cocok dengan semua barang bukti.
+
+Rumah dibongkar karena mereka pindah. Pagar dibangun karena mereka takut pada sesuatu sebelum pindah. Tidak ada mayat karena tidak ada yang meninggal dalam jumlah besar. Tidak ada salib karena mereka tidak pergi karena terpaksa. Dan Croatoan tertulis karena itu memang tempat yang mereka tuju.
+
+Ia cocok dengan semuanya, dan itulah kenapa ia tetap dugaan, bukan jawaban.
+
+---
+
+## BAB 6 — YANG MASIH TERBUKA
+`[10:30–11:30]`
+
+Karena kalau seratus lima belas orang berbaur dengan penduduk pulau, seharusnya ada jejaknya.
+
+Ada laporan dari tahun 1607, dua puluh tahun kemudian, ketika orang Inggris datang lagi ke wilayah itu. John Smith mendengar cerita tentang orang-orang berambut terang dan berkulit pucat yang tinggal di antara suku-suku di selatan. Ada juga cerita dari orang-orang yang lebih kemudian tentang kata-kata Inggris yang masih dipakai di beberapa tempat.
+
+Semua itu adalah cerita. Bukan catatan. Bukan daftar nama.
+
+Dan yang paling mengganggu dari seluruh kasus ini bukanlah bahwa kita tidak tahu ke mana mereka pergi. Yang paling mengganggu adalah bahwa kita tidak tahu **kapan** mereka berhenti menjadi koloni Roanoke.
+
+Tidak ada satu pun dokumen yang mencatat momen itu. Tidak ada surat terakhir. Tidak ada catatan bahwa pada tanggal tertentu, mereka memutuskan untuk tidak lagi menjadi orang Inggris.
+
+Mereka menghilang dari dokumen, bukan dari dunia.
+
+---
+
+## BAB 7 — PERTANYAAN PENUTUP
+`[11:30–12:00]`
+
+John White meninggal di Inggris. Ia tidak pernah tahu apakah cucunya tumbuh besar, dan ia tidak pernah tahu apakah kata di tiang pagar itu benar.
+
+Empat ratus tahun kemudian, kita masih membaca kata yang sama, dan kita masih bertanya hal yang sama: apakah mereka pergi, atau apakah mereka dibawa pergi?
+
+Jadi sekarang, pertanyaan yang lebih sulit: kalau kamu menemukan satu kata di pagar, tanpa salib, dan kamu punya kapal yang bisa membawamu ke sana — kamu akan menyeberang, atau kamu akan menulis laporan dan pulang?
+
+> 🎬 **Penutup:** berhenti tepat di "pulang". Jangan tambahkan kalimat penjelas.

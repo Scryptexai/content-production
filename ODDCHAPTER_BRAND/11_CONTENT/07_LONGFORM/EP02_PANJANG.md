@@ -1,0 +1,147 @@
+# EP02 — MEREKA MEMOTONG TENDA ITU DARI DALAM
+**Seri:** HILANG · **Durasi target:** 11–12 menit · **Kata:** ±1.700
+**Pertanyaan utama:** kenapa sembilan orang merobek rumah mereka sendiri, lalu berlari ke salju?
+
+> 🎬 **Nada:** dingin dan pelan. Setiap angka diucapkan seperti fakta cuaca, bukan
+> seperti kejutan. **Bed:** angin tipis sepanjang bab, hilang total di bab 4.
+
+---
+
+## BAB 1 — PINTU MASUK
+`[00:00–00:40]`
+
+Sembilan orang memotong tenda mereka sendiri dari dalam, lalu keluar ke salju tanpa sepatu.
+
+Bukan satu orang. Sembilan. Bukan robek sedikit di jahitan yang longgar — kain yang dipotong dengan sengaja, dari dalam, padahal pintu tenda itu hanya satu meter dari tempat mereka berdiri.
+
+Dan mereka keluar tanpa sepatu.
+
+Kalau kamu pernah berada di suhu minus dua puluh, kamu tahu bahwa itu bukan keputusan yang dibuat oleh orang yang sedang berpikir. Itu keputusan yang dibuat oleh orang yang sedang menghindari sesuatu yang lebih buruk daripada kedinginan.
+
+Yang jadi pertanyaan: apa yang lebih buruk daripada kedinginan, di dalam tenda, di tengah malam, di gunung yang tidak ada apa pun selain salju?
+
+---
+
+## BAB 2 — ORANGNYA
+`[00:40–03:00]`
+
+Mereka mahasiswa. Institut Politeknik Ural, di Uni Soviet, tahun 1959. Dan mereka bukan mahasiswa yang iseng naik gunung sekali lalu pulang dengan cerita. Mereka punya izin pendakian tertinggi di negara itu. Mereka tidur di salju seperti kamu tidur di kasur: sebagai kebiasaan, bukan sebagai petualangan.
+
+Pemimpinnya Igor Dyatlov, dua puluh tiga tahun. Kalau kamu lihat fotonya, ia terlihat seperti orang yang selalu membawa daftar. Jenis orang yang memeriksa cuaca tiga kali sebelum berangkat, dan jenis orang yang akan membuat kamu merasa aman walaupun sebenarnya tidak.
+
+Tujuan mereka gunung bernama Kholat Syakhl. Namanya, dalam bahasa penduduk setempat, berarti gunung yang mati. Bukan gunung kematian. Bukan gunung tempat orang mati. Gunung yang mati — seperti sesuatu yang sudah selesai, dan tidak ingin diganggu.
+
+Mereka berangkat berdelapan. Lalu berangkat bertujuh, karena satu dari mereka, Yuri Yudin, pulang di tengah jalan. Punggungnya sakit. Sciatica. Ia meninggalkan kelompok dengan alasan yang membosankan: tubuhnya tidak bisa lagi.
+
+Itu keputusan paling penting dalam seluruh cerita ini, dan ia membuatnya karena nyeri pinggang.
+
+Yudin adalah satu-satunya dari kesembilan orang itu yang pulang.
+
+Malam 1 Februari 1959 mereka mendirikan tenda di lereng. Sembilan orang di dalam satu kain. Di luar, angin. Suhu di bawah nol, seperti biasa. Mereka makan, mereka mencatat, mereka tidur.
+
+Dan pada suatu titik di malam itu, salah satu dari mereka mengambil pisau, dan memotong tenda dari dalam.
+
+---
+
+## BAB 3 — YANG TIDAK COCOK
+`[03:00–06:30]`
+
+Barang bukti pertama adalah tenda itu sendiri.
+
+Ketika tim pencari menemukannya tiga minggu kemudian, tenda itu masih berdiri. Tidak tertiup angin. Tidak tertimbun. Tidak ditinggalkan dalam keadaan ditarik dari tiangnya seperti orang yang pergi terburu-buru. Kainnya terpotong dari dalam, menganga ke arah lereng di bawahnya.
+
+Dan di dalamnya masih ada sepatu. Jaket. Makanan.
+
+Ini bagian yang paling sulit diterima akal sehat. Kalau kamu keluar tenda karena sesuatu yang mengancam, hal pertama yang kamu ambil adalah sepatu. Bukan karena kamu berpikir jernih — justru karena kamu tidak berpikir. Tangan yang panik meraih sepatu tanpa perlu disuruh.
+
+Mereka tidak meraih apa pun.
+
+Barang bukti kedua meninggalkan tenda dan pergi ke bawah.
+
+Jejak kaki ditemukan mengarah turun, ke arah garis pohon, sekitar satu setengah kilometer jauhnya. Jarak itu tidak jauh kalau kamu berjalan dengan sepatu di siang hari. Jarak itu sangat jauh kalau kamu berjalan di salju, di malam hari, dengan pakaian yang tidak lengkap.
+
+Dan sebagian jejak itu adalah jejak kaki telanjang. Kaus kaki. Kulit.
+
+Barang bukti ketiga adalah apa yang ada di ujung jejak itu.
+
+Di bawah pohon cedar besar, dua orang ditemukan. Di dekat mereka, sisa api kecil — api yang jelas pernah dinyalakan, lalu mati sebelum sempat menghangatkan siapa pun. Dua orang itu melepas pakaian mereka dan menaruhnya di atas orang lain. Kamu bisa membayangkan percakapan yang tidak pernah terjadi tapi jelas pernah terjadi di situ: ambil ini, kamu lebih butuh.
+
+Empat lainnya ditemukan di dasar jurang, lebih jauh ke bawah.
+
+Empat orang itu tidak meninggal karena kedinginan dengan cara yang damai. Tulang dada mereka retak. Tengkorak mereka retak. Kekuatan yang menghantam mereka sebanding dengan kekuatan tabrakan mobil.
+
+Dan di sinilah cerita ini berhenti menjadi cerita tentang cuaca.
+
+---
+
+## BAB 4 — YANG DITEMUKAN BELAKANGAN
+`[06:30–09:00]`
+
+Selama enam puluh tahun, tiga penjelasan hidup berdampingan.
+
+Yang pertama bilang mereka dibunuh. Penduduk setempat menyebut suku Mansi, dan penyelidikan resmi sempat menoleh ke arah itu. Tapi tidak ada tanda perkelahian di tubuh yang ditemukan lebih dulu, tidak ada jejak orang lain, dan tidak ada motif yang bisa ditunjuk.
+
+Yang kedua bilang mereka bertemu sesuatu yang tidak kita kenal. Versi ini hidup paling lama, karena versi ini tidak butuh bukti — ia cuma butuh rasa takut, dan rasa takut selalu tersedia.
+
+Yang ketiga adalah yang paling membosankan, dan itu sebabnya ia diabaikan selama puluhan tahun: longsoran salju.
+
+Masalahnya, ahli longsoran sendiri menolak versi ini. Lereng itu terlalu landai untuk longsoran besar. Sudut yang dibutuhkan tidak ada. Dan orang-orang yang menolak versi itu bukan orang awam — mereka orang yang menghabiskan hidupnya menghitung salju.
+
+Lalu pada 2021, dua insinyur, Johan Gaume dan Alexander Puzrin, memodelkan ulang lereng itu dengan cara yang belum pernah dilakukan orang.
+
+Mereka tidak bertanya apakah salju bisa longsor di lereng itu. Mereka bertanya apa yang terjadi kalau lempeng salju di atasnya sudah lemah, lalu ada angin yang menumpuk salju baru di satu sisi, lalu ada orang yang memotong lapisan itu dengan berjalan di atasnya, lalu lempeng itu tergelincir dalam bentuk blok, bukan aliran.
+
+Model itu berhasil. Blok salju yang turun dari ketinggian kecil, dengan kepadatan tinggi, bisa mematahkan tulang dada dan tengkorak orang yang sedang berbaring — tanpa mengubur mereka, tanpa menghancurkan tenda, dan tanpa meninggalkan bekas longsoran besar yang bisa dilihat tiga minggu kemudian.
+
+Itu menjelaskan hampir semua luka.
+
+Dan itu juga menjelaskan kenapa mereka keluar tanpa sepatu. Kalau kamu terbangun karena sesuatu menghantam tubuhmu di dalam ruangan yang tertutup, kamu tidak mencari sepatu. Kamu mencari jalan keluar. Tenda itu terasa seperti perangkap, jadi tenda itu dipotong.
+
+Dari dalam.
+
+---
+
+## BAB 5 — DUGAAN YANG PALING KUAT
+`[09:00–10:30]`
+
+Jadi begini versi yang paling masuk akal, dan kamu boleh tidak menyukainya.
+
+Malam itu mereka tidur di lereng yang mereka kira aman. Di atas mereka ada lempeng salju yang sudah lama menunggu. Sesuatu membuatnya lepas: angin, suhu, potongan dari sembilan tubuh yang berbaring di atasnya. Blok salju itu turun dan menghantam tenda.
+
+Mereka terbangun di dalam kegelapan, dengan tulang yang sudah retak untuk sebagian dari mereka, dan satu pikiran: keluar. Mereka memotong kain, keluar ke udara minus dua puluh, dan berlari ke bawah karena di bawah ada pohon, dan di bawah pohon berarti ada sesuatu yang bisa dibakar.
+
+Dua yang paling kuat berhasil menyalakan api kecil dan mati di sampingnya. Empat yang lain turun lebih jauh, jatuh ke jurang, dan retak di sana.
+
+Ini penjelasan yang jujur. Ini penjelasan yang punya model, angka, dan paper. Ini penjelasan yang dipakai penyelidikan Rusia pada 2020, dan ini penjelasan yang paling tidak romantis dari semuanya.
+
+Tapi ini juga penjelasan yang tidak selesai.
+
+---
+
+## BAB 6 — YANG MASIH TERBUKA
+`[10:30–11:30]`
+
+Karena kalau longsoran yang menghantam mereka, kenapa tidak ada satu pun dari mereka yang kembali ke tenda?
+
+Tenda itu masih berdiri tiga minggu kemudian. Di dalamnya ada pakaian, sepatu, makanan, dan tempat berlindung. Jaraknya cuma satu setengah kilometer. Orang yang sudah keluar dari bahaya pertama akan kembali, walaupun hanya untuk mengambil jaket.
+
+Sembilan orang tidak kembali. Tidak satu pun.
+
+Mereka bertahan di bawah pohon sampai api mereka mati. Mereka melepas pakaian untuk menghangatkan satu sama lain. Mereka melakukan semua hal yang dilakukan orang yang berencana hidup lebih lama — dan tidak ada yang berbalik ke arah tenda.
+
+Ada beberapa jawaban teknis untuk itu. Hipotermia membuat orang bingung. Cahaya tenda tidak terlihat dari bawah pohon. Angin menghapus jejak sehingga mereka tidak bisa menemukan jalan pulang.
+
+Semua jawaban itu benar, dan semua jawaban itu terasa kurang.
+
+---
+
+## BAB 7 — PERTANYAAN PENUTUP
+`[11:30–12:00]`
+
+Yuri Yudin pulang karena punggungnya sakit. Ia hidup sampai 2013, dan selama lebih dari lima puluh tahun ia ditanya satu hal yang sama: menurutmu apa yang terjadi di lereng itu.
+
+Ia tidak pernah menjawab dengan monster. Ia tidak pernah menjawab dengan rahasia militer. Ia bilang ia tidak tahu.
+
+Sekarang giliranmu. Kalau kamu ada di dalam tenda itu, dan kamu mendengar sesuatu menghantam kain di atas kepalamu — kamu akan memotong tenda dan berlari ke bawah, atau kamu akan diam dan menunggu sampai terang?
+
+> 🎬 **Penutup:** hentikan bed di kalimat "ia tidak tahu". Biarkan 1 detik sunyi sebelum bab 7.

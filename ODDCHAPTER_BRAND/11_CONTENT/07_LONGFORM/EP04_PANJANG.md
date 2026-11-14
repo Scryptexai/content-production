@@ -1,0 +1,171 @@
+# EP04 — MEREKA BERJALAN MENJAUHI PERTOLONGAN
+**Seri:** HILANG · **Durasi target:** 11–12 menit · **Kata:** ±1.700
+**Pertanyaan utama:** kenapa lima pria berjalan ke atas, menjauhi mobil yang masih bisa dipakai?
+
+> 🎬 **Nada:** seperti kamu menceritakan ini di mobil, dalam perjalanan pulang.
+> **Bed:** hanya di bab 3 ke atas. Bab 1 dan 2 tanpa musik sama sekali.
+
+---
+
+## BAB 1 — PINTU MASUK
+`[00:00–00:40]`
+
+Ada makanan di dalam lemari, pemanas di sudut ruangan, dan seorang pria yang berbaring di tempat tidur sampai berat badannya tinggal separuh.
+
+Ia tidak membuka makanan itu. Ia tidak menyalakan pemanas itu.
+
+Dan yang paling aneh bukan itu.
+
+Yang paling aneh adalah bahwa ia sampai di tempat itu dengan berjalan kaki, ke atas, menjauhi mobil yang ia tinggalkan dengan kunci masih menancap di lubang kontak.
+
+---
+
+## BAB 2 — ORANGNYA
+`[00:40–03:00]`
+
+Februari 1978, California utara. Lima pria dari kota kecil bernama Yuba City.
+
+Kalau kamu tinggal di kota kecil, kamu tahu jenis malam seperti ini. Jumat. Ada pertandingan basket kampus di Chico, sekitar lima puluh mil dari rumah. Mereka pergi berlima, karena lebih murah, dan karena pulang bareng lebih menyenangkan daripada pulang sendiri.
+
+Nama-nama mereka: Jack Madruga, yang punya mobil. Bill Sterling. Jackie Huett. Ted Weiher. Dan Gary Mathias.
+
+Gary punya riwayat kesehatan yang membuat keluarganya khawatir, tapi malam itu ia pergi seperti biasa. Tidak ada yang aneh. Tidak ada pertengkaran. Tidak ada telepon terakhir yang menakutkan.
+
+Mereka menonton pertandingan, lalu berangkat pulang.
+
+Sekitar pukul sepuluh malam, mereka berhenti di sebuah toko, Behr's Market, di Chico. Mereka membeli makanan ringan. Ini hal terakhir yang dikonfirmasi oleh orang lain: lima pria, di toko, membeli camilan, lalu pergi.
+
+Sabtu pagi, mereka tidak pulang.
+
+Keluarga mulai menelepon. Menelepon teman, menelepon rumah sakit, menelepon kantor polisi. Ini tahap yang selalu sama di setiap kasus orang hilang: satu hari pertama di mana semua orang masih berpikir ada penjelasan yang membosankan. Mobil mogok. Mereka mampir ke rumah seseorang. Mereka malu pulang terlambat.
+
+Penjelasan membosankan itu tidak datang.
+
+---
+
+## BAB 3 — YANG TIDAK COCOK
+`[03:00–06:30]`
+
+Barang bukti pertama adalah mobilnya.
+
+Selasa, 28 Februari — tiga atau empat hari setelah mereka hilang — mobil Jack Madruga ditemukan. Mercury Montego tahun 1969. Ia berdiri di sebuah jalan logging bersalju di Plumas National Forest, dekat sebuah tempat bernama Rogers Cow Camp.
+
+Jaraknya sekitar tujuh puluh mil ke arah timur dari jalur yang seharusnya mereka ambil untuk pulang.
+
+Bukan tujuh puluh meter. Bukan salah belok sedikit. Tujuh puluh mil ke arah yang salah, ke jalan yang tidak menuju rumah, di musim salju.
+
+Dan kondisi mobilnya adalah bagian yang membuat kasus ini tidak pernah bisa dilepas.
+
+Mobil itu tidak rusak. Tidak ada tanda tabrakan. Tidak ada tanda dibongkar. Tidak ada tanda perkelahian di dalamnya. Kuncinya masih di lubang kontak. Tangki bensinnya masih setengah penuh.
+
+Kalau kamu pernah kehabisan bensin, kamu tahu bahwa itu bukan keadaan darurat yang membuat orang meninggalkan mobil di tengah hutan. Itu keadaan yang membuat orang duduk di dalam mobil sambil menunggu.
+
+Barang bukti kedua adalah arah jejak kaki.
+
+Mereka tidak berjalan turun, ke arah jalan yang lebih ramai. Mereka tidak berjalan kembali ke arah kota. Mereka berjalan ke atas. Ke tempat yang lebih tinggi, lebih dingin, lebih jauh dari apa pun yang bisa menolong mereka.
+
+Ini keputusan yang tidak masuk akal dalam semua skenario yang biasa kita pakai. Dalam keadaan panik, orang berjalan turun. Dalam keadaan bingung, orang berjalan ke arah cahaya. Dalam keadaan dingin, orang berjalan ke arah panas.
+
+Mereka berjalan ke arah yang lebih dingin.
+
+Barang bukti ketiga adalah apa yang tidak ada.
+
+Tidak ada catatan bahwa mereka berhenti di rumah seseorang. Tidak ada saksi yang melihat mereka setelah toko itu. Tidak ada panggilan telepon. Tidak ada tanda bahwa mereka mencoba kembali ke jalan raya.
+
+Lima pria, satu mobil yang masih bisa dipakai, dan satu-satunya jejak adalah sepatu yang menanjak ke bukit.
+
+---
+
+## BAB 4 — YANG DITEMUKAN BELAKANGAN
+`[06:30–09:00]`
+
+Salju di Plumas turun sepanjang musim itu. Pencarian berhenti karena tidak ada yang bisa dilihat. Orang-orang menunggu pencairan, dan menunggu pencairan di pegunungan berarti menunggu sampai Juni.
+
+Pada awal Juni 1978, salju mulai pergi. Dan ketika pergi, ia memperlihatkan sesuatu yang mengubah seluruh kasus ini.
+
+Di dalam hutan ada trailer milik penjaga hutan, milik Dinas Kehutanan Amerika. Sebuah ruangan kecil yang dibangun untuk orang yang tinggal di hutan berbulan-bulan. Di dalamnya ada tempat tidur.
+
+Di tempat tidur itu, ditemukan Ted Weiher.
+
+Ia sudah meninggal. Berat badannya tinggal separuh. Jenggotnya panjang dengan cara yang memberi tahu pemeriksa satu hal yang tidak bisa dibantah: ia tidak meninggal pada Februari. Ia bertahan di sana selama berminggu-minggu. Perkiraan yang paling sering dikutip adalah delapan sampai tiga belas minggu.
+
+Sekarang dengarkan isi ruangan itu.
+
+Di dalam trailer ada makanan kaleng. Ada ransum. Ada selimut. Ada pemanas propana. Ada lentera minyak. Ada korek api.
+
+Hampir semuanya tidak dipakai.
+
+Bukan habis. Tidak dipakai. Makanan masih ada di rak. Pemanas masih ada di tempatnya. Korek masih ada di tempatnya.
+
+Ted Weiher berbaring di tempat tidur, terbungkus selimut, dan meninggal karena kelaparan dan kedinginan — kesimpulan pemeriksa — di dalam ruangan yang berisi makanan dan alat untuk membuat api.
+
+Dan ini bukan bagian akhir cerita. Ini justru bagian yang paling janggal.
+
+Dua pria lain, Jack Madruga dan Bill Sterling, ditemukan di hutan, di luar. Jackie Huett juga di luar.
+
+Gary Mathias tidak pernah ditemukan. Tidak pada 1978. Tidak sampai sekarang. Tubuhnya tidak pernah keluar dari hutan itu.
+
+Yang ditemukan adalah sepatunya, di dalam trailer.
+
+---
+
+## BAB 5 — DUGAAN YANG PALING KUAT
+`[09:00–10:30]`
+
+Penjelasan yang paling umum diberikan orang untuk kasus ini adalah: mereka tersesat.
+
+Itu jawaban yang masuk akal untuk dua hal pertama. Mobil berhenti di jalan yang salah, mereka bingung, mereka berjalan mencari bantuan. Salju turun, jejak hilang, mereka tidak bisa kembali.
+
+Kalau kamu membayangkan skenario itu, kamu bisa melihat bagaimana lima pria berakhir di dalam hutan.
+
+Tapi skenario itu punya satu masalah besar: arah.
+
+Orang yang tersesat dan ingin ditolong berjalan turun. Ada jalan di bawah. Ada kota di bawah. Ada mobil, dengan bensin, di bawah.
+
+Mereka berjalan ke atas.
+
+Lalu ada masalah kedua: makanan.
+
+Orang yang kelaparan selama berminggu-minggu akan makan apa pun yang bisa dibuka. Bukan karena ia berani, tapi karena tubuhnya mengambil alih. Ted Weiher tidak membuka makanan itu. Itu bukan keputusan. Itu ketidakmampuan.
+
+Dan masalah ketiga adalah sepatu Gary Mathias.
+
+Sepatu itu ada di dalam trailer. Di dalam. Artinya Gary sampai ke ruangan itu. Artinya Gary masuk, dan melepas sepatunya, dan mungkin berbaring, dan mungkin menghangatkan diri.
+
+Lalu ia keluar lagi. Tanpa sepatu. Ke salju.
+
+Orang tidak melakukan itu kalau ia sedang menyelamatkan diri. Orang melakukan itu kalau ia sedang mencari sesuatu, atau mengejar sesuatu, atau memanggil seseorang yang tidak menjawab.
+
+---
+
+## BAB 6 — YANG MASIH TERBUKA
+`[10:30–11:30]`
+
+Kalau kita susun ulang seluruh kejadiannya, bentuknya seperti ini.
+
+Lima pria berbelok ke jalan yang salah. Mobil berhenti, atau mereka memutuskan berhenti. Mereka berjalan ke atas, ke arah yang tidak masuk akal. Tiga dari mereka berakhir di luar, di hutan. Satu berakhir di dalam trailer, dan tidak menyentuh makanan yang ada di sampingnya. Satu masuk ke trailer, melepas sepatunya, lalu keluar lagi tanpa sepatu dan tidak pernah kembali.
+
+Yang tidak dijelaskan oleh semua penjelasan yang ada bukan lagi soal arah. Yang tidak dijelaskan adalah **kepatuhan**.
+
+Lima pria dewasa, dengan mobil yang bisa dipakai, dengan makanan yang bisa dibeli di toko, dengan pilihan untuk berbalik kapan saja — dan tidak satu pun dari mereka yang berbalik.
+
+Dalam setiap rekonstruksi, ada satu titik di mana kelima orang itu seharusnya berhenti dan bertanya: kita sedang ke mana?
+
+Tidak ada tanda bahwa pertanyaan itu pernah muncul.
+
+Dan kalau kamu mencari satu kata untuk menjelaskan itu, kata yang paling dekat bukan panik. Kata yang paling dekat adalah menurut. Mereka mengikuti sesuatu sampai ke ujungnya.
+
+---
+
+## BAB 7 — PERTANYAAN PENUTUP
+`[11:30–12:00]`
+
+Trailer itu masih ada di Plumas National Forest. Setiap musim dingin, salju menutupinya lagi, dan setiap musim panas, ia muncul lagi dengan cara yang sama.
+
+Empat dari lima pria itu akhirnya ditemukan. Satu tidak.
+
+Jadi sekarang, aku mau kamu bayangkan posisi yang paling sederhana dari seluruh cerita ini: kamu duduk di dalam mobil itu, mesin masih menyala, tangki masih setengah penuh, dan empat orang lain sudah membuka pintu dan berjalan ke atas.
+
+Kamu ikut, atau kamu tinggal dan menyalakan lampu?
+
+> 🎬 **Penutup:** tahan 1,5 detik. Bab 7 diucapkan lebih pelan daripada bab lain.
