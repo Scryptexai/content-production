@@ -4,5 +4,5 @@
   "status": "requested",
   "force": true,
   "requested_at": "2026-11-14T11:58:00Z",
-  "catatan": "Koneksi ElevenLabs LULUS (run 43599840519: voice id ojz6ro9PB1xDu44lymdM + satu kalimat TTS berhasil; kunci hanya berizin text_to_speech). Sekarang narasi 10 segmen + efek suara + timing + bed."
+  "catatan": "Koneksi ElevenLabs LULUS (voice id ojz6ro9PB1xDu44lymdM + TTS; kunci hanya berizin text_to_speech). Narasi 10 segmen + efek + timing + bed."
 }
