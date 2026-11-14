@@ -28,13 +28,30 @@
   "containsSyntheticMedia": true,
   "visibility": "public",
   "drive_file_id": "131CrG69yCLrczrTygjYbTV5Hs-TxIDRl",
-  "duration_seconds": 53.5,
-  "size_bytes": 15262619,
-  "sha256": "263395b152a6d5867c1fce4343ccf4c1b91c1fd5a75d81cffe792630c9284a87",
+  "duration_seconds": 51.0,
+  "size_bytes": 14734683,
+  "sha256": "7fd50bf44c2429b673079cc94a39026e1ad440f15da213d9a2ef4b495ba56cce",
   "voice": {
-    "voice_id": "ojz6ro9PB1xDu44lymdM",
+    "name": "Denas — High class catchy storyteller",
+    "voice_id": "arwfiAiEfIHHZCwcYYx2",
     "model": "eleven_turbo_v2_5",
-    "speed": 0.85,
-    "wpm_measured": 131
+    "wpm_measured": 138.4,
+    "wpm_range": [
+      126,
+      147
+    ],
+    "consistency": "LULUS (voice_consistency.py)"
+  },
+  "mix": {
+    "master_lufs": -14.0,
+    "true_peak_db": -1.7,
+    "bed_lufs": -36.0,
+    "vo_bed_separation_db": 15.9,
+    "vo_rms_db": -20.0
+  },
+  "review": {
+    "status": "MENUNGGU PERSETUJUAN PEMILIK",
+    "note": "Jangan unggah sebelum pemilik menyetujui. Antrean unggah menolak tanpa approved:true.",
+    "master": "10_FILM/remotion/output/episodes/EP08_1080x1920_master.mp4"
   }
 }
