@@ -1,0 +1,119 @@
+{
+  "episode": "EP10",
+  "voice_id": "ojz6ro9PB1xDu44lymdM",
+  "narration_seconds": 56.217,
+  "files": [
+    {
+      "file": "00_hook.mp3",
+      "text": "Mereka menulis buku dalam bahasa yang tidak dimengerti siapa pun.",
+      "bytes": 106028,
+      "seconds": 4.365,
+      "sha256": "d0f699a7d8932f39169afb23d256fa596955150ab8cd52e65503f5e579cc68c5"
+    },
+    {
+      "file": "01_tanya.mp3",
+      "text": "Bayangkan punya bahasa yang cuma kamu dan satu orang tahu. Kenapa itu dianggap penyakit?",
+      "bytes": 144044,
+      "seconds": 5.944,
+      "sha256": "d8c3ab768c48f81f4253dd4caf2c12f97ca92010628417d83102fa14e21d91a1"
+    },
+    {
+      "file": "02_relate.mp3",
+      "text": "Kita pakai bahasa untuk menjelaskan diri. Mereka pakai untuk menghilang.",
+      "bytes": 111788,
+      "seconds": 4.598,
+      "sha256": "432fc1612f6533d2ebc5ada7f3c847fd7de6b089b8259a9a307fbba9f1a716d8"
+    },
+    {
+      "file": "03_setup.mp3",
+      "text": "Wales, 1963. Dua kembar identik, June dan Jennifer.",
+      "bytes": 84716,
+      "seconds": 3.479,
+      "sha256": "1847448b8caf179f399d11c40b94e22ac9e3bb50cc27ee9b2b31cc8e28044e70"
+    },
+    {
+      "file": "04_tension.mp3",
+      "text": "Mereka berhenti bicara ke siapa pun. Kecuali satu sama lain.",
+      "bytes": 104876,
+      "seconds": 4.319,
+      "sha256": "1682d2310fbc26a602271568c4fe249568d70fc1879e5eb369585a55a73a8921"
+    },
+    {
+      "file": "05_tension.mp3",
+      "text": "Bahasa itu punya aturan, kosakata, dan nama sendiri.",
+      "bytes": 90476,
+      "seconds": 3.715,
+      "sha256": "54eb14b223682c26fbe057419049d46d1a0ee63327608a0d64600002cd392350"
+    },
+    {
+      "file": "06_tension.mp3",
+      "text": "Coba lihat buku catatan mereka. Novel, puisi, sandiwara.",
+      "bytes": 97388,
+      "seconds": 4.008,
+      "sha256": "1fdd605864633338ad08ff45ff65ed2bb69d09e3a1e37318c1383e6164d0a299"
+    },
+    {
+      "file": "07_turn.mp3",
+      "text": "Rumah sakit jiwa memisahkan mereka. Supaya sembuh.",
+      "bytes": 74924,
+      "seconds": 3.056,
+      "sha256": "a55856c3b4b2af2c9aebf3f71ac3ac79f7f3357d3ec987fbf81055d7750ca103"
+    },
+    {
+      "file": "08_consequence.mp3",
+      "text": "June meninggal 1993. Jennifer setahun kemudian.",
+      "bytes": 86444,
+      "seconds": 3.534,
+      "sha256": "426d52e613243ebb9005477fff1a052d628d0e931f8abf1b0a4c677b6daaeec4"
+    },
+    {
+      "file": "99_loop.mp3",
+      "text": "Bahasa itu hilang saat mereka dipisahkan. Kamu masih punya suara?",
+      "bytes": 104876,
+      "seconds": 4.319,
+      "sha256": "735536a6482da1f9b09669f8dff4ffb4ad22fae08ffd85c062733a6cc83e71c3"
+    },
+    {
+      "file": "fx/boom.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "d9e09ed65e58aedc59e28bd199839b97642c0a940f5a2c85bddb787a2d753546"
+    },
+    {
+      "file": "fx/clunk.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "d7e1905652019f822043a6ae102a138037417fdd20cabecd2420fa3b4f78eeea"
+    },
+    {
+      "file": "fx/door.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "fb905aa4a4a77ca49bd9c8b7389691893c77be8575371d147b5e638a5bd3aa19"
+    },
+    {
+      "file": "fx/page.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "6ce50985d2529332293cd4fa579f3c60034d4cc86316c69f9544935cdb34be7a"
+    },
+    {
+      "file": "fx/rustle.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "318e000d0a12f5692c0b770780e3b218ab5bac60c8cce2228420da28a79a4fac"
+    },
+    {
+      "file": "fx/tick.mp3",
+      "text": "",
+      "bytes": 40585,
+      "seconds": 2.48,
+      "sha256": "b0c031fe5f05e54424536cf86a58a123d937fc2be0d424d0b7e485c8c226cbee"
+    }
+  ]
+}
