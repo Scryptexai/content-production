@@ -1,8 +1,10 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "requested",
+  "status": "generated",
   "force": true,
   "requested_at": "2026-11-15T03:10:00Z",
-  "catatan": "Narasi ulang dengan suara Denas (arwfiAiEfIHHZCwcYYx2). Tanpa unggah: master diukur dulu, menunggu persetujuan pemilik."
+  "catatan": "Narasi ulang dengan suara Denas (arwfiAiEfIHHZCwcYYx2). Tanpa unggah: master diukur dulu, menunggu persetujuan pemilik.",
+  "finished_at": "2026-11-14T16:25:13Z",
+  "run_id": "43615406896"
 }
