@@ -19,16 +19,16 @@
 
 ## 1 · HOOK (0–3 s)
 
-> 1922. Lihat salju di depan rumah itu. Semua jejak menuju ke dalam.
+> Kalau semua jejak di salju itu mengarah masuk, siapa yang keluar?
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| TANYA | Coba bayangkan kamu di rumah itu. Kamu akan mencari lotengnya? |
+| TANYA | Coba bayangkan kamu di rumah itu. Kamu akan memeriksa atapnya, atau pura-pura tidak dengar? |
 | RELATE | Kita sering mengabaikan bunyi kecil di rumah sendiri. |
 | SETUP | Malam tiga puluh satu Maret 1922, enam orang tidur di pertanian itu. |
-| TENSION | Kunci rumah mereka hilang. Andreas naik ke loteng, dan tidak ada siapa pun. |
+| TENSION | Lihat kuncinya: hilang. Andreas naik ke atap, dan tidak ada siapa pun. |
 | TENSION | Tidak ada pintu yang dirusak. Jadi bagaimana dia bisa masuk? |
 | TURN | Dia tidak masuk malam itu. Dia sudah menunggu di dalam rumah. |
 | CONSEQUENCE | Empat hari kemudian, tetangga melihat asap dari cerobong. |
