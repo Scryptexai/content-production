@@ -1,8 +1,10 @@
 {
   "episode": "EP08",
   "mode": "all",
-  "status": "requested",
+  "status": "generated",
   "force": true,
   "requested_at": "2026-11-15T04:05:00Z",
-  "catatan": "Narasi Denas + atempo arah benar (target/wpm) + kompresor. Tanpa unggah."
+  "catatan": "Narasi Denas + atempo arah benar (target/wpm) + kompresor. Tanpa unggah.",
+  "finished_at": "2026-11-14T16:28:39Z",
+  "run_id": "43615712021"
 }
