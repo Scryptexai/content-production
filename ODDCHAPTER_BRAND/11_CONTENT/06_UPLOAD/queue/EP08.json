@@ -1,9 +1,12 @@
 {
   "episode": "EP08",
-  "status": "requested",
+  "status": "published",
   "visibility": "public",
   "publishNow": true,
   "force": true,
   "requested_at": "2026-11-14T16:40:00Z",
-  "catatan": "EP08 versi 2: VO diperbaiki (turbo_v2_5 speed 0.85, 131 wpm, satu breath group per segmen). Drive 131CrG69yCLrczrTygjYbTV5Hs-TxIDRl · 53,50 s · 15,3 MB · -14,3 LUFS. Versi lama F6BGrQhYmaA masih publik dan perlu dihapus manual."
+  "catatan": "Versi 2 (VO diperbaiki) tayang. Versi 1 F6BGrQhYmaA (VO v2 cepat, jeda salah) masih publik — hapus manual.",
+  "published_at": "2026-11-14T15:36:41Z",
+  "youtube_url": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
+  "post_id": "6af880002c9f6025a255dbf8"
 }
