@@ -335,6 +335,32 @@ def lookup(limit=12):
     out = ROOT / "11_CONTENT" / "06_UPLOAD" / "zernio-posts.json"
     out.write_text(json.dumps(dump, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"  {len(dump['posts'])} post terakhir → {out.relative_to(ROOT)}")
+
+    # Platform apa saja yang tersambung ke API key ini. Dipakai untuk menjawab
+    # "bisa posting TikTok lewat Zernio?" dengan data, bukan tebakan.
+    accs = {}
+    for path in ("/accounts", "/profiles"):
+        try:
+            accs[path] = api_get(path, key)
+        except SystemExit:
+            pass
+    aplats = set()
+    for payload in accs.values():
+        raw = payload.get("accounts") or payload.get("profiles") or payload.get("data") or []
+        if isinstance(raw, dict):
+            raw = raw.get("accounts") or raw.get("profiles") or []
+        for item in raw if isinstance(raw, list) else []:
+            if not isinstance(item, dict):
+                continue
+            if item.get("platform"):
+                aplats.add(str(item["platform"]).lower())
+            for child in (item.get("platforms") or item.get("accounts") or []):
+                if isinstance(child, dict) and child.get("platform"):
+                    aplats.add(str(child["platform"]).lower())
+    dump_accts = {"fetched_at": dump["fetched_at"], "platforms": sorted(aplats), "raw": accs}
+    ap = ROOT / "11_CONTENT" / "06_UPLOAD" / "zernio-accounts.json"
+    ap.write_text(json.dumps(dump_accts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"  platform tersambung: {', '.join(sorted(aplats)) or '(tidak terbaca)'}")
     for item in dump["posts"]:
         print(f"    {item['createdAt']}  {item['status']:10s}  {item['url']}  {item['title']}")
     return dump
