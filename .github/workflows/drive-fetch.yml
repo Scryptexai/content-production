@@ -1,0 +1,63 @@
+name: Drive fetch (proxy unduh berkas milik user)
+
+# Kenapa ada: sandbox kerja hanya bisa menghubungi github.com, npm, dan pypi.
+# api.elevenlabs.io, drive.google.com, dan host lain tidak terjangkau dari sana,
+# sedangkan runner GitHub punya internet penuh. Jadi runner dipakai sebagai
+# proxy unduh: berkas Drive diambil di sini, lalu diunggah sebagai artifact yang
+# bisa diunduh balik oleh sesi kerja dengan `gh run download`.
+#
+# Syarat: berkas Drive harus bisa dibaca "siapa saja yang punya tautan" selama
+# job berjalan. Izin itu dicabut lagi setelah artifact diunduh.
+#
+# Batas: hanya drive.google.com / drive.usercontent.google.com, maksimal 250 MB,
+# dan hanya satu berkas per jalannya workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      file_id:
+        description: "ID berkas Google Drive"
+        required: true
+        type: string
+      name:
+        description: "Nama berkas hasil (mis. VO-EP09.mp3)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      ALLOWED_HOSTS: "drive.google.com drive.usercontent.google.com"
+      MAX_BYTES: "262144000"
+    steps:
+      - name: Unduh dari Drive
+        run: |
+          set -euo pipefail
+          name="${{ inputs.name }}"
+          case "$name" in
+            */*|..*) echo "::error::nama berkas tidak boleh berisi path"; exit 1 ;;
+          esac
+          url="https://drive.usercontent.google.com/download?id=${{ inputs.file_id }}&export=download&confirm=t"
+          host=$(printf '%s' "$url" | awk -F/ '{print $3}')
+          case " $ALLOWED_HOSTS " in
+            *" $host "*) ;;
+            *) echo "::error::host tidak diizinkan: $host"; exit 1 ;;
+          esac
+          mkdir -p /tmp/inbox
+          curl -fsSL --retry 3 --max-time 600 -o "/tmp/inbox/$name" "$url"
+          bytes=$(stat -c%s "/tmp/inbox/$name")
+          echo "→ $name  $bytes byte"
+          if [ "$bytes" -lt 1024 ]; then echo "::error::berkas terlalu kecil, kemungkinan halaman login Drive"; exit 1; fi
+          if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::melebihi $MAX_BYTES byte"; exit 1; fi
+          head -c 16 "/tmp/inbox/$name" | od -An -tx1 | head -1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: drive-file
+          path: /tmp/inbox/*
+          retention-days: 2
+          if-no-files-found: error
