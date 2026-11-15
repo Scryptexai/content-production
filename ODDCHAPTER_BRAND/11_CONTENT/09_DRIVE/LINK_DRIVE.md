@@ -55,3 +55,19 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 · EP18 — https://docs.google.com/document/d/1BtcYK8kHMkWm5SIeNH6-RXAd8hmtyNS-80SPAViLi-Y/edit
 
 Semua berkas dibuat 6 Nov 2026 dari `11_CONTENT/09_DRIVE/` (sumber: `tools/drive_export.py`).
+
+---
+
+# Link Google Drive — THUMBNAIL EP01–EP08
+
+| isi | link |
+|---|---|
+| folder thumbnail | https://drive.google.com/drive/folders/1ONOkiczGnlwJYl4gzdd4Mgu-nBhRWPGp |
+| 16:9 LONG (1280×720), 8 berkas | https://drive.google.com/drive/folders/1RQ4sAMdfxddL216_jIAShZviQFDE_HZy |
+| 9:16 SHORT (1080×1920), 8 berkas | https://drive.google.com/drive/folders/18HuLl3PWMrXzTQwgskBLUFkPaQ6rFOjK |
+| README aset + cara pasang di Studio | https://docs.google.com/document/d/1HlCRswKI9pXoI_R4HFKKLtERxSyDhWzmHeHmDlTed4E/edit |
+| kontak sheet 16 berkas | https://drive.google.com/file/d/1MAWMYWHE3-prthUxTCXPNtQxi8Pq-DsY/view |
+
+Nama berkas: `EP01_16x9_1280x720.jpg` … `EP08_16x9_1280x720.jpg` dan
+`EP01_9x16_1080x1920.jpg` … `EP08_9x16_1080x1920.jpg`.
+Sumber di repo: `11_CONTENT/03_THUMBNAIL/final/`.

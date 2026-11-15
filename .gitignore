@@ -44,3 +44,6 @@ ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/*-dryrun.json
 
 # sumber mentah plate (1376×768) tidak ikut repo
 ODDCHAPTER_BRAND/**/plates_src/
+
+# plate thumbnail (1376×768) tidak ikut repo — arsipnya di Drive: thumbnail/PLATE SUMBER
+ODDCHAPTER_BRAND/**/03_THUMBNAIL/plates/
