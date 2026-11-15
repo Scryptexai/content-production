@@ -721,7 +721,7 @@ def main():
         lines = ["## Upload YouTube (Zernio)", "",
                  "| episode | status | tautan |", "|---|---|---|"]
         for r in results:
-            lines.append(f"| {r['episode']} | {'dry-run' if r['dry_run'] else r.get('status')} "
+            lines.append(f"| {r['episode']} | {r.get('status') or ('dry-run' if r.get('dry_run') else 'dilewati')} "
                          f"| {r.get('youtube_url') or '—'} |")
         pathlib.Path(os.environ["GITHUB_STEP_SUMMARY"]).write_text("\n".join(lines) + "\n", encoding="utf-8")
 
