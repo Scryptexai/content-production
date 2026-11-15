@@ -194,13 +194,14 @@ jobs:
           set -euo pipefail
           LEDGER=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/published.json
           POSTS=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/zernio-posts.json
-          if git diff --quiet -- "$LEDGER" "$POSTS" 2>/dev/null && [ ! -f "$POSTS" ]; then
+          ACCTS=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/zernio-accounts.json
+          if git diff --quiet -- "$LEDGER" "$POSTS" "$ACCTS" 2>/dev/null && [ ! -f "$POSTS" ]; then
             echo "::notice::Buku besar tidak berubah."
             exit 0
           fi
           git config user.name "oddchapter-upload"
           git config user.email "actions@users.noreply.github.com"
-          git add -A "$LEDGER" "$POSTS" 2>/dev/null || git add -A ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD
+          git add -A "$LEDGER" "$POSTS" "$ACCTS" 2>/dev/null || git add -A ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD
           git commit -m "published.json: catat unggahan $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
 
