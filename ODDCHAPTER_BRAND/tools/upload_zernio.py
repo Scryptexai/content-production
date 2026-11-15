@@ -331,6 +331,9 @@ def lookup(limit=12):
             "title": post.get("title") or (post.get("platformSpecificData") or {}).get("title"),
             "url": yt.get("platformPostUrl"),
             "platform_status": yt.get("status"),
+            "platforms": [{"platform": x.get("platform"), "status": x.get("status"),
+                           "url": x.get("platformPostUrl")}
+                          for x in post.get("platforms", []) if isinstance(x, dict)],
         })
     out = ROOT / "11_CONTENT" / "06_UPLOAD" / "zernio-posts.json"
     out.write_text(json.dumps(dump, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -362,7 +365,8 @@ def lookup(limit=12):
     ap.write_text(json.dumps(dump_accts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"  platform tersambung: {', '.join(sorted(aplats)) or '(tidak terbaca)'}")
     for item in dump["posts"]:
-        print(f"    {item['createdAt']}  {item['status']:10s}  {item['url']}  {item['title']}")
+        plat = ", ".join(f"{p.get('platform')}:{p.get('status')}" for p in item.get("platforms", []))
+        print(f"    {item['createdAt']}  {item['status']:10s}  [{plat}]  {item['title']}")
     return dump
 
 
