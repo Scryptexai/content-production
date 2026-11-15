@@ -23,12 +23,23 @@ on:
         description: "Credit + licence, copied verbatim into MANIFEST.md"
         required: true
         type: string
+      drive_file_id:
+        description: "MODE DRIVE: ID berkas Google Drive (kosongkan untuk mode URL biasa)"
+        required: false
+        default: ""
+        type: string
+      drive_name:
+        description: "MODE DRIVE: nama berkas hasil (mis. VO-EP09.mp3)"
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
 
 jobs:
   fetch:
+    if: inputs.drive_file_id == ''
     runs-on: ubuntu-latest
     env:
       ALLOWED_HOSTS: "upload.wikimedia.org archive.org ia600000.us.archive.org ia800000.us.archive.org images-assets.nasa.gov"
@@ -107,3 +118,35 @@ jobs:
             echo ""
             cat "FOOTAGE/${{ inputs.target_dir }}/MANIFEST.md" 2>/dev/null || echo "no manifest"
           } >> "$GITHUB_STEP_SUMMARY"
+
+  drive:
+    # Sandbox kerja tidak bisa menghubungi drive.google.com. Runner bisa.
+    # Berkas harus bisa dibaca "siapa saja yang punya tautan" selama job ini;
+    # izin itu dicabut lagi setelah artifact diunduh.
+    if: inputs.drive_file_id != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MAX_BYTES: "262144000"
+    steps:
+      - name: Unduh dari Drive
+        run: |
+          set -euo pipefail
+          name="${{ inputs.drive_name }}"
+          case "$name" in
+            ""|*/*|..*) echo "::error::drive_name wajib, tanpa path"; exit 1 ;;
+          esac
+          url="https://drive.usercontent.google.com/download?id=${{ inputs.drive_file_id }}&export=download&confirm=t"
+          mkdir -p /tmp/inbox
+          curl -fsSL --retry 3 --max-time 600 -o "/tmp/inbox/$name" "$url"
+          bytes=$(stat -c%s "/tmp/inbox/$name")
+          echo "→ $name $bytes byte"
+          if [ "$bytes" -lt 1024 ]; then echo "::error::berkas terlalu kecil (halaman login Drive?)"; exit 1; fi
+          if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::melebihi $MAX_BYTES byte"; exit 1; fi
+          head -c 16 "/tmp/inbox/$name" | od -An -tx1 | head -1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: drive-file
+          path: /tmp/inbox/*
+          retention-days: 2
+          if-no-files-found: error
