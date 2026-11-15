@@ -102,14 +102,21 @@
     "uploaded_at": "2026-11-15T13:02:52Z",
     "youtube_url": "https://www.youtube.com/watch?v=xyK0qZFEAtE"
   },
+  "EP10": {
+    "post_id": "6af9c511615d6b707b81a203",
+    "status": "published",
+    "title": "Dua Kardus di Trotoar Sudirman. Isinya Tubuh Tanpa Nama.",
+    "uploaded_at": "2026-11-15T14:43:45Z",
+    "youtube_url": "https://www.youtube.com/watch?v=KQR0s52rbCE"
+  },
   "EP10_old_elevenlabs": {
+    "cancelled_at": "2026-11-15T14:46:00Z",
+    "catatan": "Jadwal VO ElevenLabs, dibatalkan sebelum tayang; post tidak ada di daftar Zernio. Episode direkam ulang dengan VO pemilik.",
     "post_id": "6af8a2cdc3753df892a8fc08",
     "scheduled_for": "2026-11-15T18:30:00",
     "status": "cancelled",
     "timezone": "Asia/Jakarta",
     "title": "Mereka Menulis Buku dalam Bahasa yang Tak Dimengerti Siapa pun.",
-    "uploaded_at": "2026-11-14T18:05:03Z",
-    "cancelled_at": "2026-11-15T14:46:00Z",
-    "catatan": "Jadwal VO ElevenLabs, dibatalkan sebelum tayang; post tidak ada di daftar Zernio. Episode direkam ulang dengan VO pemilik."
+    "uploaded_at": "2026-11-14T18:05:03Z"
   }
 }
