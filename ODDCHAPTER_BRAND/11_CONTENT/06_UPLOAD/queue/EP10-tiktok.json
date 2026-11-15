@@ -1,8 +1,10 @@
 {
   "episode": "EP10",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "tiktok_only": true,
   "requested_at": "2026-11-15T14:50:00Z",
-  "catatan": "Post TikTok khusus. Master sama dengan YouTube (Drive 1YfNXyS4…, VO pemilik 59,9 dtk). Caption 115 karakter + 4 hashtag dari EP10.json field tiktok_caption; akun TikTok kanal 6aeddf6a0b5ec69b89139f4e (oddchapter7)."
+  "catatan": "Post TikTok khusus. Master sama dengan YouTube (Drive 1YfNXyS4…, VO pemilik 59,9 dtk). Caption 115 karakter + 4 hashtag dari EP10.json field tiktok_caption; akun TikTok kanal 6aeddf6a0b5ec69b89139f4e (oddchapter7).",
+  "finished_at": "2026-11-15T14:47:00Z",
+  "hasil": "Tayang di TikTok 15 Nov 2026 14:46 UTC (post 6af9c5a14cb7b88c916124d8). URL belum dikembalikan Zernio saat post — diambil lewat lookup EP10-platforms."
 }
