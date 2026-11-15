@@ -1,12 +1,8 @@
 {
   "episode": "EP09",
-  "status": "scheduled",
+  "status": "requested",
   "approved": true,
   "visibility": "public",
-  "scheduledFor": "2026-11-15T12:30:00",
-  "timezone": "Asia/Jakarta",
-  "requested_at": "2026-11-14T17:53:11Z",
-  "catatan": "Somerton Man. 39,4 dtk, suara internal kanal, VO mulai 0,15 dtk, bed -38 LUFS (selisih 17,4 dB), -13,9 LUFS / TP -1,7. Dijadwalkan 15 Nov 12.30 WIB.",
-  "post_id": "6af8a02b588bc489d6d82eb5",
-  "scheduled_at": "2026-11-14T18:08:00Z"
+  "requested_at": "2026-11-15T13:05:00Z",
+  "catatan": "Tayang sekarang. Master v4: VO buatan pemilik (52,85 dtk, satu trek), timeline 9 segmen dari cue SRT pemilik, cover 'TAS BERISI BATU'. Jadwal lama (post 6af8a02b588bc489d6d82eb5) sudah dibatalkan dan tidak pernah tayang."
 }

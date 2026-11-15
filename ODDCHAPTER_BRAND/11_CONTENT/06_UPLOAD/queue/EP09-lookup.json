@@ -1,8 +1,10 @@
 {
   "episode": "EP09",
-  "status": "requested",
+  "status": "done",
   "approved": true,
-  "lookup": true,
+  "lookup": false,
   "requested_at": "2026-11-15T11:20:00Z",
-  "catatan": "Periksa status post EP09 di Zernio sebelum unggah ulang: apakah jadwal 12.30 WIB 15 Nov sudah tayang atau batal."
+  "catatan": "Periksa status post EP09 di Zernio sebelum unggah ulang: apakah jadwal 12.30 WIB 15 Nov sudah tayang atau batal.",
+  "finished_at": "2026-11-15T12:05:00Z",
+  "hasil": "11 post Zernio, semua published. Post EP09 6af8a02b588bc489d6d82eb5 TIDAK ada di daftar = jadwal 12.30 WIB batal, tidak pernah tayang."
 }
