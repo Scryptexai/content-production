@@ -222,3 +222,23 @@ Jalur yang dipakai (dan harus dipakai lagi):
 
 `workflow_dispatch` tidak bisa dipakai dari sesi ini (token tanpa izin Actions
 write, ditolak 403). Karena itu jalurnya lewat push.
+
+## 14 · TikTok lewat Zernio (16 Nov 2026)
+
+Akun TikTok kanal sudah tersambung di Zernio, jadi TikTok tidak lagi menunggu
+Buffer atau klik manual:
+
+- **[H]** Posting TikTok: antrean `06_UPLOAD/queue/<EP>-tiktok.json` dengan
+  `"tiktok_only": true`, `"approved": true`, status `requested` → push.
+  Runner menjalankan `upload_zernio.py --tiktok-only`.
+- **[H]** Caption TikTok diambil dari `tiktok_caption` di `06_UPLOAD/<EP>.json`
+  (≤150 karakter + 3–5 hashtag, aturan `02_SCRIPT` untuk TikTok).
+- **[H]** Video dan cover yang dipakai **sama** dengan master YouTube; jangan
+  membuat render khusus TikTok.
+- **[H]** Setelah tayang, catat `tiktok_url` di `published.json` dan di
+  `06_UPLOAD/<EP>_tiktok.md`.
+- **[M]** Kalau `published.json` sudah memuat `tiktok_post_id` untuk episode itu,
+  tool melewati unggahan berikutnya (pakai `force` hanya untuk salinan uji).
+
+Buffer (`publish.yml`) tetap ada untuk Facebook Reels, tetapi tidak dipakai
+untuk YouTube/TikTok lagi.

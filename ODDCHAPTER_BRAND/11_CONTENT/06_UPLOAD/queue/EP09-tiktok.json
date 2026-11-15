@@ -1,8 +1,11 @@
 {
   "episode": "EP09",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "tiktok_only": true,
   "requested_at": "2026-11-15T13:24:00Z",
-  "catatan": "Post TikTok khusus. Akun TikTok kanal sudah tersambung di Zernio (6aeddf6a0b5ec69b89139f4e, oddchapter7, permission video.publish). Master v4 yang sama dengan YouTube; caption 137 karakter + 4 hashtag."
+  "catatan": "Post TikTok khusus. Akun TikTok kanal sudah tersambung di Zernio (6aeddf6a0b5ec69b89139f4e, oddchapter7, permission video.publish). Master v4 yang sama dengan YouTube; caption 137 karakter + 4 hashtag.",
+  "finished_at": "2026-11-15T13:35:00Z",
+  "hasil": "Tayang di TikTok 15 Nov 2026 13:11 UTC.",
+  "link": "https://www.tiktok.com/@oddchapter7/video/7708384803367734546"
 }

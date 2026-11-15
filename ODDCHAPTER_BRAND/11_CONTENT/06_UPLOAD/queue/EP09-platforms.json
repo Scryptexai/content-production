@@ -1,8 +1,10 @@
 {
   "episode": "EP09",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "lookup": true,
   "requested_at": "2026-11-15T13:33:00Z",
-  "catatan": "Lookup: cek status post TikTok 6af9af0d1ce3b59aa97bc8da + daftar platform/akun."
+  "catatan": "Lookup: cek status post TikTok 6af9af0d1ce3b59aa97bc8da + daftar platform/akun.",
+  "finished_at": "2026-11-15T13:35:00Z",
+  "hasil": "Lookup selesai. Platform tersambung di Zernio: youtube + tiktok (akun 6aeddf6a0b5ec69b89139f4e / oddchapter7)."
 }
