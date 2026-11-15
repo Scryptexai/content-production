@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T13:11:19Z",
+  "fetched_at": "2026-11-15T14:39:50Z",
   "raw": {
     "posts": [
       {
@@ -46,7 +46,7 @@
           "contentVariationIndex": 0
         },
         "createdAt": "2026-11-15T13:09:39.027Z",
-        "updatedAt": "2026-11-15T13:11:19.262Z",
+        "updatedAt": "2026-11-15T13:16:15.177Z",
         "platforms": [
           {
             "_id": "6af9af121ce3b59aa97bc8ff",
@@ -68,6 +68,8 @@
               "privacyLevel": "PUBLIC_TO_EVERYONE",
               "tiktokUploadTimeoutAt": "2026-11-15T13:09:54.267Z",
               "tiktokBusinessPublishId": "v_pub_url~v2.7708384446446487573",
+              "tiktokBusinessReconciledAt": "2026-11-15T13:15:26.315Z",
+              "tiktokBusinessReconciledReason": "already-resolved",
               "tiktokBusinessReconcileAttempts": 1
             },
             "status": "published",
