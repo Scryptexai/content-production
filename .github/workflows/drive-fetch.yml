@@ -1,63 +1,77 @@
-name: Drive fetch (proxy unduh berkas milik user)
+name: Drive fetch (push-triggered)
 
-# Kenapa ada: sandbox kerja hanya bisa menghubungi github.com, npm, dan pypi.
-# api.elevenlabs.io, drive.google.com, dan host lain tidak terjangkau dari sana,
-# sedangkan runner GitHub punya internet penuh. Jadi runner dipakai sebagai
-# proxy unduh: berkas Drive diambil di sini, lalu diunggah sebagai artifact yang
-# bisa diunduh balik oleh sesi kerja dengan `gh run download`.
+# Latar: sandbox kerja hanya bisa menghubungi github.com, npm, pypi — bukan
+# drive.google.com. Runner GitHub punya internet penuh, jadi runner dipakai
+# sebagai proxy unduh berkas milik user (mis. VO hasil rekaman/generate user).
+#
+# Kenapa lewat push, bukan workflow_dispatch: token sesi kerja tidak punya izin
+# Actions write, jadi `workflow_dispatch` ditolak 403. Push ke path di bawah ini
+# menjalankan workflow dari branch yang di-push.
+#
+# Alur: taruh berkas permintaan di `drive-requests/<nama>.json`
+#       { "file_id": "...", "name": "VO-EP09.mp3" }
+#       Runner mengunduh, lalu commit ke branch `drive/inbox` (bukan branch kerja).
+#       Sesi kerja mengambilnya dengan `git fetch origin drive/inbox`.
 #
 # Syarat: berkas Drive harus bisa dibaca "siapa saja yang punya tautan" selama
-# job berjalan. Izin itu dicabut lagi setelah artifact diunduh.
-#
-# Batas: hanya drive.google.com / drive.usercontent.google.com, maksimal 250 MB,
-# dan hanya satu berkas per jalannya workflow.
+# job berjalan; izin dicabut lagi setelah berkas diambil.
 
 on:
-  workflow_dispatch:
-    inputs:
-      file_id:
-        description: "ID berkas Google Drive"
-        required: true
-        type: string
-      name:
-        description: "Nama berkas hasil (mis. VO-EP09.mp3)"
-        required: true
-        type: string
+  push:
+    paths:
+      - "drive-requests/*.json"
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: drive-fetch
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     env:
-      ALLOWED_HOSTS: "drive.google.com drive.usercontent.google.com"
+      ALLOWED_HOSTS: "drive.usercontent.google.com drive.google.com"
       MAX_BYTES: "262144000"
     steps:
-      - name: Unduh dari Drive
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Unduh semua permintaan
         run: |
           set -euo pipefail
-          name="${{ inputs.name }}"
-          case "$name" in
-            */*|..*) echo "::error::nama berkas tidak boleh berisi path"; exit 1 ;;
-          esac
-          url="https://drive.usercontent.google.com/download?id=${{ inputs.file_id }}&export=download&confirm=t"
-          host=$(printf '%s' "$url" | awk -F/ '{print $3}')
-          case " $ALLOWED_HOSTS " in
-            *" $host "*) ;;
-            *) echo "::error::host tidak diizinkan: $host"; exit 1 ;;
-          esac
-          mkdir -p /tmp/inbox
-          curl -fsSL --retry 3 --max-time 600 -o "/tmp/inbox/$name" "$url"
-          bytes=$(stat -c%s "/tmp/inbox/$name")
-          echo "→ $name  $bytes byte"
-          if [ "$bytes" -lt 1024 ]; then echo "::error::berkas terlalu kecil, kemungkinan halaman login Drive"; exit 1; fi
-          if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::melebihi $MAX_BYTES byte"; exit 1; fi
-          head -c 16 "/tmp/inbox/$name" | od -An -tx1 | head -1
-      - uses: actions/upload-artifact@v4
-        with:
-          name: drive-file
-          path: /tmp/inbox/*
-          retention-days: 2
-          if-no-files-found: error
+          mkdir -p drive-inbox
+          shopt -s nullglob
+          for req in drive-requests/*.json; do
+            echo "→ permintaan: $req"
+            file_id=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['file_id'])" "$req")
+            name=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['name'])" "$req")
+            case "$name" in
+              ""|*/*|..*) echo "::error::nama berkas tidak valid: $name"; exit 1 ;;
+            esac
+            url="https://drive.usercontent.google.com/download?id=${file_id}&export=download&confirm=t"
+            host=$(printf '%s' "$url" | awk -F/ '{print $3}')
+            case " $ALLOWED_HOSTS " in
+              *" $host "*) ;;
+              *) echo "::error::host tidak diizinkan: $host"; exit 1 ;;
+            esac
+            curl -fsSL --retry 3 --max-time 600 -o "drive-inbox/$name" "$url"
+            bytes=$(stat -c%s "drive-inbox/$name")
+            echo "  $name  $bytes byte  $(sha256sum "drive-inbox/$name" | cut -d' ' -f1)"
+            if [ "$bytes" -lt 1024 ]; then echo "::error::$name terlalu kecil (halaman login Drive?)"; exit 1; fi
+            if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::$name melebihi $MAX_BYTES byte"; exit 1; fi
+          done
+          ( command -v ffprobe >/dev/null && ffprobe -v error -show_entries format=duration,size,bit_rate -of default=noprint_wrappers=1 drive-inbox/* ) || true
+
+      - name: Commit ke branch drive/inbox
+        run: |
+          set -euo pipefail
+          git config user.name "oddchapter-drive-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B drive/inbox
+          git add -f drive-inbox
+          git commit -m "drive-inbox: $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "tidak ada perubahan"
+          git push --force origin drive/inbox
