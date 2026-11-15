@@ -1,8 +1,10 @@
 {
   "episode": "EP10",
   "lookup": true,
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "requested_at": "2026-11-15T14:52:00Z",
-  "catatan": "Ambil platformPostUrl YouTube + TikTok untuk EP10 (post 6af9c511615d6b707b81a203 / tiktok 6af9c5a14cb7b88c916124d8)."
+  "catatan": "Ambil platformPostUrl YouTube + TikTok untuk EP10 (post 6af9c511615d6b707b81a203 / tiktok 6af9c5a14cb7b88c916124d8).",
+  "finished_at": "2026-11-15T14:55:00Z",
+  "hasil": "YouTube https://www.youtube.com/watch?v=KQR0s52rbCE · TikTok https://www.tiktok.com/@oddchapter7/video/7708409619067997441 — keduanya published."
 }

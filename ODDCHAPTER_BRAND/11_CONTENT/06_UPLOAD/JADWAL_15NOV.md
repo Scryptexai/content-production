@@ -1,5 +1,16 @@
 # Jadwal 15 Nov 2026 — dikerjakan ulang dengan VO internal
 
+> **Status akhir (15 Nov 2026, 14:55 UTC).** Rencana TTS di bawah sudah tidak berlaku:
+> pemilik mengirim VO-nya sendiri per episode, dan semuanya tayang manual ("post now"),
+> bukan dijadwalkan.
+>
+> - EP09 — YouTube https://www.youtube.com/watch?v=xyK0qZFEAtE ·
+>   TikTok https://www.tiktok.com/@oddchapter7/video/7708384803367734546
+> - EP10 — YouTube https://www.youtube.com/watch?v=KQR0s52rbCE ·
+>   TikTok https://www.tiktok.com/@oddchapter7/video/7708409619067997441
+> - Jadwal lama `6af8a02b…` (EP09) dan `6af8a2cd…` (EP10) dibatalkan sebelum jam tayang;
+>   tidak ada video TTS yang pernah muncul di kanal. EP08 tetap memakai voice-04 internal.
+
 Pemilik (16 Nov): *"vo nya jangan pakai elevenlabs lagi tapi pakai vo internal kamu yg kamu
 gunakan pada ep06-07."* Semua jadwal lama dibatalkan, lalu dibuat ulang satu per satu.
 

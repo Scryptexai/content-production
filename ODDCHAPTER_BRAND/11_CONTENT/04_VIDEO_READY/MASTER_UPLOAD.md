@@ -33,6 +33,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP07 | v1 | 48,28 s | 14,1 MB | 14 Nov 2026 | `1OrIaFbZKj_yufo-HOSpVCYxnhmUHYKc8` |
 | EP08 | v2 | 53,50 s | 15,3 MB | 14 Nov 2026 | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` |
 | EP09 | **v4 — VO buatan user + cover benar** | 53,78 s | 32,9 MB | 16 Nov 2026 | `1leWLFt4QuLEgXMSmnemYAXRWlMr9vUCT` |
+| EP10 | **v1 — VO buatan user, 9 foto segmen** | 59,90 s | 60,0 MB | 15 Nov 2026 | `1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
@@ -54,9 +55,17 @@ jadi tidak ada yang hilang dari hasil tayang. Kalau EP09 perlu dirender ulang,
 9 foto per segmen harus dibuat lagi dulu; suara, timing, bed, sfx, dan cover
 sudah ada di repo.
 
+## Catatan aset kerja EP10
+
+Master EP10 (`1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX`, 59.953.240 B, sha256
+`d04f269e…c8d2d`) memakai VO buatan pemilik (`1x15AvOEZSd4LhXOd6eId2x8-DxIUfrT6`,
+59,01 dtk, satu trek) dan 9 foto AI segmen baru (`public/plates/EP10/`, tidak di Git
+karena `public/` di-ignore). Timing: `TIMESTAMP EP10.txt` → 9 cue, batas disnap ke
+jeda hening nyata. 1797 frame, −14,7 LUFS, TP −1,4 dB. Tayang 15 Nov 2026
+14:43 UTC (YouTube) dan 14:46 UTC (TikTok).
+
 ## Belum di-build (belum ada master)
 
-EP10–EP21. EP10 punya VO + draft plate di Drive
-(`1j8ofLkaXcDvBFtDDfNWdHuyDZY5gSqnY`) — itu **bukan** master: belum ada foto per
-segmen, jadi belum memenuhi standar EP01–EP09. Begitu fotonya dibuat, render →
-unggah → baris baru di tabel ini.
+EP11–EP21. Untuk tiap episode: VO pemilik dari Drive dulu (bukan TTS), lalu
+`content_data.py` (cue 9 segmen), foto 9 segmen, cover, render, unggah Drive,
+antrean YouTube + TikTok. Pola EP09 dan EP10 bisa dipakai apa adanya.
