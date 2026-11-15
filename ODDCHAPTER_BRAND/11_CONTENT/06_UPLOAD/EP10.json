@@ -2,50 +2,78 @@
   "episode": "EP10",
   "video": "EP10_1080x1920_master.mp4",
   "thumbnail": "EP10_thumbnail.jpg",
-  "title": "Mereka Menulis Buku dalam Bahasa yang Tak Dimengerti Siapa pun.",
+  "title": "Dua Kardus di Trotoar Sudirman. Isinya Tubuh Tanpa Nama.",
   "title_alt": [
-    "Dua Kembar, Satu Bahasa Rahasia, dan Satu Keputusan yang Memisahkan Mereka.",
-    "Bahasa Itu Cuma Dimengerti Dua Orang. Lalu Mereka Dipisahkan."
+    "Pelakunya Tidak Menghapus Sidik Jari. Bertahun Kemudian, Itu Tak Menolong Siapa Pun.",
+    "Setia Budi 13: Dua Kardus, Satu Jasad, dan Nol Nama."
   ],
-  "hook": "Mereka menulis buku dalam bahasa yang tidak dimengerti siapa pun.",
-  "description": "Mereka menulis buku dalam bahasa yang tidak dimengerti siapa pun.\n\nWales, 1963. June dan Jennifer Gibbons, kembar identik, tumbuh sebagai satu-satunya anak kulit hitam di sekolah mereka. Mereka berhenti bicara ke orang lain, tapi terus bicara satu sama lain — dalam bahasa yang mereka buat sendiri.\n\nBahasa itu punya aturan, kosakata, dan nama. Mereka menulis novel, puisi, dan sandiwara di kamar tidur.\n\nDunia luar menyebutnya gangguan. Pada usia empat belas tahun mereka dirawat di rumah sakit jiwa, lalu dipisahkan — supaya masing-masing belajar mandiri.\n\nJune meninggal 1993. Jennifer meninggal setahun kemudian.\n\nKalau kamu dipisahkan dari satu-satunya orang yang bisa kamu ajak bicara, kamu masih punya suara? Tulis di komentar.\n\nSumber: liputan Marjorie Wallace, \"The Silent Twins\"; catatan perawatan psikiatri 1980-an.\n\n#shorts #misteri #psikologi #kisahnyata #oddchapter",
+  "hook": "Dua kardus di Trotoar Sudirman 1981.",
+  "description": "Dua kardus di Trotoar Sudirman 1981. Isinya potongan tubuh manusia tanpa nama.\n\nPagi 23 November 1981, di trotoar Jalan Jenderal Sudirman, Setiabudi, Jakarta, dua satpam menemukan dua kardus yang berbau anyir dan dikerubungi lalat. Mereka tidak berani membukanya. Dua gelandangan yang akhirnya membuka kardus itu menemukan kepala dan potongan tubuh manusia.\n\nYang membuat kasus ini bertahan lebih dari empat puluh tahun:\n• Identitas korban tidak pernah ditemukan. Pria, perkiraan usia 18–21 tahun.\n• Sidik jari, telapak tangan, telapak kaki, dan wajahnya tidak dihilangkan pelaku.\n• Ratusan orang datang mengaku kehilangan kerabat. Tidak satu pun cocok.\n• 27 November 1981 jasadnya dimakamkan tanpa nama di TPU Tegal Alur, Jakarta Barat.\n\nKasus ini dikenal sebagai Setia Budi 13. Pelakunya belum diketahui, dan nama korbannya masih kosong.\n\nTapi siapa yang mengingat namanya?\n\nSumber: arsip pemberitaan 1981 dan sesudahnya, keterangan autopsi yang dikutip pemberitaan (tim forensik RS Cipto Mangunkusumo), catatan kasus Polda Metro Jaya. Detail mutilasi sengaja tidak dijelaskan di video. Kasus ini tidak pernah terpecahkan; semua yang tidak dikonfirmasi resmi ditulis sebagai dugaan. Beberapa angka berbeda antar pemberitaan dan disebut sebagai perkiraan.\n\n#shorts #misteri #truecrime #kasustakterpecahkan #oddchapter",
   "tags": [
     "misteri",
-    "kisah nyata",
-    "silent twins",
-    "psikologi",
-    "wales",
-    "1963",
-    "bahasa",
+    "true crime",
+    "kasus tak terpecahkan",
+    "setiabudi",
+    "setia budi 13",
+    "jakarta 1981",
+    "sudirman",
+    "kardus",
     "oddchapter",
     "shorts"
   ],
-  "first_comment": "Bahasa itu hilang saat mereka dipisahkan. Kalau kamu di posisi June, kamu masih punya suara?",
+  "first_comment": "Sidik jarinya masih utuh, wajahnya masih ada, ratusan orang datang mencari. Tetap nol nama.",
   "categoryId": "24",
   "madeForKids": false,
   "containsSyntheticMedia": true,
   "visibility": "public",
-  "duration_seconds": 44.6,
+  "duration_seconds": 59.911,
   "voice": {
-    "name": "Narator internal kanal",
-    "voice_id": "ojz6ro9PB1xDu44lymdM",
-    "model": "eleven_turbo_v2_5",
-    "consistency": "LULUS (voice_consistency.py)"
+    "name": "VO pemilik kanal (bukan TTS pipeline)",
+    "mode": "single-file",
+    "source": "Google Drive 1x15AvOEZSd4LhXOd6eId2x8-DxIUfrT6 · VO EP10.mp3",
+    "seconds": 59.011,
+    "sha256": "486667240b114ac041916af73fdc4ff3fb2d199cb2d1953054161526f76b2cab",
+    "consistency": "satu berkas, satu suara — tidak dipecah, tidak di-TTS ulang"
   },
-  "drive_file_id": "1j8ofLkaXcDvBFtDDfNWdHuyDZY5gSqnY",
-  "size_bytes": 2372646,
-  "sha256": "bb830f0b1374528cf7421af4cb3cd0a7c5e50a5f4ddb6bfe9c8b9d735db53622",
+  "timing": {
+    "mode": "TIMESTAMP EP10.txt (7 blok) → 9 cue, snapped ke jeda hening",
+    "segments": 9,
+    "boundaries_seconds": [
+      0.0,
+      4.495,
+      10.49,
+      15.947,
+      21.473,
+      28.695,
+      36.238,
+      47.348,
+      56.292,
+      59.011
+    ],
+    "note": "batas disnap ke silence nyata (silencedetect -35 dB); lompatan 49→50 di timestamp user = jeda 46–47,3 dtk"
+  },
   "mix": {
-    "master_lufs": -14.0,
-    "true_peak_db": -1.7,
-    "bed_lufs": -38.0,
-    "vo_bed_separation_db": 18.4,
-    "vo_rms_db": -20.0,
-    "vo_start": 0.15
+    "target_lufs": -14,
+    "true_peak_db": -1.5,
+    "bed_lufs": -32.0
   },
+  "tiktok_caption": "Dua kardus di trotoar Sudirman, 1981. Isinya tubuh tanpa nama.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
+  "tiktok_privacy": "PUBLIC_TO_EVERYONE",
   "drive": {
     "folder_id": "1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2",
-    "file_id": "1j8ofLkaXcDvBFtDDfNWdHuyDZY5gSqnY",
-    "link": "https://drive.google.com/file/d/1j8ofLkaXcDvBFtDDfNWdHuyDZY5gSqnY/view"
+    "file_id": "1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX",
+    "link": "https://drive.google.com/file/d/1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX/view"
+  },
+  "drive_file_id": "1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX",
+  "size_bytes": 59953240,
+  "sha256": "d04f269e464e51d7932713b924cff6ac9da660e13a415f96190e1c80a86c8d2d",
+  "render": {
+    "master": "EP10_1080x1920_master.mp4",
+    "codec": "h264 1080x1920 30fps",
+    "audio": "aac 48k stereo",
+    "lufs": -14.7,
+    "true_peak_db": -1.4,
+    "frames": 1797,
+    "duration_seconds": 59.9
   }
 }

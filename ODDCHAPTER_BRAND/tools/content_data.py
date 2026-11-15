@@ -1621,62 +1621,86 @@ _INDONESIA = {
 
     # ── EP10 · dua kardus di trotoar Sudirman ──────────────────────────────
     "EP10": dict(
+        photos=[
+            "00_hook", "01_setup", "02_tension", "03_tension", "04_relate",
+            "05_tension", "06_turn", "07_consequence", "08_loop",
+        ],
+        # NARASI = VO BUATAN USER (Drive: 1x15AvOEZSd4LhXOd6eId2x8-DxIUfrT6 ·
+        # VO EP10.mp3, 59,01 dtk). Teks dari TIMESTAMP EP10.txt (7 blok),
+        # dipecah jadi 9 segmen; batas disnap ke jeda hening nyata.
+        vo=dict(
+            file="vo.mp3",
+            timestamp="vo_timestamp.txt",
+            source="Drive 1x15AvOEZSd4LhXOd6eId2x8-DxIUfrT6 · VO EP10.mp3",
+            sha256="486667240b114ac041916af73fdc4ff3fb2d199cb2d1953054161526f76b2cab",
+            cues=[
+                (None, "Dua kardus di Trotoar Sudirman 1981.", 0.0, 4.495),
+                ("setup", "Isinya potongan tubuh manusia tanpa nama. Dua satpam melihatnya pagi itu.", 5.105, 9.908),
+                ("tension", "Tapi mereka tidak berani membuka kardus tersebut.", 10.490, 15.597),
+                ("tension", "Ketika dua pemulung akhirnya membukanya, mereka menemukan kepala dan potongan tubuh manusia. Namanya tidak diketahui.", 15.947, 20.998),
+                ("relate", "Identitasnya tidak ditemukan. Ratusan orang datang mencari anggota keluarga yang hilang. Tapi tak satu pun cocok.", 21.473, 28.283),
+                ("tension", "Anehnya sidik jari korban masih bisa diperiksa. Wajahnya juga masih ada. Tapi identitasnya tetap tidak terungkap.", 28.695, 35.856),
+                ("turn", "Pada 27 November 1981, jasad itu dimakamkan di TPU Tegal Alur. Kasus ini dikenal sebagai Setia Budi 13. Empat puluh tahun lebih berlalu.", 36.238, 45.996),
+                ("consequence", "Pelakunya belum diketahui. Identitas korbannya pun masih menjadi misteri. Kita masih mengingat kasusnya.", 47.348, 55.486),
+                (None, "Tapi siapa yang mengingat namanya?", 56.292, 59.011),
+            ],
+        ),
         title="DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA",
         struktur="klimaks-awal",
         thumb=["DUA KARDUS", "TANPA NAMA"], thumb_text="DUA KARDUS",
-        durasi=42, plate="road",
+        durasi=59, plate="road",
         protagonis="Mun'im Idris, dokter forensik yang membedah jasad itu.",
         mau="Memberi jasad itu satu nama.",
-        hambatan="Sidik jari, wajah, dan ratusan keluarga yang datang — tidak satu pun cocok.",
+        hambatan="Sidik jari, wajah, dan ratusan keluarga yang datang \u2014 tidak satu pun cocok.",
         tanaman="Sidik jari korban tidak dihilangkan oleh pelakunya.",
-        hook="Dua kardus di trotoar Sudirman, 1981. Isinya mayat tanpa nama.",
+        hook="Dua kardus di Trotoar Sudirman 1981.",
         hook_alt="Pelakunya tidak menghapus sidik jari. Bertahun kemudian, itu pun tidak menolong siapa pun.",
-        tanya="Kalau kamu membunuh orang, kenapa sidik jari di kardus itu dibiarkan?",
+        tanya="Kenapa sidik jari yang masih utuh tidak menemukan satu nama pun?",
         entitas="kardus",
-        relate="Kita semua punya nama di satu dokumen, dan dia tidak.",
+        relate="Identitasnya tidak ditemukan. Ratusan orang datang mencari anggota keluarga yang hilang.",
         diskusi="Menurut kamu, siapa yang paling mungkin mengenalnya?",
         celah="Kenapa sidik jari yang utuh tidak menemukan satu nama pun?",
         gambar_melekat="Dua kardus di trotoar, dan satu nisan tanpa nama.",
         beats=[
-            ("tanya", "Kalau kamu membunuh orang, kenapa sidik jari di kardus itu dibiarkan?"),
-            ("relate", "Kita semua punya nama di satu dokumen, dan dia tidak."),
-            ("setup", "Pagi 23 November 1981, dua satpam melihat dua kardus itu."),
-            ("tension", "Coba lihat isinya. Kepala, tulang, dan tidak ada satu lembar identitas."),
-            ("tension", "Ratusan orang datang mengaku kehilangan saudara. Tidak ada yang cocok."),
-            ("turn", "Sidik jarinya masih utuh, dan tetap tidak ada orang yang cocok."),
-            ("consequence", "Dia dikubur 27 November 1981 di Tegal Alur, tanpa nama di nisan."),
+            ("setup", "Isinya potongan tubuh manusia tanpa nama. Dua satpam melihatnya pagi itu."),
+            ("tension", "Tapi mereka tidak berani membuka kardus tersebut."),
+            ("tension", "Ketika dua pemulung akhirnya membukanya, mereka menemukan kepala dan potongan tubuh manusia. Namanya tidak diketahui."),
+            ("relate", "Identitasnya tidak ditemukan. Ratusan orang datang mencari anggota keluarga yang hilang. Tapi tak satu pun cocok."),
+            ("tension", "Anehnya sidik jari korban masih bisa diperiksa. Wajahnya juga masih ada. Tapi identitasnya tetap tidak terungkap."),
+            ("turn", "Pada 27 November 1981, jasad itu dimakamkan di TPU Tegal Alur. Kasus ini dikenal sebagai Setia Budi 13. Empat puluh tahun lebih berlalu."),
+            ("consequence", "Pelakunya belum diketahui. Identitas korbannya pun masih menjadi misteri. Kita masih mengingat kasusnya."),
         ],
-        turn_quote="“Dia pasti dicari keluarganya.”",
-        turn_verdict="Tidak ada yang mencari. Jasad itu dikubur tanpa nama, dan berkasnya berhenti di situ.",
-        loop="Kardus itu sudah tidak ada. Nama itu masih kosong. Kamu punya tebakan?",
-        cues=["SETIABUDI", "1981", "TANPA NAMA"],
-        captions=["", "Kenapa dibiarkan?", "Semua punya nama.", "Sudirman, 1981.",
-                  "Tanpa identitas.", "Tak ada yang cocok.", "Sidik jari utuh.",
-                  "Tegal Alur.", "Kamu punya tebakan?"],
-        caption_hi=["", "sidik jari", "nama", "1981", "identitas", "keluarga", "sidik jari",
-                    "Tegal Alur", "tebakan"],
-        stamps=[["1981", 3]],
-        sfx={"00_hook": "clunk", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
-             "04_tension": "rustle", "05_tension": "page", "06_turn": "boom",
+        turn_quote="\u201cSetia Budi 13.\u201d",
+        turn_verdict="Jasad dimakamkan tanpa nama di Tegal Alur. Pelaku dan identitas korban: dua-duanya kosong sampai sekarang.",
+        loop="Tapi siapa yang mengingat namanya?",
+        cues=["SETIABUDI 13", "TANPA NAMA", "SIDIK JARI"],
+        captions=["", "Dua kardus.", "Satpam tak berani.", "Kepala, tanpa nama.",
+                  "Ratusan datang. Nol cocok.", "Sidik jari utuh.", "Tegal Alur, 1981.",
+                  "Empat puluh tahun.", "Siapa namanya?"],
+        caption_hi=["", "kardus", "berani", "nama", "cocok", "sidik jari", "Tegal Alur",
+                    "empat puluh", "nama"],
+        stamps=[["1981", 6]],
+        sfx={"00_hook": "clunk", "01_setup": "gust", "02_tension": "page", "03_tension": "rustle",
+             "04_relate": "page", "05_tension": "boom", "06_turn": "boom",
              "07_consequence": "clunk", "99_loop": "boom"},
         sumber=(
-            "VERIFIED 2026-11-06 — Kasus 'Setiabudi 13'. Pagi 23 November 1981, dua satpam PT "
+            "VERIFIED 2026-11-06 \u2014 Kasus 'Setiabudi 13'. Pagi 23 November 1981, dua satpam PT "
             "Garuda Mataram Motor menemukan dua kardus di trotoar Jalan Jenderal Sudirman, "
             "Setiabudi, Jakarta, seberang Gedung Arthaloka; keduanya berbau anyir dan dikerubungi "
             "lalat, dilaporkan ke polisi yang sedang mengatur lalu lintas, lalu tergeletak sampai "
             "ditemukan dua gelandangan. Kardus pertama berisi kepala dan tiga belas tulang yang "
             "dikerat dari daging; kardus kedua berisi 180 potongan daging termasuk paru-paru, hati, "
-            "dan limpa. Anus, kandung kemih, dan pankreas tidak ditemukan. Autopsi ±2 jam oleh "
-            "Mun'im Idris, yang menyebut jasad dipotong sistematis; perkiraan mutilasi 3–4 jam oleh "
-            "lebih dari satu orang. Korban pria tanpa identitas, perkiraan usia 18–21 tahun, tinggi "
-            "165 cm, dibunuh 1–2 hari sebelum ditemukan. Sidik jari, telapak tangan, telapak kaki, "
+            "dan limpa. Anus, kandung kemih, dan pankreas tidak ditemukan. Autopsi \u00b12 jam oleh "
+            "Mun'im Idris, yang menyebut jasad dipotong sistematis; perkiraan mutilasi 3\u20134 jam oleh "
+            "lebih dari satu orang. Korban pria tanpa identitas, perkiraan usia 18\u201321 tahun, tinggi "
+            "165 cm, dibunuh 1\u20132 hari sebelum ditemukan. Sidik jari, telapak tangan, telapak kaki, "
             "dan wajah tidak dihilangkan, tetapi hasil tes sidik jari tidak menemukan pasangan yang "
             "cocok. Ratusan orang datang mengaku kehilangan kerabat; tidak ada yang cocok. Jasad "
             "dikebumikan 27 November 1981 di TPU Tegal Alur, Kalideres, Jakarta Barat. Kasus tidak "
-            "pernah terpecahkan. Catatan: detail mutilasi sengaja tidak diucapkan di VO — naskah "
+            "pernah terpecahkan. Catatan: detail mutilasi sengaja tidak diucapkan di VO \u2014 naskah "
             "hanya memakai 'kepala, tulang, tanpa identitas' agar tidak kena pembatasan iklan. "
             "Belum dibaca langsung: buku Mun'im Idris (2013) dan liputan Mata Najwa/Kumparan yang "
-            "dikutip Wikipedia — verifikasi sebelum tayang."
+            "dikutip Wikipedia \u2014 verifikasi sebelum tayang."
         ),
     ),
 
