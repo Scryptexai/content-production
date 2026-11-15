@@ -34,9 +34,9 @@ supaya tidak ada detail baru yang dikarang.
 | 12 | ANEH | **INDONESIA** — kenapa tiga danau di satu puncak berubah warna tanpa pola | Kelimutu: gas H₂S/SO₂, oksidasi besi, mikroba ekstremofil; warna = parameter status gunung | **VERIFIED (short)** · panjang belum |
 | 13 | ANEH | **INDONESIA** — kenapa mayat di Trunyan tidak dikubur dan tidak berbau | mepasah/kubur angin; klaim pohon Taru Menyan BELUM pernah diukur | **VERIFIED (short)** · panjang belum |
 | 14 | ANEH | **INDONESIA** — kenapa saksi melihat orang pendek tapi 100 kamera tidak | camera trap TNKS (Martyr/Holden) kosong; rambut yang diuji = manusia | **VERIFIED (short)** · panjang belum |
-| 15 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 16 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 17 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 15 | ANEH | **INDONESIA** — kenapa tanah padat bisa mengalir dan membawa rumah | likuefaksi Palu 2018 (Petobo/Balaroa/Jono Oge): air + getaran, hingga ±16 m | **VERIFIED (short)** · panjang belum |
+| 16 | ANEH | **INDONESIA** — kenapa lukisan gua Kalimantan berumur 40.000 tahun dan siapa pembuatnya | penanggalan uranium-thorium kerak kalsit (Aubert dkk., Nature 2018) = batas minimum | **VERIFIED (short)** · panjang belum |
+| 17 | BENCANA | **INDONESIA** — kenapa gunung yang diam seribu tahun bangun tanpa peringatan | Sinabung: catatan terakhir 1600, perkiraan letusan 800, aktif lagi 27–29 Agu 2010 | **VERIFIED (short)** · panjang belum |
 | 18 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 | 19 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 | 20 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |

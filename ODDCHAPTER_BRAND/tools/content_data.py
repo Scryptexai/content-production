@@ -1908,3 +1908,186 @@ _INDONESIA_BATCH2 = {
 for _e in EPISODES:
     if _e["ep"] in _INDONESIA_BATCH2:
         _e.update(_INDONESIA_BATCH2[_e["ep"]])
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# BATCH 3 · 6 NOV 2026 — EP15–EP17: Sulawesi, Kalimantan, Sumatera
+#
+# EP15 likuefaksi Palu · EP16 lukisan gua Sangkulirang · EP17 Sinabung.
+# Semua memakai disiplin yang sama: satu tanaman, dibayar di turn, tanpa angka
+# baru di turn (check_story akan menolak kalau dilanggar).
+# ══════════════════════════════════════════════════════════════════════════
+
+_INDONESIA_BATCH3 = {
+    # ── EP15 · tanah yang berhenti jadi padat ──────────────────────────────
+    "EP15": dict(
+        title="TANAH DI PETOBO BERUBAH JADI LUMPUR, DAN RUMAHNYA IKUT BERGERAK",
+        struktur="klimaks-awal",
+        thumb=["TANAH", "MENGALIR"], thumb_text="TANAH MENGALIR",
+        durasi=43, plate="ridge",
+        protagonis="Warga Petobo yang rumahnya bergerak bersama tanah.",
+        mau="Menyelamatkan diri dari tanah yang tidak lagi diam.",
+        hambatan="Tanahnya bergerak lebih cepat dari orang yang berlari.",
+        tanaman="Kata Kaili untuk peristiwa ini: nalodo, amblas.",
+        hook="Tanah di Petobo berubah jadi lumpur, dan rumah-rumah ikut bergerak.",
+        hook_alt="Rumah di Petobo tidak roboh. Rumah itu ikut berjalan bersama tanahnya.",
+        tanya="Kalau tanah padat bisa mengalir, apa yang kamu pijak sekarang?",
+        entitas="tanah",
+        relate="Kita menaruh rumah di atas tanah karena percaya tanah diam.",
+        diskusi="Kalau rumahmu berdiri di atas tanah itu, kamu pindah?",
+        celah="Kenapa tanah yang padat bisa mengalir seperti air?",
+        gambar_melekat="Rumah dan pohon bergeser puluhan meter dari tempatnya.",
+        beats=[
+            ("tanya", "Kalau tanah padat bisa mengalir, apa yang kamu pijak sekarang?"),
+            ("relate", "Kita menaruh rumah di atas tanah karena percaya tanah diam."),
+            ("setup", "28 September 2018, Palu. Getaran 7,5 dari sesar Palu-Koro."),
+            ("tension", "Coba lihat Petobo. Rumah, jalan, pohon, bergerak satu arah."),
+            ("tension", "Warga Kaili menyebutnya nalodo: tanah yang amblas, terhisap."),
+            ("turn", "Tanahnya tidak menelan apa pun. Air di dalamnya yang membuat tanah berhenti jadi padat."),
+            ("consequence", "Di Balaroa, 678 orang meninggal, dan 199 tidak pernah ditemukan."),
+        ],
+        turn_quote="“Tanahnya menelan mereka.”",
+        turn_verdict="Tidak ada yang menelan. Air di dalam tanah membuatnya berhenti jadi padat, lalu bergerak.",
+        loop="Tanah itu masih di sana, cuma tidak bisa dipijak. Kamu akan tinggal di atasnya?",
+        cues=["PETOBO", "2018", "NALODO"],
+        captions=["", "Apa yang kamu pijak?", "Kita percaya tanah diam.", "Palu, 2018.",
+                  "Semua bergerak.", "Nalodo.", "Bukan ditelan.", "678 nama.",
+                  "Kamu akan tinggal?"],
+        caption_hi=["", "tanah", "tanah", "2018", "bergerak", "nalodo", "air", "678", "tinggal"],
+        stamps=[["2018", 3]],
+        sfx={"00_hook": "boom", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "boom", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "clunk", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Gempa 28 September 2018 (Mw 7,5) di sesar Palu-Koro memicu "
+            "likuefaksi dan aliran lumpur di Balaroa dan Petobo (Kota Palu) serta Jono Oge (Kabupaten "
+            "Sigi), Sulawesi Tengah. Rangkaian gempa susulan M6,4; 6,2; 6,1 terjadi sekitar 25 menit "
+            "setelah gempa utama dan ikut memicu likuefaksi. Studi geoteknik (microtremor/MASW, "
+            "semi-empiris) menyimpulkan likuefaksi terjadi hingga kedalaman ±16 meter karena sedimen "
+            "lunak, muka air tanah dangkal, dan ground shear strain tinggi. Masyarakat Kaili menyebut "
+            "peristiwa ini 'nalodo' (amblas/terhisap lumpur). Data BAPPENAS per 15 Februari 2019 untuk "
+            "Kelurahan Balaroa: 678 meninggal, 199 hilang, 1.087 rumah rusak berat, 1.461 rumah hilang; "
+            "area likuefaksi Balaroa ±40 Ha dari 238 Ha. Rujukan dibaca: Tempo (29 Sep 2023), Journal of "
+            "Engineering and Technological Sciences 56(3) 2024, Springer Geo-environmental Disasters "
+            "(2021), jurnal JRPP 7(4) 2024. Catatan: angka korban total Palu-Sigi-Donggala berbeda-beda "
+            "antar sumber; naskah hanya memakai angka Balaroa dari BAPPENAS di atas. Belum dibaca "
+            "langsung: laporan BNPB/BAPPENAS asli dan paper Bradley dkk. (2019) — verifikasi sebelum "
+            "tayang."
+        ),
+    ),
+
+    # ── EP16 · lukisan yang umurnya dihitung dari batu di atasnya ──────────
+    "EP16": dict(
+        title="LUKISAN TERTUA DI DUNIA ADA DI GUA KALIMANTAN, DAN PEMBUATNYA TIDAK DIKENAL",
+        struktur="klimaks-awal",
+        thumb=["BANTENG", "40.000 TAHUN"], thumb_text="BANTENG 40.000",
+        durasi=43, plate="shelter",
+        protagonis="Pindi Setiawan, arkeolog ITB yang ikut meneliti gua itu.",
+        mau="Tahu siapa yang melukis, dan kapan.",
+        hambatan="Yang tersisa cuma cat dan kapur; tidak ada tulang, tidak ada nama.",
+        tanaman="Umur lukisan dihitung dari kerak kapur di atas cat.",
+        hook="Di dinding gua Kalimantan ada banteng, dan umurnya 40.000 tahun.",
+        hook_alt="Gambar banteng ini lebih tua dari piramida, dan tidak ada yang tahu siapa pembuatnya.",
+        tanya="Kalau catnya sudah hilang, dari mana kamu tahu umur dinding itu?",
+        entitas="banteng",
+        relate="Kita menghitung umur dari batu kapur yang tumbuh di atasnya.",
+        diskusi="Kalau lukisan itu bisa lebih tua lagi, apa artinya?",
+        celah="Kenapa umur lukisan dihitung dari batu di atasnya?",
+        gambar_melekat="Banteng merah di dinding kapur, dengan cap tangan di sebelahnya.",
+        beats=[
+            ("tanya", "Kalau catnya sudah hilang, dari mana kamu tahu umur dinding itu?"),
+            ("relate", "Kita menghitung umur dari batu kapur yang tumbuh di atasnya."),
+            ("setup", "Kutai Timur, 1994. Penjelajah Prancis menemukan gua ini."),
+            ("tension", "Coba lihat cap tangannya. Satu berumur 51.800 tahun."),
+            ("tension", "Di sebelahnya, gambar perahu dan orang, umurnya 20.000 tahun."),
+            ("turn", "Yang diuji bukan catnya, tapi batu kapur yang menutupinya. Jadi angkanya batas minimum."),
+            ("consequence", "Lukisan itu bisa lebih tua, dan tangan pembuatnya belum dikenal."),
+        ],
+        turn_quote="“Lukisan ini berumur 40.000 tahun.”",
+        turn_verdict="Angka itu batas minimum: yang diuji kerak di atasnya, bukan catnya. Bisa jauh lebih tua.",
+        loop="Banteng itu masih di dinding yang sama. Menurut kamu, siapa yang melukisnya?",
+        cues=["SANGKULIRANG", "40.000 TH", "TANPA NAMA"],
+        captions=["", "Dari mana tahu umurnya?", "Umur dari batu di atasnya.", "Kutai Timur, 1994.",
+                  "Cap tangan 51.800.", "Perahu, 20.000.", "Batas minimum.", "Pembuatnya hilang.",
+                  "Siapa yang melukis?"],
+        caption_hi=["", "umur", "batu", "1994", "tangan", "perahu", "minimum", "nama", "melukis"],
+        stamps=[["1994", 3]],
+        sfx={"00_hook": "clunk", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "page", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "rustle", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Lubang Jeriji Saléh, kawasan karst Sangkulirang–Mangkalihat, "
+            "Kabupaten Kutai Timur, Kalimantan Timur. Lukisan ditemukan penjelajah Prancis Luc-Henri "
+            "Fage pada 1994. Penanggalan uranium-thorium terhadap kerak kalsit yang menutupi lukisan "
+            "(bukan terhadap pigmennya) oleh tim Maxime Aubert (Griffith University) bersama Pindi "
+            "Setiawan (ITB) dkk., terbit di Nature 2018: gambar hewan mirip banteng minimum 40.000 "
+            "tahun — saat itu lukisan figuratif tertua yang diketahui; cap tangan oranye salah satunya "
+            "berusia maksimum 51.800 tahun dan dua lainnya minimum 37.200 tahun; cap tangan warna "
+            "murbei gelap serta gambar manusia, perahu, dan bentuk geometris berumur ±20.000–21.000 "
+            "tahun. Karena metode ini menghitung umur kerak di atas cat, angka tersebut adalah umur "
+            "minimum — lukisannya sendiri bisa lebih tua. Pindi Setiawan menyebut siapa senimannya dan "
+            "apa yang terjadi pada mereka masih misteri. Rujukan dibaca: Kompas Sains (8 Nov 2018), "
+            "Intisari/Grid (9 Nov 2018), abstrak Nature 'Palaeolithic cave art in Borneo'. Belum dibaca "
+            "langsung: naskah penuh Nature 2018 (Aubert dkk.) dan laporan Balai Arkeologi — verifikasi "
+            "sebelum tayang."
+        ),
+    ),
+
+    # ── EP17 · gunung yang dianggap mati ───────────────────────────────────
+    "EP17": dict(
+        title="TIDAK MELETUS SEJAK 1600, LALU SATU PAGI GUNUNG INI KELUAR LAVA",
+        struktur="klimaks-awal",
+        thumb=["GUNUNG", "BANGUN"], thumb_text="GUNUNG BANGUN",
+        durasi=43, plate="plume",
+        protagonis="Warga Karo di lereng Sinabung yang mengungsi malam itu.",
+        mau="Pulang ke rumah yang tidak lagi di zona aman.",
+        hambatan="Tidak ada catatan letusan, jadi tidak ada yang siap.",
+        tanaman="Catatan letusan terakhir: 1600.",
+        hook="Gunung ini tidak pernah meletus sejak 1600, lalu satu pagi keluar lava.",
+        hook_alt="Empat abad catatannya kosong. Lalu pada 2010 gunung ini bangun di tengah malam.",
+        tanya="Kalau tidak ada catatan, bagaimana kamu tahu gunung itu masih hidup?",
+        entitas="gunung",
+        relate="Kita percaya catatan lebih dari gunungnya sendiri.",
+        diskusi="Kalau kamu tinggal di lerengnya, kamu pindah sebelum atau sesudah?",
+        celah="Kenapa gunung yang diam seribu tahun bisa bangun tanpa peringatan?",
+        gambar_melekat="Asap tipis di puncak, dari gunung yang dianggap mati.",
+        beats=[
+            ("tanya", "Kalau tidak ada catatan, bagaimana kamu tahu gunung itu masih hidup?"),
+            ("relate", "Kita percaya catatan lebih dari gunungnya sendiri."),
+            ("setup", "Karo, 2.451 meter. Catatan terakhir 1600, lalu diam."),
+            ("tension", "Coba lihat puncaknya. Ada kawah, dan asap tipis yang tidak pernah jadi berita."),
+            ("tension", "Perkiraan letusan terakhir: tahun 800. Artinya seribu dua ratus tahun diam."),
+            ("turn", "Diam bukan mati. Tekanan tetap menumpuk di bawah gunung."),
+            ("consequence", "29 Agustus 2010, 12.000 orang mengungsi, dan satu tidak sampai."),
+        ],
+        turn_quote="“Gunungnya sudah mati.”",
+        turn_verdict="Diam bukan mati. Catatan yang kosong cuma berarti tidak ada yang menulis.",
+        loop="Gunung itu sekarang berasap tiap hari. Kamu masih akan tinggal di lerengnya?",
+        cues=["SINABUNG", "2010", "1.200 TAHUN"],
+        captions=["", "Masih hidup?", "Kita percaya catatan.", "Karo, 2.451 m.",
+                  "Asap tanpa berita.", "Diam 1.200 tahun.", "Diam bukan mati.", "12.000 mengungsi.",
+                  "Kamu masih tinggal?"],
+        caption_hi=["", "hidup", "catatan", "Karo", "asap", "1.200", "tekanan", "12.000", "tinggal"],
+        stamps=[["2010", 3]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "clunk",
+             "04_tension": "gust", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "boom", "99_loop": "gust"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Gunung Sinabung (Deleng Sinabung), Dataran Tinggi Karo, Kabupaten "
+            "Karo, Sumatera Utara; stratovolcano 2.451 m. Tidak pernah tercatat meletus sejak 1600, "
+            "dengan perkiraan letusan terakhir sekitar tahun 800 — artinya masa diamnya lebih dari "
+            "seribu tahun, bukan empat abad. Aktif kembali: 27 Agustus 2010 mengeluarkan asap dan abu; "
+            "29 Agustus 2010 dini hari sekitar 00.15 WIB mengeluarkan lava; status naik menjadi Awas; "
+            "12.000 warga dievakuasi ke 8 lokasi; satu orang meninggal karena gangguan pernapasan saat "
+            "mengungsi; abu terbawa sampai sebagian Kota Medan. Rujukan dibaca: Wikipedia Indonesia "
+            "'Gunung Sinabung' (dengan rujukan Kompas, Detik, Liputan6, USGS) — status VERIFIED untuk "
+            "tanggal dan angka evakuasi. Catatan: halaman itu juga mencantumkan letusan 31 Agustus 2026; "
+            "belum dipakai di naskah karena belum ada rujukan berita yang dibaca. Belum dibaca langsung: "
+            "siaran pers PVMBG/Badan Geologi 2010 dan kronologi resmi — verifikasi sebelum tayang."
+        ),
+    ),
+}
+
+for _e in EPISODES:
+    if _e["ep"] in _INDONESIA_BATCH3:
+        _e.update(_INDONESIA_BATCH3[_e["ep"]])

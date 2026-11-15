@@ -20,9 +20,9 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | 12 | H2 | siang | ANEH | TIGA DANAU DI SATU PUNCAK BERWARNA BEDA, DAN TIDAK ADA YANG MENYURUHNYA | A | 42 |
 | 13 | H3 | siang | ANEH | DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA | B | 43 |
 | 14 | H4 | siang | ANEH | SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA | D | 43 |
-| 15 | H5 | siang | ANEH | TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN | D | 42 |
-| 16 | H6 | siang | ANEH | TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS | B | 39 |
-| 17 | H6 | pagi | BENCANA | SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER | A | 41 |
+| 15 | H5 | siang | ANEH | TANAH DI PETOBO BERUBAH JADI LUMPUR, DAN RUMAHNYA IKUT BERGERAK | D | 43 |
+| 16 | H6 | siang | ANEH | LUKISAN TERTUA DI DUNIA ADA DI GUA KALIMANTAN, DAN PEMBUATNYA TIDAK DIKENAL | B | 43 |
+| 17 | H6 | pagi | BENCANA | TIDAK MELETUS SEJAK 1600, LALU SATU PAGI GUNUNG INI KELUAR LAVA | A | 43 |
 | 18 | H7 | pagi | BENCANA | GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA | D | 42 |
 | 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG | B | 39 |
 | 20 | H7 | malam | BENCANA | YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN | B | 41 |
@@ -1466,325 +1466,245 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 ---
 
-## EP15 — TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN
+## EP15 — TANAH DI PETOBO BERUBAH JADI LUMPUR, DAN RUMAHNYA IKUT BERGERAK
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H5  
-**POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 132 kata ≈ 54 detik (target 57 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** D
+**Narasi:** 96 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Tim penggalian Gua Liang Bua, Flores, 2003. |
-| **Mau** | Mencari bukti manusia purba yang bermigrasi lewat Indonesia. |
-| **Hambatan** | Yang mereka temukan tidak cocok dengan apa pun di buku teks. |
-| **Tanaman** (detail yang berubah makna di turn) | Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Tengkorak kecil di samping alat batu, di lantai gua. |
+| **Protagonis** | Warga Petobo yang rumahnya bergerak bersama tanah. |
+| **Mau** | Menyelamatkan diri dari tanah yang tidak lagi diam. |
+| **Hambatan** | Tanahnya bergerak lebih cepat dari orang yang berlari. |
+| **Tanaman** | Kata Kaili untuk peristiwa ini: nalodo, amblas. |
+| **Celah** | Kenapa tanah yang padat bisa mengalir seperti air? |
+| **Gambar melekat** | Rumah dan pohon bergeser puluhan meter dari tempatnya. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Tingginya satu meter, otaknya sepertiga otak kita. Dan dia hidup saat kita sudah ada.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Tanah di Petobo berubah jadi lumpur, dan rumah-rumah ikut bergerak.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 2003. Sebuah tim penggalian bekerja di Gua Liang Bua, Flores. |
-| SETUP | Mereka mencari jejak migrasi manusia purba lewat Indonesia. |
-| TENSION | Mereka menemukan kerangka yang tidak sesuai dengan apa pun yang ada di buku. |
-| TENSION | Tingginya sekitar satu meter. Volume otaknya sepertiga otak kita. |
-| TENSION | Di sekitarnya ada alat batu. Ada bukti perburuan. |
-| TENSION | Umurnya ditaksir sekitar 18.000 tahun — saat manusia modern sudah membuat lukisan gua. |
-| TURN | Sebagian ilmuwan bersikeras: ini bukan spesies baru. Ini manusia modern yang sakit. |
-| TURN | Perdebatan itu berlangsung lebih dari sepuluh tahun. |
-| CONSEQUENCE | Analisis gigi dan rahang menyimpulkan: ini bukan kita. |
-| CONSEQUENCE | Mereka hidup di pulau itu puluhan ribu tahun. Lalu menghilang, dan ceritanya ikut hilang. |
+| TANYA | Kalau tanah padat bisa mengalir, apa yang kamu pijak sekarang? |
+| RELATE | Kita menaruh rumah di atas tanah karena percaya tanah diam. |
+| SETUP | 28 September 2018, Palu. Getaran 7,5 dari sesar Palu-Koro. |
+| TENSION | Coba lihat Petobo. Rumah, jalan, pohon, bergerak satu arah. |
+| TENSION | Warga Kaili menyebutnya nalodo: tanah yang amblas, terhisap. |
+| TURN | Tanahnya tidak menelan apa pun. Air di dalamnya yang membuat tanah berhenti jadi padat. |
+| CONSEQUENCE | Di Balaroa, 678 orang meninggal, dan 199 tidak pernah ditemukan. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu manusia modern yang sakit.”**
+Kutipan: **“Tanahnya menelan mereka.”**
 
-Pembalik: Gigi dan rahangnya bukan milik kita. Ini kerabat yang berpisah jauh lebih lama.
+Pembalik: tidak ada yang menelan. Tanah kehilangan kekuatan karena air di dalamnya,
+lalu bergerak seperti cairan — itulah likuefaksi. Kata "terhisap" di awal dibayar di
+sini: bukan dihisap, tapi tidak lagi padat.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Tanah itu masih di sana, cuma tidak bisa dipijak. Kamu akan tinggal di atasnya?
 
-> Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau rumahmu berdiri di atas tanah itu, kamu pindah?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP15` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | tanah berubah jadi lumpur, rumah ikut bergerak |
+| 2 | ada yang salah | tanah padat mengalir |
+| 3 | bertahan | kata "nalodo" ditanam, dibayar di turn |
+| 4 | kejutan | bukan ditelan — air yang menghapus kepadatan tanah |
+| 5 | diingat | rumah dan pohon bergeser puluhan meter |
 
 ## 5 · TEKS DI LAYAR
 
-1. `2003`
-2. `LIANG BUA`
-3. `1 METER`
-4. `18.000 TAHUN`
-5. `BUKAN KITA`
+Cue: PETOBO · 2018 · NALODO
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Gempa 28 September 2018 (Mw 7,5) di sesar Palu-Koro memicu likuefaksi dan
+aliran lumpur di Balaroa, Petobo (Kota Palu), dan Jono Oge (Sigi). Gempa susulan M6,4;
+6,2; 6,1 sekitar 25 menit setelah gempa utama ikut memicu. Studi geoteknik (microtremor/
+MASW, semi-empiris) menyimpulkan likuefaksi hingga kedalaman ±16 m karena sedimen lunak,
+muka air tanah dangkal, dan ground shear strain tinggi. Masyarakat Kaili menyebutnya
+*nalodo* (amblas/terhisap lumpur). Data BAPPENAS per 15 Februari 2019 untuk Balaroa: 678
+meninggal, 199 hilang, 1.087 rumah rusak berat, 1.461 rumah hilang; area likuefaksi ±40
+Ha dari 238 Ha.
 
-Penampang gua; siluet satu meter di samping skala manusia modern; alat batu.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Homo floresiensis, Liang Bua; stratigrafi direvisi 2016 (Nature), belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Tingginya satu meter. Otaknya sepertiga otak kita. Dan dia hidup saat manusia modern sudah ada.
+Angka korban total Palu–Sigi–Donggala berbeda antar sumber; naskah hanya memakai angka
+Balaroa di atas. Belum dibaca langsung: laporan BNPB/BAPPENAS asli dan paper Bradley dkk.
+(2019) — verifikasi sebelum tayang.
 
 ---
 
-## EP16 — TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS
+## EP16 — LUKISAN TERTUA DI DUNIA ADA DI GUA KALIMANTAN, DAN PEMBUATNYA TIDAK DIKENAL
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H6  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 110 kata ≈ 45 detik (target 52 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
+**Narasi:** 92 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Tiga murid perempuan di sekolah Kashasha, Tanganyika. |
-| **Mau** | Menjalani hari sekolah seperti biasa. |
-| **Hambatan** | Tubuh mereka mulai tertawa, dan tidak berhenti. |
-| **Tanaman** (detail yang berubah makna di turn) | Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan penyakit, apa yang menular di sekolah itu? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Bangku kelas kosong dengan papan tulis penuh tulisan pudar. |
+| **Protagonis** | Pindi Setiawan, arkeolog ITB yang ikut meneliti gua itu. |
+| **Mau** | Tahu siapa yang melukis, dan kapan. |
+| **Hambatan** | Yang tersisa cuma cat dan kapur; tidak ada tulang, tidak ada nama. |
+| **Tanaman** | Umur lukisan dihitung dari kerak kapur di atas cat. |
+| **Celah** | Kenapa umur lukisan dihitung dari batu di atasnya? |
+| **Gambar melekat** | Banteng merah di dinding kapur, dengan cap tangan di sebelahnya. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Seribu orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Di dinding gua Kalimantan ada banteng, dan umurnya 40.000 tahun.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Januari 1962. Sebuah sekolah di desa Kashasha, Tanganyika. |
-| SETUP | Tiga murid perempuan mulai tertawa. |
-| TENSION | Tawanya tidak berhenti di jam pelajaran. |
-| TENSION | Dalam beberapa hari, puluhan murid ikut tertawa. Beberapa menangis. |
-| TENSION | Dalam dua bulan, sekolah itu ditutup. |
-| TENSION | Wabahnya pindah ke sekolah lain. Dan sekolah berikutnya. |
-| TENSION | Sebagian murid tertawa selama berhari-hari, bahkan berminggu-minggu. |
-| TURN | Tidak ada virus yang ditemukan. Tidak ada racun. Tidak ada penyebab fisik. |
-| TURN | Yang ada: sekolah baru, aturan baru, dan anak-anak yang tidak pernah dimintai pendapat. |
-| CONSEQUENCE | Yang menyebar bukan penyakit. Yang menyebar adalah tekanan. |
-| CONSEQUENCE | Tawanya berhenti setelah delapan belas bulan. Tekanannya tidak. |
+| TANYA | Kalau catnya sudah hilang, dari mana kamu tahu umur dinding itu? |
+| RELATE | Kita menghitung umur dari batu kapur yang tumbuh di atasnya. |
+| SETUP | Kutai Timur, 1994. Penjelajah Prancis menemukan gua ini. |
+| TENSION | Coba lihat cap tangannya. Satu berumur 51.800 tahun. |
+| TENSION | Di sebelahnya, gambar perahu dan orang, umurnya 20.000 tahun. |
+| TURN | Yang diuji bukan catnya, tapi batu kapur yang menutupinya. Jadi angkanya batas minimum. |
+| CONSEQUENCE | Lukisan itu bisa lebih tua, dan tangan pembuatnya belum dikenal. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu wabah penyakit.”**
+Kutipan: **“Lukisan ini berumur 40.000 tahun.”**
 
-Pembalik: Tidak ada virus, tidak ada racun. Yang menyebar adalah tekanan, dalam bentuk yang bisa dilihat semua orang.
+Pembalik: angka itu batas minimum, bukan umur pasti. Yang ditanggal adalah kerak kalsit
+yang tumbuh **di atas** cat — jadi lukisannya sendiri bisa lebih tua, dan pembuatnya
+tetap tanpa nama.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Banteng itu masih di dinding yang sama. Menurut kamu, siapa yang melukisnya?
 
-> Seribu orang tertawa karena tidak punya cara lain untuk bicara.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau lukisan itu bisa lebih tua lagi, apa artinya?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 10 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau bukan penyakit, apa yang menular di sekolah itu?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP16` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | banteng di dinding gua, angka 40.000 tahun |
+| 2 | ada yang salah | cat sudah hilang, tapi umurnya bisa dihitung |
+| 3 | bertahan | cara penanggalan ditanam, dibayar di turn |
+| 4 | kejutan | yang diuji bukan lukisannya — jadi angkanya batas minimum |
+| 5 | diingat | banteng merah dengan cap tangan di sebelahnya |
 
 ## 5 · TEKS DI LAYAR
 
-1. `JAN 1962`
-2. `KASHASHA`
-3. `1.000 ORANG`
-4. `18 BULAN`
-5. `TANPA VIRUS`
+Cue: SANGKULIRANG · 40.000 TH · TANPA NAMA
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Lubang Jeriji Saléh, karst Sangkulirang–Mangkalihat, Kutai Timur, Kalimantan
+Timur. Ditemukan penjelajah Prancis Luc-Henri Fage 1994. Penanggalan uranium-thorium
+terhadap kerak kalsit **di atas** lukisan (bukan pigmennya), tim Maxime Aubert (Griffith
+University) bersama Pindi Setiawan (ITB) dkk., terbit di *Nature* 2018: gambar hewan
+mirip banteng minimum 40.000 tahun — saat itu lukisan figuratif tertua yang diketahui;
+cap tangan oranye satu berusia maksimum 51.800 tahun, dua lainnya minimum 37.200 tahun;
+cap tangan warna murbei gelap serta gambar manusia, perahu, dan bentuk geometris ±20.000–
+21.000 tahun.
 
-Kelas dengan bangku kosong; gelombang abstrak menyebar antar bangku; koridor sekolah.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Tanganyika laughter epidemic 1962; laporan jurnal medis belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Tidak ada virus. Yang menyebar hanya tawa — dan tidak ada yang bisa menghentikannya.
+Karena metode ini menghitung umur kerak di atas cat, angkanya adalah umur **minimum**.
+Pindi Setiawan menyebut siapa senimannya dan apa yang terjadi pada mereka masih misteri.
+Rujukan dibaca: Kompas Sains (8 Nov 2018), Intisari/Grid (9 Nov 2018), abstrak *Nature*
+"Palaeolithic cave art in Borneo". Belum dibaca langsung: naskah penuh *Nature* 2018 dan
+laporan Balai Arkeologi — verifikasi sebelum tayang.
 
 ---
 
-## EP17 — SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER
+## EP17 — TIDAK MELETUS SEJAK 1600, LALU SATU PAGI GUNUNG INI KELUAR LAVA
 
-**Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H6  
-**POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 124 kata ≈ 51 detik (target 56 s)
+**Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **POV:** A
+**Narasi:** 90 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Seorang kapten kapal di Selat Sunda, pagi 27 Agustus 1883. |
-| **Mau** | Melewati selat itu dan sampai di pelabuhan berikutnya. |
-| **Hambatan** | Gunung di depannya sedang membelah dirinya sendiri. |
-| **Tanaman** (detail yang berubah makna di turn) | Suara itu tidak hanya terdengar. Gelombang tekanannya tercatat di barometer seluruh dunia. |
-| **Celah** (pertanyaan yang dipegang penonton) | Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Barometer di Eropa mencatat gelombang dari gunung di Selat Sunda. |
+| **Protagonis** | Warga Karo di lereng Sinabung yang mengungsi malam itu. |
+| **Mau** | Pulang ke rumah yang tidak lagi di zona aman. |
+| **Hambatan** | Tidak ada catatan letusan, jadi tidak ada yang siap. |
+| **Tanaman** | Catatan letusan terakhir: 1600. |
+| **Celah** | Kenapa gunung yang diam seribu tahun bisa bangun tanpa peringatan? |
+| **Gambar melekat** | Asap tipis di puncak, dari gunung yang dianggap mati. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Suara itu terdengar 4.800 kilometer jauhnya. Gelombang tekanannya tercatat di seluruh dunia.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Gunung ini tidak pernah meletus sejak 1600, lalu satu pagi keluar lava.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Krakatau. Gunung kecil di Selat Sunda, antara Jawa dan Sumatra. |
-| SETUP | Sejak Mei 1883, gunung itu mengeluarkan asap dan abu. |
-| TENSION | 27 Agustus, empat ledakan besar terjadi dalam beberapa jam. |
-| TENSION | Ledakan terbesar terdengar sampai Australia dan Pulau Rodrigues. |
-| TENSION | Itu seperdelapan permukaan bumi. |
-| TENSION | Gelombang tekanannya tercatat di barometer di seluruh dunia. |
-| TURN | Yang paling mengejutkan bukan ledakannya. |
-| TURN | Gelombang tekanan itu berputar mengelilingi bumi beberapa kali — udara di atas kita bergerak seperti air. |
-| CONSEQUENCE | Tsunaminya mencapai tiga puluh meter. Lebih dari tiga puluh enam ribu orang meninggal. |
-| CONSEQUENCE | Bertahun-tahun setelah itu, matahari terbenam di Eropa berwarna merah menyala. Tidak ada yang tahu kenapa. |
+| TANYA | Kalau tidak ada catatan, bagaimana kamu tahu gunung itu masih hidup? |
+| RELATE | Kita percaya catatan lebih dari gunungnya sendiri. |
+| SETUP | Karo, 2.451 meter. Catatan terakhir 1600, lalu diam. |
+| TENSION | Coba lihat puncaknya. Ada kawah, dan asap tipis yang tidak pernah jadi berita. |
+| TENSION | Perkiraan letusan terakhir: tahun 800. Artinya seribu dua ratus tahun diam. |
+| TURN | Diam bukan mati. Tekanan tetap menumpuk di bawah gunung. |
+| CONSEQUENCE | 29 Agustus 2010, 12.000 orang mengungsi, dan satu tidak sampai. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Gunungnya meletus.”**
+Kutipan: **“Gunungnya sudah mati.”**
 
-Pembalik: Gelombang tekanannya berputar mengelilingi bumi beberapa kali. Udara di atas kita bergerak seperti air.
+Pembalik: "tidak pernah meletus sejak 1600" bukan berarti mati — catatan terakhirnya 1600,
+tetapi perkiraan letusannya tahun 800. Empat abad catatan kosong itu cuma berarti tidak
+ada yang menulis.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Gunung itu sekarang berasap tiap hari. Kamu masih akan tinggal di lerengnya?
 
-> Suara itu tidak berhenti di 4.800 kilometer. Ia berputar mengelilingi dunia, dan langit Eropa berubah.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu tinggal di lerengnya, kamu pindah sebelum atau sesudah?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Seberapa jauh sebuah ledakan merambat, kalau udaranya sendiri yang bergerak?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP17` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | "tidak meletus sejak 1600" lalu keluar lava |
+| 2 | ada yang salah | catatan kosong, gunung tetap hidup |
+| 3 | bertahan | angka 1600 ditanam, dibayar di turn |
+| 4 | kejutan | yang kosong bukan gunungnya, tapi catatannya |
+| 5 | diingat | asap tipis di puncak gunung yang dianggap mati |
 
 ## 5 · TEKS DI LAYAR
 
-1. `27 AGU 1883`
-2. `KRAKATAU`
-3. `4.800 KM`
-4. `30 METER`
-5. `DUNIA BERUBAH`
+Cue: SINABUNG · 2010 · 1.200 TAHUN
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Gunung Sinabung (Deleng Sinabung), Dataran Tinggi Karo, Kabupaten Karo,
+Sumatera Utara; stratovolcano 2.451 m. Tidak pernah tercatat meletus sejak 1600, dengan
+perkiraan letusan terakhir sekitar tahun 800 — masa diamnya lebih dari seribu tahun,
+bukan empat abad. Aktif kembali: 27 Agustus 2010 mengeluarkan asap dan abu; 29 Agustus
+2010 dini hari sekitar 00.15 WIB mengeluarkan lava; status naik menjadi Awas; 12.000
+warga dievakuasi ke 8 lokasi; satu orang meninggal karena gangguan pernapasan saat
+mengungsi; abu terbawa sampai sebagian Kota Medan.
 
-Kolom abu di garis pantai; peta radius suara; grafik barometer dunia.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Letusan Krakatau 1883; catatan barometer global perlu dikutip langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Itu suara paling keras yang pernah dicatat manusia. Sebagian orang yang mendengarnya tidak pernah mendengar lagi.
+Rujukan dibaca: Wikipedia Indonesia "Gunung Sinabung" (merujuk Kompas, Detik, Liputan6,
+USGS) — VERIFIED untuk tanggal dan angka evakuasi. Halaman itu juga mencantumkan letusan
+31 Agustus 2026; belum dipakai karena belum ada rujukan berita yang dibaca. Belum dibaca
+langsung: siaran pers PVMBG/Badan Geologi 2010 — verifikasi sebelum tayang.
 
 ---
 
