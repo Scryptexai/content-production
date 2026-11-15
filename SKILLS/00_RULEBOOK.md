@@ -242,3 +242,30 @@ Buffer atau klik manual:
 
 Buffer (`publish.yml`) tetap ada untuk Facebook Reels, tetapi tidak dipakai
 untuk YouTube/TikTok lagi.
+
+## 15 · Desain informasi (NERROR, 16 Nov 2026)
+
+Dipelajari dari Nessie Judge/NERROR lalu diterjemahkan ke Shorts: detail di
+`SKILLS/15_NERROR_INFO_DESIGN.md`, diperiksa `tools/check_info_design.py` (cek A–G).
+
+- **[M]** `A` Beat ketiga memuat tanggal/bulan + tempat. Hook tetap tanpa tahun.
+- **[M]** `B` Kata putusan (`berarti`, `terbukti`, `jadi jelas`, `seharusnya`,
+  `sudah pasti`) tidak boleh muncul sebelum beat `turn`.
+- **[M]** `C` Kesimpulan hanya di `turn`, dan ada yang mengatakannya
+  (`bilang`/`menurut`/kutipan). Tidak ada putusan baru setelah `turn`.
+- **[M]** `D` Ada `celah`, dan `celah` **tidak dijawab** di naskah. `loop` berupa
+  pertanyaan; caption TikTok memuat pertanyaan yang sama.
+- **[M]** `E` `turn` memuat klaim resmi **dan** lawan klaimnya (`bukan … tapi`);
+  sintesa kanal ditulis di `turn_verdict`, bukan diucapkan dua kali.
+- **[M]** `F` Minimal tiga beat berisi angka/tanggal/jarak/nominal, dan setiap
+  angka di VO punya pasangan di `cues`, `stamps`, atau caption.
+- **[M]** `G` Minimal dua sapaan `kamu/kita`; dilarang menuduh mutlak
+  (`pelakunya adalah …`) tanpa atribusi.
+- **[H]** Tidak ada fakta baru setelah `turn`. Kalau ada, pindahkan ke `tension`.
+- **[H]** Episode dengan VO pemilik: teks tidak diubah. Mekanisme A–G dieksekusi
+  di `cues`, `stamps`, `turn_verdict`, caption, dan deskripsi (lihat §13).
+- **[H]** Yang tidak ditiru: horor/mistis, campur bahasa Inggris, judul berteriak,
+  spekulasi tanpa sumber. Genre boleh sama; register tidak.
+
+Skor 15 Nov 2026: rata-rata 4,81/7 dari 21 naskah. Yang paling sering gagal: `E`
+(9/21) dan `F` (5/21) — klaim tanpa lawan, dan episode tanpa angka.
