@@ -11,8 +11,10 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 
 ## SHORT
 
-> **6 Nov 2026 — EP09–EP11 diganti topik Indonesia** (Akseyna / Setiabudi 13 / Porong) dan **EP12–EP14** (Kelimutu / Trunyan / Orang Pendek) dan **EP15–EP17** (Palu / Sangkulirang / Sinabung).
-> Dokumen lama untuk tiga slot itu sudah diberi awalan `ARSIP —` dan tidak dipakai.
+> **6 Nov 2026 — EP09–EP20 diganti topik Indonesia.** EP09–EP11 (Akseyna / Setiabudi 13 / Porong),
+> EP12–EP14 (Kelimutu / Trunyan / Orang Pendek), EP15–EP17 (Palu / Sangkulirang / Sinabung),
+> EP18–EP20 (Tanimbar / Puncak Jaya / Simeulue).
+> Dokumen lama untuk slot-slot itu sudah diberi awalan `ARSIP —` dan tidak dipakai. Sisa: EP21.
 > Dokumen LONG EP09–EP18 juga diberi awalan `ARSIP —`; naskah panjang Indonesia menyusul.
 
 · EP01 — https://docs.google.com/document/d/1L0dwUNHvroQdzeL2EMAUr69vIiPW3y5bab-M1Q07ULE/edit
@@ -32,9 +34,9 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 · EP15 — https://docs.google.com/document/d/1ACV-Mti1cajM2s95mWWqkhJCVI4R5zcZp7_cInIvnqQ/edit
 · EP16 — https://docs.google.com/document/d/1cOO4n6iyoSudLLS1UJv6ynmtONeZ0gs9CBqOaKHhtJQ/edit
 · EP17 — https://docs.google.com/document/d/1-pY7UJazs7va1vcMo2plSxnBEbQKy6srCrwB7fY0ZoE/edit
-· EP18 — https://docs.google.com/document/d/11k82ivxCK_6NsUoT9jgSAs5M2tiTpTXt6rIZc24amks/edit
-· EP19 — https://docs.google.com/document/d/1UvtvU5LbEyoaQqnWu6ma9cGOgIdpRK9H7_MUbtKHrNA/edit
-· EP20 — https://docs.google.com/document/d/1jIJcRtj52h0KVFXKQV3h61_WfsV0Eq1otFqeFTy5r_E/edit
+· EP18 — https://docs.google.com/document/d/1Wkm4N2FHCMPB-XIld0KhlZQ4Ivxwi478GvqXNj2rLH4/edit
+· EP19 — https://docs.google.com/document/d/1tGY48xlfveXtVQQZ3riGhEE0GujImvdFW0ucAf_tQLA/edit
+· EP20 — https://docs.google.com/document/d/13Rf5CjDdtBDHMs-fbiDDH6Okb7z1DrutQm7Fg4mYYis/edit
 · EP21 — https://docs.google.com/document/d/12NlHtkOmS-p666JligGR1jzKKMzK9ATWWcqtNdYHV48/edit
 
 ## LONG
