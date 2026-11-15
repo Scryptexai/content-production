@@ -3,6 +3,17 @@
 Master siap upload ke TikTok / YouTube Shorts / Facebook Reels.
 1080×1920 · H.264 (yuv420p, tv range) · 30 fps · AAC 48 kHz stereo · −14 LUFS (EP05: −14,8 LUFS, −1,2 dBTP).
 
+> ## WAJIB — SETIAP MASTER YANG SELESAI DI-BUILD LANGSUNG DIUNGGAH KE DRIVE
+>
+> Render belum dianggap jadi sebelum videonya ada di Drive, di sesi yang sama.
+> Folder: **`video ready`** — `1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2`.
+> Nama berkas: `EPxx_1080x1920_master.mp4`. Render yang digantikan **diganti nama**
+> (`..._v1-<alasan>.mp4`), tidak dihapus.
+>
+> Catat id Drive-nya di `MASTER_UPLOAD.md` (daftar serah-terima), lalu periksa:
+> `python3 tools/check_master_upload.py` — status keluar ≠ 0 berarti ada master
+> lokal yang belum tercatat.
+
 File binernya **tidak** disimpan di Git (folder `10_FILM/remotion/output/` di-ignore,
 supaya repo tidak membengkak 20 MB per episode). Yang tersimpan: sumber, naskah,
 dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`.
@@ -19,11 +30,13 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP06 v2 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 54,38 s | 16,0 MB | `1O4HvhK22QLjxXuLkhOzngAH-WS_jGLtH` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
 | EP07 | JEJAK KAKI ITU HANYA SATU ARAH (HINTERKAIFECK) | 48,28 s | 14,1 MB | `1OrIaFbZKj_yufo-HOSpVCYxnhmUHYKc8` | `10_FILM/remotion/output/episodes/EP07_1080x1920_master.mp4` |
 | EP08 v2 | SEMUA LABEL DI PAKAIANNYA DIPOTONG (ISDAL, 1970) — VO turbo 0.85 | 53,50 s | 15,3 MB | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` | `10_FILM/remotion/output/episodes/EP08_1080x1920_master.mp4` |
+| EP09 v2 | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS — foto per segmen (revisi 15 Nov 2026) | 39,40 s | 37,5 MB | `1SmFv67IVaoCxC7Ow1SCid4Pk6wtbkLBl` | `10_FILM/remotion/output/episodes/EP09_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`
 Unduh langsung: `https://drive.google.com/uc?id=<file id>&export=download`
 
-Master lama (v3–v6) sudah di-trash supaya tidak ada dua file dengan nama sama.
+Master lama yang digantikan sudah diganti nama (`..._v1-plate.mp4`, `..._v4.mp4`, dst.),
+bukan dihapus — daftar lengkapnya ada di `MASTER_UPLOAD.md`.
 
 ## Cara membuat ulang satu master
 

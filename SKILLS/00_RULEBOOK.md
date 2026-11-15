@@ -162,3 +162,18 @@ shares 0. Kesimpulan yang mengikat produksi:
    kalimatnya.
 6. **Suara kanal = narator internal `ojz6ro9PB1xDu44lymdM`** (dikembalikan 16 Nov 2026).
    Setelan Denas, `polish`, dan atempo dihapus. Konsistensi tetap wajib diukur.
+
+## 12 · Serah-terima master (WAJIB, 15 Nov 2026)
+
+Permintaan pemilik, sudah diulang berkali-kali: **setiap video yang selesai
+di-build wajib diunggah ke Drive di sesi yang sama.** Render lokal yang belum ada
+di Drive bukan hasil kerja — belum jadi.
+
+- **[H]** Unggah ke folder **`video ready`** — id folder `1fVoOvZgiYB3V7S2C5LfMrCpo-c4Xxzo2`.
+- **[H]** Nama berkas `EPxx_1080x1920_master.mp4`, satu nama per episode.
+- **[H]** Render yang digantikan diganti nama (`..._v1-plate.mp4`), tidak dihapus.
+- **[H]** Catat id Drive di `11_CONTENT/04_VIDEO_READY/MASTER_UPLOAD.md`.
+- **[M]** `python3 tools/check_master_upload.py` harus keluar dengan status 0
+  sebelum sesi ditutup.
+
+Laporan ke pemilik tanpa tautan Drive = belum selesai.
