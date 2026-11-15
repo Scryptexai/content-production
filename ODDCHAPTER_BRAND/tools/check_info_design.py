@@ -65,12 +65,16 @@ def scripts(e):
 
 
 def check_a(e):
-    """Kronologi dulu: tiga beat pertama memuat tahun/bulan."""
-    head = [t for _, t in e["beats"][:3]]
-    hit = [t for t in head if KRONOLOGI.search(t)]
+    """Kronologi dulu: hook atau tiga beat pertama memuat tahun/bulan.
+
+    Hook boleh menyebut tahun (bukan membukanya dengan tahun) — itu masih
+    kronologi. Yang gagal adalah episode yang baru menyebut waktu jauh di tengah.
+    """
+    head = [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"][:3])]
+    hit = [name for name, t in head if KRONOLOGI.search(t)]
     if hit:
-        return True, f"anchor di beat {[i + 1 for i, (_, t) in enumerate(e['beats'][:3]) if KRONOLOGI.search(t)]}"
-    return False, "tiga beat pertama tanpa tahun/bulan — penonton belum tahu kapan"
+        return True, f"anchor di {', '.join(hit)}"
+    return False, "hook dan tiga beat pertama tanpa tahun/bulan — penonton belum tahu kapan"
 
 
 def check_b(e):

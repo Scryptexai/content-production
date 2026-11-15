@@ -97,7 +97,7 @@ Aturan tambahan yang menempel di struktur ini:
 
 | cek | lulus | artinya kalau gagal |
 |---|---|---|
-| A kronologi dulu | 12/21 | penonton tidak tahu kapan peristiwanya; cerita kehilangan pijakan |
+| A kronologi dulu | 15/21 | penonton tidak tahu kapan peristiwanya; cerita kehilangan pijakan |
 | B petunjuk dulu | **21/21** | (sudah kuat) kita tidak pernah mendahulukan putusan |
 | C karantina kesimpulan | **21/21** | (sudah kuat) satu kesimpulan, bertribusi |
 | D pertanyaan tertahan | 16/21 | 5 episode menutup celahnya sendiri |
@@ -105,7 +105,7 @@ Aturan tambahan yang menempel di struktur ini:
 | F bukti bisa ditunjuk | **5/21** | episode berjalan dengan kata sifat, bukan angka |
 | G suara penyelidik | 17/21 | 4 episode tanpa sapaan atau menuduh mutlak |
 
-Rata-rata 4,81/7; 18 episode belum penuh. Yang lulus 7/7: **EP16, EP20** (dan EP11
+Rata-rata 4,95/7; 18 episode belum penuh. Yang lulus 7/7: **EP16, EP20** (dan EP11
 sesudah ditulis ulang).
 
 Diagnosis jujur, dalam bahasa produksi:
@@ -115,13 +115,13 @@ Diagnosis jujur, dalam bahasa produksi:
    kata-kata yang bagus. NERROR selalu punya satu angka yang bisa dicek penonton.
 2. **Kita hampir tidak pernah menghadirkan dua klaim yang bertarung (E).**
    Padahal justru di situ penonton merasa diajak berpikir, bukan diajari.
-3. **Tiga perempat episode membuka tanpa tanggal (A).** Hook memang harus tanpa
+3. **Enam episode tidak menyebut tanggal sama sekali di awal (A).** Hook memang harus tanpa
    tahun, tetapi beat ketiga wajib punya — dan sering tidak ada.
 4. **Lima episode menutup celahnya sendiri (D).** Loop yang menjawab pertanyaan
    mematikan komentar, dan komentar adalah satu-satunya sinyal yang menaikkan
    distribusi Shorts kita.
 
-### Contoh nyata: EP02 (2/7) — contoh perbaikan, naskahnya tidak diubah karena sudah tayang
+### Contoh nyata: EP02 (3/7) — contoh perbaikan, naskahnya tidak diubah karena sudah tayang
 
 | sekarang | masalah | perbaikan |
 |---|---|---|

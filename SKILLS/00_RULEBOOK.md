@@ -267,5 +267,5 @@ Dipelajari dari Nessie Judge/NERROR lalu diterjemahkan ke Shorts: detail di
 - **[H]** Yang tidak ditiru: horor/mistis, campur bahasa Inggris, judul berteriak,
   spekulasi tanpa sumber. Genre boleh sama; register tidak.
 
-Skor 15 Nov 2026: rata-rata 4,81/7 dari 21 naskah. Yang paling sering gagal: `E`
+Skor 15 Nov 2026: rata-rata 4,95/7 dari 21 naskah. Yang paling sering gagal: `E`
 (9/21) dan `F` (5/21) — klaim tanpa lawan, dan episode tanpa angka.
