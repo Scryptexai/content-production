@@ -1,7 +1,671 @@
 {
-  "fetched_at": "2026-11-09T13:48:12Z",
+  "fetched_at": "2026-11-15T12:04:40Z",
   "raw": {
     "posts": [
+      {
+        "_id": "6af8ebde26409c28f9b3285f",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Semua label di bajunya dipotong. Sebelum dia hilang.\n\nTahun 1970, di lembah Isdalen dekat Bergen, Norwegia, seorang ayah dan dua anaknya menemukan tubuh perempuan yang terbakar dari depan. Punggungnya utuh. Rambutnya hangus.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya:\n• Semua label pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, uang asing, dan catatan berkode.\n• Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala.\n\nPolisi menyebut kemungkinan bunuh diri. Banyak yang tidak percaya: orang yang mau mati tidak menghapus namanya serapi itu. Kasus dibuka lagi tahun 2016; isotop giginya mengarah ke sekitar Jerman selatan. Namanya tetap tidak ada.\n\nMenurut kamu, apa yang sebenarnya terjadi di lembah itu? Tulis di komentar.\n\nSumber: BBC News, NRK \"Death in Ice Valley\", arsip kepolisian Bergen.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+        "mediaItems": [
+          {
+            "_id": "6af8ebe026409c28f9b3286a",
+            "url": "https://media.zernio.com/media/1794698204698_a207d0dd4cf85a67_EP08_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794698205812_5b7aa322cbc347c9_EP08_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-15T00:30:00.000Z",
+        "timezone": "Asia/Jakarta",
+        "status": "published",
+        "tags": [
+          "misteri",
+          "true crime",
+          "cold case",
+          "isdal woman",
+          "norwegia",
+          "1970",
+          "kasus tak terpecahkan",
+          "sejarah",
+          "oddchapter",
+          "shorts"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "lastEnqueuedAt": "2026-11-15T00:16:17.485Z",
+        "createdAt": "2026-11-14T23:16:48.288Z",
+        "updatedAt": "2026-11-15T00:30:50.095Z",
+        "platforms": [
+          {
+            "_id": "6af8ebe026409c28f9b32868",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-15T00:30:00.000Z",
+            "platformSpecificData": {
+              "title": "Label di Bajunya Dipotong. 1970: Dia Hilang Tanpa Nama.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Delapan nama di kopernya, dan tidak satu pun yang asli. Kalau semua jejak namamu dihapus, kamu masih bisa dicari?",
+              "containsSyntheticMedia": true,
+              "youtubeUploadSessionId": "6af8f9ed22b6bc9976df23e9"
+            },
+            "status": "published",
+            "publishedAt": "2026-11-15T00:30:00.000Z",
+            "platformPostId": "heyMdxZPVgA",
+            "platformPostUrl": "https://www.youtube.com/watch?v=heyMdxZPVgA",
+            "publishAttempts": 1,
+            "contentHash": "7e12d1f230a2b0c2af2eb62b0aff8f35"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af880002c9f6025a255dbf8",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Kenapa semua label di bajunya dipotong, sebelum dia hilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+        "mediaItems": [
+          {
+            "_id": "6af880022c9f6025a255dc11",
+            "url": "https://media.zernio.com/media/1794670590113_889aa1957ad68542_EP08_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794670591803_b338084bd6e9c5b0_EP08_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-14T15:36:32.693Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "misteri",
+          "true crime",
+          "cold case",
+          "isdal woman",
+          "norwegia",
+          "1970",
+          "kasus tak terpecahkan",
+          "sejarah",
+          "oddchapter",
+          "shorts"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-14T15:36:34.842Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-14T15:36:34.800Z",
+        "updatedAt": "2026-11-14T15:36:41.824Z",
+        "platforms": [
+          {
+            "_id": "6af880022c9f6025a255dc0f",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-14T15:36:32.693Z",
+            "platformSpecificData": {
+              "title": "1970: Dia Memotong Semua Label di Pakaiannya, Lalu Menghilang.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Label dipotong, tanda botol dikerok, delapan nama. Satu perempuan, tanpa nama sampai sekarang.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-14T15:36:41.787Z",
+            "platformPostId": "3E2ekjMZPkc",
+            "platformPostUrl": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
+            "publishAttempts": 1,
+            "contentHash": "9fd3c2d8c275e191690efea9a0db288d"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af869870e77952e44d8fe64",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Kenapa seseorang memotong semua label dari pakaiannya sendiri, lalu menghilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+        "mediaItems": [
+          {
+            "_id": "6af8698a0e77952e44d8fe73",
+            "url": "https://media.zernio.com/media/1794664836787_32f2123c91a5425b_EP08_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794664838499_75700da72fe485a1_EP08_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-14T14:00:39.693Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "misteri",
+          "true crime",
+          "cold case",
+          "isdal woman",
+          "norwegia",
+          "1970",
+          "kasus tak terpecahkan",
+          "sejarah",
+          "oddchapter",
+          "shorts"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-14T14:00:42.310Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-14T14:00:42.065Z",
+        "updatedAt": "2026-11-14T14:00:52.125Z",
+        "platforms": [
+          {
+            "_id": "6af8698a0e77952e44d8fe71",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-14T14:00:39.693Z",
+            "platformSpecificData": {
+              "title": "1970: Dia Memotong Semua Label di Pakaiannya, Lalu Menghilang.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Label dipotong, tanda botol dikerok, delapan nama. Satu perempuan, tanpa nama sampai sekarang.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-14T14:00:51.895Z",
+            "platformPostId": "F6BGrQhYmaA",
+            "platformPostUrl": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
+            "publishAttempts": 1,
+            "contentHash": "d1445cfbd16dc02ba33762536696342f"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af83b0fb4c091a0ee790fc1",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Kalau semua jejak di salju itu mengarah masuk, siapa yang keluar?\n\nHinterkaifeck, pertanian terpencil di Bavaria, sekitar 70 km utara Munich. Malam 31 Maret 1922, enam orang tinggal di sana: Andreas Gruber, istrinya Cäzilia, anak mereka Viktoria, dua cucu berusia 7 tahun dan 2 tahun, dan seorang pembantu yang baru tiba hari itu.\n\nYang sudah terjadi sebelum malam itu:\n• Ada jejak kaki di salju dari tepi hutan menuju rumah, tanpa jejak yang kembali.\n• Kunci rumah hilang.\n• Langkah kaki terdengar di loteng, dan tidak ada siapa pun di sana.\n• Pembantu sebelumnya berhenti karena merasa rumah itu tidak tenang.\n\nEmpat hari kemudian tetangga curiga: tidak ada aktivitas di rumah, tetapi asap masih keluar dari cerobong dan ternak sudah diberi makan. Di dalam rumah, tidak ada satu pun pintu yang dibuka paksa.\n\nPertaniannya dibongkar setahun kemudian. Tengkorak korban dikirim ke Munich dan hilang pada masa Perang Dunia II. Kasus ini tidak pernah selesai — tinjauan akademi polisi Jerman 2007 menyimpulkan bukti yang tersisa tidak cukup.\n\nSumber: ringkasan kasus Hinterkaifeck (True Crime Atlas, Defrosting Cold Cases, Anomalien, Christian Hardinghaus) dan tinjauan 2007. Berkas polisi asli belum dibaca langsung; nama tersangka sengaja tidak disebut karena tidak ada putusan pengadilan.\n\nKalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal?\n\n#shorts #sejarah #hinterkaifeck #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af83b11b4c091a0ee790fd2",
+            "url": "https://media.zernio.com/media/1794652937910_fb275f5aaea00f4b_EP07_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794652942287_cce28c3cdddabacc_EP07_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-14T10:42:23.747Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "hinterkaifeck",
+          "1922",
+          "bavaria",
+          "kasus terbuka",
+          "sejarah",
+          "kisah nyata",
+          "oddchapter",
+          "jejak kaki"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-14T10:42:25.728Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-14T10:42:25.666Z",
+        "updatedAt": "2026-11-14T10:42:32.989Z",
+        "platforms": [
+          {
+            "_id": "6af83b11b4c091a0ee790fd0",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-14T10:42:23.747Z",
+            "platformSpecificData": {
+              "title": "1922: Semua Jejak di Salju Itu Masuk. Tidak Ada Satu pun yang Keluar.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-14T10:42:32.951Z",
+            "platformPostId": "bU__lL-K6Kc",
+            "platformPostUrl": "https://www.youtube.com/watch?v=bU__lL-K6Kc",
+            "publishAttempts": 1,
+            "contentHash": "e2aa373cd0524bff2fe468d87393fa46"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af7f006208448cdcf245de2",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Pernah membayangkan tinggal di kota yang apinya tidak bisa dimatikan?\n\nMei 1962, dewan kota kecil di Pennsylvania menyuruh lima anggota pemadam sukarela membersihkan tumpukan sampah di lubang bekas tambang terbuka. Api masuk lewat celah di batu dan menyala di lapisan batu bara di bawah kota.\n\nYang terjadi sesudahnya:\n• Tiga bulan kemudian, karbon monoksida terdeteksi di bawah tanah.\n• 1981: seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya — lubangnya sekitar 45 meter.\n• 1984: Kongres menyetujui sekitar 42 juta dolar untuk memindahkan warga.\n• 1992: negara mengambil seluruh properti kota; yang tinggal dianggap bukan pemilik.\n• Sensus 2020: lima orang masih tinggal di sana.\n\nApi itu tidak pernah dipadamkan. Ia masih membara di bawah jalan yang kosong, dan perkiraan resmi menyebut masih bisa menyala ratusan tahun lagi.\n\nSumber: Pennsylvania Center for the Book, centraliapa.org, laporan yang mengutip Pennsylvania DEP, dan ringkasan media (World Atlas, Discovery UK, Boing Boing). Buku David DeKok “Fire Underground” dan laporan resmi DEP belum dibaca langsung, jadi angka perkiraan disebut sebagai perkiraan.\n\nKalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?\n\n#shorts #sejarah #centralia #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af7f008208448cdcf245deb",
+            "url": "https://media.zernio.com/media/1794633731879_20d8a4b1c409c86f_EP06_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794633733988_c5ca2683f68ad6f6_EP06_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-14T05:22:15.029Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "centralia",
+          "mine fire",
+          "pennsylvania",
+          "1962",
+          "sejarah",
+          "kisah nyata",
+          "oddchapter",
+          "kota hilang"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-14T05:22:16.483Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-14T05:22:16.361Z",
+        "updatedAt": "2026-11-14T05:22:23.346Z",
+        "platforms": [
+          {
+            "_id": "6af7f008208448cdcf245de9",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-14T05:22:15.029Z",
+            "platformSpecificData": {
+              "title": "Mereka Membakar Sampah di Atas Tambang Tahun 1962. Api Itu Masih Menyala.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-14T05:22:23.298Z",
+            "platformPostId": "_HB37ngpGg0",
+            "platformPostUrl": "https://www.youtube.com/watch?v=_HB37ngpGg0",
+            "publishAttempts": 1,
+            "contentHash": "3f83ad5f664417e2418c245c3b6e9191"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af794b6325c9d8126ba9279",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "1962. Api ini dinyalakan di bawah sebuah kota. Sekarang lihat rumahnya.\n\nMei 1962, dewan kota kecil di Pennsylvania menyuruh lima anggota pemadam sukarela membersihkan tumpukan sampah di lubang bekas tambang terbuka. Api masuk lewat celah di batu dan menyala di lapisan batu bara di bawah kota.\n\nYang terjadi sesudahnya:\n• Tiga bulan kemudian, karbon monoksida terdeteksi di bawah tanah.\n• 1981: seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya — lubangnya sekitar 45 meter.\n• 1984: Kongres menyetujui sekitar 42 juta dolar untuk memindahkan warga.\n• 1992: negara mengambil seluruh properti kota; yang tinggal dianggap bukan pemilik.\n• Sensus 2020: lima orang masih tinggal di sana.\n\nApi itu tidak pernah dipadamkan. Ia masih membara di bawah jalan yang kosong, dan perkiraan resmi menyebut masih bisa menyala ratusan tahun lagi.\n\nSumber: Pennsylvania Center for the Book, centraliapa.org, laporan yang mengutip Pennsylvania DEP, dan ringkasan media (World Atlas, Discovery UK, Boing Boing). Buku David DeKok “Fire Underground” dan laporan resmi DEP belum dibaca langsung, jadi angka perkiraan disebut sebagai perkiraan.\n\nKalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?\n\n#shorts #sejarah #centralia #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af794b8325c9d8126ba927e",
+            "url": "https://media.zernio.com/media/1794610355869_0501706f43244190_EP06_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794610357447_19e87323979484f0_EP06_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-13T22:52:38.510Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "centralia",
+          "mine fire",
+          "pennsylvania",
+          "1962",
+          "sejarah",
+          "kisah nyata",
+          "oddchapter",
+          "kota hilang"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-13T22:52:40.474Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-13T22:52:40.433Z",
+        "updatedAt": "2026-11-13T22:52:46.906Z",
+        "platforms": [
+          {
+            "_id": "6af794b8325c9d8126ba927c",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-13T22:52:38.510Z",
+            "platformSpecificData": {
+              "title": "Mereka Membakar Sampah di Atas Tambang Tahun 1962. Api Itu Masih Menyala.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-13T22:52:46.855Z",
+            "platformPostId": "zFxJeWguVgg",
+            "platformPostUrl": "https://www.youtube.com/watch?v=zFxJeWguVgg",
+            "publishAttempts": 1,
+            "contentHash": "518f6bd42171950ebf090136e666449d"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af725e0b82ff83cf1ebabf2",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "1590. Seratus lima belas orang hilang dari Roanoke. Rumah mereka dibongkar rapi, bukan dihancurkan.\n\nGubernur John White berlayar ke Inggris mengambil bahan makanan. Perang dengan Spanyol menahan kapal. Dia baru kembali pada 18 Agustus 1590 — tiga tahun kemudian.\n\nYang ia temukan:\n• Rumah-rumah sudah dibongkar rapi, bukan runtuh atau terbakar.\n• Di tiang pagar, terpahat satu kata: CROATOAN.\n• Mereka sudah sepakat: kalau pergi karena terpaksa, ukir salib di atas nama itu. Tidak ada salib.\n• Tidak ada satu pun tulang. Tidak ada kuburan.\n\nCroatoan adalah nama pulau (kini Hatteras) sekitar 50 mil ke selatan, dan nama orang yang tinggal di sana. Itu alamat, bukan peringatan.\n\nSumber: Encyclopedia Virginia, National Park Service, dan ringkasan First Colony Foundation. Laporan asli White belum dibaca langsung; hipotesis asimilasi tidak diucapkan sebagai fakta.\n\nKalau kamu yang menemukan kata itu tanpa salib, kamu akan menyeberang mencarinya?\n\n#shorts #sejarah #roanoke #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af725e3b82ff83cf1ebac18",
+            "url": "https://media.zernio.com/media/1794581982112_db8db0ee844cf928_EP05_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794581983399_fe5d19957a0cf179_EP05_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-13T14:59:44.249Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "roanoke",
+          "lost colony",
+          "croatoan",
+          "john white",
+          "1587",
+          "sejarah",
+          "kisah nyata",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-13T14:59:47.629Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-13T14:59:47.586Z",
+        "updatedAt": "2026-11-13T14:59:54.506Z",
+        "platforms": [
+          {
+            "_id": "6af725e3b82ff83cf1ebac16",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-13T14:59:44.249Z",
+            "platformSpecificData": {
+              "title": "115 Orang Menghilang dari Roanoke. Rumahnya Dibongkar Rapi, Tanpa Satu Mayat.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau kamu yang menemukan kata itu tanpa salib, kamu akan menyeberang mencarinya? Bukti terbaru soal ke mana mereka pergi saya bahas di episode berikutnya.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-13T14:59:54.447Z",
+            "platformPostId": "6b4fNdsEvho",
+            "platformPostUrl": "https://www.youtube.com/watch?v=6b4fNdsEvho",
+            "publishAttempts": 1,
+            "contentHash": "a905b2751e4627f1b1961ba7a8409339"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6af472b35f14f7aaf5d65b9b",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Februari 1978. Lima pria berjalan ke atas, meninggalkan mobil yang kuncinya masih di kontak.\n\nEmpat hari kemudian mobil mereka ditemukan di jalan salju Plumas National Forest, sekitar 70 mil ke arah yang salah. Tidak ada kerusakan. Kuncinya masih di lubang kontak.\n\nYang ditemukan kemudian:\n• Juni 1978, Ted Weiher ditemukan di dalam trailer penjaga hutan, bertahan berminggu-minggu.\n• Di trailer itu ada makanan, selimut, dan pemanas. Hampir tidak ada yang dipakai.\n• Tiga lainnya ditemukan di luar, di salju.\n• Gary Mathias tidak pernah ditemukan.\n\nSumber: ringkasan kasus Yuba County Five 1978 (anomalydesk.com, morbidology.com, icecoldcases.com). Dokumen primer belum dibaca langsung; tiga klaim di naskah dikoreksi setelah sumber diperiksa.\n\nKalau kamu di mobil itu, kamu akan menunggu sampai terang atau ikut berjalan ke atas?\n\n#shorts #sejarah #misteri #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af472b55f14f7aaf5d65bb9",
+            "url": "https://media.zernio.com/media/1794405040708_52f485ea4c1a1647_EP04_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794405042312_75858609c47324da_EP04_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-11T13:50:43.574Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "yuba county five",
+          "1978",
+          "plumas national forest",
+          "gary mathias",
+          "ted weiher",
+          "misteri",
+          "sejarah",
+          "kisah nyata",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-11T13:50:45.860Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-11T13:50:45.723Z",
+        "updatedAt": "2026-11-11T13:50:53.930Z",
+        "platforms": [
+          {
+            "_id": "6af472b55f14f7aaf5d65bb7",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-11T13:50:43.574Z",
+            "platformSpecificData": {
+              "title": "5 Pria Berjalan ke Atas, Meninggalkan Mobil Berkunci Kontak. 1 Tak Pernah Kembali.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau kamu di mobil itu, kamu akan menunggu sampai terang atau ikut berjalan ke atas? Yang paling masuk akal akan dibahas di episode berikutnya.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-11T13:50:53.876Z",
+            "platformPostId": "bQ_uJgtBSGc",
+            "platformPostUrl": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
+            "publishAttempts": 1,
+            "contentHash": "5f3d3652fbf018aba34d37d42cc1d0d6"
+          }
+        ],
+        "origin": "zernio"
+      },
       {
         "_id": "6af095b6555aa26995ce8239",
         "userId": {
@@ -59,7 +723,7 @@
               "platform": "youtube",
               "username": "oddchapter7",
               "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/62FOb0Ekm2FVzatEjC55hNjxEwmba6IOZbMV_Fhfkj-lSb-S6vypy2sh_T3XUwR-m5nEWV8vTQ=s88-c-k-c0x00ffffff-no-rj",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
               "isActive": true,
               "profileId": "6aedd4b7c678af6f05c6c0e6"
             },
@@ -141,7 +805,7 @@
               "platform": "youtube",
               "username": "oddchapter7",
               "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/62FOb0Ekm2FVzatEjC55hNjxEwmba6IOZbMV_Fhfkj-lSb-S6vypy2sh_T3XUwR-m5nEWV8vTQ=s88-c-k-c0x00ffffff-no-rj",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
               "isActive": true,
               "profileId": "6aedd4b7c678af6f05c6c0e6"
             },
@@ -223,7 +887,7 @@
               "platform": "youtube",
               "username": "oddchapter7",
               "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/62FOb0Ekm2FVzatEjC55hNjxEwmba6IOZbMV_Fhfkj-lSb-S6vypy2sh_T3XUwR-m5nEWV8vTQ=s88-c-k-c0x00ffffff-no-rj",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
               "isActive": true,
               "profileId": "6aedd4b7c678af6f05c6c0e6"
             },
@@ -252,12 +916,76 @@
     "pagination": {
       "page": 1,
       "limit": 12,
-      "total": 3,
+      "total": 11,
       "pages": 1,
       "nextCursor": null
     }
   },
   "posts": [
+    {
+      "id": "6af8ebde26409c28f9b3285f",
+      "status": "published",
+      "createdAt": "2026-11-14T23:16:48.288Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=heyMdxZPVgA",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af880002c9f6025a255dbf8",
+      "status": "published",
+      "createdAt": "2026-11-14T15:36:34.800Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af869870e77952e44d8fe64",
+      "status": "published",
+      "createdAt": "2026-11-14T14:00:42.065Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af83b0fb4c091a0ee790fc1",
+      "status": "published",
+      "createdAt": "2026-11-14T10:42:25.666Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bU__lL-K6Kc",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af7f006208448cdcf245de2",
+      "status": "published",
+      "createdAt": "2026-11-14T05:22:16.361Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_HB37ngpGg0",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af794b6325c9d8126ba9279",
+      "status": "published",
+      "createdAt": "2026-11-13T22:52:40.433Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zFxJeWguVgg",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af725e0b82ff83cf1ebabf2",
+      "status": "published",
+      "createdAt": "2026-11-13T14:59:47.586Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6b4fNdsEvho",
+      "platform_status": "published"
+    },
+    {
+      "id": "6af472b35f14f7aaf5d65b9b",
+      "status": "published",
+      "createdAt": "2026-11-11T13:50:45.723Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
+      "platform_status": "published"
+    },
     {
       "id": "6af095b6555aa26995ce8239",
       "status": "published",
