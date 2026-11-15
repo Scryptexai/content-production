@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-15T14:39:50Z",
+  "fetched_at": "2026-11-15T14:47:53Z",
   "platforms": [
     "tiktok",
     "youtube"
@@ -61,14 +61,14 @@
           "lastRateLimitError": null,
           "rateLimitCount": 0,
           "rateLimitCountResetAt": null,
-          "lastSuccessfulPublishAt": "2026-11-15T13:02:50.539Z",
+          "lastSuccessfulPublishAt": "2026-11-15T14:43:45.290Z",
           "intentionalDisconnectAt": null,
           "needsReconnection": false,
           "enabled": true,
           "notificationOnly": false,
           "createdAt": "2026-11-06T13:29:00.755Z",
-          "updatedAt": "2026-11-15T13:02:50.539Z",
-          "tokenExpiresAt": "2026-11-15T14:02:35.842Z",
+          "updatedAt": "2026-11-15T14:43:45.290Z",
+          "tokenExpiresAt": "2026-11-15T15:43:34.580Z",
           "byokCredentials": null,
           "gcpProjectId": "default",
           "youtubeCanUploadThumbnails": null,
