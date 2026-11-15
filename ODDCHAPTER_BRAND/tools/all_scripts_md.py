@@ -28,9 +28,15 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 
 
 def file_for(ep):
+    """Satu episode = satu berkas. Kalau ada dua (sisa topik lama), jangan diam-diam
+    memilih yang pertama menurut abjad — berhenti dan minta berkasnya dibereskan."""
     hits = sorted(SCRIPTS.glob(f"{ep['ep']}_*.md"))
     if not hits:
         return None
+    if len(hits) > 1:
+        raise SystemExit(f"{ep['ep']}: ada {len(hits)} berkas — "
+                         + ", ".join(h.name for h in hits)
+                         + " (pindahkan yang usang ke _ARSIP_TOPIK_LUAR/)")
     return hits[0]
 
 

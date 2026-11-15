@@ -2091,3 +2091,198 @@ _INDONESIA_BATCH3 = {
 for _e in EPISODES:
     if _e["ep"] in _INDONESIA_BATCH3:
         _e.update(_INDONESIA_BATCH3[_e["ep"]])
+
+# ══════════════════════════════════════════════════════════════════════════
+# BATCH 4 · EP18–EP20 · Maluku / Papua / Aceh
+# ══════════════════════════════════════════════════════════════════════════
+
+_INDONESIA_BATCH4 = {
+    # ── EP18 · tanah yang naik dari laut dalam semalam ─────────────────────
+    "EP18": dict(
+        title="SETELAH GEMPA, PULAU BARU MUNCUL DI DEPAN KAMPUNG, DAN WARGA MENGUNGSI",
+        struktur="klimaks-awal",
+        thumb=["PULAU", "BARU"], thumb_text="PULAU BARU",
+        durasi=43, plate="water",
+        protagonis="Kepala Desa Teinaman yang memutuskan warganya mengungsi malam itu.",
+        mau="Menyelamatkan warganya dari sesuatu yang naik dari laut.",
+        hambatan="Tidak ada yang bisa menjelaskan apa yang muncul di depan pantai.",
+        tanaman="Gempa 7,5 pukul 00.47 WIB.",
+        hook="Setelah gempa, air di depan kampung ini naik dan jadi pulau.",
+        hook_alt="Sebelum subuh, tanah naik dari laut di depan kampung ini.",
+        tanya="Kalau pulau bisa muncul semalam, apa lagi yang bergerak di bawah kita?",
+        entitas="pulau",
+        relate="Kita cuma lihat permukaan, dan laut menyimpan sisanya.",
+        diskusi="Kalau laut di depan rumahmu naik begini, kamu tunggu penjelasan atau langsung pergi?",
+        celah="Kenapa gempa bisa memunculkan daratan baru dari laut?",
+        gambar_melekat="Tumpukan lumpur gelap di depan pantai, tempat laut tadi.",
+        beats=[
+            ("tanya", "Kalau pulau bisa muncul semalam, apa lagi yang bergerak di bawah kita?"),
+            ("relate", "Kita cuma lihat permukaan, dan laut menyimpan sisanya."),
+            ("setup", "Tanimbar, 10 Januari 2023. Gempa 7,5 dari Laut Banda."),
+            ("tension", "Coba lihat Desa Teinaman. Tanah naik di depan pantai."),
+            ("tension", "Kepala desanya menyebut ini kejadian aneh, lalu mengungsi ke gunung."),
+            ("turn", "Yang naik bukan pulau. Lumpur dari bawah menembus rekahan, lalu hilang."),
+            ("consequence", "BMKG bilang gunung lumpur itu akan turun sendiri."),
+        ],
+        turn_quote="“Itu pulau baru.”",
+        turn_verdict=("BMKG menyebutnya gunung lumpur: cairan dan gas terkurung di lapisan sedimen, "
+                      "lalu mencari jalan keluar lewat rekahan setelah diguncang gempa. Peneliti BRIN "
+                      "menyebut dasar laut dangkal yang terangkat. Dua-duanya bukan pulau yang bertahan."),
+        loop="Pulau itu bisa hilang sebelum kamu sempat melihatnya. Kamu masih percaya pada yang terlihat di laut?",
+        cues=["TEINAMAN", "2023", "M 7,5"],
+        captions=["", "Apa lagi yang bergerak?", "Kita lihat permukaan.", "Tanimbar, 2023.",
+                  "Tanah naik di pantai.", "Kepala desa mengungsi.", "Bukan pulau baru.",
+                  "Akan turun sendiri.", "Kamu masih percaya?"],
+        caption_hi=["", "bergerak", "permukaan", "2023", "tanah", "mengungsi", "lumpur", "turun", "percaya"],
+        stamps=[["2023", 3]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "water", "03_setup": "gust",
+             "04_tension": "water", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "page", "99_loop": "water"},
+        visual="Garis pantai Teinaman sebelum dan sesudah; potongan lapisan sedimen; peta Laut Banda.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Gempa tektonik 10 Januari 2023 pukul 00.47.34 WIB, parameter "
+            "akhir M7,5 (parameter awal M7,9), episenter 7,37 LS 130,23 BT, 136 km barat laut "
+            "Kabupaten Kepulauan Tanimbar, kedalaman 130 km, subduksi Laut Banda, mekanisme naik "
+            "(thrust fault). Setelah gempa, warga Desa Teinaman/Teinem (Kecamatan Wuarlabobar, "
+            "Tanimbar Utara) melihat tumpukan material muncul di depan pantai dan mengungsi ke "
+            "dataran tinggi; Kepala Desa Bony Kelmaskossu meminta warga mengungsi sementara. "
+            "Kepala Bidang Mitigasi Gempa Bumi dan Tsunami BMKG, Daryono, menyebut fenomena itu "
+            "gunung lumpur (mud volcano): cairan dan gas terkurung dalam sedimen menjadi "
+            "overpressure lalu keluar lewat rekahan akibat guncangan gempa, dan umumnya akan "
+            "hilang sendiri. Peneliti Pusat Riset Geoteknologi BRIN, Eko Yulianto, menjelaskan "
+            "versi lain: pengangkatan daratan dangkal akibat siklus gempa (koseismik). Naskah "
+            "memakai dua penjelasan itu tanpa memilih salah satu. Rujukan dibaca: detik.com "
+            "10-11 Januari 2023 (kutipan BMKG), MalukuTerkini 11 Januari 2023 (parameter gempa), "
+            "kicknews/Antara 11 Januari 2023 (kutipan BRIN), Suara Merdeka 11 Januari 2023. "
+            "Belum dibaca langsung: rilis resmi BMKG dan laporan BNPB — verifikasi sebelum tayang."
+        ),
+    ),
+
+    # ── EP19 · es yang dianggap abadi ternyata cuma menunggu suhu ──────────
+    "EP19": dict(
+        title="SALJU ABADI DI PUNCAK INI TINGGAL DUA PERSEN, DAN TAHUN INI BISA HABIS",
+        struktur="klimaks-awal",
+        thumb=["SALJU", "HABIS"], thumb_text="SALJU HABIS",
+        durasi=42, plate="ridge",
+        protagonis="Peneliti BMKG yang mengukur tebal es di Puncak Jaya.",
+        mau="Mencatat es terakhir sebelum hilang.",
+        hambatan="Esnya mencair lebih cepat dari jadwal pemantauan.",
+        tanaman="Luas es 1988: 4,3 kilometer persegi.",
+        hook="Salju abadi di puncak ini tinggal dua persen.",
+        hook_alt="Di negara tropis ini ada salju yang bertahan ribuan tahun, dan tahun ini bisa jadi yang terakhir.",
+        tanya="Di negara tropis, bagaimana ada es yang bertahan ribuan tahun?",
+        entitas="salju",
+        relate="Kita menyebutnya abadi, padahal es itu cuma menunggu suhu naik.",
+        diskusi="Kalau es terakhir Indonesia hilang tahun ini, itu penting buat kamu?",
+        celah="Kenapa es di puncak tertinggi Indonesia bisa habis secepat ini?",
+        gambar_melekat="Batu gelap di puncak, bekas tempat es menempel.",
+        beats=[
+            ("tanya", "Di negara tropis, bagaimana ada es yang bertahan ribuan tahun?"),
+            ("relate", "Kita menyebutnya abadi, padahal es itu cuma menunggu suhu naik."),
+            ("setup", "Puncak Jaya, 4.884 meter, empat derajat di selatan khatulistiwa."),
+            ("tension", "Coba lihat angka 1988. Esnya 4,3 kilometer persegi."),
+            ("tension", "Sekarang tinggal 0,09 kilometer persegi. Tebalnya dari 32 meter jadi 4 meter."),
+            ("turn", "Abadi itu cuma nama. Es bertahan selama suhunya di bawah beku."),
+            ("consequence", "BMKG memperkirakan es itu habis akhir 2026 atau awal 2027."),
+        ],
+        turn_quote="“Saljunya abadi.”",
+        turn_verdict=("Tidak ada yang abadi di 4.884 meter. Es bertahan selama udara di atasnya di bawah "
+                      "titik beku; begitu suhu naik, tidak ada yang menahannya. Titik pemantauan terakhir "
+                      "bahkan sudah kehilangan seluruh esnya — angka 2 persen itu sisa dari luas 1988."),
+        loop="Kamu masih bisa lihat salju ini tahun ini. Kamu akan bilang apa ke anakmu nanti?",
+        cues=["PUNCAK JAYA", "4.884 M", "2 PERSEN"],
+        captions=["", "Kenapa bisa ada es?", "Kita sebut abadi.", "Puncak Jaya, 4.884 m.",
+                  "1988: 4,3 kilometer.", "2025: 0,09 kilometer.", "Abadi cuma nama.",
+                  "Habis 2027.", "Kamu akan bilang apa?"],
+        caption_hi=["", "es", "abadi", "4.884", "4,3", "0,09", "suhu", "2027", "anak"],
+        stamps=[["2026", 7]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "tick", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "clunk", "99_loop": "gust"},
+        visual="Foto es Puncak Jaya 2010 dan 2024; grafik luas 1988-2025; peta Pegunungan Sudirman.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Gletser tropis Puncak Jaya (4.884 m, Pegunungan Sudirman/"
+            "Jayawijaya, Papua), satu-satunya es abadi di Indonesia, berada sekitar 4 derajat di "
+            "selatan khatulistiwa. Luas tutupan es 1988 sekitar 4,3 km2; per September 2025 tinggal "
+            "sekitar 0,09 km2 (sekitar 2 persen). Ketebalan 32 meter pada 2010 menjadi sekitar 4 "
+            "meter pada 2023, dan titik pemantauan terakhir dilaporkan sudah kehilangan seluruh "
+            "lapisan es. Laju pencairan sejak 2016 sekitar 2-2,5 meter per tahun. BMKG "
+            "memperkirakan es itu hilang sepenuhnya pada akhir 2026 atau awal 2027, dipicu "
+            "pemanasan global dan dipercepat El Nino; pemantauan BMKG November 2024 mencatat luas "
+            "0,11-0,16 km2 dari 0,23 km2 pada 2022. BMKG menyebut es ini punya makna budaya dan "
+            "spiritual bagi masyarakat adat Papua. Seluruh angka di naskah berasal dari pernyataan "
+            "BMKG; tidak ada angka yang dihitung sendiri. Rujukan dibaca: detik.com 3 Juli 2026 dan "
+            "6 Juli 2026 (kutipan rilis BMKG), RRI 4 Juli 2026, Kompas.id 12 April 2026 (hasil "
+            "survei BMKG 11-15 November 2024). Belum dibaca langsung: laporan lengkap BMKG/BRIN dan "
+            "paper Donaldi dkk. — verifikasi sebelum tayang. Catatan: angka 2 persen adalah luas "
+            "terakhir yang dipublikasikan (September 2025), bukan pengukuran November 2026."
+        ),
+    ),
+
+    # ── EP20 · peringatan bencana yang disimpan sebagai lagu tidur ─────────
+    "EP20": dict(
+        title="DI PULAU INI YANG MENYELAMATKAN ORANG BUKAN SIRENE, TAPI LAGU PENGANTAR TIDUR",
+        struktur="klimaks-awal",
+        thumb=["LAGU", "SELAMAT"], thumb_text="LAGU PENYELAMAT",
+        durasi=44, plate="signal",
+        protagonis="Warga Simeulue yang lari ke bukit mengikuti syair neneknya.",
+        mau="Naik ke tempat tinggi sebelum gelombang datang.",
+        hambatan="Tidak ada sirene, dan gelombang datang delapan menit setelah gempa.",
+        tanaman="Kata smong dalam bahasa Devayan berarti tsunami.",
+        hook="Di pulau ini, yang menyelamatkan orang bukan sirene, tapi lagu pengantar tidur.",
+        hook_alt="Tidak ada sirene di pulau ini. Yang ada cuma lagu yang diajarkan nenek.",
+        tanya="Kalau tidak ada sirene, apa yang membuat orang lari ke bukit?",
+        entitas="lagu",
+        relate="Kita menaruh peringatan di nyanyian pengantar tidur anak.",
+        diskusi="Di tempatmu, peringatan bencana diajarkan lewat apa?",
+        celah="Kenapa lagu bisa menyelamatkan lebih banyak orang daripada alat?",
+        gambar_melekat="Anak-anak tidur sambil mendengar syair soal gelombang.",
+        beats=[
+            ("tanya", "Kalau tidak ada sirene, apa yang membuat orang lari ke bukit?"),
+            ("relate", "Kita menaruh peringatan di nyanyian pengantar tidur anak."),
+            ("setup", "Simeulue, 26 Desember 2004. Gempa 9,1, dan laut surut."),
+            ("tension", "Coba ingat syairnya: gempa, air surut, lari ke tempat tinggi."),
+            ("tension", "Dari 78.000 orang di pulau itu, tujuh yang meninggal. Kita jarang dengar angka sekecil itu."),
+            ("turn", "Syair itu bukan hiburan. Ia lagu pengantar tidur anak, supaya diingat saat panik."),
+            ("consequence", "Desa Langi rata dengan tanah, dan 800 orangnya selamat."),
+        ],
+        turn_quote="“Orang desa tidak mungkin tahu tanda tsunami.”",
+        turn_verdict=("Mereka tahu, karena syairnya menyebut urutannya: gempa kuat, air laut surut, lalu cari "
+                      "tempat lebih tinggi. Yang tidak ada di pulau itu justru sirene — dan syair itu "
+                      "diajarkan sebagai nandong, lagu pengantar tidur, sejak tsunami 1907."),
+        loop="Sekarang sirene ada di mana-mana. Tapi kamu masih ingat lagu yang diajarkan ibumu?",
+        cues=["SIMEULUE", "2004", "SMONG"],
+        captions=["", "Apa yang bikin lari?", "Kita simpan di lagu.", "Simeulue, 2004.",
+                  "Gempa, surut, naik.", "Tujuh orang.", "Bukan hiburan.",
+                  "Langi rata, 800 selamat.", "Kamu ingat lagunya?"],
+        caption_hi=["", "sirene", "lagu", "2004", "surut", "tujuh", "syair", "800", "ingat"],
+        stamps=[["2004", 3]],
+        sfx={"00_hook": "tick", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "water", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "boom", "99_loop": "page"},
+        visual="Peta Simeulue dan jarak Desa Langi ke episenter; teks nandong smong; garis waktu 1907-2004.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Gempa 26 Desember 2004 (Mw 9,1-9,2) memicu tsunami; di Pulau "
+            "Simeulue, Aceh, jumlah korban jauh lebih kecil daripada wilayah lain. McAdoo dkk. "
+            "(Earthquake Spectra, 2006) mencatat warga Desa Langi, sekitar 40 km dari episenter, "
+            "langsung lari ke dataran tinggi hanya dengan waktu sekitar 8 menit; desa itu rata "
+            "dengan tanah tetapi sekitar 800 warganya selamat. Rahman, Sakurai & Munadi (2017) "
+            "menuliskan 7 korban meninggal dari populasi sekitar 78.000 (sensus 2000); sumber lain, "
+            "termasuk kutipan PBB 2024, menyebut 6 korban — naskah memakai angka 7 dari Rahman dkk. "
+            "Pengetahuan itu bernama smong (bahasa Devayan: tsunami), diwariskan lewat nandong, "
+            "syair/lagu pengantar tidur, yang isinya antara lain: gempa kuat ('unen ne alek linon') "
+            "diikuti air laut surut ('uwek suruik sahuli'), lalu segera cari tempat lebih tinggi "
+            "('fano me singa tenggi'). Tradisi ini berakar pada tsunami 1907 yang menurut legenda "
+            "menewaskan sekitar 70 persen penduduk pulau. Rujukan dibaca: NALAR/National Archaeology "
+            "Indonesia (teks nandong beserta terjemahan, mengutip McAdoo dkk. 2006), Suara.com "
+            "26 Oktober 2026 (kutipan jurnal Societies 2026 dan angka PBB 2024), abstrak Rahman dkk. "
+            "2017 (ScienceDirect), abstrak penelitian Smong 2024. Belum dibaca langsung: naskah "
+            "penuh McAdoo dkk. 2006 dan Rahman dkk. 2017 — verifikasi sebelum tayang. Angka korban "
+            "1907 adalah legenda, bukan statistik resmi."
+        ),
+    ),
+}
+
+for _e in EPISODES:
+    if _e["ep"] in _INDONESIA_BATCH4:
+        _e.update(_INDONESIA_BATCH4[_e["ep"]])

@@ -23,9 +23,9 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | 15 | H5 | siang | ANEH | TANAH DI PETOBO BERUBAH JADI LUMPUR, DAN RUMAHNYA IKUT BERGERAK | D | 43 |
 | 16 | H6 | siang | ANEH | LUKISAN TERTUA DI DUNIA ADA DI GUA KALIMANTAN, DAN PEMBUATNYA TIDAK DIKENAL | B | 43 |
 | 17 | H6 | pagi | BENCANA | TIDAK MELETUS SEJAK 1600, LALU SATU PAGI GUNUNG INI KELUAR LAVA | A | 43 |
-| 18 | H7 | pagi | BENCANA | GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA | D | 42 |
-| 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG | B | 39 |
-| 20 | H7 | malam | BENCANA | YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN | B | 41 |
+| 18 | H7 | pagi | BENCANA | SETELAH GEMPA, PULAU BARU MUNCUL DI DEPAN KAMPUNG, DAN WARGA MENGUNGSI | D | 43 |
+| 19 | H7 | siang | BENCANA | SALJU ABADI DI PUNCAK INI TINGGAL DUA PERSEN, DAN TAHUN INI BISA HABIS | B | 42 |
+| 20 | H7 | malam | BENCANA | DI PULAU INI YANG MENYELAMATKAN ORANG BUKAN SIRENE, TAPI LAGU PENGANTAR TIDUR | B | 44 |
 | 21 | H6 | malam | HARGA | MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI | A | 40 |
 
 ---
@@ -1171,110 +1171,86 @@ masih aktif. Belum dibaca langsung: laporan BPLS, berkas perkara, dan paper peny
 
 ---
 
-## EP12 — KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA
+## EP12 — TIGA DANAU DI SATU PUNCAK BERWARNA BEDA, DAN TIDAK ADA YANG MENYURUHNYA
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H2  
-**POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 105 kata ≈ 43 detik (target 54 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** A
+**Narasi:** 89 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Frau Troffea, perempuan pertama yang menari di jalan Strasbourg. |
-| **Mau** | Berhenti menari. |
-| **Hambatan** | Tubuhnya tidak mau berhenti, dan kota memberinya satu-satunya obat yang salah. |
-| **Tanaman** (detail yang berubah makna di turn) | Kota itu tidak menghentikan mereka. Dokter menyarankan sebaliknya. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kenapa kota memilih menambah musik, bukan menghentikan mereka? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Kaki telanjang berlumur darah di atas batu jalan. |
+| **Protagonis** | Warga Lio di Moni, Ende, yang membaca warna danau sebagai pesan. |
+| **Mau** | Tahu apakah warna itu peringatan atau cuma kimia. |
+| **Hambatan** | Warnanya berubah tanpa pola, dan tidak semua orang boleh naik. |
+| **Tanaman** | Tiga danau punya nama untuk tiga jenis roh. |
+| **Celah** | Kenapa tiga danau di satu puncak bisa punya warna yang berbeda? |
+| **Gambar melekat** | Tiga kawah berwarna di satu puncak, dilihat dari bibir kawah. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Kota itu menyuruh mereka terus menari. Ratusan orang menari sampai tidak bisa berdiri.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Tiga danau di satu puncak. Warnanya berbeda, dan berubah sendiri.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Juli 1518. Strasbourg, wilayah yang sekarang masuk Prancis. |
-| SETUP | Seorang perempuan bernama Frau Troffea mulai menari di jalan. |
-| TENSION | Dia menari berhari-hari. Tanpa musik. Tanpa berhenti. |
-| TENSION | Dalam sebulan, ratusan orang ikut menari. |
-| TENSION | Kota itu tidak menghentikan mereka. |
-| TENSION | Dokter justru menyarankan: biarkan mereka menari. Bangun panggung. Panggil musisi. |
-| TURN | Obat itu justru makanan penyakitnya. |
-| TURN | Mereka menari sampai tubuh mereka tidak bisa berdiri. |
-| CONSEQUENCE | Beberapa meninggal karena kelelahan dan serangan panas. |
-| CONSEQUENCE | Kota itu kelaparan, dilanda wabah, dan penuh ketakutan. Tarian itu berhenti ketika kotanya berhenti panik. |
+| TANYA | Kalau air bisa berubah tanpa hujan, apa yang kamu kira ada di bawahnya? |
+| RELATE | Kita membaca gunung lewat air yang berubah warna. |
+| SETUP | Flores, 1.639 meter. Tiga kawah, tiga nama, tiga warna. |
+| TENSION | Tiwu Ata Mbupu untuk orang tua. Tiwu Ata Polo untuk yang jahat. |
+| TENSION | Coba lihat airnya. Hijau, lalu cokelat, lalu hitam, tanpa jadwal. |
+| TURN | Warna itu bukan tanda dari leluhur. Itu gas, besi, dan bakteri di dasar kawah. |
+| CONSEQUENCE | Mei 2024, satu kawah berubah, dan status gunung dihitung ulang. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Mereka kesurupan.”**
+Kutipan: **“Perubahan warna itu pertanda bencana.”**
 
-Pembalik: Mereka kelaparan, ketakutan, dan tidak punya cara lain untuk mengatakannya. Obatnya justru memperburuk.
+Pembalik: pertandanya nyata, pengirimnya bukan roh. Gas belerang, besi, dan mikroba
+mengubah air — dan justru karena itu warnanya dipakai Badan Geologi sebagai alat ukur
+aktivitas gunung.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Danau itu masih berubah. Menurut kamu, siapa yang menulis jadwalnya?
 
-> Mereka berhenti menari. Tapi tidak ada yang tahu bagaimana tarian itu dimulai.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau warna itu tanda, kamu akan percaya atau minta data?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kenapa kota memilih menambah musik, bukan menghentikan mereka?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP12` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | tiga danau di satu puncak, warna tak sama |
+| 2 | ada yang salah | air berubah tanpa hujan |
+| 3 | bertahan | nama-nama roh ditanam, dibayar di turn |
+| 4 | kejutan | yang "mengirim pesan" ternyata gas, besi, mikroba |
+| 5 | diingat | tiga kawah berwarna di satu puncak |
 
 ## 5 · TEKS DI LAYAR
 
-1. `JULI 1518`
-2. `STRASBOURG`
-3. `400 ORANG`
-4. `TANPA MUSIK`
-5. `SEBAGIAN MENINGGAL`
+Cue: KELIMUTU · 1.639 M · TIGA NAMA
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Danau Kelimutu, puncak Gunung Kelimutu (1.639 m), Kabupaten Ende, Flores:
+tiga danau kawah dengan warna berbeda. Tiwu Ata Mbupu (roh orang tua), Tiwu Nuwa Muri
+Koo Fai (jiwa muda), Tiwu Ata Polo (roh yang berbuat jahat). Didokumentasikan Van
+Suchtelen 1915, dikenal luas lewat tulisan Y. Bouman 1929. Penjelasan ilmiah: gas
+vulkanik (H₂S, SO₂, CO₂) bereaksi dengan besi, mangan, dan sulfur; warna hijau/biru dari
+sulfur, merah/cokelat dari oksidasi besi; penelitian juga menemukan peran mikroba
+ekstremofil. Tim LIPI (Eko Soebowo, Hendra Bakti, Igan S. Sutawidjaja, Dadan Suherman)
+meneliti Oktober 2006 dan menyimpulkan mekanisme vulkanik; warna Tiwu Nua Muri Koo Fai
+dipakai sebagai parameter status. 2009 ketiga danau sempat jadi satu warna; Badan
+Geologi mencatat perubahan signifikan Mei 2024 pada Tiwu Ata Polo.
 
-Kaki di batu jalan; siluet orang menari tanpa wajah; panggung kosong.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Dancing plague 1518; kronik kota belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Ratusan orang menari di jalan selama berhari-hari. Sebagian tidak selamat.
+Klaim warga bahwa perubahan warna mendahului bencana (mis. sebelum gempa Flores 1992)
+adalah keyakinan lokal, bukan korelasi terukur — di naskah disebut sebagai cara warga
+membaca. Belum dibaca langsung: laporan Badan Geologi dan publikasi LIPI — verifikasi
+sebelum tayang.
 
 ---
 
@@ -1359,110 +1335,85 @@ Arkeologi Bali — verifikasi sebelum tayang.
 
 ---
 
-## EP14 — DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP
+## EP14 — SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H4  
-**POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 116 kata ≈ 47 detik (target 52 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** D
+**Narasi:** 84 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Seorang teknisi siaran di Chicago yang melihat sinyalnya diambil alih. |
-| **Mau** | Menjaga siaran tetap di jalurnya. |
-| **Hambatan** | Seseorang memotong transmisinya, dan dia tidak bisa menghentikannya. |
-| **Tanaman** (detail yang berubah makna di turn) | Pembajakan terjadi dua kali dalam satu malam, di dua saluran berbeda. |
-| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana satu orang bisa memotong dua transmisi, lalu hilang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Layar TV penuh derau dengan siluet kepala di tengahnya. |
+| **Protagonis** | Debbie Martyr, peneliti yang menghabiskan bertahun-tahun di Kerinci. |
+| **Mau** | Satu foto yang tidak bisa dibantah. |
+| **Hambatan** | Kamera yang menangkap harimau tidak pernah menangkapnya. |
+| **Tanaman** | Sampel rambut yang dikirim ke laboratorium. |
+| **Celah** | Kenapa saksi melihatnya, tapi kamera tidak pernah? |
+| **Gambar melekat** | Cetakan kaki pendek dan lebar, tanpa hewan pembanding. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Dua siaran dibajak dalam satu malam, di dua saluran berbeda. Tidak ada yang tertangkap.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Orang pendek sudah muncul seratus tahun di cerita, dan belum ada foto.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 22 November 1987, Chicago. Pukul sembilan malam, saluran WGN menayangkan film. |
-| SETUP | Gambarnya tiba-tiba hilang. |
-| TENSION | Yang muncul: seseorang memakai topeng kepala, dengan suara yang dirusak. |
-| TENSION | Dia bergerak, bicara, dan menempelkan sesuatu ke layar. |
-| TENSION | Sembilan puluh detik kemudian, siaran kembali normal. |
-| TENSION | Dua jam kemudian, saluran lain dibajak lagi. Kali ini lebih lama. |
-| TURN | Untuk membajak siaran analog, kamu harus tahu di titik mana sinyal bisa dipotong. |
-| TURN | Itu bukan lelucon. Itu pengetahuan teknis — dan orangnya tidak pernah tertangkap. |
-| CONSEQUENCE | FCC menyelidiki bertahun-tahun. Tidak ada nama. Tidak ada tuntutan. |
-| CONSEQUENCE | Tiga puluh delapan tahun kemudian, orang itu masih tidak punya wajah. |
+| TANYA | Kalau kamu pasang seratus kamera, apa yang akan kamu tunggu? |
+| RELATE | Kita percaya pada foto, dan penasaran pada yang tidak pernah difoto. |
+| SETUP | Kerinci, Sumatera. Tingginya 85 sentimeter, kata saksi. |
+| TENSION | Coba lihat cetakan kakinya. Pendek, lebar, tanpa hewan pembanding. |
+| TENSION | Sampel rambut dikirim ke laboratorium, dan hasilnya tidak pernah keluar. |
+| TURN | Rambut itu bukan primata baru. Itu rambut manusia. |
+| CONSEQUENCE | Kamera masih dipasang, dan yang muncul tetap hewan yang kita kenal. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu iseng anak-anak.”**
+Kutipan: **“Ada primata baru di hutan Sumatera.”**
 
-Pembalik: Dua pembajakan dalam satu malam butuh pengetahuan teknis. Dan pelakunya tidak pernah tertangkap.
+Pembalik: sampel yang dianggap bukti ternyata rambut manusia. Yang tersisa cuma cerita
+— dan cerita tidak bisa dipotret.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Cerita itu masih ada, dan fotonya belum. Kamu percaya yang mana?
 
-> Sembilan puluh detik, dua saluran, nol tersangka.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu yang menemukannya, kamu akan memotret atau lari?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 14 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Bagaimana satu orang bisa memotong dua transmisi, lalu hilang?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP14` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | seratus tahun saksi, nol foto |
+| 2 | ada yang salah | kamera menangkap harimau, tidak menangkap dia |
+| 3 | bertahan | sampel rambut ditanam, dibayar di turn |
+| 4 | kejutan | bukti fisiknya justru mematahkan cerita |
+| 5 | diingat | cetakan kaki pendek tanpa pembanding |
 
 ## 5 · TEKS DI LAYAR
 
-1. `22 NOV 1987`
-2. `CHICAGO`
-3. `90 DETIK`
-4. `2 KALI`
-5. `TIDAK TERTANGKAP`
+Cue: KERINCI · 85 CM · TANPA FOTO
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Orang pendek (uhang pandak), makhluk mirip primata bipedal yang diklaim
+menghuni hutan Sumatera, terutama Kabupaten Kerinci dan Taman Nasional Kerinci Seblat.
+Deskripsi saksi: tinggi 80–150 cm (Debbie Martyr: biasanya 85–90 cm, kadang 120 cm),
+berbulu pendek gelap, bahu lebar. Laporan tertulis sejak awal abad ke-20, antara lain
+catatan Mr. van Heerwarden (1923); cerita serupa hidup di Suku Anak Dalam sebagai
+"hantu pendek". Penelitian paling serius: Debbie Martyr (1990-an, pernah didukung Fauna
+& Flora International) dan fotografer Jeremy Holden dengan camera trap di TNKS — banyak
+harimau dan beruang madu terekam, orang pendek tidak; keduanya mengaku pernah
+melihatnya. Cetakan kaki dikumpulkan; beberapa sampel rambut dianalisis dan DNA-nya
+dilaporkan manusia (ekspedisi Adam Davies & Andrew Sanderson). Tidak ada spesimen,
+tulang, atau foto jelas.
 
-Layar TV analog penuh derau; siluet kepala di bingkai 4:3; ruang kontrol gelap.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Max Headroom broadcast incident 1987; laporan FCC belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Di tengah film, gambarnya hilang. Yang muncul: seseorang dengan kepala palsu dan suara rusak.
+Naskah tidak menyatakan orang pendek ada — turn justru mematahkan bukti rambutnya.
+Rujukan: Kompas.com (4 Mei 2012), Skeptoid #77, Wikipedia ID. Belum dibaca langsung:
+laporan ekspedisi FFI dan hasil laboratorium asli — verifikasi sebelum tayang.
 
 ---
 
@@ -1708,326 +1659,269 @@ langsung: siaran pers PVMBG/Badan Geologi 2010 — verifikasi sebelum tayang.
 
 ---
 
-## EP18 — GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA
+## EP18 — SETELAH GEMPA, PULAU BARU MUNCUL DI DEPAN KAMPUNG, DAN WARGA MENGUNGSI
 
-**Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **Hari:** H7  
-**POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 125 kata ≈ 51 detik (target 57 s)
+**Seri:** BENCANA · **Slot:** PAGI 07.00 WIB · **POV:** D
+**Narasi:** 95 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Seorang petani di Eropa, 1816, yang menanam di bulan yang salah. |
-| **Mau** | Memanen seperti tahun-tahun sebelumnya. |
-| **Hambatan** | Musimnya tidak datang, dan tidak ada yang tahu kenapa. |
-| **Tanaman** (detail yang berubah makna di turn) | Debu dari sebuah gunung di Sumbawa terbang ke stratosfer dan memantulkan sinar matahari. |
-| **Celah** (pertanyaan yang dipegang penonton) | Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Ladang gandum tertutup salju di bulan Juni. |
+| **Protagonis** | Kepala Desa Teinaman yang memutuskan warganya mengungsi malam itu. |
+| **Mau** | Menyelamatkan warganya dari sesuatu yang naik dari laut. |
+| **Hambatan** | Tidak ada yang bisa menjelaskan apa yang muncul di depan pantai. |
+| **Tanaman** | Gempa 7,5 pukul 00.47 WIB. |
+| **Celah** | Kenapa gempa bisa memunculkan daratan baru dari laut? |
+| **Gambar melekat** | Tumpukan lumpur gelap di depan pantai, tempat laut tadi. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Setahun setelah gunung di Sumbawa meletus, salju turun di bulan Juni di Amerika.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Setelah gempa, air di depan kampung ini naik dan jadi pulau.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | April 1815. Gunung Tambora di Sumbawa meletus. |
-| SETUP | Itu letusan terbesar yang tercatat dalam sejarah modern. |
-| TENSION | Abu dan gas sulfurnya naik ke stratosfer. |
-| TENSION | Di sana, sulfur berubah menjadi partikel yang memantulkan sinar matahari. |
-| TENSION | Selama setahun berikutnya, bumi menerima lebih sedikit panas. |
-| TENSION | 1816 dikenal sebagai tahun tanpa musim panas. |
-| TENSION | Di Amerika, salju turun di bulan Juni. Tanaman gagal. |
-| TURN | Kita menyebut letusan itu bencana lokal. |
-| TURN | Tapi debunya terbang setengah bumi dan mencuri satu musim dari seluruh benua. |
-| CONSEQUENCE | Di Eropa, harga roti meledak. Kerusuhan terjadi di banyak kota. |
-| CONSEQUENCE | Satu gunung di Sumbawa mengubah harga roti di London, dan tidak ada yang melihat hubungannya saat itu. |
+| TANYA | Kalau pulau bisa muncul semalam, apa lagi yang bergerak di bawah kita? |
+| RELATE | Kita cuma lihat permukaan, dan laut menyimpan sisanya. |
+| SETUP | Tanimbar, 10 Januari 2023. Gempa 7,5 dari Laut Banda. |
+| TENSION | Coba lihat Desa Teinaman. Tanah naik di depan pantai. |
+| TENSION | Kepala desanya menyebut ini kejadian aneh, lalu mengungsi ke gunung. |
+| TURN | Yang naik bukan pulau. Lumpur dari bawah menembus rekahan, lalu hilang. |
+| CONSEQUENCE | BMKG bilang gunung lumpur itu akan turun sendiri. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu bencana lokal di Indonesia.”**
+Kutipan: **“Itu pulau baru.”**
 
-Pembalik: Debunya terbang setengah bumi, mencuri satu musim, dan membuat orang Eropa kelaparan.
+Pembalik: yang muncul bukan daratan yang akan tinggal di peta. BMKG menyebutnya gunung
+lumpur: cairan dan gas terkurung di lapisan sedimen, tertekan, lalu keluar lewat rekahan
+yang dibuka guncangan gempa. Peneliti BRIN memberi versi lain — dasar laut dangkal yang
+terangkat oleh siklus gempa. Dua-duanya sepakat pada satu hal: ini bukan pulau baru, dan
+biasanya ia turun lagi sendiri.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Pulau itu bisa hilang sebelum kamu sempat melihatnya. Kamu masih percaya pada yang terlihat di laut?
 
-> Satu gunung di Sumbawa. Satu musim yang hilang di benua lain.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau laut di depan rumahmu naik begini, kamu tunggu penjelasan atau langsung pergi?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Bagaimana debu dari satu pulau bisa mencuri satu musim di benua lain?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP18` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | air naik dan jadi pulau, di depan kampung |
+| 2 | ada yang salah | tidak ada yang bisa menjelaskan, warga mengungsi |
+| 3 | bertahan | gempa 7,5 ditanam di setup, dipakai lagi di turn |
+| 4 | kejutan | yang naik bukan pulau, tapi lumpur yang akan hilang |
+| 5 | diingat | tumpukan lumpur gelap di bekas laut |
 
 ## 5 · TEKS DI LAYAR
 
-1. `APR 1815`
-2. `TAMBORA`
-3. `1816`
-4. `TANPA MUSIM PANAS`
-5. `ROTI MAHAL`
+Cue: TEINAMAN · 2023 · M 7,5
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Gempa tektonik 10 Januari 2023 pukul 00.47.34 WIB, parameter akhir M7,5
+(parameter awal M7,9), episenter 7,37 LS 130,23 BT, 136 km barat laut Kabupaten Kepulauan
+Tanimbar, kedalaman 130 km, subduksi Laut Banda, mekanisme naik (thrust fault). Setelah
+gempa, warga Desa Teinaman/Teinem (Kecamatan Wuarlabobar, Tanimbar Utara) melihat tumpukan
+material muncul di depan pantai dan mengungsi ke dataran tinggi; Kepala Desa Bony
+Kelmaskossu meminta warga mengungsi sementara.
 
-Lapisan abu di stratosfer; peta aliran sulfur; ladang gagal panen.
+Kepala Bidang Mitigasi Gempa Bumi dan Tsunami BMKG, Daryono, menyebut fenomena itu gunung
+lumpur (mud volcano): cairan dan gas terkurung dalam sedimen menjadi overpressure lalu
+keluar lewat rekahan akibat guncangan gempa, dan umumnya akan hilang sendiri. Peneliti
+Pusat Riset Geoteknologi BRIN, Eko Yulianto, menjelaskan versi lain: pengangkatan daratan
+dangkal akibat siklus gempa (koseismik). Naskah memakai dua penjelasan itu tanpa memilih
+salah satu.
 
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Tambora 1815 dan Year Without a Summer 1816; literatur vulkanologi belum dikutip langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Satu gunung di Sumbawa meledak. Setahun kemudian, orang di Eropa kelaparan.
+Rujukan dibaca: detik.com 10–11 Januari 2023 (kutipan BMKG), MalukuTerkini 11 Januari 2023
+(parameter gempa), kicknews/Antara 11 Januari 2023 (kutipan BRIN), Suara Merdeka
+11 Januari 2023. Belum dibaca langsung: rilis resmi BMKG dan laporan BNPB — verifikasi
+sebelum tayang.
 
 ---
 
-## EP19 — LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG
+## EP19 — SALJU ABADI DI PUNCAK INI TINGGAL DUA PERSEN, DAN TAHUN INI BISA HABIS
 
-**Seri:** BENCANA · **Slot:** SIANG 12.30 WIB · **Hari:** H7  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 119 kata ≈ 49 detik (target 54 s)
+**Seri:** BENCANA · **Slot:** SIANG 12.30 WIB · **POV:** B
+**Narasi:** 94 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Leonid Kulik, ilmuwan yang memimpin ekspedisi pertama ke Siberia, 1927. |
-| **Mau** | Menemukan kawah meteorit dan besinya. |
-| **Hambatan** | Tidak ada kawah, tidak ada pecahan, tidak ada logam. |
-| **Tanaman** (detail yang berubah makna di turn) | Dua ribu kilometer persegi hutan rebah menjauhi satu titik — dan di titik itu tidak ada apa-apa. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau ada ledakan sebesar itu, di mana batunya? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Ribuan pohon rebah radial, dan satu titik kosong di tengahnya. |
+| **Protagonis** | Peneliti BMKG yang mengukur tebal es di Puncak Jaya. |
+| **Mau** | Mencatat es terakhir sebelum hilang. |
+| **Hambatan** | Esnya mencair lebih cepat dari jadwal pemantauan. |
+| **Tanaman** | Luas es 1988: 4,3 kilometer persegi. |
+| **Celah** | Kenapa es di puncak tertinggi Indonesia bisa habis secepat ini? |
+| **Gambar melekat** | Batu gelap di puncak, bekas tempat es menempel. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Dua ribu kilometer persegi hutan rebah, semua menjauhi satu titik. Tidak ada kawah.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Salju abadi di puncak ini tinggal dua persen.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 30 Juni 1908. Pagi. Siberia tengah. |
-| SETUP | Saksi melihat langit terbelah. Lalu ada cahaya, dan angin panas. |
-| TENSION | Delapan ratus kilometer jauhnya, orang mendengar ledakan. |
-| TENSION | Gelombang tekanannya tercatat di stasiun cuaca di Inggris. |
-| TENSION | Hutan di bawahnya rebah. Dua ribu kilometer persegi. |
-| TENSION | Semua pohon jatuh menjauhi satu titik pusat. |
-| TENSION | Ekspedisi pertama baru datang sembilan belas tahun kemudian. |
-| TURN | Kulik mencari kawah. Dia mencari batu. Dia mencari besi. |
-| TURN | Yang dia temukan justru sebaliknya: benda itu tidak pernah sampai ke tanah. |
-| CONSEQUENCE | Ia meledak di udara, beberapa kilometer di atas hutan. |
-| CONSEQUENCE | Ledakan sekuat itu, dan tidak meninggalkan apa pun untuk dipegang. |
+| TANYA | Di negara tropis, bagaimana ada es yang bertahan ribuan tahun? |
+| RELATE | Kita menyebutnya abadi, padahal es itu cuma menunggu suhu naik. |
+| SETUP | Puncak Jaya, 4.884 meter, empat derajat di selatan khatulistiwa. |
+| TENSION | Coba lihat angka 1988. Esnya 4,3 kilometer persegi. |
+| TENSION | Sekarang tinggal 0,09 kilometer persegi. Tebalnya dari 32 meter jadi 4 meter. |
+| TURN | Abadi itu cuma nama. Es bertahan selama suhunya di bawah beku. |
+| CONSEQUENCE | BMKG memperkirakan es itu habis akhir 2026 atau awal 2027. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Ada meteorit yang menabrak bumi.”**
+Kutipan: **“Saljunya abadi.”**
 
-Pembalik: Tidak ada kawah dan tidak ada pecahan. Benda itu meledak di udara sebelum menyentuh tanah.
+Pembalik: tidak ada yang abadi di 4.884 meter. Es bertahan selama udara di atasnya ada di
+bawah titik beku — bukan karena puncaknya keramat. Begitu suhu naik, tidak ada yang
+menahannya. Dan angka dua persen itu angka terakhir yang dipublikasikan: titik pemantauan
+BMKG dilaporkan sudah kehilangan seluruh lapisan esnya.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Catatan produksi: kalau episode tayang setelah pengukuran BMKG berikutnya keluar, ganti
+angka 2 persen dengan angka terbaru — jangan campur dua periode pengukuran dalam satu naskah.
 
-## 4 · ECHO
+## 4 · ECHO + AJAKAN KOMENTAR
 
-> Hutan rebah menjauhi satu titik kosong. Sampai sekarang, titik itu tetap kosong.
+> Kamu masih bisa lihat salju ini tahun ini. Kamu akan bilang apa ke anakmu nanti?
 
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau es terakhir Indonesia hilang tahun ini, itu penting buat kamu?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau ada ledakan sebesar itu, di mana batunya?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP19` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | "salju abadi tinggal dua persen" — dua kata yang saling membatalkan |
+| 2 | ada yang salah | namanya abadi, angkanya mengecil tiap tahun |
+| 3 | bertahan | 1988 ditanam di tension, 2027 dibayar di consequence |
+| 4 | kejutan | yang membuat es bertahan bukan usia, tapi suhu |
+| 5 | diingat | batu gelap di puncak, bekas tempat es menempel |
 
 ## 5 · TEKS DI LAYAR
 
-1. `30 JUN 1908`
-2. `TUNGUSKA`
-3. `2.000 KM²`
-4. `TANPA KAWAH`
-5. `MELEDAK DI UDARA`
+Cue: PUNCAK JAYA · 4.884 M · 2 PERSEN
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Gletser tropis Puncak Jaya (4.884 m, Pegunungan Sudirman/Jayawijaya, Papua),
+satu-satunya es abadi di Indonesia, berada sekitar 4 derajat di selatan khatulistiwa. Luas
+tutupan es 1988 sekitar 4,3 km2; per September 2025 tinggal sekitar 0,09 km2 (sekitar
+2 persen). Ketebalan 32 meter pada 2010 menjadi sekitar 4 meter pada 2023, dan titik
+pemantauan terakhir dilaporkan sudah kehilangan seluruh lapisan es. Laju pencairan sejak
+2016 sekitar 2–2,5 meter per tahun. BMKG memperkirakan es itu hilang sepenuhnya pada akhir
+2026 atau awal 2027, dipicu pemanasan global dan dipercepat El Nino; pemantauan BMKG
+November 2024 mencatat luas 0,11–0,16 km2 dari 0,23 km2 pada 2022. BMKG menyebut es ini
+punya makna budaya dan spiritual bagi masyarakat adat Papua.
 
-Pola pohon rebah radial dari atas; satu titik kosong di pusatnya; hutan Siberia.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Peristiwa Tunguska 1908; laporan ekspedisi Kulik belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Pohon-pohon rebah serentak, semua menjauhi satu titik. Di tengahnya, kosong.
+Seluruh angka di naskah berasal dari pernyataan BMKG; tidak ada angka yang dihitung sendiri.
+Rujukan dibaca: detik.com 3 Juli 2026 dan 6 Juli 2026 (kutipan rilis BMKG), RRI 4 Juli 2026,
+Kompas.id 12 April 2026 (hasil survei BMKG 11–15 November 2024). Belum dibaca langsung:
+laporan lengkap BMKG/BRIN dan paper Donaldi dkk. — verifikasi sebelum tayang.
 
 ---
 
-## EP20 — YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN
+## EP20 — DI PULAU INI YANG MENYELAMATKAN ORANG BUKAN SIRENE, TAPI LAGU PENGANTAR TIDUR
 
-**Seri:** BENCANA · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 119 kata ≈ 49 detik (target 58 s)
+**Seri:** BENCANA · **Slot:** MALAM 19.30 WIB · **POV:** B
+**Narasi:** 101 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Warga desa di lembah Danau Nyos, Kamerun. |
-| **Mau** | Tidur seperti malam-malam sebelumnya. |
-| **Hambatan** | Malam itu, danau di atas mereka mengeluarkan napas. |
-| **Tanaman** (detail yang berubah makna di turn) | Tidak ada letusan, tidak ada lava, tidak ada api. Tidak ada yang bisa dilihat. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau bukan gunung, apa yang membunuh satu lembah dalam satu malam? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Danau hitam yang tenang, dan lembah di bawahnya yang sunyi. |
+| **Protagonis** | Warga Simeulue yang lari ke bukit mengikuti syair neneknya. |
+| **Mau** | Naik ke tempat tinggi sebelum gelombang datang. |
+| **Hambatan** | Tidak ada sirene, dan gelombang datang delapan menit setelah gempa. |
+| **Tanaman** | Kata smong dalam bahasa Devayan berarti tsunami. |
+| **Celah** | Kenapa lagu bisa menyelamatkan lebih banyak orang daripada alat? |
+| **Gambar melekat** | Anak-anak tidur sambil mendengar syair soal gelombang. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Tidak ada letusan, tidak ada lava. Pagi berikutnya 1.700 orang tidak bangun.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Di pulau ini, yang menyelamatkan orang bukan sirene, tapi lagu pengantar tidur.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 21 Agustus 1986. Danau Nyos, Kamerun. |
-| SETUP | Malam itu, danau mengeluarkan awan gas karbon dioksida. |
-| TENSION | Gas itu tidak berwarna. Tidak berbau. Lebih berat dari udara. |
-| TENSION | Ia turun ke lembah, tempat orang-orang tidur. |
-| TENSION | Pagi berikutnya, 1.700 orang meninggal. Bersama ribuan ternak. |
-| TENSION | Yang selamat bangun dengan luka, tanpa tahu apa yang terjadi. |
-| TURN | Semua orang pertama mengira gunung meletus. |
-| TURN | Tidak ada letusan. Gas itu tersimpan di dasar danau selama bertahun-tahun, di bawah tekanan. |
-| CONSEQUENCE | Yang membunuh mereka bukan air, bukan api, bukan gunung. Yang membunuh mereka adalah udara. |
-| CONSEQUENCE | Danau itu masih menyimpan gasnya. Pipa yang dipasang sekarang satu-satunya alasan ia masih tenang. |
+| TANYA | Kalau tidak ada sirene, apa yang membuat orang lari ke bukit? |
+| RELATE | Kita menaruh peringatan di nyanyian pengantar tidur anak. |
+| SETUP | Simeulue, 26 Desember 2004. Gempa 9,1, dan laut surut. |
+| TENSION | Coba ingat syairnya: gempa, air surut, lari ke tempat tinggi. |
+| TENSION | Dari 78.000 orang di pulau itu, tujuh yang meninggal. Kita jarang dengar angka sekecil itu. |
+| TURN | Syair itu bukan hiburan. Ia lagu pengantar tidur anak, supaya diingat saat panik. |
+| CONSEQUENCE | Desa Langi rata dengan tanah, dan 800 orangnya selamat. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Gunungnya meletus.”**
+Kutipan: **“Orang desa tidak mungkin tahu tanda tsunami.”**
 
-Pembalik: Tidak ada letusan. Gas tersimpan di dasar danau, lalu turun ke lembah saat orang tidur.
+Pembalik: mereka tahu — karena syairnya menyebut urutannya, bukan istilah ilmiahnya. Gempa
+kuat, air laut surut, lalu cari tempat lebih tinggi. Syair itu bagian dari nandong, lagu
+pengantar tidur, dan diwariskan sejak tsunami 1907. Yang tidak ada di pulau itu justru
+sirene.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Baris yang bisa dipakai di VO kalau butuh satu petikan: *“Unen ne alek linon, uwek suruik
+sahuli”* — dimulai dengan gempa, diikuti air laut yang surut.
 
-## 4 · ECHO
+## 4 · ECHO + AJAKAN KOMENTAR
 
-> Sebuah danau bernapas sekali, dan satu lembah tidak pernah bangun.
+> Sekarang sirene ada di mana-mana. Tapi kamu masih ingat lagu yang diajarkan ibumu?
 
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Di tempatmu, peringatan bencana diajarkan lewat apa?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau bukan gunung, apa yang membunuh satu lembah dalam satu malam?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP20` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | yang menyelamatkan bukan sirene, tapi lagu tidur |
+| 2 | ada yang salah | peringatan paling penting justru dinyanyikan |
+| 3 | bertahan | 78.000 ditanam, tujuh dijawab; 800 ditanam di akhir |
+| 4 | kejutan | mereka selamat karena ingat urutan, bukan karena paham sains |
+| 5 | diingat | anak-anak tidur sambil mendengar syair soal gelombang |
 
 ## 5 · TEKS DI LAYAR
 
-1. `21 AGU 1986`
-2. `DANAU NYOS`
-3. `CO₂`
-4. `1.700 ORANG`
-5. `PIPA DEGASSING`
+Cue: SIMEULUE · 2004 · SMONG
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Gempa 26 Desember 2004 (Mw 9,1–9,2) memicu tsunami; di Pulau Simeulue, Aceh,
+jumlah korban jauh lebih kecil daripada wilayah lain. McAdoo dkk. (Earthquake Spectra,
+2006) mencatat warga Desa Langi, sekitar 40 km dari episenter, langsung lari ke dataran
+tinggi dengan waktu sekitar 8 menit; desa itu rata dengan tanah tetapi sekitar 800
+warganya selamat.
 
-Danau dari atas; lapisan gas turun ke lembah; pipa degassing di permukaan.
+Rahman, Sakurai & Munadi (2017) menuliskan 7 korban meninggal dari populasi sekitar 78.000
+(sensus 2000); sumber lain, termasuk kutipan PBB 2024, menyebut 6 korban — naskah memakai
+angka 7 dari Rahman dkk. Pengetahuan itu bernama smong (bahasa Devayan: tsunami),
+diwariskan lewat nandong, syair/lagu pengantar tidur, yang isinya antara lain: gempa kuat
+(“unen ne alek linon”) diikuti air laut surut (“uwek suruik sahuli”), lalu segera cari
+tempat lebih tinggi (“fano me singa tenggi”). Tradisi ini berakar pada tsunami 1907 yang
+menurut legenda menewaskan sekitar 70 persen penduduk pulau — angka legenda, bukan statistik
+resmi.
 
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Danau Nyos 1986; program degassing sejak 2001; mekanisme limnik belum dikutip langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Tidak ada letusan. Tidak ada lava. Tidak ada api. Hanya udara yang turun ke lembah.
+Rujukan dibaca: NALAR/National Archaeology Indonesia (teks nandong beserta terjemahan,
+mengutip McAdoo dkk. 2006), Suara.com 26 Oktober 2026 (kutipan jurnal Societies 2026 dan
+angka PBB 2024), abstrak Rahman dkk. 2017 (ScienceDirect), abstrak penelitian Smong 2024.
+Belum dibaca langsung: naskah penuh McAdoo dkk. 2006 dan Rahman dkk. 2017 — verifikasi
+sebelum tayang.
 
 ---
 

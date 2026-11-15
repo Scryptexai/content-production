@@ -15,8 +15,10 @@ supaya tidak ada detail baru yang dikarang.
 > EP01–EP08 tetap seperti yang sudah tayang. Naskah panjang lama EP09–EP18 (Somerton
 > Man, kembar Gibbons, Wow!, tari 1518, Vintém, Max Headroom, Floresiensis, Tanganyika,
 > Krakatau, Tambora) dipindahkan ke `_ARSIP_TOPIK_LUAR/` dan **tidak** dipakai lagi.
-> EP09–EP11 sudah ditulis ulang sebagai kasus Indonesia (versi short); naskah panjangnya
-> menyusul setelah sumbernya dibaca langsung.
+> EP09–EP20 sudah ditulis ulang sebagai kasus Indonesia (versi short); naskah panjangnya
+> menyusul setelah sumbernya dibaca langsung. Sisa satu slot: EP21.
+> Sebaran wilayah: Jawa (09–11), Bali–NTT (12–13), Sumatera (14, 17), Sulawesi (15),
+> Kalimantan (16), Maluku (18), Papua (19), Aceh (20).
 
 | ep | seri | pertanyaan panjang (misterinya) | yang dibongkar di bab 5 | status |
 |---|---|---|---|---|
@@ -37,19 +39,22 @@ supaya tidak ada detail baru yang dikarang.
 | 15 | ANEH | **INDONESIA** — kenapa tanah padat bisa mengalir dan membawa rumah | likuefaksi Palu 2018 (Petobo/Balaroa/Jono Oge): air + getaran, hingga ±16 m | **VERIFIED (short)** · panjang belum |
 | 16 | ANEH | **INDONESIA** — kenapa lukisan gua Kalimantan berumur 40.000 tahun dan siapa pembuatnya | penanggalan uranium-thorium kerak kalsit (Aubert dkk., Nature 2018) = batas minimum | **VERIFIED (short)** · panjang belum |
 | 17 | BENCANA | **INDONESIA** — kenapa gunung yang diam seribu tahun bangun tanpa peringatan | Sinabung: catatan terakhir 1600, perkiraan letusan 800, aktif lagi 27–29 Agu 2010 | **VERIFIED (short)** · panjang belum |
-| 18 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 19 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 20 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 18 | BENCANA | **INDONESIA** — kenapa pulau muncul di depan kampung semalam saja | Tanimbar 2023: BMKG menyebutnya gunung lumpur yang turun sendiri; BRIN menyebut dasar laut dangkal yang terangkat | **VERIFIED (short)** · panjang belum |
+| 19 | BENCANA | **INDONESIA** — kenapa salju abadi di negara tropis tinggal dua persen | Puncak Jaya: luas 4,3 km² (1988) jadi 0,09 km² (Sep 2025); tebal 32 m (2010) jadi 4 m (2023) — yang menahan es cuma suhu, bukan nama "abadi" | **VERIFIED (short)** · panjang belum |
+| 20 | BENCANA | **INDONESIA** — kenapa yang menyelamatkan satu pulau justru lagu pengantar tidur | Simeulue 2004: smong dalam nandong (McAdoo dkk. 2006; Rahman dkk. 2017) — 7 korban dari ±78.000; Desa Langi rata, 800 selamat | **VERIFIED (short)** · panjang belum |
 | 21 | HARGA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 
 ---
 
 ## Urutan penulisan berikutnya
 
-1. **Selesai:** EP01–EP18 (sumber diverifikasi 6 Nov 2026, naskah panjang sudah ada).
-2. **Selanjutnya:** EP19–EP21 (Tunguska, Nyos, Radium Girls). Sebelum menulis, baca sumber tiap kasus (bukan
-   ringkasan), lalu ubah kolom `sumber` di `content_data.py` dari `NEEDS-SOURCE`
-   menjadi `VERIFIED` dengan tanggal + dokumen yang dibaca.
+1. **Selesai:** EP01–EP08 tayang (naskah panjang sudah ada). EP09–EP20 versi **short**
+   sudah ditulis ulang sebagai kasus Indonesia dan sumbernya diverifikasi 6 Nov 2026.
+2. **Selanjutnya:** EP21 — satu-satunya slot yang masih topik lama (seri HARGA). Riset
+   kasus Indonesia dulu, lalu tulis short-nya. Sesudah itu naskah **panjang** EP09–EP20,
+   satu per satu, setelah rujukan primernya dibaca langsung (bukan ringkasan berita).
+   Kolom `sumber` di `content_data.py` sudah `VERIFIED` untuk short; untuk panjang,
+   tambahkan dokumen yang dibaca pada catatan episodenya.
 3. Episode yang sumbernya tetap `PERLU CEK` **tidak** ditulis panjang. Lebih baik
    tidak ada naskah daripada naskah yang mengarang.
 
