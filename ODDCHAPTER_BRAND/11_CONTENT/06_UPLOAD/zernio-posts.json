@@ -1,7 +1,85 @@
 {
-  "fetched_at": "2026-11-15T13:06:57Z",
+  "fetched_at": "2026-11-15T13:11:19Z",
   "raw": {
     "posts": [
+      {
+        "_id": "6af9af0d1ce3b59aa97bc8da",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Tasnya berisi batu, bukan alasan untuk hilang. Mahasiswa itu ditemukan di danau kampus.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af9af131ce3b59aa97bc901",
+            "url": "https://media.zernio.com/media/1794748169839_048dc606a86498e2_EP09_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794748171737_65ec4ea74a6a3f5c_EP09_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-15T13:09:35.746Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "misteri",
+          "true crime",
+          "kasus tak terpecahkan",
+          "danau kenanga",
+          "universitas indonesia"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-15T13:09:39.266Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-15T13:09:39.027Z",
+        "updatedAt": "2026-11-15T13:11:19.262Z",
+        "platforms": [
+          {
+            "_id": "6af9af121ce3b59aa97bc8ff",
+            "platform": "tiktok",
+            "accountId": {
+              "_id": "6aeddf6a0b5ec69b89139f4e",
+              "platform": "tiktok",
+              "username": "oddchapter7",
+              "displayName": "oddchapter7",
+              "profilePicture": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/66440808f2b7dc1df17071a16f07cf25~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=0604c7d9&x-expires=1794819600&x-signature=yfJQYBw5nUSXbQFJD0nP5i0x048%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my3",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-15T13:09:35.746Z",
+            "platformSpecificData": {
+              "title": "Tasnya berisi batu, bukan alasan untuk hilang. Mahasiswa itu ditemukan di danau kampus.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
+              "privacyLevel": "PUBLIC_TO_EVERYONE",
+              "tiktokUploadTimeoutAt": "2026-11-15T13:09:54.267Z",
+              "tiktokBusinessPublishId": "v_pub_url~v2.7708384446446487573",
+              "tiktokBusinessReconcileAttempts": 1
+            },
+            "status": "published",
+            "publishedAt": "2026-11-15T13:10:06.263Z",
+            "platformPostId": "7708384803367734546",
+            "platformPostUrl": "https://www.tiktok.com/@oddchapter7/video/7708384803367734546",
+            "publishAttempts": 1,
+            "contentHash": "05cce51fd11d557a9d79f46723a537fd"
+          }
+        ],
+        "origin": "zernio"
+      },
       {
         "_id": "6af9ad63febdc55cc7b5e9bc",
         "userId": {
@@ -913,106 +991,46 @@
           }
         ],
         "origin": "zernio"
-      },
-      {
-        "_id": "6af0954333e414fd437af3ca",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "15 Desember 1900. Lampu menara Flannan Isles tidak dinyalakan, dan 3 penjaganya tidak pernah keluar dari menara itu.\n\nSebelas hari kemudian, lampunya masih mati, dan pintu menara terkunci dari dalam.\n\nYang ditemukan di dalam:\n• Pakaian tahan air mereka masih di gantungan — satu set, tidak diambil siapa pun.\n• Jam di menara berhenti. Kerja pagi itu selesai semua.\n• Tidak satu pun mayat pernah ditemukan.\n\nKalimat “Laut tenang, Tuhan di atas semua” yang dikutip seratus tahun itu tidak ada di arsip. Itu ditambahkan kemudian.\n\nSumber: Northern Lighthouse Board (nlb.org.uk/history/flannan-isles).\n\nKalau kamu di pulau itu, kamu akan naik ke menara atau menunggu kapal?\n\n#shorts #misteri #sejarah #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af0954433e414fd437af3ce",
-            "url": "https://media.zernio.com/media/1794151745258_7ebbb6bbfa08d305_EP01_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794151746686_21921b60ebc3a786_EP01_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-08T15:29:07.379Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "flannan isles",
-          "eilean mor",
-          "misteri",
-          "sejarah",
-          "penjaga mercusuar",
-          "hilang",
-          "kisah nyata",
-          "oddchapter"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-08T15:29:09.067Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-08T15:29:08.875Z",
-        "updatedAt": "2026-11-08T15:29:15.466Z",
-        "platforms": [
-          {
-            "_id": "6af0954433e414fd437af3cc",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-08T15:29:07.379Z",
-            "platformSpecificData": {
-              "title": "3 Penjaga Masuk Menara di Pulau Flannan. Lampunya Mati, Tak Seorang Pun Keluar.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Kalau kamu di pulau itu, kamu akan naik ke menara atau menunggu kapal di tender? Jawaban yang paling masuk akal akan saya bahas di episode berikutnya.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-08T15:29:15.427Z",
-            "platformPostId": "l-_uCXDQo0g",
-            "platformPostUrl": "https://www.youtube.com/watch?v=l-_uCXDQo0g",
-            "publishAttempts": 1,
-            "contentHash": "de75ef44c277bc1c71422d97401bf3ad"
-          }
-        ],
-        "origin": "zernio"
       }
     ],
     "pagination": {
       "page": 1,
       "limit": 12,
-      "total": 12,
-      "pages": 1,
-      "nextCursor": null
+      "total": 13,
+      "pages": 2,
+      "nextCursor": "v1.WyJzY2hlZHVsZWQtZGVzYyIsIjIwMjYtMTEtMDhUMTU6MzA6MDUuODc2WiIsIjZhZjA5NTdkZGNmOWM1YjdkMGEyZDgzNSJd"
     }
   },
   "posts": [
+    {
+      "id": "6af9af0d1ce3b59aa97bc8da",
+      "status": "published",
+      "createdAt": "2026-11-15T13:09:39.027Z",
+      "title": null,
+      "url": null,
+      "platform_status": null,
+      "platforms": [
+        {
+          "platform": "tiktok",
+          "status": "published",
+          "url": "https://www.tiktok.com/@oddchapter7/video/7708384803367734546"
+        }
+      ]
+    },
     {
       "id": "6af9ad63febdc55cc7b5e9bc",
       "status": "published",
       "createdAt": "2026-11-15T13:02:33.418Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=xyK0qZFEAtE",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=xyK0qZFEAtE"
+        }
+      ]
     },
     {
       "id": "6af8ebde26409c28f9b3285f",
@@ -1020,7 +1038,14 @@
       "createdAt": "2026-11-14T23:16:48.288Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=heyMdxZPVgA",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=heyMdxZPVgA"
+        }
+      ]
     },
     {
       "id": "6af880002c9f6025a255dbf8",
@@ -1028,7 +1053,14 @@
       "createdAt": "2026-11-14T15:36:34.800Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=3E2ekjMZPkc"
+        }
+      ]
     },
     {
       "id": "6af869870e77952e44d8fe64",
@@ -1036,7 +1068,14 @@
       "createdAt": "2026-11-14T14:00:42.065Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=F6BGrQhYmaA"
+        }
+      ]
     },
     {
       "id": "6af83b0fb4c091a0ee790fc1",
@@ -1044,7 +1083,14 @@
       "createdAt": "2026-11-14T10:42:25.666Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=bU__lL-K6Kc",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=bU__lL-K6Kc"
+        }
+      ]
     },
     {
       "id": "6af7f006208448cdcf245de2",
@@ -1052,7 +1098,14 @@
       "createdAt": "2026-11-14T05:22:16.361Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=_HB37ngpGg0",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=_HB37ngpGg0"
+        }
+      ]
     },
     {
       "id": "6af794b6325c9d8126ba9279",
@@ -1060,7 +1113,14 @@
       "createdAt": "2026-11-13T22:52:40.433Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zFxJeWguVgg",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=zFxJeWguVgg"
+        }
+      ]
     },
     {
       "id": "6af725e0b82ff83cf1ebabf2",
@@ -1068,7 +1128,14 @@
       "createdAt": "2026-11-13T14:59:47.586Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6b4fNdsEvho",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=6b4fNdsEvho"
+        }
+      ]
     },
     {
       "id": "6af472b35f14f7aaf5d65b9b",
@@ -1076,7 +1143,14 @@
       "createdAt": "2026-11-11T13:50:45.723Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc"
+        }
+      ]
     },
     {
       "id": "6af095b6555aa26995ce8239",
@@ -1084,7 +1158,14 @@
       "createdAt": "2026-11-08T15:31:06.413Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=C3Bc7HSwyXY",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=C3Bc7HSwyXY"
+        }
+      ]
     },
     {
       "id": "6af0957ddcf9c5b7d0a2d835",
@@ -1092,15 +1173,14 @@
       "createdAt": "2026-11-08T15:30:08.309Z",
       "title": null,
       "url": "https://www.youtube.com/watch?v=X-OyOWaac_M",
-      "platform_status": "published"
-    },
-    {
-      "id": "6af0954333e414fd437af3ca",
-      "status": "published",
-      "createdAt": "2026-11-08T15:29:08.875Z",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=l-_uCXDQo0g",
-      "platform_status": "published"
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=X-OyOWaac_M"
+        }
+      ]
     }
   ]
 }
