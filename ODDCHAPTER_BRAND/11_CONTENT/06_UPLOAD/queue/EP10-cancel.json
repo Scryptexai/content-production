@@ -2,8 +2,10 @@
   "episode": "EP10",
   "action": "cancel",
   "post_id": "6af8a2cdc3753df892a8fc08",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "requested_at": "2026-11-14T23:19:35Z",
-  "catatan": "Batalkan jadwal yang masih memakai VO ElevenLabs; episode direkam ulang dengan VO internal."
+  "finished_at": "2026-11-15T14:46:00Z",
+  "catatan": "Batalkan jadwal yang masih memakai VO ElevenLabs.",
+  "hasil": "Jadwal lama (post 6af8a2cdc3753df892a8fc08, 18.30 WIB) tidak ada di daftar post Zernio pada pemeriksaan 15 Nov 14.46 UTC — sudah dibatalkan sebelum waktunya, tidak pernah tayang. Tidak perlu aksi cancel lagi."
 }

@@ -1,8 +1,10 @@
 {
   "episode": "EP10",
   "lookup": true,
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "requested_at": "2026-11-15T14:45:00Z",
-  "catatan": "Cek daftar post Zernio: pastikan jadwal lama 6af8a2cdc3753df892a8fc08 (VO ElevenLabs, 18.30 WIB) tidak ada lagi / tidak pernah tayang."
+  "catatan": "Cek daftar post Zernio: pastikan jadwal lama 6af8a2cdc3753df892a8fc08 (VO ElevenLabs, 18.30 WIB) tidak ada lagi / tidak pernah tayang.",
+  "finished_at": "2026-11-15T14:46:00Z",
+  "hasil": "12 post di Zernio; EP09 YouTube+TikTok published; 6af8a2cdc3753df892a8fc08 (EP10 VO ElevenLabs) tidak ada = dibatalkan, tidak pernah tayang."
 }
