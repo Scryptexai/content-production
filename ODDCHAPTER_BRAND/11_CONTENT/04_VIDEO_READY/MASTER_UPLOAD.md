@@ -46,6 +46,14 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | `EP08_1080x1920_master_v5_internal.mp4` | uji internal | `1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm` |
 | EP06 | `EP06_1080x1920_master.mp4` | versi sebelum v2 | `1NHnFpmKd2YsTPEhzuORBkQj4b4xAn-n4` |
 
+## Catatan aset kerja EP09
+
+Foto per segmen EP09 (`public/plates/EP09/`) tidak disimpan di Git — folder
+`public/` di-ignore. Master final ada di Drive (`1leWLFt4QuLEgXMSmnemYAXRWlMr9vUCT`),
+jadi tidak ada yang hilang dari hasil tayang. Kalau EP09 perlu dirender ulang,
+9 foto per segmen harus dibuat lagi dulu; suara, timing, bed, sfx, dan cover
+sudah ada di repo.
+
 ## Belum di-build (belum ada master)
 
 EP10–EP21. EP10 punya VO + draft plate di Drive
