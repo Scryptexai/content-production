@@ -180,6 +180,12 @@ jobs:
           if [ "$DRY" != "true" ]; then ARGS+=(--send); fi
           # "force": true di berkas antrean = unggah walau episode sudah tercatat.
           # Hanya untuk salinan uji; catatan asli di published.json tidak ditimpa.
+          # "tiktok_only": true = post TikTok saja (Zernio punya akun TikTok kanal),
+          # tanpa menyentuh video YouTube yang sudah tayang.
+          if python3 -c "import json,sys;sys.exit(0 if json.load(open(sys.argv[1])).get('tiktok_only') else 1)" \
+               "${{ steps.req.outputs.request }}"; then
+            ARGS+=(--tiktok-only)
+          fi
           if python3 -c "import json,sys;sys.exit(0 if json.load(open(sys.argv[1])).get('force') else 1)" \
                "${{ steps.req.outputs.request }}"; then
             echo "::warning::force=true — episode ini diunggah ulang sebagai salinan uji."

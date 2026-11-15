@@ -131,14 +131,14 @@ def upload_media(path, key, kind):
     return presigned["publicUrl"]
 
 
-def idempotency_key(ep, meta):
+def idempotency_key(ep, meta, suffix=""):
     """Kunci tetap per episode+file: aman diulang, tidak bisa jadi dua video.
 
     Berbasis sha256 master (bukan waktu), jadi menjalankan ulang workflow untuk
     file yang sama akan mengembalikan post yang sama selama 24 jam. Render baru
     menghasilkan hash baru — dan memang boleh jadi video baru.
     """
-    basis = (meta.get("sha256") or "") + "|" + meta.get("title", "")
+    basis = (meta.get("sha256") or "") + "|" + meta.get("title", "") + "|" + suffix
     digest = hashlib.sha256(basis.encode("utf-8")).hexdigest()[:32]
     return f"oddc-{ep.lower()}-{digest}"
 
@@ -189,8 +189,8 @@ def cancel_post(post_id):
     return 0
 
 
-def discover_accounts(key):
-    """Cari akun YouTube dari API, bukan dari tebakan di secret.
+def discover_accounts(key, platform="youtube"):
+    """Cari akun (default YouTube) dari API, bukan dari tebakan di secret.
 
     Bentuk respons Zernio berbeda antar endpoint (/accounts datar, /profiles
     berisi platforms[]), jadi keduanya dicoba dan hasilnya disamaratakan.
@@ -207,10 +207,10 @@ def discover_accounts(key):
         for item in raw if isinstance(raw, list) else []:
             if not isinstance(item, dict):
                 continue
-            if (item.get("platform") or "").lower() == "youtube":
+            if (item.get("platform") or "").lower() == platform:
                 out.append(item)
             for child in (item.get("platforms") or item.get("accounts") or []):
-                if isinstance(child, dict) and (child.get("platform") or "").lower() == "youtube":
+                if isinstance(child, dict) and (child.get("platform") or "").lower() == platform:
                     merged = {**item, **child}
                     merged.setdefault("profileName", item.get("name"))
                     out.append(merged)
@@ -232,10 +232,10 @@ def discover_accounts(key):
     return uniq
 
 
-def resolve_account(key, want=None):
+def resolve_account(key, want=None, platform="youtube"):
     """env → permintaan → pencarian otomatis. Yang terakhir jadi andalan."""
     want = (want or os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "")).strip()
-    accounts = discover_accounts(key)
+    accounts = discover_accounts(key, platform)
     ids = {a["accountId"] for a in accounts}
 
     if want and want in ids:
@@ -247,10 +247,10 @@ def resolve_account(key, want=None):
         print(f"  ! ZERNIO_YOUTUBE_ACCOUNT_ID={want} tidak ada di akun Zernio; "
               f"memakai akun yang ditemukan otomatis.")
     if not accounts:
-        fail("Tidak ada akun YouTube di API key ini. Hubungkan kanal dulu: "
-             "Zernio → Accounts → Connect → YouTube.")
+        fail(f"Tidak ada akun {platform} di API key ini. Hubungkan kanal dulu: "
+             f"Zernio → Accounts → Connect → {platform}.")
     chosen = accounts[0]
-    print(f"  akun YouTube dipakai: {chosen['accountId']} ({chosen['name']})")
+    print(f"  akun {platform} dipakai: {chosen['accountId']} ({chosen['name']})")
     return chosen["accountId"]
 
 
@@ -456,7 +456,28 @@ def validate(meta, media_dir, check_media=True):
         raise SystemExit(1)
 
 
-def build_payload(meta, video_url, thumb_url, visibility=None, schedule=None):
+def build_payload(meta, video_url, thumb_url, visibility=None, schedule=None,
+                  tiktok_only=False):
+    if tiktok_only:
+        tk = os.environ.get("ZERNIO_TIKTOK_ACCOUNT_ID", "").strip()
+        caption = (meta.get("tiktok_caption") or meta.get("title") or "")[:2200]
+        when = ({"publishNow": True} if not (schedule and schedule.get("scheduledFor"))
+                else {"scheduledFor": schedule["scheduledFor"],
+                      "timezone": schedule.get("timezone") or "Asia/Jakarta"})
+        return {
+            **when,
+            "content": caption,
+            "tags": (meta.get("tags") or [])[:5],
+            "mediaItems": [{"type": "video", "url": video_url, "thumbnail": thumb_url}],
+            "platforms": [{
+                "platform": "tiktok",
+                "accountId": tk,
+                "platformSpecificData": {
+                    "title": caption,
+                    "privacyLevel": meta.get("tiktok_privacy", "PUBLIC_TO_EVERYONE"),
+                },
+            }],
+        }
     account = os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
     playlist = os.environ.get("ZERNIO_PLAYLIST_ID", "").strip()
     psd = {
@@ -490,7 +511,8 @@ def build_payload(meta, video_url, thumb_url, visibility=None, schedule=None):
     }
 
 
-def run(ep, media_dir, send, visibility, check_media=True, request=None, force=False):
+def run(ep, media_dir, send, visibility, check_media=True, request=None, force=False,
+        tiktok_only=False):
     WARNS.clear()
     meta = load_meta(ep)
     print(f"\n=== {ep} · {meta['title']} ({len(meta['title'])} karakter) ===")
@@ -500,10 +522,15 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
            or os.environ.get("ZERNIO_KEY", "").strip())
     visibility = visibility or (request or {}).get("visibility")
     force = force or bool((request or {}).get("force"))
+    tiktok_only = tiktok_only or bool((request or {}).get("tiktok_only"))
     ledger = load_ledger()
     print(f"::notice title=MODE-{ep}::send={send} force={force} "
           f"tercatat={'ya' if ep in ledger else 'tidak'}")
-    if send and ep in ledger and not force:
+    if send and tiktok_only and ledger.get(ep, {}).get("tiktok_post_id") and not force:
+        print(f"::warning title=DILEWATI-TIKTOK-{ep}::sudah ada post TikTok "
+              f"{ledger[ep].get('tiktok_post_id')} (pakai force untuk mengulang)")
+        return {"episode": ep, "skipped": True, "tiktok": True}
+    if send and not tiktok_only and ep in ledger and not force:
         print(f"::warning title=DILEWATI-{ep}::{ep} sudah tayang "
               f"{ledger[ep].get('uploaded_at')} · {ledger[ep].get('youtube_url')} "
               f"(pakai \"force\": true untuk mengulang)")
@@ -516,10 +543,12 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
     if not send:
         payload = build_payload(meta, f"<publicUrl {meta['video']}>",
                                 f"<publicUrl {meta['thumbnail']}>", visibility,
-                                schedule=(request or {}))
+                                schedule=(request or {}), tiktok_only=tiktok_only)
         payload["platforms"][0]["accountId"] = (
-            os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
-            or "<akun YouTube, dicari otomatis dari GET /v1/accounts>")
+            (os.environ.get("ZERNIO_TIKTOK_ACCOUNT_ID", "").strip()
+             or "<akun TikTok, dicari otomatis dari GET /v1/accounts>") if tiktok_only
+            else (os.environ.get("ZERNIO_YOUTUBE_ACCOUNT_ID", "").strip()
+                  or "<akun YouTube, dicari otomatis dari GET /v1/accounts>"))
         if not check_media:
             print("  catatan: --text-only — file video/thumbnail TIDAK diperiksa. "
                   "Jalankan tanpa flag ini sebelum --send.")
@@ -529,19 +558,51 @@ def run(ep, media_dir, send, visibility, check_media=True, request=None, force=F
 
     if not key:
         fail("ZERNIO_API_KEY kosong — tambahkan sebagai secret repo, jangan di file")
-    account = resolve_account(key, (request or {}).get("accountId"))
-    os.environ["ZERNIO_YOUTUBE_ACCOUNT_ID"] = account
+    if tiktok_only:
+        account = resolve_account(key, None, "tiktok")
+        os.environ["ZERNIO_TIKTOK_ACCOUNT_ID"] = account
+    else:
+        account = resolve_account(key, (request or {}).get("accountId"))
+        os.environ["ZERNIO_YOUTUBE_ACCOUNT_ID"] = account
 
     video_url = upload_media(media_dir / meta["video"], key, "video")
     thumb_url = upload_media(media_dir / meta["thumbnail"], key, "thumbnail")
 
     schedule = (request or {})
-    payload = build_payload(meta, video_url, thumb_url, visibility, schedule=schedule)
-    idem = idempotency_key(ep, meta)
+    payload = build_payload(meta, video_url, thumb_url, visibility, schedule=schedule,
+                            tiktok_only=tiktok_only)
+    idem = idempotency_key(ep, meta, "-tiktok" if tiktok_only else "")
     print(f"  POST /v1/posts · Idempotency-Key: {idem}")
     result = api_post("/posts", payload, key, extra_headers={"Idempotency-Key": idem})
 
     post = (result or {}).get("post", {})
+
+    if tiktok_only:
+        tk = next((p for p in post.get("platforms", []) if p.get("platform") == "tiktok"), {})
+        url = tk.get("platformPostUrl")
+        out_tk = {
+            "episode": ep, "dry_run": False, "tiktok": True,
+            "tiktok_post_id": post.get("_id"),
+            "status": post.get("status"),
+            "tiktok_url": url,
+            "idempotency_key": idem,
+            "uploaded_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        }
+        entry = ledger.setdefault(ep, {})
+        entry["tiktok_post_id"] = out_tk["tiktok_post_id"]
+        entry["tiktok_status"] = out_tk["status"]
+        entry["tiktok_uploaded_at"] = out_tk["uploaded_at"]
+        if url:
+            entry["tiktok_url"] = url
+        save_ledger(ledger)
+        if not url:
+            print(f"::warning title=TIKTOK-TANPA-URL-{ep}::Zernio menjawab "
+                  f"{out_tk['status']} tanpa platformPostUrl; cek dashboard.")
+        else:
+            print(f"  tiktok published: {out_tk['status']} · {url}")
+            print(f"::notice title=TIKTOK-URL-{ep}::{url}")
+        return out_tk
+
     yt = next((p for p in post.get("platforms", []) if p.get("platform") == "youtube"), {})
     out = {
         "episode": ep,
@@ -599,6 +660,8 @@ def main():
     ap.add_argument("--send", action="store_true", help="benar-benar unggah (tanpa ini = dry-run)")
     ap.add_argument("--visibility", choices=["public", "unlisted", "private"])
     ap.add_argument("--request", help="berkas antrean (11_CONTENT/06_UPLOAD/queue/*.json)")
+    ap.add_argument("--tiktok-only", action="store_true",
+                    help="post ke TikTok saja (Zernio), bukan YouTube")
     ap.add_argument("--force", action="store_true",
                     help="abaikan buku besar: unggah walau episode sudah tayang")
     ap.add_argument("--lookup", action="store_true",
@@ -642,7 +705,7 @@ def main():
     if args.text_only and args.send:
         fail("--text-only hanya untuk dry-run; jangan digabung dengan --send")
     results = [run(ep, media_dir, args.send, args.visibility, not args.text_only,
-                   request, args.force)
+                   request, args.force, args.tiktok_only)
                for ep in eps]
 
     stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
