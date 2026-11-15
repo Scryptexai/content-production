@@ -72,6 +72,7 @@ def dur_of(text, wps=WPS):
 
 def build(ep):
     segs = []
+    vo = ep.get("vo")
 
     def add(kind, text, key, part=None):
         path = AUDIO_DIR / ep["ep"] / f"{key}.mp3"
@@ -85,11 +86,25 @@ def build(ep):
             "measured": bool(measured),
         })
 
-    add("hook", ep["hook"], "00_hook")
-    for i, (part, txt) in enumerate(ep["beats"]):
-        add("beat", txt, f"{i + 1:02d}_{part}", part)
+    if vo:
+        # MODE SATU VO: narasi dibuat user sebagai satu berkas utuh. Waktu tiap
+        # segmen diambil dari daftar cue (detik asli berkas itu), bukan dihitung
+        # dari jumlah kata, dan tidak ada jeda buatan di antaranya — kalau tidak,
+        # caption akan bergeser dari suara.
+        n = len(vo["cues"])
+        for i, (part, text, a, b) in enumerate(vo["cues"]):
+            kind = "hook" if i == 0 else ("loop" if i == n - 1 else "beat")
+            key = "00_hook" if i == 0 else ("99_loop" if i == n - 1 else f"{i:02d}_{part}")
+            segs.append({
+                "kind": kind, "part": part, "key": key, "text": text,
+                "dur": round(b - a, 3), "measured": True, "start": round(a, 3),
+            })
+    else:
+        add("hook", ep["hook"], "00_hook")
+        for i, (part, txt) in enumerate(ep["beats"]):
+            add("beat", txt, f"{i + 1:02d}_{part}", part)
 
-    add("loop", ep["loop"], "99_loop")
+        add("loop", ep["loop"], "99_loop")
 
     # caption di layar: kalimat pendek, bukan transkrip. Narasi tetap panjang;
     # yang dibaca mata harus selesai dalam ~1,5 detik.
@@ -122,11 +137,14 @@ def build(ep):
         if not cues:
             break
 
-    t = 0.15  # lead-in: VO mulai hampir di frame nol (dulu 0.6)
-    for s in segs:
-        s["start"] = round(t, 3)
-        t += s["dur"] + GAP
-    total = round(t + TAIL, 3)
+    if vo:
+        total = round(segs[-1]["start"] + segs[-1]["dur"] + TAIL, 3)
+    else:
+        t = 0.15  # lead-in: VO mulai hampir di frame nol (dulu 0.6)
+        for s in segs:
+            s["start"] = round(t, 3)
+            t += s["dur"] + GAP
+        total = round(t + TAIL, 3)
 
     for s in segs:
         s["startFrame"] = round(s["start"] * FPS)
@@ -141,6 +159,7 @@ def build(ep):
         "total": total,
         "totalFrames": round(total * FPS),
         "audioMeasured": all(s["measured"] for s in segs),
+        **(({"vo": f"audio/{ep['ep']}/{vo['file']}"}) if vo else {}),
         "segments": segs,
     }
 

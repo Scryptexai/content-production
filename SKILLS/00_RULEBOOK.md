@@ -177,3 +177,48 @@ di Drive bukan hasil kerja — belum jadi.
   sebelum sesi ditutup.
 
 Laporan ke pemilik tanpa tautan Drive = belum selesai.
+
+## 13 · Narasi milik user (WAJIB, 16 Nov 2026)
+
+Pemilik membuat VO sendiri untuk sebuah episode, malam-malam, lalu menemukan
+render-nya memakai suara lain. Itu kesalahan produksi, bukan selera: **VO yang
+sudah dibuat pemilik adalah sumber kebenaran, dan tidak boleh digantikan.**
+
+- **[H]** Kalau episode punya VO dari pemilik, **jangan membuat TTS untuk episode
+  itu**, jangan memecah berkasnya, jangan menyusun ulang kalimatnya. Yang dipakai
+  hanya berkas itu.
+- **[H]** Penyimpanan: `10_FILM/remotion/public/audio/<EP>/vo.mp3` + `vo.srt`
+  (SRT pemilik, apa adanya) + `MANIFEST-VO.json` (sumber, byte, detik, sha256,
+  peta cue → segmen). sha256 wajib dicatat; kalau berkas berubah, catatannya
+  diperbarui, bukan dibiarkan.
+- **[H]** Timing diambil dari cue SRT pemilik, bukan dari hitungan kata:
+  `content_data.py` menyimpan `vo=dict(file=..., srt=..., cues=[(part, teks,
+  mulai, selesai)])`. Batas antar segmen **disnap ke jeda hening nyata** di berkas
+  (silencedetect), supaya caption tidak meleset. Tidak ada lead-in dan tidak ada
+  jeda 0,22 dtk buatan — durasi episode = durasi berkas + ekor 0,9 dtk.
+- **[H]** `Episode.tsx` memutar satu trek (`tm.vo`) dari frame 0. Jangan
+  mengembalikannya ke satu-potong-per-segmen untuk episode bermode VO.
+- **[H]** Audio lama yang topiknya sudah diganti **dipindahkan** ke
+  `public/audio/_arsip/<EP>_<topik>/`, tidak dibiarkan di folder episode. Kalau
+  tidak, render berikutnya bisa memakai audio dari cerita yang salah.
+- **[H]** Gerbang sebelum render: `python3 tools/check_film_assets.py <EP>` harus
+  keluar 0. Skrip itu membandingkan teks di `MANIFEST.json`/`MANIFEST-VO.json`
+  dengan naskah, dan memeriksa sha256 VO. Kasus EP09 (audio Somerton Man di
+  episode Danau Kenanga) lolos dari semua hitungan berkas; sekarang tidak bisa
+  lolos lagi.
+
+### Mengambil berkas dari Drive
+
+Sandbox kerja tidak bisa menghubungi `drive.google.com`; `api.github.com` bisa.
+Jalur yang dipakai (dan harus dipakai lagi):
+
+1. Taruh `drive-requests/<nama>.json` → `{"file_id": "...", "name": "VO-EPxx.mp3"}`.
+2. Push. Workflow `drive-fetch.yml` (push-triggered) mengunduh berkas lalu
+   meng-commit ke branch `drive/inbox`.
+3. `git fetch origin +refs/heads/drive/inbox:refs/remotes/origin/drive/inbox` lalu
+   `git show origin/drive/inbox:drive-inbox/<nama> > <tujuan>`.
+4. Berkas Drive harus "siapa saja yang punya tautan" selama job berjalan; izin
+   itu dicabut lagi setelah berkas diambil (`make_private`).
+
+`workflow_dispatch` tidak bisa dipakai dari sesi ini (token tanpa izin Actions
+write, ditolak 403). Karena itu jalurnya lewat push.

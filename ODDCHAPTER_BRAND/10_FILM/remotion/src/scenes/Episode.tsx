@@ -62,6 +62,9 @@ type Timing = {
   total: number;
   totalFrames: number;
   audioMeasured: boolean;
+  /** Satu berkas VO untuk seluruh episode (VO buatan user). Kalau ada, audio
+   *  diputar sebagai satu trek dari frame 0 — bukan satu potong per segmen. */
+  vo?: string;
   segments: Seg[];
 };
 
@@ -334,12 +337,18 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink }}>
-      {/* audio: satu file per segmen, ditempatkan di frame mulai yang terukur */}
-      {tm.segments.map((s) => (
-        <Sequence key={s.key} from={s.startFrame} durationInFrames={s.durFrames} name={s.key}>
-          <Audio src={staticFile(`audio/${epId}/${s.key}.mp3`)} />
-        </Sequence>
-      ))}
+      {/* audio: VO buatan user diputar utuh dari frame 0 (timeline menempel ke
+          detik aslinya, tanpa jeda buatan). Kalau tidak ada, satu file per segmen
+          ditempatkan di frame mulai yang terukur. */}
+      {tm.vo ? (
+        <Audio src={staticFile(tm.vo)} />
+      ) : (
+        tm.segments.map((s) => (
+          <Sequence key={s.key} from={s.startFrame} durationInFrames={s.durFrames} name={s.key}>
+            <Audio src={staticFile(`audio/${epId}/${s.key}.mp3`)} />
+          </Sequence>
+        ))
+      )}
 
       {/* bed: angin + drone + dentuman di titik balik. Bukan dekorasi — ini yang
           membuat gambar diam terasa punya ruang. */}

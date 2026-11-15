@@ -1,0 +1,78 @@
+{
+  "episode": "EP09",
+  "mode": "single-vo-user",
+  "catatan": "VO ini dibuat USER, bukan TTS dari pipeline. Jangan diganti, jangan dipecah.",
+  "file": "vo.mp3",
+  "srt": "vo.srt",
+  "source": "Google Drive 1dD1nKT97JadquxCIf2WiAhnBoXGOtq7U (folder 1MowG5BFdyALaGw9sWssYDx-wJMJ63VfW)",
+  "bytes": 862468,
+  "seconds": 52.851,
+  "sha256": "3a31927d0752f68a23ba7f6bfaed9114e43e74584b5fa08935f626697ddc7135",
+  "segs": 9,
+  "cue_map": [
+    [
+      1,
+      "00_hook"
+    ],
+    [
+      2,
+      "01_tanya"
+    ],
+    [
+      3,
+      "01_tanya"
+    ],
+    [
+      4,
+      "02_relate"
+    ],
+    [
+      5,
+      "02_relate"
+    ],
+    [
+      6,
+      "03_setup"
+    ],
+    [
+      7,
+      "03_setup"
+    ],
+    [
+      8,
+      "04_tension"
+    ],
+    [
+      9,
+      "04_tension"
+    ],
+    [
+      10,
+      "05_tension"
+    ],
+    [
+      11,
+      "05_tension"
+    ],
+    [
+      12,
+      "06_turn"
+    ],
+    [
+      13,
+      "06_turn"
+    ],
+    [
+      14,
+      "07_consequence"
+    ],
+    [
+      15,
+      "07_consequence"
+    ],
+    [
+      16,
+      "99_loop"
+    ]
+  ]
+}
