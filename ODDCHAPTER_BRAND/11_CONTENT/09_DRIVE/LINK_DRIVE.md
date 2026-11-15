@@ -11,6 +11,10 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 
 ## SHORT
 
+> **6 Nov 2026 — EP09–EP11 diganti topik Indonesia** (Akseyna / Setiabudi 13 / Porong).
+> Dokumen lama untuk tiga slot itu sudah diberi awalan `ARSIP —` dan tidak dipakai.
+> Dokumen LONG EP09–EP18 juga diberi awalan `ARSIP —`; naskah panjang Indonesia menyusul.
+
 · EP01 — https://docs.google.com/document/d/1L0dwUNHvroQdzeL2EMAUr69vIiPW3y5bab-M1Q07ULE/edit
 · EP02 — https://docs.google.com/document/d/1hLg8LcbPE8q5ctkcOt8qqy8a5oqTbFCxcpv97Uvl28s/edit
 · EP03 — https://docs.google.com/document/d/1OAbBQjR1_IYO83Zd06SpNi5f4JETt5_MVDJ3i_nkIvo/edit
@@ -19,9 +23,9 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 · EP06 — https://docs.google.com/document/d/1FllaQBgMhZg2mEUwTkR4V2L5-hbSGQfded59RWy7ju8/edit
 · EP07 — https://docs.google.com/document/d/1K5ORgdmJiXzIZuVP05A0Yj7aXz0k9IyoelKPf9bSR7g/edit
 · EP08 — https://docs.google.com/document/d/1rDPyNiS2mp5XcNoWKBvlQwGHLaB3Yju2ugf134jVHLQ/edit
-· EP09 — https://docs.google.com/document/d/15nUFAs0UpwKvKzIC1_01KOlUHCeWwFCZ5rLeWSvNdw0/edit
-· EP10 — https://docs.google.com/document/d/15JHeRpZoU2oKPiQS88JM8_0pHaPG4L_gZUPJu88Wyzo/edit
-· EP11 — https://docs.google.com/document/d/1JgkHonuELhtVPdgycIsg2BgK5Hzh0ggRgWpF1jEGx08/edit
+· EP09 — https://docs.google.com/document/d/1NXEQW7qj-XK7kaXOtoYNjCL9Tvx2IeeWpxNkQN87p6I/edit
+· EP10 — https://docs.google.com/document/d/1kcAiUpPAsEBPa4qWXgRyzjKsyUzO38t8FyxevP_Row8/edit
+· EP11 — https://docs.google.com/document/d/1cZW6zwGvV1WHNPxb8o16Hc9fegMN3g9RhNnzx-bZVwM/edit
 · EP12 — https://docs.google.com/document/d/1CtnmMq5lRNDwMEH-x-ZKeGRI1NktCtNPG7zGv50KFWA/edit
 · EP13 — https://docs.google.com/document/d/1qOW6xjZbZYdDz-tEa3Cbd7IHywoO89IwuKvVtOafesY/edit
 · EP14 — https://docs.google.com/document/d/1YYUZ6_0UKgB6CoabUO5VQ9xWfaEf5xbzNPmliVq86Cs/edit
@@ -43,16 +47,16 @@ https://drive.google.com/drive/folders/1rAyh07wJ-ajBtqBz0g6WPZ26pttF7tUM
 · EP06 — https://docs.google.com/document/d/1LOT0KBESg1VNagbgkXoSsHBkNoOtZyZbdckf5q6jr-E/edit
 · EP07 — https://docs.google.com/document/d/103EcfFNtTqaun_ZRV9y13FYTjWwKbjVeOO-TfOKWgLU/edit
 · EP08 — https://docs.google.com/document/d/1gN24pV8hCwNScgnkMMb6SfRTmts93JMtbyLN5CfkoTc/edit
-· EP09 — https://docs.google.com/document/d/1Eb27B9IHGufA5fk29qqPOMCU34zCTK_Wg6slMqCPdSs/edit
-· EP10 — https://docs.google.com/document/d/1sywy-PWyGF3P7jryTrAAfADea7pmwhfMep5i78PeoqU/edit
-· EP11 — https://docs.google.com/document/d/1KrqMdWhdNGGutx7rMug-N5ybpTJxMWDMACEJFFYaJzk/edit
-· EP12 — https://docs.google.com/document/d/1IVbGyac3GTzdI3FqM-9bvgw3EHC5W0OMArpPxspRFM8/edit
-· EP13 — https://docs.google.com/document/d/17yUmErluMDujW4CP7j6L7S_1Vl2xpixcIHbaDQBksYg/edit
-· EP14 — https://docs.google.com/document/d/17IZpicCtNGQuEfpOf4D6vpLhCE1LtaGhsOxGAvKhdo4/edit
-· EP15 — https://docs.google.com/document/d/1vSMPC_DiEy2jCim16id4zDk-Q4zrGjv5bYBhe7R0C3g/edit
-· EP16 — https://docs.google.com/document/d/10L-H4ZzmAfinh2j8WAIHJZPMVUr4oH-ot9KCR0kIH-I/edit
-· EP17 — https://docs.google.com/document/d/1du8bdMRSn99fCLDMDpUwQgajZL4Wwl4xbnmWptVC6OI/edit
-· EP18 — https://docs.google.com/document/d/1BtcYK8kHMkWm5SIeNH6-RXAd8hmtyNS-80SPAViLi-Y/edit
+· ARSIP EP09 — https://docs.google.com/document/d/1Eb27B9IHGufA5fk29qqPOMCU34zCTK_Wg6slMqCPdSs/edit
+· ARSIP EP10 — https://docs.google.com/document/d/1sywy-PWyGF3P7jryTrAAfADea7pmwhfMep5i78PeoqU/edit
+· ARSIP EP11 — https://docs.google.com/document/d/1KrqMdWhdNGGutx7rMug-N5ybpTJxMWDMACEJFFYaJzk/edit
+· ARSIP EP12 — https://docs.google.com/document/d/1IVbGyac3GTzdI3FqM-9bvgw3EHC5W0OMArpPxspRFM8/edit
+· ARSIP EP13 — https://docs.google.com/document/d/17yUmErluMDujW4CP7j6L7S_1Vl2xpixcIHbaDQBksYg/edit
+· ARSIP EP14 — https://docs.google.com/document/d/17IZpicCtNGQuEfpOf4D6vpLhCE1LtaGhsOxGAvKhdo4/edit
+· ARSIP EP15 — https://docs.google.com/document/d/1vSMPC_DiEy2jCim16id4zDk-Q4zrGjv5bYBhe7R0C3g/edit
+· ARSIP EP16 — https://docs.google.com/document/d/10L-H4ZzmAfinh2j8WAIHJZPMVUr4oH-ot9KCR0kIH-I/edit
+· ARSIP EP17 — https://docs.google.com/document/d/1du8bdMRSn99fCLDMDpUwQgajZL4Wwl4xbnmWptVC6OI/edit
+· ARSIP EP18 — https://docs.google.com/document/d/1BtcYK8kHMkWm5SIeNH6-RXAd8hmtyNS-80SPAViLi-Y/edit
 
 Semua berkas dibuat 6 Nov 2026 dari `11_CONTENT/09_DRIVE/` (sumber: `tools/drive_export.py`).
 
