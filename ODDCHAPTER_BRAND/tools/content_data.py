@@ -900,20 +900,37 @@ EPISODES = [
         cues=["22 NOV 1987", "CHICAGO", "90 DETIK", "2 KALI", "TIDAK TERTANGKAP"],
         visual="Layar TV analog penuh derau; siluet kepala di bingkai 4:3; ruang kontrol gelap.",
         plate="signal",
-        sumber="NEEDS-SOURCE — Max Headroom broadcast incident 1987; laporan FCC belum dibaca langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — 22 November 1987, Chicago. 21.14 waktu setempat: segmen olahraga WGN-TV (sembilan "
+            "malam) dipotong ±28 detik oleh figur bertopeng Max Headroom, latar logam bergelombang berputar, tanpa audio; "
+            "kru WGN masih di studio sehingga sinyal bisa direbut kembali cepat. 23.15: WTTW (afiliasi PBS) sedang "
+            "menayangkan serial Doctor Who ('Horror of Fang Rock') dibajak ±90 detik, kali ini dengan audio: kalimat acak "
+            "soal 'world newspaper nerds', lalu adegan ditepuk dengan pemukul lalat sambil berteriak. Krunya sudah "
+            "pulang, sehingga tidak ada yang menghentikan. Metodenya bukan menyambung kabel: kedua stasiun memakai "
+            "studio-to-transmitter link gelombang mikro menuju pemancar di atas gedung tinggi (Sears Tower/John Hancock), "
+            "dan penyusup memancarkan sinyal lebih kuat ke penerima ('capture effect'). Kebutuhan: pemancar directional "
+            "mahal, titik tinggi dengan garis pandang ke dua pemancar, pengetahuan teknis tingkat insinyur siaran/radio "
+            "amatir berlisensi; direktur teknik WTTW saat itu, Al Skierkiewicz, menyebut pelakunya kemungkinan insinyur "
+            "siaran atau operator radio amatir. FCC dan FBI menyelidiki bersama; FBI membuat enam cetakan foto dari pita "
+            "WTTW; tidak ada sidik jari, tidak ada peralatan, tidak ada nama. Berkas tidak pernah ditutup dengan "
+            "tersangka; daluwarsa federal (lima tahun) sudah habis sejak lama, jadi pelaku tak bisa dituntut. Klaim 2010 "
+            "di Reddit ('saya kenal mereka') tidak pernah terverifikasi. Sumber: WTTW retrospective 2017; "
+            "Vice/Motherboard (laporan teknis FBI); historicmysteries; csintresearch (arsip kasus, cek terakhir Jan "
+            "2026)."
+        ),
     ),
     dict(
         ep="EP15", day=5, slot="siang", jam="12.30", series="ANEH", pov="D",
         title="TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN",
-        thumb=["18.000", "TAHUN"], thumb_text="BUKAN KITA",
+        thumb=["60.000", "TAHUN"], thumb_text="BUKAN KITA",
         durasi=57,
         protagonis="Tim penggalian Gua Liang Bua, Flores, 2003.",
         mau="Mencari bukti manusia purba yang bermigrasi lewat Indonesia.",
         hambatan="Yang mereka temukan tidak cocok dengan apa pun di buku teks.",
         tanaman="Tengkoraknya terlalu kecil untuk manusia modern, terlalu tua untuk dianggap kelainan.",
-        hook="18.000 tahun. Tingginya satu meter, otaknya sepertiga otak kita, dan dia hidup.",
+        hook="Enam puluh ribu tahun. Tingginya satu meter, otaknya sepertiga otak kita.",
         hook_alt="Tingginya satu meter. Otaknya sepertiga otak kita. Dan dia hidup saat manusia modern sudah ada.",
-        tanya="Bagaimana dia bertahan 18.000 tahun dengan otak sepertiga otak kita?",
+        tanya="Bagaimana dia bertahan puluhan ribu tahun dengan otak sepertiga otak kita?",
         entitas="dia",
         celah="Kalau bukan manusia modern yang sakit, lalu apa yang hidup di gua itu?",
         gambar_melekat="Tengkorak kecil di samping alat batu, di lantai gua.",
@@ -923,7 +940,7 @@ EPISODES = [
             ("tension", "Mereka menemukan kerangka yang tidak sesuai dengan apa pun yang ada di buku."),
             ("tension", "Tingginya sekitar satu meter. Volume otaknya sepertiga otak kita."),
             ("tension", "Di sekitarnya ada alat batu. Ada bukti perburuan."),
-            ("tension", "Umurnya ditaksir sekitar 18.000 tahun — saat manusia modern sudah membuat lukisan gua."),
+            ("tension", "Umurnya direvisi 2016: sekitar 100.000 sampai 60.000 tahun, bukan 18.000."),
             ("turn", "Sebagian ilmuwan bersikeras: ini bukan spesies baru. Ini manusia modern yang sakit."),
             ("turn", "Perdebatan itu berlangsung lebih dari sepuluh tahun."),
             ("consequence", "Analisis gigi dan rahang menyimpulkan: ini bukan kita."),
@@ -932,10 +949,27 @@ EPISODES = [
         turn_quote="“Itu manusia modern yang sakit.”",
         turn_verdict="Gigi dan rahangnya bukan milik kita. Ini kerabat yang berpisah jauh lebih lama.",
         loop="Satu meter tingginya. Delapan belas ribu tahun. Dan kita baru tahu bahwa kita tidak pernah sendirian.",
-        cues=["2003", "LIANG BUA", "1 METER", "18.000 TAHUN", "BUKAN KITA"],
+        cues=["2003", "LIANG BUA", "1 METER", "60.000 TAHUN", "BUKAN KITA"],
         visual="Penampang gua; siluet satu meter di samping skala manusia modern; alat batu.",
         plate="ridge",
-        sumber="NEEDS-SOURCE — Homo floresiensis, Liang Bua; stratigrafi direvisi 2016 (Nature), belum dibaca langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — 2 September 2003, Gua Liang Bua, Flores barat, tim gabungan Australia-Indonesia "
+            "(Michael Morwood, Peter Brown). Ditemukan LB1: kerangka perempuan dewasa ±30 tahun, tinggi ±1,06 m, volume "
+            "otak ±380-420 cc (sebanding simpanse), bukan fosil (belum termineralisasi); plus bagian dari sedikitnya "
+            "sebelas individu lain. Diumumkan sebagai spesies baru di Nature, Oktober 2004. ALAT BATU: Oldowan-like "
+            "(serpih, chopper, serpih teretouch) dari batu vulkanik dan chert lokal; tanpa teknik prepared-core. Fauna: "
+            "Stegodon kerdil (banyak juvenil, sebagian bertanda potong) dan hewan endemik Flores. TANGGAL: angka lama "
+            "18.000 tahun (dan 12.000) berasal dari sampel radiokarbon di unit sedimen yang menutupi, bukan dari "
+            "tulangnya. Revisi stratigrafi Sutikna dkk., Nature 532 (Maret 2016): semua sisa kerangka H. floresiensis "
+            "100.000-60.000 tahun; alat batu 190.000-50.000 tahun. Mata Menge (So'a Basin, ±70 km timur): rahang bawah "
+            "dan gigi ±700.000 tahun (van den Bergh dkk., Nature 2016). Alat batu di Wolo Sege ≥1 juta tahun. Penyebab "
+            "kepunahan tidak pasti: letusan gunung, perubahan iklim/habitat, atau kedatangan H. sapiens (yang mencapai "
+            "kawasan ±50.000 tahun lalu). DNA tidak berhasil diambil karena tropis. Hipotesis 'manusia modern yang sakit' "
+            "(microcephaly, Laron, Down syndrome) ditolak sebagian besar spesialis, termasuk tinjauan PLOS One 2016; re- "
+            "dating 2016 juga melemahkannya karena sisa itu mendahului bukti H. sapiens di kawasan. Sumber: Australian "
+            "Museum; Sutikna dkk. 2016 (Nature 532:366); van den Bergh dkk. 2016 (Nature 534:245); Spoken Past; "
+            "homininhistory."
+        ),
     ),
     dict(
         ep="EP16", day=6, slot="siang", jam="12.30", series="ANEH", pov="B",
@@ -946,10 +980,10 @@ EPISODES = [
         mau="Menjalani hari sekolah seperti biasa.",
         hambatan="Tubuh mereka mulai tertawa, dan tidak berhenti.",
         tanaman="Tidak ada virus, tidak ada racun, tidak ada penyebab fisik yang ditemukan.",
-        hook="1962. Seribu orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.",
+        hook="1962. Ratusan orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.",
         hook_alt="Tidak ada virus. Yang menyebar hanya tawa — dan tidak ada yang bisa menghentikannya.",
         tanya="Kenapa tertawa bisa menular, padahal tidak ada virus yang ditemukan?",
-        entitas="seribu orang",
+        entitas="orang",
         celah="Kalau bukan penyakit, apa yang menular di sekolah itu?",
         gambar_melekat="Bangku kelas kosong dengan papan tulis penuh tulisan pudar.",
         beats=[
@@ -967,11 +1001,27 @@ EPISODES = [
         ],
         turn_quote="“Itu wabah penyakit.”",
         turn_verdict="Tidak ada virus, tidak ada racun. Yang menyebar adalah tekanan, dalam bentuk yang bisa dilihat semua orang.",
-        loop="Seribu orang tertawa karena tidak punya cara lain untuk bicara.",
+        loop="Ratusan orang tertawa karena tidak punya cara lain untuk bicara.",
         cues=["JAN 1962", "KASHASHA", "1.000 ORANG", "18 BULAN", "TANPA VIRUS"],
         visual="Kelas dengan bangku kosong; gelombang abstrak menyebar antar bangku; koridor sekolah.",
         plate="shelter",
-        sumber="NEEDS-SOURCE — Tanganyika laughter epidemic 1962; laporan jurnal medis belum dibaca langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — 30 Januari 1962, sekolah asrama misi di Kashasha, tepi barat Danau Victoria, "
+            "Tanganyika (kini Tanzania): tiga murid perempuan mulai tertawa. Dalam hitungan hari menyebar; 18 Maret 1962 "
+            "sekolah ditutup setelah 95 dari 159 murid (usia 12-18) terkena. Gejala: tawa tak terkendali disertai "
+            "menangis, pingsan, sesak, ruam, nyeri; episode dari beberapa jam sampai 16 hari (rata-rata ±7 hari); tidak "
+            "ada kematian yang tercatat. Sekolah dibuka lagi 21 Mei 1962, 57 murid kembali terkena dalam beberapa minggu, "
+            "lalu ditutup lagi akhir Juni. Menyebar ke Nshamba (April-Mei: 217 orang, sebagian besar remaja, dalam 34 "
+            "hari), Kanyangereka, dan Ramashenye Girls' Middle School (Juni: 48 murid), lalu desa-desa lain; reda setelah "
+            "±18 bulan (pertengahan 1964). Guru dan orang dewasa di posisi otoritas nyaris tidak terkena. Penyelidikan: "
+            "A.M. Rankin (Makerere University College) dan P.J. Philip (petugas medis pemerintah Bukoba); sampel darah, "
+            "makanan, air diperiksa; tidak ada patogen, racun, atau defisiensi; laporan di Central African Journal of "
+            "Medicine, 1963 — kesimpulan: mass psychogenic illness. KONTEKS: Tanganyika merdeka dari Inggris Desember "
+            "1961, beberapa minggu sebelumnya; tekanan harapan baru di sekolah misi. CATATAN ANGKA: '1.000 orang di 14 "
+            "sekolah' muncul di rangkuman kemudian dan tidak ada di laporan 1963 — naskah memakai angka laporan asli dan "
+            "menyebut angka besar sebagai klaim yang diperdebatkan. Sumber: Rankin & Philip 1963 (via rangkuman bygonist, "
+            "livelyhistory, boingboing); Pringle 2019; Hempelmann."
+        ),
     ),
 
     # ─────────────────────────────────────────────── BENCANA ──
@@ -1008,7 +1058,21 @@ EPISODES = [
         cues=["27 AGU 1883", "KRAKATAU", "4.800 KM", "30 METER", "DUNIA BERUBAH"],
         visual="Kolom abu di garis pantai; peta radius suara; grafik barometer dunia.",
         plate="plume",
-        sumber="NEEDS-SOURCE — Letusan Krakatau 1883; catatan barometer global perlu dikutip langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Krakatau, Selat Sunda. Aktivitas dimulai Mei 1883 (asap/abu, letusan kecil); puncak "
+            "26-27 Agustus 1883. 27 Agustus: empat ledakan besar antara 05.30 dan 10.02; ledakan ketiga pukul 10.02 "
+            "dianggap suara terkeras yang tercatat instrumen. Suara terdengar jelas 3.110 km jauhnya di Perth (penduduk "
+            "mengira tembakan artileri, mengirim tim mencari kapal dalam kesulitan) dan 4.800 km jauhnya di Pulau "
+            "Rodrigues dekat Mauritius (petugas kolonial mencatat 'raungan meriam berat' dan mengira ada pertempuran "
+            "laut). Di dekat sumber, tekanan melampaui batas teoretis bunyi di udara (±194 dB), sehingga yang merambat "
+            "adalah gelombang tekanan, bukan bunyi dalam arti akustik biasa. Gelombang tekanan terekam barometer/barograf "
+            "di London, Paris, Washington, Tokyo, New York; terukur ±5 hari, mengelilingi bumi setidaknya tiga kali penuh "
+            "(rangkuman populer: ±3,5-4 kali). Dua pertiga pulau runtuh ke laut; tsunami sampai ±41 m di tempat terdekat; "
+            "295 kota/pesisir rusak; korban resmi kolonial Belanda 36.417 (perkiraan lain lebih tinggi); ±90% korban "
+            "akibat tsunami, bukan letusan. Debu mencapai stratosfer/mesosfer (±43-80 km menurut berbagai ukuran); suhu "
+            "global turun; matahari terbenam merah di Eropa berbulan-bulan. Sumber: Wikipedia (1883 eruption of "
+            "Krakatau); volcanodb; geographyworlds; missedhistory; spacedaily."
+        ),
     ),
     dict(
         ep="EP18", day=7, slot="pagi", jam="07.00", series="BENCANA", pov="D",
@@ -1044,7 +1108,22 @@ EPISODES = [
         cues=["APR 1815", "TAMBORA", "1816", "TANPA MUSIM PANAS", "ROTI MAHAL"],
         visual="Lapisan abu di stratosfer; peta aliran sulfur; ladang gagal panen.",
         plate="plume",
-        sumber="NEEDS-SOURCE — Tambora 1815 dan Year Without a Summer 1816; literatur vulkanologi belum dikutip langsung.",
+        sumber=(
+            "VERIFIED 2026-11-06 — Gunung Tambora, Sumbawa (kini Nusa Tenggara Barat). Aktivitas meningkat sejak 1812; "
+            "letusan mulai 5 April 1815, puncak 10-15 April 1815. VEI 7 — letusan terbesar dalam sejarah tercatat, ±4-10 "
+            "kali energi Krakatau 1883; material terlempar diperkirakan 100-180 km³; tinggi kolom ±43 km; guncangan "
+            "terdengar sampai Ternate (±1.400 km) dan abu jatuh ratusan kilometer jauhnya. Letusan berhenti 15 Juli 1815; "
+            "aktivitas kecil lagi Agustus 1819. Dampak global: selubung aerosol sulfat di stratosfer → 1816 disebut Tahun "
+            "Tanpa Musim Panas. New England/Kanada: 'dry fog' yang tidak hilang oleh angin atau hujan, matahari meredup "
+            "sampai bintik matahari terlihat dengan mata telanjang; salju turun 6 Juni 1816 di New York dan Maine; Quebec "
+            "hampir 30 cm; es masih ditemukan di danau/rivers sampai Pennsylvania pada Agustus; panen jagung gagal (hanya "
+            "±seperempat yang bisa dipakai). Eropa: suhu turun ±1-2 °C; gandum, rye, barley, oat naik tajam sampai 1817; "
+            "Irlandia kelaparan; Jerman panen gagal total → demonstrasi di pasar gandum dan toko roti, lalu kerusuhan, "
+            "pembakaran, penjarahan di banyak kota; di East Anglia harga gandum naik ±33% antara Maret-Mei 1816 → "
+            "kerusuhan 'Bread or Blood', lima orang dieksekusi. Diperkirakan sampai ±71.000 kematian global (kelaparan + "
+            "epidemi typhus). Sumber: Wikipedia (Mount Tambora; Year Without a Summer); AAAS Scientia; Historical "
+            "Climatology ('Bread or Blood'); markvoganweather."
+        ),
     ),
     dict(
         ep="EP19", day=7, slot="siang", jam="12.30", series="BENCANA", pov="B",
@@ -1280,19 +1359,19 @@ _SHORT_2026 = {
             ("turn", "Sebagian ilmuwan bersikeras: ini manusia modern yang sakit."),
             ("consequence", "Gigi dan rahangnya bilang lain. Ini bukan kita."),
         ],
-        loop="Satu meter, delapan belas ribu tahun. Menurut kamu, siapa yang menghabiskan mereka?",
-        cues=["1 METER", "18.000 TAHUN", "BUKAN KITA"],
+        loop="Satu meter, enam puluh ribu tahun. Menurut kamu, siapa yang menghabiskan mereka?",
+        cues=["1 METER", "60.000 TAHUN", "BUKAN KITA"],
         captions=["", "Satu meter.", "Hanya satu jenis?", "Flores, 2003.", "Otak sepertiga.",
                   "Alat batu.", "Manusia sakit?", "Bukan kita.", "Siapa yang menghabiskan?"],
         caption_hi=["", "satu meter", "jenis", "2003", "otak", "alat batu", "sakit", "bukan kita", "menghabiskan"],
-        stamps=[["18.000", 0]],
+        stamps=[["60.000", 0]],
         sfx={"00_hook": "boom", "01_tanya": "page", "02_relate": "gust", "03_setup": "water",
              "04_tension": "boom", "05_tension": "tick", "06_turn": "page", "07_consequence": "boom",
              "99_loop": "boom"},
     ),
     "EP16": dict(
         durasi=39,
-        hook="Seribu orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.",
+        hook="Ratusan orang tertawa selama berbulan-bulan. Tidak ada virus yang ditemukan.",
         tanya="Coba bayangkan sekolah yang tidak bisa berhenti tertawa. Kamu akan pulang?",
         relate="Kita tertawa kalau lelah. Di sekolah itu, tertawa jadi satu-satunya cara bicara.",
         beats=[
@@ -1306,7 +1385,7 @@ _SHORT_2026 = {
         ],
         loop="Tawanya berhenti setelah delapan belas bulan. Tekanannya, menurut kamu, berhenti?",
         cues=["1962", "TANPA VIRUS", "18 BULAN"],
-        captions=["", "Seribu orang.", "Tertawa kalau lelah.", "Kashasha, 1962.", "Puluhan ikut.",
+        captions=["", "Ratusan orang.", "Tertawa kalau lelah.", "Kashasha, 1962.", "Puluhan ikut.",
                   "Sekolah ditutup.", "Bukan virus.", "Yang menular tekanan.", "Berhenti?"],
         caption_hi=["", "seribu", "tertawa", "1962", "puluhan", "ditutup", "virus", "tekanan", "berhenti"],
         stamps=[["1962", 3]],
