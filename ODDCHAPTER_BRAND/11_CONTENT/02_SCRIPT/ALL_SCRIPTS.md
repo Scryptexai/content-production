@@ -17,9 +17,9 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | 9 | H4 | siang | TERSEMBUNYI | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS | D | 41 |
 | 10 | H5 | malam | TERSEMBUNYI | DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA | B | 42 |
 | 11 | H1 | siang | ANEH | TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI | B | 43 |
-| 12 | H2 | siang | ANEH | KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA | A | 40 |
-| 13 | H3 | siang | ANEH | MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG | B | 41 |
-| 14 | H4 | siang | ANEH | DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP | D | 40 |
+| 12 | H2 | siang | ANEH | TIGA DANAU DI SATU PUNCAK BERWARNA BEDA, DAN TIDAK ADA YANG MENYURUHNYA | A | 42 |
+| 13 | H3 | siang | ANEH | DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA | B | 43 |
+| 14 | H4 | siang | ANEH | SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA | D | 43 |
 | 15 | H5 | siang | ANEH | TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN | D | 42 |
 | 16 | H6 | siang | ANEH | TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS | B | 39 |
 | 17 | H6 | pagi | BENCANA | SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER | A | 41 |
@@ -1278,110 +1278,84 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 ---
 
-## EP13 — MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG
+## EP13 — DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H3  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 132 kata ≈ 54 detik (target 53 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
+**Narasi:** 91 kata · 10 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Miguel Viana dan Manoel Cruz, dua pria di Bukit Vintém, Rio de Janeiro. |
-| **Mau** | Menunggu seseorang di tempat yang disebutkan dalam catatan. |
-| **Hambatan** | Waktunya tertulis jelas. Orangnya tidak pernah datang. |
-| **Tanaman** (detail yang berubah makna di turn) | Catatan itu menyuruh mereka menunggu, menelan kapsul, lalu memakai masker. |
-| **Celah** (pertanyaan yang dipegang penonton) | Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Dua masker timah di atas batu, menghadap langit. |
+| **Protagonis** | Warga Bali Aga di Trunyan yang menjaga leluhurnya di atas tanah. |
+| **Mau** | Tetap dekat dengan yang sudah meninggal. |
+| **Hambatan** | Adat hanya mengizinkan cara ini, dan belum ada yang mengukur bau itu. |
+| **Tanaman** | Pohon Taru Menyan di tengah area pemakaman. |
+| **Celah** | Kenapa tidak ada bau, padahal tubuhnya dibiarkan terbuka? |
+| **Gambar melekat** | Tengkorak tersusun di altar batu, di bawah satu pohon besar. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Masker timah di wajah mereka. Di saku: catatan berisi jam, tempat, perintah menunggu.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Tubuh mereka tidak dikubur, dan di bawah pohon itu tidak tercium bau.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 20 Agustus 1966. Dua pria ditemukan tewas di sebuah bukit di Rio de Janeiro. |
-| SETUP | Mereka memakai setelan resmi. Di wajah mereka, masker timah buatan sendiri. |
-| TENSION | Tidak ada luka. Tidak ada tanda perkelahian. |
-| TENSION | Di saku salah satunya, ada catatan tulisan tangan. |
-| TENSION | Isinya: jam, tempat, dan instruksi untuk menunggu seseorang. |
-| TENSION | Ada juga instruksi untuk menelan kapsul, lalu memakai masker. |
-| TURN | Mereka melakukan semuanya. Tepat waktu. |
-| TURN | Orang yang menulis instruksi itu tidak pernah datang — dan uang yang disebut di catatan itu tidak pernah ditemukan. |
-| CONSEQUENCE | Selama enam puluh tahun, teorinya bunuh diri atau ritual. |
-| CONSEQUENCE | Tapi catatan itu bukan surat perpisahan. Itu jadwal. Dan jadwal butuh orang kedua. |
+| TANYA | Kalau mayat dibiarkan terbuka di bawah pohon, kenapa kamu tidak mencium apa pun? |
+| RELATE | Kita mengubur orang supaya tanah menutup bau dan hewan. |
+| SETUP | Trunyan, Bali. Mayat ditaruh di bawah pohon Taru Menyan. |
+| TENSION | Coba lihat. Puluhan tengkorak tersusun di altar batu, tanpa liang. |
+| TENSION | Orang wajar, orang kecelakaan, orang belum menikah: tiga tempat. |
+| TENSION | Pohon Taru Menyan, kata warga, yang menyerap baunya. |
+| TURN | Bau itu belum pernah diukur. Yang terukur: keluarganya masih datang. |
+| CONSEQUENCE | Mereka menaruh sesajen, dan menyapa yang sudah mati dengan nama. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu bunuh diri.”**
+Kutipan: **“Mereka dibiarkan begitu saja.”**
 
-Pembalik: Catatan itu jadwal pertemuan, bukan surat perpisahan. Orang kedua tidak pernah datang.
+Pembalik: mereka tidak dibiarkan. Yang belum pernah diuji cuma baunya; yang jelas,
+mayat itu masih punya alamat — keluarganya datang, membersihkan, dan menyapa.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Pohon itu masih berdiri. Kamu akan menyebutnya kuburan atau rumah?
 
-> Dua pria menunggu di bukit itu. Sampai sekarang tidak ada yang tahu siapa yang mereka tunggu.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau keluargamu memilih cara ini, kamu setuju?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Siapa yang menulis jadwal itu, dan kenapa dia tidak pernah datang?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP13` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | mayat tidak dikubur, bau tidak ada |
+| 2 | ada yang salah | tubuh terbuka tapi hidung tidak menangkap apa pun |
+| 3 | bertahan | pohon Taru Menyan ditanam sebagai penjelasan, ditahan sampai turn |
+| 4 | kejutan | penjelasannya bukan pohonnya — baunya memang belum pernah diukur |
+| 5 | diingat | tengkorak di altar batu bawah satu pohon |
 
 ## 5 · TEKS DI LAYAR
 
-1. `20 AGU 1966`
-2. `2 PRIA`
-3. `MASKER TIMAH`
-4. `CATATAN`
-5. `UANG HILANG`
+Cue: TRUNYAN · MEPASAH · TANPA LIANG
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Desa Trunyan, Kintamani, Bangli, Bali (masyarakat Bali Aga). Tradisi
+mepasah / "kubur angin": jenazah tidak dikubur dan tidak dikremasi, diletakkan di area
+pemakaman di bawah pohon Taru Menyan, sebagian ditutup anyaman bambu berbentuk kerucut;
+setelah membusuk, tulang dan tengkorak diletakkan di altar bawah pohon. Tiga area
+terpisah: Seme Wajah (wajar), Seme Bantah (tidak wajar/kecelakaan), Seme Muda (bayi,
+anak, belum menikah).
 
-Bukit dengan dua siluet; catatan tangan tak terbaca; dua masker timah di batu.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Kasus Morro do Vintém 1966; terjemahan catatan perlu verifikasi.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Mereka memakai setelan resmi dan masker timah. Tidak ada yang tahu untuk apa.
+Klaim "tidak berbau karena pohon Taru Menyan" adalah keyakinan warga dan laporan
+pengunjung — **tidak ada** penelitian yang mengukur konsentrasi gas/aroma di lokasi.
+Karena itu klaim ini ditulis sebagai "kata warga", dan turn menyatakan bau itu belum
+pernah diukur. Rujukan dibaca: National Geographic Indonesia (23 Okt 2018), Majalah
+Outsiders (9 Mei 2026). Belum dibaca langsung: kajian antropologi Bali Aga, data Balai
+Arkeologi Bali — verifikasi sebelum tayang.
 
 ---
 

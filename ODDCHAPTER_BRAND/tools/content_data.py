@@ -1717,3 +1717,194 @@ _INDONESIA = {
 for _e in EPISODES:
     if _e["ep"] in _INDONESIA:
         _e.update(_INDONESIA[_e["ep"]])
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# BATCH 2 · 6 NOV 2026 — EP12–EP14, sengaja di luar Jawa
+#
+# EP12 Kelimutu (NTT) · EP13 Trunyan (Bali) · EP14 Orang Pendek (Kerinci, Sumatera)
+# Semua memakai aturan yang sama: satu tanaman, dibayar di turn, tanpa fakta baru.
+# Klaim yang belum diuji (bau Trunyan, keberadaan orang pendek) ditulis sebagai
+# klaim, bukan sebagai fakta — lihat field `sumber`.
+# ══════════════════════════════════════════════════════════════════════════
+
+_INDONESIA_BATCH2 = {
+    # ── EP12 · tiga danau, tiga warna, satu puncak ─────────────────────────
+    "EP12": dict(
+        title="TIGA DANAU DI SATU PUNCAK BERWARNA BEDA, DAN TIDAK ADA YANG MENYURUHNYA",
+        struktur="klimaks-awal",
+        thumb=["TIGA WARNA", "SATU PUNCAK"], thumb_text="TIGA WARNA",
+        durasi=42, plate="water",
+        protagonis="Warga Lio di Moni, Ende, yang membaca warna danau sebagai pesan.",
+        mau="Tahu apakah warna itu peringatan atau cuma kimia.",
+        hambatan="Warnanya berubah tanpa pola, dan tidak semua orang boleh naik.",
+        tanaman="Tiga danau punya nama untuk tiga jenis roh.",
+        hook="Tiga danau di satu puncak. Warnanya berbeda, dan berubah sendiri.",
+        hook_alt="Ada tiga danau di puncak gunung ini, dan ketiganya tidak pernah sepakat soal warna.",
+        tanya="Kalau air bisa berubah tanpa hujan, apa yang kamu kira ada di bawahnya?",
+        entitas="danau",
+        relate="Kita membaca gunung lewat air yang berubah warna.",
+        diskusi="Kalau warna itu tanda, kamu akan percaya atau minta data?",
+        celah="Kenapa tiga danau di satu puncak bisa punya warna yang berbeda?",
+        gambar_melekat="Tiga kawah berwarna di satu puncak, dilihat dari bibir kawah.",
+        beats=[
+            ("tanya", "Kalau air bisa berubah tanpa hujan, apa yang kamu kira ada di bawahnya?"),
+            ("relate", "Kita membaca gunung lewat air yang berubah warna."),
+            ("setup", "Flores, 1.639 meter. Tiga kawah, tiga nama, tiga warna."),
+            ("tension", "Tiwu Ata Mbupu untuk orang tua. Tiwu Ata Polo untuk yang jahat."),
+            ("tension", "Coba lihat airnya. Hijau, lalu cokelat, lalu hitam, tanpa jadwal."),
+            ("turn", "Warna itu bukan tanda dari leluhur. Itu gas, besi, dan bakteri di dasar kawah."),
+            ("consequence", "Mei 2024, satu kawah berubah, dan status gunung dihitung ulang."),
+        ],
+        turn_quote="“Perubahan warna itu pertanda bencana.”",
+        turn_verdict="Pertandanya nyata. Pengirimnya bukan roh: gas belerang, besi, dan mikroba yang mengubah air.",
+        loop="Danau itu masih berubah. Menurut kamu, siapa yang menulis jadwalnya?",
+        cues=["KELIMUTU", "1.639 M", "TIGA NAMA"],
+        captions=["", "Kenapa berubah?", "Gunung dibaca dari air.", "Flores, 1.639 m.",
+                  "Tiga nama roh.", "Tanpa jadwal.", "Gas dan besi.", "Mei 2024.",
+                  "Siapa yang menulis jadwal?"],
+        caption_hi=["", "warna", "air", "Flores", "roh", "jadwal", "gas", "2024", "jadwal"],
+        stamps=[["1915", 3]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "clunk",
+             "04_tension": "page", "05_tension": "gust", "06_turn": "boom",
+             "07_consequence": "clunk", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Danau Kelimutu, puncak Gunung Kelimutu (1.639 m), Kabupaten "
+            "Ende, Flores, NTT: tiga danau kawah dengan warna berbeda. Nama ketiganya: Tiwu Ata "
+            "Mbupu (dipercaya tempat roh orang tua), Tiwu Nuwa Muri Koo Fai (jiwa muda), Tiwu Ata "
+            "Polo (roh yang berbuat jahat). Pertama didokumentasikan peneliti Belanda Van Suchtelen "
+            "1915, dikenal luas setelah tulisan Y. Bouman 1929. Penjelasan ilmiah: gas vulkanik "
+            "(H2S, SO2, CO2) dari ventilasi hidrotermal bereaksi dengan besi, mangan, dan sulfur; "
+            "warna hijau/biru dari kandungan sulfur, merah/cokelat dari oksidasi besi; penelitian "
+            "juga menemukan peran mikroorganisme ekstremofil (bakteri pengoksidasi sulfur dan besi). "
+            "Tim LIPI (Eko Soebowo, Hendra Bakti, Igan S. Sutawidjaja, Dadan Suherman) meneliti "
+            "Oktober 2006 dan menyimpulkan perubahan warna akibat mekanisme vulkanik; warna Tiwu "
+            "Nua Muri Koo Fai dipakai sebagai parameter status aktivitas. 2009 ketiga danau sempat "
+            "menjadi satu warna (hijau muda); Badan Geologi mencatat perubahan signifikan Mei 2024 "
+            "pada Tiwu Ata Polo (hijau kebiruan menjadi cokelat kehitaman). Klaim warga bahwa "
+            "perubahan warna mendahului bencana (mis. sebelum gempa Flores 1992) adalah keyakinan "
+            "lokal, bukan korelasi terukur — di naskah disebut sebagai cara warga membaca, bukan "
+            "sebagai fakta. Belum dibaca langsung: laporan Badan Geologi dan publikasi LIPI — "
+            "verifikasi sebelum tayang."
+        ),
+    ),
+
+    # ── EP13 · mayat yang tidak dikubur ─────────────────────────────────────
+    "EP13": dict(
+        title="DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA",
+        struktur="klimaks-awal",
+        thumb=["TANPA KUBUR", "TANPA BAU"], thumb_text="TANPA KUBUR",
+        durasi=43, plate="ridge",
+        protagonis="Warga Bali Aga di Trunyan yang menjaga leluhurnya di atas tanah.",
+        mau="Tetap dekat dengan yang sudah meninggal.",
+        hambatan="Adat hanya mengizinkan cara ini, dan belum ada yang mengukur bau itu.",
+        tanaman="Pohon Taru Menyan di tengah area pemakaman.",
+        hook="Tubuh mereka tidak dikubur, dan di bawah pohon itu tidak tercium bau.",
+        hook_alt="Di Trunyan tidak ada liang kubur dan tidak ada kremasi. Ada satu pohon, dan puluhan tengkorak.",
+        tanya="Kalau mayat dibiarkan terbuka di bawah pohon, kenapa kamu tidak mencium apa pun?",
+        entitas="tubuh",
+        relate="Kita mengubur orang supaya tanah menutup bau dan hewan.",
+        diskusi="Kalau keluargamu memilih cara ini, kamu setuju?",
+        celah="Kenapa tidak ada bau, padahal tubuhnya dibiarkan terbuka?",
+        gambar_melekat="Tengkorak tersusun di altar batu, di bawah satu pohon besar.",
+        beats=[
+            ("tanya", "Kalau mayat dibiarkan terbuka di bawah pohon, kenapa kamu tidak mencium apa pun?"),
+            ("relate", "Kita mengubur orang supaya tanah menutup bau dan hewan."),
+            ("setup", "Trunyan, Bali. Mayat ditaruh di bawah pohon Taru Menyan."),
+            ("tension", "Coba lihat. Puluhan tengkorak tersusun di altar batu, tanpa liang."),
+            ("tension", "Orang wajar, orang kecelakaan, orang belum menikah: tiga tempat."),
+            ("tension", "Pohon Taru Menyan, kata warga, yang menyerap baunya."),
+            ("turn", "Bau itu belum pernah diukur. Yang terukur: keluarganya masih datang."),
+            ("consequence", "Mereka menaruh sesajen, dan menyapa yang sudah mati dengan nama."),
+        ],
+        turn_quote="“Mereka dibiarkan begitu saja.”",
+        turn_verdict="Mereka tidak dibiarkan. Yang belum pernah diuji cuma baunya; yang jelas, mayat itu masih punya alamat.",
+        loop="Pohon itu masih berdiri. Kamu akan menyebutnya kuburan atau rumah?",
+        cues=["TRUNYAN", "MEPASAH", "TANPA LIANG"],
+        captions=["", "Kenapa tidak bau?", "Kita menutup dengan tanah.", "Trunyan, Bali.",
+                  "Tengkorak di batu.", "Tiga tempat.", "Pohon Taru Menyan.", "Belum diukur.",
+                  "Kuburan atau rumah?"],
+        caption_hi=["", "bau", "tanah", "Trunyan", "tengkorak", "tiga", "pohon", "diukur", "rumah"],
+        stamps=[["TRUNYAN", 3]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "rustle",
+             "04_tension": "boom", "05_tension": "page", "06_tension": "rustle",
+             "07_turn": "boom", "08_consequence": "page", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Desa Trunyan, Kecamatan Kintamani, Kabupaten Bangli, Bali (masyarakat "
+            "Bali Aga). Tradisi pemakaman disebut mepasah atau 'kubur angin': jenazah tidak dikubur dan "
+            "tidak dikremasi, melainkan diletakkan di area pemakaman di bawah pohon Taru Menyan, sebagian "
+            "ditutup anyaman bambu berbentuk kerucut untuk menghindari hewan; setelah membusuk, "
+            "tulang dan tengkoraknya diletakkan di altar di bawah pohon. Ada tiga area terpisah: Seme "
+            "Wajah (meninggal wajar), Seme Bantah (meninggal tidak wajar/kecelakaan), Seme Muda (bayi, "
+            "anak, dan yang belum menikah). Klaim bahwa area itu tidak berbau dan penyebabnya pohon Taru "
+            "Menyan adalah keyakinan warga dan laporan pengunjung — TIDAK ada penelitian yang mengukur "
+            "konsentrasi gas/aroma di lokasi, sehingga di naskah klaim itu ditulis sebagai 'kata warga' "
+            "dan turn menyatakan bahwa bau itu belum pernah diukur. Rujukan yang dibaca: National "
+            "Geographic Indonesia (23 Oktober 2018) dan Majalah Outsiders (9 Mei 2026). Belum dibaca "
+            "langsung: kajian antropologi Bali Aga dan data Balai Arkeologi Bali — verifikasi sebelum "
+            "tayang."
+        ),
+    ),
+
+    # ── EP14 · primata yang tidak pernah terpotret ──────────────────────────
+    "EP14": dict(
+        title="SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA",
+        struktur="klimaks-awal",
+        thumb=["TANPA FOTO", "SERATUS TAHUN"], thumb_text="TANPA FOTO",
+        durasi=43, plate="signal",
+        protagonis="Debbie Martyr, peneliti yang menghabiskan bertahun-tahun di Kerinci.",
+        mau="Satu foto yang tidak bisa dibantah.",
+        hambatan="Kamera yang menangkap harimau tidak pernah menangkapnya.",
+        tanaman="Sampel rambut yang dikirim ke laboratorium.",
+        hook="Orang pendek sudah muncul seratus tahun di cerita, dan belum ada foto.",
+        hook_alt="Saksi melihatnya berkali-kali. Kameranya tidak sekali pun.",
+        tanya="Kalau kamu pasang seratus kamera, apa yang akan kamu tunggu?",
+        entitas="orang pendek",
+        relate="Kita percaya pada foto, dan penasaran pada yang tidak pernah difoto.",
+        diskusi="Kalau kamu yang menemukannya, kamu akan memotret atau lari?",
+        celah="Kenapa saksi melihatnya, tapi kamera tidak pernah?",
+        gambar_melekat="Cetakan kaki pendek dan lebar, tanpa hewan pembanding.",
+        beats=[
+            ("tanya", "Kalau kamu pasang seratus kamera, apa yang akan kamu tunggu?"),
+            ("relate", "Kita percaya pada foto, dan penasaran pada yang tidak pernah difoto."),
+            ("setup", "Kerinci, Sumatera. Tingginya 85 sentimeter, kata saksi."),
+            ("tension", "Coba lihat cetakan kakinya. Pendek, lebar, tanpa hewan pembanding."),
+            ("tension", "Sampel rambut dikirim ke laboratorium, dan hasilnya tidak pernah keluar."),
+            ("turn", "Rambut itu bukan primata baru. Itu rambut manusia."),
+            ("consequence", "Kamera masih dipasang, dan yang muncul tetap hewan yang kita kenal."),
+        ],
+        turn_quote="“Ada primata baru di hutan Sumatera.”",
+        turn_verdict="Rambutnya manusia. Yang tersisa cuma cerita, dan cerita tidak bisa dipotret.",
+        loop="Cerita itu masih ada, dan fotonya belum. Kamu percaya yang mana?",
+        cues=["KERINCI", "85 CM", "TANPA FOTO"],
+        captions=["", "Seratus kamera?", "Kita percaya yang difoto.", "Kerinci, 85 cm.",
+                  "Cetakan kaki.", "Sampel rambut.", "Rambut manusia.", "Kamera tetap kosong.",
+                  "Apa yang mereka lihat?"],
+        caption_hi=["", "kamera", "difoto", "Kerinci", "kaki", "rambut", "manusia", "kosong", "lihat"],
+        stamps=[["1990", 3]],
+        sfx={"00_hook": "page", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "clunk", "05_tension": "rustle", "06_turn": "boom",
+             "07_consequence": "page", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Orang pendek (uhang pandak), makhluk mirip primata bipedal yang "
+            "diklaim menghuni hutan Sumatera, terutama di Kabupaten Kerinci dan Taman Nasional Kerinci "
+            "Seblat. Deskripsi saksi: tinggi 80–150 cm (Debbie Martyr: biasanya 85–90 cm, kadang sampai "
+            "120 cm), berbulu pendek gelap, bahu lebar. Laporan tertulis sejak awal abad ke-20, antara "
+            "lain catatan Mr. van Heerwarden (1923) semasa survei lahan; cerita serupa hidup di "
+            "masyarakat Suku Anak Dalam (Bukit Duabelas) sebagai 'hantu pendek'. Penelitian paling "
+            "serius: Debbie Martyr (1990-an, pernah didukung Fauna & Flora International) dan fotografer "
+            "Jeremy Holden yang memasang camera trap di TNKS — banyak harimau dan beruang madu terekam, "
+            "orang pendek tidak; keduanya mengaku pernah melihatnya sendiri. Cetakan kaki (cast) "
+            "dikumpulkan, beberapa sampel rambut dianalisis dan hasil DNA-nya dilaporkan manusia "
+            "(ekspedisi Adam Davies & Andrew Sanderson). Tidak ada spesimen, tulang, atau foto jelas. "
+            "Rujukan: Kompas.com (4 Mei 2012), Skeptoid #77, Wikipedia ID. Ini klaim yang belum "
+            "terbukti — naskah tidak menyatakan orang pendek ada; turn justru mematahkan bukti "
+            "rambutnya. Belum dibaca langsung: laporan ekspedisi FFI dan hasil laboratorium asli — "
+            "verifikasi sebelum tayang."
+        ),
+    ),
+}
+
+for _e in EPISODES:
+    if _e["ep"] in _INDONESIA_BATCH2:
+        _e.update(_INDONESIA_BATCH2[_e["ep"]])

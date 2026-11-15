@@ -31,9 +31,9 @@ supaya tidak ada detail baru yang dikarang.
 | 09 | TERSEMBUNYI | **INDONESIA** — kenapa batu diikat ke punggung padahal ada surat "jangan cari aku" | Akseyna 2015: autopsi (memar, air di paru-paru) & grafologi (dua penulis); tanpa tersangka | **VERIFIED (short)** · panjang belum |
 | 10 | TERSEMBUNYI | **INDONESIA** — kenapa sidik jari yang utuh tidak menemukan satu namanya | Setiabudi 13, 1981: sidik jari tak cocok, dikubur tanpa nama di Tegal Alur | **VERIFIED (short)** · panjang belum |
 | 11 | ANEH | **INDONESIA** — kenapa tanah Porong mengeluarkan lumpur dan belum berhenti | penyebab: blow-out sumur vs gempa Yogyakarta; angka korban & kerugian PERLU CEK | **VERIFIED (short)** · panjang belum |
-| 12 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 13 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
-| 14 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 12 | ANEH | **INDONESIA** — kenapa tiga danau di satu puncak berubah warna tanpa pola | Kelimutu: gas H₂S/SO₂, oksidasi besi, mikroba ekstremofil; warna = parameter status gunung | **VERIFIED (short)** · panjang belum |
+| 13 | ANEH | **INDONESIA** — kenapa mayat di Trunyan tidak dikubur dan tidak berbau | mepasah/kubur angin; klaim pohon Taru Menyan BELUM pernah diukur | **VERIFIED (short)** · panjang belum |
+| 14 | ANEH | **INDONESIA** — kenapa saksi melihat orang pendek tapi 100 kamera tidak | camera trap TNKS (Martyr/Holden) kosong; rambut yang diuji = manusia | **VERIFIED (short)** · panjang belum |
 | 15 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 | 16 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 | 17 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |

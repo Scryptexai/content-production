@@ -5,6 +5,6 @@ jeda antar segmen diatur di timeline (0,22 dtk), bukan oleh model.
 
 | episode | segmen | kata | perkiraan durasi |
 |---|---|---|---|
-| [EP09](EP09.md) | 9 | 83 | ±37 s |
-| [EP10](EP10.md) | 9 | 97 | ±43 s |
-| [EP11](EP11.md) | 10 | 100 | ±44 s |
+| [EP12](EP12.md) | 9 | 96 | ±43 s |
+| [EP13](EP13.md) | 10 | 100 | ±44 s |
+| [EP14](EP14.md) | 9 | 89 | ±40 s |
