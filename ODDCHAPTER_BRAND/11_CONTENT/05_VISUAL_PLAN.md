@@ -380,3 +380,64 @@ len(timing.segments)`; kalau tidak sama, frame akan bergeser dan muncul segmen k
 Palet tetap: Ink `#17191D` · Ivory `#F4F0E8` · Sage `#A7B0A1` · Orange `#F26A3D`.
 Warna lampu/oranye hanya satu sumber per frame. Tidak ada wajah korban, tidak ada
 tubuh, tidak ada darah — kasus ini soal tanah, bukan luka.
+
+---
+
+## 10 · DUA JALUR GAMBAR — DAN KENAPA EP09 KE ATAS PERNAH TERLIHAT BEDA
+
+`scenes/Episode.tsx` punya dua jalur gambar, dan hanya satu yang sesuai rencana
+di §1:
+
+| jalur | bahan | yang dipakai | sesuai §1? |
+|---|---|---|---|
+| **PHOTO** | `public/plates/<EP>/NN_*.jpg`, satu per segmen | `Photo` + `useCamera` + `Scan` + `CutFlash` | **ya** — inilah yang dipakai EP01–EP08 |
+| **PLATE** | plate vektor `PlateArt` (10 bentuk dasar) | `PlateSegment` + `useCamera` + `Scan` | jaring pengaman, bukan tampilan akhir |
+
+Sampai 15 Nov 2026 jalur PLATE merender **satu** plate untuk seluruh episode:
+skala 1,000 → 1,045 dalam 40 detik. Praktis diam. Akibatnya EP09–EP21 — yang
+belum punya satu foto pun — berdenyut berbeda dari EP01–EP08: tidak ada potongan,
+tidak ada dorongan kamera, tidak ada perubahan gambar setiap 3–5 detik. Dari
+layar, itu terbaca sebagai kanal lain.
+
+**Yang sudah diperbaiki (perangkat, bukan aset):**
+
+1. Gerak kamera dipindah ke `scenes/Camera.ts` — satu fungsi `useCamera(i, dur)`
+   untuk foto dan plate: potong tiap segmen, dorongan 70 px, goyang handheld,
+   flicker exposure, kilau setelah cut. Tidak ada dua hitungan gerak yang bisa
+   menyimpang lagi.
+2. `scenes/PlateScene.tsx` merender plate **per segmen**, bukan sekali untuk
+   seluruh durasi. Jalur PLATE dan PHOTO sekarang punya ritme potongan yang sama,
+   ditambah `Scan` dan `CutFlash` yang juga sama.
+3. `plate` boleh berisi lebih dari satu bentuk (`plates: [..]` di
+   `content_data.py`) kalau satu episode butuh dua siluet berbeda. Kosong = satu
+   bentuk dengan empat ukuran potong, seperti sebelumnya.
+4. `build_episodes_json.py` hanya merujuk `bed` kalau `bed.wav` benar-benar ada.
+   Dulu jalur `audio/EP01/bed.wav` ditulis walau berkasnya belum dibuat, dan
+   render berhenti di tengah karena aset yang tidak ada.
+
+**Yang belum bisa diperbaiki dari kode: bahannya.** Plate vektor tetap bukan
+foto. Selama sebuah episode tidak punya 9–13 plate foto, ia akan terlihat lebih
+datar daripada EP01–EP08 — bukan karena animasinya, tetapi karena tidak ada
+gambar yang layak dianimasikan.
+
+Ukuran yang dipakai EP01–EP08, dan yang harus dipenuhi episode berikutnya:
+
+| hal | angka |
+|---|---|
+| jumlah foto | satu per segmen (`len(beats) + 2`), minimal 9 |
+| ukuran | 1080×1920 (JPEG), `objectFit: cover` — 768×1376 masih bisa, tapi ter-crop |
+| penamaan | `public/plates/<EP>/NN_nama.jpg`, NN = urutan segmen |
+| isi | benda atau tempat, **tanpa wajah**, tanpa teks terbaca |
+| nada | gelap, desaturasi, satu aksen oranye per episode |
+| loop | boleh memakai ulang plate hook (reprise) — seperti EP05–EP06 |
+
+Cek kekurangan aset kapan saja dengan:
+
+```
+python3 tools/check_film_assets.py          # semua episode
+python3 tools/check_film_assets.py EP09     # satu episode
+```
+
+Skrip itu mencetak, per episode: jalur yang akan dipakai, jumlah foto, jumlah VO,
+bed, sfx, thumbnail — dan daftar yang kurang. Episode yang belum lengkap akan
+tetap bisa dirender, tetapi lewat jalur PLATE; itu keputusan sadar, bukan bug.

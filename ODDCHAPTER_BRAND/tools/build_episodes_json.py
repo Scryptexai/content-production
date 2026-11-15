@@ -48,8 +48,17 @@ def build():
                 "cues": e["cues"],
                 "durasi": e["durasi"],
                 "plate": plate,
+                # bentuk dasar tambahan (opsional): kalau ada, potongan berganti
+                # bentuk antar segmen. Kalau kosong, satu bentuk dengan empat
+                # ukuran potong — sama seperti episode yang fotonya satu tema.
+                "plates": [k for k in (e.get("plates") or []) if k in PLATES],
                 "photos": [f"plates/{e['ep']}/{n}.jpg" for n in e.get("photos", [])],
-                "bed": e.get("bed", ""),
+                # bed hanya dirujuk kalau berkasnya benar-benar ada. Dulu jalur
+                # `audio/EP01/bed.wav` ditulis walau berkasnya belum dibuat, dan
+                # render gagal di tengah jalan karena aset yang tidak ada.
+                "bed": (f"audio/{e['ep']}/bed.wav"
+                        if (HERE.parent / "10_FILM" / "remotion" / "public" / "audio" / e["ep"] / "bed.wav").exists()
+                        else ""),
                 "thumb": (f"thumbs/{e['ep']}.png" if (HERE.parent / "10_FILM" / "remotion" / "public" / "thumbs" / f"{e['ep']}.png").exists() else ""),
                 "thumbText": e.get("thumb_text", ""),
                 "sfx": (f"audio/{e['ep']}/sfx.wav" if (HERE.parent / "10_FILM" / "remotion" / "public" / "audio" / e["ep"] / "sfx.wav").exists() else ""),

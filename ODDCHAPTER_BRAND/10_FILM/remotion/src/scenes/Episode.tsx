@@ -2,7 +2,8 @@ import React from "react";
 import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, H, MARGIN, W } from "../theme";
 import data from "../episodes.generated.json";
-import { PlateArt, PlateKind } from "./PlateArt";
+import { PlateKind } from "./PlateArt";
+import { PlateSegment } from "./PlateScene";
 import { CutFlash, Photo, Progress, Scan, ThumbIntro } from "./PhotoScene";
 import timing from "../timing.generated.json";
 
@@ -32,6 +33,8 @@ type Ep = {
   cues: string[];
   durasi: number;
   plate?: PlateKind;
+  /** boleh lebih dari satu: potongan berganti bentuk antar segmen (opsional) */
+  plates?: PlateKind[];
   photos?: string[];
   bed?: string;
   sfx?: string;
@@ -81,42 +84,6 @@ export const timedEpisodeIds = () => Object.keys(TIMINGS).sort();
 
 const ease = Easing.bezier(0.2, 0.7, 0.2, 1);
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-
-const Grain: React.FC<{ seed: number }> = ({ seed }) => {
-  const rows = 44;
-  return (
-    <AbsoluteFill style={{ opacity: 0.05, mixBlendMode: "screen" }}>
-      <svg width={W} height={rows} viewBox={`0 0 ${W} ${rows}`} preserveAspectRatio="none">
-        {new Array(rows).fill(0).map((_, i) => {
-          const n = Math.sin((i + 1) * 12.9898 + seed * 78.233) * 43758.5453;
-          const frac = n - Math.floor(n);
-          return <rect key={i} x={frac * W * 0.92} y={i} width={40 + frac * 140} height={0.55} fill={C.ivory} opacity={0.3 + frac * 0.4} />;
-        })}
-      </svg>
-    </AbsoluteFill>
-  );
-};
-
-/** PLATE — langit + satu bentuk dasar (PlateArt) + grain + vignette. */
-const Plate: React.FC<{ lamp: number; dim: number; totalFrames: number; kind: PlateKind }> = ({ lamp, dim, totalFrames, kind }) => {
-  const frame = useCurrentFrame();
-  const p = interpolate(frame, [0, totalFrames], [0, 1], clamp);
-  const scale = 1 + p * 0.045;
-  const horizonY = H * 0.7;
-
-  return (
-    <AbsoluteFill style={{ backgroundColor: C.ink }}>
-      <AbsoluteFill style={{ transform: `scale(${scale})`, background: `radial-gradient(120% 60% at 50% ${horizonY}px, #24282E 0%, #17191D 48%, #0D0F12 100%)` }} />
-      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute" }}>
-        <g opacity={0.28 + 0.72 * dim}>
-          <PlateArt kind={kind} lamp={lamp} />
-        </g>
-      </svg>
-      <Grain seed={5} />
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(13,15,18,0.5) 0%, rgba(13,15,18,0) 28%, rgba(13,15,18,0) 60%, rgba(13,15,18,0.92) 100%)" }} />
-    </AbsoluteFill>
-  );
-};
 
 /** Satu baris teks, muncul per kata, keluar dengan clipPath. Selalu sendiri di layar. */
 const Line: React.FC<{ text: string; born: number; hold: number; size?: number; color?: string; top?: number; family?: "grotesk" | "inter"; weight?: number }> = ({
@@ -359,9 +326,11 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
   const inHook = active?.kind === "hook";
   const inLoop = active?.kind === "loop";
 
-  // lampu: menyala di hook, meredup selama bukti, padam di loop
-  const lamp = interpolate(frame, [0, totalFrames * 0.55, totalFrames * 0.8, totalFrames * 0.9], [1, 0.72, 0.4, 0], clamp);
-  const dim = interpolate(frame, [0, totalFrames * 0.5, totalFrames * 0.72], [1, 1, 0.28], clamp);
+  // lampu: menyala di hook, meredup selama bukti, padam di loop.
+  // Dihitung sebagai fungsi frame, karena tiap segmen punya timeline sendiri
+  // (Sequence) dan `useCurrentFrame()` di dalamnya kembali ke nol.
+  const lampAt = (f: number) => interpolate(f, [0, totalFrames * 0.55, totalFrames * 0.8, totalFrames * 0.9], [1, 0.72, 0.4, 0], clamp);
+  const dimAt = (f: number) => interpolate(f, [0, totalFrames * 0.5, totalFrames * 0.72], [1, 1, 0.28], clamp);
 
   return (
     <AbsoluteFill style={{ backgroundColor: C.ink }}>
@@ -390,7 +359,21 @@ export const Episode: React.FC<{ epId?: string }> = ({ epId = "EP01" }) => {
               <Scan dur={s.durFrames} />
             </Sequence>
           ))
-        : <Plate lamp={lamp} dim={dim} totalFrames={totalFrames} kind={(ep.plate || "tower") as PlateKind} />}
+        : tm.segments.map((s, i) => {
+            const kinds: PlateKind[] = ep.plates && ep.plates.length ? ep.plates : [(ep.plate || "tower") as PlateKind];
+            return (
+              <Sequence key={`v-${s.key}`} from={s.startFrame} durationInFrames={s.durFrames} name={`plate-${s.key}`}>
+                <PlateSegment
+                  kind={kinds[i % kinds.length]}
+                  i={i}
+                  dur={s.durFrames}
+                  lamp={lampAt(s.startFrame)}
+                  dim={dimAt(s.startFrame)}
+                />
+                <Scan dur={s.durFrames} />
+              </Sequence>
+            );
+          })}
 
       {/* kedip potongan: keras di titik balik, halus di setiap beat */}
       {active && !intro ? <CutFlash age={frame - active.startFrame} strong={inTurn || active.key.includes("tanya")} /> : null}

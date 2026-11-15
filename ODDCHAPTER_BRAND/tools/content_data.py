@@ -1536,6 +1536,10 @@ for _e in EPISODES:
 _INDONESIA = {
     # ── EP09 · tas berisi batu di Danau Kenanga ────────────────────────────
     "EP09": dict(
+        photos=[
+            "00_hook", "01_tanya", "02_relate", "03_setup",
+            "04_tension", "05_tension", "06_turn", "07_consequence", "08_loop",
+        ],
         title="TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS",
         struktur="klimaks-awal",
         thumb=["TAS BERISI", "BATU"], thumb_text="TAS BERISI BATU",
