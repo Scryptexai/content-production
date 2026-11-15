@@ -1519,3 +1519,201 @@ _SHORT_2026 = {
 for _e in EPISODES:
     if _e["ep"] in _SHORT_2026:
         _e.update(_SHORT_2026[_e["ep"]])
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# PENGGANTIAN 6 NOV 2026 — EP09–EP11 jadi kasus INDONESIA
+#
+# Arahan pemilik: mulai EP09 isinya misteri / kejadian janggal di Indonesia,
+# bukan lagi kasus luar negeri. Naskah lama (Somerton Man, kembar Gibbons,
+# Wow! signal) dikeluarkan dari peta; datanya masih ada di badan file ini
+# sebagai catatan sejarah, tetapi tidak lagi dipakai EPISODES.
+#
+# Fakta tiap episode ada di field `sumber` dengan status VERIFIED dan
+# rujukan yang dibaca. Angka yang belum terbaca langsung ditandai.
+# ══════════════════════════════════════════════════════════════════════════
+
+_INDONESIA = {
+    # ── EP09 · tas berisi batu di Danau Kenanga ────────────────────────────
+    "EP09": dict(
+        title="TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS",
+        struktur="klimaks-awal",
+        thumb=["TAS BERISI", "BATU"], thumb_text="TAS BERISI BATU",
+        durasi=41, plate="water",
+        protagonis="Akseyna, mahasiswa biologi UI, 18 tahun, anak seorang perwira TNI.",
+        mau="Pulang ke Yogyakarta, atau setidaknya tidak tenggelam di kampusnya sendiri.",
+        hambatan="Tempat kejadian dan kamar kosnya sudah dimasuki orang sebelum disegel.",
+        tanaman="Secarik surat di kamar kos yang meminta dia tidak dicari.",
+        hook="Tas di punggungnya berisi batu konblok, dan dia ditemukan di danau kampus.",
+        hook_alt="Orang yang mau bunuh diri tidak menggendong batu di punggung. Dia menggendongnya.",
+        tanya="Kalau kamu mau hilang, kenapa kamu butuh batu?",
+        entitas="tas",
+        relate="Kita mengikat batu ke barang yang mau kita buang.",
+        diskusi="Kalau itu bukan bunuh diri, siapa yang ingin dia hilang?",
+        celah="Kenapa batu itu diikat ke punggung, bukan ke tangan atau kaki?",
+        gambar_melekat="Ransel berisi batu konblok, dipakai di punggung.",
+        beats=[
+            ("tanya", "Kalau kamu mau hilang, kenapa kamu butuh batu?"),
+            ("relate", "Kita mengikat batu ke barang yang mau kita buang."),
+            ("setup", "Maret 2015, Danau Kenanga, Depok. Mahasiswa biologi, umur 18."),
+            ("tension", "Di kamar kosnya ada surat: jangan cari aku."),
+            ("tension", "Coba lihat. Memar di punggungnya, dan air di paru-parunya."),
+            ("turn", "Pemeriksa tulisan bilang surat itu ditulis dua orang berbeda."),
+            ("consequence", "Bapaknya datang tiap Maret, menuntut satu nama."),
+        ],
+        turn_quote="“Dia bunuh diri, dan menulis suratnya sendiri.”",
+        turn_verdict="Dua tulisan tangan di surat itu. Statusnya berubah jadi dugaan pembunuhan, tanpa tersangka.",
+        loop="Tas itu masih di danau yang sama. Menurut kamu, siapa yang menggendongnya?",
+        cues=["DANAU KENANGA", "2015", "DUA TULISAN"],
+        captions=["", "Butuh batu?", "Kita buang dengan batu.", "Depok, 2015.",
+                  "Jangan cari aku.", "Air di paru-paru.", "Dua tulisan.", "Satu nama.",
+                  "Siapa yang menggendongnya?"],
+        caption_hi=["", "batu", "batu", "2015", "surat", "paru-paru", "tulisan", "nama", "siapa"],
+        stamps=[["2015", 3]],
+        sfx={"00_hook": "boom", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "page", "05_tension": "boom", "06_turn": "boom",
+             "07_consequence": "clunk", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Akseyna Ahad Dori (lahir 2 Juni 1996, Yogyakarta) mahasiswa "
+            "Biologi FMIPA UI angkatan 2013; jasadnya ditemukan mengambang di Danau Kenanga, "
+            "Kampus UI Depok, Kamis 26 Maret 2015 oleh petugas kebersihan, memakai pakaian lengkap "
+            "dan ransel berisi batu konblok serta kerikil. Tanpa dokumen pengenal; identitas baru "
+            "dipastikan 30 Maret 2015 setelah keluarga datang ke RS Polri Kramat Jati. Di kamar "
+            "kosnya ditemukan pesan 'Will not return, please don't search, my apologies for "
+            "everything'. Polres Metro Depok mula-mula menyimpulkan bunuh diri; setelah autopsi, "
+            "status berubah menjadi dugaan pembunuhan karena: memar akibat benda tumpul pada wajah "
+            "dan tubuh; pasir serta air di paru-paru (masih bernapas saat masuk air); analisis "
+            "grafologi menyimpulkan tanda tangan/tulisan tidak cocok (kemungkinan dua penulis atau "
+            "dipalsukan); posisi ransel di punggung dinilai tidak lazim untuk tenggelam sukarela; "
+            "robekan pada bagian belakang sepatu. Puluhan saksi diperiksa; tidak ada tersangka; TKP "
+            "dan kamar kos sempat dimasuki orang sebelum sterilisasi. Ayahnya, Mardoto, bersama "
+            "Aliansi Mahasiswa UI menuntut pengungkapan setiap tahun. Belum dibaca langsung: berkas "
+            "autopsi RS Polri, hasil grafologi, dan berkas penyidikan Polres Metro Depok — "
+            "verifikasi sebelum tayang."
+        ),
+    ),
+
+    # ── EP10 · dua kardus di trotoar Sudirman ──────────────────────────────
+    "EP10": dict(
+        title="DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA",
+        struktur="klimaks-awal",
+        thumb=["DUA KARDUS", "TANPA NAMA"], thumb_text="DUA KARDUS",
+        durasi=42, plate="road",
+        protagonis="Mun'im Idris, dokter forensik yang membedah jasad itu.",
+        mau="Memberi jasad itu satu nama.",
+        hambatan="Sidik jari, wajah, dan ratusan keluarga yang datang — tidak satu pun cocok.",
+        tanaman="Sidik jari korban tidak dihilangkan oleh pelakunya.",
+        hook="Dua kardus di trotoar Sudirman, 1981. Isinya mayat tanpa nama.",
+        hook_alt="Pelakunya tidak menghapus sidik jari. Bertahun kemudian, itu pun tidak menolong siapa pun.",
+        tanya="Kalau kamu membunuh orang, kenapa sidik jari di kardus itu dibiarkan?",
+        entitas="kardus",
+        relate="Kita semua punya nama di satu dokumen, dan dia tidak.",
+        diskusi="Menurut kamu, siapa yang paling mungkin mengenalnya?",
+        celah="Kenapa sidik jari yang utuh tidak menemukan satu nama pun?",
+        gambar_melekat="Dua kardus di trotoar, dan satu nisan tanpa nama.",
+        beats=[
+            ("tanya", "Kalau kamu membunuh orang, kenapa sidik jari di kardus itu dibiarkan?"),
+            ("relate", "Kita semua punya nama di satu dokumen, dan dia tidak."),
+            ("setup", "Pagi 23 November 1981, dua satpam melihat dua kardus itu."),
+            ("tension", "Coba lihat isinya. Kepala, tulang, dan tidak ada satu lembar identitas."),
+            ("tension", "Ratusan orang datang mengaku kehilangan saudara. Tidak ada yang cocok."),
+            ("turn", "Sidik jarinya masih utuh, dan tetap tidak ada orang yang cocok."),
+            ("consequence", "Dia dikubur 27 November 1981 di Tegal Alur, tanpa nama di nisan."),
+        ],
+        turn_quote="“Dia pasti dicari keluarganya.”",
+        turn_verdict="Tidak ada yang mencari. Jasad itu dikubur tanpa nama, dan berkasnya berhenti di situ.",
+        loop="Kardus itu sudah tidak ada. Nama itu masih kosong. Kamu punya tebakan?",
+        cues=["SETIABUDI", "1981", "TANPA NAMA"],
+        captions=["", "Kenapa dibiarkan?", "Semua punya nama.", "Sudirman, 1981.",
+                  "Tanpa identitas.", "Tak ada yang cocok.", "Sidik jari utuh.",
+                  "Tegal Alur.", "Kamu punya tebakan?"],
+        caption_hi=["", "sidik jari", "nama", "1981", "identitas", "keluarga", "sidik jari",
+                    "Tegal Alur", "tebakan"],
+        stamps=[["1981", 3]],
+        sfx={"00_hook": "clunk", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "rustle", "05_tension": "page", "06_turn": "boom",
+             "07_consequence": "clunk", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Kasus 'Setiabudi 13'. Pagi 23 November 1981, dua satpam PT "
+            "Garuda Mataram Motor menemukan dua kardus di trotoar Jalan Jenderal Sudirman, "
+            "Setiabudi, Jakarta, seberang Gedung Arthaloka; keduanya berbau anyir dan dikerubungi "
+            "lalat, dilaporkan ke polisi yang sedang mengatur lalu lintas, lalu tergeletak sampai "
+            "ditemukan dua gelandangan. Kardus pertama berisi kepala dan tiga belas tulang yang "
+            "dikerat dari daging; kardus kedua berisi 180 potongan daging termasuk paru-paru, hati, "
+            "dan limpa. Anus, kandung kemih, dan pankreas tidak ditemukan. Autopsi ±2 jam oleh "
+            "Mun'im Idris, yang menyebut jasad dipotong sistematis; perkiraan mutilasi 3–4 jam oleh "
+            "lebih dari satu orang. Korban pria tanpa identitas, perkiraan usia 18–21 tahun, tinggi "
+            "165 cm, dibunuh 1–2 hari sebelum ditemukan. Sidik jari, telapak tangan, telapak kaki, "
+            "dan wajah tidak dihilangkan, tetapi hasil tes sidik jari tidak menemukan pasangan yang "
+            "cocok. Ratusan orang datang mengaku kehilangan kerabat; tidak ada yang cocok. Jasad "
+            "dikebumikan 27 November 1981 di TPU Tegal Alur, Kalideres, Jakarta Barat. Kasus tidak "
+            "pernah terpecahkan. Catatan: detail mutilasi sengaja tidak diucapkan di VO — naskah "
+            "hanya memakai 'kepala, tulang, tanpa identitas' agar tidak kena pembatasan iklan. "
+            "Belum dibaca langsung: buku Mun'im Idris (2013) dan liputan Mata Najwa/Kumparan yang "
+            "dikutip Wikipedia — verifikasi sebelum tayang."
+        ),
+    ),
+
+    # ── EP11 · tanah Porong yang belum berhenti ────────────────────────────
+    "EP11": dict(
+        title="TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI",
+        struktur="klimaks-awal",
+        thumb=["LUMPUR", "TAK BERHENTI"], thumb_text="LUMPUR TAK BERHENTI",
+        durasi=43, plate="plume",
+        protagonis="Warga Porong yang rumahnya tenggelam pelan-pelan.",
+        mau="Tinggal di tanah yang sama, sedekat mungkin dengan rumahnya.",
+        hambatan="Lumpurnya keluar dari dalam tanah, dan tidak ada yang berhasil menutupnya.",
+        tanaman="Titik semburan hanya 150 meter dari sumur gas.",
+        hook="Tanah di Porong mengeluarkan lumpur, dan 20 tahun kemudian masih keluar.",
+        hook_alt="Ada gunung baru di Sidoarjo. Bukan gunung api, dan tidak bisa ditutup.",
+        tanya="Dari mana semua tanah itu datang, dan siapa yang kamu salahkan?",
+        entitas="tanah",
+        relate="Kita lihat tanah sebagai benda yang diam.",
+        diskusi="Kalau kamu tinggal di Porong, kamu pindah atau bertahan?",
+        celah="Kenapa titik semburan muncul 150 meter dari sumur, bukan di sumurnya?",
+        gambar_melekat="Rumah yang hanya kelihatan atapnya di tengah lumpur.",
+        beats=[
+            ("tanya", "Dari mana semua tanah itu datang, dan siapa yang kamu salahkan?"),
+            ("relate", "Kita lihat tanah sebagai benda yang diam."),
+            ("setup", "Mei 2006, Porong, Sidoarjo. Awalnya cuma air keruh di sawah."),
+            ("tension", "Coba bayangkan rumahmu tenggelam dari lantai, bukan dari atap."),
+            ("tension", "Dua hari sebelumnya, tanah di Yogyakarta berguncang."),
+            ("tension", "Sumur gas itu cuma 150 meter dari titik semburan."),
+            ("turn", "Ahli geologi bilang getaran itu terlalu jauh. Yang paling dekat bukan sesar, tapi sumur gas."),
+            ("consequence", "Dua puluh tahun kemudian, lumpur itu masih menutup jalan dan rumah."),
+        ],
+        turn_quote="“Ini bencana alam. Gempa yang menyebabkan.”",
+        turn_verdict="Getarannya terlalu jauh. Yang paling dekat bukan patahan, tapi sumur bor.",
+        loop="Tanah itu masih mengeluarkan lumpur. Kamu akan tinggal di sana?",
+        cues=["PORONG", "2006", "SUMBER: SUMUR"],
+        captions=["", "Dari mana?", "Tanah yang diam.", "Porong, 2006.",
+                  "Tenggelam dari lantai.", "Gempa Yogya.", "150 meter.",
+                  "Bukan sesar.", "Masih keluar.", "Kamu pindah?"],
+        caption_hi=["", "lumpur", "tanah", "2006", "rumah", "gempa", "150", "sumur",
+                    "masih", "pindah"],
+        stamps=[["2006", 3]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "boom", "05_tension": "gust", "06_tension": "clunk",
+             "07_turn": "boom", "08_consequence": "gust", "99_loop": "boom"},
+        sumber=(
+            "VERIFIED 2026-11-06 — Semburan lumpur panas Porong, Sidoarjo, Jawa Timur, mulai 29 Mei "
+            "2006; gunung lumpur terbesar di dunia dan masih aktif. Pusat semburan berjarak ±150 "
+            "meter dari sumur eksplorasi gas Banjar Panji-1 milik Lapindo Brantas Inc. (operator "
+            "blok Brantas), yang mulai dibor awal Maret 2006. Gempa Yogyakarta terjadi 27 Mei 2006, "
+            "dua hari sebelumnya — pihak perusahaan memakai itu sebagai penjelasan alternatif; "
+            "sebagian besar literatur menyimpulkan blow-out pengeboran. Kerugian harta benda "
+            "diperkirakan Rp45 triliun; korban tewas tidak langsung ≥20 orang (angka resmi "
+            "bervariasi). Semburan menenggelamkan permukiman dan memutus jalur tol "
+            "Surabaya–Gempol, jalan raya Surabaya–Malang, serta jalur kereta lintas timur. Catatan: "
+            "artikel Wikipedia Indonesia untuk topik ini bertanda 'tanpa rujukan', sehingga angka "
+            "kerugian dan korban harus dicek ke dokumen BPLS/BPK sebelum tayang; naskah hanya "
+            "memakai fakta yang juga muncul di sumber berita arus utama (tanggal, lokasi, jarak 150 "
+            "meter, masih aktif). Belum dibaca langsung: laporan BPLS, putusan/berkas perkara, dan "
+            "paper penyebab (Davies dkk. vs. Mazzini dkk.) — verifikasi sebelum tayang."
+        ),
+    ),
+}
+
+for _e in EPISODES:
+    if _e["ep"] in _INDONESIA:
+        _e.update(_INDONESIA[_e["ep"]])

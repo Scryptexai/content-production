@@ -10,6 +10,14 @@ Kolom **status** menentukan apakah episode boleh ditulis penuh:
 `PERLU CEK` = naskah panjang **belum** ditulis sampai sumbernya dibaca langsung,
 supaya tidak ada detail baru yang dikarang.
 
+> **PERUBAHAN 6 NOV 2026 — mulai EP09 topiknya INDONESIA.** Arahan pemilik: EP09–EP21
+> diisi misteri / kejadian janggal di Indonesia, bukan kasus luar negeri lagi.
+> EP01–EP08 tetap seperti yang sudah tayang. Naskah panjang lama EP09–EP18 (Somerton
+> Man, kembar Gibbons, Wow!, tari 1518, Vintém, Max Headroom, Floresiensis, Tanganyika,
+> Krakatau, Tambora) dipindahkan ke `_ARSIP_TOPIK_LUAR/` dan **tidak** dipakai lagi.
+> EP09–EP11 sudah ditulis ulang sebagai kasus Indonesia (versi short); naskah panjangnya
+> menyusul setelah sumbernya dibaca langsung.
+
 | ep | seri | pertanyaan panjang (misterinya) | yang dibongkar di bab 5 | status |
 |---|---|---|---|---|
 | 01 | HILANG | kenapa tiga penjaga keluar tanpa pakaian tahan air & pintu terkunci dari dalam | gelombang di sisi pulau — tidak menjelaskan pakaian yang tertinggal | **VERIFIED** |
@@ -20,19 +28,19 @@ supaya tidak ada detail baru yang dikarang.
 | 06 | TERSEMBUNYI | kenapa api satu sore masih menyala 60+ tahun kemudian | api bawah tanah tak bisa dipadamkan (DEP: ±400 acre, ±540 °C) — tidak menjelaskan 19 tahun pembiaran | **VERIFIED** |
 | 07 | TERSEMBUNYI | kenapa jejak kaki hanya satu arah, dan ternak tetap dirawat | pelaku orang lokal — tidak menjelaskan kenapa ia tinggal 4 hari | **VERIFIED** |
 | 08 | TERSEMBUNYI | kenapa semua label dipotong tapi buku kode disimpan | agen / pelarian pribadi — tidak menjelaskan kode yang sengaja dibuat bertahan | **VERIFIED** |
-| 09 | TERSEMBUNYI | kenapa pria tanpa identitas membawa sobekan puisi, dan apa dua kata itu | identifikasi DNA 2022 (Carl Webb); kode TAMAM SHUD belum terpecahkan | **VERIFIED** |
-| 10 | TERSEMBUNYI | kenapa dua kembar membangun bahasa yang hanya mereka bisa pakai | idioglossia & pemisahan institusi (Broadmoor) — batas antara bahasa & perlindungan diri | **VERIFIED** |
-| 11 | ANEH | kenapa sinyal 72 detik itu tidak pernah terulang, di frekuensi paling masuk akal | 1420 MHz = garis hidrogen; arah tanpa bintang; 40 tahun pencarian kosong | **VERIFIED** |
-| 12 | ANEH | kenapa kota memilih menari sampai ratusan orang sakit, bukan menghentikannya | 1518 Strasbourg: wabah tari & cara otoritas menanganinya | **VERIFIED** |
-| 13 | ANEH | kenapa ratusan orang menunggu sesuatu di Morro do Vintém sampai mereka sendiri jadi bukti | 1966, saksi & catatan terjemahan | **VERIFIED** |
-| 14 | ANEH | kenapa dua siaran bajakan terjadi dalam satu malam dan pelakunya tak pernah tertangkap | Max Headroom 1987, laporan FCC | **VERIFIED** |
-| 15 | ANEH | kenapa umur kerangka itu salah selama 12 tahun, dan apa yang berubah setelah angkanya diperbaiki | revisi stratigrafi Sutikna dkk., Nature 2016 (100.000–60.000 th) | **VERIFIED** |
-| 16 | ANEH | kenapa tawa itu menular ke murid tapi tidak pernah ke guru | Rankin & Philip 1963 (Central African Journal of Medicine) | **VERIFIED** |
-| 17 | BENCANA | kenapa suara letusan terdengar 4.800 km jauhnya tapi banyak yang tak mendengar apa pun | Krakatau 1883, catatan barometer global | **VERIFIED** |
-| 18 | BENCANA | kenapa setahun setelah Tambora, salju turun di bulan Juni | tahun tanpa musim panas 1816, hubungan letusan–harga roti | **VERIFIED** |
-| 19 | BENCANA | kenapa ledakan terbesar yang tercatat tidak meninggalkan kawah, dan butuh 19 tahun untuk ditemukan | Tunguska 1908, ekspedisi Kulik | PERLU CEK |
-| 20 | BENCANA | kenapa 1.700 orang mati oleh udara yang turun dari danau | Nyos 1986, mekanisme limnik & degassing sejak 2001 | PERLU CEK |
-| 21 | HARGA | kenapa perusahaan tahu, dan hukum baru berubah setelah mereka mati | Radium Girls 1917–1930an, gugatan 1927 & presedennya | PERLU CEK |
+| 09 | TERSEMBUNYI | **INDONESIA** — kenapa batu diikat ke punggung padahal ada surat "jangan cari aku" | Akseyna 2015: autopsi (memar, air di paru-paru) & grafologi (dua penulis); tanpa tersangka | **VERIFIED (short)** · panjang belum |
+| 10 | TERSEMBUNYI | **INDONESIA** — kenapa sidik jari yang utuh tidak menemukan satu namanya | Setiabudi 13, 1981: sidik jari tak cocok, dikubur tanpa nama di Tegal Alur | **VERIFIED (short)** · panjang belum |
+| 11 | ANEH | **INDONESIA** — kenapa tanah Porong mengeluarkan lumpur dan belum berhenti | penyebab: blow-out sumur vs gempa Yogyakarta; angka korban & kerugian PERLU CEK | **VERIFIED (short)** · panjang belum |
+| 12 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 13 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 14 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 15 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 16 | ANEH | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 17 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 18 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 19 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 20 | BENCANA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
+| 21 | HARGA | **INDONESIA** — menunggu batch berikutnya | — | rencana |
 
 ---
 

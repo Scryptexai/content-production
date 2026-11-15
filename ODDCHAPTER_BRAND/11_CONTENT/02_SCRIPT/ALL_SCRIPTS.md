@@ -7,26 +7,26 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | # | Hari | Slot | Seri | Headline | POV | Detik |
 |---|---|---|---|---|---|---|
 | 1 | H1 | pagi | HILANG | TIGA PENJAGA DAN SATU SET PAKAIAN YANG TERTINGGAL | A | 56 |
-| 2 | H2 | pagi | HILANG | MEREKA MEMOTONG TENDA ITU DARI DALAM | B | 56 |
-| 3 | H3 | pagi | HILANG | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | B | 54 |
+| 2 | H2 | pagi | HILANG | MEREKA MEMOTONG TENDA ITU DARI DALAM | B | 64 |
+| 3 | H3 | pagi | HILANG | KAPAL YANG MASIH BISA BERLAYAR, AWAK YANG MENINGGALKANNYA | B | 72 |
 | 4 | H4 | pagi | HILANG | MEREKA BERJALAN MENJAUH DARI PERTOLONGAN | A | 55 |
-| 5 | H5 | pagi | HILANG | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN | D | 55 |
-| 6 | H1 | malam | TERSEMBUNYI | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN | B | 57 |
-| 7 | H2 | malam | TERSEMBUNYI | JEJAK KAKI ITU HANYA SATU ARAH | A | 57 |
-| 8 | H3 | malam | TERSEMBUNYI | SEMUA LABEL DI PAKAIANNYA DIPOTONG | B | 56 |
-| 9 | H4 | malam | TERSEMBUNYI | DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK | D | 57 |
-| 10 | H5 | malam | TERSEMBUNYI | MEREKA MEMBUAT BAHASA SENDIRI, LALU DIPISAHKAN | B | 57 |
-| 11 | H1 | siang | ANEH | TUJUH PULUH DUA DETIK YANG TIDAK PERNAH TERULANG | B | 52 |
-| 12 | H2 | siang | ANEH | KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA | A | 54 |
-| 13 | H3 | siang | ANEH | MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG | B | 53 |
-| 14 | H4 | siang | ANEH | DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP | D | 52 |
-| 15 | H5 | siang | ANEH | TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN | D | 57 |
-| 16 | H6 | siang | ANEH | TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS | B | 52 |
-| 17 | H6 | pagi | BENCANA | SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER | A | 56 |
-| 18 | H7 | pagi | BENCANA | GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA | D | 57 |
-| 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG | B | 54 |
-| 20 | H7 | malam | BENCANA | YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN | B | 58 |
-| 21 | H6 | malam | HARGA | MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI | A | 58 |
+| 5 | H5 | pagi | HILANG | MEREKA MENULIS SATU KATA, BUKAN SEBUAH PERINGATAN | D | 56 |
+| 6 | H6 | malam | TERSEMBUNYI | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN | B | 46 |
+| 7 | H7 | malam | TERSEMBUNYI | JEJAK KAKI ITU HANYA SATU ARAH | A | 46 |
+| 8 | H8 | pagi | TERSEMBUNYI | SEMUA LABEL DI PAKAIANNYA DIPOTONG | B | 38 |
+| 9 | H4 | siang | TERSEMBUNYI | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS | D | 41 |
+| 10 | H5 | malam | TERSEMBUNYI | DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA | B | 42 |
+| 11 | H1 | siang | ANEH | TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI | B | 43 |
+| 12 | H2 | siang | ANEH | KOTA YANG MENGOBATI MEREKA DENGAN CARA YANG SAMA | A | 40 |
+| 13 | H3 | siang | ANEH | MEREKA MENUNGGU SESEORANG YANG TIDAK PERNAH DATANG | B | 41 |
+| 14 | H4 | siang | ANEH | DUA KALI DALAM SATU MALAM, DAN TIDAK ADA YANG TERTANGKAP | D | 40 |
+| 15 | H5 | siang | ANEH | TULANG YANG MEMBUKTIKAN KITA TIDAK SENDIRIAN | D | 42 |
+| 16 | H6 | siang | ANEH | TAWA YANG MENYEBAR SEPERTI WABAH, TANPA SATU PUN VIRUS | B | 39 |
+| 17 | H6 | pagi | BENCANA | SUARA YANG TERDENGAR SEJAUH 4.800 KILOMETER | A | 41 |
+| 18 | H7 | pagi | BENCANA | GUNUNG DI SUMBAWA YANG MENCURI SATU MUSIM DARI EROPA | D | 42 |
+| 19 | H7 | siang | BENCANA | LEDAKAN YANG TIDAK MENINGGALKAN APA PUN UNTUK DIPEGANG | B | 39 |
+| 20 | H7 | malam | BENCANA | YANG MEMBUNUH MEREKA ADALAH UDARA YANG TURUN | B | 41 |
+| 21 | H6 | malam | HARGA | MEREKA DIAJARI MENJILAT KUAS, SETIAP KALI | A | 40 |
 
 ---
 
@@ -455,6 +455,29 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 ## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Mereka menemukan makanan di pos jaga hutan. Dan tidak memakannya.
+---
+
+## Koreksi setelah sumber diperiksa (fase produksi EP04)
+
+Naskah rencana menulis tiga hal yang tidak bertahan saat ringkasan sumber dibaca.
+Ketiganya diperbaiki sebelum satu frame dirender.
+
+| yang ditulis rencana | yang dikatakan sumber | yang dipakai |
+|---|---|---|
+| "tangki penuh" | semua ringkasan: tangki **sekitar setengah penuh** | "tangki setengah penuh" |
+| "ditemukan sembilan mil jauhnya" | sumber berbeda antara 11 dan 20 mil (dan 20 mil itu untuk trailer, bukan untuk tubuh) | tidak ada angka jarak yang diucapkan |
+| "pintu tidak dikunci" | yang tercatat: kunci di lubang kontak, tanpa tanda pembongkaran | "kunci masih di kontak", tanpa klaim soal kunci pintu |
+
+Detail yang tetap dan bisa dicek: malam Jumat 24 Februari 1978, pertandingan basket
+kampus di Chico, terakhir terlihat di toko sekitar pukul 22.00, mobil ditemukan
+28 Februari di jalan logging Plumas National Forest sekitar 70 mil ke arah yang salah,
+Ted Weiher ditemukan Juni 1978 di trailer ranger US Forest Service dengan makanan,
+selimut, dan pemanas yang hampir tidak dipakai, Gary Mathias tidak pernah ditemukan.
+
+Batasnya: dokumen primer (laporan insiden Butte County 28 Februari 1978, otopsi
+Juni–Juli 1978, inventaris trailer) belum dibaca langsung. Semua baris di atas
+berasal dari ringkasan sekunder yang saling cocok; yang berbeda dicatat, bukan dipilih
+yang paling dramatis.
 
 ---
 
@@ -500,7 +523,7 @@ Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengu
 | TURN | Selama empat ratus tahun kita membaca kata itu sebagai pesan terakhir. |
 | TURN | Padahal tidak ada tulang, tidak ada kuburan, tidak ada sisa perkelahian. |
 | CONSEQUENCE | Croatoan bukan pesan terakhir. Itu alamat. |
-| CONSEQUENCE | Mereka tidak dibantai. Mereka pindah, dan bergabung dengan orang yang sudah ada di sana. |
+| CONSEQUENCE | Croatoan bukan peringatan. Itu alamat: sebuah pulau lima puluh mil ke selatan. |
 
 ## 3 · TURN
 
@@ -563,14 +586,40 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 ## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
 - Mereka meninggalkan satu kata sebelum pergi. Butuh empat ratus tahun untuk membacanya benar.
+---
+
+## Koreksi setelah sumber diperiksa (fase produksi EP05)
+
+Rencana menutup episode ini dengan kalimat "mereka pindah dan bergabung dengan orang
+yang sudah ada di sana". Itu **tidak** dikatakan sumber sebagai fakta — ia hipotesis
+asimilasi, dan yang bisa dipertanggungjawabkan cuma sampai titik ini:
+
+| yang ditulis rencana | yang bisa dikatakan dari sumber | yang dipakai |
+|---|---|---|
+| "mereka bergabung dengan penduduk setempat" | hipotesis; bukti pendukung ada (artefak abad ke-16 di Hatteras, Site X di Bertie County 2015), tetapi tidak ada catatan yang menyambung | tidak diucapkan; diganti "itu alamat, lima puluh mil ke selatan" |
+| "tidak ada mayat" | benar untuk Roanoke 1590: tidak ada tubuh, tidak ada kuburan, tidak ada tanda pertempuran | dipakai |
+
+Detail yang bertahan dan bisa dicek: 115 orang, John White gubernur, Virginia Dare lahir
+18 Agustus 1587, White mendarat kembali 18 Agustus 1590, rumah **dibongkar** bukan runtuh,
+palisade baru dibangun, peti yang dikubur sudah digali, barang berat ditinggal,
+"CRO" di pohon dan "CROATOAN" di tiang pagar, keduanya **tanpa salib** padahal salib
+sudah disepakati sebagai tanda bahaya.
+
+Batasnya: laporan asli White ("The fift voyage of M. John White", Hakluyt) belum dibaca
+langsung; semua di atas berasal dari ringkasan sekunder yang saling cocok
+(encyclopediavirginia.org, pagesofhistory.org, scienceinsights.org).
 
 ---
 
 ## EP06 — API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H1  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 123 kata ≈ 50 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H6  
+**POV:** B — “SAKSI” (orang ketiga, tetapi menyapa penonton — lihat `00E_SUARA_NARATOR.md`)  
+**Durasi:** 112 kata ≈ 46 detik (master terukur 57,9 s; jeda napas ikut dihitung)
+
+> Ini episode pertama yang memakai **suara baru**: narator menyapa penonton, bukan
+> membacakan laporan. Semua episode berikutnya wajib lolos gerbang §6 di
+> `check_story.py`.
 
 ---
 
@@ -578,77 +627,82 @@ primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Warga terakhir Centralia, Pennsylvania. |
-| **Mau** | Tinggal di rumah mereka. |
-| **Hambatan** | Tanah di bawah rumah mereka terbakar. |
-| **Tanaman** (detail yang berubah makna di turn) | Api itu menyalakan lapisan batu bara, bukan bangunan. Tidak ada yang bisa memadamkannya. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Asap tipis keluar dari retakan aspal di jalan yang kosong. |
-
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+| **Protagonis** | Lima petugas pemadam sukarela dan kota kecil di atas lapisan batu bara. |
+| **Mau** | Membersihkan tumpukan sampah sebelum libur Memorial Day. |
+| **Hambatan** | Sampahnya dibakar di dalam lubang bekas tambang, tepat di atas batu bara. |
+| **Tanaman** (detail yang berubah makna di turn) | Api masuk lewat celah batu, dan tidak ada yang tahu sampai gasnya naik ke rumah. |
+| **Celah** (pertanyaan yang dipegang penonton) | Kenapa mereka memilih memindahkan kota, bukan memadamkan api? |
+| **Gambar melekat** (satu-satunya yang harus diingat) | Retakan di jalan mengeluarkan uap, dan rumah masih berdiri di atasnya. |
 
 ## 1 · HOOK (0–3 s)
 
-> Kota ini dikosongkan tahun 1992. Lima orang masih tinggal. Tanahnya masih hangat.
+> Pernah membayangkan tinggal di kota yang apinya tidak bisa dimatikan?
 
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+Visual: api di lubang tambang. Hook menunjuk benda di layar (*“api ini”*,
+*“rumahnya”*), bukan menjelaskan peristiwa.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Centralia, Pennsylvania, 1962. Sebuah api pembakaran sampah menyalakan batu bara di bawah kota. |
-| SETUP | Tidak ada yang menganggapnya serius. |
-| TENSION | Sembilan belas tahun kemudian, sebuah lubang di jalan tiba-tiba terbuka. |
-| TENSION | Dari dalamnya keluar karbon monoksida. Pada kadar yang bisa membunuh orang di kamar tidur. |
-| TENSION | 1984. Pemerintah membeli rumah-rumah warga dan memindahkan mereka. |
-| TENSION | 1992. Seluruh kota dinyatakan tidak layak huni. |
-| TURN | Semua mengira bencana itu selesai saat kotanya dikosongkan. |
-| TURN | Yang dikosongkan hanya permukaannya. Api itu tidak butuh kota. Ia butuh batu bara. |
-| CONSEQUENCE | 2020. Lima orang masih tinggal di sana. |
-| CONSEQUENCE | Di beberapa titik, tanahnya masih hangat. Retaknya bertambah satu sentimeter setiap tahun. |
+| TANYA | Bayangkan lantai rumahmu hangat. Kamu akan pindah, atau pura-pura tidak tahu? |
+| RELATE | Kita pintar mencari alasan untuk tetap tinggal di rumah tua itu. |
+| SETUP | Lima orang membakar sampah di lubang bekas tambang pada 1962. |
+| TENSION | Mereka cuma ingin bersih-bersih. Apinya masuk ke batu bara, dan tinggal di sana. |
+| TENSION | Sembilan belas tahun kemudian, seorang anak nyaris jatuh ke dalam lubang di halaman. |
+| TURN | Yang mereka pilih bukan memadamkan api. Mereka memindahkan kotanya. |
+| CONSEQUENCE | Lihat peta kota itu. Sejak 1992 semua rumah jadi milik negara. |
+| CONSEQUENCE | Sekarang tinggal lima orang. Kamu masih mau tinggal di atas api? |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Kotanya sudah dikosongkan. Selesai.”**
+Dugaan yang dipatahkan: **“Api itu akan padam sendiri, atau dipadamkan.”**
 
-Pembalik: Yang dikosongkan hanya permukaannya. Api itu masih menyala di bawah jalan yang kosong.
-
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Pembalik: Yang mereka beli bukan pemadaman, tapi jarak. Api tidak dipadamkan —
+kotanya yang dipindahkan.
 
 ## 4 · ECHO
 
-> Lima orang tinggal di atas api yang tidak akan padam sebelum mereka semua pergi.
+> Apinya masih menyala. Di bawah jalan yang tidak lagi dilewati siapa pun.
 
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Kalimat terakhir memanggil kata dari hook (*api*, *bawah*) dan menutup di gambar
+yang sama dengan beat pertama: api, bukan kota.
 
 ## 4b · KONTRAK LIMA EFEK
 
 | # | efek | perangkat di episode ini |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau kotanya sudah dikosongkan, kenapa tanahnya masih hangat?_ |
+| 1 | berhenti scroll | 11 kata, satu benda konkret (api di bawah kota), tanpa kata yang meminta |
+| 2 | ada yang salah | celah spesifik: _Kenapa mereka memilih memindahkan kota, bukan memadamkan api?_ |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
 | 5 | diingat | gambar melekat + echo kata di penutup |
 
-Gerbang otomatis: `python3 ../tools/check_story.py EP06` (lihat `00C_MESIN_5_EFEK.md`).
+## 4c · SUARA (baru, wajib — `00E`)
+
+| unsur | isi di episode ini |
+|---|---|
+| Sapaan penonton | “Kamu akan pindah ke mana?” · “Kita sering bertahan…” · “Kalau kamu salah satunya, kamu bertahan?” |
+| Ajakan melihat | “Sekarang **lihat** rumahnya.” · “Coba **bayangkan** api itu di bawah rumahmu.” |
+| Pertanyaan | 3 (tanya, relate, consequence) |
+| Kalimat per baris | maksimal 2 — semua baris lolos |
+| Kosakata laporan | nol (gerbang otomatis menolak *diketahui/tercatat/merupakan/…*) |
 
 ## 5 · TEKS DI LAYAR
 
-1. `1962`
-2. `CENTRALIA`
-3. `CO DI JALAN`
-4. `1992 DIKOSONGKAN`
-5. `MASIH MENYALA`
+Cue (4): `BATU BARA` · `UAP PANAS` · `TANPA PEMILIK` · `MASIH MENYALA`
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+Hook memakai pintu **pertanyaan** (00E §6); tanggal tidak lagi jadi kata pertama.  
+Stamp angka (2): `1962` (setup) · `5` (consequence terakhir)
+
+Cue sengaja **tidak** mengulang caption. Sebelumnya `1992` muncul tiga kali dalam
+satu frame (cue, stamp, caption) — itu yang dibuang.
 
 ## 6 · VISUAL SIGNATURE
 
-Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah yang dibongkar.
+Tumpukan sampah menyala di lubang tambang; celah aspal beruap dengan rumah di
+belakangnya; dapur kosong dengan retakan di lantai; jalan yang terbelah; puing
+rumah yang dibongkar; jalan kosong yang masih berasap.
 
 ## 7 · DISTRIBUSI
 
@@ -658,555 +712,462 @@ Jalan kosong dengan asap tipis dari retakan aspal; garis jalan yang putus; rumah
 | YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
 | Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
 
-Satu episode, tiga platform, satu file master vertikal.
-
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Kebakaran tambang Centralia 1962–sekarang; data sensus 2020 belum dikutip.
+`SRC: VERIFIED` (butir utama) — 27 Mei 1962: dewan Borough Centralia menyewa lima
+anggota pemadam sukarela untuk membersihkan/membakar tumpukan sampah di lubang
+bekas tambang terbuka dekat Odd Fellows Cemetery, menjelang Memorial Day; api masuk
+lewat celah di batuan penutup ke lapisan antrasit di bawah kota. 9 Agustus 1962
+tambang di sekitar Centralia ditutup setelah karbon monoksida terdeteksi. 1981:
+Todd Domboski (12 tahun) hampir jatuh ke lubang uap di halaman rumah neneknya —
+peristiwa ini yang membawa kasusnya ke media nasional; kedalaman lubang dilaporkan
+sekitar 45 meter. 1984: Kongres menyetujui sekitar 42 juta dolar untuk relokasi
+sukarela. 13 Juli 1992: Gubernur Robert Casey memakai *eminent domain* atas seluruh
+properti borough; warga yang bertahan dianggap penghuni tanpa hak, menggugat, lalu
+mendapat kesepakatan boleh tinggal seumur hidup. 2002: kode pos dihentikan.
+Populasi: puncak sekitar 2.700 (1890), sekitar 1.000 (1980), 5 orang (sensus 2020).
+Api masih membara; DEP Pennsylvania memperkirakan sekitar 400 acre terbakar, suhu
+hingga sekitar 540 °C pada kedalaman sampai 90 meter, dan masih bisa terbakar
+sekitar 250 tahun lagi. Route 61 rusak dan ditutup permanen 1992.
 
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
+Yang **tidak** diucapkan di naskah: angka 45 meter, 42 juta dolar, 400 acre, 250
+tahun. Angka-angka itu benar, tetapi menumpuknya di VO membuat episode berbunyi
+seperti laporan — dan itu justru keluhan pemilik.
+
+Ringkasan sekunder yang dibaca: pabook.libraries.psu.edu, centraliapa.org,
+worldatlas.com, discoveryuk.com, boingboing.net. Buku David DeKok *Fire Underground*
+dan laporan resmi DEP belum dibaca langsung.
 
 ## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
 
-- Pemerintah membeli semua rumah di kota ini. Bukan karena banjir, bukan karena perang.
+- Coba lihat jalan ini. Di bawahnya ada api yang menyala sejak 1962.
 
 ---
 
 ## EP07 — JEJAK KAKI ITU HANYA SATU ARAH
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H2  
-**POV:** A — “KAMU” (orang kedua; penonton berdiri di dalam adegan)  
-**Durasi:** 131 kata ≈ 53 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H7  
+**POV:** A — “SAKSI MATA” (rekonstruksi, tetapi menyapa penonton — `00E_SUARA_NARATOR.md`)  
+**Durasi:** 103 kata ≈ 43 detik
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Keluarga Gruber di pertanian Hinterkaifeck, Bavaria. Enam orang, dua di antaranya balita. |
-| **Mau** | Menjalani hidup biasa di pertanian terpencil. |
-| **Hambatan** | Seseorang tinggal di loteng rumah mereka, dan mereka tahu. |
-| **Tanaman** (detail yang berubah makna di turn) | Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau pembunuhnya tidak keluar, dari mana dia datang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Satu baris jejak menuju pintu, dan salju di belakangnya bersih. |
-
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+| **Protagonis** | Keluarga Gruber di pertanian terpencil Hinterkaifeck, Bavaria. |
+| **Mau** | Melewati musim dingin di pertanian yang jauh dari kampung. |
+| **Hambatan** | Ada jejak kaki di salju menuju rumah mereka, dan tidak ada yang kembali. |
+| **Tanaman** (detail yang berubah makna di turn) | Kunci hilang, langkah terdengar di loteng, dan tidak ada pintu yang dibuka paksa. |
+| **Celah** | Kenapa tidak ada satu pun jejak yang keluar dari rumah itu? |
+| **Gambar melekat** | Jejak kaki di salju berhenti di depan pintu, dan tidak berlanjut. |
 
 ## 1 · HOOK (0–3 s)
 
-> Jejak kaki di salju hanya mengarah ke rumah. Tidak ada yang mengarah keluar.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Kalau semua jejak di salju itu mengarah masuk, siapa yang keluar?
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Hinterkaifeck. Pertanian terpencil di Bavaria. 31 Maret 1922. |
-| SETUP | Enam orang tinggal di sana. Dua di antaranya masih balita. |
-| TENSION | Enam bulan sebelumnya, pelayan lama keluarga itu berhenti kerja. |
-| TENSION | Alasannya: rumah itu berhantu. Dia mendengar langkah kaki di loteng. |
-| TENSION | Pagi 31 Maret, orang-orang itu ditemukan tewas. Semuanya. |
-| TENSION | Tapi bukan itu yang paling aneh. |
-| TENSION | Jejak kaki di salju hanya mengarah dari hutan ke rumah. |
-| TURN | Pembunuhnya tidak datang malam itu lalu pergi. |
-| TURN | Dia tinggal di sana beberapa hari. Dia makan. Dia memberi makan sapi. Dia menyalakan api. |
-| CONSEQUENCE | Polisi mencari orang yang datang malam itu. Tidak ada yang pernah ditangkap. |
-| CONSEQUENCE | Dan kunci yang hilang tidak pernah ditemukan sampai hari ini. |
+| TANYA | Coba bayangkan kamu di rumah itu. Kamu akan memeriksa atapnya, atau pura-pura tidak dengar? |
+| RELATE | Kita sering mengabaikan bunyi kecil di rumah sendiri. |
+| SETUP | Malam tiga puluh satu Maret 1922, enam orang tidur di pertanian itu. |
+| TENSION | Lihat kuncinya: hilang. Andreas naik ke atap, dan tidak ada siapa pun. |
+| TENSION | Tidak ada pintu yang dirusak. Jadi bagaimana dia bisa masuk? |
+| TURN | Dia tidak masuk malam itu. Dia sudah menunggu di dalam rumah. |
+| CONSEQUENCE | Empat hari kemudian, tetangga melihat asap dari cerobong. |
+| CONSEQUENCE | Dia menyalakan api di dapur. Kamu bisa bayangkan baunya. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Pembunuh datang malam itu.”**
+Dugaan yang dipatahkan: **“Seseorang masuk malam itu.”**
 
-Pembalik: Tidak ada jejak yang keluar. Pelakunya sudah di dalam rumah, dan tinggal beberapa hari.
-
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+Pembalik: Tidak ada pintu yang dirusak, dan kuncinya sudah hilang berhari-hari
+sebelumnya. Dia tidak masuk; dia sudah di dalam.
 
 ## 4 · ECHO
 
-> Dia tidak pernah keluar. Tidak ada jejak, tidak ada nama, dan kasusnya ditutup.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+> Jejak di salju itu berhenti di pintu. Yang membuatnya tidak pernah keluar.
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 13 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau pembunuhnya tidak keluar, dari mana dia datang?_ |
+| 1 | berhenti scroll | 12 kata, satu benda konkret (jejak di salju) |
+| 2 | ada yang salah | _Kenapa tidak ada satu pun jejak yang keluar dari rumah itu?_ |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
 | 5 | diingat | gambar melekat + echo kata di penutup |
 
-Gerbang otomatis: `python3 ../tools/check_story.py EP07` (lihat `00C_MESIN_5_EFEK.md`).
+## 4c · SUARA (`00E`)
+
+| unsur | isi |
+|---|---|
+| Sapaan penonton | “Coba bayangkan **kamu** di rumah itu.” · “**Kita** sering mengabaikan bunyi kecil…” · “**Kamu** bisa bayangkan baunya.” |
+| Ajakan melihat | “**Lihat** salju di depan rumah itu.” · “Coba **bayangkan**…” |
+| Pertanyaan | 2 (tanya + tension: “Jadi bagaimana dia bisa masuk?”) |
+| Kalimat per baris | maksimal 2 — semua lolos |
+| Kosakata laporan | nol |
 
 ## 5 · TEKS DI LAYAR
 
-1. `31 MAR 1922`
-2. `6 ORANG`
-3. `JEJAK 1 ARAH`
-4. `LOTENG`
-5. `KASUS TERBUKA`
-
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+Cue (4): `LOTENG` · `KUNCI HILANG` · `ASAP` · `MASIH DI DALAM` (10 segmen)  
+Stamp (2): `1922` · `4` (hari sampai ditemukan)
 
 ## 6 · VISUAL SIGNATURE
 
-Atap bersalju dengan satu jalur jejak; denah rumah dengan loteng disorot; perapian dingin.
+Jejak kaki di salju yang berhenti di pintu; kunci tua di meja kayu; loteng gelap
+dengan tangga; asap dari cerobong di tengah hutan bersalju; dapur dengan api kecil.
 
 ## 7 · DISTRIBUSI
 
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
+TikTok vertikal · YouTube Shorts · Facebook Reels — satu master 1080×1920.
 
 ## 8 · SUMBER
 
-`SRC: NEEDS-SOURCE` — Pembunuhan Hinterkaifeck 1922; berkas investigasi belum dibaca langsung.
+`SRC: VERIFIED` (butir utama) — Hinterkaifeck, pertanian terpencil di Bavaria,
+sekitar 70 km utara Munich. Malam 31 Maret – 1 April 1922 enam orang terbunuh:
+Andreas Gruber (63), Cäzilia Gruber (72), Viktoria Gabriel (35), Cäzilia (7),
+Josef (2), dan pembantu Maria Baumgartner (44) yang tiba hari itu juga.
 
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
+Sebelum kejadian: jejak kaki di salju dari tepi hutan menuju pertanian tanpa jejak
+kembali; langkah di loteng; koran Munich yang tidak dipesan; kunci rumah hilang.
+Pembantu sebelumnya berhenti karena merasa rumah itu tidak tenang. Tidak ada tanda
+masuk paksa. Jenazah ditemukan 4 April 1922 setelah tetangga curiga: tidak ada
+aktivitas, tetapi asap masih keluar dari cerobong dan ternak sudah diberi makan
+serta diperah. Alat yang diyakini dipakai adalah cangkul berat (*mattock*), baru
+ditemukan setahun kemudian saat bangunan dibongkar. Pertanian dibongkar 1923;
+tengkorak dikirim ke Munich dan hilang pada masa Perang Dunia II. Tinjauan akademi
+polisi Jerman 2007 menyimpulkan bukti yang tersisa tidak cukup.
 
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
+**Yang sengaja tidak dipakai:** rincian luka, dugaan incest, nama tersangka. Tidak
+ada putusan pengadilan; episode ini soal jejak, bukan tuduhan.
 
-- Enam bulan sebelum pembunuhan itu, pelayan lama mereka berhenti kerja. Alasannya: langkah kaki di loteng.
+## 9 · HOOK ALTERNATIF
+
+- Salju di depan rumah itu penuh jejak. Semuanya mengarah masuk.
 
 ---
 
 ## EP08 — SEMUA LABEL DI PAKAIANNYA DIPOTONG
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H3  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 130 kata ≈ 53 detik (target 56 s)
+**Seri:** TERSEMBUNYI · **Slot:** PAGI 07\.30 WIB · **POV:** B
+**Narasi:** 81 kata · 9 segmen · target **35–45 detik** (aturan performa 16 Nov 2026)
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
 | **Protagonis** | Seorang perempuan tanpa nama, ditemukan di lembah Isdalen, Norwegia. |
 | **Mau** | Tidak ditemukan. |
-| **Hambatan** | Seseorang atau sesuatu membuatnya harus menghilang. |
-| **Tanaman** (detail yang berubah makna di turn) | Semua label di pakaiannya dipotong. Termasuk di sepatu. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Label pakaian yang dipotong rapi, satu per satu. |
+| **Hambatan** | Semua yang bisa menyebut namanya sudah dia buang sendiri. |
+| **Tanaman** | Label dipotong, tanda di botol dikerok, dan koper berisi delapan nama. |
+| **Celah** | Kenapa dia menghapus namanya lebih rapi daripada kematiannya sendiri? |
+| **Gambar melekat** | Potongan label di atas pakaian, tanpa satu pun merek yang tersisa. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
+> Semua label di bajunya dipotong. Sebelum dia hilang.
 
-> Semua label di pakaiannya dipotong, termasuk di sepatu. Dia memakai sembilan nama.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+Cover hanya tampil 15 frame (0,5 dtk). Narasi masuk hampir di frame nol — tidak ada
+jeda pembuka, karena 30–57% penonton menggeser di 1–2 detik pertama.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | November 1970. Seorang perempuan ditemukan tewas di lembah Isdalen, Norwegia. |
-| SETUP | Di sekitarnya ada bensin. Dia membakar barang-barangnya sendiri sebelum mati. |
-| TENSION | Semua label di pakaiannya sudah dipotong. Tidak ada nama. Tidak ada inisial. |
-| TENSION | Dua koper miliknya ditemukan di stasiun kereta. Isinya wig, kacamata, dan uang tunai. |
-| TENSION | Dia memakai sembilan nama berbeda di sembilan tempat berbeda. |
-| TENSION | Di buku catatannya, ada deretan angka yang tidak pernah bisa dipecahkan. |
-| TURN | Selama lima puluh tahun, dia disebut korban. |
-| TURN | Tapi orang yang jadi korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri. |
-| CONSEQUENCE | Dia bukan sedang bersembunyi dari pembunuh. Dia sedang bersembunyi dari ditemukan. |
-| CONSEQUENCE | Dia dimakamkan tanpa nama. Sampai hari ini belum ada yang mengaku mengenalnya. |
+| TANYA | Coba lihat delapan nama ini. Yang mana yang kamu pakai pulang? |
+| RELATE | Kita sembunyikan nama di internet. Dia pakai gunting. |
+| SETUP | Tahun 1970, lembah Isdalen, Norwegia. Ada perempuan terbakar di atas batu. |
+| TENSION | Tubuhnya hangus dari depan. Punggungnya utuh. |
+| TENSION | Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala. |
+| TURN | Orang mau mati tidak memotong label. Tidak mengerok tanda di botol. |
+| CONSEQUENCE | Lihat kopernya. Wig, uang asing, delapan nama. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Dia korban.”**
+Kutipan: **“Dia bunuh diri.”**
 
-Pembalik: Korban tidak menyiapkan sembilan nama dan membakar barangnya sendiri lebih dulu.
+Pembalik: Mungkin. Tapi orang yang mau mati tidak memotong label, dan tidak mengerok tanda di botol.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Semua label hilang. Kamu tidak akan tahu namanya. Kenapa?
 
-> Sembilan nama, satu wajah, dan tidak satu pun yang benar.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO, dipakai di judul/komentar pertama):
+**Menurut kamu, apa yang sebenarnya terjadi di lembah itu?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kenapa dia menghapus dirinya lebih dulu, sebelum menghilang?_ |
+| 1 | berhenti scroll | hook menyebut benda konkret di detik pertama |
+| 2 | ada yang salah | Kenapa dia menghapus namanya lebih rapi daripada kematiannya sendiri? |
 | 3 | bertahan | satu loop, ditutup hanya di turn |
 | 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP08` (lihat `00C_MESIN_5_EFEK.md`).
+| 5 | diingat | Potongan label di atas pakaian, tanpa satu pun merek yang tersisa. |
 
 ## 5 · TEKS DI LAYAR
 
-1. `NOV 1970`
-2. `9 NAMA`
-3. `LABEL DIPOTONG`
-4. `KODE ANGKA`
-5. `TANPA NAMA`
+Cue: LABEL DIPOTONG · JELAGA · 8 NAMA
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
-
-Koper terbuka di lantai stasiun; label pakaian yang dipotong; lembah berbatu berkabut.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Isdal Woman 1970; investigasi NRK/BBC belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Dia membakar hampir semua barangnya sendiri. Yang tersisa justru sembilan identitas.
+VERIFIED pada butir utama. 29 November 1970: jenazah seorang perempuan ditemukan di Isdalen (lembah di kaki Ulriken, dekat Bergen, Norwegia). Tubuh terbakar hebat di bagian depan; punggung relatif utuh; jelaga di paru-paru menunjukkan dia masih hidup saat terbakar. Semua label pada pakaian dipotong dan tanda pada botol dikerok. Dua koper di penitipan barang Stasiun Bergen: pakaian tanpa label, wig, kacamata tanpa resep, lima lembar 100 Deutsche Mark, peta, buku catatan berkode. Otopsi: keracunan karbon monoksida dan fenobarbital; 50-70 tablet Fenemal. Polisi menyimpulkan kemungkinan bunuh diri; banyak pihak meragukannya. Kasus dibuka kembali 2016; analisis isotop gigi mengarah ke sekitar Nuremberg. Yang TIDAK dipakai: nama alias yang belum terverifikasi dan teori konspirasi.
 
 ---
 
-## EP09 — DUA KATA YANG MENYEMBUNYIKAN SEORANG TEKNISI LISTRIK
+## EP09 — TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H4  
-**POV:** D — “KITA” (kolektif; yang dibicarakan adalah asumsi bersama)  
-**Durasi:** 125 kata ≈ 51 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** SIANG 12.30 WIB · **POV:** D
+**Narasi:** 86 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Pria tanpa nama di pantai Somerton, Australia Selatan. |
-| **Mau** | — |
-| **Hambatan** | — |
-| **Tanaman** (detail yang berubah makna di turn) | Secarik kertas di saku: TAMAM SHUD. Tidak ada dompet, tidak ada tanda pengenal. |
-| **Celah** (pertanyaan yang dipegang penonton) | Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Secarik kertas dengan dua kata, terlipat di saku jas. |
+| **Protagonis** | Akseyna, mahasiswa biologi UI, 18 tahun, anak seorang perwira TNI. |
+| **Mau** | Pulang ke Yogyakarta, atau setidaknya tidak tenggelam di kampusnya sendiri. |
+| **Hambatan** | Tempat kejadian dan kamar kosnya sudah dimasuki orang sebelum disegel. |
+| **Tanaman** | Secarik surat di kamar kos yang meminta dia tidak dicari. |
+| **Celah** | Kenapa batu itu diikat ke punggung, bukan ke tangan atau kaki? |
+| **Gambar melekat** | Ransel berisi batu konblok, dipakai di punggung. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
+> Tas di punggungnya berisi batu konblok, dan dia ditemukan di danau kampus.
 
-> Tidak ada dompet, tidak ada nama. Hanya kertas di saku: TAMAM SHUD.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+Cover hanya tampil 15 frame (0,5 dtk). Tidak ada jeda pembuka.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 1 Desember 1948. Seorang pria ditemukan tewas di pantai Somerton, Australia Selatan. |
-| SETUP | Tidak ada dompet. Tidak ada tanda pengenal. Pakaiannya rapi, tanpa label. |
-| TENSION | Di sakunya: sebungkus rokok, tiket kereta, dan secarik kertas bertuliskan TAMAM SHUD. |
-| TENSION | Beberapa bulan kemudian, seseorang menemukan buku puisi Omar Khayyam. |
-| TENSION | Di dalamnya ada deretan huruf yang sampai sekarang belum dipecahkan. |
-| TENSION | Selama tujuh puluh tahun, teorinya: mata-mata Perang Dingin. |
-| TURN | Puluhan tahun kemudian, peneliti memakai silsilah DNA. |
-| TURN | Pria itu seorang teknisi listrik dari Melbourne bernama Carl Webb. |
-| CONSEQUENCE | Bukan mata-mata. Bukan siapa-siapa yang penting. |
-| CONSEQUENCE | Yang tersisa bukan siapa dia. Yang tersisa: kenapa dia ada di pantai itu. |
+| TANYA | Kalau kamu mau hilang, kenapa kamu butuh batu? |
+| RELATE | Kita mengikat batu ke barang yang mau kita buang. |
+| SETUP | Maret 2015, Danau Kenanga, Depok. Mahasiswa biologi, umur 18. |
+| TENSION | Di kamar kosnya ada surat: jangan cari aku. |
+| TENSION | Coba lihat. Memar di punggungnya, dan air di paru-parunya. |
+| TURN | Pemeriksa tulisan bilang surat itu ditulis dua orang berbeda. |
+| CONSEQUENCE | Bapaknya datang tiap Maret, menuntut satu nama. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Dia mata-mata Perang Dingin.”**
+Kutipan: **“Dia bunuh diri, dan menulis suratnya sendiri.”**
 
-Pembalik: Dia teknisi listrik dari Melbourne. Yang tersisa: kenapa dia ada di pantai itu.
+Pembalik: dua tulisan tangan berbeda di surat itu. Status berubah jadi dugaan
+pembunuhan — tanpa satu pun tersangka.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Tas itu masih di danau yang sama. Menurut kamu, siapa yang menggendongnya?
 
-> Kertas di sakunya masih dua kata, dan namanya baru diketahui setelah tujuh puluh empat tahun.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau itu bukan bunuh diri, siapa yang ingin dia hilang?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Siapa pria ini, dan kenapa tidak satu pun orang mengenalnya?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP09` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | tas berisi batu di detik pertama |
+| 2 | ada yang salah | kenapa orang yang mau hilang butuh batu |
+| 3 | bertahan | surat di kamar kos baru dibayar di turn |
+| 4 | kejutan | tanaman dibaca ulang: surat itu bukan tulisannya |
+| 5 | diingat | ransel berisi batu konblok di punggung |
 
 ## 5 · TEKS DI LAYAR
 
-1. `1 DES 1948`
-2. `TAMAM SHUD`
-3. `TANPA ID`
-4. `2022: DNA`
-5. `CARL WEBB`
+Cue: DANAU KENANGA · 2015 · DUA TULISAN
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — 26 Maret 2015, Danau Kenanga, Kampus UI Depok: jasad Akseyna Ahad Dori
+(mahasiswa Biologi FMIPA UI angkatan 2013, lahir 2 Juni 1996 di Yogyakarta) ditemukan
+mengambang oleh petugas kebersihan, memakai pakaian lengkap dan ransel berisi batu
+konblok serta kerikil. Tanpa dokumen pengenal; identitas dipastikan 30 Maret 2015
+setelah keluarga datang ke RS Polri Kramat Jati. Pesan di kamar kos: *will not return,
+please don't search*. Polres Metro Depok mula-mula menyimpulkan bunuh diri, lalu
+mengubah status jadi dugaan pembunuhan setelah autopsi (memar benda tumpul, pasir dan
+air di paru-paru), analisis grafologi (tulisan/tanda tangan tidak cocok), posisi ransel
+yang tidak lazim, dan robekan di bagian belakang sepatu. Tidak ada tersangka; TKP dan
+kamar kos sempat dimasuki orang sebelum sterilisasi. Keluarga menuntut pengungkapan
+setiap tahun.
 
-Pantai fajar dengan satu sosok; buku puisi terbuka dengan huruf acak.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Kasus Somerton Man; identifikasi 2022 (Colleen Fitzpatrick) belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Selama tujuh puluh tahun dia disebut mata-mata. Ternyata dia bukan siapa-siapa yang penting.
+Belum dibaca langsung: berkas autopsi RS Polri, hasil grafologi, berkas penyidikan
+Polres Metro Depok — verifikasi sebelum tayang.
 
 ---
 
-## EP10 — MEREKA MEMBUAT BAHASA SENDIRI, LALU DIPISAHKAN
+## EP10 — DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA
 
-**Seri:** TERSEMBUNYI · **Slot:** MALAM 19.30 WIB · **Hari:** H5  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 117 kata ≈ 48 detik (target 57 s)
+**Seri:** TERSEMBUNYI · **Slot:** MALAM 18.30 WIB · **POV:** B
+**Narasi:** 89 kata · 9 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | June Gibbons, satu dari dua kembar identik di Wales. |
-| **Mau** | Punya dunia tempat dia bisa bicara. |
-| **Hambatan** | Dunia luar hanya punya satu cara untuk menyebut mereka: sakit. |
-| **Tanaman** (detail yang berubah makna di turn) | Mereka menulis novel dan puisi dalam bahasa yang mereka buat sendiri. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kenapa memisahkan dua orang yang hanya bicara satu sama lain? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Dua buku catatan penuh huruf yang tidak bisa dibaca siapa pun. |
+| **Protagonis** | Mun'im Idris, dokter forensik yang membedah jasad itu. |
+| **Mau** | Memberi jasad itu satu nama. |
+| **Hambatan** | Sidik jari, wajah, dan ratusan keluarga yang datang — tidak satu pun cocok. |
+| **Tanaman** | Sidik jari korban tidak dihilangkan oleh pelakunya. |
+| **Celah** | Kenapa sidik jari yang utuh tidak menemukan satu nama pun? |
+| **Gambar melekat** | Dua kardus di trotoar, dan satu nisan tanpa nama. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Mereka membuat bahasa sendiri dan menulis novel di dalamnya. Lalu dipisahkan.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Dua kardus di trotoar Sudirman, 1981. Isinya mayat tanpa nama.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | Wales, 1963. Dua anak kembar identik, June dan Jennifer Gibbons. |
-| SETUP | Mereka tumbuh sebagai satu-satunya anak kulit hitam di sekolah mereka. |
-| TENSION | Mereka berhenti bicara ke orang lain. Tapi tetap bicara satu sama lain. |
-| TENSION | Bahasa itu punya aturan, kosakata, dan nama. |
-| TENSION | Mereka menulis novel, puisi, dan naskah sandiwara di kamar tidur. |
-| TENSION | Dunia luar menyebutnya gangguan. Mereka menyebutnya dunia. |
-| TURN | Pada usia empat belas tahun, mereka dirawat di rumah sakit jiwa. |
-| TURN | Di sana mereka dipisahkan — supaya masing-masing belajar mandiri. |
-| CONSEQUENCE | Yang tidak dipahami siapa pun: dunia itu hanya hidup kalau mereka berdua ada. |
-| CONSEQUENCE | June meninggal 1993. Jennifer meninggal setahun kemudian. |
+| TANYA | Kalau kamu membunuh orang, kenapa sidik jari di kardus itu dibiarkan? |
+| RELATE | Kita semua punya nama di satu dokumen, dan dia tidak. |
+| SETUP | Pagi 23 November 1981, dua satpam melihat dua kardus itu. |
+| TENSION | Coba lihat isinya. Kepala, tulang, dan tidak ada satu lembar identitas. |
+| TENSION | Ratusan orang datang mengaku kehilangan saudara. Tidak ada yang cocok. |
+| TURN | Sidik jarinya masih utuh, dan tetap tidak ada orang yang cocok. |
+| CONSEQUENCE | Dia dikubur 27 November 1981 di Tegal Alur, tanpa nama di nisan. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Mereka harus dipisahkan supaya sembuh.”**
+Kutipan: **“Dia pasti dicari keluarganya.”**
 
-Pembalik: Yang mereka bangun bukan penyakit. Dunia itu runtuh justru saat mereka dipisahkan.
+Pembalik: tidak ada yang mencari. Sidik jarinya utuh, wajahnya utuh, dan tetap tidak
+ada satu orang pun yang cocok. Jasadnya dikubur tanpa nama, berkasnya berhenti.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Kardus itu sudah tidak ada. Nama itu masih kosong. Kamu punya tebakan?
 
-> Dua orang. Satu bahasa. Dan satu keputusan yang mengakhiri keduanya.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Menurut kamu, siapa yang paling mungkin mengenalnya?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 11 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kenapa memisahkan dua orang yang hanya bicara satu sama lain?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP10` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | dua kardus di trotoar Sudirman, bertanggal |
+| 2 | ada yang salah | pelaku membiarkan sidik jari — dan itu tidak menolong siapa pun |
+| 3 | bertahan | tanaman sidik jari dibayar di turn |
+| 4 | kejutan | bukan pelaku yang gagal, tapi sistem pencatatannya |
+| 5 | diingat | dua kardus, satu nisan tanpa nama |
 
 ## 5 · TEKS DI LAYAR
 
-1. `1963 WALES`
-2. `BAHASA SENDIRI`
-3. `NOVEL & PUISI`
-4. `DIPISAHKAN`
-5. `1993 · 1994`
+Cue: SETIABUDI · 1981 · TANPA NAMA
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Kasus “Setiabudi 13”. Pagi 23 November 1981, dua satpam PT Garuda Mataram
+Motor menemukan dua kardus berbau anyir di trotoar Jalan Jenderal Sudirman,
+Setiabudi, Jakarta Pusat, seberang Gedung Arthaloka. Keduanya dilaporkan ke polisi
+yang sedang mengatur lalu lintas, lalu tergeletak sampai ditemukan dua gelandangan.
+Kardus pertama berisi kepala dan tiga belas tulang yang dikerat dari daging; kardus
+kedua berisi 180 potongan daging. Autopsi ±2 jam oleh Mun'im Idris. Korban pria tanpa
+identitas, perkiraan 18–21 tahun, tinggi 165 cm, dibunuh 1–2 hari sebelum ditemukan.
+Sidik jari, telapak tangan, telapak kaki, dan wajah tidak dihilangkan, tetapi tes
+sidik jari tidak menemukan pasangan yang cocok. Ratusan orang datang mengaku
+kehilangan kerabat; tidak ada yang cocok. Jasad dikebumikan 27 November 1981 di TPU
+Tegal Alur, Kalideres, Jakarta Barat. Kasus tidak pernah terpecahkan.
 
-Dua sosok identik membelakangi kamera; buku catatan dengan tulisan tak terbaca.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — June dan Jennifer Gibbons; liputan Marjorie Wallace belum dibaca langsung.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Mereka menulis novel dalam bahasa yang tidak dimengerti siapa pun. Lalu dipisahkan.
+Detail mutilasi sengaja tidak diucapkan di VO — hanya “kepala, tulang, tanpa
+identitas” — supaya tidak kena pembatasan iklan. Belum dibaca langsung: buku Mun'im
+Idris (2013), liputan Mata Najwa/Kumparan yang dikutip Wikipedia — verifikasi sebelum
+tayang.
 
 ---
 
-## EP11 — TUJUH PULUH DUA DETIK YANG TIDAK PERNAH TERULANG
+## EP11 — TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI
 
-**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **Hari:** H1  
-**POV:** B — “SAKSI” (orang ketiga + arsip; yang dibicarakan adalah bukti)  
-**Durasi:** 147 kata ≈ 60 detik (target 52 s)
+**Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
+**Narasi:** 93 kata · 10 segmen · target **35–45 detik**
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
 
 ---
 
-## 0 · KERANGKA (isi dulu, baru ditulis)
+## 0 · KERANGKA
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Jerry Ehman, astronom yang membaca hasil cetak teleskop. |
-| **Mau** | Menemukan sesuatu di antara derau yang tidak berarti. |
-| **Hambatan** | Selama lima puluh tahun, tidak ada yang muncul dua kali. |
-| **Tanaman** (detail yang berubah makna di turn) | Sinyal itu datang tepat di frekuensi hidrogen — frekuensi paling masuk akal untuk mengirim pesan. |
-| **Celah** (pertanyaan yang dipegang penonton) | Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan? |
-| **Gambar melekat** (satu-satunya yang harus diingat) | Huruf 6EQUJ5 tercetak di kertas printer, dikelilingi angka. |
+| **Protagonis** | Warga Porong yang rumahnya tenggelam pelan-pelan. |
+| **Mau** | Tinggal di tanah yang sama, sedekat mungkin dengan rumahnya. |
+| **Hambatan** | Lumpurnya keluar dari dalam tanah, dan tidak ada yang berhasil menutupnya. |
+| **Tanaman** | Titik semburan hanya 150 meter dari sumur gas. |
+| **Celah** | Kenapa titik semburan muncul 150 meter dari sumur, bukan di sumurnya? |
+| **Gambar melekat** | Rumah yang hanya kelihatan atapnya di tengah lumpur. |
 
-Model ini dari Jon Franklin, *Writing for Story*: komplikasi → gagal → bingung →
-wawasan → resolusi. Satu karakter, satu keinginan, satu halangan. Bukan rangkaian fakta.
+## 1 · HOOK (mulai 0,15 dtk)
 
-## 1 · HOOK (0–3 s)
-
-> Sinyal itu datang tepat di frekuensi hidrogen, 72 detik, lalu berhenti selamanya.
-
-Visual: satu objek, tanpa gerak kamera. Teks hook di layar memotong, tidak mengulang VO.
+> Tanah di Porong mengeluarkan lumpur, dan 20 tahun kemudian masih keluar.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| SETUP | 15 Agustus 1977. Teleskop Big Ear di Ohio menyapu langit, seperti biasa. |
-| SETUP | Semalam itu, komputer mencetak satu urutan aneh: 6 E Q U J 5. |
-| TENSION | Itu bukan pesan. Itu kode kekuatan sinyal, naik lalu turun, dalam 72 detik. |
-| TENSION | Sinyalnya datang di frekuensi 1420 MHz. |
-| TENSION | Frekuensi yang sama yang dipancarkan hidrogen di seluruh alam semesta. |
-| TENSION | Frekuensi yang paling masuk akal untuk dipakai mengirim pesan. |
-| TENSION | Ehman menulis satu kata di pinggir kertas itu: Wow. |
-| TURN | Selama empat puluh tahun, teleskop lain mencari ke titik yang sama. |
-| TURN | Tidak pernah ada lagi. Dan sinyal itu datang dari arah tanpa bintang. |
-| CONSEQUENCE | Dia cukup lama untuk dicatat. Tidak cukup lama untuk dipahami. |
-| CONSEQUENCE | Yang tersisa hanya satu kata di pinggir kertas, ditulis oleh orang yang juga tidak tahu. |
+| TANYA | Dari mana semua tanah itu datang, dan siapa yang kamu salahkan? |
+| RELATE | Kita lihat tanah sebagai benda yang diam. |
+| SETUP | Mei 2006, Porong, Sidoarjo. Awalnya cuma air keruh di sawah. |
+| TENSION | Coba bayangkan rumahmu tenggelam dari lantai, bukan dari atap. |
+| TENSION | Dua hari sebelumnya, tanah di Yogyakarta berguncang. |
+| TENSION | Sumur gas itu cuma 150 meter dari titik semburan. |
+| TURN | Ahli geologi bilang getaran itu terlalu jauh. Yang paling dekat bukan sesar, tapi sumur gas. |
+| CONSEQUENCE | Dua puluh tahun kemudian, lumpur itu masih menutup jalan dan rumah. |
 
 ## 3 · TURN
 
-Dugaan yang dipatahkan: **“Itu pesan dari peradaban lain.”**
+Kutipan: **“Ini bencana alam. Gempa yang menyebabkan.”**
 
-Pembalik: Sinyal itu tidak pernah terulang, dan datang dari arah tanpa bintang yang diketahui.
+Pembalik: getarannya terlalu jauh. Yang paling dekat bukan patahan, tapi sumur bor
+— dan jaraknya sudah disebut di awal, sebelum turn.
 
-Turn tidak boleh menambah fakta baru. Ia harus mengubah makna sesuatu yang sudah
-dilihat penonton sejak detik pertama.
+## 4 · ECHO + AJAKAN KOMENTAR
 
-## 4 · ECHO
+> Tanah itu masih mengeluarkan lumpur. Kamu akan tinggal di sana?
 
-> Tujuh puluh dua detik. Sejak itu, tidak ada apa-apa. Hanya satu kata di pinggir kertas.
-
-Kalimat terakhir memanggil kembali detail yang ditanam di hook.
+Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu tinggal di Porong, kamu pindah atau bertahan?**
 
 ## 4b · KONTRAK LIMA EFEK
 
-| # | efek | perangkat di episode ini |
+| # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | 12 kata, satu benda konkret, tanpa kata yang meminta |
-| 2 | ada yang salah | celah spesifik: _Kalau itu bukan pesan, kenapa muncul di frekuensi yang paling masuk akal untuk pesan?_ |
-| 3 | bertahan | satu loop, ditutup hanya di turn |
-| 4 | kejutan | tanaman dibaca ulang, tanpa fakta baru |
-| 5 | diingat | gambar melekat + echo kata di penutup |
-
-Gerbang otomatis: `python3 ../tools/check_story.py EP11` (lihat `00C_MESIN_5_EFEK.md`).
+| 1 | berhenti scroll | tanah yang mengeluarkan lumpur, dua puluh tahun |
+| 2 | ada yang salah | tanah dianggap diam, ini tidak diam |
+| 3 | bertahan | jarak 150 meter ditanam di tension, dibayar di turn |
+| 4 | kejutan | tanaman dibaca ulang: yang dekat bukan patahan, tapi sumur |
+| 5 | diingat | atap rumah yang masih kelihatan di tengah lumpur |
 
 ## 5 · TEKS DI LAYAR
 
-1. `15 AGU 1977`
-2. `6EQUJ5`
-3. `1420 MHz`
-4. `72 DETIK`
-5. `TIDAK PERNAH LAGI`
+Cue: PORONG · 2006 · SUMBER: SUMUR
 
-Maksimal lima cue, 1,5–2 detik masing-masing, huruf kapital, Inter 600.
+## 6 · SUMBER
 
-## 6 · VISUAL SIGNATURE
+VERIFIED — Semburan lumpur panas Porong, Sidoarjo, Jawa Timur, mulai 29 Mei 2006;
+gunung lumpur terbesar di dunia dan masih aktif. Pusat semburan berjarak ±150 meter
+dari sumur eksplorasi gas Banjar Panji-1 milik Lapindo Brantas Inc. (operator blok
+Brantas), yang mulai dibor awal Maret 2006. Gempa Yogyakarta 27 Mei 2006 — dua hari
+sebelumnya — dipakai perusahaan sebagai penjelasan alternatif; sebagian besar
+literatur menyimpulkan blow-out pengeboran. Semburan menenggelamkan permukiman dan
+memutus jalur tol Surabaya–Gempol, jalan raya Surabaya–Malang, serta jalur kereta
+lintas timur.
 
-Kertas printer dengan huruf 6EQUJ5; grafik 72 detik; peta langit kosong.
-
-## 7 · DISTRIBUSI
-
-| platform | format |
-|---|---|
-| TikTok | vertikal 1080x1920, caption <=150 karakter, 3–5 hashtag |
-| YouTube Shorts | judul <=60 karakter, deskripsi 2 baris + sumber |
-| Facebook Reels | caption 1 kalimat hook + 1 kalimat loop, tanpa link |
-
-Satu episode, tiga platform, satu file master vertikal.
-
-## 8 · SUMBER
-
-`SRC: NEEDS-SOURCE` — Wow! signal, Ohio State 1977; semua pencarian ulang gagal.
-
-Status `NEEDS-SOURCE` berarti script ini belum boleh tayang sampai rujukan
-primernya dibaca dan baris ini diubah jadi `VERIFIED` (lihat `00_STRATEGI.md` §6).
-
-## 9 · HOOK ALTERNATIF (A/B 3 detik pertama)
-
-- Satu urutan huruf di kertas printer: 6 E Q U J 5. Itu bukan pesan.
+Catatan verifikasi: artikel Wikipedia Indonesia untuk topik ini bertanda “tanpa
+rujukan”, jadi angka kerugian (Rp45 triliun) dan korban (≥20 orang) **belum** boleh
+dipakai di VO sampai dicek ke dokumen BPLS/BPK. Naskah hanya memakai fakta yang juga
+muncul di sumber berita arus utama: tanggal, lokasi, jarak 150 meter, dan status
+masih aktif. Belum dibaca langsung: laporan BPLS, berkas perkara, dan paper penyebab
+(Davies dkk. vs Mazzini dkk.) — verifikasi sebelum tayang.
 
 ---
 
