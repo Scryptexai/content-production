@@ -1,7 +1,91 @@
 {
-  "fetched_at": "2026-11-15T12:04:40Z",
+  "fetched_at": "2026-11-15T13:05:03Z",
   "raw": {
     "posts": [
+      {
+        "_id": "6af9ad63febdc55cc7b5e9bc",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "title": "",
+        "content": "Tas di punggungnya berisi batu konblok, dan dia ditemukan di danau kampus.\n\nMaret 2015, Danau Kenanga, Kampus UI Depok. Seorang mahasiswa biologi berusia 18 tahun ditemukan mengambang dengan pakaian lengkap dan ransel berisi batu konblok.\n\nYang tidak cocok dengan cerita bunuh diri:\n• Di kamar kosnya ada surat: “Jangan cari aku.”\n• Ada memar di tubuhnya, dan air di paru-parunya.\n• Pemeriksa tulisan tangan menyebut surat itu ditulis dua orang berbeda.\n• Ransel itu dipakai di punggung, bukan diikatkan ke kaki.\n\nStatus kasusnya berubah dari bunuh diri menjadi dugaan pembunuhan. Sampai sekarang belum ada tersangka. Ayahnya datang setiap bulan Maret, menuntut satu nama.\n\nMenurut kamu, siapa yang menggendong tas itu ke danau?\n\nSumber: penyelidikan Polres Metro Depok 2015, autopsi RS Polri (via pemberitaan), analisis grafologi, arsip pemberitaan 2015–2024. Kasus ini masih terbuka; semua yang tidak dikonfirmasi resmi ditulis sebagai dugaan.\n\n#shorts #misteri #truecrime #kasustakterpecahkan #oddchapter",
+        "mediaItems": [
+          {
+            "_id": "6af9ad69febdc55cc7b5e9ce",
+            "url": "https://media.zernio.com/media/1794747742701_43fbff83a153d125_EP09_1080x1920_master.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1794747745942_4b2b89312801ca05_EP09_thumbnail.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-15T13:02:27.294Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "misteri",
+          "true crime",
+          "kasus tak terpecahkan",
+          "danau kenanga",
+          "universitas indonesia",
+          "depok",
+          "mahasiswa",
+          "2015",
+          "oddchapter",
+          "shorts"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-15T13:02:34.530Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-15T13:02:33.418Z",
+        "updatedAt": "2026-11-15T13:02:50.614Z",
+        "platforms": [
+          {
+            "_id": "6af9ad68febdc55cc7b5e9cc",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-15T13:02:27.294Z",
+            "platformSpecificData": {
+              "title": "Tas Berisi Batu di Punggungnya. Mahasiswa Itu Ditemukan di Danau Kampus.",
+              "categoryId": "24",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Dua tulisan di surat, memar di punggung, dan batu di dalam tas. Kalau memang mau menghilang, kenapa batunya harus di punggung?",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-15T13:02:50.419Z",
+            "platformPostId": "xyK0qZFEAtE",
+            "platformPostUrl": "https://www.youtube.com/watch?v=xyK0qZFEAtE",
+            "publishAttempts": 1,
+            "contentHash": "f1014a672cd476b2fbf7df20c0500a35"
+          }
+        ],
+        "origin": "zernio"
+      },
       {
         "_id": "6af8ebde26409c28f9b3285f",
         "userId": {
@@ -916,12 +1000,20 @@
     "pagination": {
       "page": 1,
       "limit": 12,
-      "total": 11,
+      "total": 12,
       "pages": 1,
       "nextCursor": null
     }
   },
   "posts": [
+    {
+      "id": "6af9ad63febdc55cc7b5e9bc",
+      "status": "published",
+      "createdAt": "2026-11-15T13:02:33.418Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xyK0qZFEAtE",
+      "platform_status": "published"
+    },
     {
       "id": "6af8ebde26409c28f9b3285f",
       "status": "published",
