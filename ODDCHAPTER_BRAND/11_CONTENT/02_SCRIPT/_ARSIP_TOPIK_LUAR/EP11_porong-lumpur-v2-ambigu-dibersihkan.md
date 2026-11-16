@@ -1,3 +1,12 @@
+# [ARSIP 16 Nov 2026] Topik ini tidak dipakai.
+#
+# Alasan pemilik: "topik nya kurang menarik itu masalah nya". Naskahnya sendiri
+# sudah dibersihkan dari kalimat ambigu (v2, 49 dtk, master di Drive
+# 1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-), tetapi topiknya tetap dinilai lemah:
+# Porong terlalu sering muncul di media Indonesia, dan tidak ada dokumen primer
+# yang bisa dibuka penonton.
+# Pengganti: T02 Valentich (EP11_enam-menit-terakhir-delta-sierra-juliet.md).
+
 # EP11 — LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
