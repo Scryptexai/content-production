@@ -1757,63 +1757,73 @@ for _e in EPISODES:
 # ══════════════════════════════════════════════════════════════════════════
 
 _INDONESIA_BATCH2 = {
-    # ── EP12 · tiga danau, tiga warna, satu puncak ─────────────────────────
+    # ── EP12 · kapal yang tidak bisa tenggelam ─────────────────────────────
+    # Topik T01 dari gerbang topik (11_CONTENT/01_IDEA/topik_kandidat.json):
+    # MV Joyita, 1955. Menggantikan Kelimutu (tier `umum`) yang ditahan.
+    # Ladder: fokus L2 — setiap angka di VO punya label di layar.
+    # Sumber dibaca 15 Nov 2026: Samoa Observer (17 Mei 2025), The Fiji Times,
+    # RNZ/PMN News (10 Jun 2022), Explorersweb, Popular Mechanics.
+    # Catatan riset: 11_CONTENT/02_SCRIPT/riset/EP12_mv-joyita.md
     "EP12": dict(
-        title="TIGA DANAU DI SATU PUNCAK BERWARNA BEDA, DAN TIDAK ADA YANG MENYURUHNYA",
+        title="KAPAL YANG TIDAK BISA TENGGELAM, DAN 25 ORANG YANG MENINGGALKANNYA",
         struktur="klimaks-awal",
-        thumb=["TIGA WARNA", "SATU PUNCAK"], thumb_text="TIGA WARNA",
-        durasi=42, plate="water",
-        protagonis="Warga Lio di Moni, Ende, yang membaca warna danau sebagai pesan.",
-        mau="Tahu apakah warna itu peringatan atau cuma kimia.",
-        hambatan="Warnanya berubah tanpa pola, dan tidak semua orang boleh naik.",
-        tanaman="Tiga danau punya nama untuk tiga jenis roh.",
-        hook="Tiga danau di satu puncak. Warnanya berbeda, dan berubah sendiri.",
-        hook_alt="Ada tiga danau di puncak gunung ini, dan ketiganya tidak pernah sepakat soal warna.",
-        tanya="Kalau air bisa berubah tanpa hujan, apa yang kamu kira ada di bawahnya?",
-        entitas="danau",
-        relate="Kita membaca gunung lewat air yang berubah warna.",
-        diskusi="Kalau warna itu tanda, kamu akan percaya atau minta data?",
-        celah="Kenapa tiga danau di satu puncak bisa punya warna yang berbeda?",
-        gambar_melekat="Tiga kawah berwarna di satu puncak, dilihat dari bibir kawah.",
+        thumb=["KAPAL", "KOSONG"], thumb_text="KAPAL KOSONG",
+        durasi=43, plate="vessel",
+        protagonis="Kapten Thomas Miller dan 24 orang yang naik ke kapal yang tidak bisa tenggelam.",
+        mau="Sampai ke Tokelau dengan satu mesin.",
+        hambatan="Air masuk pelan-pelan dari pipa yang tidak dilihat siapa pun.",
+        tanaman="Sekoci dan tiga rakit Carley hilang; kapalnya tetap terapung.",
+        hook="Kapal itu tidak bisa tenggelam. Dua puluh lima orang meninggalkannya.",
+        hook_alt="Dua puluh lima orang naik ke kapal yang tidak bisa tenggelam. Tidak ada yang tersisa.",
+        tanya="Kenapa mereka pergi dari kapal yang terapung?",
+        entitas="kapal",
+        relate="Kita percaya kapal yang tidak bisa tenggelam. Kamu juga.",
+        diskusi="Kalau kamu di kapal itu, kamu ikut turun ke sekoci?",
+        celah="Kenapa mereka meninggalkan kapal yang tidak bisa tenggelam?",
+        gambar_melekat="Sekoci kosong di sisi kapal yang masih terapung.",
         beats=[
-            ("tanya", "Kalau air bisa berubah tanpa hujan, apa yang kamu kira ada di bawahnya?"),
-            ("relate", "Kita membaca gunung lewat air yang berubah warna."),
-            ("setup", "Flores, 1.639 meter. Tiga kawah, tiga nama, tiga warna."),
-            ("tension", "Tiwu Ata Mbupu untuk orang tua. Tiwu Ata Polo untuk yang jahat."),
-            ("tension", "Coba lihat airnya. Hijau, lalu cokelat, lalu hitam, tanpa jadwal."),
-            ("turn", "Warna itu bukan tanda dari leluhur. Itu gas, besi, dan bakteri di dasar kawah."),
-            ("consequence", "Mei 2024, satu kawah berubah, dan status gunung dihitung ulang."),
+            ("tanya", "Kenapa mereka pergi dari kapal yang terapung?"),
+            ("relate", "Kita percaya kapal yang tidak bisa tenggelam. Kamu juga."),
+            ("setup", "3 Oktober 1955, Apia. Joyita berlayar dengan satu mesin."),
+            ("tension", "Mesin kiri rusak. Kapal tetap berlayar."),
+            ("tension", "Lima minggu kemudian, kapal ditemukan 970 kilometer dari jalurnya."),
+            ("tension", "Coba lihat jamnya: berhenti di 10.25. Lampu navigasi menyala."),
+            ("turn", "Penyelidikan bilang itu tidak bisa dijelaskan. Tapi air masuk lewat pipa bocor."),
+            ("consequence", "Enam dari dua puluh lima orang baru dinyatakan mati, enam puluh tujuh tahun kemudian."),
         ],
-        turn_quote="“Perubahan warna itu pertanda bencana.”",
-        turn_verdict="Pertandanya nyata. Pengirimnya bukan roh: gas belerang, besi, dan mikroba yang mengubah air.",
-        loop="Danau itu masih berubah. Menurut kamu, siapa yang menulis jadwalnya?",
-        cues=["KELIMUTU", "1.639 M", "TIGA NAMA"],
-        captions=["", "Kenapa berubah?", "Gunung dibaca dari air.", "Flores, 1.639 m.",
-                  "Tiga nama roh.", "Tanpa jadwal.", "Gas dan besi.", "Mei 2024.",
-                  "Siapa yang menulis jadwal?"],
-        caption_hi=["", "warna", "air", "Flores", "roh", "jadwal", "gas", "2024", "jadwal"],
-        stamps=[["1915", 3]],
-        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "clunk",
-             "04_tension": "page", "05_tension": "gust", "06_turn": "boom",
-             "07_consequence": "clunk", "99_loop": "boom"},
+        turn_quote="“Nasib mereka tidak bisa dijelaskan dari bukti yang diajukan.”",
+        turn_verdict=("Kapal itu tidak pernah dalam bahaya tenggelam, dan keputusan meninggalkannya "
+                      "justru satu-satunya yang tidak punya penjelasan."),
+        loop="Kapal itu masih ada. Kamu ikut turun ke sekoci?",
+        cues=["APIA 1955", "970 KM", "10.25", "PIPA BOCOR"],
+        captions=["", "Kenapa pergi?", "Kita percaya kapal.", "Apia, 1955.", "Satu mesin.",
+                  "970 km.", "10.25.", "Air masuk.", "6 dari 25.", "Kamu ikut?"],
+        caption_hi=["", "pergi", "kapal", "1955", "mesin", "970", "10.25", "air", "mati", "sekoci"],
+        visual=("Lambung miring 45 derajat dengan garis air yang basah; jam dinding kapal di 10.25; "
+                "sekoci kosong di atas dek; peta jalur Apia–Tokelau dan titik penemuan di utara Fiji."),
+        stamps=[["10.25", 6], ["970 KM", 5]],
+        sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
+             "04_tension": "clunk", "05_tension": "gust", "06_tension": "tick",
+             "07_turn": "boom", "08_consequence": "clunk", "99_loop": "boom"},
         sumber=(
-            "VERIFIED 2026-11-06 — Danau Kelimutu, puncak Gunung Kelimutu (1.639 m), Kabupaten "
-            "Ende, Flores, NTT: tiga danau kawah dengan warna berbeda. Nama ketiganya: Tiwu Ata "
-            "Mbupu (dipercaya tempat roh orang tua), Tiwu Nuwa Muri Koo Fai (jiwa muda), Tiwu Ata "
-            "Polo (roh yang berbuat jahat). Pertama didokumentasikan peneliti Belanda Van Suchtelen "
-            "1915, dikenal luas setelah tulisan Y. Bouman 1929. Penjelasan ilmiah: gas vulkanik "
-            "(H2S, SO2, CO2) dari ventilasi hidrotermal bereaksi dengan besi, mangan, dan sulfur; "
-            "warna hijau/biru dari kandungan sulfur, merah/cokelat dari oksidasi besi; penelitian "
-            "juga menemukan peran mikroorganisme ekstremofil (bakteri pengoksidasi sulfur dan besi). "
-            "Tim LIPI (Eko Soebowo, Hendra Bakti, Igan S. Sutawidjaja, Dadan Suherman) meneliti "
-            "Oktober 2006 dan menyimpulkan perubahan warna akibat mekanisme vulkanik; warna Tiwu "
-            "Nua Muri Koo Fai dipakai sebagai parameter status aktivitas. 2009 ketiga danau sempat "
-            "menjadi satu warna (hijau muda); Badan Geologi mencatat perubahan signifikan Mei 2024 "
-            "pada Tiwu Ata Polo (hijau kebiruan menjadi cokelat kehitaman). Klaim warga bahwa "
-            "perubahan warna mendahului bencana (mis. sebelum gempa Flores 1992) adalah keyakinan "
-            "lokal, bukan korelasi terukur — di naskah disebut sebagai cara warga membaca, bukan "
-            "sebagai fakta. Belum dibaca langsung: laporan Badan Geologi dan publikasi LIPI — "
-            "verifikasi sebelum tayang."
+            "TERVERIFIKASI SEBAGIAN 2026-11-15 — MV Joyita, kapal kayu 69 kaki, dibangun 1931 di "
+            "Wilmington Boat Works, Los Angeles, untuk sutradara Roland West. Berlayar dari Apia, "
+            "Samoa, 3 Oktober 1955 menuju Tokelau; 25 orang (16 awak, 9 penumpang, termasuk dua anak "
+            "berusia 6 dan 11 tahun). Keberangkatan tertunda sehari karena kopling mesin kiri rusak; "
+            "berlayar dengan satu mesin. Ditemukan 10 November 1955 oleh kapal Tuvalu (Kapten Gerald "
+            "Douglas) di utara Vanua Levu, Fiji, miring ±45 derajat dan ±970 kilometer dari jalur; "
+            "sekoci dan tiga rakit Carley hilang, logbook dan alat navigasi hilang, radio tersetel "
+            "2182 kHz (kanal darurat) dengan kabel antena putus sehingga jangkauan ±2 mil, jam listrik "
+            "berhenti di 10.25, lampu navigasi menyala, tas dokter berisi perban berdarah di geladak, "
+            "mesin kanan tertutup kasur. Sidang di Apia Februari 1956: lambung sehat; air masuk lewat "
+            "pipa pendingin yang terkorosi; pompa bilge tanpa saringan dan tersumbat; kapal tidak dalam "
+            "bahaya tenggelam karena lapisan gabus dan 80 drum kosong; kesimpulan resmi menyebut nasib "
+            "25 orang 'inexplicable on the evidence submitted at the inquiry', dan kapten dinilai lalai "
+            "berlayar dengan satu mesin. Hanya 6 dari 25 orang dinyatakan meninggal (PMN News, 10 Juni "
+            "2022). Sumber dibaca: Samoa Observer 17 Mei 2025, The Fiji Times, PMN News/RNZ 10 Juni "
+            "2022, Explorersweb, Popular Mechanics. BELUM dibaca: transkrip sidang Apia 1956 dan koran "
+            "Samoa 1955-56. Angka 970 km adalah pembulatan dari '600 mil' pada sumber; naskah memakai "
+            "satu angka saja supaya tidak bertentangan."
         ),
     ),
 
@@ -2362,7 +2372,7 @@ _LADDER = {
     "EP11": dict(tier="kontroversi", topik_status="pakai",
                  fokus="L3 dua klaim bertarung: perusahaan vs ahli geologi, sintesa di turn",
                  perbaikan="EP10 menutup dengan pertanyaan tapi tanpa lawan klaim — EP11 memperbaiki E (tesa-antitesa)"),
-    "EP12": dict(tier="umum", topik_status="ganti",
+    "EP12": dict(tier="misteri", topik_status="pakai",
                  fokus="L2 bukti terukur: setiap angka di VO punya label di layar",
                  perbaikan="EP11 angka sudah ada di VO tapi belum semua tampil di layar"),
     "EP13": dict(tier="umum", topik_status="tunda",

@@ -8,13 +8,39 @@
       "tier": "misteri",
       "pov": "Satu-satunya saksi adalah kapal yang tidak bisa tenggelam: radio setengah terendam, jam berhenti, dan 25 orang yang memilih pergi dari tempat paling aman.",
       "satu_pertanyaan": "Kenapa 25 orang meninggalkan kapal yang masih terapung?",
-      "dokumen": ["laporan pencarian Selandia Baru 1955", "sidang inquest Fiji 1956", "daftar muatan & jam kapal"],
+      "dokumen": [
+        "laporan pencarian Selandia Baru 1955",
+        "sidang inquest Fiji 1956",
+        "daftar muatan & jam kapal"
+      ],
       "indikator": {
-        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 2,
-        "taruhan": 2, "kelangkaan": 2, "celah": 2, "pov_langka": 2,
-        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 2
+        "kejanggalan": 2,
+        "dua_pihak": 2,
+        "dokumen_primer": 2,
+        "bukti_visual": 2,
+        "taruhan": 2,
+        "kelangkaan": 2,
+        "celah": 2,
+        "pov_langka": 2,
+        "aktualitas": 1,
+        "etika": 2,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 2
       },
-      "status": "boleh dipakai"
+      "status": "dipakai",
+      "dipakai_episode": "EP12",
+      "dokumen_dibaca": [
+        "Samoa Observer 17 Mei 2025",
+        "The Fiji Times",
+        "RNZ/PMN News 10 Jun 2022",
+        "Explorersweb",
+        "Popular Mechanics"
+      ],
+      "dokumen_belum_dibaca": [
+        "transkrip sidang Apia Feb 1956",
+        "koran Samoa 1955-56 (Papers Past)"
+      ],
+      "catatan_riset": "11_CONTENT/02_SCRIPT/riset/EP12_mv-joyita.md"
     },
     {
       "id": "T02",
@@ -23,11 +49,24 @@
       "tier": "misteri",
       "pov": "Kita punya suaranya, dan hanya suaranya: rekaman radio enam menit sebagai satu-satunya saksi.",
       "satu_pertanyaan": "Apa yang dia lihat sebelum berhenti menjawab?",
-      "dokumen": ["transkrip komunikasi ATC Melbourne 21 Okt 1978", "laporan Departemen Transport Australia", "berita koran 1978-79"],
+      "dokumen": [
+        "transkrip komunikasi ATC Melbourne 21 Okt 1978",
+        "laporan Departemen Transport Australia",
+        "berita koran 1978-79"
+      ],
       "indikator": {
-        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
-        "taruhan": 2, "kelangkaan": 1, "celah": 2, "pov_langka": 2,
-        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 1
+        "kejanggalan": 2,
+        "dua_pihak": 2,
+        "dokumen_primer": 2,
+        "bukti_visual": 1,
+        "taruhan": 2,
+        "kelangkaan": 1,
+        "celah": 2,
+        "pov_langka": 2,
+        "aktualitas": 1,
+        "etika": 2,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 1
       },
       "status": "perlu verifikasi"
     },
@@ -38,11 +77,24 @@
       "tier": "misteri",
       "pov": "Pesawat paling mudah dilacak di dunia hilang karena tidak ada yang mencari pada jam-jam pertama.",
       "satu_pertanyaan": "Ke mana pesawat sepanjang 40 meter itu pergi?",
-      "dokumen": ["berkas FBI wanted 2003", "catatan otoritas Angola", "laporan ICAO"],
+      "dokumen": [
+        "berkas FBI wanted 2003",
+        "catatan otoritas Angola",
+        "laporan ICAO"
+      ],
       "indikator": {
-        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
-        "taruhan": 1, "kelangkaan": 2, "celah": 2, "pov_langka": 2,
-        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 1
+        "kejanggalan": 2,
+        "dua_pihak": 2,
+        "dokumen_primer": 2,
+        "bukti_visual": 1,
+        "taruhan": 1,
+        "kelangkaan": 2,
+        "celah": 2,
+        "pov_langka": 2,
+        "aktualitas": 1,
+        "etika": 2,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 1
       },
       "status": "boleh dipakai"
     },
@@ -53,11 +105,24 @@
       "tier": "kontroversi",
       "pov": "Bukan kapalnya yang jadi masalah, tapi selembar izin yang tidak pernah dikeluarkan, dan penumpang yang tidak pernah dihitung.",
       "satu_pertanyaan": "Kenapa kapal tanpa izin bisa berlayar dengan 150 penumpang?",
-      "dokumen": ["laporan akhir KNKT 2018", "daftar manifest vs jumlah korban", "putusan pengadilan"],
+      "dokumen": [
+        "laporan akhir KNKT 2018",
+        "daftar manifest vs jumlah korban",
+        "putusan pengadilan"
+      ],
       "indikator": {
-        "kejanggalan": 1, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 2,
-        "taruhan": 2, "kelangkaan": 1, "celah": 1, "pov_langka": 2,
-        "aktualitas": 2, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 2
+        "kejanggalan": 1,
+        "dua_pihak": 2,
+        "dokumen_primer": 2,
+        "bukti_visual": 2,
+        "taruhan": 2,
+        "kelangkaan": 1,
+        "celah": 1,
+        "pov_langka": 2,
+        "aktualitas": 2,
+        "etika": 1,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 2
       },
       "status": "perlu verifikasi"
     },
@@ -68,11 +133,24 @@
       "tier": "kontroversi",
       "pov": "Putusan sudah ada, terpidana sudah ada, tapi satu pertanyaan di berkas itu tidak pernah dibuka.",
       "satu_pertanyaan": "Siapa yang memerintahkan, kalau bukan yang sudah dihukum?",
-      "dokumen": ["putusan PN Surabaya 1994", "putusan Mahkamah Agung", "laporan organisasi buruh"],
+      "dokumen": [
+        "putusan PN Surabaya 1994",
+        "putusan Mahkamah Agung",
+        "laporan organisasi buruh"
+      ],
       "indikator": {
-        "kejanggalan": 1, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
-        "taruhan": 2, "kelangkaan": 1, "celah": 2, "pov_langka": 2,
-        "aktualitas": 1, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 1
+        "kejanggalan": 1,
+        "dua_pihak": 2,
+        "dokumen_primer": 2,
+        "bukti_visual": 1,
+        "taruhan": 2,
+        "kelangkaan": 1,
+        "celah": 2,
+        "pov_langka": 2,
+        "aktualitas": 1,
+        "etika": 1,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 1
       },
       "status": "perlu verifikasi"
     },
@@ -85,9 +163,18 @@
       "satu_pertanyaan": "Dari mana cerita ini datang, kalau kapalnya tidak ada?",
       "dokumen": [],
       "indikator": {
-        "kejanggalan": 2, "dua_pihak": 1, "dokumen_primer": 0, "bukti_visual": 0,
-        "taruhan": 1, "kelangkaan": 0, "celah": 1, "pov_langka": 0,
-        "aktualitas": 0, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 1
+        "kejanggalan": 2,
+        "dua_pihak": 1,
+        "dokumen_primer": 0,
+        "bukti_visual": 0,
+        "taruhan": 1,
+        "kelangkaan": 0,
+        "celah": 1,
+        "pov_langka": 0,
+        "aktualitas": 0,
+        "etika": 1,
+        "satu_pertanyaan": 2,
+        "bahan_visual": 1
       },
       "status": "ditolak",
       "alasan_tolak": "Tidak ada dokumen primer, dan topiknya sudah dibahas ratusan kali. Ini contoh persis dari 'misteri yang membosankan'."
