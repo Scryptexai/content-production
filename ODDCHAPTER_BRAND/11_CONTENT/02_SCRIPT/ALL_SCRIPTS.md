@@ -1174,10 +1174,11 @@ masih aktif. Belum dibaca langsung: laporan BPLS, berkas perkara, dan paper peny
 ## EP12 — KAPAL YANG TIDAK BISA TENGGELAM, DAN 25 ORANG YANG MENINGGALKANNYA
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** A
-**Narasi:** 98 kata · 10 segmen · target **35–45 detik** (perkiraan mesin: 41 dtk)
+**Narasi:** 101 kata · 10 segmen · target **35–45 detik** (perkiraan mesin: 43 dtk)
 **Suara:** sesuai VO pemilik bila ada; kalau tidak, narator internal kanal
 **Tingkat latihan:** L2 — setiap angka di VO punya label di layar
 **Perbaikan dari EP11:** EP11 sudah memakai angka, tetapi belum semuanya tampil di layar
+**Turunan dari:** `07_LONGFORM/LF02_joyita/SCRIPT.md` — short ini adalah **potongan klimaks** babak 4–5, bukan naskah mandiri
 
 ---
 
@@ -1208,11 +1209,11 @@ yang tersisa.
 | TANYA | Kenapa mereka pergi dari kapal yang terapung? |
 | RELATE | Kita percaya kapal yang tidak bisa tenggelam. Kamu juga. |
 | SETUP | 3 Oktober 1955, Apia. Joyita berlayar dengan satu mesin. |
-| TENSION | Mesin kiri rusak. Kapal tetap berlayar. |
-| TENSION | Lima minggu kemudian, kapal ditemukan 970 kilometer dari jalurnya. |
-| TENSION | Coba lihat jamnya: berhenti di 10.25. Lampu navigasi menyala. |
-| TURN | Penyelidikan bilang itu tidak bisa dijelaskan. Tapi air masuk lewat pipa bocor. |
-| CONSEQUENCE | Enam dari dua puluh lima orang baru dinyatakan mati, enam puluh tujuh tahun kemudian. |
+| TENSION | Malam kedua, air masuk lewat pipa yang terkorosi. |
+| TENSION | Mereka menurunkan sekoci. Ditemukan lima minggu kemudian, 970 kilometer jauhnya. |
+| TENSION | Coba lihat jamnya: berhenti di 10.25. Kamu bisa bayangkan gelapnya? |
+| TURN | Penyelidikan bilang itu tidak bisa dijelaskan. Tapi mereka tidak salah membaca air; mereka salah membaca kapal. |
+| CONSEQUENCE | Enam dari dua puluh lima orang baru dinyatakan mati pada 2022. |
 
 ## 3 · TURN
 
@@ -1221,19 +1222,23 @@ Kutipan resmi: **“Nasib mereka tidak bisa dijelaskan dari bukti yang diajukan.
 
 Pembalik: air memang masuk — lewat pipa pendingin yang terkorosi, dan pompa bilge
 tersumbat. Tetapi kapal itu **tidak dalam bahaya tenggelam**: lambungnya berlapis
-gabus dan muatannya 80 drum kosong. Jadi temuan fisik menjelaskan kebocoran, dan
-tidak menjelaskan keputusannya.
+gabus dan muatannya 80 drum kosong.
+
+Jadi pembaliknya bukan "air masuk". Pembaliknya adalah: **mereka membaca air dengan
+benar, dan membaca kapal dengan salah.** Air memang naik. Yang salah adalah anggapan
+bahwa kapal yang tidak bisa tenggelam berarti orang di dalamnya aman. Inilah tesis
+LF02 babak 5, dipendekkan menjadi satu kalimat yang bisa diucapkan dalam dua detik.
 
 Sintesa kanal (di layar, tidak diucapkan dua kali):
-> Kapal itu tidak pernah dalam bahaya tenggelam, dan keputusan meninggalkannya
-> justru satu-satunya yang tidak punya penjelasan.
+> Kebocoran itu nyata. Yang keliru bukan pembacaan mereka atas air, melainkan
+> pembacaan atas kapal.
 
 ## 4 · ECHO + AJAKAN KOMENTAR
 
-> Kapal itu masih ada. Kamu ikut turun ke sekoci?
+> Kapal itu masih mengapung. Apakah itu berarti kamu selamat?
 
-Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu di kapal itu, kamu ikut
-turun ke sekoci?**
+Baris ini adalah pertanyaan penutup LF02 babak 7, kata per kata. Pertanyaan komentar
+(tidak diucapkan di VO): **Kalau kamu di kapal itu, kamu ikut turun ke sekoci?**
 
 ## 4b · KONTRAK LIMA EFEK
 
@@ -1241,18 +1246,39 @@ turun ke sekoci?**
 |---|---|---|
 | 1 | berhenti scroll | kapal yang tidak bisa tenggelam, dan 25 orang yang meninggalkannya |
 | 2 | ada yang salah | tempat paling aman justru yang ditinggalkan |
-| 3 | bertahan | sekoci hilang disebut sebelum turn, dibayar di turn |
-| 4 | kejutan | kebocoran dijelaskan, keputusan tidak |
+| 3 | bertahan | pipa bocor + sekoci hilang disebut sebelum turn, dibayar di turn |
+| 4 | kejutan | turn-nya bukan "air masuk", tapi "salah membaca kapal" |
 | 5 | diingat | sekoci kosong di sisi kapal yang masih terapung |
 
 ## 5 · TEKS DI LAYAR (fokus L2)
 
 Cue: `APIA 1955` · `970 KM` · `10.25` · `PIPA BOCOR`
 Stamp: `970 KM` (segmen 5), `10.25` (segmen 6)
-Caption: —, Kenapa pergi?, Kita percaya kapal., Apia 1955., Satu mesin., 970 km.,
-10.25., Air masuk., 6 dari 25., Kamu ikut?
+Caption: —, Kenapa pergi?, Kita percaya kapal., Apia 1955., Pipa bocor., Sekoci turun.,
+10.25., Salah baca kapal., 6 dari 25., Kamu selamat?
 
-## 6 · SUMBER
+## 6 · POTONGAN DARI NASKAH PANJANG
+
+Aturan sejak 16 Nov 2026: **short tidak ditulis sendiri.** Short adalah potongan
+klimaks dari naskah panjang. Tabel ini yang membuktikannya.
+
+| beat short | asal di `LF02_joyita/SCRIPT.md` | jam di LF02 |
+|---|---|---|
+| HOOK `Kapal itu tidak bisa tenggelam...` | babak 1 — "Kapal ini dibuat supaya tidak bisa tenggelam" + "Tidak satu pun dari mereka ada di sini sekarang" | 00:00 |
+| TANYA `Kenapa mereka pergi dari kapal yang terapung?` | babak 1 — "Kalau kapalmu tidak bisa tenggelam, kenapa kamu meninggalkannya di tengah malam?" | 00:38 |
+| RELATE `Kita percaya kapal yang tidak bisa tenggelam.` | babak 7 — "Yang salah adalah anggapan bahwa kapal yang tidak bisa tenggelam berarti orang di dalamnya aman" | 07:50 |
+| SETUP `3 Oktober 1955, Apia...` | babak 2 — kopling mesin kiri rusak 2 Oktober, berlayar dengan satu mesin | 01:20 |
+| TENSION `air masuk lewat pipa yang terkorosi` | babak 4 — "Kebocoran datang dari satu pipa di sistem pendingin air mentah yang termakan korosi" | 04:22 |
+| TENSION `Mereka menurunkan sekoci...` | babak 4 — "lebih dari 970 kilometer dari jalur yang seharusnya"; babak 5 — "Jadi mereka menurunkan sekoci dan rakit" | 04:40 |
+| TENSION `Coba lihat jamnya: 10.25` | babak 1 — "jam berhenti di 10.25. Lampu navigasi masih menyala" | 00:20 |
+| TURN `tidak salah membaca air; salah membaca kapal` | babak 5 — "mereka benar membaca air, dan salah membaca kapal" | 06:10 |
+| CONSEQUENCE `Enam dari dua puluh lima...` | babak 6 — "hanya enam dari dua puluh lima orang yang resmi dinyatakan meninggal" (2022) | 07:12 |
+| LOOP `Apakah itu berarti kamu selamat?` | babak 7 — "Kapalmu tidak tenggelam. Apakah itu berarti kamu selamat?" | 08:00 |
+
+Kalau naskah panjang diubah, tabel ini ikut diubah. Kalau satu baris short tidak
+punya baris pasangannya di LF02, baris itu ditulis ulang — bukan dipertahankan.
+
+## 7 · SUMBER
 
 TERVERIFIKASI SEBAGIAN — dibaca 15 Nov 2026: Samoa Observer (17 Mei 2025), The Fiji
 Times, RNZ/PMN News (10 Juni 2022), Explorersweb, Popular Mechanics.

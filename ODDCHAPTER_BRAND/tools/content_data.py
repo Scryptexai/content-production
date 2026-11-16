@@ -1781,24 +1781,28 @@ _INDONESIA_BATCH2 = {
         diskusi="Kalau kamu di kapal itu, kamu ikut turun ke sekoci?",
         celah="Kenapa mereka meninggalkan kapal yang tidak bisa tenggelam?",
         gambar_melekat="Sekoci kosong di sisi kapal yang masih terapung.",
+        # Potongan klimaks dari 07_LONGFORM/LF02_joyita/SCRIPT.md (babak 1, 4, 5, 6, 7).
+        # Kalimat di sini adalah kalimat yang sama dengan naskah panjang, dipendekkan —
+        # bukan naskah baru. Ubah naskah panjang dulu, baru potong.
         beats=[
             ("tanya", "Kenapa mereka pergi dari kapal yang terapung?"),
             ("relate", "Kita percaya kapal yang tidak bisa tenggelam. Kamu juga."),
             ("setup", "3 Oktober 1955, Apia. Joyita berlayar dengan satu mesin."),
-            ("tension", "Mesin kiri rusak. Kapal tetap berlayar."),
-            ("tension", "Lima minggu kemudian, kapal ditemukan 970 kilometer dari jalurnya."),
-            ("tension", "Coba lihat jamnya: berhenti di 10.25. Lampu navigasi menyala."),
-            ("turn", "Penyelidikan bilang itu tidak bisa dijelaskan. Tapi air masuk lewat pipa bocor."),
-            ("consequence", "Enam dari dua puluh lima orang baru dinyatakan mati, enam puluh tujuh tahun kemudian."),
+            ("tension", "Malam kedua, air masuk lewat pipa yang terkorosi."),
+            ("tension", "Mereka menurunkan sekoci. Ditemukan lima minggu kemudian, 970 kilometer jauhnya."),
+            ("tension", "Coba lihat jamnya: berhenti di 10.25. Kamu bisa bayangkan gelapnya?"),
+            ("turn", "Penyelidikan bilang itu tidak bisa dijelaskan. Tapi mereka tidak salah membaca air; mereka salah membaca kapal."),
+            ("consequence", "Enam dari dua puluh lima orang baru dinyatakan mati pada 2022."),
         ],
         turn_quote="“Nasib mereka tidak bisa dijelaskan dari bukti yang diajukan.”",
-        turn_verdict=("Kapal itu tidak pernah dalam bahaya tenggelam, dan keputusan meninggalkannya "
-                      "justru satu-satunya yang tidak punya penjelasan."),
-        loop="Kapal itu masih ada. Kamu ikut turun ke sekoci?",
+        turn_verdict=("Kebocoran itu nyata; yang keliru bukan pembacaan mereka atas air, melainkan "
+                      "pembacaan atas kapal. Kapal yang tidak bisa tenggelam tidak membuat orang "
+                      "di dalamnya aman."),
+        loop="Kapal itu masih mengapung. Apakah itu berarti kamu selamat?",
         cues=["APIA 1955", "970 KM", "10.25", "PIPA BOCOR"],
-        captions=["", "Kenapa pergi?", "Kita percaya kapal.", "Apia, 1955.", "Satu mesin.",
-                  "970 km.", "10.25.", "Air masuk.", "6 dari 25.", "Kamu ikut?"],
-        caption_hi=["", "pergi", "kapal", "1955", "mesin", "970", "10.25", "air", "mati", "sekoci"],
+        captions=["", "Kenapa pergi?", "Kita percaya kapal.", "Apia, 1955.", "Pipa bocor.",
+                  "Sekoci turun.", "10.25.", "Salah baca kapal.", "6 dari 25.", "Kamu selamat?"],
+        caption_hi=["", "pergi", "kapal", "1955", "pipa", "sekoci", "10.25", "kapal", "mati", "selamat"],
         visual=("Lambung miring 45 derajat dengan garis air yang basah; jam dinding kapal di 10.25; "
                 "sekoci kosong di atas dek; peta jalur Apia–Tokelau dan titik penemuan di utara Fiji."),
         stamps=[["10.25", 6], ["970 KM", 5]],

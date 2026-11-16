@@ -296,3 +296,26 @@ mengikat mulai sekarang — detail di `SKILLS/16_TOPIK_DAN_KURIKULUM.md`.
 Status 15 Nov 2026: 6 slot diganti (EP12, EP14, EP16, EP18, EP19), 2 ditahan
 (EP13, EP20), 5 kandidat lolos gerbang (T01–T05).
 
+## 17 · Nilai konten, bukan durasi (16 Nov 2026)
+
+Pemilik menolak pemotongan durasi sebagai jawaban atas kritik kualitas:
+"kalau cuma durasi yg dipersingkat tapi struktur bahasa nya tidak, 5 detik pun
+akan tetap sama hasilnya". Detail di `SKILLS/17_NILAI_KONTEN.md`.
+
+- **[M]** Setiap episode harus punya **tesis** satu kalimat yang menyalahkan bacaan
+  umum, **lawan** yang dikutip, **rantai bukti** (≥3 benda, ≥3 angka), dan
+  **konsekuensi** yang masih berjalan. Kurang satu = belum layak produksi.
+- **[M]** **Naskah panjang dulu, short kemudian.** Short adalah potongan klimaks
+  (babak 4–5) dari naskah panjang; short mandiri tidak boleh lagi ditulis.
+  Naskah panjang lulus `tools/check_longform.py` sebelum short dibuat.
+- **[H]** Setiap baris short wajib punya baris pasangan di naskah panjang, dicatat
+  di bagian "potongan dari naskah panjang" pada berkas short. Tidak ada pasangan =
+  baris ditulis ulang.
+- **[H]** Durasi mengikuti konteks: niche ini investigasi dengan sudut pandang,
+  jadi 8–12 menit adalah wadah tesis, dan 35–45 detik adalah pintunya.
+- **[H]** Papan skor nilai konten (7 pertanyaan, ≥11/14) dipakai saat meninjau.
+  Di bawah itu yang diperbaiki naskahnya, bukan durasinya.
+
+Status 16 Nov 2026: LF02 (MV Joyita) lulus gate panjang 8,2 menit; short EP12
+diturunkan ulang dari LF02 dan lulus 43 dtk · 7/7.
+
