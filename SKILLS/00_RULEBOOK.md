@@ -269,3 +269,30 @@ Dipelajari dari Nessie Judge/NERROR lalu diterjemahkan ke Shorts: detail di
 
 Skor 15 Nov 2026: rata-rata 4,95/7 dari 21 naskah. Yang paling sering gagal: `E`
 (9/21) dan `F` (5/21) — klaim tanpa lawan, dan episode tanpa angka.
+
+## 16 · Gerbang topik & tangga kualitas (16 Nov 2026)
+
+Keluhan pemilik: yang salah bukan bahasanya, tetapi **topiknya**. Aturan yang
+mengikat mulai sekarang — detail di `SKILLS/16_TOPIK_DAN_KURIKULUM.md`.
+
+- **[M]** Setiap kandidat topik ditulis sebagai kartu di
+  `11_CONTENT/01_IDEA/topik_kandidat.json` dengan 12 indikator (0–2). Wajib lulus
+  `python3 tools/score_topic.py --strict` (skor ≥17, ada kejanggalan/dua pihak,
+  `dokumen_primer` ≥1, `kelangkaan` ≥1, etika aman).
+- **[H]** Selama kemampuan POV belum L4, **hanya tier `misteri` dan `kontroversi`**
+  yang boleh masuk. Tier `umum` (fakta alam, budaya, wisata) ditahan; tier
+  `peristiwa` satu per satu sebagai latihan.
+- **[H]** Empat dari delapan tanda "akan membosankan" (daftar di dokumen §3) = tolak
+  sebelum menulis, bukan sesudah render.
+- **[H]** Setiap episode wajib punya field `tier`, `fokus`, dan `perbaikan` di
+  `content_data.py`. `perbaikan` = kelemahan episode sebelumnya yang ditutup.
+  Tanpa itu, episode tidak dibangun.
+- **[H]** Satu episode satu keterampilan (L1–L8). Dua sekaligus = tidak ada yang naik.
+- **[H]** Tidak ada naskah sebelum dokumen primer dibaca. `dokumen_primer` di kartu
+  topik hanya janji; `sumber` di `content_data.py` adalah bukti bahwa ia dibaca.
+- **[H]** Topik yang sudah padat di YouTube (Flannan, Dyatlov, Mary Celeste, Roanoke,
+  Isdal Woman) **tidak diulang**. Yang sudah tayang tetap jadi arsip, bukan contoh.
+
+Status 15 Nov 2026: 6 slot diganti (EP12, EP14, EP16, EP18, EP19), 2 ditahan
+(EP13, EP20), 5 kandidat lolos gerbang (T01–T05).
+

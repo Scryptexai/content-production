@@ -1,0 +1,96 @@
+{
+  "catatan": "Kartu topik untuk episode berikutnya. Skor 0-2 per indikator (maks 24). Diisi manusia, diperiksa tools/score_topic.py. status=boleh dipakai / perlu verifikasi / ditolak. Semua kandidat di sini BELUM dibaca sumbernya - jangan menulis naskah sebelum `dokumen_primer` benar-benar dibaca.",
+  "kandidat": [
+    {
+      "id": "T01",
+      "judul_kerja": "Kapal yang masih terapung, 25 orang yang tidak ada",
+      "topik": "MV Joyita, Pasifik selatan, 1955",
+      "tier": "misteri",
+      "pov": "Satu-satunya saksi adalah kapal yang tidak bisa tenggelam: radio setengah terendam, jam berhenti, dan 25 orang yang memilih pergi dari tempat paling aman.",
+      "satu_pertanyaan": "Kenapa 25 orang meninggalkan kapal yang masih terapung?",
+      "dokumen": ["laporan pencarian Selandia Baru 1955", "sidang inquest Fiji 1956", "daftar muatan & jam kapal"],
+      "indikator": {
+        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 2,
+        "taruhan": 2, "kelangkaan": 2, "celah": 2, "pov_langka": 2,
+        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 2
+      },
+      "status": "boleh dipakai"
+    },
+    {
+      "id": "T02",
+      "judul_kerja": "Enam menit terakhir seorang pilot",
+      "topik": "Frederick Valentich, Selat Bass, 1978",
+      "tier": "misteri",
+      "pov": "Kita punya suaranya, dan hanya suaranya: rekaman radio enam menit sebagai satu-satunya saksi.",
+      "satu_pertanyaan": "Apa yang dia lihat sebelum berhenti menjawab?",
+      "dokumen": ["transkrip komunikasi ATC Melbourne 21 Okt 1978", "laporan Departemen Transport Australia", "berita koran 1978-79"],
+      "indikator": {
+        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
+        "taruhan": 2, "kelangkaan": 1, "celah": 2, "pov_langka": 2,
+        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 1
+      },
+      "status": "perlu verifikasi"
+    },
+    {
+      "id": "T03",
+      "judul_kerja": "Pesawat yang lepas landas tanpa pilot yang sah",
+      "topik": "Boeing 727 hilang, Luanda, 2003 (N844AA)",
+      "tier": "misteri",
+      "pov": "Pesawat paling mudah dilacak di dunia hilang karena tidak ada yang mencari pada jam-jam pertama.",
+      "satu_pertanyaan": "Ke mana pesawat sepanjang 40 meter itu pergi?",
+      "dokumen": ["berkas FBI wanted 2003", "catatan otoritas Angola", "laporan ICAO"],
+      "indikator": {
+        "kejanggalan": 2, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
+        "taruhan": 1, "kelangkaan": 2, "celah": 2, "pov_langka": 2,
+        "aktualitas": 1, "etika": 2, "satu_pertanyaan": 2, "bahan_visual": 1
+      },
+      "status": "boleh dipakai"
+    },
+    {
+      "id": "T04",
+      "judul_kerja": "Izin yang tidak pernah ada",
+      "topik": "Tenggelamnya KM Sinar Bangun, Danau Toba, 2018",
+      "tier": "kontroversi",
+      "pov": "Bukan kapalnya yang jadi masalah, tapi selembar izin yang tidak pernah dikeluarkan, dan penumpang yang tidak pernah dihitung.",
+      "satu_pertanyaan": "Kenapa kapal tanpa izin bisa berlayar dengan 150 penumpang?",
+      "dokumen": ["laporan akhir KNKT 2018", "daftar manifest vs jumlah korban", "putusan pengadilan"],
+      "indikator": {
+        "kejanggalan": 1, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 2,
+        "taruhan": 2, "kelangkaan": 1, "celah": 1, "pov_langka": 2,
+        "aktualitas": 2, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 2
+      },
+      "status": "perlu verifikasi"
+    },
+    {
+      "id": "T05",
+      "judul_kerja": "Satu nama yang tidak pernah masuk putusan",
+      "topik": "Kasus Marsinah, 1993",
+      "tier": "kontroversi",
+      "pov": "Putusan sudah ada, terpidana sudah ada, tapi satu pertanyaan di berkas itu tidak pernah dibuka.",
+      "satu_pertanyaan": "Siapa yang memerintahkan, kalau bukan yang sudah dihukum?",
+      "dokumen": ["putusan PN Surabaya 1994", "putusan Mahkamah Agung", "laporan organisasi buruh"],
+      "indikator": {
+        "kejanggalan": 1, "dua_pihak": 2, "dokumen_primer": 2, "bukti_visual": 1,
+        "taruhan": 2, "kelangkaan": 1, "celah": 2, "pov_langka": 2,
+        "aktualitas": 1, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 1
+      },
+      "status": "perlu verifikasi"
+    },
+    {
+      "id": "T06",
+      "judul_kerja": "Kapal yang hanya ada di koran",
+      "topik": "Ourang Medan (contoh kandidat yang harus ditolak)",
+      "tier": "misteri",
+      "pov": "Semua orang pernah dengar; tidak ada satu arsip pun yang bisa ditunjuk.",
+      "satu_pertanyaan": "Dari mana cerita ini datang, kalau kapalnya tidak ada?",
+      "dokumen": [],
+      "indikator": {
+        "kejanggalan": 2, "dua_pihak": 1, "dokumen_primer": 0, "bukti_visual": 0,
+        "taruhan": 1, "kelangkaan": 0, "celah": 1, "pov_langka": 0,
+        "aktualitas": 0, "etika": 1, "satu_pertanyaan": 2, "bahan_visual": 1
+      },
+      "status": "ditolak",
+      "alasan_tolak": "Tidak ada dokumen primer, dan topiknya sudah dibahas ratusan kali. Ini contoh persis dari 'misteri yang membosankan'."
+    }
+  ]
+}

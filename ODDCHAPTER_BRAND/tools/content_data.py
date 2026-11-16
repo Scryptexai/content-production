@@ -2314,3 +2314,85 @@ _INDONESIA_BATCH4 = {
 for _e in EPISODES:
     if _e["ep"] in _INDONESIA_BATCH4:
         _e.update(_INDONESIA_BATCH4[_e["ep"]])
+
+
+# ══════════════════════════════════════════════════════════════════════════
+# TANGGA KUALITAS · 15 Nov 2026 — tier topik + fokus + perbaikan per episode
+#
+# Aturan pemilik: setiap episode harus menaikkan satu keterampilan, dan
+# sekaligus menutup satu kelemahan episode sebelumnya. Isi `fokus` = yang
+# dilatih, `perbaikan` = kelemahan episode sebelumnya yang ditutup.
+# `tier` dipakai gerbang topik (tools/score_topic.py): selama kemampuan POV
+# belum L4, hanya `misteri` dan `kontroversi` yang boleh masuk.
+# `topik_status`: pakai / ganti / tunda.
+# Lihat SKILLS/16_TOPIK_DAN_KURIKULUM.md.
+# ══════════════════════════════════════════════════════════════════════════
+
+_LADDER = {
+    "EP01": dict(tier="misteri", topik_status="arsip",
+                 fokus="L1 kronologi: tanggal, tempat, satu detail fisik",
+                 perbaikan="— (episode pertama; belum ada yang bisa diperbaiki)"),
+    "EP02": dict(tier="misteri", topik_status="arsip",
+                 fokus="L2 petunjuk: urutan kejanggalan tanpa putusan",
+                 perbaikan="EP01 kurang investigasi — EP02 menambah tiga petunjuk berurut"),
+    "EP03": dict(tier="misteri", topik_status="arsip",
+                 fokus="L1 kronologi yang lebih ketat (rute, kargo, tanggal)",
+                 perbaikan="EP02 tidak punya angka terukur — EP03 memakai kargo dan tanggal"),
+    "EP04": dict(tier="misteri", topik_status="arsip",
+                 fokus="L2 petunjuk dari benda (kunci, tangki, sepatu)",
+                 perbaikan="EP03 kronologi kuat, taruhan manusia lemah — EP04 memakai lima keluarga"),
+    "EP05": dict(tier="misteri", topik_status="arsip",
+                 fokus="L1 kronologi tiga tahun + satu kata",
+                 perbaikan="EP04 bukti bertumpuk tanpa arah — EP05 memusatkan satu kata sebagai bukti"),
+    "EP06": dict(tier="peristiwa", topik_status="arsip",
+                 fokus="L3 sebab-akibat: satu keputusan kecil yang berjalan 60 tahun",
+                 perbaikan="EP05 dua pihak tidak ada — EP06 menambah versi dewan kota vs warga"),
+    "EP07": dict(tier="misteri", topik_status="arsip",
+                 fokus="L2 petunjuk fisik (jejak, loteng, kandang)",
+                 perbaikan="EP06 taruhan manusia abstrak — EP07 memakai enam korban bernama"),
+    "EP08": dict(tier="misteri", topik_status="arsip",
+                 fokus="L4 POV: benda sebagai satu-satunya saksi (label yang dipotong)",
+                 perbaikan="EP07 kronologi berlapis tapi tidak ada satu pun dokumen ditunjuk — EP08 memakai isi koper"),
+    "EP09": dict(tier="misteri", topik_status="pakai",
+                 fokus="L7 subjek manusia: keluarga yang menuntut satu nama",
+                 perbaikan="EP08 topik luar negeri, kedekatan nol — EP09 memakai kasus Indonesia yang masih terbuka"),
+    "EP10": dict(tier="misteri", topik_status="pakai",
+                 fokus="L4 POV: identitas sebagai objek yang hilang, bukan pelaku",
+                 perbaikan="EP09 taruhan keluarga kuat tapi bukti terukur lemah — EP10 memakai sidik jari, 27 Nov 1981, TPU Tegal Alur"),
+    "EP11": dict(tier="kontroversi", topik_status="pakai",
+                 fokus="L3 dua klaim bertarung: perusahaan vs ahli geologi, sintesa di turn",
+                 perbaikan="EP10 menutup dengan pertanyaan tapi tanpa lawan klaim — EP11 memperbaiki E (tesa-antitesa)"),
+    "EP12": dict(tier="umum", topik_status="ganti",
+                 fokus="L2 bukti terukur: setiap angka di VO punya label di layar",
+                 perbaikan="EP11 angka sudah ada di VO tapi belum semua tampil di layar"),
+    "EP13": dict(tier="umum", topik_status="tunda",
+                 fokus="L5 dokumen di layar: kutipan sumber saat klaim diucapkan",
+                 perbaikan="EP12 tidak ada dokumen — EP13 belajar menampilkan kutipan"),
+    "EP14": dict(tier="umum", topik_status="ganti",
+                 fokus="L5 dokumen di layar (lanjutan), tanpa mengarang bukti",
+                 perbaikan="EP13 klaim budaya vs sains tidak berimbang — EP14 belajar menimbang dua klaim"),
+    "EP15": dict(tier="peristiwa", topik_status="pakai",
+                 fokus="L6 kontroversi berimbang: peta zona merah vs warga yang kembali",
+                 perbaikan="EP14 bukti visual lemah — EP15 memakai rekaman dan peta likuefaksi"),
+    "EP16": dict(tier="umum", topik_status="ganti",
+                 fokus="L4 POV: siapa yang menghitung umur, dan dengan alat apa",
+                 perbaikan="EP15 kronologi bencana terlalu padat — EP16 belajar memilih satu detail saja"),
+    "EP17": dict(tier="peristiwa", topik_status="pakai",
+                 fokus="L6 kontroversi berimbang: warga yang menolak pindah dari zona merah",
+                 perbaikan="EP16 taruhan manusia tipis — EP17 memakai orang yang tinggal di lereng"),
+    "EP18": dict(tier="umum", topik_status="ganti",
+                 fokus="L2 bukti terukur (peta, citra, pengukuran)",
+                 perbaikan="EP17 angka letusan belum punya pasangan visual"),
+    "EP19": dict(tier="umum", topik_status="ganti",
+                 fokus="L5 dokumen ilmiah di layar",
+                 perbaikan="EP18 sumber masih berita, bukan dokumen"),
+    "EP20": dict(tier="peristiwa", topik_status="tunda",
+                 fokus="L7 subjek manusia: yang selamat karena cerita, bukan karena alat",
+                 perbaikan="EP19 tidak ada manusia — EP20 mengembalikan taruhan manusia"),
+    "EP21": dict(tier="kontroversi", topik_status="pakai",
+                 fokus="L3 dua klaim bertarung: dokter perusahaan vs pengukuran radiasi sendiri",
+                 perbaikan="EP20 klaim tunggal — EP21 memakai dokumen perusahaan yang berlawanan dengan kesaksiannya"),
+}
+
+for _e in EPISODES:
+    _e.update(_LADDER.get(_e["ep"], {}))

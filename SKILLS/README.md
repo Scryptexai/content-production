@@ -20,6 +20,7 @@ jalan di repo ini: `AGENTS.md`, `WORKFLOW.md`, `00_RULEBOOK.md`.
 | 5 | `SKILLS/elevenlabs-tts-2026/SKILL.md` + `PUNCTUATION.md` + `QA_RUBRIC.md` | sebelum narasi direkam |
 | 6 | `ODDCHAPTER_BRAND/11_CONTENT/00B`, `00C`, `00E` | aturan internal kanal (sudah lebih tua & lebih ketat) |
 | 7 | `SKILLS/15_NERROR_INFO_DESIGN.md` + `tools/check_info_design.py` | desain informasi: kronologi → petunjuk → klaim vs bukti → celah terbuka |
+| 8 | `SKILLS/16_TOPIK_DAN_KURIKULUM.md` + `tools/score_topic.py` | gerbang topik (12 indikator), uji POV, tangga kualitas L1–L8 |
 
 Kalau dokumen root bertabrakan dengan `00B`/`00C`/`00E`, **yang menang adalah
 `00B`/`00C`/`00E`**, karena di situlah gerbang otomatis (`tools/check_story.py`)
