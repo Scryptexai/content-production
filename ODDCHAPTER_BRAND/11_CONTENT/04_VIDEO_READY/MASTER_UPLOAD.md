@@ -34,6 +34,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | v2 | 53,50 s | 15,3 MB | 14 Nov 2026 | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` |
 | EP09 | **v4 — VO buatan user + cover benar** | 53,78 s | 32,9 MB | 16 Nov 2026 | `1leWLFt4QuLEgXMSmnemYAXRWlMr9vUCT` |
 | EP10 | **v1 — VO buatan user, 9 foto segmen** | 59,90 s | 60,0 MB | 15 Nov 2026 | `1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX` |
+| EP11 | **v1 — VO internal `voice-04` (sama dengan EP06/07), 10 foto segmen** | 52,27 s | 20,0 MB | 16 Nov 2026 | `1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
@@ -69,3 +70,13 @@ jeda hening nyata. 1797 frame, −14,7 LUFS, TP −1,4 dB. Tayang 15 Nov 2026
 EP11–EP21. Untuk tiap episode: VO pemilik dari Drive dulu (bukan TTS), lalu
 `content_data.py` (cue 9 segmen), foto 9 segmen, cover, render, unggah Drive,
 antrean YouTube + TikTok. Pola EP09 dan EP10 bisa dipakai apa adanya.
+
+## Catatan aset kerja EP11
+
+Master EP11 (`1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv`, 20.043.645 B, sha256
+`8e0821c9…f284b89`) dibangun 16 Nov 2026 di sandbox: VO internal `voice-04`
+(perintah pemilik: pakai VO EP05/EP06), 10 segmen mp3 di `public/audio/EP11/`,
+bed + sfx dari `build_bed.py`/`build_sfx.py`, 10 foto segmen di
+`public/plates/EP11/`. Folder `public/` di-ignore, jadi foto dan mp3 **tidak**
+masuk Git — kalau EP11 harus dirender ulang, VO bisa dibuat lagi dengan
+`voice-04` dari `content_data.py` (teksnya identik), foto harus dibuat lagi.

@@ -38,6 +38,8 @@ HEADLINE = {
     "EP08": ["TANPA", "NAMA"],
     "EP09": ["TAS BERISI", "BATU"],
     "EP10": ["DUA KARDUS", "TANPA NAMA"],
+    "EP11": ["LUMPUR", "TAK BERHENTI"],
+    "EP12": ["KAPAL", "KOSONG"],
 }
 
 SPEC = {

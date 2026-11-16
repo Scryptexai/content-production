@@ -1686,6 +1686,8 @@ _INDONESIA = {
         struktur="klimaks-awal",
         thumb=["LUMPUR", "TAK BERHENTI"], thumb_text="LUMPUR TAK BERHENTI",
         durasi=43, plate="plume",
+        photos=["01_hook", "02_tanya", "03_relate", "04_setup", "05_tension",
+                "06_tension", "07_tension", "08_turn", "09_consequence", "10_loop"],
         protagonis="Warga Porong yang rumahnya tenggelam pelan-pelan.",
         mau="Tinggal di tanah yang sama, sedekat mungkin dengan rumahnya.",
         hambatan="Lumpurnya keluar dari dalam tanah, dan tidak ada yang berhasil menutupnya.",

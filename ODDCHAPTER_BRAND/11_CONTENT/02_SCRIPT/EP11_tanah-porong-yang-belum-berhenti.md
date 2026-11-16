@@ -2,7 +2,8 @@
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
 **Narasi:** 93 kata · 10 segmen · target **35–45 detik**
-**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM` — sesi ini memakai
+`voice-04` (VO internal yang sama dengan EP06–EP07), sesuai perintah pemilik 16 Nov 2026.
 
 ---
 

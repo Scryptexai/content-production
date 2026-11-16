@@ -30,6 +30,7 @@ dan indeks ini. Salinan yang bisa ditonton ada di Drive → folder `video ready`
 | EP06 v2 | API DI BAWAH KOTA YANG TIDAK PERNAH DIPADAMKAN (CENTRALIA) | 54,38 s | 16,0 MB | `1O4HvhK22QLjxXuLkhOzngAH-WS_jGLtH` | `10_FILM/remotion/output/episodes/EP06_1080x1920_master.mp4` |
 | EP07 | JEJAK KAKI ITU HANYA SATU ARAH (HINTERKAIFECK) | 48,28 s | 14,1 MB | `1OrIaFbZKj_yufo-HOSpVCYxnhmUHYKc8` | `10_FILM/remotion/output/episodes/EP07_1080x1920_master.mp4` |
 | EP08 v2 | SEMUA LABEL DI PAKAIANNYA DIPOTONG (ISDAL, 1970) — VO turbo 0.85 | 53,50 s | 15,3 MB | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` | `10_FILM/remotion/output/episodes/EP08_1080x1920_master.mp4` |
+| EP11 | TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI — VO internal `voice-04` (16 Nov 2026), 10 segmen foto | 52,27 s | 20,0 MB | `1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv` | `10_FILM/remotion/output/episodes/EP11_1080x1920_master.mp4` |
 | EP09 v3 | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS — narasi dari VO buatan user (52,85 dtk), 9 segmen mengikuti cue SRT user (16 Nov 2026) | 53,78 s | 51,6 MB | `1ZMikYIar_HDYmS8wY5-wGbBDdM9DTnOL` | `10_FILM/remotion/output/episodes/EP09_1080x1920_master.mp4` |
 
 Buka Drive: `https://drive.google.com/file/d/<file id>/view`

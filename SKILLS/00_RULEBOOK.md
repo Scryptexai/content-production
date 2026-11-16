@@ -319,3 +319,35 @@ akan tetap sama hasilnya". Detail di `SKILLS/17_NILAI_KONTEN.md`.
 Status 16 Nov 2026: LF02 (MV Joyita) lulus gate panjang 8,2 menit; short EP12
 diturunkan ulang dari LF02 dan lulus 43 dtk · 7/7.
 
+## 18 · Render di sandbox sesi (16 Nov 2026)
+
+Image sesi ini **tidak** punya `ffmpeg`, `ffprobe`, Chromium, atau font, dan itu
+bukan alasan untuk menunda render. Yang dipakai EP11 (dan harus diulang):
+
+```bash
+# 1 · toolchain audio
+pip install --break-system-packages pillow imageio-ffmpeg fonttools brotli
+sudo ln -sf "$PWD/ODDCHAPTER_BRAND/10_FILM/remotion/node_modules/@ffmpeg-installer/linux-x64/ffmpeg" /usr/local/bin/ffmpeg
+sudo ln -sf "$PWD/ODDCHAPTER_BRAND/10_FILM/remotion/node_modules/@ffprobe-installer/linux-x64/ffprobe" /usr/local/bin/ffprobe
+
+# 2 · remotion + chromium (sparticuz, tidak butuh unduhan Chrome dari Google)
+cd ODDCHAPTER_BRAND/10_FILM/remotion && npm install --no-audit --no-fund
+
+# 3 · font + brand (font WOFF2 → TTF butuh brotli)
+cd ../.. && bash tools/fetch_fonts.sh && python3 tools/export_brand_json.py
+node 10_FILM/remotion/scripts/prepare-assets.mjs
+
+# 4 · naskah → video
+python3 tools/build_timing.py EP11 && python3 tools/build_bed.py EP11 \
+  && python3 tools/build_sfx.py EP11 && python3 tools/build_episodes_json.py
+cd 10_FILM/remotion && node scripts/still-episode.mjs EP11   # QA frame
+node scripts/render-episode.mjs EP11                          # ±16 menit, 1.568 frame
+```
+
+- Render keluar `yuvj420p` (full range). Master final **wajib** dikonversi:
+  `-vf "scale=in_range=full:out_range=tv,format=yuv420p"` + `-pix_fmt yuv420p`,
+  audio `-c:a copy` (loudnorm sudah −14 LUFS / TP −1,5 dari skrip render).
+- `thumbnail_render.py` butuh `HEADLINE[ep]` — tambahkan entri dulu, kalau tidak
+  `KeyError`. Nama plate: `EPxx_9x16.png` untuk cover, `EPxx_plate.png` untuk 16:9.
+- `npm install` menulis ~330 paket; `node_modules/` di-ignore, jadi biayanya
+  kembali setiap sesi baru (±30 detik).
