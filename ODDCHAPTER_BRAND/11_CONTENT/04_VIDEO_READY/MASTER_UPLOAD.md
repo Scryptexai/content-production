@@ -34,7 +34,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | v2 | 53,50 s | 15,3 MB | 14 Nov 2026 | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` |
 | EP09 | **v4 — VO buatan user + cover benar** | 53,78 s | 32,9 MB | 16 Nov 2026 | `1leWLFt4QuLEgXMSmnemYAXRWlMr9vUCT` |
 | EP10 | **v1 — VO buatan user, 9 foto segmen** | 59,90 s | 60,0 MB | 15 Nov 2026 | `1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX` |
-| EP11 | **v1 — VO internal `voice-04` (sama dengan EP06/07), 10 foto segmen** | 52,27 s | 20,0 MB | 16 Nov 2026 | `1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv` |
+| EP11 | **v2 — naskah bebas kalimat ambigu, VO internal `voice-04`** | 49,00 s | 19,5 MB | 16 Nov 2026 | `1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
@@ -47,6 +47,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | `EP08_1080x1920_master_v4.mp4` | percobaan v4 | `1_aFdKTXtaT1ycHe2IbCHhOawUNoS3CQx` |
 | EP08 | `EP08_1080x1920_master_v5_internal.mp4` | uji internal | `1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm` |
 | EP06 | `EP06_1080x1920_master.mp4` | versi sebelum v2 | `1NHnFpmKd2YsTPEhzuORBkQj4b4xAn-n4` |
+| EP11 | `EP11_1080x1920_master_v1-ambigu.mp4` | naskah v1: 8 dari 10 kalimat ambigu ("tanah keluar dari dalam tanah", "tanah berguncang") | `1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv` |
 
 ## Catatan aset kerja EP09
 
@@ -73,8 +74,8 @@ antrean YouTube + TikTok. Pola EP09 dan EP10 bisa dipakai apa adanya.
 
 ## Catatan aset kerja EP11
 
-Master EP11 (`1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv`, 20.043.645 B, sha256
-`8e0821c9…f284b89`) dibangun 16 Nov 2026 di sandbox: VO internal `voice-04`
+Master EP11 v2 (`1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-`, 19.483.502 B, sha256
+`acb8fbd3…f2f53f6e8`) dibangun 16 Nov 2026 di sandbox: VO internal `voice-04`
 (perintah pemilik: pakai VO EP05/EP06), 10 segmen mp3 di `public/audio/EP11/`,
 bed + sfx dari `build_bed.py`/`build_sfx.py`, 10 foto segmen di
 `public/plates/EP11/`. Folder `public/` di-ignore, jadi foto dan mp3 **tidak**

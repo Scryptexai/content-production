@@ -162,6 +162,36 @@ def tts_safe(e):
     return fails, notes
 
 
+# ── 00D · KALIMAT AMBIGU (16 Nov 2026) ────────────────────────────────────
+# Keluhan pemilik setelah EP11 v1: "banyak kalimat ambigu". Yang dimaksud bukan
+# kalimat panjang, tetapi kalimat yang referennya tidak bisa ditunjuk penonton:
+# benda yang keluar dari dirinya sendiri ("tanah keluar dari dalam tanah"),
+# subjek yang hilang, dan kata tunjuk di awal kalimat tanpa anteseden.
+SELF_REF = re.compile(r"\b(\w{4,})\b[^.!?]{0,50}?\b(dari|di|ke)\s+(dalam\s+)?\1\b", re.I)
+BARE_DEMO = re.compile(r"^\s*(itu|ini|begitu)\b", re.I)
+# kata yang boleh muncul dua kali tanpa dianggap ambigu
+DUP_OK = {"orang", "tahun", "hari", "meter", "menit", "kali", "kota", "warga"}
+
+
+def ambiguity(e):
+    fails, notes = [], []
+    strict = e.get("struktur") == "klimaks-awal"
+    lines = [("hook", e["hook"])] + [(f"beat {i + 1}", t) for i, (_, t) in enumerate(e["beats"])] + [("loop", e["loop"])]
+    for name, ln in lines:
+        for m in SELF_REF.finditer(ln):
+            msg = f"(3e) {name}: '{m.group(1)}' keluar/masuk dari dirinya sendiri — penonton tidak bisa membayangkan bendanya"
+            (fails if strict else notes).append(msg)
+        for sent in sentences(ln):
+            if BARE_DEMO.match(sent):
+                msg = f"(3e) {name}: kalimat dibuka '{sent.split()[0]}' tanpa anteseden — sebut bendanya"
+                (fails if strict else notes).append(msg)
+        dup = [w for w in set(words(ln)) if len(w) > 4 and w not in STOP and w not in DUP_OK
+               and words(ln).count(w) > 1]
+        if dup:
+            notes.append(f"(3e) {name}: kata berulang {', '.join(sorted(dup))} — cek apakah referennya jelas")
+    return fails, notes
+
+
 def check(e):
     fails, notes = [], []
 
@@ -334,6 +364,11 @@ def check(e):
         fails.append("(produksi) cue lebih dari 5")
     if not 2 <= len(tension) <= 6:
         notes.append(f"(produksi) {len(tension)} beat tension — 3–4 paling sehat")
+
+    # 3e · kalimat ambigu
+    _af, _an = ambiguity(e)
+    fails += _af
+    notes += _an
 
     # 6 · suara narator (00E)
     if e.get("voice_legacy"):

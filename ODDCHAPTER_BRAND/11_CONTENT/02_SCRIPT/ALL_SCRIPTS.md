@@ -16,7 +16,7 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | 8 | H8 | pagi | TERSEMBUNYI | SEMUA LABEL DI PAKAIANNYA DIPOTONG | B | 38 |
 | 9 | H4 | siang | TERSEMBUNYI | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS | D | 54 |
 | 10 | H5 | malam | TERSEMBUNYI | DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA | B | 59 |
-| 11 | H1 | siang | ANEH | TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI | B | 43 |
+| 11 | H1 | siang | ANEH | LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI | B | 43 |
 | 12 | H2 | siang | ANEH | KAPAL YANG TIDAK BISA TENGGELAM, DAN 25 ORANG YANG MENINGGALKANNYA | A | 43 |
 | 13 | H3 | siang | ANEH | DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA | B | 43 |
 | 14 | H4 | siang | ANEH | SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA | D | 43 |
@@ -1088,11 +1088,12 @@ tayang.
 
 ---
 
-## EP11 — TANAH DI PORONG MENGELUARKAN LUMPUR SEJAK 2006, DAN BELUM BERHENTI
+## EP11 — LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
 **Narasi:** 93 kata · 10 segmen · target **35–45 detik**
-**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM`
+**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM` — sesi ini memakai
+`voice-04` (VO internal yang sama dengan EP06–EP07), sesuai perintah pemilik 16 Nov 2026.
 
 ---
 
@@ -1109,31 +1110,35 @@ tayang.
 
 ## 1 · HOOK (mulai 0,15 dtk)
 
-> Tanah di Porong mengeluarkan lumpur, dan 20 tahun kemudian masih keluar.
+> Lumpur panas naik dari dalam tanah di Porong dan menelan rumah warga.
+
+Alternatif: Sejak 2006, lumpur keluar dari dalam tanah di Porong. Sampai sekarang
+belum berhenti.
 
 ## 2 · BEAT
 
 | bagian | VO |
 |---|---|
-| TANYA | Dari mana semua tanah itu datang, dan siapa yang kamu salahkan? |
-| RELATE | Kita lihat tanah sebagai benda yang diam. |
-| SETUP | Mei 2006, Porong, Sidoarjo. Awalnya cuma air keruh di sawah. |
-| TENSION | Coba bayangkan rumahmu tenggelam dari lantai, bukan dari atap. |
-| TENSION | Dua hari sebelumnya, tanah di Yogyakarta berguncang. |
-| TENSION | Sumur gas itu cuma 150 meter dari titik semburan. |
-| TURN | Ahli geologi bilang getaran itu terlalu jauh. Yang paling dekat bukan sesar, tapi sumur gas. |
-| CONSEQUENCE | Dua puluh tahun kemudian, lumpur itu masih menutup jalan dan rumah. |
+| TANYA | Dari mana lumpur di rumah warga itu datang? |
+| RELATE | Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga. |
+| SETUP | 29 Mei 2006. Lumpur dan gas keluar dari sawah di Porong. |
+| TENSION | Dua hari sebelumnya, 27 Mei, gempa mengguncang Yogyakarta. |
+| TENSION | Sumur gas Banjar Panji satu cuma 150 meter dari semburan. |
+| TENSION | Coba lihat: dua menit jalan kaki. |
+| TURN | Lapindo bilang ini bencana alam. Tapi ahli geologi bilang sumbernya sumur gas Lapindo. |
+| CONSEQUENCE | Dua puluh tahun kemudian, lumpur masih menutup jalan tol Porong. |
 
 ## 3 · TURN
 
 Kutipan: **“Ini bencana alam. Gempa yang menyebabkan.”**
 
-Pembalik: getarannya terlalu jauh. Yang paling dekat bukan patahan, tapi sumur bor
-— dan jaraknya sudah disebut di awal, sebelum turn.
+Pembalik: gempa Yogyakarta terlalu jauh untuk jadi penyebab. Yang 150 meter dari
+titik semburan adalah sumur gas Lapindo — dan jarak itu sudah disebut sebelum turn,
+jadi penonton bisa menghitung sendiri.
 
 ## 4 · ECHO + AJAKAN KOMENTAR
 
-> Tanah itu masih mengeluarkan lumpur. Kamu akan tinggal di sana?
+> Lumpur itu masih keluar. Kalau rumahmu di Porong, kamu pindah?
 
 Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu tinggal di Porong, kamu pindah atau bertahan?**
 
@@ -1141,15 +1146,38 @@ Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu tinggal di Porong, kam
 
 | # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | tanah yang mengeluarkan lumpur, dua puluh tahun |
-| 2 | ada yang salah | tanah dianggap diam, ini tidak diam |
+| 1 | berhenti scroll | lumpur yang menelan rumah warga, dan belum berhenti |
+| 2 | ada yang salah | tanah dianggap diam; di Porong ia keluar dari bawah rumah |
 | 3 | bertahan | jarak 150 meter ditanam di tension, dibayar di turn |
-| 4 | kejutan | tanaman dibaca ulang: yang dekat bukan patahan, tapi sumur |
+| 4 | kejutan | tanaman dibaca ulang: penyebabnya bukan gempa, tapi sumur |
 | 5 | diingat | atap rumah yang masih kelihatan di tengah lumpur |
 
 ## 5 · TEKS DI LAYAR
 
 Cue: PORONG · 2006 · SUMBER: SUMUR
+Caption: —, Dari mana?, Tanah yang diam., Porong, 2006., 27 Mei, Yogya.,
+150 meter., 2 menit kaki., Bukan gempa., 20 tahun., Kamu pindah?
+Stamp: `150 METER` (segmen 5), `2006` (segmen 3)
+
+## 5b · AUDIT KALIMAT AMBIGU (16 Nov 2026)
+
+Keluhan pemilik atas v1: "banyak kalimat ambigu". Yang diperbaiki, satu per satu:
+
+| v1 | masalahnya | v2 |
+|---|---|---|
+| "Tanah keluar dari dalam tanah" | benda keluar dari dirinya sendiri; penonton tidak bisa membayangkan | "Lumpur panas naik dari dalam tanah" |
+| "Dari mana semua tanah itu datang" | "tanah itu" tidak menunjuk benda apa pun | "Dari mana lumpur di rumah warga itu datang?" |
+| "Kita lihat tanah sebagai benda yang diam. Duduk di rumah kita." | kalimat kedua tanpa subjek: siapa yang duduk? | "Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga." |
+| "tanah di Yogyakarta berguncang" | "tanah berguncang" bisa berarti longsor; penyebabnya gempa | "gempa mengguncang Yogyakarta" |
+| "Sumur gas itu cuma 150 meter dari titik semburan" | "itu" tanpa anteseden; sumur mana? | "Sumur gas Banjar Panji satu cuma 150 meter dari semburan" |
+| "Ahli geologi bilang getaran itu terlalu jauh" | "getaran itu" kabur; dan tidak ada pihak lawan yang disebut | "Lapindo bilang ini bencana alam. Tapi ahli geologi bilang sumbernya sumur gas Lapindo." |
+| "lumpur itu masih menutup jalan dan rumah" | "menutup rumah" ambigu (menutup atap? menutup pintu?) | "masih menutup jalan tol Porong" |
+| "Tanah itu masih keluar. Kamu pindah?" | "tanah itu" tanpa anteseden | "Lumpur itu masih keluar. Kalau rumahmu di Porong, kamu pindah?" |
+
+Aturan yang sekarang diperiksa mesin (`check_story.py` §3e):
+benda tidak boleh keluar dari dirinya sendiri, kalimat tidak boleh dibuka
+"Itu/Ini" tanpa anteseden, dan kata berulang dalam satu beat dicatat untuk
+diperiksa manusia.
 
 ## 6 · SUMBER
 

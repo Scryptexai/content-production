@@ -351,3 +351,31 @@ node scripts/render-episode.mjs EP11                          # ±16 menit, 1.56
   `KeyError`. Nama plate: `EPxx_9x16.png` untuk cover, `EPxx_plate.png` untuk 16:9.
 - `npm install` menulis ~330 paket; `node_modules/` di-ignore, jadi biayanya
   kembali setiap sesi baru (±30 detik).
+## 19 · Kalimat ambigu (16 Nov 2026)
+
+Keluhan pemilik atas EP11 v1: "banyak kalimat ambigu". Yang dimaksud **bukan**
+kalimat panjang, tetapi kalimat yang referennya tidak bisa ditunjuk penonton.
+Empat pola yang sekarang diperiksa `tools/check_story.py` §3e (gagal keras untuk
+episode `klimaks-awal`):
+
+1. **Benda keluar dari dirinya sendiri** — "tanah keluar dari dalam tanah",
+   "air masuk ke air". Perbaikan: sebut benda yang bergerak dan arahnya
+   ("lumpur panas naik dari dalam tanah").
+2. **Kalimat dibuka "Itu/Ini" tanpa anteseden** — "Itu yang membuat…". Perbaikan:
+   ulang bendanya.
+3. **Subjek hilang** — "Duduk di rumah kita." Siapa yang duduk? Setiap kalimat
+   wajib punya subjek yang bisa ditunjuk.
+4. **Kata tunjuk menggantikan nama** — "sumur gas itu", "getaran itu". Perbaikan:
+   nama + angka ("sumur gas Banjar Panji satu, 150 meter dari semburan").
+
+Aturan tambahan yang tidak bisa diperiksa mesin, tetapi wajib saat menulis:
+
+- **Satu pihak, satu nama.** Kalau ada dua klaim, sebut siapa yang bilang
+  ("Lapindo bilang… Tapi ahli geologi bilang…"), jangan "salah satu pihak".
+- **Kata kerja yang bisa berarti dua hal** diganti: "menutup rumah" → "menutup
+  jalan tol"; "tanah berguncang" → "gempa mengguncang".
+- **Angka selalu punya satuan dan pembanding**: "150 meter" lebih jelas daripada
+  "dekat"; "dua menit jalan kaki" menjelaskan 150 meter tanpa menambah angka baru.
+
+Bukti: EP11 v2 mengubah 8 dari 10 baris naskah, durasi turun 52,3 → 49,0 dtk
+(kalimat yang jelas lebih pendek), dan gate `check_story` tetap LULUS 43 s · 7/7.
