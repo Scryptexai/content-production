@@ -1682,65 +1682,69 @@ _INDONESIA = {
 
     # ── EP11 · tanah Porong yang belum berhenti ────────────────────────────
     "EP11": dict(
-        title="LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI",
+        title="ENAM MENIT TERAKHIR SEORANG PILOT, LALU SUARA LOGAM",
         struktur="klimaks-awal",
-        thumb=["LUMPUR", "TAK BERHENTI"], thumb_text="LUMPUR TAK BERHENTI",
-        durasi=43, plate="plume",
+        thumb=["BUKAN", "PESAWAT"], thumb_text="BUKAN PESAWAT",
+        durasi=43, plate="signal",
         photos=["01_hook", "02_tanya", "03_relate", "04_setup", "05_tension",
-                "06_tension", "07_tension", "08_turn", "09_consequence", "10_loop"],
-        protagonis="Warga Porong yang rumahnya tenggelam pelan-pelan.",
-        mau="Tinggal di tanah yang sama, sedekat mungkin dengan rumahnya.",
-        hambatan="Lumpurnya keluar dari dalam tanah, dan tidak ada yang berhasil menutupnya.",
-        tanaman="Titik semburan hanya 150 meter dari sumur gas.",
-        hook="Lumpur panas naik dari dalam tanah di Porong dan menelan rumah warga.",
-        hook_alt="Sejak 2006, lumpur keluar dari dalam tanah di Porong. Sampai sekarang belum berhenti.",
-        tanya="Dari mana lumpur di rumah warga itu datang?",
-        entitas="lumpur",
-        relate="Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga.",
-        diskusi="Kalau kamu tinggal di Porong, kamu pindah atau bertahan?",
-        celah="Kenapa semburan muncul 150 meter dari sumur gas, bukan di dalam sumurnya?",
-        gambar_melekat="Rumah yang hanya kelihatan atapnya di tengah lumpur.",
+                "06_tension", "07_turn", "08_consequence", "09_loop"],
+        protagonis="Frederick Valentich, pilot 20 tahun, Cessna 182 VH-DSJ.",
+        mau="Sampai ke King Island dalam 69 menit.",
+        hambatan="Ada benda di langit yang tidak bisa dia namai, dan tidak ada yang melihatnya.",
+        tanaman="Rekaman radio enam menit; kalimat terakhirnya: itu bukan pesawat.",
+        hook="Rekaman itu berhenti di 19.12 dan pilot itu tidak pernah menjawab lagi.",
+        hook_alt="Pilot ini melapor ada pesawat besar di bawahnya. Rekamannya berhenti pukul 19.12.",
+        tanya="Apa yang dia lihat sebelum rekaman berhenti di 19.12?",
+        entitas="rekaman",
+        relate="Kita cuma punya suara Valentich. Kamu tidak bisa melihat keluar jendela itu.",
+        diskusi="Kamu percaya dia melihat pesawat lain, atau dia kehilangan arah?",
+        celah="Apa yang ada di luar jendela itu, yang tidak ikut terekam?",
+        gambar_melekat="Jarum jam radio di 19.12 dan mikrofon yang terbuka tujuh belas detik.",
         beats=[
-            ("tanya", "Dari mana lumpur di rumah warga itu datang?"),
-            ("relate", "Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga."),
-            ("setup", "29 Mei 2006. Lumpur dan gas keluar dari sawah di Porong."),
-            ("tension", "Dua hari sebelumnya, 27 Mei, gempa mengguncang Yogyakarta."),
-            ("tension", "Sumur gas Banjar Panji satu cuma 150 meter dari semburan."),
-            ("tension", "Coba lihat: dua menit jalan kaki."),
-            ("turn", "Lapindo bilang ini bencana alam. Tapi ahli geologi bilang sumbernya sumur gas Lapindo."),
-            ("consequence", "Dua puluh tahun kemudian, lumpur masih menutup jalan tol Porong."),
+            ("tanya", "Apa yang dia lihat sebelum rekaman berhenti di 19.12?"),
+            ("relate", "Kita cuma punya suara Valentich. Kamu tidak bisa melihat keluar jendela itu."),
+            ("setup", "21 Oktober 1978, pukul 19.06. Frederick Valentich terbang ke King Island."),
+            ("tension", "Coba lihat 19.06: panggilan pertama, ada pesawat besar di bawahnya."),
+            ("tension", "Perhatikan jamnya: 19.11, mesinnya mulai tersendat."),
+            ("turn", "Laporan resmi 1978: penyebabnya tidak bisa ditentukan. Tapi rekaman berhenti dengan suara logam."),
+            ("consequence", "4 hari dicari dari laut dan udara. Tidak ada bagian pesawatnya."),
         ],
-        turn_quote="“Ini bencana alam. Gempa yang menyebabkan.”",
-        turn_verdict=("Gempa Yogyakarta terlalu jauh untuk jadi penyebab. Yang 150 meter dari titik "
-                      "semburan adalah sumur gas Lapindo."),
-        loop="Lumpur itu masih keluar. Kalau rumahmu di Porong, kamu pindah?",
-        cues=["PORONG", "2006", "SUMBER: SUMUR"],
-        captions=["", "Dari mana?", "Tanah yang diam.", "Porong, 2006.", "27 Mei, Yogya.",
-                  "150 meter.", "2 menit kaki.", "Bukan gempa.", "Dua puluh tahun.",
-                  "Kamu pindah?"],
-        caption_hi=["", "tanah", "tanah", "2006", "gempa", "150", "jarak", "sumur",
-                    "masih", "pindah"],
-        visual=("Kepulan lumpur di antara atap rumah; peta jarak 150 meter dari sumur "
-                "Banjar Panji-1 ke titik semburan; garis jalur tol yang terputus."),
-        stamps=[["2006", 3]],
+        turn_quote="\u201cIt is hovering and it is not an aircraft.\u201d",
+        turn_verdict=("Rekaman itu tidak membuktikan benda apa pun. Yang ia buktikan: satu-satunya "
+                      "orang yang melihatnya kehilangan kemampuan membaca langit, dan laporan resmi "
+                      "memilih tidak memilih di antara dua bacaan itu."),
+        loop="Kalau kamu pilot itu: putar balik ke pantai, atau lanjut ke King Island?",
+        cues=["21 OKT 1978", "19.06", "19.11", "SUARA 17 DETIK"],
+        captions=["", "Apa yang dia lihat?", "Kita cuma punya suara.", "Moorabbin, 1978.",
+                  "Empat lampu.", "19.11.", "Penyebab: tidak diketahui.", "4 hari, kosong.",
+                  "Putar balik?"],
+        caption_hi=["", "lihat", "suara", "1978", "lampu", "19.11", "tidak tentu", "kosong", "balik"],
+        visual=("Gulungan pita rekaman; jam dinding 19.12; empat lampu di langit hitam; "
+                "mikrofon terbuka; peta Bass Strait dengan garis Moorabbin-King Island."),
+        stamps=[["19.11", 5], ["4 HARI", 7]],
         sfx={"00_hook": "gust", "01_tanya": "page", "02_relate": "page", "03_setup": "gust",
-             "04_tension": "boom", "05_tension": "gust", "06_tension": "clunk",
-             "07_turn": "boom", "08_consequence": "gust", "99_loop": "boom"},
+             "04_tension": "clunk", "05_tension": "tick", "06_turn": "boom",
+             "07_consequence": "gust", "99_loop": "boom"},
         sumber=(
-            "VERIFIED 2026-11-06 — Semburan lumpur panas Porong, Sidoarjo, Jawa Timur, mulai 29 Mei "
-            "2006; gunung lumpur terbesar di dunia dan masih aktif. Pusat semburan berjarak ±150 "
-            "meter dari sumur eksplorasi gas Banjar Panji-1 milik Lapindo Brantas Inc. (operator "
-            "blok Brantas), yang mulai dibor awal Maret 2006. Gempa Yogyakarta terjadi 27 Mei 2006, "
-            "dua hari sebelumnya — pihak perusahaan memakai itu sebagai penjelasan alternatif; "
-            "sebagian besar literatur menyimpulkan blow-out pengeboran. Kerugian harta benda "
-            "diperkirakan Rp45 triliun; korban tewas tidak langsung ≥20 orang (angka resmi "
-            "bervariasi). Semburan menenggelamkan permukiman dan memutus jalur tol "
-            "Surabaya–Gempol, jalan raya Surabaya–Malang, serta jalur kereta lintas timur. Catatan: "
-            "artikel Wikipedia Indonesia untuk topik ini bertanda 'tanpa rujukan', sehingga angka "
-            "kerugian dan korban harus dicek ke dokumen BPLS/BPK sebelum tayang; naskah hanya "
-            "memakai fakta yang juga muncul di sumber berita arus utama (tanggal, lokasi, jarak 150 "
-            "meter, masih aktif). Belum dibaca langsung: laporan BPLS, putusan/berkas perkara, dan "
-            "paper penyebab (Davies dkk. vs. Mazzini dkk.) — verifikasi sebelum tayang."
+            "TERVERIFIKASI SEBAGIAN 2026-11-16 — Frederick Valentich, 20 tahun, Cessna 182L "
+            "VH-DSJ (panggilan Delta Sierra Juliet), hilang 21 Oktober 1978 dalam penerbangan "
+            "Moorabbin-King Island (125 mil, normalnya 69 menit). Transkrip Melbourne Flight "
+            "Service (berkas Australian Department of Transport V116/783/1047): 19.06.14 panggilan "
+            "pertama 'any known traffic below five thousand' dijawab 'no known traffic'; 19.06.44 "
+            "'large aircraft below five thousand, four bright like landing lights'; 19.07.31 "
+            "'passed over me at least a thousand feet above'; 19.08.48 'playing some sort of game, "
+            "two three times at speeds I could not identify', level 4.500 kaki; 19.09.42 'long "
+            "shape'; 19.10.19 diam, saling mengorbit, 'green light metallic shiny'; 19.10.46 "
+            "'it's just vanished'; 19.11.50 mesin rough-idling, set 23/24, 'coughing'; niat ke King "
+            "Island; kalimat terakhir 'it is hovering and it is not an aircraft'; 19.12.28 mikrofon "
+            "terbuka 17 detik berisi suara logam, lalu diam. Alarm SAR 19.12, dia tidak tiba 19.33. "
+            "Pencarian udara-laut 4 hari dengan P-3 Orion RAAF, berakhir 25 Oktober 1978, tanpa satu "
+            "pun bagian pesawat; laporan resmi: penyebab tidak bisa ditentukan. Teori disorientasi "
+            "(malam tanpa horizon, pesawat terbalik, lampunya sendiri terpantul) dan teori 'kabur ke "
+            "pedalaman' sama-sama dibahas dan tidak terbukti. Sumber dibaca: transkrip yang dikutip "
+            "ulang arsip V116/783/1047, AP 22 Oktober 1978, Haines 'Melbourne Episode' 1987. BELUM "
+            "dibaca: pindaian penuh berkas ATSB, audio asli transkrip, koran Australia 1978 (Trove). "
+            "Catatan riset: 11_CONTENT/02_SCRIPT/riset/EP11_valentich.md"
         ),
     ),
 }

@@ -16,7 +16,7 @@ berstatus `NEEDS-SOURCE` sampai rujukannya dibaca.
 | 8 | H8 | pagi | TERSEMBUNYI | SEMUA LABEL DI PAKAIANNYA DIPOTONG | B | 38 |
 | 9 | H4 | siang | TERSEMBUNYI | TAS DI PUNGGUNGNYA BERISI BATU, DAN DIA DITEMUKAN DI DANAU KAMPUS | D | 54 |
 | 10 | H5 | malam | TERSEMBUNYI | DUA KARDUS DI TROTOAR SUDIRMAN, DAN SATU NAMA YANG TIDAK PERNAH ADA | B | 59 |
-| 11 | H1 | siang | ANEH | LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI | B | 43 |
+| 11 | H1 | siang | ANEH | ENAM MENIT TERAKHIR SEORANG PILOT, LALU SUARA LOGAM | B | 43 |
 | 12 | H2 | siang | ANEH | KAPAL YANG TIDAK BISA TENGGELAM, DAN 25 ORANG YANG MENINGGALKANNYA | A | 43 |
 | 13 | H3 | siang | ANEH | DI DESA INI MAYAT TIDAK DIKUBUR, DAN TIDAK ADA YANG BISA MENJELASKAN BAUNYA | B | 43 |
 | 14 | H4 | siang | ANEH | SERATUS TAHUN ORANG MELIHATNYA, DAN TIDAK ADA SATU FOTONYA | D | 43 |
@@ -1088,12 +1088,14 @@ tayang.
 
 ---
 
-## EP11 — LUMPUR PANAS KELUAR DARI SAWAH DI PORONG SEJAK 2006, DAN BELUM BERHENTI
+## EP11 — ENAM MENIT TERAKHIR SEORANG PILOT, LALU SUARA LOGAM
 
 **Seri:** ANEH · **Slot:** SIANG 12.30 WIB · **POV:** B
-**Narasi:** 93 kata · 10 segmen · target **35–45 detik**
-**Suara:** narator internal kanal `ojz6ro9PB1xDu44lymdM` — sesi ini memakai
-`voice-04` (VO internal yang sama dengan EP06–EP07), sesuai perintah pemilik 16 Nov 2026.
+**Narasi:** 100 kata · 9 segmen · target **35–45 detik** (perkiraan mesin: 42 dtk)
+**Suara:** narator internal kanal `voice-04` (VO yang sama dengan EP05–EP07), bukan TTS ElevenLabs
+**Tingkat latihan:** L3 — dua klaim bertarung, sintesa di turn
+**Perbaikan dari EP10:** EP10 bertanya tanpa memberi pilihan; EP11 menutup dengan **dua pilihan konkret** ("putar balik … atau lanjut …") supaya penonton tahu apa yang bisa dijawab.
+**Topik:** kartu **T02** (Valentich). Menggantikan Porong yang dinilai pemilik kurang menarik (`_ARSIP_TOPIK_LUAR/`).
 
 ---
 
@@ -1101,101 +1103,97 @@ tayang.
 
 | unsur | isi |
 |---|---|
-| **Protagonis** | Warga Porong yang rumahnya tenggelam pelan-pelan. |
-| **Mau** | Tinggal di tanah yang sama, sedekat mungkin dengan rumahnya. |
-| **Hambatan** | Lumpurnya keluar dari dalam tanah, dan tidak ada yang berhasil menutupnya. |
-| **Tanaman** | Titik semburan hanya 150 meter dari sumur gas. |
-| **Celah** | Kenapa titik semburan muncul 150 meter dari sumur, bukan di sumurnya? |
-| **Gambar melekat** | Rumah yang hanya kelihatan atapnya di tengah lumpur. |
+| **Protagonis** | Frederick Valentich, 20 tahun, Cessna 182L VH-DSJ |
+| **Mau** | Sampai ke King Island, 125 mil, 69 menit |
+| **Hambatan** | Ada benda di langit yang tidak bisa ia namai, dan tidak ada yang melihatnya |
+| **Tanaman** | Rekaman radio enam menit; kalimat terakhir "itu bukan pesawat" |
+| **Celah** | Apa yang ada di luar jendela itu, yang tidak ikut terekam? |
+| **Gambar melekat** | Jarum jam radio di 19.12, mikrofon terbuka 17 detik |
 
 ## 1 · HOOK (mulai 0,15 dtk)
 
-> Lumpur panas naik dari dalam tanah di Porong dan menelan rumah warga.
+> Rekaman itu berhenti di 19.12 dan pilot itu tidak pernah menjawab lagi.
 
-Alternatif: Sejak 2006, lumpur keluar dari dalam tanah di Porong. Sampai sekarang
-belum berhenti.
+Alternatif: Pilot ini melapor ada pesawat besar di bawahnya. Rekamannya berhenti pukul 19.12.
 
-## 2 · BEAT
+## 2 · BEAT — dan fakta yang menopangnya
 
-| bagian | VO |
-|---|---|
-| TANYA | Dari mana lumpur di rumah warga itu datang? |
-| RELATE | Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga. |
-| SETUP | 29 Mei 2006. Lumpur dan gas keluar dari sawah di Porong. |
-| TENSION | Dua hari sebelumnya, 27 Mei, gempa mengguncang Yogyakarta. |
-| TENSION | Sumur gas Banjar Panji satu cuma 150 meter dari semburan. |
-| TENSION | Coba lihat: dua menit jalan kaki. |
-| TURN | Lapindo bilang ini bencana alam. Tapi ahli geologi bilang sumbernya sumur gas Lapindo. |
-| CONSEQUENCE | Dua puluh tahun kemudian, lumpur masih menutup jalan tol Porong. |
+Aturan baru: **tidak ada satu baris pun tanpa fakta.** Kolom kanan menunjuk ID di
+`riset/EP11_valentich.md`. Kalau kolom kanan kosong, barisnya dibuang.
+
+| bagian | VO | fakta |
+|---|---|---|
+| TANYA | Apa yang dia lihat sebelum rekaman berhenti di 19.12? | F19 |
+| RELATE | Kita cuma punya suara Valentich. Kamu tidak bisa melihat keluar jendela itu. | F03, F19 |
+| SETUP | 21 Oktober 1978, pukul 19.06. Frederick Valentich terbang ke King Island. | F01, F03, F04, F05 |
+| TENSION | Coba lihat 19.06: panggilan pertama, ada pesawat besar di bawahnya. | F05, F08 |
+| TENSION | Perhatikan jamnya: 19.11, mesinnya mulai tersendat. | F16 |
+| TURN | Laporan resmi 1978: penyebabnya tidak bisa ditentukan. Tapi rekaman berhenti dengan suara logam. | F19, F23 |
+| CONSEQUENCE | 4 hari dicari dari laut dan udara. Tidak ada bagian pesawatnya. | F21, F22 |
 
 ## 3 · TURN
 
-Kutipan: **“Ini bencana alam. Gempa yang menyebabkan.”**
+Kutipan resmi (transkrip, 19.11.50): **“It's hovering and it's not an aircraft.”**
 
-Pembalik: gempa Yogyakarta terlalu jauh untuk jadi penyebab. Yang 150 meter dari
-titik semburan adalah sumur gas Lapindo — dan jarak itu sudah disebut sebelum turn,
-jadi penonton bisa menghitung sendiri.
+Dua bacaan yang bertarung, dan tidak ada yang menang di berkas resmi:
 
-## 4 · ECHO + AJAKAN KOMENTAR
+1. **Bacaan pilot.** Empat lampu terang, bentuk panjang, hijau metalik, mengorbit
+   di atasnya, lalu hilang (F09, F13, F14, F15).
+2. **Bacaan penyelidik.** Malam tanpa horizon; pilot kelas empat tanpa rating
+   instrumen penuh; pesawat bisa terbalik tanpa disadari dan lampunya sendiri
+   terpantul di laut (F24, F26).
 
-> Lumpur itu masih keluar. Kalau rumahmu di Porong, kamu pindah?
+Sintesa kanal (tidak diucapkan dua kali, dipakai di layar):
+> Rekaman itu tidak membuktikan benda apa pun. Yang ia buktikan: satu-satunya
+> orang yang melihatnya kehilangan kemampuan membaca langit.
 
-Pertanyaan komentar (tidak diucapkan di VO): **Kalau kamu tinggal di Porong, kamu pindah atau bertahan?**
+## 4 · ECHO + PERTANYAAN BEROBAT
+
+> Kalau kamu pilot itu: putar balik ke pantai, atau lanjut ke King Island?
+
+Kenapa begitu: pertanyaan penutup **wajib memberi dua pilihan**. "Kamu pindah?"
+tidak bisa dijawab karena tidak ada pilihannya. Di sini pilihannya nyata, dan
+keduanya punya konsekuensi yang sudah disebut di naskah (pantai = aman tapi
+gagal; King Island = sesuai rencana tapi terus masuk ke gelap).
+
+Pertanyaan komentar (tidak diucapkan): **Kamu percaya dia melihat pesawat lain,
+atau dia kehilangan arah?**
 
 ## 4b · KONTRAK LIMA EFEK
 
 | # | efek | perangkat |
 |---|---|---|
-| 1 | berhenti scroll | lumpur yang menelan rumah warga, dan belum berhenti |
-| 2 | ada yang salah | tanah dianggap diam; di Porong ia keluar dari bawah rumah |
-| 3 | bertahan | jarak 150 meter ditanam di tension, dibayar di turn |
-| 4 | kejutan | tanaman dibaca ulang: penyebabnya bukan gempa, tapi sumur |
-| 5 | diingat | atap rumah yang masih kelihatan di tengah lumpur |
+| 1 | berhenti scroll | rekaman yang berhenti di 19.12, bukan rekonstruksi |
+| 2 | ada yang salah | pilot yang paling ingin percaya, justru yang paling tidak bisa dipercaya |
+| 3 | bertahan | 19.06 dan 19.11 disebut sebagai jam, dibayar di turn (19.12) |
+| 4 | kejutan | turn: bukan "benda itu apa", tapi "laporan resmi tidak memilih" |
+| 5 | diingat | mikrofon terbuka tujuh belas detik, lalu diam |
 
 ## 5 · TEKS DI LAYAR
 
-Cue: PORONG · 2006 · SUMBER: SUMUR
-Caption: —, Dari mana?, Tanah yang diam., Porong, 2006., 27 Mei, Yogya.,
-150 meter., 2 menit kaki., Bukan gempa., 20 tahun., Kamu pindah?
-Stamp: `150 METER` (segmen 5), `2006` (segmen 3)
-
-## 5b · AUDIT KALIMAT AMBIGU (16 Nov 2026)
-
-Keluhan pemilik atas v1: "banyak kalimat ambigu". Yang diperbaiki, satu per satu:
-
-| v1 | masalahnya | v2 |
-|---|---|---|
-| "Tanah keluar dari dalam tanah" | benda keluar dari dirinya sendiri; penonton tidak bisa membayangkan | "Lumpur panas naik dari dalam tanah" |
-| "Dari mana semua tanah itu datang" | "tanah itu" tidak menunjuk benda apa pun | "Dari mana lumpur di rumah warga itu datang?" |
-| "Kita lihat tanah sebagai benda yang diam. Duduk di rumah kita." | kalimat kedua tanpa subjek: siapa yang duduk? | "Kita mengira tanah di bawah rumah kita tidak bergerak. Kamu juga." |
-| "tanah di Yogyakarta berguncang" | "tanah berguncang" bisa berarti longsor; penyebabnya gempa | "gempa mengguncang Yogyakarta" |
-| "Sumur gas itu cuma 150 meter dari titik semburan" | "itu" tanpa anteseden; sumur mana? | "Sumur gas Banjar Panji satu cuma 150 meter dari semburan" |
-| "Ahli geologi bilang getaran itu terlalu jauh" | "getaran itu" kabur; dan tidak ada pihak lawan yang disebut | "Lapindo bilang ini bencana alam. Tapi ahli geologi bilang sumbernya sumur gas Lapindo." |
-| "lumpur itu masih menutup jalan dan rumah" | "menutup rumah" ambigu (menutup atap? menutup pintu?) | "masih menutup jalan tol Porong" |
-| "Tanah itu masih keluar. Kamu pindah?" | "tanah itu" tanpa anteseden | "Lumpur itu masih keluar. Kalau rumahmu di Porong, kamu pindah?" |
-
-Aturan yang sekarang diperiksa mesin (`check_story.py` §3e):
-benda tidak boleh keluar dari dirinya sendiri, kalimat tidak boleh dibuka
-"Itu/Ini" tanpa anteseden, dan kata berulang dalam satu beat dicatat untuk
-diperiksa manusia.
+Cue: `21 OKT 1978` · `19.06` · `19.11` · `SUARA 17 DETIK`
+Stamp: `19.11` (segmen 5), `4 HARI` (segmen 7)
+Caption: —, Apa yang dia lihat?, Kita cuma punya suara., Moorabbin 1978., Empat lampu.,
+19.11., Penyebab: tidak diketahui., 4 hari kosong., Putar balik?
 
 ## 6 · SUMBER
 
-VERIFIED — Semburan lumpur panas Porong, Sidoarjo, Jawa Timur, mulai 29 Mei 2006;
-gunung lumpur terbesar di dunia dan masih aktif. Pusat semburan berjarak ±150 meter
-dari sumur eksplorasi gas Banjar Panji-1 milik Lapindo Brantas Inc. (operator blok
-Brantas), yang mulai dibor awal Maret 2006. Gempa Yogyakarta 27 Mei 2006 — dua hari
-sebelumnya — dipakai perusahaan sebagai penjelasan alternatif; sebagian besar
-literatur menyimpulkan blow-out pengeboran. Semburan menenggelamkan permukiman dan
-memutus jalur tol Surabaya–Gempol, jalan raya Surabaya–Malang, serta jalur kereta
-lintas timur.
+Lihat `riset/EP11_valentich.md` (27 fakta berlabel, 3 selisih angka, 3 dokumen
+yang belum dibaca). Ringkas: transkrip Melbourne Flight Service dalam berkas
+Australian Department of Transport **V116/783/1047**; AP 22 Oktober 1978;
+Haines, *Melbourne Episode* (1987). Status: **terverifikasi sebagian**.
 
-Catatan verifikasi: artikel Wikipedia Indonesia untuk topik ini bertanda “tanpa
-rujukan”, jadi angka kerugian (Rp45 triliun) dan korban (≥20 orang) **belum** boleh
-dipakai di VO sampai dicek ke dokumen BPLS/BPK. Naskah hanya memakai fakta yang juga
-muncul di sumber berita arus utama: tanggal, lokasi, jarak 150 meter, dan status
-masih aktif. Belum dibaca langsung: laporan BPLS, berkas perkara, dan paper penyebab
-(Davies dkk. vs Mazzini dkk.) — verifikasi sebelum tayang.
+Angka yang dipakai di naskah: 19.06 · 19.11 · 19.12 · 17 detik · 1978 · 4 hari ·
+20 tahun · 125 mil (hanya di berkas, tidak di VO).
+
+## 7 · YANG TIDAK DIPAKAI (dan kenapa)
+
+| bahan riset | kenapa dibuang dari VO |
+|---|---|
+| F11 "playing some sort of game … two, three times" | satu kutipan panjang sudah cukup; dua kutipan berderet mematikan ritme 43 detik |
+| F12 ketinggian 4.500 kaki | angka teknis tanpa pasangan visual di layar |
+| F24–F25 rating instrumen & jam terbang | masuk ke turn sebagai tesis penyelidik, tidak diucapkan sebagai data |
+| F27 teori "kabur ke pedalaman" | menarik, tetapi tidak mengubah pilihan penonton di akhir |
 
 ---
 

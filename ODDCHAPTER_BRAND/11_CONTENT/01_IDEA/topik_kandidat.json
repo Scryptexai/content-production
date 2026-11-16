@@ -68,7 +68,19 @@
         "satu_pertanyaan": 2,
         "bahan_visual": 1
       },
-      "status": "perlu verifikasi"
+      "status": "dipakai",
+      "dipakai_episode": "EP11",
+      "dokumen_dibaca": [
+        "transkrip Melbourne Flight Service (berkas V116/783/1047, dikutip arsip)",
+        "AP 22 Okt 1978",
+        "Haines, Melbourne Episode (1987)"
+      ],
+      "dokumen_belum_dibaca": [
+        "pindaian penuh berkas ATSB V116/783/1047",
+        "audio asli transkrip",
+        "koran Australia Okt 1978 (Trove)"
+      ],
+      "catatan_riset": "11_CONTENT/02_SCRIPT/riset/EP11_valentich.md"
     },
     {
       "id": "T03",

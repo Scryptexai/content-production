@@ -379,3 +379,56 @@ Aturan tambahan yang tidak bisa diperiksa mesin, tetapi wajib saat menulis:
 
 Bukti: EP11 v2 mengubah 8 dari 10 baris naskah, durasi turun 52,3 → 49,0 dtk
 (kalimat yang jelas lebih pendek), dan gate `check_story` tetap LULUS 43 s · 7/7.
+
+## 20 · Wajib lisan, bukan bahasa tulis (16 Nov 2026)
+
+Keluhan pemilik atas EP11 v2: **"kamu juga"** dan **"kamu pindah"** konteksnya
+tidak jelas. Yang dia minta bukan kalimat yang lebih panjang, tetapi **bentuk
+lisan**: "kamu pindah gak".
+
+Aturan:
+
+1. **Sapaan dan ajakan ditulis seperti orang bicara**, bukan seperti artikel.
+   - salah: "Kamu pindah." · "Kamu juga merasakannya."
+   - benar: "Kamu pindah gak?" · "Kamu juga lihat, kan?"
+2. **Kata ganti harus punya anteseden di kalimat yang sama atau kalimat
+   sebelumnya** — "kamu" wajib jelas menunjuk siapa (penonton, pilot, warga).
+   Kalau tidak jelas, ganti dengan nama: "Valentich", "warga Porong".
+3. **Pertanyaan penutup wajib punya dua pilihan** supaya bisa dijawab:
+   "… atau …" / "… gak?". Pertanyaan tanpa pilihan ("Kamu pindah?") dilarang.
+4. **Kalimat tanya ditutup partikel lisan** bila nada bicaranya santai:
+   `gak`, `kan`, `ya`, `kah`. Jangan campur satu kalimat dengan tiga partikel.
+
+Diperiksa mesin: `tools/check_research.py` bagian `(tanya)`, dan
+`tools/check_story.py` §3e untuk anteseden kata tunjuk.
+
+## 21 · Naskah wajib memakai hasil riset (16 Nov 2026)
+
+Keluhan pemilik: **"hampir 90% mungkin tidak ada knowledge dari hasil research
+yg di masukan … semua nya hanya sampai diskusi tapi tidak di pakai pada
+produksi naskah"**. Diskusi storytelling yang tidak berakhir di naskah dianggap
+nol. Karena itu urutannya sekarang mengikat:
+
+```
+kartu topik → dokumen primer dibaca → tabel fakta F01…Fnn → naskah (baris = fakta)
+```
+
+Aturan:
+
+1. **Tidak ada naskah sebelum ada berkas `02_SCRIPT/riset/EPxx_*.md`** berisi
+   tabel fakta berlabel (`F01`, `F02`, …), sumber per fakta, dan daftar
+   **"belum dibaca"**.
+2. **Setiap baris VO wajib menyebut minimal satu fakta berlabel.** Baris yang
+   hanya berisi perasaan, rangkuman, atau pertanyaan retoris dibuang.
+3. **Naskah menyimpan kolom kanan**: bagian → VO → fakta (`F##`). Kalau kolom
+   kanan kosong, barisnya belum layak.
+4. **Frasa generik dilarang** — kalimat yang bisa dipakai di episode mana pun
+   tanpa membaca satu dokumen pun: "coba bayangkan", "sampai hari ini",
+   "masih menjadi misteri", "tidak ada yang bisa menjelaskan", "banyak orang
+   percaya".
+5. **Bahan riset yang dibuang harus ditulis alasannya** (bagian "yang tidak
+   dipakai"), supaya terlihat risetnya dibaca, bukan dilewati.
+
+Diperiksa mesin: `tools/check_research.py` (COVERAGE + GENERIK + TANYA).
+Episode didaftarkan di `02_SCRIPT/riset/_GATE.json` saat naskahnya sudah
+ditulis ulang dari riset; episode lama jangan dicap lulus sebelum ditulis ulang.

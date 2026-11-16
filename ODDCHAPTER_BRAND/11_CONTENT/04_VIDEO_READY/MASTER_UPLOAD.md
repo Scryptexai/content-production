@@ -34,7 +34,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | v2 | 53,50 s | 15,3 MB | 14 Nov 2026 | `131CrG69yCLrczrTygjYbTV5Hs-TxIDRl` |
 | EP09 | **v4 — VO buatan user + cover benar** | 53,78 s | 32,9 MB | 16 Nov 2026 | `1leWLFt4QuLEgXMSmnemYAXRWlMr9vUCT` |
 | EP10 | **v1 — VO buatan user, 9 foto segmen** | 59,90 s | 60,0 MB | 15 Nov 2026 | `1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX` |
-| EP11 | **v2 — naskah bebas kalimat ambigu, VO internal `voice-04`** | 49,00 s | 19,5 MB | 16 Nov 2026 | `1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-` |
+| EP11 | **v4 — topik diganti ke Valentich (T02), naskah ditulis dari tabel fakta riset; `voice-04`** | 53,33 s | 13,2 MB | 16 Nov 2026 | `1sOzdlwY34aI1beOz4UqnRl8SYMtKX6dz` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
@@ -48,6 +48,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP08 | `EP08_1080x1920_master_v5_internal.mp4` | uji internal | `1UrKOv6JgRJOzh1D5LOjuJ58mAHp1MJtm` |
 | EP06 | `EP06_1080x1920_master.mp4` | versi sebelum v2 | `1NHnFpmKd2YsTPEhzuORBkQj4b4xAn-n4` |
 | EP11 | `EP11_1080x1920_master_v1-ambigu.mp4` | naskah v1: 8 dari 10 kalimat ambigu ("tanah keluar dari dalam tanah", "tanah berguncang") | `1nU4-Ce_g7555Dau1KOKXZ9P-CLiroFzv` |
+| EP11 | `EP11_1080x1920_master_v2-porong.mp4` | topik Porong ditolak pemilik ("topik nya kurang menarik itu masalah nya"); naskahnya sudah bersih dari kalimat ambigu, tetapi ditayangkan sebagai pengganti sementara | `1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-` |
 
 ## Catatan aset kerja EP09
 
@@ -74,10 +75,17 @@ antrean YouTube + TikTok. Pola EP09 dan EP10 bisa dipakai apa adanya.
 
 ## Catatan aset kerja EP11
 
-Master EP11 v2 (`1zZ5imWXaZWqGFigD2VzQyN28VqBf-kW-`, 19.483.502 B, sha256
-`acb8fbd3…f2f53f6e8`) dibangun 16 Nov 2026 di sandbox: VO internal `voice-04`
-(perintah pemilik: pakai VO EP05/EP06), 10 segmen mp3 di `public/audio/EP11/`,
-bed + sfx dari `build_bed.py`/`build_sfx.py`, 10 foto segmen di
-`public/plates/EP11/`. Folder `public/` di-ignore, jadi foto dan mp3 **tidak**
-masuk Git — kalau EP11 harus dirender ulang, VO bisa dibuat lagi dengan
-`voice-04` dari `content_data.py` (teksnya identik), foto harus dibuat lagi.
+Master EP11 v4 (`1sOzdlwY34aI1beOz4UqnRl8SYMtKX6dz`, 13.221.601 B, sha256
+`0a66e113…0f6136eb`, 53,333 s, -14,1 LUFS, TP -1,5) dibangun 16 Nov 2026 di
+sandbox: **topik diganti** dari Porong ke hilangnya Frederick Valentich (kartu
+T02), naskah ditulis ulang dari tabel fakta `02_SCRIPT/riset/EP11_valentich.md`
+(setiap baris VO memuat minimal satu fakta berlabel F##), VO internal
+`voice-04` (perintah pemilik: pakai VO EP05/EP06 — VO pemilik belum turun),
+9 segmen mp3 di `public/audio/EP11/`, bed + sfx dari `build_bed.py`/
+`build_sfx.py`, 9 foto segmen di `public/plates/EP11/`. Folder `public/`
+di-ignore, jadi foto dan mp3 **tidak** masuk Git — kalau harus dirender ulang,
+VO bisa dibuat lagi dengan `voice-04` dari `content_data.py` (teks identik),
+foto harus dibuat lagi.
+
+Status tayang: **menunggu persetujuan pemilik** (naskah ditunjukkan dulu).
+Master v2 Porong tetap yang terakhir disetujui untuk tayang sampai v4 disetujui.
