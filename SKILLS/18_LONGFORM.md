@@ -112,3 +112,40 @@ berkas salah menggugurkan render 80 menit di menit ke-35.
 Batas unggah Drive 100 MB: render `jpeg q92` keluar ±305 MB (1,9–3,6 Mbps
 bervariasi karena gerak kamera). Encode akhir dengan
 `-crf 23 -maxrate 1900k -bufsize 3800k` → 81,9 MB, tetap tajam untuk teks.
+
+## v3 (17 Nov 2026) — 16:9, footage, diagram kartu
+
+Pemilik meminta format mendatar dan gambar yang bergerak. Empat keputusan yang
+sekarang jadi standar:
+
+1. **16:9 (1920×1080).** Layout lama 9:16 tidak bisa dipakai: caption 50 px di
+   bawah-kiri (lebar 1040), kartu diagram berhenti sebelum y≈780 supaya label
+   kartu tidak tertimpa caption. `Root.tsx` membaca `width/height` dari
+   `longform.generated.json`, bukan dari `theme.ts` — komposisi pendek tetap 9:16.
+2. **Footage penuh layar, foto hanya di dalam kartu.** Sumber footage: Coverr,
+   diambil lewat GitHub Actions (`.github/workflows/fetch-footage.yml` +
+   `tools/fetch_footage.py`) karena sandbox hanya bisa keluar ke npm/PyPI/GitHub.
+   Alur: Actions mengunduh klip → normalisasi 1920×1080 30 fps → commit ke branch
+   (`footage/`) → sandbox `git pull`. Artifact Actions tidak bisa diunduh dari
+   sandbox (blob.core.windows.net diblokir), jadi commit adalah satu-satunya jalan.
+3. **Diagram untuk bab struktural.** `layout: "diagram"` + `diagram.cards[]`
+   (foto + label + sub). Kartu muncul bertahap (≤9 dtk), lalu sorotan bergilir
+   tiap 6 dtk — diagram 40 dtk tetap bergerak. `style: "timeline"` untuk deret
+   tahun. Foto tidak pernah penuh layar.
+4. **Musik mengalir penuh.** Versi v2 memakai −20 dB + ducking rasio 12, hasilnya
+   musik nyaris hilang tiap VO masuk (pemilik: "musik cuma di beberapa bagian").
+   Sekarang −14 dB + ducking rasio 5, attack 12, release 520.
+
+Jebakan yang sudah dibayar mahal:
+
+- **Jangan membuang batas potongan yang punya kartu.** Waktu sliver < 2,5 dtk
+  dibuang tanpa pandang bulu, 3 kartu ikut hilang dan VO jadi 7,8 dtk lebih pendek.
+  Buang hanya batas *layout*; batas kartu wajib tetap.
+- **Dua blok diagram berturut-turut tetap harus dipecah** (bandingkan
+  `layout` + judul diagram + daftar footage). Kalau tidak, diagram blok kedua
+  tidak pernah tampil karena potongan mengambil blok di titik tengah.
+- **Kartu arsip `contain` di dalam kartu diagram** tetap di-crop `cover`; tanpa
+  itu ada ruang kosong hitam di sisi foto.
+- Biaya render naik: footage harus di-decode (`OffthreadVideo`) → ±1,6 frame/dtk
+  (10.258 frame ≈ 105 menit). Encode akhir: `-crf 23 -maxrate 1900k` supaya
+  di bawah 100 MB (raw dari render bisa 300 MB).

@@ -98,3 +98,28 @@ dipotong di keheningan asli VO, lalu tiap potongan diberi pembuka sendiri.
 VO asli 318,12 dtk → master v2 341,95 dtk (+23,8 dtk jeda). Titik potong
 divalidasi ada di keheningan (pusat keheningan terdekat, geser maks 1,4 dtk),
 jadi tidak ada kata yang terbelah.
+
+## Bentuk visual v3 — 16:9 hybrid (17 Nov 2026)
+
+Naskah dan titik potong v2 tidak diubah. Yang berubah: kanvas, bahan gambar, dan
+cara bab struktural digambarkan.
+
+| bab | bentuk | isi |
+|---|---|---|
+| BUKTI ATAU TAFSIR? | footage penuh layar | tulisan tangan, lilin gereja, sosok berjubah di meja |
+| MITOS MODERN | diagram 4 kartu | MATA SATU · PIRAMIDA · TOKOH POLITIK · BANK & PERANG |
+| INGOLSTADT, 1776 | diagram timeline | WEISHAUPT · INGOLSTADT · PERFECTIBILISTS |
+| ORGANISASI NYATA | diagram 3 kartu | PIMPINAN · DEWAN · ANGGOTA |
+| REPRESI | footage | sosok berjubah, koridor gelap, lilin, koran |
+| 1785 | diagram timeline | EDIKT · DOKUMEN DISITA · DUA JALAN |
+| 1797 | diagram 3 kartu | BARRUEL · ROBISON · BUKU |
+| BUKTI YANG DIPAKAI | footage | koran, tulisan tangan, catatan |
+| INTERPRETASI A / BACAAN SKEPTIS | footage | tulisan, lilin, jendela hujan, kota malam |
+| SIMBOL DIPINJAM | diagram 4 kartu | MATA · PIRAMIDA · DOLLAR · MAKNA BARU |
+| GARIS BUKTI PUTUS | diagram timeline | 1785 · 1797 · 1800–2000 |
+| CELAH KESINAMBUNGAN | footage | kabut, koran, lilin, sosok |
+| DUA CARA MEMBACA | diagram 2 kartu | KETERHUBUNGAN vs KETERPUTUSAN |
+| KELEMAHAN KEDUANYA / PERTANYAAN | footage | patung, kabut, lilin, kota malam |
+
+Semua foto berada di dalam kartu; hanya footage yang memenuhi layar. Musik
+mengalir dari detik nol sampai akhir, dengan ducking ringan saat VO masuk.
