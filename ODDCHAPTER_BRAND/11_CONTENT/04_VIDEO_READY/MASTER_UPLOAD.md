@@ -40,12 +40,13 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 
 | ep | versi | durasi | ukuran | diunggah | Drive file id |
 |---|---|---|---|---|---|
-| SB-EP01 | **v2 — berjeda: 9 jeda (1 interstitial di 0:15 + 8 kartu bab), narasi dipotong di keheningan, 5 preset gerak + debu/kilau/flicker** · folder `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA` | 341,95 s | 81,9 MB | 17 Nov 2026 | `1vok-wjliIbWA3d4q-WDNqY8rvqBszdyy` |
+| SB-EP01 | **v3 — 16:9 hybrid: footage Coverr penuh layar + 8 bab diagram kartu berfoto, kartu bab & interstitial tetap, musik penuh** · folder `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA` | 341,95 s | 80,7 MB | 17 Nov 2026 | `1jSDnEw70IfrqpCn1UVahqB75Tc6hhvJG` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
 | ep | nama berkas | alasan | Drive file id |
 |---|---|---|---|
+| SB-EP01 | `EP01_ILLUMINATI_1080x1920_master_v2.mp4` | v2: jeda sudah rapi tetapi masih 9:16 dan visual foto penuh layar | `1vok-wjliIbWA3d4q-WDNqY8rvqBszdyy` |
 | SB-EP01 | `EP01_ILLUMINATI_1080x1920_master_v1.mp4` | v1: satu tarikan tanpa jeda — pemilik: "terasa seperti baca koran tanpa jeda" | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
 | EP09 | `EP09_1080x1920_master_v3-intro-lama.mp4` | VO user sudah benar, tetapi 0,5 dtk pertama masih cover Somerton Man | `1ZMikYIar_HDYmS8wY5-wGbBDdM9DTnOL` |
 | EP09 | `EP09_1080x1920_master_v2-vo-lama.mp4` | render 15 Nov: audio dari naskah lama (Somerton Man), bukan VO user | `1SmFv67IVaoCxC7Ow1SCid4Pk6wtbkLBl` |
@@ -150,3 +151,18 @@ Kartu (waktu di master v2): 0:15,8 interstitial · 0:26,6 TAFSIR MODERN ·
 Berkas: `EP01_ILLUMINATI_1080x1920_master_v2.mp4` · 81.921.287 B · −14,0 LUFS ·
 TP −1,4 · sha256 `bb33cb54…df8ddcf`. Encode dibatasi `-maxrate 1900k` supaya di
 bawah batas unggah Drive 100 MB (raw 305 MB dari render).
+
+## SB-EP01 v3 — permintaan pemilik 17 Nov (16:9 + footage + diagram)
+
+| permintaan | dikerjakan |
+|---|---|
+| resolusi 16:9 | kanvas 1920×1080 30 fps; caption pindah ke bawah-kiri, kartu diagram berhenti sebelum blok caption |
+| footage relevan pengganti foto penuh layar | 42 klip Coverr diunduh lewat GitHub Actions (`fetch-footage.yml` → commit ke `footage/`), dinormalisasi 1920×1080 30 fps, dipilih manual per bab |
+| animasi diagram berisi kartu foto | 8 bab struktural: kartu masuk bertahap, garis penghubung digambar, sorotan bergilir 6 dtk, nomor + label + sub |
+| hybrid foto/video | foto hanya di dalam kartu; footage memenuhi layar. Bab struktur = diagram, bab naratif = footage |
+| musik full video | −14 dB + ducking ringan (rasio 5) menggantikan −20 dB + rasio 12 yang membuat musik hilang saat VO |
+| sisanya dipertahankan | 9 kartu jeda, potongan VO di keheningan, 5 preset gerak, debu/kilau/flicker, caption per kata |
+
+Berkas: `EP01_ILLUMINATI_1920x1080_master_v3.mp4` · 80.697.815 B · −14,1 LUFS ·
+TP −1,3 · sha256 `02793d6d…788f8254`. Render 8.598 s (footage harus di-decode),
+encode akhir `-crf 19 -maxrate 2500k` → 1,89 Mbps.
