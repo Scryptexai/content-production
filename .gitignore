@@ -53,3 +53,5 @@ ODDCHAPTER_BRAND/**/plates_src/
 
 # plate thumbnail (1376×768) tidak ikut repo — arsipnya di Drive: thumbnail/PLATE SUMBER
 ODDCHAPTER_BRAND/**/03_THUMBNAIL/plates/
+# klip footage hasil GitHub Actions (di-commit oleh bot, bukan dibangun lokal)
+!footage/
