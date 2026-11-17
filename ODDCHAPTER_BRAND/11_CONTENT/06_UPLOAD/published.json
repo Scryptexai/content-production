@@ -14,6 +14,13 @@
     "uploaded_at": "2026-11-08T15:29:15Z",
     "youtube_url": "https://www.youtube.com/watch?v=l-_uCXDQo0g"
   },
+  "EP01SB": {
+    "post_id": "6afc51f72d1215796ffa1d8c",
+    "status": "published",
+    "title": "Illuminati Benar-Benar Ada pada 1776. Buktinya Berhenti di 1785.",
+    "uploaded_at": "2026-11-17T13:09:43Z",
+    "youtube_url": "https://www.youtube.com/watch?v=mhI-Q3uVy1g"
+  },
   "EP02": {
     "post_id": "6af0957ddcf9c5b7d0a2d835",
     "status": "published",
@@ -103,17 +110,17 @@
     "youtube_url": "https://www.youtube.com/watch?v=xyK0qZFEAtE"
   },
   "EP10": {
+    "drive_file_id": "1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX",
     "post_id": "6af9c511615d6b707b81a203",
     "status": "published",
     "tiktok_post_id": "6af9c5a14cb7b88c916124d8",
     "tiktok_status": "published",
     "tiktok_uploaded_at": "2026-11-15T14:46:20Z",
+    "tiktok_url": "https://www.tiktok.com/@oddchapter7/video/7708409619067997441",
     "title": "Dua Kardus di Trotoar Sudirman. Isinya Tubuh Tanpa Nama.",
     "uploaded_at": "2026-11-15T14:43:45Z",
-    "youtube_url": "https://www.youtube.com/watch?v=KQR0s52rbCE",
-    "tiktok_url": "https://www.tiktok.com/@oddchapter7/video/7708409619067997441",
     "video": "EP10_1080x1920_master.mp4",
-    "drive_file_id": "1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX"
+    "youtube_url": "https://www.youtube.com/watch?v=KQR0s52rbCE"
   },
   "EP10_old_elevenlabs": {
     "cancelled_at": "2026-11-15T14:46:00Z",
