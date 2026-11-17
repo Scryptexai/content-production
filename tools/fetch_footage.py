@@ -13,12 +13,14 @@ os.makedirs(OUT, exist_ok=True)
 
 # (query, jumlah klip) — disusun mengikuti bab EP01
 QUERIES = [
-    ("candle dark", 2), ("old book pages", 3), ("library bookshelf", 2),
-    ("writing quill ink", 2), ("printing press", 1), ("germany old town", 2),
-    ("courtroom gavel", 2), ("parliament building", 1), ("old documents", 3),
-    ("magnifying glass paper", 2), ("red thread", 1), ("chess pieces", 2),
-    ("statue sculpture", 2), ("night city aerial", 2), ("crowd slow motion", 2),
-    ("fog forest mountain", 2), ("cathedral interior", 2), ("hand writing letter", 2),
+    ("old library", 2), ("archive documents", 2), ("letters paper", 2),
+    ("fountain pen ink", 2), ("newspaper printing", 2), ("typewriter", 1),
+    ("church interior candles", 2), ("dark corridor", 1), ("rain on window night", 1),
+    ("smoke black background", 1), ("close up eye", 1), ("chess board", 1),
+    ("map compass", 1), ("old building facade", 1), ("press conference", 1),
+    ("parliament", 1), ("munich germany", 1), ("dust particles light", 1),
+    ("candle flame macro", 1), ("shadow walking", 1), ("hands holding paper", 1),
+    ("gavel", 1), ("seal wax", 1), ("portrait museum", 1),
 ]
 UA = {"User-Agent": "Mozilla/5.0 (footage-fetch)", "Accept": "application/json"}
 report = {"ok": [], "failed": [], "candidates": {}}
@@ -34,7 +36,7 @@ def try_download(url, dest):
     """curl bisa menarik mp4 maupun HLS (ffmpeg lewat curl tidak; pakai ffmpeg bila .m3u8)."""
     if url.endswith(".m3u8"):
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", url,
-               "-t", "10", "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", dest]
+               "-t", "6", "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", dest]
     else:
         tmp = dest + ".part"
         cmd = ["curl", "-fsSL", "--max-time", "180", "-o", tmp, url]
@@ -55,7 +57,7 @@ def try_download(url, dest):
 
 
 def normalize(src, dest):
-    cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-t", "8",
+    cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", src, "-t", "6",
            "-vf", "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=30",
            "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast",
            "-pix_fmt", "yuv420p", "-movflags", "+faststart", dest]
