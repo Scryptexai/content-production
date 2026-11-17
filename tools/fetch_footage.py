@@ -46,7 +46,10 @@ def try_download(url, dest):
             return False
         cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", tmp,
                "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", dest]
-    if subprocess.run(cmd).returncode != 0:
+    try:
+        if subprocess.run(cmd).returncode != 0:
+            return False
+    except OSError:
         return False
     return os.path.exists(dest) and os.path.getsize(dest) > 100_000
 

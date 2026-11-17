@@ -13,6 +13,8 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+      - name: pasang ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: ambil footage coverr
         run: |
           python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
