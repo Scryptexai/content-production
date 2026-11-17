@@ -55,3 +55,6 @@ ODDCHAPTER_BRAND/**/plates_src/
 ODDCHAPTER_BRAND/**/03_THUMBNAIL/plates/
 # klip footage hasil GitHub Actions (di-commit oleh bot, bukan dibangun lokal)
 !footage/
+
+# master dari Drive tidak pernah masuk Git (80 MB); workflow mengunduhnya sendiri
+google_drive/

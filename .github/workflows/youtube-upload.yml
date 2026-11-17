@@ -24,7 +24,7 @@ on:
       episode:
         description: "Episode yang diunggah (manual)"
         type: choice
-        options: ["EP01", "EP02", "EP03", "ALL"]
+        options: ["EP01", "EP02", "EP03", "EP01SB", "ALL"]
         default: "EP01"
       visibility:
         description: "Visibilitas di YouTube"
