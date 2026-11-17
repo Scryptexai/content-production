@@ -6,8 +6,10 @@ import "./fonts";
 import { Film } from "./Film";
 import { Captions } from "./scenes/Captions";
 import { Episode } from "./scenes/Episode";
+import { LongForm } from "./scenes/LongForm";
 import { KINDS, PlateGallery } from "./scenes/PlateGallery";
 import timingJson from "./timing.generated.json";
+import longformJson from "./longform.generated.json";
 import { BRAND_BEZIER, C, FPS, H, T, W } from "./theme";
 import { Monogram, Wordmark } from "./components/Marks";
 
@@ -137,6 +139,14 @@ export const RemotionRoot: React.FC = () => (
         height={H}
       />
     ))}
+    <Composition
+      id="ODDCHAPTER-LONGFORM-EP01"
+      component={LongForm}
+      durationInFrames={(longformJson as any).totalFrames}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
     <Composition id="PLATE-GALLERY" component={PlateGallery} durationInFrames={KINDS.length} fps={FPS} width={W} height={H} />
     <Composition id="TEST-FRAME" component={TestFrame} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="TEST-MOTION" component={TestMotion} durationInFrames={FPS * 3} fps={FPS} width={W} height={H} />

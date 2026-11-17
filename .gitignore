@@ -15,6 +15,12 @@ ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/
 ODDCHAPTER_BRAND/10_FILM/remotion/src/captions.generated.json
 ODDCHAPTER_BRAND/10_FILM/remotion/src/episodes.generated.json
 ODDCHAPTER_BRAND/10_FILM/remotion/src/timing.generated.json
+ODDCHAPTER_BRAND/10_FILM/remotion/src/longform.generated.json
+ODDCHAPTER_BRAND/10_FILM/remotion/public/plates/
+
+# berkas yang diunduh dari Drive pemilik (VO, musik, sfx, transkrip) — bahan,
+# bukan hasil kerja; jangan pernah masuk Git
+google_drive/
 ODDCHAPTER_BRAND/10_FILM/remotion/output/
 ODDCHAPTER_BRAND/10_FILM/remotion/src/brand.json
 ODDCHAPTER_BRAND/10_FILM/remotion/.cache/
