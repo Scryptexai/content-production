@@ -1,0 +1,22 @@
+name: fetch-footage
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "tools/fetch_footage.py"
+      - ".github/workflows/fetch-footage.yml"
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: ambil footage coverr
+        run: python3 tools/fetch_footage.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: footage
+          path: |
+            footage/*.mp4
+            footage-report.json
+          if-no-files-found: warn
