@@ -98,7 +98,7 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
         style={{
           width: "100%", height: "100%", objectFit: "cover", opacity: flicker,
           transform: `scale(${scale}) translateX(${tx}px)`,
-          filter: "saturate(0.72) contrast(1.06) brightness(0.82)",
+          filter: "saturate(0.62) contrast(1.12) brightness(0.66)",
         }}
       />
       <AbsoluteFill style={{
@@ -118,12 +118,24 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
   const zIn = 1 + drift * 0.035;
   const isTimeline = dg.style === "timeline";
 
-  const cardW = isTimeline ? 460 : 372;
-  const cardH = isTimeline ? 340 : 452;
-  const gap = isTimeline ? 104 : 62;
+  // Kartu tidak muncul berbarengan: kemunculannya disebar ke 45% durasi segmen,
+  // lalu sorotan bergilir tiap 6 detik supaya diagram 40 detik tetap bergerak
+  // bersama narasi (bukan gambar diam yang menunggu VO selesai).
+  const totalF = Math.max(1, durFrames);
+  const revealSpan = isTimeline
+    ? Math.min(4.5 * D.fps, Math.max(30, totalF * 0.4))
+    : Math.min(9 * D.fps, Math.max(40, totalF * 0.4));
+  const focusEvery = Math.max(4, Math.round((6 * D.fps)));
+  const focusIdx = Math.floor(born / focusEvery) % n;
+
+  const cardW = isTimeline ? 470 : 366;
+  const cardH = isTimeline ? 358 : 396;
+  const gap = isTimeline ? 96 : 64;
   const totalW = n * cardW + (n - 1) * gap;
   const startX = (W - totalW) / 2;
-  const baseY = isTimeline ? 470 : 424;
+  // kartu harus berhenti di atas blok caption (±780) supaya label kartu tidak
+  // tertimpa teks narasi — di 16:9 caption memakai lebar 1040 px di bawah kiri.
+  const baseY = isTimeline ? 372 : 352;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#080A0C", overflow: "hidden" }}>
@@ -139,11 +151,11 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
       <AbsoluteFill style={{ background: "radial-gradient(58% 50% at 50% 46%, rgba(196,106,52,0.14) 0%, rgba(8,10,12,0) 68%)" }} />
 
       {/* judul diagram */}
-      <div style={{ position: "absolute", left: MX, top: TOP + 66, opacity: p(born, 4, 26) }}>
-        <div style={{ fontFamily: "Inter", fontWeight: 700, fontSize: 20, letterSpacing: "0.3em", color: C.orange }}>
+      <div style={{ position: "absolute", left: MX, top: TOP + 118, opacity: p(born, 4, 26) }}>
+        <div style={{ fontFamily: "Inter", fontWeight: 700, fontSize: 19, letterSpacing: "0.32em", color: C.orange }}>
           {dg.kicker || "STRUKTUR"}
         </div>
-        <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 58, letterSpacing: "-0.02em", color: C.ivory, marginTop: 10 }}>
+        <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 52, letterSpacing: "-0.02em", color: C.ivory, marginTop: 8 }}>
           {dg.title || seg.chapter}
         </div>
       </div>
@@ -159,7 +171,7 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
             return (
               <g key={k}>
                 <line x1={x1} y1={baseY + cardH / 2} x2={x1 + len * g} y2={baseY + cardH / 2}
-                  stroke={C.orange} strokeWidth={2} opacity={0.5} />
+                  stroke={C.orange} strokeWidth={2.4} opacity={0.85} />
                 <circle cx={x1 + len * g} cy={baseY + cardH / 2} r={4} fill={C.orange} opacity={g} />
               </g>
             );
@@ -174,8 +186,10 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
 
       {/* kartu berisi foto */}
       {dg.cards.map((c, k) => {
-        const inAt = 14 + k * 13;
+        const inAt = 10 + (revealSpan * k) / n;
         const e = p(born, inAt, inAt + 22);
+        const focused = k === focusIdx;
+        const dim = e * (focused ? 1 : 0.72);
         const rot = (k % 2 === 0 ? -1 : 1) * (2.2 - e * 1.2);
         return (
           <div key={k} style={{
@@ -183,28 +197,29 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
             left: startX + k * (cardW + gap),
             top: baseY,
             width: cardW,
-            transform: `translateY(${(1 - e) * 70}px) scale(${0.94 + e * 0.06}) rotate(${rot}deg) scale(${zIn})`,
-            opacity: e,
+            transform: `translateY(${(1 - e) * 70}px) scale(${0.94 + e * 0.06}) rotate(${rot}deg) scale(${zIn * (focused ? 1.025 : 1)})`,
+            opacity: dim,
+            transition: "opacity 240ms linear",
           }}>
             <div style={{
               width: cardW, height: cardH, backgroundColor: "#12151A",
-              border: "1px solid rgba(214,222,208,0.28)",
+              border: focused ? "1px solid rgba(196,106,52,0.95)" : "1px solid rgba(214,222,208,0.28)",
               boxShadow: "0 26px 60px rgba(0,0,0,0.72)",
               overflow: "hidden", position: "relative",
             }}>
-              <Img src={staticFile(c.plate)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(6,8,10,0) 46%, rgba(6,8,10,0.92) 100%)" }} />
+              <Img src={staticFile(c.plate)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.08) saturate(0.95)" }} />
+              <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(6,8,10,0) 34%, rgba(6,8,10,0.72) 66%, rgba(6,8,10,0.97) 100%)" }} />
               {/* pin kertas */}
               <div style={{
                 position: "absolute", left: 18, top: 18, width: 12, height: 12, borderRadius: "50%",
                 backgroundColor: C.orange, boxShadow: "0 0 0 4px rgba(8,10,12,0.6)",
-                opacity: 0.6 + 0.4 * Math.abs(Math.sin(born / 22 + k)),
+                opacity: (focused ? 0.75 : 0.35) + 0.25 * Math.abs(Math.sin(born / 22 + k)),
               }} />
-              <div style={{ position: "absolute", left: 22, right: 22, bottom: 22 }}>
-                <div style={{ fontFamily: "Inter", fontWeight: 700, fontSize: 17, letterSpacing: "0.24em", color: C.orange, opacity: 0.95 }}>
+              <div style={{ position: "absolute", left: 22, right: 22, bottom: 20 }}>
+                <div style={{ fontFamily: "Inter", fontWeight: 700, fontSize: 15, letterSpacing: "0.26em", color: C.orange, opacity: 0.95, marginBottom: 6 }}>
                   {String(c.num).padStart(2, "0")}
                 </div>
-                <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: isTimeline ? 34 : 29, lineHeight: 1.14, color: C.ivory, marginTop: 8 }}>
+                <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: isTimeline ? 33 : 28, lineHeight: 1.12, color: C.ivory }}>
                   {c.label}
                 </div>
                 {c.sub ? (
@@ -372,7 +387,7 @@ export const LongForm: React.FC = () => {
       {seg && seg.layout === "diagram" && seg.diagram ? (
         <>
           <DiagramScene seg={seg} born={segBorn} durFrames={seg.endFrame - seg.startFrame} />
-          <Scrim />
+          <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(8,10,12,0.72) 0%, rgba(8,10,12,0.12) 16%, rgba(8,10,12,0) 38%, rgba(8,10,12,0.55) 74%, rgba(8,10,12,0.95) 100%)", pointerEvents: "none" }} />
           <ChapterTag text={seg.chapter} born={seg.startFrame} hold={Math.round(2.2 * fps)} />
           {cap ? <Caption cap={cap} born={Math.round(cap.t0 * fps)} hold={Math.max(1, Math.round((cap.t1 - cap.t0) * fps))} /> : null}
         </>

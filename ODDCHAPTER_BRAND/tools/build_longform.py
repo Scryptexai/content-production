@@ -125,7 +125,28 @@ def build(ep_id, verbose=False):
     #     dari batas blok, sisa 0,1–0,6 dtk muncul sebagai segmen hantu.
     blocks = data["segments"]
     cut_times = [c[0] for c in snapped]
-    edges = [0.0] + cut_times + [vo_dur]
+    # potongan juga dipecah saat layout berubah (footage → diagram), walau tidak
+    # ada kartu di antaranya. Tanpa ini dua blok berbeda layout tergabung dan
+    # salah satunya hilang (mis. blok diagram kehilangan kartu-kartunya).
+    def signature(b):
+        dg = b.get("diagram") or {}
+        return (b.get("layout", "footage"), dg.get("title", ""), tuple(b.get("footage") or ()))
+
+    layout_edges = []
+    for b0, b1 in zip(blocks, blocks[1:]):
+        # dua blok diagram berturut-turut tetap harus dipisah kalau diagramnya
+        # berbeda — kalau tidak, diagram blok kedua tidak pernah tampil.
+        if signature(b0) != signature(b1):
+            layout_edges.append(b1["start"])
+    # Potongan kartu TIDAK boleh dibuang (kalau batasnya hilang, kartunya ikut
+    # hilang dan VO jadi lebih pendek). Yang dibuang hanya batas layout yang
+    # menempel terlalu dekat — ini sumber sliver 0,3–0,9 dtk.
+    edges = sorted({0.0, *cut_times, vo_dur})
+    for e in sorted(layout_edges):
+        if all(abs(e - x) >= 2.5 for x in edges):
+            edges.append(e)
+    edges = sorted(edges)
+
     cards_by_orig = {round(c[0], 3): c[1] for c in snapped}
 
     def block_at(t):

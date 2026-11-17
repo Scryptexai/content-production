@@ -65,7 +65,7 @@ if (mode === "still") {
 
 const range = process.argv.slice(3).map(Number).filter((n) => !Number.isNaN(n));
 const raw = path.join(outDir, range.length === 2 ? `${NAME}_test.mp4` : `${NAME}_raw.mp4`);
-const master = path.join(outDir, `${NAME}_1080x1920_master.mp4`);
+const master = path.join(outDir, `${NAME}_1920x1080_master.mp4`);
 
 console.log("rendering…");
 const t0 = Date.now();
