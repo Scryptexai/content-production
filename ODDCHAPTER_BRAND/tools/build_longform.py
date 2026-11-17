@@ -178,14 +178,42 @@ def build(ep_id, verbose=False):
             picks = [blk["plates"][k2][0]]
         fits = {f: fit for f, fit in blk["plates"]}
         audio_map.append((round(t, 3), p_["start"], p_["end"]))
-        timeline_segments.append({
+        layout = blk.get("layout", "footage")
+        seg = {
             "i": p_["block"], "chapter": blk["chapter"], "start": round(t, 3),
             "end": round(t + dur, 3),
             "startFrame": round(t * fps), "endFrame": round((t + dur) * fps),
             "origStart": p_["start"], "origEnd": p_["end"],
+            "layout": layout,
             "plates": [{"plate": f"plates/{ep_id}LF/{f}", "fit": fits[f]} for f in picks],
             "captions": [],
-        })
+        }
+        if layout == "diagram":
+            dg = dict(blk.get("diagram") or {})
+            dg["cards"] = [
+                {"plate": f"plates/{ep_id}LF/{c['plate']}", "label": c.get("label", ""),
+                 "sub": c.get("sub", ""), "num": k + 1}
+                for k, c in enumerate(dg.get("cards", []))
+            ]
+            seg["diagram"] = dg
+        else:
+            # footage: potong jadi beberapa klip ±6,5 dtk, klip diputar bergiliran
+            clips = blk.get("footage") or []
+            ncut = max(1, round(dur / 6.5))
+            cuts = []
+            for k in range(ncut):
+                clip = clips[k % len(clips)] if clips else None
+                if not clip:
+                    continue
+                cuts.append({
+                    "clip": f"footage/{clip}",
+                    "start": round(t + dur * k / ncut, 3),
+                    "end": round(t + dur * (k + 1) / ncut, 3),
+                    "offset": round((k * 2.3) % 3.5, 2),
+                    "motion": (p_["block"] + k) % 4,
+                })
+            seg["footage"] = cuts
+        timeline_segments.append(seg)
         t += dur
     total = round(t, 3)
 
@@ -227,6 +255,22 @@ def build(ep_id, verbose=False):
     plates_out.mkdir(parents=True, exist_ok=True)
     for f in (ROOT / "10_FILM" / "assets" / f"SB-{ep_id}").glob("*.jpg"):
         shutil.copy(f, plates_out / f.name)
+
+    # footage Coverr (hasil GitHub Actions) → public/footage
+    fsrc = REPO / "footage"
+    fdst = PUB / "footage"
+    fdst.mkdir(parents=True, exist_ok=True)
+    nfoot = 0
+    if fsrc.exists():
+        for f in fsrc.glob("*.mp4"):
+            if not (fdst / f.name).exists():
+                shutil.copy(f, fdst / f.name)
+            nfoot += 1
+    need = sorted({c["clip"].split("/", 1)[1] for s_ in timeline_segments
+                   for c in s_.get("footage", [])})
+    gone = [c for c in need if not (fdst / c).exists()]
+    if gone:
+        raise SystemExit("footage tidak ada di public/footage: " + ", ".join(gone))
 
     sfx = asset(data["sfx"])
     sfx_rev = outdir / "sfx_rev.wav"
@@ -285,10 +329,13 @@ def build(ep_id, verbose=False):
         voice = "[voLN]"
 
     music = asset(data["music"])
-    filt.append(f"[3:a]atrim=0:{total:.3f},volume=-20dB,aresample=48000,"
+    # Musik harus terasa sepanjang video. Sebelumnya -20 dB + ducking rasio 12
+    # membuat musik nyaris hilang tiap VO masuk, jadi terdengar "hanya di beberapa
+    # bagian". Sekarang musik -14 dB dengan ducking ringan (rasio 5).
+    filt.append(f"[3:a]atrim=0:{total:.3f},volume=-14dB,aresample=48000,"
                 f"aformat=channel_layouts=stereo[mus]")
     filt.append(f"{voice}asplit=2[vkey][vmix]")
-    filt.append("[mus][vkey]sidechaincompress=threshold=0.03:ratio=12:attack=8:release=420[musd]")
+    filt.append("[mus][vkey]sidechaincompress=threshold=0.05:ratio=5:attack=12:release=520[musd]")
     filt.append("[musd][vmix]amix=inputs=2:dropout_transition=0,volume=2[mixed]")
     filt.append(f"[mixed]volume=-2dB,alimiter=limit=0.85,volume=-1dB,atrim=0:{total:.3f}[out]")
 
@@ -302,7 +349,8 @@ def build(ep_id, verbose=False):
     payload = {
         "id": data["id"], "series": data.get("series", "ANEH"), "title": data["title"],
         "vo": f"audio/{ep_id}LF/mix.wav", "fps": fps, "duration": total,
-        "totalFrames": round(total * fps), "cards": timeline_cards,
+        "totalFrames": round(total * fps), "width": 1920, "height": 1080,
+        "cards": timeline_cards,
         "segments": timeline_segments, "sumber": data.get("sumber", {}),
     }
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=1))

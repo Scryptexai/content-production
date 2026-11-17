@@ -144,8 +144,8 @@ export const RemotionRoot: React.FC = () => (
       component={LongForm}
       durationInFrames={(longformJson as any).totalFrames}
       fps={FPS}
-      width={W}
-      height={H}
+      width={(longformJson as any).width ?? 1920}
+      height={(longformJson as any).height ?? 1080}
     />
     <Composition id="PLATE-GALLERY" component={PlateGallery} durationInFrames={KINDS.length} fps={FPS} width={W} height={H} />
     <Composition id="TEST-FRAME" component={TestFrame} durationInFrames={1} fps={FPS} width={W} height={H} />
