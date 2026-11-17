@@ -1,0 +1,95 @@
+name: YouTube send (titik kirim)
+
+# Kenapa file ini ada:
+# tombol "Run workflow" butuh izin actions:write, dan token agen tidak punya izin
+# itu (dispatch ditolak 403). Dulu unggahan bisa jalan karena workflow-nya
+# dipicu oleh `push`. Jadi jalur yang sama dipakai lagi, tetapi eksplisit:
+# unggahan hanya berjalan kalau berkas SEND.json ada di commit, dan isinya
+# menyebut episode + visibilitas. Menghapus berkas itu akan memicu run yang
+# langsung berhenti tanpa mengunggah apa pun (dijaga di langkah pertama).
+on:
+  push:
+    paths:
+      - "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/SEND.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_YOUTUBE_ACCOUNT_ID: ${{ secrets.ZERNIO_YOUTUBE_ACCOUNT_ID }}
+      ZERNIO_PLAYLIST_ID: ${{ secrets.ZERNIO_PLAYLIST_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Baca perintah kirim
+        id: order
+        run: |
+          set -euo pipefail
+          f="ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/SEND.json"
+          if [ ! -f "$f" ]; then
+            echo "Tidak ada SEND.json — tidak ada yang dikirim."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 - "$f" <<'PY' >> "$GITHUB_OUTPUT"
+          import json, sys
+          d = json.load(open(sys.argv[1]))
+          print(f"go=true")
+          print(f"ep={d['episode']}")
+          print(f"vis={d.get('visibility', 'public')}")
+          print(f"send={'true' if d.get('send') else 'false'}")
+          PY
+          cat "$GITHUB_OUTPUT"
+
+      - name: Cek kredensial Zernio
+        if: steps.order.outputs.go == 'true'
+        run: |
+          if [ -z "${ZERNIO_API_KEY:-}" ] || [ -z "${ZERNIO_YOUTUBE_ACCOUNT_ID:-}" ]; then
+            echo "::error::ZERNIO_API_KEY / ZERNIO_YOUTUBE_ACCOUNT_ID belum ada di repo secrets."
+            exit 1
+          fi
+          echo "kredensial terpasang"
+
+      - name: Siapkan thumbnail dari repo
+        if: steps.order.outputs.go == 'true'
+        run: |
+          set -euo pipefail
+          ep="${{ steps.order.outputs.ep }}"
+          mkdir -p media
+          cp "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/${ep}_thumbnail.jpg" media/
+          ls -lh media
+
+      - name: Unduh master dari Drive
+        if: steps.order.outputs.go == 'true'
+        env:
+          EPISODE_SELECT: ${{ steps.order.outputs.ep }}
+        run: |
+          set -euo pipefail
+          pip install --quiet --disable-pip-version-check gdown
+          python3 ODDCHAPTER_BRAND/tools/fetch_masters.py
+
+      - name: Validasi metadata (tanpa mengirim)
+        if: steps.order.outputs.go == 'true'
+        run: |
+          set -euo pipefail
+          python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ steps.order.outputs.ep }}" --media-dir media
+
+      - name: Unggah ke YouTube lewat Zernio
+        if: steps.order.outputs.go == 'true' && steps.order.outputs.send == 'true'
+        run: |
+          set -euo pipefail
+          python3 ODDCHAPTER_BRAND/tools/upload_zernio.py "${{ steps.order.outputs.ep }}" \
+            --media-dir media --send --visibility "${{ steps.order.outputs.vis }}"
