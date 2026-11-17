@@ -12,11 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ambil footage coverr
-        run: python3 tools/fetch_footage.py
+        run: |
+          python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
+          tail -40 footage-log.txt
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: footage
           path: |
             footage/*.mp4
             footage-report.json
+            footage-log.txt
           if-no-files-found: warn
