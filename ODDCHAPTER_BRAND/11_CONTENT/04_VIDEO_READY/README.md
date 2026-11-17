@@ -96,4 +96,4 @@ thumbnail 1080x1920, metadata unggah, dan indeks ini. Master ada di Drive.
 
 | ep | judul | durasi | ukuran | Drive file id | berkas lokal |
 |---|---|---|---|---|---|
-| SB-EP01 | ILLUMINATI: ORGANISASI ATAU INTERPRETASI? — VO, timestamp, dan musik dari pemilik (17 Nov 2026) | 318,14 s | 81,6 MB | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` | `10_FILM/remotion/output/episodes/EP01_ILLUMINATI_1080x1920_master.mp4` |
+| SB-EP01 v2 | ILLUMINATI: ORGANISASI ATAU INTERPRETASI? — berjeda: 8 kartu bab + interstitial 0:15, efek gerak hidup (17 Nov 2026) | 341,95 s | 81,9 MB | `1vok-wjliIbWA3d4q-WDNqY8rvqBszdyy` | `10_FILM/remotion/output/episodes/EP01_ILLUMINATI_1080x1920_master.mp4` |

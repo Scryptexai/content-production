@@ -74,3 +74,41 @@ Laju akhir: ±3,5 frame/detik (2 core) → 5 menit video ≈ 45 menit render +
 3. Tiga stillframe: hook, satu kartu arsip, satu segmen tengah — caption tidak
    menabrak plate, tidak ada kotak putih, tidak ada teks terpotong.
 4. Unggah ke Drive `video ready` hari itu juga, catat di `MASTER_UPLOAD.md`.
+
+## v2 EP01 (17 Nov 2026) — jeda, bukan satu tarikan
+
+Pemilik menolak versi yang mengalir 318 dtk tanpa henti ("baca koran tanpa
+jeda"). Aturan yang sekarang berlaku untuk semua episode long-form:
+
+1. **Potong narasi di keheningan, bukan di waktu bulat.** `silencedetect`
+   (`-32 dB`, `0,3 dtk`) → ambil pusat keheningan terdekat (jangan geser
+   > 1,4 dtk) → kalau tidak ada, gagal keras. VO tetap utuh kata per kata.
+2. **Setiap bab dibuka kartu, dan di kartu itu VO diam.** Yang berbunyi cuma
+   sfx kertas (file sfx pemilik di-`areverse`) + musik. VO menyusul setelah
+   kartu selesai.
+3. **Satu interstitial di sekitar detik 15** (ikon digambar + dua tahun
+   beradu + tanda tanya) supaya hook tidak langsung jadi paparan.
+4. Kartu bab 2,6 dtk, interstitial 3,0 dtk → total +24 dtk untuk 5 menit.
+5. Caption: chunk dari **semua** blok naskah, lalu tempel ke potongan yang
+   memuat titik tengahnya. Kalau di-chunk per blok, blok yang tergabung dalam
+   satu potongan kehilangan caption (pernah: 40 dtk hanya 4 caption).
+6. Segmen = potongan VO, **bukan** batas blok naskah — sisa 0,1–0,6 dtk
+   menghasilkan segmen hantu dan caption nol.
+
+Efek "hidup" yang dipakai (murah, aman untuk 2 core):
+
+- 5 preset gerak per plate (`motion` 0–4): push-in, drift, push-out+rotasi,
+  sweep, handheld jitter — bukan zoom linear yang sama sepanjang episode.
+- debu naik pelan (10–14 titik, posisi = fungsi frame, bukan animasi state).
+- kilau diagonal menyapu plate; flicker proyektor ±2%.
+- caption muncul per kata (8 frame), angka/tahun otomatis oranye.
+- kedip 3 frame saat ganti plate + scrim atas-bawah (teks tetap aman di plate ramai).
+
+Biaya render naik dari ±3,5 ke ±2,1 frame/detik (10.258 frame = 4.799 dtk).
+Karena itu **preflight wajib**: `build_longform.py` memeriksa semua nama plate
+ada di `assets/SB-<EP>` sebelum menyusun json. Tanpa preflight, satu nama
+berkas salah menggugurkan render 80 menit di menit ke-35.
+
+Batas unggah Drive 100 MB: render `jpeg q92` keluar ±305 MB (1,9–3,6 Mbps
+bervariasi karena gerak kamera). Encode akhir dengan
+`-crf 23 -maxrate 1900k -bufsize 3800k` → 81,9 MB, tetap tajam untuk teks.

@@ -40,12 +40,13 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 
 | ep | versi | durasi | ukuran | diunggah | Drive file id |
 |---|---|---|---|---|---|
-| SB-EP01 | **v1 — ILLUMINATI: ORGANISASI ATAU INTERPRETASI?** (17 blok timestamp pemilik, 4 plate arsip domain publik). Berkas ada di folder seri pemilik: `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA` | 318,14 s | 81,6 MB | 17 Nov 2026 | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
+| SB-EP01 | **v2 — berjeda: 9 jeda (1 interstitial di 0:15 + 8 kartu bab), narasi dipotong di keheningan, 5 preset gerak + debu/kilau/flicker** · folder `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA` | 341,95 s | 81,9 MB | 17 Nov 2026 | `1vok-wjliIbWA3d4q-WDNqY8rvqBszdyy` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
 | ep | nama berkas | alasan | Drive file id |
 |---|---|---|---|
+| SB-EP01 | `EP01_ILLUMINATI_1080x1920_master_v1.mp4` | v1: satu tarikan tanpa jeda — pemilik: "terasa seperti baca koran tanpa jeda" | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
 | EP09 | `EP09_1080x1920_master_v3-intro-lama.mp4` | VO user sudah benar, tetapi 0,5 dtk pertama masih cover Somerton Man | `1ZMikYIar_HDYmS8wY5-wGbBDdM9DTnOL` |
 | EP09 | `EP09_1080x1920_master_v2-vo-lama.mp4` | render 15 Nov: audio dari naskah lama (Somerton Man), bukan VO user | `1SmFv67IVaoCxC7Ow1SCid4Pk6wtbkLBl` |
 | EP09 | `EP09_1080x1920_master_v1-plate.mp4` | render lama, seluruh episode cuma satu plate vektor statis (bukan foto per segmen) | `1hfB9nq-fScY1dJtA5_NCMYjoUH4r7lsi` |
@@ -122,3 +123,30 @@ seri pemilik `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA`
 (`1nYfjt-Ko9NJp-SDcDOCs3_pP5xXbWiGJ`) atas permintaan pemilik —
 "upload hasilnya kedrive". Izin tetap anyoneWithLink reader. Kalau seri ini
 nanti butuh arsip di `video ready`, tambahkan salinan, jangan dipindah lagi.
+
+## SB-EP01 v2 — apa yang berubah (17 Nov 2026)
+
+Keluhan pemilik atas v1: (1) "terasa seperti baca koran tanpa jeda", minta jeda +
+headline bab + potongan desain di detik 15 + VO dipotong tepat di batas konteks,
+(2) efek visual kurang hidup dibanding seri sebelumnya.
+
+Yang dikerjakan:
+
+| hal | v1 | v2 |
+|---|---|---|
+| narasi | satu tarikan 318 dtk | dipotong di 9 keheningan (`silencedetect -32dB/0,3s`), VO asli utuh kata per kata |
+| jeda | tidak ada | 1 interstitial 3,0 dtk di 0:15 + 8 kartu bab 2,6 dtk (total +23,8 dtk → 341,95 dtk) |
+| kartu bab | — | secarik kertas masuk miring, judul diketik, garis oranye tumbuh, sfx kertas (audio pemilik di-reverse) |
+| interstitial | — | ikon mata-segitiga digambar (stroke), 1776 & 2026 beradu, tanda tanya muncul, sfx dentuman |
+| gerak plate | zoom linear | 5 preset: push-in, drift, push-out+rotasi, sweep, handheld jitter |
+| lapisan | scrim | debu naik, kilau menyapu, flicker proyektor ±2%, scrim atas-bawah |
+| caption | per kata | per kata + angka/tahun otomatis oranye |
+
+Kartu (waktu di master v2): 0:15,8 interstitial · 0:26,6 TAFSIR MODERN ·
+1:12,1 SIAPA PEMIMPIN ILLUMINATI? · 1:52,7 1785 — DISEGEL · 2:38,0 TEORI LAHIR ·
+3:21,3 BUKTI YANG SAMA · 4:05,1 CELAH 200 TAHUN · 4:46,1 LEMAH DI DUA SISI ·
+5:34,4 JADI, YANG MANA?
+
+Berkas: `EP01_ILLUMINATI_1080x1920_master_v2.mp4` · 81.921.287 B · −14,0 LUFS ·
+TP −1,4 · sha256 `bb33cb54…df8ddcf`. Encode dibatasi `-maxrate 1900k` supaya di
+bawah batas unggah Drive 100 MB (raw 305 MB dari render).

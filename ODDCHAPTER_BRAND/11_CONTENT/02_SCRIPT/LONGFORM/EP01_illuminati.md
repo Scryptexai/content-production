@@ -76,3 +76,25 @@ node scripts/render-longform.mjs render         # 9544 frame → master
 
 `public/` di-ignore Git: plate dan mp3 tidak ikut commit. VO/musik/sfx asli ada
 di Drive pemilik, plate dibuat ulang dari daftar di tabel atas.
+
+## Struktur v2 — berjeda (17 Nov 2026)
+
+Naskah tidak berubah satu kata pun; yang berubah hanya **titik henti**. Narasi
+dipotong di keheningan asli VO, lalu tiap potongan diberi pembuka sendiri.
+
+| # | waktu | jeda | isi | yang berbunyi |
+|---|---|---|---|---|
+| — | 0:00–0:15,8 | — | hook: "BUKTI ATAU TAFSIR?" | VO |
+| 0 | 0:15,8–0:18,8 | interstitial 3,0 dtk | ikon mata-segitiga digambar · 1776 ↔ 2026 · "?" + "SATU PERTANYAAN, DUA JAWABAN" | sfx + musik |
+| 1 | 0:26,6 | kartu bab 2,6 dtk | TAFSIR MODERN · "mata satu, piramida, bank, perang" | sfx kertas + musik |
+| 2 | 1:12,1 | kartu bab | **SIAPA PEMIMPIN ILLUMINATI?** · "pertanyaan yang tidak pernah selesai" | sfx kertas + musik |
+| 3 | 1:52,7 | kartu bab | 1785 — DISEGEL, BUKAN DIHAPUS | sfx + musik |
+| 4 | 2:38,0 | kartu bab | TEORI LAHIR | sfx + musik |
+| 5 | 3:21,3 | kartu bab | BUKTI YANG SAMA | sfx + musik |
+| 6 | 4:05,1 | kartu bab | CELAH 200 TAHUN | sfx + musik |
+| 7 | 4:46,1 | kartu bab | LEMAH DI DUA SISI | sfx + musik |
+| 8 | 5:34,4 | kartu bab | JADI, YANG MANA? | sfx + musik |
+
+VO asli 318,12 dtk → master v2 341,95 dtk (+23,8 dtk jeda). Titik potong
+divalidasi ada di keheningan (pusat keheningan terdekat, geser maks 1,4 dtk),
+jadi tidak ada kata yang terbelah.

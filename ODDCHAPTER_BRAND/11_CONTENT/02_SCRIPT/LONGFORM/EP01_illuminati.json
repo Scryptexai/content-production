@@ -7,108 +7,263 @@
   "sfx": "google_drive/EP01_ILLUMINATI_SOUND_EFFECT.mp3",
   "fps": 30,
   "catatan": "Naskah + timestamp dari pemilik (Drive: SERIES BARU — ODDCHAPTER / EP01). Batas segmen diambil dari Timestamp-full.txt; teks di bawah identik dengan transkrip itu, tanpa ditulis ulang.",
-  "sfx_cues": [0.5, 118.5, 250.0, 313.0],
+  "sfx_cues": [
+    0.5,
+    118.5,
+    250.0,
+    313.0
+  ],
   "segments": [
     {
       "chapter": "BUKTI ATAU TAFSIR?",
-      "start": 0.0, "end": 23.0,
-      "plates": [["01_hook.jpg", "cover"]],
+      "start": 0.0,
+      "end": 23.0,
+      "plates": [
+        [
+          "01_hook.jpg",
+          "cover"
+        ]
+      ],
       "text": "Apakah Illuminati benar-benar bertahan sebagai jaringan rahasia atau yang bertahan cuma cara manusia menafsirkan bukti lama? Sebelum gue tunjukin buktinya, tekan like dulu. Nanti kita lihat apakah kesimpulannya bakal mengubah dugaan lo. Kalau lo pernah dengar nama Illuminati, kemungkinan besar yang muncul di kepala lo bukan sebuah organisasi kecil di Bavaria."
     },
     {
       "chapter": "MITOS MODERN",
-      "start": 23.0, "end": 52.0,
-      "plates": [["02_mitos.jpg", "cover"]],
+      "start": 23.0,
+      "end": 52.0,
+      "plates": [
+        [
+          "02_mitos.jpg",
+          "cover"
+        ]
+      ],
       "text": "Yang muncul mungkin simbol mata satu, piramida, tokoh politik, industri musik, perang, bank, bahkan hampir semua peristiwa besar yang terasa terlalu teratur untuk disebut kebetulan. Tapi sebelum kita masuk ke teori modern, kita harus kembali ke titik awalnya. Pada tahun 1776, seorang profesor hukum bernama Adam Weishaupt mendirikan sebuah kelompok rahasia di Ingolstadt, Bavaria."
     },
     {
       "chapter": "1776 — BAVARIA",
-      "start": 52.0, "end": 67.0,
-      "plates": [["weishaupt.jpg", "contain"], ["ingolstadt.jpg", "contain"]],
+      "start": 52.0,
+      "end": 67.0,
+      "plates": [
+        [
+          "weishaupt.jpg",
+          "contain"
+        ],
+        [
+          "ingolstadt.jpg",
+          "contain"
+        ]
+      ],
       "text": "Pada awalnya, mereka menyebut diri mereka Perfectibilists. Belakangan, kelompok ini lebih dikenal sebagai Illuminati. Jadi, bagian pertama dari teori konspirasi itu memang punya dasar sejarah."
     },
     {
       "chapter": "ORGANISASI NYATA",
-      "start": 67.0, "end": 86.0,
-      "plates": [["03_aturan.jpg", "cover"], ["dokumen_derajat.jpg", "contain"]],
+      "start": 67.0,
+      "end": 86.0,
+      "plates": [
+        [
+          "03_aturan.jpg",
+          "cover"
+        ]
+      ],
       "text": "Illuminati benar-benar pernah ada. Mereka punya struktur keanggotaan, aturan, jaringan komunikasi, dan gagasan politik yang dianggap berbahaya oleh penguasa Bavaria. Mereka ingin membentuk masyarakat yang lebih rasional dan bebas dari dominasi dogma agama serta monarki."
     },
     {
       "chapter": "REPRESI",
-      "start": 86.0, "end": 104.0,
-      "plates": [["04_meja.jpg", "cover"], ["05_edikt.jpg", "cover"]],
+      "start": 86.0,
+      "end": 104.0,
+      "plates": [
+        [
+          "04_meja.jpg",
+          "cover"
+        ],
+        [
+          "05_edikt.jpg",
+          "cover"
+        ]
+      ],
       "text": "Buat pemerintah saat itu, kelompok rahasia dengan anggota terdidik dan hubungan lintas kota bukan sesuatu yang bisa dibiarkan. Pada pertengahan 1780-an, pemerintah Bavaria mulai menekan organisasi ini. Beberapa dokumen disita, anggotanya diburu."
     },
     {
       "chapter": "1785 — DINYATAKAN ILEGAL",
-      "start": 104.0, "end": 118.5,
-      "plates": [["05_edikt.jpg", "cover"], ["08_halaman_hilang.jpg", "cover"]],
+      "start": 104.0,
+      "end": 118.5,
+      "plates": [
+        [
+          "05_edikt.jpg",
+          "cover"
+        ],
+        [
+          "08_halaman_hilang.jpg",
+          "cover"
+        ]
+      ],
       "text": "Pada 1785, Illuminati dinyatakan ilegal. Di titik ini, dua pembacaan mulai muncul. Pembacaan pertama mengatakan, organisasi itu tidak benar-benar hilang."
     },
     {
       "chapter": "1797 — TEORI MENYEBAR",
-      "start": 118.5, "end": 147.0,
-      "plates": [["06_dua_jalur.jpg", "cover"], ["barruel.jpg", "contain"]],
+      "start": 118.5,
+      "end": 147.0,
+      "plates": [
+        [
+          "06_dua_jalur.jpg",
+          "cover"
+        ],
+        [
+          "03_aturan.jpg",
+          "contain"
+        ]
+      ],
       "text": "Mereka mungkin berganti nama, masuk ke kelompok lain, atau melanjutkan jaringan mereka secara diam-diam. Pembacaan kedua mengatakan, organisasi itu memang berakhir, tetapi namanya terlalu menarik untuk dilupakan. Setelah Revolusi Perancis, penulis seperti Augustine Baruel dan John Robison mulai menulis bahwa Illuminati, Freemason, dan kelompok filsuf rahasia telah merancang perubahan politik besar di Eropa."
     },
     {
       "chapter": "BUKTI YANG DIPAKAI",
-      "start": 147.0, "end": 170.0,
-      "plates": [["07_benang.jpg", "cover"], ["dokumen_derajat.jpg", "contain"]],
+      "start": 147.0,
+      "end": 170.0,
+      "plates": [
+        [
+          "07_benang.jpg",
+          "cover"
+        ]
+      ],
       "text": "Tulisan-tulisan itu membuat sebuah kelompok lokal dari abad ke-18 berubah menjadi karakter utama dalam teori konspirasi global. Sekarang, mari kita lihat bukti yang dipakai kedua sisi. Pihak yang percaya Illuminati masih bertahan akan menunjuk pada dokumen internal, daftar anggota, simbol, dan hubungan dengan kelompok rahasia lain."
     },
     {
       "chapter": "INTERPRETASI A",
-      "start": 170.0, "end": 188.0,
-      "plates": [["07_benang.jpg", "cover"], ["03_aturan.jpg", "cover"]],
+      "start": 170.0,
+      "end": 188.0,
+      "plates": [
+        [
+          "07_benang.jpg",
+          "cover"
+        ],
+        [
+          "03_aturan.jpg",
+          "cover"
+        ]
+      ],
       "text": "Bagi mereka, fakta bahwa organisasi itu pernah punya struktur rahasia membuktikan bahwa kita tidak bisa melihat seluruh jaringan hanya dari catatan publik. Argumennya sederhana. Kalau mereka benar-benar rahasia, tentu bukti lengkapnya tidak akan tersedia."
     },
     {
       "chapter": "BACAAN SKEPTIS",
-      "start": 188.0, "end": 202.0,
-      "plates": [["08_halaman_hilang.jpg", "cover"], ["09_dua_panah.jpg", "cover"]],
+      "start": 188.0,
+      "end": 202.0,
+      "plates": [
+        [
+          "08_halaman_hilang.jpg",
+          "cover"
+        ],
+        [
+          "09_dua_panah.jpg",
+          "cover"
+        ]
+      ],
       "text": "Tapi pihak yang skeptis membaca bukti yang sama dengan cara berbeda. Dokumen itu membuktikan bahwa Illuminati pernah ada. Bukan bahwa mereka menguasai dunia selama ratusan tahun."
     },
     {
       "chapter": "SIMBOL DIPINJAM",
-      "start": 202.0, "end": 216.0,
-      "plates": [["02_mitos.jpg", "cover"], ["09_dua_panah.jpg", "cover"]],
+      "start": 202.0,
+      "end": 216.0,
+      "plates": [
+        [
+          "02_mitos.jpg",
+          "cover"
+        ],
+        [
+          "09_dua_panah.jpg",
+          "cover"
+        ]
+      ],
       "text": "Daftar anggota menunjukkan siapa yang pernah terhubung. Bukan bahwa semua orang itu menjalankan satu rencana global. Dan simbol mata atau piramida yang muncul di zaman modern tidak otomatis menjadi tanda kesinambungan."
     },
     {
       "chapter": "GARIS BUKTI TERPUTUS",
-      "start": 216.0, "end": 230.0,
-      "plates": [["08_halaman_hilang.jpg", "cover"], ["06_dua_jalur.jpg", "cover"]],
+      "start": 216.0,
+      "end": 230.0,
+      "plates": [
+        [
+          "08_halaman_hilang.jpg",
+          "cover"
+        ],
+        [
+          "06_dua_jalur.jpg",
+          "cover"
+        ]
+      ],
       "text": "Simbol bisa dipinjam, diubah, atau diberi makna baru oleh generasi yang berbeda. Masalah paling besar ada di antara dua titik itu. Ada bukti untuk keberadaan Illuminati pada abad ke-18."
     },
     {
       "chapter": "CELAH KESINAMBUNGAN",
-      "start": 230.0, "end": 250.0,
-      "plates": [["06_dua_jalur.jpg", "cover"], ["05_edikt.jpg", "cover"]],
+      "start": 230.0,
+      "end": 250.0,
+      "plates": [
+        [
+          "06_dua_jalur.jpg",
+          "cover"
+        ],
+        [
+          "05_edikt.jpg",
+          "cover"
+        ]
+      ],
       "text": "Ada bukti bahwa nama Illuminati kemudian dipakai dalam tulisan-tulisan konspirasi. Tapi belum ada garis bukti yang lengkap dari kelompok Bavaria tahun 1776 sampai klaim bahwa mereka mengendalikan politik ekonomi dan budaya dunia hari ini. Dan justru disitulah misterinya."
     },
     {
       "chapter": "DUA CARA MEMBACA",
-      "start": 250.0, "end": 268.0,
-      "plates": [["09_dua_panah.jpg", "cover"], ["01_hook.jpg", "cover"]],
+      "start": 250.0,
+      "end": 268.0,
+      "plates": [
+        [
+          "09_dua_panah.jpg",
+          "cover"
+        ],
+        [
+          "01_hook.jpg",
+          "cover"
+        ]
+      ],
       "text": "Karena tidak adanya bukti kesinambungan bisa dibaca dengan dua cara. Bagi satu pihak, itu adalah bukti bahwa jaringan tersebut sangat berhasil menyembunyikan diri. Bagi pihak lain, itu adalah tanda bahwa jaringan global tersebut tidak pernah terbukti ada."
     },
     {
       "chapter": "KELEMAHAN KEDUANYA",
-      "start": 268.0, "end": 288.0,
-      "plates": [["08_halaman_hilang.jpg", "cover"], ["04_meja.jpg", "cover"]],
+      "start": 268.0,
+      "end": 288.0,
+      "plates": [
+        [
+          "08_halaman_hilang.jpg",
+          "cover"
+        ],
+        [
+          "04_meja.jpg",
+          "cover"
+        ]
+      ],
       "text": "Kedua pembacaan itu memiliki kelemahan. Kalau semua dokumen yang hilang dianggap bukti bahwa konspirasi berhasil, teori itu tidak bisa diuji. Tapi kalau semua hal yang tidak tercatat langsung dianggap tidak pernah terjadi, kita juga lupa bahwa banyak aktivitas rahasia memang hanya meninggalkan potongan arsip."
     },
     {
       "chapter": "PERTANYAAN",
-      "start": 288.0, "end": 313.0,
-      "plates": [["04_meja.jpg", "cover"], ["01_hook.jpg", "cover"]],
+      "start": 288.0,
+      "end": 313.0,
+      "plates": [
+        [
+          "04_meja.jpg",
+          "cover"
+        ],
+        [
+          "01_hook.jpg",
+          "cover"
+        ]
+      ],
       "text": "Jadi, pertanyaan sebenarnya bukan apakah Illuminati pernah ada. Itu sudah bisa dijawab, mereka pernah ada. Pertanyaannya adalah, apakah organisasi itu bertahan sebagai jaringan rahasia atau yang bertahan hanya cara manusia menafsirkan bukti lama? Menurut lo, yang lebih kuat yang mana? Organisasinya atau teorinya? Tulis POV lo di komentar."
     },
     {
       "chapter": "ODDCHAPTER",
-      "start": 313.0, "end": 318.12,
-      "plates": [["01_hook.jpg", "cover"]],
+      "start": 313.0,
+      "end": 318.12,
+      "plates": [
+        [
+          "01_hook.jpg",
+          "cover"
+        ]
+      ],
       "text": "Subscribe kalau lo mau lihat bukti lain yang sering dibaca dengan cara berbeda."
     }
   ],
@@ -119,5 +274,87 @@
     "sfx": "EP01_ILLUMINATI_SOUND_EFFECT.mp3 milik pemilik — 1,04 s",
     "visual": "Rekomendasi visual dari dokumen pemilik (EP01 — TIMESTAMP & VISUAL RECOMMENDATION) + plate arsip domain publik (Weishaupt, Ingolstadt, Barruel, Nachtrag) dan rekonstruksi 3D/AI bertanda 'ilustrasi'",
     "apa_yang_tidak_diklaim": "Tidak ada simbol modern yang ditampilkan sebagai bukti Illuminati masih aktif; plate modern (mata, piramida) hanya dipakai saat VO membahas persepsi publik."
-  }
+  },
+  "cards": [
+    {
+      "at": 15.5,
+      "type": "interstitial",
+      "dur": 3.0,
+      "kicker": "1776  ·  2026",
+      "title": "SATU PERTANYAAN, DUA JAWABAN",
+      "sub": ""
+    },
+    {
+      "at": 23.0,
+      "type": "chapter",
+      "num": 1,
+      "dur": 2.6,
+      "kicker": "BAB 01 · TAFSIR",
+      "title": "TAFSIR MODERN",
+      "sub": "mata satu, piramida, bank, perang"
+    },
+    {
+      "at": 67.0,
+      "type": "chapter",
+      "num": 2,
+      "dur": 2.6,
+      "kicker": "BAB 02 · INGOLSTADT",
+      "title": "SIAPA PEMIMPIN ILLUMINATI?",
+      "sub": "Adam Weishaupt, 1776"
+    },
+    {
+      "at": 104.0,
+      "type": "chapter",
+      "num": 3,
+      "dur": 2.6,
+      "kicker": "BAB 03 · BAVARIA",
+      "title": "1785 — DISEGEL, BUKAN DIHAPUS",
+      "sub": "dokumen disita, anggota diburu"
+    },
+    {
+      "at": 147.0,
+      "type": "chapter",
+      "num": 4,
+      "dur": 2.6,
+      "kicker": "BAB 04 · 1797",
+      "title": "TEORI LAHIR",
+      "sub": "Barruel dan Robison"
+    },
+    {
+      "at": 188.0,
+      "type": "chapter",
+      "num": 5,
+      "dur": 2.6,
+      "kicker": "BAB 05 · DUA MAKNA",
+      "title": "BUKTI YANG SAMA",
+      "sub": "satu dokumen, dua kesimpulan"
+    },
+    {
+      "at": 230.0,
+      "type": "chapter",
+      "num": 6,
+      "dur": 2.6,
+      "kicker": "BAB 06 · 1776 → KINI",
+      "title": "CELAH 200 TAHUN",
+      "sub": "di mana garis buktinya putus"
+    },
+    {
+      "at": 268.0,
+      "type": "chapter",
+      "num": 7,
+      "dur": 2.6,
+      "kicker": "BAB 07 · UJI LOGIKA",
+      "title": "LEMAH DI DUA SISI",
+      "sub": "yang tidak bisa diuji"
+    },
+    {
+      "at": 313.0,
+      "type": "chapter",
+      "num": 8,
+      "dur": 2.6,
+      "kicker": "BAB 08 · PILIHANMU",
+      "title": "JADI, YANG MANA?",
+      "sub": "organisasinya atau teorinya"
+    }
+  ]
 }
