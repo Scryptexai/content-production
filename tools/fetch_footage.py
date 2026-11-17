@@ -13,14 +13,14 @@ os.makedirs(OUT, exist_ok=True)
 
 # (query, jumlah klip) — disusun mengikuti bab EP01
 QUERIES = [
-    ("old library", 2), ("archive documents", 2), ("letters paper", 2),
-    ("fountain pen ink", 2), ("newspaper printing", 2), ("typewriter", 1),
-    ("church interior candles", 2), ("dark corridor", 1), ("rain on window night", 1),
-    ("smoke black background", 1), ("close up eye", 1), ("chess board", 1),
-    ("map compass", 1), ("old building facade", 1), ("press conference", 1),
-    ("parliament", 1), ("munich germany", 1), ("dust particles light", 1),
-    ("candle flame macro", 1), ("shadow walking", 1), ("hands holding paper", 1),
-    ("gavel", 1), ("seal wax", 1), ("portrait museum", 1),
+    ("old paper texture", 2), ("candle flame", 2), ("light beam dust", 2),
+    ("quill pen", 2), ("ink well", 1), ("old map", 2),
+    ("portrait painting", 2), ("candles church dark", 2), ("stone staircase", 1),
+    ("shadow window light", 2), ("stack of books", 2), ("archive shelves", 2),
+    ("coins money", 1), ("bank building", 1), ("old newspaper", 2),
+    ("human eye macro", 1), ("cathedral dome", 1), ("moon night sky", 1),
+    ("fog night street", 2), ("wooden table dark", 2), ("hands holding letter", 2),
+    ("library reading", 2), ("black smoke", 1), ("typewriter keys", 1),
 ]
 UA = {"User-Agent": "Mozilla/5.0 (footage-fetch)", "Accept": "application/json"}
 report = {"ok": [], "failed": [], "candidates": {}}
