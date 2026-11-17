@@ -23,6 +23,7 @@ jobs:
         run: |
           git config user.name "footage-bot"
           git config user.email "bot@oddchapter.local"
-          git add -f footage/*.mp4 footage-report.json footage-log.txt 2>/dev/null || true
+          for f in footage-report.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
+          [ -d footage ] && git add -f footage || true
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
