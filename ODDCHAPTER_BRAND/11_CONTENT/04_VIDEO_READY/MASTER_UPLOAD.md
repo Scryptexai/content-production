@@ -40,7 +40,7 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 
 | ep | versi | durasi | ukuran | diunggah | Drive file id |
 |---|---|---|---|---|---|
-| SB-EP01 | **v1 — ILLUMINATI: ORGANISASI ATAU INTERPRETASI?** (17 blok timestamp pemilik, 4 plate arsip domain publik) | 318,14 s | 81,6 MB | 17 Nov 2026 | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
+| SB-EP01 | **v1 — ILLUMINATI: ORGANISASI ATAU INTERPRETASI?** (17 blok timestamp pemilik, 4 plate arsip domain publik). Berkas ada di folder seri pemilik: `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA` | 318,14 s | 81,6 MB | 17 Nov 2026 | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
 
 ## Arsip (digantikan, tetap ada di Drive)
 
@@ -116,3 +116,9 @@ VO tidak masuk repo; VO/musik/sfx asli tetap di Drive pemilik.
 Catatan yang belum ditutup di v1: label bab di atas layar memakai sage 75% tanpa
 scrim atas, jadi di plate yang ramai (kolase mitos) kontrasnya tipis. Perbaikan
 v2: satu gradient atas 180 px, tanpa perlu mengubah apa pun yang lain.
+
+Lokasi berkas (17 Nov 2026): dipindahkan dari folder `video ready` ke folder
+seri pemilik `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA`
+(`1nYfjt-Ko9NJp-SDcDOCs3_pP5xXbWiGJ`) atas permintaan pemilik —
+"upload hasilnya kedrive". Izin tetap anyoneWithLink reader. Kalau seri ini
+nanti butuh arsip di `video ready`, tambahkan salinan, jangan dipindah lagi.
