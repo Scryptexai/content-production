@@ -432,3 +432,32 @@ Aturan:
 Diperiksa mesin: `tools/check_research.py` (COVERAGE + GENERIK + TANYA).
 Episode didaftarkan di `02_SCRIPT/riset/_GATE.json` saat naskahnya sudah
 ditulis ulang dari riset; episode lama jangan dicap lulus sebelum ditulis ulang.
+
+## 22 · Jangan menyimpulkan "tidak punya akses" dari satu berkas (17 Nov 2026)
+
+Kesalahan yang diulang berkali-kali: menyatakan sesuatu mustahil (unggah YouTube,
+dispatch workflow) lalu memblokir pekerjaan sendiri, padahal jalurnya sudah ada
+dan pernah dipakai. Penyebabnya selalu sama — memeriksa **satu** sumber, bukan
+seluruh jejak.
+
+Aturan sebelum menyatakan "tidak bisa":
+
+1. **Baca berkas di branch kerja, bukan di `main`.** `origin/main:.github/workflows/x.yml`
+   bisa berbeda dengan `.github/workflows/x.yml` di branch sesi. Pada 17 Nov,
+   `main` memuat versi dispatch-only sementara branch memuat versi antrean
+   (`queue/*.json` + pemicu `push`) yang justru dipakai produksi.
+2. **Periksa `published.json` sebelum mengklaim belum pernah tayang.** Berkas itu
+   mencatat post_id + URL YouTube per episode. Isinya: EP01–EP10 tayang sejak
+   8 Nov 2026.
+3. **Lihat riwayat run yang `success`, bukan hanya run yang gagal.** Run
+   43725870807 (15 Nov 14:43) mengunggah lewat langkah "Cek kredensial" →
+   "Unduh master" → "Unggah" → "Catat episode". Artinya secret Zernio memang ada.
+4. **Jangan menguji jalur yang baru saya karang.** Run gagal dari workflow
+   duplikat buatan sendiri (`youtube-send.yml`) bukan bukti bahwa pipeline resmi
+   tidak bisa. Uji jalur resmi dulu.
+
+Cara unggah yang benar untuk seri ini: tulis
+`11_CONTENT/06_UPLOAD/queue/<EP>.json` dengan `"status": "requested"` dan
+`"approved": true`, lalu **push**. Pemicu `push` pada `queue/*.json` menjalankan
+workflow; ia mengunduh master dari Drive, mencocokkan sha256, mengunggah lewat
+Zernio, lalu mencatat hasilnya ke `published.json` di commit balik.

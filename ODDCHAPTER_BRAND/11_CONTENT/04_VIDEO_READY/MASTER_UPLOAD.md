@@ -166,3 +166,9 @@ bawah batas unggah Drive 100 MB (raw 305 MB dari render).
 Berkas: `EP01_ILLUMINATI_1920x1080_master_v3.mp4` · 80.697.815 B · −14,1 LUFS ·
 TP −1,3 · sha256 `02793d6d…788f8254`. Render 8.598 s (footage harus di-decode),
 encode akhir `-crf 19 -maxrate 2500k` → 1,89 Mbps.
+
+## Tayang di YouTube (17 Nov 2026)
+
+| ep | judul | tayang | post Zernio | URL |
+|---|---|---|---|---|
+| SB-EP01 | Illuminati Benar-Benar Ada pada 1776. Buktinya Berhenti di 1785. | 17 Nov 2026 13:09 UTC | `6afc51f72d1215796ffa1d8c` | https://www.youtube.com/watch?v=mhI-Q3uVy1g |
