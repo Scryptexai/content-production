@@ -1,355 +1,101 @@
 {
  "ok": [
   {
-   "query": "candle dark",
-   "file": "candle_dark__coverr-candles-in-the-dark-4381.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-candles-in-the-dark-4381/1080p.mp4",
-   "duration": "37.605000",
-   "title": "Candles in the dark"
+   "query": "letters paper",
+   "file": "letters_paper__coverr-writing-in-a-diary-2746.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-writing-in-a-diary-2746/1080p.mp4",
+   "duration": "28.111417",
+   "title": "Writing in a diary "
   },
   {
-   "query": "candle dark",
-   "file": "candle_dark__coverr-blurred-candles-in-the-dark-5231.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-blurred-candles-in-the-dark-5231/1080p.mp4",
-   "duration": "37.671000",
-   "title": "Blurred candles in the dark "
+   "query": "letters paper",
+   "file": "letters_paper__coverr-scheduling-a-meeting-in-a-diary-8878.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-scheduling-a-meeting-in-a-diary-8878/1080p.mp4",
+   "duration": "16.766750",
+   "title": "Scheduling a meeting in a diary"
   },
   {
-   "query": "old book pages",
-   "file": "old_book_pages__coverr-reading-the-bible-5396.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-reading-the-bible-5396/1080p.mp4",
-   "duration": "27.318958",
-   "title": "Reading the Bible "
+   "query": "newspaper printing",
+   "file": "newspaper_printing__coverr-local-dutch-newspapers-8257.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-local-dutch-newspapers-8257/1080p.mp4",
+   "duration": "29.946583",
+   "title": "Local, Dutch newspapers"
   },
   {
-   "query": "old book pages",
-   "file": "old_book_pages__coverr-flicking-through-bible-pages-3558.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-flicking-through-bible-pages-3558/1080p.mp4",
-   "duration": "11.177833",
-   "title": "Flicking through Bible pages"
+   "query": "dark corridor",
+   "file": "dark_corridor__coverr-scary-hallway-7141.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-scary-hallway-7141/1080p.mp4",
+   "duration": "20.583333",
+   "title": "Scary hallway"
   },
   {
-   "query": "printing press",
-   "file": "printing_press__coverr-grinding-up-coffee-beans-3389.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-grinding-up-coffee-beans-3389/1080p.mp4",
-   "duration": "20.000000",
-   "title": "Grinding up coffee beans"
+   "query": "rain on window night",
+   "file": "rain_on_window_night__user-ai-generation-BCHZqmfTpSvX.mp4",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-BCHZqmfTpSvX/1080p.mp4",
+   "duration": "8.041667",
+   "title": "Cozy Rainy Evening: Warm Lamp and Mug by Window \u2014 Quiet Coffee Moment"
   },
   {
-   "query": "statue sculpture",
-   "file": "statue_sculpture__coverr-the-statue-of-liberty-401.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-the-statue-of-liberty-401/1080p.mp4",
-   "duration": "11.303000",
-   "title": "The Statue of Liberty "
+   "query": "smoke black background",
+   "file": "smoke_black_background__user-ai-generation-iaAaX0rR2kx7.mp4",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-iaAaX0rR2kx7/1080p.mp4",
+   "duration": "8.000000",
+   "title": "Bold Energy in Colorful Smoke"
   },
   {
-   "query": "statue sculpture",
-   "file": "statue_sculpture__coverr-statue-of-a-girl-in-the-city-7209.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-statue-of-a-girl-in-the-city-7209/1080p.mp4",
-   "duration": "12.887875",
-   "title": "Statue of a girl in the city "
+   "query": "close up eye",
+   "file": "close_up_eye__coverr-ai-generated-close-up-of-a-pale-horses-eye.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-ai-generated-close-up-of-a-pale-horses-eye/1080p.mp4",
+   "duration": "8.666667",
+   "title": "AI-Generated Close-up of a Pale Horse's Eye"
   },
   {
-   "query": "night city aerial",
-   "file": "night_city_aerial__coverr-the-city-at-night-2412.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-the-city-at-night-2412/1080p.mp4",
-   "duration": "10.677333",
-   "title": "The city at night"
+   "query": "press conference",
+   "file": "press_conference__coverr-woman-preparing-for-a-video-conference-call-6023.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-woman-preparing-for-a-video-conference-call-6023/1080p.mp4",
+   "duration": "26.943583",
+   "title": "Woman preparing for a video conference call"
   },
   {
-   "query": "night city aerial",
-   "file": "night_city_aerial__coverr-city-at-night-4382.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-city-at-night-4382/1080p.mp4",
-   "duration": "15.348667",
-   "title": "City at night"
+   "query": "shadow walking",
+   "file": "shadow_walking__coverr-pov-walking-down-the-street-1894.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-pov-walking-down-the-street-1894/1080p.mp4",
+   "duration": "11.136000",
+   "title": "POV walking down the street"
   },
   {
-   "query": "crowd slow motion",
-   "file": "crowd_slow_motion__coverr-live-music-concert-5249.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-live-music-concert-5249/1080p.mp4",
-   "duration": "10.177000",
-   "title": "Live music concert"
+   "query": "hands holding paper",
+   "file": "hands_holding_paper__coverr-close-up-of-handwriting-in-notebook.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-close-up-of-handwriting-in-notebook/1080p.mp4",
+   "duration": "9.333333",
+   "title": "Close-up of a Woman Writing in a Notebook Using a Pencil"
   },
   {
-   "query": "crowd slow motion",
-   "file": "crowd_slow_motion__coverr-crowded-bridge-8424.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-crowded-bridge-8424/1080p.mp4",
-   "duration": "9.968292",
-   "title": "Crowded bridge "
+   "query": "gavel",
+   "file": "gavel__coverr-girl-smelling-a-rose-31.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-girl-smelling-a-rose-31/1080p.mp4",
+   "duration": "20.333333",
+   "title": "Girl smelling a rose"
   },
   {
-   "query": "fog forest mountain",
-   "file": "fog_forest_mountain__coverr-mountains-in-fanal-madeira-island-6802.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-mountains-in-fanal-madeira-island-6802/1080p.mp4",
-   "duration": "24.983292",
-   "title": "Mountains in Fanal Madeira Island"
-  },
-  {
-   "query": "fog forest mountain",
-   "file": "fog_forest_mountain__coverr-remnants-of-snow-on-mountains-6750.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-remnants-of-snow-on-mountains-6750/1080p.mp4",
-   "duration": "18.125000",
-   "title": "Remnants of snow on mountains"
-  },
-  {
-   "query": "cathedral interior",
-   "file": "cathedral_interior__coverr-positano-cathedral-7425.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-positano-cathedral-7425/1080p.mp4",
-   "duration": "12.303958",
-   "title": "Positano Cathedral"
-  },
-  {
-   "query": "hand writing letter",
-   "file": "hand_writing_letter__coverr-writing-a-note-4875.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-writing-a-note-4875/1080p.mp4",
-   "duration": "14.647000",
-   "title": "Writing a note"
-  },
-  {
-   "query": "hand writing letter",
-   "file": "hand_writing_letter__coverr-handwriting-a-note-8044.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-handwriting-a-note-8044/1080p.mp4",
-   "duration": "12.554208",
-   "title": "Handwriting a note"
+   "query": "seal wax",
+   "file": "seal_wax__coverr-a-man-waxing-a-surfboard-359.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-a-man-waxing-a-surfboard-359/1080p.mp4",
+   "duration": "12.262250",
+   "title": "A man waxing a surfboard"
   }
  ],
  "failed": [],
  "candidates": {
-  "candle dark": [
+  "letters paper": [
    {
-    "title": "Candles in the dark",
-    "base_filename": "coverr-candles-in-the-dark-4381",
-    "playback_id": "nQEAl8i9zVe0201E2JF0056gYftJTM4o027M",
-    "duration": "37.605000",
-    "max_height": 1080,
-    "fps": 30,
-    "slug": "candles-in-the-dark-djqsh78uic",
-    "urls": null
-   },
-   {
-    "title": "Blurred candles in the dark ",
-    "base_filename": "coverr-blurred-candles-in-the-dark-5231",
-    "playback_id": "Hmlp00abVfqW3v3O2Br2CviK1YFIwLava",
-    "duration": "37.671000",
-    "max_height": 1080,
-    "fps": 30,
-    "slug": "blurred-candles-in-the-dark-cbvm521zpt",
-    "urls": null
-   },
-   {
-    "title": "Covering the candle light",
-    "base_filename": "coverr-covering-the-candle-light-9516",
-    "playback_id": "uHCE2JrybB01cujAevH027ZVjPvJoOS6e6",
-    "duration": "10.750000",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "covering-the-candle-light-awjm0obgyp",
-    "urls": null
-   }
-  ],
-  "old book pages": [
-   {
-    "title": "Reading the Bible ",
-    "base_filename": "coverr-reading-the-bible-5396",
-    "playback_id": "KQPjaHB6sAbZDUnhtPn4qje01KxeL855c",
-    "duration": "27.318958",
+    "title": "Writing in a diary ",
+    "base_filename": "coverr-writing-in-a-diary-2746",
+    "playback_id": "6aACR4Tw009fgsIzNTGZ02TuJLQesrOBss",
+    "duration": "28.111417",
     "max_height": 1080,
     "fps": 24,
-    "slug": "reading-the-bible-mzfwzwxiec",
-    "urls": null
-   },
-   {
-    "title": "Flicking through Bible pages",
-    "base_filename": "coverr-flicking-through-bible-pages-3558",
-    "playback_id": "HPUvZViL2Viwn6XAioF300qItGxMhWiKL",
-    "duration": "11.177833",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "flicking-through-bible-pages-oyp73znkfg",
-    "urls": null
-   }
-  ],
-  "printing press": [
-   {
-    "title": "Grinding up coffee beans",
-    "base_filename": "coverr-grinding-up-coffee-beans-3389",
-    "playback_id": "gAf234d025PQAJkswdfGqLqzHKcby4wz8",
-    "duration": "20.000000",
-    "max_height": 1080,
-    "fps": 25,
-    "slug": "grinding-up-coffee-beans-hamh7b4qmi",
-    "urls": null
-   },
-   {
-    "title": "Pouring champagne",
-    "base_filename": "coverr-pouring-champagne-7958",
-    "playback_id": "7300x700r00VwbSd01vCIDa93RQu00WvzOlqg",
-    "duration": "25.960000",
-    "max_height": 1080,
-    "fps": 30,
-    "slug": "pouring-champagne-ham844ip7w",
-    "urls": null
-   }
-  ],
-  "statue sculpture": [
-   {
-    "title": "The Statue of Liberty ",
-    "base_filename": "coverr-the-statue-of-liberty-401",
-    "playback_id": "Y02W12YBGczCKm8tIQPLd602DhTWlWc01Wx",
-    "duration": "11.303000",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "the-statue-of-liberty-khbszq9r5r",
-    "urls": null
-   },
-   {
-    "title": "Statue of a girl in the city ",
-    "base_filename": "coverr-statue-of-a-girl-in-the-city-7209",
-    "playback_id": "7kCEfa24tqtL01jw4dnbsOs3LSJlKVGaO",
-    "duration": "12.887875",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "statue-of-a-girl-in-the-city-hzep4xaclw",
-    "urls": null
-   },
-   {
-    "title": "Stravinsky Fountain in Paris",
-    "base_filename": "coverr-stravinsky-fountain-in-paris-8328",
-    "playback_id": "00hR95EaoOQZAe6h6021YPe3U6OUGhvrwj",
-    "duration": "19.160000",
-    "max_height": 2160,
-    "fps": 25,
-    "slug": "stravinsky-fountain-in-paris-wi3ur1spqj",
-    "urls": null
-   }
-  ],
-  "night city aerial": [
-   {
-    "title": "The city at night",
-    "base_filename": "coverr-the-city-at-night-2412",
-    "playback_id": "oFeb7Ss00SjEyKVJO9Ob31ClD4sQDB0201r",
-    "duration": "10.677333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "the-city-at-night-rwwviyfijx",
-    "urls": null
-   },
-   {
-    "title": "City at night",
-    "base_filename": "coverr-city-at-night-4382",
-    "playback_id": "VHmc1dzwoCsunGu5uGqwXlYaFJFNDm4w",
-    "duration": "15.348667",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "city-at-night-hi5d328a8z",
-    "urls": null
-   },
-   {
-    "title": "Christmas tree in the city at night",
-    "base_filename": "coverr-christmas-tree-in-the-city-at-night-3570",
-    "playback_id": "PUGyd6vQxQrCc1oSRxkhWplla5cOJcr2",
-    "duration": "15.306958",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "christmas-tree-in-the-city-at-night-vlpjymxl8c",
-    "urls": null
-   }
-  ],
-  "crowd slow motion": [
-   {
-    "title": "Live music concert",
-    "base_filename": "coverr-live-music-concert-5249",
-    "playback_id": "EgO3W56tqF1N0001FB6z00pL6NfBQg1fwlc",
-    "duration": "10.177000",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "live-music-concert-fhbyqqs1vm",
-    "urls": null
-   },
-   {
-    "title": "Crowded bridge ",
-    "base_filename": "coverr-crowded-bridge-8424",
-    "playback_id": "CRaaC00GaRmCS7gcuBN5Dil02kB5LIrisJ",
-    "duration": "9.968292",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "crowded-bridge-tvotuho2fy",
-    "urls": null
-   },
-   {
-    "title": "Wild horses",
-    "base_filename": "coverr-wild-horses-6062",
-    "playback_id": "OKysc01H3xbvFmUQcRuhBV0000nwzMdUxBn",
-    "duration": "12.000000",
-    "max_height": 1080,
-    "fps": 25,
-    "slug": "wild-horses-8tayvsyk3e",
-    "urls": null
-   }
-  ],
-  "fog forest mountain": [
-   {
-    "title": "Mountains in Fanal Madeira Island",
-    "base_filename": "coverr-mountains-in-fanal-madeira-island-6802",
-    "playback_id": "XGEjo4iFrJ63UooKqDA4mwnPihwWf01MU",
-    "duration": "24.983292",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "mountains-in-fanal-madeira-island-k6y04kiflo",
-    "urls": null
-   },
-   {
-    "title": "Remnants of snow on mountains",
-    "base_filename": "coverr-remnants-of-snow-on-mountains-6750",
-    "playback_id": "DuqV01YEHe2mY02QF3Yho1B9EFYvkQPHgh",
-    "duration": "18.125000",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "remnants-of-snow-on-mountains-a22sro662u",
-    "urls": null
-   },
-   {
-    "title": "Man trips whilst walking ",
-    "base_filename": "coverr-man-trips-whilst-walking-8286",
-    "playback_id": "xyC90298dXyylqkEi9y99QYnBKcuJ7GwT",
-    "duration": "30.416667",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "man-trips-whilst-walking-xxetbaftaz",
-    "urls": null
-   }
-  ],
-  "cathedral interior": [
-   {
-    "title": "Positano Cathedral",
-    "base_filename": "coverr-positano-cathedral-7425",
-    "playback_id": "4NrLYRf6wgpgUC9oggdkldPYSp1V3MPm",
-    "duration": "12.303958",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "positano-cathedral-tzfydsokr2",
-    "urls": null
-   }
-  ],
-  "hand writing letter": [
-   {
-    "title": "Writing a note",
-    "base_filename": "coverr-writing-a-note-4875",
-    "playback_id": "V6C2Xs9GebHWZK00t00nK8a4zkH013s01kLT",
-    "duration": "14.647000",
-    "max_height": 1080,
-    "fps": 25,
-    "slug": "writing-a-note-4dlcikvejd",
-    "urls": null
-   },
-   {
-    "title": "Handwriting a note",
-    "base_filename": "coverr-handwriting-a-note-8044",
-    "playback_id": "OBH4xpUDKqrpEH4mNSkOcHOAnV76euUc",
-    "duration": "12.554208",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "handwriting-a-note-y73l9vbita",
+    "slug": "writing-in-a-diary-hqmn6dcn3p",
     "urls": null
    },
    {
@@ -360,6 +106,236 @@
     "max_height": 1080,
     "fps": 24,
     "slug": "scheduling-a-meeting-in-a-diary-yg7wydw4ov",
+    "urls": null
+   },
+   {
+    "title": "Old man writing in his notebook",
+    "base_filename": "coverr-old-man-writing-in-his-notebook-9925",
+    "playback_id": "2hkez4epsbnayXDLrZRwCiB0218xK016Bk",
+    "duration": "20.500000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "old-man-writing-in-his-notebook-lpk7svjfbp",
+    "urls": null
+   }
+  ],
+  "newspaper printing": [
+   {
+    "title": "Local, Dutch newspapers",
+    "base_filename": "coverr-local-dutch-newspapers-8257",
+    "playback_id": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV",
+    "duration": "29.946583",
+    "max_height": 1080,
+    "fps": 24,
+    "slug": "local-dutch-newspapers-ebdewpz6n4",
+    "urls": null
+   }
+  ],
+  "dark corridor": [
+   {
+    "title": "Scary hallway",
+    "base_filename": "coverr-scary-hallway-7141",
+    "playback_id": "3Jh8T4xnuDkV01lHYZINb3RSovc1ec1rx",
+    "duration": "20.583333",
+    "max_height": 1080,
+    "fps": 60,
+    "slug": "scary-hallway-jjpk1jfe8u",
+    "urls": null
+   },
+   {
+    "title": "Woman Exits Elevator Into Mysterious Nighttime Hallway",
+    "base_filename": "coverr-mysterious-doorway-at-night",
+    "playback_id": null,
+    "duration": "13.800000",
+    "max_height": 2160,
+    "fps": 25,
+    "slug": "mysterious-doorway-at-night",
+    "urls": null
+   },
+   {
+    "title": "A broker working with a candlestick chart",
+    "base_filename": "coverr-a-broker-working-with-a-candlestick-chart-7524",
+    "playback_id": "7R7VrFbOldrBA1Occy9RWMTkXWGJkAjp",
+    "duration": "21.229542",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "a-broker-working-with-a-candlestick-chart-mpc4m0fmdr",
+    "urls": null
+   }
+  ],
+  "rain on window night": [
+   {
+    "title": "Cozy Rainy Evening: Warm Lamp and Mug by Window \u2014 Quiet Coffee Moment",
+    "base_filename": "user-ai-generation-BCHZqmfTpSvX",
+    "playback_id": null,
+    "duration": "8.041667",
+    "max_height": 720,
+    "fps": 24,
+    "slug": "cozy-rainy-evening-warm-lamp-and-mug-by-window-quiet-coffee-moment",
+    "urls": null
+   }
+  ],
+  "smoke black background": [
+   {
+    "title": "Bold Energy in Colorful Smoke",
+    "base_filename": "user-ai-generation-iaAaX0rR2kx7",
+    "playback_id": null,
+    "duration": "8.000000",
+    "max_height": 720,
+    "fps": 24,
+    "slug": "bold-energy-in-colorful-smoke",
+    "urls": null
+   },
+   {
+    "title": "Smoke coming from a chimney",
+    "base_filename": "coverr-smoke-coming-from-a-chimney-8299",
+    "playback_id": "ucM5M7kpZNtjEeW00dLV4PPj7Nby02y302M",
+    "duration": "15.250000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "smoke-coming-from-a-chimney-wgodsymxwc",
+    "urls": null
+   },
+   {
+    "title": "A smoky chimney",
+    "base_filename": "coverr-a-smoky-chimney-5814",
+    "playback_id": "QXPwyrmlvgci5C01sQsiUeH69Wa64602OC",
+    "duration": "10.250000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "a-smoky-chimney-iiyti8nluu",
+    "urls": null
+   }
+  ],
+  "close up eye": [
+   {
+    "title": "AI-Generated Close-up of a Pale Horse's Eye",
+    "base_filename": "coverr-ai-generated-close-up-of-a-pale-horses-eye",
+    "playback_id": null,
+    "duration": "8.666667",
+    "max_height": 1280,
+    "fps": 24,
+    "slug": "ai-generated-close-up-of-a-pale-horses-eye",
+    "urls": null
+   },
+   {
+    "title": "Woman texting and smiling in the park ",
+    "base_filename": "coverr-woman-texting-and-smiling-in-the-park-3393",
+    "playback_id": "i1prRnO1DJJhybh8dMNahj64YCn3uOlq",
+    "duration": "9.375000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "woman-texting-and-smiling-in-the-park-t56vzqgng3",
+    "urls": null
+   },
+   {
+    "title": "Man sitting on a roof",
+    "base_filename": "coverr-man-sitting-on-a-roof-483",
+    "playback_id": "5krrMBuuc6wbUXkJvMGd6aemrg8OfZzx",
+    "duration": "14.625000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "man-sitting-on-a-roof-mlrqa5kqhs",
+    "urls": null
+   }
+  ],
+  "press conference": [
+   {
+    "title": "Woman preparing for a video conference call",
+    "base_filename": "coverr-woman-preparing-for-a-video-conference-call-6023",
+    "playback_id": "m3gZmXh9XnC8TEqTLoRTmgnzWqsISrfO",
+    "duration": "26.943583",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "woman-preparing-for-a-video-conference-call-sq4nph7fy4",
+    "urls": null
+   },
+   {
+    "title": "Girl preparing for a video conference call",
+    "base_filename": "coverr-girl-preparing-for-a-video-conference-call-9000",
+    "playback_id": "zCYlhQkhEhWEINvi8uwlK003kfHNHKqjg",
+    "duration": "26.943583",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "girl-preparing-for-a-video-conference-call-witxfihwoz",
+    "urls": null
+   }
+  ],
+  "shadow walking": [
+   {
+    "title": "POV walking down the street",
+    "base_filename": "coverr-pov-walking-down-the-street-1894",
+    "playback_id": "5DwDfSQITZf86800NmHtf7TuTWr5ozcoQ",
+    "duration": "11.136000",
+    "max_height": 720,
+    "fps": 50,
+    "slug": "pov-walking-down-the-street-dhhbehejvr",
+    "urls": null
+   },
+   {
+    "title": "A shadow of a man on the pavement",
+    "base_filename": "coverr-a-shadow-of-a-man-on-the-pavement-3707",
+    "playback_id": "VSY28W01hTcvpeVebilEeNEWw2k4ucCxJ",
+    "duration": "20.478792",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "a-shadow-of-a-man-on-the-pavement-q34ru5zqiz",
+    "urls": null
+   },
+   {
+    "title": "Cobblestone pavement with people walking",
+    "base_filename": "coverr-cobblestone-pavement-with-people-walking-543",
+    "playback_id": "BClUhUIXq022ckT8802lLdQXU9bYpRCTP8",
+    "duration": "18.601917",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "cobblestone-pavement-with-people-walking-euzmljmoww",
+    "urls": null
+   }
+  ],
+  "hands holding paper": [
+   {
+    "title": "Close-up of a Woman Writing in a Notebook Using a Pencil",
+    "base_filename": "coverr-close-up-of-handwriting-in-notebook",
+    "playback_id": null,
+    "duration": "9.333333",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "close-up-of-handwriting-in-notebook",
+    "urls": null
+   },
+   {
+    "title": "Urban Life: Close-up of Woman Drinking Coffee and Texting",
+    "base_filename": "coverr-urban-life-coffee-and-connectivity",
+    "playback_id": null,
+    "duration": "12.000000",
+    "max_height": 2160,
+    "fps": 25,
+    "slug": "urban-life-coffee-and-connectivity",
+    "urls": null
+   }
+  ],
+  "gavel": [
+   {
+    "title": "Girl smelling a rose",
+    "base_filename": "coverr-girl-smelling-a-rose-31",
+    "playback_id": "iUSXYnAVimovSJZE7NMZ52OZy9IvGZuy",
+    "duration": "20.333333",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "girl-smelling-a-rose-lcndygghmg",
+    "urls": null
+   }
+  ],
+  "seal wax": [
+   {
+    "title": "A man waxing a surfboard",
+    "base_filename": "coverr-a-man-waxing-a-surfboard-359",
+    "playback_id": "5EcA2tGdfNaZou02oURtq2Fpdk6lnEpr6",
+    "duration": "12.262250",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "a-man-waxing-a-surfboard-6hxrucsola",
     "urls": null
    }
   ]
