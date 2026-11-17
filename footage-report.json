@@ -1,191 +1,375 @@
 {
  "ok": [
   {
-   "query": "letters paper",
-   "file": "letters_paper__coverr-writing-in-a-diary-2746.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-writing-in-a-diary-2746/1080p.mp4",
-   "duration": "28.111417",
-   "title": "Writing in a diary "
+   "query": "candle flame",
+   "file": "candle_flame__coverr-candles-in-a-heart-shape-1.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-candles-in-a-heart-shape-1/1080p.mp4",
+   "duration": "25.775750",
+   "title": "Candles in a heart shape"
   },
   {
-   "query": "letters paper",
-   "file": "letters_paper__coverr-scheduling-a-meeting-in-a-diary-8878.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-scheduling-a-meeting-in-a-diary-8878/1080p.mp4",
-   "duration": "16.766750",
-   "title": "Scheduling a meeting in a diary"
+   "query": "candle flame",
+   "file": "candle_flame__coverr-burning-church-candles-4154.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-burning-church-candles-4154/1080p.mp4",
+   "duration": "13.013000",
+   "title": "Burning church candles"
   },
   {
-   "query": "newspaper printing",
-   "file": "newspaper_printing__coverr-local-dutch-newspapers-8257.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-local-dutch-newspapers-8257/1080p.mp4",
-   "duration": "29.946583",
-   "title": "Local, Dutch newspapers"
+   "query": "portrait painting",
+   "file": "portrait_painting__coverr-old-man-painting-a-portrait-8242.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-old-man-painting-a-portrait-8242/1080p.mp4",
+   "duration": "17.541667",
+   "title": "Old Man Painting a Portrait"
   },
   {
-   "query": "dark corridor",
-   "file": "dark_corridor__coverr-scary-hallway-7141.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-scary-hallway-7141/1080p.mp4",
-   "duration": "20.583333",
-   "title": "Scary hallway"
+   "query": "portrait painting",
+   "file": "portrait_painting__coverr-man-painting-a-self-portrait-2659.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-man-painting-a-self-portrait-2659/1080p.mp4",
+   "duration": "28.541667",
+   "title": "Man painting a self-portrait"
   },
   {
-   "query": "rain on window night",
-   "file": "rain_on_window_night__user-ai-generation-BCHZqmfTpSvX.mp4",
-   "via": "https://cdn.coverr.co/videos/user-ai-generation-BCHZqmfTpSvX/1080p.mp4",
-   "duration": "8.041667",
-   "title": "Cozy Rainy Evening: Warm Lamp and Mug by Window \u2014 Quiet Coffee Moment"
+   "query": "stone staircase",
+   "file": "stone_staircase__coverr-water-fountain-near-house-7599.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-water-fountain-near-house-7599/1080p.mp4",
+   "duration": "21.896875",
+   "title": "Water fountain near house"
   },
   {
-   "query": "smoke black background",
-   "file": "smoke_black_background__user-ai-generation-iaAaX0rR2kx7.mp4",
-   "via": "https://cdn.coverr.co/videos/user-ai-generation-iaAaX0rR2kx7/1080p.mp4",
+   "query": "stack of books",
+   "file": "stack_of_books__coverr-placing-books-on-a-desk-2325.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-placing-books-on-a-desk-2325/1080p.mp4",
+   "duration": "17.080000",
+   "title": "Placing books on a desk"
+  },
+  {
+   "query": "stack of books",
+   "file": "stack_of_books__coverr-taking-photos-of-boots-free-stock-video-footage-coverr-2550.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-taking-photos-of-boots-free-stock-video-footage-coverr-2550/1080p.mp4",
+   "duration": "17.833333",
+   "title": "Taking photos of boots - Free Stock Video Footage | Coverr"
+  },
+  {
+   "query": "coins money",
+   "file": "coins_money__coverr-falling-coins-6164.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-falling-coins-6164/1080p.mp4",
+   "duration": "14.333333",
+   "title": "Falling coins"
+  },
+  {
+   "query": "bank building",
+   "file": "bank_building__coverr-boats-floating-on-a-river-shore-in-panama-city-121.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-boats-floating-on-a-river-shore-in-panama-city-121/1080p.mp4",
+   "duration": "12.512500",
+   "title": "Boats floating on a river shore in Panama City"
+  },
+  {
+   "query": "cathedral dome",
+   "file": "cathedral_dome__coverr-a-view-of-the-domes-and-towers-of-the-jeronimos-monastery-1873.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-a-view-of-the-domes-and-towers-of-the-jeronimos-monastery-1873/1080p.mp4",
+   "duration": "16.558208",
+   "title": "A view of the domes and towers of the Jeronimos Monastery "
+  },
+  {
+   "query": "moon night sky",
+   "file": "moon_night_sky__user-ai-generation-0b4ZdNtmzT9q.mp4",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-0b4ZdNtmzT9q/1080p.mp4",
    "duration": "8.000000",
-   "title": "Bold Energy in Colorful Smoke"
+   "title": "Mysterious Figure Under a Starlit Sky"
   },
   {
-   "query": "close up eye",
-   "file": "close_up_eye__coverr-ai-generated-close-up-of-a-pale-horses-eye.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-ai-generated-close-up-of-a-pale-horses-eye/1080p.mp4",
-   "duration": "8.666667",
-   "title": "AI-Generated Close-up of a Pale Horse's Eye"
+   "query": "wooden table dark",
+   "file": "wooden_table_dark__user-ai-generation-o2j1Kz5wasuF.mp4",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-o2j1Kz5wasuF/1080p.mp4",
+   "duration": "8.000000",
+   "title": "Mysterious Deer-Masked Figure in Smoky Interrogation"
   },
   {
-   "query": "press conference",
-   "file": "press_conference__coverr-woman-preparing-for-a-video-conference-call-6023.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-woman-preparing-for-a-video-conference-call-6023/1080p.mp4",
-   "duration": "26.943583",
-   "title": "Woman preparing for a video conference call"
+   "query": "wooden table dark",
+   "file": "wooden_table_dark__coverr-online-shopping-bliss.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-online-shopping-bliss/1080p.mp4",
+   "duration": "11.541667",
+   "title": "Close-Up of Woman Choosing Products Online on Tablet Outdoors"
   },
   {
-   "query": "shadow walking",
-   "file": "shadow_walking__coverr-pov-walking-down-the-street-1894.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-pov-walking-down-the-street-1894/1080p.mp4",
-   "duration": "11.136000",
-   "title": "POV walking down the street"
-  },
-  {
-   "query": "hands holding paper",
-   "file": "hands_holding_paper__coverr-close-up-of-handwriting-in-notebook.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-close-up-of-handwriting-in-notebook/1080p.mp4",
-   "duration": "9.333333",
-   "title": "Close-up of a Woman Writing in a Notebook Using a Pencil"
-  },
-  {
-   "query": "gavel",
-   "file": "gavel__coverr-girl-smelling-a-rose-31.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-girl-smelling-a-rose-31/1080p.mp4",
-   "duration": "20.333333",
-   "title": "Girl smelling a rose"
-  },
-  {
-   "query": "seal wax",
-   "file": "seal_wax__coverr-a-man-waxing-a-surfboard-359.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-a-man-waxing-a-surfboard-359/1080p.mp4",
-   "duration": "12.262250",
-   "title": "A man waxing a surfboard"
+   "query": "black smoke",
+   "file": "black_smoke__coverr-smoke-coming-from-a-chimney-8299.mp4",
+   "via": "https://cdn.coverr.co/videos/coverr-smoke-coming-from-a-chimney-8299/1080p.mp4",
+   "duration": "15.250000",
+   "title": "Smoke coming from a chimney"
   }
  ],
  "failed": [],
  "candidates": {
-  "letters paper": [
+  "candle flame": [
    {
-    "title": "Writing in a diary ",
-    "base_filename": "coverr-writing-in-a-diary-2746",
-    "playback_id": "6aACR4Tw009fgsIzNTGZ02TuJLQesrOBss",
-    "duration": "28.111417",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "writing-in-a-diary-hqmn6dcn3p",
-    "urls": null
-   },
-   {
-    "title": "Scheduling a meeting in a diary",
-    "base_filename": "coverr-scheduling-a-meeting-in-a-diary-8878",
-    "playback_id": "zzxF1i8YN02FOk01ARoJ13Mn302Vi003WOzz",
-    "duration": "16.766750",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "scheduling-a-meeting-in-a-diary-yg7wydw4ov",
-    "urls": null
-   },
-   {
-    "title": "Old man writing in his notebook",
-    "base_filename": "coverr-old-man-writing-in-his-notebook-9925",
-    "playback_id": "2hkez4epsbnayXDLrZRwCiB0218xK016Bk",
-    "duration": "20.500000",
+    "title": "Candles in a heart shape",
+    "base_filename": "coverr-candles-in-a-heart-shape-1",
+    "playback_id": "9SHsG5Yd8zcHiYbanQMnA5Dew01X00Xkac",
+    "duration": "25.775750",
     "max_height": 2160,
     "fps": 24,
-    "slug": "old-man-writing-in-his-notebook-lpk7svjfbp",
+    "slug": "candles-in-a-heart-shape-61vyswc26d",
+    "urls": null
+   },
+   {
+    "title": "Burning church candles",
+    "base_filename": "coverr-burning-church-candles-4154",
+    "playback_id": "h6QdU8YxudWOlz4eJIvcQJHaBrYQ6CsE",
+    "duration": "13.013000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "burning-church-candles-v1y9sfoo09",
+    "urls": null
+   },
+   {
+    "title": "Lighting a candle",
+    "base_filename": "coverr-lighting-a-candle-7332",
+    "playback_id": "i1HF497B7NWDoWvllQOH3LB45SITrCG02",
+    "duration": "22.522500",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "lighting-a-candle-cmpavpzgnk",
     "urls": null
    }
   ],
-  "newspaper printing": [
+  "portrait painting": [
    {
-    "title": "Local, Dutch newspapers",
-    "base_filename": "coverr-local-dutch-newspapers-8257",
-    "playback_id": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV",
-    "duration": "29.946583",
+    "title": "Old Man Painting a Portrait",
+    "base_filename": "coverr-old-man-painting-a-portrait-8242",
+    "playback_id": "TCMcn6MPieNWmclEaTs02X01wow02ue007Pw",
+    "duration": "17.541667",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "old-man-painting-a-portrait-jjwk0k1nmt",
+    "urls": null
+   },
+   {
+    "title": "Man painting a self-portrait",
+    "base_filename": "coverr-man-painting-a-self-portrait-2659",
+    "playback_id": "L1TUvmblDKuWVIG6ktLgHBtCRKxdal7Y",
+    "duration": "28.541667",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "man-painting-a-self-portrait-t2iflc4fih",
+    "urls": null
+   },
+   {
+    "title": "Man painting his self-portrait",
+    "base_filename": "coverr-man-painting-his-self-portrait-83",
+    "playback_id": "ql5J8r25pdVlq9FjOERV1IVqLOe7ks3i",
+    "duration": "23.500000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "man-painting-his-self-portrait-szpxprmx0d",
+    "urls": null
+   }
+  ],
+  "stone staircase": [
+   {
+    "title": "Water fountain near house",
+    "base_filename": "coverr-water-fountain-near-house-7599",
+    "playback_id": "4801LP5IBycLe02A51ogGaw01l7pZra444d",
+    "duration": "21.896875",
     "max_height": 1080,
     "fps": 24,
-    "slug": "local-dutch-newspapers-ebdewpz6n4",
+    "slug": "water-fountain-near-house-buljxnbq76",
+    "urls": null
+   },
+   {
+    "title": "Young Woman Walking Down Stone Stairs Towards the Beach",
+    "base_filename": "coverr-tranquil-beachside-stroll",
+    "playback_id": null,
+    "duration": "12.375000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "tranquil-beachside-stroll",
     "urls": null
    }
   ],
-  "dark corridor": [
+  "stack of books": [
    {
-    "title": "Scary hallway",
-    "base_filename": "coverr-scary-hallway-7141",
-    "playback_id": "3Jh8T4xnuDkV01lHYZINb3RSovc1ec1rx",
-    "duration": "20.583333",
+    "title": "Placing books on a desk",
+    "base_filename": "coverr-placing-books-on-a-desk-2325",
+    "playback_id": "vZMMgp5GG7MJ44bWVgcBJiC8yM7w9t1c",
+    "duration": "17.080000",
+    "max_height": 1080,
+    "fps": 25,
+    "slug": "placing-books-on-a-desk-6t5wpgvwec",
+    "urls": null
+   },
+   {
+    "title": "Taking photos of boots - Free Stock Video Footage | Coverr",
+    "base_filename": "coverr-taking-photos-of-boots-free-stock-video-footage-coverr-2550",
+    "playback_id": "zdd5khPe020000402yh3l02Z3qmRVSIO66m28",
+    "duration": "17.833333",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "taking-photos-of-boots-free-stock-video-footage-or-coverr-kn4ce8vncd",
+    "urls": null
+   },
+   {
+    "title": "Flicking through a book ",
+    "base_filename": "coverr-flicking-through-a-book-9807",
+    "playback_id": "pVfVT7wrCon8r1201Qz2XEVnkUpIVo01mk",
+    "duration": "34.000000",
+    "max_height": 1080,
+    "fps": 25,
+    "slug": "flicking-through-a-book-mnuskw0gif",
+    "urls": null
+   }
+  ],
+  "coins money": [
+   {
+    "title": "Falling coins",
+    "base_filename": "coverr-falling-coins-6164",
+    "playback_id": "twqzWcJSW1saZe9xQBBtWRaciZnmvV00d",
+    "duration": "14.333333",
     "max_height": 1080,
     "fps": 60,
-    "slug": "scary-hallway-jjpk1jfe8u",
+    "slug": "falling-coins-1updorb4sh",
     "urls": null
    },
    {
-    "title": "Woman Exits Elevator Into Mysterious Nighttime Hallway",
-    "base_filename": "coverr-mysterious-doorway-at-night",
+    "title": "Inserting coins",
+    "base_filename": "coverr-inserting-coins-4022",
+    "playback_id": "nFiecYH5rtc1hms5pOgTOODpDdzjTAAM",
+    "duration": "12.291667",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "inserting-coins-bvauezcebs",
+    "urls": null
+   },
+   {
+    "title": "Pile of British coins",
+    "base_filename": "coverr-british-coins-in-a-pile-5302",
     "playback_id": null,
-    "duration": "13.800000",
+    "duration": "13.625000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "pile-of-british-coins-gi7bynkuig",
+    "urls": null
+   }
+  ],
+  "bank building": [
+   {
+    "title": "Boats floating on a river shore in Panama City",
+    "base_filename": "coverr-boats-floating-on-a-river-shore-in-panama-city-121",
+    "playback_id": "XTV79I01nRiyAWapsHTQlm8VrSPHXS00nR",
+    "duration": "12.512500",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "boats-floating-on-a-river-shore-in-panama-city-1inlglezc7",
+    "urls": null
+   },
+   {
+    "title": "UniCredit Tower",
+    "base_filename": "coverr-unicredit-tower-2371",
+    "playback_id": "1S602h6yuhSWyLRdePOKRRzaYUybOPuYp",
+    "duration": "29.404375",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "unicredit-tower-4je4sqmlr6",
+    "urls": null
+   },
+   {
+    "title": "Man Listens to Music Using Headphones while Walking at Night",
+    "base_filename": "coverr-twilight-city-call",
+    "playback_id": null,
+    "duration": "13.240000",
     "max_height": 2160,
     "fps": 25,
-    "slug": "mysterious-doorway-at-night",
+    "slug": "twilight-city-call",
+    "urls": null
+   }
+  ],
+  "cathedral dome": [
+   {
+    "title": "A view of the domes and towers of the Jeronimos Monastery ",
+    "base_filename": "coverr-a-view-of-the-domes-and-towers-of-the-jeronimos-monastery-1873",
+    "playback_id": "0002OzrRjZ3AauqBHN6V6lqip00zxwVQsy02",
+    "duration": "16.558208",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "a-view-of-the-domes-and-towers-of-the-jeronimos-monastery-lmzpsczy7o",
     "urls": null
    },
    {
-    "title": "A broker working with a candlestick chart",
-    "base_filename": "coverr-a-broker-working-with-a-candlestick-chart-7524",
-    "playback_id": "7R7VrFbOldrBA1Occy9RWMTkXWGJkAjp",
-    "duration": "21.229542",
+    "title": "Jeronimos Monastery in Lisbon, Portugal",
+    "base_filename": "coverr-jeronimos-monastery-in-lisbon-portugal-6360",
+    "playback_id": "KOMIjqTcYNcWDLMHwq2jl2sJQmeQNEma",
+    "duration": "11.469792",
     "max_height": 2160,
     "fps": 24,
-    "slug": "a-broker-working-with-a-candlestick-chart-mpc4m0fmdr",
+    "slug": "jeronimos-monastery-in-lisbon-portugal-d75gczwkuu",
     "urls": null
    }
   ],
-  "rain on window night": [
+  "moon night sky": [
    {
-    "title": "Cozy Rainy Evening: Warm Lamp and Mug by Window \u2014 Quiet Coffee Moment",
-    "base_filename": "user-ai-generation-BCHZqmfTpSvX",
-    "playback_id": null,
-    "duration": "8.041667",
-    "max_height": 720,
-    "fps": 24,
-    "slug": "cozy-rainy-evening-warm-lamp-and-mug-by-window-quiet-coffee-moment",
-    "urls": null
-   }
-  ],
-  "smoke black background": [
-   {
-    "title": "Bold Energy in Colorful Smoke",
-    "base_filename": "user-ai-generation-iaAaX0rR2kx7",
+    "title": "Mysterious Figure Under a Starlit Sky",
+    "base_filename": "user-ai-generation-0b4ZdNtmzT9q",
     "playback_id": null,
     "duration": "8.000000",
     "max_height": 720,
     "fps": 24,
-    "slug": "bold-energy-in-colorful-smoke",
+    "slug": "mysterious-figure-under-a-starlit-sky",
     "urls": null
    },
+   {
+    "title": "Palm trees at night",
+    "base_filename": "coverr-palm-trees-at-night-821",
+    "playback_id": "Z3HlIA00lXO2rXbIgDM5A3VkMs02KMY3Kb",
+    "duration": "6.798458",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "palm-trees-at-night-mszybam70m",
+    "urls": null
+   },
+   {
+    "title": "Woman in front of the clouds",
+    "base_filename": "coverr-woman-in-front-of-the-clouds-5888",
+    "playback_id": "SsGaNLoK00ewJSnlii8KgLoIRI4hzm02da",
+    "duration": "8.717042",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "woman-in-front-of-the-clouds-xmnwfirqqa",
+    "urls": null
+   }
+  ],
+  "wooden table dark": [
+   {
+    "title": "Mysterious Deer-Masked Figure in Smoky Interrogation",
+    "base_filename": "user-ai-generation-o2j1Kz5wasuF",
+    "playback_id": null,
+    "duration": "8.000000",
+    "max_height": 1080,
+    "fps": 24,
+    "slug": "mysterious-deer-masked-figure-in-smoky-interrogation",
+    "urls": null
+   },
+   {
+    "title": "Close-Up of Woman Choosing Products Online on Tablet Outdoors",
+    "base_filename": "coverr-online-shopping-bliss",
+    "playback_id": null,
+    "duration": "11.541667",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "online-shopping-bliss",
+    "urls": null
+   },
+   {
+    "title": "Close-Up of Woman Shopping Online with Tablet at Park",
+    "base_filename": "coverr-shopping-online-with-tablet",
+    "playback_id": null,
+    "duration": "11.750000",
+    "max_height": 2160,
+    "fps": 24,
+    "slug": "shopping-online-with-tablet",
+    "urls": null
+   }
+  ],
+  "black smoke": [
    {
     "title": "Smoke coming from a chimney",
     "base_filename": "coverr-smoke-coming-from-a-chimney-8299",
@@ -197,6 +381,16 @@
     "urls": null
    },
    {
+    "title": "Bold Energy in Colorful Smoke",
+    "base_filename": "user-ai-generation-iaAaX0rR2kx7",
+    "playback_id": null,
+    "duration": "8.000000",
+    "max_height": 720,
+    "fps": 24,
+    "slug": "bold-energy-in-colorful-smoke",
+    "urls": null
+   },
+   {
     "title": "A smoky chimney",
     "base_filename": "coverr-a-smoky-chimney-5814",
     "playback_id": "QXPwyrmlvgci5C01sQsiUeH69Wa64602OC",
@@ -204,138 +398,6 @@
     "max_height": 2160,
     "fps": 24,
     "slug": "a-smoky-chimney-iiyti8nluu",
-    "urls": null
-   }
-  ],
-  "close up eye": [
-   {
-    "title": "AI-Generated Close-up of a Pale Horse's Eye",
-    "base_filename": "coverr-ai-generated-close-up-of-a-pale-horses-eye",
-    "playback_id": null,
-    "duration": "8.666667",
-    "max_height": 1280,
-    "fps": 24,
-    "slug": "ai-generated-close-up-of-a-pale-horses-eye",
-    "urls": null
-   },
-   {
-    "title": "Woman texting and smiling in the park ",
-    "base_filename": "coverr-woman-texting-and-smiling-in-the-park-3393",
-    "playback_id": "i1prRnO1DJJhybh8dMNahj64YCn3uOlq",
-    "duration": "9.375000",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "woman-texting-and-smiling-in-the-park-t56vzqgng3",
-    "urls": null
-   },
-   {
-    "title": "Man sitting on a roof",
-    "base_filename": "coverr-man-sitting-on-a-roof-483",
-    "playback_id": "5krrMBuuc6wbUXkJvMGd6aemrg8OfZzx",
-    "duration": "14.625000",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "man-sitting-on-a-roof-mlrqa5kqhs",
-    "urls": null
-   }
-  ],
-  "press conference": [
-   {
-    "title": "Woman preparing for a video conference call",
-    "base_filename": "coverr-woman-preparing-for-a-video-conference-call-6023",
-    "playback_id": "m3gZmXh9XnC8TEqTLoRTmgnzWqsISrfO",
-    "duration": "26.943583",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "woman-preparing-for-a-video-conference-call-sq4nph7fy4",
-    "urls": null
-   },
-   {
-    "title": "Girl preparing for a video conference call",
-    "base_filename": "coverr-girl-preparing-for-a-video-conference-call-9000",
-    "playback_id": "zCYlhQkhEhWEINvi8uwlK003kfHNHKqjg",
-    "duration": "26.943583",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "girl-preparing-for-a-video-conference-call-witxfihwoz",
-    "urls": null
-   }
-  ],
-  "shadow walking": [
-   {
-    "title": "POV walking down the street",
-    "base_filename": "coverr-pov-walking-down-the-street-1894",
-    "playback_id": "5DwDfSQITZf86800NmHtf7TuTWr5ozcoQ",
-    "duration": "11.136000",
-    "max_height": 720,
-    "fps": 50,
-    "slug": "pov-walking-down-the-street-dhhbehejvr",
-    "urls": null
-   },
-   {
-    "title": "A shadow of a man on the pavement",
-    "base_filename": "coverr-a-shadow-of-a-man-on-the-pavement-3707",
-    "playback_id": "VSY28W01hTcvpeVebilEeNEWw2k4ucCxJ",
-    "duration": "20.478792",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "a-shadow-of-a-man-on-the-pavement-q34ru5zqiz",
-    "urls": null
-   },
-   {
-    "title": "Cobblestone pavement with people walking",
-    "base_filename": "coverr-cobblestone-pavement-with-people-walking-543",
-    "playback_id": "BClUhUIXq022ckT8802lLdQXU9bYpRCTP8",
-    "duration": "18.601917",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "cobblestone-pavement-with-people-walking-euzmljmoww",
-    "urls": null
-   }
-  ],
-  "hands holding paper": [
-   {
-    "title": "Close-up of a Woman Writing in a Notebook Using a Pencil",
-    "base_filename": "coverr-close-up-of-handwriting-in-notebook",
-    "playback_id": null,
-    "duration": "9.333333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "close-up-of-handwriting-in-notebook",
-    "urls": null
-   },
-   {
-    "title": "Urban Life: Close-up of Woman Drinking Coffee and Texting",
-    "base_filename": "coverr-urban-life-coffee-and-connectivity",
-    "playback_id": null,
-    "duration": "12.000000",
-    "max_height": 2160,
-    "fps": 25,
-    "slug": "urban-life-coffee-and-connectivity",
-    "urls": null
-   }
-  ],
-  "gavel": [
-   {
-    "title": "Girl smelling a rose",
-    "base_filename": "coverr-girl-smelling-a-rose-31",
-    "playback_id": "iUSXYnAVimovSJZE7NMZ52OZy9IvGZuy",
-    "duration": "20.333333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "girl-smelling-a-rose-lcndygghmg",
-    "urls": null
-   }
-  ],
-  "seal wax": [
-   {
-    "title": "A man waxing a surfboard",
-    "base_filename": "coverr-a-man-waxing-a-surfboard-359",
-    "playback_id": "5EcA2tGdfNaZou02oURtq2Fpdk6lnEpr6",
-    "duration": "12.262250",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "a-man-waxing-a-surfboard-6hxrucsola",
     "urls": null
    }
   ]
