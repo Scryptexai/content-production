@@ -221,3 +221,24 @@ Aturan pemakaiannya:
 | `file thumbnail tidak ada` | `thumbs/EP0n_thumbnail.jpg` hilang | salin dari `11_CONTENT/03_THUMBNAIL/EP0n.jpg` |
 | `judul … karakter, batas YouTube 100` | judul diedit melewati batas | potong, uji ulang dry-run |
 | Video jadi, thumbnail tidak | thumbnail > 2 MB | kompres JPEG; `thumbs/` saat ini ±0,1–0,3 MB |
+
+---
+
+## SB-EP01 (seri baru) — 17 Nov 2026
+
+Metadata: `EP01SB.json` · thumbnail: `thumbs/EP01SB_thumbnail.jpg` (+ `_alt`).
+
+- Video: `EP01_ILLUMINATI_1920x1080_master_v3.mp4` di folder Drive seri
+  (`1jSDnEw70IfrqpCn1UVahqB75Tc6hhvJG`, 80.697.815 B, sha256 `02793d6d…`).
+- Judul utama (64 karakter):
+  “Illuminati Benar-Benar Ada pada 1776. Buktinya Berhenti di 1785.”
+  Alternatif ada di `title_alt` (2 judul).
+- Format panjang 5:42 — **bukan Shorts**, jadi tanpa `#shorts` di deskripsi.
+- Kategori 27 (Education), `containsSyntheticMedia: true`.
+- Thumbnail dibuat `tools/make_thumbnail_ep01.py` (1280×720, 2 varian: kolase
+  arsip dan potret Weishaupt). Ukiran Weishaupt dari Wikimedia diinversi jadi
+  garis ivory di atas ink supaya tidak ada kotak putih di thumbnail gelap.
+
+Alur unggah tetap sama: Actions → **Upload episode to YouTube (Zernio)** →
+Run workflow → `episode=EP01SB`, `visibility=public`, `dry_run=false` → setujui
+environment `production`.
