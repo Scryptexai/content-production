@@ -36,6 +36,12 @@ dan berhenti dengan status ≠ 0 kalau ada master lokal yang belum tercatat.
 | EP10 | **v1 — VO buatan user, 9 foto segmen** | 59,90 s | 60,0 MB | 15 Nov 2026 | `1YfNXyS4qKM39zybT7LLpMkpq3JS7ibdX` |
 | EP11 | **v4 — topik diganti ke Valentich (T02), naskah ditulis dari tabel fakta riset; `voice-04`** | 53,33 s | 13,2 MB | 16 Nov 2026 | `1sOzdlwY34aI1beOz4UqnRl8SYMtKX6dz` |
 
+### Seri baru — long-form (VO + timestamp + musik dari pemilik)
+
+| ep | versi | durasi | ukuran | diunggah | Drive file id |
+|---|---|---|---|---|---|
+| SB-EP01 | **v1 — ILLUMINATI: ORGANISASI ATAU INTERPRETASI?** (17 blok timestamp pemilik, 4 plate arsip domain publik) | 318,14 s | 81,6 MB | 17 Nov 2026 | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` |
+
 ## Arsip (digantikan, tetap ada di Drive)
 
 | ep | nama berkas | alasan | Drive file id |
@@ -89,3 +95,24 @@ foto harus dibuat lagi.
 
 Status tayang: **menunggu persetujuan pemilik** (naskah ditunjukkan dulu).
 Master v2 Porong tetap yang terakhir disetujui untuk tayang sampai v4 disetujui.
+
+
+## Catatan aset kerja SB-EP01 (long-form Illuminati)
+
+Master `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` (81.584.277 B, 318,144 s, −13,9 LUFS,
+TP −1,4, sha256 `42c1816f…edcc0411d`) dibangun 17 Nov 2026 dari bahan pemilik di
+Drive `SERIES BARU — ODDCHAPTER / EP01 — ILLUMINATI PERNAH ADA`:
+VO 05:18, `Timestamp-full.txt` (17 blok), musik latar, satu sfx, dan dokumen
+rekomendasi visual. Naskah **tidak** ditulis ulang — potongan gambar mengikuti
+timestamp pemilik (`tools/build_longform.py`), caption adalah potongan transkrip.
+Audio: VO loudnorm −16, musik −18 dB + ducking sidechain, sfx di 0:00 · 1:58 ·
+4:10 · 5:13, master −14 LUFS. Plate: 9 ilustrasi (generate) + 4 arsip domain
+publik (Weishaupt, Ingolstadt/Hollar 1638, Barruel, Nachtrag) bertanda `ARSIP`.
+
+Cara membangun ulang ada di `SKILLS/18_LONGFORM.md` dan
+`02_SCRIPT/LONGFORM/EP01_illuminati.md`. `public/` di-ignore Git: plate, mix, dan
+VO tidak masuk repo; VO/musik/sfx asli tetap di Drive pemilik.
+
+Catatan yang belum ditutup di v1: label bab di atas layar memakai sage 75% tanpa
+scrim atas, jadi di plate yang ramai (kolase mitos) kontrasnya tipis. Perbaikan
+v2: satu gradient atas 180 px, tanpa perlu mengubah apa pun yang lain.

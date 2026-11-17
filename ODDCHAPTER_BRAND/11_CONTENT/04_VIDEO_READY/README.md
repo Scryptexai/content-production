@@ -91,3 +91,9 @@ lagi dibutuhkan di Git — `.gitignore` berlaku seperti sebelumnya.
 
 Yang tetap tersimpan di repo: naskah, data episode (`tools/content_data.py`),
 thumbnail 1080x1920, metadata unggah, dan indeks ini. Master ada di Drive.
+
+## Seri baru (long-form)
+
+| ep | judul | durasi | ukuran | Drive file id | berkas lokal |
+|---|---|---|---|---|---|
+| SB-EP01 | ILLUMINATI: ORGANISASI ATAU INTERPRETASI? — VO, timestamp, dan musik dari pemilik (17 Nov 2026) | 318,14 s | 81,6 MB | `1eNMpdk-cvMFIG-LI5nEW2_caVXO0D6qd` | `10_FILM/remotion/output/episodes/EP01_ILLUMINATI_1080x1920_master.mp4` |
