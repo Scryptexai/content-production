@@ -208,14 +208,15 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
               overflow: "hidden", position: "relative",
             }}>
               <Img src={staticFile(c.plate)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(1.08) saturate(0.95)" }} />
-              <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(6,8,10,0) 34%, rgba(6,8,10,0.72) 66%, rgba(6,8,10,0.97) 100%)" }} />
+              <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(6,8,10,0) 30%, rgba(6,8,10,0.80) 58%, rgba(6,8,10,0.97) 78%, rgba(6,8,10,0.99) 100%)" }} />
+              <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 132, backgroundColor: "rgba(8,10,12,0.62)", borderTop: "1px solid rgba(196,106,52,0.35)" }} />
               {/* pin kertas */}
               <div style={{
                 position: "absolute", left: 18, top: 18, width: 12, height: 12, borderRadius: "50%",
                 backgroundColor: C.orange, boxShadow: "0 0 0 4px rgba(8,10,12,0.6)",
                 opacity: (focused ? 0.75 : 0.35) + 0.25 * Math.abs(Math.sin(born / 22 + k)),
               }} />
-              <div style={{ position: "absolute", left: 22, right: 22, bottom: 20 }}>
+              <div style={{ position: "absolute", left: 22, right: 22, bottom: 22 }}>
                 <div style={{ fontFamily: "Inter", fontWeight: 700, fontSize: 15, letterSpacing: "0.26em", color: C.orange, opacity: 0.95, marginBottom: 6 }}>
                   {String(c.num).padStart(2, "0")}
                 </div>
@@ -223,7 +224,7 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
                   {c.label}
                 </div>
                 {c.sub ? (
-                  <div style={{ fontFamily: "Inter", fontWeight: 500, fontSize: 18, lineHeight: 1.32, color: C.sage, marginTop: 8 }}>
+                  <div style={{ fontFamily: "Inter", fontWeight: 500, fontSize: 18, lineHeight: 1.3, color: "#C3CBB9", marginTop: 6 }}>
                     {c.sub}
                   </div>
                 ) : null}
