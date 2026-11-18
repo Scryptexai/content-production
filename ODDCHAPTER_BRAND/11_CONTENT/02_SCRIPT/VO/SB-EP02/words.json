@@ -1,0 +1,8297 @@
+[
+ {
+  "w": "Lo",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 0.0,
+  "end": 0.16
+ },
+ {
+  "w": "yakin",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 0.16,
+  "end": 0.6
+ },
+ {
+  "w": "pesawat",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 0.6,
+  "end": 1.28
+ },
+ {
+  "w": "MH",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 1.28,
+  "end": 2.34
+ },
+ {
+  "w": "370",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 2.34,
+  "end": 2.34
+ },
+ {
+  "w": "hilang",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 2.34,
+  "end": 2.74
+ },
+ {
+  "w": "tanpa",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 2.74,
+  "end": 3.0
+ },
+ {
+  "w": "jejak",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 3.0,
+  "end": 3.44
+ },
+ {
+  "w": "Nggak",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 3.78,
+  "end": 3.94
+ },
+ {
+  "w": "hilang",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 3.94,
+  "end": 4.5
+ },
+ {
+  "w": "Pesawat",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 4.62,
+  "end": 5.16
+ },
+ {
+  "w": "itu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 5.16,
+  "end": 5.38
+ },
+ {
+  "w": "terlacak",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 5.38,
+  "end": 5.78
+ },
+ {
+  "w": "tujuh",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 5.78,
+  "end": 6.28
+ },
+ {
+  "w": "kali",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 6.28,
+  "end": 6.62
+ },
+ {
+  "w": "setelah",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 6.62,
+  "end": 7.02
+ },
+ {
+  "w": "transpondernya",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 7.02,
+  "end": 7.64
+ },
+ {
+  "w": "dimatikan",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 7.64,
+  "end": 8.16
+ },
+ {
+  "w": "Tujuh",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 8.16,
+  "end": 9.16
+ },
+ {
+  "w": "kali",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 9.16,
+  "end": 9.56
+ },
+ {
+  "w": "Dalam",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 9.72,
+  "end": 10.2
+ },
+ {
+  "w": "enam",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 10.2,
+  "end": 10.2
+ },
+ {
+  "w": "jam",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 10.64,
+  "end": 10.86
+ },
+ {
+  "w": "tiga",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 10.86,
+  "end": 10.86
+ },
+ {
+  "w": "puluh",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 10.86,
+  "end": 10.86
+ },
+ {
+  "w": "sembilan",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 10.86,
+  "end": 10.86
+ },
+ {
+  "w": "menit",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 11.38,
+  "end": 12.24
+ },
+ {
+  "w": "Dan",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 12.24,
+  "end": 12.44
+ },
+ {
+  "w": "dari",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 12.44,
+  "end": 12.68
+ },
+ {
+  "w": "tujuh",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 12.68,
+  "end": 13.1
+ },
+ {
+  "w": "pelacakan",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 13.1,
+  "end": 13.58
+ },
+ {
+  "w": "itu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 13.58,
+  "end": 13.88
+ },
+ {
+  "w": "kita",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 14.16,
+  "end": 14.38
+ },
+ {
+  "w": "cuma",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 14.38,
+  "end": 14.6
+ },
+ {
+  "w": "dapat",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 14.6,
+  "end": 14.86
+ },
+ {
+  "w": "satu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 14.86,
+  "end": 15.1
+ },
+ {
+  "w": "hal",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 15.1,
+  "end": 15.46
+ },
+ {
+  "w": "jarak",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 15.84,
+  "end": 16.18
+ },
+ {
+  "w": "ke",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 16.18,
+  "end": 16.3
+ },
+ {
+  "w": "satelit",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 16.3,
+  "end": 16.74
+ },
+ {
+  "w": "Bukan",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 16.88,
+  "end": 17.24
+ },
+ {
+  "w": "tempatnya",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 17.24,
+  "end": 17.98
+ },
+ {
+  "w": "Itu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 17.98,
+  "end": 18.44
+ },
+ {
+  "w": "sebabnya",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 18.44,
+  "end": 19.0
+ },
+ {
+  "w": "dua",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 19.0,
+  "end": 19.0
+ },
+ {
+  "w": "belas",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 19.0,
+  "end": 19.0
+ },
+ {
+  "w": "tahun",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 19.5,
+  "end": 19.98
+ },
+ {
+  "w": "kemudian",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 19.98,
+  "end": 20.54
+ },
+ {
+  "w": "kita",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 20.54,
+  "end": 20.98
+ },
+ {
+  "w": "masih",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 20.98,
+  "end": 21.24
+ },
+ {
+  "w": "menyapu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 21.24,
+  "end": 21.76
+ },
+ {
+  "w": "dasar",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 21.76,
+  "end": 22.06
+ },
+ {
+  "w": "laut",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 22.06,
+  "end": 22.26
+ },
+ {
+  "w": "yang",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 22.26,
+  "end": 22.44
+ },
+ {
+  "w": "belum",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 22.44,
+  "end": 22.7
+ },
+ {
+  "w": "tentu",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 22.7,
+  "end": 23.08
+ },
+ {
+  "w": "benar",
+  "seg": 1,
+  "seg_t": 1,
+  "start": 23.08,
+  "end": 23.7
+ },
+ {
+  "w": "Gue",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 23.7,
+  "end": 23.92
+ },
+ {
+  "w": "nggak",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 23.92,
+  "end": 24.06
+ },
+ {
+  "w": "akan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 24.06,
+  "end": 24.28
+ },
+ {
+  "w": "nebak",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 24.28,
+  "end": 24.52
+ },
+ {
+  "w": "siapa",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 24.52,
+  "end": 24.9
+ },
+ {
+  "w": "yang",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 24.9,
+  "end": 25.04
+ },
+ {
+  "w": "membalikkan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 25.04,
+  "end": 25.46
+ },
+ {
+  "w": "pesawat",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 25.46,
+  "end": 25.76
+ },
+ {
+  "w": "ini",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 25.76,
+  "end": 26.04
+ },
+ {
+  "w": "Laporan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 26.04,
+  "end": 26.82
+ },
+ {
+  "w": "resmi",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 26.82,
+  "end": 27.1
+ },
+ {
+  "w": "dua",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 27.1,
+  "end": 27.1
+ },
+ {
+  "w": "ribu",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 27.1,
+  "end": 27.1
+ },
+ {
+  "w": "delapan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 27.1,
+  "end": 27.1
+ },
+ {
+  "w": "belas",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 27.1,
+  "end": 27.1
+ },
+ {
+  "w": "pun",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 27.6,
+  "end": 28.16
+ },
+ {
+  "w": "tidak",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 28.16,
+  "end": 28.34
+ },
+ {
+  "w": "berani",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 28.34,
+  "end": 28.72
+ },
+ {
+  "w": "Yang",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 28.72,
+  "end": 29.26
+ },
+ {
+  "w": "gue",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 29.26,
+  "end": 29.44
+ },
+ {
+  "w": "mau",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 29.44,
+  "end": 29.6
+ },
+ {
+  "w": "tunjukin",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 29.6,
+  "end": 30.04
+ },
+ {
+  "w": "cuma",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 30.04,
+  "end": 30.2
+ },
+ {
+  "w": "satu",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 30.2,
+  "end": 30.62
+ },
+ {
+  "w": "bukti",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 31.02,
+  "end": 31.26
+ },
+ {
+  "w": "terkuat",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 31.26,
+  "end": 31.74
+ },
+ {
+  "w": "dalam",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 31.74,
+  "end": 31.92
+ },
+ {
+  "w": "kasus",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 31.92,
+  "end": 32.26
+ },
+ {
+  "w": "ini",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 32.26,
+  "end": 32.54
+ },
+ {
+  "w": "bukan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 32.8,
+  "end": 33.0
+ },
+ {
+  "w": "foto",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 33.0,
+  "end": 33.42
+ },
+ {
+  "w": "bukan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 33.84,
+  "end": 34.04
+ },
+ {
+  "w": "radar",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 34.04,
+  "end": 34.44
+ },
+ {
+  "w": "bukan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 34.8,
+  "end": 35.12
+ },
+ {
+  "w": "rekaman",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 35.12,
+  "end": 35.46
+ },
+ {
+  "w": "suara",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 35.46,
+  "end": 35.82
+ },
+ {
+  "w": "Bukti",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 36.12,
+  "end": 36.44
+ },
+ {
+  "w": "terkuatnya",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 36.44,
+  "end": 37.06
+ },
+ {
+  "w": "sisa",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 37.36,
+  "end": 37.56
+ },
+ {
+  "w": "hitungan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 37.56,
+  "end": 38.04
+ },
+ {
+  "w": "dari",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 38.04,
+  "end": 38.22
+ },
+ {
+  "w": "sistem",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 38.22,
+  "end": 38.5
+ },
+ {
+  "w": "komunikasi",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 38.5,
+  "end": 39.26
+ },
+ {
+  "w": "yang",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 39.26,
+  "end": 39.48
+ },
+ {
+  "w": "dibuat",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 39.48,
+  "end": 39.94
+ },
+ {
+  "w": "untuk",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 39.94,
+  "end": 40.16
+ },
+ {
+  "w": "hal",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 40.16,
+  "end": 40.44
+ },
+ {
+  "w": "lain",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 40.44,
+  "end": 40.72
+ },
+ {
+  "w": "Dan",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 41.06,
+  "end": 41.18
+ },
+ {
+  "w": "kalau",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 41.18,
+  "end": 41.4
+ },
+ {
+  "w": "lo",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 41.4,
+  "end": 41.6
+ },
+ {
+  "w": "pernah",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 41.6,
+  "end": 41.86
+ },
+ {
+  "w": "naik",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 41.86,
+  "end": 42.02
+ },
+ {
+  "w": "pesawat",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 42.02,
+  "end": 42.32
+ },
+ {
+  "w": "malam",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 42.32,
+  "end": 42.68
+ },
+ {
+  "w": "lalu",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 42.68,
+  "end": 42.9
+ },
+ {
+  "w": "tidur",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 42.9,
+  "end": 43.36
+ },
+ {
+  "w": "lo",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 43.74,
+  "end": 43.88
+ },
+ {
+  "w": "bergantung",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 43.88,
+  "end": 44.44
+ },
+ {
+  "w": "pada",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 44.44,
+  "end": 44.66
+ },
+ {
+  "w": "sistem",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 44.66,
+  "end": 44.96
+ },
+ {
+  "w": "yang",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 44.96,
+  "end": 45.14
+ },
+ {
+  "w": "sama",
+  "seg": 2,
+  "seg_t": 2,
+  "start": 45.14,
+  "end": 45.42
+ },
+ {
+  "w": "Delapan",
+  "seg": 3,
+  "seg_t": 2,
+  "start": 45.42,
+  "end": 45.42
+ },
+ {
+  "w": "Maret",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 46.76,
+  "end": 47.12
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "ribu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "empat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "belas",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "empat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 47.12,
+  "end": 47.12
+ },
+ {
+  "w": "menit",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 48.82,
+  "end": 49.4
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 49.4,
+  "end": 49.64
+ },
+ {
+  "w": "tengah",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 49.64,
+  "end": 49.88
+ },
+ {
+  "w": "malam",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 49.88,
+  "end": 50.28
+ },
+ {
+  "w": "waktu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 50.52,
+  "end": 50.7
+ },
+ {
+  "w": "Malaysia",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 50.7,
+  "end": 51.14
+ },
+ {
+  "w": "Boeing",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 51.6,
+  "end": 51.9
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 52.54,
+  "end": 52.749
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 52.749,
+  "end": 52.957
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 52.957,
+  "end": 53.166
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 53.166,
+  "end": 53.374
+ },
+ {
+  "w": "ratus",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 53.374,
+  "end": 53.583
+ },
+ {
+  "w": "E",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 53.583,
+  "end": 53.791
+ },
+ {
+  "w": "R",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 53.791,
+  "end": 54.0
+ },
+ {
+  "w": "nomor",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 54.32,
+  "end": 54.58
+ },
+ {
+  "w": "registrasi",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 54.58,
+  "end": 55.24
+ },
+ {
+  "w": "sembilan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 55.24,
+  "end": 55.568
+ },
+ {
+  "w": "em",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 55.568,
+  "end": 55.896
+ },
+ {
+  "w": "em",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 55.896,
+  "end": 56.224
+ },
+ {
+  "w": "er",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 56.224,
+  "end": 56.552
+ },
+ {
+  "w": "o",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 56.552,
+  "end": 56.88
+ },
+ {
+  "w": "lepas",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 57.22,
+  "end": 57.42
+ },
+ {
+  "w": "landas",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 57.42,
+  "end": 57.84
+ },
+ {
+  "w": "dari",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 57.84,
+  "end": 58.06
+ },
+ {
+  "w": "Kuala",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 58.06,
+  "end": 58.34
+ },
+ {
+  "w": "Lumpur",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 58.34,
+  "end": 58.76
+ },
+ {
+  "w": "menuju",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 58.76,
+  "end": 59.06
+ },
+ {
+  "w": "Beijing",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.06,
+  "end": 59.46
+ },
+ {
+  "w": "Dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.46,
+  "end": 59.46
+ },
+ {
+  "w": "ratus",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.46,
+  "end": 59.46
+ },
+ {
+  "w": "tiga",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.46,
+  "end": 59.46
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.46,
+  "end": 59.46
+ },
+ {
+  "w": "sembilan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 59.46,
+  "end": 59.46
+ },
+ {
+  "w": "orang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 61.08,
+  "end": 61.38
+ },
+ {
+  "w": "di",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 61.38,
+  "end": 61.58
+ },
+ {
+  "w": "dalamnya",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 61.58,
+  "end": 62.0
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 62.0,
+  "end": 62.0
+ },
+ {
+  "w": "pilot",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 62.5,
+  "end": 62.78
+ },
+ {
+  "w": "sepuluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 62.78,
+  "end": 62.78
+ },
+ {
+  "w": "awak",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 63.4,
+  "end": 63.72
+ },
+ {
+  "w": "kabin",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 63.72,
+  "end": 64.12
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 64.12,
+  "end": 64.12
+ },
+ {
+  "w": "ratus",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 64.12,
+  "end": 64.12
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 64.12,
+  "end": 64.12
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 64.12,
+  "end": 64.12
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 64.12,
+  "end": 64.12
+ },
+ {
+  "w": "penumpang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 65.52,
+  "end": 66.04
+ },
+ {
+  "w": "Satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 66.04,
+  "end": 66.04
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 66.74,
+  "end": 67.08
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 67.08,
+  "end": 67.08
+ },
+ {
+  "w": "menit",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 67.32,
+  "end": 67.76
+ },
+ {
+  "w": "Pesawat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 67.92,
+  "end": 68.26
+ },
+ {
+  "w": "mengirim",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 68.26,
+  "end": 68.6
+ },
+ {
+  "w": "laporan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 68.6,
+  "end": 69.06
+ },
+ {
+  "w": "data",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 69.06,
+  "end": 69.26
+ },
+ {
+  "w": "terakhirnya",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 69.26,
+  "end": 69.88
+ },
+ {
+  "w": "otomatis",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 70.16,
+  "end": 70.84
+ },
+ {
+  "w": "Laporan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 70.84,
+  "end": 71.54
+ },
+ {
+  "w": "berikutnya",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 71.54,
+  "end": 72.12
+ },
+ {
+  "w": "yang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 72.12,
+  "end": 72.48
+ },
+ {
+  "w": "seharusnya",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 72.48,
+  "end": 72.96
+ },
+ {
+  "w": "datang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 72.96,
+  "end": 73.3
+ },
+ {
+  "w": "satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 73.3,
+  "end": 73.72
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 73.72,
+  "end": 73.98
+ },
+ {
+  "w": "tiga",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 73.98,
+  "end": 73.98
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 73.98,
+  "end": 73.98
+ },
+ {
+  "w": "tujuh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 73.98,
+  "end": 73.98
+ },
+ {
+  "w": "menit",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 74.5,
+  "end": 75.1
+ },
+ {
+  "w": "tidak",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 75.1,
+  "end": 75.3
+ },
+ {
+  "w": "pernah",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 75.3,
+  "end": 75.6
+ },
+ {
+  "w": "sampai",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 75.6,
+  "end": 76.0
+ },
+ {
+  "w": "Satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 76.32,
+  "end": 76.74
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 76.74,
+  "end": 77.14
+ },
+ {
+  "w": "sembilan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 77.14,
+  "end": 77.14
+ },
+ {
+  "w": "belas",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 77.14,
+  "end": 77.14
+ },
+ {
+  "w": "Kontrol",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 78.16,
+  "end": 78.52
+ },
+ {
+  "w": "Kuala",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 78.52,
+  "end": 78.8
+ },
+ {
+  "w": "Lumpur",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 78.8,
+  "end": 79.22
+ },
+ {
+  "w": "menyerahkan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 79.22,
+  "end": 79.72
+ },
+ {
+  "w": "pesawat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 79.72,
+  "end": 80.1
+ },
+ {
+  "w": "ke",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 80.1,
+  "end": 80.28
+ },
+ {
+  "w": "Ho",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 80.28,
+  "end": 80.46
+ },
+ {
+  "w": "Chi",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 80.46,
+  "end": 80.6
+ },
+ {
+  "w": "Minh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 80.6,
+  "end": 80.86
+ },
+ {
+  "w": "Balasan",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 81.14,
+  "end": 81.44
+ },
+ {
+  "w": "terakhir",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 81.44,
+  "end": 81.84
+ },
+ {
+  "w": "dari",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 81.84,
+  "end": 82.0
+ },
+ {
+  "w": "kokpit",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 82.0,
+  "end": 82.3
+ },
+ {
+  "w": "Good",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 82.68,
+  "end": 82.78
+ },
+ {
+  "w": "night",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 82.78,
+  "end": 82.96
+ },
+ {
+  "w": "Malaysian",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 82.96,
+  "end": 83.48
+ },
+ {
+  "w": "three",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 83.48,
+  "end": 83.48
+ },
+ {
+  "w": "seven",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 83.48,
+  "end": 83.48
+ },
+ {
+  "w": "zero",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 83.48,
+  "end": 83.48
+ },
+ {
+  "w": "Satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 84.6,
+  "end": 84.98
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 84.98,
+  "end": 85.36
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 85.36,
+  "end": 85.36
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 85.36,
+  "end": 85.36
+ },
+ {
+  "w": "satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 85.36,
+  "end": 85.36
+ },
+ {
+  "w": "Transponder",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 86.42,
+  "end": 86.9
+ },
+ {
+  "w": "mati",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 86.9,
+  "end": 87.4
+ },
+ {
+  "w": "Pesawat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 87.68,
+  "end": 87.98
+ },
+ {
+  "w": "hilang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 87.98,
+  "end": 88.42
+ },
+ {
+  "w": "dari",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 88.42,
+  "end": 88.64
+ },
+ {
+  "w": "radar",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 88.64,
+  "end": 88.86
+ },
+ {
+  "w": "sipil",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 88.86,
+  "end": 89.38
+ },
+ {
+  "w": "di",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 89.38,
+  "end": 89.52
+ },
+ {
+  "w": "sekitar",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 89.52,
+  "end": 89.78
+ },
+ {
+  "w": "waypoint",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 89.78,
+  "end": 90.26
+ },
+ {
+  "w": "IGARI",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 90.26,
+  "end": 90.8
+ },
+ {
+  "w": "Tapi",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 91.0,
+  "end": 91.36
+ },
+ {
+  "w": "radar",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 91.36,
+  "end": 91.76
+ },
+ {
+  "w": "militer",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 91.76,
+  "end": 92.2
+ },
+ {
+  "w": "Malaysia",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 92.2,
+  "end": 92.66
+ },
+ {
+  "w": "masih",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 92.66,
+  "end": 92.92
+ },
+ {
+  "w": "melihatnya",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 92.92,
+  "end": 93.52
+ },
+ {
+  "w": "Satu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 93.8,
+  "end": 94.1
+ },
+ {
+  "w": "pesawat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 94.1,
+  "end": 94.48
+ },
+ {
+  "w": "berbalik",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 94.48,
+  "end": 94.9
+ },
+ {
+  "w": "arah",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 94.9,
+  "end": 95.44
+ },
+ {
+  "w": "melintasi",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 95.52,
+  "end": 95.96
+ },
+ {
+  "w": "Semenanjung",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 95.96,
+  "end": 96.58
+ },
+ {
+  "w": "ke",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 96.58,
+  "end": 96.92
+ },
+ {
+  "w": "barat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 96.92,
+  "end": 97.2
+ },
+ {
+  "w": "laut",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 97.2,
+  "end": 97.42
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 97.42,
+  "end": 97.78
+ },
+ {
+  "w": "Selat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 97.78,
+  "end": 98.02
+ },
+ {
+  "w": "Malaka",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 98.02,
+  "end": 98.46
+ },
+ {
+  "w": "Kontak",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 98.46,
+  "end": 99.1
+ },
+ {
+  "w": "terakhir",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 99.1,
+  "end": 99.54
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 99.54,
+  "end": 99.8
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 99.8,
+  "end": 100.14
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 100.14,
+  "end": 100.14
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 100.14,
+  "end": 100.14
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 100.14,
+  "end": 100.14
+ },
+ {
+  "w": "menit",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 100.52,
+  "end": 101.06
+ },
+ {
+  "w": "dekat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 101.12,
+  "end": 101.44
+ },
+ {
+  "w": "waypoint",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 101.44,
+  "end": 101.82
+ },
+ {
+  "w": "MEKAR",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 101.82,
+  "end": 101.967
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 101.967,
+  "end": 102.113
+ },
+ {
+  "w": "ratus",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 102.113,
+  "end": 102.26
+ },
+ {
+  "w": "mil",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 102.72,
+  "end": 103.08
+ },
+ {
+  "w": "laut",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 103.08,
+  "end": 103.36
+ },
+ {
+  "w": "dari",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 103.36,
+  "end": 103.64
+ },
+ {
+  "w": "Penang",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 103.64,
+  "end": 104.0
+ },
+ {
+  "w": "Lalu",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 104.26,
+  "end": 104.56
+ },
+ {
+  "w": "sunyi",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 104.56,
+  "end": 105.0
+ },
+ {
+  "w": "Sampai",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 105.26,
+  "end": 105.7
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 105.7,
+  "end": 106.0
+ },
+ {
+  "w": "lewat",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 106.0,
+  "end": 106.34
+ },
+ {
+  "w": "dua",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 107.54,
+  "end": 107.9
+ },
+ {
+  "w": "puluh",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 107.9,
+  "end": 107.9
+ },
+ {
+  "w": "lima",
+  "seg": 3,
+  "seg_t": 3,
+  "start": 107.9,
+  "end": 107.9
+ },
+ {
+  "w": "Dua",
+  "seg": 4,
+  "seg_t": 3,
+  "start": 107.9,
+  "end": 107.9
+ },
+ {
+  "w": "lewat",
+  "seg": 4,
+  "seg_t": 3,
+  "start": 107.9,
+  "end": 108.18
+ },
+ {
+  "w": "dua",
+  "seg": 4,
+  "seg_t": 3,
+  "start": 108.18,
+  "end": 108.18
+ },
+ {
+  "w": "puluh",
+  "seg": 4,
+  "seg_t": 3,
+  "start": 108.18,
+  "end": 108.18
+ },
+ {
+  "w": "lima",
+  "seg": 4,
+  "seg_t": 3,
+  "start": 108.18,
+  "end": 108.18
+ },
+ {
+  "w": "Unit",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 109.16,
+  "end": 109.4
+ },
+ {
+  "w": "data",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 109.4,
+  "end": 109.64
+ },
+ {
+  "w": "satelit",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 109.64,
+  "end": 110.1
+ },
+ {
+  "w": "pesawat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 110.1,
+  "end": 110.54
+ },
+ {
+  "w": "mendaftar",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 110.54,
+  "end": 111.2
+ },
+ {
+  "w": "ke",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 111.2,
+  "end": 111.58
+ },
+ {
+  "w": "jaringan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 111.58,
+  "end": 111.96
+ },
+ {
+  "w": "Inmarsat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 111.96,
+  "end": 112.34
+ },
+ {
+  "w": "Bukan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 112.54,
+  "end": 112.78
+ },
+ {
+  "w": "dipanggil",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 112.78,
+  "end": 113.16
+ },
+ {
+  "w": "awak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 113.16,
+  "end": 113.5
+ },
+ {
+  "w": "Otomatis",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 113.76,
+  "end": 114.4
+ },
+ {
+  "w": "Lalu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 114.7,
+  "end": 114.88
+ },
+ {
+  "w": "setiap",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 114.88,
+  "end": 115.24
+ },
+ {
+  "w": "jam",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 115.24,
+  "end": 115.5
+ },
+ {
+  "w": "lebih",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 115.76,
+  "end": 115.9
+ },
+ {
+  "w": "kurang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 115.9,
+  "end": 116.32
+ },
+ {
+  "w": "sistem",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 116.6,
+  "end": 116.88
+ },
+ {
+  "w": "melakukan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 116.88,
+  "end": 117.24
+ },
+ {
+  "w": "handshake",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 117.24,
+  "end": 117.82
+ },
+ {
+  "w": "Satu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 118.08,
+  "end": 118.36
+ },
+ {
+  "w": "sinyal",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 118.36,
+  "end": 118.6
+ },
+ {
+  "w": "keluar",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 118.6,
+  "end": 118.94
+ },
+ {
+  "w": "satu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 119.36,
+  "end": 119.56
+ },
+ {
+  "w": "jawaban",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 119.56,
+  "end": 119.92
+ },
+ {
+  "w": "balik",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 119.92,
+  "end": 120.3
+ },
+ {
+  "w": "Sampai",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 120.56,
+  "end": 120.92
+ },
+ {
+  "w": "delapan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 120.92,
+  "end": 120.92
+ },
+ {
+  "w": "lewat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 121.3,
+  "end": 121.6
+ },
+ {
+  "w": "sembilan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 121.6,
+  "end": 121.6
+ },
+ {
+  "w": "belas",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 121.6,
+  "end": 121.6
+ },
+ {
+  "w": "pagi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 121.88,
+  "end": 122.6
+ },
+ {
+  "w": "tercatat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 122.82,
+  "end": 123.18
+ },
+ {
+  "w": "tujuh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 123.18,
+  "end": 123.18
+ },
+ {
+  "w": "Dan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 123.84,
+  "end": 124.0
+ },
+ {
+  "w": "ini",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 124.0,
+  "end": 124.22
+ },
+ {
+  "w": "bagian",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 124.22,
+  "end": 124.6
+ },
+ {
+  "w": "yang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 124.6,
+  "end": 124.76
+ },
+ {
+  "w": "hampir",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 124.76,
+  "end": 125.2
+ },
+ {
+  "w": "selalu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 125.2,
+  "end": 125.58
+ },
+ {
+  "w": "dilewatkan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 125.58,
+  "end": 126.16
+ },
+ {
+  "w": "Tujuh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 126.16,
+  "end": 126.76
+ },
+ {
+  "w": "handshake",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 126.76,
+  "end": 127.18
+ },
+ {
+  "w": "itu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 127.18,
+  "end": 127.5
+ },
+ {
+  "w": "tidak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 127.5,
+  "end": 127.88
+ },
+ {
+  "w": "membawa",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 127.88,
+  "end": 128.28
+ },
+ {
+  "w": "posisi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 128.28,
+  "end": 128.86
+ },
+ {
+  "w": "Tidak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 129.1,
+  "end": 129.32
+ },
+ {
+  "w": "ada",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 129.32,
+  "end": 129.56
+ },
+ {
+  "w": "G",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 129.56,
+  "end": 129.673
+ },
+ {
+  "w": "P",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 129.673,
+  "end": 129.787
+ },
+ {
+  "w": "S",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 129.787,
+  "end": 129.9
+ },
+ {
+  "w": "Tidak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 130.46,
+  "end": 130.62
+ },
+ {
+  "w": "ada",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 130.62,
+  "end": 130.84
+ },
+ {
+  "w": "ketinggian",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 130.84,
+  "end": 131.36
+ },
+ {
+  "w": "Tidak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 131.68,
+  "end": 131.88
+ },
+ {
+  "w": "ada",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 131.88,
+  "end": 132.18
+ },
+ {
+  "w": "arah",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 132.18,
+  "end": 132.76
+ },
+ {
+  "w": "Transponder",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 132.84,
+  "end": 133.32
+ },
+ {
+  "w": "sudah",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 133.32,
+  "end": 133.56
+ },
+ {
+  "w": "mati",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 133.56,
+  "end": 134.04
+ },
+ {
+  "w": "pengirim",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 134.32,
+  "end": 134.56
+ },
+ {
+  "w": "data",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 134.56,
+  "end": 134.82
+ },
+ {
+  "w": "otomatis",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 134.82,
+  "end": 135.44
+ },
+ {
+  "w": "juga",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 135.44,
+  "end": 135.64
+ },
+ {
+  "w": "sudah",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 135.64,
+  "end": 135.84
+ },
+ {
+  "w": "mati",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 135.84,
+  "end": 136.46
+ },
+ {
+  "w": "Yang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 136.68,
+  "end": 136.7
+ },
+ {
+  "w": "tersisa",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 136.7,
+  "end": 137.18
+ },
+ {
+  "w": "dua",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 137.18,
+  "end": 137.62
+ },
+ {
+  "w": "angka",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 137.62,
+  "end": 138.06
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 138.4,
+  "end": 138.753
+ },
+ {
+  "w": "T",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 138.753,
+  "end": 139.107
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 139.107,
+  "end": 139.46
+ },
+ {
+  "w": "Selisih",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 139.86,
+  "end": 140.24
+ },
+ {
+  "w": "waktu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 140.24,
+  "end": 140.42
+ },
+ {
+  "w": "sinyal",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 140.42,
+  "end": 140.84
+ },
+ {
+  "w": "pergi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 140.84,
+  "end": 141.18
+ },
+ {
+  "w": "dan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 141.18,
+  "end": 141.44
+ },
+ {
+  "w": "pulang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 141.44,
+  "end": 141.84
+ },
+ {
+  "w": "Dari",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 142.12,
+  "end": 142.26
+ },
+ {
+  "w": "situ",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 142.26,
+  "end": 142.64
+ },
+ {
+  "w": "dihitung",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 142.64,
+  "end": 143.22
+ },
+ {
+  "w": "jarak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 143.22,
+  "end": 143.62
+ },
+ {
+  "w": "ke",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 143.62,
+  "end": 143.74
+ },
+ {
+  "w": "satelit",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 143.74,
+  "end": 144.24
+ },
+ {
+  "w": "Satu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 144.4,
+  "end": 144.68
+ },
+ {
+  "w": "jarak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 144.68,
+  "end": 145.08
+ },
+ {
+  "w": "satu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 145.3,
+  "end": 145.54
+ },
+ {
+  "w": "lingkaran",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 145.54,
+  "end": 146.02
+ },
+ {
+  "w": "kemungkinan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 146.02,
+  "end": 146.5
+ },
+ {
+  "w": "posisi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 146.5,
+  "end": 147.02
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 147.28,
+  "end": 147.653
+ },
+ {
+  "w": "F",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 147.653,
+  "end": 148.027
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 148.027,
+  "end": 148.4
+ },
+ {
+  "w": "Pergeseran",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 148.76,
+  "end": 149.28
+ },
+ {
+  "w": "frekuensi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 149.28,
+  "end": 149.92
+ },
+ {
+  "w": "karena",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 149.92,
+  "end": 150.18
+ },
+ {
+  "w": "gerak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 150.18,
+  "end": 150.58
+ },
+ {
+  "w": "Dari",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 150.78,
+  "end": 150.94
+ },
+ {
+  "w": "situ",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 150.94,
+  "end": 151.2
+ },
+ {
+  "w": "dibaca",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 151.2,
+  "end": 151.68
+ },
+ {
+  "w": "menjauh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 152.18,
+  "end": 153.18
+ },
+ {
+  "w": "atau",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 153.18,
+  "end": 153.46
+ },
+ {
+  "w": "mendekat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 153.46,
+  "end": 154.0
+ },
+ {
+  "w": "Tujuh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 154.0,
+  "end": 154.66
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 154.66,
+  "end": 154.84
+ },
+ {
+  "w": "T",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 154.84,
+  "end": 155.02
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 155.02,
+  "end": 155.2
+ },
+ {
+  "w": "memberi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 155.2,
+  "end": 155.84
+ },
+ {
+  "w": "tujuh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 155.84,
+  "end": 156.26
+ },
+ {
+  "w": "lingkaran",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 156.26,
+  "end": 156.86
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 157.04,
+  "end": 157.233
+ },
+ {
+  "w": "F",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 157.233,
+  "end": 157.427
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 157.427,
+  "end": 157.62
+ },
+ {
+  "w": "yang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 157.62,
+  "end": 158.04
+ },
+ {
+  "w": "memilih",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 158.04,
+  "end": 158.8
+ },
+ {
+  "w": "utara",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 158.8,
+  "end": 159.38
+ },
+ {
+  "w": "atau",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 159.38,
+  "end": 159.94
+ },
+ {
+  "w": "selatan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 159.94,
+  "end": 160.4
+ },
+ {
+  "w": "Hasilnya",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 160.74,
+  "end": 161.34
+ },
+ {
+  "w": "busur",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 161.34,
+  "end": 161.9
+ },
+ {
+  "w": "ketujuh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 161.9,
+  "end": 162.5
+ },
+ {
+  "w": "Membentang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 162.64,
+  "end": 163.26
+ },
+ {
+  "w": "seribu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 163.26,
+  "end": 163.26
+ },
+ {
+  "w": "dua",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 163.26,
+  "end": 163.26
+ },
+ {
+  "w": "ratus",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 163.26,
+  "end": 163.26
+ },
+ {
+  "w": "sampai",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 163.8,
+  "end": 164.58
+ },
+ {
+  "w": "dua",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 164.92,
+  "end": 165.113
+ },
+ {
+  "w": "ribu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 165.113,
+  "end": 165.307
+ },
+ {
+  "w": "kilometer",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 165.307,
+  "end": 165.5
+ },
+ {
+  "w": "di",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 165.5,
+  "end": 166.02
+ },
+ {
+  "w": "barat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 166.02,
+  "end": 166.36
+ },
+ {
+  "w": "Australia",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 166.36,
+  "end": 166.86
+ },
+ {
+  "w": "Itu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 167.2,
+  "end": 167.52
+ },
+ {
+  "w": "satu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 167.52,
+  "end": 167.74
+ },
+ {
+  "w": "satunya",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 167.74,
+  "end": 168.1
+ },
+ {
+  "w": "alasan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 168.1,
+  "end": 168.58
+ },
+ {
+  "w": "semua",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 168.58,
+  "end": 168.96
+ },
+ {
+  "w": "orang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 168.96,
+  "end": 169.22
+ },
+ {
+  "w": "sepakat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 169.22,
+  "end": 169.78
+ },
+ {
+  "w": "mencari",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 169.78,
+  "end": 170.14
+ },
+ {
+  "w": "di",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 170.14,
+  "end": 170.36
+ },
+ {
+  "w": "sana",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 170.36,
+  "end": 170.58
+ },
+ {
+  "w": "Dan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 170.88,
+  "end": 171.12
+ },
+ {
+  "w": "yang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 171.12,
+  "end": 171.28
+ },
+ {
+  "w": "harus",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 171.28,
+  "end": 171.46
+ },
+ {
+  "w": "lo",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 171.46,
+  "end": 171.6
+ },
+ {
+  "w": "tahu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 171.6,
+  "end": 171.9
+ },
+ {
+  "w": "Inmarsat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 172.42,
+  "end": 172.94
+ },
+ {
+  "w": "nggak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 172.94,
+  "end": 173.12
+ },
+ {
+  "w": "dibuat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 173.12,
+  "end": 173.6
+ },
+ {
+  "w": "untuk",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 173.6,
+  "end": 173.76
+ },
+ {
+  "w": "melacak",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 173.76,
+  "end": 174.1
+ },
+ {
+  "w": "pesawat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 174.1,
+  "end": 174.6
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 174.96,
+  "end": 175.16
+ },
+ {
+  "w": "T",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 175.16,
+  "end": 175.36
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 175.36,
+  "end": 175.56
+ },
+ {
+  "w": "dan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 175.56,
+  "end": 175.76
+ },
+ {
+  "w": "B",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 175.76,
+  "end": 175.947
+ },
+ {
+  "w": "F",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 175.947,
+  "end": 176.133
+ },
+ {
+  "w": "O",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 176.133,
+  "end": 176.32
+ },
+ {
+  "w": "itu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 176.32,
+  "end": 176.76
+ },
+ {
+  "w": "efek",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 176.76,
+  "end": 177.04
+ },
+ {
+  "w": "samping",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 177.04,
+  "end": 177.5
+ },
+ {
+  "w": "protokol",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 177.5,
+  "end": 177.94
+ },
+ {
+  "w": "komunikasi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 177.94,
+  "end": 178.7
+ },
+ {
+  "w": "bukan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 178.94,
+  "end": 179.26
+ },
+ {
+  "w": "alat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 179.26,
+  "end": 179.52
+ },
+ {
+  "w": "navigasi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 179.52,
+  "end": 180.16
+ },
+ {
+  "w": "Jadi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 180.16,
+  "end": 180.64
+ },
+ {
+  "w": "bukti",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 180.64,
+  "end": 180.96
+ },
+ {
+  "w": "terkuat",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 180.96,
+  "end": 181.46
+ },
+ {
+  "w": "dalam",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 181.46,
+  "end": 181.66
+ },
+ {
+  "w": "kasus",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 181.66,
+  "end": 181.98
+ },
+ {
+  "w": "ini",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 181.98,
+  "end": 182.3
+ },
+ {
+  "w": "bukan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 182.54,
+  "end": 182.82
+ },
+ {
+  "w": "pengukuran",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 182.82,
+  "end": 183.42
+ },
+ {
+  "w": "yang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 183.42,
+  "end": 183.6
+ },
+ {
+  "w": "dirancang",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 183.6,
+  "end": 184.18
+ },
+ {
+  "w": "untuk",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 184.18,
+  "end": 184.42
+ },
+ {
+  "w": "menjawab",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 184.42,
+  "end": 184.86
+ },
+ {
+  "w": "pertanyaan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 184.86,
+  "end": 185.42
+ },
+ {
+  "w": "ini",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 185.42,
+  "end": 185.64
+ },
+ {
+  "w": "Itu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 185.86,
+  "end": 186.16
+ },
+ {
+  "w": "sampah",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 186.16,
+  "end": 186.7
+ },
+ {
+  "w": "sistem",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 186.7,
+  "end": 186.96
+ },
+ {
+  "w": "komunikasi",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 186.96,
+  "end": 187.7
+ },
+ {
+  "w": "Dan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 188.1,
+  "end": 188.22
+ },
+ {
+  "w": "dari",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 188.22,
+  "end": 188.4
+ },
+ {
+  "w": "sampah",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 188.4,
+  "end": 188.76
+ },
+ {
+  "w": "itu",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 188.76,
+  "end": 189.08
+ },
+ {
+  "w": "seluruh",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 189.52,
+  "end": 190.04
+ },
+ {
+  "w": "samudra",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 190.04,
+  "end": 190.54
+ },
+ {
+  "w": "ditentukan",
+  "seg": 4,
+  "seg_t": 4,
+  "start": 190.54,
+  "end": 191.1
+ },
+ {
+  "w": "Pencarian",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 191.58,
+  "end": 192.0
+ },
+ {
+  "w": "pertama",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 192.0,
+  "end": 192.38
+ },
+ {
+  "w": "dipimpin",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 192.38,
+  "end": 192.88
+ },
+ {
+  "w": "Australia",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 192.88,
+  "end": 193.34
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 193.34,
+  "end": 193.34
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 193.34,
+  "end": 193.34
+ },
+ {
+  "w": "empat",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 193.34,
+  "end": 193.34
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 193.34,
+  "end": 193.34
+ },
+ {
+  "w": "sampai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 194.34,
+  "end": 195.04
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "Seratus",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 195.04,
+  "end": 195.04
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 196.82,
+  "end": 197.56
+ },
+ {
+  "w": "kilometer",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 197.56,
+  "end": 197.96
+ },
+ {
+  "w": "persegi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 197.96,
+  "end": 198.54
+ },
+ {
+  "w": "dasar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 198.54,
+  "end": 198.9
+ },
+ {
+  "w": "laut",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 198.9,
+  "end": 199.16
+ },
+ {
+  "w": "disapu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 199.16,
+  "end": 199.96
+ },
+ {
+  "w": "Area",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 200.18,
+  "end": 200.42
+ },
+ {
+  "w": "prioritas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 200.42,
+  "end": 201.08
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 201.08,
+  "end": 201.08
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 201.08,
+  "end": 201.08
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 201.08,
+  "end": 201.08
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 201.56,
+  "end": 202.14
+ },
+ {
+  "w": "kilometer",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 202.14,
+  "end": 202.56
+ },
+ {
+  "w": "persegi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 202.56,
+  "end": 203.16
+ },
+ {
+  "w": "di",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 203.16,
+  "end": 203.36
+ },
+ {
+  "w": "sepanjang",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 203.36,
+  "end": 203.72
+ },
+ {
+  "w": "busur",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 203.72,
+  "end": 204.2
+ },
+ {
+  "w": "antara",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.38,
+  "end": 204.76
+ },
+ {
+  "w": "tiga",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.76,
+  "end": 204.76
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.76,
+  "end": 204.76
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.76,
+  "end": 204.76
+ },
+ {
+  "w": "koma",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.76,
+  "end": 204.76
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 204.76,
+  "end": 204.76
+ },
+ {
+  "w": "dan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 206.08,
+  "end": 206.38
+ },
+ {
+  "w": "tiga",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 206.38,
+  "end": 206.38
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 206.38,
+  "end": 206.38
+ },
+ {
+  "w": "enam",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 206.38,
+  "end": 206.38
+ },
+ {
+  "w": "derajat",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 206.86,
+  "end": 207.68
+ },
+ {
+  "w": "lintang",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 207.68,
+  "end": 208.08
+ },
+ {
+  "w": "selatan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 208.08,
+  "end": 208.52
+ },
+ {
+  "w": "Ditangguhkan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 208.52,
+  "end": 209.5
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 209.5,
+  "end": 209.5
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 209.5,
+  "end": 209.5
+ },
+ {
+  "w": "Januari",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 209.76,
+  "end": 210.52
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "Kosong",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "Dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "delapan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 210.52,
+  "end": 210.52
+ },
+ {
+  "w": "Ocean",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 213.24,
+  "end": 214.22
+ },
+ {
+  "w": "Infinity",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 214.22,
+  "end": 214.84
+ },
+ {
+  "w": "menawarkan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 214.84,
+  "end": 215.48
+ },
+ {
+  "w": "skema",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 215.48,
+  "end": 216.0
+ },
+ {
+  "w": "yang",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 216.0,
+  "end": 216.18
+ },
+ {
+  "w": "belum",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 216.18,
+  "end": 216.5
+ },
+ {
+  "w": "pernah",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 216.5,
+  "end": 216.78
+ },
+ {
+  "w": "dipakai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 216.78,
+  "end": 217.38
+ },
+ {
+  "w": "untuk",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 217.38,
+  "end": 217.6
+ },
+ {
+  "w": "kasus",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 217.6,
+  "end": 218.06
+ },
+ {
+  "w": "sebesar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 218.06,
+  "end": 218.42
+ },
+ {
+  "w": "ini",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 218.42,
+  "end": 218.7
+ },
+ {
+  "w": "No",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 218.7,
+  "end": 219.18
+ },
+ {
+  "w": "find",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 219.18,
+  "end": 219.56
+ },
+ {
+  "w": "no",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 219.56,
+  "end": 220.08
+ },
+ {
+  "w": "fee",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 220.08,
+  "end": 220.44
+ },
+ {
+  "w": "Tidak",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 220.44,
+  "end": 220.92
+ },
+ {
+  "w": "ketemu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 220.92,
+  "end": 221.3
+ },
+ {
+  "w": "tidak",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 221.3,
+  "end": 221.74
+ },
+ {
+  "w": "dibayar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 221.74,
+  "end": 222.28
+ },
+ {
+  "w": "Ketemu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 222.28,
+  "end": 222.96
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 222.96,
+  "end": 222.96
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 222.96,
+  "end": 222.96
+ },
+ {
+  "w": "juta",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 223.56,
+  "end": 224.0
+ },
+ {
+  "w": "dolar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 224.0,
+  "end": 224.3
+ },
+ {
+  "w": "Seratus",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 225.78,
+  "end": 225.856
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 225.856,
+  "end": 225.932
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 225.932,
+  "end": 226.008
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 226.008,
+  "end": 226.084
+ },
+ {
+  "w": "kilometer",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 226.084,
+  "end": 226.16
+ },
+ {
+  "w": "persegi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 226.16,
+  "end": 226.76
+ },
+ {
+  "w": "dipindai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 226.76,
+  "end": 227.36
+ },
+ {
+  "w": "Selesai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 227.36,
+  "end": 228.14
+ },
+ {
+  "w": "Juni",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.14,
+  "end": 228.66
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "delapan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "Kosong",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "Dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 228.66,
+  "end": 228.66
+ },
+ {
+  "w": "kontrak",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 231.38,
+  "end": 232.34
+ },
+ {
+  "w": "baru",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 232.34,
+  "end": 232.76
+ },
+ {
+  "w": "Lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 233.62,
+  "end": 233.715
+ },
+ {
+  "w": "belas",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 233.715,
+  "end": 233.81
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 233.81,
+  "end": 233.905
+ },
+ {
+  "w": "kilometer",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 233.905,
+  "end": 234.0
+ },
+ {
+  "w": "persegi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 234.0,
+  "end": 234.6
+ },
+ {
+  "w": "di",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 234.6,
+  "end": 234.72
+ },
+ {
+  "w": "lokasi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 234.72,
+  "end": 235.06
+ },
+ {
+  "w": "baru",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 235.06,
+  "end": 235.36
+ },
+ {
+  "w": "lagi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 235.36,
+  "end": 235.98
+ },
+ {
+  "w": "lagi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 235.98,
+  "end": 236.32
+ },
+ {
+  "w": "no",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 236.56,
+  "end": 236.76
+ },
+ {
+  "w": "find",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 236.76,
+  "end": 237.1
+ },
+ {
+  "w": "no",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 237.4,
+  "end": 237.4
+ },
+ {
+  "w": "fee",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 237.4,
+  "end": 237.68
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 237.68,
+  "end": 237.68
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 237.68,
+  "end": 237.68
+ },
+ {
+  "w": "juta",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 238.24,
+  "end": 238.7
+ },
+ {
+  "w": "dolar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 238.7,
+  "end": 239.06
+ },
+ {
+  "w": "Fase",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 239.36,
+  "end": 239.56
+ },
+ {
+  "w": "pertama",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 239.56,
+  "end": 239.92
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 239.92,
+  "end": 239.92
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 239.92,
+  "end": 239.92
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 239.92,
+  "end": 239.92
+ },
+ {
+  "w": "sampai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 240.68,
+  "end": 241.3
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 241.3,
+  "end": 241.3
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 241.3,
+  "end": 241.3
+ },
+ {
+  "w": "delapan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 241.3,
+  "end": 241.3
+ },
+ {
+  "w": "Maret",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 241.86,
+  "end": 242.44
+ },
+ {
+  "w": "Fase",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 242.68,
+  "end": 242.94
+ },
+ {
+  "w": "kedua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 242.94,
+  "end": 243.34
+ },
+ {
+  "w": "tiga",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 243.34,
+  "end": 243.34
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 243.34,
+  "end": 243.34
+ },
+ {
+  "w": "satu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 243.34,
+  "end": 243.34
+ },
+ {
+  "w": "Desember",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.08,
+  "end": 244.78
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.78,
+  "end": 244.78
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.78,
+  "end": 244.78
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.78,
+  "end": 244.78
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.78,
+  "end": 244.78
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 244.78,
+  "end": 244.78
+ },
+ {
+  "w": "sampai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 245.24,
+  "end": 246.34
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 246.34,
+  "end": 246.34
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 246.34,
+  "end": 246.34
+ },
+ {
+  "w": "tiga",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 246.34,
+  "end": 246.34
+ },
+ {
+  "w": "Januari",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 246.92,
+  "end": 247.66
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "enam",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "Dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "delapan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 247.66,
+  "end": 247.66
+ },
+ {
+  "w": "hari",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 249.52,
+  "end": 250.16
+ },
+ {
+  "w": "Sekitar",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 250.5,
+  "end": 250.84
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 252.8,
+  "end": 252.85
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 252.85,
+  "end": 252.9
+ },
+ {
+  "w": "lima",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 252.9,
+  "end": 252.95
+ },
+ {
+  "w": "ratus",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 252.95,
+  "end": 253.0
+ },
+ {
+  "w": "tujuh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 253.0,
+  "end": 253.05
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 253.05,
+  "end": 253.1
+ },
+ {
+  "w": "satu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 253.1,
+  "end": 253.15
+ },
+ {
+  "w": "kilometer",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 253.15,
+  "end": 253.2
+ },
+ {
+  "w": "persegi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 253.2,
+  "end": 253.82
+ },
+ {
+  "w": "Setengah",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 254.18,
+  "end": 254.66
+ },
+ {
+  "w": "dari",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 254.66,
+  "end": 254.86
+ },
+ {
+  "w": "target",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 254.86,
+  "end": 255.16
+ },
+ {
+  "w": "Delapan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 255.16,
+  "end": 255.16
+ },
+ {
+  "w": "Maret",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 255.8,
+  "end": 256.2
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 256.2,
+  "end": 256.2
+ },
+ {
+  "w": "ribu",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 256.2,
+  "end": 256.2
+ },
+ {
+  "w": "dua",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 256.2,
+  "end": 256.2
+ },
+ {
+  "w": "puluh",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 256.2,
+  "end": 256.2
+ },
+ {
+  "w": "enam",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 256.2,
+  "end": 256.2
+ },
+ {
+  "w": "Badan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 257.56,
+  "end": 257.88
+ },
+ {
+  "w": "Investigasi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 257.88,
+  "end": 258.58
+ },
+ {
+  "w": "Kecelakaan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 258.58,
+  "end": 259.12
+ },
+ {
+  "w": "Udara",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 259.12,
+  "end": 259.38
+ },
+ {
+  "w": "Malaysia",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 259.38,
+  "end": 259.84
+ },
+ {
+  "w": "mengumumkan",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 259.84,
+  "end": 260.56
+ },
+ {
+  "w": "tidak",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 260.86,
+  "end": 261.08
+ },
+ {
+  "w": "ada",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 261.08,
+  "end": 261.32
+ },
+ {
+  "w": "bangkai",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 261.32,
+  "end": 261.76
+ },
+ {
+  "w": "yang",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 261.76,
+  "end": 261.94
+ },
+ {
+  "w": "terkonfirmasi",
+  "seg": 5,
+  "seg_t": 5,
+  "start": 261.94,
+  "end": 262.72
+ },
+ {
+  "w": "Terus",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 262.72,
+  "end": 263.24
+ },
+ {
+  "w": "kenapa",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 263.24,
+  "end": 263.58
+ },
+ {
+  "w": "dunia",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 263.58,
+  "end": 263.88
+ },
+ {
+  "w": "masih",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 263.88,
+  "end": 264.12
+ },
+ {
+  "w": "yakin",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 264.12,
+  "end": 264.46
+ },
+ {
+  "w": "pesawatnya",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 264.46,
+  "end": 264.96
+ },
+ {
+  "w": "di",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 264.96,
+  "end": 265.06
+ },
+ {
+  "w": "selatan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 265.06,
+  "end": 265.42
+ },
+ {
+  "w": "Karena",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 265.84,
+  "end": 266.1
+ },
+ {
+  "w": "tiga",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 266.1,
+  "end": 266.1
+ },
+ {
+  "w": "potong",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 266.68,
+  "end": 267.16
+ },
+ {
+  "w": "Dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 267.16,
+  "end": 267.16
+ },
+ {
+  "w": "puluh",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 267.16,
+  "end": 267.16
+ },
+ {
+  "w": "sembilan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 267.16,
+  "end": 267.16
+ },
+ {
+  "w": "Juli",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 267.82,
+  "end": 268.52
+ },
+ {
+  "w": "dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 268.52,
+  "end": 268.52
+ },
+ {
+  "w": "ribu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 268.52,
+  "end": 268.52
+ },
+ {
+  "w": "lima",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 268.52,
+  "end": 268.52
+ },
+ {
+  "w": "belas",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 268.52,
+  "end": 268.52
+ },
+ {
+  "w": "Sesuatu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 269.84,
+  "end": 270.28
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 270.28,
+  "end": 270.46
+ },
+ {
+  "w": "tertutup",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 270.46,
+  "end": 271.12
+ },
+ {
+  "w": "teritip",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 271.12,
+  "end": 271.74
+ },
+ {
+  "w": "terdampar",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 271.74,
+  "end": 272.42
+ },
+ {
+  "w": "di",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 272.42,
+  "end": 272.58
+ },
+ {
+  "w": "pantai",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 272.58,
+  "end": 272.92
+ },
+ {
+  "w": "Réunion",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 272.92,
+  "end": 273.62
+ },
+ {
+  "w": "Flaperon",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 273.62,
+  "end": 274.32
+ },
+ {
+  "w": "Bagian",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 274.52,
+  "end": 274.88
+ },
+ {
+  "w": "sayap",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 274.88,
+  "end": 275.34
+ },
+ {
+  "w": "Dikonfirmasi",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 275.52,
+  "end": 276.24
+ },
+ {
+  "w": "tiga",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 276.24,
+  "end": 276.24
+ },
+ {
+  "w": "September",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 276.56,
+  "end": 277.04
+ },
+ {
+  "w": "bagian",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 277.46,
+  "end": 277.88
+ },
+ {
+  "w": "dari",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 277.88,
+  "end": 278.06
+ },
+ {
+  "w": "pesawat",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 278.06,
+  "end": 278.38
+ },
+ {
+  "w": "itu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 278.38,
+  "end": 278.7
+ },
+ {
+  "w": "Sepuluh",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 278.7,
+  "end": 278.7
+ },
+ {
+  "w": "Mei",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 279.28,
+  "end": 279.6
+ },
+ {
+  "w": "dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 279.6,
+  "end": 279.6
+ },
+ {
+  "w": "ribu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 279.6,
+  "end": 279.6
+ },
+ {
+  "w": "enam",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 279.6,
+  "end": 279.6
+ },
+ {
+  "w": "belas",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 279.6,
+  "end": 279.6
+ },
+ {
+  "w": "bagian",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 280.88,
+  "end": 281.18
+ },
+ {
+  "w": "flap",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 281.18,
+  "end": 281.46
+ },
+ {
+  "w": "ditemukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 281.46,
+  "end": 282.06
+ },
+ {
+  "w": "di",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 282.06,
+  "end": 282.28
+ },
+ {
+  "w": "Mauritius",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 282.28,
+  "end": 282.82
+ },
+ {
+  "w": "Dikonfirmasi",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 283.2,
+  "end": 283.92
+ },
+ {
+  "w": "Dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 283.92,
+  "end": 283.92
+ },
+ {
+  "w": "puluh",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 283.92,
+  "end": 283.92
+ },
+ {
+  "w": "Juni",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 284.52,
+  "end": 285.0
+ },
+ {
+  "w": "dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 285.0,
+  "end": 285.0
+ },
+ {
+  "w": "ribu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 285.0,
+  "end": 285.0
+ },
+ {
+  "w": "enam",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 285.0,
+  "end": 285.0
+ },
+ {
+  "w": "belas",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 285.0,
+  "end": 285.0
+ },
+ {
+  "w": "flap",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 286.16,
+  "end": 286.42
+ },
+ {
+  "w": "kanan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 286.42,
+  "end": 286.86
+ },
+ {
+  "w": "ditemukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 286.86,
+  "end": 287.36
+ },
+ {
+  "w": "di",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 287.36,
+  "end": 287.56
+ },
+ {
+  "w": "Pulau",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 287.56,
+  "end": 287.8
+ },
+ {
+  "w": "Pemba",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 287.8,
+  "end": 288.22
+ },
+ {
+  "w": "Tanzania",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 288.52,
+  "end": 288.98
+ },
+ {
+  "w": "Dikonfirmasi",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 289.3,
+  "end": 290.1
+ },
+ {
+  "w": "Sekarang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 290.1,
+  "end": 290.84
+ },
+ {
+  "w": "bagian",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 290.84,
+  "end": 291.24
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 291.24,
+  "end": 291.36
+ },
+ {
+  "w": "bikin",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 291.36,
+  "end": 291.62
+ },
+ {
+  "w": "gue",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 291.62,
+  "end": 291.9
+ },
+ {
+  "w": "kesal",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 291.9,
+  "end": 292.18
+ },
+ {
+  "w": "Pencarian",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 292.42,
+  "end": 292.9
+ },
+ {
+  "w": "ini",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 292.9,
+  "end": 293.14
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 293.14,
+  "end": 293.34
+ },
+ {
+  "w": "termahal",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 293.34,
+  "end": 294.04
+ },
+ {
+  "w": "dalam",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 294.04,
+  "end": 294.26
+ },
+ {
+  "w": "sejarah",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 294.26,
+  "end": 294.66
+ },
+ {
+  "w": "penerbangan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 294.66,
+  "end": 295.2
+ },
+ {
+  "w": "Kapal",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 295.56,
+  "end": 296.14
+ },
+ {
+  "w": "robot",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 296.38,
+  "end": 296.6
+ },
+ {
+  "w": "bawah",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 296.6,
+  "end": 296.92
+ },
+ {
+  "w": "laut",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 296.92,
+  "end": 297.26
+ },
+ {
+  "w": "sonar",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 297.56,
+  "end": 298.02
+ },
+ {
+  "w": "dua",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 298.02,
+  "end": 298.02
+ },
+ {
+  "w": "puluh",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 298.02,
+  "end": 298.02
+ },
+ {
+  "w": "enam",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 298.02,
+  "end": 298.02
+ },
+ {
+  "w": "negara",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 298.68,
+  "end": 299.32
+ },
+ {
+  "w": "Tapi",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 299.58,
+  "end": 299.84
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 299.84,
+  "end": 299.96
+ },
+ {
+  "w": "menemukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 299.96,
+  "end": 300.32
+ },
+ {
+  "w": "serpihan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 300.32,
+  "end": 300.82
+ },
+ {
+  "w": "pertama",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 300.82,
+  "end": 301.26
+ },
+ {
+  "w": "bukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 301.26,
+  "end": 301.66
+ },
+ {
+  "w": "mereka",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 301.66,
+  "end": 302.12
+ },
+ {
+  "w": "Bukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 302.54,
+  "end": 302.7
+ },
+ {
+  "w": "sonar",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 302.7,
+  "end": 303.26
+ },
+ {
+  "w": "Bukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 303.54,
+  "end": 303.7
+ },
+ {
+  "w": "satelit",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 303.7,
+  "end": 304.28
+ },
+ {
+  "w": "Yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 304.42,
+  "end": 304.6
+ },
+ {
+  "w": "menemukannya",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 304.6,
+  "end": 305.34
+ },
+ {
+  "w": "orang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 305.34,
+  "end": 305.82
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 305.82,
+  "end": 306.0
+ },
+ {
+  "w": "sedang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 306.0,
+  "end": 306.3
+ },
+ {
+  "w": "membersihkan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 306.3,
+  "end": 306.82
+ },
+ {
+  "w": "pantai",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 306.82,
+  "end": 307.3
+ },
+ {
+  "w": "Dan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 307.72,
+  "end": 307.92
+ },
+ {
+  "w": "itu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 307.92,
+  "end": 308.32
+ },
+ {
+  "w": "bukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 308.32,
+  "end": 308.82
+ },
+ {
+  "w": "keberuntungan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 308.82,
+  "end": 309.42
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 309.42,
+  "end": 309.52
+ },
+ {
+  "w": "manis",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 309.52,
+  "end": 310.0
+ },
+ {
+  "w": "Itu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 310.4,
+  "end": 310.62
+ },
+ {
+  "w": "pola",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 310.62,
+  "end": 311.14
+ },
+ {
+  "w": "Yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 311.48,
+  "end": 311.66
+ },
+ {
+  "w": "ketemu",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 311.66,
+  "end": 312.14
+ },
+ {
+  "w": "cuma",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 312.14,
+  "end": 312.52
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 312.52,
+  "end": 312.68
+ },
+ {
+  "w": "terdampar",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 312.68,
+  "end": 313.28
+ },
+ {
+  "w": "Dan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 313.62,
+  "end": 313.84
+ },
+ {
+  "w": "yang",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 313.84,
+  "end": 313.92
+ },
+ {
+  "w": "terdampar",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 313.92,
+  "end": 314.64
+ },
+ {
+  "w": "membuktikan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 314.64,
+  "end": 315.24
+ },
+ {
+  "w": "arah",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 315.24,
+  "end": 315.98
+ },
+ {
+  "w": "bukan",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 315.98,
+  "end": 316.28
+ },
+ {
+  "w": "titik",
+  "seg": 6,
+  "seg_t": 6,
+  "start": 316.28,
+  "end": 316.68
+ },
+ {
+  "w": "Menurut",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 316.68,
+  "end": 317.44
+ },
+ {
+  "w": "lo",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 317.44,
+  "end": 317.62
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 318.06,
+  "end": 318.18
+ },
+ {
+  "w": "menit",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 318.18,
+  "end": 318.42
+ },
+ {
+  "w": "terakhir",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 318.42,
+  "end": 318.9
+ },
+ {
+  "w": "pesawat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 319.22,
+  "end": 319.46
+ },
+ {
+  "w": "ini",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 319.46,
+  "end": 319.68
+ },
+ {
+  "w": "masih",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 319.68,
+  "end": 319.88
+ },
+ {
+  "w": "dipegang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 319.88,
+  "end": 320.2
+ },
+ {
+  "w": "orang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 320.2,
+  "end": 320.58
+ },
+ {
+  "w": "atau",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 320.58,
+  "end": 321.14
+ },
+ {
+  "w": "sudah",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 321.14,
+  "end": 321.36
+ },
+ {
+  "w": "kosong",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 321.36,
+  "end": 321.78
+ },
+ {
+  "w": "Dua",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 322.14,
+  "end": 322.3
+ },
+ {
+  "w": "duanya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 322.3,
+  "end": 322.56
+ },
+ {
+  "w": "punya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 322.56,
+  "end": 322.8
+ },
+ {
+  "w": "pendukung",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 322.8,
+  "end": 323.38
+ },
+ {
+  "w": "dan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 323.7,
+  "end": 323.9
+ },
+ {
+  "w": "dua",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 323.9,
+  "end": 324.12
+ },
+ {
+  "w": "duanya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 324.12,
+  "end": 324.56
+ },
+ {
+  "w": "memakai",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 324.56,
+  "end": 325.2
+ },
+ {
+  "w": "data",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 325.2,
+  "end": 325.5
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 325.5,
+  "end": 325.7
+ },
+ {
+  "w": "sama",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 325.7,
+  "end": 326.0
+ },
+ {
+  "w": "Pembacaan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 326.42,
+  "end": 326.92
+ },
+ {
+  "w": "pertama",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 326.92,
+  "end": 327.18
+ },
+ {
+  "w": "Awak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 327.7,
+  "end": 327.96
+ },
+ {
+  "w": "tidak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 327.96,
+  "end": 328.12
+ },
+ {
+  "w": "sadar",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 328.12,
+  "end": 328.64
+ },
+ {
+  "w": "Hipoksia",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 328.94,
+  "end": 329.46
+ },
+ {
+  "w": "Pesawat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 329.76,
+  "end": 330.08
+ },
+ {
+  "w": "terbang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 330.08,
+  "end": 330.42
+ },
+ {
+  "w": "sendiri",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 330.42,
+  "end": 330.78
+ },
+ {
+  "w": "sampai",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 330.78,
+  "end": 331.16
+ },
+ {
+  "w": "bahan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 331.16,
+  "end": 331.46
+ },
+ {
+  "w": "bakar",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 331.46,
+  "end": 331.74
+ },
+ {
+  "w": "habis",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 331.74,
+  "end": 332.24
+ },
+ {
+  "w": "lalu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 332.54,
+  "end": 332.74
+ },
+ {
+  "w": "jatuh",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 332.74,
+  "end": 333.1
+ },
+ {
+  "w": "dekat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 333.1,
+  "end": 333.36
+ },
+ {
+  "w": "busur",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 333.36,
+  "end": 333.7
+ },
+ {
+  "w": "ketujuh",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 333.7,
+  "end": 333.8
+ },
+ {
+  "w": "Kalau",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 334.44,
+  "end": 334.66
+ },
+ {
+  "w": "ini",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 334.66,
+  "end": 334.86
+ },
+ {
+  "w": "benar",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 334.86,
+  "end": 335.26
+ },
+ {
+  "w": "pencarian",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 335.56,
+  "end": 336.02
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 336.02,
+  "end": 336.18
+ },
+ {
+  "w": "sepanjang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 336.18,
+  "end": 336.46
+ },
+ {
+  "w": "busur",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 336.46,
+  "end": 336.9
+ },
+ {
+  "w": "adalah",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 336.9,
+  "end": 337.16
+ },
+ {
+  "w": "cara",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 337.16,
+  "end": 337.44
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 337.44,
+  "end": 337.56
+ },
+ {
+  "w": "tepat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 337.56,
+  "end": 337.98
+ },
+ {
+  "w": "dan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 338.26,
+  "end": 338.32
+ },
+ {
+  "w": "area",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 338.32,
+  "end": 338.64
+ },
+ {
+  "w": "prioritasnya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 338.64,
+  "end": 339.5
+ },
+ {
+  "w": "memang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 339.5,
+  "end": 339.8
+ },
+ {
+  "w": "sempit",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 339.8,
+  "end": 340.28
+ },
+ {
+  "w": "Pembacaan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 340.54,
+  "end": 341.08
+ },
+ {
+  "w": "kedua",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 341.08,
+  "end": 341.42
+ },
+ {
+  "w": "Pesawat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 341.74,
+  "end": 342.06
+ },
+ {
+  "w": "terbang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 342.06,
+  "end": 342.46
+ },
+ {
+  "w": "terkendali",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 342.46,
+  "end": 343.04
+ },
+ {
+  "w": "sampai",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 343.04,
+  "end": 343.3
+ },
+ {
+  "w": "akhir",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 343.3,
+  "end": 343.72
+ },
+ {
+  "w": "Masih",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 343.72,
+  "end": 344.34
+ },
+ {
+  "w": "ada",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 344.34,
+  "end": 344.58
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 344.58,
+  "end": 344.74
+ },
+ {
+  "w": "memegang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 344.74,
+  "end": 345.06
+ },
+ {
+  "w": "kendali",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 345.06,
+  "end": 345.52
+ },
+ {
+  "w": "dan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 345.52,
+  "end": 345.96
+ },
+ {
+  "w": "menerbangkannya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 345.96,
+  "end": 346.78
+ },
+ {
+  "w": "sampai",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 346.78,
+  "end": 347.2
+ },
+ {
+  "w": "mesin",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 347.2,
+  "end": 347.54
+ },
+ {
+  "w": "mati",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 347.54,
+  "end": 347.98
+ },
+ {
+  "w": "Kalau",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 348.22,
+  "end": 348.4
+ },
+ {
+  "w": "ini",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 348.4,
+  "end": 348.58
+ },
+ {
+  "w": "benar",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 348.58,
+  "end": 348.98
+ },
+ {
+  "w": "titik",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 349.3,
+  "end": 349.5
+ },
+ {
+  "w": "akhirnya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 349.5,
+  "end": 349.92
+ },
+ {
+  "w": "bisa",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 349.92,
+  "end": 350.1
+ },
+ {
+  "w": "puluhan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 350.1,
+  "end": 350.54
+ },
+ {
+  "w": "kilometer",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 350.54,
+  "end": 350.96
+ },
+ {
+  "w": "dari",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 350.96,
+  "end": 351.4
+ },
+ {
+  "w": "busur",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 351.4,
+  "end": 351.8
+ },
+ {
+  "w": "Area",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 352.08,
+  "end": 352.32
+ },
+ {
+  "w": "prioritas",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 352.32,
+  "end": 352.92
+ },
+ {
+  "w": "dua",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 353.84,
+  "end": 353.904
+ },
+ {
+  "w": "puluh",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 353.904,
+  "end": 353.968
+ },
+ {
+  "w": "lima",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 353.968,
+  "end": 354.032
+ },
+ {
+  "w": "ribu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 354.032,
+  "end": 354.096
+ },
+ {
+  "w": "kilometer",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 354.096,
+  "end": 354.16
+ },
+ {
+  "w": "persegi",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 354.16,
+  "end": 354.8
+ },
+ {
+  "w": "jadi",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 354.8,
+  "end": 355.14
+ },
+ {
+  "w": "terlalu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 355.14,
+  "end": 355.48
+ },
+ {
+  "w": "kecil",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 355.48,
+  "end": 355.88
+ },
+ {
+  "w": "dan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 355.88,
+  "end": 356.32
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 356.32,
+  "end": 356.46
+ },
+ {
+  "w": "tempat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 356.46,
+  "end": 356.7
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 356.7,
+  "end": 356.82
+ },
+ {
+  "w": "salah",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 356.82,
+  "end": 357.14
+ },
+ {
+  "w": "Dan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 357.5,
+  "end": 357.74
+ },
+ {
+  "w": "B",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 357.74,
+  "end": 358.01
+ },
+ {
+  "w": "T",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 358.01,
+  "end": 358.28
+ },
+ {
+  "w": "O",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 358.28,
+  "end": 358.55
+ },
+ {
+  "w": "B",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 358.55,
+  "end": 358.82
+ },
+ {
+  "w": "F",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 358.82,
+  "end": 359.09
+ },
+ {
+  "w": "O",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 359.09,
+  "end": 359.36
+ },
+ {
+  "w": "tidak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 359.36,
+  "end": 359.92
+ },
+ {
+  "w": "bisa",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 359.92,
+  "end": 360.22
+ },
+ {
+  "w": "memilih",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 360.22,
+  "end": 360.72
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 360.72,
+  "end": 360.82
+ },
+ {
+  "w": "antara",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 360.82,
+  "end": 361.08
+ },
+ {
+  "w": "keduanya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 361.08,
+  "end": 361.5
+ },
+ {
+  "w": "Busurnya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 361.84,
+  "end": 362.5
+ },
+ {
+  "w": "sama",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 362.5,
+  "end": 362.92
+ },
+ {
+  "w": "persis",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 362.92,
+  "end": 363.48
+ },
+ {
+  "w": "Yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 363.78,
+  "end": 363.94
+ },
+ {
+  "w": "membedakan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 363.94,
+  "end": 364.5
+ },
+ {
+  "w": "cuma",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 364.5,
+  "end": 364.88
+ },
+ {
+  "w": "satu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 364.88,
+  "end": 365.34
+ },
+ {
+  "w": "Seberapa",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 365.72,
+  "end": 366.06
+ },
+ {
+  "w": "cepat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 366.06,
+  "end": 366.5
+ },
+ {
+  "w": "pesawat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 366.5,
+  "end": 366.82
+ },
+ {
+  "w": "turun",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 366.82,
+  "end": 367.24
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 367.24,
+  "end": 367.36
+ },
+ {
+  "w": "menit",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 367.36,
+  "end": 367.6
+ },
+ {
+  "w": "terakhir",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 367.6,
+  "end": 368.08
+ },
+ {
+  "w": "Itu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 368.32,
+  "end": 368.56
+ },
+ {
+  "w": "tidak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 368.56,
+  "end": 368.76
+ },
+ {
+  "w": "pernah",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 368.76,
+  "end": 369.0
+ },
+ {
+  "w": "terukur",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 369.0,
+  "end": 369.54
+ },
+ {
+  "w": "karena",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 369.74,
+  "end": 370.02
+ },
+ {
+  "w": "satu",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 370.02,
+  "end": 370.26
+ },
+ {
+  "w": "satunya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 370.26,
+  "end": 370.62
+ },
+ {
+  "w": "alat",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 370.62,
+  "end": 371.04
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 371.04,
+  "end": 371.14
+ },
+ {
+  "w": "mencatatnya",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 371.14,
+  "end": 371.84
+ },
+ {
+  "w": "ada",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 371.84,
+  "end": 372.32
+ },
+ {
+  "w": "di",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 372.32,
+  "end": 372.48
+ },
+ {
+  "w": "kotak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 372.48,
+  "end": 372.72
+ },
+ {
+  "w": "hitam",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 372.72,
+  "end": 373.14
+ },
+ {
+  "w": "yang",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 373.14,
+  "end": 373.56
+ },
+ {
+  "w": "juga",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 373.56,
+  "end": 373.9
+ },
+ {
+  "w": "tidak",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 373.9,
+  "end": 374.24
+ },
+ {
+  "w": "pernah",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 374.24,
+  "end": 374.6
+ },
+ {
+  "w": "ditemukan",
+  "seg": 7,
+  "seg_t": 7,
+  "start": 374.6,
+  "end": 375.18
+ },
+ {
+  "w": "Yang",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 375.54,
+  "end": 375.76
+ },
+ {
+  "w": "jarang",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 375.76,
+  "end": 376.2
+ },
+ {
+  "w": "disebut",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 376.2,
+  "end": 376.66
+ },
+ {
+  "w": "Pencariannya",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 376.88,
+  "end": 377.68
+ },
+ {
+  "w": "belum",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 377.68,
+  "end": 378.04
+ },
+ {
+  "w": "berhenti",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 378.04,
+  "end": 378.44
+ },
+ {
+  "w": "permanen",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 378.44,
+  "end": 379.0
+ },
+ {
+  "w": "Malaysia",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 379.3,
+  "end": 379.64
+ },
+ {
+  "w": "menyetujui",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 379.64,
+  "end": 380.32
+ },
+ {
+  "w": "perpanjangan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 380.32,
+  "end": 380.96
+ },
+ {
+  "w": "untuk",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 380.96,
+  "end": 381.28
+ },
+ {
+  "w": "satu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 381.28,
+  "end": 381.28
+ },
+ {
+  "w": "Juli",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 381.62,
+  "end": 382.0
+ },
+ {
+  "w": "dua",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.0,
+  "end": 382.0
+ },
+ {
+  "w": "ribu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.0,
+  "end": 382.0
+ },
+ {
+  "w": "dua",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.0,
+  "end": 382.0
+ },
+ {
+  "w": "puluh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.0,
+  "end": 382.0
+ },
+ {
+  "w": "enam",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.0,
+  "end": 382.0
+ },
+ {
+  "w": "sampai",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 382.96,
+  "end": 383.52
+ },
+ {
+  "w": "tiga",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 383.52,
+  "end": 383.52
+ },
+ {
+  "w": "puluh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 383.52,
+  "end": 383.52
+ },
+ {
+  "w": "Juni",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 383.86,
+  "end": 384.46
+ },
+ {
+  "w": "dua",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 384.46,
+  "end": 384.46
+ },
+ {
+  "w": "ribu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 384.46,
+  "end": 384.46
+ },
+ {
+  "w": "dua",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 384.46,
+  "end": 384.46
+ },
+ {
+  "w": "puluh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 384.46,
+  "end": 384.46
+ },
+ {
+  "w": "tujuh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 384.46,
+  "end": 384.46
+ },
+ {
+  "w": "Kontraknya",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 385.76,
+  "end": 386.36
+ },
+ {
+  "w": "masih",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 386.36,
+  "end": 386.74
+ },
+ {
+  "w": "no",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 386.74,
+  "end": 387.02
+ },
+ {
+  "w": "find",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 387.02,
+  "end": 387.36
+ },
+ {
+  "w": "no",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 387.78,
+  "end": 387.86
+ },
+ {
+  "w": "fee",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 387.86,
+  "end": 388.12
+ },
+ {
+  "w": "Artinya",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 388.42,
+  "end": 388.84
+ },
+ {
+  "w": "sampai",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 389.22,
+  "end": 389.44
+ },
+ {
+  "w": "pertengahan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 389.44,
+  "end": 389.88
+ },
+ {
+  "w": "tahun",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 389.88,
+  "end": 390.12
+ },
+ {
+  "w": "depan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 390.12,
+  "end": 390.58
+ },
+ {
+  "w": "masih",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 390.78,
+  "end": 391.04
+ },
+ {
+  "w": "ada",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 391.04,
+  "end": 391.26
+ },
+ {
+  "w": "satu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 391.26,
+  "end": 391.56
+ },
+ {
+  "w": "perusahaan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 391.56,
+  "end": 392.3
+ },
+ {
+  "w": "yang",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 392.3,
+  "end": 392.38
+ },
+ {
+  "w": "bersedia",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 392.38,
+  "end": 392.84
+ },
+ {
+  "w": "mengirim",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 392.84,
+  "end": 393.2
+ },
+ {
+  "w": "kapal",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 393.2,
+  "end": 393.72
+ },
+ {
+  "w": "dan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 393.72,
+  "end": 393.88
+ },
+ {
+  "w": "robot",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 393.88,
+  "end": 394.2
+ },
+ {
+  "w": "ke",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 394.2,
+  "end": 394.46
+ },
+ {
+  "w": "dasar",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 394.46,
+  "end": 394.72
+ },
+ {
+  "w": "samudra",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 394.72,
+  "end": 395.26
+ },
+ {
+  "w": "dengan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 395.26,
+  "end": 395.62
+ },
+ {
+  "w": "imbalan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 395.62,
+  "end": 396.12
+ },
+ {
+  "w": "nol",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 396.12,
+  "end": 396.46
+ },
+ {
+  "w": "kalau",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 396.46,
+  "end": 396.74
+ },
+ {
+  "w": "gagal",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 396.74,
+  "end": 397.28
+ },
+ {
+  "w": "Tapi",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 397.4,
+  "end": 397.66
+ },
+ {
+  "w": "lihat",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 397.66,
+  "end": 397.96
+ },
+ {
+  "w": "angkanya",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 397.96,
+  "end": 398.42
+ },
+ {
+  "w": "Dua",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 398.42,
+  "end": 398.42
+ },
+ {
+  "w": "belas",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 398.42,
+  "end": 398.42
+ },
+ {
+  "w": "tahun",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 398.98,
+  "end": 399.56
+ },
+ {
+  "w": "Tiga",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 400.16,
+  "end": 400.5
+ },
+ {
+  "w": "gelombang",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 400.5,
+  "end": 400.84
+ },
+ {
+  "w": "Ratusan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 401.08,
+  "end": 401.52
+ },
+ {
+  "w": "ribu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 401.52,
+  "end": 401.86
+ },
+ {
+  "w": "kilometer",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 401.86,
+  "end": 402.24
+ },
+ {
+  "w": "persegi",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 402.24,
+  "end": 402.84
+ },
+ {
+  "w": "Dan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 402.84,
+  "end": 403.2
+ },
+ {
+  "w": "yang",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 403.2,
+  "end": 403.34
+ },
+ {
+  "w": "dikonfirmasi",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 403.34,
+  "end": 404.14
+ },
+ {
+  "w": "cuma",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 404.14,
+  "end": 404.56
+ },
+ {
+  "w": "tiga",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 404.56,
+  "end": 404.56
+ },
+ {
+  "w": "potong",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 404.92,
+  "end": 405.4
+ },
+ {
+  "w": "sebesar",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 405.4,
+  "end": 405.78
+ },
+ {
+  "w": "meja",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 405.78,
+  "end": 406.02
+ },
+ {
+  "w": "makan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 406.02,
+  "end": 406.34
+ },
+ {
+  "w": "Ocean",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 406.66,
+  "end": 406.94
+ },
+ {
+  "w": "Infinity",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 406.94,
+  "end": 407.36
+ },
+ {
+  "w": "sendiri",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 407.36,
+  "end": 407.8
+ },
+ {
+  "w": "menyebut",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 407.8,
+  "end": 408.24
+ },
+ {
+  "w": "sudah",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 408.24,
+  "end": 408.56
+ },
+ {
+  "w": "seratus",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 408.56,
+  "end": 408.56
+ },
+ {
+  "w": "lima",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 408.56,
+  "end": 408.56
+ },
+ {
+  "w": "puluh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 408.56,
+  "end": 408.56
+ },
+ {
+  "w": "satu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 408.56,
+  "end": 408.56
+ },
+ {
+  "w": "hari",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 409.62,
+  "end": 410.0
+ },
+ {
+  "w": "di",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 410.0,
+  "end": 410.16
+ },
+ {
+  "w": "laut",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 410.16,
+  "end": 410.4
+ },
+ {
+  "w": "dan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 410.4,
+  "end": 410.78
+ },
+ {
+  "w": "memetakan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 410.78,
+  "end": 411.32
+ },
+ {
+  "w": "lebih",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 411.32,
+  "end": 411.68
+ },
+ {
+  "w": "dari",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 411.68,
+  "end": 411.94
+ },
+ {
+  "w": "seratus",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 411.94,
+  "end": 411.94
+ },
+ {
+  "w": "empat",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 411.94,
+  "end": 411.94
+ },
+ {
+  "w": "puluh",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 411.94,
+  "end": 411.94
+ },
+ {
+  "w": "ribu",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 412.36,
+  "end": 413.14
+ },
+ {
+  "w": "kilometer",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 413.14,
+  "end": 413.48
+ },
+ {
+  "w": "persegi",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 413.48,
+  "end": 414.1
+ },
+ {
+  "w": "Nol",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 414.1,
+  "end": 414.1
+ },
+ {
+  "w": "badan",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 414.7,
+  "end": 415.02
+ },
+ {
+  "w": "pesawat",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 415.02,
+  "end": 415.44
+ },
+ {
+  "w": "Nol",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 416.02,
+  "end": 416.26
+ },
+ {
+  "w": "perekam",
+  "seg": 8,
+  "seg_t": 8,
+  "start": 416.26,
+  "end": 416.5
+ },
+ {
+  "w": "Laporan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 416.88,
+  "end": 417.24
+ },
+ {
+  "w": "dua",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 417.24,
+  "end": 417.24
+ },
+ {
+  "w": "ribu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 417.24,
+  "end": 417.24
+ },
+ {
+  "w": "delapan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 417.24,
+  "end": 417.24
+ },
+ {
+  "w": "belas",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 417.24,
+  "end": 417.24
+ },
+ {
+  "w": "menyimpulkan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 417.72,
+  "end": 418.98
+ },
+ {
+  "w": "penyebabnya",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 418.98,
+  "end": 419.58
+ },
+ {
+  "w": "tidak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 419.58,
+  "end": 419.8
+ },
+ {
+  "w": "bisa",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 419.8,
+  "end": 420.08
+ },
+ {
+  "w": "ditentukan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 420.08,
+  "end": 420.68
+ },
+ {
+  "w": "Bukan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 420.96,
+  "end": 421.24
+ },
+ {
+  "w": "karena",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 421.24,
+  "end": 421.48
+ },
+ {
+  "w": "malas",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 421.48,
+  "end": 421.98
+ },
+ {
+  "w": "Karena",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 422.2,
+  "end": 422.46
+ },
+ {
+  "w": "bukti",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 422.46,
+  "end": 422.8
+ },
+ {
+  "w": "utamanya",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 422.8,
+  "end": 423.36
+ },
+ {
+  "w": "tidak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 423.36,
+  "end": 423.68
+ },
+ {
+  "w": "pernah",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 423.68,
+  "end": 424.06
+ },
+ {
+  "w": "ditemukan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 424.06,
+  "end": 424.58
+ },
+ {
+  "w": "Yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 424.94,
+  "end": 425.1
+ },
+ {
+  "w": "kita",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 425.1,
+  "end": 425.32
+ },
+ {
+  "w": "punya",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 425.32,
+  "end": 425.58
+ },
+ {
+  "w": "sekarang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 425.58,
+  "end": 426.0
+ },
+ {
+  "w": "Jarak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 426.4,
+  "end": 426.82
+ },
+ {
+  "w": "waktu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 427.1,
+  "end": 427.34
+ },
+ {
+  "w": "pergeseran",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 427.82,
+  "end": 428.3
+ },
+ {
+  "w": "frekuensi",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 428.3,
+  "end": 428.98
+ },
+ {
+  "w": "dan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 429.3,
+  "end": 429.34
+ },
+ {
+  "w": "tiga",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 429.34,
+  "end": 429.34
+ },
+ {
+  "w": "potong",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 429.64,
+  "end": 430.04
+ },
+ {
+  "w": "serpihan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 430.04,
+  "end": 430.58
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 430.58,
+  "end": 430.72
+ },
+ {
+  "w": "hanyut",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 430.72,
+  "end": 431.1
+ },
+ {
+  "w": "dua",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 431.1,
+  "end": 431.1
+ },
+ {
+  "w": "tahun",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 431.3,
+  "end": 431.64
+ },
+ {
+  "w": "Dari",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 431.64,
+  "end": 432.12
+ },
+ {
+  "w": "situ",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 432.12,
+  "end": 432.52
+ },
+ {
+  "w": "dua",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 432.52,
+  "end": 433.04
+ },
+ {
+  "w": "kesimpulan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 433.04,
+  "end": 433.52
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 433.52,
+  "end": 433.7
+ },
+ {
+  "w": "sama",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 433.7,
+  "end": 433.94
+ },
+ {
+  "w": "sama",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 433.94,
+  "end": 434.14
+ },
+ {
+  "w": "masuk",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 434.14,
+  "end": 434.4
+ },
+ {
+  "w": "akal",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 434.4,
+  "end": 434.84
+ },
+ {
+  "w": "bisa",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 434.84,
+  "end": 435.02
+ },
+ {
+  "w": "dibangun",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 435.02,
+  "end": 435.58
+ },
+ {
+  "w": "Tidak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 435.58,
+  "end": 435.98
+ },
+ {
+  "w": "ada",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 435.98,
+  "end": 436.24
+ },
+ {
+  "w": "data",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 436.24,
+  "end": 436.52
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 436.52,
+  "end": 436.76
+ },
+ {
+  "w": "bisa",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 436.76,
+  "end": 437.0
+ },
+ {
+  "w": "memisahkannya",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 437.0,
+  "end": 437.8
+ },
+ {
+  "w": "Yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 437.8,
+  "end": 438.22
+ },
+ {
+  "w": "bisa",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 438.22,
+  "end": 438.42
+ },
+ {
+  "w": "memisahkan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 438.42,
+  "end": 439.16
+ },
+ {
+  "w": "cuma",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 439.16,
+  "end": 439.52
+ },
+ {
+  "w": "satu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 439.52,
+  "end": 439.82
+ },
+ {
+  "w": "hal",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 439.82,
+  "end": 440.16
+ },
+ {
+  "w": "Menyapu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 440.16,
+  "end": 440.84
+ },
+ {
+  "w": "dasar",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 440.84,
+  "end": 441.16
+ },
+ {
+  "w": "laut",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 441.16,
+  "end": 441.44
+ },
+ {
+  "w": "di",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 441.44,
+  "end": 441.66
+ },
+ {
+  "w": "tempat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 441.66,
+  "end": 442.02
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 442.02,
+  "end": 442.16
+ },
+ {
+  "w": "selama",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 442.16,
+  "end": 442.46
+ },
+ {
+  "w": "ini",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 442.46,
+  "end": 442.7
+ },
+ {
+  "w": "dianggap",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 442.7,
+  "end": 443.18
+ },
+ {
+  "w": "tidak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 443.18,
+  "end": 443.36
+ },
+ {
+  "w": "mungkin",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 443.36,
+  "end": 443.84
+ },
+ {
+  "w": "Sekarang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 443.84,
+  "end": 444.62
+ },
+ {
+  "w": "pertanyaan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 444.62,
+  "end": 445.3
+ },
+ {
+  "w": "buat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 445.3,
+  "end": 445.46
+ },
+ {
+  "w": "lo",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 445.46,
+  "end": 445.72
+ },
+ {
+  "w": "Dan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 445.72,
+  "end": 446.12
+ },
+ {
+  "w": "ini",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 446.12,
+  "end": 446.44
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 446.44,
+  "end": 446.64
+ },
+ {
+  "w": "bikin",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 446.64,
+  "end": 446.92
+ },
+ {
+  "w": "gue",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 446.92,
+  "end": 447.08
+ },
+ {
+  "w": "nggak",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 447.08,
+  "end": 447.26
+ },
+ {
+  "w": "bisa",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 447.26,
+  "end": 447.48
+ },
+ {
+  "w": "berhenti",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 447.48,
+  "end": 447.76
+ },
+ {
+  "w": "mikir",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 447.76,
+  "end": 448.28
+ },
+ {
+  "w": "Tiap",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 448.28,
+  "end": 448.72
+ },
+ {
+  "w": "kali",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 448.72,
+  "end": 448.96
+ },
+ {
+  "w": "lo",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 448.96,
+  "end": 449.1
+ },
+ {
+  "w": "naik",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 449.1,
+  "end": 449.3
+ },
+ {
+  "w": "pesawat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 449.3,
+  "end": 449.6
+ },
+ {
+  "w": "malam",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 449.6,
+  "end": 450.02
+ },
+ {
+  "w": "lalu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 450.02,
+  "end": 450.24
+ },
+ {
+  "w": "tidur",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 450.24,
+  "end": 450.74
+ },
+ {
+  "w": "pesawat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 450.74,
+  "end": 451.28
+ },
+ {
+  "w": "lo",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 451.28,
+  "end": 451.48
+ },
+ {
+  "w": "juga",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 451.48,
+  "end": 451.68
+ },
+ {
+  "w": "mengirim",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 451.68,
+  "end": 452.02
+ },
+ {
+  "w": "sinyal",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 452.02,
+  "end": 452.4
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 452.4,
+  "end": 452.54
+ },
+ {
+  "w": "sama",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 452.54,
+  "end": 452.9
+ },
+ {
+  "w": "tiap",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 452.9,
+  "end": 453.54
+ },
+ {
+  "w": "jam",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 453.54,
+  "end": 453.9
+ },
+ {
+  "w": "Bedanya",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 453.9,
+  "end": 454.62
+ },
+ {
+  "w": "di",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 454.62,
+  "end": 455.22
+ },
+ {
+  "w": "darat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 455.22,
+  "end": 455.56
+ },
+ {
+  "w": "ada",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 455.56,
+  "end": 455.84
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 455.84,
+  "end": 456.04
+ },
+ {
+  "w": "menjawab",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 456.04,
+  "end": 456.48
+ },
+ {
+  "w": "Kalau",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 456.48,
+  "end": 457.06
+ },
+ {
+  "w": "semua",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 457.06,
+  "end": 457.36
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 457.36,
+  "end": 457.54
+ },
+ {
+  "w": "menjawab",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 457.54,
+  "end": 457.92
+ },
+ {
+  "w": "itu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 457.92,
+  "end": 458.1
+ },
+ {
+  "w": "diam",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 458.1,
+  "end": 458.46
+ },
+ {
+  "w": "lo",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 458.46,
+  "end": 459.06
+ },
+ {
+  "w": "ada",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 459.06,
+  "end": 459.22
+ },
+ {
+  "w": "di",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 459.22,
+  "end": 459.34
+ },
+ {
+  "w": "mana",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 459.34,
+  "end": 459.6
+ },
+ {
+  "w": "Itu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 459.6,
+  "end": 460.24
+ },
+ {
+  "w": "pertanyaan",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 460.24,
+  "end": 460.82
+ },
+ {
+  "w": "MH",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 460.82,
+  "end": 461.9
+ },
+ {
+  "w": "370",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 461.9,
+  "end": 462.38
+ },
+ {
+  "w": "Jadi",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 462.38,
+  "end": 462.74
+ },
+ {
+  "w": "satu",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 462.74,
+  "end": 463.56
+ },
+ {
+  "w": "pencarian",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 463.56,
+  "end": 464.08
+ },
+ {
+  "w": "lagi",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 464.08,
+  "end": 464.36
+ },
+ {
+  "w": "Busur",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 464.76,
+  "end": 465.1
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 465.1,
+  "end": 465.22
+ },
+ {
+  "w": "sama",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 465.22,
+  "end": 465.54
+ },
+ {
+  "w": "sekali",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 465.54,
+  "end": 466.28
+ },
+ {
+  "w": "lagi",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 466.28,
+  "end": 466.72
+ },
+ {
+  "w": "Atau",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 466.72,
+  "end": 467.44
+ },
+ {
+  "w": "mulai",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 467.44,
+  "end": 468.14
+ },
+ {
+  "w": "dari",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 468.14,
+  "end": 468.3
+ },
+ {
+  "w": "luar",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 468.3,
+  "end": 468.56
+ },
+ {
+  "w": "busur",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 468.56,
+  "end": 469.04
+ },
+ {
+  "w": "di",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 469.04,
+  "end": 469.42
+ },
+ {
+  "w": "tempat",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 469.42,
+  "end": 469.76
+ },
+ {
+  "w": "yang",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 469.76,
+  "end": 469.86
+ },
+ {
+  "w": "belum",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 469.86,
+  "end": 470.14
+ },
+ {
+  "w": "pernah",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 470.14,
+  "end": 470.42
+ },
+ {
+  "w": "dihitung",
+  "seg": 9,
+  "seg_t": 9,
+  "start": 470.42,
+  "end": 470.84
+ }
+]
