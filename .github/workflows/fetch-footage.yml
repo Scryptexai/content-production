@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/fetch_footage.py"
       - "tools/footage_specs/**"
+      - "tools/footage_picks/**"
       - ".github/workflows/fetch-footage.yml"
 permissions:
   contents: write
@@ -19,13 +20,29 @@ jobs:
       - name: ambil footage coverr
         run: |
           set -euo pipefail
-          SPEC=$(ls -1t tools/footage_specs/*.json 2>/dev/null | head -1 || true)
+          # spec aktif ditunjuk eksplisit; `ls -t` pernah memilih spec unduh
+          # padahal yang dimaksud spec discover.
+          SPEC=""
+          if [ -f tools/footage_specs/ACTIVE ]; then
+            SPEC="tools/footage_specs/$(tr -d '[:space:]' < tools/footage_specs/ACTIVE)"
+          fi
+          if [ -z "$SPEC" ] || [ ! -f "$SPEC" ]; then
+            SPEC=$(ls -1t tools/footage_specs/*.json 2>/dev/null | head -1 || true)
+          fi
           echo "spec: ${SPEC:-<bawaan EP01>}"
           if [ -n "$SPEC" ]; then
-            MODE=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('mode','download'))" "$SPEC")
-            EXTRA=""
-            CAND=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('candidates_out',''))" "$SPEC")
-            [ "$MODE" = "discover" ] && EXTRA="--discover --candidates-out ${CAND:-footage-candidates.json}"
+            read -r MODE CAND PICKS < <(python3 - "$SPEC" <<'PY'
+import json, sys
+s = json.load(open(sys.argv[1]))
+print(s.get("mode", "download"), s.get("candidates_out", "footage-candidates.json"), s.get("picks", "-"))
+PY
+)
+            echo "mode: $MODE | picks: $PICKS"
+            case "$MODE" in
+              discover) EXTRA="--discover --candidates-out $CAND" ;;
+              picks)    EXTRA="--picks $PICKS" ;;
+              *)        EXTRA="" ;;
+            esac
             python3 -u tools/fetch_footage.py --spec "$SPEC" $EXTRA > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
           else
             python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
@@ -39,5 +56,6 @@ jobs:
           git config user.email "bot@oddchapter.local"
           for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
           find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f
+          find footage -name "_tmp_*" -print0 2>/dev/null | xargs -0 -r git rm -f --ignore-unmatch -q
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
