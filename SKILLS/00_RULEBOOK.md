@@ -461,3 +461,15 @@ Cara unggah yang benar untuk seri ini: tulis
 `"approved": true`, lalu **push**. Pemicu `push` pada `queue/*.json` menjalankan
 workflow; ia mengunduh master dari Drive, mencocokkan sha256, mengunggah lewat
 Zernio, lalu mencatat hasilnya ke `published.json` di commit balik.
+
+## §23 — File Drive harus publik *sebelum* push antrean (18 Nov 2026)
+
+Run `44207927172` berhenti di langkah unduh master:
+`Drive mengembalikan HTML untuk 1kzRloG9… — file tidak publik`. `fetch_masters.py`
+memang sengaja menolak HTML (halaman konfirmasi) dan keluar dengan pesan itu,
+jadi tidak ada byte yang dikirim ke Zernio.
+
+Urutannya harus: unggah berkas ke Drive → **bagikan (anyone with the link →
+Viewer)** → baru tulis `queue/*.json` dengan `approved: true` dan push. Setelah
+dibagikan, push ulang berkas antrean yang sama (tambahkan `attempt`) — itu cukup
+untuk memicu run baru; tidak perlu memanggil `workflow_dispatch`.

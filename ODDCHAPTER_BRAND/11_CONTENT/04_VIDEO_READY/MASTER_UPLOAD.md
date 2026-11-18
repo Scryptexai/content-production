@@ -172,3 +172,20 @@ encode akhir `-crf 19 -maxrate 2500k` → 1,89 Mbps.
 | ep | judul | tayang | post Zernio | URL |
 |---|---|---|---|---|
 | SB-EP01 | Illuminati Benar-Benar Ada pada 1776. Buktinya Berhenti di 1785. | 17 Nov 2026 13:09 UTC | `6afc51f72d1215796ffa1d8c` | https://www.youtube.com/watch?v=mhI-Q3uVy1g |
+
+## Shorts potong dari klimaks SB-EP01 (18 Nov 2026)
+
+Diproduksi `tools/make_shorts.py` (potong dari batas segmen master v3, kanvas blur
+9:16 + klip 16:9 utuh supaya caption bakar tidak terpotong), thumbnail
+`tools/make_short_thumbs.py` (frame dari **master**, bukan dari Short — kalau dari
+Short, judul yang sudah dibakar muncul dua kali), metadata `tools/build_short_meta.py`.
+
+| id | rentang (master) | durasi | judul | URL |
+|---|---|---|---|---|
+| S1 | 115,30–158,00 | 42,7 dtk | 1797: Teori Illuminati Lahir dari Buku, Bukan dari Bukti | https://www.youtube.com/watch?v=6WRlQ9baV_Y |
+| S2 | 218,00–245,10 | 27,1 dtk | 1776: Mata Satu dan Piramida Sudah Ada Sebelum Illuminati | https://www.youtube.com/watch?v=djmx9PIyvFs |
+| S3 | 268,60–309,20 | 40,6 dtk | 1785: Dokumen yang Sama, Dua Kesimpulan yang Berlawanan | https://www.youtube.com/watch?v=6uDxJ4GucSs |
+
+Drive: `1kzRloG9…` (S1), `1zIhUl5y…` (S2), `1a3WS80n…` (S3) — semuanya **publik**
+(anyone with the link). Satu push per Short: `queue/EP01SB-S1.json`,
+`queue/EP01SB-S2.json`, `queue/EP01SB-S3.json`.
