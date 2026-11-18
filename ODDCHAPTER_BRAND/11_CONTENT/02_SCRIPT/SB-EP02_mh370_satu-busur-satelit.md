@@ -1,246 +1,238 @@
 # SB-EP02 — SATU BUSUR SATELIT
 
-**Seri:** ODDCHAPTER · SB (Sejarah yang dicek ulang)
-**Judul kerja:** "140.000 km² Dasar Laut Sudah Dipindai. MH370 Tetap Tidak Ada."
-**Target durasi:** 9–11 menit (long-form 16:9), VO ± 1.380 kata
-**Format kerja:** 5 Short dulu (S1–S5) → long-form menyusul
+**Seri:** ODDCHAPTER · SB · **versi naskah:** v2 (18 Nov 2026, aturan `00E`)
+**Judul kerja:** "MH370 Terlacak Tujuh Kali. Kita Tetap Kehilangan Dia."
+**Target:** 9–11 menit, VO ± 1.180 kata · 5 Short (S1–S5) tayang lebih dulu
 **VO:** rekaman pemilik (bukan TTS), per segmen, WAV 48 kHz
 
 ---
 
-## Aturan naskah ini
+## GERBANG `00E §7`
 
-1. VO dipotong **per segmen** (12 segmen). Setiap segmen mulai dan berakhir di jeda;
-   tidak ada potongan di tengah kalimat. Shorts diambil dari batas segmen, bukan dari
-   pencarian keheningan.
-2. Angka yang diucapkan harus sama dengan yang ada di `01_IDEA/RISET_MH370_EP02SB.md`.
-3. Tidak ada tuduhan terhadap awak. Laporan resmi 2018 tidak menetapkan siapa pun.
-4. Gaya: kalimat pendek, "gue/lo", tanpa kata pengisi AI ("bayangkan", "tahukah kamu",
-   "dalam dunia yang").
+| # | item | isi |
+|---|---|---|
+| 1 | hook + mesinnya | "Lo yakin pesawat MH370 hilang tanpa jejak? Nggak." → **salah sangka** |
+| 2 | awareness | "kalau lo pernah naik pesawat malam lalu tidur, lo bergantung pada sistem yang sama" |
+| 3 | pertanyaan tengah (biner) | "di menit terakhir, pesawat ini masih dipegang orang — atau sudah kosong?" |
+| 4 | pertanyaan penutup + loop | satu pencarian lagi: busur yang sama, atau luar busur? · loop: pesawat lo juga mengirim sinyal tiap jam, bedanya ada yang menjawab |
+| 5 | kalimat tanda tangan | "bukti terkuat di kasus ini bukan pengukuran — itu sampah sistem komunikasi" |
+| 6 | kartu angka | 7 handshake · BTO/BFO · 120.000 / 112.000 / 7.571 · 3 serpihan · dua pembacaan |
+| 7 | batas potong Shorts | 5 Short, semuanya di batas segmen (tabel di bawah) |
+
+## Tiga opsi hook (pilih satu; naskah memakai A)
+
+**A · salah sangka.**
+> Lo yakin pesawat MH370 hilang tanpa jejak?
+> Nggak hilang.
+> Pesawat itu terlacak tujuh kali setelah transpondernya dimatikan.
+
+**B · kesal.**
+> Pencarian termahal dalam sejarah penerbangan.
+> Kapal sonar, robot bawah laut, dua puluh enam negara.
+> Serpihan pertamanya ditemukan oleh orang yang sedang membersihkan pantai.
+
+**C · membalik kepercayaan.**
+> Kita tahu MH370 ada di mana.
+> Yang kita nggak tahu cuma satu: titiknya.
+> Dua belas tahun, dan yang kita kejar cuma satu titik di garis sepanjang tiga ribu kilometer.
+
+Semua opsi dibayar di dalam video: A di SEG 04–06, B di SEG 06, C di SEG 07.
 
 ---
 
-## SEG 01 — KAIL · 0:00–0:24
+## PETA PILAR
 
-**Layar:** footage laut malam dari udara, tanpa teks. Kartu masuk `ODDCHAPTER` detik 3.
+| segmen | waktu | awareness | attention | engagement |
+|---|---|---|---|---|
+| 01 kail | 0:00–0:32 | — | hook membalik kepercayaan "hilang tanpa jejak" | ujung terbuka: "kenapa masih kosong?" |
+| 02 batas | 0:32–1:12 | "lo pernah naik pesawat malam?" | janji + kejujuran batas | — |
+| 03 malam itu | 1:12–2:24 | — | detik demi detik, angka spesifik | — |
+| 04 tujuh ping | 2:24–3:56 | — | bukti ternyata bukan posisi | tanda tangan: "sampah sistem komunikasi" |
+| 05 tiga gelombang | 3:56–5:20 | ini masih berjalan (perpanjangan 2026) | tiga kali kosong berturut-turut | — |
+| 06 tiga potong | 5:20–6:22 | — | **kesal**: yang menemukan bukan tim pencari | — |
+| 07 dua pembacaan | 6:22–7:52 | — | dua skenario, satu data | **pertanyaan biner** |
+| 08 2026 | 7:52–8:50 | kontrak sampai Jun 2027 | angka 140.000 km² vs 3 potong | — |
+| 09 penutup | 8:50–9:40 | — | — | **loop ke diri + pilihan A/B** |
 
-> Tujuh.
->
-> Bukan radar. Bukan panggilan darurat. Bukan kotak hitam.
->
-> Tujuh ping satelit yang tidak pernah dirancang untuk melacak pesawat — dan dari tujuh
-> ping itu, umat manusia menghabiskan dua belas tahun mengeruk dasar samudra.
+---
 
-**Card (0:18):** `7 HANDSHAKE · 02:25–08:19 MYT`
+## SEG 01 — KAIL · 0:00–0:32
 
-## SEG 02 — JANJI · 0:24–0:58
+**Layar:** footage laut malam dari udara. Tanpa teks 4 detik pertama. Kartu masuk detik 5.
 
-**Layar:** peta samudra Hindia, busur ketujuh digambar pelan.
+> Lo yakin pesawat MH370 hilang tanpa jejak?
+>
+> Nggak hilang.
+>
+> Pesawat itu terlacak tujuh kali setelah transpondernya dimatikan.
+>
+> Tujuh kali. Dalam enam jam tiga puluh sembilan menit.
+>
+> Dan dari tujuh pelacakan itu, kita cuma dapat satu hal: jarak ke satelit. Bukan tempatnya.
+>
+> Itu sebabnya, dua belas tahun kemudian, kita masih menyapu dasar laut yang belum tentu benar.
 
-> Maret 2026, pencarian terakhir selesai. Dua puluh delapan hari di laut, tujuh ribu lima
-> ratus tujuh puluh satu kilometer persegi dasar laut dipindai. Nol temuan.
->
-> Di video ini gue nggak akan nebak siapa yang salah. Gue cuma mau nunjukin satu hal:
-> satu-satunya bukti yang menempatkan pesawat ini di selatan bukan posisi, bukan foto,
-> bukan rekaman — tapi angka sisa dari sistem komunikasi yang sudah usang.
+**Card (0:24):** `7 HANDSHAKE · 02:25–08:19`
 
-## SEG 03 — MALAM ITU · 0:58–2:14
+## SEG 02 — BATAS + KENAPA INI TENTANG LO · 0:32–1:12
 
-**Layar:** footage kokpit instrumen, landasan malam, radar ruang kendali.
+**Layar:** peta samudra Hindia; busur ketujuh digambar pelan.
 
-> 8 Maret 2014, 00:41 waktu Malaysia. Boeing 777-200ER nomor registrasi 9M-MRO lepas
-> landas dari Kuala Lumpur menuju Beijing. Dua ratus tiga puluh sembilan orang di dalamnya:
-> dua pilot, sepuluh awak kabin, dua ratus dua puluh tujuh penumpang. Seratus lima puluh
-> dua di antaranya warga Tiongkok.
+> Gue nggak akan nebak siapa yang membalikkan pesawat ini. Laporan resmi 2018 pun tidak berani.
 >
-> 01:01, pesawat mencapai tiga puluh lima ribu kaki.
+> Yang gue mau tunjukin cuma satu: bukti terkuat dalam kasus ini bukan foto, bukan radar, bukan rekaman suara. Bukti terkuatnya sisa hitungan dari sistem komunikasi yang dibuat untuk hal lain.
 >
-> 01:07, transmisi ACARS terakhir. Laporan berikutnya, yang seharusnya datang sekitar
-> 01:37, tidak pernah sampai.
->
-> 01:19, kontrol Kuala Lumpur menyerahkan pesawat ke Ho Chi Minh. Balasan terakhir dari
-> kokpit: "Good night Malaysian three seven zero."
->
-> Dua menit kemudian, transponder berhenti menjawab. Pesawat hilang dari radar sekunder
-> sipil, tepat di sekitar waypoint IGARI.
->
-> Tapi radar primer militer Malaysia masih melihatnya. Satu pesawat berbalik arah,
-> melintasi Semenanjung, lalu bergerak ke barat laut lewat Selat Malaka. Kontak terakhir
-> 02:22, dekat waypoint MEKAR, sekitar dua ratus mil laut dari Penang.
->
-> Setelah itu, tidak ada apa-apa. Sampai 02:25.
+> Dan kalau lo pernah naik pesawat malam lalu tidur — lo bergantung pada sistem yang sama.
 
-## SEG 04 — BUKTI YANG SEBENARNYA · 2:14–3:46
+## SEG 03 — MALAM ITU · 1:12–2:24
 
-**Layar:** animasi satelit geostasioner, sinyal bolak-balik, tujuh cincin muncul satu per satu.
+**Layar:** instrumen kokpit, landasan malam, layar radar ruang kendali.
 
-> 02:25, unit data satelit pesawat mendaftar ulang ke jaringan Inmarsat. Bukan dipanggil
-> awak — ini otomatis. Lalu setiap jam, lebih kurang, sistem melakukan handshake: satu
-> sinyal keluar, satu jawaban balik.
+> 8 Maret 2014, 00:41 waktu Malaysia. Boeing 777-200ER, nomor registrasi 9M-MRO, lepas landas dari Kuala Lumpur menuju Beijing. Dua ratus tiga puluh sembilan orang: dua pilot, sepuluh awak kabin, dua ratus dua puluh tujuh penumpang.
 >
-> Sampai 08:19, tercatat tujuh handshake. Rentang waktunya enam jam tiga puluh sembilan menit.
+> 01:07 — ACARS mengirim laporan terakhirnya. Laporan berikutnya, yang seharusnya datang 01:37, tidak pernah sampai.
 >
-> Dan di sinilah bagian yang hampir selalu dilewatkan orang: tujuh handshake itu tidak
-> berisi posisi. Tidak ada GPS. Tidak ada ketinggian. Tidak ada arah. Transponder sudah
-> mati, ACARS sudah mati. Yang tersisa cuma dua nilai teknis:
+> 01:19 — kontrol Kuala Lumpur menyerahkan pesawat ke Ho Chi Minh. Balasan terakhir dari kokpit: "Good night Malaysian three seven zero."
 >
-> BTO — burst timing offset. Selisih waktu sinyal pergi dan pulang. Dari situ dihitung
-> jarak pesawat ke satelit. Satu jarak = satu lingkaran kemungkinan posisi.
+> 01:21 — transponder mati. Pesawat hilang dari radar sipil di sekitar waypoint IGARI.
 >
-> BFO — burst frequency offset. Pergeseran frekuensi karena gerak, efek Doppler. Dari situ
-> dibaca apakah pesawat menjauh atau mendekat.
+> Tapi radar militer Malaysia masih melihatnya. Satu pesawat berbalik arah, melintasi Semenanjung, ke barat laut lewat Selat Malaka. Kontak terakhir 02:22, dekat waypoint MEKAR, dua ratus mil laut dari Penang.
 >
-> Tujuh BTO memberi tujuh busur. BFO yang memilih: utara, atau selatan.
->
-> Hasilnya busur ketujuh, membentang di samudra Hindia selatan, kira-kira seribu dua ratus
-> sampai dua ribu kilometer di barat Australia. Itu satu-satunya alasan semua orang
-> sepakat mencari di sana.
->
-> Dan ini yang harus lo tahu: sistem Inmarsat nggak dibuat untuk melacak pesawat. BTO dan
-> BFO itu efek samping protokol komunikasi. Bukan alat navigasi. Artinya bukti terkuat
-> dalam kasus ini bukan pengukuran yang dirancang untuk menjawab pertanyaan ini.
+> Lalu sunyi. Sampai 02:25.
 
-## SEG 05 — TIGA GELOMBANG PENCARIAN · 3:46–5:06
+## SEG 04 — TUJUH PING · 2:24–3:56
 
-**Layar:** kapal penelitian, sonar, peta area pencarian berganti tiga warna.
+**Layar:** satelit geostasioner, sinyal bolak-balik, tujuh lingkaran muncul satu per satu.
 
-> Gelombang pertama dipimpin Australia, 2014 sampai 2017. Seratus dua puluh ribu kilometer
-> persegi dasar laut disapu. Area prioritas dua puluh lima ribu kilometer persegi di
-> sepanjang busur, antara 32,5 dan 36 derajat lintang selatan. Ditangguhkan 17 Januari
-> 2017. Kosong.
+> 02:25, unit data satelit pesawat mendaftar ke jaringan Inmarsat. Bukan dipanggil awak. Otomatis.
 >
-> Gelombang kedua, 2018. Ocean Infinity, perusahaan robotik laut, menawarkan skema yang
-> belum pernah dipakai untuk kasus sebesar ini: no find, no fee. Tidak ketemu, tidak
-> dibayar. Kalau ketemu, tujuh puluh juta dolar. Seratus dua belas ribu kilometer persegi
-> dipindai. Selesai Juni 2018. Kosong.
+> Lalu setiap jam, lebih kurang, sistem melakukan handshake: satu sinyal keluar, satu jawaban balik. Sampai 08:19, tercatat tujuh.
 >
-> Gelombang ketiga, 2025. Kontrak diteken 25 Maret 2025 untuk lokasi baru seluas lima belas
-> ribu kilometer persegi, lagi-lagi no find no fee, tujuh puluh juta dolar.
+> Dan ini bagian yang hampir selalu dilewatkan: tujuh handshake itu tidak membawa posisi. Tidak ada GPS. Tidak ada ketinggian. Tidak ada arah. Transponder sudah mati, ACARS sudah mati.
 >
-> Fase pertama 25 sampai 28 Maret 2025. Fase kedua 31 Desember 2025 sampai 23 Januari 2026.
-> Total dua puluh delapan hari. Sekitar tujuh ribu lima ratus tujuh puluh satu kilometer
-> persegi dasar laut dipindai — sekitar setengah dari target.
+> Yang tersisa dua angka.
 >
-> 8 Maret 2026, Badan Investigasi Kecelakaan Udara Malaysia mengumumkan: tidak ada bangkai
-> yang terkonfirmasi.
+> BTO — selisih waktu sinyal pergi dan pulang. Dari situ dihitung jarak ke satelit. Satu jarak, satu lingkaran kemungkinan posisi.
 >
-> Dan pada 2026 juga, Ocean Infinity menyebut angkanya sendiri: sejak 2018 mereka sudah
-> seratus lima puluh satu hari di laut dan memetakan lebih dari seratus empat puluh ribu
-> kilometer persegi dasar laut.
+> BFO — pergeseran frekuensi karena gerak. Dari situ dibaca: menjauh, atau mendekat.
+>
+> Tujuh BTO memberi tujuh lingkaran. BFO yang memilih: utara, atau selatan.
+>
+> Hasilnya busur ketujuh — membentang seribu dua ratus sampai dua ribu kilometer di barat Australia. Itu satu-satunya alasan semua orang sepakat mencari di sana.
+>
+> Dan yang harus lo tahu: Inmarsat nggak dibuat untuk melacak pesawat. BTO dan BFO itu efek samping protokol komunikasi, bukan alat navigasi.
+>
+> Jadi bukti terkuat dalam kasus ini bukan pengukuran yang dirancang untuk menjawab pertanyaan ini. Itu sampah sistem komunikasi — dan dari sampah itu, seluruh samudra ditentukan.
 
-**Card (5:00):** `120.000 km² (2014–17) · 112.000 km² (2018) · 7.571 km² (2025–26) · 0 BANGKAI`
+## SEG 05 — TIGA GELOMBANG · 3:56–5:20
 
-## SEG 06 — TIGA POTONG · 5:06–6:10
+**Layar:** kapal penelitian, sonar, peta area pencarian berganti warna tiga kali.
 
-**Layar:** flaperon berlumut di pantai, bilah rumput laut, peta Réunion–Mauritius–Tanzania.
+> Pencarian pertama dipimpin Australia, 2014 sampai 2017. Seratus dua puluh ribu kilometer persegi dasar laut disapu; area prioritas dua puluh lima ribu kilometer persegi di sepanjang busur, antara 32,5 dan 36 derajat lintang selatan. Ditangguhkan 17 Januari 2017. Kosong.
+>
+> 2018, Ocean Infinity menawarkan skema yang belum pernah dipakai untuk kasus sebesar ini: no find, no fee. Tidak ketemu, tidak dibayar. Ketemu, tujuh puluh juta dolar. Seratus dua belas ribu kilometer persegi dipindai. Selesai Juni 2018. Kosong.
+>
+> 2025, kontrak baru: lima belas ribu kilometer persegi di lokasi baru, lagi-lagi no find no fee, tujuh puluh juta dolar. Fase pertama 25 sampai 28 Maret 2025. Fase kedua 31 Desember 2025 sampai 23 Januari 2026. Dua puluh delapan hari. Sekitar tujuh ribu lima ratus tujuh puluh satu kilometer persegi — setengah dari target.
+>
+> 8 Maret 2026, Badan Investigasi Kecelakaan Udara Malaysia mengumumkan: tidak ada bangkai yang terkonfirmasi.
 
-> Kalau semua pencarian itu kosong, kenapa dunia masih yakin pesawatnya di selatan?
+**Card (5:05):** `120.000 km² · 112.000 km² · 7.571 km² · 0 BANGKAI`
+
+## SEG 06 — TIGA POTONG · 5:20–6:22
+
+**Layar:** flaperon berlumut, peta Réunion–Mauritius–Pemba, lalu potongan berita "pantai dibersihkan".
+
+> Terus kenapa dunia masih yakin pesawatnya di selatan?
 >
 > Karena tiga potong.
 >
-> 29 Juli 2015, sebuah benda tertutup teritip terdampar di pantai Réunion, wilayah Prancis
-> di samudra Hindia. Flaperon — bagian sayap. Prancis mengonfirmasi 3 September 2015:
-> itu bagian dari 9M-MRO.
+> 29 Juli 2015, sesuatu yang tertutup teritip terdampar di pantai Réunion. Flaperon — bagian sayap. Dikonfirmasi 3 September: bagian dari 9M-MRO.
 >
 > 10 Mei 2016, bagian outboard aft flap ditemukan di Mauritius. Dikonfirmasi.
 >
 > 20 Juni 2016, outboard flap kanan ditemukan di Pulau Pemba, Tanzania. Dikonfirmasi.
 >
-> Total, sekitar dua puluh dua sampai tiga puluh potongan pernah diperiksa otoritas. Tiga
-> dikonfirmasi. Sebagian "hampir pasti", sebagian tidak bisa diidentifikasi.
+> Sekarang bagian yang bikin gue kesal.
 >
-> Tiga potong ini penting karena mengunci arah: pesawat memang berakhir di samudra Hindia.
+> Pencarian ini yang termahal dalam sejarah penerbangan. Kapal, robot bawah laut, sonar, dua puluh enam negara. Tapi yang menemukan serpihan pertama bukan mereka. Bukan sonar. Bukan satelit.
 >
-> Tapi tiga potong ini tidak memberi satu pun petunjuk tentang titiknya. Arus membawa
-> serpihan ribuan kilometer. Yang lo temukan di pantai adalah hasil perjalanan dua tahun,
-> bukan lokasi kejadian.
+> Yang menemukannya orang yang sedang membersihkan pantai.
+>
+> Dan itu bukan keberuntungan yang manis. Itu pola: yang ketemu cuma yang terdampar. Dan yang terdampar membuktikan arah — bukan titik.
 
-## SEG 07 — DUA PEMBACAAN · 6:10–7:44
+## SEG 07 — DUA PEMBACAAN · 6:22–7:52
 
-**Layar:** dua panel sejajar; grafik busur dengan dua profil ketinggian berbeda.
+**Layar:** dua panel sejajar, grafik busur dengan dua profil ketinggian.
 
-> Sekarang bagian yang bikin kasus ini bertahan dua belas tahun.
+> Menurut lo, di menit terakhir, pesawat ini masih dipegang orang — atau sudah kosong?
 >
-> Pembacaan pertama: pesawat terbang tanpa kendali. Awak tidak sadar — hipoksia,
-> kemungkinan besar — pesawat melanjutkan sendiri sampai bahan bakar habis, lalu jatuh
-> dekat busur ketujuh. Kalau ini yang terjadi, pencarian di sepanjang busur adalah cara
-> yang benar, dan area prioritasnya memang sempit.
+> Dua-duanya punya pendukung, dan dua-duanya memakai data yang sama.
 >
-> Pembacaan kedua: pesawat terbang terkendali sampai akhir. Seseorang masih memegang
-> kendali, dan pesawat diterbangkan sampai mesin mati. Kalau ini yang terjadi, titik
-> akhirnya bisa jauh dari busur — pesawat bisa meluncur puluhan kilometer setelah bahan
-> bakar habis. Area prioritas dua puluh lima ribu kilometer persegi jadi terlalu kecil, dan
-> di tempat yang salah.
+> Pembacaan pertama: awak tidak sadar. Hipoksia. Pesawat terbang sendiri sampai bahan bakar habis, lalu jatuh dekat busur ketujuh. Kalau ini benar, pencarian di sepanjang busur adalah cara yang tepat, dan area prioritasnya memang sempit.
 >
-> Dua pembacaan ini nggak bisa dipisahkan oleh data satelit. BTO dan BFO menghasilkan busur
-> yang sama persis di kedua skenario. Yang membedakan cuma satu: seberapa cepat pesawat
-> turun di menit-menit terakhir. Dan itu tidak pernah terukur, karena tidak ada satu pun
-> instrumen yang mencatatnya di luar kotak hitam — yang juga tidak pernah ditemukan.
+> Pembacaan kedua: pesawat terbang terkendali sampai akhir. Masih ada yang memegang kendali, dan menerbangkannya sampai mesin mati. Kalau ini benar, titik akhirnya bisa puluhan kilometer dari busur. Area prioritas dua puluh lima ribu kilometer persegi jadi terlalu kecil — dan di tempat yang salah.
 >
-> Jadi bukan kita kekurangan teknologi. Kita kekurangan satu variabel, dan variabel itu
-> ada di dasar laut yang belum dipindai.
+> Dan BTO/BFO tidak bisa memilih di antara keduanya. Busurnya sama persis.
+>
+> Yang membedakan cuma satu: seberapa cepat pesawat turun di menit terakhir. Itu tidak pernah terukur — karena satu-satunya alat yang mencatatnya ada di kotak hitam, yang juga tidak pernah ditemukan.
 
-**Card (7:35):** `BTO/BFO SAMA DI DUA SKENARIO`
+**Card (7:42):** `BTO/BFO SAMA DI DUA SKENARIO`
 
-## SEG 08 — YANG BERUBAH DI 2026 · 7:44–8:52
+## SEG 08 — YANG MASIH BERJALAN · 7:52–8:50
 
-**Layar:** dokumen kontrak, konferensi pers, peta perpanjangan area.
+**Layar:** dokumen kontrak, konferensi pers, peta area perpanjangan.
 
-> Ada satu hal yang berubah tahun ini dan jarang disebut: pencariannya belum berhenti
-> secara permanen.
+> Yang jarang disebut: pencariannya belum berhenti permanen.
 >
-> Malaysia menyetujui perpanjangan untuk 1 Juli 2026 sampai 30 Juni 2027. Kontraknya masih
-> no find no fee. Artinya sampai Juni 2027, masih ada satu pihak yang bersedia menanggung
-> biaya kapal dan robot bawah laut dengan imbalan nol kalau gagal.
+> Malaysia menyetujui perpanjangan untuk 1 Juli 2026 sampai 30 Juni 2027. Kontraknya masih no find, no fee.
 >
-> Tapi perhatikan angkanya. Dua belas tahun, tiga gelombang, ratusan ribu kilometer persegi
-> — dan yang benar-benar dikonfirmasi cuma tiga potong sebesar meja makan. Bukan badan
-> pesawat. Bukan perekam. Bukan satu pun jendela.
+> Artinya sampai pertengahan tahun depan, masih ada satu perusahaan yang bersedia mengirim kapal dan robot ke dasar samudra dengan imbalan nol kalau gagal.
 >
-> Kalau lo tanya kenapa orang masih peduli: karena kasus ini bukan tentang pesawat yang
-> hilang. Ini tentang seberapa jauh kita bisa percaya pada satu angka yang dihitung dari
-> efek samping sinyal.
+> Tapi lihat angkanya. Dua belas tahun. Tiga gelombang. Ratusan ribu kilometer persegi. Dan yang dikonfirmasi cuma tiga potong sebesar meja makan. Ocean Infinity sendiri menyebut sudah seratus lima puluh satu hari di laut dan memetakan lebih dari seratus empat puluh ribu kilometer persegi.
+>
+> Nol badan pesawat. Nol perekam.
 
-## SEG 09 — PENUTUP · 8:52–9:34
+## SEG 09 — PENUTUP · 8:50–9:40
 
-**Layar:** busur ketujuh memudar, kembali ke laut malam.
+**Layar:** busur memudar, kembali ke laut malam; teks penutup kecil.
 
-> Laporan resmi 2018 menyimpulkan penyebabnya tidak bisa ditentukan. Bukan karena
-> investigasinya malas — tapi karena bukti utamanya, yaitu bangkai dan dua perekam, tidak
-> pernah ditemukan. Semua yang kita punya sekarang adalah metadata: jarak, waktu, pergeseran
-> frekuensi, dan tiga potong serpihan yang hanyut dua tahun.
+> Laporan 2018 menyimpulkan penyebabnya tidak bisa ditentukan. Bukan karena malas — karena bukti utamanya tidak pernah ditemukan.
 >
-> Dari situ, dua kesimpulan yang sama-sama masuk akal bisa dibangun. Dan keduanya tidak bisa
-> dibuktikan benar atau salah tanpa mencari di tempat yang berbeda.
+> Yang kita punya sekarang: jarak, waktu, pergeseran frekuensi, dan tiga potong serpihan yang hanyut dua tahun.
 >
-> Pertanyaan buat lo: kalau lo punya dana satu kali pencarian lagi, lo akan mengeruk busur
-> itu sekali lagi — atau mulai dari luar busur, di tempat yang tidak pernah dihitung?
+> Dari situ, dua kesimpulan yang sama-sama masuk akal bisa dibangun. Tidak ada data yang bisa memisahkannya. Yang bisa memisahkan cuma satu hal: menyapu dasar laut di tempat yang selama ini dianggap tidak mungkin.
+>
+> Sekarang pertanyaan buat lo — dan ini yang bikin gue nggak bisa berhenti mikir.
+>
+> Tiap kali lo naik pesawat malam lalu tidur, pesawat lo juga mengirim sinyal yang sama, tiap jam. Bedanya, di darat ada yang menjawab.
+>
+> Kalau semua yang menjawab itu diam — lo ada di mana? Itu pertanyaan MH370.
+>
+> Jadi: satu pencarian lagi. Busur yang sama, sekali lagi — atau mulai dari luar busur, di tempat yang belum pernah dihitung?
 
 ---
 
-## Shorts yang dipotong dari episode ini (rencana)
+## Shorts (dipotong dari batas segmen)
 
-Setiap Short diambil **dari batas segmen**, tanpa memotong kata. Hook dua baris, klaim satu
-kalimat, seperti SB-EP01.
-
-| id | segmen | durasi ± | hook (2 baris) | klaim |
+| id | segmen | ± durasi | hook 2 baris | klaim |
 |---|---|---|---|---|
-| S1 | SEG 04 | 45 dtk | Satu-satunya Bukti Bukan Radar, / Tapi 7 Ping Satelit | "Tujuh handshake Inmarsat tidak berisi posisi; yang dipakai cuma jarak dan pergeseran frekuensi." |
-| S2 | SEG 04 (BTO/BFO) | 38 dtk | Satu Angka Doppler / Membuang Seluruh Koridor Utara | "BFO membaca arah; dari situ koridor utara gugur dan busur ketujuh jadi dasar semua pencarian." |
-| S3 | SEG 06 | 42 dtk | Tiga Potong Serpihan, / Nol Titik Kejadian | "Tiga serpihan dikonfirmasi mengunci arah, bukan titik: arus membawanya ribuan kilometer." |
-| S4 | SEG 05 (2025–26) | 40 dtk | 7.571 km² Dipindai 28 Hari, / Hasilnya Nol | "Pencarian 2025–26 selesai 23 Januari 2026; AAIB Malaysia mengumumkan tanpa bangkai pada 8 Maret." |
-| S5 | SEG 07 | 48 dtk | Data yang Sama, / Dua Titik Jatuh Berbeda | "BTO/BFO identik di kedua skenario; yang membedakan hanya kecepatan turun di menit terakhir." |
+| S1 | SEG 01 + SEG 04 | 46 dtk | Pesawat Ini Terlacak Tujuh Kali / dan Kita Tetap Kehilangan Dia | "Tujuh handshake Inmarsat tidak membawa posisi; yang dipakai hanya jarak dan pergeseran frekuensi." |
+| S2 | SEG 04 | 40 dtk | Satu Angka Doppler / Membuang Seluruh Koridor Utara | "BFO membaca arah; dari situ koridor utara gugur dan busur ketujuh jadi dasar semua pencarian." |
+| S3 | SEG 06 | 44 dtk | Pencarian Termahal di Dunia, / Ditemukan Tukang Bersih Pantai | "Tiga serpihan dikonfirmasi mengunci arah, bukan titik; arus membawanya ribuan kilometer." |
+| S4 | SEG 05 (2025–26) | 42 dtk | 28 Hari, 7.571 km², / Hasilnya Nol | "Pencarian 2025–26 ditutup 23 Januari 2026; AAIB Malaysia mengumumkan tanpa bangkai 8 Maret 2026." |
+| S5 | SEG 07 | 48 dtk | Data Sama Persis, / Dua Titik Jatuh Berbeda | "BTO/BFO identik di dua skenario; pembedanya hanya kecepatan turun di menit terakhir." |
+
+Short memakai kanvas 9:16 blur + klip 16:9 utuh (caption bakar aman), hook 2 baris 66 px,
+klaim di kotak gelap, batas potong di akhir segmen — sama seperti SB-EP01.
 
 ## Catatan produksi
 
-- **VO**: 9 segmen rekaman terpisah (`VO_01`…`VO_09`), WAV 48 kHz mono. Simpan di Drive
-  folder EP01 (atau folder baru SB-EP02) supaya bisa diunduh lewat `tools/fetch_masters.py`.
-- **Musik**: full sepanjang video, −14 dB + ducking rasio 5 (setelan v3).
-- **Footage Coverr** (lewat `fetch-footage.yml`): `night ocean aerial`, `cockpit instruments`,
+- **VO**: 9 berkas terpisah `VO_01`…`VO_09` (WAV 48 kHz mono), sesuai segmen. Berkas per
+  segmen membuat Shorts bisa dipotong tanpa memotong kata.
+- **Kartu angka**: 5 (7 handshake · BTO/BFO · tiga gelombang · 3 serpihan · dua pembacaan).
+- **Footage Coverr** (`fetch-footage.yml`): `night ocean aerial`, `cockpit instruments`,
   `radar screen`, `cargo ship storm`, `sonar underwater`, `satellite dish`, `beach debris`,
-  `control room`. Minimal 30 klip.
-- **Diagram**: 4 kartu angka (7 handshake · BTO/BFO · tiga serpihan · dua pembacaan) + peta
-  busur ketujuh. Foto hanya di dalam kartu, footage full layar (aturan v3).
-- **Palet**: `#080A0C` ink · `#F0ECE0` ivory · `#C6CEBE` sage · `#C6602A` oranye.
-- Render 16:9 1920×1080 30 fps, target 9–11 menit; encode `-crf 19 -maxrate 2500k` supaya
-  di bawah 100 MB (batas unggah Drive).
+  `control room`, `airport runway night`.
+- **Palet & tipografi**: ikut `00E §6` (ink `#080A0C`, ivory `#F0ECE0`, sage `#C6CEBE`,
+  oranye `#C6602A`; Space Grotesk 700 + Inter 600/700).
+- Render 1920×1080 30 fps, `-crf 19 -maxrate 2500k`; target < 100 MB untuk Drive.

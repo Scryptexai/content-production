@@ -473,3 +473,25 @@ Urutannya harus: unggah berkas ke Drive → **bagikan (anyone with the link →
 Viewer)** → baru tulis `queue/*.json` dengan `approved: true` dan push. Setelah
 dibagikan, push ulang berkas antrean yang sama (tambahkan `attempt`) — itu cukup
 untuk memicu run baru; tidak perlu memanggil `workflow_dispatch`.
+
+## §24 — Tiga syarat naskah: awareness, attention, engagement (18 Nov 2026)
+
+Pemilik menetapkan tiga syarat yang wajib ada **di dalam penulisan**, bukan di editing:
+kesadaran penonton bahwa ini tentang dirinya, rantai penahan perhatian, dan alasan menulis
+komentar. Syarat lain: visual konsisten + narasi unik.
+
+Aturan turunannya ada di `ODDCHAPTER_BRAND/11_CONTENT/00E_TIGA_SYARAT_NASKAH.md`.
+Yang paling sering dilanggar, dan karena itu ditulis di sini:
+
+1. **Hook wajib kontroversial.** Harus membuat terkejut, kesal, atau sadar salah sangka —
+   sesuatu yang membalik kepercayaan umum. Hook yang aman tidak menarik siapa pun.
+   Kontroversinya wajib **dibayar** di dalam video sebelum menit ketiga.
+2. **Hook = satu fakta yang bisa dihitung**, bukan opini. Angka di hook harus dipakai lagi
+   di bab pembuktian.
+3. **Narasi unik** = satu kalimat yang cuma bisa ada di episode itu. Kalau kalimatnya bisa
+   dipindah ke episode lain tanpa ada yang hilang, itu bukan naskah, itu templat.
+4. **Loop balik ke diri penonton** di akhir, bukan kesimpulan sejarah. Pertanyaan penutup
+   harus bisa dijawab satu kalimat oleh orang yang nonton setengah.
+
+Naskah SB-EP02 (v2) adalah contoh penerapannya: gerbang tujuh baris di kepala berkas,
+peta pilar per segmen, tiga opsi hook, dan Shorts yang dipotong di batas segmen.
