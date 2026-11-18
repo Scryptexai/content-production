@@ -10,6 +10,7 @@ belum dibagikan — keluar dengan pesan yang menyebutkan itu, bukan error acak.
 """
 
 import argparse
+import pathlib
 import shutil
 import sys
 import urllib.request
@@ -21,7 +22,7 @@ def gdown(fid, target):
     except ImportError:
         return False
     try:
-        gdown.download(id=fid, output=str(target), quiet=False, fuzzy=False)
+        gdown.download(id=fid, output=str(target), quiet=False)
     except Exception as e:                      # noqa: BLE001
         print(f"  gdown gagal: {e}")
         return False
@@ -69,12 +70,13 @@ def main():
     ap.add_argument("--id", required=True)
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
+    target = pathlib.Path(args.out)
 
-    if gdown(args.id, args.out):
-        print(f"  gdown: {args.out}")
+    if gdown(args.id, target):
+        print(f"  gdown: {target} ({target.stat().st_size} byte)")
         return
     print("  gdown tidak jalan, coba unduh langsung")
-    if not direct(args.id, args.out):
+    if not direct(args.id, target):
         sys.exit(f"::error::gagal mengunduh {args.id}")
 
 
