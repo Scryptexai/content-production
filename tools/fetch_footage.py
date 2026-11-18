@@ -203,7 +203,8 @@ def main():
 
     if args.spec:
         spec = json.loads(pathlib.Path(args.spec).read_text(encoding="utf-8"))
-        queries = [(q["q"], int(q.get("want", 2))) for q in spec["queries"]]
+        # mode picks tidak memakai daftar kueri; default kosong supaya tidak KeyError
+        queries = [(q["q"], int(q.get("want", 2))) for q in spec.get("queries", [])]
         out_dir = os.path.join(ROOT, spec.get("target_dir", args.out))
         report_path = os.path.join(ROOT, spec.get("report", args.report))
     else:
