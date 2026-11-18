@@ -1,294 +1,160 @@
 {
  "ok": [
   {
-   "query": "night ocean aerial",
-   "file": "night_ocean_aerial__coverr-yachts-and-a-ferris-wheel-4977.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-yachts-and-a-ferris-wheel-4977/1080p.mp4",
-   "duration": "11.344667",
-   "title": "Yachts and a Ferris wheel"
+   "file": "s1_sumatra_malam.mp4",
+   "title": "Sumatra at night",
+   "via": "https://cdn.coverr.co/videos/coverr-sumatra-at-night-6603/1080p.mp4"
   },
   {
-   "query": "radar screen",
-   "file": "radar_screen__coverr-rusty-metal-by-the-beach-6651.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-rusty-metal-by-the-beach-6651/1080p.mp4",
-   "duration": "14.300000",
-   "title": "Rusty metal by the beach "
+   "file": "s1_ombak_malam.mp4",
+   "title": "Foamy ocean waves at night",
+   "via": "https://cdn.coverr.co/videos/coverr-foamy-ocean-waves-at-night-2122/1080p.mp4"
   },
   {
-   "query": "radar screen",
-   "file": "radar_screen__coverr-young-swans-swim-with-their-mother-2053.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-young-swans-swim-with-their-mother-2053/1080p.mp4",
-   "duration": "18.435083",
-   "title": "Young swans swim with their mother"
+   "file": "s1_kota_pesisir_sore.mp4",
+   "title": "Coastal town in the evening",
+   "via": "https://cdn.coverr.co/videos/coverr-coastal-town-in-the-evening-1169/1080p.mp4"
   },
   {
-   "query": "beach sand waves",
-   "file": "beach_sand_waves__coverr-a-beautiful-couple-setting-up-a-picnic-on-the-beach-5731.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-a-beautiful-couple-setting-up-a-picnic-on-the-beach-5731/1080p.mp4",
-   "duration": "14.681333",
-   "title": "A beautiful couple setting up a picnic on the beach"
+   "file": "s2_jendela_senja.mp4",
+   "title": "Serene Aerial View from Airplane Window at Twilight",
+   "via": "https://cdn.coverr.co/videos/coverr-serenity-in-the-skies/1080p.mp4"
   },
   {
-   "query": "press conference",
-   "file": "press_conference__coverr-woman-preparing-for-a-video-conference-call-6023.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-woman-preparing-for-a-video-conference-call-6023/1080p.mp4",
-   "duration": "26.943583",
-   "title": "Woman preparing for a video conference call"
+   "file": "s2_awan_dari_kabin.mp4",
+   "title": "View of clouds from an airplane",
+   "via": "https://cdn.coverr.co/videos/coverr-view-of-clouds-from-an-airplane-6487/1080p.mp4"
   },
   {
-   "query": "press conference",
-   "file": "press_conference__coverr-girl-preparing-for-a-video-conference-call-9000.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-girl-preparing-for-a-video-conference-call-9000/1080p.mp4",
-   "duration": "26.943583",
-   "title": "Girl preparing for a video conference call"
+   "file": "s2_langit_malam.mp4",
+   "title": "Starry Night Sky Over Pine Forest",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-69Bz5voDn7EW/1080p.mp4"
   },
   {
-   "query": "documents desk paper",
-   "file": "documents_desk_paper__coverr-looking-through-a-picture-book-4063.mp4",
-   "via": "https://cdn.coverr.co/videos/coverr-looking-through-a-picture-book-4063/1080p.mp4",
-   "duration": "31.960000",
-   "title": "Looking through a picture book"
+   "file": "s3_naik_pesawat.mp4",
+   "title": "Boarding a plane",
+   "via": "https://cdn.coverr.co/videos/coverr-boarding-a-plane-5868/1080p.mp4"
+  },
+  {
+   "file": "s3_ke_landasan.mp4",
+   "title": "Planes heading to the runway ",
+   "via": "https://cdn.coverr.co/videos/coverr-planes-heading-to-the-runway-8804/1080p.mp4"
+  },
+  {
+   "file": "s3_pesawat_di_apron.mp4",
+   "title": "Planes at the airport",
+   "via": "https://cdn.coverr.co/videos/coverr-planes-at-the-airport-1097/1080p.mp4"
+  },
+  {
+   "file": "s3_checkin.mp4",
+   "title": "Airport check-in",
+   "via": "https://cdn.coverr.co/videos/coverr-airport-check-in-6995/1080p.mp4"
+  },
+  {
+   "file": "s3_koper.mp4",
+   "title": "Suitcases at the airport",
+   "via": "https://cdn.coverr.co/videos/coverr-suitcases-at-the-airport-7979/1080p.mp4"
+  },
+  {
+   "file": "s3_panel_kokpit.mp4",
+   "title": "Control panel in an airplane",
+   "via": "https://cdn.coverr.co/videos/coverr-control-panel-in-an-airplane-8656/1080p.mp4"
+  },
+  {
+   "file": "s3_menunggu.mp4",
+   "title": "Men waiting for a flight",
+   "via": "https://cdn.coverr.co/videos/coverr-men-waiting-for-a-flight-1204/1080p.mp4"
+  },
+  {
+   "file": "s3_kursi_jendela.mp4",
+   "title": "The window seat",
+   "via": "https://cdn.coverr.co/videos/coverr-the-window-seat-7587/1080p.mp4"
+  },
+  {
+   "file": "s5_kapal_laut.mp4",
+   "title": "Boats sailing in the sea",
+   "via": "https://cdn.coverr.co/videos/coverr-boats-sailing-in-the-sea-8828/1080p.mp4"
+  },
+  {
+   "file": "s5_kapal_kejauhan.mp4",
+   "title": "Seashore Serenity with Distant Ships",
+   "via": "https://cdn.coverr.co/videos/coverr-seashore-serenity-with-distant-ships/1080p.mp4"
+  },
+  {
+   "file": "s5_perahu.mp4",
+   "title": "Boat in the sea",
+   "via": "https://cdn.coverr.co/videos/coverr-boat-in-the-sea-5656/1080p.mp4"
+  },
+  {
+   "file": "s5_mercusuar_badai.mp4",
+   "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+   "via": "https://cdn.coverr.co/videos/user-ai-generation-B84ybsW2lE2E/1080p.mp4"
+  },
+  {
+   "file": "s5_ombak_karang.mp4",
+   "title": "Waves crashing on the rocks at sea",
+   "via": "https://cdn.coverr.co/videos/coverr-waves-crashing-on-the-rocks-at-sea-160/1080p.mp4"
+  },
+  {
+   "file": "s5_ombak_besar.mp4",
+   "title": "Large waves crashing near the coast",
+   "via": "https://cdn.coverr.co/videos/coverr-large-waves-crashing-near-the-coast-5201/1080p.mp4"
+  },
+  {
+   "file": "s6_piha.mp4",
+   "title": "Piha Beach",
+   "via": "https://cdn.coverr.co/videos/coverr-piha-beach-5476/1080p.mp4"
+  },
+  {
+   "file": "s6_raglan.mp4",
+   "title": "Raglan Beach in New Zealand ",
+   "via": "https://cdn.coverr.co/videos/coverr-raglan-beach-in-new-zealand-958/1080p.mp4"
+  },
+  {
+   "file": "s6_ombak_batu.mp4",
+   "title": "Waves crashing against the rocks",
+   "via": "https://cdn.coverr.co/videos/coverr-waves-crashing-against-the-rocks-5050/1080p.mp4"
+  },
+  {
+   "file": "s6_batu_laut.mp4",
+   "title": "Top View of Rocks in the Ocean",
+   "via": "https://cdn.coverr.co/videos/coverr-top-view-of-a-stony-coast-9752/1080p.mp4"
+  },
+  {
+   "file": "s7_marina_malam.mp4",
+   "title": "Marina De Lagos",
+   "via": "https://cdn.coverr.co/videos/coverr-marina-de-lagos-689/1080p.mp4"
+  },
+  {
+   "file": "s7_kota_malam.mp4",
+   "title": "The city at night",
+   "via": "https://cdn.coverr.co/videos/coverr-the-city-at-night-2412/1080p.mp4"
+  },
+  {
+   "file": "s8_dermaga.mp4",
+   "title": "Yachts docked at the harbor",
+   "via": "https://cdn.coverr.co/videos/coverr-yachts-docked-at-the-harbor-369/1080p.mp4"
+  },
+  {
+   "file": "s8_kota_malam_2.mp4",
+   "title": "City at night",
+   "via": "https://cdn.coverr.co/videos/coverr-city-at-night-4382/1080p.mp4"
+  },
+  {
+   "file": "s9_darat_di_laut.mp4",
+   "title": "Land in the middle of the ocean",
+   "via": "https://cdn.coverr.co/videos/coverr-land-in-the-middle-of-the-ocean-5777/1080p.mp4"
+  },
+  {
+   "file": "s9_laut_luas.mp4",
+   "title": "The big, blue ocean",
+   "via": "https://cdn.coverr.co/videos/coverr-the-big-blue-ocean-199/1080p.mp4"
+  },
+  {
+   "file": "s9_panorama.mp4",
+   "title": "Panorama of the ocean",
+   "via": "https://cdn.coverr.co/videos/coverr-panorama-of-the-ocean-2593/1080p.mp4"
   }
  ],
- "failed": [],
- "candidates": {
-  "night ocean aerial": [
-   {
-    "title": "Yachts and a Ferris wheel",
-    "base_filename": "coverr-yachts-and-a-ferris-wheel-4977",
-    "playback_id": "t9m4wd02grUvBV4OPwkp8mbsaGMh00g6yg",
-    "duration": "11.344667",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "yachts-and-a-ferris-wheel-iol1v1oefd",
-    "urls": null
-   },
-   {
-    "title": "Marina De Lagos",
-    "base_filename": "coverr-marina-de-lagos-689",
-    "playback_id": "rso02WtPSA3cJNz5OqagUhRBjFX016xPOA",
-    "duration": "10.844167",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "marina-de-lagos-lsqrflaodz",
-    "urls": null
-   },
-   {
-    "title": "View of the harbor",
-    "base_filename": "coverr-view-of-the-harbor-8599",
-    "playback_id": "0100xseXLh7j1H00vCOnIEDhT7dSardiGcw",
-    "duration": "12.595917",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "view-of-the-harbor-ckbym88fep",
-    "urls": null
-   }
-  ],
-  "ocean waves aerial": [
-   {
-    "title": "A coastline village",
-    "base_filename": "coverr-a-coastline-village-5975",
-    "playback_id": "OfDOgqdRmyJn6m8011X011jOokaqnCUiUX",
-    "duration": "14.681333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "a-coastline-village-witjlip4yv",
-    "urls": null
-   },
-   {
-    "title": "Ocean waves",
-    "base_filename": "coverr-ocean-waves-3953",
-    "playback_id": "IvftfeoGs2027B028yCoqFa1C02qmZQcg01v",
-    "duration": "27.152125",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "ocean-waves-jolwnczjml",
-    "urls": null
-   },
-   {
-    "title": "Ocean waves ",
-    "base_filename": "coverr-ocean-waves-3983",
-    "playback_id": "PDolZIrwdONTFJd005VOT4qvFsyxVfB01N",
-    "duration": "18.476792",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "ocean-waves-tnhh3rqeox",
-    "urls": null
-   }
-  ],
-  "airport runway night": [
-   {
-    "title": "People boarding an airplane",
-    "base_filename": "coverr-people-boarding-an-airplane-8506",
-    "playback_id": "GwRdPPbCfzhsCVn02X66OxCytAHozpNz00",
-    "duration": "19.600000",
-    "max_height": 1080,
-    "fps": 60,
-    "slug": "people-boarding-an-airplane-xpqqk2lzcx",
-    "urls": null
-   }
-  ],
-  "radar screen": [
-   {
-    "title": "Rusty metal by the beach ",
-    "base_filename": "coverr-rusty-metal-by-the-beach-6651",
-    "playback_id": "jiwfYAMeYvzJx021IqxE028topCKcw01Tk8",
-    "duration": "14.300000",
-    "max_height": 1080,
-    "fps": 50,
-    "slug": "rusty-metal-by-the-beach-uavkisu2wd",
-    "urls": null
-   },
-   {
-    "title": "Young swans swim with their mother",
-    "base_filename": "coverr-young-swans-swim-with-their-mother-2053",
-    "playback_id": "vljURR5bosz3n302qJbwBQdwGXvtxz00Bt",
-    "duration": "18.435083",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "young-swans-swim-with-their-mother-rs1kglb2is",
-    "urls": null
-   },
-   {
-    "title": "A family of swans swims in the water",
-    "base_filename": "coverr-a-family-of-swans-swims-in-the-water-1832",
-    "playback_id": "KqkgHsDH4Tyv01ydcGDr00j91DXDPx00UaH",
-    "duration": "16.266250",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "a-family-of-swans-swims-in-the-water-uqe3hwdcj7",
-    "urls": null
-   }
-  ],
-  "storm waves sea": [
-   {
-    "title": "Stormy Sea Waves Crashing on Pier",
-    "base_filename": "coverr-stormy-sea-waves-crashing-on-pier",
-    "playback_id": null,
-    "duration": "14.833333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "stormy-sea-waves-crashing-on-pier",
-    "urls": null
-   },
-   {
-    "title": "Large waves crashing on the rocky shore",
-    "base_filename": "coverr-large-waves-crashing-on-the-rocky-shore-8765",
-    "playback_id": "fh7ZhGajjSqobZBXEpOUfWsALSzlgLkg",
-    "duration": "10.343667",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "large-waves-crashing-on-the-rocky-shore-b4kvcmy1on",
-    "urls": null
-   },
-   {
-    "title": "Large ocean wave",
-    "base_filename": "coverr-large-ocean-wave-5169",
-    "playback_id": "3rsZuD02mSXvHRqk6NG6VASYXrg602Z8mN",
-    "duration": "20.770750",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "large-ocean-wave-ophgk8sung",
-    "urls": null
-   }
-  ],
-  "beach sand waves": [
-   {
-    "title": "A beautiful couple setting up a picnic on the beach",
-    "base_filename": "coverr-a-beautiful-couple-setting-up-a-picnic-on-the-beach-5731",
-    "playback_id": "fsGqFk7S020289Ekg2101zndwssbRA1E14q",
-    "duration": "14.681333",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "a-beautiful-couple-setting-up-a-picnic-on-the-beach-4pzofdtnxo",
-    "urls": null
-   },
-   {
-    "title": "Candolim Beach",
-    "base_filename": "coverr-candolim-beach-7824",
-    "playback_id": "M6lw8Fu8KNfnrM2xNzrJkip4s9IPLBut",
-    "duration": "10.010000",
-    "max_height": 1080,
-    "fps": 30,
-    "slug": "candolim-beach-bcdzcyakb3",
-    "urls": null
-   },
-   {
-    "title": "Muriwai Beach in New Zealand ",
-    "base_filename": "coverr-muriwai-beach-in-new-zealand-6318",
-    "playback_id": "KDItibKTHFKV3YHih02ld2oPxxdRsi75R",
-    "duration": "27.000000",
-    "max_height": 1080,
-    "fps": 24,
-    "slug": "muriwai-beach-in-new-zealand-o3e87hymvg",
-    "urls": null
-   }
-  ],
-  "coastline aerial": [
-   {
-    "title": "Coastline in Sumatra",
-    "base_filename": "coverr-coastline-in-sumatra-5363",
-    "playback_id": "sxtNGUvclME5VjEsNy3wequxjdVv01xdX",
-    "duration": "11.094417",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "coastline-in-sumatra-fwnnrkcw9i",
-    "urls": null
-   },
-   {
-    "title": "Coastline in Sumatra, Indonesia",
-    "base_filename": "coverr-coastline-in-sumatra-indonesia-6580",
-    "playback_id": "bMje8Pr01UIwLRX4wLGsXvNDk02ctM2oMD",
-    "duration": "7.966292",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "coastline-in-sumatra-indonesia-watrijtjuk",
-    "urls": null
-   },
-   {
-    "title": "Coastline in Ponta de S\u00e3o Louren\u00e7o",
-    "base_filename": "coverr-coastline-in-ponta-de-s-o-louren-o-2876",
-    "playback_id": "DrAWxsmK028nmv02z9wUhW8TYdSeiU02UVR",
-    "duration": "10.844167",
-    "max_height": 2160,
-    "fps": 30,
-    "slug": "coastline-in-ponta-de-sao-lourenco-jxpe5e464l",
-    "urls": null
-   }
-  ],
-  "press conference": [
-   {
-    "title": "Woman preparing for a video conference call",
-    "base_filename": "coverr-woman-preparing-for-a-video-conference-call-6023",
-    "playback_id": "m3gZmXh9XnC8TEqTLoRTmgnzWqsISrfO",
-    "duration": "26.943583",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "woman-preparing-for-a-video-conference-call-sq4nph7fy4",
-    "urls": null
-   },
-   {
-    "title": "Girl preparing for a video conference call",
-    "base_filename": "coverr-girl-preparing-for-a-video-conference-call-9000",
-    "playback_id": "zCYlhQkhEhWEINvi8uwlK003kfHNHKqjg",
-    "duration": "26.943583",
-    "max_height": 2160,
-    "fps": 24,
-    "slug": "girl-preparing-for-a-video-conference-call-witxfihwoz",
-    "urls": null
-   }
-  ],
-  "documents desk paper": [
-   {
-    "title": "Looking through a picture book",
-    "base_filename": "coverr-looking-through-a-picture-book-4063",
-    "playback_id": "uepgjSZoyRj8w6PCbM8EfCKqWvuM7TdP",
-    "duration": "31.960000",
-    "max_height": 1080,
-    "fps": 25,
-    "slug": "looking-through-a-picture-book-sakqywiszo",
-    "urls": null
-   }
-  ]
- }
+ "failed": []
 }

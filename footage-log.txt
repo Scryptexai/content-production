@@ -1,9 +1,32 @@
-Traceback (most recent call last):
-  File "/home/runner/work/content-production/content-production/tools/fetch_footage.py", line 229, in <module>
-    main()
-    ~~~~^^
-  File "/home/runner/work/content-production/content-production/tools/fetch_footage.py", line 206, in main
-    queries = [(q["q"], int(q.get("want", 2))) for q in spec["queries"]]
-                                                        ~~~~^^^^^^^^^^^
-KeyError: 'queries'
-EXIT=1
+  ok: s1_sumatra_malam (1300 KB)
+  ok: s1_ombak_malam (3262 KB)
+  ok: s1_kota_pesisir_sore (2781 KB)
+  ok: s2_jendela_senja (700 KB)
+  ok: s2_awan_dari_kabin (1081 KB)
+  ok: s2_langit_malam (3608 KB)
+  ok: s3_naik_pesawat (1996 KB)
+  ok: s3_ke_landasan (1438 KB)
+  ok: s3_pesawat_di_apron (1653 KB)
+  ok: s3_checkin (2704 KB)
+  ok: s3_koper (2542 KB)
+  ok: s3_panel_kokpit (1439 KB)
+  ok: s3_menunggu (1606 KB)
+  ok: s3_kursi_jendela (2213 KB)
+  ok: s5_kapal_laut (6577 KB)
+  ok: s5_kapal_kejauhan (2749 KB)
+  ok: s5_perahu (5750 KB)
+  ok: s5_mercusuar_badai (4069 KB)
+  ok: s5_ombak_karang (2681 KB)
+  ok: s5_ombak_besar (3071 KB)
+  ok: s6_piha (2929 KB)
+  ok: s6_raglan (4508 KB)
+  ok: s6_ombak_batu (3768 KB)
+  ok: s6_batu_laut (6185 KB)
+  ok: s7_marina_malam (3311 KB)
+  ok: s7_kota_malam (2714 KB)
+  ok: s8_dermaga (2608 KB)
+  ok: s8_kota_malam_2 (2809 KB)
+  ok: s9_darat_di_laut (5438 KB)
+  ok: s9_laut_luas (11897 KB)
+  ok: s9_panorama (6198 KB)
+{"ok": 31, "failed": 0}
