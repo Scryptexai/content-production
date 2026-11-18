@@ -57,9 +57,11 @@ jobs:
           FID: ${{ steps.req.outputs.fid }}
         run: |
           set -euo pipefail
-          python3 ODDCHAPTER_BRAND/tools/fetch_vo.py --id "$FID" --out vo.mp3
-          ls -lh vo.mp3
-          ffprobe -v error -show_entries format=duration,bit_rate -of default=nw=1 vo.mp3
+          set -o pipefail
+          { python3 ODDCHAPTER_BRAND/tools/fetch_vo.py --id "$FID" --out vo.mp3 2>&1
+            ls -lh vo.mp3
+            ffprobe -v error -show_entries format=duration,bit_rate -of default=nw=1 vo.mp3
+          } | tee -a ci.log
 
       - name: Potong per segmen (alignment ASR)
         env:
@@ -67,8 +69,10 @@ jobs:
           DIR: ${{ steps.req.outputs.dir }}
         run: |
           set -euo pipefail
+          set -o pipefail
           python3 ODDCHAPTER_BRAND/tools/align_vo.py \
-            --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL"
+            --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL" \
+            2>&1 | tee -a ci.log
 
       - name: Simpan hasil potong
         if: always()
@@ -101,6 +105,11 @@ jobs:
             fi
             if [ -d vo_out ]; then
               echo '## Berkas'; echo '```'; ls -lh vo_out || true; echo '```'
+            fi
+            if [ -f ci.log ]; then
+              echo '## Log (ekor 60 baris)'; echo '```'; tail -60 ci.log; echo '```'
+            else
+              echo '## Log'; echo '```'; echo "ci.log tidak ada — langkah gagal sebelum pencatatan"; echo '```'
             fi
           } > "$OUT"
           git config user.name "oddchapter-vo"

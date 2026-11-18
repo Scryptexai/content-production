@@ -28,18 +28,40 @@ def gdown(fid, target):
     return target.exists() and target.stat().st_size > 0
 
 
+URLS = (
+    "https://drive.usercontent.google.com/download?id={fid}&export=download&confirm=t",
+    "https://drive.google.com/uc?export=download&id={fid}",
+    "https://drive.usercontent.google.com/download?id={fid}&export=download",
+)
+
+
 def direct(fid, target):
-    url = (f"https://drive.usercontent.google.com/download?id={fid}"
-           f"&export=download&confirm=t")
-    req = urllib.request.Request(url, headers={"User-Agent": "oddchapter-vo/1"})
-    with urllib.request.urlopen(req, timeout=900) as r, open(target, "wb") as f:
-        ctype = r.headers.get("Content-Type", "")
-        if "text/html" in ctype:
-            target.unlink(missing_ok=True)
-            sys.exit(f"::error::Drive mengembalikan HTML untuk {fid} — berkas belum publik. "
-                     f"Bagikan dulu (anyone with the link → Viewer).")
-        shutil.copyfileobj(r, f, length=4 * 1024 * 1024)
-    return target.exists() and target.stat().st_size > 0
+    last = ""
+    for tpl in URLS:
+        url = tpl.format(fid=fid)
+        print(f"  coba: {url}", flush=True)
+        req = urllib.request.Request(url, headers={"User-Agent": "oddchapter-vo/1"})
+        try:
+            with urllib.request.urlopen(req, timeout=900) as r:
+                ctype = r.headers.get("Content-Type", "")
+                clen = r.headers.get("Content-Length", "?")
+                print(f"    HTTP {r.status} · {ctype} · Content-Length {clen}", flush=True)
+                if "text/html" in ctype:
+                    body = r.read(600).decode("utf-8", "replace")
+                    print(f"    isi HTML: {body[:300]!r}", flush=True)
+                    last = "Drive mengembalikan HTML (berkas belum publik, atau kena kuota unduh)"
+                    continue
+                with open(target, "wb") as f:
+                    shutil.copyfileobj(r, f, length=4 * 1024 * 1024)
+            if target.exists() and target.stat().st_size > 0:
+                print(f"    tersimpan {target.stat().st_size} byte", flush=True)
+                return True
+        except Exception as e:                   # noqa: BLE001
+            last = f"{type(e).__name__}: {e}"
+            print(f"    gagal: {last}", flush=True)
+    target.unlink(missing_ok=True)
+    sys.exit(f"::error::gagal mengunduh {fid} — {last}")
+    return False
 
 
 def main():

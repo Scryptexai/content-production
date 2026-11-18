@@ -5,7 +5,7 @@
  "duration_seconds": 471.170563,
  "segments_file": "segments.json",
  "model": "small",
- "requested_at": "2026-11-18T05:40:00Z",
- "catatan": "Potong VO satu berkas jadi sembilan segmen di batas naskah. Diukur: 121 jeda @-32dB, hanya 2 jeda >=0,60 dtk, laju 126-177 wpm antar segmen → silencedetect + proporsi tidak dipakai. Alignment ASR (faster-whisper) + pencocokan urutan kata naskah. Percobaan 1 gagal di langkah unduh (berkas Drive belum publik) — sekarang sudah dibagikan; unduhan diberi fallback langsung.",
- "attempt": 2
+ "requested_at": "2026-11-18T07:55:00Z",
+ "catatan": "Potong VO satu berkas jadi sembilan segmen di batas naskah. Diukur: 121 jeda @-32dB, hanya 2 jeda >=0,60 dtk, laju 126-177 wpm antar segmen → silencedetect + proporsi tidak dipakai. Alignment ASR (faster-whisper) + pencocokan urutan kata naskah. Percobaan 1 gagal di langkah unduh (berkas Drive belum publik) — sekarang sudah dibagikan; unduhan diberi fallback langsung. Percobaan 3: unduhan mencoba tiga URL Drive dan mencatat status/isi HTML; semua langkah menulis ci.log yang ikut di SPLIT_RESULT.md.",
+ "attempt": 3
 }
