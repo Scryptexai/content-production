@@ -47,7 +47,9 @@ def probe_duration(p):
                       "-of", "default=nw=1:nk=1", str(p)]).stdout.strip())
 
 
-def silences(path, noise="-32dB", dur=0.30):
+# dur=0,25 harus sama dengan find_gaps() di align_vo.py; kalau lebih ketat,
+# batas final yang sudah diverifikasi tidak ditemukan lagi.
+def silences(path, noise="-32dB", dur=0.25):
     r = subprocess.run([FFMPEG, "-hide_banner", "-nostats", "-i", str(path), "-af",
                         f"silencedetect=noise={noise}:d={dur}", "-f", "null", "-"],
                        capture_output=True, text=True)
@@ -217,10 +219,12 @@ def build(ep_id, verbose=False):
     pieces = []
     # preflight: plate harus ada. Render 50 menit tidak boleh gugur karena satu
     # nama berkas salah (pernah terjadi: barruel.jpg 404 di tengah render).
-    avail = {f.name for f in (ROOT / "10_FILM" / "assets" / f"SB-{ep_id}").glob("*.jpg")}
+    # folder aset: SB-EP01 untuk ep_id "EP01", tapi SB-EP02 untuk ep_id "SB-EP02"
+    adir = ROOT / "10_FILM" / "assets" / (ep_id if ep_id.startswith("SB-") else f"SB-{ep_id}")
+    avail = {f.name for f in adir.glob("*.jpg")}
     missing = sorted({f for b in blocks for f, _ in b["plates"] if f not in avail})
     if missing:
-        raise SystemExit("plate tidak ada di assets/SB-" + ep_id + ": " + ", ".join(missing))
+        raise SystemExit("plate tidak ada di " + str(adir) + ": " + ", ".join(missing))
 
     for k in range(len(edges) - 1):
         a, b = edges[k], edges[k + 1]
@@ -345,7 +349,7 @@ def build(ep_id, verbose=False):
     outdir.mkdir(parents=True, exist_ok=True)
     plates_out = PUB / "plates" / f"{ep_id}LF"
     plates_out.mkdir(parents=True, exist_ok=True)
-    for f in (ROOT / "10_FILM" / "assets" / f"SB-{ep_id}").glob("*.jpg"):
+    for f in adir.glob("*.jpg"):
         shutil.copy(f, plates_out / f.name)
 
     # footage Coverr (hasil GitHub Actions) → public/footage
