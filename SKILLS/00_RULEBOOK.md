@@ -510,3 +510,44 @@ Bug yang ditemukan lewat cara ini, jangan diulang:
   `pathlib.Path` sejak di `main()`.
 - `gdown.download(..., fuzzy=False)` tidak dikenal versi yang terpasang di runner → error
   "unexpected keyword argument 'fuzzy'". Cukup `gdown.download(id=..., output=...)`.
+
+## §26 — Render lambat di sandbox: bakar kerja piksel, jangan hitung tiap frame (18 Nov 2026)
+
+Chromium di sandbox ini rasterisasi software (swangle, 2 vCPU). Komposisi
+`LongForm` awalnya menghitung empat lapisan penuh layar **tiap frame**: filter CSS grade
+footage (`saturate/contrast/brightness`), dua gradient scrim, dan satu sapuan cahaya.
+Terukur **0,94 fps** untuk 1920×1080 — 14.759 frame berarti ±4,4 jam.
+
+Yang dilakukan (dan sekarang jadi aturan): semua kerja piksel yang tetap dipindahkan ke berkas.
+
+| dulu (tiap frame) | sekarang (sekali) | berkas |
+|---|---|---|
+| filter CSS grade footage | `eq` ffmpeg dibakar ke klip | `public/footage_graded/` |
+| dua gradient scrim | satu PNG RGBA | `public/overlay/scrim.png` |
+| sapuan cahaya (gradient) | satu PNG pita | `public/overlay/sweep.png` |
+
+Hasil: **2,77 fps** (3× lebih cepat, ±70 menit untuk 8 menit video) tanpa perubahan tampilan.
+Skrip: `tools/bake_overlay.py` (idempoten — klip yang sudah ada dilewati).
+
+Aturan turunan:
+- Jangan menaruh `filter:` atau gradient besar di elemen full-screen pada komposisi yang
+  dirender di sandbox. Kalau tampilannya harus begitu, bakar dulu.
+- `render-longform.mjs` menerima `LF_NAME`, `LF_CONCURRENCY`, `LF_BITRATE` dari lingkungan;
+  ID komposisi tetap (`ODDCHAPTER-LONGFORM-EP01`) karena isinya mengikuti
+  `src/longform.generated.json`.
+- `public/footage/`, `public/footage_graded/`, `public/overlay/` adalah turunan — masuk
+  `.gitignore`. `git add -A` tanpa aturan ini pernah hampir mengangkut 130 MB klip.
+
+## §27 — Batas VO harus dicari dengan ambang yang sama dengan pemotongnya (18 Nov 2026)
+
+`align_vo.py` memakai `silencedetect d=0.25`; `build_longform.py` memakai `d=0.30`. Batas
+final 262,921 dtk lolos di yang pertama dan **tidak ditemukan** di yang kedua → build gagal
+dengan "tidak ada keheningan". Dua perbaikan:
+
+1. ambang `dur` disamakan (0,25) dan ditulis sebagai komentar di kedua berkas;
+2. `snap()` tidak lagi menolak `bd == 0`. Dulu `bd > 0` membuat batas yang *tepat* di tengah
+   jeda (justru batas hasil verifikasi) dianggap tidak aman.
+
+Batas yang diberikan lewat `cuts_final` di `SPLIT_REQUEST.json` juga dipakai ulang saat
+membangun master: `build_longform.py` membaca `words.json` (timestamp per kata + `seg_t`),
+lalu caption ditempel ke kata, bukan dibagi rata per durasi blok.
