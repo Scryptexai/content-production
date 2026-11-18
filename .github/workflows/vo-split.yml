@@ -4,9 +4,10 @@ name: VO split (alignment ASR)
 # per kata dari faster-whisper. Dipakai kalau pemilik merekam VO sebagai satu berkas:
 # keheningan saja tidak cukup untuk menemukan batas segmen (lihat VO_LEDGER.md).
 #
-# Pemicu: push berkas SPLIT_REQUEST.json di folder VO. Bukan unggahan — workflow ini
-# hanya memotong audio dan menyimpan hasilnya sebagai artifact, tidak menyentuh
-# YouTube, Drive, atau published.json.
+# Pemicu: push berkas SPLIT_REQUEST.json di folder VO. Workflow ini TIDAK mengunggah
+# ke YouTube dan tidak menyentuh published.json — ia hanya memotong audio, menyimpan
+# hasilnya sebagai artifact, dan menulis SPLIT_RESULT.md ke repo supaya statusnya
+# terbaca tanpa membuka log Actions.
 
 on:
   push:
@@ -14,11 +15,11 @@ on:
       - "ODDCHAPTER_BRAND/11_CONTENT/02_SCRIPT/VO/**/SPLIT_REQUEST.json"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   split:
-    name: Potong VO ${{ github.event.head_commit.message }}
+    name: Potong VO
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -49,14 +50,14 @@ jobs:
           echo "fid=$FID" >> "$GITHUB_OUTPUT"
           echo "model=$MODEL" >> "$GITHUB_OUTPUT"
           test -f "$DIR/segments.json" || { echo "::error::$DIR/segments.json tidak ada"; exit 1; }
-          echo "::notice::VO $FID · segmen $DIR/segments.json · model $MODEL"
+          echo "::notice::VO $FID · $DIR/segments.json · model $MODEL"
 
       - name: Unduh VO dari Drive
         env:
           FID: ${{ steps.req.outputs.fid }}
         run: |
           set -euo pipefail
-          gdown --id "$FID" -O vo.mp3
+          python3 ODDCHAPTER_BRAND/tools/fetch_vo.py --id "$FID" --out vo.mp3
           ls -lh vo.mp3
           ffprobe -v error -show_entries format=duration,bit_rate -of default=nw=1 vo.mp3
 
@@ -69,14 +70,6 @@ jobs:
           python3 ODDCHAPTER_BRAND/tools/align_vo.py \
             --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL"
 
-      - name: Tampilkan laporan
-        if: always()
-        run: |
-          set -euo pipefail
-          test -f vo_out/report.txt && cat vo_out/report.txt || echo "::warning::belum ada laporan"
-          ls -lh vo_out || true
-          ffprobe -v error -show_entries format=duration -of csv=p=0 vo_out/VO_*.wav 2>/dev/null || true
-
       - name: Simpan hasil potong
         if: always()
         uses: actions/upload-artifact@v4
@@ -85,3 +78,34 @@ jobs:
           path: vo_out/
           if-no-files-found: warn
           retention-days: 30
+
+      # Log Actions tidak bisa dibaca dari sandbox; karena itu status ditulis ke repo.
+      - name: Tulis hasil ke repo
+        if: always()
+        env:
+          DIR: ${{ steps.req.outputs.dir }}
+          MODEL: ${{ steps.req.outputs.model }}
+        run: |
+          set -euo pipefail
+          OUT="${DIR:-ODDCHAPTER_BRAND/11_CONTENT/02_SCRIPT/VO}/SPLIT_RESULT.md"
+          {
+            echo "# Hasil potong VO — run ${{ github.run_id }}"
+            echo
+            echo "- status job: **${{ job.status }}**"
+            echo "- model: ${MODEL:-small}"
+            echo "- commit: \`${{ github.sha }}\`"
+            echo "- waktu: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo
+            if [ -f vo_out/report.txt ]; then
+              echo '## Laporan potong'; echo '```'; cat vo_out/report.txt; echo '```'
+            fi
+            if [ -d vo_out ]; then
+              echo '## Berkas'; echo '```'; ls -lh vo_out || true; echo '```'
+            fi
+          } > "$OUT"
+          git config user.name "oddchapter-vo"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$OUT"
+          git diff --cached --quiet || git commit -m "vo-split: hasil run ${{ github.run_id }} (${{ job.status }})"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          git push || true
