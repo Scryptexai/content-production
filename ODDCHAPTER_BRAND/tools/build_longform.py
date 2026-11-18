@@ -71,9 +71,68 @@ def snap(t, sils):
         d = abs(c - t)
         if d < bd:
             best, bd = c, d
-    if best is not None and bd <= SNAP_MAX and bd > 0:
+    # bd = 0 berarti batas sudah tepat di tengah keheningan (batas hasil verifikasi
+    # align_vo.py). Dulu kondisi ini menolak bd == 0 dan build gagal.
+    if best is not None and bd <= SNAP_MAX:
         return round(best, 3), round(bd, 3)
     return None, None
+
+
+def norm_tok(t):
+    return re.sub(r"[^0-9a-z]+", "", t.lower())
+
+
+def load_words(path):
+    """words.json dari align_vo.py → daftar (token, start, end) pada timeline VO asli."""
+    if not path or not pathlib.Path(path).exists():
+        return None
+    raw = json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
+    out = [(norm_tok(w["w"]), float(w["start"]), float(w["end"])) for w in raw]
+    out = [w for w in out if w[0]]
+    # kata angka tidak ikut dicocokkan ASR dan mewarisi waktu tetangga (start == end).
+    # Regangkan ke celah di antara tetangganya supaya caption tidak muncul terlalu awal.
+    for i, (tok, a, b) in enumerate(out):
+        if b - a >= 0.04:
+            continue
+        prev_end = out[i - 1][2] if i else 0.0
+        next_start = out[i + 1][1] if i + 1 < len(out) else b
+        lo = max(prev_end, a if a > prev_end else prev_end)
+        hi = max(lo + 0.04, next_start)
+        out[i] = (tok, lo, hi)
+    return out
+
+
+def cap_times_words(chunks, words, cursor):
+    """Tempel tiap potongan caption ke kata sebenarnya (bukan pembagian durasi).
+
+    Dipakai kalau words.json ada. Tanpa ini caption bergeser beberapa detik di
+    segmen panjang karena kecepatan bicara tidak rata.
+    """
+    spans, i = [], cursor
+    for line in chunks:
+        toks = [norm_tok(t) for t in line.split()]
+        toks = [t for t in toks if t]
+        if not toks:
+            spans.append(None)
+            continue
+        # cari kata pertama potongan ini di sekitar posisi sekarang (toleransi 8 kata)
+        start = None
+        for j in range(i, min(len(words), i + 9)):
+            if words[j][0] == toks[0]:
+                start = j
+                break
+        if start is None:
+            spans.append(None)
+            continue
+        k, last = start, start
+        for tok in toks[1:]:
+            for j in range(k + 1, min(len(words), k + 5)):
+                if words[j][0] == tok:
+                    k = last = j
+                    break
+        spans.append((words[start][1], words[last][2]))
+        i = last + 1
+    return spans, i
 
 
 def chunk(text, max_words=CAP_WORDS):
@@ -241,14 +300,26 @@ def build(ep_id, verbose=False):
     # 4 · caption: chunk dari semua blok, lalu tempel ke potongan yang memuat
     #     titik tengahnya. Dilakukan global (bukan per blok) karena satu potongan
     #     bisa memuat dua blok sekaligus ketika tidak ada kartu di antaranya.
+    words = load_words(asset(data["words"]) if data.get("words") else None)
+    if words:
+        print(f"caption: {len(words)} kata bertimestamp dari words.json")
     caps_all = []
+    wcur = 0
     for b in blocks:
         lines = chunk(b["text"])
+        spans = [None] * len(lines)
+        if words:
+            spans_b, wcur = cap_times_words(lines, words, wcur)
+            spans = spans_b
         tot = sum(len(l) for l in lines) or 1
         cur = b["start"]
-        for l in lines:
+        for l, sp in zip(lines, spans):
             d = len(l) / tot * (b["end"] - b["start"])
-            caps_all.append({"t0": cur, "t1": cur + d, "text": l})
+            if sp and 0.3 <= sp[1] - sp[0] <= 14:
+                t0, t1 = sp
+            else:
+                t0, t1 = cur, cur + d
+            caps_all.append({"t0": t0, "t1": t1, "text": l})
             cur += d
     for seg in timeline_segments:
         for c in caps_all:
@@ -283,7 +354,7 @@ def build(ep_id, verbose=False):
     fdst.mkdir(parents=True, exist_ok=True)
     nfoot = 0
     if fsrc.exists():
-        for f in fsrc.glob("*.mp4"):
+        for f in fsrc.rglob("*.mp4"):
             if not (fdst / f.name).exists():
                 shutil.copy(f, fdst / f.name)
             nfoot += 1

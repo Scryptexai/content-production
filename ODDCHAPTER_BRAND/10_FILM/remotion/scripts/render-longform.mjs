@@ -25,8 +25,9 @@ const root = path.resolve(here, "..");
 const outDir = path.join(root, "output", "episodes");
 fs.mkdirSync(outDir, { recursive: true });
 
-const ID = "ODDCHAPTER-LONGFORM-EP01";
-const NAME = "EP01_ILLUMINATI";
+// ID komposisi tetap; isinya mengikuti src/longform.generated.json (hasil build_longform.py).
+const ID = process.env.LF_ID || "ODDCHAPTER-LONGFORM-EP01";
+const NAME = process.env.LF_NAME || "EP01_ILLUMINATI";
 const mode = process.argv[2] || "render";
 
 const probe = (file) =>

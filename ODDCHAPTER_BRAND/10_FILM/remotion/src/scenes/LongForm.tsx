@@ -409,7 +409,7 @@ export const LongForm: React.FC = () => {
         <div style={{ position: "absolute", right: MX, top: TOP + 6, textAlign: "right" }}>
           <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 24, letterSpacing: "0.34em", color: C.ivory, opacity: 0.92 }}>ODDCHAPTER</div>
           <div style={{ fontFamily: "Inter", fontWeight: 600, fontSize: 17, letterSpacing: "0.24em", color: C.sage, marginTop: 8, opacity: 0.8 }}>
-            {D.series} · {D.id} · {String(seg ? seg.i + 1 : 0).padStart(2, "0")}/17
+            {D.series} · {D.id} · {String(seg ? seg.i + 1 : 0).padStart(2, "0")}/{D.segments.length}
           </div>
         </div>
       ) : null}

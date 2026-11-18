@@ -1,0 +1,332 @@
+{
+ "id": "EP02",
+ "series": "SB",
+ "title": "MH370 TERLACAK TUJUH KALI, KITA TETAP KEHILANGAN DIA",
+ "vo": "work/vo/SB-EP02/SB-EP02_full.wav",
+ "music": "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/SB-EP02/bed.wav",
+ "sfx": "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/SB-EP02/sfx.wav",
+ "words": "ODDCHAPTER_BRAND/11_CONTENT/02_SCRIPT/VO/SB-EP02/words.json",
+ "fps": 30,
+ "catatan": "Sembilan blok = sembilan segmen VO pemilik (batas final dari align_vo.py). Blok 4 dan 7 memakai diagram karena isinya angka dan dua pembacaan; sisanya footage Coverr. Batas blok sengaja hanya di batas segmen supaya tidak ada potongan VO di tengah kata. VO utuh dibentuk dari 9 WAV hasil potong (tools/make_full_vo.py) karena mp3 asli hanya ada di Drive.",
+ "sumber": {
+  "vo": "VO EP02 milik pemilik (Drive 1yzfE90efvYUJYMEu6iHof_do7aM8ZlLp), 471,17 dtk, dipotong 9 segmen oleh vo-split.yml",
+  "batas": "boundaries.json · VO_BOUNDARIES.md",
+  "riset": "11_CONTENT/01_IDEA/RISET_MH370_EP02SB.md dan RISET_18NOV2026.md"
+ },
+ "sfx_cues": [
+  1.0
+ ],
+ "cards": [
+  {
+   "at": 23.592,
+   "type": "chapter",
+   "num": 1,
+   "dur": 2.6,
+   "kicker": "BAB 01 · BUKTI",
+   "title": "APA YANG BISA DIBUKTIKAN",
+   "sub": "bukan siapa, tapi apa"
+  },
+  {
+   "at": 46.016,
+   "type": "chapter",
+   "num": 2,
+   "dur": 2.6,
+   "kicker": "BAB 02 · 8 MARET 2014",
+   "title": "SATU LEWAT SATU",
+   "sub": "00:41 · 01:07 · 01:19 · 01:21"
+  },
+  {
+   "at": 109.044,
+   "type": "chapter",
+   "num": 3,
+   "dur": 2.6,
+   "kicker": "BAB 03 · INMARSAT",
+   "title": "TUJUH HANDSHAKE",
+   "sub": "02:25 sampai 08:19"
+  },
+  {
+   "at": 191.398,
+   "type": "chapter",
+   "num": 4,
+   "dur": 2.6,
+   "kicker": "BAB 04 · DASAR LAUT",
+   "title": "TIGA GELOMBANG",
+   "sub": "120.000 · 112.000 · 7.571 km²"
+  },
+  {
+   "at": 262.921,
+   "type": "chapter",
+   "num": 5,
+   "dur": 2.6,
+   "kicker": "BAB 05 · SERPIHAN",
+   "title": "TIGA POTONG",
+   "sub": "Réunion · Mauritius · Pemba"
+  },
+  {
+   "at": 316.839,
+   "type": "chapter",
+   "num": 6,
+   "dur": 2.6,
+   "kicker": "BAB 06 · DUA PEMBACAAN",
+   "title": "MASIH DI PEGANG ORANG?",
+   "sub": "hipoksia atau terkendali"
+  },
+  {
+   "at": 375.42,
+   "type": "chapter",
+   "num": 7,
+   "dur": 2.6,
+   "kicker": "BAB 07 · BELUM SELESAI",
+   "title": "PERPANJANGAN 2027",
+   "sub": "no find, no fee"
+  },
+  {
+   "at": 416.704,
+   "type": "chapter",
+   "num": 8,
+   "dur": 2.6,
+   "kicker": "BAB 08 · KESIMPULAN",
+   "title": "YANG TIDAK BISA DIPISAH",
+   "sub": "satu pencarian lagi"
+  }
+ ],
+ "segments": [
+  {
+   "chapter": "TIGA PESAN YANG MASIH ADA",
+   "start": 0.0,
+   "end": 23.592,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Lo yakin pesawat MH370 hilang tanpa jejak? Nggak hilang. Pesawat itu terlacak tujuh kali setelah transpondernya dimatikan. Tujuh kali. Dalam enam jam tiga puluh sembilan menit. Dan dari tujuh pelacakan itu, kita cuma dapat satu hal: jarak ke satelit. Bukan tempatnya. Itu sebabnya, dua belas tahun kemudian, kita masih menyapu dasar laut yang belum tentu benar.",
+   "footage": [
+    "s1_sumatra_malam.mp4",
+    "s1_ombak_malam.mp4",
+    "s1_kota_pesisir_sore.mp4",
+    "night_ocean_aerial__coverr-marina-de-lagos-689.mp4"
+   ]
+  },
+  {
+   "chapter": "BUKTI TERKUAT",
+   "start": 23.592,
+   "end": 46.016,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Gue nggak akan nebak siapa yang membalikkan pesawat ini. Laporan resmi dua ribu delapan belas pun tidak berani. Yang gue mau tunjukin cuma satu: bukti terkuat dalam kasus ini bukan foto, bukan radar, bukan rekaman suara. Bukti terkuatnya sisa hitungan dari sistem komunikasi yang dibuat untuk hal lain. Dan kalau lo pernah naik pesawat malam lalu tidur, lo bergantung pada sistem yang sama.",
+   "footage": [
+    "s2_jendela_senja.mp4",
+    "s2_awan_dari_kabin.mp4",
+    "s2_langit_malam.mp4"
+   ]
+  },
+  {
+   "chapter": "DELAPAN MARET, SATU LEWAT SATU",
+   "start": 46.016,
+   "end": 109.044,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Delapan Maret dua ribu empat belas, empat puluh satu menit lewat tengah malam, waktu Malaysia. Boeing tujuh tujuh tujuh, dua ratus E R, nomor registrasi sembilan em em er o, lepas landas dari Kuala Lumpur menuju Beijing. Dua ratus tiga puluh sembilan orang di dalamnya: dua pilot, sepuluh awak kabin, dua ratus dua puluh tujuh penumpang. Satu lewat tujuh menit. Pesawat mengirim laporan data terakhirnya, otomatis. Laporan berikutnya, yang seharusnya datang satu lewat tiga puluh tujuh menit, tidak pernah sampai. Satu lewat sembilan belas. Kontrol Kuala Lumpur menyerahkan pesawat ke Ho Chi Minh. Balasan terakhir dari kokpit: Good night Malaysian three seven zero. Satu lewat dua puluh satu. Transponder mati. Pesawat hilang dari radar sipil di sekitar waypoint IGARI. Tapi radar militer Malaysia masih melihatnya. Satu pesawat berbalik arah, melintasi Semenanjung, ke barat laut lewat Selat Malaka. Kontak terakhir dua lewat dua puluh dua menit, dekat waypoint MEKAR, dua ratus mil laut dari Penang. Lalu sunyi. Sampai dua lewat dua puluh lima.",
+   "footage": [
+    "s3_naik_pesawat.mp4",
+    "s3_ke_landasan.mp4",
+    "s3_pesawat_di_apron.mp4",
+    "s3_checkin.mp4",
+    "s3_koper.mp4",
+    "s3_menunggu.mp4",
+    "s3_kursi_jendela.mp4",
+    "s3_panel_kokpit.mp4",
+    "airport_runway_night__coverr-people-boarding-an-airplane-8506.mp4"
+   ]
+  },
+  {
+   "chapter": "TUJUH HANDSHAKE, TANPA POSISI",
+   "start": 109.044,
+   "end": 191.398,
+   "layout": "diagram",
+   "plates": [
+    [
+     "s4_handshake.jpg",
+     "cover"
+    ],
+    [
+     "s4_bto.jpg",
+     "cover"
+    ],
+    [
+     "s4_bfo.jpg",
+     "cover"
+    ],
+    [
+     "s4_busur.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Dua lewat dua puluh lima. Unit data satelit pesawat mendaftar ke jaringan Inmarsat. Bukan dipanggil awak. Otomatis. Lalu setiap jam, lebih kurang, sistem melakukan handshake. Satu sinyal keluar, satu jawaban balik. Sampai delapan lewat sembilan belas pagi, tercatat tujuh. Dan ini bagian yang hampir selalu dilewatkan. Tujuh handshake itu tidak membawa posisi. Tidak ada G P S. Tidak ada ketinggian. Tidak ada arah. Transponder sudah mati, pengirim data otomatis juga sudah mati. Yang tersisa dua angka. B T O. Selisih waktu sinyal pergi dan pulang. Dari situ dihitung jarak ke satelit. Satu jarak, satu lingkaran kemungkinan posisi. B F O. Pergeseran frekuensi karena gerak. Dari situ dibaca: menjauh, atau mendekat. Tujuh B T O memberi tujuh lingkaran. B F O yang memilih: utara, atau selatan. Hasilnya busur ketujuh. Membentang seribu dua ratus sampai dua ribu kilometer di barat Australia. Itu satu-satunya alasan semua orang sepakat mencari di sana. Dan yang harus lo tahu. Inmarsat nggak dibuat untuk melacak pesawat. B T O dan B F O itu efek samping protokol komunikasi, bukan alat navigasi. Jadi bukti terkuat dalam kasus ini bukan pengukuran yang dirancang untuk menjawab pertanyaan ini. Itu sampah sistem komunikasi. Dan dari sampah itu, seluruh samudra ditentukan.",
+   "diagram": {
+    "style": "cards",
+    "kicker": "YANG TERSISA DARI PESAWAT ITU",
+    "title": "EMPAT JEJAK, NOL POSISI",
+    "cards": [
+     {
+      "plate": "s4_handshake.jpg",
+      "label": "TUJUH HANDSHAKE",
+      "sub": "02:25 sampai 08:19 · satu per jam"
+     },
+     {
+      "plate": "s4_bto.jpg",
+      "label": "BTO",
+      "sub": "jarak ke satelit · satu lingkaran"
+     },
+     {
+      "plate": "s4_bfo.jpg",
+      "label": "BFO",
+      "sub": "menjauh atau mendekat · utara atau selatan"
+     },
+     {
+      "plate": "s4_busur.jpg",
+      "label": "BUSUR KETUJUH",
+      "sub": "1.200–2.000 km di barat Australia"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "TIGA GELOMBANG PENCARIAN",
+   "start": 191.398,
+   "end": 262.921,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Pencarian pertama dipimpin Australia, dua ribu empat belas sampai dua ribu tujuh belas. Seratus dua puluh ribu kilometer persegi dasar laut disapu. Area prioritas dua puluh lima ribu kilometer persegi di sepanjang busur, antara tiga puluh dua koma lima dan tiga puluh enam derajat lintang selatan. Ditangguhkan tujuh belas Januari dua ribu tujuh belas. Kosong. Dua ribu delapan belas. Ocean Infinity menawarkan skema yang belum pernah dipakai untuk kasus sebesar ini. No find, no fee. Tidak ketemu, tidak dibayar. Ketemu, tujuh puluh juta dolar. Seratus dua belas ribu kilometer persegi dipindai. Selesai Juni dua ribu delapan belas. Kosong. Dua ribu dua puluh lima, kontrak baru. Lima belas ribu kilometer persegi di lokasi baru, lagi-lagi no find no fee, tujuh puluh juta dolar. Fase pertama dua puluh lima sampai dua puluh delapan Maret. Fase kedua tiga puluh satu Desember dua ribu dua puluh lima sampai dua puluh tiga Januari dua ribu dua puluh enam. Dua puluh delapan hari. Sekitar tujuh ribu lima ratus tujuh puluh satu kilometer persegi. Setengah dari target. Delapan Maret dua ribu dua puluh enam. Badan Investigasi Kecelakaan Udara Malaysia mengumumkan, tidak ada bangkai yang terkonfirmasi.",
+   "footage": [
+    "s5_kapal_laut.mp4",
+    "s5_kapal_kejauhan.mp4",
+    "s5_mercusuar_badai.mp4",
+    "s5_ombak_karang.mp4",
+    "s5_perahu.mp4",
+    "s5_ombak_besar.mp4",
+    "storm_waves_sea__coverr-stormy-sea-waves-crashing-on-pier.mp4"
+   ]
+  },
+  {
+   "chapter": "TIGA POTONG",
+   "start": 262.921,
+   "end": 316.839,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Terus kenapa dunia masih yakin pesawatnya di selatan? Karena tiga potong. Dua puluh sembilan Juli dua ribu lima belas. Sesuatu yang tertutup teritip terdampar di pantai Réunion. Flaperon. Bagian sayap. Dikonfirmasi tiga September, bagian dari pesawat itu. Sepuluh Mei dua ribu enam belas, bagian flap ditemukan di Mauritius. Dikonfirmasi. Dua puluh Juni dua ribu enam belas, flap kanan ditemukan di Pulau Pemba, Tanzania. Dikonfirmasi. Sekarang bagian yang bikin gue kesal. Pencarian ini yang termahal dalam sejarah penerbangan. Kapal, robot bawah laut, sonar, dua puluh enam negara. Tapi yang menemukan serpihan pertama bukan mereka. Bukan sonar. Bukan satelit. Yang menemukannya orang yang sedang membersihkan pantai. Dan itu bukan keberuntungan yang manis. Itu pola. Yang ketemu cuma yang terdampar. Dan yang terdampar membuktikan arah, bukan titik.",
+   "footage": [
+    "s6_piha.mp4",
+    "s6_ombak_batu.mp4",
+    "s6_raglan.mp4",
+    "s6_batu_laut.mp4",
+    "beach_sand_waves__coverr-candolim-beach-7824.mp4",
+    "beach_sand_waves__coverr-muriwai-beach-in-new-zealand-6318.mp4"
+   ]
+  },
+  {
+   "chapter": "DUA PEMBACAAN, SATU DATA",
+   "start": 316.839,
+   "end": 375.42,
+   "layout": "diagram",
+   "plates": [
+    [
+     "s7_kosong.jpg",
+     "cover"
+    ],
+    [
+     "s7_terkendali.jpg",
+     "cover"
+    ],
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Menurut lo, di menit terakhir, pesawat ini masih dipegang orang, atau sudah kosong? Dua-duanya punya pendukung, dan dua-duanya memakai data yang sama. Pembacaan pertama. Awak tidak sadar. Hipoksia. Pesawat terbang sendiri sampai bahan bakar habis, lalu jatuh dekat busur ketujuh. Kalau ini benar, pencarian di sepanjang busur adalah cara yang tepat, dan area prioritasnya memang sempit. Pembacaan kedua. Pesawat terbang terkendali sampai akhir. Masih ada yang memegang kendali, dan menerbangkannya sampai mesin mati. Kalau ini benar, titik akhirnya bisa puluhan kilometer dari busur. Area prioritas dua puluh lima ribu kilometer persegi jadi terlalu kecil, dan di tempat yang salah. Dan B T O, B F O, tidak bisa memilih di antara keduanya. Busurnya sama persis. Yang membedakan cuma satu. Seberapa cepat pesawat turun di menit terakhir. Itu tidak pernah terukur, karena satu-satunya alat yang mencatatnya ada di kotak hitam, yang juga tidak pernah ditemukan.",
+   "diagram": {
+    "style": "cards",
+    "kicker": "PERTANYAAN YANG TIDAK BISA DIJAWAB DATA",
+    "title": "DI MENIT TERAKHIR: MASIH ADA ORANG?",
+    "cards": [
+     {
+      "plate": "s7_kosong.jpg",
+      "label": "PEMBACAAN 1 · KOSONG",
+      "sub": "hipoksia · terbang sendiri sampai bahan bakar habis"
+     },
+     {
+      "plate": "s7_terkendali.jpg",
+      "label": "PEMBACAAN 2 · TERKENDALI",
+      "sub": "diterbangkan sampai mesin mati · di luar busur"
+     },
+     {
+      "plate": "00_atmosfer.jpg",
+      "label": "YANG MEMISAHKAN",
+      "sub": "kecepatan turun di menit terakhir · di kotak hitam"
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "BELUM BERHENTI",
+   "start": 375.42,
+   "end": 416.704,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Yang jarang disebut. Pencariannya belum berhenti permanen. Malaysia menyetujui perpanjangan untuk satu Juli dua ribu dua puluh enam sampai tiga puluh Juni dua ribu dua puluh tujuh. Kontraknya masih no find, no fee. Artinya sampai pertengahan tahun depan, masih ada satu perusahaan yang bersedia mengirim kapal dan robot ke dasar samudra dengan imbalan nol kalau gagal. Tapi lihat angkanya. Dua belas tahun. Tiga gelombang. Ratusan ribu kilometer persegi. Dan yang dikonfirmasi cuma tiga potong sebesar meja makan. Ocean Infinity sendiri menyebut sudah seratus lima puluh satu hari di laut, dan memetakan lebih dari seratus empat puluh ribu kilometer persegi. Nol badan pesawat. Nol perekam.",
+   "footage": [
+    "s8_dermaga.mp4",
+    "s8_kota_malam_2.mp4",
+    "night_ocean_aerial__coverr-view-of-the-harbor-8599.mp4",
+    "ocean_waves_aerial__coverr-ocean-waves-3953.mp4"
+   ]
+  },
+  {
+   "chapter": "SATU PENCARIAN LAGI",
+   "start": 416.704,
+   "end": 471.171,
+   "layout": "footage",
+   "plates": [
+    [
+     "00_atmosfer.jpg",
+     "cover"
+    ]
+   ],
+   "text": "Laporan dua ribu delapan belas menyimpulkan penyebabnya tidak bisa ditentukan. Bukan karena malas. Karena bukti utamanya tidak pernah ditemukan. Yang kita punya sekarang. Jarak, waktu, pergeseran frekuensi, dan tiga potong serpihan yang hanyut dua tahun. Dari situ, dua kesimpulan yang sama-sama masuk akal bisa dibangun. Tidak ada data yang bisa memisahkannya. Yang bisa memisahkan cuma satu hal. Menyapu dasar laut di tempat yang selama ini dianggap tidak mungkin. Sekarang pertanyaan buat lo. Dan ini yang bikin gue nggak bisa berhenti mikir. Tiap kali lo naik pesawat malam lalu tidur, pesawat lo juga mengirim sinyal yang sama, tiap jam. Bedanya, di darat ada yang menjawab. Kalau semua yang menjawab itu diam, lo ada di mana? Itu pertanyaan MH370. Jadi, satu pencarian lagi. Busur yang sama, sekali lagi. Atau mulai dari luar busur, di tempat yang belum pernah dihitung.",
+   "footage": [
+    "s9_laut_luas.mp4",
+    "s9_darat_di_laut.mp4",
+    "s9_panorama.mp4",
+    "coastline_aerial__coverr-coastline-in-sumatra-5363.mp4"
+   ]
+  }
+ ]
+}
