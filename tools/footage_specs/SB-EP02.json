@@ -1,0 +1,25 @@
+{
+ "episode": "SB-EP02",
+ "slug": "mh370",
+ "target_dir": "footage/sb-ep02",
+ "report": "footage-report-sb-ep02.json",
+ "catatan": "Kueri disusun per segmen naskah. Semua dari Coverr (non-premium, 16:9, >=6 dtk), diunduh lewat Actions karena sandbox tidak bisa ke cdn.coverr.co.",
+ "queries": [
+  {"q": "night ocean aerial", "want": 3, "for": "SEG 01 kail · laut malam"},
+  {"q": "ocean waves aerial", "want": 3, "for": "SEG 02 peta busur · laut luas"},
+  {"q": "airplane cockpit night", "want": 2, "for": "SEG 03 instrumen kokpit"},
+  {"q": "airport runway night", "want": 2, "for": "SEG 03 lepas landas 00:41"},
+  {"q": "air traffic control", "want": 2, "for": "SEG 03 ruang kendali"},
+  {"q": "radar screen", "want": 2, "for": "SEG 03/04 radar militer"},
+  {"q": "satellite dish antenna", "want": 2, "for": "SEG 04 Inmarsat"},
+  {"q": "earth from space night", "want": 2, "for": "SEG 04 satelit geostasioner"},
+  {"q": "research ship ocean", "want": 3, "for": "SEG 05 kapal pencarian"},
+  {"q": "underwater deep sea", "want": 3, "for": "SEG 05 sonar / dasar laut"},
+  {"q": "storm waves sea", "want": 2, "for": "SEG 05 cuaca mengganggu"},
+  {"q": "beach sand waves", "want": 3, "for": "SEG 06 serpihan terdampar"},
+  {"q": "coastline aerial", "want": 2, "for": "SEG 06 Réunion / pantai"},
+  {"q": "old map hands", "want": 2, "for": "SEG 07 dua pembacaan · peta"},
+  {"q": "press conference", "want": 2, "for": "SEG 08 pengumuman 2026"},
+  {"q": "documents desk paper", "want": 2, "for": "SEG 08/09 laporan, arsip"}
+ ]
+}

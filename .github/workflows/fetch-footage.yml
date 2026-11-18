@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "tools/fetch_footage.py"
+      - "tools/footage_specs/**"
       - ".github/workflows/fetch-footage.yml"
 permissions:
   contents: write
@@ -17,15 +18,22 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: ambil footage coverr
         run: |
-          python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
-          tail -30 footage-log.txt
-          du -sh footage 2>/dev/null || true
+          set -euo pipefail
+          SPEC=$(ls -1t tools/footage_specs/*.json 2>/dev/null | head -1 || true)
+          echo "spec: ${SPEC:-<bawaan EP01>}"
+          if [ -n "$SPEC" ]; then
+            python3 -u tools/fetch_footage.py --spec "$SPEC" > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
+          else
+            python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
+          fi
+          tail -40 footage-log.txt
+          du -sh footage/* 2>/dev/null || true
       # artifact Drive/Azure diblokir dari sandbox, jadi hasilnya di-commit saja
       - name: commit hasil ke branch
         run: |
           git config user.name "footage-bot"
           git config user.email "bot@oddchapter.local"
-          for f in footage-report.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
-          [ -d footage ] && git add -f footage || true
+          for f in footage-report.json footage-report-sb-ep02.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
+          find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}

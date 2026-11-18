@@ -5,13 +5,11 @@ Alur: query API Coverr → pilih klip non-premium 16:9 → coba beberapa pola UR
 unduh (cdn 1080p / Mux mp4 / Mux HLS) → normalisasi 1920x1080 30fps tanpa audio
 → taruh di footage/ untuk diunggah sebagai artifact.
 """
-import json, os, subprocess, urllib.parse, urllib.request
+import argparse, json, os, pathlib, subprocess, sys, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "footage")
-os.makedirs(OUT, exist_ok=True)
 
-# (query, jumlah klip) — disusun mengikuti bab EP01
+# (query, jumlah klip) — disusun mengikuti bab EP01 (dipakai kalau tidak ada --spec)
 QUERIES = [
     ("old paper texture", 2), ("candle flame", 2), ("light beam dust", 2),
     ("quill pen", 2), ("ink well", 1), ("old map", 2),
@@ -23,7 +21,6 @@ QUERIES = [
     ("library reading", 2), ("black smoke", 1), ("typewriter keys", 1),
 ]
 UA = {"User-Agent": "Mozilla/5.0 (footage-fetch)", "Accept": "application/json"}
-report = {"ok": [], "failed": [], "candidates": {}}
 
 
 def fetch_json(url):
@@ -68,7 +65,10 @@ def normalize(src, dest):
     return True
 
 
-for q, want in QUERIES:
+def run(queries, out_dir, report_path):
+  report = {"ok": [], "failed": [], "candidates": {}}
+  print(f"spec: {len(queries)} kueri -> {out_dir}", flush=True)
+  for q, want in queries:
     url = ("https://coverr.co/api/videos?query=" + urllib.parse.quote(q) +
            "&page_size=20&is_premium=false")
     try:
@@ -91,8 +91,12 @@ for q, want in QUERIES:
         if got >= want:
             break
         base, pb = h["base_filename"], h.get("playback_id")
-        dest = os.path.join(OUT, f"{slug}__{base}.mp4")
-        tmp = os.path.join(OUT, f"_tmp_{base}.mp4")
+        dest = os.path.join(out_dir, f"{slug}__{base}.mp4")
+        tmp = os.path.join(out_dir, f"_tmp_{base}.mp4")
+        if os.path.exists(dest) and os.path.getsize(dest) > 100_000:
+            print(f"  lewati (sudah ada): {os.path.basename(dest)}", flush=True)
+            got += 1
+            continue
         cands = [f"https://cdn.coverr.co/videos/{base}/1080p.mp4",
                  f"https://cdn.coverr.co/videos/{base}/1080p?download=true",
                  f"https://cdn.coverr.co/videos/{base}/720p.mp4"]
@@ -115,6 +119,36 @@ for q, want in QUERIES:
         report["ok"].append({"query": q, "file": os.path.basename(dest), "via": used,
                              "duration": h.get("duration"), "title": h.get("title")})
 
-with open(os.path.join(ROOT, "footage-report.json"), "w") as f:
-    json.dump(report, f, indent=1)
-print(json.dumps({"ok": len(report["ok"]), "failed": len(report["failed"])}))
+  with open(report_path, "w") as f:
+      json.dump(report, f, indent=1)
+  print(json.dumps({"ok": len(report["ok"]), "failed": len(report["failed"])}), flush=True)
+  return report
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--spec", default="", help="berkas JSON daftar kueri")
+    ap.add_argument("--out", default="footage")
+    ap.add_argument("--report", default="footage-report.json")
+    args = ap.parse_args()
+
+    if args.spec:
+        spec = json.loads(pathlib.Path(args.spec).read_text(encoding="utf-8"))
+        queries = [(q["q"], int(q.get("want", 2))) for q in spec["queries"]]
+        out_dir = os.path.join(ROOT, spec.get("target_dir", args.out))
+        report_path = os.path.join(ROOT, spec.get("report", args.report))
+    else:
+        queries = [(q, w) for q, w in QUERIES]
+        out_dir = os.path.join(ROOT, args.out)
+        report_path = os.path.join(ROOT, args.report)
+
+    os.makedirs(out_dir, exist_ok=True)
+    for f in os.listdir(out_dir):
+        if f.startswith("_tmp_") or f.endswith(".part"):
+            os.remove(os.path.join(out_dir, f))
+    rep = run(queries, out_dir, report_path)
+    sys.exit(0 if rep["ok"] else 1)
+
+
+if __name__ == "__main__":
+    main()
