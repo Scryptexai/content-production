@@ -96,6 +96,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--drive", default="")
     ap.add_argument("--shorts", action="store_true")
+    ap.add_argument("--short-drive", default="", help="S1=id,S2=id,...")
     args = ap.parse_args()
     QUEUE.mkdir(parents=True, exist_ok=True)
 
@@ -132,17 +133,18 @@ def main():
 
     # Shorts: metadata per Short, ukuran dan sha dari hasil render
     spec = json.loads((SHORTS / "shorts_sb-ep02.json").read_text())
+    ids = dict(kv.split("=", 1) for kv in args.short_drive.split(",") if "=" in kv)
     titles = {
         "S1": ("MH370 Terlacak 7 Kali Setelah Transponder Mati — dan Tetap Tak Ada Titiknya",
                "Pesawat ini terlacak 7 kali setelah transpondernya mati. Kenapa tetap tak ada titiknya?"),
         "S2": ("Satu Angka Doppler Membuang Seluruh Koridor Utara MH370",
-               "Satu angka Doppler membuang seluruh koridor utara. Busurnya jadi dasar pencarian."),
+               "Kenapa satu angka Doppler bisa membuang seluruh koridor utara MH370?"),
         "S3": ("Pencarian Termahal Dunia, Serpihan Pertamanya Ditemukan Tukang Bersih Pantai",
-               "Pencarian termahal dalam sejarah penerbangan. Serpihan pertamanya ditemukan tukang bersih pantai."),
+               "Pencarian termahal dalam sejarah penerbangan: kapal sonar, 26 negara. Serpihan pertamanya ditemukan tukang bersih pantai."),
         "S4": ("MH370: 28 Hari, 7.571 km², Hasilnya Nol",
                "28 hari, 7.571 kilometer persegi. Hasilnya nol bangkai."),
         "S5": ("Data MH370 Sama Persis, Dua Titik Jatuh Berbeda",
-               "Data sama persis, dua titik jatuh berbeda. Pembedanya cuma kecepatan turun."),
+               "Data sama persis, dua titik jatuh berbeda. Pembedanya cuma 1 angka: kecepatan turun di menit terakhir."),
     }
     for row in spec:
         sid = row["id"]
@@ -162,7 +164,7 @@ def main():
             "madeForKids": False,
             "containsSyntheticMedia": True,
             "visibility": "public",
-            "drive_file_id": "",
+            "drive_file_id": ids.get(sid, ""),
             "duration_seconds": round(float(f["duration"]), 3),
             "size_bytes": int(f["size"]),
             "sha256": sha256(path),

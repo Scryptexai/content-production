@@ -39,13 +39,13 @@ SHORTS = [
      "Pesawat Ini Terlacak Tujuh Kali",
      "dan Kita Tetap Kehilangan Dia",
      "MH370 · 02:25 – 08:19",
-     "Tujuh handshake Inmarsat tidak membawa posisi, hanya jarak dan pergeseran frekuensi."),
+     "Tujuh handshake tidak membawa posisi — hanya jarak dan pergeseran frekuensi."),
     ("S2",
      [(135.00, 180.00)],
      "Satu Angka Doppler,",
      "Seluruh Koridor Utara Gugur",
      "MH370 · BTO & BFO",
-     "BFO membaca arah gerak; dari situ utara gugur dan busur ketujuh jadi dasar pencarian."),
+     "BFO membaca arah gerak; dari situ busur ketujuh jadi dasar pencarian."),
     ("S3",
      [(263.20, 316.60)],
      "Pencarian Termahal di Dunia,",
@@ -57,13 +57,13 @@ SHORTS = [
      "28 Hari, 7.571 km²,",
      "Hasilnya Nol",
      "MH370 · PENCARIAN 2025–26",
-     "Fase 2025–26 ditutup 23 Januari 2026; 8 Maret 2026 diumumkan tanpa bangkai."),
+     "Fase 2025–26 ditutup 23 Januari 2026; 8 Maret 2026 tanpa bangkai."),
     ("S5",
      [(317.20, 364.00)],
      "Data Sama Persis,",
      "Dua Titik Jatuh Berbeda",
      "MH370 · DUA PEMBACAAN",
-     "BTO dan BFO identik di dua skenario; pembedanya kecepatan turun di menit terakhir."),
+     "BTO dan BFO identik; pembedanya kecepatan turun di menit terakhir."),
 ]
 
 
@@ -87,7 +87,7 @@ def drawtext(text, size, y, color, font, alpha="1"):
             f"fontcolor={color}:alpha={alpha}")
 
 
-def wrap(text, width=44):
+def wrap(text, width=46, max_lines=3):
     words, lines, cur = text.split(), [], ""
     for w in words:
         t = f"{cur} {w}".strip()
@@ -98,7 +98,7 @@ def wrap(text, width=44):
             cur = w
     if cur:
         lines.append(cur)
-    return lines[:2]
+    return lines[:max_lines]
 
 
 def build(sid, parts, l1, l2, label, claim, spans, dry=False):
@@ -120,7 +120,9 @@ def build(sid, parts, l1, l2, label, claim, spans, dry=False):
     cl = wrap(claim)
     cl1 = cl[0] if cl else ""
     cl2 = cl[1] if len(cl) > 1 else ""
-    hook_alpha = "if(lt(t,0.4),t/0.4,if(lt(t,5.5),1,max(0,(6.2-t)/0.7)))"
+    cl3 = cl[2] if len(cl) > 2 else ""
+    hook_alpha = (f"if(lt(t,0.4),t/0.4,if(lt(t,{dur - 2.6:.2f}),1,"
+                  f"max(0,({dur - 2.0:.2f}-t)/0.6)))")
     chain += [
         "[src]split=2[bg][fg]",
         "[bg]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
@@ -129,15 +131,15 @@ def build(sid, parts, l1, l2, label, claim, spans, dry=False):
         "[bgz][fgz]overlay=0:468[v1]",
         "[v1]drawbox=x=0:y=464:w=1080:h=3:color=0xC6602A@0.85:t=fill[v2]",
         "[v2]drawbox=x=0:y=1081:w=1080:h=3:color=0xC6602A@0.35:t=fill[v3]",
-        f"[v3]drawtext=fontfile={IN6}:text='{label}':x=64:y=196:fontsize=28:"
-        "fontcolor=0xC6602A:alpha=0.95[v4]",
+        "[v3]" + drawtext(label, 28, 196, "0xC6602A", IN6, "0.95") + "[v4]",
         f"[v4]" + drawtext(l1, 66, 248, "0xF0ECE0", SG7, f"'{hook_alpha}'") + "[v5]",
         f"[v5]" + drawtext(l2, 66, 330, "0xF0ECE0", SG7, f"'{hook_alpha}'") + "[v6]",
-        "[v6]drawbox=x=0:y=1092:w=1080:h=520:color=0x06080A@0.80:t=fill[v6a]",
+        "[v6]drawbox=x=0:y=1092:w=1080:h=828:color=0x06080A@0.86:t=fill[v6a]",
         "[v6a]drawbox=x=64:y=1178:w=220:h=3:color=0xC6602A@0.95:t=fill[v6b]",
-        f"[v6b]" + drawtext(cl1, 36, 1214, "0xF0ECE0", IN6, "0.96") + "[v6c]",
-        f"[v6c]" + drawtext(cl2, 36, 1268, "0xF0ECE0", IN6, "0.96") + "[v6d]",
-        f"[v6d]drawtext=fontfile={SG7}:text='ODDCHAPTER':x=64:y=1768:fontsize=34:"
+        f"[v6b]" + drawtext(cl1, 34, 1206, "0xF0ECE0", IN6, "0.96") + "[v6c]",
+        f"[v6c]" + drawtext(cl2, 34, 1258, "0xF0ECE0", IN6, "0.96") + "[v6d]",
+        f"[v6d]" + drawtext(cl3, 34, 1310, "0xF0ECE0", IN6, "0.96") + "[v6e]",
+        f"[v6e]drawtext=fontfile={SG7}:text='ODDCHAPTER':x=64:y=1768:fontsize=34:"
         "fontcolor=0xF0ECE0:alpha=0.92[v7]",
         f"[v7]drawtext=fontfile={IN6}:text='MH370 · SATU BUSUR SATELIT':x=64:y=1820:"
         "fontsize=26:fontcolor=0xC6CEBE:alpha=0.85[v8]",

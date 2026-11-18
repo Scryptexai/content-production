@@ -71,16 +71,35 @@ def wrap(draw, text, font, max_w, max_lines=3):
     return lines[:max_lines]
 
 
+
+def fade_band(canvas, y0, y1, alpha_max=240, hold_to=None):
+    """Gelapkan pita tempat caption bakar master berada (bawah 27% frame).
+
+    Frame diambil dari master, jadi subtitle-nya ikut. Pita ini menutupnya
+    sampai tak terbaca tanpa memotong gambar.
+    """
+    band = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(band)
+    y1 = y1 if hold_to is None else hold_to
+    for y in range(y0, min(y1, canvas.size[1])):
+        t = (y - y0) / max(1, (y1 - y0))
+        a = int(alpha_max * min(1.0, t * 2.2))
+        d.line([(0, y), (canvas.size[0], y)], fill=(6, 8, 10, a))
+    return Image.alpha_composite(canvas.convert("RGBA"), band).convert("RGB")
+
+
 def vertical(at, l1, l2, badge, claim, out):
     fg = grade(frame(at))
     bg = fg.resize((1080, 1920), Image.LANCZOS).filter(ImageFilter.GaussianBlur(26))
     bg = Image.blend(bg, Image.new("RGB", (1080, 1920), INK), 0.35)
     canvas = bg.copy()
     canvas.paste(fg.resize((1080, 607), Image.LANCZOS), (0, 468))
+    # caption master ada 162–290 px dari bawah frame → pita 890–1092
+    canvas = fade_band(canvas, 796, 940, 250, hold_to=1092)
     d = ImageDraw.Draw(canvas, "RGBA")
     d.rectangle((0, 464, 1080, 467), fill=ORANGE + (220,))
     d.rectangle((0, 1075, 1080, 1078), fill=ORANGE + (110,))
-    d.rectangle((0, 1092, 1080, 1640), fill=(6, 8, 10, 208))
+    d.rectangle((0, 1092, 1080, 1920), fill=(6, 8, 10, 226))
 
     d.rectangle((64, 96, 78, 110), fill=ORANGE)
     d.text((96, 92), badge, font=ImageFont.truetype(str(IN6), 34), fill=ORANGE)
@@ -114,6 +133,7 @@ def horizontal(at, l1, l2, badge, claim, out):
         a = int(214 * max(0.0, 1 - x / 980) ** 1.25)
         sd.line([(x, 0), (x, 720)], fill=(6, 8, 10, a))
     canvas = Image.alpha_composite(canvas.convert("RGBA"), scrim).convert("RGB")
+    canvas = fade_band(canvas, 500, 640, 238)
     d = ImageDraw.Draw(canvas, "RGBA")
 
     d.rectangle((56, 54, 68, 66), fill=ORANGE)

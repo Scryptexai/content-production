@@ -1,0 +1,71 @@
+[
+ {
+  "id": "S1",
+  "file": "SB-EP02_S1.mp4",
+  "duration": 44.8,
+  "parts": [
+   [
+    0.3,
+    23.3
+   ],
+   [
+    117.0,
+    138.8
+   ]
+  ],
+  "hook": "Pesawat Ini Terlacak Tujuh Kali dan Kita Tetap Kehilangan Dia",
+  "claim": "Tujuh handshake tidak membawa posisi — hanya jarak dan pergeseran frekuensi."
+ },
+ {
+  "id": "S2",
+  "file": "SB-EP02_S2.mp4",
+  "duration": 45.0,
+  "parts": [
+   [
+    142.8,
+    187.8
+   ]
+  ],
+  "hook": "Satu Angka Doppler, Seluruh Koridor Utara Gugur",
+  "claim": "BFO membaca arah gerak; dari situ busur ketujuh jadi dasar pencarian."
+ },
+ {
+  "id": "S3",
+  "file": "SB-EP02_S3.mp4",
+  "duration": 53.4,
+  "parts": [
+   [
+    276.2,
+    329.6
+   ]
+  ],
+  "hook": "Pencarian Termahal di Dunia, Ditemukan Tukang Bersih Pantai",
+  "claim": "Tiga serpihan dikonfirmasi mengunci arah, bukan titik."
+ },
+ {
+  "id": "S4",
+  "file": "SB-EP02_S4.mp4",
+  "duration": 41.6,
+  "parts": [
+   [
+    231.4,
+    273.0
+   ]
+  ],
+  "hook": "28 Hari, 7.571 km², Hasilnya Nol",
+  "claim": "Fase 2025–26 ditutup 23 Januari 2026; 8 Maret 2026 tanpa bangkai."
+ },
+ {
+  "id": "S5",
+  "file": "SB-EP02_S5.mp4",
+  "duration": 46.8,
+  "parts": [
+   [
+    332.8,
+    379.6
+   ]
+  ],
+  "hook": "Data Sama Persis, Dua Titik Jatuh Berbeda",
+  "claim": "BTO dan BFO identik; pembedanya kecepatan turun di menit terakhir."
+ }
+]

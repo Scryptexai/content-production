@@ -1,0 +1,35 @@
+{
+ "long": "SB-EP02_thumbnail.jpg",
+ "shorts": [
+  {
+   "id": "S1",
+   "thumb": "SB-EP02_S1_thumbnail.jpg",
+   "master_at": 8.0,
+   "hook": "TERLACAK 7 KALI TETAP HILANG"
+  },
+  {
+   "id": "S2",
+   "thumb": "SB-EP02_S2_thumbnail.jpg",
+   "master_at": 150.0,
+   "hook": "SATU ANGKA DOPPLER UTARA GUGUR"
+  },
+  {
+   "id": "S3",
+   "thumb": "SB-EP02_S3_thumbnail.jpg",
+   "master_at": 292.0,
+   "hook": "PENCARIAN TERMAHAL DITEMUKAN TUKANG PANTAI"
+  },
+  {
+   "id": "S4",
+   "thumb": "SB-EP02_S4_thumbnail.jpg",
+   "master_at": 240.0,
+   "hook": "28 HARI, 7.571 km² HASILNYA NOL"
+  },
+  {
+   "id": "S5",
+   "thumb": "SB-EP02_S5_thumbnail.jpg",
+   "master_at": 345.0,
+   "hook": "DATA SAMA DUA PEMBACAAN"
+  }
+ ]
+}
