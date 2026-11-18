@@ -1,29 +1,9 @@
-ocean: 20 kandidat
-night sea: 17 kandidat
-storm: 17 kandidat
-beach aerial: 24 kandidat
-coastline aerial: 22 kandidat
-waves rocks: 22 kandidat
-rain window: 10 kandidat
-fog: 21 kandidat
-airport: 24 kandidat
-airplane: 22 kandidat
-airplane window: 24 kandidat
-airport terminal: 16 kandidat
-luggage: 22 kandidat
-cockpit: 1 kandidat
-control room: 8 kandidat
-computer screen: 22 kandidat
-satellite: 0 kandidat
-earth from space: 0 kandidat
-stars night sky: 3 kandidat
-ship sea: 23 kandidat
-underwater: 6 kandidat
-harbor night: 9 kandidat
-hands writing: 22 kandidat
-old paper: 3 kandidat
-newspaper: 4 kandidat
-clock: 19 kandidat
-empty room: 23 kandidat
-city night aerial: 17 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-sb-ep02.json
+Traceback (most recent call last):
+  File "/home/runner/work/content-production/content-production/tools/fetch_footage.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/content-production/content-production/tools/fetch_footage.py", line 206, in main
+    queries = [(q["q"], int(q.get("want", 2))) for q in spec["queries"]]
+                                                        ~~~~^^^^^^^^^^^
+KeyError: 'queries'
+EXIT=1
