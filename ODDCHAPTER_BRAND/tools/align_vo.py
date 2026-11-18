@@ -45,11 +45,26 @@ def norm_words(text):
 
 
 def script_tokens(segments):
-    """daftar (kata, indeks_segmen) untuk seluruh naskah, urut"""
+    """daftar (kata_untuk_cocok, indeks_segmen) untuk seluruh naskah, urut"""
+    return [(t["norm"], t["seg"]) for t in script_words(segments)]
+
+
+def script_words(segments):
+    """kata asli naskah + bentuk normalnya, urut.
+
+    Kata asli dipakai untuk caption per kata; angka tetap disimpan (bentuk normalnya
+    kosong) supaya caption tidak kehilangan "2014" atau "7.571", tetapi angka tidak
+    ikut pencocokan dengan ASR yang sering menulisnya berbeda.
+    """
     out = []
     for seg in segments:
-        for w in norm_words(seg["text"]):
-            out.append((w, seg["id"]))
+        text = seg["text"].replace("’", "'").replace("–", " ").replace("—", " ")
+        for raw in re.findall(r"[A-Za-zÀ-ÿ']+|[\d][\d.,]*", text):
+            orig = raw.strip(".,'")
+            if not orig:
+                continue
+            low = orig.lower()
+            out.append({"orig": orig, "norm": "" if NUM.match(orig) else low, "seg": seg["id"]})
     return out
 
 
@@ -201,11 +216,28 @@ def main():
         bounds = [(i + 1, ends[i]) for i in range(len(segs))]
     else:
         asr = transcribe(audio, lang, args.model)
-        toks = script_tokens(segs)
-        times = map_times(toks, asr)
+        words = script_words(segs)
+        # hanya kata yang punya bentuk normal yang ikut pencocokan; angka dilewati
+        match_idx = [i for i, w in enumerate(words) if w["norm"]]
+        times_matched = map_times([(words[i]["norm"], words[i]["seg"]) for i in match_idx], asr)
+        times = [None] * len(words)
+        for k, i in enumerate(match_idx):
+            times[i] = times_matched[k]
+        # kata angka (tanpa bentuk normal) mewarisi waktu tetangga terdekat
+        for i, w in enumerate(words):
+            if times[i] is None:
+                prev = next((times[j][1] for j in range(i - 1, -1, -1) if times[j]), 0.0)
+                nxt = next((times[j][0] for j in range(i + 1, len(words)) if times[j]), prev)
+                times[i] = (prev, max(prev, nxt))
+        (out_dir_words := pathlib.Path(args.out) / "words.json")
+        out_dir_words.parent.mkdir(parents=True, exist_ok=True)
+        out_dir_words.write_text(json.dumps(
+            [{"w": w["orig"], "seg": w["seg"], "start": round(t[0], 3), "end": round(t[1], 3)}
+             for w, t in zip(words, times)], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        print(f"words.json: {len(words)} kata", flush=True)
         raw = []
         for seg in segs[:-1]:
-            last = max(j for j, (_, sid) in enumerate(toks) if sid == seg["id"])
+            last = max(j for j, w in enumerate(words) if w["seg"] == seg["id"])
             raw.append(min(total, times[last][1] + args.pad))
         snapped, notes = snap_cuts(raw, gaps, window=args.snap_window, guard=args.pad)
         print("batas ASR   snap    jeda dipakai", flush=True)

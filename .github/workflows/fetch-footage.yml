@@ -22,7 +22,11 @@ jobs:
           SPEC=$(ls -1t tools/footage_specs/*.json 2>/dev/null | head -1 || true)
           echo "spec: ${SPEC:-<bawaan EP01>}"
           if [ -n "$SPEC" ]; then
-            python3 -u tools/fetch_footage.py --spec "$SPEC" > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
+            MODE=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('mode','download'))" "$SPEC")
+            EXTRA=""
+            CAND=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('candidates_out',''))" "$SPEC")
+            [ "$MODE" = "discover" ] && EXTRA="--discover --candidates-out ${CAND:-footage-candidates.json}"
+            python3 -u tools/fetch_footage.py --spec "$SPEC" $EXTRA > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
           else
             python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
           fi
@@ -33,7 +37,7 @@ jobs:
         run: |
           git config user.name "footage-bot"
           git config user.email "bot@oddchapter.local"
-          for f in footage-report.json footage-report-sb-ep02.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
+          for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
           find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}

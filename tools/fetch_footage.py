@@ -125,9 +125,78 @@ def run(queries, out_dir, report_path):
   return report
 
 
+def discover(queries, path):
+    """Tanya API saja; tulis kandidat supaya bisa dipilih manual dari judulnya.
+
+    Unduhan otomatis menghasilkan klip yang salah nada (kueri "radar screen" pernah
+    mengembalikan angsa berenang), jadi pemilihan dilakukan dari daftar judul.
+    """
+    out = {}
+    for q, want in queries:
+        url = ("https://coverr.co/api/videos?query=" + urllib.parse.quote(q) +
+               "&page_size=24&is_premium=false")
+        try:
+            data = fetch_json(url)
+        except Exception as e:                      # noqa: BLE001
+            out[q] = {"error": str(e), "hits": []}
+            continue
+        hits = [h for h in data.get("hits", [])
+                if not h.get("is_premium") and not h.get("is_vertical")
+                and float(h.get("duration") or 0) >= 6]
+        out[q] = {"hits": [{"title": h.get("title"), "base": h.get("base_filename"),
+                            "dur": round(float(h.get("duration") or 0), 1),
+                            "playback": h.get("playback_id")} for h in hits[:want + 4]]}
+        print(f"{q}: {len(hits)} kandidat", flush=True)
+    pathlib.Path(path).write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n",
+                                  encoding="utf-8")
+    print(f"kandidat -> {path}", flush=True)
+    return True
+
+
+def download_picks(picks_path, out_dir, report_path):
+    picks = json.loads(pathlib.Path(picks_path).read_text(encoding="utf-8"))
+    rows, failed = [], []
+    for item in picks["picks"]:
+        base = item["base"]
+        name = item.get("name") or base
+        dest = os.path.join(out_dir, f"{name}.mp4")
+        tmp = os.path.join(out_dir, f"_tmp_{name}.mp4")
+        if os.path.exists(dest) and os.path.getsize(dest) > 100_000:
+            print(f"  ada: {name}", flush=True)
+            rows.append({"file": os.path.basename(dest), "title": item.get("title"), "cached": True})
+            continue
+        pb = item.get("playback")
+        cands = [f"https://cdn.coverr.co/videos/{base}/1080p.mp4",
+                 f"https://cdn.coverr.co/videos/{base}/1080p?download=true",
+                 f"https://cdn.coverr.co/videos/{base}/720p.mp4"]
+        if pb:
+            cands += [f"https://stream.mux.com/{pb}/high.mp4",
+                      f"https://stream.mux.com/{pb}/medium.mp4",
+                      f"https://stream.mux.com/{pb}.m3u8"]
+        used = None
+        for c in cands:
+            if try_download(c, tmp):
+                used = c
+                break
+        if not used or not normalize(tmp, dest):
+            failed.append({"name": name, "base": base})
+            print(f"  GAGAL: {name}", flush=True)
+            continue
+        rows.append({"file": os.path.basename(dest), "title": item.get("title"), "via": used})
+        print(f"  ok: {name} ({os.path.getsize(dest)//1024} KB)", flush=True)
+    pathlib.Path(report_path).write_text(json.dumps({"ok": rows, "failed": failed}, indent=1) + "\n",
+                                         encoding="utf-8")
+    print(json.dumps({"ok": len(rows), "failed": len(failed)}), flush=True)
+    return not failed
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--spec", default="", help="berkas JSON daftar kueri")
+    ap.add_argument("--discover", action="store_true",
+                    help="hanya tanya API dan tulis kandidat (judul+slug), tanpa unduh")
+    ap.add_argument("--picks", default="", help="JSON berisi klip pilihan untuk diunduh")
+    ap.add_argument("--candidates-out", default="footage-candidates.json")
     ap.add_argument("--out", default="footage")
     ap.add_argument("--report", default="footage-report.json")
     args = ap.parse_args()
@@ -146,6 +215,12 @@ def main():
     for f in os.listdir(out_dir):
         if f.startswith("_tmp_") or f.endswith(".part"):
             os.remove(os.path.join(out_dir, f))
+
+    if args.discover:
+        sys.exit(0 if discover(queries, os.path.join(ROOT, args.candidates_out)) else 1)
+    if args.picks:
+        sys.exit(0 if download_picks(args.picks, out_dir, report_path) else 1)
+
     rep = run(queries, out_dir, report_path)
     sys.exit(0 if rep["ok"] else 1)
 

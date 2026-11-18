@@ -1,0 +1,25 @@
+{
+ "episode": "SB-EP02",
+ "mode": "discover",
+ "target_dir": "footage/sb-ep02",
+ "candidates_out": "footage-candidates-sb-ep02.json",
+ "catatan": "Putaran kandidat: kueri dibuat lebar karena kuartal pertama terlalu spesifik (cockpit/radar/satelit kosong, dan yang keluar malah angsa). Pemilihan dilakukan dari judul, bukan otomatis.",
+ "queries": [
+  {"q": "ocean", "want": 6},
+  {"q": "night sea", "want": 6},
+  {"q": "airport", "want": 6},
+  {"q": "airplane wing", "want": 6},
+  {"q": "cockpit", "want": 6},
+  {"q": "control panel", "want": 6},
+  {"q": "computer screen", "want": 6},
+  {"q": "satellite", "want": 6},
+  {"q": "earth space", "want": 6},
+  {"q": "ship", "want": 6},
+  {"q": "underwater", "want": 6},
+  {"q": "old map", "want": 6},
+  {"q": "documents", "want": 6},
+  {"q": "newspaper", "want": 6},
+  {"q": "night sky", "want": 6},
+  {"q": "fog", "want": 6}
+ ]
+}
