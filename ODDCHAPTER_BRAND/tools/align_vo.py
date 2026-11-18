@@ -111,6 +111,52 @@ def map_times(toks, asr):
     return times
 
 
+def find_gaps(audio, noise="-32dB", min_dur=0.25):
+    """daftar jeda (mulai, selesai, panjang) dari silencedetect"""
+    err = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-i", audio,
+         "-af", f"silencedetect=noise={noise}:d={min_dur}", "-f", "null", "-"],
+        capture_output=True, text=True).stderr
+    gaps, start = [], None
+    for line in err.splitlines():
+        m = re.search(r"silence_start: ([\d.]+)", line)
+        if m:
+            start = float(m.group(1))
+        m = re.search(r"silence_end: ([\d.]+) \| silence_duration: ([\d.]+)", line)
+        if m and start is not None:
+            gaps.append((start, float(m.group(1)), float(m.group(2))))
+            start = None
+    return gaps
+
+
+def snap_cuts(cuts, gaps, window=1.5, min_gap=0.22, min_len=1.5, guard=0.35):
+    """geser tiap batas ke tengah jeda terdekat di dalam ±window.
+
+    ASR bisa meleset 0,3–0,5 dtk pada kata terakhir; memotong di tengah kata dilarang.
+    Kalau tidak ada jeda yang memenuhi syarat, batas dibiarkan dan ditandai.
+    """
+    out, notes = [], []
+    prev = 0.0
+    for c in cuts:
+        # guard: batas mentah = akhir kata terakhir + pad. Jeda yang selesai lebih awal
+        # dari (c - guard) ada DI TENGAH kata/frasa terakhir, bukan di ujungnya.
+        cand = [g for g in gaps if g[2] >= min_gap
+                and min(abs(c - g[0]), abs(c - g[1]), abs(c - (g[0] + g[1]) / 2)) <= window
+                and g[1] >= c - guard
+                and g[1] > prev + min_len and g[0] > prev]
+        if not cand:
+            out.append(c)
+            notes.append((c, c, None, "tanpa jeda"))
+            prev = c
+            continue
+        g = min(cand, key=lambda g: abs((g[0] + g[1]) / 2 - c))
+        mid = round((g[0] + g[1]) / 2, 3)
+        out.append(mid)
+        notes.append((c, mid, g, "ok"))
+        prev = mid
+    return out, notes
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--audio", required=True)
@@ -119,6 +165,14 @@ def main():
     ap.add_argument("--model", default="small")
     ap.add_argument("--pad", type=float, default=0.35,
                     help="tambahan jeda di akhir tiap segmen (dtk)")
+    ap.add_argument("--snap-window", type=float, default=1.5,
+                    help="jendela pencarian jeda untuk menggeser batas (dtk)")
+    ap.add_argument("--snap-only", action="store_true",
+                    help="lewati ASR: potong langsung memakai --cuts")
+    ap.add_argument("--cuts", default="",
+                    help="daftar batas (dtk, dipisah koma) untuk --snap-only")
+    ap.add_argument("--total", type=float, default=0.0,
+                    help="durasi total untuk --snap-only")
     args = ap.parse_args()
 
     spec = json.loads(pathlib.Path(args.segments).read_text(encoding="utf-8"))
@@ -132,23 +186,38 @@ def main():
     if total <= 0:
         sys.exit(f"::error::tidak bisa membaca durasi {audio}")
 
-    asr = transcribe(audio, lang, args.model)
-    toks = script_tokens(segs)
-    times = map_times(toks, asr)
+    gaps = find_gaps(audio)
 
-    # batas segmen = akhir kata terakhir tiap segmen (kecuali segmen terakhir = durasi audio)
-    bounds, seen = [], set()
-    for i, (w, sid) in enumerate(toks):
-        if sid in seen:
-            continue
-        seen.add(sid)
-        last = max(j for j, (_, s) in enumerate(toks) if s == sid)
-        end = min(total, times[last][1] + args.pad)
-        bounds.append((sid, end))
+    if args.snap_only:
+        raw = [float(x) for x in args.cuts.replace(" ", "").split(",") if x]
+        if len(raw) != len(segs) - 1:
+            sys.exit(f"::error::--cuts berisi {len(raw)} batas, seharusnya {len(segs) - 1}")
+        snapped, notes = snap_cuts(raw, gaps, window=args.snap_window, guard=args.pad)
+        print("batas ASR   snap    jeda dipakai", flush=True)
+        for (c, m, g, st) in notes:
+            print(f"     {c:7.2f} {m:7.2f}   " +
+                  (f"{g[0]:.2f}-{g[1]:.2f} ({g[2]:.2f}s)" if g else st), flush=True)
+        ends = snapped + [total]
+        bounds = [(i + 1, ends[i]) for i in range(len(segs))]
+    else:
+        asr = transcribe(audio, lang, args.model)
+        toks = script_tokens(segs)
+        times = map_times(toks, asr)
+        raw = []
+        for seg in segs[:-1]:
+            last = max(j for j, (_, sid) in enumerate(toks) if sid == seg["id"])
+            raw.append(min(total, times[last][1] + args.pad))
+        snapped, notes = snap_cuts(raw, gaps, window=args.snap_window, guard=args.pad)
+        print("batas ASR   snap    jeda dipakai", flush=True)
+        for (c, m, g, st) in notes:
+            print(f"     {c:7.2f} {m:7.2f}   " +
+                  (f"{g[0]:.2f}-{g[1]:.2f} ({g[2]:.2f}s)" if g else st), flush=True)
+        ends = snapped + [total]
+        bounds = [(i + 1, ends[i]) for i in range(len(segs))]
 
-    cuts = [(1, 0.0, bounds[0][1])]
+    cuts = [(1, 0.0, round(bounds[0][1], 3))]
     for k in range(1, len(bounds)):
-        cuts.append((bounds[k][0], round(cuts[-1][2], 3), round(bounds[k][1], 3)))
+        cuts.append((bounds[k][0], cuts[-1][2], round(bounds[k][1], 3)))
     cuts[-1] = (cuts[-1][0], cuts[-1][1], round(total, 3))
 
     out = pathlib.Path(args.out)

@@ -30,7 +30,13 @@ laju baca tiap segmen tidak seragam (126–177 kata/menit).
 Kesimpulan: **jangan potong dengan silencedetect + proporsi.** Pada segmen 4 ke atas
 hasilnya memotong di tengah kalimat, dan Shorts ikut rusak.
 
-## Tiga cara memotong (pilih satu)
+## Sudah dipotong (18 Nov 2026)
+
+Opsi 2 dikerjakan: `faster-whisper` di Actions (run 44260878650, success) memberi timestamp
+per kata, lalu batas tiap segmen digeser ke tengah jeda terdekat. Hasil: `VO_01.wav` …
+`VO_09.wav`, 48 kHz mono, total 471,17 dtk. Tabel batas + id Drive: `VO_BOUNDARIES.md`.
+
+## Tiga cara memotong (arsip keputusan)
 
 | cara | hasil | catatan |
 |---|---|---|

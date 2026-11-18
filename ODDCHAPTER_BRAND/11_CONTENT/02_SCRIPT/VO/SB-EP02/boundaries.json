@@ -1,0 +1,83 @@
+[
+ {
+  "id": 1,
+  "start": 0.0,
+  "end": 23.592,
+  "duration": 23.592,
+  "words": 56,
+  "wpm": 142.4,
+  "file": "VO_01.wav"
+ },
+ {
+  "id": 2,
+  "start": 23.592,
+  "end": 46.016,
+  "duration": 22.424,
+  "words": 63,
+  "wpm": 168.6,
+  "file": "VO_02.wav"
+ },
+ {
+  "id": 3,
+  "start": 46.016,
+  "end": 109.044,
+  "duration": 63.028,
+  "words": 162,
+  "wpm": 154.2,
+  "file": "VO_03.wav"
+ },
+ {
+  "id": 4,
+  "start": 109.044,
+  "end": 191.398,
+  "duration": 82.354,
+  "words": 199,
+  "wpm": 145.0,
+  "file": "VO_04.wav"
+ },
+ {
+  "id": 5,
+  "start": 191.398,
+  "end": 262.921,
+  "duration": 71.523,
+  "words": 188,
+  "wpm": 157.7,
+  "file": "VO_05.wav"
+ },
+ {
+  "id": 6,
+  "start": 262.921,
+  "end": 316.839,
+  "duration": 53.918,
+  "words": 124,
+  "wpm": 138.0,
+  "file": "VO_06.wav"
+ },
+ {
+  "id": 7,
+  "start": 316.839,
+  "end": 375.42,
+  "duration": 58.581,
+  "words": 144,
+  "wpm": 147.5,
+  "file": "VO_07.wav"
+ },
+ {
+  "id": 8,
+  "start": 375.42,
+  "end": 416.704,
+  "duration": 41.284,
+  "words": 104,
+  "wpm": 151.1,
+  "file": "VO_08.wav"
+ },
+ {
+  "id": 9,
+  "start": 416.704,
+  "end": 471.171,
+  "duration": 54.467,
+  "words": 137,
+  "wpm": 150.9,
+  "file": "VO_09.wav"
+ }
+]

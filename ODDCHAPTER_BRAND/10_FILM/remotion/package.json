@@ -12,8 +12,8 @@
     "validate": "node scripts/validate.mjs"
   },
   "dependencies": {
-    "@ffmpeg-installer/ffmpeg": "1.1.0",
-    "@ffprobe-installer/ffprobe": "2.1.2",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffprobe-installer/ffprobe": "^2.1.2",
     "@remotion/bundler": "4.0.541",
     "@remotion/captions": "4.0.541",
     "@remotion/cli": "4.0.541",
