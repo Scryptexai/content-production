@@ -1,0 +1,8 @@
+{
+ "episode": "SB-EP02",
+ "mode": "picks",
+ "target_dir": "footage/sb-ep02",
+ "report": "footage-report-sb-ep02.json",
+ "picks": "tools/footage_picks/SB-EP02.json",
+ "catatan": "31 klip pilihan dari footage-candidates-sb-ep02.json (mode discover). Nama berkas diberi awalan segmen s1..s9 supaya pemetaan ke naskah langsung terbaca."
+}

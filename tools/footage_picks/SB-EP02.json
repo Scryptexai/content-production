@@ -1,0 +1,192 @@
+{
+ "episode": "SB-EP02",
+ "catatan": "Pilihan klip hasil mode discover; nama berkas memakai awalan segmen supaya pemetaan ke naskah jelas.",
+ "picks": [
+  {
+   "name": "s1_sumatra_malam",
+   "title": "Sumatra at night",
+   "base": "coverr-sumatra-at-night-6603",
+   "playback": "ZIPfhs602YjM8N1l3WxswqCsLCeyGptg3"
+  },
+  {
+   "name": "s1_ombak_malam",
+   "title": "Foamy ocean waves at night",
+   "base": "coverr-foamy-ocean-waves-at-night-2122",
+   "playback": "PnubLOoJWCqRd02kmd4J5jSuANvixCb2A"
+  },
+  {
+   "name": "s1_kota_pesisir_sore",
+   "title": "Coastal town in the evening",
+   "base": "coverr-coastal-town-in-the-evening-1169",
+   "playback": "00mQLv4RjI69siHY8ZjkZ7p01IojDww5bJ"
+  },
+  {
+   "name": "s2_jendela_senja",
+   "title": "Serene Aerial View from Airplane Window at Twilight",
+   "base": "coverr-serenity-in-the-skies",
+   "playback": null
+  },
+  {
+   "name": "s2_awan_dari_kabin",
+   "title": "View of clouds from an airplane",
+   "base": "coverr-view-of-clouds-from-an-airplane-6487",
+   "playback": "qOziBvcrayWu5oG02kuINw16J2MBewQGZ"
+  },
+  {
+   "name": "s2_langit_malam",
+   "title": "Starry Night Sky Over Pine Forest",
+   "base": "user-ai-generation-69Bz5voDn7EW",
+   "playback": null
+  },
+  {
+   "name": "s3_naik_pesawat",
+   "title": "Boarding a plane",
+   "base": "coverr-boarding-a-plane-5868",
+   "playback": "ziftjvW5XjjukejFoTqmJJNoqlNR6mRc"
+  },
+  {
+   "name": "s3_ke_landasan",
+   "title": "Planes heading to the runway ",
+   "base": "coverr-planes-heading-to-the-runway-8804",
+   "playback": "ccjZZT01UliNkTApf202ONajQ93rAJQGPP"
+  },
+  {
+   "name": "s3_pesawat_di_apron",
+   "title": "Planes at the airport",
+   "base": "coverr-planes-at-the-airport-1097",
+   "playback": "kf9o01YSKh02FJLGDdaeT5lFFOr6J5biVN"
+  },
+  {
+   "name": "s3_checkin",
+   "title": "Airport check-in",
+   "base": "coverr-airport-check-in-6995",
+   "playback": "FmQmtviwCxyVoimc02SeKKnwLF6uoTp6r"
+  },
+  {
+   "name": "s3_koper",
+   "title": "Suitcases at the airport",
+   "base": "coverr-suitcases-at-the-airport-7979",
+   "playback": "NdCmpvs8WTAn015HP6dOmRiVvxP42P72d"
+  },
+  {
+   "name": "s3_panel_kokpit",
+   "title": "Control panel in an airplane",
+   "base": "coverr-control-panel-in-an-airplane-8656",
+   "playback": "Z97PSJwRwXGIVkZvxOXeaM7t91iYb5fb"
+  },
+  {
+   "name": "s3_menunggu",
+   "title": "Men waiting for a flight",
+   "base": "coverr-men-waiting-for-a-flight-1204",
+   "playback": "9LPKrGHV5002FjTdVmGG02RgPuf021iZthk"
+  },
+  {
+   "name": "s3_kursi_jendela",
+   "title": "The window seat",
+   "base": "coverr-the-window-seat-7587",
+   "playback": "7ZVbXByojHokLaOxpsAG258PwH4ko4HB"
+  },
+  {
+   "name": "s5_kapal_laut",
+   "title": "Boats sailing in the sea",
+   "base": "coverr-boats-sailing-in-the-sea-8828",
+   "playback": "02ETmGf2cm01TrEdjxkc600Ubfo4QUa8yVG"
+  },
+  {
+   "name": "s5_kapal_kejauhan",
+   "title": "Seashore Serenity with Distant Ships",
+   "base": "coverr-seashore-serenity-with-distant-ships",
+   "playback": null
+  },
+  {
+   "name": "s5_perahu",
+   "title": "Boat in the sea",
+   "base": "coverr-boat-in-the-sea-5656",
+   "playback": "QOW27thvKbNRDX4JW7S5UXwJFxkdfr502"
+  },
+  {
+   "name": "s5_mercusuar_badai",
+   "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+   "base": "user-ai-generation-B84ybsW2lE2E",
+   "playback": null
+  },
+  {
+   "name": "s5_ombak_karang",
+   "title": "Waves crashing on the rocks at sea",
+   "base": "coverr-waves-crashing-on-the-rocks-at-sea-160",
+   "playback": "FlRsAvkhAos1G00pYTY9rcgZ6owHZAzWQ"
+  },
+  {
+   "name": "s5_ombak_besar",
+   "title": "Large waves crashing near the coast",
+   "base": "coverr-large-waves-crashing-near-the-coast-5201",
+   "playback": "kg9qxfl2st9hkpHUEjO3JaZBW9zx025Ku"
+  },
+  {
+   "name": "s6_piha",
+   "title": "Piha Beach",
+   "base": "coverr-piha-beach-5476",
+   "playback": "g2YuIGHo7VRPFnqOhYNmAyPGoGMfaRnd"
+  },
+  {
+   "name": "s6_raglan",
+   "title": "Raglan Beach in New Zealand ",
+   "base": "coverr-raglan-beach-in-new-zealand-958",
+   "playback": "Xhl8tCC6v00N7nGed4DpxpbKIivXRETH7"
+  },
+  {
+   "name": "s6_ombak_batu",
+   "title": "Waves crashing against the rocks",
+   "base": "coverr-waves-crashing-against-the-rocks-5050",
+   "playback": "ra58sSh6z1bAPVhVhrMlIEiZhi7uJF8J"
+  },
+  {
+   "name": "s6_batu_laut",
+   "title": "Top View of Rocks in the Ocean",
+   "base": "coverr-top-view-of-a-stony-coast-9752",
+   "playback": null
+  },
+  {
+   "name": "s7_marina_malam",
+   "title": "Marina De Lagos",
+   "base": "coverr-marina-de-lagos-689",
+   "playback": "rso02WtPSA3cJNz5OqagUhRBjFX016xPOA"
+  },
+  {
+   "name": "s7_kota_malam",
+   "title": "The city at night",
+   "base": "coverr-the-city-at-night-2412",
+   "playback": "oFeb7Ss00SjEyKVJO9Ob31ClD4sQDB0201r"
+  },
+  {
+   "name": "s8_dermaga",
+   "title": "Yachts docked at the harbor",
+   "base": "coverr-yachts-docked-at-the-harbor-369",
+   "playback": "PrnH1qcw021caf901JpKfOZNVNDONHmzLf"
+  },
+  {
+   "name": "s8_kota_malam_2",
+   "title": "City at night",
+   "base": "coverr-city-at-night-4382",
+   "playback": "VHmc1dzwoCsunGu5uGqwXlYaFJFNDm4w"
+  },
+  {
+   "name": "s9_darat_di_laut",
+   "title": "Land in the middle of the ocean",
+   "base": "coverr-land-in-the-middle-of-the-ocean-5777",
+   "playback": "cxijVYWRl1XaUCaTeQWXyLqG4W2uu028A"
+  },
+  {
+   "name": "s9_laut_luas",
+   "title": "The big, blue ocean",
+   "base": "coverr-the-big-blue-ocean-199",
+   "playback": "lwCmWdxml1ontanvW8Xi02Y62AQjHcn9O"
+  },
+  {
+   "name": "s9_panorama",
+   "title": "Panorama of the ocean",
+   "base": "coverr-panorama-of-the-ocean-2593",
+   "playback": "nm1qCmlMCInUmOYC2GbWl6TBs1ZoYNzB"
+  }
+ ]
+}
