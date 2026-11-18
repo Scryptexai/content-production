@@ -15,6 +15,7 @@ Yang dikerjakan skrip ini:
     python3 tools/bake_overlay.py SB-EP02
 """
 import json
+import os
 import pathlib
 import subprocess
 import sys
@@ -55,11 +56,18 @@ def main():
     src_dir, out_dir = PUB / "footage", PUB / "footage_graded"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # video EQ yang sama dengan filter CSS lama
-    vf = "eq=saturation=0.62:contrast=1.12:brightness=0.66"
+    # Padanan filter CSS lama: saturate(0.62) contrast(1.12) brightness(0.66).
+    # PENTING: brightness di ffmpeg eq BERSIFAT TAMBAH, bukan kali — filter CSS
+    # brightness() mengalikan. Memakai eq=brightness=0.66 membuat seluruh klip
+    # nyaris putih (master pertama harus dibuang karena ini). Perkalian dilakukan
+    # colorlevels romax/gomax/bomax (romax = batas OUTPUT; rimax justru
+    # menaikkan kontras dan membuat gambar makin putih).
+    vf = ("eq=saturation=0.62:contrast=1.12,"
+          "colorlevels=romax=0.66:gomax=0.66:bomax=0.66")
+    force = os.environ.get("FORCE") == "1"
     for name in clips:
         src, dst = src_dir / name, out_dir / name
-        if dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
+        if not force and dst.exists() and dst.stat().st_mtime >= src.stat().st_mtime:
             print("  ada :", name)
             continue
         r = subprocess.run([FFMPEG, "-hide_banner", "-loglevel", "error", "-y", "-i", str(src),

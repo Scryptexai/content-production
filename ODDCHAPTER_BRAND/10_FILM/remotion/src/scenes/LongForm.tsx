@@ -98,13 +98,8 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
           transform: `scale(${scale}) translateX(${tx}px)`,
         }}
       />
-      <Img
-        src={staticFile("overlay/sweep.png")}
-        style={{
-          position: "absolute", top: 0, left: 0, width: 900, height: H, pointerEvents: "none",
-          transform: `translateX(${((born * 3.4) % 2600) - 600}px)`,
-        }}
-      />
+      {/* Sapuan cahaya dibuang: PNG 8-bit dengan alpha maks 23 menghasilkan pita
+          vertikal yang terlihat di langit terang (lihat master pertama). */}
     </AbsoluteFill>
   );
 };
