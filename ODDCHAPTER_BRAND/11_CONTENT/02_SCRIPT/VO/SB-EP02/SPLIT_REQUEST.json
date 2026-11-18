@@ -6,6 +6,16 @@
  "segments_file": "segments.json",
  "model": "small",
  "requested_at": "2026-11-18T08:05:00Z",
- "catatan": "Potong VO satu berkas jadi sembilan segmen di batas naskah. Diukur: 121 jeda @-32dB, hanya 2 jeda >=0,60 dtk, laju 126-177 wpm antar segmen → silencedetect + proporsi tidak dipakai. Alignment ASR (faster-whisper) + pencocokan urutan kata naskah. Percobaan 1 gagal di langkah unduh (berkas Drive belum publik) — sekarang sudah dibagikan; unduhan diberi fallback langsung. Percobaan 3: unduhan mencoba tiga URL Drive dan mencatat status/isi HTML; semua langkah menulis ci.log yang ikut di SPLIT_RESULT.md. Percobaan 4: fetch_vo.py dibetulkan (target pathlib, gdown tanpa kwarg fuzzy). Unduhan sudah terbukti 200/audio/mpeg 7.555.666 B.",
- "attempt": 4
+ "catatan": "Potong VO satu berkas jadi sembilan segmen di batas naskah. Diukur: 121 jeda @-32dB, hanya 2 jeda >=0,60 dtk, laju 126-177 wpm antar segmen → silencedetect + proporsi tidak dipakai. Alignment ASR (faster-whisper) + pencocokan urutan kata naskah. Percobaan 1 gagal di langkah unduh (berkas Drive belum publik) — sekarang sudah dibagikan; unduhan diberi fallback langsung. Percobaan 3: unduhan mencoba tiga URL Drive dan mencatat status/isi HTML; semua langkah menulis ci.log yang ikut di SPLIT_RESULT.md. Percobaan 4: fetch_vo.py dibetulkan (target pathlib, gdown tanpa kwarg fuzzy). Unduhan sudah terbukti 200/audio/mpeg 7.555.666 B. Percobaan 5: align_vo.py sekarang menulis words.json (timestamp per kata + seg_t), dan batas final hasil verifikasi diberikan lewat cuts_final supaya kata tidak lagi tertukar di S6/S7.",
+ "attempt": 5,
+ "cuts_final": [
+  23.592,
+  46.016,
+  109.044,
+  191.398,
+  262.921,
+  316.839,
+  375.42,
+  416.704
+ ]
 }

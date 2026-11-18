@@ -46,7 +46,10 @@ jobs:
           DIR=$(dirname "$REQ")
           FID=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['drive_file_id'])" "$REQ")
           MODEL=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('model','small'))" "$REQ")
+          CUTS=$(python3 -c "import json,sys;v=json.load(open(sys.argv[1])).get('cuts_final') or [];print(','.join(str(x) for x in v))" "$REQ")
           echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "cuts=$CUTS" >> "$GITHUB_OUTPUT"
+          if [ -n "$CUTS" ]; then echo "::notice::batas final dipakai: $CUTS"; fi
           echo "fid=$FID" >> "$GITHUB_OUTPUT"
           echo "model=$MODEL" >> "$GITHUB_OUTPUT"
           test -f "$DIR/segments.json" || { echo "::error::$DIR/segments.json tidak ada"; exit 1; }
@@ -67,11 +70,14 @@ jobs:
         env:
           MODEL: ${{ steps.req.outputs.model }}
           DIR: ${{ steps.req.outputs.dir }}
+          CUTS: ${{ steps.req.outputs.cuts }}
         run: |
           set -euo pipefail
           set -o pipefail
+          CUTS_ARG=""
+          if [ -n "${CUTS:-}" ]; then CUTS_ARG="--cuts-final $CUTS"; fi
           python3 ODDCHAPTER_BRAND/tools/align_vo.py \
-            --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL" \
+            --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL" $CUTS_ARG \
             2>&1 | tee -a ci.log
 
       - name: Simpan hasil potong

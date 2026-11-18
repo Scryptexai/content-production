@@ -188,6 +188,10 @@ def main():
                     help="daftar batas (dtk, dipisah koma) untuk --snap-only")
     ap.add_argument("--total", type=float, default=0.0,
                     help="durasi total untuk --snap-only")
+    ap.add_argument("--cuts-final", default="",
+                    help="batas final (dtk, dipisah koma): dipakai apa adanya, "
+                         "menggantikan hasil snap. Kata tetap dipetakan ke segmen naskah, "
+                         "ditambah seg_t dari waktu nyata.")
     args = ap.parse_args()
 
     spec = json.loads(pathlib.Path(args.segments).read_text(encoding="utf-8"))
@@ -212,6 +216,26 @@ def main():
         for (c, m, g, st) in notes:
             print(f"     {c:7.2f} {m:7.2f}   " +
                   (f"{g[0]:.2f}-{g[1]:.2f} ({g[2]:.2f}s)" if g else st), flush=True)
+        if args.cuts_final:                     # batas yang sudah diverifikasi manual
+            fin = [float(x) for x in args.cuts_final.replace(" ", "").split(",") if x]
+            if len(fin) != len(segs) - 1:
+                sys.exit(f"::error::--cuts-final berisi {len(fin)} batas, "
+                         f"seharusnya {len(segs) - 1}")
+            print("batas final (menimpa snap): " + ", ".join(f"{v:.2f}" for v in fin), flush=True)
+            snapped = fin
+        # waktu kata dipakai caption; seg_t = segmen menurut waktu nyata, seg = segmen naskah
+        edges = [0.0] + list(snapped) + [total]
+        for w, t in zip(words, times):
+            mid = (t[0] + t[1]) / 2
+            w["seg_t"] = next((k + 1 for k in range(len(segs)) if mid < edges[k + 1]), len(segs))
+        (out_dir_words := pathlib.Path(args.out) / "words.json")
+        out_dir_words.parent.mkdir(parents=True, exist_ok=True)
+        out_dir_words.write_text(json.dumps(
+            [{"w": w["orig"], "seg": w["seg"], "seg_t": w["seg_t"],
+              "start": round(t[0], 3), "end": round(t[1], 3)}
+             for w, t in zip(words, times)], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        mismatch = sum(1 for w in words if w.get("seg_t") and w["seg_t"] != w["seg"])
+        print(f"words.json: {len(words)} kata ({mismatch} kata beda segmen naskah/waktu)", flush=True)
         ends = snapped + [total]
         bounds = [(i + 1, ends[i]) for i in range(len(segs))]
     else:
@@ -229,12 +253,6 @@ def main():
                 prev = next((times[j][1] for j in range(i - 1, -1, -1) if times[j]), 0.0)
                 nxt = next((times[j][0] for j in range(i + 1, len(words)) if times[j]), prev)
                 times[i] = (prev, max(prev, nxt))
-        (out_dir_words := pathlib.Path(args.out) / "words.json")
-        out_dir_words.parent.mkdir(parents=True, exist_ok=True)
-        out_dir_words.write_text(json.dumps(
-            [{"w": w["orig"], "seg": w["seg"], "start": round(t[0], 3), "end": round(t[1], 3)}
-             for w, t in zip(words, times)], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        print(f"words.json: {len(words)} kata", flush=True)
         raw = []
         for seg in segs[:-1]:
             last = max(j for j, w in enumerate(words) if w["seg"] == seg["id"])
@@ -244,6 +262,26 @@ def main():
         for (c, m, g, st) in notes:
             print(f"     {c:7.2f} {m:7.2f}   " +
                   (f"{g[0]:.2f}-{g[1]:.2f} ({g[2]:.2f}s)" if g else st), flush=True)
+        if args.cuts_final:                     # batas yang sudah diverifikasi manual
+            fin = [float(x) for x in args.cuts_final.replace(" ", "").split(",") if x]
+            if len(fin) != len(segs) - 1:
+                sys.exit(f"::error::--cuts-final berisi {len(fin)} batas, "
+                         f"seharusnya {len(segs) - 1}")
+            print("batas final (menimpa snap): " + ", ".join(f"{v:.2f}" for v in fin), flush=True)
+            snapped = fin
+        # waktu kata dipakai caption; seg_t = segmen menurut waktu nyata, seg = segmen naskah
+        edges = [0.0] + list(snapped) + [total]
+        for w, t in zip(words, times):
+            mid = (t[0] + t[1]) / 2
+            w["seg_t"] = next((k + 1 for k in range(len(segs)) if mid < edges[k + 1]), len(segs))
+        (out_dir_words := pathlib.Path(args.out) / "words.json")
+        out_dir_words.parent.mkdir(parents=True, exist_ok=True)
+        out_dir_words.write_text(json.dumps(
+            [{"w": w["orig"], "seg": w["seg"], "seg_t": w["seg_t"],
+              "start": round(t[0], 3), "end": round(t[1], 3)}
+             for w, t in zip(words, times)], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        mismatch = sum(1 for w in words if w.get("seg_t") and w["seg_t"] != w["seg"])
+        print(f"words.json: {len(words)} kata ({mismatch} kata beda segmen naskah/waktu)", flush=True)
         ends = snapped + [total]
         bounds = [(i + 1, ends[i]) for i in range(len(segs))]
 
