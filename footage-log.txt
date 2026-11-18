@@ -1,2 +1,14 @@
 spec: 16 kueri -> /home/runner/work/content-production/content-production/footage/sb-ep02
-{"ok": 19, "failed": 0}
+  lewati (sudah ada): night_ocean_aerial__coverr-marina-de-lagos-689.mp4
+  lewati (sudah ada): night_ocean_aerial__coverr-view-of-the-harbor-8599.mp4
+  lewati (sudah ada): ocean_waves_aerial__coverr-a-coastline-village-5975.mp4
+  lewati (sudah ada): ocean_waves_aerial__coverr-ocean-waves-3953.mp4
+  lewati (sudah ada): ocean_waves_aerial__coverr-ocean-waves-3983.mp4
+  lewati (sudah ada): airport_runway_night__coverr-people-boarding-an-airplane-8506.mp4
+  lewati (sudah ada): storm_waves_sea__coverr-stormy-sea-waves-crashing-on-pier.mp4
+  lewati (sudah ada): storm_waves_sea__coverr-large-waves-crashing-on-the-rocky-shore-8765.mp4
+  lewati (sudah ada): beach_sand_waves__coverr-candolim-beach-7824.mp4
+  lewati (sudah ada): beach_sand_waves__coverr-muriwai-beach-in-new-zealand-6318.mp4
+  lewati (sudah ada): coastline_aerial__coverr-coastline-in-sumatra-5363.mp4
+  lewati (sudah ada): coastline_aerial__coverr-coastline-in-sumatra-indonesia-6580.mp4
+{"ok": 7, "failed": 0}
