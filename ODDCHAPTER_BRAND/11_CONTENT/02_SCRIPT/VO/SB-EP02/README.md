@@ -75,3 +75,9 @@ Folder: **SB-EP02_MH370_VO** — https://drive.google.com/drive/folders/1EYxZupi
 
 Hasil rekaman (MP3/WAV) diunggah kembali ke folder yang sama dengan nama
 `VO_01` … `VO_09` supaya render dan potongan Shorts tetap sinkron.
+
+## Hasil rekaman pemilik (18 Nov 2026, 04:45 UTC)
+
+`VO EP02.mp3` — id `1yzfE90efvYUJYMEu6iHof_do7aM8ZlLp` · 7.555.666 B · 471,17 dtk ·
+mono 44,1 kHz · 128 kbps · **satu berkas utuh** (bukan per segmen). Rincian pengukuran
+dan cara memotongnya ada di `VO_LEDGER.md`.
