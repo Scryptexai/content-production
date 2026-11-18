@@ -1,0 +1,111 @@
+Lo yakin pesawat MH370 hilang tanpa jejak?
+
+Nggak hilang.
+
+Pesawat itu terlacak tujuh kali setelah transpondernya dimatikan.
+
+Tujuh kali. Dalam enam jam tiga puluh sembilan menit.
+
+Dan dari tujuh pelacakan itu, kita cuma dapat satu hal: jarak ke satelit. Bukan tempatnya.
+
+Itu sebabnya, dua belas tahun kemudian, kita masih menyapu dasar laut yang belum tentu benar.
+
+Gue nggak akan nebak siapa yang membalikkan pesawat ini. Laporan resmi dua ribu delapan belas pun tidak berani.
+
+Yang gue mau tunjukin cuma satu: bukti terkuat dalam kasus ini bukan foto, bukan radar, bukan rekaman suara. Bukti terkuatnya sisa hitungan dari sistem komunikasi yang dibuat untuk hal lain.
+
+Dan kalau lo pernah naik pesawat malam lalu tidur, lo bergantung pada sistem yang sama.
+
+Delapan Maret dua ribu empat belas, empat puluh satu menit lewat tengah malam, waktu Malaysia. Boeing tujuh tujuh tujuh, dua ratus E R, nomor registrasi sembilan em em er o, lepas landas dari Kuala Lumpur menuju Beijing. Dua ratus tiga puluh sembilan orang di dalamnya: dua pilot, sepuluh awak kabin, dua ratus dua puluh tujuh penumpang.
+
+Satu lewat tujuh menit. Pesawat mengirim laporan data terakhirnya, otomatis. Laporan berikutnya, yang seharusnya datang satu lewat tiga puluh tujuh menit, tidak pernah sampai.
+
+Satu lewat sembilan belas. Kontrol Kuala Lumpur menyerahkan pesawat ke Ho Chi Minh. Balasan terakhir dari kokpit: Good night Malaysian three seven zero.
+
+Satu lewat dua puluh satu. Transponder mati. Pesawat hilang dari radar sipil di sekitar waypoint IGARI.
+
+Tapi radar militer Malaysia masih melihatnya. Satu pesawat berbalik arah, melintasi Semenanjung, ke barat laut lewat Selat Malaka. Kontak terakhir dua lewat dua puluh dua menit, dekat waypoint MEKAR, dua ratus mil laut dari Penang.
+
+Lalu sunyi. Sampai dua lewat dua puluh lima.
+
+Dua lewat dua puluh lima. Unit data satelit pesawat mendaftar ke jaringan Inmarsat. Bukan dipanggil awak. Otomatis.
+
+Lalu setiap jam, lebih kurang, sistem melakukan handshake. Satu sinyal keluar, satu jawaban balik. Sampai delapan lewat sembilan belas pagi, tercatat tujuh.
+
+Dan ini bagian yang hampir selalu dilewatkan. Tujuh handshake itu tidak membawa posisi. Tidak ada G P S. Tidak ada ketinggian. Tidak ada arah. Transponder sudah mati, pengirim data otomatis juga sudah mati.
+
+Yang tersisa dua angka.
+
+B T O. Selisih waktu sinyal pergi dan pulang. Dari situ dihitung jarak ke satelit. Satu jarak, satu lingkaran kemungkinan posisi.
+
+B F O. Pergeseran frekuensi karena gerak. Dari situ dibaca: menjauh, atau mendekat.
+
+Tujuh B T O memberi tujuh lingkaran. B F O yang memilih: utara, atau selatan.
+
+Hasilnya busur ketujuh. Membentang seribu dua ratus sampai dua ribu kilometer di barat Australia. Itu satu-satunya alasan semua orang sepakat mencari di sana.
+
+Dan yang harus lo tahu. Inmarsat nggak dibuat untuk melacak pesawat. B T O dan B F O itu efek samping protokol komunikasi, bukan alat navigasi.
+
+Jadi bukti terkuat dalam kasus ini bukan pengukuran yang dirancang untuk menjawab pertanyaan ini. Itu sampah sistem komunikasi. Dan dari sampah itu, seluruh samudra ditentukan.
+
+Pencarian pertama dipimpin Australia, dua ribu empat belas sampai dua ribu tujuh belas. Seratus dua puluh ribu kilometer persegi dasar laut disapu. Area prioritas dua puluh lima ribu kilometer persegi di sepanjang busur, antara tiga puluh dua koma lima dan tiga puluh enam derajat lintang selatan. Ditangguhkan tujuh belas Januari dua ribu tujuh belas. Kosong.
+
+Dua ribu delapan belas. Ocean Infinity menawarkan skema yang belum pernah dipakai untuk kasus sebesar ini. No find, no fee. Tidak ketemu, tidak dibayar. Ketemu, tujuh puluh juta dolar. Seratus dua belas ribu kilometer persegi dipindai. Selesai Juni dua ribu delapan belas. Kosong.
+
+Dua ribu dua puluh lima, kontrak baru. Lima belas ribu kilometer persegi di lokasi baru, lagi-lagi no find no fee, tujuh puluh juta dolar. Fase pertama dua puluh lima sampai dua puluh delapan Maret. Fase kedua tiga puluh satu Desember dua ribu dua puluh lima sampai dua puluh tiga Januari dua ribu dua puluh enam. Dua puluh delapan hari. Sekitar tujuh ribu lima ratus tujuh puluh satu kilometer persegi. Setengah dari target.
+
+Delapan Maret dua ribu dua puluh enam. Badan Investigasi Kecelakaan Udara Malaysia mengumumkan, tidak ada bangkai yang terkonfirmasi.
+
+Terus kenapa dunia masih yakin pesawatnya di selatan?
+
+Karena tiga potong.
+
+Dua puluh sembilan Juli dua ribu lima belas. Sesuatu yang tertutup teritip terdampar di pantai Réunion. Flaperon. Bagian sayap. Dikonfirmasi tiga September, bagian dari pesawat itu.
+
+Sepuluh Mei dua ribu enam belas, bagian flap ditemukan di Mauritius. Dikonfirmasi.
+
+Dua puluh Juni dua ribu enam belas, flap kanan ditemukan di Pulau Pemba, Tanzania. Dikonfirmasi.
+
+Sekarang bagian yang bikin gue kesal.
+
+Pencarian ini yang termahal dalam sejarah penerbangan. Kapal, robot bawah laut, sonar, dua puluh enam negara. Tapi yang menemukan serpihan pertama bukan mereka. Bukan sonar. Bukan satelit.
+
+Yang menemukannya orang yang sedang membersihkan pantai.
+
+Dan itu bukan keberuntungan yang manis. Itu pola. Yang ketemu cuma yang terdampar. Dan yang terdampar membuktikan arah, bukan titik.
+
+Menurut lo, di menit terakhir, pesawat ini masih dipegang orang, atau sudah kosong?
+
+Dua-duanya punya pendukung, dan dua-duanya memakai data yang sama.
+
+Pembacaan pertama. Awak tidak sadar. Hipoksia. Pesawat terbang sendiri sampai bahan bakar habis, lalu jatuh dekat busur ketujuh. Kalau ini benar, pencarian di sepanjang busur adalah cara yang tepat, dan area prioritasnya memang sempit.
+
+Pembacaan kedua. Pesawat terbang terkendali sampai akhir. Masih ada yang memegang kendali, dan menerbangkannya sampai mesin mati. Kalau ini benar, titik akhirnya bisa puluhan kilometer dari busur. Area prioritas dua puluh lima ribu kilometer persegi jadi terlalu kecil, dan di tempat yang salah.
+
+Dan B T O, B F O, tidak bisa memilih di antara keduanya. Busurnya sama persis.
+
+Yang membedakan cuma satu. Seberapa cepat pesawat turun di menit terakhir. Itu tidak pernah terukur, karena satu-satunya alat yang mencatatnya ada di kotak hitam, yang juga tidak pernah ditemukan.
+
+Yang jarang disebut. Pencariannya belum berhenti permanen.
+
+Malaysia menyetujui perpanjangan untuk satu Juli dua ribu dua puluh enam sampai tiga puluh Juni dua ribu dua puluh tujuh. Kontraknya masih no find, no fee.
+
+Artinya sampai pertengahan tahun depan, masih ada satu perusahaan yang bersedia mengirim kapal dan robot ke dasar samudra dengan imbalan nol kalau gagal.
+
+Tapi lihat angkanya. Dua belas tahun. Tiga gelombang. Ratusan ribu kilometer persegi. Dan yang dikonfirmasi cuma tiga potong sebesar meja makan. Ocean Infinity sendiri menyebut sudah seratus lima puluh satu hari di laut, dan memetakan lebih dari seratus empat puluh ribu kilometer persegi.
+
+Nol badan pesawat. Nol perekam.
+
+Laporan dua ribu delapan belas menyimpulkan penyebabnya tidak bisa ditentukan. Bukan karena malas. Karena bukti utamanya tidak pernah ditemukan.
+
+Yang kita punya sekarang. Jarak, waktu, pergeseran frekuensi, dan tiga potong serpihan yang hanyut dua tahun.
+
+Dari situ, dua kesimpulan yang sama-sama masuk akal bisa dibangun. Tidak ada data yang bisa memisahkannya. Yang bisa memisahkan cuma satu hal. Menyapu dasar laut di tempat yang selama ini dianggap tidak mungkin.
+
+Sekarang pertanyaan buat lo. Dan ini yang bikin gue nggak bisa berhenti mikir.
+
+Tiap kali lo naik pesawat malam lalu tidur, pesawat lo juga mengirim sinyal yang sama, tiap jam. Bedanya, di darat ada yang menjawab.
+
+Kalau semua yang menjawab itu diam, lo ada di mana? Itu pertanyaan MH370.
+
+Jadi, satu pencarian lagi. Busur yang sama, sekali lagi. Atau mulai dari luar busur, di tempat yang belum pernah dihitung.

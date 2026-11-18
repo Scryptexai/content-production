@@ -1,0 +1,19 @@
+Dua lewat dua puluh lima. Unit data satelit pesawat mendaftar ke jaringan Inmarsat. Bukan dipanggil awak. Otomatis.
+
+Lalu setiap jam, lebih kurang, sistem melakukan handshake. Satu sinyal keluar, satu jawaban balik. Sampai delapan lewat sembilan belas pagi, tercatat tujuh.
+
+Dan ini bagian yang hampir selalu dilewatkan. Tujuh handshake itu tidak membawa posisi. Tidak ada G P S. Tidak ada ketinggian. Tidak ada arah. Transponder sudah mati, pengirim data otomatis juga sudah mati.
+
+Yang tersisa dua angka.
+
+B T O. Selisih waktu sinyal pergi dan pulang. Dari situ dihitung jarak ke satelit. Satu jarak, satu lingkaran kemungkinan posisi.
+
+B F O. Pergeseran frekuensi karena gerak. Dari situ dibaca: menjauh, atau mendekat.
+
+Tujuh B T O memberi tujuh lingkaran. B F O yang memilih: utara, atau selatan.
+
+Hasilnya busur ketujuh. Membentang seribu dua ratus sampai dua ribu kilometer di barat Australia. Itu satu-satunya alasan semua orang sepakat mencari di sana.
+
+Dan yang harus lo tahu. Inmarsat nggak dibuat untuk melacak pesawat. B T O dan B F O itu efek samping protokol komunikasi, bukan alat navigasi.
+
+Jadi bukti terkuat dalam kasus ini bukan pengukuran yang dirancang untuk menjawab pertanyaan ini. Itu sampah sistem komunikasi. Dan dari sampah itu, seluruh samudra ditentukan.
