@@ -495,3 +495,18 @@ Yang paling sering dilanggar, dan karena itu ditulis di sini:
 
 Naskah SB-EP02 (v2) adalah contoh penerapannya: gerbang tujuh baris di kepala berkas,
 peta pilar per segmen, tiga opsi hook, dan Shorts yang dipotong di batas segmen.
+
+## §25 — Log Actions tidak terbaca dari sandbox: tulis hasil ke repo (18 Nov 2026)
+
+`gh run view --log` dan `gh api .../logs` mengembalikan `EOF` dari sandbox (log disimpan di
+host lain). Tanpa penanganan, run yang gagal hanya terlihat sebagai "failure" tanpa sebab.
+
+Yang dipakai sekarang: workflow menulis berkas hasil ke repo pada langkah `if: always()`
+(`vo-split.yml` → `SPLIT_RESULT.md`), berisi status, laporan, daftar berkas, dan ekor log.
+Baca dengan `git pull` lalu buka berkasnya — tidak perlu akses log Actions.
+
+Bug yang ditemukan lewat cara ini, jangan diulang:
+- `fetch_vo.py`: `target` masih `str` padahal dipanggil `.exists()/.stat()/.unlink()` — bungkus
+  `pathlib.Path` sejak di `main()`.
+- `gdown.download(..., fuzzy=False)` tidak dikenal versi yang terpasang di runner → error
+  "unexpected keyword argument 'fuzzy'". Cukup `gdown.download(id=..., output=...)`.
