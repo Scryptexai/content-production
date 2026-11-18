@@ -20,8 +20,8 @@ jobs:
       - name: ambil footage coverr
         run: |
           set -euo pipefail
-          # spec aktif ditunjuk eksplisit; `ls -t` pernah memilih spec unduh
-          # padahal yang dimaksud spec discover.
+          # Spec aktif ditunjuk eksplisit lewat tools/footage_specs/ACTIVE.
+          # `ls -1t` pernah memilih spec unduh padahal yang dimaksud spec discover.
           SPEC=""
           if [ -f tools/footage_specs/ACTIVE ]; then
             SPEC="tools/footage_specs/$(tr -d '[:space:]' < tools/footage_specs/ACTIVE)"
@@ -31,18 +31,16 @@ jobs:
           fi
           echo "spec: ${SPEC:-<bawaan EP01>}"
           if [ -n "$SPEC" ]; then
-            read -r MODE CAND PICKS < <(python3 - "$SPEC" <<'PY'
-import json, sys
-s = json.load(open(sys.argv[1]))
-print(s.get("mode", "download"), s.get("candidates_out", "footage-candidates.json"), s.get("picks", "-"))
-PY
-)
-            echo "mode: $MODE | picks: $PICKS"
-            case "$MODE" in
-              discover) EXTRA="--discover --candidates-out $CAND" ;;
-              picks)    EXTRA="--picks $PICKS" ;;
-              *)        EXTRA="" ;;
-            esac
+            MODE=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('mode','download'))" "$SPEC")
+            CAND=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('candidates_out','footage-candidates.json'))" "$SPEC")
+            PICKS=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('picks',''))" "$SPEC")
+            echo "mode: $MODE"
+            EXTRA=""
+            if [ "$MODE" = "discover" ]; then
+              EXTRA="--discover --candidates-out $CAND"
+            elif [ "$MODE" = "picks" ]; then
+              EXTRA="--picks $PICKS"
+            fi
             python3 -u tools/fetch_footage.py --spec "$SPEC" $EXTRA > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
           else
             python3 -u tools/fetch_footage.py > footage-log.txt 2>&1 || echo "EXIT=$?" >> footage-log.txt
@@ -52,10 +50,13 @@ PY
       # artifact Drive/Azure diblokir dari sandbox, jadi hasilnya di-commit saja
       - name: commit hasil ke branch
         run: |
+          set -euo pipefail
           git config user.name "footage-bot"
           git config user.email "bot@oddchapter.local"
-          for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-log.txt; do [ -f "$f" ] && git add -f "$f"; done
+          for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-log.txt; do
+            if [ -f "$f" ]; then git add -f "$f"; fi
+          done
           find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f
-          find footage -name "_tmp_*" -print0 2>/dev/null | xargs -0 -r git rm -f --ignore-unmatch -q
+          find footage -name "_tmp_*" -print0 2>/dev/null | xargs -0 -r git rm -f --ignore-unmatch -q || true
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
