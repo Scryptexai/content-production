@@ -49,3 +49,20 @@ Total 471,17 dtk = durasi audio asli, tidak ada bagian yang hilang atau tertingg
   segmen 3 tertarik ke 107,31 — di tengah frasa "dua puluh lima".
 - `.github/workflows/vo-split.yml` menjalankan hal yang sama di CI dan menulis
   `SPLIT_RESULT.md` ke repo (log Actions tidak terbaca dari sandbox).
+
+## Timestamp per kata (`words.json`)
+
+Run `44315522833` (percobaan 5) memakai `cuts_final` — delapan batas di tabel di atas
+diberikan apa adanya, bukan hasil snap baru — lalu menulis `words.json`:
+
+- 1.185 kata, `start`/`end` per kata dari ASR (faster-whisper `small`).
+- Tiap entri punya `seg` (segmen naskah) dan `seg_t` (segmen menurut waktu nyata).
+  Hanya **6 kata** yang berbeda, semuanya kata angka yang dilewati pencocokan ASR
+  ("Delapan", "Dua lewat dua puluh lima") — waktunya diwarisi tetangga lalu diregangkan
+  oleh `build_longform.py` sebelum dipakai caption.
+- Caption master ditempel ke kata ini, bukan dibagi rata per durasi blok. Contoh: cue
+  pertama master "Lo yakin pesawat MH370 hilang tanpa jejak?" 00:00,000–00:03,440.
+
+Berkas: `words.json` (di repo), `boundaries.json`, `report.txt` — semuanya 48 kHz mono
+diukur ulang dari VO penuh 471,17 dtk yang dibentuk dari sembilan WAV itu
+(`work/vo/SB-EP02/SB-EP02_full.wav`, tidak di Git).
