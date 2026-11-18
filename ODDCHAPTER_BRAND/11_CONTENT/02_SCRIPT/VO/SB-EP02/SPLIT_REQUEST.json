@@ -1,0 +1,10 @@
+{
+ "episode": "SB-EP02",
+ "drive_file_id": "1yzfE90efvYUJYMEu6iHof_do7aM8ZlLp",
+ "audio_name": "VO EP02.mp3",
+ "duration_seconds": 471.170563,
+ "segments_file": "segments.json",
+ "model": "small",
+ "requested_at": "2026-11-18T05:05:00Z",
+ "catatan": "Potong VO satu berkas jadi sembilan segmen di batas naskah. Diukur: 121 jeda @-32dB, hanya 2 jeda >=0,60 dtk, laju 126-177 wpm antar segmen → silencedetect + proporsi tidak dipakai. Alignment ASR (faster-whisper) + pencocokan urutan kata naskah."
+}

@@ -1,0 +1,87 @@
+name: VO split (alignment ASR)
+
+# Memotong satu berkas VO jadi sembilan segmen di batas naskah, memakai timestamp
+# per kata dari faster-whisper. Dipakai kalau pemilik merekam VO sebagai satu berkas:
+# keheningan saja tidak cukup untuk menemukan batas segmen (lihat VO_LEDGER.md).
+#
+# Pemicu: push berkas SPLIT_REQUEST.json di folder VO. Bukan unggahan — workflow ini
+# hanya memotong audio dan menyimpan hasilnya sebagai artifact, tidak menyentuh
+# YouTube, Drive, atau published.json.
+
+on:
+  push:
+    paths:
+      - "ODDCHAPTER_BRAND/11_CONTENT/02_SCRIPT/VO/**/SPLIT_REQUEST.json"
+
+permissions:
+  contents: read
+
+jobs:
+  split:
+    name: Potong VO ${{ github.event.head_commit.message }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Pasang ffmpeg + faster-whisper
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --quiet --disable-pip-version-check faster-whisper gdown
+
+      - name: Baca permintaan potong
+        id: req
+        run: |
+          set -euo pipefail
+          REQ=$(ls -1t ODDCHAPTER_BRAND/11_CONTENT/02_SCRIPT/VO/*/SPLIT_REQUEST.json | head -1)
+          test -n "$REQ" || { echo "::error::SPLIT_REQUEST.json tidak ditemukan"; exit 1; }
+          DIR=$(dirname "$REQ")
+          FID=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['drive_file_id'])" "$REQ")
+          MODEL=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1])).get('model','small'))" "$REQ")
+          echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+          echo "fid=$FID" >> "$GITHUB_OUTPUT"
+          echo "model=$MODEL" >> "$GITHUB_OUTPUT"
+          test -f "$DIR/segments.json" || { echo "::error::$DIR/segments.json tidak ada"; exit 1; }
+          echo "::notice::VO $FID · segmen $DIR/segments.json · model $MODEL"
+
+      - name: Unduh VO dari Drive
+        env:
+          FID: ${{ steps.req.outputs.fid }}
+        run: |
+          set -euo pipefail
+          gdown --id "$FID" -O vo.mp3
+          ls -lh vo.mp3
+          ffprobe -v error -show_entries format=duration,bit_rate -of default=nw=1 vo.mp3
+
+      - name: Potong per segmen (alignment ASR)
+        env:
+          MODEL: ${{ steps.req.outputs.model }}
+          DIR: ${{ steps.req.outputs.dir }}
+        run: |
+          set -euo pipefail
+          python3 ODDCHAPTER_BRAND/tools/align_vo.py \
+            --audio vo.mp3 --segments "$DIR/segments.json" --out vo_out --model "$MODEL"
+
+      - name: Tampilkan laporan
+        if: always()
+        run: |
+          set -euo pipefail
+          test -f vo_out/report.txt && cat vo_out/report.txt || echo "::warning::belum ada laporan"
+          ls -lh vo_out || true
+          ffprobe -v error -show_entries format=duration -of csv=p=0 vo_out/VO_*.wav 2>/dev/null || true
+
+      - name: Simpan hasil potong
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vo-split-${{ github.run_id }}
+          path: vo_out/
+          if-no-files-found: warn
+          retention-days: 30
