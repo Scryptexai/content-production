@@ -227,8 +227,11 @@ klaim di kotak gelap, batas potong di akhir segmen — sama seperti SB-EP01.
 
 ## Catatan produksi
 
-- **VO**: 9 berkas terpisah `VO_01`…`VO_09` (WAV 48 kHz mono), sesuai segmen. Berkas per
-  segmen membuat Shorts bisa dipotong tanpa memotong kata.
+- **VO**: naskah siap tempel ke ElevenLabs ada di `02_SCRIPT/VO/SB-EP02/` (9 segmen +
+  versi utuh + panduan setelan). Drive: folder **SB-EP02_MH370_VO**
+  `1EYxZupigSz0HbGtmiHOARQnZgSY0Ris7`. Hasil rekaman disimpan sebagai
+  `VO_01`…`VO_09` (WAV 48 kHz mono) dengan nama yang sama — nama itulah yang mengunci
+  batas potong Shorts.
 - **Kartu angka**: 5 (7 handshake · BTO/BFO · tiga gelombang · 3 serpihan · dua pembacaan).
 - **Footage Coverr** (`fetch-footage.yml`): `night ocean aerial`, `cockpit instruments`,
   `radar screen`, `cargo ship storm`, `sonar underwater`, `satellite dish`, `beach debris`,

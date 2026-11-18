@@ -53,3 +53,25 @@ generate sekaligus — melebihi batas karakter).
   perusahaan). Jangan diterjemahkan.
 - Nada: seperti orang menjelaskan ke teman, bukan pembaca berita. Kalimat pendek memang
   pendek — biarkan tempo jatuh di titik, bukan dinaikkan.
+
+## Lokasi Drive (18 Nov 2026)
+
+Folder: **SB-EP02_MH370_VO** — https://drive.google.com/drive/folders/1EYxZupigSz0HbGtmiHOARQnZgSY0Ris7
+(berada di dalam folder seri `1BOWvbqWOAsImracTAJt_GANg1ZYRTb4I`)
+
+| berkas | id Drive |
+|---|---|
+| VO_01.txt | `1Lfg_6PwT2FAaVEoXmzPUjNHQN4mzJd1S` |
+| VO_02.txt | `1pCI3oP_u9B8msFErIgHNbHDNoHyxtlaW` |
+| VO_03.txt | `1L8JA3KEOg9ydklWwUkhhTff0-lfUs1nm` |
+| VO_04.txt | `1D1UFeUB7fKyhOR8gFj455eg2mp3CKPBh` |
+| VO_05.txt | `1paoYuOsv0APpn3dPSalC6rzbIM_xjjhE` |
+| VO_06.txt | `1crBpFnfoPsWKMkdFQ1kP3w3pLf1Qpkhb` |
+| VO_07.txt | `1bXfhxp4EUVYzmfD_-LYemPhcgmRLODE4` |
+| VO_08.txt | `1PDhHTXf5o_yjVS74OHOEFh31DZ1I-iwi` |
+| VO_09.txt | `1i4tVetboWUwLH4F0wB3iZvqanyQlNfvP` |
+| SB-EP02_VO_FULL.txt | `1lsAKtYs3IvbaeeCp-cNpXZuAo_t7Dora` |
+| SB-EP02_VO_README.md | `1pTbH-cH29qvIsZiW_vu4ABpQQltwaah1` |
+
+Hasil rekaman (MP3/WAV) diunggah kembali ke folder yang sama dengan nama
+`VO_01` … `VO_09` supaya render dan potongan Shorts tetap sinkron.
