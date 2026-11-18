@@ -58,3 +58,16 @@ ODDCHAPTER_BRAND/**/03_THUMBNAIL/plates/
 
 # master dari Drive tidak pernah masuk Git (80 MB); workflow mengunduhnya sendiri
 google_drive/
+
+# ---------------------------------------------------------------- turunan render
+# public/footage adalah SALINAN dari footage/ (sumbernya sudah di-commit bot).
+# Tanpa aturan ini, `git add -A` ikut mengangkut 130 MB klip per episode.
+ODDCHAPTER_BRAND/10_FILM/remotion/public/footage/
+ODDCHAPTER_BRAND/10_FILM/remotion/public/footage_graded/
+ODDCHAPTER_BRAND/10_FILM/remotion/public/overlay/
+
+# VO terpotong (44 MB WAV) tinggal di Drive + workspace; bisa dibuat ulang dengan
+# vo-split.yml. git hanya menyimpan teksnya (boundaries, report, words.json).
+work/vo/**/*.wav
+work/shorts/*.mp4
+work/**/*_master.mp4

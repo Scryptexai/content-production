@@ -68,17 +68,13 @@ const Grain: React.FC<{ frame: number }> = ({ frame }) => (
   </>
 );
 
+// Dua gradient ini dulu dihitung ulang tiap frame dan menghabiskan waktu render
+// di rasterisasi software. Sekarang satu PNG statis (tools/bake_overlay.py).
 const Scrim: React.FC = () => (
-  <>
-    <AbsoluteFill style={{
-      background: "linear-gradient(180deg, rgba(8,10,12,0.82) 0%, rgba(8,10,12,0.22) 18%, rgba(8,10,12,0) 40%, rgba(8,10,12,0.42) 68%, rgba(8,10,12,0.94) 100%)",
-      pointerEvents: "none",
-    }} />
-    <AbsoluteFill style={{
-      background: "linear-gradient(90deg, rgba(6,8,10,0.86) 0%, rgba(6,8,10,0.45) 38%, rgba(6,8,10,0) 70%)",
-      pointerEvents: "none",
-    }} />
-  </>
+  <Img
+    src={staticFile("overlay/scrim.png")}
+    style={{ position: "absolute", inset: 0, width: "100%", height: "100%", pointerEvents: "none" }}
+  />
 );
 
 /* ───────────────────────────── footage ───────────────────────────── */
@@ -91,6 +87,8 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
   const flicker = 1 - 0.02 * ((Math.sin(born * 0.9) + 1) / 2);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#07090B" }}>
+      {/* grade (saturate/contrast/brightness) sudah dibakar ke klip oleh
+          tools/bake_overlay.py — lihat catatan di sana soal biaya filter CSS */}
       <OffthreadVideo
         src={staticFile(cut.clip)}
         trimBefore={Math.round(cut.offset * D.fps)}
@@ -98,13 +96,15 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
         style={{
           width: "100%", height: "100%", objectFit: "cover", opacity: flicker,
           transform: `scale(${scale}) translateX(${tx}px)`,
-          filter: "saturate(0.62) contrast(1.12) brightness(0.66)",
         }}
       />
-      <AbsoluteFill style={{
-        background: "linear-gradient(102deg, rgba(255,246,226,0) 40%, rgba(255,246,226,0.09) 50%, rgba(255,246,226,0) 60%)",
-        transform: `translateX(${((born * 3.4) % 2600) - 600}px)`, pointerEvents: "none",
-      }} />
+      <Img
+        src={staticFile("overlay/sweep.png")}
+        style={{
+          position: "absolute", top: 0, left: 0, width: 900, height: H, pointerEvents: "none",
+          transform: `translateX(${((born * 3.4) % 2600) - 600}px)`,
+        }}
+      />
     </AbsoluteFill>
   );
 };

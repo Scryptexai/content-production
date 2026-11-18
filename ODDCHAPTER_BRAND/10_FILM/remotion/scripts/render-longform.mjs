@@ -72,9 +72,9 @@ console.log("rendering…");
 const t0 = Date.now();
 await renderMedia({
   composition, serveUrl, codec: "h264", outputLocation: raw,
-  audioCodec: "aac", audioBitrate: "192k", videoBitrate: "7M",
+  audioCodec: "aac", audioBitrate: "192k", videoBitrate: process.env.LF_BITRATE || "7M",
   x264Preset: "medium", pixelFormat: "yuv420p", imageFormat: "jpeg",
-  jpegQuality: 92, concurrency: 2,
+  jpegQuality: 88, concurrency: Number(process.env.LF_CONCURRENCY || 2),
   ...(range.length === 2 ? { frameRange: [range[0], range[1]] } : {}),
   ...browserOpts,
 });

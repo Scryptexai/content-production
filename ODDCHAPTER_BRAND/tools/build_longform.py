@@ -289,8 +289,11 @@ def build(ep_id, verbose=False):
                 clip = clips[k % len(clips)] if clips else None
                 if not clip:
                     continue
+                graded = (PUB / "footage_graded" / clip)
                 cuts.append({
-                    "clip": f"footage/{clip}",
+                    # grade sudah dibakar (bake_overlay.py) supaya render tidak
+                    # menghitung filter CSS penuh layar tiap frame
+                    "clip": f"footage_graded/{clip}" if graded.exists() else f"footage/{clip}",
                     "start": round(t + dur * k / ncut, 3),
                     "end": round(t + dur * (k + 1) / ncut, 3),
                     "offset": round((k * 2.3) % 3.5, 2),
