@@ -1,8 +1,8 @@
 {
  "episode": "AK-EP01",
  "status": "requested",
- "approved": false,
+ "approved": true,
  "visibility": "public",
- "requested_at": "2026-11-19T12:00:00Z",
- "catatan": "Pilot seri ANGKER (dokumenter arsip). approved masih false: ubah ke true setelah pemilik menonton."
+ "requested_at": "2026-11-06T14:15:00Z",
+ "catatan": "Disetujui pemilik 6 Nov 2026: 'post now'. Judul + deskripsi diperbarui (15 hashtag)."
 }
