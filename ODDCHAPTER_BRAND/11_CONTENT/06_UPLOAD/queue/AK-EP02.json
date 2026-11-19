@@ -1,8 +1,8 @@
 {
  "episode": "AK-EP02",
- "status": "hold",
- "approved": false,
+ "status": "requested",
+ "approved": true,
  "visibility": "public",
- "requested_at": "2026-11-06T00:00:00Z",
- "catatan": "rev3 HYBRID (3 sisipan footage BBC 2006, berlabel REKONSTRUKSI) siap ditonton. Pemilik memilih menahan dulu per 6 Nov 2026 — belum diunggah, approved tetap false. Status 'hold' tidak memicu youtube-upload.yml; ubah ke 'requested' + approved:true setelah ditonton."
+ "requested_at": "2026-11-06T15:05:00Z",
+ "catatan": "Disetujui pemilik 6 Nov 2026 ('post now') untuk rev3 hybrid (3 sisipan footage BBC 2006 berlabel REKONSTRUKSI + 24 shot foto)."
 }
