@@ -1,8 +1,11 @@
 {
  "episode": "AK-EP02",
- "status": "requested",
+ "status": "done",
  "approved": true,
  "visibility": "public",
  "requested_at": "2026-11-06T15:05:00Z",
- "catatan": "Disetujui pemilik 6 Nov 2026 ('post now') untuk rev3 hybrid (3 sisipan footage BBC 2006 berlabel REKONSTRUKSI + 24 shot foto)."
+ "catatan": "Disetujui pemilik 6 Nov 2026 ('post now') untuk rev3 hybrid (3 sisipan footage BBC 2006 berlabel REKONSTRUKSI + 24 shot foto).",
+ "finished_at": "2026-11-19T22:04:52Z",
+ "hasil": "Tayang di YouTube 19 Nov 2026 22:04 UTC (post Zernio 6aff72793155f3b1c4277529), publik. rev3 hybrid: 3 sisipan footage BBC 2006 berlabel REKONSTRUKSI.",
+ "link": "https://www.youtube.com/watch?v=2HvypocTnTE"
 }
