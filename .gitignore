@@ -79,3 +79,9 @@ work/sengkon/out/*.mp4
 work/sengkon/audio/*.wav
 work/sengkon/cat.mp4
 google_drive/
+work/krakatau-1883/shots/
+work/krakatau-1883/out/*.mp4
+work/krakatau-1883/audio/*.wav
+work/krakatau-1883/cat.mp4
+work/**/__pycache__/
+work/*/concat.txt
