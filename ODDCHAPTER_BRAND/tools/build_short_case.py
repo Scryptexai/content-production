@@ -47,6 +47,8 @@ MERGE = getattr(CFG, "MERGE", [])
 WORD_FIX = getattr(CFG, "WORD_FIX", {})
 CREDITS = getattr(CFG, "CREDITS", "")
 OUT_NAME = getattr(CFG, "OUT_NAME", "short.mp4")
+CLIPS = getattr(CFG, "CLIPS", {})          # key -> (file, start, dur) di work/<slug>/footage/
+CLIP_DIR = CASE / "footage"
 ASS_HEAD = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -225,7 +227,7 @@ def shot_filter(img, mode, z0, z1, dur, extra):
             "gblur=sigma=26,eq=brightness=-0.50:saturation=0.26[bgb];"
             f"[fgs]scale={2*fw}:{2*fh},setsar=1,"
             f"zoompan=z='{zex}':x='{xex}':y='{yex}':d={n}:s={fw}x{fh}:fps={FPS},setsar=1[fgv];"
-            f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + POST + fade
+            f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + CLIP_POST + fade
         )
     if mode == "fill":
         return (
@@ -242,6 +244,27 @@ def shot_filter(img, mode, z0, z1, dur, extra):
     )
 
 
+CLIP_POST = (",eq=saturation=0.16:contrast=1.28:brightness=0.02:gamma=0.92,colorbalance=bs=0.08,"
+             "vignette=angle=PI/5.0,noise=alls=6:allf=t,format=yuv420p")
+
+
+def clip_filter(key, dur, extra):
+    """Footage asli: jendela 16:9/4:3 di atas latar blur, bukan full-bleed."""
+    fn, cs, cd = CLIPS[key]
+    fw, fh = extra.get("box", (1000, 750))
+    fw -= fw % 2; fh -= fh % 2
+    y = 720 - fh // 2
+    n = max(2, round(dur * FPS))
+    fade = f",fade=t=in:st=0:d=0.12,fade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12"
+    return (
+        "[0:v]split=2[bgs][fgs];"
+        "[bgs]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+        "gblur=sigma=30,eq=brightness=-0.55:saturation=0.22[bgb];"
+        f"[fgs]fps=30,scale={fw}:{fh}:force_original_aspect_ratio=increase,crop={fw}:{fh},setsar=1[fgv];"
+        f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + CLIP_POST + fade
+    )
+
+
 def render_shots(force=False):
     SHOTS.mkdir(parents=True, exist_ok=True)
     for i, (t0, t1, img, mode, z0, z1, extra) in enumerate(SHOT_LIST):
@@ -250,7 +273,15 @@ def render_shots(force=False):
         if outp.exists() and not force:
             continue
         n = max(2, round(dur * FPS))
-        if mode == "black":
+        if mode == "clip":
+            fn, cs, cd = CLIPS[img]
+            src = CLIP_DIR / fn
+            filt = clip_filter(img, dur, extra)
+            run([FF, "-y", "-ss", f"{cs:.3f}", "-t", f"{min(cd, dur):.3f}", "-i", str(src),
+                 "-filter_complex", filt, "-frames:v", str(n), "-r", str(FPS),
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p",
+                 "-an", str(outp)])
+        elif mode == "black":
             run([FF, "-y", "-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}",
                  "-filter_complex", POST.lstrip(",") + f",fade=t=in:st=0:d=0.14",
                  "-frames:v", str(n), "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast",

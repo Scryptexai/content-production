@@ -15,6 +15,17 @@ IMAGES = {
     "F": ("F_peta.jpg", 1280, 1280),          # peta Krakatau
 }
 
+
+# Footage kasus (work/<slug>/footage/): (berkas, detik mulai, durasi tersedia)
+# Isi: rekonstruksi drama BBC "Krakatoa: The Last Days" (2006) — di layar selalu
+# diberi label REKONSTRUKSI, bukan arsip. Hanya potongan tanpa wajah aktor.
+CLIPS = {
+    "F1": ("e0nky4I35xo.mp4", 282.8, 4.40),   # laut surut: kapal kandas di dasar
+    "F2": ("e0nky4I35xo.mp4", 515.2, 4.40),   # air keruh menyapu, ranting dan puing
+    "F3": ("e0nky4I35xo.mp4", 502.6, 2.80),   # benda mengapung berputar di air gelap
+}
+LABEL_REKON = "REKONSTRUKSI DRAMA BBC 2006 \u00b7 BUKAN ARSIP"
+
 SHOTS = [
     (0.00,   2.20, "A", "card",   1.00, 1.04, {}),
     (2.20,   6.30, "A", "canvas", 1.00, 1.09, {"tag": "LITOGRAF: ROYAL SOCIETY 1888 · DOMAIN PUBLIK"}),
@@ -22,16 +33,16 @@ SHOTS = [
     (10.10, 15.60, "E", "canvas", 1.00, 1.08, {"tag": "ILUSTRASI: TELOK BETONG · KITLV (CC BY 4.0)"}),
     (15.60, 18.90, "A", "card",   1.06, 1.00, {}),
     (18.90, 24.50, "E", "card",   1.00, 1.06, {}),
-    (24.50, 28.70, "B", "canvas", 1.00, 1.10, {"tag": "ILUSTRASI: LANGIT PASCA-LETUSAN · ROYAL SOCIETY 1888"}),
+    (24.50, 28.70, "F1", "clip", 1.0, 1.0, {"tag": "REKONSTRUKSI DRAMA BBC 2006 · BUKAN ARSIP", "box": (1000, 750)}),
     (28.70, 33.20, "B", "canvas", 1.10, 1.00, {}),
     (33.20, 38.50, "F", "card",   1.00, 1.06, {}),
     (38.50, 44.80, "F", "card",   1.08, 1.00, {}),
-    (44.80, 47.30, "D", "canvas", 1.00, 1.10, {"tag": "FOTO: KARANG TERLEMPAR · TROPENMUSEUM (CC BY-SA 3.0)"}),
+    (44.80, 47.30, "F3", "clip", 1.0, 1.0, {"tag": "REKONSTRUKSI DRAMA BBC 2006 · BUKAN ARSIP", "box": (1000, 750)}),
     (47.30, 51.00, "C", "card",   1.00, 1.06, {}),
     (51.00, 56.50, "A", "card",   1.06, 1.00, {}),
     (56.50, 62.60, "D", "canvas", 1.10, 1.00, {}),
     (62.60, 68.40, "C", "canvas", 1.00, 1.12, {}),
-    (68.40, 72.50, "B", "canvas", 1.10, 1.00, {}),
+    (68.40, 72.50, "F2", "clip", 1.0, 1.0, {"tag": "REKONSTRUKSI DRAMA BBC 2006 · BUKAN ARSIP", "box": (1000, 750)}),
     (72.50, 76.00, "E", "canvas", 1.00, 1.10, {}),
     (76.00, 80.30, "D", "canvas", 1.10, 1.02, {}),
     (80.30, 83.30, "B", "card",   1.00, 1.06, {}),

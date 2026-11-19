@@ -6,7 +6,7 @@ Status: **`approved: false`** — belum diunggah ke YouTube. Semua artefak sudah
 
 | Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP02_krakatau-1883_short_v1.mp4` (106,4 s, 1080×1920 @30) | 29.976.769 B | `1DNV01RC39NLFSeNHUehvu0fMrwiSM6u_` |
+| `AK-EP02_krakatau-1883_short_v1.mp4` (106,4 s, 1080×1920 @30) | 29.340.841 B | `1Pi81lhDLz5Q7rq1-QXxFCG4e5tgsOHGw` |
 | `AK-EP02_thumbnail_16x9.jpg` | 172.897 B | `1iusJx_bVvnYo3dlimb5pfGL-KoWGWHEc` |
 | `AK-EP02_poster_9x16.jpg` | 473.206 B | `1Iz87YdHVDIJU9XK_BpZ-K1JhT9OLiL8_` |
 | `AK-EP02.id.srt` (85 cue) | 4.109 B | `1c5JENSvqkTL9VR3H7roRH4FsUIOXTi2a` |
@@ -14,7 +14,7 @@ Status: **`approved: false`** — belum diunggah ke YouTube. Semua artefak sudah
 Folder Drive: `krakatau-1883/` → `1xofrSnxqA26kVOlpgfP7INLRpgCeiqbJ` (keempatnya sudah publik: anyone/reader).
 
 Lokal: `work/krakatau-1883/out/AK-EP02_krakatau-1883_short_v1.mp4`
-sha256 `1c4f63f5f72047d42b2141894622ecbafe534a2e2d318998c117c2772c9c15d6`
+sha256 `0c9f4c8841fe…` (lihat AK-EP02.json)
 
 Audio: −15,12 LUFS · true peak −1,52 dBTP · AAC 192 k · 44,1 kHz.
 VO milik pemilik: `vo_krakatau-1883.mp3` (105,465 s, 184 kata, suara "Dhawa", eleven_multilingual_v2, speed 0,95) — tidak di-TTS ulang.
@@ -51,9 +51,33 @@ VO milik pemilik: `vo_krakatau-1883.mp3` (105,465 s, 184 kata, suara "Dhawa", el
 
 Tag sumber selalu muncul di setiap shot ber-foto; kredit lengkap + CTA ada di kartu akhir.
 
+## Hybrid foto + footage (rev3)
+
+Tiga potongan footage dipakai sebagai ilustrasi bergerak, selalu berlabel
+**REKONSTRUKSI DRAMA BBC 2006 · BUKAN ARSIP** di layar:
+
+| t video | Berkas | In | Durasi | Isi | Beat VO |
+|---|---|---|---|---|---|
+| 24,5–28,7 | `e0nky4I35xo.mp4` | 282,8 s | 4,2 s | laut surut, kapal kandas di dasar | "laut sudah aneh… tak satu perahu pun datang dari darat" |
+| 44,8–47,3 | `e0nky4I35xo.mp4` | 502,6 s | 2,5 s | benda mengapung berputar di air gelap | "±pukul tujuh, laut terangkat jadi dinding" |
+| 68,4–72,5 | `e0nky4I35xo.mp4` | 515,2 s | 4,1 s | air keruh menyapu, ranting & puing | "gelombang itu menyapu Telok Betong" |
+
+Footage tampil sebagai jendela 1000×750 di atas latar blur (bukan full-bleed),
+dengan grade dingin + grain supaya menyatu dengan foto arsip.
+
+**Catatan hak cipta (penting).** Kedua klip itu unggahan pihak ketiga dari drama
+BBC *Krakatoa: The Last Days* (2006) — `footage_index.md` sendiri menandainya
+"risiko tinggi: jangan dipakai di video publik". Dipakai di sini atas permintaan
+pemilik, dengan label REKONSTRUKSI di layar + kredit di deskripsi. Konsekuensi
+yang mungkin: klaim Content ID / pembatasan monetisasi. Klip ketiga
+(`3EK91D0u3ac.mp4`, video komentar berwatermark) **tidak** dipakai.
+
+Untuk kembali ke versi foto-saja: ubah 3 baris `"clip"` di `work/krakatau-1883/case_cfg.py`
+menjadi `"canvas"` dengan kunci gambar B/D (lihat riwayat git rev2), lalu render ulang.
+
 ## QA yang sudah lewat
 
-- 27 shot (10 kartu desain + 1 kartu hitam), 85 caption (≤3 kata / ≤18 karakter, kata kunci merah saja), 21 overlay teks.
+- 27 shot: 10 kartu desain + 1 kartu hitam + **3 shot footage** + 13 shot foto, 85 caption (≤3 kata / ≤18 karakter, kata kunci merah saja), 21 overlay teks.
 - Overlay hanya di kartu desain → tidak pernah menabrak judul/foto; tag sumber di y=300, overlay ≥ y=430, caption di y≈1100.
 - Caption panjang (mis. "GOUVERNEUR-GENERAAL LOUDON") otomatis dikecilkan agar tetap di dalam margin 60 px.
 - `loudnorm` −15,12 LUFS / TP −1,52 dB, stream `h264 High, yuv420p(tv, bt709), 1080×1920, 30 fps`.
