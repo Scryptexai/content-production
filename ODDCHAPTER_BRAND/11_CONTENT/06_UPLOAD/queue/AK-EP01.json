@@ -1,8 +1,11 @@
 {
  "episode": "AK-EP01",
- "status": "requested",
+ "status": "done",
  "approved": true,
  "visibility": "public",
  "requested_at": "2026-11-06T14:25:00Z",
- "catatan": "Disetujui pemilik 6 Nov 2026: 'post now'. Judul + deskripsi 15 hashtag. Push ini memicu unggah ulang setelah fetch_masters.py mengenali berkas AK-*.json."
+ "catatan": "Disetujui pemilik 6 Nov 2026 ('post now'). Judul & deskripsi diperbarui: angka di awal judul, 15 hashtag relevan di deskripsi, 15 tag YouTube.",
+ "finished_at": "2026-11-19T14:12:06Z",
+ "hasil": "Tayang di YouTube 19 Nov 2026 14:12 UTC (post Zernio 6aff03a6858a651f34f13abc), publik.",
+ "link": "https://www.youtube.com/watch?v=_n8noXxix3k"
 }

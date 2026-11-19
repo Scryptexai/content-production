@@ -1,6 +1,10 @@
-# SERI ANGKER — pilot AK-EP01 (Sengkon & Karta)
+# SERI ANGKER — AK-EP01 (Sengkon & Karta) — TAYANG
 
-Status: **video jadi, belum diunggah.** Antre di `queue/AK-EP01.json` dengan `"approved": false`.
+**Tayang** 19 Nov 2026 14:12 UTC · https://www.youtube.com/watch?v=_n8noXxix3k · post Zernio `6aff03a6858a651f34f13abc` (publik, Entertainment).
+
+Judul: `12 Tahun Dipenjara untuk Pembunuhan yang Tak Pernah Mereka Lakukan.`
+Hook (baris pertama deskripsi): `Kalau Genul tak pernah bicara... siapa yang akan menolong mereka?`
+Deskripsi: 15 hashtag (#Shorts #oddchapter #sengkonkarta #salahtangkap #salahpidana #sejarahindonesia #kasusnyata #hukumindonesia #peninjauankembali #mahkamahagung #cipinang #bekasi #1974 #truecrime #kisahnyata) + tag YouTube 15 (182 karakter).
 
 ## Mengapa EP01 ILLUMINATI tidak dapat distribusi
 
