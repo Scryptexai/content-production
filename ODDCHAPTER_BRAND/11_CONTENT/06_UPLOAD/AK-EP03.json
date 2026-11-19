@@ -5,7 +5,7 @@
  "thumbnail": "AK-EP03_thumbnail_16x9.jpg",
  "poster_9x16": "AK-EP03_poster_9x16.jpg",
  "caption_srt": "AK-EP03.id.srt",
- "drive_file_id": null,
+ "drive_file_id": "1D-2_iRZpG4XoO17ZOOrJsgCfK8EshjnC",
  "duration_seconds": 101.6,
  "size_bytes": 33633603,
  "sha256": "68b16a7e7df24a0f08312732d2180ce0f9ff50e6431a40af9ad3c1d40aefa00d",
@@ -45,5 +45,11 @@
   "dyatlovpass.com: The Search in 1959",
   "dyatlovpass.com: Boris Slobtsov (majalah EX no. 46, 2007)",
   "Wawancara Mikhail Sharavin (YouTube aZGeT-zhpfw)"
- ]
+ ],
+ "drive_ids": {
+  "video": "1D-2_iRZpG4XoO17ZOOrJsgCfK8EshjnC",
+  "thumbnail": "1xpt-mwB5NzvlZWky8uH7G5Xvf4HlhOD6",
+  "poster_9x16": "1UlQc9gifN3OfGROrXN_j5z5ejip5Awrc",
+  "srt": "12P9xZi81dxjdlYgcdYO_4fPEs95EtGeq"
+ }
 }

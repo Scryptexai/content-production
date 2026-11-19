@@ -7,12 +7,16 @@ Judul: **Orang Pertama yang Menemukan Tenda Dyatlov Pass #Shorts**
 
 ## Berkas
 
-| Berkas | Ukuran | Lokasi |
+| Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP03_dyatlov-pass_short_v1.mp4` (101,6 s, 1080×1920 @30) | 33.633.603 B | `work/dyatlov-pass/out/` |
-| `AK-EP03_thumbnail_16x9.jpg` (1280×720) | 70.498 B | `ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/` |
-| `AK-EP03_poster_9x16.jpg` (1080×1920) | 132.794 B | `ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/` |
-| `AK-EP03.id.srt` (86 cue) | 4.104 B | `ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/` |
+| `AK-EP03_dyatlov-pass_short_v1.mp4` (101,6 s, 1080×1920 @30) | 33.633.603 B | `1D-2_iRZpG4XoO17ZOOrJsgCfK8EshjnC` (publik) |
+| `AK-EP03_thumbnail_16x9.jpg` (1280×720) | 70.498 B | `1xpt-mwB5NzvlZWky8uH7G5Xvf4HlhOD6` |
+| `AK-EP03_poster_9x16.jpg` (1080×1920) | 132.794 B | `1UlQc9gifN3OfGROrXN_j5z5ejip5Awrc` |
+| `AK-EP03.id.srt` (86 cue) | 4.104 B | `12P9xZi81dxjdlYgcdYO_4fPEs95EtGeq` |
+
+Semua diunggah ke folder kasus Dyatlov `1wGbbQRtgyBEQrsZ2tfAz8bF8PBsB4Buo`
+(mp4 sudah dibuat publik untuk ditonton). Lokal: `work/dyatlov-pass/out/`,
+`ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/` (+ `thumbs/`).
 
 sha256 `68b16a7e7df24a0f08312732d2180ce0f9ff50e6431a40af9ad3c1d40aefa00d`
 Audio: −15,1 LUFS · true peak −0,9 dBTP · AAC 192 k / 44,1 kHz.
