@@ -45,6 +45,7 @@ ODDCHAPTER_BRAND/10_FILM/upload/
 # dry-run lokal tidak perlu di-commit; yang disimpan adalah log unggah sungguhan
 ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/upload-log/*-dryrun.json
 
+<<<<<<< HEAD
 # plate uji LF01 ikut repo (kecil, ±1,7 MB total) supaya look-nya tidak hilang
 !ODDCHAPTER_BRAND/11_CONTENT/07_LONGFORM/**/plates/*.jpg
 
@@ -71,3 +72,10 @@ ODDCHAPTER_BRAND/10_FILM/remotion/public/overlay/
 work/vo/**/*.wav
 work/shorts/*.mp4
 work/**/*_master.mp4
+
+# seri angker: aset kerja (video/audio besar tidak masuk git)
+work/sengkon/shots/
+work/sengkon/out/*.mp4
+work/sengkon/audio/*.wav
+work/sengkon/cat.mp4
+google_drive/

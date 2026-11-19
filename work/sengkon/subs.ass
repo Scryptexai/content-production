@@ -1,0 +1,145 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Barlow Condensed ExtraBold,112,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1.5,0,1,8,3,2,60,60,672,1
+Style: Kicker,Barlow Condensed ExtraBold,74,&H00E0ECF0,&H00E0ECF0,&H00000000,&H80000000,0,0,0,0,100,100,6,0,1,6,2,5,60,60,0,1
+Style: Big,Anton,170,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,0,0,0,100,100,0,0,1,10,4,5,40,40,0,1
+Style: Stamp,Anton,120,&H00000000,&H00000000,&H002A2AD8,&H00000000,0,0,0,0,100,100,0,0,3,14,0,5,40,40,0,1
+Style: Tag,Barlow Condensed ExtraBold,34,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1.2,0,1,3,1,7,60,60,300,1
+Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,3,1,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.55,0:00:08.25,Tag,,0,0,0,,FOTO: ARSIP KOMPAS / KARTONO RYADI · 5 NOV 1980
+Dialogue: 0,0:00:02.55,0:00:08.25,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:08.60,0:00:12.30,Tag,,0,0,0,,FOTO: SINAR HARAPAN / PERPUSNAS RI · 5 NOV 1980
+Dialogue: 0,0:00:08.60,0:00:12.30,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:12.65,0:00:17.30,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:22.70,0:00:26.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:30.25,0:00:35.70,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:36.05,0:00:39.50,Tag,,0,0,0,,ILUSTRASI: GEDUNG MAHKAMAH AGUNG RI · WIKIMEDIA
+Dialogue: 0,0:00:36.05,0:00:39.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:43.65,0:00:45.90,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:49.45,0:00:51.70,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:52.05,0:00:55.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:57.05,0:01:01.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:04.65,0:01:08.90,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:09.25,0:01:12.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:12.45,0:01:16.00,Tag,,0,0,0,,FOTO: WIKIMEDIA COMMONS · DOMAIN PUBLIK
+Dialogue: 0,0:01:12.45,0:01:16.00,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:19.65,0:01:21.30,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:26.35,0:01:28.20,Tag,,0,0,0,,FOTO: ARSIP KOMPAS · RSU BEKASI, 4 NOV 1980
+Dialogue: 0,0:01:26.35,0:01:28.20,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:28.55,0:01:31.80,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:32.15,0:01:34.00,Tag,,0,0,0,,FOTO: ARSIP KOMPAS · 4 NOV 1980
+Dialogue: 0,0:01:32.15,0:01:34.00,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:34.35,0:01:39.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:44.35,0:01:46.50,Tag,,0,0,0,,ILUSTRASI: GEDUNG MAHKAMAH AGUNG RI · WIKIMEDIA
+Dialogue: 0,0:01:44.35,0:01:46.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:00.35,0:00:02.30,Kicker,,0,0,0,,{\pos(540,700)\an5\fs78\c&H00E0ECF0&\fad(250,0)}PEMBUNUH ASLINYA
+Dialogue: 0,0:00:00.75,0:00:02.30,Big,,0,0,0,,{\pos(540,830)\an5\c&H002A2AD8&\fad(200,0)\t(0,2400,\fscx104\fscy104)}SATU PENJARA
+Dialogue: 0,0:00:17.55,0:00:22.35,Kicker,,0,0,0,,{\pos(540,660)\an5\fs66\fad(200,200)}BOJONGSARI, BEKASI
+Dialogue: 0,0:00:17.85,0:00:22.35,Big,,0,0,0,,{\pos(540,800)\an5\fs200\c&H002A2AD8&\fad(200,200)}1974
+Dialogue: 0,0:00:26.75,0:00:29.90,Big,,0,0,0,,{\pos(540,780)\an5\fs104\fad(180,180)}MEREKA\NMENYANGKAL
+Dialogue: 0,0:00:39.80,0:00:43.30,Stamp,,0,0,0,,{\pos(540,400)\an5\fs150\frz-6\fad(160,0)\t(0,110,\fscx94\fscy94)\t(110,240,\fscx100\fscy100)}OKT 1977
+Dialogue: 0,0:00:40.25,0:00:43.30,Kicker,,0,0,0,,{\pos(540,540)\an5\fs58\fad(200,180)}PN BEKASI · PASAL 338 KUHP
+Dialogue: 0,0:00:43.60,0:00:45.95,Stamp,,0,0,0,,{\pos(540,330)\an5\fs76\frz-4\fad(140,0)}SENGKON · 12 TAHUN
+Dialogue: 0,0:00:46.20,0:00:49.10,Kicker,,0,0,0,,{\pos(540,470)\an5\fs58\fad(150,0)}KARTA
+Dialogue: 0,0:00:46.45,0:00:49.10,Big,,0,0,0,,{\pos(540,610)\an5\fs300\c&H002A2AD8&\fad(150,120)}7
+Dialogue: 0,0:00:46.90,0:00:49.10,Kicker,,0,0,0,,{\pos(540,790)\an5\fs54\fsp8\c&H00E0ECF0&\fad(200,120)}TAHUN PENJARA
+Dialogue: 0,0:00:55.35,0:00:56.75,Big,,0,0,0,,{\pos(540,800)\an5\fs92\fad(120,120)}SATU TEMBOK
+Dialogue: 0,0:01:01.35,0:01:04.30,Big,,0,0,0,,{\pos(540,700)\an5\fs320\c&H002A2AD8&\fad(90,220)\t(0,140,\fscx112\fscy112)\t(140,400,\fscx100\fscy100)}GENUL
+Dialogue: 0,0:01:01.95,0:01:04.30,Kicker,,0,0,0,,{\pos(540,930)\an5\fs56\fad(300,200)}KEPONAKAN SENGKON · TAHANAN YANG SAMA
+Dialogue: 0,0:01:12.35,0:01:16.00,Big,,0,0,0,,{\pos(540,760)\an5\fs92\fad(180,180)}PINTU SEL\NTETAP TERKUNCI
+Dialogue: 0,0:01:16.25,0:01:19.30,Stamp,,0,0,0,,{\pos(540,400)\an5\fs130\frz-8\fad(120,180)}INKRACHT
+Dialogue: 0,0:01:16.80,0:01:19.30,Kicker,,0,0,0,,{\pos(540,540)\an5\fs52\fad(300,180)}PUTUSAN BERKEKUATAN HUKUM TETAP
+Dialogue: 0,0:01:21.55,0:01:26.00,Kicker,,0,0,0,,{\pos(540,660)\an5\fs60\fad(200,180)}LP CIPINANG · ±14.10
+Dialogue: 0,0:01:21.85,0:01:26.00,Big,,0,0,0,,{\pos(540,800)\an5\fs132\c&H00E0ECF0&\fad(200,180)}4 NOVEMBER 1980
+Dialogue: 0,0:01:34.30,0:01:36.60,Kicker,,0,0,0,,{\pos(540,1140)\an5\fs54\c&H00D0D0D0&\fad(200,200)}KARTA · FEBRUARI 1982
+Dialogue: 0,0:01:39.35,0:01:44.00,Kicker,,0,0,0,,{\pos(540,1140)\an5\fs54\c&H00D0D0D0&\fad(200,200)}SENGKON · MARET 1988
+Dialogue: 0,0:01:46.75,0:01:50.85,Big,,0,0,0,,{\pos(540,720)\an5\fs116\fad(200,180)}PENINJAUAN\NKEMBALI
+Dialogue: 0,0:01:47.20,0:01:50.85,Kicker,,0,0,0,,{\pos(540,910)\an5\fs56\c&H002A2AD8&\fad(250,180)}PERMA NO. 1 TAHUN 1980
+Dialogue: 0,0:01:53.80,0:01:56.55,Big,,0,0,0,,{\pos(540,760)\an5\fs104\fad(280,0)}ODDCHAPTER
+Dialogue: 0,0:01:54.05,0:01:56.55,Kicker,,0,0,0,,{\pos(540,880)\an5\fs44\c&H002A2AD8&\fad(360,0)}KASUS NYATA · ARSIP ASLI
+Dialogue: 0,0:01:54.40,0:01:56.55,Credit,,0,0,0,,{\pos(540,1010)\an5\fs30\c&H00D0D0D0&\fad(420,0)}Foto: Arsip Kompas / Kartono Ryadi · Sinar Harapan / Perpusnas RI\NWikimedia Commons (domain publik)\NSumber: Kompas, Tempo, Tirto, Detik, Historia
+Dialogue: 0,0:00:00.00,0:00:01.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}PEMBUNUH{\c&H00FFFFFF&} SEBENARNYA
+Dialogue: 0,0:00:01.40,0:00:02.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENDEKAM DI {\c&H002A2AD8&}PENJARA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:02.48,0:00:03.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG SAMA DENGAN
+Dialogue: 0,0:00:03.42,0:00:04.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA
+Dialogue: 0,0:00:04.52,0:00:05.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN {\c&H002A2AD8&}HUKUM{\c&H00FFFFFF&} INDONESIA
+Dialogue: 0,0:00:05.90,0:00:07.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK BISA BERBUAT
+Dialogue: 0,0:00:07.18,0:00:08.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}APA-APA
+Dialogue: 0,0:00:08.40,0:00:09.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NOVEMBER
+Dialogue: 0,0:00:09.52,0:00:13.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}1974{\c&H00FFFFFF&} BOJONG SARI
+Dialogue: 0,0:00:13.16,0:00:15.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BEKASI{\c&H00FFFFFF&} SULAIMAN DAN
+Dialogue: 0,0:00:15.08,0:00:17.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ISTRINYA SITI HAYA
+Dialogue: 0,0:00:17.40,0:00:18.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIRAMPOK DAN DIBUNUH
+Dialogue: 0,0:00:18.78,0:00:19.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI RUMAH MEREKA
+Dialogue: 0,0:00:19.54,0:00:20.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SENDIRI
+Dialogue: 0,0:00:20.66,0:00:21.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK LAMA
+Dialogue: 0,0:00:21.68,0:00:22.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}POLISI MENANGKAP DUA
+Dialogue: 0,0:00:22.76,0:00:23.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PETANI MISKIN
+Dialogue: 0,0:00:24.28,0:00:25.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&} DAN {\c&H002A2AD8&}KARTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:25.72,0:00:27.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA MENYANGKAL
+Dialogue: 0,0:00:28.06,0:00:29.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAPI MENURUT MEREKA
+Dialogue: 0,0:00:29.64,0:00:31.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA {\c&H002A2AD8&}DISIKSA{\c&H00FFFFFF&} SAMPAI
+Dialogue: 0,0:00:31.38,0:00:32.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENANDATANGANI
+Dialogue: 0,0:00:32.20,0:00:33.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PENGAKUAN YANG TAK
+Dialogue: 0,0:00:33.60,0:00:35.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERNAH MEREKA UCAPKAN
+Dialogue: 0,0:00:35.72,0:00:36.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI PENGADILAN
+Dialogue: 0,0:00:37.12,0:00:38.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HAKIM LEBIH PERCAYA
+Dialogue: 0,0:00:38.18,0:00:40.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CERITA POLISI OKTOBER
+Dialogue: 0,0:00:40.54,0:00:44.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}1977{\c&H00FFFFFF&} {\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&} DIHUKUM
+Dialogue: 0,0:00:44.28,0:00:45.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}12{\c&H00FFFFFF&} TAHUN
+Dialogue: 0,0:00:45.96,0:00:46.70,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}KARTA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:46.94,0:00:47.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}7{\c&H00FFFFFF&} TAHUN
+Dialogue: 0,0:00:48.16,0:00:49.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA DIKIRIM KE
+Dialogue: 0,0:00:49.12,0:00:50.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}PENJARA{\c&H00FFFFFF&} {\c&H002A2AD8&}CIPINANG{\c&H00FFFFFF&}
+Dialogue: 0,0:00:50.58,0:00:51.36,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JAKARTA
+Dialogue: 0,0:00:51.72,0:00:52.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DILUAR
+Dialogue: 0,0:00:52.72,0:00:53.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TANAH MEREKA DIJUAL
+Dialogue: 0,0:00:53.90,0:00:55.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}UNTUK BERTAHAN HIDUP
+Dialogue: 0,0:00:55.14,0:00:57.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU DIBALIK TEMBOK
+Dialogue: 0,0:00:57.40,0:00:58.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG SAMA SEORANG
+Dialogue: 0,0:00:58.88,0:00:59.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAHANAN MEMBUKA
+Dialogue: 0,0:00:59.86,0:01:02.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RAHASIA NAMANYA {\c&H002A2AD8&}GENUL{\c&H00FFFFFF&}
+Dialogue: 0,0:01:02.40,0:01:03.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEPONAKAN {\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&}
+Dialogue: 0,0:01:03.18,0:01:04.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SENDIRI
+Dialogue: 0,0:01:04.34,0:01:06.40,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIALAH KATANYA
+Dialogue: 0,0:01:06.46,0:01:07.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}PEMBUNUH{\c&H00FFFFFF&} SULAIMAN DAN
+Dialogue: 0,0:01:07.68,0:01:08.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SITI HAYA
+Dialogue: 0,0:01:08.90,0:01:10.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}GENUL{\c&H00FFFFFF&} DIADILI
+Dialogue: 0,0:01:10.36,0:01:11.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIHUKUM {\c&H002A2AD8&}12{\c&H00FFFFFF&} TAHUN
+Dialogue: 0,0:01:12.14,0:01:13.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAPI PINTU SEL
+Dialogue: 0,0:01:13.10,0:01:14.40,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&} DAN {\c&H002A2AD8&}KARTA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:14.36,0:01:15.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TETAP TERKUNCI
+Dialogue: 0,0:01:16.04,0:01:17.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUTUSAN MEREKA SUDAH
+Dialogue: 0,0:01:17.08,0:01:17.70,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}FINAL{\c&H00FFFFFF&}
+Dialogue: 0,0:01:17.96,0:01:18.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN {\c&H002A2AD8&}HUKUM{\c&H00FFFFFF&} SAAT
+Dialogue: 0,0:01:18.68,0:01:19.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU TAK PUNYA
+Dialogue: 0,0:01:19.94,0:01:20.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JALAN UNTUK
+Dialogue: 0,0:01:20.68,0:01:22.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENINJAUNYA EMPAT
+Dialogue: 0,0:01:22.38,0:01:23.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NOVEMBER
+Dialogue: 0,0:01:23.50,0:01:26.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}1980{\c&H00FFFFFF&} MEREKA AKHIRNYA
+Dialogue: 0,0:01:26.86,0:01:28.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BEBAS{\c&H00FFFFFF&} {\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&} DIBAWA
+Dialogue: 0,0:01:28.94,0:01:31.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AMBULANS DIMAKAN {\c&H002A2AD8&}TBC{\c&H00FFFFFF&}
+Dialogue: 0,0:01:31.80,0:01:32.84,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TANAH {\c&H002A2AD8&}KARTA{\c&H00FFFFFF&} SUDAH
+Dialogue: 0,0:01:32.80,0:01:34.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HABIS {\c&H002A2AD8&}KARTA{\c&H00FFFFFF&} TEWAS
+Dialogue: 0,0:01:34.72,0:01:38.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KECELAKAAN TAHUN {\c&H002A2AD8&}1982{\c&H00FFFFFF&}
+Dialogue: 0,0:01:39.16,0:01:40.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}SENGKON{\c&H00FFFFFF&} MENYUSUL TAHUN
+Dialogue: 0,0:01:40.62,0:01:43.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}1988{\c&H00FFFFFF&}
+Dialogue: 0,0:01:44.02,0:01:45.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARI LUKA MEREKA
+Dialogue: 0,0:01:45.06,0:01:46.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAHIR PENINJAUAN
+Dialogue: 0,0:01:46.56,0:01:48.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMBALI JALAN TERAKHIR
+Dialogue: 0,0:01:48.34,0:01:49.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BAGI ORANG YANG
+Dialogue: 0,0:01:49.40,0:01:51.26,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}SALAH{\c&H00FFFFFF&} DIHUKUM TAPI
+Dialogue: 0,0:01:51.22,0:01:52.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU {\c&H002A2AD8&}GENUL{\c&H00FFFFFF&} TAK
+Dialogue: 0,0:01:52.10,0:01:53.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERNAH BICARA
+Dialogue: 0,0:01:53.68,0:01:54.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SIAPA YANG AKAN
+Dialogue: 0,0:01:54.62,0:01:55.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}MENOLONG{\c&H00FFFFFF&} MEREKA?
