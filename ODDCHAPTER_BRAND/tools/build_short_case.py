@@ -125,14 +125,15 @@ def load_words():
 def build_captions(words):
     events, group = [], []
     for w in words:
-        display = w["w"].strip().rstrip(",.")
+        raw = w["w"].strip()
+        display = raw.rstrip(",.")
         gap = w["t0"] - group[-1]["t1"] if group else 0
         chars = sum(len(g["w"].strip().rstrip(",.")) + 1 for g in group) + len(display)
-        end_punct = bool(group) and (group[-1]["w"][-1] in ".?"
-                                     or (group[-1]["w"][-1] == "," and len(group) >= 2))
+        end_punct = bool(group) and (group[-1]["raw"][-1] in ".?"
+                                     or (group[-1]["raw"][-1] == "," and len(group) >= 2))
         if group and (len(group) >= 3 or chars > 18 or gap > 0.30 or end_punct):
             events.append(group); group = []
-        group.append({"w": display, "t0": w["t0"], "t1": w["t1"]})
+        group.append({"w": display, "raw": raw, "t0": w["t0"], "t1": w["t1"]})
     if group:
         events.append(group)
 

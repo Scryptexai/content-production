@@ -74,19 +74,20 @@ Dialogue: 0,0:00:18.80,0:00:19.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\
 Dialogue: 0,0:00:19.58,0:00:21.62,Sub,,0,0,0,,{\fs77}GOUVERNEUR-GENERAAL LOUDON
 Dialogue: 0,0:00:21.58,0:00:22.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI BAWAH KAPTEN
 Dialogue: 0,0:00:22.56,0:00:23.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}LINDEMANN{\c&H00FFFFFF&} MEMBUANG
-Dialogue: 0,0:00:23.94,0:00:25.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAWUH DITELUK LAUT
-Dialogue: 0,0:00:25.60,0:00:27.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SUDAH ANEH
-Dialogue: 0,0:00:27.20,0:00:28.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HARUS BERPUTAR TAK
-Dialogue: 0,0:00:28.82,0:00:29.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SATU PERAHU PUN
-Dialogue: 0,0:00:29.70,0:00:31.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DATANG DARI DARAT
+Dialogue: 0,0:00:23.94,0:00:25.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAWUH DITELUK
+Dialogue: 0,0:00:25.16,0:00:27.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAUT SUDAH ANEH
+Dialogue: 0,0:00:27.20,0:00:28.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HARUS BERPUTAR
+Dialogue: 0,0:00:28.64,0:00:29.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK SATU PERAHU
+Dialogue: 0,0:00:29.52,0:00:30.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUN DATANG DARI
+Dialogue: 0,0:00:30.38,0:00:31.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARAT
 Dialogue: 0,0:00:31.30,0:00:32.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKITAR PUKUL SATU
 Dialogue: 0,0:00:32.28,0:00:33.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PAGI MUALIM
 Dialogue: 0,0:00:33.46,0:00:34.26,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMBALI DARI
-Dialogue: 0,0:00:34.22,0:00:36.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PANTAI DERMAGA
-Dialogue: 0,0:00:35.98,0:00:37.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBAGIAN TERENDAM
-Dialogue: 0,0:00:37.52,0:00:38.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK ADA YANG
-Dialogue: 0,0:00:38.16,0:00:39.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BISA MENDARAT PAGI
-Dialogue: 0,0:00:39.86,0:00:40.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HARINYA
+Dialogue: 0,0:00:34.22,0:00:35.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PANTAI
+Dialogue: 0,0:00:35.44,0:00:36.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DERMAGA SEBAGIAN
+Dialogue: 0,0:00:36.52,0:00:38.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERENDAM TAK ADA
+Dialogue: 0,0:00:38.02,0:00:39.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG BISA MENDARAT
+Dialogue: 0,0:00:39.58,0:00:40.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PAGI HARINYA
 Dialogue: 0,0:00:40.86,0:00:41.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAPAL PEMERINTAH
 Dialogue: 0,0:00:41.64,0:00:42.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BEROUW{\c&H00FFFFFF&} SUDAH
 Dialogue: 0,0:00:42.56,0:00:43.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KANDAS DI DEKAT
@@ -106,30 +107,32 @@ Dialogue: 0,0:00:57.42,0:00:58.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\
 Dialogue: 0,0:00:58.40,0:01:00.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMUDI DAN MEMBAWA
 Dialogue: 0,0:00:59.96,0:01:01.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAPALNYA MAJU
 Dialogue: 0,0:01:01.42,0:01:02.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TEPAT MENGHADAP
-Dialogue: 0,0:01:02.50,0:01:03.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GELOMBANG KAPAL
-Dialogue: 0,0:01:03.86,0:01:05.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERANGKAT NAIK
-Dialogue: 0,0:01:05.24,0:01:06.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAJAM KE PUNCAK
-Dialogue: 0,0:01:06.80,0:01:07.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU MELUNCUR
-Dialogue: 0,0:01:07.44,0:01:08.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TURUN DI SISI
-Dialogue: 0,0:01:08.38,0:01:09.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAINNYA
+Dialogue: 0,0:01:02.50,0:01:03.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GELOMBANG
+Dialogue: 0,0:01:03.56,0:01:04.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAPAL TERANGKAT
+Dialogue: 0,0:01:04.76,0:01:05.84,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NAIK TAJAM KE
+Dialogue: 0,0:01:05.80,0:01:07.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUNCAK LALU
+Dialogue: 0,0:01:06.96,0:01:08.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MELUNCUR TURUN DI
+Dialogue: 0,0:01:08.14,0:01:09.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SISI LAINNYA
 Dialogue: 0,0:01:09.56,0:01:10.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI BELAKANGNYA
 Dialogue: 0,0:01:10.96,0:01:11.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GELOMBANG ITU
 Dialogue: 0,0:01:11.76,0:01:12.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENYAPU TELOK
-Dialogue: 0,0:01:12.76,0:01:14.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BETONG {\c&H002A2AD8&}BEROUW{\c&H00FFFFFF&}
-Dialogue: 0,0:01:14.10,0:01:15.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERANGKAT DAN
-Dialogue: 0,0:01:15.08,0:01:16.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERLEMPAR KE
+Dialogue: 0,0:01:12.76,0:01:13.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BETONG
+Dialogue: 0,0:01:13.54,0:01:14.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BEROUW{\c&H00FFFFFF&} TERANGKAT
+Dialogue: 0,0:01:14.84,0:01:16.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN TERLEMPAR KE
 Dialogue: 0,0:01:15.96,0:01:16.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ANTARA POHON
 Dialogue: 0,0:01:16.78,0:01:17.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KELAPA
 Dialogue: 0,0:01:18.08,0:01:18.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AWAK HANYA BISA
 Dialogue: 0,0:01:18.88,0:01:20.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENYAKSIKAN KOTA
-Dialogue: 0,0:01:20.02,0:01:21.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU LENYAP SEKITAR
-Dialogue: 0,0:01:21.50,0:01:23.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIGA JAM KEMUDIAN
-Dialogue: 0,0:01:23.26,0:01:24.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HUJAN BATU APUNG
-Dialogue: 0,0:01:24.52,0:01:26.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN ABU PUKUL
-Dialogue: 0,0:01:26.26,0:01:28.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}10.30{\c&H00FFFFFF&} GELAP TOTAL
+Dialogue: 0,0:01:20.02,0:01:21.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU LENYAP
+Dialogue: 0,0:01:21.02,0:01:22.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKITAR TIGA JAM
+Dialogue: 0,0:01:22.12,0:01:23.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMUDIAN HUJAN
+Dialogue: 0,0:01:23.56,0:01:24.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BATU APUNG DAN
+Dialogue: 0,0:01:24.82,0:01:25.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ABU
+Dialogue: 0,0:01:25.90,0:01:28.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUKUL {\c&H002A2AD8&}10.30{\c&H00FFFFFF&} GELAP
+Dialogue: 0,0:01:28.08,0:01:28.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TOTAL
 Dialogue: 0,0:01:29.14,0:01:29.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEPERTI TENGAH
-Dialogue: 0,0:01:29.88,0:01:31.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MALAM ANGIN SEKUAT
-Dialogue: 0,0:01:31.60,0:01:32.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BADAI
+Dialogue: 0,0:01:29.88,0:01:30.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MALAM
+Dialogue: 0,0:01:30.86,0:01:32.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ANGIN SEKUAT BADAI
 Dialogue: 0,0:01:32.80,0:01:33.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BALING-BALING
 Dialogue: 0,0:01:33.42,0:01:34.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERUS BERPUTAR
 Dialogue: 0,0:01:34.18,0:01:35.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PELAN MENJAGA

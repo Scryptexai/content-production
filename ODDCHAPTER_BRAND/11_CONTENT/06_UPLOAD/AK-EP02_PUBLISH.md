@@ -6,15 +6,15 @@ Status: **`approved: false`** — belum diunggah ke YouTube. Semua artefak sudah
 
 | Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP02_krakatau-1883_short_v1.mp4` (106,4 s, 1080×1920 @30) | 29.842.857 B | `1mHnV7C6VxbyBy1aEMbp86w8H_rgTfT7y` |
+| `AK-EP02_krakatau-1883_short_v1.mp4` (106,4 s, 1080×1920 @30) | 29.976.769 B | `1DNV01RC39NLFSeNHUehvu0fMrwiSM6u_` |
 | `AK-EP02_thumbnail_16x9.jpg` | 172.897 B | `1iusJx_bVvnYo3dlimb5pfGL-KoWGWHEc` |
 | `AK-EP02_poster_9x16.jpg` | 473.206 B | `1Iz87YdHVDIJU9XK_BpZ-K1JhT9OLiL8_` |
-| `AK-EP02.id.srt` (82 cue) | 4.007 B | `10qld0mbztJCkf94c_anWgw8cvj3jd3do` |
+| `AK-EP02.id.srt` (85 cue) | 4.109 B | `1c5JENSvqkTL9VR3H7roRH4FsUIOXTi2a` |
 
 Folder Drive: `krakatau-1883/` → `1xofrSnxqA26kVOlpgfP7INLRpgCeiqbJ` (keempatnya sudah publik: anyone/reader).
 
 Lokal: `work/krakatau-1883/out/AK-EP02_krakatau-1883_short_v1.mp4`
-sha256 `d507da6718c65b0e189509b282a8778903e2dff05473e375db9775419ca4746d`
+sha256 `1c4f63f5f72047d42b2141894622ecbafe534a2e2d318998c117c2772c9c15d6`
 
 Audio: −15,12 LUFS · true peak −1,52 dBTP · AAC 192 k · 44,1 kHz.
 VO milik pemilik: `vo_krakatau-1883.mp3` (105,465 s, 184 kata, suara "Dhawa", eleven_multilingual_v2, speed 0,95) — tidak di-TTS ulang.
@@ -53,7 +53,7 @@ Tag sumber selalu muncul di setiap shot ber-foto; kredit lengkap + CTA ada di ka
 
 ## QA yang sudah lewat
 
-- 27 shot (10 kartu desain + 1 kartu hitam), 82 caption (≤3 kata / ≤18 karakter, kata kunci merah saja), 21 overlay teks.
+- 27 shot (10 kartu desain + 1 kartu hitam), 85 caption (≤3 kata / ≤18 karakter, kata kunci merah saja), 21 overlay teks.
 - Overlay hanya di kartu desain → tidak pernah menabrak judul/foto; tag sumber di y=300, overlay ≥ y=430, caption di y≈1100.
 - Caption panjang (mis. "GOUVERNEUR-GENERAAL LOUDON") otomatis dikecilkan agar tetap di dalam margin 60 px.
 - `loudnorm` −15,12 LUFS / TP −1,52 dB, stream `h264 High, yuv420p(tv, bt709), 1080×1920, 30 fps`.
