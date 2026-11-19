@@ -87,3 +87,10 @@ work/**/__pycache__/
 work/*/concat.txt
 footage-inbox/
 work/krakatau-1883/footage/
+
+# AK-EP03 (dyatlov-pass): turunan render, footage, dan audio kerja
+work/*/shots/
+work/*/out/*.mp4
+work/*/audio/*.wav
+work/*/cat.mp4
+work/*/footage/

@@ -244,6 +244,8 @@ def shot_filter(img, mode, z0, z1, dur, extra):
     )
 
 
+CLIP_BG_BRIGHT = getattr(CFG, "CLIP_BG_BRIGHT", "-0.55")
+
 CLIP_POST = (",eq=saturation=0.16:contrast=1.28:brightness=0.02:gamma=0.92,colorbalance=bs=0.08,"
              "vignette=angle=PI/5.0,noise=alls=6:allf=t,format=yuv420p")
 
@@ -254,14 +256,25 @@ def clip_filter(key, dur, extra):
     fw, fh = extra.get("box", (1000, 750))
     fw -= fw % 2; fh -= fh % 2
     y = 720 - fh // 2
-    n = max(2, round(dur * FPS))
+    bg_b = extra.get("bg", CLIP_BG_BRIGHT)
     fade = f",fade=t=in:st=0:d=0.12,fade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12"
     return (
         "[0:v]split=2[bgs][fgs];"
         "[bgs]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
-        "gblur=sigma=30,eq=brightness=-0.55:saturation=0.22[bgb];"
+        f"gblur=sigma=30,eq=brightness={bg_b}:saturation=0.22[bgb];"
         f"[fgs]fps=30,scale={fw}:{fh}:force_original_aspect_ratio=increase,crop={fw}:{fh},setsar=1[fgv];"
         f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + CLIP_POST + fade
+    )
+
+
+def clip_fill_filter(key, dur, extra):
+    """Footage asli penuh layar 9:16 (untuk klip vertikal / tekstur salju)."""
+    fn, cs, cd = CLIPS[key]
+    n = max(2, round(dur * FPS))
+    fade = f",fade=t=in:st=0:d=0.12,fade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12"
+    return (
+        "[0:v]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+        "setsar=1" + CLIP_POST + fade
     )
 
 
@@ -277,6 +290,14 @@ def render_shots(force=False):
             fn, cs, cd = CLIPS[img]
             src = CLIP_DIR / fn
             filt = clip_filter(img, dur, extra)
+            run([FF, "-y", "-ss", f"{cs:.3f}", "-t", f"{min(cd, dur):.3f}", "-i", str(src),
+                 "-filter_complex", filt, "-frames:v", str(n), "-r", str(FPS),
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p",
+                 "-an", str(outp)])
+        elif mode == "clipfill":
+            fn, cs, cd = CLIPS[img]
+            src = CLIP_DIR / fn
+            filt = clip_fill_filter(img, dur, extra)
             run([FF, "-y", "-ss", f"{cs:.3f}", "-t", f"{min(cd, dur):.3f}", "-i", str(src),
                  "-filter_complex", filt, "-frames:v", str(n), "-r", str(FPS),
                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p",
@@ -317,6 +338,10 @@ def render_video():
 
 
 def synth_bed():
+    custom = getattr(CFG, "BED_BUILDER", None)
+    if custom:
+        run([sys.executable, str(CASE / custom)])
+        return
     import numpy as np, wave
     sr = 48000
     n = int(END * sr)
