@@ -3,6 +3,6 @@
  "status": "requested",
  "approved": true,
  "visibility": "public",
- "requested_at": "2026-11-06T14:15:00Z",
- "catatan": "Disetujui pemilik 6 Nov 2026: 'post now'. Judul + deskripsi diperbarui (15 hashtag)."
+ "requested_at": "2026-11-06T14:25:00Z",
+ "catatan": "Disetujui pemilik 6 Nov 2026: 'post now'. Judul + deskripsi 15 hashtag. Push ini memicu unggah ulang setelah fetch_masters.py mengenali berkas AK-*.json."
 }
