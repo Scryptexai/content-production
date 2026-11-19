@@ -92,7 +92,7 @@ def main():
     bed[:fi] *= np.linspace(0, 1, fi)
     fo = int(3.2 * SR)
     bed[-fo:] *= np.linspace(1, 0, fo)
-    bed = bed / (np.max(np.abs(bed)) + 1e-9) * 0.62
+    bed = bed / (np.max(np.abs(bed)) + 1e-9) * 0.34
     stereo = np.stack([bed, np.roll(bed, int(0.009 * SR))], axis=1)
     pcm = (np.clip(stereo, -1, 1) * 32767).astype("<i2")
 
