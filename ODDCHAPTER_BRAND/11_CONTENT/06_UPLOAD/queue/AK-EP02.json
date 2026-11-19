@@ -1,8 +1,8 @@
 {
  "episode": "AK-EP02",
- "status": "requested",
+ "status": "hold",
  "approved": false,
  "visibility": "public",
  "requested_at": "2026-11-06T00:00:00Z",
- "catatan": "Kasus kedua seri ANGKER: Krakatau 1883 (Kapten Lindemann & Loudon). approved masih false: ubah ke true setelah pemilik menonton."
+ "catatan": "rev3 HYBRID (3 sisipan footage BBC 2006, berlabel REKONSTRUKSI) siap ditonton. Pemilik memilih menahan dulu per 6 Nov 2026 — belum diunggah, approved tetap false. Status 'hold' tidak memicu youtube-upload.yml; ubah ke 'requested' + approved:true setelah ditonton."
 }
