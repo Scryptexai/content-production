@@ -85,3 +85,4 @@ work/krakatau-1883/audio/*.wav
 work/krakatau-1883/cat.mp4
 work/**/__pycache__/
 work/*/concat.txt
+footage-inbox/

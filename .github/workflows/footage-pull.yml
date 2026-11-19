@@ -1,0 +1,72 @@
+name: Footage pull (Drive → branch footage/inbox)
+
+# Samakan alasan dengan drive-fetch.yml: sandbox kerja tidak bisa menghubungi
+# drive.google.com, runner bisa. Berkas footage jauh lebih besar daripada VO,
+# jadi dipisah ke jalur sendiri supaya push ke `drive-requests/` tidak ikut
+# mengunduh ulang belasan file lama.
+#
+# Alur: taruh berkas permintaan di `footage-requests/<nama>.json`
+#       { "file_id": "...", "name": "krakatau-clip4.mp4" }
+#       Runner mengunduh ke `footage-inbox/`, lalu commit ke branch `footage/inbox`.
+#       Sesi kerja mengambilnya dengan `git fetch origin footage/inbox`.
+#
+# Syarat: berkas Drive harus "anyone with the link" selama job berjalan.
+
+on:
+  push:
+    paths:
+      - "footage-requests/*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: footage-pull
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ALLOWED_HOSTS: "drive.usercontent.google.com drive.google.com"
+      MAX_BYTES: "314572800" # 300 MB per berkas
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Unduh semua permintaan footage
+        run: |
+          set -euo pipefail
+          mkdir -p footage-inbox
+          shopt -s nullglob
+          n=0
+          for req in footage-requests/*.json; do
+            echo "→ permintaan: $req"
+            file_id=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['file_id'])" "$req")
+            name=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))['name'])" "$req")
+            case "$name" in
+              ""|*/*|..*) echo "::error::nama berkas tidak valid: $name"; exit 1 ;;
+            esac
+            url="https://drive.usercontent.google.com/download?id=${file_id}&export=download&confirm=t"
+            curl -fsSL --retry 3 --max-time 900 -o "footage-inbox/$name" "$url"
+            bytes=$(stat -c%s "footage-inbox/$name")
+            echo "  $name  $bytes byte  $(sha256sum "footage-inbox/$name" | cut -d' ' -f1)"
+            if [ "$bytes" -lt 1024 ]; then echo "::error::$name terlalu kecil (halaman login Drive?)"; exit 1; fi
+            if [ "$bytes" -gt "$MAX_BYTES" ]; then echo "::error::$name melebihi $MAX_BYTES byte"; exit 1; fi
+            n=$((n+1))
+          done
+          if [ "$n" = "0" ]; then echo "::error::tidak ada berkas permintaan"; exit 1; fi
+          ffprobe -v error -show_entries format=filename,duration,size:stream=codec_type,codec_name,width,height,r_frame_rate \
+            -of compact footage-inbox/*.mp4 2>/dev/null || true
+
+      - name: Commit ke branch footage/inbox
+        run: |
+          set -euo pipefail
+          git config user.name "oddchapter-footage-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B footage/inbox
+          git add -f footage-inbox
+          git commit -m "footage-inbox: $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "tidak ada perubahan"
+          git push --force origin footage/inbox
