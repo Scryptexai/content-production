@@ -1,9 +1,10 @@
 {
  "episode": "AK-EP03",
- "status": "draft",
- "approved": false,
+ "status": "requested",
+ "approved": true,
  "visibility": "public",
  "judul": "Orang Pertama yang Menemukan Tenda Dyatlov Pass #Shorts",
  "kasus": "Dyatlov Pass 1959 - POV tim pencari mahasiswa (Slobtsov & Sharavin)",
- "catatan": "Draft render; approved:false sampai pemilik menonton versi final. Jangan diubah ke requested tanpa izin eksplisit."
+ "catatan": "Disetujui pemilik 6 Nov 2026 ('post now') untuk rev2: hybrid 8 klip Mixkit + 6 foto arsip, bed diturunkan 5 dB.",
+ "requested_at": "2026-11-06T16:40:00Z"
 }
