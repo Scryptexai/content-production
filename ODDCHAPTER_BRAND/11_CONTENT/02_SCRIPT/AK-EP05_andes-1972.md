@@ -11,14 +11,14 @@ tidak dipersingkat, tidak ambigu.
 |---|---|---|---|
 | B1 | Tantangan Logika / Dilema Ekstrem | vo_01 | 0,00 |
 | B2 | Reaksi Alami Manusia | vo_02 | 10,04 |
-| B3 | Tindakan Sang Tokoh yang Mengagetkan | vo_03 | 21,23 |
-| B4 | Pertaruhan Nyawa (High Stakes) | vo_04 | 38,55 |
-| B5 | Tekanan Situasi — kecelakaan | vo_05 | 57,10 |
-| B6 | Tekanan Situasi — kelaparan & longsor | vo_06 | 81,33 |
-| B7 | Tekanan Situasi — sumpah bersama | vo_07 | 102,79 |
-| B8 | Momen Puncak — berjalan keluar | vo_08 | 115,46 |
-| B9 | Hasil Akhir & Fakta Kunci (reveal) | vo_09 | 133,69 |
-| B10 | Interactive Debate Hook | vo_10 | 156,24 (selesai 169,91) |
+| B3 | Tindakan Sang Tokoh yang Mengagetkan | vo_03 | 19,77 |
+| B4 | Pertaruhan Nyawa (High Stakes) | vo_04 | 37,79 |
+| B5 | Tekanan Situasi — kecelakaan | vo_05 | 56,35 |
+| B6 | Tekanan Situasi — kelaparan & longsor | vo_06 | 80,57 |
+| B7 | Tekanan Situasi — sumpah bersama | vo_07 | 102,03 |
+| B8 | Momen Puncak — berjalan keluar | vo_08 | 114,70 |
+| B9 | Hasil Akhir & Fakta Kunci (reveal) | vo_09 | 132,93 |
+| B10 | Interactive Debate Hook | vo_10 | 155,46 (selesai 169,12) |
 
 ## Teks VO per klip (sumber TTS — sama persis dengan SEGS build_vo.py)
 
@@ -26,10 +26,10 @@ tidak dipersingkat, tidak ambigu.
 > Bayangkan pesawat kalian jatuh di pegunungan bersalju dan tujuh hari berlalu tanpa makanan sama sekali. Apa yang akan kalian makan untuk tidak mati kelaparan?
 
 **vo_02 — Reaksi alami manusia**
-> Kebanyakan orang akan menjawab bahwa mereka akan bertahan dengan mencari daun atau akar yang bisa dimakan. Tetapi di pegunungan itu tidak ada satu pun tumbuhan dan tidak ada satu pun hewan.
+> Kebanyakan orang akan menjawab bahwa mereka akan bertahan dengan buah-buahan atau makanan yang biasa ada di hutan. Tetapi di pegunungan bersalju itu tidak ada satu pun tumbuhan dan tidak ada satu pun hewan.
 
 **vo_03 — Tindakan yang mengagetkan**
-> Karena itu, para penyintas mengambil keputusan yang tidak pernah masuk rencana siapa pun di antara mereka. Mereka memutuskan memakan tubuh teman-teman mereka sendiri yang sudah meninggal sejak hari pertama kecelakaan, karena hanya itu satu-satunya makanan yang tersisa di gunung itu.
+> Karena itu, para penyintas mengambil keputusan yang tidak pernah masuk rencana siapa pun di antara mereka. Mereka memutuskan memakan tubuh teman-teman mereka sendiri yang sudah meninggal sejak hari pertama kecelakaan, karena hanya itu satu-satunya makanan yang tersisa di pegunungan bersalju itu.
 
 **vo_04 — Pertaruhan nyawa**
 > Keputusan itu tidak diambil oleh orang-orang kejam, tetapi oleh orang-orang beriman yang harus memilih antara nilai dan nyawa mereka sendiri. Pada hari kesebelas, sebuah radio transistor di antara kursi pesawat menyiarkan bahwa pencarian resmi terhadap mereka sudah dihentikan. Tidak ada yang tahu mereka masih hidup.
@@ -47,13 +47,23 @@ tidak dipersingkat, tidak ambigu.
 > Dua orang memutuskan berjalan keluar. Nando Parrado dan Roberto Canessa berjalan selama sepuluh hari melintasi Pegunungan Andes tanpa peta dan tanpa perlengkapan pendakian. Mereka menemukan seorang penggembala bernama Sergio Catalán, yang membawa kabar mereka ke kantor polisi.
 
 **vo_09 — Hasil & fakta kunci**
-> Evakuasi dimulai pada dua puluh dua Desember seribu sembilan ratus tujuh puluh dua, tujuh puluh dua hari setelah pesawat jatuh di sebuah lembah sisi Argentina Pegunungan Andes, dekat perbatasan Cile. Enam belas dari empat puluh lima orang selamat. Yang membuat mereka bertahan bukan keberuntungan, melainkan keputusan yang mereka ambil bersama pada malam-malam paling gelap di gunung itu.
+> Evakuasi dimulai pada dua puluh dua Desember seribu sembilan ratus tujuh puluh dua, tujuh puluh dua hari setelah pesawat jatuh di sebuah lembah sisi Argentina Pegunungan Andes, dekat perbatasan Cile. Enam belas dari empat puluh lima orang selamat. Yang membuat mereka bertahan bukan keberuntungan, melainkan keputusan yang mereka ambil bersama pada malam-malam paling gelap di Pegunungan Andes.
 
 **vo_10 — Debat komentar**
 > Sekarang giliran kalian. Kalau kalian berada di pesawat itu, dan keputusan itu harus diambil pada malam yang sama juga, kalian ikut, atau kalian menolaknya sampai akhir? Tulis jawaban kalian di kolom komentar.
 
 ## Catatan produksi
 
+- **Revisi koreksi pemilik (20 Nov, putaran 2):** (1) opsi jawaban normal di B2
+  diganti dari "daun atau akar" → **buah-buahan / makanan yang biasa ada di hutan**
+  (opsi wajar menurut manusia normal; twist B3 tetap ekstrem); (2) rujukan
+  "gunung itu" yang menggantung dijelaskan dengan skema sembunyi–tampil:
+  B1–B3 memakai "pegunungan bersalju" (disamar), B5 menampilkan
+  **Pegunungan Andes**, B9 menutup dengan "Pegunungan Andes" yang tegas;
+  overlay layar "PASTI KALIAN CARI DAUN & AKAR" → "BUAH-BUAHAN",
+  "HARI DI GUNUNG" → "HARI DI ANDES". vo_02/vo_03/vo_09 diregenerasi;
+  total169,91 → **169,12 s**, END 174,00 → **173,03 s**; retime
+  `case_cfg.py` + `bed_andes.py` lewat `retime.py`.
 - Trim 20 Nov: vo_02/04/05/06/07/08/09 diregenerasi lebih ringkas (452 → 405 kata,
   196,63 → 169,91 s). vo_03 memakai klip generasi pertama — frasa inti lolos moderasi
   TTS pada percobaan pertama; percobaan kedua kena blokir, jadi klip lama dipertahankan

@@ -7,8 +7,8 @@ setelah format 8 beat terbukti; episode ini di luar daftar ide Drive, jadi izin 
 
 **VO = TTS internal (voice-05), bukan VO pemilik.** Naskah
 `02_SCRIPT/AK-EP05_andes-1972.md` sudah diselaraskan dengan teks TTS yang dipakai
-(405 kata, **169,91 s**). Format: 8 beat adaptasi `00F_FORMAT_CURIOSITY_LOOP.md` §2,
-durasi 2:54 (keputusan pemilik: bebas 1–3 menit, asal beat benar & kalimat utuh).
+(408 kata, **169,12 s**). Format: 8 beat adaptasi `00F_FORMAT_CURIOSITY_LOOP.md` §2,
+durasi 2:53 (keputusan pemilik: bebas 1–3 menit, asal beat benar & kalimat utuh).
 
 Judul: **72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan**
 Hook (awal deskripsi): "Tujuh hari tanpa makanan di punggung Andes — apa yang akan
@@ -18,13 +18,13 @@ kalian lakukan?"
 
 | Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP05_andes-1972_short.mp4` (174,0 s, 1080×1920 @30) | 49.867.830 B | `1vlE4Ljyua_t9ZO_YJULjGWNHzkmWPMpr` |
+| `AK-EP05_andes-1972_short.mp4` (173,0 s, 1080×1920 @30) — rev2 | 49.084.435 B | `1mZxYU9s9X7UexYzYvwDHzIlnxy7BfhSK` |
 | `AK-EP05_thumbnail_16x9.jpg` (1280×720) | 84.485 B | `14erM1wGCF-vE_9kXLWDuTfvxh-3oVhQu` |
 | `AK-EP05_poster_9x16.jpg` (1080×1920) | 170.240 B | `12AdFMRtY82JZnaQGYt2jC37ITkiZdOBF` |
-| `AK-EP05.id.srt` (181 cue) | 8.818 B | `15hu9Sy3__fbFFqwCKnZ5dcQdJDQaLVZU` |
+| `AK-EP05.id.srt` (183 cue) | 8.924 B | `1FU37YtX79m-iv-E3wsvSN2Chfou2rn5v` |
 
 Folder Drive: `1pxGWa4Fdisj7UBzEWC4BPFWSBIlTj71o` (andes-1972), MP4 sudah publik.
-sha256 `1f2edeffc814d688930906e40461b9927f89ba659861a85b699d3d1db41b8401`
+sha256 `0bf601e8a5e448fc25d5ef59aa35e66cb1d1c53b62ad2c4266878a6d7b9249fa`
 Audio: −15,0 LUFS · true peak −1,4 dBTP · AAC / 44,1 kHz.
 
 ## Peta beat (selaras teks TTS final)
@@ -32,15 +32,25 @@ Audio: −15,0 LUFS · true peak −1,4 dBTP · AAC / 44,1 kHz.
 | t (s) | Beat | Fungsi |
 |---|---|---|
 | 0,00 | B1 | Tantangan Logika / Dilema Ekstrem |
-| 10,04 | B2 | Reaksi Alami Manusia |
-| 21,23 | B3 | Tindakan Sang Tokoh yang Mengagetkan (tanpa bocor jawaban) |
-| 38,55 | B4 | Pertaruhan Nyawa (High Stakes) |
-| 57,10 | B5 | Tekanan Situasi — kecelakaan |
-| 81,33 | B6 | Tekanan Situasi — kelaparan & longsor |
-| 102,79 | B7 | Tekanan Situasi — sumpah bersama |
-| 115,46 | B8 | Momen Puncak — berjalan keluar |
-| 133,69 | B9 | Hasil Akhir & Fakta Kunci (reveal) |
-| 156,24 | B10 | Interactive Debate Hook → 169,91; video 174,00 |
+| 10,04 | B2 | Reaksi Alami Manusia — opsi normal: buah-buahan |
+| 19,77 | B3 | Tindakan Sang Tokoh yang Mengagetkan (tanpa bocor jawaban) |
+| 37,79 | B4 | Pertaruhan Nyawa (High Stakes) |
+| 56,35 | B5 | Tekanan Situasi — kecelakaan (reveal: Pegunungan Andes) |
+| 80,57 | B6 | Tekanan Situasi — kelaparan & longsor |
+| 102,03 | B7 | Tekanan Situasi — sumpah bersama |
+| 114,70 | B8 | Momen Puncak — berjalan keluar |
+| 132,93 | B9 | Hasil Akhir & Fakta Kunci (reveal) |
+| 155,46 | B10 | Interactive Debate Hook → 169,12; video 173,03 |
+
+## Revisi rev2 (koreksi pemilik, 20 Nov 2026)
+
+- B2: opsi jawaban normal "daun atau akar" → **buah-buahan / makanan yang biasa
+  ada di hutan** (pilihan wajar; twist B3 tetap ekstrem).
+- Rujukan "gunung itu" yang menggantung → skema sembunyi–tampil: B1–B3
+  "pegunungan bersalju" (disamar), B5 tampil **Pegunungan Andes**, B9 menutup
+  "Pegunungan Andes". Overlay: "PASTI KALIAN CARI BUAH-BUAHAN", "HARI DI ANDES".
+- vo_02/vo_03/vo_09 diregenerasi; retime penuh `case_cfg.py` + `bed_andes.py`
+  (`retime.py`); VO 169,91 → 169,12 s; video 174,00 → 173,03 s.
 
 ## Fakta & sumber
 

@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 
 SR = 48000
-END = 174.00
+END = 173.21
 OUT = Path(__file__).resolve().parent / "audio" / "bed.wav"
 
 
@@ -77,17 +77,17 @@ def main():
         bed[i0:i1] *= g
 
     hit(0.10, freq=44, amp=0.75)                  # pembuka dilema
-    hit(21.23, freq=40, amp=0.95, dur=2.4)        # B3 keputusan yang menggemparkan
-    hit(38.55, freq=46, amp=0.70)                 # B4 pertaruhan nyawa
-    riser(53.00, 57.10, amp=0.45)                 # menuju B5
-    hit(57.10, freq=42, amp=0.90, dur=2.2)        # B5 kecelakaan
-    hit(81.33, freq=44, amp=0.75)                 # B6 kelaparan
-    hit(102.79, freq=38, amp=0.90, dur=2.6)       # B7 sumpah bersama
-    riser(129.00, 133.69, amp=0.45)               # menuju B9
-    hit(133.69, freq=40, amp=0.95, dur=2.4)       # B9 reveal
-    hit(156.24, freq=46, amp=0.70)                # B10 debat
+    hit(19.77, freq=40, amp=0.95, dur=2.4)        # B3 keputusan yang menggemparkan
+    hit(37.79, freq=46, amp=0.70)                 # B4 pertaruhan nyawa
+    riser(52.25, 56.35, amp=0.45)                 # menuju B5
+    hit(56.35, freq=42, amp=0.90, dur=2.2)        # B5 kecelakaan
+    hit(80.57, freq=44, amp=0.75)                 # B6 kelaparan
+    hit(102.03, freq=38, amp=0.90, dur=2.6)       # B7 sumpah bersama
+    riser(128.24, 132.93, amp=0.45)               # menuju B9
+    hit(132.93, freq=40, amp=0.95, dur=2.4)       # B9 reveal
+    hit(155.46, freq=46, amp=0.70)                # B10 debat
 
-    dip(169.91, 174.00, 0.25, edge=0.5)           # kartu penutup
+    dip(169.12, 173.21, 0.25, edge=0.5)           # kartu penutup
 
     fi = int(1.2 * SR)
     bed[:fi] *= np.linspace(0, 1, fi)

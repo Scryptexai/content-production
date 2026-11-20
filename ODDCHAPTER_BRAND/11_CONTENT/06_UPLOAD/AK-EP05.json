@@ -30,16 +30,16 @@
   "madeForKids": false,
   "containsSyntheticMedia": true,
   "visibility": "public",
-  "drive_file_id": "1vlE4Ljyua_t9ZO_YJULjGWNHzkmWPMpr",
+  "drive_file_id": "1mZxYU9s9X7UexYzYvwDHzIlnxy7BfhSK",
   "drive_ids": {
-    "video": "1vlE4Ljyua_t9ZO_YJULjGWNHzkmWPMpr",
+    "video": "1mZxYU9s9X7UexYzYvwDHzIlnxy7BfhSK",
     "thumbnail": "14erM1wGCF-vE_9kXLWDuTfvxh-3oVhQu",
     "poster": "12AdFMRtY82JZnaQGYt2jC37ITkiZdOBF",
-    "srt": "15hu9Sy3__fbFFqwCKnZ5dcQdJDQaLVZU",
+    "srt": "1FU37YtX79m-iv-E3wsvSN2Chfou2rn5v",
     "folder": "1pxGWa4Fdisj7UBzEWC4BPFWSBIlTj71o"
   },
-  "duration_seconds": 174.0,
-  "size_bytes": 49867830,
-  "sha256": "1f2edeffc814d688930906e40461b9927f89ba659861a85b699d3d1db41b8401",
-  "catatan": "UJI FORMAT Curiosity Loop (00F): 8 beat adaptasi, 2:54, VO TTS internal voice-05 (naskah diselaraskan ke teks TTS, bukan VO pemilik) — di luar daftar ide Drive. Belum masuk antrean tayang; menunggu persetujuan pemilik setelah format terbukti."
+  "duration_seconds": 173.0,
+  "size_bytes": 49084435,
+  "sha256": "0bf601e8a5e448fc25d5ef59aa35e66cb1d1c53b62ad2c4266878a6d7b9249fa",
+  "catatan": "UJI FORMAT Curiosity Loop (00F): 8 beat adaptasi, 2:54, VO TTS internal voice-05 (naskah diselaraskan ke teks TTS, bukan VO pemilik) — di luar daftar ide Drive. REV2 koreksi pemilik (20 Nov): opsi B2 = buah-buahan (bukan daun/akar), rujukan gunung disamar B1–B3 lalu diperjelas jadi Pegunungan Andes di B5/B9; VO 169,12 s, video 173,0 s. Belum masuk antrean tayang; menunggu persetujuan pemilik setelah format terbukti."
 }
