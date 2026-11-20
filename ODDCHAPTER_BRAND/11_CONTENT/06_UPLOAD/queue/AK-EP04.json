@@ -1,6 +1,6 @@
 {
  "episode": "AK-EP04",
- "status": "requested",
+ "status": "done",
  "approved": true,
  "visibility": "public",
  "judul": "140 Orang Ditarik dari Laut Malam Itu. Tak Ada yang Tahu Siapa Mereka.",
@@ -17,5 +17,8 @@
  "duration_seconds": 110.9,
  "drive_file_id": "1Z0PMJveNoddHwpt2w3JEp-1TkjFtzapn",
  "sumber_vo": "pemilik (Drive van-der-wijck/vo)",
- "requested_at": "2026-11-20T08:47:23Z"
+ "requested_at": "2026-11-20T08:47:23Z",
+ "finished_at": "2026-11-20T08:48:12Z",
+ "hasil": "Tayang di YouTube 20 Nov 2026 08:48 UTC (post Zernio 6b00093e4f1a4b87dbcf9d8c), publik. Rev2: VO pemilik (ElevenLabs Dhawa, 108,30 s), 110,9 s, footage stok Coverr/Mixkit.",
+ "link": "https://www.youtube.com/watch?v=sv_PEpSINFI"
 }

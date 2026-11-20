@@ -1,7 +1,8 @@
 # AK-EP04 — Kapal Van der Wijck 1936 (POV nelayan Brondong)
 
-Status: **DRAF rev2, BELUM TAYANG.** Menunggu izin pemilik sebelum masuk antrean
-(`queue/AK-EP04.json` masih `"status": "draft"`, `"approved": false`).
+Status: **TAYANG** — https://www.youtube.com/watch?v=sv_PEpSINFI (20 Nov 2026 08:48 UTC,
+post Zernio `6b00093e4f1a4b87dbcf9d8c`, publik). Disetujui pemilik lewat balasan "lanjut"
+atas rev2.
 
 **Rev2 memakai VO PEMILIK**, bukan TTS lokal. VO dan teksnya diambil dari Drive
 `van-der-wijck/vo` (`vo_van-der-wijck.mp3`, `vo_text.txt`, `vo_alignment.json`,
@@ -68,13 +69,11 @@ Audio: −15,0 LUFS · true peak −1,4 dBTP · AAC / 44,1 kHz.
 - Footage stok **Coverr + Mixkit Free License**, tag di layar, kredit di kartu akhir
   dan di deskripsi. Tidak ada footage_risiko.
 
-## Sebelum tayang
+## Setelah tayang
 
-1. Minta izin pemilik. Kalau setuju → `queue/AK-EP04.json` jadi
-   `"status": "requested"`, `"approved": true`, isi `requested_at`.
-2. Push **satu** berkas antrean saja (workflow menolak >1 permintaan per push).
-3. Setelah tayang: catat di `published.json`, ubah status antrean jadi `done`,
-   lengkapi berkas ini dengan tautan.
+1. `published.json` sudah mencatat AK-EP04 (post `6b00093e4f1a4b87dbcf9d8c`).
+2. `queue/AK-EP04.json` sudah `"status": "done"`.
+3. MP4 di Drive dibiarkan publik seperti EP01–EP03 supaya bisa ditonton langsung.
 
 ## Kalau perlu render ulang
 
