@@ -53,7 +53,7 @@ jobs:
           set -euo pipefail
           git config user.name "footage-bot"
           git config user.email "bot@oddchapter.local"
-          for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-log.txt; do
+          for f in footage-report.json footage-report-sb-ep02.json footage-candidates-sb-ep02.json footage-report-andes-1972.json footage-candidates-andes-1972.json footage-log.txt; do
             if [ -f "$f" ]; then git add -f "$f"; fi
           done
           find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f

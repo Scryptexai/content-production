@@ -1,0 +1,27 @@
+{
+ "episode": "ANDES-1972",
+ "mode": "discover",
+ "target_dir": "footage/andes-1972",
+ "candidates_out": "footage-candidates-andes-1972.json",
+ "catatan": "Putaran kandidat untuk uji format Curiosity Loop (AK-EP05 Andes 1972). Kueri lebar dulu — pemilihan manual dari judul, unduhan menyusul lewat mode picks. Nada: gunung bersalju, badai salju, pesawat, radio, malam, pencarian.",
+ "queries": [
+  {"q": "snow", "want": 10},
+  {"q": "snowy mountains", "want": 10},
+  {"q": "mountain peak", "want": 8},
+  {"q": "blizzard", "want": 8},
+  {"q": "winter landscape", "want": 8},
+  {"q": "fog mountain", "want": 8},
+  {"q": "airplane", "want": 10},
+  {"q": "airplane window", "want": 8},
+  {"q": "airport night", "want": 6},
+  {"q": "radio", "want": 6},
+  {"q": "newspaper", "want": 6},
+  {"q": "night snow", "want": 8},
+  {"q": "hiking", "want": 8},
+  {"q": "campfire", "want": 6},
+  {"q": "helicopter", "want": 6},
+  {"q": "valley aerial", "want": 8},
+  {"q": "candle", "want": 6},
+  {"q": "ice", "want": 6}
+ ]
+}

@@ -112,14 +112,20 @@ Aturan turunan:
 
 ---
 
-## 6. Pertanyaan terbuka (belum boleh menulis naskah)
+## 6. Keputusan pemilik (20 Nov 2026, jawaban "lanjut")
 
-1. Pakai adaptasi 8 beat (termasuk debate hook) atau versi asli 7 beat?
-2. Durasi: tepat 60 detik atau maksimal 60 detik?
-3. VO: daftar ide baru belum punya VO di Drive — pemilik rekam VO (naskah dulu dari
-   saya), atau TTS untuk uji cepat?
-4. Deliverable: pipeline sama seperti EP04 (MP4 + SRT + thumb 16:9 + poster 9:16 +
-   JSON + `_PUBLISH.md` + queue `approved:false`)?
-5. Jonestown (EP05) tetap antre, atau ditahan sampai uji format ini selesai?
-6. Daftar ide baru: saya susun berapa item (usulan: 5–10, tiap item = topik + hook +
-   fakta bersumber + risiko editorial)?
+1. **Format**: pakai adaptasi 8 beat (dilema → reaksi → tindakan mengagetkan →
+   pertaruhan → tekanan → puncak → hasil/fakta → debat komentar). Durasi **boleh
+   1–3 menit** — yang penting urutan format benar dan **setiap kalimat ucapan utuh,
+   tidak dipersingkat atau ambigu**.
+2. **VO**: TTS internal dulu (voice-05) untuk uji cepat; VO pemilik menyusul kalau
+   format lolos.
+3. **Jonestown (lama EP05) ditahan** — materinya tidak dihapus, hanya menunggu.
+4. **Daftar ide baru**: Andes dulu saja — satu topik untuk membuktikan format;
+   daftar ide lain menyusul setelah format terbukti.
+
+## 7. Episode uji: AK-EP05 — Andes 1972
+
+Naskah: `02_SCRIPT/AK-EP05_andes-1972.md`. Berkas kerja: `work/andes-1972/`.
+VO TTS: 10 klip → `build_vo.py` → `vo_andes.mp3` + `vo_alignment.json` (waktu kata
+diperkirakan per suku kata, sama seperti EP04 rev1).
