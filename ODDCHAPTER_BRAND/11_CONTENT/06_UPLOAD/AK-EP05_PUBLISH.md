@@ -1,9 +1,10 @@
 # AK-EP05 — "Batas Terakhir Manusia" (Andes 1972, uji format Curiosity Loop)
 
-Status: **DRAFT — BELUM DIIZINKAN TAYANG** (`approved:false` di `queue/AK-EP05.json`).
-Dry-run `upload_zernio.py AK-EP05` lolos 20 Nov 2026. Menunggu persetujuan pemilik
-setelah format 8 beat terbukti; episode ini di luar daftar ide Drive, jadi izin lama
-(EP03/EP04) tidak berlaku.
+Status: **TAYANG** — https://www.youtube.com/watch?v=rM8mzOrW47g (20 Nov 2026 23:27 UTC,
+post Zernio `6b00d747507fae6d5f4ed7c8`, publik). Izin post diberikan pemilik lewat
+arahan "lanjut render dan post"; antrean `queue/AK-EP05.json` di-set
+`requested` + `approved:true`, dijalankan GitHub Actions `youtube-upload.yml`
+(sandbox tidak dapat mencapai zernio.com).
 
 **VO = TTS internal (voice-05), bukan VO pemilik.** Naskah
 `02_SCRIPT/AK-EP05_andes-1972.md` (REV3 — revisi total sudut pandang pemilik:

@@ -1,11 +1,11 @@
 {
  "episode": "AK-EP05",
- "status": "requested",
+ "status": "done",
  "approved": true,
  "visibility": "public",
  "judul": "72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan",
  "kasus": "Tragedi Andes 1972 — 'Batas Terakhir Manusia' (uji format Curiosity Loop, POV dilema batin)",
- "catatan": "Izin post diberikan pemilik ('lanjut render dan post', 20 Nov 2026). REV3 naskah total 'Batas Terakhir Manusia' — POV dilema batin, 8 beat, VO TTS voice-05, video 91,40 s (1:31), Drive rev3 publik.",
+ "catatan": "Uji format Curiosity Loop selesai end-to-end: naskah total rev3 → TTS → render → Drive → antrean approved → Actions tayang. Siap evaluasi §7 sebelum episode berikutnya (Jonestown masih ditahan).",
  "berkas": {
   "video": "work/andes-1972/out/AK-EP05_andes-1972_short.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_thumbnail_16x9.jpg",
@@ -17,5 +17,8 @@
  "duration_seconds": 91.4,
  "drive_file_id": "1mhyvo42OtBZMR--FEx2G3QyAQoXxyRjt",
  "sumber_vo": "TTS internal voice-05 (bukan pemilik)",
- "requested_at": "2026-11-20T23:26:28Z"
+ "requested_at": "2026-11-20T23:26:28Z",
+ "finished_at": "2026-11-20T23:27:14Z",
+ "link": "https://www.youtube.com/watch?v=rM8mzOrW47g",
+ "hasil": "Tayang di YouTube 20 Nov 2026 23:27 UTC (post Zernio 6b00d747507fae6d5f4ed7c8), publik. REV3 'Batas Terakhir Manusia': POV dilema batin, 8 beat, VO TTS voice-05, 91,4 s, 24.614.422 B, footage stok Coverr."
 }
