@@ -1,19 +1,25 @@
-snow: 23 kandidat
-snowy mountains: 21 kandidat
-mountain peak: 24 kandidat
-blizzard: 3 kandidat
-winter landscape: 17 kandidat
-fog mountain: 18 kandidat
-airplane: 22 kandidat
-airplane window: 24 kandidat
-airport night: 2 kandidat
-radio: 2 kandidat
-newspaper: 4 kandidat
-night snow: 20 kandidat
-hiking: 22 kandidat
-campfire: 9 kandidat
-helicopter: 1 kandidat
-valley aerial: 13 kandidat
-candle: 21 kandidat
-ice: 18 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-andes-1972.json
+  ok: gunung_snow (4079 KB)
+  ok: gunung_salju (3483 KB)
+  ok: argentina_tierra (2560 KB)
+  ok: argentina_valley (4223 KB)
+  ok: gunung_kabut (5336 KB)
+  ok: sisa_salju (3772 KB)
+  ok: salju_hutan (3908 KB)
+  ok: hutan_dingin (3378 KB)
+  ok: hutan_salju (3037 KB)
+  ok: pesawat_awan (2436 KB)
+  ok: pesawat_gunung (1215 KB)
+  ok: jendela_pesawat (1927 KB)
+  ok: naik_pesawat (2236 KB)
+  ok: senja_salju (4668 KB)
+  ok: api_gelap (2446 KB)
+  ok: lilin_gelap (1363 KB)
+  ok: salib_gunung (2627 KB)
+  ok: trek_mountain (3205 KB)
+  ok: puncak_jalan (2800 KB)
+  ok: lembah (2426 KB)
+  ok: lembah_aerial (2587 KB)
+  ok: koran (3386 KB)
+  ok: tenda_dingin (2812 KB)
+  ok: pesawat_pencari (2212 KB)
+{"ok": 24, "failed": 0}
