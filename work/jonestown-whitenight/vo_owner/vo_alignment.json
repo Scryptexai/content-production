@@ -1,0 +1,887 @@
+{
+ "source": "faster-whisper (local), approximate word timestamps",
+ "duration": 101.146125,
+ "text": "Sebelum 918 orang meninggal di Guyana, mereka sudah pernah disuruh minum racun, dan semuanya meminumnya, namanya Johnstown. Komune di tengah hutan, dipimpin pendeta Jim Jones. Hampir seribu orang Amerika pindah ke sana, dijanjikan surga tropis jauh dari dunia luar. Tapi ada satu kebiasaan, menurut mantan anggota, hampir setiap minggu, sirene meraung tengah malam. seluruh warga dibangunkan. Penjaga bersenjata berjaga di sekeliling. Jones menyebutnya White Night. Pada satu malam, semua orang, termasuk anak-anak, disuruh antre. Masing-masing menerima segelas kecil cairan merah. Katanya, itu racun dan mereka akan mati dalam 45 menit. Mereka meminumnya, lalu menunggu. Empat puluh lima menit berlalu, tak seorang pun jatuh. Jones berkata, itu bukan racun, itu tes kesetiaan, dan waktunya, katanya, sudah dekat. Kisah ini tertulis dalam pernyataan di bawah sumpah Deborah Leighton, mantan anggota yang kabur. Pada Juni 1978, lima bulan kemudian, 18 November, tidak ada lagi latihan. 918 orang meninggal hari itu. 909 diantaranya di Johnstown. Latihan itu tidak menguji racunnya, tapi menguji sampai di mana mereka akan patuh. Kalau kamu ada di sana, kamu akan berhenti di mana?",
+ "words": [
+  {
+   "word": "Sebelum",
+   "start": 0.0,
+   "end": 0.5
+  },
+  {
+   "word": "918",
+   "start": 0.5,
+   "end": 1.78
+  },
+  {
+   "word": "orang",
+   "start": 1.78,
+   "end": 2.18
+  },
+  {
+   "word": "meninggal",
+   "start": 2.18,
+   "end": 2.62
+  },
+  {
+   "word": "di",
+   "start": 2.62,
+   "end": 2.78
+  },
+  {
+   "word": "Guyana,",
+   "start": 2.78,
+   "end": 3.62
+  },
+  {
+   "word": "mereka",
+   "start": 3.86,
+   "end": 4.0
+  },
+  {
+   "word": "sudah",
+   "start": 4.0,
+   "end": 4.28
+  },
+  {
+   "word": "pernah",
+   "start": 4.28,
+   "end": 4.5
+  },
+  {
+   "word": "disuruh",
+   "start": 4.5,
+   "end": 5.02
+  },
+  {
+   "word": "minum",
+   "start": 5.02,
+   "end": 5.34
+  },
+  {
+   "word": "racun,",
+   "start": 5.34,
+   "end": 6.22
+  },
+  {
+   "word": "dan",
+   "start": 6.42,
+   "end": 6.84
+  },
+  {
+   "word": "semuanya",
+   "start": 6.84,
+   "end": 7.34
+  },
+  {
+   "word": "meminumnya,",
+   "start": 7.34,
+   "end": 8.42
+  },
+  {
+   "word": "namanya",
+   "start": 8.74,
+   "end": 9.54
+  },
+  {
+   "word": "Johnstown.",
+   "start": 9.54,
+   "end": 11.0
+  },
+  {
+   "word": "Komune",
+   "start": 11.38,
+   "end": 11.76
+  },
+  {
+   "word": "di",
+   "start": 11.76,
+   "end": 11.94
+  },
+  {
+   "word": "tengah",
+   "start": 11.94,
+   "end": 12.22
+  },
+  {
+   "word": "hutan,",
+   "start": 12.22,
+   "end": 12.88
+  },
+  {
+   "word": "dipimpin",
+   "start": 13.16,
+   "end": 13.6
+  },
+  {
+   "word": "pendeta",
+   "start": 13.6,
+   "end": 14.12
+  },
+  {
+   "word": "Jim",
+   "start": 14.12,
+   "end": 14.44
+  },
+  {
+   "word": "Jones.",
+   "start": 14.44,
+   "end": 15.0
+  },
+  {
+   "word": "Hampir",
+   "start": 15.54,
+   "end": 15.94
+  },
+  {
+   "word": "seribu",
+   "start": 15.94,
+   "end": 16.3
+  },
+  {
+   "word": "orang",
+   "start": 16.3,
+   "end": 16.54
+  },
+  {
+   "word": "Amerika",
+   "start": 16.54,
+   "end": 16.96
+  },
+  {
+   "word": "pindah",
+   "start": 16.96,
+   "end": 17.38
+  },
+  {
+   "word": "ke",
+   "start": 17.38,
+   "end": 17.58
+  },
+  {
+   "word": "sana,",
+   "start": 17.58,
+   "end": 18.02
+  },
+  {
+   "word": "dijanjikan",
+   "start": 18.5,
+   "end": 19.08
+  },
+  {
+   "word": "surga",
+   "start": 19.08,
+   "end": 19.44
+  },
+  {
+   "word": "tropis",
+   "start": 19.44,
+   "end": 19.88
+  },
+  {
+   "word": "jauh",
+   "start": 19.88,
+   "end": 20.32
+  },
+  {
+   "word": "dari",
+   "start": 20.32,
+   "end": 20.64
+  },
+  {
+   "word": "dunia",
+   "start": 20.64,
+   "end": 20.98
+  },
+  {
+   "word": "luar.",
+   "start": 20.98,
+   "end": 21.52
+  },
+  {
+   "word": "Tapi",
+   "start": 21.9,
+   "end": 22.22
+  },
+  {
+   "word": "ada",
+   "start": 22.22,
+   "end": 22.54
+  },
+  {
+   "word": "satu",
+   "start": 22.54,
+   "end": 22.82
+  },
+  {
+   "word": "kebiasaan,",
+   "start": 22.82,
+   "end": 23.66
+  },
+  {
+   "word": "menurut",
+   "start": 24.12,
+   "end": 24.42
+  },
+  {
+   "word": "mantan",
+   "start": 24.42,
+   "end": 24.76
+  },
+  {
+   "word": "anggota,",
+   "start": 24.76,
+   "end": 25.48
+  },
+  {
+   "word": "hampir",
+   "start": 25.7,
+   "end": 26.0
+  },
+  {
+   "word": "setiap",
+   "start": 26.0,
+   "end": 26.38
+  },
+  {
+   "word": "minggu,",
+   "start": 26.38,
+   "end": 27.1
+  },
+  {
+   "word": "sirene",
+   "start": 27.24,
+   "end": 27.56
+  },
+  {
+   "word": "meraung",
+   "start": 27.56,
+   "end": 28.02
+  },
+  {
+   "word": "tengah",
+   "start": 28.02,
+   "end": 28.4
+  },
+  {
+   "word": "malam.",
+   "start": 28.4,
+   "end": 29.14
+  },
+  {
+   "word": "seluruh",
+   "start": 29.14,
+   "end": 29.68
+  },
+  {
+   "word": "warga",
+   "start": 29.68,
+   "end": 30.14
+  },
+  {
+   "word": "dibangunkan.",
+   "start": 30.14,
+   "end": 31.4
+  },
+  {
+   "word": "Penjaga",
+   "start": 31.56,
+   "end": 32.06
+  },
+  {
+   "word": "bersenjata",
+   "start": 32.06,
+   "end": 32.72
+  },
+  {
+   "word": "berjaga",
+   "start": 32.72,
+   "end": 33.4
+  },
+  {
+   "word": "di",
+   "start": 33.4,
+   "end": 33.58
+  },
+  {
+   "word": "sekeliling.",
+   "start": 33.58,
+   "end": 34.22
+  },
+  {
+   "word": "Jones",
+   "start": 34.76,
+   "end": 35.08
+  },
+  {
+   "word": "menyebutnya",
+   "start": 35.08,
+   "end": 36.08
+  },
+  {
+   "word": "White",
+   "start": 36.08,
+   "end": 36.8
+  },
+  {
+   "word": "Night.",
+   "start": 36.8,
+   "end": 37.22
+  },
+  {
+   "word": "Pada",
+   "start": 37.84,
+   "end": 38.08
+  },
+  {
+   "word": "satu",
+   "start": 38.08,
+   "end": 38.28
+  },
+  {
+   "word": "malam,",
+   "start": 38.28,
+   "end": 38.92
+  },
+  {
+   "word": "semua",
+   "start": 39.2,
+   "end": 39.34
+  },
+  {
+   "word": "orang,",
+   "start": 39.34,
+   "end": 39.94
+  },
+  {
+   "word": "termasuk",
+   "start": 40.16,
+   "end": 40.58
+  },
+  {
+   "word": "anak",
+   "start": 40.58,
+   "end": 40.86
+  },
+  {
+   "word": "-anak,",
+   "start": 40.86,
+   "end": 41.5
+  },
+  {
+   "word": "disuruh",
+   "start": 41.74,
+   "end": 42.08
+  },
+  {
+   "word": "antre.",
+   "start": 42.08,
+   "end": 42.58
+  },
+  {
+   "word": "Masing",
+   "start": 43.2,
+   "end": 43.5
+  },
+  {
+   "word": "-masing",
+   "start": 43.5,
+   "end": 43.76
+  },
+  {
+   "word": "menerima",
+   "start": 43.76,
+   "end": 44.2
+  },
+  {
+   "word": "segelas",
+   "start": 44.2,
+   "end": 44.62
+  },
+  {
+   "word": "kecil",
+   "start": 44.62,
+   "end": 45.06
+  },
+  {
+   "word": "cairan",
+   "start": 45.06,
+   "end": 45.48
+  },
+  {
+   "word": "merah.",
+   "start": 45.48,
+   "end": 46.24
+  },
+  {
+   "word": "Katanya,",
+   "start": 46.54,
+   "end": 47.06
+  },
+  {
+   "word": "itu",
+   "start": 47.64,
+   "end": 47.82
+  },
+  {
+   "word": "racun",
+   "start": 47.82,
+   "end": 48.7
+  },
+  {
+   "word": "dan",
+   "start": 48.7,
+   "end": 49.06
+  },
+  {
+   "word": "mereka",
+   "start": 49.06,
+   "end": 49.34
+  },
+  {
+   "word": "akan",
+   "start": 49.34,
+   "end": 49.64
+  },
+  {
+   "word": "mati",
+   "start": 49.64,
+   "end": 50.0
+  },
+  {
+   "word": "dalam",
+   "start": 50.0,
+   "end": 50.38
+  },
+  {
+   "word": "45",
+   "start": 50.38,
+   "end": 51.22
+  },
+  {
+   "word": "menit.",
+   "start": 51.22,
+   "end": 52.08
+  },
+  {
+   "word": "Mereka",
+   "start": 52.34,
+   "end": 52.82
+  },
+  {
+   "word": "meminumnya,",
+   "start": 52.82,
+   "end": 53.76
+  },
+  {
+   "word": "lalu",
+   "start": 54.12,
+   "end": 54.36
+  },
+  {
+   "word": "menunggu.",
+   "start": 54.36,
+   "end": 55.26
+  },
+  {
+   "word": "Empat",
+   "start": 55.26,
+   "end": 55.8
+  },
+  {
+   "word": "puluh",
+   "start": 55.8,
+   "end": 56.02
+  },
+  {
+   "word": "lima",
+   "start": 56.02,
+   "end": 56.26
+  },
+  {
+   "word": "menit",
+   "start": 56.26,
+   "end": 56.48
+  },
+  {
+   "word": "berlalu,",
+   "start": 56.48,
+   "end": 57.5
+  },
+  {
+   "word": "tak",
+   "start": 57.66,
+   "end": 57.84
+  },
+  {
+   "word": "seorang",
+   "start": 57.84,
+   "end": 58.22
+  },
+  {
+   "word": "pun",
+   "start": 58.22,
+   "end": 58.4
+  },
+  {
+   "word": "jatuh.",
+   "start": 58.4,
+   "end": 59.28
+  },
+  {
+   "word": "Jones",
+   "start": 59.58,
+   "end": 59.72
+  },
+  {
+   "word": "berkata,",
+   "start": 59.72,
+   "end": 60.46
+  },
+  {
+   "word": "itu",
+   "start": 60.96,
+   "end": 61.0
+  },
+  {
+   "word": "bukan",
+   "start": 61.0,
+   "end": 61.34
+  },
+  {
+   "word": "racun,",
+   "start": 61.34,
+   "end": 62.2
+  },
+  {
+   "word": "itu",
+   "start": 62.38,
+   "end": 62.8
+  },
+  {
+   "word": "tes",
+   "start": 62.8,
+   "end": 63.14
+  },
+  {
+   "word": "kesetiaan,",
+   "start": 63.14,
+   "end": 64.1
+  },
+  {
+   "word": "dan",
+   "start": 64.28,
+   "end": 64.52
+  },
+  {
+   "word": "waktunya,",
+   "start": 64.52,
+   "end": 65.14
+  },
+  {
+   "word": "katanya,",
+   "start": 65.66,
+   "end": 66.28
+  },
+  {
+   "word": "sudah",
+   "start": 66.6,
+   "end": 66.8
+  },
+  {
+   "word": "dekat.",
+   "start": 66.8,
+   "end": 67.38
+  },
+  {
+   "word": "Kisah",
+   "start": 67.98,
+   "end": 68.38
+  },
+  {
+   "word": "ini",
+   "start": 68.38,
+   "end": 68.58
+  },
+  {
+   "word": "tertulis",
+   "start": 68.58,
+   "end": 69.04
+  },
+  {
+   "word": "dalam",
+   "start": 69.04,
+   "end": 69.26
+  },
+  {
+   "word": "pernyataan",
+   "start": 69.26,
+   "end": 69.82
+  },
+  {
+   "word": "di",
+   "start": 69.82,
+   "end": 69.94
+  },
+  {
+   "word": "bawah",
+   "start": 69.94,
+   "end": 70.16
+  },
+  {
+   "word": "sumpah",
+   "start": 70.16,
+   "end": 70.58
+  },
+  {
+   "word": "Deborah",
+   "start": 70.58,
+   "end": 70.9
+  },
+  {
+   "word": "Leighton,",
+   "start": 70.9,
+   "end": 71.68
+  },
+  {
+   "word": "mantan",
+   "start": 71.98,
+   "end": 72.28
+  },
+  {
+   "word": "anggota",
+   "start": 72.28,
+   "end": 72.7
+  },
+  {
+   "word": "yang",
+   "start": 72.7,
+   "end": 72.94
+  },
+  {
+   "word": "kabur.",
+   "start": 72.94,
+   "end": 73.9
+  },
+  {
+   "word": "Pada",
+   "start": 73.92,
+   "end": 74.24
+  },
+  {
+   "word": "Juni",
+   "start": 74.24,
+   "end": 74.74
+  },
+  {
+   "word": "1978,",
+   "start": 74.74,
+   "end": 76.66
+  },
+  {
+   "word": "lima",
+   "start": 77.82,
+   "end": 78.08
+  },
+  {
+   "word": "bulan",
+   "start": 78.08,
+   "end": 78.28
+  },
+  {
+   "word": "kemudian,",
+   "start": 78.28,
+   "end": 79.18
+  },
+  {
+   "word": "18",
+   "start": 79.44,
+   "end": 80.14
+  },
+  {
+   "word": "November,",
+   "start": 80.14,
+   "end": 80.94
+  },
+  {
+   "word": "tidak",
+   "start": 81.64,
+   "end": 81.86
+  },
+  {
+   "word": "ada",
+   "start": 81.86,
+   "end": 82.16
+  },
+  {
+   "word": "lagi",
+   "start": 82.16,
+   "end": 82.52
+  },
+  {
+   "word": "latihan.",
+   "start": 82.52,
+   "end": 83.24
+  },
+  {
+   "word": "918",
+   "start": 84.18,
+   "end": 84.94
+  },
+  {
+   "word": "orang",
+   "start": 84.94,
+   "end": 85.34
+  },
+  {
+   "word": "meninggal",
+   "start": 85.34,
+   "end": 85.9
+  },
+  {
+   "word": "hari",
+   "start": 85.9,
+   "end": 86.12
+  },
+  {
+   "word": "itu.",
+   "start": 86.12,
+   "end": 86.72
+  },
+  {
+   "word": "909",
+   "start": 88.02,
+   "end": 88.78
+  },
+  {
+   "word": "diantaranya",
+   "start": 88.78,
+   "end": 89.54
+  },
+  {
+   "word": "di",
+   "start": 89.54,
+   "end": 89.94
+  },
+  {
+   "word": "Johnstown.",
+   "start": 89.94,
+   "end": 90.68
+  },
+  {
+   "word": "Latihan",
+   "start": 91.06,
+   "end": 91.48
+  },
+  {
+   "word": "itu",
+   "start": 91.48,
+   "end": 91.68
+  },
+  {
+   "word": "tidak",
+   "start": 91.68,
+   "end": 91.92
+  },
+  {
+   "word": "menguji",
+   "start": 91.92,
+   "end": 92.46
+  },
+  {
+   "word": "racunnya,",
+   "start": 92.46,
+   "end": 93.16
+  },
+  {
+   "word": "tapi",
+   "start": 93.66,
+   "end": 93.88
+  },
+  {
+   "word": "menguji",
+   "start": 93.88,
+   "end": 94.92
+  },
+  {
+   "word": "sampai",
+   "start": 94.92,
+   "end": 95.3
+  },
+  {
+   "word": "di",
+   "start": 95.3,
+   "end": 95.46
+  },
+  {
+   "word": "mana",
+   "start": 95.46,
+   "end": 95.72
+  },
+  {
+   "word": "mereka",
+   "start": 95.72,
+   "end": 96.1
+  },
+  {
+   "word": "akan",
+   "start": 96.1,
+   "end": 96.52
+  },
+  {
+   "word": "patuh.",
+   "start": 96.52,
+   "end": 97.34
+  },
+  {
+   "word": "Kalau",
+   "start": 97.72,
+   "end": 97.92
+  },
+  {
+   "word": "kamu",
+   "start": 97.92,
+   "end": 98.16
+  },
+  {
+   "word": "ada",
+   "start": 98.16,
+   "end": 98.4
+  },
+  {
+   "word": "di",
+   "start": 98.4,
+   "end": 98.54
+  },
+  {
+   "word": "sana,",
+   "start": 98.54,
+   "end": 99.02
+  },
+  {
+   "word": "kamu",
+   "start": 99.8,
+   "end": 100.0
+  },
+  {
+   "word": "akan",
+   "start": 100.0,
+   "end": 100.26
+  },
+  {
+   "word": "berhenti",
+   "start": 100.26,
+   "end": 100.54
+  },
+  {
+   "word": "di",
+   "start": 100.54,
+   "end": 100.68
+  },
+  {
+   "word": "mana?",
+   "start": 100.68,
+   "end": 100.9
+  }
+ ]
+}
