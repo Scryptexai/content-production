@@ -1,32 +1,19 @@
-  ok: s1_sumatra_malam (1300 KB)
-  ok: s1_ombak_malam (3262 KB)
-  ok: s1_kota_pesisir_sore (2781 KB)
-  ok: s2_jendela_senja (700 KB)
-  ok: s2_awan_dari_kabin (1081 KB)
-  ok: s2_langit_malam (3608 KB)
-  ok: s3_naik_pesawat (1996 KB)
-  ok: s3_ke_landasan (1438 KB)
-  ok: s3_pesawat_di_apron (1653 KB)
-  ok: s3_checkin (2704 KB)
-  ok: s3_koper (2542 KB)
-  ok: s3_panel_kokpit (1439 KB)
-  ok: s3_menunggu (1606 KB)
-  ok: s3_kursi_jendela (2213 KB)
-  ok: s5_kapal_laut (6577 KB)
-  ok: s5_kapal_kejauhan (2749 KB)
-  ok: s5_perahu (5750 KB)
-  ok: s5_mercusuar_badai (4069 KB)
-  ok: s5_ombak_karang (2681 KB)
-  ok: s5_ombak_besar (3071 KB)
-  ok: s6_piha (2929 KB)
-  ok: s6_raglan (4508 KB)
-  ok: s6_ombak_batu (3768 KB)
-  ok: s6_batu_laut (6185 KB)
-  ok: s7_marina_malam (3311 KB)
-  ok: s7_kota_malam (2714 KB)
-  ok: s8_dermaga (2608 KB)
-  ok: s8_kota_malam_2 (2809 KB)
-  ok: s9_darat_di_laut (5438 KB)
-  ok: s9_laut_luas (11897 KB)
-  ok: s9_panorama (6198 KB)
-{"ok": 31, "failed": 0}
+snow: 23 kandidat
+snowy mountains: 21 kandidat
+mountain peak: 24 kandidat
+blizzard: 3 kandidat
+winter landscape: 17 kandidat
+fog mountain: 18 kandidat
+airplane: 22 kandidat
+airplane window: 24 kandidat
+airport night: 2 kandidat
+radio: 2 kandidat
+newspaper: 4 kandidat
+night snow: 20 kandidat
+hiking: 22 kandidat
+campfire: 9 kandidat
+helicopter: 1 kandidat
+valley aerial: 13 kandidat
+candle: 21 kandidat
+ice: 18 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-andes-1972.json
