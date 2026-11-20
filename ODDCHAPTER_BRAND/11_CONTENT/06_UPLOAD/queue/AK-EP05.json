@@ -1,0 +1,21 @@
+{
+ "episode": "AK-EP05",
+ "status": "pending",
+ "approved": false,
+ "visibility": "public",
+ "judul": "72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan",
+ "kasus": "Tragedi Andes 1972 - uji format Curiosity Loop (8 beat, VO TTS voice-05)",
+ "catatan": "UJI FORMAT baru: 8 beat adaptasi 00F, durasi 2:54 (keputusan pemilik: 1-3 menit, kalimat VO utuh), VO TTS internal karena episode di luar daftar ide Drive. Belum ada izin tayang pemilik — tahan di antrean sampai format terbukti dan pemilik menyetujui.",
+ "berkas": {
+  "video": "work/andes-1972/out/AK-EP05_andes-1972_short.mp4",
+  "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_thumbnail_16x9.jpg",
+  "poster": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_poster_9x16.jpg",
+  "srt": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/AK-EP05.id.srt"
+ },
+ "sha256": "1f2edeffc814d688930906e40461b9927f89ba659861a85b699d3d1db41b8401",
+ "size_bytes": 49867830,
+ "duration_seconds": 174.0,
+ "drive_file_id": "1vlE4Ljyua_t9ZO_YJULjGWNHzkmWPMpr",
+ "sumber_vo": "TTS internal voice-05 (bukan pemilik)",
+ "requested_at": "2026-11-20T15:25:00Z"
+}
