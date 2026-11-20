@@ -1,11 +1,11 @@
 {
  "episode": "AK-EP05",
- "status": "pending",
- "approved": false,
+ "status": "requested",
+ "approved": true,
  "visibility": "public",
  "judul": "72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan",
  "kasus": "Tragedi Andes 1972 — 'Batas Terakhir Manusia' (uji format Curiosity Loop, POV dilema batin)",
- "catatan": "REV3 naskah total (koreksi pemilik): POV penonton, bukan laporan kronologis; 8 beat; VO TTS voice-05. Belum ada izin tayang pemilik — tahan di antrean sampai format terbukti dan pemilik menyetujui.",
+ "catatan": "Izin post diberikan pemilik ('lanjut render dan post', 20 Nov 2026). REV3 naskah total 'Batas Terakhir Manusia' — POV dilema batin, 8 beat, VO TTS voice-05, video 91,40 s (1:31), Drive rev3 publik.",
  "berkas": {
   "video": "work/andes-1972/out/AK-EP05_andes-1972_short.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_thumbnail_16x9.jpg",
@@ -17,5 +17,5 @@
  "duration_seconds": 91.4,
  "drive_file_id": "1mhyvo42OtBZMR--FEx2G3QyAQoXxyRjt",
  "sumber_vo": "TTS internal voice-05 (bukan pemilik)",
- "requested_at": "2026-11-20T15:25:00Z"
+ "requested_at": "2026-11-20T23:26:28Z"
 }
