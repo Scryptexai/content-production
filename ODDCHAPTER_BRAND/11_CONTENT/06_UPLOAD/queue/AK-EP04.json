@@ -1,11 +1,11 @@
 {
  "episode": "AK-EP04",
- "status": "draft",
- "approved": false,
+ "status": "requested",
+ "approved": true,
  "visibility": "public",
  "judul": "140 Orang Ditarik dari Laut Malam Itu. Tak Ada yang Tahu Siapa Mereka.",
  "kasus": "Kapal Van der Wijck 1936 - POV nelayan Brondong (VO pemilik)",
- "catatan": "DRAF rev2. VO = milik pemilik (Drive vo/vo_van-der-wijck.mp3, 108,30 s), bukan TTS lokal. Status TETAP draft dan approved:false sampai pemilik setuju tayang. Sumber ide: spreadsheet Drive 'Daftar Ide Konten (19 Nov 2026)' peringkat 2.",
+ "catatan": "Disetujui pemilik (balasan 'lanjut' atas rev2). Rev2: VO pemilik 108,30 s, video 110,9 s, VO TTS rev1 sudah dibuang. Sumber ide: spreadsheet Drive 'Daftar Ide Konten (19 Nov 2026)' peringkat 2.",
  "berkas": {
   "video": "work/van-der-wijck-1936/out/AK-EP04_van-der-wijck-1936_short_v2.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP04_thumbnail_16x9.jpg",
@@ -16,5 +16,6 @@
  "size_bytes": 36233598,
  "duration_seconds": 110.9,
  "drive_file_id": "1Z0PMJveNoddHwpt2w3JEp-1TkjFtzapn",
- "sumber_vo": "pemilik (Drive van-der-wijck/vo)"
+ "sumber_vo": "pemilik (Drive van-der-wijck/vo)",
+ "requested_at": "2026-11-20T08:47:23Z"
 }
