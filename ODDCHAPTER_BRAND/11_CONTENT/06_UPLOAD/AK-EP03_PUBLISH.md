@@ -1,7 +1,7 @@
 # AK-EP03 — Dyatlov Pass 1959 (POV tim pencari: Slobtsov & Sharavin)
 
-Status: **`approved: false`** — belum diunggah ke YouTube. Menunggu pemilik menonton
-`work/dyatlov-pass/out/AK-EP03_dyatlov-pass_short_v1.mp4`.
+Status: **TAYANG** — https://www.youtube.com/watch?v=FqrbSUUX3bw (20 Nov 2026 02:47 UTC,
+post Zernio `6affb4cd74dda2dac17f7b4f`, publik). Disetujui pemilik 6 Nov 2026 ("post now").
 
 Judul: **Orang Pertama yang Menemukan Tenda Dyatlov Pass #Shorts**
 

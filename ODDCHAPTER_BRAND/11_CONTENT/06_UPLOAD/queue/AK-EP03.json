@@ -1,10 +1,13 @@
 {
  "episode": "AK-EP03",
- "status": "requested",
+ "status": "done",
  "approved": true,
  "visibility": "public",
  "judul": "Orang Pertama yang Menemukan Tenda Dyatlov Pass #Shorts",
  "kasus": "Dyatlov Pass 1959 - POV tim pencari mahasiswa (Slobtsov & Sharavin)",
  "catatan": "Disetujui pemilik 6 Nov 2026 ('post now'). Rev2. Percobaan ulang: hook diberi angka agar lolos QC.",
- "requested_at": "2026-11-06T16:55:00Z"
+ "requested_at": "2026-11-06T16:55:00Z",
+ "finished_at": "2026-11-20T02:47:53Z",
+ "hasil": "Tayang di YouTube 20 Nov 2026 02:47 UTC (post Zernio 6affb4cd74dda2dac17f7b4f), publik. Rev2: hybrid 8 klip Mixkit + 6 foto arsip, bed −5 dB.",
+ "link": "https://www.youtube.com/watch?v=FqrbSUUX3bw"
 }
