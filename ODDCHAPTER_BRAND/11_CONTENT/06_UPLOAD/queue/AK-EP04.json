@@ -5,7 +5,7 @@
  "visibility": "public",
  "judul": "Kapal Itu Tenggelam dalam 6 Menit. 145 Orang Diselamatkan Lima Nelayan.",
  "kasus": "Kapal Van der Wijck 1936 - POV lima nelayan Brondong",
- "catatan": "DRAF. Belum disetujui pemilik dan belum diunggah ke Drive. Jangan ubah status jadi requested sebelum approved:true. Sumber ide: spreadsheet Drive 'Daftar Ide Konten (19 Nov 2026)' peringkat 2.",
+ "catatan": "DRAF. Master sudah di Drive (1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk). Jangan ubah status jadi requested sebelum approved:true dari pemilik. Sumber ide: spreadsheet Drive \"Daftar Ide Konten (19 Nov 2026)\" peringkat 2.",
  "berkas": {
   "video": "work/van-der-wijck-1936/out/AK-EP04_van-der-wijck-1936_short_v1.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP04_thumbnail_16x9.jpg",
@@ -14,5 +14,6 @@
  },
  "sha256": "fe548f93da2a0da33c388457228b95b6e8cc5fca010270e3e4682e9c87efabc8",
  "size_bytes": 34596271,
- "duration_seconds": 95.7
+ "duration_seconds": 95.7,
+ "drive_file_id": "1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk"
 }

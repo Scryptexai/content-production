@@ -12,11 +12,12 @@ Sumber ide: spreadsheet Drive "ODDCHAPTER – Daftar Ide Konten (19 Nov 2026)", 
 
 | Berkas | Ukuran | Lokasi |
 |---|---|---|
-| `AK-EP04_van-der-wijck-1936_short_v1.mp4` (95,7 s, 1080×1920 @30) | 34.596.271 B | `work/van-der-wijck-1936/out/` (belum ke Drive) |
-| `AK-EP04_thumbnail_16x9.jpg` (1280×720) | 74.930 B | `06_UPLOAD/thumbs/` |
-| `AK-EP04_poster_9x16.jpg` (1080×1920) | 100.159 B | `06_UPLOAD/thumbs/` |
-| `AK-EP04.id.srt` (83 cue) | 4.003 B | `06_UPLOAD/` |
+| `AK-EP04_van-der-wijck-1936_short_v1.mp4` (95,7 s, 1080×1920 @30) | 34.596.271 B | Drive `1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk` |
+| `AK-EP04_thumbnail_16x9.jpg` (1280×720) | 74.930 B | Drive `10jjGBJmt4MY046fMzHBSHKluRXeI-M3a` |
+| `AK-EP04_poster_9x16.jpg` (1080×1920) | 100.159 B | Drive `1XQLD5bnZ4Wbzo0i5qeZHfQKr7jPz1TKW` |
+| `AK-EP04.id.srt` (83 cue) | 4.003 B | Drive `19Vq1Iqb0q11aHTNmxqrCxEnxhBJDjMSU` |
 
+Folder Drive: `118AuYkyfDc3YvicyHanZzlU1WCj8mjRq` (van-der-wijck).
 sha256 `fe548f93da2a0da33c388457228b95b6e8cc5fca010270e3e4682e9c87efabc8`
 Audio: −15,0 LUFS · true peak −1,3 dBTP · AAC 198 k / 44,1 kHz.
 
@@ -61,9 +62,8 @@ Enam klip pertama gagal digabung jadi satu, jadi VO dirakit dari 10 klip (kalima
 
 1. Minta izin pemilik. Kalau setuju → ubah `queue/AK-EP04.json` jadi
    `"status": "requested"`, `"approved": true`, `requested_at` diisi.
-2. Unggah master MP4, thumbnail, poster, SRT ke folder Drive kasus ini →
-   isi `drive_file_id` di `AK-EP04.json` (workflow mengunduh master dari Drive,
-   bukan dari Git).
+2. ~~Unggah master ke Drive~~ — sudah: master, thumbnail, poster, SRT ada di folder
+   `118AuYkyfDc3YvicyHanZzlU1WCj8mjRq`, dan `drive_file_id` di `AK-EP04.json` sudah terisi.
 3. Push **satu** berkas antrean saja (workflow menolak >1 permintaan per push).
 4. Setelah tayang: catat di `published.json`, ubah status antrean jadi `done`,
    lalu isi `_PUBLISH.md` ini dengan tautan.

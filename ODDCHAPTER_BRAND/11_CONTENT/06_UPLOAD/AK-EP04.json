@@ -30,9 +30,16 @@
   "madeForKids": false,
   "containsSyntheticMedia": true,
   "visibility": "public",
-  "drive_file_id": null,
+  "drive_file_id": "1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk",
   "duration_seconds": 95.7,
   "size_bytes": 34596271,
   "sha256": "fe548f93da2a0da33c388457228b95b6e8cc5fca010270e3e4682e9c87efabc8",
-  "catatan": "Belum diunggah ke Drive, belum masuk antrean tayang. Menunggu persetujuan pemilik."
+  "catatan": "Master + thumbnail + poster + SRT sudah di Drive (folder van-der-wijck, 118AuYkyfDc3YvicyHanZzlU1WCj8mjRq). Belum masuk antrean tayang — menunggu persetujuan pemilik.",
+  "drive_ids": {
+    "video": "1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk",
+    "thumbnail": "10jjGBJmt4MY046fMzHBSHKluRXeI-M3a",
+    "poster": "1XQLD5bnZ4Wbzo0i5qeZHfQKr7jPz1TKW",
+    "srt": "19Vq1Iqb0q11aHTNmxqrCxEnxhBJDjMSU",
+    "folder": "118AuYkyfDc3YvicyHanZzlU1WCj8mjRq"
+  }
 }
