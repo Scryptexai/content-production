@@ -1,1047 +1,962 @@
 {
- "source": "tts-internal voice-05",
- "duration": 93.329,
- "text": "Pada 19 Oktober 1936, sebuah kapal mewah berhenti di tengah Laut Jawa. Enam menit kemudian, kapal itu sudah tidak ada. Namanya Van der Wijck. Kapal uap milik perusahaan Belanda, KPM, dijuluki burung camar karena bodinya yang putih dan tenang. Malam itu kapal berlayar dari Surabaya menuju Semarang, membawa ratusan penumpang dan seratus lima puluh ton besi. Sekitar dua belas mil dari Pantai Brondong, kapal miring. Air masuk lebih cepat daripada pompa yang bisa membuangnya. Menurut laporan surat kabar saat itu, seluruh badan kapal hilang di bawah air hanya dalam enam menit. Tidak ada kapal besar di dekat situ. Yang ada hanya perahu-perahu nelayan dari pantai. Lima nelayan Brondong tercatat menyelamatkan seratus empat puluh lima orang: Kaslibin lima puluh tiga, Modwie tiga puluh dua, Troenoredjo dua puluh dua, Sratit dua puluh satu, Mardjiki tujuh belas. Delapan pesawat amfibi Dornier dikirim dari Surabaya, dan sekitar dua puluh orang dievakuasi lewat udara. Sang nakhoda selamat. Operator radionya, Uytermerk, tidak meninggalkan posnya. Sebuah plakat di Brondong masih menyebut namanya. Jumlah korban tidak pernah bulat: satu koran menulis empat puluh dua hilang, sumber lain lima puluh delapan tewas, sampai tujuh puluh lima hilang. Pada 2021, bangkainya ditemukan di kedalaman dua puluh delapan meter. Yang tidak pernah diperdebatkan: perahu kayu yang datang lebih dulu.",
+ "source": "faster-whisper (local), approximate word timestamps",
+ "duration": 108.297875,
+ "text": "semua orang kenal kapalnya, hampir tak ada yang tahu. Siapa yang menarik sekitar seratus empat puluh orang dari laut malam itu. di nihari, 20 Oktober 1936. Kapal UAP Van der Waik membawa sekitar dua ratus enam puluh orang. Menjelang pukul satu, Surabaya menerima satu sinyal, SOS, kapal miring parah, tanpa posisi. Menurut kesaksian pertama, kapal tiba-tiba oleng dan tenggelam dalam hitungan menit. Hampir semua sekoci tak sempat diturunkan. Pesawat terbang Dornier baru berangkat saat fajar. Menunggu terang, mereka hanya menemukan satu sekoci. Tapi di pesisir Brondong, Lamongan, para nelayan turun ke laut. Tak ada aturan resmi yang mewajibkan mereka. Dengan perahu kecil, mereka menarik sekitar seratus empat puluh orang dari air, termasuk sang kapten. Yang enam jam terapung dengan pakaian tidur, sekitar lima puluh orang tak pernah ditemukan. Jumlah pastinya tak diketahui, karena para buruh pribumi tidak tercatat namanya. Setahun kemudian, sembilan perahu baru dibagikan kepada para nelayan. Lalu, atas permintaan mereka sendiri, dibangun sebuah mercusuar kecil di Brondong. Di dindingnya, pelat besi bertuliskan. Tanda peringatan kepada penulung-penulung. Hari ini, orang menyebutnya monument, padahal itu mercusuar. Kapal itu punya novel dan film. Para penolongnya hanya punya sebuah pelat besi.",
  "words": [
   {
-   "word": "Pada",
+   "word": "semua",
    "start": 0.0,
-   "end": 0.477
-  },
-  {
-   "word": "19",
-   "start": 0.477,
-   "end": 0.716
-  },
-  {
-   "word": "Oktober",
-   "start": 0.716,
-   "end": 1.312
-  },
-  {
-   "word": "1936,",
-   "start": 1.312,
-   "end": 1.551
-  },
-  {
-   "word": "sebuah",
-   "start": 1.551,
-   "end": 2.028
-  },
-  {
-   "word": "kapal",
-   "start": 2.028,
-   "end": 2.505
-  },
-  {
-   "word": "mewah",
-   "start": 2.505,
-   "end": 2.982
-  },
-  {
-   "word": "berhenti",
-   "start": 2.982,
-   "end": 3.578
-  },
-  {
-   "word": "di",
-   "start": 3.578,
-   "end": 3.936
-  },
-  {
-   "word": "tengah",
-   "start": 3.936,
-   "end": 4.413
-  },
-  {
-   "word": "Laut",
-   "start": 4.413,
-   "end": 4.771
-  },
-  {
-   "word": "Jawa.",
-   "start": 4.771,
-   "end": 5.248
-  },
-  {
-   "word": "Enam",
-   "start": 5.248,
-   "end": 5.725
-  },
-  {
-   "word": "menit",
-   "start": 5.725,
-   "end": 6.202
-  },
-  {
-   "word": "kemudian,",
-   "start": 6.202,
-   "end": 6.799
-  },
-  {
-   "word": "kapal",
-   "start": 6.799,
-   "end": 7.276
-  },
-  {
-   "word": "itu",
-   "start": 7.276,
-   "end": 7.753
-  },
-  {
-   "word": "sudah",
-   "start": 7.753,
-   "end": 8.23
-  },
-  {
-   "word": "tidak",
-   "start": 8.23,
-   "end": 8.707
-  },
-  {
-   "word": "ada.",
-   "start": 8.707,
-   "end": 9.184
-  },
-  {
-   "word": "Namanya",
-   "start": 9.734,
-   "end": 10.25
-  },
-  {
-   "word": "Van",
-   "start": 10.25,
-   "end": 10.559
-  },
-  {
-   "word": "der",
-   "start": 10.559,
-   "end": 10.868
-  },
-  {
-   "word": "Wijck.",
-   "start": 10.868,
-   "end": 11.178
-  },
-  {
-   "word": "Kapal",
-   "start": 11.178,
-   "end": 11.59
-  },
-  {
-   "word": "uap",
-   "start": 11.59,
-   "end": 11.9
-  },
-  {
-   "word": "milik",
-   "start": 11.9,
-   "end": 12.312
-  },
-  {
-   "word": "perusahaan",
-   "start": 12.312,
-   "end": 12.931
-  },
-  {
-   "word": "Belanda,",
-   "start": 12.931,
-   "end": 13.446
-  },
-  {
-   "word": "KPM,",
-   "start": 13.446,
-   "end": 13.653
-  },
-  {
-   "word": "dijuluki",
-   "start": 13.653,
-   "end": 14.271
-  },
-  {
-   "word": "burung",
-   "start": 14.271,
-   "end": 14.684
-  },
-  {
-   "word": "camar",
-   "start": 14.684,
-   "end": 15.096
-  },
-  {
-   "word": "karena",
-   "start": 15.096,
-   "end": 15.612
-  },
-  {
-   "word": "bodinya",
-   "start": 15.612,
-   "end": 16.128
-  },
-  {
-   "word": "yang",
-   "start": 16.128,
-   "end": 16.437
-  },
-  {
-   "word": "putih",
-   "start": 16.437,
-   "end": 16.849
-  },
-  {
-   "word": "dan",
-   "start": 16.849,
-   "end": 17.159
-  },
-  {
-   "word": "tenang.",
-   "start": 17.159,
-   "end": 17.571
-  },
-  {
-   "word": "Malam",
-   "start": 17.971,
-   "end": 18.321
-  },
-  {
-   "word": "itu",
-   "start": 18.321,
-   "end": 18.671
-  },
-  {
-   "word": "kapal",
-   "start": 18.671,
-   "end": 19.021
-  },
-  {
-   "word": "berlayar",
-   "start": 19.021,
-   "end": 19.458
-  },
-  {
-   "word": "dari",
-   "start": 19.458,
-   "end": 19.808
-  },
-  {
-   "word": "Surabaya",
-   "start": 19.808,
-   "end": 20.333
-  },
-  {
-   "word": "menuju",
-   "start": 20.333,
-   "end": 20.77
-  },
-  {
-   "word": "Semarang,",
-   "start": 20.77,
-   "end": 21.208
-  },
-  {
-   "word": "membawa",
-   "start": 21.208,
-   "end": 21.645
-  },
-  {
-   "word": "ratusan",
-   "start": 21.645,
-   "end": 22.082
-  },
-  {
-   "word": "penumpang",
-   "start": 22.082,
-   "end": 22.52
-  },
-  {
-   "word": "dan",
-   "start": 22.52,
-   "end": 22.782
-  },
-  {
-   "word": "seratus",
-   "start": 22.782,
-   "end": 23.219
-  },
-  {
-   "word": "lima",
-   "start": 23.219,
-   "end": 23.569
-  },
-  {
-   "word": "puluh",
-   "start": 23.569,
-   "end": 23.919
-  },
-  {
-   "word": "ton",
-   "start": 23.919,
-   "end": 24.182
-  },
-  {
-   "word": "besi.",
-   "start": 24.182,
-   "end": 24.531
-  },
-  {
-   "word": "Sekitar",
-   "start": 24.931,
-   "end": 25.447
-  },
-  {
-   "word": "dua",
-   "start": 25.447,
-   "end": 25.757
-  },
-  {
-   "word": "belas",
-   "start": 25.757,
-   "end": 26.17
-  },
-  {
-   "word": "mil",
-   "start": 26.17,
-   "end": 26.479
-  },
-  {
-   "word": "dari",
-   "start": 26.479,
-   "end": 26.892
-  },
-  {
-   "word": "Pantai",
-   "start": 26.892,
-   "end": 27.305
-  },
-  {
-   "word": "Brondong,",
-   "start": 27.305,
-   "end": 27.718
-  },
-  {
-   "word": "kapal",
-   "start": 27.718,
-   "end": 28.13
-  },
-  {
-   "word": "miring.",
-   "start": 28.13,
-   "end": 28.543
-  },
-  {
-   "word": "Air",
-   "start": 28.543,
-   "end": 28.853
-  },
-  {
-   "word": "masuk",
-   "start": 28.853,
-   "end": 29.266
-  },
-  {
-   "word": "lebih",
-   "start": 29.266,
-   "end": 29.678
-  },
-  {
-   "word": "cepat",
-   "start": 29.678,
-   "end": 30.091
-  },
-  {
-   "word": "daripada",
-   "start": 30.091,
-   "end": 30.71
-  },
-  {
-   "word": "pompa",
-   "start": 30.71,
-   "end": 31.123
-  },
-  {
-   "word": "yang",
-   "start": 31.123,
-   "end": 31.433
-  },
-  {
-   "word": "bisa",
-   "start": 31.433,
-   "end": 31.845
-  },
-  {
-   "word": "membuangnya.",
-   "start": 31.845,
-   "end": 32.361
-  },
-  {
-   "word": "Menurut",
-   "start": 32.361,
-   "end": 32.877
-  },
-  {
-   "word": "laporan",
-   "start": 32.877,
-   "end": 33.393
-  },
-  {
-   "word": "surat",
-   "start": 33.393,
-   "end": 33.806
-  },
-  {
-   "word": "kabar",
-   "start": 33.806,
-   "end": 34.219
-  },
-  {
-   "word": "saat",
-   "start": 34.219,
-   "end": 34.528
-  },
-  {
-   "word": "itu,",
-   "start": 34.528,
-   "end": 34.941
-  },
-  {
-   "word": "seluruh",
-   "start": 34.941,
-   "end": 35.457
-  },
-  {
-   "word": "badan",
-   "start": 35.457,
-   "end": 35.87
-  },
-  {
-   "word": "kapal",
-   "start": 35.87,
-   "end": 36.283
-  },
-  {
-   "word": "hilang",
-   "start": 36.283,
-   "end": 36.696
-  },
-  {
-   "word": "di",
-   "start": 36.696,
-   "end": 37.005
-  },
-  {
-   "word": "bawah",
-   "start": 37.005,
-   "end": 37.418
-  },
-  {
-   "word": "air",
-   "start": 37.418,
-   "end": 37.727
-  },
-  {
-   "word": "hanya",
-   "start": 37.727,
-   "end": 38.14
-  },
-  {
-   "word": "dalam",
-   "start": 38.14,
-   "end": 38.553
-  },
-  {
-   "word": "enam",
-   "start": 38.553,
-   "end": 38.966
-  },
-  {
-   "word": "menit.",
-   "start": 38.966,
-   "end": 39.379
-  },
-  {
-   "word": "Tidak",
-   "start": 39.829,
-   "end": 40.137
-  },
-  {
-   "word": "ada",
-   "start": 40.137,
-   "end": 40.446
-  },
-  {
-   "word": "kapal",
-   "start": 40.446,
-   "end": 40.755
-  },
-  {
-   "word": "besar",
-   "start": 40.755,
-   "end": 41.064
-  },
-  {
-   "word": "di",
-   "start": 41.064,
-   "end": 41.295
-  },
-  {
-   "word": "dekat",
-   "start": 41.295,
-   "end": 41.604
-  },
-  {
-   "word": "situ.",
-   "start": 41.604,
-   "end": 41.913
-  },
-  {
-   "word": "Yang",
-   "start": 41.913,
-   "end": 42.144
-  },
-  {
-   "word": "ada",
-   "start": 42.144,
-   "end": 42.453
-  },
-  {
-   "word": "hanya",
-   "start": 42.453,
-   "end": 42.762
-  },
-  {
-   "word": "perahu-perahu",
-   "start": 42.762,
-   "end": 43.38
-  },
-  {
-   "word": "nelayan",
-   "start": 43.38,
-   "end": 43.766
-  },
-  {
-   "word": "dari",
-   "start": 43.766,
-   "end": 44.074
-  },
-  {
-   "word": "pantai.",
-   "start": 44.074,
-   "end": 44.383
-  },
-  {
-   "word": "Lima",
-   "start": 44.833,
-   "end": 45.211
-  },
-  {
-   "word": "nelayan",
-   "start": 45.211,
-   "end": 45.683
-  },
-  {
-   "word": "Brondong",
-   "start": 45.683,
-   "end": 46.061
-  },
-  {
-   "word": "tercatat",
-   "start": 46.061,
-   "end": 46.533
-  },
-  {
-   "word": "menyelamatkan",
-   "start": 46.533,
-   "end": 47.194
-  },
-  {
-   "word": "seratus",
-   "start": 47.194,
-   "end": 47.666
-  },
-  {
-   "word": "empat",
-   "start": 47.666,
-   "end": 48.043
-  },
-  {
-   "word": "puluh",
-   "start": 48.043,
-   "end": 48.421
-  },
-  {
-   "word": "lima",
-   "start": 48.421,
-   "end": 48.799
-  },
-  {
-   "word": "orang:",
-   "start": 48.799,
-   "end": 49.176
-  },
-  {
-   "word": "Kaslibin",
-   "start": 49.176,
-   "end": 49.648
-  },
-  {
-   "word": "lima",
-   "start": 49.648,
-   "end": 50.026
-  },
-  {
-   "word": "puluh",
-   "start": 50.026,
-   "end": 50.404
-  },
-  {
-   "word": "tiga,",
-   "start": 50.404,
-   "end": 50.781
-  },
-  {
-   "word": "Modwie",
-   "start": 50.781,
-   "end": 51.159
-  },
-  {
-   "word": "tiga",
-   "start": 51.159,
-   "end": 51.537
-  },
-  {
-   "word": "puluh",
-   "start": 51.537,
-   "end": 51.914
-  },
-  {
-   "word": "dua,",
-   "start": 51.914,
-   "end": 52.198
-  },
-  {
-   "word": "Troenoredjo",
-   "start": 52.198,
-   "end": 52.764
-  },
-  {
-   "word": "dua",
-   "start": 52.764,
-   "end": 53.047
-  },
-  {
-   "word": "puluh",
-   "start": 53.047,
-   "end": 53.425
-  },
-  {
-   "word": "dua,",
-   "start": 53.425,
-   "end": 53.708
-  },
-  {
-   "word": "Sratit",
-   "start": 53.708,
-   "end": 54.086
-  },
-  {
-   "word": "dua",
-   "start": 54.086,
-   "end": 54.369
-  },
-  {
-   "word": "puluh",
-   "start": 54.369,
-   "end": 54.747
-  },
-  {
-   "word": "satu,",
-   "start": 54.747,
-   "end": 55.125
-  },
-  {
-   "word": "Mardjiki",
-   "start": 55.125,
-   "end": 55.597
-  },
-  {
-   "word": "tujuh",
-   "start": 55.597,
-   "end": 55.974
-  },
-  {
-   "word": "belas.",
-   "start": 55.974,
-   "end": 56.352
-  },
-  {
-   "word": "Delapan",
-   "start": 56.852,
-   "end": 57.29
-  },
-  {
-   "word": "pesawat",
-   "start": 57.29,
-   "end": 57.729
-  },
-  {
-   "word": "amfibi",
-   "start": 57.729,
-   "end": 58.167
-  },
-  {
-   "word": "Dornier",
-   "start": 58.167,
-   "end": 58.518
-  },
-  {
-   "word": "dikirim",
-   "start": 58.518,
-   "end": 58.956
-  },
-  {
-   "word": "dari",
-   "start": 58.956,
-   "end": 59.307
-  },
-  {
-   "word": "Surabaya,",
-   "start": 59.307,
-   "end": 59.833
-  },
-  {
-   "word": "dan",
-   "start": 59.833,
-   "end": 60.096
-  },
-  {
-   "word": "sekitar",
-   "start": 60.096,
-   "end": 60.534
-  },
-  {
-   "word": "dua",
-   "start": 60.534,
-   "end": 60.797
-  },
-  {
-   "word": "puluh",
-   "start": 60.797,
-   "end": 61.148
+   "end": 0.4
   },
   {
    "word": "orang",
-   "start": 61.148,
-   "end": 61.498
+   "start": 0.4,
+   "end": 0.76
   },
   {
-   "word": "dievakuasi",
-   "start": 61.498,
-   "end": 62.024
+   "word": "kenal",
+   "start": 0.76,
+   "end": 1.1
   },
   {
-   "word": "lewat",
-   "start": 62.024,
-   "end": 62.375
+   "word": "kapalnya,",
+   "start": 1.1,
+   "end": 1.72
   },
   {
-   "word": "udara.",
-   "start": 62.375,
-   "end": 62.813
+   "word": "hampir",
+   "start": 2.38,
+   "end": 2.9
   },
   {
-   "word": "Sang",
-   "start": 63.213,
-   "end": 63.554
+   "word": "tak",
+   "start": 2.9,
+   "end": 3.28
   },
   {
-   "word": "nakhoda",
-   "start": 63.554,
-   "end": 64.121
-  },
-  {
-   "word": "selamat.",
-   "start": 64.121,
-   "end": 64.688
-  },
-  {
-   "word": "Operator",
-   "start": 64.688,
-   "end": 65.369
-  },
-  {
-   "word": "radionya,",
-   "start": 65.369,
-   "end": 65.936
-  },
-  {
-   "word": "Uytermerk,",
-   "start": 65.936,
-   "end": 66.503
-  },
-  {
-   "word": "tidak",
-   "start": 66.503,
-   "end": 66.956
-  },
-  {
-   "word": "meninggalkan",
-   "start": 66.956,
-   "end": 67.637
-  },
-  {
-   "word": "posnya.",
-   "start": 67.637,
-   "end": 68.091
-  },
-  {
-   "word": "Sebuah",
-   "start": 68.091,
-   "end": 68.544
-  },
-  {
-   "word": "plakat",
-   "start": 68.544,
-   "end": 68.998
-  },
-  {
-   "word": "di",
-   "start": 68.998,
-   "end": 69.338
-  },
-  {
-   "word": "Brondong",
-   "start": 69.338,
-   "end": 69.792
-  },
-  {
-   "word": "masih",
-   "start": 69.792,
-   "end": 70.246
-  },
-  {
-   "word": "menyebut",
-   "start": 70.246,
-   "end": 70.813
-  },
-  {
-   "word": "namanya.",
-   "start": 70.813,
-   "end": 71.38
-  },
-  {
-   "word": "Jumlah",
-   "start": 71.98,
-   "end": 72.373
-  },
-  {
-   "word": "korban",
-   "start": 72.373,
-   "end": 72.766
-  },
-  {
-   "word": "tidak",
-   "start": 72.766,
-   "end": 73.158
-  },
-  {
-   "word": "pernah",
-   "start": 73.158,
-   "end": 73.551
-  },
-  {
-   "word": "bulat:",
-   "start": 73.551,
-   "end": 73.944
-  },
-  {
-   "word": "satu",
-   "start": 73.944,
-   "end": 74.337
-  },
-  {
-   "word": "koran",
-   "start": 74.337,
-   "end": 74.73
-  },
-  {
-   "word": "menulis",
-   "start": 74.73,
-   "end": 75.221
-  },
-  {
-   "word": "empat",
-   "start": 75.221,
-   "end": 75.613
-  },
-  {
-   "word": "puluh",
-   "start": 75.613,
-   "end": 76.006
-  },
-  {
-   "word": "dua",
-   "start": 76.006,
-   "end": 76.301
-  },
-  {
-   "word": "hilang,",
-   "start": 76.301,
-   "end": 76.694
-  },
-  {
-   "word": "sumber",
-   "start": 76.694,
-   "end": 77.086
-  },
-  {
-   "word": "lain",
-   "start": 77.086,
-   "end": 77.381
-  },
-  {
-   "word": "lima",
-   "start": 77.381,
-   "end": 77.774
-  },
-  {
-   "word": "puluh",
-   "start": 77.774,
-   "end": 78.167
-  },
-  {
-   "word": "delapan",
-   "start": 78.167,
-   "end": 78.658
-  },
-  {
-   "word": "tewas,",
-   "start": 78.658,
-   "end": 79.05
-  },
-  {
-   "word": "sampai",
-   "start": 79.05,
-   "end": 79.443
-  },
-  {
-   "word": "tujuh",
-   "start": 79.443,
-   "end": 79.836
-  },
-  {
-   "word": "puluh",
-   "start": 79.836,
-   "end": 80.229
-  },
-  {
-   "word": "lima",
-   "start": 80.229,
-   "end": 80.622
-  },
-  {
-   "word": "hilang.",
-   "start": 80.622,
-   "end": 81.014
-  },
-  {
-   "word": "Pada",
-   "start": 81.414,
-   "end": 81.939
-  },
-  {
-   "word": "2021,",
-   "start": 81.939,
-   "end": 82.201
-  },
-  {
-   "word": "bangkainya",
-   "start": 82.201,
-   "end": 82.857
-  },
-  {
-   "word": "ditemukan",
-   "start": 82.857,
-   "end": 83.644
-  },
-  {
-   "word": "di",
-   "start": 83.644,
-   "end": 84.037
-  },
-  {
-   "word": "kedalaman",
-   "start": 84.037,
-   "end": 84.824
-  },
-  {
-   "word": "dua",
-   "start": 84.824,
-   "end": 85.217
-  },
-  {
-   "word": "puluh",
-   "start": 85.217,
-   "end": 85.742
-  },
-  {
-   "word": "delapan",
-   "start": 85.742,
-   "end": 86.397
-  },
-  {
-   "word": "meter.",
-   "start": 86.397,
-   "end": 86.922
-  },
-  {
-   "word": "Yang",
-   "start": 86.922,
-   "end": 87.315
-  },
-  {
-   "word": "tidak",
-   "start": 87.315,
-   "end": 87.84
-  },
-  {
-   "word": "pernah",
-   "start": 87.84,
-   "end": 88.364
-  },
-  {
-   "word": "diperdebatkan:",
-   "start": 88.364,
-   "end": 89.282
-  },
-  {
-   "word": "perahu",
-   "start": 89.282,
-   "end": 89.938
-  },
-  {
-   "word": "kayu",
-   "start": 89.938,
-   "end": 90.462
+   "word": "ada",
+   "start": 3.28,
+   "end": 3.44
   },
   {
    "word": "yang",
-   "start": 90.462,
-   "end": 90.856
+   "start": 3.44,
+   "end": 3.68
   },
   {
-   "word": "datang",
-   "start": 90.856,
-   "end": 91.38
+   "word": "tahu.",
+   "start": 3.68,
+   "end": 4.16
   },
   {
-   "word": "lebih",
-   "start": 91.38,
-   "end": 91.905
+   "word": "Siapa",
+   "start": 4.62,
+   "end": 5.04
   },
   {
-   "word": "dulu.",
-   "start": 91.905,
-   "end": 92.429
+   "word": "yang",
+   "start": 5.04,
+   "end": 5.24
+  },
+  {
+   "word": "menarik",
+   "start": 5.24,
+   "end": 5.76
+  },
+  {
+   "word": "sekitar",
+   "start": 5.76,
+   "end": 6.22
+  },
+  {
+   "word": "seratus",
+   "start": 6.22,
+   "end": 6.68
+  },
+  {
+   "word": "empat",
+   "start": 6.68,
+   "end": 7.1
+  },
+  {
+   "word": "puluh",
+   "start": 7.1,
+   "end": 7.42
+  },
+  {
+   "word": "orang",
+   "start": 7.42,
+   "end": 7.86
+  },
+  {
+   "word": "dari",
+   "start": 7.86,
+   "end": 8.2
+  },
+  {
+   "word": "laut",
+   "start": 8.2,
+   "end": 8.46
+  },
+  {
+   "word": "malam",
+   "start": 8.46,
+   "end": 8.84
+  },
+  {
+   "word": "itu.",
+   "start": 8.84,
+   "end": 9.28
+  },
+  {
+   "word": "di",
+   "start": 10.12,
+   "end": 10.2
+  },
+  {
+   "word": "nihari,",
+   "start": 10.2,
+   "end": 11.08
+  },
+  {
+   "word": "20",
+   "start": 11.28,
+   "end": 11.7
+  },
+  {
+   "word": "Oktober",
+   "start": 11.7,
+   "end": 12.78
+  },
+  {
+   "word": "1936.",
+   "start": 12.78,
+   "end": 15.38
+  },
+  {
+   "word": "Kapal",
+   "start": 16.46,
+   "end": 16.78
+  },
+  {
+   "word": "UAP",
+   "start": 16.78,
+   "end": 17.12
+  },
+  {
+   "word": "Van",
+   "start": 17.12,
+   "end": 17.44
+  },
+  {
+   "word": "der",
+   "start": 17.44,
+   "end": 17.66
+  },
+  {
+   "word": "Waik",
+   "start": 17.66,
+   "end": 18.1
+  },
+  {
+   "word": "membawa",
+   "start": 18.1,
+   "end": 18.66
+  },
+  {
+   "word": "sekitar",
+   "start": 18.66,
+   "end": 19.32
+  },
+  {
+   "word": "dua",
+   "start": 19.32,
+   "end": 19.62
+  },
+  {
+   "word": "ratus",
+   "start": 19.62,
+   "end": 20.08
+  },
+  {
+   "word": "enam",
+   "start": 20.08,
+   "end": 20.38
+  },
+  {
+   "word": "puluh",
+   "start": 20.38,
+   "end": 20.64
+  },
+  {
+   "word": "orang.",
+   "start": 20.64,
+   "end": 21.14
+  },
+  {
+   "word": "Menjelang",
+   "start": 21.48,
+   "end": 21.86
+  },
+  {
+   "word": "pukul",
+   "start": 21.86,
+   "end": 22.16
+  },
+  {
+   "word": "satu,",
+   "start": 22.16,
+   "end": 22.72
+  },
+  {
+   "word": "Surabaya",
+   "start": 23.06,
+   "end": 23.48
+  },
+  {
+   "word": "menerima",
+   "start": 23.48,
+   "end": 23.98
+  },
+  {
+   "word": "satu",
+   "start": 23.98,
+   "end": 24.34
+  },
+  {
+   "word": "sinyal,",
+   "start": 24.34,
+   "end": 25.18
+  },
+  {
+   "word": "SOS,",
+   "start": 25.54,
+   "end": 26.38
+  },
+  {
+   "word": "kapal",
+   "start": 26.78,
+   "end": 27.3
+  },
+  {
+   "word": "miring",
+   "start": 27.3,
+   "end": 27.68
+  },
+  {
+   "word": "parah,",
+   "start": 27.68,
+   "end": 28.5
+  },
+  {
+   "word": "tanpa",
+   "start": 28.68,
+   "end": 29.06
+  },
+  {
+   "word": "posisi.",
+   "start": 29.06,
+   "end": 29.6
+  },
+  {
+   "word": "Menurut",
+   "start": 29.6,
+   "end": 30.56
+  },
+  {
+   "word": "kesaksian",
+   "start": 30.56,
+   "end": 31.12
+  },
+  {
+   "word": "pertama,",
+   "start": 31.12,
+   "end": 31.76
+  },
+  {
+   "word": "kapal",
+   "start": 32.24,
+   "end": 32.54
+  },
+  {
+   "word": "tiba",
+   "start": 32.54,
+   "end": 32.82
+  },
+  {
+   "word": "-tiba",
+   "start": 32.82,
+   "end": 33.08
+  },
+  {
+   "word": "oleng",
+   "start": 33.08,
+   "end": 33.64
+  },
+  {
+   "word": "dan",
+   "start": 33.64,
+   "end": 34.08
+  },
+  {
+   "word": "tenggelam",
+   "start": 34.08,
+   "end": 34.8
+  },
+  {
+   "word": "dalam",
+   "start": 34.8,
+   "end": 35.22
+  },
+  {
+   "word": "hitungan",
+   "start": 35.22,
+   "end": 35.76
+  },
+  {
+   "word": "menit.",
+   "start": 35.76,
+   "end": 36.38
+  },
+  {
+   "word": "Hampir",
+   "start": 36.54,
+   "end": 37.02
+  },
+  {
+   "word": "semua",
+   "start": 37.02,
+   "end": 37.3
+  },
+  {
+   "word": "sekoci",
+   "start": 37.3,
+   "end": 37.88
+  },
+  {
+   "word": "tak",
+   "start": 37.88,
+   "end": 38.08
+  },
+  {
+   "word": "sempat",
+   "start": 38.08,
+   "end": 38.52
+  },
+  {
+   "word": "diturunkan.",
+   "start": 38.52,
+   "end": 39.66
+  },
+  {
+   "word": "Pesawat",
+   "start": 39.8,
+   "end": 40.2
+  },
+  {
+   "word": "terbang",
+   "start": 40.2,
+   "end": 40.52
+  },
+  {
+   "word": "Dornier",
+   "start": 40.52,
+   "end": 41.16
+  },
+  {
+   "word": "baru",
+   "start": 41.16,
+   "end": 41.5
+  },
+  {
+   "word": "berangkat",
+   "start": 41.5,
+   "end": 42.04
+  },
+  {
+   "word": "saat",
+   "start": 42.04,
+   "end": 42.34
+  },
+  {
+   "word": "fajar.",
+   "start": 42.34,
+   "end": 43.22
+  },
+  {
+   "word": "Menunggu",
+   "start": 43.4,
+   "end": 43.78
+  },
+  {
+   "word": "terang,",
+   "start": 43.78,
+   "end": 44.52
+  },
+  {
+   "word": "mereka",
+   "start": 44.74,
+   "end": 45.04
+  },
+  {
+   "word": "hanya",
+   "start": 45.04,
+   "end": 45.32
+  },
+  {
+   "word": "menemukan",
+   "start": 45.32,
+   "end": 45.94
+  },
+  {
+   "word": "satu",
+   "start": 45.94,
+   "end": 46.38
+  },
+  {
+   "word": "sekoci.",
+   "start": 46.38,
+   "end": 47.48
+  },
+  {
+   "word": "Tapi",
+   "start": 47.7,
+   "end": 48.0
+  },
+  {
+   "word": "di",
+   "start": 48.0,
+   "end": 48.2
+  },
+  {
+   "word": "pesisir",
+   "start": 48.2,
+   "end": 48.66
+  },
+  {
+   "word": "Brondong,",
+   "start": 48.66,
+   "end": 49.5
+  },
+  {
+   "word": "Lamongan,",
+   "start": 49.78,
+   "end": 50.56
+  },
+  {
+   "word": "para",
+   "start": 50.86,
+   "end": 51.04
+  },
+  {
+   "word": "nelayan",
+   "start": 51.04,
+   "end": 51.5
+  },
+  {
+   "word": "turun",
+   "start": 51.5,
+   "end": 51.96
+  },
+  {
+   "word": "ke",
+   "start": 51.96,
+   "end": 52.16
+  },
+  {
+   "word": "laut.",
+   "start": 52.16,
+   "end": 52.44
+  },
+  {
+   "word": "Tak",
+   "start": 53.08,
+   "end": 53.24
+  },
+  {
+   "word": "ada",
+   "start": 53.24,
+   "end": 53.44
+  },
+  {
+   "word": "aturan",
+   "start": 53.44,
+   "end": 53.82
+  },
+  {
+   "word": "resmi",
+   "start": 53.82,
+   "end": 54.32
+  },
+  {
+   "word": "yang",
+   "start": 54.32,
+   "end": 54.54
+  },
+  {
+   "word": "mewajibkan",
+   "start": 54.54,
+   "end": 55.2
+  },
+  {
+   "word": "mereka.",
+   "start": 55.2,
+   "end": 55.72
+  },
+  {
+   "word": "Dengan",
+   "start": 55.72,
+   "end": 56.76
+  },
+  {
+   "word": "perahu",
+   "start": 56.76,
+   "end": 57.04
+  },
+  {
+   "word": "kecil,",
+   "start": 57.04,
+   "end": 57.72
+  },
+  {
+   "word": "mereka",
+   "start": 58.08,
+   "end": 58.32
+  },
+  {
+   "word": "menarik",
+   "start": 58.32,
+   "end": 58.92
+  },
+  {
+   "word": "sekitar",
+   "start": 58.92,
+   "end": 59.36
+  },
+  {
+   "word": "seratus",
+   "start": 59.36,
+   "end": 59.92
+  },
+  {
+   "word": "empat",
+   "start": 59.92,
+   "end": 60.48
+  },
+  {
+   "word": "puluh",
+   "start": 60.48,
+   "end": 61.02
+  },
+  {
+   "word": "orang",
+   "start": 61.02,
+   "end": 61.3
+  },
+  {
+   "word": "dari",
+   "start": 61.3,
+   "end": 61.58
+  },
+  {
+   "word": "air,",
+   "start": 61.58,
+   "end": 62.08
+  },
+  {
+   "word": "termasuk",
+   "start": 62.62,
+   "end": 63.22
+  },
+  {
+   "word": "sang",
+   "start": 63.22,
+   "end": 63.48
+  },
+  {
+   "word": "kapten.",
+   "start": 63.48,
+   "end": 64.56
+  },
+  {
+   "word": "Yang",
+   "start": 64.8,
+   "end": 64.92
+  },
+  {
+   "word": "enam",
+   "start": 64.92,
+   "end": 65.32
+  },
+  {
+   "word": "jam",
+   "start": 65.32,
+   "end": 65.58
+  },
+  {
+   "word": "terapung",
+   "start": 65.58,
+   "end": 66.42
+  },
+  {
+   "word": "dengan",
+   "start": 66.42,
+   "end": 66.82
+  },
+  {
+   "word": "pakaian",
+   "start": 66.82,
+   "end": 67.34
+  },
+  {
+   "word": "tidur,",
+   "start": 67.34,
+   "end": 68.24
+  },
+  {
+   "word": "sekitar",
+   "start": 68.48,
+   "end": 68.9
+  },
+  {
+   "word": "lima",
+   "start": 68.9,
+   "end": 69.22
+  },
+  {
+   "word": "puluh",
+   "start": 69.22,
+   "end": 69.52
+  },
+  {
+   "word": "orang",
+   "start": 69.52,
+   "end": 69.9
+  },
+  {
+   "word": "tak",
+   "start": 69.9,
+   "end": 70.16
+  },
+  {
+   "word": "pernah",
+   "start": 70.16,
+   "end": 70.38
+  },
+  {
+   "word": "ditemukan.",
+   "start": 70.38,
+   "end": 71.12
+  },
+  {
+   "word": "Jumlah",
+   "start": 71.88,
+   "end": 72.42
+  },
+  {
+   "word": "pastinya",
+   "start": 72.42,
+   "end": 73.04
+  },
+  {
+   "word": "tak",
+   "start": 73.04,
+   "end": 73.28
+  },
+  {
+   "word": "diketahui,",
+   "start": 73.28,
+   "end": 74.2
+  },
+  {
+   "word": "karena",
+   "start": 74.4,
+   "end": 74.7
+  },
+  {
+   "word": "para",
+   "start": 74.7,
+   "end": 75.04
+  },
+  {
+   "word": "buruh",
+   "start": 75.04,
+   "end": 75.28
+  },
+  {
+   "word": "pribumi",
+   "start": 75.28,
+   "end": 76.04
+  },
+  {
+   "word": "tidak",
+   "start": 76.04,
+   "end": 76.44
+  },
+  {
+   "word": "tercatat",
+   "start": 76.44,
+   "end": 77.14
+  },
+  {
+   "word": "namanya.",
+   "start": 77.14,
+   "end": 77.72
+  },
+  {
+   "word": "Setahun",
+   "start": 78.3,
+   "end": 78.7
+  },
+  {
+   "word": "kemudian,",
+   "start": 78.7,
+   "end": 79.56
+  },
+  {
+   "word": "sembilan",
+   "start": 79.8,
+   "end": 80.1
+  },
+  {
+   "word": "perahu",
+   "start": 80.1,
+   "end": 80.82
+  },
+  {
+   "word": "baru",
+   "start": 80.82,
+   "end": 81.18
+  },
+  {
+   "word": "dibagikan",
+   "start": 81.18,
+   "end": 82.0
+  },
+  {
+   "word": "kepada",
+   "start": 82.0,
+   "end": 82.42
+  },
+  {
+   "word": "para",
+   "start": 82.42,
+   "end": 82.76
+  },
+  {
+   "word": "nelayan.",
+   "start": 82.76,
+   "end": 83.26
+  },
+  {
+   "word": "Lalu,",
+   "start": 83.26,
+   "end": 84.42
+  },
+  {
+   "word": "atas",
+   "start": 84.7,
+   "end": 84.92
+  },
+  {
+   "word": "permintaan",
+   "start": 84.92,
+   "end": 85.52
+  },
+  {
+   "word": "mereka",
+   "start": 85.52,
+   "end": 85.82
+  },
+  {
+   "word": "sendiri,",
+   "start": 85.82,
+   "end": 86.46
+  },
+  {
+   "word": "dibangun",
+   "start": 86.9,
+   "end": 87.32
+  },
+  {
+   "word": "sebuah",
+   "start": 87.32,
+   "end": 87.7
+  },
+  {
+   "word": "mercusuar",
+   "start": 87.7,
+   "end": 88.28
+  },
+  {
+   "word": "kecil",
+   "start": 88.28,
+   "end": 88.84
+  },
+  {
+   "word": "di",
+   "start": 88.84,
+   "end": 89.06
+  },
+  {
+   "word": "Brondong.",
+   "start": 89.06,
+   "end": 89.86
+  },
+  {
+   "word": "Di",
+   "start": 90.14,
+   "end": 90.26
+  },
+  {
+   "word": "dindingnya,",
+   "start": 90.26,
+   "end": 91.18
+  },
+  {
+   "word": "pelat",
+   "start": 91.44,
+   "end": 91.7
+  },
+  {
+   "word": "besi",
+   "start": 91.7,
+   "end": 92.02
+  },
+  {
+   "word": "bertuliskan.",
+   "start": 92.02,
+   "end": 93.12
+  },
+  {
+   "word": "Tanda",
+   "start": 93.6,
+   "end": 93.98
+  },
+  {
+   "word": "peringatan",
+   "start": 93.98,
+   "end": 94.6
+  },
+  {
+   "word": "kepada",
+   "start": 94.6,
+   "end": 94.94
+  },
+  {
+   "word": "penulung",
+   "start": 94.94,
+   "end": 95.32
+  },
+  {
+   "word": "-penulung.",
+   "start": 95.32,
+   "end": 96.0
+  },
+  {
+   "word": "Hari",
+   "start": 96.76,
+   "end": 96.96
+  },
+  {
+   "word": "ini,",
+   "start": 96.96,
+   "end": 97.44
+  },
+  {
+   "word": "orang",
+   "start": 97.64,
+   "end": 97.72
+  },
+  {
+   "word": "menyebutnya",
+   "start": 97.72,
+   "end": 98.34
+  },
+  {
+   "word": "monument,",
+   "start": 98.34,
+   "end": 98.9
+  },
+  {
+   "word": "padahal",
+   "start": 99.48,
+   "end": 99.9
+  },
+  {
+   "word": "itu",
+   "start": 99.9,
+   "end": 100.12
+  },
+  {
+   "word": "mercusuar.",
+   "start": 100.12,
+   "end": 100.92
+  },
+  {
+   "word": "Kapal",
+   "start": 101.78,
+   "end": 102.24
+  },
+  {
+   "word": "itu",
+   "start": 102.24,
+   "end": 102.66
+  },
+  {
+   "word": "punya",
+   "start": 102.66,
+   "end": 102.94
+  },
+  {
+   "word": "novel",
+   "start": 102.94,
+   "end": 103.42
+  },
+  {
+   "word": "dan",
+   "start": 103.42,
+   "end": 103.74
+  },
+  {
+   "word": "film.",
+   "start": 103.74,
+   "end": 104.14
+  },
+  {
+   "word": "Para",
+   "start": 104.88,
+   "end": 105.18
+  },
+  {
+   "word": "penolongnya",
+   "start": 105.18,
+   "end": 106.08
+  },
+  {
+   "word": "hanya",
+   "start": 106.08,
+   "end": 106.48
+  },
+  {
+   "word": "punya",
+   "start": 106.48,
+   "end": 106.74
+  },
+  {
+   "word": "sebuah",
+   "start": 106.74,
+   "end": 107.14
+  },
+  {
+   "word": "pelat",
+   "start": 107.14,
+   "end": 107.48
+  },
+  {
+   "word": "besi.",
+   "start": 107.48,
+   "end": 107.92
   }
  ]
 }

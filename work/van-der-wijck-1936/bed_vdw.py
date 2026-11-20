@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 
 SR = 48000
-END = 95.70
+END = 110.90
 OUT = Path(__file__).resolve().parent / "audio" / "bed.wav"
 
 
@@ -69,13 +69,19 @@ def main():
         bed[i0:i1] += amp * hp * (tt ** 2.3)
 
     hit(0.10, freq=44, amp=0.75)
-    riser(28.4, 32.30, amp=0.50)
-    hit(32.30, freq=40, amp=1.05, dur=2.5)      # "6 menit"
-    hit(44.70, freq=52, amp=0.55, dur=1.6)      # perahu masuk
-    hit(56.85, freq=46, amp=0.6)
-    hit(71.95, freq=42, amp=0.8, dur=2.2)       # angka korban
-    riser(78.0, 81.35, amp=0.40)
-    hit(81.35, freq=38, amp=0.70, dur=2.4)      # bangkai 2021
+    hit(10.12, freq=46, amp=0.60)               # tanggal
+    riser(18.6, 21.48, amp=0.42)                # menuju SOS
+    hit(21.48, freq=41, amp=0.95, dur=2.4)      # "menjelang pukul satu"
+    riser(26.4, 29.60, amp=0.50)
+    hit(29.60, freq=40, amp=1.05, dur=2.5)      # "menurut kesaksian pertama"
+    hit(39.80, freq=48, amp=0.6)                # Dornier
+    hit(47.70, freq=52, amp=0.7, dur=1.8)       # nelayan turun ke laut
+    hit(62.62, freq=44, amp=0.85, dur=2.2)      # kapten
+    hit(68.48, freq=42, amp=0.7)                # 50 orang hilang
+    hit(78.30, freq=46, amp=0.6)                # sembilan perahu
+    riser(86.0, 90.14, amp=0.44)
+    hit(90.14, freq=38, amp=0.85, dur=2.4)      # pelat besi
+    hit(96.76, freq=36, amp=0.80, dur=2.6)      # "hari ini …"  
 
     def dip(a, b, depth, edge=0.7):
         i0, i1 = int(a * SR), int(b * SR)
@@ -85,8 +91,9 @@ def main():
         g[-m:] = np.linspace(depth, 1, m)
         bed[i0:i1] *= g
 
-    dip(39.90, 44.60, 0.30)                     # "tidak ada kapal besar"
-    dip(93.20, 95.60, 0.22)                     # kartu penutup
+    dip(21.60, 25.10, 0.45)                     # SOS tanpa posisi
+    dip(94.30, 96.60, 0.26)                     # pelat besi di dinding
+    dip(108.30, 110.90, 0.22)                   # kartu penutup
 
     fi = int(1.2 * SR)
     bed[:fi] *= np.linspace(0, 1, fi)

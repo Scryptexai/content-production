@@ -1,72 +1,80 @@
-# AK-EP04 — Kapal Van der Wijck 1936 (POV lima nelayan Brondong)
+# AK-EP04 — Kapal Van der Wijck 1936 (POV nelayan Brondong)
 
-Status: **DRAF SELESAI, BELUM TAYANG.** Menunggu izin pemilik sebelum masuk antrean
+Status: **DRAF rev2, BELUM TAYANG.** Menunggu izin pemilik sebelum masuk antrean
 (`queue/AK-EP04.json` masih `"status": "draft"`, `"approved": false`).
 
-Judul: **Kapal Itu Tenggelam dalam 6 Menit. 145 Orang Diselamatkan Lima Nelayan.**
+**Rev2 memakai VO PEMILIK**, bukan TTS lokal. VO dan teksnya diambil dari Drive
+`van-der-wijck/vo` (`vo_van-der-wijck.mp3`, `vo_text.txt`, `vo_alignment.json`,
+`vo_settings.json`) — ElevenLabs "Dhawa – Storytelling, Calm & Cinematic",
+`eleven_multilingual_v2`, speed 0,95, **108,30 s**. Kata-katanya bukan milik saya:
+hook "Semua orang kenal kapalnya…", SOS tanpa posisi, kapten enam jam terapung,
+buruh pribumi yang tidak tercatat, sembilan perahu baru, dan pelat besi di mercusuar
+Brondong. Rev1 (VO TTS internal, 95,7 s) dibuang dan berkasnya di Drive sudah di-trash.
 
-Sumber ide: spreadsheet Drive "ODDCHAPTER – Daftar Ide Konten (19 Nov 2026)", peringkat 2
-(skor 20) — bukan ide hasil riset baru.
+Judul: **140 Orang Ditarik dari Laut Malam Itu. Tak Ada yang Tahu Siapa Mereka.**
 
 ## Berkas
 
-| Berkas | Ukuran | Lokasi |
+| Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP04_van-der-wijck-1936_short_v1.mp4` (95,7 s, 1080×1920 @30) | 34.596.271 B | Drive `1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk` |
-| `AK-EP04_thumbnail_16x9.jpg` (1280×720) | 74.930 B | Drive `10jjGBJmt4MY046fMzHBSHKluRXeI-M3a` |
-| `AK-EP04_poster_9x16.jpg` (1080×1920) | 100.159 B | Drive `1XQLD5bnZ4Wbzo0i5qeZHfQKr7jPz1TKW` |
-| `AK-EP04.id.srt` (83 cue) | 4.003 B | Drive `19Vq1Iqb0q11aHTNmxqrCxEnxhBJDjMSU` |
+| `AK-EP04_van-der-wijck-1936_short_v2.mp4` (110,9 s, 1080×1920 @30) | 36.233.598 B | `1Z0PMJveNoddHwpt2w3JEp-1TkjFtzapn` |
+| `AK-EP04_thumbnail_16x9.jpg` (1280×720) | 70.735 B | `1nCwbYddGA4ph4ffDOiRlmzho85va23zJ` |
+| `AK-EP04_poster_9x16.jpg` (1080×1920) | 101.126 B | `1hmjax8eATZ5-nf8f1piWM55_z7PqUMAC` |
+| `AK-EP04.id.srt` (89 cue) | 4.225 B | `1iSCrKTku0wVg0OAPxhYdC8WvSo-_7Brc` |
 
 Folder Drive: `118AuYkyfDc3YvicyHanZzlU1WCj8mjRq` (van-der-wijck).
-sha256 `fe548f93da2a0da33c388457228b95b6e8cc5fca010270e3e4682e9c87efabc8`
-Audio: −15,0 LUFS · true peak −1,3 dBTP · AAC 198 k / 44,1 kHz.
+sha256 `88dcbfd6c0e4d6bb5a0929ad40262d61ef65b2ae887b41ab2a98f8e9b36399f1`
+Audio: −15,0 LUFS · true peak −1,4 dBTP · AAC / 44,1 kHz.
 
-VO: internal TTS (voice-05), 11 beat, 208 kata / 1.373 karakter, 93,33 s. Rangkaian
-klip TTS → `build_vo.py` → `vo_van-der-wijck.mp3` + `vo_alignment.json`.
-Enam klip pertama gagal digabung jadi satu, jadi VO dirakit dari 10 klip (kalimat
-4+5 dijadikan satu klip) — batas kalimat tetap pasti, jadi waktu kata tidak melenceng.
+## Peta beat (selaras `vo_alignment.json` milik pemilik)
 
-## Peta beat (selaras `vo_alignment.json`)
-
-| t (s) | Beat VO | Visual |
+| t (s) | Ucapan | Visual |
 |---|---|---|
-| 0,0 | hook | hitam → pelabuhan malam |
-| 1,3 | "Pada 19 Oktober 1936…" | stamp `19 OKTOBER 1936` + ombak malam |
-| 9,7 | "Namanya Van der Wijck" | kapal di laut + stamp `VAN DER WIJCK · KPM` |
-| 18,0 | "berlayar dari Surabaya menuju Semarang" | dermaga malam (SURABAYA → SEMARANG) |
-| 24,9 | "dua belas mil dari Pantai Brondong" | ombak besar + stamp `12 MIL` |
-| 32,4 | "Menurut laporan surat kabar…" | batu laut + **6 MENIT** (merah) |
-| 39,8 | "Tidak ada kapal besar di dekat situ" | laut luas (bed diturunkan) |
-| 44,8 | "Lima nelayan Brondong… 145 orang" | perahu + `5 NELAYAN · 145 ORANG` + daftar nama |
-| 56,9 | "Delapan pesawat amfibi Dornier" | jendela kabin + awan |
-| 63,2 | "Sang nakhoda selamat" | dial radio (Mixkit) |
-| 67,2 | "plakat di Brondong masih menyebut namanya" | pantai + kapal di kejauhan |
-| 72,0 | "Jumlah korban tidak pernah bulat" | langit malam + **42 · 58 · 75** |
-| 81,4 | "bangkainya ditemukan… 28 meter" | tebing laut + stamp `28 METER` |
-| 90,4 | "perahu kayu yang datang lebih dulu" | perahu senja penuh layar → kartu akhir |
+| 0,0 | "Semua orang kenal kapalnya…" | pelabuhan malam → ombak |
+| 10,1 | "Dini hari, 20 Oktober 1936…" | kapal di laut + stamp `20 · 10 · 1936` |
+| 21,5 | "Menjelang pukul satu… SOS…" | dial radio + batu laut (`SINYAL TERAKHIR`, `TANPA POSISI`) |
+| 29,6 | "Menurut kesaksian pertama… oleng…" | ombak besar, batu laut (`SEKOCI TAK SEMPAT TURUN`) |
+| 39,8 | "Pesawat Dornier baru berangkat saat fajar…" | awan dari kabin (`HANYA SATU SEKOCI`) |
+| 47,7 | "Tapi di pesisir Brondong, Lamongan…" | perahu nelayan (`BRONDONG · LAMONGAN`, `TANPA ATURAN RESMI`) |
+| 60,6 | "…menarik sekitar 140 orang dari air" | angka `140` di atas pantai |
+| 62,6 | "Termasuk sang kapten… enam jam terapung" | laut gelap (`KAPTEN · 6 JAM TERAPUNG`) |
+| 68,5 | "Sekitar lima puluh orang tak pernah ditemukan…" | langit malam (`50 ORANG TAK PERNAH DITEMUKAN`) |
+| 71,5 | "…buruh pribumi tidak tercatat namanya" | tangan menulis + koran Belanda |
+| 78,3 | "Setahun kemudian, sembilan perahu baru…" | tebing laut (`SETAHUN KEMUDIAN · 9 PERAHU`) |
+| 82,2 | "…dibangun sebuah mercusuar kecil di Brondong" | rumah lampu mercusuar (3 shot) |
+| 94,2 | pelat besi: "Tanda peringatan kepada penolong-penolong" | kartu hitam + tulisan pelat |
+| 96,8 | "Hari ini orang menyebutnya monumen, padahal itu mercusuar" | mercusuar di tebing (`MERKUSUAR`, `BUKAN MONUMEN`) |
+| 98,1 | "Kapal itu punya novel dan film" | halaman buku (`NOVEL · FILM`) |
+| 104,8 | "Para penolongnya… hanya punya sebuah pelat besi" | laut gelap → kartu akhir |
+
+## Yang berubah dari rev1
+
+- VO: TTS internal → **VO pemilik** (108,30 s). Semua timing, caption, dan shot
+  dihitung ulang dari `vo_alignment.json` milik pemilik (faster-whisper).
+- Salah dengar ASR dibereskan di `case_cfg.py` lewat MERGE/WORD_FIX:
+  "di nihari" → DINI HARI, "Waik" → Wijck, "monument" → monumen,
+  "penulung-penulung" → PENOLONG-PENOLONG, "tiba -tiba" → TIBA-TIBA.
+- Shot baru: mercusuar di tebing + rumah lampu (Coverr `s5_mercusuar_badai`),
+  koran Belanda (`newspaper_printing`), tangan menulis (`hand_writing_letter`),
+  halaman buku (`old_book_pages`).
+- Durasi 95,7 → 110,9 s; SRT 83 → 89 cue.
 
 ## Aturan editorial yang dipatuhi
 
-- **Tanpa gore**, tanpa kondisi jenazah, tanpa penyebab kematian eksplisit.
-- **Tanpa teori konspirasi.** Penyebab tenggelam dibatasi pada yang tertulis di sumber
-  (air masuk, pompa kewalahan, laporan "enam menit").
-- **Angka korban tidak dipilih diam-diam**: 42 hilang (de Telegraaf 22 Okt 1936),
-  58 tewas (detikJatim), 75 hilang, 70 (validnews), 55 (merdeka) — di layar dan di
-  deskripsi disebut sebagai perdebatan.
-- Klaim satu-sumber selalu diatribusikan: "menurut laporan surat kabar saat itu",
-  "tercatat" untuk daftar 145 orang.
-- Footage stok **Coverr + Mixkit Free License**, tag di layar (`FOOTAGE STOK · …`),
-  kredit di kartu akhir dan di deskripsi. Tidak ada footage_risiko.
+- Tanpa gore, tanpa kondisi jenazah, tanpa teori konspirasi.
+- Angka: narasi memakai versi pemilik (260 di kapal, ±140 ditarik, ±50 tak ditemukan).
+  Deskripsi menyebut angka sumber lain (42 hilang · 55 · 58 tewas · 75 hilang) sebagai
+  perdebatan, bukan memilih diam-diam.
+- Footage stok **Coverr + Mixkit Free License**, tag di layar, kredit di kartu akhir
+  dan di deskripsi. Tidak ada footage_risiko.
 
-## Sebelum tayang (urutannya)
+## Sebelum tayang
 
-1. Minta izin pemilik. Kalau setuju → ubah `queue/AK-EP04.json` jadi
-   `"status": "requested"`, `"approved": true`, `requested_at` diisi.
-2. ~~Unggah master ke Drive~~ — sudah: master, thumbnail, poster, SRT ada di folder
-   `118AuYkyfDc3YvicyHanZzlU1WCj8mjRq`, dan `drive_file_id` di `AK-EP04.json` sudah terisi.
-3. Push **satu** berkas antrean saja (workflow menolak >1 permintaan per push).
-4. Setelah tayang: catat di `published.json`, ubah status antrean jadi `done`,
-   lalu isi `_PUBLISH.md` ini dengan tautan.
+1. Minta izin pemilik. Kalau setuju → `queue/AK-EP04.json` jadi
+   `"status": "requested"`, `"approved": true`, isi `requested_at`.
+2. Push **satu** berkas antrean saja (workflow menolak >1 permintaan per push).
+3. Setelah tayang: catat di `published.json`, ubah status antrean jadi `done`,
+   lengkapi berkas ini dengan tautan.
 
 ## Kalau perlu render ulang
 
@@ -76,5 +84,6 @@ python3 ODDCHAPTER_BRAND/tools/build_short_case.py van-der-wijck-1936 shots|vide
 python3 ODDCHAPTER_BRAND/tools/make_thumb_case.py van-der-wijck-1936
 ```
 
-Semua footage Coverr berdurasi tepat 6,00 s — durasi tiap shot + titik mulai sumber
-harus ≤ 6,00 s, kalau tidak shot memendek dan total video bergeser.
+VO pemilik tersimpan di `work/van-der-wijck-1936/vo_owner/` (mp3 + alignment asli)
+dan disalin ke `vo_van-der-wijck.mp3` + `vo_alignment.json` yang dibaca builder.
+Semua footage Coverr 6,00 s: durasi shot + titik mulai sumber harus ≤ 6,00 s.

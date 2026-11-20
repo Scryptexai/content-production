@@ -3,17 +3,18 @@
  "status": "draft",
  "approved": false,
  "visibility": "public",
- "judul": "Kapal Itu Tenggelam dalam 6 Menit. 145 Orang Diselamatkan Lima Nelayan.",
- "kasus": "Kapal Van der Wijck 1936 - POV lima nelayan Brondong",
- "catatan": "DRAF. Master sudah di Drive (1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk). Jangan ubah status jadi requested sebelum approved:true dari pemilik. Sumber ide: spreadsheet Drive \"Daftar Ide Konten (19 Nov 2026)\" peringkat 2.",
+ "judul": "140 Orang Ditarik dari Laut Malam Itu. Tak Ada yang Tahu Siapa Mereka.",
+ "kasus": "Kapal Van der Wijck 1936 - POV nelayan Brondong (VO pemilik)",
+ "catatan": "DRAF rev2. VO = milik pemilik (Drive vo/vo_van-der-wijck.mp3, 108,30 s), bukan TTS lokal. Status TETAP draft dan approved:false sampai pemilik setuju tayang. Sumber ide: spreadsheet Drive 'Daftar Ide Konten (19 Nov 2026)' peringkat 2.",
  "berkas": {
-  "video": "work/van-der-wijck-1936/out/AK-EP04_van-der-wijck-1936_short_v1.mp4",
+  "video": "work/van-der-wijck-1936/out/AK-EP04_van-der-wijck-1936_short_v2.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP04_thumbnail_16x9.jpg",
   "poster": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP04_poster_9x16.jpg",
   "srt": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/AK-EP04.id.srt"
  },
- "sha256": "fe548f93da2a0da33c388457228b95b6e8cc5fca010270e3e4682e9c87efabc8",
- "size_bytes": 34596271,
- "duration_seconds": 95.7,
- "drive_file_id": "1Czr1fmBO-b_pV3RLjrbF4Y_aiEzB7bkk"
+ "sha256": "88dcbfd6c0e4d6bb5a0929ad40262d61ef65b2ae887b41ab2a98f8e9b36399f1",
+ "size_bytes": 36233598,
+ "duration_seconds": 110.9,
+ "drive_file_id": "1Z0PMJveNoddHwpt2w3JEp-1TkjFtzapn",
+ "sumber_vo": "pemilik (Drive van-der-wijck/vo)"
 }

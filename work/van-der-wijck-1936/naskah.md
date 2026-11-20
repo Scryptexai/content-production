@@ -1,48 +1,33 @@
-# NASKAH — AK-EP04 "Lima Perahu Kayu" (Van der Wijck, 1936)
+# NASKAH — AK-EP04 Kapal Van der Wijck 1936 (POV nelayan Brondong)
 
-POV: **nelayan Brondong** — orang-orang kecil yang perahunya datang lebih dulu daripada bantuan mana pun.
-Tanaman (ditanam di awal, berubah makna di akhir): **perahu kayu**.
-Gaya: pelan, dingin, tanpa gore.
+**Naskah yang dipakai = teks VO pemilik** (`vo_text.txt`, disalin apa adanya dari Drive
+`van-der-wijck/vo/vo_text.txt`, 108,30 s, ElevenLabs Dhawa). Tidak ada satu kalimat pun
+yang saya tulis ulang: hook, urutan beat, dan penutupnya milik pemilik.
 
-## HOOK (dipilih)
-> "Kapal mewah itu tenggelam dalam 6 menit. Yang menyelamatkan 145 orang: lima nelayan dengan perahu kayu."
+## 11 beat VO pemilik
 
-## VO (±200 kata → ±100–105 detik)
+1. **Hook** — "Semua orang kenal kapalnya. Hampir tak ada yang tahu… siapa yang menarik
+   sekitar seratus empat puluh orang dari laut malam itu."
+2. **Waktu & kapal** — dini hari, 20 Oktober 1936; kapal uap Van der Wijk; ±260 orang.
+3. **SOS** — menjelang pukul satu, Surabaya menerima satu sinyal: Es O Es. Miring parah,
+   tanpa posisi.
+4. **Oleng** — menurut kesaksian pertama, kapal tiba-tiba oleng dan tenggelam dalam
+   hitungan menit; hampir semua sekoci tak sempat diturunkan.
+5. **Dornier** — pesawat baru berangkat saat fajar, menunggu terang; hanya satu sekoci
+   yang ditemukan.
+6. **Nelayan** — di pesisir Brondong, Lamongan, nelayan turun ke laut tanpa aturan resmi;
+   dengan perahu kecil menarik ±140 orang dari air.
+7. **Kapten** — termasuk sang kapten, enam jam terapung dengan pakaian tidur.
+8. **Yang hilang** — ±50 orang tak pernah ditemukan; jumlah pasti tak diketahui karena
+   buruh pribumi tidak tercatat namanya.
+9. **Perahu baru & mercusuar** — setahun kemudian sembilan perahu baru dibagikan; atas
+   permintaan nelayan sendiri dibangun mercusuar kecil di Brondong.
+10. **Pelat besi** — di dindingnya: "Tanda peringatan kepada penolong-penolong".
+11. **Penutup** — hari ini disebut monumen, padahal mercusuar; kapal itu punya novel dan
+    film, para penolongnya hanya punya sebuah pelat besi.
 
-**[1] HOOK**
-Pada 19 Oktober 1936, sebuah kapal mewah berhenti di tengah Laut Jawa. Enam menit kemudian, kapal itu sudah tidak ada.
+## Kenapa tidak ada naskah tandingan
 
-**[2]**
-Namanya Van der Wijck. Kapal uap milik perusahaan Belanda, KPM, dijuluki burung camar karena bodinya yang putih dan tenang.
-
-**[3]**
-Malam itu kapal berlayar dari Surabaya menuju Semarang, membawa ratusan penumpang dan seratus lima puluh ton besi.
-
-**[4]**
-Sekitar dua belas mil dari Pantai Brondong, kapal miring. Air masuk lebih cepat daripada pompa yang bisa membuangnya.
-
-**[5]**
-Menurut laporan surat kabar saat itu, seluruh badan kapal hilang di bawah air hanya dalam enam menit.
-
-**[6]**
-Tidak ada kapal besar di dekat situ. Yang ada hanya perahu-perahu nelayan dari pantai.
-
-**[7]**
-Lima nelayan Brondong tercatat menyelamatkan seratus empat puluh lima orang: Kaslibin lima puluh tiga, Modwie tiga puluh dua, Troenoredjo dua puluh dua, Sratit dua puluh satu, Mardjiki tujuh belas.
-
-**[8]**
-Delapan pesawat amfibi Dornier dikirim dari Surabaya, dan sekitar dua puluh orang dievakuasi lewat udara.
-
-**[9]**
-Sang nakhoda selamat. Operator radionya, Uytermerk, tidak meninggalkan posnya. Sebuah plakat di Brondong masih menyebut namanya.
-
-**[10]**
-Jumlah korban tidak pernah bulat: satu koran menulis empat puluh dua hilang, sumber lain lima puluh delapan tewas, sampai tujuh puluh lima hilang.
-
-**[11]**
-Pada 2021, bangkainya ditemukan di kedalaman dua puluh delapan meter. Yang tidak pernah diperdebatkan: perahu kayu yang datang lebih dulu.
-
-## Catatan
-- Angka konflik disebut sebagai perbedaan sumber, bukan dipilih diam-diam.
-- Nama lima nelayan dieja sesuai Wikipedia ID; di caption ditulis apa adanya.
-- Tidak ada klaim tentang menit-menit terakhir Uytermerk — hanya "tidak meninggalkan posnya" (plakat).
+Rev1 (95,7 s) memakai TTS internal dan naskah tulisan saya sendiri — dibuang atas koreksi
+pemilik: setiap ide di daftar sudah punya VO-nya sendiri. Untuk episode berikutnya, VO
+pemilik diambil lebih dulu, baru shotlist disusun di atasnya.

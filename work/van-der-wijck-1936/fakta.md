@@ -31,3 +31,9 @@ Fakta lain:
 
 Aturan: tanpa gore, tanpa menyebut kondisi jenazah, tanpa teori konspirasi; semua angka konflik disebut
 sebagai perbedaan sumber.
+
+## Catatan rev2 (VO pemilik)
+
+Angka yang diucapkan VO pemilik: **±260 orang di kapal, ±140 ditarik nelayan, ±50 tak pernah ditemukan**, kapten terapung enam jam dengan pakaian tidur, dan sembilan perahu baru setahun kemudian. Angka-angka itu berbeda dari sebagian sumber di tabel atas (42 hilang / 55 / 58 tewas / 70 / 75 hilang). Narasi tidak mengganti angka sumber, hanya memilih versi yang dibacakan pemilik; deskripsi unggahan menyebut perbedaannya sebagai perdebatan.
+
+Detail yang dipakai dari VO dan tidak ada di tabel awal: sinyal **SOS** diterima Surabaya menjelang pukul satu tanpa posisi; Dornier berangkat saat fajar karena menunggu terang; hanya **satu sekoci** ditemukan; **pelat besi** di mercusuar Brondong bertuliskan "Tanda peringatan kepada penolong-penolong"; bangunan itu hari ini disebut monumen padahal mercusuar.
