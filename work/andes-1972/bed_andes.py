@@ -2,8 +2,8 @@
 """Bed audio AK-EP05 (Andes 1972): angin dingin, drone rendah, detak jarum.
 
 Tanpa musik dramatis — sama seperti EP04. Hit dipasang di awal beat format
-Curiosity Loop (B3 keputusan, B5 kecelakaan, B7 sumpah, B9 reveal, B10 debat),
-riser menuju B5 dan B9, dip saat kartu penutup. Dipanggil oleh
+Curiosity Loop (B3 radio, B4 pertaruhan, B5 tekanan, B6 pakta, B7 payoff,
+B8 debat), riser menuju B5, dip saat kartu penutup. Dipanggil oleh
 build_short_case.py lewat CFG.BED_BUILDER.
 """
 import wave
@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 
 SR = 48000
-END = 173.21
+END = 91.40
 OUT = Path(__file__).resolve().parent / "audio" / "bed.wav"
 
 
@@ -77,17 +77,15 @@ def main():
         bed[i0:i1] *= g
 
     hit(0.10, freq=44, amp=0.75)                  # pembuka dilema
-    hit(19.77, freq=40, amp=0.95, dur=2.4)        # B3 keputusan yang menggemparkan
-    hit(37.79, freq=46, amp=0.70)                 # B4 pertaruhan nyawa
-    riser(52.25, 56.35, amp=0.45)                 # menuju B5
-    hit(56.35, freq=42, amp=0.90, dur=2.2)        # B5 kecelakaan
-    hit(80.57, freq=44, amp=0.75)                 # B6 kelaparan
-    hit(102.03, freq=38, amp=0.90, dur=2.6)       # B7 sumpah bersama
-    riser(128.24, 132.93, amp=0.45)               # menuju B9
-    hit(132.93, freq=40, amp=0.95, dur=2.4)       # B9 reveal
-    hit(155.46, freq=46, amp=0.70)                # B10 debat
+    hit(10.75, freq=46, amp=0.70)                 # B3 radio: SAR dihentikan
+    hit(15.72, freq=44, amp=0.65)                 # B4 pertaruhan nyawa
+    riser(21.50, 25.38, amp=0.45)                 # menuju B5
+    hit(25.38, freq=42, amp=0.90, dur=2.2)        # B5 tekanan situasi
+    hit(51.30, freq=38, amp=0.95, dur=2.6)        # B6 pakta di tengah es
+    hit(64.71, freq=46, amp=0.75)                 # B7 payoff
+    hit(74.68, freq=40, amp=0.90, dur=2.4)        # B8 debat komentar
 
-    dip(169.12, 173.21, 0.25, edge=0.5)           # kartu penutup
+    dip(87.31, 91.40, 0.25, edge=0.5)           # kartu penutup
 
     fi = int(1.2 * SR)
     bed[:fi] *= np.linspace(0, 1, fi)

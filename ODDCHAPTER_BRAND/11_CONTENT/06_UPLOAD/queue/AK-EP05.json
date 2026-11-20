@@ -4,18 +4,18 @@
  "approved": false,
  "visibility": "public",
  "judul": "72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan",
- "kasus": "Tragedi Andes 1972 - uji format Curiosity Loop (8 beat, VO TTS voice-05)",
- "catatan": "UJI FORMAT baru: 8 beat adaptasi 00F, durasi 2:54 (keputusan pemilik: 1-3 menit, kalimat VO utuh), VO TTS internal karena episode di luar daftar ide Drive. REV2 koreksi pemilik: opsi jawaban normal B2 = buah-buahan; rujukan gunung disamar lalu diperjelas (Pegunungan Andes). Belum ada izin tayang pemilik — tahan di antrean sampai format terbukti dan pemilik menyetujui.",
+ "kasus": "Tragedi Andes 1972 — 'Batas Terakhir Manusia' (uji format Curiosity Loop, POV dilema batin)",
+ "catatan": "REV3 naskah total (koreksi pemilik): POV penonton, bukan laporan kronologis; 8 beat; VO TTS voice-05. Belum ada izin tayang pemilik — tahan di antrean sampai format terbukti dan pemilik menyetujui.",
  "berkas": {
   "video": "work/andes-1972/out/AK-EP05_andes-1972_short.mp4",
   "thumbnail": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_thumbnail_16x9.jpg",
   "poster": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/thumbs/AK-EP05_poster_9x16.jpg",
   "srt": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/AK-EP05.id.srt"
  },
- "sha256": "0bf601e8a5e448fc25d5ef59aa35e66cb1d1c53b62ad2c4266878a6d7b9249fa",
- "size_bytes": 49084435,
- "duration_seconds": 173.0,
- "drive_file_id": "1mZxYU9s9X7UexYzYvwDHzIlnxy7BfhSK",
+ "sha256": "3e0b4ca3b5d2ca62c9f83ffc6d1352e93a1e36106c1f2b6601440be7dcca4f73",
+ "size_bytes": 24614422,
+ "duration_seconds": 91.4,
+ "drive_file_id": "1mhyvo42OtBZMR--FEx2G3QyAQoXxyRjt",
  "sumber_vo": "TTS internal voice-05 (bukan pemilik)",
  "requested_at": "2026-11-20T15:25:00Z"
 }

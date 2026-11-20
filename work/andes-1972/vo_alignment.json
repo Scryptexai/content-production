@@ -1,2047 +1,907 @@
 {
  "source": "tts-internal voice-05",
- "duration": 169.122,
- "text": "Bayangkan pesawat kalian jatuh di pegunungan bersalju dan tujuh hari berlalu tanpa makanan sama sekali. Apa yang akan kalian makan untuk tidak mati kelaparan? Kebanyakan orang akan menjawab bahwa mereka akan bertahan dengan buah-buahan atau makanan yang biasa ada di hutan. Tetapi di pegunungan bersalju itu tidak ada satu pun tumbuhan dan tidak ada satu pun hewan. Karena itu, para penyintas mengambil keputusan yang tidak pernah masuk rencana siapa pun di antara mereka. Mereka memutuskan memakan tubuh teman-teman mereka sendiri yang sudah meninggal sejak hari pertama kecelakaan, karena hanya itu satu-satunya makanan yang tersisa di pegunungan bersalju itu. Keputusan itu tidak diambil oleh orang-orang kejam, tetapi oleh orang-orang beriman yang harus memilih antara nilai dan nyawa mereka sendiri. Pada hari kesebelas, sebuah radio transistor di antara kursi pesawat menyiarkan bahwa pencarian resmi terhadap mereka sudah dihentikan. Tidak ada yang tahu mereka masih hidup. Penerbangan itu berangkat dari Montevideo pada tiga belas Oktober seribu sembilan ratus tujuh puluh dua, membawa tim rugbi Old Christians Club menuju Santiago. Pesawat jatuh di sisi Argentina Pegunungan Andes, dan dua belas orang tewas seketika. Tiga puluh tiga orang yang selamat bersembunyi di dalam badan pesawat yang putih, warnanya menyatu dengan salju sehingga pesawat pencari tidak melihatnya dari udara. Makanan yang mereka bawa habis dalam satu minggu. Mereka menulis kata SOS dengan lipstik di badan pesawat, tetapi tidak ada pesawat yang menoleh. Pada dua puluh sembilan Oktober, longsor salju menyapu tempat berlindung mereka dan menewaskan delapan orang lagi. Sebagian besar dari mereka beragama Katolik, dan perdebatan tentang keputusan itu berlangsung lama. Akhirnya mereka mengambil sumpah bersama: tidak ada satu pun orang yang akan dibunuh untuk dijadikan makanan. Keputusan itu diambil bersama setelah setiap orang diberi kesempatan berbicara menentangnya. Dua orang memutuskan berjalan keluar. Nando Parrado dan Roberto Canessa berjalan selama sepuluh hari melintasi Pegunungan Andes tanpa peta dan tanpa perlengkapan pendakian. Mereka menemukan seorang penggembala bernama Sergio Catalán, yang membawa kabar mereka ke kantor polisi. Evakuasi dimulai pada dua puluh dua Desember seribu sembilan ratus tujuh puluh dua, tujuh puluh dua hari setelah pesawat jatuh di sebuah lembah sisi Argentina Pegunungan Andes, dekat perbatasan Cile. Enam belas dari empat puluh lima orang selamat. Yang membuat mereka bertahan bukan keberuntungan, melainkan keputusan yang mereka ambil bersama pada malam-malam paling gelap di Pegunungan Andes. Sekarang giliran kalian. Kalau kalian berada di pesawat itu, dan keputusan itu harus diambil pada malam yang sama juga, kalian ikut, atau kalian menolaknya sampai akhir? Tulis jawaban kalian di kolom komentar.",
+ "duration": 87.306,
+ "text": "Berapa hari kamu sanggup menahan lapar sebelum melanggar prinsip moral terbesarmu? Kamu pasti merasa lebih memilih mati daripada harus menyentuh jasad sahabatmu sendiri. Tapi keyakinan itu runtuh begitu kamu mendengar satu siaran radio ini. Di titik itu, mereka tahu tidak ada pahlawan yang datang. Pilihannya cuma menyerah, atau melakukan hal yang tak terbayangkan. Suhu minus tiga puluh derajat. Tubuh mulai memakan lemaknya sendiri, otot melemah, dan halusinasi datang. Di luar bangkai pesawat, jasad rekan-rekan mereka terawetkan sempurna oleh es. Malam itu, di dalam kegelapan kabin yang membeku, perdebatan paling sunyi terjadi. Sebagian menangis menolak karena takut dosa. Sebagian sadar: menolak makan berarti bunuh diri perlahan. Bukan paksaan yang mengubah segalanya, melainkan sebuah janji. Mereka saling berikrar: jika tubuhku mati malam ini, pakailah ragaku agar kalian bisa pulang menemui keluarga. Pengorbanan kelam itu memberi mereka tenaga. Setelah tujuh puluh dua hari dan berjalan kaki menembus dinding es Andes, enam belas orang berhasil pulang hidup-hidup. Jika kamu berada di kabin beku itu pada hari kesebelas, apakah kamu akan ikut makan demi pulang, atau memilih mati mempertahankan prinsipmu? Tulis pilihan jujurmu di komentar.",
  "words": [
   {
-   "word": "Bayangkan",
+   "word": "Berapa",
    "start": 0.0,
-   "end": 0.463
-  },
-  {
-   "word": "pesawat",
-   "start": 0.463,
-   "end": 0.926
-  },
-  {
-   "word": "kalian",
-   "start": 0.926,
-   "end": 1.296
-  },
-  {
-   "word": "jatuh",
-   "start": 1.296,
-   "end": 1.667
-  },
-  {
-   "word": "di",
-   "start": 1.667,
-   "end": 1.945
-  },
-  {
-   "word": "pegunungan",
-   "start": 1.945,
-   "end": 2.5
-  },
-  {
-   "word": "bersalju",
-   "start": 2.5,
-   "end": 2.963
-  },
-  {
-   "word": "dan",
-   "start": 2.963,
-   "end": 3.241
-  },
-  {
-   "word": "tujuh",
-   "start": 3.241,
-   "end": 3.612
+   "end": 0.415
   },
   {
    "word": "hari",
-   "start": 3.612,
-   "end": 3.982
+   "start": 0.415,
+   "end": 0.747
   },
   {
-   "word": "berlalu",
-   "start": 3.982,
-   "end": 4.445
+   "word": "kamu",
+   "start": 0.747,
+   "end": 1.079
   },
   {
-   "word": "tanpa",
-   "start": 4.445,
-   "end": 4.815
+   "word": "sanggup",
+   "start": 1.079,
+   "end": 1.411
   },
   {
-   "word": "makanan",
-   "start": 4.815,
-   "end": 5.278
+   "word": "menahan",
+   "start": 1.411,
+   "end": 1.826
   },
   {
-   "word": "sama",
-   "start": 5.278,
-   "end": 5.649
+   "word": "lapar",
+   "start": 1.826,
+   "end": 2.158
   },
   {
-   "word": "sekali.",
-   "start": 5.649,
-   "end": 6.112
+   "word": "sebelum",
+   "start": 2.158,
+   "end": 2.573
   },
   {
-   "word": "Apa",
-   "start": 6.112,
-   "end": 6.482
+   "word": "melanggar",
+   "start": 2.573,
+   "end": 2.988
   },
   {
-   "word": "yang",
-   "start": 6.482,
-   "end": 6.76
+   "word": "prinsip",
+   "start": 2.988,
+   "end": 3.32
   },
   {
-   "word": "akan",
-   "start": 6.76,
-   "end": 7.131
+   "word": "moral",
+   "start": 3.32,
+   "end": 3.652
   },
   {
-   "word": "kalian",
-   "start": 7.131,
-   "end": 7.501
+   "word": "terbesarmu?",
+   "start": 3.652,
+   "end": 4.151
   },
   {
-   "word": "makan",
-   "start": 7.501,
-   "end": 7.871
+   "word": "Kamu",
+   "start": 4.651,
+   "end": 5.05
   },
   {
-   "word": "untuk",
-   "start": 7.871,
-   "end": 8.242
+   "word": "pasti",
+   "start": 5.05,
+   "end": 5.45
   },
   {
-   "word": "tidak",
-   "start": 8.242,
-   "end": 8.612
+   "word": "merasa",
+   "start": 5.45,
+   "end": 5.95
   },
   {
-   "word": "mati",
-   "start": 8.612,
-   "end": 8.983
-  },
-  {
-   "word": "kelaparan?",
-   "start": 8.983,
-   "end": 9.538
-  },
-  {
-   "word": "Kebanyakan",
-   "start": 10.038,
-   "end": 10.442
-  },
-  {
-   "word": "orang",
-   "start": 10.442,
-   "end": 10.711
-  },
-  {
-   "word": "akan",
-   "start": 10.711,
-   "end": 10.98
-  },
-  {
-   "word": "menjawab",
-   "start": 10.98,
-   "end": 11.316
-  },
-  {
-   "word": "bahwa",
-   "start": 11.316,
-   "end": 11.585
-  },
-  {
-   "word": "mereka",
-   "start": 11.585,
-   "end": 11.921
-  },
-  {
-   "word": "akan",
-   "start": 11.921,
-   "end": 12.19
-  },
-  {
-   "word": "bertahan",
-   "start": 12.19,
-   "end": 12.526
-  },
-  {
-   "word": "dengan",
-   "start": 12.526,
-   "end": 12.795
-  },
-  {
-   "word": "buah-buahan",
-   "start": 12.795,
-   "end": 13.131
-  },
-  {
-   "word": "atau",
-   "start": 13.131,
-   "end": 13.4
-  },
-  {
-   "word": "makanan",
-   "start": 13.4,
-   "end": 13.736
-  },
-  {
-   "word": "yang",
-   "start": 13.736,
-   "end": 13.938
-  },
-  {
-   "word": "biasa",
-   "start": 13.938,
-   "end": 14.207
-  },
-  {
-   "word": "ada",
-   "start": 14.207,
-   "end": 14.476
-  },
-  {
-   "word": "di",
-   "start": 14.476,
-   "end": 14.678
-  },
-  {
-   "word": "hutan.",
-   "start": 14.678,
-   "end": 14.947
-  },
-  {
-   "word": "Tetapi",
-   "start": 14.947,
-   "end": 15.283
-  },
-  {
-   "word": "di",
-   "start": 15.283,
-   "end": 15.485
-  },
-  {
-   "word": "pegunungan",
-   "start": 15.485,
-   "end": 15.888
-  },
-  {
-   "word": "bersalju",
-   "start": 15.888,
-   "end": 16.224
-  },
-  {
-   "word": "itu",
-   "start": 16.224,
-   "end": 16.493
-  },
-  {
-   "word": "tidak",
-   "start": 16.493,
-   "end": 16.762
-  },
-  {
-   "word": "ada",
-   "start": 16.762,
-   "end": 17.031
-  },
-  {
-   "word": "satu",
-   "start": 17.031,
-   "end": 17.3
-  },
-  {
-   "word": "pun",
-   "start": 17.3,
-   "end": 17.502
-  },
-  {
-   "word": "tumbuhan",
-   "start": 17.502,
-   "end": 17.838
-  },
-  {
-   "word": "dan",
-   "start": 17.838,
-   "end": 18.04
-  },
-  {
-   "word": "tidak",
-   "start": 18.04,
-   "end": 18.309
-  },
-  {
-   "word": "ada",
-   "start": 18.309,
-   "end": 18.578
-  },
-  {
-   "word": "satu",
-   "start": 18.578,
-   "end": 18.847
-  },
-  {
-   "word": "pun",
-   "start": 18.847,
-   "end": 19.048
-  },
-  {
-   "word": "hewan.",
-   "start": 19.048,
-   "end": 19.317
-  },
-  {
-   "word": "Karena",
-   "start": 19.767,
-   "end": 20.234
-  },
-  {
-   "word": "itu,",
-   "start": 20.234,
-   "end": 20.608
-  },
-  {
-   "word": "para",
-   "start": 20.608,
-   "end": 20.982
-  },
-  {
-   "word": "penyintas",
-   "start": 20.982,
-   "end": 21.449
-  },
-  {
-   "word": "mengambil",
-   "start": 21.449,
-   "end": 21.916
-  },
-  {
-   "word": "keputusan",
-   "start": 21.916,
-   "end": 22.477
-  },
-  {
-   "word": "yang",
-   "start": 22.477,
-   "end": 22.757
-  },
-  {
-   "word": "tidak",
-   "start": 22.757,
-   "end": 23.13
-  },
-  {
-   "word": "pernah",
-   "start": 23.13,
-   "end": 23.504
-  },
-  {
-   "word": "masuk",
-   "start": 23.504,
-   "end": 23.878
-  },
-  {
-   "word": "rencana",
-   "start": 23.878,
-   "end": 24.345
-  },
-  {
-   "word": "siapa",
-   "start": 24.345,
-   "end": 24.719
-  },
-  {
-   "word": "pun",
-   "start": 24.719,
-   "end": 24.999
-  },
-  {
-   "word": "di",
-   "start": 24.999,
-   "end": 25.279
-  },
-  {
-   "word": "antara",
-   "start": 25.279,
-   "end": 25.746
-  },
-  {
-   "word": "mereka.",
-   "start": 25.746,
-   "end": 26.213
-  },
-  {
-   "word": "Mereka",
-   "start": 26.213,
-   "end": 26.681
-  },
-  {
-   "word": "memutuskan",
-   "start": 26.681,
-   "end": 27.241
-  },
-  {
-   "word": "memakan",
-   "start": 27.241,
-   "end": 27.708
-  },
-  {
-   "word": "tubuh",
-   "start": 27.708,
-   "end": 28.082
-  },
-  {
-   "word": "teman-teman",
-   "start": 28.082,
-   "end": 28.643
-  },
-  {
-   "word": "mereka",
-   "start": 28.643,
-   "end": 29.11
-  },
-  {
-   "word": "sendiri",
-   "start": 29.11,
-   "end": 29.577
-  },
-  {
-   "word": "yang",
-   "start": 29.577,
-   "end": 29.857
-  },
-  {
-   "word": "sudah",
-   "start": 29.857,
-   "end": 30.231
-  },
-  {
-   "word": "meninggal",
-   "start": 30.231,
-   "end": 30.698
-  },
-  {
-   "word": "sejak",
-   "start": 30.698,
-   "end": 31.072
-  },
-  {
-   "word": "hari",
-   "start": 31.072,
-   "end": 31.445
-  },
-  {
-   "word": "pertama",
-   "start": 31.445,
-   "end": 31.912
-  },
-  {
-   "word": "kecelakaan,",
-   "start": 31.912,
-   "end": 32.473
-  },
-  {
-   "word": "karena",
-   "start": 32.473,
-   "end": 32.94
-  },
-  {
-   "word": "hanya",
-   "start": 32.94,
-   "end": 33.314
-  },
-  {
-   "word": "itu",
-   "start": 33.314,
-   "end": 33.687
-  },
-  {
-   "word": "satu-satunya",
-   "start": 33.687,
-   "end": 34.341
-  },
-  {
-   "word": "makanan",
-   "start": 34.341,
-   "end": 34.809
-  },
-  {
-   "word": "yang",
-   "start": 34.809,
-   "end": 35.089
-  },
-  {
-   "word": "tersisa",
-   "start": 35.089,
-   "end": 35.556
-  },
-  {
-   "word": "di",
-   "start": 35.556,
-   "end": 35.836
-  },
-  {
-   "word": "pegunungan",
-   "start": 35.836,
-   "end": 36.397
-  },
-  {
-   "word": "bersalju",
-   "start": 36.397,
-   "end": 36.864
-  },
-  {
-   "word": "itu.",
-   "start": 36.864,
-   "end": 37.238
-  },
-  {
-   "word": "Keputusan",
-   "start": 37.788,
-   "end": 38.327
-  },
-  {
-   "word": "itu",
-   "start": 38.327,
-   "end": 38.686
-  },
-  {
-   "word": "tidak",
-   "start": 38.686,
-   "end": 39.045
-  },
-  {
-   "word": "diambil",
-   "start": 39.045,
-   "end": 39.405
-  },
-  {
-   "word": "oleh",
-   "start": 39.405,
-   "end": 39.764
-  },
-  {
-   "word": "orang-orang",
-   "start": 39.764,
-   "end": 40.303
-  },
-  {
-   "word": "kejam,",
-   "start": 40.303,
-   "end": 40.663
-  },
-  {
-   "word": "tetapi",
-   "start": 40.663,
-   "end": 41.112
-  },
-  {
-   "word": "oleh",
-   "start": 41.112,
-   "end": 41.471
-  },
-  {
-   "word": "orang-orang",
-   "start": 41.471,
-   "end": 42.01
-  },
-  {
-   "word": "beriman",
-   "start": 42.01,
-   "end": 42.459
-  },
-  {
-   "word": "yang",
-   "start": 42.459,
-   "end": 42.729
-  },
-  {
-   "word": "harus",
-   "start": 42.729,
-   "end": 43.088
+   "word": "lebih",
+   "start": 5.95,
+   "end": 6.35
   },
   {
    "word": "memilih",
-   "start": 43.088,
-   "end": 43.538
+   "start": 6.35,
+   "end": 6.849
   },
   {
-   "word": "antara",
-   "start": 43.538,
-   "end": 43.987
+   "word": "mati",
+   "start": 6.849,
+   "end": 7.249
   },
   {
-   "word": "nilai",
-   "start": 43.987,
-   "end": 44.346
-  },
-  {
-   "word": "dan",
-   "start": 44.346,
-   "end": 44.616
-  },
-  {
-   "word": "nyawa",
-   "start": 44.616,
-   "end": 44.975
-  },
-  {
-   "word": "mereka",
-   "start": 44.975,
-   "end": 45.424
-  },
-  {
-   "word": "sendiri.",
-   "start": 45.424,
-   "end": 45.874
-  },
-  {
-   "word": "Pada",
-   "start": 45.874,
-   "end": 46.233
-  },
-  {
-   "word": "hari",
-   "start": 46.233,
-   "end": 46.592
-  },
-  {
-   "word": "kesebelas,",
-   "start": 46.592,
-   "end": 47.131
-  },
-  {
-   "word": "sebuah",
-   "start": 47.131,
-   "end": 47.491
-  },
-  {
-   "word": "radio",
-   "start": 47.491,
-   "end": 47.85
-  },
-  {
-   "word": "transistor",
-   "start": 47.85,
-   "end": 48.299
-  },
-  {
-   "word": "di",
-   "start": 48.299,
-   "end": 48.569
-  },
-  {
-   "word": "antara",
-   "start": 48.569,
-   "end": 49.018
-  },
-  {
-   "word": "kursi",
-   "start": 49.018,
-   "end": 49.378
-  },
-  {
-   "word": "pesawat",
-   "start": 49.378,
-   "end": 49.827
-  },
-  {
-   "word": "menyiarkan",
-   "start": 49.827,
-   "end": 50.366
-  },
-  {
-   "word": "bahwa",
-   "start": 50.366,
-   "end": 50.725
-  },
-  {
-   "word": "pencarian",
-   "start": 50.725,
-   "end": 51.175
-  },
-  {
-   "word": "resmi",
-   "start": 51.175,
-   "end": 51.534
-  },
-  {
-   "word": "terhadap",
-   "start": 51.534,
-   "end": 51.983
-  },
-  {
-   "word": "mereka",
-   "start": 51.983,
-   "end": 52.432
-  },
-  {
-   "word": "sudah",
-   "start": 52.432,
-   "end": 52.792
-  },
-  {
-   "word": "dihentikan.",
-   "start": 52.792,
-   "end": 53.331
-  },
-  {
-   "word": "Tidak",
-   "start": 53.331,
-   "end": 53.69
-  },
-  {
-   "word": "ada",
-   "start": 53.69,
-   "end": 54.05
-  },
-  {
-   "word": "yang",
-   "start": 54.05,
-   "end": 54.319
-  },
-  {
-   "word": "tahu",
-   "start": 54.319,
-   "end": 54.678
-  },
-  {
-   "word": "mereka",
-   "start": 54.678,
-   "end": 55.128
-  },
-  {
-   "word": "masih",
-   "start": 55.128,
-   "end": 55.487
-  },
-  {
-   "word": "hidup.",
-   "start": 55.487,
-   "end": 55.846
-  },
-  {
-   "word": "Penerbangan",
-   "start": 56.346,
-   "end": 56.895
-  },
-  {
-   "word": "itu",
-   "start": 56.895,
-   "end": 57.261
-  },
-  {
-   "word": "berangkat",
-   "start": 57.261,
-   "end": 57.718
-  },
-  {
-   "word": "dari",
-   "start": 57.718,
-   "end": 58.084
-  },
-  {
-   "word": "Montevideo",
-   "start": 58.084,
-   "end": 58.632
-  },
-  {
-   "word": "pada",
-   "start": 58.632,
-   "end": 58.998
-  },
-  {
-   "word": "tiga",
-   "start": 58.998,
-   "end": 59.364
-  },
-  {
-   "word": "belas",
-   "start": 59.364,
-   "end": 59.729
-  },
-  {
-   "word": "Oktober",
-   "start": 59.729,
-   "end": 60.186
-  },
-  {
-   "word": "seribu",
-   "start": 60.186,
-   "end": 60.644
-  },
-  {
-   "word": "sembilan",
-   "start": 60.644,
-   "end": 61.101
-  },
-  {
-   "word": "ratus",
-   "start": 61.101,
-   "end": 61.466
-  },
-  {
-   "word": "tujuh",
-   "start": 61.466,
-   "end": 61.832
-  },
-  {
-   "word": "puluh",
-   "start": 61.832,
-   "end": 62.198
-  },
-  {
-   "word": "dua,",
-   "start": 62.198,
-   "end": 62.472
-  },
-  {
-   "word": "membawa",
-   "start": 62.472,
-   "end": 62.929
-  },
-  {
-   "word": "tim",
-   "start": 62.929,
-   "end": 63.203
-  },
-  {
-   "word": "rugbi",
-   "start": 63.203,
-   "end": 63.569
-  },
-  {
-   "word": "Old",
-   "start": 63.569,
-   "end": 63.843
-  },
-  {
-   "word": "Christians",
-   "start": 63.843,
-   "end": 64.209
-  },
-  {
-   "word": "Club",
-   "start": 64.209,
-   "end": 64.483
-  },
-  {
-   "word": "menuju",
-   "start": 64.483,
-   "end": 64.941
-  },
-  {
-   "word": "Santiago.",
-   "start": 64.941,
-   "end": 65.398
-  },
-  {
-   "word": "Pesawat",
-   "start": 65.398,
-   "end": 65.855
-  },
-  {
-   "word": "jatuh",
-   "start": 65.855,
-   "end": 66.221
-  },
-  {
-   "word": "di",
-   "start": 66.221,
-   "end": 66.495
-  },
-  {
-   "word": "sisi",
-   "start": 66.495,
-   "end": 66.861
-  },
-  {
-   "word": "Argentina",
-   "start": 66.861,
-   "end": 67.409
-  },
-  {
-   "word": "Pegunungan",
-   "start": 67.409,
-   "end": 67.958
-  },
-  {
-   "word": "Andes,",
-   "start": 67.958,
-   "end": 68.323
-  },
-  {
-   "word": "dan",
-   "start": 68.323,
-   "end": 68.598
-  },
-  {
-   "word": "dua",
-   "start": 68.598,
-   "end": 68.872
-  },
-  {
-   "word": "belas",
-   "start": 68.872,
-   "end": 69.238
-  },
-  {
-   "word": "orang",
-   "start": 69.238,
-   "end": 69.603
-  },
-  {
-   "word": "tewas",
-   "start": 69.603,
-   "end": 69.969
-  },
-  {
-   "word": "seketika.",
-   "start": 69.969,
-   "end": 70.518
-  },
-  {
-   "word": "Tiga",
-   "start": 70.518,
-   "end": 70.883
-  },
-  {
-   "word": "puluh",
-   "start": 70.883,
-   "end": 71.249
-  },
-  {
-   "word": "tiga",
-   "start": 71.249,
-   "end": 71.615
-  },
-  {
-   "word": "orang",
-   "start": 71.615,
-   "end": 71.98
-  },
-  {
-   "word": "yang",
-   "start": 71.98,
-   "end": 72.255
-  },
-  {
-   "word": "selamat",
-   "start": 72.255,
-   "end": 72.712
-  },
-  {
-   "word": "bersembunyi",
-   "start": 72.712,
-   "end": 73.26
-  },
-  {
-   "word": "di",
-   "start": 73.26,
-   "end": 73.535
-  },
-  {
-   "word": "dalam",
-   "start": 73.535,
-   "end": 73.9
-  },
-  {
-   "word": "badan",
-   "start": 73.9,
-   "end": 74.266
-  },
-  {
-   "word": "pesawat",
-   "start": 74.266,
-   "end": 74.723
-  },
-  {
-   "word": "yang",
-   "start": 74.723,
-   "end": 74.998
-  },
-  {
-   "word": "putih,",
-   "start": 74.998,
-   "end": 75.363
-  },
-  {
-   "word": "warnanya",
-   "start": 75.363,
-   "end": 75.82
-  },
-  {
-   "word": "menyatu",
-   "start": 75.82,
-   "end": 76.278
-  },
-  {
-   "word": "dengan",
-   "start": 76.278,
-   "end": 76.643
-  },
-  {
-   "word": "salju",
-   "start": 76.643,
-   "end": 77.009
-  },
-  {
-   "word": "sehingga",
-   "start": 77.009,
-   "end": 77.466
-  },
-  {
-   "word": "pesawat",
-   "start": 77.466,
-   "end": 77.923
-  },
-  {
-   "word": "pencari",
-   "start": 77.923,
-   "end": 78.38
-  },
-  {
-   "word": "tidak",
-   "start": 78.38,
-   "end": 78.746
-  },
-  {
-   "word": "melihatnya",
-   "start": 78.746,
-   "end": 79.295
-  },
-  {
-   "word": "dari",
-   "start": 79.295,
-   "end": 79.66
-  },
-  {
-   "word": "udara.",
-   "start": 79.66,
-   "end": 80.117
-  },
-  {
-   "word": "Makanan",
-   "start": 80.567,
-   "end": 81.03
-  },
-  {
-   "word": "yang",
-   "start": 81.03,
-   "end": 81.308
-  },
-  {
-   "word": "mereka",
-   "start": 81.308,
-   "end": 81.771
-  },
-  {
-   "word": "bawa",
-   "start": 81.771,
-   "end": 82.141
-  },
-  {
-   "word": "habis",
-   "start": 82.141,
-   "end": 82.512
-  },
-  {
-   "word": "dalam",
-   "start": 82.512,
-   "end": 82.882
-  },
-  {
-   "word": "satu",
-   "start": 82.882,
-   "end": 83.252
-  },
-  {
-   "word": "minggu.",
-   "start": 83.252,
-   "end": 83.623
-  },
-  {
-   "word": "Mereka",
-   "start": 83.623,
-   "end": 84.086
-  },
-  {
-   "word": "menulis",
-   "start": 84.086,
-   "end": 84.549
-  },
-  {
-   "word": "kata",
-   "start": 84.549,
-   "end": 84.919
-  },
-  {
-   "word": "SOS",
-   "start": 84.919,
-   "end": 85.197
-  },
-  {
-   "word": "dengan",
-   "start": 85.197,
-   "end": 85.567
-  },
-  {
-   "word": "lipstik",
-   "start": 85.567,
-   "end": 85.938
-  },
-  {
-   "word": "di",
-   "start": 85.938,
-   "end": 86.215
-  },
-  {
-   "word": "badan",
-   "start": 86.215,
-   "end": 86.586
-  },
-  {
-   "word": "pesawat,",
-   "start": 86.586,
-   "end": 87.049
-  },
-  {
-   "word": "tetapi",
-   "start": 87.049,
-   "end": 87.511
-  },
-  {
-   "word": "tidak",
-   "start": 87.511,
-   "end": 87.882
-  },
-  {
-   "word": "ada",
-   "start": 87.882,
-   "end": 88.252
-  },
-  {
-   "word": "pesawat",
-   "start": 88.252,
-   "end": 88.715
-  },
-  {
-   "word": "yang",
-   "start": 88.715,
-   "end": 88.993
-  },
-  {
-   "word": "menoleh.",
-   "start": 88.993,
-   "end": 89.456
-  },
-  {
-   "word": "Pada",
-   "start": 89.456,
-   "end": 89.826
-  },
-  {
-   "word": "dua",
-   "start": 89.826,
-   "end": 90.104
-  },
-  {
-   "word": "puluh",
-   "start": 90.104,
-   "end": 90.474
-  },
-  {
-   "word": "sembilan",
-   "start": 90.474,
-   "end": 90.937
-  },
-  {
-   "word": "Oktober,",
-   "start": 90.937,
-   "end": 91.4
-  },
-  {
-   "word": "longsor",
-   "start": 91.4,
-   "end": 91.77
-  },
-  {
-   "word": "salju",
-   "start": 91.77,
-   "end": 92.141
-  },
-  {
-   "word": "menyapu",
-   "start": 92.141,
-   "end": 92.604
-  },
-  {
-   "word": "tempat",
-   "start": 92.604,
-   "end": 92.974
-  },
-  {
-   "word": "berlindung",
-   "start": 92.974,
-   "end": 93.437
-  },
-  {
-   "word": "mereka",
-   "start": 93.437,
-   "end": 93.9
-  },
-  {
-   "word": "dan",
-   "start": 93.9,
-   "end": 94.178
-  },
-  {
-   "word": "menewaskan",
-   "start": 94.178,
-   "end": 94.733
-  },
-  {
-   "word": "delapan",
-   "start": 94.733,
-   "end": 95.196
-  },
-  {
-   "word": "orang",
-   "start": 95.196,
-   "end": 95.567
-  },
-  {
-   "word": "lagi.",
-   "start": 95.567,
-   "end": 95.937
-  },
-  {
-   "word": "Sebagian",
-   "start": 95.937,
-   "end": 96.4
-  },
-  {
-   "word": "besar",
-   "start": 96.4,
-   "end": 96.77
-  },
-  {
-   "word": "dari",
-   "start": 96.77,
-   "end": 97.141
-  },
-  {
-   "word": "mereka",
-   "start": 97.141,
-   "end": 97.603
-  },
-  {
-   "word": "beragama",
-   "start": 97.603,
-   "end": 98.159
-  },
-  {
-   "word": "Katolik,",
-   "start": 98.159,
-   "end": 98.622
-  },
-  {
-   "word": "dan",
-   "start": 98.622,
-   "end": 98.9
-  },
-  {
-   "word": "perdebatan",
-   "start": 98.9,
-   "end": 99.455
-  },
-  {
-   "word": "tentang",
-   "start": 99.455,
-   "end": 99.826
-  },
-  {
-   "word": "keputusan",
-   "start": 99.826,
-   "end": 100.381
-  },
-  {
-   "word": "itu",
-   "start": 100.381,
-   "end": 100.751
-  },
-  {
-   "word": "berlangsung",
-   "start": 100.751,
-   "end": 101.214
-  },
-  {
-   "word": "lama.",
-   "start": 101.214,
-   "end": 101.585
-  },
-  {
-   "word": "Akhirnya",
-   "start": 102.035,
-   "end": 102.521
-  },
-  {
-   "word": "mereka",
-   "start": 102.521,
-   "end": 103.008
-  },
-  {
-   "word": "mengambil",
-   "start": 103.008,
-   "end": 103.494
-  },
-  {
-   "word": "sumpah",
-   "start": 103.494,
-   "end": 103.883
-  },
-  {
-   "word": "bersama:",
-   "start": 103.883,
-   "end": 104.37
-  },
-  {
-   "word": "tidak",
-   "start": 104.37,
-   "end": 104.759
-  },
-  {
-   "word": "ada",
-   "start": 104.759,
-   "end": 105.148
-  },
-  {
-   "word": "satu",
-   "start": 105.148,
-   "end": 105.537
-  },
-  {
-   "word": "pun",
-   "start": 105.537,
-   "end": 105.829
-  },
-  {
-   "word": "orang",
-   "start": 105.829,
-   "end": 106.219
-  },
-  {
-   "word": "yang",
-   "start": 106.219,
-   "end": 106.51
-  },
-  {
-   "word": "akan",
-   "start": 106.51,
-   "end": 106.9
-  },
-  {
-   "word": "dibunuh",
-   "start": 106.9,
-   "end": 107.386
-  },
-  {
-   "word": "untuk",
-   "start": 107.386,
-   "end": 107.775
-  },
-  {
-   "word": "dijadikan",
-   "start": 107.775,
-   "end": 108.359
-  },
-  {
-   "word": "makanan.",
-   "start": 108.359,
-   "end": 108.846
-  },
-  {
-   "word": "Keputusan",
-   "start": 108.846,
-   "end": 109.429
-  },
-  {
-   "word": "itu",
-   "start": 109.429,
-   "end": 109.819
-  },
-  {
-   "word": "diambil",
-   "start": 109.819,
-   "end": 110.208
-  },
-  {
-   "word": "bersama",
-   "start": 110.208,
-   "end": 110.694
-  },
-  {
-   "word": "setelah",
-   "start": 110.694,
-   "end": 111.181
-  },
-  {
-   "word": "setiap",
-   "start": 111.181,
-   "end": 111.57
-  },
-  {
-   "word": "orang",
-   "start": 111.57,
-   "end": 111.959
-  },
-  {
-   "word": "diberi",
-   "start": 111.959,
-   "end": 112.446
-  },
-  {
-   "word": "kesempatan",
-   "start": 112.446,
-   "end": 113.029
-  },
-  {
-   "word": "berbicara",
-   "start": 113.029,
-   "end": 113.613
-  },
-  {
-   "word": "menentangnya.",
-   "start": 113.613,
-   "end": 114.197
-  },
-  {
-   "word": "Dua",
-   "start": 114.697,
-   "end": 115.015
-  },
-  {
-   "word": "orang",
-   "start": 115.015,
-   "end": 115.438
-  },
-  {
-   "word": "memutuskan",
-   "start": 115.438,
-   "end": 116.073
-  },
-  {
-   "word": "berjalan",
-   "start": 116.073,
-   "end": 116.603
-  },
-  {
-   "word": "keluar.",
-   "start": 116.603,
-   "end": 117.026
-  },
-  {
-   "word": "Nando",
-   "start": 117.026,
-   "end": 117.449
-  },
-  {
-   "word": "Parrado",
-   "start": 117.449,
-   "end": 117.979
-  },
-  {
-   "word": "dan",
-   "start": 117.979,
-   "end": 118.296
-  },
-  {
-   "word": "Roberto",
-   "start": 118.296,
-   "end": 118.826
-  },
-  {
-   "word": "Canessa",
-   "start": 118.826,
-   "end": 119.355
-  },
-  {
-   "word": "berjalan",
-   "start": 119.355,
-   "end": 119.884
-  },
-  {
-   "word": "selama",
-   "start": 119.884,
-   "end": 120.414
-  },
-  {
-   "word": "sepuluh",
-   "start": 120.414,
-   "end": 120.943
-  },
-  {
-   "word": "hari",
-   "start": 120.943,
-   "end": 121.366
-  },
-  {
-   "word": "melintasi",
-   "start": 121.366,
-   "end": 122.001
-  },
-  {
-   "word": "Pegunungan",
-   "start": 122.001,
-   "end": 122.637
-  },
-  {
-   "word": "Andes",
-   "start": 122.637,
-   "end": 123.06
-  },
-  {
-   "word": "tanpa",
-   "start": 123.06,
-   "end": 123.483
-  },
-  {
-   "word": "peta",
-   "start": 123.483,
-   "end": 123.907
-  },
-  {
-   "word": "dan",
-   "start": 123.907,
-   "end": 124.225
-  },
-  {
-   "word": "tanpa",
-   "start": 124.225,
-   "end": 124.648
-  },
-  {
-   "word": "perlengkapan",
-   "start": 124.648,
-   "end": 125.283
-  },
-  {
-   "word": "pendakian.",
-   "start": 125.283,
-   "end": 125.812
-  },
-  {
-   "word": "Mereka",
-   "start": 125.812,
-   "end": 126.342
-  },
-  {
-   "word": "menemukan",
-   "start": 126.342,
-   "end": 126.977
-  },
-  {
-   "word": "seorang",
-   "start": 126.977,
-   "end": 127.4
-  },
-  {
-   "word": "penggembala",
-   "start": 127.4,
-   "end": 128.035
-  },
-  {
-   "word": "bernama",
-   "start": 128.035,
-   "end": 128.565
-  },
-  {
-   "word": "Sergio",
-   "start": 128.565,
-   "end": 128.988
-  },
-  {
-   "word": "Catalán,",
-   "start": 128.988,
-   "end": 129.412
-  },
-  {
-   "word": "yang",
-   "start": 129.412,
-   "end": 129.729
-  },
-  {
-   "word": "membawa",
-   "start": 129.729,
-   "end": 130.259
-  },
-  {
-   "word": "kabar",
-   "start": 130.259,
-   "end": 130.682
-  },
-  {
-   "word": "mereka",
-   "start": 130.682,
-   "end": 131.211
-  },
-  {
-   "word": "ke",
-   "start": 131.211,
-   "end": 131.529
-  },
-  {
-   "word": "kantor",
-   "start": 131.529,
-   "end": 131.952
-  },
-  {
-   "word": "polisi.",
-   "start": 131.952,
-   "end": 132.482
-  },
-  {
-   "word": "Evakuasi",
-   "start": 132.932,
-   "end": 133.462
-  },
-  {
-   "word": "dimulai",
-   "start": 133.462,
-   "end": 133.905
-  },
-  {
-   "word": "pada",
-   "start": 133.905,
-   "end": 134.259
-  },
-  {
-   "word": "dua",
-   "start": 134.259,
-   "end": 134.524
-  },
-  {
-   "word": "puluh",
-   "start": 134.524,
-   "end": 134.878
-  },
-  {
-   "word": "dua",
-   "start": 134.878,
-   "end": 135.143
-  },
-  {
-   "word": "Desember",
-   "start": 135.143,
-   "end": 135.586
-  },
-  {
-   "word": "seribu",
-   "start": 135.586,
-   "end": 136.028
-  },
-  {
-   "word": "sembilan",
-   "start": 136.028,
-   "end": 136.471
-  },
-  {
-   "word": "ratus",
-   "start": 136.471,
-   "end": 136.824
-  },
-  {
-   "word": "tujuh",
-   "start": 136.824,
-   "end": 137.178
-  },
-  {
-   "word": "puluh",
-   "start": 137.178,
-   "end": 137.532
-  },
-  {
-   "word": "dua,",
-   "start": 137.532,
-   "end": 137.798
-  },
-  {
-   "word": "tujuh",
-   "start": 137.798,
-   "end": 138.152
-  },
-  {
-   "word": "puluh",
-   "start": 138.152,
-   "end": 138.505
-  },
-  {
-   "word": "dua",
-   "start": 138.505,
-   "end": 138.771
-  },
-  {
-   "word": "hari",
-   "start": 138.771,
-   "end": 139.125
-  },
-  {
-   "word": "setelah",
-   "start": 139.125,
-   "end": 139.567
-  },
-  {
-   "word": "pesawat",
-   "start": 139.567,
-   "end": 140.01
-  },
-  {
-   "word": "jatuh",
-   "start": 140.01,
-   "end": 140.363
-  },
-  {
-   "word": "di",
-   "start": 140.363,
-   "end": 140.629
-  },
-  {
-   "word": "sebuah",
-   "start": 140.629,
-   "end": 140.983
-  },
-  {
-   "word": "lembah",
-   "start": 140.983,
-   "end": 141.337
-  },
-  {
-   "word": "sisi",
-   "start": 141.337,
-   "end": 141.691
-  },
-  {
-   "word": "Argentina",
-   "start": 141.691,
-   "end": 142.221
-  },
-  {
-   "word": "Pegunungan",
-   "start": 142.221,
-   "end": 142.752
-  },
-  {
-   "word": "Andes,",
-   "start": 142.752,
-   "end": 143.106
-  },
-  {
-   "word": "dekat",
-   "start": 143.106,
-   "end": 143.46
-  },
-  {
-   "word": "perbatasan",
-   "start": 143.46,
-   "end": 143.991
-  },
-  {
-   "word": "Cile.",
-   "start": 143.991,
-   "end": 144.345
-  },
-  {
-   "word": "Enam",
-   "start": 144.345,
-   "end": 144.699
-  },
-  {
-   "word": "belas",
-   "start": 144.699,
-   "end": 145.053
-  },
-  {
-   "word": "dari",
-   "start": 145.053,
-   "end": 145.406
-  },
-  {
-   "word": "empat",
-   "start": 145.406,
-   "end": 145.76
-  },
-  {
-   "word": "puluh",
-   "start": 145.76,
-   "end": 146.114
-  },
-  {
-   "word": "lima",
-   "start": 146.114,
-   "end": 146.468
-  },
-  {
-   "word": "orang",
-   "start": 146.468,
-   "end": 146.822
-  },
-  {
-   "word": "selamat.",
-   "start": 146.822,
-   "end": 147.264
-  },
-  {
-   "word": "Yang",
-   "start": 147.264,
-   "end": 147.53
-  },
-  {
-   "word": "membuat",
-   "start": 147.53,
-   "end": 147.884
-  },
-  {
-   "word": "mereka",
-   "start": 147.884,
-   "end": 148.326
-  },
-  {
-   "word": "bertahan",
-   "start": 148.326,
-   "end": 148.768
-  },
-  {
-   "word": "bukan",
-   "start": 148.768,
-   "end": 149.122
-  },
-  {
-   "word": "keberuntungan,",
-   "start": 149.122,
-   "end": 149.742
-  },
-  {
-   "word": "melainkan",
-   "start": 149.742,
-   "end": 150.184
-  },
-  {
-   "word": "keputusan",
-   "start": 150.184,
-   "end": 150.715
-  },
-  {
-   "word": "yang",
-   "start": 150.715,
-   "end": 150.98
-  },
-  {
-   "word": "mereka",
-   "start": 150.98,
-   "end": 151.423
-  },
-  {
-   "word": "ambil",
-   "start": 151.423,
-   "end": 151.777
-  },
-  {
-   "word": "bersama",
-   "start": 151.777,
-   "end": 152.219
-  },
-  {
-   "word": "pada",
-   "start": 152.219,
-   "end": 152.573
-  },
-  {
-   "word": "malam-malam",
-   "start": 152.573,
-   "end": 153.104
-  },
-  {
-   "word": "paling",
-   "start": 153.104,
-   "end": 153.458
-  },
-  {
-   "word": "gelap",
-   "start": 153.458,
-   "end": 153.811
-  },
-  {
-   "word": "di",
-   "start": 153.811,
-   "end": 154.077
-  },
-  {
-   "word": "Pegunungan",
-   "start": 154.077,
-   "end": 154.608
-  },
-  {
-   "word": "Andes.",
-   "start": 154.608,
-   "end": 154.962
-  },
-  {
-   "word": "Sekarang",
-   "start": 155.462,
-   "end": 155.949
-  },
-  {
-   "word": "giliran",
-   "start": 155.949,
-   "end": 156.436
-  },
-  {
-   "word": "kalian.",
-   "start": 156.436,
-   "end": 156.826
-  },
-  {
-   "word": "Kalau",
-   "start": 156.826,
-   "end": 157.216
-  },
-  {
-   "word": "kalian",
-   "start": 157.216,
-   "end": 157.606
-  },
-  {
-   "word": "berada",
-   "start": 157.606,
-   "end": 158.093
-  },
-  {
-   "word": "di",
-   "start": 158.093,
-   "end": 158.386
-  },
-  {
-   "word": "pesawat",
-   "start": 158.386,
-   "end": 158.873
-  },
-  {
-   "word": "itu,",
-   "start": 158.873,
-   "end": 159.263
-  },
-  {
-   "word": "dan",
-   "start": 159.263,
-   "end": 159.555
-  },
-  {
-   "word": "keputusan",
-   "start": 159.555,
-   "end": 160.14
-  },
-  {
-   "word": "itu",
-   "start": 160.14,
-   "end": 160.53
+   "word": "daripada",
+   "start": 7.249,
+   "end": 7.849
   },
   {
    "word": "harus",
-   "start": 160.53,
-   "end": 160.92
+   "start": 7.849,
+   "end": 8.249
   },
   {
-   "word": "diambil",
-   "start": 160.92,
-   "end": 161.309
+   "word": "menyentuh",
+   "start": 8.249,
+   "end": 8.749
   },
   {
-   "word": "pada",
-   "start": 161.309,
-   "end": 161.699
+   "word": "jasad",
+   "start": 8.749,
+   "end": 9.148
   },
   {
-   "word": "malam",
-   "start": 161.699,
-   "end": 162.089
+   "word": "sahabatmu",
+   "start": 9.148,
+   "end": 9.748
+  },
+  {
+   "word": "sendiri.",
+   "start": 9.748,
+   "end": 10.248
+  },
+  {
+   "word": "Tapi",
+   "start": 10.748,
+   "end": 11.121
+  },
+  {
+   "word": "keyakinan",
+   "start": 11.121,
+   "end": 11.68
+  },
+  {
+   "word": "itu",
+   "start": 11.68,
+   "end": 12.053
+  },
+  {
+   "word": "runtuh",
+   "start": 12.053,
+   "end": 12.426
+  },
+  {
+   "word": "begitu",
+   "start": 12.426,
+   "end": 12.892
+  },
+  {
+   "word": "kamu",
+   "start": 12.892,
+   "end": 13.265
+  },
+  {
+   "word": "mendengar",
+   "start": 13.265,
+   "end": 13.731
+  },
+  {
+   "word": "satu",
+   "start": 13.731,
+   "end": 14.104
+  },
+  {
+   "word": "siaran",
+   "start": 14.104,
+   "end": 14.477
+  },
+  {
+   "word": "radio",
+   "start": 14.477,
+   "end": 14.85
+  },
+  {
+   "word": "ini.",
+   "start": 14.85,
+   "end": 15.223
+  },
+  {
+   "word": "Di",
+   "start": 15.723,
+   "end": 16.066
+  },
+  {
+   "word": "titik",
+   "start": 16.066,
+   "end": 16.524
+  },
+  {
+   "word": "itu,",
+   "start": 16.524,
+   "end": 16.981
+  },
+  {
+   "word": "mereka",
+   "start": 16.981,
+   "end": 17.554
+  },
+  {
+   "word": "tahu",
+   "start": 17.554,
+   "end": 18.011
+  },
+  {
+   "word": "tidak",
+   "start": 18.011,
+   "end": 18.469
+  },
+  {
+   "word": "ada",
+   "start": 18.469,
+   "end": 18.927
+  },
+  {
+   "word": "pahlawan",
+   "start": 18.927,
+   "end": 19.499
   },
   {
    "word": "yang",
-   "start": 162.089,
-   "end": 162.382
+   "start": 19.499,
+   "end": 19.842
   },
   {
-   "word": "sama",
-   "start": 162.382,
-   "end": 162.771
+   "word": "datang.",
+   "start": 19.842,
+   "end": 20.3
   },
   {
-   "word": "juga,",
-   "start": 162.771,
-   "end": 163.161
+   "word": "Pilihannya",
+   "start": 20.3,
+   "end": 20.986
   },
   {
-   "word": "kalian",
-   "start": 163.161,
-   "end": 163.551
+   "word": "cuma",
+   "start": 20.986,
+   "end": 21.444
   },
   {
-   "word": "ikut,",
-   "start": 163.551,
-   "end": 163.941
+   "word": "menyerah,",
+   "start": 21.444,
+   "end": 22.016
   },
   {
    "word": "atau",
-   "start": 163.941,
-   "end": 164.331
+   "start": 22.016,
+   "end": 22.474
   },
   {
-   "word": "kalian",
-   "start": 164.331,
-   "end": 164.721
+   "word": "melakukan",
+   "start": 22.474,
+   "end": 23.16
   },
   {
-   "word": "menolaknya",
-   "start": 164.721,
-   "end": 165.306
+   "word": "hal",
+   "start": 23.16,
+   "end": 23.504
   },
   {
-   "word": "sampai",
-   "start": 165.306,
-   "end": 165.695
+   "word": "yang",
+   "start": 23.504,
+   "end": 23.847
   },
   {
-   "word": "akhir?",
-   "start": 165.695,
-   "end": 166.085
+   "word": "tak",
+   "start": 23.847,
+   "end": 24.19
   },
   {
-   "word": "Tulis",
-   "start": 166.085,
-   "end": 166.475
+   "word": "terbayangkan.",
+   "start": 24.19,
+   "end": 24.877
   },
   {
-   "word": "jawaban",
-   "start": 166.475,
-   "end": 166.962
+   "word": "Suhu",
+   "start": 25.377,
+   "end": 25.817
   },
   {
-   "word": "kalian",
-   "start": 166.962,
-   "end": 167.352
+   "word": "minus",
+   "start": 25.817,
+   "end": 26.257
+  },
+  {
+   "word": "tiga",
+   "start": 26.257,
+   "end": 26.698
+  },
+  {
+   "word": "puluh",
+   "start": 26.698,
+   "end": 27.138
+  },
+  {
+   "word": "derajat.",
+   "start": 27.138,
+   "end": 27.688
+  },
+  {
+   "word": "Tubuh",
+   "start": 27.688,
+   "end": 28.129
+  },
+  {
+   "word": "mulai",
+   "start": 28.129,
+   "end": 28.569
+  },
+  {
+   "word": "memakan",
+   "start": 28.569,
+   "end": 29.119
+  },
+  {
+   "word": "lemaknya",
+   "start": 29.119,
+   "end": 29.67
+  },
+  {
+   "word": "sendiri,",
+   "start": 29.67,
+   "end": 30.22
+  },
+  {
+   "word": "otot",
+   "start": 30.22,
+   "end": 30.66
+  },
+  {
+   "word": "melemah,",
+   "start": 30.66,
+   "end": 31.211
+  },
+  {
+   "word": "dan",
+   "start": 31.211,
+   "end": 31.541
+  },
+  {
+   "word": "halusinasi",
+   "start": 31.541,
+   "end": 32.312
+  },
+  {
+   "word": "datang.",
+   "start": 32.312,
+   "end": 32.752
+  },
+  {
+   "word": "Di",
+   "start": 32.752,
+   "end": 33.082
+  },
+  {
+   "word": "luar",
+   "start": 33.082,
+   "end": 33.412
+  },
+  {
+   "word": "bangkai",
+   "start": 33.412,
+   "end": 33.853
+  },
+  {
+   "word": "pesawat,",
+   "start": 33.853,
+   "end": 34.403
+  },
+  {
+   "word": "jasad",
+   "start": 34.403,
+   "end": 34.843
+  },
+  {
+   "word": "rekan-rekan",
+   "start": 34.843,
+   "end": 35.504
+  },
+  {
+   "word": "mereka",
+   "start": 35.504,
+   "end": 36.054
+  },
+  {
+   "word": "terawetkan",
+   "start": 36.054,
+   "end": 36.715
+  },
+  {
+   "word": "sempurna",
+   "start": 36.715,
+   "end": 37.265
+  },
+  {
+   "word": "oleh",
+   "start": 37.265,
+   "end": 37.705
+  },
+  {
+   "word": "es.",
+   "start": 37.705,
+   "end": 38.035
+  },
+  {
+   "word": "Malam",
+   "start": 38.035,
+   "end": 38.476
+  },
+  {
+   "word": "itu,",
+   "start": 38.476,
+   "end": 38.916
   },
   {
    "word": "di",
-   "start": 167.352,
-   "end": 167.645
+   "start": 38.916,
+   "end": 39.246
   },
   {
-   "word": "kolom",
-   "start": 167.645,
-   "end": 168.035
+   "word": "dalam",
+   "start": 39.246,
+   "end": 39.687
+  },
+  {
+   "word": "kegelapan",
+   "start": 39.687,
+   "end": 40.347
+  },
+  {
+   "word": "kabin",
+   "start": 40.347,
+   "end": 40.787
+  },
+  {
+   "word": "yang",
+   "start": 40.787,
+   "end": 41.118
+  },
+  {
+   "word": "membeku,",
+   "start": 41.118,
+   "end": 41.668
+  },
+  {
+   "word": "perdebatan",
+   "start": 41.668,
+   "end": 42.328
+  },
+  {
+   "word": "paling",
+   "start": 42.328,
+   "end": 42.769
+  },
+  {
+   "word": "sunyi",
+   "start": 42.769,
+   "end": 43.209
+  },
+  {
+   "word": "terjadi.",
+   "start": 43.209,
+   "end": 43.759
+  },
+  {
+   "word": "Sebagian",
+   "start": 43.759,
+   "end": 44.31
+  },
+  {
+   "word": "menangis",
+   "start": 44.31,
+   "end": 44.86
+  },
+  {
+   "word": "menolak",
+   "start": 44.86,
+   "end": 45.41
+  },
+  {
+   "word": "karena",
+   "start": 45.41,
+   "end": 45.961
+  },
+  {
+   "word": "takut",
+   "start": 45.961,
+   "end": 46.401
+  },
+  {
+   "word": "dosa.",
+   "start": 46.401,
+   "end": 46.841
+  },
+  {
+   "word": "Sebagian",
+   "start": 46.841,
+   "end": 47.392
+  },
+  {
+   "word": "sadar:",
+   "start": 47.392,
+   "end": 47.832
+  },
+  {
+   "word": "menolak",
+   "start": 47.832,
+   "end": 48.382
+  },
+  {
+   "word": "makan",
+   "start": 48.382,
+   "end": 48.823
+  },
+  {
+   "word": "berarti",
+   "start": 48.823,
+   "end": 49.373
+  },
+  {
+   "word": "bunuh",
+   "start": 49.373,
+   "end": 49.813
+  },
+  {
+   "word": "diri",
+   "start": 49.813,
+   "end": 50.254
+  },
+  {
+   "word": "perlahan.",
+   "start": 50.254,
+   "end": 50.804
+  },
+  {
+   "word": "Bukan",
+   "start": 51.304,
+   "end": 51.791
+  },
+  {
+   "word": "paksaan",
+   "start": 51.791,
+   "end": 52.278
+  },
+  {
+   "word": "yang",
+   "start": 52.278,
+   "end": 52.643
+  },
+  {
+   "word": "mengubah",
+   "start": 52.643,
+   "end": 53.252
+  },
+  {
+   "word": "segalanya,",
+   "start": 53.252,
+   "end": 53.983
+  },
+  {
+   "word": "melainkan",
+   "start": 53.983,
+   "end": 54.591
+  },
+  {
+   "word": "sebuah",
+   "start": 54.591,
+   "end": 55.078
+  },
+  {
+   "word": "janji.",
+   "start": 55.078,
+   "end": 55.565
+  },
+  {
+   "word": "Mereka",
+   "start": 55.565,
+   "end": 56.174
+  },
+  {
+   "word": "saling",
+   "start": 56.174,
+   "end": 56.661
+  },
+  {
+   "word": "berikrar:",
+   "start": 56.661,
+   "end": 57.27
+  },
+  {
+   "word": "jika",
+   "start": 57.27,
+   "end": 57.757
+  },
+  {
+   "word": "tubuhku",
+   "start": 57.757,
+   "end": 58.366
+  },
+  {
+   "word": "mati",
+   "start": 58.366,
+   "end": 58.853
+  },
+  {
+   "word": "malam",
+   "start": 58.853,
+   "end": 59.34
+  },
+  {
+   "word": "ini,",
+   "start": 59.34,
+   "end": 59.827
+  },
+  {
+   "word": "pakailah",
+   "start": 59.827,
+   "end": 60.435
+  },
+  {
+   "word": "ragaku",
+   "start": 60.435,
+   "end": 61.044
+  },
+  {
+   "word": "agar",
+   "start": 61.044,
+   "end": 61.531
+  },
+  {
+   "word": "kalian",
+   "start": 61.531,
+   "end": 62.018
+  },
+  {
+   "word": "bisa",
+   "start": 62.018,
+   "end": 62.505
+  },
+  {
+   "word": "pulang",
+   "start": 62.505,
+   "end": 62.992
+  },
+  {
+   "word": "menemui",
+   "start": 62.992,
+   "end": 63.601
+  },
+  {
+   "word": "keluarga.",
+   "start": 63.601,
+   "end": 64.21
+  },
+  {
+   "word": "Pengorbanan",
+   "start": 64.71,
+   "end": 65.256
+  },
+  {
+   "word": "kelam",
+   "start": 65.256,
+   "end": 65.62
+  },
+  {
+   "word": "itu",
+   "start": 65.62,
+   "end": 65.984
+  },
+  {
+   "word": "memberi",
+   "start": 65.984,
+   "end": 66.44
+  },
+  {
+   "word": "mereka",
+   "start": 66.44,
+   "end": 66.895
+  },
+  {
+   "word": "tenaga.",
+   "start": 66.895,
+   "end": 67.35
+  },
+  {
+   "word": "Setelah",
+   "start": 67.35,
+   "end": 67.805
+  },
+  {
+   "word": "tujuh",
+   "start": 67.805,
+   "end": 68.169
+  },
+  {
+   "word": "puluh",
+   "start": 68.169,
+   "end": 68.534
+  },
+  {
+   "word": "dua",
+   "start": 68.534,
+   "end": 68.807
+  },
+  {
+   "word": "hari",
+   "start": 68.807,
+   "end": 69.171
+  },
+  {
+   "word": "dan",
+   "start": 69.171,
+   "end": 69.444
+  },
+  {
+   "word": "berjalan",
+   "start": 69.444,
+   "end": 69.899
+  },
+  {
+   "word": "kaki",
+   "start": 69.899,
+   "end": 70.263
+  },
+  {
+   "word": "menembus",
+   "start": 70.263,
+   "end": 70.719
+  },
+  {
+   "word": "dinding",
+   "start": 70.719,
+   "end": 71.083
+  },
+  {
+   "word": "es",
+   "start": 71.083,
+   "end": 71.356
+  },
+  {
+   "word": "Andes,",
+   "start": 71.356,
+   "end": 71.72
+  },
+  {
+   "word": "enam",
+   "start": 71.72,
+   "end": 72.084
+  },
+  {
+   "word": "belas",
+   "start": 72.084,
+   "end": 72.448
+  },
+  {
+   "word": "orang",
+   "start": 72.448,
+   "end": 72.813
+  },
+  {
+   "word": "berhasil",
+   "start": 72.813,
+   "end": 73.268
+  },
+  {
+   "word": "pulang",
+   "start": 73.268,
+   "end": 73.632
+  },
+  {
+   "word": "hidup-hidup.",
+   "start": 73.632,
+   "end": 74.178
+  },
+  {
+   "word": "Jika",
+   "start": 74.678,
+   "end": 75.086
+  },
+  {
+   "word": "kamu",
+   "start": 75.086,
+   "end": 75.494
+  },
+  {
+   "word": "berada",
+   "start": 75.494,
+   "end": 76.003
+  },
+  {
+   "word": "di",
+   "start": 76.003,
+   "end": 76.309
+  },
+  {
+   "word": "kabin",
+   "start": 76.309,
+   "end": 76.717
+  },
+  {
+   "word": "beku",
+   "start": 76.717,
+   "end": 77.125
+  },
+  {
+   "word": "itu",
+   "start": 77.125,
+   "end": 77.532
+  },
+  {
+   "word": "pada",
+   "start": 77.532,
+   "end": 77.94
+  },
+  {
+   "word": "hari",
+   "start": 77.94,
+   "end": 78.348
+  },
+  {
+   "word": "kesebelas,",
+   "start": 78.348,
+   "end": 78.959
+  },
+  {
+   "word": "apakah",
+   "start": 78.959,
+   "end": 79.469
+  },
+  {
+   "word": "kamu",
+   "start": 79.469,
+   "end": 79.877
+  },
+  {
+   "word": "akan",
+   "start": 79.877,
+   "end": 80.284
+  },
+  {
+   "word": "ikut",
+   "start": 80.284,
+   "end": 80.692
+  },
+  {
+   "word": "makan",
+   "start": 80.692,
+   "end": 81.1
+  },
+  {
+   "word": "demi",
+   "start": 81.1,
+   "end": 81.507
+  },
+  {
+   "word": "pulang,",
+   "start": 81.507,
+   "end": 81.915
+  },
+  {
+   "word": "atau",
+   "start": 81.915,
+   "end": 82.323
+  },
+  {
+   "word": "memilih",
+   "start": 82.323,
+   "end": 82.833
+  },
+  {
+   "word": "mati",
+   "start": 82.833,
+   "end": 83.24
+  },
+  {
+   "word": "mempertahankan",
+   "start": 83.24,
+   "end": 83.954
+  },
+  {
+   "word": "prinsipmu?",
+   "start": 83.954,
+   "end": 84.463
+  },
+  {
+   "word": "Tulis",
+   "start": 84.463,
+   "end": 84.871
+  },
+  {
+   "word": "pilihan",
+   "start": 84.871,
+   "end": 85.381
+  },
+  {
+   "word": "jujurmu",
+   "start": 85.381,
+   "end": 85.89
+  },
+  {
+   "word": "di",
+   "start": 85.89,
+   "end": 86.196
   },
   {
    "word": "komentar.",
-   "start": 168.035,
-   "end": 168.522
+   "start": 86.196,
+   "end": 86.706
   }
  ]
 }

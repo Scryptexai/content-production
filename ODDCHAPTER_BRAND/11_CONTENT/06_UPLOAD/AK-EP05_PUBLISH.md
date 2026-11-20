@@ -1,4 +1,4 @@
-# AK-EP05 — Andes 1972 (uji format Curiosity Loop)
+# AK-EP05 — "Batas Terakhir Manusia" (Andes 1972, uji format Curiosity Loop)
 
 Status: **DRAFT — BELUM DIIZINKAN TAYANG** (`approved:false` di `queue/AK-EP05.json`).
 Dry-run `upload_zernio.py AK-EP05` lolos 20 Nov 2026. Menunggu persetujuan pemilik
@@ -6,41 +6,50 @@ setelah format 8 beat terbukti; episode ini di luar daftar ide Drive, jadi izin 
 (EP03/EP04) tidak berlaku.
 
 **VO = TTS internal (voice-05), bukan VO pemilik.** Naskah
-`02_SCRIPT/AK-EP05_andes-1972.md` sudah diselaraskan dengan teks TTS yang dipakai
-(408 kata, **169,12 s**). Format: 8 beat adaptasi `00F_FORMAT_CURIOSITY_LOOP.md` §2,
-durasi 2:53 (keputusan pemilik: bebas 1–3 menit, asal beat benar & kalimat utuh).
+`02_SCRIPT/AK-EP05_andes-1972.md` (REV3 — revisi total sudut pandang pemilik:
+dilema batin penonton, bukan laporan kronologis) selaras dengan teks TTS
+(180 kata, **87,31 s**). Format: 8 beat adaptasi `00F_FORMAT_CURIOSITY_LOOP.md` §2,
+durasi 1:31 (keputusan pemilik: bebas 1–3 menit, asal beat benar & kalimat utuh).
 
 Judul: **72 Hari di Andes: 45 Orang Terjebak, 16 Selamat oleh Satu Keputusan**
-Hook (awal deskripsi): "Tujuh hari tanpa makanan di punggung Andes — apa yang akan
-kalian lakukan?"
+Hook (awal deskripsi): "Berapa hari kamu sanggup menahan lapar sebelum melanggar
+prinsip moral terbesarmu?"
 
 ## Berkas
 
 | Berkas | Ukuran | Drive ID |
 |---|---|---|
-| `AK-EP05_andes-1972_short.mp4` (173,0 s, 1080×1920 @30) — rev2 | 49.084.435 B | `1mZxYU9s9X7UexYzYvwDHzIlnxy7BfhSK` |
+| `AK-EP05_andes-1972_short.mp4` (91,4 s, 1080×1920 @30) — rev3 | 24.614.422 B | `1mhyvo42OtBZMR--FEx2G3QyAQoXxyRjt` |
 | `AK-EP05_thumbnail_16x9.jpg` (1280×720) | 84.485 B | `14erM1wGCF-vE_9kXLWDuTfvxh-3oVhQu` |
 | `AK-EP05_poster_9x16.jpg` (1080×1920) | 170.240 B | `12AdFMRtY82JZnaQGYt2jC37ITkiZdOBF` |
-| `AK-EP05.id.srt` (183 cue) | 8.924 B | `1FU37YtX79m-iv-E3wsvSN2Chfou2rn5v` |
+| `AK-EP05.id.srt` (78 cue) | 3.836 B | `1UNeOpu3oBVqwV-VhecEWA0wCpIt5iDKy` |
 
 Folder Drive: `1pxGWa4Fdisj7UBzEWC4BPFWSBIlTj71o` (andes-1972), MP4 sudah publik.
-sha256 `0bf601e8a5e448fc25d5ef59aa35e66cb1d1c53b62ad2c4266878a6d7b9249fa`
+sha256 `3e0b4ca3b5d2ca62c9f83ffc6d1352e93a1e36106c1f2b6601440be7dcca4f73`
 Audio: −15,0 LUFS · true peak −1,4 dBTP · AAC / 44,1 kHz.
 
 ## Peta beat (selaras teks TTS final)
 
 | t (s) | Beat | Fungsi |
 |---|---|---|
-| 0,00 | B1 | Tantangan Logika / Dilema Ekstrem |
-| 10,04 | B2 | Reaksi Alami Manusia — opsi normal: buah-buahan |
-| 19,77 | B3 | Tindakan Sang Tokoh yang Mengagetkan (tanpa bocor jawaban) |
-| 37,79 | B4 | Pertaruhan Nyawa (High Stakes) |
-| 56,35 | B5 | Tekanan Situasi — kecelakaan (reveal: Pegunungan Andes) |
-| 80,57 | B6 | Tekanan Situasi — kelaparan & longsor |
-| 102,03 | B7 | Tekanan Situasi — sumpah bersama |
-| 114,70 | B8 | Momen Puncak — berjalan keluar |
-| 132,93 | B9 | Hasil Akhir & Fakta Kunci (reveal) |
-| 155,46 | B10 | Interactive Debate Hook → 169,12; video 173,03 |
+| 0,00 | B1 | Question Hook — tantangan langsung |
+| 4,65 | B2 | Expected Answer — reaksi alami |
+| 10,75 | B3 | Expectation Break — radio SAR dihentikan (HARI KE-11) |
+| 15,72 | B4 | Open Loop — pertaruhan nyawa |
+| 25,38 | B5 | The Journey — tekanan situasi (25,9 dtk) |
+| 51,30 | B6 | Progressive Reveal — pakta di tengah es |
+| 64,71 | B7 | Payoff — 16 orang pulang setelah 72 hari |
+| 74,68 | B8 | Interactive Debate Hook → 87,31; video 91,40 |
+
+## Revisi rev3 — naskah total "Batas Terakhir Manusia" (koreksi pemilik, 20 Nov 2026)
+
+- POV diganti total: dari laporan kronologis → **dilema batin penonton**;
+  8 beat baru, VO 8 klip (180 kata, 87,31 s), video 91,40 s (1:31).
+- Penyesuaian wajib: "hari ke-10" → **hari kesebelas** (fakta 23 Okt 1972);
+  visual "foto wajah penumpang" → naik pesawat (tanpa wajah); "radio di salju"
+  → koran + stamp HARI KE-11; "helikopter" → pesawat pencari (stok Coverr).
+- Data kering dihapus dari VO (nama pesawat/ketinggian/tipe tim) — tetap di
+  deskripsi & kartu sumber.
 
 ## Revisi rev2 (koreksi pemilik, 20 Nov 2026)
 
