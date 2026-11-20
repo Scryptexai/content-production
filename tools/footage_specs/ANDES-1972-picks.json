@@ -1,0 +1,8 @@
+{
+ "episode": "ANDES-1972",
+ "mode": "picks",
+ "target_dir": "footage/andes-1972",
+ "report": "footage-report-andes-1972.json",
+ "picks": "tools/footage_picks/ANDES-1972.json",
+ "catatan": "24 klip pilihan dari footage-candidates-andes-1972.json (mode discover). Nama klip Indonesia supaya pemetaan ke case_cfg langsung terbaca."
+}

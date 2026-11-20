@@ -1,0 +1,150 @@
+{
+ "episode": "ANDES-1972",
+ "catatan": "Pilihan klip discover AK-EP05 (uji format Curiosity Loop). Nada: gunung bersalju, pesawat, gelap/lilin (moral), trek keluar, lembah evakuasi.",
+ "picks": [
+  {
+   "name": "gunung_snow",
+   "title": "Cinematic, snowy mountains",
+   "base": "coverr-cinematic-snowy-mountains-7615",
+   "playback": "MIqZ49lBiw8TS8BKOTCnQd00AMdco9llu"
+  },
+  {
+   "name": "gunung_salju",
+   "title": "Snow-covered mountains",
+   "base": "coverr-snow-covered-mountains-1511",
+   "playback": "yNXpEffmok7gywm4UZEd9ELElz022015fA"
+  },
+  {
+   "name": "argentina_tierra",
+   "title": "Mountains in Tierra Del Fuego, Argentina",
+   "base": "coverr-mountains-in-tierra-del-fuego-argentina-8442",
+   "playback": "OazGHZn1v3KAkjuB7r5ES387hN6CVXoV"
+  },
+  {
+   "name": "argentina_valley",
+   "title": "Valley in the mountains in Salta, Argentina",
+   "base": "coverr-valley-in-the-mountains-in-salta-argentina-6806",
+   "playback": "Nbmdzy02dzglR4IZYGvnG79IBc3zn2UQe"
+  },
+  {
+   "name": "gunung_kabut",
+   "title": "Mountains in the fog",
+   "base": "coverr-mountains-in-the-fog-2696",
+   "playback": "TEerln00m5BX5hsDYavm12mzBSO3YPlKR"
+  },
+  {
+   "name": "sisa_salju",
+   "title": "Remnants of snow on mountains",
+   "base": "coverr-remnants-of-snow-on-mountains-6750",
+   "playback": "DuqV01YEHe2mY02QF3Yho1B9EFYvkQPHgh"
+  },
+  {
+   "name": "salju_hutan",
+   "title": "Snow falling in a forest",
+   "base": "coverr-snow-falling-in-a-forest-2150",
+   "playback": "YVt4YnckHGTOTVdf834iS2fDbnBcAZ01r"
+  },
+  {
+   "name": "hutan_dingin",
+   "title": "Winter woods",
+   "base": "coverr-winter-woods-3670",
+   "playback": "QSr01WVLBto00Ea5TKx4C12fjm3ZeqWXb8"
+  },
+  {
+   "name": "hutan_salju",
+   "title": "Forest covered in snow",
+   "base": "coverr-forest-covered-in-snow-6321",
+   "playback": "02XrzUvXMVb2fXOvj00ewpzP9PZfY8EB00D"
+  },
+  {
+   "name": "pesawat_awan",
+   "title": "Airplane flying through the clouds",
+   "base": "coverr-airplane-flying-through-the-clouds-1025",
+   "playback": "eDqZLgsdpuHbQD6ZRepNittlikuypsQE"
+  },
+  {
+   "name": "pesawat_gunung",
+   "title": "Airplane Soaring Above Clouds and Mountains at Twilight",
+   "base": "coverr-soaring-above-the-clouds-and-mountains",
+   "playback": null
+  },
+  {
+   "name": "jendela_pesawat",
+   "title": "Passenger opening plane window",
+   "base": "coverr-passenger-opening-plane-window-3751",
+   "playback": "vSL36Zj4PnIWWswy00TzgQTw9EkkqBi3G"
+  },
+  {
+   "name": "naik_pesawat",
+   "title": "People boarding an airplane",
+   "base": "coverr-people-boarding-an-airplane-8506",
+   "playback": "GwRdPPbCfzhsCVn02X66OxCytAHozpNz00"
+  },
+  {
+   "name": "senja_salju",
+   "title": "Snow falling in a city at dusk",
+   "base": "coverr-snow-falling-in-a-city-at-dusk-8624",
+   "playback": "7sLzjeyRDETDWH1M3RpQ6wDXiCgVtV2n"
+  },
+  {
+   "name": "api_gelap",
+   "title": "Using a lighter in the dark ",
+   "base": "coverr-using-a-lighter-in-the-dark-7305",
+   "playback": "S01qF7gwbqboCk2Dd7802CGGIHHF5DUQUX"
+  },
+  {
+   "name": "lilin_gelap",
+   "title": "Candles in the dark",
+   "base": "coverr-candles-in-the-dark-4381",
+   "playback": "nQEAl8i9zVe0201E2JF0056gYftJTM4o027M"
+  },
+  {
+   "name": "salib_gunung",
+   "title": "Cross on a mountain",
+   "base": "coverr-cross-on-a-mountain-1957",
+   "playback": "V9uQzntGjb2jsABIQaWG4LqfaBqBG005J"
+  },
+  {
+   "name": "trek_mountain",
+   "title": "Hiking through the mountains",
+   "base": "coverr-hiking-through-the-mountains-1755",
+   "playback": "RJwl1Vl9BCUvTBPRFhcGcmbfUVXyB6Wb"
+  },
+  {
+   "name": "puncak_jalan",
+   "title": "Walking to the mountain top ",
+   "base": "coverr-walking-to-the-mountain-top-8360",
+   "playback": "9Jd00zdrM4M4kCo01OGVY6nD81BL9MTl001"
+  },
+  {
+   "name": "lembah",
+   "title": "Mountain valley landscape",
+   "base": "coverr-mountain-valley-landscape-9973",
+   "playback": "xEgZ00xdq1gfuXg8AZeVzm00ryIbrW017DU"
+  },
+  {
+   "name": "lembah_aerial",
+   "title": "Aerial panning shot of a beautiful valley",
+   "base": "coverr-aerial-panning-shot-of-a-beautiful-valley-1114",
+   "playback": "EsYAObrnc00HRclvcYp01xvqoFbBavEORs"
+  },
+  {
+   "name": "koran",
+   "title": "Local, Dutch newspapers",
+   "base": "coverr-local-dutch-newspapers-8257",
+   "playback": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV"
+  },
+  {
+   "name": "tenda_dingin",
+   "title": "Igloo tents in the mountains",
+   "base": "coverr-igloo-tents-in-the-mountains-7907",
+   "playback": "arzk0268NLW01U36ZuHK9ojYcgpE4BGtJU"
+  },
+  {
+   "name": "pesawat_pencari",
+   "title": "Airplane in the sky",
+   "base": "coverr-airplane-in-the-sky-187",
+   "playback": "MnkvEUAZwap8WpvZ02urvogJ7XYSsmGab"
+  }
+ ]
+}
