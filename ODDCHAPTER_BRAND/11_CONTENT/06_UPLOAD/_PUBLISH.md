@@ -24,7 +24,9 @@ END 105,27 s (1:45).
 
 # AK-EP07 — Michael Rockefeller & Otsjanep
 
-Status: **TIDAK TAYANG — menunggu izin eksplisit pemilik** (queue `approved:false`).
+Status: **TAYANG — https://www.youtube.com/watch?v=-NhbL7pE1VA**
+(Zernio `6b012b0348307d41191a01cc`, 2026-11-21T05:24:30Z, Actions run
+**44870683674**; izin "lanjut tayang").
 Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (103,70 s) ·
 END 107,80 s (1:48).
 
