@@ -1,0 +1,802 @@
+{
+ "source": "faster-whisper (local), approximate word timestamps",
+ "duration": 85.310125,
+ "text": "Rp. 1.000 masuk amplop, dibuka, jadi Rp. 5.000. Dari trik murahan inilah, 9 orang kehilangan nyawa. Pelakunyanya, Wawon Erawan, seorang dalang yang pandai menguara. Ia menciptakan satu tokoh, Aki Banyu, sosok sakti penghuni dasar laut yang menjanjikan siapapun yang menurut akan sukses dan kaya. Aki Banyu tidak pernah menunjukan diri. Ia hanya bicara lewat telepon, dan ternyata akibanyu adalah wawon sendiri. Dua rekannya baru tahu setelah ditangkap, korbannya, 11 pekerja migran perempuan. Mereka menyetor uang setiap bulan, bertahun-tahun, dari luar negeri. Tak satupun menerima untung. Yang bertanya, di ancam. Kamu akan celaka. Menurut polisi, korban yang menagih janji itu dihabisi, begitu pula anggota keluarga sendiri yang dianggap mengganggu. November 2023, tiga pelaku difonis penjara seumur hidup. Jaksa menuntut hukuman mati. Seorang kriminolog menduga korbannya lebih dari 9. Tak ada yang tahu pasti. Akibatnya tidak pernah ada. Yang ada hanya orang-orang yang butuh percaya. Kapan terakhir kali kamu percaya pada janji yang tidak bisa kamu cek?",
+ "words": [
+  {
+   "word": "Rp.",
+   "start": 0.0,
+   "end": 0.46
+  },
+  {
+   "word": "1",
+   "start": 0.46,
+   "end": 0.46
+  },
+  {
+   "word": ".000",
+   "start": 0.46,
+   "end": 0.48
+  },
+  {
+   "word": "masuk",
+   "start": 0.48,
+   "end": 1.14
+  },
+  {
+   "word": "amplop,",
+   "start": 1.14,
+   "end": 1.88
+  },
+  {
+   "word": "dibuka,",
+   "start": 2.12,
+   "end": 2.78
+  },
+  {
+   "word": "jadi",
+   "start": 2.96,
+   "end": 3.16
+  },
+  {
+   "word": "Rp.",
+   "start": 3.16,
+   "end": 3.62
+  },
+  {
+   "word": "5",
+   "start": 3.62,
+   "end": 3.62
+  },
+  {
+   "word": ".000.",
+   "start": 3.62,
+   "end": 3.96
+  },
+  {
+   "word": "Dari",
+   "start": 4.26,
+   "end": 4.54
+  },
+  {
+   "word": "trik",
+   "start": 4.54,
+   "end": 4.72
+  },
+  {
+   "word": "murahan",
+   "start": 4.72,
+   "end": 5.04
+  },
+  {
+   "word": "inilah,",
+   "start": 5.04,
+   "end": 5.64
+  },
+  {
+   "word": "9",
+   "start": 5.88,
+   "end": 6.2
+  },
+  {
+   "word": "orang",
+   "start": 6.2,
+   "end": 6.62
+  },
+  {
+   "word": "kehilangan",
+   "start": 6.62,
+   "end": 7.14
+  },
+  {
+   "word": "nyawa.",
+   "start": 7.14,
+   "end": 7.92
+  },
+  {
+   "word": "Pelakunyanya,",
+   "start": 8.44,
+   "end": 9.16
+  },
+  {
+   "word": "Wawon",
+   "start": 9.38,
+   "end": 9.68
+  },
+  {
+   "word": "Erawan,",
+   "start": 9.68,
+   "end": 10.42
+  },
+  {
+   "word": "seorang",
+   "start": 10.7,
+   "end": 11.0
+  },
+  {
+   "word": "dalang",
+   "start": 11.0,
+   "end": 11.42
+  },
+  {
+   "word": "yang",
+   "start": 11.42,
+   "end": 11.64
+  },
+  {
+   "word": "pandai",
+   "start": 11.64,
+   "end": 12.2
+  },
+  {
+   "word": "menguara.",
+   "start": 12.2,
+   "end": 13.18
+  },
+  {
+   "word": "Ia",
+   "start": 13.82,
+   "end": 14.06
+  },
+  {
+   "word": "menciptakan",
+   "start": 14.06,
+   "end": 14.74
+  },
+  {
+   "word": "satu",
+   "start": 14.74,
+   "end": 15.12
+  },
+  {
+   "word": "tokoh,",
+   "start": 15.12,
+   "end": 15.84
+  },
+  {
+   "word": "Aki",
+   "start": 16.14,
+   "end": 16.48
+  },
+  {
+   "word": "Banyu,",
+   "start": 16.48,
+   "end": 17.2
+  },
+  {
+   "word": "sosok",
+   "start": 17.54,
+   "end": 17.86
+  },
+  {
+   "word": "sakti",
+   "start": 17.86,
+   "end": 18.28
+  },
+  {
+   "word": "penghuni",
+   "start": 18.28,
+   "end": 18.66
+  },
+  {
+   "word": "dasar",
+   "start": 18.66,
+   "end": 19.02
+  },
+  {
+   "word": "laut",
+   "start": 19.02,
+   "end": 19.42
+  },
+  {
+   "word": "yang",
+   "start": 19.42,
+   "end": 20.0
+  },
+  {
+   "word": "menjanjikan",
+   "start": 20.0,
+   "end": 20.66
+  },
+  {
+   "word": "siapapun",
+   "start": 20.66,
+   "end": 21.34
+  },
+  {
+   "word": "yang",
+   "start": 21.34,
+   "end": 21.56
+  },
+  {
+   "word": "menurut",
+   "start": 21.56,
+   "end": 21.88
+  },
+  {
+   "word": "akan",
+   "start": 21.88,
+   "end": 22.14
+  },
+  {
+   "word": "sukses",
+   "start": 22.14,
+   "end": 22.64
+  },
+  {
+   "word": "dan",
+   "start": 22.64,
+   "end": 22.92
+  },
+  {
+   "word": "kaya.",
+   "start": 22.92,
+   "end": 23.44
+  },
+  {
+   "word": "Aki",
+   "start": 24.08,
+   "end": 24.36
+  },
+  {
+   "word": "Banyu",
+   "start": 24.36,
+   "end": 24.64
+  },
+  {
+   "word": "tidak",
+   "start": 24.64,
+   "end": 24.92
+  },
+  {
+   "word": "pernah",
+   "start": 24.92,
+   "end": 25.2
+  },
+  {
+   "word": "menunjukan",
+   "start": 25.2,
+   "end": 25.76
+  },
+  {
+   "word": "diri.",
+   "start": 25.76,
+   "end": 26.64
+  },
+  {
+   "word": "Ia",
+   "start": 26.64,
+   "end": 26.92
+  },
+  {
+   "word": "hanya",
+   "start": 26.92,
+   "end": 27.16
+  },
+  {
+   "word": "bicara",
+   "start": 27.16,
+   "end": 27.54
+  },
+  {
+   "word": "lewat",
+   "start": 27.54,
+   "end": 27.8
+  },
+  {
+   "word": "telepon,",
+   "start": 27.8,
+   "end": 28.6
+  },
+  {
+   "word": "dan",
+   "start": 28.84,
+   "end": 29.02
+  },
+  {
+   "word": "ternyata",
+   "start": 29.02,
+   "end": 30.52
+  },
+  {
+   "word": "akibanyu",
+   "start": 30.52,
+   "end": 31.44
+  },
+  {
+   "word": "adalah",
+   "start": 31.44,
+   "end": 31.78
+  },
+  {
+   "word": "wawon",
+   "start": 31.78,
+   "end": 32.2
+  },
+  {
+   "word": "sendiri.",
+   "start": 32.2,
+   "end": 33.12
+  },
+  {
+   "word": "Dua",
+   "start": 33.44,
+   "end": 33.62
+  },
+  {
+   "word": "rekannya",
+   "start": 33.62,
+   "end": 33.98
+  },
+  {
+   "word": "baru",
+   "start": 33.98,
+   "end": 34.26
+  },
+  {
+   "word": "tahu",
+   "start": 34.26,
+   "end": 34.5
+  },
+  {
+   "word": "setelah",
+   "start": 34.5,
+   "end": 34.9
+  },
+  {
+   "word": "ditangkap,",
+   "start": 34.9,
+   "end": 36.0
+  },
+  {
+   "word": "korbannya,",
+   "start": 36.24,
+   "end": 36.82
+  },
+  {
+   "word": "11",
+   "start": 37.44,
+   "end": 37.66
+  },
+  {
+   "word": "pekerja",
+   "start": 37.66,
+   "end": 38.12
+  },
+  {
+   "word": "migran",
+   "start": 38.12,
+   "end": 38.5
+  },
+  {
+   "word": "perempuan.",
+   "start": 38.5,
+   "end": 39.82
+  },
+  {
+   "word": "Mereka",
+   "start": 40.0,
+   "end": 40.26
+  },
+  {
+   "word": "menyetor",
+   "start": 40.26,
+   "end": 40.78
+  },
+  {
+   "word": "uang",
+   "start": 40.78,
+   "end": 41.14
+  },
+  {
+   "word": "setiap",
+   "start": 41.14,
+   "end": 41.48
+  },
+  {
+   "word": "bulan,",
+   "start": 41.48,
+   "end": 42.24
+  },
+  {
+   "word": "bertahun",
+   "start": 42.42,
+   "end": 42.76
+  },
+  {
+   "word": "-tahun,",
+   "start": 42.76,
+   "end": 43.5
+  },
+  {
+   "word": "dari",
+   "start": 43.7,
+   "end": 43.84
+  },
+  {
+   "word": "luar",
+   "start": 43.84,
+   "end": 44.12
+  },
+  {
+   "word": "negeri.",
+   "start": 44.12,
+   "end": 45.04
+  },
+  {
+   "word": "Tak",
+   "start": 45.1,
+   "end": 45.28
+  },
+  {
+   "word": "satupun",
+   "start": 45.28,
+   "end": 45.78
+  },
+  {
+   "word": "menerima",
+   "start": 45.78,
+   "end": 46.2
+  },
+  {
+   "word": "untung.",
+   "start": 46.2,
+   "end": 46.96
+  },
+  {
+   "word": "Yang",
+   "start": 47.38,
+   "end": 47.42
+  },
+  {
+   "word": "bertanya,",
+   "start": 47.42,
+   "end": 48.2
+  },
+  {
+   "word": "di",
+   "start": 48.72,
+   "end": 48.86
+  },
+  {
+   "word": "ancam.",
+   "start": 48.86,
+   "end": 49.88
+  },
+  {
+   "word": "Kamu",
+   "start": 50.08,
+   "end": 50.44
+  },
+  {
+   "word": "akan",
+   "start": 50.44,
+   "end": 50.64
+  },
+  {
+   "word": "celaka.",
+   "start": 50.64,
+   "end": 51.58
+  },
+  {
+   "word": "Menurut",
+   "start": 51.58,
+   "end": 52.24
+  },
+  {
+   "word": "polisi,",
+   "start": 52.24,
+   "end": 53.02
+  },
+  {
+   "word": "korban",
+   "start": 53.34,
+   "end": 53.56
+  },
+  {
+   "word": "yang",
+   "start": 53.56,
+   "end": 53.72
+  },
+  {
+   "word": "menagih",
+   "start": 53.72,
+   "end": 54.2
+  },
+  {
+   "word": "janji",
+   "start": 54.2,
+   "end": 54.64
+  },
+  {
+   "word": "itu",
+   "start": 54.64,
+   "end": 54.94
+  },
+  {
+   "word": "dihabisi,",
+   "start": 54.94,
+   "end": 55.78
+  },
+  {
+   "word": "begitu",
+   "start": 56.12,
+   "end": 56.32
+  },
+  {
+   "word": "pula",
+   "start": 56.32,
+   "end": 56.6
+  },
+  {
+   "word": "anggota",
+   "start": 56.6,
+   "end": 56.98
+  },
+  {
+   "word": "keluarga",
+   "start": 56.98,
+   "end": 57.44
+  },
+  {
+   "word": "sendiri",
+   "start": 57.44,
+   "end": 58.0
+  },
+  {
+   "word": "yang",
+   "start": 58.0,
+   "end": 58.34
+  },
+  {
+   "word": "dianggap",
+   "start": 58.34,
+   "end": 58.8
+  },
+  {
+   "word": "mengganggu.",
+   "start": 58.8,
+   "end": 59.82
+  },
+  {
+   "word": "November",
+   "start": 60.26,
+   "end": 60.78
+  },
+  {
+   "word": "2023,",
+   "start": 60.78,
+   "end": 62.24
+  },
+  {
+   "word": "tiga",
+   "start": 62.98,
+   "end": 63.16
+  },
+  {
+   "word": "pelaku",
+   "start": 63.16,
+   "end": 63.62
+  },
+  {
+   "word": "difonis",
+   "start": 63.62,
+   "end": 64.2
+  },
+  {
+   "word": "penjara",
+   "start": 64.2,
+   "end": 64.78
+  },
+  {
+   "word": "seumur",
+   "start": 64.78,
+   "end": 65.2
+  },
+  {
+   "word": "hidup.",
+   "start": 65.2,
+   "end": 65.98
+  },
+  {
+   "word": "Jaksa",
+   "start": 66.24,
+   "end": 66.64
+  },
+  {
+   "word": "menuntut",
+   "start": 66.64,
+   "end": 67.12
+  },
+  {
+   "word": "hukuman",
+   "start": 67.12,
+   "end": 67.54
+  },
+  {
+   "word": "mati.",
+   "start": 67.54,
+   "end": 68.48
+  },
+  {
+   "word": "Seorang",
+   "start": 68.62,
+   "end": 68.92
+  },
+  {
+   "word": "kriminolog",
+   "start": 68.92,
+   "end": 69.54
+  },
+  {
+   "word": "menduga",
+   "start": 69.54,
+   "end": 70.04
+  },
+  {
+   "word": "korbannya",
+   "start": 70.04,
+   "end": 70.62
+  },
+  {
+   "word": "lebih",
+   "start": 70.62,
+   "end": 71.02
+  },
+  {
+   "word": "dari",
+   "start": 71.02,
+   "end": 71.32
+  },
+  {
+   "word": "9.",
+   "start": 71.32,
+   "end": 71.78
+  },
+  {
+   "word": "Tak",
+   "start": 72.3,
+   "end": 72.56
+  },
+  {
+   "word": "ada",
+   "start": 72.56,
+   "end": 72.74
+  },
+  {
+   "word": "yang",
+   "start": 72.74,
+   "end": 72.92
+  },
+  {
+   "word": "tahu",
+   "start": 72.92,
+   "end": 73.2
+  },
+  {
+   "word": "pasti.",
+   "start": 73.2,
+   "end": 73.76
+  },
+  {
+   "word": "Akibatnya",
+   "start": 74.26,
+   "end": 74.76
+  },
+  {
+   "word": "tidak",
+   "start": 74.76,
+   "end": 75.02
+  },
+  {
+   "word": "pernah",
+   "start": 75.02,
+   "end": 75.36
+  },
+  {
+   "word": "ada.",
+   "start": 75.36,
+   "end": 75.92
+  },
+  {
+   "word": "Yang",
+   "start": 76.44,
+   "end": 76.66
+  },
+  {
+   "word": "ada",
+   "start": 76.66,
+   "end": 77.04
+  },
+  {
+   "word": "hanya",
+   "start": 77.04,
+   "end": 77.32
+  },
+  {
+   "word": "orang",
+   "start": 77.32,
+   "end": 77.66
+  },
+  {
+   "word": "-orang",
+   "start": 77.66,
+   "end": 77.9
+  },
+  {
+   "word": "yang",
+   "start": 77.9,
+   "end": 78.16
+  },
+  {
+   "word": "butuh",
+   "start": 78.16,
+   "end": 78.5
+  },
+  {
+   "word": "percaya.",
+   "start": 78.5,
+   "end": 79.22
+  },
+  {
+   "word": "Kapan",
+   "start": 79.22,
+   "end": 80.34
+  },
+  {
+   "word": "terakhir",
+   "start": 80.34,
+   "end": 80.78
+  },
+  {
+   "word": "kali",
+   "start": 80.78,
+   "end": 81.02
+  },
+  {
+   "word": "kamu",
+   "start": 81.02,
+   "end": 81.26
+  },
+  {
+   "word": "percaya",
+   "start": 81.26,
+   "end": 81.92
+  },
+  {
+   "word": "pada",
+   "start": 81.92,
+   "end": 82.18
+  },
+  {
+   "word": "janji",
+   "start": 82.18,
+   "end": 83.28
+  },
+  {
+   "word": "yang",
+   "start": 83.28,
+   "end": 83.78
+  },
+  {
+   "word": "tidak",
+   "start": 83.78,
+   "end": 84.06
+  },
+  {
+   "word": "bisa",
+   "start": 84.06,
+   "end": 84.32
+  },
+  {
+   "word": "kamu",
+   "start": 84.32,
+   "end": 84.6
+  },
+  {
+   "word": "cek?",
+   "start": 84.6,
+   "end": 84.96
+  }
+ ]
+}

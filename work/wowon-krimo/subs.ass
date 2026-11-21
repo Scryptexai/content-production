@@ -1,0 +1,136 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Barlow Condensed ExtraBold,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1.5,0,1,8,3,2,60,60,672,1
+Style: Kicker,Barlow Condensed ExtraBold,74,&H00E0ECF0,&H00E0ECF0,&H00000000,&H80000000,0,0,0,0,100,100,6,0,1,6,2,5,60,60,0,1
+Style: Big,Anton,170,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,0,0,0,100,100,0,0,1,10,4,5,40,40,0,1
+Style: Stamp,Anton,120,&H00000000,&H00000000,&H002A2AD8,&H00000000,0,0,0,0,100,100,0,0,3,14,0,5,40,40,0,1
+Style: Tag,Barlow Condensed ExtraBold,34,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1.2,0,1,3,1,7,60,60,300,1
+Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,3,1,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.05,0:00:04.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:04.85,0:00:08.34,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:08.69,0:00:11.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:12.25,0:00:16.04,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:16.39,0:00:20.00,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:20.35,0:00:24.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:24.85,0:00:28.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:28.85,0:00:32.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:32.65,0:00:36.14,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:36.49,0:00:40.20,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:40.55,0:00:44.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:44.65,0:00:47.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:48.25,0:00:51.48,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:51.83,0:00:55.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:55.85,0:01:00.16,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:00.51,0:01:04.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:04.65,0:01:08.52,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:08.87,0:01:11.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:11.85,0:01:14.16,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:14.51,0:01:18.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:18.85,0:01:21.70,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:22.05,0:01:24.86,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:01.10,0:00:04.40,Stamp,,0,0,0,,{\pos(540,520)\an5\fs56\frz-4\fad(160,150)}RP1.000 JADI RP5.000
+Dialogue: 0,0:00:04.90,0:00:08.30,Stamp,,0,0,0,,{\pos(540,520)\an5\fs54\frz-4\c&H002A2AD8&\fad(160,150)}9 ORANG KEHILANGAN NYAWA
+Dialogue: 0,0:00:08.90,0:00:11.80,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs48\fad(220,160)}WOWON ERAWAN — DALANGNYA
+Dialogue: 0,0:00:12.40,0:00:16.00,Stamp,,0,0,0,,{\pos(540,520)\an5\fs76\frz-4\fad(160,150)}AKI BANYU
+Dialogue: 0,0:00:16.60,0:00:19.90,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}HANYA BICARA LEWAT TELEPON
+Dialogue: 0,0:00:20.50,0:00:24.40,Stamp,,0,0,0,,{\pos(540,520)\an5\fs58\frz-4\fad(160,150)}AKI BANYU ADALAH WOWON
+Dialogue: 0,0:00:25.00,0:00:30.80,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs42\fad(220,160)}DUA REKANNYA BARU TAHU SETELAH DITANGKAP
+Dialogue: 0,0:00:31.40,0:00:36.10,Kicker,,0,0,0,,{\pos(540,700)\an5\fs44\fad(220,160)}TOKOH YANG TIDAK PERNAH MENUNJUKKAN DIRI
+Dialogue: 0,0:00:36.80,0:00:40.10,Stamp,,0,0,0,,{\pos(540,520)\an5\fs64\frz-4\fad(160,150)}11 PEKERJA MIGRAN
+Dialogue: 0,0:00:40.70,0:00:44.20,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}MENYETOR TIAP BULAN — BERTAHUN-TAHUN
+Dialogue: 0,0:00:44.80,0:00:47.80,Kicker,,0,0,0,,{\pos(540,700)\an5\fs48\fad(220,160)}TAK SATU PUN MENERIMA UNTUNG
+Dialogue: 0,0:00:48.40,0:00:51.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs50\c&H002A2AD8&\fad(220,160)}YANG BERTANYA: KAMU AKAN CELAKA
+Dialogue: 0,0:00:52.10,0:00:55.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs48\fad(220,160)}PENAGIH JANJI DIHABISI
+Dialogue: 0,0:00:56.00,0:01:00.10,Kicker,,0,0,0,,{\pos(540,700)\an5\fs46\fad(220,160)}BEGITU PULA ANGGOTA KELUARGA
+Dialogue: 0,0:01:00.80,0:01:04.20,Stamp,,0,0,0,,{\pos(540,520)\an5\fs72\frz-4\fad(160,150)}NOVEMBER 2023
+Dialogue: 0,0:01:04.70,0:01:08.50,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\fad(220,160)}VONIS: PENJARA SEUMUR HIDUP
+Dialogue: 0,0:01:09.10,0:01:11.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs48\fad(220,160)}KRIMINOLOG: LEBIH DARI 9?
+Dialogue: 0,0:01:11.80,0:01:14.10,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\c&H002A2AD8&\fad(220,160)}TAK ADA YANG TAHU PASTI
+Dialogue: 0,0:01:14.80,0:01:18.40,Stamp,,0,0,0,,{\pos(540,520)\an5\fs56\frz-4\fad(160,150)}AKI BANYU TIDAK PERNAH ADA
+Dialogue: 0,0:01:19.00,0:01:24.70,Kicker,,0,0,0,,{\pos(540,700)\an5\fs48\c&H002A2AD8&\fad(240,170)}PERCAYA JANJI YANG TIDAK BISA DICEK?
+Dialogue: 0,0:01:25.40,0:01:29.40,Big,,0,0,0,,{\pos(540,640)\an5\fs110\fad(260,0)}ODDCHAPTER
+Dialogue: 0,0:01:25.70,0:01:29.40,Kicker,,0,0,0,,{\pos(540,740)\an5\fs42\c&H002A2AD8&\fad(300,0)}KASUS NYATA · ARSIP ASLI
+Dialogue: 0,0:01:26.00,0:01:29.40,Credit,,0,0,0,,{\pos(540,1000)\an5\fs26\c&H00D0D0D0&\fad(360,0)}Footage stok: Coverr\NSumber: Tempo · BBC Indonesia · detik\N@oddchapter7 · KASUS NYATA · ARSIP ASLI
+Dialogue: 0,0:00:00.00,0:00:01.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RP1.000 MASUK
+Dialogue: 0,0:00:01.08,0:00:02.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AMPLOP DIBUKA
+Dialogue: 0,0:00:02.90,0:00:04.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JADI RP5.000 DARI
+Dialogue: 0,0:00:04.48,0:00:05.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TRIK MURAHAN
+Dialogue: 0,0:00:04.98,0:00:06.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}INILAH {\c&H002A2AD8&}9{\c&H00FFFFFF&} ORANG
+Dialogue: 0,0:00:06.56,0:00:08.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEHILANGAN NYAWA
+Dialogue: 0,0:00:08.38,0:00:09.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PELAKUNYA {\c&H002A2AD8&}WOWON{\c&H00FFFFFF&}
+Dialogue: 0,0:00:09.62,0:00:10.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ERAWAN SEORANG
+Dialogue: 0,0:00:10.94,0:00:12.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALANG YANG PANDAI
+Dialogue: 0,0:00:12.14,0:00:13.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGUBAH SUARA
+Dialogue: 0,0:00:13.76,0:00:14.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}IA MENCIPTAKAN
+Dialogue: 0,0:00:14.68,0:00:15.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SATU TOKOH
+Dialogue: 0,0:00:16.08,0:00:17.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AKI {\c&H002A2AD8&}BANYU{\c&H00FFFFFF&}
+Dialogue: 0,0:00:17.48,0:00:18.26,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SOSOK SAKTI
+Dialogue: 0,0:00:18.22,0:00:19.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PENGHUNI DASAR
+Dialogue: 0,0:00:18.96,0:00:19.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAUT YANG
+Dialogue: 0,0:00:19.94,0:00:20.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENJANJIKAN
+Dialogue: 0,0:00:20.60,0:00:21.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SIAPAPUN YANG
+Dialogue: 0,0:00:21.50,0:00:22.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENURUT AKAN
+Dialogue: 0,0:00:22.08,0:00:23.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SUKSES DAN KAYA
+Dialogue: 0,0:00:24.02,0:00:24.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AKI {\c&H002A2AD8&}BANYU{\c&H00FFFFFF&} TIDAK
+Dialogue: 0,0:00:24.86,0:00:25.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERNAH MENUNJUKAN
+Dialogue: 0,0:00:25.70,0:00:26.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIRI
+Dialogue: 0,0:00:26.58,0:00:27.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}IA HANYA BICARA
+Dialogue: 0,0:00:27.48,0:00:28.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LEWAT TELEPON
+Dialogue: 0,0:00:28.78,0:00:30.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN TERNYATA
+Dialogue: 0,0:00:30.46,0:00:31.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AKI BANYU ADALAH
+Dialogue: 0,0:00:31.72,0:00:33.26,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}WOWON{\c&H00FFFFFF&} SENDIRI
+Dialogue: 0,0:00:33.38,0:00:34.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DUA REKANNYA BARU
+Dialogue: 0,0:00:34.20,0:00:34.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAHU SETELAH
+Dialogue: 0,0:00:34.84,0:00:36.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DITANGKAP
+Dialogue: 0,0:00:36.18,0:00:36.96,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KORBANNYA
+Dialogue: 0,0:00:37.38,0:00:38.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}11{\c&H00FFFFFF&} PEKERJA MIGRAN
+Dialogue: 0,0:00:38.44,0:00:39.96,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PEREMPUAN
+Dialogue: 0,0:00:39.94,0:00:40.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA MENYETOR
+Dialogue: 0,0:00:40.72,0:00:42.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}UANG SETIAP BULAN
+Dialogue: 0,0:00:42.36,0:00:43.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERTAHUN-TAHUN
+Dialogue: 0,0:00:43.64,0:00:45.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARI LUAR NEGERI
+Dialogue: 0,0:00:45.04,0:00:45.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK SATUPUN
+Dialogue: 0,0:00:45.72,0:00:47.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENERIMA UNTUNG
+Dialogue: 0,0:00:47.32,0:00:48.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG BERTANYA
+Dialogue: 0,0:00:48.66,0:00:50.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIANCAM KAMU AKAN
+Dialogue: 0,0:00:50.58,0:00:51.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CELAKA
+Dialogue: 0,0:00:51.52,0:00:53.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENURUT POLISI
+Dialogue: 0,0:00:53.28,0:00:53.70,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KORBAN YANG
+Dialogue: 0,0:00:53.66,0:00:54.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENAGIH JANJI ITU
+Dialogue: 0,0:00:54.88,0:00:55.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIHABISI
+Dialogue: 0,0:00:56.06,0:00:56.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEGITU PULA
+Dialogue: 0,0:00:56.54,0:00:57.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ANGGOTA KELUARGA
+Dialogue: 0,0:00:57.38,0:00:58.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SENDIRI YANG
+Dialogue: 0,0:00:58.28,0:00:58.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIANGGAP
+Dialogue: 0,0:00:58.74,0:00:59.96,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGGANGGU
+Dialogue: 0,0:01:00.20,0:01:02.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NOVEMBER 2023
+Dialogue: 0,0:01:02.92,0:01:03.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIGA PELAKU
+Dialogue: 0,0:01:03.56,0:01:04.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIVONIS PENJARA
+Dialogue: 0,0:01:04.72,0:01:06.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEUMUR HIDUP
+Dialogue: 0,0:01:06.18,0:01:07.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JAKSA MENUNTUT
+Dialogue: 0,0:01:07.06,0:01:08.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HUKUMAN MATI
+Dialogue: 0,0:01:08.56,0:01:09.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEORANG KRIMINOLOG
+Dialogue: 0,0:01:09.48,0:01:10.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENDUGA KORBANNYA
+Dialogue: 0,0:01:10.56,0:01:11.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LEBIH DARI {\c&H002A2AD8&}9{\c&H00FFFFFF&}
+Dialogue: 0,0:01:12.24,0:01:12.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK ADA YANG
+Dialogue: 0,0:01:12.86,0:01:13.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAHU PASTI
+Dialogue: 0,0:01:14.20,0:01:15.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AKI BANYU TIDAK
+Dialogue: 0,0:01:14.96,0:01:16.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERNAH ADA
+Dialogue: 0,0:01:16.38,0:01:17.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG ADA HANYA
+Dialogue: 0,0:01:17.26,0:01:18.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ORANG -ORANG YANG
+Dialogue: 0,0:01:18.10,0:01:19.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BUTUH PERCAYA
+Dialogue: 0,0:01:19.16,0:01:20.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAPAN TERAKHIR
+Dialogue: 0,0:01:20.72,0:01:21.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALI KAMU PERCAYA
+Dialogue: 0,0:01:21.86,0:01:23.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PADA JANJI YANG
+Dialogue: 0,0:01:23.72,0:01:24.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK BISA KAMU
+Dialogue: 0,0:01:24.54,0:01:25.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CEK?

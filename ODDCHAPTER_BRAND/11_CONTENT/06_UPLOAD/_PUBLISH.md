@@ -83,3 +83,24 @@ END 93,20 s (1:33) · footage full layar9:16.
 - Footage: bank + sb-ep02, cover-crop full layar9:16
 - Nada: ganjil-bukan-kriminal; tanpa teori konspirasi; kritik LIPI dikutip
 - Sumber: CNN Indonesia · Tirto (mengutip Kompas1983)
+---
+
+# AK-EP10 — Wowon Krimo: janji uang berlipat,9 orang kehilangan nyawa
+
+Status: **BELUM TAYANG — menunggu izin post** (queue `requested`, `approved:false`).
+Sumber: Shortlist Batch 2 **cadangan B1** (dipilih setelah5 besar tayang).
+Format:8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (85,31 s/159 kata) ·
+END89,40 s (1:29) · footage full layar9:16.
+
+- Master: `work/wowon-krimo/out/AK-EP10_wowon-krimo_short.mp4`
+  28.037.743 B · sha `3d40fae2daf5c861edf42d897934270239c95aeca9d2bcaab6c55ff7a349704d`
+  · −15,1 LUFS / −1,6 dBTP ·73 cue caption
+- SRT: `06_UPLOAD/AK-EP10.id.srt` (73 cue; fix: Wowon, mengubah suara, Aki Banyu,
+  pelakunya, divonis, diancam, bertahun-tahun, Rp1.000, Rp5.000)
+- Thumb/poster/endcard: `06_UPLOAD/thumbs/AK-EP10_*` (still AI: amplop di meja,
+  telepon gelap, laut malam — tanpa orang)
+- Footage: bank + sb-ep02, cover-crop full layar9:16; label FOOTAGE STOK · COVERR
+- Sensitivitas: pelaku HIDUP → "terdakwa/divonis"; tanpa gore/metode; tanpa nama
+  korban; angka hanya dari VO (9,11,>9,2023)
+- Drive: folder `10-BlBJFEMaiO8J8AI1WGfnjiH2WaYx1X` (video `1pNW5CAmGlxm7aGgWvR_dc47337RdEO2Y`)
+- Sumber: Tempo · BBC Indonesia · detik
