@@ -1,0 +1,767 @@
+{
+ "source": "faster-whisper (local), approximate word timestamps",
+ "duration": 78.8085625,
+ "text": "puluhan ribu nomor antrian antrian setiap hari. Untuk seglas air yang dicelup sebuah batu, Jombang, Jawa Timur, awal 2009. Muhammad Ponari, 9 tahun, konon menemukan sebuah batu setelah tersambar petir. Air celupan batu itu, kata orang, bisa menyembuhkan. Dalam hitungan hari, desa kecil Balongsari penuh sesak. Orang datang dari berbagai kota membawa gelas dan botol. Ada yang menunggu dua hari, tidur di rumah warga, lalu kerumunan itu menelan korban. Empat orang meninggal di tengah desakan, polisi menutup praktiknya, tapi orang-orang tidak pulang. Ribuan tetap menunggu di luar. Ada yang minum air sumur di depan rumah itu, ada yang menadah air bekas mandi sang anak. Kenapa? Di desa itu, pengangguran disebut mencapai 70 persen dan berobat ke dokter. Mahal. Akhir Maret, korban kelima meninggal. Seorang pemuda 19 tahun yang kelelahan menunggu. Orang bertanya, kenapa mereka percaya pada sebuah batu? Mungkin pertanyaan yang lebih jujur. Kalau bukan ke sana, mereka harus ke mana?",
+ "words": [
+  {
+   "word": "puluhan",
+   "start": 0.0,
+   "end": 0.5
+  },
+  {
+   "word": "ribu",
+   "start": 0.5,
+   "end": 0.9
+  },
+  {
+   "word": "nomor",
+   "start": 0.9,
+   "end": 1.24
+  },
+  {
+   "word": "antrian",
+   "start": 1.24,
+   "end": 1.82
+  },
+  {
+   "word": "antrian",
+   "start": 1.82,
+   "end": 1.92
+  },
+  {
+   "word": "setiap",
+   "start": 1.92,
+   "end": 2.58
+  },
+  {
+   "word": "hari.",
+   "start": 2.58,
+   "end": 3.14
+  },
+  {
+   "word": "Untuk",
+   "start": 3.72,
+   "end": 3.92
+  },
+  {
+   "word": "seglas",
+   "start": 3.92,
+   "end": 4.3
+  },
+  {
+   "word": "air",
+   "start": 4.3,
+   "end": 4.5
+  },
+  {
+   "word": "yang",
+   "start": 4.5,
+   "end": 4.7
+  },
+  {
+   "word": "dicelup",
+   "start": 4.7,
+   "end": 5.12
+  },
+  {
+   "word": "sebuah",
+   "start": 5.12,
+   "end": 5.56
+  },
+  {
+   "word": "batu,",
+   "start": 5.56,
+   "end": 6.0
+  },
+  {
+   "word": "Jombang,",
+   "start": 6.72,
+   "end": 7.44
+  },
+  {
+   "word": "Jawa",
+   "start": 7.76,
+   "end": 7.96
+  },
+  {
+   "word": "Timur,",
+   "start": 7.96,
+   "end": 8.72
+  },
+  {
+   "word": "awal",
+   "start": 9.04,
+   "end": 9.3
+  },
+  {
+   "word": "2009.",
+   "start": 9.3,
+   "end": 10.34
+  },
+  {
+   "word": "Muhammad",
+   "start": 11.1,
+   "end": 11.32
+  },
+  {
+   "word": "Ponari,",
+   "start": 11.32,
+   "end": 11.84
+  },
+  {
+   "word": "9",
+   "start": 12.26,
+   "end": 12.62
+  },
+  {
+   "word": "tahun,",
+   "start": 12.62,
+   "end": 13.18
+  },
+  {
+   "word": "konon",
+   "start": 13.58,
+   "end": 13.78
+  },
+  {
+   "word": "menemukan",
+   "start": 13.78,
+   "end": 14.3
+  },
+  {
+   "word": "sebuah",
+   "start": 14.3,
+   "end": 14.72
+  },
+  {
+   "word": "batu",
+   "start": 14.72,
+   "end": 15.18
+  },
+  {
+   "word": "setelah",
+   "start": 15.18,
+   "end": 15.6
+  },
+  {
+   "word": "tersambar",
+   "start": 15.6,
+   "end": 16.28
+  },
+  {
+   "word": "petir.",
+   "start": 16.28,
+   "end": 17.16
+  },
+  {
+   "word": "Air",
+   "start": 17.46,
+   "end": 17.66
+  },
+  {
+   "word": "celupan",
+   "start": 17.66,
+   "end": 18.04
+  },
+  {
+   "word": "batu",
+   "start": 18.04,
+   "end": 18.36
+  },
+  {
+   "word": "itu,",
+   "start": 18.36,
+   "end": 18.66
+  },
+  {
+   "word": "kata",
+   "start": 18.76,
+   "end": 18.94
+  },
+  {
+   "word": "orang,",
+   "start": 18.94,
+   "end": 19.28
+  },
+  {
+   "word": "bisa",
+   "start": 19.78,
+   "end": 20.06
+  },
+  {
+   "word": "menyembuhkan.",
+   "start": 20.06,
+   "end": 20.92
+  },
+  {
+   "word": "Dalam",
+   "start": 21.54,
+   "end": 21.88
+  },
+  {
+   "word": "hitungan",
+   "start": 21.88,
+   "end": 22.38
+  },
+  {
+   "word": "hari,",
+   "start": 22.38,
+   "end": 22.8
+  },
+  {
+   "word": "desa",
+   "start": 23.12,
+   "end": 23.3
+  },
+  {
+   "word": "kecil",
+   "start": 23.3,
+   "end": 23.62
+  },
+  {
+   "word": "Balongsari",
+   "start": 23.62,
+   "end": 24.24
+  },
+  {
+   "word": "penuh",
+   "start": 24.24,
+   "end": 24.62
+  },
+  {
+   "word": "sesak.",
+   "start": 24.62,
+   "end": 25.44
+  },
+  {
+   "word": "Orang",
+   "start": 25.66,
+   "end": 25.9
+  },
+  {
+   "word": "datang",
+   "start": 25.9,
+   "end": 26.32
+  },
+  {
+   "word": "dari",
+   "start": 26.32,
+   "end": 26.54
+  },
+  {
+   "word": "berbagai",
+   "start": 26.54,
+   "end": 26.92
+  },
+  {
+   "word": "kota",
+   "start": 26.92,
+   "end": 27.36
+  },
+  {
+   "word": "membawa",
+   "start": 27.36,
+   "end": 27.74
+  },
+  {
+   "word": "gelas",
+   "start": 27.74,
+   "end": 28.2
+  },
+  {
+   "word": "dan",
+   "start": 28.2,
+   "end": 28.42
+  },
+  {
+   "word": "botol.",
+   "start": 28.42,
+   "end": 29.18
+  },
+  {
+   "word": "Ada",
+   "start": 29.18,
+   "end": 29.78
+  },
+  {
+   "word": "yang",
+   "start": 29.78,
+   "end": 29.96
+  },
+  {
+   "word": "menunggu",
+   "start": 29.96,
+   "end": 30.4
+  },
+  {
+   "word": "dua",
+   "start": 30.4,
+   "end": 30.64
+  },
+  {
+   "word": "hari,",
+   "start": 30.64,
+   "end": 31.24
+  },
+  {
+   "word": "tidur",
+   "start": 31.44,
+   "end": 31.88
+  },
+  {
+   "word": "di",
+   "start": 31.88,
+   "end": 32.0
+  },
+  {
+   "word": "rumah",
+   "start": 32.0,
+   "end": 32.26
+  },
+  {
+   "word": "warga,",
+   "start": 32.26,
+   "end": 33.2
+  },
+  {
+   "word": "lalu",
+   "start": 33.34,
+   "end": 33.58
+  },
+  {
+   "word": "kerumunan",
+   "start": 33.58,
+   "end": 34.22
+  },
+  {
+   "word": "itu",
+   "start": 34.22,
+   "end": 34.48
+  },
+  {
+   "word": "menelan",
+   "start": 34.48,
+   "end": 34.92
+  },
+  {
+   "word": "korban.",
+   "start": 34.92,
+   "end": 35.68
+  },
+  {
+   "word": "Empat",
+   "start": 36.1,
+   "end": 36.4
+  },
+  {
+   "word": "orang",
+   "start": 36.4,
+   "end": 36.64
+  },
+  {
+   "word": "meninggal",
+   "start": 36.64,
+   "end": 37.16
+  },
+  {
+   "word": "di",
+   "start": 37.16,
+   "end": 37.32
+  },
+  {
+   "word": "tengah",
+   "start": 37.32,
+   "end": 37.58
+  },
+  {
+   "word": "desakan,",
+   "start": 37.58,
+   "end": 38.28
+  },
+  {
+   "word": "polisi",
+   "start": 38.94,
+   "end": 39.26
+  },
+  {
+   "word": "menutup",
+   "start": 39.26,
+   "end": 39.66
+  },
+  {
+   "word": "praktiknya,",
+   "start": 39.66,
+   "end": 40.52
+  },
+  {
+   "word": "tapi",
+   "start": 41.0,
+   "end": 41.4
+  },
+  {
+   "word": "orang",
+   "start": 41.4,
+   "end": 41.78
+  },
+  {
+   "word": "-orang",
+   "start": 41.78,
+   "end": 42.0
+  },
+  {
+   "word": "tidak",
+   "start": 42.0,
+   "end": 42.3
+  },
+  {
+   "word": "pulang.",
+   "start": 42.3,
+   "end": 43.22
+  },
+  {
+   "word": "Ribuan",
+   "start": 43.46,
+   "end": 43.78
+  },
+  {
+   "word": "tetap",
+   "start": 43.78,
+   "end": 44.16
+  },
+  {
+   "word": "menunggu",
+   "start": 44.16,
+   "end": 44.66
+  },
+  {
+   "word": "di",
+   "start": 44.66,
+   "end": 44.82
+  },
+  {
+   "word": "luar.",
+   "start": 44.82,
+   "end": 45.5
+  },
+  {
+   "word": "Ada",
+   "start": 45.84,
+   "end": 46.08
+  },
+  {
+   "word": "yang",
+   "start": 46.08,
+   "end": 46.24
+  },
+  {
+   "word": "minum",
+   "start": 46.24,
+   "end": 46.52
+  },
+  {
+   "word": "air",
+   "start": 46.52,
+   "end": 46.82
+  },
+  {
+   "word": "sumur",
+   "start": 46.82,
+   "end": 47.2
+  },
+  {
+   "word": "di",
+   "start": 47.2,
+   "end": 47.38
+  },
+  {
+   "word": "depan",
+   "start": 47.38,
+   "end": 47.62
+  },
+  {
+   "word": "rumah",
+   "start": 47.62,
+   "end": 47.88
+  },
+  {
+   "word": "itu,",
+   "start": 47.88,
+   "end": 48.3
+  },
+  {
+   "word": "ada",
+   "start": 48.96,
+   "end": 49.22
+  },
+  {
+   "word": "yang",
+   "start": 49.22,
+   "end": 49.44
+  },
+  {
+   "word": "menadah",
+   "start": 49.44,
+   "end": 49.92
+  },
+  {
+   "word": "air",
+   "start": 49.92,
+   "end": 50.18
+  },
+  {
+   "word": "bekas",
+   "start": 50.18,
+   "end": 50.7
+  },
+  {
+   "word": "mandi",
+   "start": 50.7,
+   "end": 51.2
+  },
+  {
+   "word": "sang",
+   "start": 51.2,
+   "end": 51.5
+  },
+  {
+   "word": "anak.",
+   "start": 51.5,
+   "end": 52.0
+  },
+  {
+   "word": "Kenapa?",
+   "start": 52.64,
+   "end": 53.24
+  },
+  {
+   "word": "Di",
+   "start": 53.72,
+   "end": 53.9
+  },
+  {
+   "word": "desa",
+   "start": 53.9,
+   "end": 54.3
+  },
+  {
+   "word": "itu,",
+   "start": 54.3,
+   "end": 54.84
+  },
+  {
+   "word": "pengangguran",
+   "start": 55.08,
+   "end": 55.66
+  },
+  {
+   "word": "disebut",
+   "start": 55.66,
+   "end": 56.06
+  },
+  {
+   "word": "mencapai",
+   "start": 56.06,
+   "end": 56.64
+  },
+  {
+   "word": "70",
+   "start": 56.64,
+   "end": 57.22
+  },
+  {
+   "word": "persen",
+   "start": 57.22,
+   "end": 58.16
+  },
+  {
+   "word": "dan",
+   "start": 58.16,
+   "end": 58.7
+  },
+  {
+   "word": "berobat",
+   "start": 58.7,
+   "end": 59.2
+  },
+  {
+   "word": "ke",
+   "start": 59.2,
+   "end": 59.36
+  },
+  {
+   "word": "dokter.",
+   "start": 59.36,
+   "end": 60.32
+  },
+  {
+   "word": "Mahal.",
+   "start": 60.8,
+   "end": 61.54
+  },
+  {
+   "word": "Akhir",
+   "start": 61.86,
+   "end": 62.1
+  },
+  {
+   "word": "Maret,",
+   "start": 62.1,
+   "end": 62.78
+  },
+  {
+   "word": "korban",
+   "start": 63.12,
+   "end": 63.4
+  },
+  {
+   "word": "kelima",
+   "start": 63.4,
+   "end": 63.8
+  },
+  {
+   "word": "meninggal.",
+   "start": 63.8,
+   "end": 64.54
+  },
+  {
+   "word": "Seorang",
+   "start": 64.92,
+   "end": 65.18
+  },
+  {
+   "word": "pemuda",
+   "start": 65.18,
+   "end": 65.64
+  },
+  {
+   "word": "19",
+   "start": 65.64,
+   "end": 66.2
+  },
+  {
+   "word": "tahun",
+   "start": 66.2,
+   "end": 66.72
+  },
+  {
+   "word": "yang",
+   "start": 66.72,
+   "end": 67.24
+  },
+  {
+   "word": "kelelahan",
+   "start": 67.24,
+   "end": 67.82
+  },
+  {
+   "word": "menunggu.",
+   "start": 67.82,
+   "end": 68.19
+  },
+  {
+   "word": "Orang",
+   "start": 69.14,
+   "end": 69.34
+  },
+  {
+   "word": "bertanya,",
+   "start": 69.34,
+   "end": 70.08
+  },
+  {
+   "word": "kenapa",
+   "start": 70.66,
+   "end": 71.02
+  },
+  {
+   "word": "mereka",
+   "start": 71.02,
+   "end": 71.26
+  },
+  {
+   "word": "percaya",
+   "start": 71.26,
+   "end": 71.8
+  },
+  {
+   "word": "pada",
+   "start": 71.8,
+   "end": 72.06
+  },
+  {
+   "word": "sebuah",
+   "start": 72.06,
+   "end": 72.38
+  },
+  {
+   "word": "batu?",
+   "start": 72.38,
+   "end": 73.08
+  },
+  {
+   "word": "Mungkin",
+   "start": 73.38,
+   "end": 73.7
+  },
+  {
+   "word": "pertanyaan",
+   "start": 73.7,
+   "end": 74.32
+  },
+  {
+   "word": "yang",
+   "start": 74.32,
+   "end": 74.48
+  },
+  {
+   "word": "lebih",
+   "start": 74.48,
+   "end": 74.76
+  },
+  {
+   "word": "jujur.",
+   "start": 74.76,
+   "end": 75.56
+  },
+  {
+   "word": "Kalau",
+   "start": 75.86,
+   "end": 76.06
+  },
+  {
+   "word": "bukan",
+   "start": 76.06,
+   "end": 76.36
+  },
+  {
+   "word": "ke",
+   "start": 76.36,
+   "end": 76.6
+  },
+  {
+   "word": "sana,",
+   "start": 76.6,
+   "end": 77.0
+  },
+  {
+   "word": "mereka",
+   "start": 77.38,
+   "end": 77.64
+  },
+  {
+   "word": "harus",
+   "start": 77.64,
+   "end": 77.92
+  },
+  {
+   "word": "ke",
+   "start": 77.92,
+   "end": 78.1
+  },
+  {
+   "word": "mana?",
+   "start": 78.1,
+   "end": 78.4
+  }
+ ]
+}

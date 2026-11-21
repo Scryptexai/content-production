@@ -43,3 +43,21 @@ END 107,80 s (1:48).
   hormat untuk semua pihak; angka dari VO pemilik
 - Sumber: Wikipedia · Carl Hoffman, *Savage Harvest* (2014) · Stichting Papua
   Erfgoed · KITLV
+---
+
+# AK-EP08 — Ponari: antrean yang tidak berhenti
+
+Status: **TIDAK TAYANG — menunggu izin eksplisit pemilik** (queue `approved:false`).
+Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (78,81 s) ·
+END 82,90 s (1:23) · **episode pertama dengan aturan footage16:9 → full layar9:16**.
+
+- Master: `work/ponari-antrean/out/AK-EP08_ponari-antrean_short.mp4`
+  24.963.115 B · sha `fbf6dfe77577ae6068deda5fe39a11374aec443b11b65ed66ff5b8284c6a6eb4`
+  · −15,1 LUFS / −1,5 dBTP ·70 cue caption
+- SRT: `06_UPLOAD/AK-EP08.id.srt` (70 cue; fix: antrean duplikat, orang-orang, Empat→4)
+- Thumb/poster/endcard: `06_UPLOAD/thumbs/AK-EP08_*` (still AI: batu dalam gelas,
+  gang desa, sumur — tanpa orang)
+- Footage: bank + sb-ep02, **render cover-crop full layar9:16** (aturan21 Nov2026)
+- Sudut: kemiskinan & akses kesehatan; Ponari korban eksploitasi; tanpa nama
+  korban, tanpa foto jenazah, tanpa mengejek keyakinan
+- Sumber: ANTARA · Inside Indonesia · Liputan6

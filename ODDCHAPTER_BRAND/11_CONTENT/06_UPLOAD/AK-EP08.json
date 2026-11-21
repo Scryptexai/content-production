@@ -1,0 +1,43 @@
+{
+  "episode": "AK-EP08",
+  "video": "AK-EP08_ponari-antrean_short.mp4",
+  "thumbnail": "AK-EP08_thumbnail_16x9.jpg",
+  "poster": "AK-EP08_poster_9x16.jpg",
+  "title": "Ponari 2009: Antrean Tak Berhenti Setelah Polisi Menutup",
+  "title_alt": [
+    "Puluhan Ribu Nomor Antrean — Untuk Segelas Air dan Sebuah Batu",
+    "Praktiknya Ditutup. Ribuan Orang Tetap Menunggu di Luar.",
+    "Pengangguran 70 Persen, Berobat Mahal. Mereka Pergi ke Sebuah Batu."
+  ],
+  "hook": "2009: puluhan ribu nomor antrean setiap hari — untuk segelas air yang dicelup sebuah batu.",
+  "description": "2009: puluhan ribu nomor antrean setiap hari — untuk segelas air yang dicelup sebuah batu.\n\nJombang, Jawa Timur, awal 2009. Muhammad Ponari, 9 tahun, konon menemukan sebuah batu setelah tersambar petir. Air celupan batu itu, kata orang, bisa menyembuhkan. Dalam hitungan hari, desa kecil Balongsari penuh sesak — orang datang dari berbagai kota membawa gelas dan botol, ada yang menunggu dua hari, tidur di rumah warga.\n\nLalu kerumunan itu menelan korban. Empat orang meninggal di tengah desakan, dan polisi menutup praktiknya. Tapi orang-orang tidak pulang. Ribuan tetap menunggu di luar; ada yang minum air sumur di depan rumah itu, ada yang menadah air bekas mandi sang anak.\n\nKenapa? Di desa itu, pengangguran disebut mencapai 70 persen — dan berobat ke dokter... mahal. Akhir Maret, korban kelima meninggal: seorang pemuda 19 tahun, yang kelelahan menunggu.\n\nOrang bertanya, kenapa mereka percaya pada sebuah batu? Mungkin pertanyaan yang lebih jujur: kalau bukan ke sana, mereka harus ke mana? Tulis jawabanmu di komentar.\n\nCatatan: Ponari — yang saat itu masih anak-anak — adalah korban eksploitasi lingkungannya, bukan pelaku. Kami tidak menyebut nama korban (sumber tidak sepakat) dan tidak menampilkan foto jenazah.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar, kredit di kartu akhir) + still AI tanpa orang.\nSumber: ANTARA · Inside Indonesia · Liputan6. @oddchapter7",
+  "tags": [
+    "Ponari",
+    "Jombang 2009",
+    "Balongsari",
+    "antrean",
+    "kesehatan masyarakat",
+    "kisah nyata",
+    "kasus Indonesia",
+    "eksploitasi anak",
+    "desa Jawa",
+    "oddchapter"
+  ],
+  "first_comment": "Kalau di desamu ada air celupan batu yang dipercaya menyembuhkan, sementara dokter jauh dan mahal — kamu ikut antre, atau menabung ke dokter? Tulis jujur di komentar.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1-Aj3dAI9vuj-V-c4H8pxOUOHoF9hMChN",
+  "drive_ids": {
+    "video": "1-Aj3dAI9vuj-V-c4H8pxOUOHoF9hMChN",
+    "thumbnail": "12nu2fWO6ILiEBVDm13ffBo3F_TDY5BxY",
+    "poster": "1JSyAdjtHx0fGrtZvoDEFAplRD58DFTw9",
+    "srt": "1KBqzVnjnJVvm9l7-FJpCBDtT_LKSTMXS",
+    "folder": "1h4D_antjlThWT0Xat_4wgUKSRKjPHb2H"
+  },
+  "duration_seconds": 82.9,
+  "size_bytes": 24963115,
+  "sha256": "fbf6dfe77577ae6068deda5fe39a11374aec443b11b65ed66ff5b8284c6a6eb4",
+  "catatan": "AK-EP08 Ponari (Shortlist Batch 2 #4). VO PEMILIK apa adanya (vo_owner/78,81 s/152 kata ElevenLabs Riri Rida), format 8 beat, END 82,90 s. EPISODE PERTAMA dengan aturan baru footage16:9 → cover-crop full layar9:16 (clip_filter default). Caption fix ASR: antrian-antrian duplikat→antrean (MERGE), orang -orang→orang-orang (MERGE), Empat→4 (NUM). Sudut kemiskinan & kesehatan mahal; Ponari korban eksploitasi; tanpa nama korban, tanpa foto jenazah, tanpa mengejek. Footage bank (crowd/hujan/lilin/koran/surat/sb-ep02) +3 still AI tanpa orang; klip tak-valid tidak dipakai. Status: belum tayang — menunggu izin (queue approved:false)."
+}
