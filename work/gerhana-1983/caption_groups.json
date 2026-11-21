@@ -1,0 +1,1042 @@
+[
+ [
+  {
+   "w": "11",
+   "raw": "11",
+   "t0": 0.0,
+   "t1": 0.4
+  },
+  {
+   "w": "Juni",
+   "raw": "Juni",
+   "t0": 0.4,
+   "t1": 1.28
+  },
+  {
+   "w": "1983",
+   "raw": "1983,",
+   "t0": 1.28,
+   "t1": 3.38
+  }
+ ],
+ [
+  {
+   "w": "tengah",
+   "raw": "tengah",
+   "t0": 4.08,
+   "t1": 4.36
+  },
+  {
+   "w": "hari",
+   "raw": "hari",
+   "t0": 4.36,
+   "t1": 4.6
+  },
+  {
+   "w": "di",
+   "raw": "di",
+   "t0": 4.6,
+   "t1": 4.88
+  }
+ ],
+ [
+  {
+   "w": "Jawa",
+   "raw": "Jawa",
+   "t0": 4.88,
+   "t1": 5.16
+  },
+  {
+   "w": "mendadak",
+   "raw": "mendadak",
+   "t0": 5.16,
+   "t1": 5.82
+  }
+ ],
+ [
+  {
+   "w": "menjadi",
+   "raw": "menjadi",
+   "t0": 5.82,
+   "t1": 6.2
+  },
+  {
+   "w": "malam",
+   "raw": "malam,",
+   "t0": 6.2,
+   "t1": 7.04
+  }
+ ],
+ [
+  {
+   "w": "dan",
+   "raw": "dan",
+   "t0": 7.26,
+   "t1": 7.52
+  },
+  {
+   "w": "semua",
+   "raw": "semua",
+   "t0": 7.52,
+   "t1": 7.74
+  },
+  {
+   "w": "orang",
+   "raw": "orang",
+   "t0": 7.74,
+   "t1": 8.14
+  }
+ ],
+ [
+  {
+   "w": "sudah",
+   "raw": "sudah",
+   "t0": 8.14,
+   "t1": 8.46
+  }
+ ],
+ [
+  {
+   "w": "diperintahkan",
+   "raw": "diperintahkan",
+   "t0": 8.46,
+   "t1": 9.76
+  }
+ ],
+ [
+  {
+   "w": "masuk",
+   "raw": "masuk",
+   "t0": 9.76,
+   "t1": 10.3
+  },
+  {
+   "w": "rumah",
+   "raw": "rumah.",
+   "t0": 10.3,
+   "t1": 10.84
+  }
+ ],
+ [
+  {
+   "w": "Sebulan",
+   "raw": "Sebulan",
+   "t0": 11.54,
+   "t1": 11.88
+  },
+  {
+   "w": "sebelumnya",
+   "raw": "sebelumnya,",
+   "t0": 11.88,
+   "t1": 12.7
+  }
+ ],
+ [
+  {
+   "w": "Presiden",
+   "raw": "Presiden",
+   "t0": 12.9,
+   "t1": 13.22
+  },
+  {
+   "w": "Soeharto",
+   "raw": "Soeharto",
+   "t0": 13.22,
+   "t1": 13.64
+  }
+ ],
+ [
+  {
+   "w": "memerintahkan",
+   "raw": "memerintahkan",
+   "t0": 13.64,
+   "t1": 14.42
+  }
+ ],
+ [
+  {
+   "w": "Menteri",
+   "raw": "Menteri",
+   "t0": 14.42,
+   "t1": 14.82
+  },
+  {
+   "w": "Penerangan",
+   "raw": "Penerangan",
+   "t0": 14.82,
+   "t1": 15.64
+  }
+ ],
+ [
+  {
+   "w": "menyiapkan",
+   "raw": "menyiapkan",
+   "t0": 15.64,
+   "t1": 16.42
+  }
+ ],
+ [
+  {
+   "w": "peringatan",
+   "raw": "peringatan",
+   "t0": 16.42,
+   "t1": 16.96
+  },
+  {
+   "w": "lewat",
+   "raw": "lewat",
+   "t0": 16.96,
+   "t1": 17.34
+  }
+ ],
+ [
+  {
+   "w": "TVRI",
+   "raw": "TVRI",
+   "t0": 17.34,
+   "t1": 18.14
+  },
+  {
+   "w": "dan",
+   "raw": "dan",
+   "t0": 18.14,
+   "t1": 18.62
+  },
+  {
+   "w": "RRI",
+   "raw": "RRI.",
+   "t0": 18.62,
+   "t1": 19.04
+  }
+ ],
+ [
+  {
+   "w": "Isinya",
+   "raw": "Isinya",
+   "t0": 19.82,
+   "t1": 20.24
+  },
+  {
+   "w": "satu",
+   "raw": "satu,",
+   "t0": 20.24,
+   "t1": 20.74
+  }
+ ],
+ [
+  {
+   "w": "jangan",
+   "raw": "jangan",
+   "t0": 21.22,
+   "t1": 21.56
+  },
+  {
+   "w": "menatap",
+   "raw": "menatap",
+   "t0": 21.56,
+   "t1": 21.98
+  }
+ ],
+ [
+  {
+   "w": "gerhana",
+   "raw": "gerhana,",
+   "t0": 21.98,
+   "t1": 22.62
+  },
+  {
+   "w": "kamu",
+   "raw": "kamu",
+   "t0": 22.88,
+   "t1": 23.2
+  },
+  {
+   "w": "bisa",
+   "raw": "bisa",
+   "t0": 23.2,
+   "t1": 23.56
+  }
+ ],
+ [
+  {
+   "w": "buta",
+   "raw": "buta.",
+   "t0": 23.56,
+   "t1": 24.34
+  }
+ ],
+ [
+  {
+   "w": "rakyat",
+   "raw": "rakyat",
+   "t0": 24.34,
+   "t1": 24.94
+  },
+  {
+   "w": "patuh",
+   "raw": "patuh,",
+   "t0": 24.94,
+   "t1": 25.74
+  }
+ ],
+ [
+  {
+   "w": "jendela",
+   "raw": "jendela",
+   "t0": 25.98,
+   "t1": 26.42
+  },
+  {
+   "w": "ditutup",
+   "raw": "ditutup",
+   "t0": 26.42,
+   "t1": 26.9
+  }
+ ],
+ [
+  {
+   "w": "rapat",
+   "raw": "rapat,",
+   "t0": 26.9,
+   "t1": 27.62
+  },
+  {
+   "w": "lubang",
+   "raw": "lubang",
+   "t0": 27.82,
+   "t1": 28.16
+  },
+  {
+   "w": "angin",
+   "raw": "angin",
+   "t0": 28.16,
+   "t1": 28.46
+  }
+ ],
+ [
+  {
+   "w": "disumbat",
+   "raw": "disumbat,",
+   "t0": 28.46,
+   "t1": 29.36
+  },
+  {
+   "w": "mata",
+   "raw": "mata",
+   "t0": 29.6,
+   "t1": 29.92
+  },
+  {
+   "w": "sapi",
+   "raw": "sapi",
+   "t0": 29.92,
+   "t1": 30.38
+  }
+ ],
+ [
+  {
+   "w": "ditutup",
+   "raw": "ditutup",
+   "t0": 30.38,
+   "t1": 30.84
+  },
+  {
+   "w": "kain",
+   "raw": "kain,",
+   "t0": 30.84,
+   "t1": 31.62
+  }
+ ],
+ [
+  {
+   "w": "burung",
+   "raw": "burung",
+   "t0": 31.84,
+   "t1": 32.06
+  },
+  {
+   "w": "perkutut",
+   "raw": "perkutut",
+   "t0": 32.06,
+   "t1": 32.68
+  }
+ ],
+ [
+  {
+   "w": "disembunyikan",
+   "raw": "disembunyikan.",
+   "t0": 32.68,
+   "t1": 33.64
+  }
+ ],
+ [
+  {
+   "w": "Di",
+   "raw": "Di",
+   "t0": 34.04,
+   "t1": 34.22
+  },
+  {
+   "w": "sejumlah",
+   "raw": "sejumlah",
+   "t0": 34.22,
+   "t1": 34.64
+  },
+  {
+   "w": "daerah",
+   "raw": "daerah,",
+   "t0": 34.64,
+   "t1": 35.38
+  }
+ ],
+ [
+  {
+   "w": "perempuan",
+   "raw": "perempuan",
+   "t0": 35.58,
+   "t1": 35.86
+  },
+  {
+   "w": "hamil",
+   "raw": "hamil",
+   "t0": 35.86,
+   "t1": 36.3
+  }
+ ],
+ [
+  {
+   "w": "disuruh",
+   "raw": "disuruh",
+   "t0": 36.3,
+   "t1": 36.7
+  }
+ ],
+ [
+  {
+   "w": "bersembunyi",
+   "raw": "bersembunyi",
+   "t0": 36.7,
+   "t1": 37.6
+  },
+  {
+   "w": "di",
+   "raw": "di",
+   "t0": 37.6,
+   "t1": 37.84
+  }
+ ],
+ [
+  {
+   "w": "kolong",
+   "raw": "kolong",
+   "t0": 37.84,
+   "t1": 38.1
+  },
+  {
+   "w": "tempat",
+   "raw": "tempat",
+   "t0": 38.1,
+   "t1": 38.44
+  }
+ ],
+ [
+  {
+   "w": "tidur",
+   "raw": "tidur.",
+   "t0": 38.44,
+   "t1": 39.26
+  }
+ ],
+ [
+  {
+   "w": "Aparat",
+   "raw": "Aparat",
+   "t0": 39.48,
+   "t1": 39.84
+  },
+  {
+   "w": "bahkan",
+   "raw": "bahkan",
+   "t0": 39.84,
+   "t1": 40.18
+  }
+ ],
+ [
+  {
+   "w": "menyuruh",
+   "raw": "menyuruh",
+   "t0": 40.18,
+   "t1": 40.5
+  },
+  {
+   "w": "masuk",
+   "raw": "masuk",
+   "t0": 40.5,
+   "t1": 40.84
+  }
+ ],
+ [
+  {
+   "w": "lagi",
+   "raw": "lagi",
+   "t0": 40.84,
+   "t1": 41.26
+  },
+  {
+   "w": "mereka",
+   "raw": "mereka",
+   "t0": 41.26,
+   "t1": 41.6
+  },
+  {
+   "w": "yang",
+   "raw": "yang",
+   "t0": 41.6,
+   "t1": 41.84
+  }
+ ],
+ [
+  {
+   "w": "berani",
+   "raw": "berani",
+   "t0": 41.84,
+   "t1": 42.12
+  },
+  {
+   "w": "keluar",
+   "raw": "keluar.",
+   "t0": 42.12,
+   "t1": 42.58
+  }
+ ],
+ [
+  {
+   "w": "Di",
+   "raw": "Di",
+   "t0": 43.14,
+   "t1": 43.28
+  },
+  {
+   "w": "Jawa",
+   "raw": "Jawa",
+   "t0": 43.28,
+   "t1": 43.56
+  },
+  {
+   "w": "Timur",
+   "raw": "Timur,",
+   "t0": 43.56,
+   "t1": 44.18
+  }
+ ],
+ [
+  {
+   "w": "polisi",
+   "raw": "polisi",
+   "t0": 44.46,
+   "t1": 44.74
+  },
+  {
+   "w": "menyita",
+   "raw": "menyita",
+   "t0": 44.74,
+   "t1": 45.14
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "t0": 45.14,
+   "t1": 45.72
+  }
+ ],
+ [
+  {
+   "w": "teropong",
+   "raw": "teropong.",
+   "t0": 45.72,
+   "t1": 46.68
+  }
+ ],
+ [
+  {
+   "w": "Sementara",
+   "raw": "Sementara",
+   "t0": 46.88,
+   "t1": 47.34
+  },
+  {
+   "w": "itu",
+   "raw": "itu,",
+   "t0": 47.34,
+   "t1": 47.7
+  }
+ ],
+ [
+  {
+   "w": "para",
+   "raw": "para",
+   "t0": 47.84,
+   "t1": 47.98
+  },
+  {
+   "w": "astronom",
+   "raw": "astronom",
+   "t0": 47.98,
+   "t1": 48.58
+  },
+  {
+   "w": "dari",
+   "raw": "dari",
+   "t0": 48.58,
+   "t1": 48.82
+  }
+ ],
+ [
+  {
+   "w": "berbagai",
+   "raw": "berbagai",
+   "t0": 48.82,
+   "t1": 49.34
+  },
+  {
+   "w": "negara",
+   "raw": "negara",
+   "t0": 49.34,
+   "t1": 49.8
+  }
+ ],
+ [
+  {
+   "w": "datang",
+   "raw": "datang",
+   "t0": 49.8,
+   "t1": 50.64
+  },
+  {
+   "w": "justru",
+   "raw": "justru",
+   "t0": 50.64,
+   "t1": 51.16
+  }
+ ],
+ [
+  {
+   "w": "untuk",
+   "raw": "untuk",
+   "t0": 51.16,
+   "t1": 51.44
+  }
+ ],
+ [
+  {
+   "w": "menyaksikannya",
+   "raw": "menyaksikannya.",
+   "t0": 51.44,
+   "t1": 52.22
+  }
+ ],
+ [
+  {
+   "w": "Rakyat",
+   "raw": "Rakyat",
+   "t0": 52.22,
+   "t1": 53.16
+  },
+  {
+   "w": "hanya",
+   "raw": "hanya",
+   "t0": 53.16,
+   "t1": 53.38
+  },
+  {
+   "w": "boleh",
+   "raw": "boleh",
+   "t0": 53.38,
+   "t1": 53.6
+  }
+ ],
+ [
+  {
+   "w": "menonton",
+   "raw": "menonton",
+   "t0": 53.6,
+   "t1": 54.18
+  },
+  {
+   "w": "lewat",
+   "raw": "lewat",
+   "t0": 54.18,
+   "t1": 54.6
+  }
+ ],
+ [
+  {
+   "w": "TVRI",
+   "raw": "TVRI,",
+   "t0": 54.6,
+   "t1": 55.98
+  }
+ ],
+ [
+  {
+   "w": "satu-satunya",
+   "raw": "satu-satunya",
+   "t0": 56.44,
+   "t1": 56.96
+  }
+ ],
+ [
+  {
+   "w": "televisi",
+   "raw": "televisi",
+   "t0": 56.96,
+   "t1": 57.66
+  },
+  {
+   "w": "saat",
+   "raw": "saat",
+   "t0": 57.66,
+   "t1": 57.9
+  },
+  {
+   "w": "itu",
+   "raw": "itu.",
+   "t0": 57.9,
+   "t1": 58.58
+  }
+ ],
+ [
+  {
+   "w": "Seorang",
+   "raw": "Seorang",
+   "t0": 58.9,
+   "t1": 59.18
+  },
+  {
+   "w": "ayah",
+   "raw": "ayah",
+   "t0": 59.18,
+   "t1": 59.6
+  },
+  {
+   "w": "di",
+   "raw": "di",
+   "t0": 59.6,
+   "t1": 59.82
+  }
+ ],
+ [
+  {
+   "w": "Semarang",
+   "raw": "Semarang",
+   "t0": 59.82,
+   "t1": 60.28
+  },
+  {
+   "w": "ingin",
+   "raw": "ingin",
+   "t0": 60.28,
+   "t1": 60.58
+  }
+ ],
+ [
+  {
+   "w": "membuktikan",
+   "raw": "membuktikan",
+   "t0": 60.58,
+   "t1": 61.22
+  }
+ ],
+ [
+  {
+   "w": "sendiri",
+   "raw": "sendiri.",
+   "t0": 61.22,
+   "t1": 61.82
+  }
+ ],
+ [
+  {
+   "w": "Ia",
+   "raw": "Ia",
+   "t0": 62.32,
+   "t1": 62.52
+  },
+  {
+   "w": "menatap",
+   "raw": "menatap",
+   "t0": 62.52,
+   "t1": 63.0
+  }
+ ],
+ [
+  {
+   "w": "langsung",
+   "raw": "langsung.",
+   "t0": 63.0,
+   "t1": 63.46
+  }
+ ],
+ [
+  {
+   "w": "Penglihatannya",
+   "raw": "Penglihatannya",
+   "t0": 64.1,
+   "t1": 64.74
+  },
+  {
+   "w": "tak",
+   "raw": "tak",
+   "t0": 64.74,
+   "t1": 64.92
+  }
+ ],
+ [
+  {
+   "w": "kembali",
+   "raw": "kembali",
+   "t0": 64.92,
+   "t1": 65.46
+  },
+  {
+   "w": "selama",
+   "raw": "selama",
+   "t0": 65.46,
+   "t1": 65.92
+  }
+ ],
+ [
+  {
+   "w": "1 jam",
+   "raw": "1 jam",
+   "t0": 65.92,
+   "t1": 66.6
+  }
+ ],
+ [
+  {
+   "w": "Di",
+   "raw": "Di",
+   "t0": 67.06,
+   "t1": 67.16
+  },
+  {
+   "w": "Yogyakarta",
+   "raw": "Yogyakarta,",
+   "t0": 67.16,
+   "t1": 68.0
+  }
+ ],
+ [
+  {
+   "w": "446",
+   "raw": "446",
+   "t0": 68.58,
+   "t1": 69.66
+  },
+  {
+   "w": "orang",
+   "raw": "orang",
+   "t0": 69.66,
+   "t1": 70.18
+  }
+ ],
+ [
+  {
+   "w": "memeriksakan",
+   "raw": "memeriksakan",
+   "t0": 70.18,
+   "t1": 70.98
+  },
+  {
+   "w": "mata",
+   "raw": "mata.",
+   "t0": 70.98,
+   "t1": 71.48
+  }
+ ],
+ [
+  {
+   "w": "14",
+   "raw": "14",
+   "t0": 71.98,
+   "t1": 72.62
+  },
+  {
+   "w": "mengalami",
+   "raw": "mengalami",
+   "t0": 72.62,
+   "t1": 73.2
+  }
+ ],
+ [
+  {
+   "w": "peradangan",
+   "raw": "peradangan.",
+   "t0": 73.2,
+   "t1": 73.66
+  }
+ ],
+ [
+  {
+   "w": "Ilmuwan",
+   "raw": "Ilmuwan",
+   "t0": 74.46,
+   "t1": 74.9
+  },
+  {
+   "w": "Lipi",
+   "raw": "Lipi",
+   "t0": 74.9,
+   "t1": 75.28
+  }
+ ],
+ [
+  {
+   "w": "berkata",
+   "raw": "berkata,",
+   "t0": 75.28,
+   "t1": 76.12
+  },
+  {
+   "w": "larangan",
+   "raw": "larangan",
+   "t0": 76.34,
+   "t1": 76.72
+  }
+ ],
+ [
+  {
+   "w": "tanpa",
+   "raw": "tanpa",
+   "t0": 76.72,
+   "t1": 77.12
+  },
+  {
+   "w": "penjelasan",
+   "raw": "penjelasan",
+   "t0": 77.12,
+   "t1": 78.16
+  }
+ ],
+ [
+  {
+   "w": "hanya",
+   "raw": "hanya",
+   "t0": 78.16,
+   "t1": 78.52
+  },
+  {
+   "w": "menyesatkan",
+   "raw": "menyesatkan.",
+   "t0": 78.52,
+   "t1": 79.68
+  }
+ ],
+ [
+  {
+   "w": "Pertanyaannya",
+   "raw": "Pertanyaannya,",
+   "t0": 79.68,
+   "t1": 80.66
+  }
+ ],
+ [
+  {
+   "w": "bukan",
+   "raw": "bukan",
+   "t0": 81.02,
+   "t1": 81.32
+  },
+  {
+   "w": "apakah",
+   "raw": "apakah",
+   "t0": 81.32,
+   "t1": 81.8
+  }
+ ],
+ [
+  {
+   "w": "Gerhana",
+   "raw": "Gerhana",
+   "t0": 81.8,
+   "t1": 82.34
+  },
+  {
+   "w": "berbahaya?",
+   "raw": "berbahaya?",
+   "t0": 82.34,
+   "t1": 83.34
+  }
+ ],
+ [
+  {
+   "w": "Tapi",
+   "raw": "Tapi",
+   "t0": 83.66,
+   "t1": 83.88
+  },
+  {
+   "w": "kenapa",
+   "raw": "kenapa",
+   "t0": 83.88,
+   "t1": 84.28
+  },
+  {
+   "w": "rakyat",
+   "raw": "rakyat",
+   "t0": 84.28,
+   "t1": 84.72
+  }
+ ],
+ [
+  {
+   "w": "hanya",
+   "raw": "hanya",
+   "t0": 84.72,
+   "t1": 84.96
+  },
+  {
+   "w": "diperintah",
+   "raw": "diperintah",
+   "t0": 84.96,
+   "t1": 85.6
+  }
+ ],
+ [
+  {
+   "w": "bersembunyi?",
+   "raw": "bersembunyi?",
+   "t0": 85.6,
+   "t1": 86.6
+  }
+ ],
+ [
+  {
+   "w": "Bukan",
+   "raw": "Bukan",
+   "t0": 86.92,
+   "t1": 87.18
+  },
+  {
+   "w": "diajari",
+   "raw": "diajari",
+   "t0": 87.18,
+   "t1": 87.68
+  },
+  {
+   "w": "cara",
+   "raw": "cara",
+   "t0": 87.68,
+   "t1": 87.94
+  }
+ ],
+ [
+  {
+   "w": "melihatnya?",
+   "raw": "melihatnya?",
+   "t0": 87.94,
+   "t1": 88.64
+  }
+ ]
+]

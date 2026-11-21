@@ -1,0 +1,762 @@
+{
+ "source": "faster-whisper (local), approximate word timestamps",
+ "duration": 89.1181875,
+ "text": "11 Juni 1983, tengah hari di Jawa mendadak menjadi malam, dan semua orang sudah diperintahkan masuk rumah. Sebulan sebelumnya, Presiden Soeharto memerintahkan Menteri Penerangan menyiapkan peringatan lewat TVRI dan RRI. Isinya satu, jangan menatap gerhana, kamu bisa buta. rakyat patuh, jendela ditutup rapat, lubang angin disumbat, mata sapi ditutup kain, burung perkutut disembunyikan. Di sejumlah daerah, perempuan hamil disuruh bersembunyi di kolong tempat tidur. Aparat bahkan menyuruh masuk lagi mereka yang berani keluar. Di Jawa Timur, polisi menyita 20 tropong. Sementara itu, para astronom dari berbagai negara datang justru untuk menyaksikannya. Rakyat hanya boleh menonton lewat TVRI, satu-satunya televisi saat itu. Seorang ayah di Semarang ingin membuktikan sendiri. Ia menatap langsung. Penglihatannya tak kembali selama satu jam. Di Yogyakarta, 446 orang memeriksakan mata. 14 mengalami peradangan. Ilmuwan Lipi berkata, larangan tanpa penjelasan hanya menyesatkan. Pertanyaannya, bukan apakah Gerhana berbahaya? Tapi kenapa rakyat hanya di perintah bersembunyi? Bukan diajari cara melihatnya?",
+ "words": [
+  {
+   "word": "11",
+   "start": 0.0,
+   "end": 0.4
+  },
+  {
+   "word": "Juni",
+   "start": 0.4,
+   "end": 1.28
+  },
+  {
+   "word": "1983,",
+   "start": 1.28,
+   "end": 3.38
+  },
+  {
+   "word": "tengah",
+   "start": 4.08,
+   "end": 4.36
+  },
+  {
+   "word": "hari",
+   "start": 4.36,
+   "end": 4.6
+  },
+  {
+   "word": "di",
+   "start": 4.6,
+   "end": 4.88
+  },
+  {
+   "word": "Jawa",
+   "start": 4.88,
+   "end": 5.16
+  },
+  {
+   "word": "mendadak",
+   "start": 5.16,
+   "end": 5.82
+  },
+  {
+   "word": "menjadi",
+   "start": 5.82,
+   "end": 6.2
+  },
+  {
+   "word": "malam,",
+   "start": 6.2,
+   "end": 7.04
+  },
+  {
+   "word": "dan",
+   "start": 7.26,
+   "end": 7.52
+  },
+  {
+   "word": "semua",
+   "start": 7.52,
+   "end": 7.74
+  },
+  {
+   "word": "orang",
+   "start": 7.74,
+   "end": 8.14
+  },
+  {
+   "word": "sudah",
+   "start": 8.14,
+   "end": 8.46
+  },
+  {
+   "word": "diperintahkan",
+   "start": 8.46,
+   "end": 9.76
+  },
+  {
+   "word": "masuk",
+   "start": 9.76,
+   "end": 10.3
+  },
+  {
+   "word": "rumah.",
+   "start": 10.3,
+   "end": 10.84
+  },
+  {
+   "word": "Sebulan",
+   "start": 11.54,
+   "end": 11.88
+  },
+  {
+   "word": "sebelumnya,",
+   "start": 11.88,
+   "end": 12.7
+  },
+  {
+   "word": "Presiden",
+   "start": 12.9,
+   "end": 13.22
+  },
+  {
+   "word": "Soeharto",
+   "start": 13.22,
+   "end": 13.64
+  },
+  {
+   "word": "memerintahkan",
+   "start": 13.64,
+   "end": 14.42
+  },
+  {
+   "word": "Menteri",
+   "start": 14.42,
+   "end": 14.82
+  },
+  {
+   "word": "Penerangan",
+   "start": 14.82,
+   "end": 15.64
+  },
+  {
+   "word": "menyiapkan",
+   "start": 15.64,
+   "end": 16.42
+  },
+  {
+   "word": "peringatan",
+   "start": 16.42,
+   "end": 16.96
+  },
+  {
+   "word": "lewat",
+   "start": 16.96,
+   "end": 17.34
+  },
+  {
+   "word": "TVRI",
+   "start": 17.34,
+   "end": 18.14
+  },
+  {
+   "word": "dan",
+   "start": 18.14,
+   "end": 18.62
+  },
+  {
+   "word": "RRI.",
+   "start": 18.62,
+   "end": 19.04
+  },
+  {
+   "word": "Isinya",
+   "start": 19.82,
+   "end": 20.24
+  },
+  {
+   "word": "satu,",
+   "start": 20.24,
+   "end": 20.74
+  },
+  {
+   "word": "jangan",
+   "start": 21.22,
+   "end": 21.56
+  },
+  {
+   "word": "menatap",
+   "start": 21.56,
+   "end": 21.98
+  },
+  {
+   "word": "gerhana,",
+   "start": 21.98,
+   "end": 22.62
+  },
+  {
+   "word": "kamu",
+   "start": 22.88,
+   "end": 23.2
+  },
+  {
+   "word": "bisa",
+   "start": 23.2,
+   "end": 23.56
+  },
+  {
+   "word": "buta.",
+   "start": 23.56,
+   "end": 24.34
+  },
+  {
+   "word": "rakyat",
+   "start": 24.34,
+   "end": 24.94
+  },
+  {
+   "word": "patuh,",
+   "start": 24.94,
+   "end": 25.74
+  },
+  {
+   "word": "jendela",
+   "start": 25.98,
+   "end": 26.42
+  },
+  {
+   "word": "ditutup",
+   "start": 26.42,
+   "end": 26.9
+  },
+  {
+   "word": "rapat,",
+   "start": 26.9,
+   "end": 27.62
+  },
+  {
+   "word": "lubang",
+   "start": 27.82,
+   "end": 28.16
+  },
+  {
+   "word": "angin",
+   "start": 28.16,
+   "end": 28.46
+  },
+  {
+   "word": "disumbat,",
+   "start": 28.46,
+   "end": 29.36
+  },
+  {
+   "word": "mata",
+   "start": 29.6,
+   "end": 29.92
+  },
+  {
+   "word": "sapi",
+   "start": 29.92,
+   "end": 30.38
+  },
+  {
+   "word": "ditutup",
+   "start": 30.38,
+   "end": 30.84
+  },
+  {
+   "word": "kain,",
+   "start": 30.84,
+   "end": 31.62
+  },
+  {
+   "word": "burung",
+   "start": 31.84,
+   "end": 32.06
+  },
+  {
+   "word": "perkutut",
+   "start": 32.06,
+   "end": 32.68
+  },
+  {
+   "word": "disembunyikan.",
+   "start": 32.68,
+   "end": 33.64
+  },
+  {
+   "word": "Di",
+   "start": 34.04,
+   "end": 34.22
+  },
+  {
+   "word": "sejumlah",
+   "start": 34.22,
+   "end": 34.64
+  },
+  {
+   "word": "daerah,",
+   "start": 34.64,
+   "end": 35.38
+  },
+  {
+   "word": "perempuan",
+   "start": 35.58,
+   "end": 35.86
+  },
+  {
+   "word": "hamil",
+   "start": 35.86,
+   "end": 36.3
+  },
+  {
+   "word": "disuruh",
+   "start": 36.3,
+   "end": 36.7
+  },
+  {
+   "word": "bersembunyi",
+   "start": 36.7,
+   "end": 37.6
+  },
+  {
+   "word": "di",
+   "start": 37.6,
+   "end": 37.84
+  },
+  {
+   "word": "kolong",
+   "start": 37.84,
+   "end": 38.1
+  },
+  {
+   "word": "tempat",
+   "start": 38.1,
+   "end": 38.44
+  },
+  {
+   "word": "tidur.",
+   "start": 38.44,
+   "end": 39.26
+  },
+  {
+   "word": "Aparat",
+   "start": 39.48,
+   "end": 39.84
+  },
+  {
+   "word": "bahkan",
+   "start": 39.84,
+   "end": 40.18
+  },
+  {
+   "word": "menyuruh",
+   "start": 40.18,
+   "end": 40.5
+  },
+  {
+   "word": "masuk",
+   "start": 40.5,
+   "end": 40.84
+  },
+  {
+   "word": "lagi",
+   "start": 40.84,
+   "end": 41.26
+  },
+  {
+   "word": "mereka",
+   "start": 41.26,
+   "end": 41.6
+  },
+  {
+   "word": "yang",
+   "start": 41.6,
+   "end": 41.84
+  },
+  {
+   "word": "berani",
+   "start": 41.84,
+   "end": 42.12
+  },
+  {
+   "word": "keluar.",
+   "start": 42.12,
+   "end": 42.58
+  },
+  {
+   "word": "Di",
+   "start": 43.14,
+   "end": 43.28
+  },
+  {
+   "word": "Jawa",
+   "start": 43.28,
+   "end": 43.56
+  },
+  {
+   "word": "Timur,",
+   "start": 43.56,
+   "end": 44.18
+  },
+  {
+   "word": "polisi",
+   "start": 44.46,
+   "end": 44.74
+  },
+  {
+   "word": "menyita",
+   "start": 44.74,
+   "end": 45.14
+  },
+  {
+   "word": "20",
+   "start": 45.14,
+   "end": 45.72
+  },
+  {
+   "word": "tropong.",
+   "start": 45.72,
+   "end": 46.68
+  },
+  {
+   "word": "Sementara",
+   "start": 46.88,
+   "end": 47.34
+  },
+  {
+   "word": "itu,",
+   "start": 47.34,
+   "end": 47.7
+  },
+  {
+   "word": "para",
+   "start": 47.84,
+   "end": 47.98
+  },
+  {
+   "word": "astronom",
+   "start": 47.98,
+   "end": 48.58
+  },
+  {
+   "word": "dari",
+   "start": 48.58,
+   "end": 48.82
+  },
+  {
+   "word": "berbagai",
+   "start": 48.82,
+   "end": 49.34
+  },
+  {
+   "word": "negara",
+   "start": 49.34,
+   "end": 49.8
+  },
+  {
+   "word": "datang",
+   "start": 49.8,
+   "end": 50.64
+  },
+  {
+   "word": "justru",
+   "start": 50.64,
+   "end": 51.16
+  },
+  {
+   "word": "untuk",
+   "start": 51.16,
+   "end": 51.44
+  },
+  {
+   "word": "menyaksikannya.",
+   "start": 51.44,
+   "end": 52.22
+  },
+  {
+   "word": "Rakyat",
+   "start": 52.22,
+   "end": 53.16
+  },
+  {
+   "word": "hanya",
+   "start": 53.16,
+   "end": 53.38
+  },
+  {
+   "word": "boleh",
+   "start": 53.38,
+   "end": 53.6
+  },
+  {
+   "word": "menonton",
+   "start": 53.6,
+   "end": 54.18
+  },
+  {
+   "word": "lewat",
+   "start": 54.18,
+   "end": 54.6
+  },
+  {
+   "word": "TVRI,",
+   "start": 54.6,
+   "end": 55.98
+  },
+  {
+   "word": "satu",
+   "start": 56.44,
+   "end": 56.56
+  },
+  {
+   "word": "-satunya",
+   "start": 56.56,
+   "end": 56.96
+  },
+  {
+   "word": "televisi",
+   "start": 56.96,
+   "end": 57.66
+  },
+  {
+   "word": "saat",
+   "start": 57.66,
+   "end": 57.9
+  },
+  {
+   "word": "itu.",
+   "start": 57.9,
+   "end": 58.58
+  },
+  {
+   "word": "Seorang",
+   "start": 58.9,
+   "end": 59.18
+  },
+  {
+   "word": "ayah",
+   "start": 59.18,
+   "end": 59.6
+  },
+  {
+   "word": "di",
+   "start": 59.6,
+   "end": 59.82
+  },
+  {
+   "word": "Semarang",
+   "start": 59.82,
+   "end": 60.28
+  },
+  {
+   "word": "ingin",
+   "start": 60.28,
+   "end": 60.58
+  },
+  {
+   "word": "membuktikan",
+   "start": 60.58,
+   "end": 61.22
+  },
+  {
+   "word": "sendiri.",
+   "start": 61.22,
+   "end": 61.82
+  },
+  {
+   "word": "Ia",
+   "start": 62.32,
+   "end": 62.52
+  },
+  {
+   "word": "menatap",
+   "start": 62.52,
+   "end": 63.0
+  },
+  {
+   "word": "langsung.",
+   "start": 63.0,
+   "end": 63.46
+  },
+  {
+   "word": "Penglihatannya",
+   "start": 64.1,
+   "end": 64.74
+  },
+  {
+   "word": "tak",
+   "start": 64.74,
+   "end": 64.92
+  },
+  {
+   "word": "kembali",
+   "start": 64.92,
+   "end": 65.46
+  },
+  {
+   "word": "selama",
+   "start": 65.46,
+   "end": 65.92
+  },
+  {
+   "word": "satu",
+   "start": 65.92,
+   "end": 66.3
+  },
+  {
+   "word": "jam.",
+   "start": 66.3,
+   "end": 66.6
+  },
+  {
+   "word": "Di",
+   "start": 67.06,
+   "end": 67.16
+  },
+  {
+   "word": "Yogyakarta,",
+   "start": 67.16,
+   "end": 68.0
+  },
+  {
+   "word": "446",
+   "start": 68.58,
+   "end": 69.66
+  },
+  {
+   "word": "orang",
+   "start": 69.66,
+   "end": 70.18
+  },
+  {
+   "word": "memeriksakan",
+   "start": 70.18,
+   "end": 70.98
+  },
+  {
+   "word": "mata.",
+   "start": 70.98,
+   "end": 71.48
+  },
+  {
+   "word": "14",
+   "start": 71.98,
+   "end": 72.62
+  },
+  {
+   "word": "mengalami",
+   "start": 72.62,
+   "end": 73.2
+  },
+  {
+   "word": "peradangan.",
+   "start": 73.2,
+   "end": 73.66
+  },
+  {
+   "word": "Ilmuwan",
+   "start": 74.46,
+   "end": 74.9
+  },
+  {
+   "word": "Lipi",
+   "start": 74.9,
+   "end": 75.28
+  },
+  {
+   "word": "berkata,",
+   "start": 75.28,
+   "end": 76.12
+  },
+  {
+   "word": "larangan",
+   "start": 76.34,
+   "end": 76.72
+  },
+  {
+   "word": "tanpa",
+   "start": 76.72,
+   "end": 77.12
+  },
+  {
+   "word": "penjelasan",
+   "start": 77.12,
+   "end": 78.16
+  },
+  {
+   "word": "hanya",
+   "start": 78.16,
+   "end": 78.52
+  },
+  {
+   "word": "menyesatkan.",
+   "start": 78.52,
+   "end": 79.68
+  },
+  {
+   "word": "Pertanyaannya,",
+   "start": 79.68,
+   "end": 80.66
+  },
+  {
+   "word": "bukan",
+   "start": 81.02,
+   "end": 81.32
+  },
+  {
+   "word": "apakah",
+   "start": 81.32,
+   "end": 81.8
+  },
+  {
+   "word": "Gerhana",
+   "start": 81.8,
+   "end": 82.34
+  },
+  {
+   "word": "berbahaya?",
+   "start": 82.34,
+   "end": 83.34
+  },
+  {
+   "word": "Tapi",
+   "start": 83.66,
+   "end": 83.88
+  },
+  {
+   "word": "kenapa",
+   "start": 83.88,
+   "end": 84.28
+  },
+  {
+   "word": "rakyat",
+   "start": 84.28,
+   "end": 84.72
+  },
+  {
+   "word": "hanya",
+   "start": 84.72,
+   "end": 84.96
+  },
+  {
+   "word": "di",
+   "start": 84.96,
+   "end": 85.14
+  },
+  {
+   "word": "perintah",
+   "start": 85.14,
+   "end": 85.6
+  },
+  {
+   "word": "bersembunyi?",
+   "start": 85.6,
+   "end": 86.6
+  },
+  {
+   "word": "Bukan",
+   "start": 86.92,
+   "end": 87.18
+  },
+  {
+   "word": "diajari",
+   "start": 87.18,
+   "end": 87.68
+  },
+  {
+   "word": "cara",
+   "start": 87.68,
+   "end": 87.94
+  },
+  {
+   "word": "melihatnya?",
+   "start": 87.94,
+   "end": 88.64
+  }
+ ]
+}

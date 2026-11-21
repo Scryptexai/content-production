@@ -63,3 +63,22 @@ END 82,90 s (1:23) · **episode pertama dengan aturan footage16:9 → full layar
 - Sudut: kemiskinan & akses kesehatan; Ponari korban eksploitasi; tanpa nama
   korban, tanpa foto jenazah, tanpa mengejek keyakinan
 - Sumber: ANTARA · Inside Indonesia · Liputan6
+---
+
+# AK-EP09 — Gerhana 1983: negara menyuruh semua masuk rumah
+
+Status: **DESAIN SELESAI — BELUM TAYANG, menunggu perintah post pemilik**
+(queue `approved:false`).
+Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (89,12 s) ·
+END 93,20 s (1:33) · footage full layar9:16.
+
+- Master: `work/gerhana-1983/out/AK-EP09_gerhana-1983_short.mp4`
+  26.294.902 B · sha `8e83140febc8e2ce6cda66563a69a446b1a15f32aabfcb2e73a896a427a145ec`
+  · −15,1 LUFS / −1,7 dBTP ·76 cue caption
+- SRT: `06_UPLOAD/AK-EP09.id.srt` (76 cue; fix: teropong, satu-satunya,
+  diperintah,1 jam)
+- Thumb/poster/endcard: `06_UPLOAD/thumbs/AK-EP09_*` (still AI: gerhana total,
+  jendela kayu, TV80-an — tanpa orang)
+- Footage: bank + sb-ep02, cover-crop full layar9:16
+- Nada: ganjil-bukan-kriminal; tanpa teori konspirasi; kritik LIPI dikutip
+- Sumber: CNN Indonesia · Tirto (mengutip Kompas1983)
