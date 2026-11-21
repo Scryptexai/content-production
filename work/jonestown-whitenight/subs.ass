@@ -1,0 +1,145 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Barlow Condensed ExtraBold,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1.5,0,1,8,3,2,60,60,672,1
+Style: Kicker,Barlow Condensed ExtraBold,74,&H00E0ECF0,&H00E0ECF0,&H00000000,&H80000000,0,0,0,0,100,100,6,0,1,6,2,5,60,60,0,1
+Style: Big,Anton,170,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,0,0,0,100,100,0,0,1,10,4,5,40,40,0,1
+Style: Stamp,Anton,120,&H00000000,&H00000000,&H002A2AD8,&H00000000,0,0,0,0,100,100,0,0,3,14,0,5,40,40,0,1
+Style: Tag,Barlow Condensed ExtraBold,34,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1.2,0,1,3,1,7,60,60,300,1
+Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,3,1,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.05,0:00:05.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:05.85,0:00:11.28,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:11.63,0:00:16.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:16.65,0:00:21.80,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:22.15,0:00:26.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:26.75,0:00:30.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:31.25,0:00:34.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:34.75,0:00:37.74,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:38.09,0:00:42.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:42.65,0:00:46.80,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:47.15,0:00:51.20,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:51.55,0:00:55.16,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:55.51,0:00:59.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:59.85,0:01:03.80,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:04.15,0:01:07.88,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:08.23,0:01:12.50,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:12.85,0:01:17.00,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:17.35,0:01:20.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:21.25,0:01:24.08,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:24.43,0:01:28.70,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:29.05,0:01:33.00,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:33.35,0:01:37.62,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:37.97,0:01:41.05,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:01.20,0:00:05.40,Kicker,,0,0,0,,{\pos(540,700)\an5\fs52\fad(240,170)}MEREKA DISURUH MINUM RACUN
+Dialogue: 0,0:00:06.00,0:00:11.20,Stamp,,0,0,0,,{\pos(540,520)\an5\fs76\frz-4\fad(160,150)}NAMANYA: JONESTOWN
+Dialogue: 0,0:00:11.80,0:00:16.20,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs48\fad(220,160)}KOMUNE DI TENGAH HUTAN
+Dialogue: 0,0:00:16.80,0:00:21.70,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\fad(220,160)}DIJANJIKAN SURGA TROPIS
+Dialogue: 0,0:00:22.30,0:00:26.30,Stamp,,0,0,0,,{\pos(540,520)\an5\fs64\frz-4\fad(160,150)}SIRENE TENGAH MALAM
+Dialogue: 0,0:00:27.00,0:00:30.80,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}SELURUH WARGA DIBANGUNKAN
+Dialogue: 0,0:00:31.40,0:00:34.30,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}PENJAGA BERSENJATA DI SEKELILING
+Dialogue: 0,0:00:34.90,0:00:37.70,Stamp,,0,0,0,,{\pos(540,520)\an5\fs88\frz-4\fad(160,150)}WHITE NIGHT
+Dialogue: 0,0:00:38.30,0:00:42.20,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}SEMUA ORANG DISURUH ANTRE
+Dialogue: 0,0:00:42.90,0:00:46.70,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\c&H002A2AD8&\fad(220,160)}SEGELAS CAIRAN MERAH
+Dialogue: 0,0:00:47.40,0:00:51.10,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}RACUN — MATI DALAM 45 MENIT
+Dialogue: 0,0:00:51.80,0:00:55.10,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}MEREKA MEMINUMNYA, LALU MENUNGGU
+Dialogue: 0,0:00:55.70,0:00:59.40,Stamp,,0,0,0,,{\pos(540,520)\an5\fs64\frz-4\fad(160,150)}45 MENIT BERLALU
+Dialogue: 0,0:01:00.10,0:01:03.70,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}ITU BUKAN RACUN — ITU TES KESETIAAN
+Dialogue: 0,0:01:04.30,0:01:07.80,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\c&H002A2AD8&\fad(220,160)}WAKTUNYA SUDAH DEKAT
+Dialogue: 0,0:01:08.40,0:01:12.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}PERNYATAAN DI BAWAH SUMPAH
+Dialogue: 0,0:01:13.00,0:01:16.90,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}DEBORAH LEIGHTON · MANTAN ANGGOTA
+Dialogue: 0,0:01:17.60,0:01:20.80,Stamp,,0,0,0,,{\pos(540,520)\an5\fs72\frz-4\fad(160,150)}18 NOVEMBER 1978
+Dialogue: 0,0:01:21.40,0:01:24.00,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs48\fad(220,160)}TIDAK ADA LAGI LATIHAN
+Dialogue: 0,0:01:24.70,0:01:28.60,Big,,0,0,0,,{\pos(540,620)\an5\fs150\c&H002A2AD8&\fad(200,150)}918
+Dialogue: 0,0:01:28.80,0:01:32.80,Kicker,,0,0,0,,{\pos(540,860)\an5\fs46\c&H00E0ECF0&\fad(200,150)}ORANG MENINGGAL HARI ITU
+Dialogue: 0,0:01:33.00,0:01:37.60,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}MENGUJI SAMPAI DI MANA MEREKA PATUH
+Dialogue: 0,0:01:38.00,0:01:41.00,Kicker,,0,0,0,,{\pos(540,700)\an5\fs56\c&H002A2AD8&\fad(240,170)}BERHENTI DI MANA?
+Dialogue: 0,0:01:41.55,0:01:45.24,Big,,0,0,0,,{\pos(540,640)\an5\fs110\fad(260,0)}ODDCHAPTER
+Dialogue: 0,0:01:41.85,0:01:45.24,Kicker,,0,0,0,,{\pos(540,740)\an5\fs42\c&H002A2AD8&\fad(300,0)}KASUS NYATA · ARSIP ASLI
+Dialogue: 0,0:01:42.15,0:01:45.24,Credit,,0,0,0,,{\pos(540,1000)\an5\fs26\c&H00D0D0D0&\fad(360,0)}Footage stok: Coverr\NSumber: Wikipedia · Jonestown Institute\NDeborah Layton, Seductive Poison (1998)\N@oddchapter7 · KASUS NYATA · ARSIP ASLI
+Dialogue: 0,0:00:00.00,0:00:02.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBELUM {\c&H002A2AD8&}918{\c&H00FFFFFF&} ORANG
+Dialogue: 0,0:00:02.12,0:00:02.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENINGGAL DI
+Dialogue: 0,0:00:02.72,0:00:03.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GUYANA MEREKA
+Dialogue: 0,0:00:03.94,0:00:04.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SUDAH PERNAH
+Dialogue: 0,0:00:04.44,0:00:05.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DISURUH MINUM
+Dialogue: 0,0:00:05.28,0:00:07.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RACUN DAN SEMUANYA
+Dialogue: 0,0:00:07.28,0:00:08.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMINUMNYA
+Dialogue: 0,0:00:08.68,0:00:11.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NAMANYA {\c&H002A2AD8&}JONESTOWN{\c&H00FFFFFF&}
+Dialogue: 0,0:00:11.32,0:00:12.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KOMUNE DI TENGAH
+Dialogue: 0,0:00:12.16,0:00:13.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HUTAN DIPIMPIN
+Dialogue: 0,0:00:13.54,0:00:15.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PENDETA JIM JONES
+Dialogue: 0,0:00:15.48,0:00:16.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HAMPIR SERIBU
+Dialogue: 0,0:00:16.24,0:00:16.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ORANG AMERIKA
+Dialogue: 0,0:00:16.90,0:00:18.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PINDAH KE SANA
+Dialogue: 0,0:00:18.44,0:00:19.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIJANJIKAN SURGA
+Dialogue: 0,0:00:19.38,0:00:20.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TROPIS JAUH DARI
+Dialogue: 0,0:00:20.58,0:00:21.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DUNIA LUAR
+Dialogue: 0,0:00:21.84,0:00:22.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAPI ADA SATU
+Dialogue: 0,0:00:22.76,0:00:23.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEBIASAAN
+Dialogue: 0,0:00:24.06,0:00:24.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENURUT MANTAN
+Dialogue: 0,0:00:24.70,0:00:25.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ANGGOTA HAMPIR
+Dialogue: 0,0:00:25.94,0:00:27.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SETIAP MINGGU
+Dialogue: 0,0:00:27.18,0:00:28.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SIRENE MERAUNG
+Dialogue: 0,0:00:27.96,0:00:29.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TENGAH MALAM
+Dialogue: 0,0:00:29.08,0:00:30.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SELURUH WARGA
+Dialogue: 0,0:00:30.08,0:00:31.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIBANGUNKAN
+Dialogue: 0,0:00:31.50,0:00:32.70,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PENJAGA BERSENJATA
+Dialogue: 0,0:00:32.66,0:00:33.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERJAGA DI
+Dialogue: 0,0:00:33.52,0:00:34.36,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKELILING
+Dialogue: 0,0:00:34.70,0:00:36.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JONES MENYEBUTNYA
+Dialogue: 0,0:00:36.02,0:00:37.36,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}WHITE{\c&H00FFFFFF&} {\c&H002A2AD8&}NIGHT{\c&H00FFFFFF&}
+Dialogue: 0,0:00:37.78,0:00:39.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PADA SATU MALAM
+Dialogue: 0,0:00:39.14,0:00:40.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEMUA ORANG
+Dialogue: 0,0:00:40.10,0:00:41.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERMASUK ANAK-ANAK
+Dialogue: 0,0:00:41.68,0:00:42.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DISURUH ANTRE
+Dialogue: 0,0:00:43.14,0:00:43.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MASING-MASING
+Dialogue: 0,0:00:43.70,0:00:44.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENERIMA SEGELAS
+Dialogue: 0,0:00:44.56,0:00:46.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KECIL CAIRAN MERAH
+Dialogue: 0,0:00:46.48,0:00:47.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KATANYA
+Dialogue: 0,0:00:47.58,0:00:49.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU RACUN DAN
+Dialogue: 0,0:00:49.00,0:00:49.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA AKAN MATI
+Dialogue: 0,0:00:49.94,0:00:52.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALAM {\c&H002A2AD8&}45{\c&H00FFFFFF&} MENIT
+Dialogue: 0,0:00:52.28,0:00:53.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA MEMINUMNYA
+Dialogue: 0,0:00:54.06,0:00:55.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU MENUNGGU
+Dialogue: 0,0:00:55.20,0:00:57.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}45{\c&H00FFFFFF&} MENIT BERLALU
+Dialogue: 0,0:00:57.60,0:00:58.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAK SEORANG PUN
+Dialogue: 0,0:00:58.34,0:00:59.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JATUH
+Dialogue: 0,0:00:59.52,0:01:00.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JONES BERKATA
+Dialogue: 0,0:01:00.90,0:01:02.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU BUKAN RACUN
+Dialogue: 0,0:01:02.32,0:01:04.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU TES KESETIAAN
+Dialogue: 0,0:01:04.22,0:01:05.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN WAKTUNYA
+Dialogue: 0,0:01:05.60,0:01:06.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KATANYA
+Dialogue: 0,0:01:06.54,0:01:07.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SUDAH DEKAT
+Dialogue: 0,0:01:07.92,0:01:09.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KISAH INI TERTULIS
+Dialogue: 0,0:01:08.98,0:01:09.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALAM PERNYATAAN
+Dialogue: 0,0:01:09.76,0:01:10.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI BAWAH SUMPAH
+Dialogue: 0,0:01:10.52,0:01:11.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DEBORAH LEIGHTON
+Dialogue: 0,0:01:11.92,0:01:12.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MANTAN ANGGOTA
+Dialogue: 0,0:01:12.64,0:01:13.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG KABUR
+Dialogue: 0,0:01:13.86,0:01:16.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PADA JUNI 1978
+Dialogue: 0,0:01:17.76,0:01:18.26,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LIMA BULAN
+Dialogue: 0,0:01:18.22,0:01:20.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMUDIAN 18
+Dialogue: 0,0:01:20.08,0:01:21.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NOVEMBER
+Dialogue: 0,0:01:21.58,0:01:22.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK ADA LAGI
+Dialogue: 0,0:01:22.46,0:01:23.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LATIHAN
+Dialogue: 0,0:01:24.12,0:01:25.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}918{\c&H00FFFFFF&} ORANG
+Dialogue: 0,0:01:25.28,0:01:26.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENINGGAL HARI ITU
+Dialogue: 0,0:01:27.96,0:01:29.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}909{\c&H00FFFFFF&} DIANTARANYA DI
+Dialogue: 0,0:01:29.88,0:01:30.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}JONESTOWN{\c&H00FFFFFF&}
+Dialogue: 0,0:01:31.00,0:01:31.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LATIHAN ITU TIDAK
+Dialogue: 0,0:01:31.86,0:01:33.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGUJI RACUNNYA
+Dialogue: 0,0:01:33.60,0:01:34.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAPI MENGUJI
+Dialogue: 0,0:01:34.86,0:01:35.70,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAMPAI DI MANA
+Dialogue: 0,0:01:35.66,0:01:37.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEREKA AKAN PATUH
+Dialogue: 0,0:01:37.66,0:01:38.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU KAMU ADA
+Dialogue: 0,0:01:38.34,0:01:39.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI SANA
+Dialogue: 0,0:01:39.74,0:01:40.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAMU AKAN BERHENTI
+Dialogue: 0,0:01:40.48,0:01:41.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI MANA?
