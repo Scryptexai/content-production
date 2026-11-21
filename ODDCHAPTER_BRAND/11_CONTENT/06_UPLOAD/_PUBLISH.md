@@ -47,7 +47,9 @@ END 107,80 s (1:48).
 
 # AK-EP08 — Ponari: antrean yang tidak berhenti
 
-Status: **TIDAK TAYANG — menunggu izin eksplisit pemilik** (queue `approved:false`).
+Status: **TAYANG — https://www.youtube.com/watch?v=-1wAWtd3sA0**
+(Zernio `6b014dc18e32fcb188cb0e91`, 2026-11-21T07:52:44Z, Actions run
+**44882180917**; izin "post sekarang").
 Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (78,81 s) ·
 END 82,90 s (1:23) · **episode pertama dengan aturan footage16:9 → full layar9:16**.
 
