@@ -1,11 +1,11 @@
 {
   "episode": "AK-EP07",
   "slug": "rockefeller-otsjanep",
-  "status": "pending",
-  "approved": false,
+  "status": "requested",
+  "approved": true,
   "file": "work/rockefeller-otsjanep/out/AK-EP07_rockefeller-otsjanep_short.mp4",
   "master_sha256": "e4a492f5dd48206b76723132e900e6513607363a9617704714cd28516466e7fe",
-  "drive_video_id": null,
+  "drive_video_id": "1I400NgjREuXHHhX8B-RDLELeoM1ftCGi",
   "youtube_url": null,
   "posted_at": null
 }
