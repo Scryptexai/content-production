@@ -87,7 +87,9 @@ END 93,20 s (1:33) · footage full layar9:16.
 
 # AK-EP10 — Wowon Krimo: janji uang berlipat,9 orang kehilangan nyawa
 
-Status: **BELUM TAYANG — menunggu izin post** (queue `requested`, `approved:false`).
+Status: **TAYANG — https://www.youtube.com/watch?v=wOw7V3L4GOE**
+(Zernio `6b021a39193f2baf722a46a1`, 2026-11-21T22:25:08Z, Actions run
+**44956581876**; izin "post now").
 Sumber: Shortlist Batch 2 **cadangan B1** (dipilih setelah5 besar tayang).
 Format:8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (85,31 s/159 kata) ·
 END89,40 s (1:29) · footage full layar9:16.
