@@ -123,6 +123,12 @@ Aturan turunan:
 3. **Jonestown (lama EP05) ditahan** — materinya tidak dihapus, hanya menunggu.
 4. **Daftar ide baru**: Andes dulu saja — satu topik untuk membuktikan format;
    daftar ide lain menyusul setelah format terbukti.
+5. **Footage16:9 → full layar9:16** (21 Nov 2026, saat "lanjut tayang … untuk
+   kedepannya"): klip footage16:9 tidak lagi dipasang sebagai jendela kecil di
+   atas latar blur — **diperbesar (cover-crop) sampai menutup seluruh frame
+   9:16**. Berlaku untuk semua episode berikutnya. Gaya lama (jendela + blur)
+   masih bisa dipakai per-shot dengan `extra={"window": True}` di `case_cfg.py`
+   (implementasi: `clip_filter()` di `tools/build_short_case.py`).
 
 ## 7. Episode uji: AK-EP05 — Andes 1972
 

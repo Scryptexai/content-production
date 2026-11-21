@@ -251,19 +251,28 @@ CLIP_POST = (",eq=saturation=0.16:contrast=1.28:brightness=0.02:gamma=0.92,color
 
 
 def clip_filter(key, dur, extra):
-    """Footage asli: jendela 16:9/4:3 di atas latar blur, bukan full-bleed."""
+    """Footage asli — aturan pemilik (21 Nov 2026): klip16:9 DIPERBESAR full
+    layar9:16 (cover-crop), bukan jendela di atas latar blur. Gaya lama bisa
+    dipakai lagi per-shot dengan extra={"window": True}."""
     fn, cs, cd = CLIPS[key]
-    fw, fh = extra.get("box", (1000, 750))
-    fw -= fw % 2; fh -= fh % 2
-    y = 720 - fh // 2
-    bg_b = extra.get("bg", CLIP_BG_BRIGHT)
     fade = f",fade=t=in:st=0:d=0.12,fade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12"
+    if extra.get("window"):
+        # gaya lama: jendela16:9/4:3 di atas latar blur
+        fw, fh = extra.get("box", (1000, 750))
+        fw -= fw % 2; fh -= fh % 2
+        y = 720 - fh // 2
+        bg_b = extra.get("bg", CLIP_BG_BRIGHT)
+        return (
+            "[0:v]split=2[bgs][fgs];"
+            "[bgs]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+            f"gblur=sigma=30,eq=brightness={bg_b}:saturation=0.22[bgb];"
+            f"[fgs]fps=30,scale={fw}:{fh}:force_original_aspect_ratio=increase,crop={fw}:{fh},setsar=1[fgv];"
+            f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + CLIP_POST + fade
+        )
+    # default: cover-crop full layar9:16 (16:9 diperbesar sampai menutup frame)
     return (
-        "[0:v]split=2[bgs][fgs];"
-        "[bgs]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
-        f"gblur=sigma=30,eq=brightness={bg_b}:saturation=0.22[bgb];"
-        f"[fgs]fps=30,scale={fw}:{fh}:force_original_aspect_ratio=increase,crop={fw}:{fh},setsar=1[fgv];"
-        f"[bgb][fgv]overlay=(1080-{fw})/2:{y}:shortest=1" + CLIP_POST + fade
+        "[0:v]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,"
+        "setsar=1" + CLIP_POST + fade
     )
 
 
