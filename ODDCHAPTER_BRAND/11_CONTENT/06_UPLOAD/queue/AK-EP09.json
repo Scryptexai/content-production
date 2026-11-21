@@ -1,11 +1,11 @@
 {
   "episode": "AK-EP09",
   "slug": "gerhana-1983",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "file": "work/gerhana-1983/out/AK-EP09_gerhana-1983_short.mp4",
   "master_sha256": "8e83140febc8e2ce6cda66563a69a446b1a15f32aabfcb2e73a896a427a145ec",
   "drive_video_id": "1I_UamsT9gsUK9uMNBN3OLdQbabg60JCk",
-  "youtube_url": null,
-  "posted_at": null
+  "youtube_url": "https://www.youtube.com/watch?v=oivojM-w_P8",
+  "posted_at": "2026-11-21T10:49:30Z"
 }

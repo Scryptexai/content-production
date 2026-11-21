@@ -67,8 +67,9 @@ END 82,90 s (1:23) · **episode pertama dengan aturan footage16:9 → full layar
 
 # AK-EP09 — Gerhana 1983: negara menyuruh semua masuk rumah
 
-Status: **DESAIN SELESAI — BELUM TAYANG, menunggu perintah post pemilik**
-(queue `approved:false`).
+Status: **TAYANG — https://www.youtube.com/watch?v=oivojM-w_P8**
+(Zernio `6b0177301fe7602f25cf7e8e`, 2026-11-21T10:49:30Z, Actions run
+**44896089191**; izin "post now").
 Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (89,12 s) ·
 END 93,20 s (1:33) · footage full layar9:16.
 
