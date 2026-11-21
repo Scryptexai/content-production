@@ -1,6 +1,8 @@
 # AK-EP06 — Jonestown / "White Night"
 
-Status: **TIDAK TAYANG — menunggu izin eksplisit pemilik** (queue `approved:false`).
+Status: **TAYANG — https://www.youtube.com/watch?v=QaWtUOKBz64**
+(Zernio `6b00ff8e7c03faf7bc0dc3cb`, 2026-11-21T02:19:04Z, Actions run
+**44855106293**; izin "post sekarang").
 Format: 8 beat adaptasi Curiosity Loop · VO PEMILIK apa adanya (101,15 s) ·
 END 105,27 s (1:45).
 

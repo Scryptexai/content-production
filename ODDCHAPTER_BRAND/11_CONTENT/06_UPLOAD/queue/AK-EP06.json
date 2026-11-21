@@ -1,11 +1,11 @@
 {
   "episode": "AK-EP06",
   "slug": "jonestown-whitenight",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "file": "work/jonestown-whitenight/out/AK-EP06_jonestown-whitenight_short.mp4",
   "master_sha256": "f116ce4e7d93c20a54ace01818937e3b6ede583a0d7b29ab8d0a8588278ceab7",
   "drive_video_id": "17uv-2LEWWc_9oaNcug5Iuhs2SuVYqtav",
-  "youtube_url": null,
-  "posted_at": null
+  "youtube_url": "https://www.youtube.com/watch?v=QaWtUOKBz64",
+  "posted_at": "2026-11-21T02:19:04Z"
 }
