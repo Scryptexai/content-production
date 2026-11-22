@@ -1,0 +1,29 @@
+{
+ "episode": "OS-EP01-BALL-LIGHTNING",
+ "mode": "discover",
+ "target_dir": "footage/os-ep01",
+ "candidates_out": "footage-candidates-os-ep01-r2.json",
+ "catatan": "Putaran2 — kata kunci pendek untuk section yang kosong di r1: badai/hujan (S1, S5), Alpen (S6), gereja/lilin (S4), listrik/lab (S11), peta/koran/arsip (S7/S13), awan (S14).",
+ "queries": [
+  {"q": "storm", "want": 8},
+  {"q": "rain", "want": 8},
+  {"q": "lightning", "want": 6},
+  {"q": "thunder", "want": 6},
+  {"q": "mountains", "want": 8},
+  {"q": "alps", "want": 6},
+  {"q": "mountain road", "want": 6},
+  {"q": "fog", "want": 6},
+  {"q": "candles", "want": 6},
+  {"q": "church", "want": 6},
+  {"q": "smoke", "want": 5},
+  {"q": "electricity", "want": 6},
+  {"q": "laboratory", "want": 5},
+  {"q": "map", "want": 6},
+  {"q": "newspaper", "want": 6},
+  {"q": "clouds", "want": 8},
+  {"q": "rainy", "want": 5},
+  {"q": "cabin interior", "want": 5},
+  {"q": "wooden cabin", "want": 5},
+  {"q": "valley", "want": 5}
+ ]
+}
