@@ -1,25 +1,21 @@
-thunderstorm mountains: 0 kandidat
-lightning night: 19 kandidat
-heavy rain window: 0 kandidat
-restaurant interior cozy: 1 kandidat
-dog floor indoor: 0 kandidat
-dog looking up: 11 kandidat
-sparks dark: 4 kandidat
-flash light darkness: 0 kandidat
-candles church dark: 0 kandidat
-incense smoke church: 0 kandidat
-alpine pass road: 0 kandidat
-austria mountains village: 0 kandidat
-foggy mountains dawn: 0 kandidat
-writing journal pen: 1 kandidat
-old notebook paper: 3 kandidat
-geology rocks hands: 0 kandidat
-scientist laboratory: 1 kandidat
-electricity arc: 0 kandidat
-plasma globe: 0 kandidat
-open book pages: 6 kandidat
-old map europe: 0 kandidat
-newspaper old: 0 kandidat
-storm clouds time lapse: 0 kandidat
-rain stopping street: 0 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep01.json
+storm: 17 kandidat
+rain: 22 kandidat
+lightning: 10 kandidat
+thunder: 0 kandidat
+mountains: 22 kandidat
+alps: 22 kandidat
+mountain road: 21 kandidat
+fog: 21 kandidat
+candles: 22 kandidat
+church: 24 kandidat
+smoke: 23 kandidat
+electricity: 8 kandidat
+laboratory: 3 kandidat
+map: 12 kandidat
+newspaper: 4 kandidat
+clouds: 18 kandidat
+rainy: 24 kandidat
+cabin interior: 2 kandidat
+wooden cabin: 0 kandidat
+valley: 21 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep01-r2.json
