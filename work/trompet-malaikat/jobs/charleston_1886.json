@@ -1,0 +1,42 @@
+{
+ "name": "charleston_1886",
+ "props": {
+  "src": "maps/charleston_map.png",
+  "natural": {
+   "w": 1024,
+   "h": 512
+  },
+  "bounds": {
+   "n": 33.137551192346145,
+   "s": 32.54681317351515,
+   "w": -80.5078125,
+   "e": -79.1015625
+  },
+  "target": {
+   "lat": 32.7767,
+   "lon": -79.9311
+  },
+  "fromScale": 1,
+  "toScale": 3,
+  "zoomIn": 15,
+  "zoomOut": 150,
+  "zone": {
+   "lat": 32.7767,
+   "lon": -79.9311,
+   "r": 55
+  },
+  "zoneFrame": 60,
+  "points": [
+   {
+    "lat": 32.7767,
+    "lon": -79.9311,
+    "label": "CHARLESTON"
+   }
+  ],
+  "pointsFrame": 60,
+  "headline": "1886",
+  "sub": "GEMPA CHARLESTON, SC",
+  "credit": "© OpenStreetMap contributors",
+  "durationInFrames": 192
+ }
+}

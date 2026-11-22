@@ -1,0 +1,42 @@
+{
+ "name": "seneca_guns",
+ "props": {
+  "src": "maps/useast_map.png",
+  "natural": {
+   "w": 1536,
+   "h": 1536
+  },
+  "bounds": {
+   "n": 47.04018214480666,
+   "s": 34.307143856288036,
+   "w": -84.375,
+   "e": -67.5
+  },
+  "target": {
+   "lat": 42.9106,
+   "lon": -76.7963
+  },
+  "fromScale": 1,
+  "toScale": 6,
+  "zoomIn": 15,
+  "zoomOut": 110,
+  "zone": {
+   "lat": 42.9106,
+   "lon": -76.7963,
+   "r": 60
+  },
+  "zoneFrame": 86,
+  "points": [
+   {
+    "lat": 42.9106,
+    "lon": -76.7963,
+    "label": "DAN SENECA, NEW YORK"
+   }
+  ],
+  "pointsFrame": 86,
+  "headline": "SENECA GUNS",
+  "sub": "DAN SENECA, NEW YORK",
+  "credit": "© Esri · HERE · Garmin · OpenStreetMap contributors",
+  "durationInFrames": 152
+ }
+}

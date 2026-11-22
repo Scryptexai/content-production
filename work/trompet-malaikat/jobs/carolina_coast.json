@@ -1,0 +1,42 @@
+{
+ "name": "carolina_coast",
+ "props": {
+  "src": "maps/coast_map.png",
+  "natural": {
+   "w": 1280,
+   "h": 1280
+  },
+  "bounds": {
+   "n": 40.97989806962013,
+   "s": 29.535229562948455,
+   "w": -81.5625,
+   "e": -67.5
+  },
+  "target": {
+   "lat": 35.2,
+   "lon": -76.6
+  },
+  "fromScale": 1,
+  "toScale": 2.2,
+  "zoomIn": 10,
+  "zoomOut": 115,
+  "zone": {
+   "lat": 35.2,
+   "lon": -76.6,
+   "r": 130
+  },
+  "zoneFrame": 35,
+  "points": [
+   {
+    "lat": 35.2,
+    "lon": -76.6,
+    "label": "PESISIR TENGGARA"
+   }
+  ],
+  "pointsFrame": 40,
+  "headline": "PESISIR TENGGARA",
+  "sub": "NC · SC · VIRGINIA",
+  "credit": "© Esri · HERE · Garmin · OpenStreetMap contributors",
+  "durationInFrames": 161
+ }
+}

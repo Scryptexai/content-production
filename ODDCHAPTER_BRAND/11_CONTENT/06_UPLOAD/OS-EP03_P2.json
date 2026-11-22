@@ -1,0 +1,51 @@
+{
+  "episode": "OS-EP03_P2",
+  "series": "OS-EP03",
+  "kind": "short",
+  "video": "OS-EP03_P2_trompet-malaikat_feed.mp4",
+  "thumbnail": "OS-EP03_thumbnail_16x9.jpg",
+  "poster": "OS-EP03_poster_9x16.jpg",
+  "title": "Penjelasan Seneca Guns: Gempa Charleston 1886 (Part 2/2)",
+  "title_alt": [
+    "Gempa Charleston 1886: Suara Misterius Itu Ternyata Ini",
+    "Trompet Malaikat atau Gempa? Misteri Seneca Guns Terjawab (2/2)",
+    "Suara dari Langit yang Ternyata dari Bawah Tanah"
+  ],
+  "hook": "Suara trompet dari langit itu ternyata berkaitan dengan gempa — benarkah?",
+  "description": "Suara trompet dari langit itu ternyata berkaitan dengan gempa — benarkah? Pada 1886, gempa besar mengguncang Charleston, South Carolina — gemuruh dan dentuman terdengar bersamaan dengan guncangan, lalu gempa susulan menyusul.\n\nDi masa itu orang belum punya seismograf modern, belum punya radar cuaca — tak bisa membedakan suara dari udara atau dari batuan. Suara Seneca Guns pun ditafsirkan sebagai pertanda: suara malaikat, peringatan dari dunia lain.\n\nPart 2 dari 2: penjelasan sainsnya — gempa dangkal, gelombang sonik, dan meteor yang menembus atmosfer. Lanjutannya ada di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile peta asli — © Esri · HERE · Garmin · OpenStreetMap contributors (ODbL) dan © OpenStreetMap contributors. Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "seneca guns",
+    "gempa charleston",
+    "charleston 1886",
+    "gempa bumi",
+    "seismograf",
+    "misteri terpecahkan",
+    "fenomena alam",
+    "kisah nyata",
+    "part2",
+    "oddchapter"
+  ],
+  "first_comment": "Gempa Charleston 1886: gemuruh dan dentuman terdengar bersamaan dengan guncangan. Part 2 dari 2 — penjelasan sains Seneca Guns.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1Hq_NFvpn1b-d6HpJQ3_C8P8vU1_Z3-_m",
+  "drive_ids": {
+    "video": "1Hq_NFvpn1b-d6HpJQ3_C8P8vU1_Z3-_m",
+    "thumbnail": "1giNrmZ4JmL7nFTUiAqhgLssOSsaegC7M",
+    "poster": "1vi_vsZ-YlULt-POuulh45lFKkieXkBlA",
+    "srt": "1LNoU_bcMsAdnYsGsKBgEofeTNfat_oNH",
+    "folder": "15dpYJYOZIATzfz01sKyuNoKdg5ze69kY"
+  },
+  "duration_seconds": 100.1,
+  "size_bytes": 30610487,
+  "sha256": "ae61c476958cc306289de499fed62b66bbaf754fca24a5f47bb4d7e50abcd7f0",
+  "cut_from": {
+    "master_drive_file_id": "181LsNRipQEdW4azLz_FBfVVRv8mt5SEH",
+    "master_sha256": "7213119c25eab0eeb5365be84b35c52fee3f951adf9e22592e058e7d239ecab5",
+    "cut_seconds": 110.55,
+    "outro_appended": false
+  },
+  "catatan": "Part2/2 dari OS-EP03 (master penuh 210,68 s → dipecah jadi 2 file <3 menit). Potongan pada 110,55 s (batas section S8/S9); outro animasi asli ada di akhir Part 2. SRT: OS-EP03_P2.id.srt (97 cue). QC: durasi 100,10 s, 1080×1920@30, AAC 44,1 kHz. Status: BELUM TAYANG (queue approved:false)."
+}

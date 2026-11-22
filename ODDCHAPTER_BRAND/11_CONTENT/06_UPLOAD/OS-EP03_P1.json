@@ -1,0 +1,51 @@
+{
+  "episode": "OS-EP03_P1",
+  "series": "OS-EP03",
+  "kind": "short",
+  "video": "OS-EP03_P1_trompet-malaikat_feed.mp4",
+  "thumbnail": "OS-EP03_thumbnail_16x9.jpg",
+  "poster": "OS-EP03_poster_9x16.jpg",
+  "title": "Suara Trompet dari Langit: Misteri Seneca Guns (Part 1/2)",
+  "title_alt": [
+    "Warga Mendengar Trompet dari Langit — Tanpa Pesawat, Tanpa Meriam",
+    "Seneca Guns: Suara Misterius yang Didengar Sepanjang Pesisir Timur",
+    "Trompet Malaikat? Suara Aneh dari Langit yang Tak Ketemu Sumbernya (1/2)"
+  ],
+  "hook": "Warga mendengar suara trompet dari langit — tanpa pesawat, tanpa meriam. Dari mana asalnya?",
+  "description": "Warga mendengar suara trompet dari langit — tanpa pesawat, tanpa meriam. Dari mana asalnya? Suara itu menggelegar, seperti meriam jauh, seperti ledakan — tapi tak ada pesawat di udara, tak ada kapal yang meledak, tak ada bangunan yang runtuh. Banyak yang menyebutnya trompet malaikat Israfil, tanda sangkakala.\n\nFenomena ini dikenal sebagai Seneca Guns — dilaporkan ratusan tahun di sekitar Dan Seneca, New York, dan sepanjang pesisir North Carolina, South Carolina, hingga Virginia. Suaranya sering terdengar tanpa perang, tanpa badai, tanpa sebab yang terlihat.\n\nPart 1 dari 2: laporannya, lokasinya, dan kenapa suara itu begitu aneh. Lanjut ke Part 2: gempa Charleston 1886 dan penjelasan sainsnya.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile peta asli — © Esri · HERE · Garmin · OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "trompet malaikat",
+    "seneca guns",
+    "suara dari langit",
+    "misteri",
+    "kisah nyata",
+    "fenomena alam",
+    "dan seneca",
+    "new york",
+    "part1",
+    "oddchapter"
+  ],
+  "first_comment": "Suara trompet dari langit tanpa pesawat dan tanpa meriam — Seneca Guns, dilaporkan ratusan tahun. Part 1 dari 2: laporannya dan lokasinya. Lanjut ke Part 2.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1bPEa1p0NdVsItG8Db90x1WOpxuU0SVYY",
+  "drive_ids": {
+    "video": "1bPEa1p0NdVsItG8Db90x1WOpxuU0SVYY",
+    "thumbnail": "1giNrmZ4JmL7nFTUiAqhgLssOSsaegC7M",
+    "poster": "1vi_vsZ-YlULt-POuulh45lFKkieXkBlA",
+    "srt": "17S5EMVluf0TlpJ9oBgPJKd0IlSXwLkgv",
+    "folder": "15dpYJYOZIATzfz01sKyuNoKdg5ze69kY"
+  },
+  "duration_seconds": 115.57,
+  "size_bytes": 35313640,
+  "sha256": "cac5285f676af467a77ea2fd5cbedcc779d1beb9cf478cfd0d47aed00548b024",
+  "cut_from": {
+    "master_drive_file_id": "181LsNRipQEdW4azLz_FBfVVRv8mt5SEH",
+    "master_sha256": "7213119c25eab0eeb5365be84b35c52fee3f951adf9e22592e058e7d239ecab5",
+    "cut_seconds": 110.55,
+    "outro_appended": true
+  },
+  "catatan": "Part1/2 dari OS-EP03 (master penuh 210,68 s masuk long-form → dipecah jadi 2 file <3 menit). Potongan pada 110,55 s (batas section S8/S9), outro animasi 5 dtk disisipkan di akhir Part 1. SRT: OS-EP03_P1.id.srt (112 cue). QC: durasi 115,57 s, 1080×1920@30, AAC 44,1 kHz; 50 shot master lolos QC per shot. Status: BELUM TAYANG (queue approved:false)."
+}
