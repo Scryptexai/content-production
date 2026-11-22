@@ -1,0 +1,26 @@
+{
+  "name": "strangford_distance",
+  "props": {
+    "src": "maps/county_down_map.png",
+    "natural": { "w": 1024, "h": 1024 },
+    "bounds": { "n": 54.77534585936448, "s": 53.9560855309879, "w": -6.6796875, "e": -5.2734375 },
+    "target": { "lat": 54.545, "lon": -5.717 },
+    "fromScale": 1,
+    "toScale": 3,
+    "zoomIn": 15,
+    "zoomOut": 150,
+    "zone": { "lat": 54.545, "lon": -5.717, "r": 70 },
+    "zoneFrame": 35,
+    "points": [
+      { "lat": 54.545, "lon": -5.717, "label": "DRUMHERG" },
+      { "lat": 54.545, "lon": -5.67, "label": "STRANGFORD LOUGH" }
+    ],
+    "pointsFrame": 55,
+    "distance": "±3 KM",
+    "distanceFrame": 161,
+    "headline": "STRANGFORD LOUGH",
+    "sub": "SUMBER AIR TERDEKAT",
+    "credit": "© OpenStreetMap contributors",
+    "durationInFrames": 202
+  }
+}

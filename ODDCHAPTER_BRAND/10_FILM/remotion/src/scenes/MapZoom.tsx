@@ -238,8 +238,17 @@ export const MapZoom: React.FC<MapZoomProps> = ({
             <div
               style={{
                 position: "absolute",
-                left: p.s.x + 20,
-                top: p.s.y - 46,
+                // pin di sisi kanan layar → label flip ke kiri (jangan kepotong)
+                left: p.s.x > W * 0.58 ? p.s.x - 20 : p.s.x + 20,
+                // pin kedua (mis. ujung danau) → label di BAWAH pin supaya
+                // tidak menimpa label pin pertama (jarak pendek ±3 km)
+                top:
+                  p.s.y +
+                  (i === 1
+                    ? 34
+                    : pts.length > 1 && i === 0
+                      ? -78
+                      : -46),
                 padding: "10px 16px",
                 background: "rgba(11,13,16,0.92)",
                 border: "1px solid rgba(240,236,224,0.28)",
@@ -249,7 +258,9 @@ export const MapZoom: React.FC<MapZoomProps> = ({
                 fontSize: 27,
                 letterSpacing: "0.06em",
                 whiteSpace: "nowrap",
-                transform: `translateY(${(1 - pinIn) * -34}px)`,
+                transform:
+                  (p.s.x > W * 0.58 ? "translateX(-100%) " : "") +
+                  `translateY(${(1 - pinIn) * -34}px)`,
               }}
             >
               {p.label}
@@ -264,7 +275,7 @@ export const MapZoom: React.FC<MapZoomProps> = ({
           style={{
             position: "absolute",
             left: (pts[0].s.x + pts[1].s.x) / 2,
-            top: (pts[0].s.y + pts[1].s.y) / 2 - 74,
+            top: (pts[0].s.y + pts[1].s.y) / 2 - 132,
             transform: "translateX(-50%)",
             padding: "8px 14px",
             background: "#E8813D",

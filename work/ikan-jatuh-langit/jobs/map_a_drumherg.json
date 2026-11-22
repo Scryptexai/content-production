@@ -1,0 +1,23 @@
+{
+  "name": "drumherg_1928",
+  "props": {
+    "src": "maps/ireland_map.png",
+    "natural": { "w": 768, "h": 768 },
+    "bounds": { "n": 55.77657301866769, "s": 50.73645513701065, "w": -11.25, "e": -2.8125 },
+    "target": { "lat": 54.545, "lon": -5.717 },
+    "fromScale": 1,
+    "toScale": 6,
+    "zoomIn": 20,
+    "zoomOut": 150,
+    "zone": { "lat": 54.545, "lon": -5.717, "r": 80 },
+    "zoneFrame": 126,
+    "points": [
+      { "lat": 54.545, "lon": -5.717, "label": "DRUMHERG · COMBER" }
+    ],
+    "pointsFrame": 126,
+    "headline": "1928 · DRUMHERG",
+    "sub": "IRLANDIA UTARA",
+    "credit": "© OpenStreetMap contributors",
+    "durationInFrames": 217
+  }
+}

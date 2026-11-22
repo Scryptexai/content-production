@@ -28,7 +28,7 @@ const FFPROBE = ffprobePath.path;
 
 const here = path.dirname(url.fileURLToPath(import.meta.url));
 const root = path.resolve(here, ".."); // ODDCHAPTER_BRAND/10_FILM/remotion
-const repo = path.resolve(root, "..", ".."); // repo root
+const repo = path.resolve(root, "..", "..", ".."); // repo root (remotion→10_FILM→ODDCHAPTER_BRAND→root)
 const out = path.join(root, "output");
 fs.mkdirSync(out, { recursive: true });
 
@@ -98,7 +98,7 @@ const browserOpts = {
 const comp = await selectComposition({
   serveUrl,
   id: "MAP-ZOOM",
-  props: job.props,
+  inputProps: job.props,
   ...browserOpts,
 });
 const dur = Math.min(
@@ -120,7 +120,7 @@ await renderStill({
   serveUrl,
   output: stillPath,
   frame: stillFrame,
-  props: job.props,
+  inputProps: job.props,
   ...browserOpts,
 });
 console.log("still       :", path.relative(root, stillPath), "@ frame", stillFrame);
@@ -137,7 +137,7 @@ await renderMedia({
   imageFormat: "png",
   muted: true,
   frameRange: [0, dur - 1],
-  props: job.props,
+  inputProps: job.props,
   ...browserOpts,
 });
 

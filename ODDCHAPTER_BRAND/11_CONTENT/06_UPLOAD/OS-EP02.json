@@ -1,0 +1,45 @@
+{
+  "episode": "OS-EP02",
+  "video": "OS-EP02_ikan-jatuh-langit_feed.mp4",
+  "thumbnail": "OS-EP02_thumbnail_16x9.jpg",
+  "poster": "OS-EP02_poster_9x16.jpg",
+  "title": "Hujan Ikan di Drumherg, 1928: Puluhan Ikan Jatuh dari Langit",
+  "title_alt": [
+    "Tak Ada Sungai, Tak Ada Truk — Tapi Ikan Berserakan di Jalan",
+    "Ikan di Atap Bungalow: Misteri Hujan Ikan Irlandia Utara 1928",
+    "Jaraknya3 km dari Air: Kenapa Ikan Ini Bisa Jatuh dari Awan?"
+  ],
+  "hook": "Pagi itu, warga keluar rumah dan menemukan puluhan ikan berserakan di jalan.",
+  "description": "Pagi itu, warga keluar rumah dan menemukan puluhan ikan berserakan di jalan. Tidak ada sungai di dekat sana. Tidak ada truk yang terguling. Ikan-ikan itu, katanya, jatuh dari langit.\n\nPeristiwanya tercatat pada tahun1928, di daerah Drumherg dekat Comber, County Down, Irlandia Utara. Setelah badai petir yang sangat kuat, warga menemukan puluhan ikan kecil berwarna kemerahan di sekitar lahan pertanian — sebagian di tanah, sebagian di atas atap sebuah bungalow. Tak ada sungai besar, tak ada kolam ikan yang jebol, tak ada kendaraan yang membawa ikan lewat.\n\nMasalahnya: tidak ada seorang pun yang benar-benar melihat ikan itu jatuh. Yang terlihat hanya hasil akhirnya — setelah badai selesai. Sumber air terdekat, Strangford Lough, berjarak sekitar3 km. Cukup jauh untuk membuat siapa pun bertanya: bagaimana ikan-ikan kecil itu bisa berpindah sejauh itu?\n\nPenjelasan yang paling masuk akal: waterspout — pusaran angin di atas permukaan air yang mengangkat air beserta isinya, lalu menjatuhkannya jauh dari asal. Tapi untuk kasus Drumherg, itu tetap bukan bukti final: tidak ada rekaman, tidak ada saksi yang melihat ikan terangkat, tidak ada laporan yang memastikan prosesnya.\n\nMenurut lo, penjelasan waterspout sudah cukup? Atau masih ada bagian yang belum terjawab? Tulis pendapat lo di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang untuk adegan yang tak mungkin difoto. Shot peta: Remotion MAP-ZOOM dari tile OpenStreetMap — © OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "hujan ikan",
+    "ikan jatuh dari langit",
+    "rain of fish",
+    "Drumherg",
+    "Comber",
+    "County Down",
+    "Irlandia Utara1928",
+    "waterspout",
+    "fenomena alam",
+    "misteri terpecahkan",
+    "kisah nyata",
+    "oddchapter"
+  ],
+  "first_comment": "Puluhan ikan di jalan dan di atap bungalow, tanpa sungai dan tanpa truk — Drumherg1928. Waterspout sudah cukup menjelaskan, atau masih ada yang janggal? Tulis pendapat lo.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1rBGIs_32DmKx4BuCHGFynVdtR8g-8b6B",
+  "drive_ids": {
+    "video": "1rBGIs_32DmKx4BuCHGFynVdtR8g-8b6B",
+    "thumbnail": "1uXHWV_RG5VA8Y0YF_8djGzMwSACZjdbE",
+    "poster": "1KLpS-flKFWFQXazzfJQDE0luslGD5Sqm",
+    "srt": "1ZyujiKXdp1WClud9MxzG0ST1b_zRoyF4",
+    "folder": "1Xn7t5VS3pqjOBiHXXeFZED3X8BHXfS56"
+  },
+  "duration_seconds": 225.19,
+  "size_bytes": 81162451,
+  "sha256": "d6e4f930903128af917713962168450cafd7d476a433af56b640dea84502da55",
+  "catatan": "OS-EP02 Ikan jatuh dari langit (seri ODDCHAPTER SURPRISE; feed9:16 durasi bebas — VO3:40,19 + outro5 dtk = END225,19 s). VO PEMILIK apa adanya (vo_owner/vo_ikan-jatuh-langit.mp3,220,19 s,223 cue ElevenLabs; alignment dari cue SRT → vo_alignment.json,488 kata). Kebijakan visual00G: klip Coverr baru per section (nol reuse lintas episode;3 klip gagal QC dibuang: s3_genangan_hujan, s8_jalan_hujan_warga, s15_awan_gelap2),4 foto AI1408×768, source document = peta OpenStreetMap. Shot peta Remotion MAP-ZOOM2 job: A z7 zoom Drumherg (36,93–44,15 s), B z10 jarak ±3 km Strangford Lough dengan garis berlabel (100,23–106,95 s), kredit © OpenStreetMap contributors on-screen. Master: loudnorm −15,1 LUFS / −1,4 dBTP,1080×1920@30, AAC44,1 stereo,223 caption +28 overlay. Status: BELUM TAYANG — menunggu izin eksplisit pemilik (queue approved:false)."
+}

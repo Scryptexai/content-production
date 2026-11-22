@@ -1,0 +1,11 @@
+{
+  "episode": "OS-EP02",
+  "slug": "ikan-jatuh-langit",
+  "status": "requested",
+  "approved": false,
+  "file": "work/ikan-jatuh-langit/out/OS-EP02_ikan-jatuh-langit_feed.mp4",
+  "master_sha256": "d6e4f930903128af917713962168450cafd7d476a433af56b640dea84502da55",
+  "drive_video_id": "1rBGIs_32DmKx4BuCHGFynVdtR8g-8b6B",
+  "catatan": "Build+QC+Drive selesai. BELUM ADA IZIN TAYANG — jangan di-set approved:true tanpa perintah user. Jalur tayang satu-satunya: user bilang tayang → approved:true → trigger publish. Metadata: 11_CONTENT/06_UPLOAD/OS-EP02.json.",
+  "izin": null
+}
