@@ -58,5 +58,9 @@ jobs:
           done
           find footage -name "*.mp4" -print0 2>/dev/null | xargs -0 -r git add -f
           find footage -name "_tmp_*" -print0 2>/dev/null | xargs -0 -r git rm -f --ignore-unmatch -q || true
+          # Ambil tip remote dulu (tanpa rebase): kalau ada push baru di tengah run,
+          # staged = hasil kerja ini di atas tip terbaru, lalu commit + push.
+          git fetch origin "${GITHUB_REF_NAME}"
+          git reset --soft "origin/${GITHUB_REF_NAME}"
           git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
           git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
