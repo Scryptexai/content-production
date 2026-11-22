@@ -7,7 +7,8 @@
   "master_sha256": "aea1ba717ce52b6169722cb735599d0262c9cee2c56a63db3b368ca6f268a1fc",
   "drive_video_id": "1TeZxQKsXhptYbodMO0Pqe-cl6z1hO_8Z",
   "catatan": "Part2/2 OS-EP02 (dari96,35 s sampai outro;128,83 s <3 menit). BELUM ADA IZIN TAYANG — approved:false sampai perintah user. Tayang SETELAH P1: set approved:true di push terpisah.",
-  "izin": "user: part2 tayang +15 menit setelah part1 (2026-11-22)",
-  "scheduledFor": "2026-11-22T13:36:34.000Z",
-  "timezone": "UTC"
+  "izin": "user: part2 +15 menit setelah part1 tayang (part1 posted13:26:27Z → P2 jadwal13:41:27Z)",
+  "scheduledFor": "2026-11-22T13:41:27.000Z",
+  "timezone": "UTC",
+  "attempt": 2
 }
