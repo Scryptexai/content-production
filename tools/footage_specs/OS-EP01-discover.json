@@ -1,0 +1,33 @@
+{
+ "episode": "OS-EP01-BALL-LIGHTNING",
+ "mode": "discover",
+ "target_dir": "footage/os-ep01",
+ "candidates_out": "footage-candidates-os-ep01.json",
+ "catatan": "Discover OS-EP01 Ball lightning (Plöckenhaus Austria1963). Kueri per section VO: badai/restoran, bola cahaya/anjing, ledakan, gereja (interpretasi desa), Alpen (fakta), tulis jurnal (saksi Wagner), lab/plasma (teori ilmiah), dokumen arsip, badai mereda (debate). Pemilihan manual dari judul.",
+ "queries": [
+  {"q": "thunderstorm mountains", "want": 8},
+  {"q": "lightning night", "want": 8},
+  {"q": "heavy rain window", "want": 8},
+  {"q": "restaurant interior cozy", "want": 6},
+  {"q": "dog floor indoor", "want": 6},
+  {"q": "dog looking up", "want": 6},
+  {"q": "sparks dark", "want": 6},
+  {"q": "flash light darkness", "want": 6},
+  {"q": "candles church dark", "want": 6},
+  {"q": "incense smoke church", "want": 6},
+  {"q": "alpine pass road", "want": 8},
+  {"q": "austria mountains village", "want": 8},
+  {"q": "foggy mountains dawn", "want": 6},
+  {"q": "writing journal pen", "want": 8},
+  {"q": "old notebook paper", "want": 6},
+  {"q": "geology rocks hands", "want": 6},
+  {"q": "scientist laboratory", "want": 6},
+  {"q": "electricity arc", "want": 6},
+  {"q": "plasma globe", "want": 4},
+  {"q": "open book pages", "want": 6},
+  {"q": "old map europe", "want": 6},
+  {"q": "newspaper old", "want": 6},
+  {"q": "storm clouds time lapse", "want": 8},
+  {"q": "rain stopping street", "want": 6}
+ ]
+}
