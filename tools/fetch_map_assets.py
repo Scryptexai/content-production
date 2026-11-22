@@ -8,6 +8,7 @@ dan tidak kosong dilewati supaya idempoten.
     python3 tools/fetch_map_assets.py
 """
 import json
+import os
 import pathlib
 import sys
 import urllib.request
@@ -22,6 +23,7 @@ UA = "OddchapterAssetFetcher/1.0 (YouTube channel @oddchapter7)"
 def main():
     spec = json.loads(SRC.read_text(encoding="utf-8"))
     failed = []
+    failures_detail = []
     for a in spec["assets"]:
         dst = OUT / a["file"]
         if dst.exists() and dst.stat().st_size > 0:
@@ -39,8 +41,19 @@ def main():
         except Exception as e:  # noqa: BLE001
             print(f"  GAGAL {a['file']}: {e}", file=sys.stderr)
             failed.append(a["file"])
+            failures_detail.append(f"{a['file']}: {type(e).__name__}: {e}")
     if failed:
-        sys.exit(f"::error::gagal mengunduh: {', '.join(failed)}")
+        summary = pathlib.Path(os.environ.get("GITHUB_STEP_SUMMARY", "/dev/null"))
+        try:
+            with summary.open("a", encoding="utf-8") as fh:
+                fh.write("## Gagal unduh peta\n\n")
+                fh.write(", ".join(failed) + "\n")
+                for t in failures_detail:
+                    fh.write(f"- `{t}`\n")
+        except Exception:
+            pass
+        detail = "; ".join(failures_detail) if failures_detail else ", ".join(failed)
+        sys.exit(f"::error::gagal mengunduh: {detail}")
 
 
 if __name__ == "__main__":

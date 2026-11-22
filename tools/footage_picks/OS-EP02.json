@@ -1,0 +1,192 @@
+{
+ "episode": "OS-EP02-IKAN-JATUH",
+ "catatan": "Picks OS-EP02 per section (00G): pasar/jalan hujan (hook), atap+awan, genangan (CTA), jalan berawan (sebelum MAP-ZOOM A), awan+ikan (badai 1928), permukiman (atap), sungai/kolam/jalan (negasi), jalan hujan (kesimpulan warga), pasar+ikan merah (bukti), danau (sebelum MAP-ZOOM B), desa pesisir, tornado+ombak (waterspout), ombak/awan/pasang (mekanisme), koran+nelayan (laporan global), jalan kosong+sungai jalan (tak ada rekaman), kota gelap+aqium+awan (kutukan vs sains), alam+ladang (penutup). Nol reuse lintas episode.",
+ "picks": [
+  {
+   "name": "s1_pasar_ikan_india",
+   "title": "Fish market in India",
+   "base": "coverr-fish-market-in-india-1323",
+   "playback": "L7D6mCa01iVHoMVf7puiS1vOOtm01kgizX"
+  },
+  {
+   "name": "s1_jalan_hujan",
+   "title": "A street on a rainy day",
+   "base": "coverr-a-street-on-a-rainy-day-3463",
+   "playback": "nqi00Qeob4MZpfe7JXCn7i5EwHInLCsW2"
+  },
+  {
+   "name": "s2_jalan_atap",
+   "title": "Walking on a roof",
+   "base": "coverr-walking-on-a-roof-9280",
+   "playback": "MWBoHnnmEyWCGk8tk02EV0202B5kEsqINxg"
+  },
+  {
+   "name": "s2_awan_timelapse",
+   "title": "Cloud timelapse",
+   "base": "coverr-cloud-timelapse-8383",
+   "playback": "pWj5n1UJwSbfYXxZLNNK8pNFU29D02X2b"
+  },
+  {
+   "name": "s3_genangan_hujan",
+   "title": "Rain on a puddle",
+   "base": "coverr-rain-on-a-puddle-4247",
+   "playback": "qQ02WXUctcM8V5zx01pBCapiu3IWsCL5Xo"
+  },
+  {
+   "name": "s4_jalan_berawan",
+   "title": "Road with a cloudy sky",
+   "base": "coverr-road-with-a-cloudy-sky-in-the-background-2884",
+   "playback": "zsxnUSMUd012KNyLceiUSSz81IdbEmP7u"
+  },
+  {
+   "name": "s5_awan_gelap",
+   "title": "Cloudy sky",
+   "base": "coverr-cloudy-sky-2765",
+   "playback": "cgEXo02oZWglwx1bzWK3qMd0091G029YI00k"
+  },
+  {
+   "name": "s5_ikan_dijual",
+   "title": "Fish for sale",
+   "base": "coverr-fish-for-sale-230",
+   "playback": "hmgPLyraxUT02qJ2yqjg1bR17Oddud02yu"
+  },
+  {
+   "name": "s6_permukiman",
+   "title": "A settlement in the mountains",
+   "base": "coverr-a-settlement-in-the-mountains-5585",
+   "playback": "o01bfV001DvpCCeYal5yUD01IKme02Kahtyc"
+  },
+  {
+   "name": "s7_sungai",
+   "title": "A view of a river",
+   "base": "coverr-a-view-of-a-river-8460",
+   "playback": "5D8KLE02E7ghzttOvoRNkPYpNvFctoWK5"
+  },
+  {
+   "name": "s7_kolam_ikan",
+   "title": "Fish pond",
+   "base": "coverr-fish-pond-4415",
+   "playback": "S1HvMz1AopIZ02yme1l8YjUptkGRbdSXA"
+  },
+  {
+   "name": "s7_jalan_ladang",
+   "title": "Road near a field",
+   "base": "coverr-road-near-a-field-6275",
+   "playback": "01tymZAju1Jogc3iJHF02FtzghVHc7nAM4"
+  },
+  {
+   "name": "s8_jalan_hujan_warga",
+   "title": "Walking in the rain",
+   "base": "coverr-walking-in-the-rain-7027",
+   "playback": "CncN500xFEYCkqT8WzBo1iirpIctNORNM"
+  },
+  {
+   "name": "s9_pasar_ikan2",
+   "title": "Fish for sale at the fish market",
+   "base": "coverr-fish-for-sale-at-the-fish-market-7488",
+   "playback": "BZxuccBToOpnz8BdiQZCx00g7EBl1ipYn"
+  },
+  {
+   "name": "s9_ikan_merah",
+   "title": "Red fish in a pond",
+   "base": "coverr-red-fish-in-a-pond-3260",
+   "playback": "FAgPaI7CXUl5JoGW47F02gkrFaihdSC025"
+  },
+  {
+   "name": "s10_danau",
+   "title": "Man sitting by the lake",
+   "base": "coverr-man-sitting-by-the-lake-8580",
+   "playback": "aNQ7UDskkAd3GQ01kFdvqGLWE3yeg1v6Y"
+  },
+  {
+   "name": "s10_desa_pesisir",
+   "title": "A coastline village",
+   "base": "coverr-a-coastline-village-5975",
+   "playback": "OfDOgqdRmyJn6m8011X011jOokaqnCUiUX"
+  },
+  {
+   "name": "s11_tornado",
+   "title": "Tornado across a field",
+   "base": "coverr-tornado-across-a-field-5938",
+   "playback": "sXrS02OxltUBR5LU3nGiJ9pyLmgZEVmMl"
+  },
+  {
+   "name": "s11_gelombang_laut",
+   "title": "Large ocean wave",
+   "base": "coverr-large-ocean-wave-5169",
+   "playback": "3rsZuD02mSXvHRqk6NG6VASYXrg602Z8mN"
+  },
+  {
+   "name": "s12_ombak_batu",
+   "title": "Large waves crashing on the rocky shore",
+   "base": "coverr-large-waves-crashing-on-the-rocky-shore-8765",
+   "playback": "fh7ZhGajjSqobZBXEpOUfWsALSzlgLkg"
+  },
+  {
+   "name": "s12_awan_berputar",
+   "title": "Timelapse of clouds",
+   "base": "coverr-timelapse-of-clouds-8883",
+   "playback": "lpv4g1Ib02msh98UIGdUXVsyqmPdqIYu01"
+  },
+  {
+   "name": "s12_air_pasang",
+   "title": "A tide of foamy waves",
+   "base": "coverr-a-tide-of-foamy-waves-4378",
+   "playback": "TXfjxFeVOQMoEjGJETRIXZj9nQ2pzDsM"
+  },
+  {
+   "name": "s13_koran",
+   "title": "Local Dutch newspapers",
+   "base": "coverr-local-dutch-newspapers-8257",
+   "playback": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV"
+  },
+  {
+   "name": "s13_nelayan",
+   "title": "Fisherman in a small boat",
+   "base": "coverr-fisherman-in-a-small-boat-6916",
+   "playback": "xnS5zz01kdY5vdMkGxM4ejaw01bS5xZoMi"
+  },
+  {
+   "name": "s14_jalan_kosong",
+   "title": "Walking down the street",
+   "base": "coverr-walking-down-the-street-378",
+   "playback": "qOJ8lzPn9lDtm7DH1EcC8awEX00e3C9OF"
+  },
+  {
+   "name": "s14_sungai_jalan",
+   "title": "Stream next to the road",
+   "base": "coverr-stream-next-to-the-road-4482",
+   "playback": "yRSaHFgEF6bf9hwDcVm5Y9QELbxxlJDv"
+  },
+  {
+   "name": "s15_kota_gelap",
+   "title": "Gloomy city at night",
+   "base": "coverr-gloomy-city-at-night-6099",
+   "playback": "G5jJsqbVst9RYvpSbjF813lk3TCKhC8a"
+  },
+  {
+   "name": "s15_aquarium",
+   "title": "Fish tank",
+   "base": "coverr-fish-tank-5070",
+   "playback": "tLkdq2sVK7Y7k5oDDhZ6fmmG6PNM9mqq"
+  },
+  {
+   "name": "s15_awan_gelap2",
+   "title": "Timelapse of the clouds",
+   "base": "coverr-timelapse-of-the-clouds-8020",
+   "playback": "STGCDNDz2bG1wn01N22Z3JHauO931im1t"
+  },
+  {
+   "name": "s16_alam",
+   "title": "Surrounded by nature",
+   "base": "coverr-surrounded-by-nature-4306",
+   "playback": "yp1tLL01WcYCseQBh0001j4H2xBd00GV0070102"
+  },
+  {
+   "name": "s16_ladang_hijau",
+   "title": "A beautiful green field",
+   "base": "coverr-a-beautiful-green-field-6427",
+   "playback": "7oviKzqUHZpjPp7OL2ZeMmMsf024M8ABu"
+  }
+ ]
+}

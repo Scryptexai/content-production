@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - "assets/maps/SOURCES.json"
+      - "tools/fetch_map_assets.py"
       - ".github/workflows/fetch-map-assets.yml"
   workflow_dispatch:
 
