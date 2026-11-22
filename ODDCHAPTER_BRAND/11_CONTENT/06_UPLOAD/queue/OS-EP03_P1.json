@@ -2,11 +2,11 @@
   "episode": "OS-EP03_P1",
   "slug": "trompet-malaikat",
   "status": "requested",
-  "approved": false,
+  "approved": true,
   "file": "work/trompet-malaikat/out/OS-EP03_P1_trompet-malaikat_feed.mp4",
   "master_sha256": "cac5285f676af467a77ea2fd5cbedcc779d1beb9cf478cfd0d47aed00548b024",
   "drive_video_id": "1bPEa1p0NdVsItG8Db90x1WOpxuU0SVYY",
   "catatan": "Part1/2 OS-EP03 (potong 110,55 s + outro; 115,57 s <3 menit). Master penuh diganti 2 part. BELUM ADA IZIN TAYANG — approved:false sampai perintah user. Tayang satu per satu: set approved:true hanya di satu file per push.",
-  "izin": "",
-  "attempt": 1
+  "izin": "user: tayang P1 sekarang (2026-11-22)",
+  "attempt": 2
 }
