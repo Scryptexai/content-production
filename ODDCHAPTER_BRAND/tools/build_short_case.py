@@ -263,6 +263,14 @@ def clip_filter(key, dur, extra):
     dipakai lagi per-shot dengan extra={"window": True}."""
     fn, cs, cd = CLIPS[key]
     fade = f",fade=t=in:st=0:d=0.12,fade=t=out:st={max(0, dur - 0.12):.3f}:d=0.12"
+    if extra.get("raw"):
+        # render eksternal (mis. shot peta MAP-ZOOM) — tanpa grade CLIP_POST,
+        # tanpa fade (MapZoom sudah punya fade bawaan), cover-crop saja bila
+        # aspek beda; peta9:16 sudah pas → langsung fps+format.
+        return (
+            "[0:v]fps=30,scale=1080:1920:force_original_aspect_ratio=increase,"
+            "crop=1080:1920,setsar=1,format=yuv420p"
+        )
     if extra.get("window"):
         # gaya lama: jendela16:9/4:3 di atas latar blur
         fw, fh = extra.get("box", (1000, 750))
