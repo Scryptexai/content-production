@@ -51,19 +51,66 @@ def x2lon(x: float, z: int) -> float:
     return x / (1 << z) * 360.0 - 180.0
 
 
-def fetch_tile(url: str, tries: int = 4) -> bytes:
+# Rantai provider tile — probe sekali di awal, pakai SATU provider untuk
+# seluruh raster (gaya campuran = jahitan jelek). OSM.org pernah memblokir
+# IP cloud (resp103 B), jadi ada cadangan.
+PROVIDERS = [
+    {
+        "name": "openstreetmap.org",
+        "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "credit": "\u00a9 OpenStreetMap contributors",
+    },
+    {
+        "name": "carto-light",
+        "url": "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
+        "credit": "\u00a9 OpenStreetMap contributors \u00b7 \u00a9 CARTO",
+    },
+    {
+        "name": "openstreetmap.de",
+        "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
+        "credit": "\u00a9 OpenStreetMap contributors",
+    },
+]
+
+
+def _get(url: str) -> bytes:
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return r.read()
+
+
+def pick_provider(z: int, x: int, y: int) -> dict:
+    """Probe satu tile di tiap provider; kembalikan yang pertama sukses."""
+    errs = []
+    for prov in PROVIDERS:
+        url = prov["url"].format(z=z, x=x, y=y)
+        for attempt in range(2):
+            try:
+                data = _get(url)
+                if len(data) < 1000:
+                    body = data[:160].decode("utf-8", "replace").replace("\n", " ")
+                    raise RuntimeError(f"resp {len(data)} B: {body}")
+                print(f"  provider OK: {prov['name']} ({len(data)} B)", flush=True)
+                return prov
+            except Exception as e:  # noqa: BLE001
+                errs.append(f"{prov['name']}: {e}")
+                time.sleep(2)
+    raise RuntimeError("semua provider gagal -> " + " | ".join(errs))
+
+
+def fetch_tile(url_tpl: str, z: int, x: int, y: int, tries: int = 3) -> bytes:
     last: Exception | None = None
+    url = url_tpl.format(z=z, x=x, y=y)
     for attempt in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
-            with urllib.request.urlopen(req, timeout=60) as r:
-                data = r.read()
-            if len(data) < 200:
-                raise RuntimeError(f"tile terlalu kecil ({len(data)} B)")
+            data = _get(url)
+            if len(data) < 1000:
+                body = data[:160].decode("utf-8", "replace").replace("\n", " ")
+                raise RuntimeError(f"resp {len(data)} B: {body}")
             return data
         except Exception as e:  # noqa: BLE001
             last = e
-            wait = 3 * (attempt + 1)
+            wait = 4 * (attempt + 1)
             print(f"    tile gagal ({e}); tunggu {wait}s", flush=True)
             time.sleep(wait)
     assert last is not None
@@ -90,10 +137,10 @@ def render(entry: dict) -> None:
 
     canvas = Image.new("RGB", (w_tiles * TILE, h_tiles * TILE), (240, 240, 240))
     total = w_tiles * h_tiles
+    prov = pick_provider(z, x0, y0)
     for i, ty in enumerate(range(y0, y1)):
         for j, tx in enumerate(range(x0, x1)):
-            url = f"https://tile.openstreetmap.org/{z}/{tx}/{ty}.png"
-            data = fetch_tile(url)
+            data = fetch_tile(prov["url"], z, tx, ty)
             img = Image.open(BytesIO(data)).convert("RGB")
             canvas.paste(img, (j * TILE, i * TILE))
             n = i * w_tiles + j + 1
@@ -111,7 +158,8 @@ def render(entry: dict) -> None:
         "east": x2lon(x1, z),
         "zoom": z,
         "size": [canvas.width, canvas.height],
-        "credit": "© OpenStreetMap contributors",
+        "credit": prov["credit"],
+        "provider": prov["name"],
     }
     (OUT / (pathlib.Path(entry["file"]).stem + ".bounds.json")).write_text(
         json.dumps(bounds, indent=1) + "\n", encoding="utf-8"
