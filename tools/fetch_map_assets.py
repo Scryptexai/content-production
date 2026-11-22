@@ -1,22 +1,24 @@
 #!/usr/bin/env python3
-"""fetch_map_assets.py — rakit peta asli dari tile OpenStreetMap → assets/maps/.
+"""fetch_map_assets.py — rakit peta asli dari tile provider → assets/maps/.
 
 Dijalankan DI RUNNER (Actions): sandbox tidak punya akses keluar selain
-registry paket; Wikimedia juga memblokir IP cloud (HTTP 429), jadi sumbernya
-tile.openstreetmap.org (lisensi ODbL, kredit © OpenStreetMap contributors).
+registry paket; tile server OSM pernah memblokir IP cloud di tengah burst
+(responses challenge ~103 B), jadi tiap tile punya rantai cadangan:
+  openstreetmap.org → openstreetmap.de → cyclosm → esri street map.
+Provider pertama yang sukses jadi "gaya utama" aset (diurutkan dulu untuk
+tile berikutnya) supaya kanvas sebisa mungkin satu gaya; kredit di bounds.json
+dipakai job MapZoom supaya sumber = yang benar-benar dipakai.
 
 Untuk tiap aset di assets/maps/SOURCES.json (bbox + zoom):
   1. hitung rentang tile yang menutup bbox (matematika Web Mercator)
-  2. unduh tile (jeda sopan + backoff)
-  3. rakit jadi PNG dengan Pillow
+  2. unduh tile (jeda sopan + backoff, fallback antar provider per tile)
+  3. rakit jadi PNG dengan Pillow + validasi variance (tolak placeholder)
   4. tulis <nama>.bounds.json — north/south/west/east hasil hitung presisi
-     (dipakai job JSON MAP-ZOOM supaya lat/lon peta = lat/lon narasi)
 
 Idempoten: PNG ≥ 10 KB dianggap selesai.
 
     python3 tools/fetch_map_assets.py
 """
-import hashlib
 import json
 import math
 import os
@@ -51,24 +53,31 @@ def x2lon(x: float, z: int) -> float:
     return x / (1 << z) * 360.0 - 180.0
 
 
-# Rantai provider tile — probe sekali di awal, pakai SATU provider untuk
-# seluruh raster (gaya campuran = jahitan jelek). OSM.org pernah memblokir
-# IP cloud (resp103 B), jadi ada cadangan.
+# Rantai provider tile — probe sekali di awal; gagal di tengah burst (103 B)
+# → fallback per tile ke provider berikutnya, provider sukses didahulukan.
 PROVIDERS = [
     {
         "name": "openstreetmap.org",
         "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-        "credit": "\u00a9 OpenStreetMap contributors",
+        "credit": "© OpenStreetMap contributors",
     },
     {
         "name": "openstreetmap.de",
         "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
-        "credit": "\u00a9 OpenStreetMap contributors",
+        "credit": "© OpenStreetMap contributors",
     },
     {
         "name": "cyclosm",
         "url": "https://tile.cyclosm.org/{z}/{x}/{y}.png",
-        "credit": "\u00a9 OpenStreetMap contributors \u00b7 CyclOSM",
+        "credit": "© OpenStreetMap contributors · CyclOSM",
+    },
+    {
+        # darurat terakhir — gaya berbeda, dipakai hanya bila OSM-family
+        # mati semua supaya aset tetap terbentuk (kredit ikut diganti)
+        "name": "esri-street",
+        "url": "https://server.arcgisonline.com/ArcGIS/rest/services/"
+               "World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+        "credit": "© Esri · HERE · Garmin · OpenStreetMap contributors",
     },
 ]
 
@@ -79,40 +88,44 @@ def _get(url: str) -> bytes:
         return r.read()
 
 
-def pick_provider(z: int, x: int, y: int) -> dict:
-    """Probe satu tile di tiap provider; kembalikan yang pertama sukses."""
+def _check(data: bytes, where: str) -> bytes:
+    if len(data) < 1000:
+        body = data[:160].decode("utf-8", "replace").replace("\n", " ")
+        raise RuntimeError(f"{where}: resp {len(data)} B: {body}")
+    return data
+
+
+def pick_provider(z: int, x: int, y: int) -> int:
+    """Probe satu tile di tiap provider; kembalikan index yang pertama sukses."""
     errs = []
-    for prov in PROVIDERS:
+    for idx, prov in enumerate(PROVIDERS):
         url = prov["url"].format(z=z, x=x, y=y)
         for attempt in range(2):
             try:
-                data = _get(url)
-                if len(data) < 1000:
-                    body = data[:160].decode("utf-8", "replace").replace("\n", " ")
-                    raise RuntimeError(f"resp {len(data)} B: {body}")
+                data = _check(_get(url), prov["name"])
                 print(f"  provider OK: {prov['name']} ({len(data)} B)", flush=True)
-                return prov
+                return idx
             except Exception as e:  # noqa: BLE001
                 errs.append(f"{prov['name']}: {e}")
                 time.sleep(2)
     raise RuntimeError("semua provider gagal -> " + " | ".join(errs))
 
 
-def fetch_tile(url_tpl: str, z: int, x: int, y: int, tries: int = 3) -> bytes:
+def fetch_tile(order: list[int], z: int, x: int, y: int) -> tuple[bytes, int]:
+    """Unduh satu tile; coba provider sesuai `order` sampai sukses → (data, idx)."""
     last: Exception | None = None
-    url = url_tpl.format(z=z, x=x, y=y)
-    for attempt in range(tries):
-        try:
-            data = _get(url)
-            if len(data) < 1000:
-                body = data[:160].decode("utf-8", "replace").replace("\n", " ")
-                raise RuntimeError(f"resp {len(data)} B: {body}")
-            return data
-        except Exception as e:  # noqa: BLE001
-            last = e
-            wait = 4 * (attempt + 1)
-            print(f"    tile gagal ({e}); tunggu {wait}s", flush=True)
-            time.sleep(wait)
+    for pos, idx in enumerate(order):
+        prov = PROVIDERS[idx]
+        url = prov["url"].format(z=z, x=x, y=y)
+        tries = 2 if pos == 0 else 1
+        for attempt in range(tries):
+            try:
+                data = _check(_get(url), prov["name"])
+                return data, idx
+            except Exception as e:  # noqa: BLE001
+                last = e
+                print(f"    {prov['name']} gagal: {e}", flush=True)
+                time.sleep(4 * (attempt + 1))
     assert last is not None
     raise last
 
@@ -137,18 +150,26 @@ def render(entry: dict) -> None:
 
     canvas = Image.new("RGB", (w_tiles * TILE, h_tiles * TILE), (240, 240, 240))
     total = w_tiles * h_tiles
-    prov = pick_provider(z, x0, y0)
+    style_idx = pick_provider(z, x0, y0)  # gaya utama aset
+    order = [style_idx] + [i for i in range(len(PROVIDERS)) if i != style_idx]
+    used_style = style_idx
     for i, ty in enumerate(range(y0, y1)):
         for j, tx in enumerate(range(x0, x1)):
-            data = fetch_tile(prov["url"], z, tx, ty)
+            data, used = fetch_tile(order, z, tx, ty)
+            if used != used_style and used == order[0]:
+                # provider berganti (mis. blokir menengah) → jadikan gaya utama
+                used_style = used
+                print(f"  gaya pindah ke {PROVIDERS[used]['name']}", flush=True)
+            # sticky: provider terakhir yang dipakai didahulukan berikutnya
+            order = [used] + [i for i in order if i != used]
             img = Image.open(BytesIO(data)).convert("RGB")
             canvas.paste(img, (j * TILE, i * TILE))
             n = i * w_tiles + j + 1
             if n % 5 == 0 or n == total:
-                print(f"  tile {n}/{total}", flush=True)
-            time.sleep(0.7)
+                print(f"  tile {n}/{total} (via {PROVIDERS[used]['name']})", flush=True)
+            time.sleep(1.0)
 
-    # validasi: tile placeholder (mis. "API KEY REQUIRED") hampir seragam — tolak
+    # validasi: tile placeholder hampir seragam — tolak
     import statistics
     sample = canvas.resize((64, 64)).convert("L")
     stdev = statistics.pstdev(sample.getdata())
@@ -161,6 +182,7 @@ def render(entry: dict) -> None:
     dst = OUT / entry["file"]
     dst.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(dst, "PNG", optimize=True)
+    prov = PROVIDERS[used_style]
     bounds = {
         "north": y2lat(y0, z),
         "south": y2lat(y1, z),
@@ -174,7 +196,8 @@ def render(entry: dict) -> None:
     (OUT / (pathlib.Path(entry["file"]).stem + ".bounds.json")).write_text(
         json.dumps(bounds, indent=1) + "\n", encoding="utf-8"
     )
-    print(f"  ok {entry['file']} {canvas.width}x{canvas.height} {dst.stat().st_size} B")
+    print(f"  ok {entry['file']} {canvas.width}x{canvas.height} {dst.stat().st_size} B "
+          f"(provider {prov['name']})")
 
 
 def main():
@@ -199,7 +222,7 @@ def main():
         if summary_path:
             try:
                 with open(summary_path, "a", encoding="utf-8") as fh:
-                    fh.write("## Gagal merakit peta OSM\n\n")
+                    fh.write("## Gagal merakit peta\n\n")
                     for t in details:
                         fh.write(f"- `{t}`\n")
             except Exception:
