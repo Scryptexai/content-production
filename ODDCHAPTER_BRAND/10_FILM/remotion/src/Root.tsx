@@ -12,6 +12,7 @@ import timingJson from "./timing.generated.json";
 import longformJson from "./longform.generated.json";
 import { BRAND_BEZIER, C, FPS, H, T, W } from "./theme";
 import { Monogram, Wordmark } from "./components/Marks";
+import { ShortOutro, OUTRO_FRAMES } from "./scenes/ShortOutro";
 
 const ease = Easing.bezier(...BRAND_BEZIER);
 
@@ -146,6 +147,14 @@ export const RemotionRoot: React.FC = () => (
       fps={FPS}
       width={(longformJson as any).width ?? 1920}
       height={(longformJson as any).height ?? 1080}
+    />
+    <Composition
+      id="SHORT-OUTRO-9X16"
+      component={ShortOutro}
+      durationInFrames={OUTRO_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
     />
     <Composition id="PLATE-GALLERY" component={PlateGallery} durationInFrames={KINDS.length} fps={FPS} width={W} height={H} />
     <Composition id="TEST-FRAME" component={TestFrame} durationInFrames={1} fps={FPS} width={W} height={H} />

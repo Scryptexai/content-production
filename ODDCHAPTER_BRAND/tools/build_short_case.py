@@ -11,6 +11,11 @@ from pathlib import Path
 FF = os.environ.get("FFMPEG") or __import__("imageio_ffmpeg").get_ffmpeg_exe()
 
 ROOT = Path(__file__).resolve().parents[2]
+# Kartu akhir animasi (logo OC + wordmark + garis oranye + tagline) — dirender
+# Remotion: node scripts/render-outro.mjs di 10_FILM/remotion/ -> output/short_outro_9x16.mp4
+# (1080x1920,30 fps,5,00 s, tanpa audio). Dipakai dengan mode shot "outro".
+OUTRO = ROOT / "ODDCHAPTER_BRAND" / "10_FILM" / "remotion" / "output" / "short_outro_9x16.mp4"
+OUTRO_DUR = 5.00
 SLUG = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("-") else "sengkon"
 CASE = ROOT / "work" / SLUG
 IMG = CASE / "img"
@@ -311,6 +316,28 @@ def render_shots(force=False):
                  "-filter_complex", filt, "-frames:v", str(n), "-r", str(FPS),
                  "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-pix_fmt", "yuv420p",
                  "-an", str(outp)])
+        elif mode == "outro":
+            # Lockup merek Remotion — TANPA grade (warna brand harus persis).
+            if dur > OUTRO_DUR + 0.05:
+                raise SystemExit(
+                    f"shot outro durasi {dur:.2f}s > {OUTRO_DUR:.2f}s — "
+                    f"pakai (END - {OUTRO_DUR:.2f}) sebagai awal segmen terakhir"
+                )
+            if not OUTRO.exists():
+                print(f"  ! {OUTRO} tidak ada — fallback hitam "
+                      f"(render dulu: node10_FILM/remotion/scripts/render-outro.mjs)",
+                      flush=True)
+                run([FF, "-y", "-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}",
+                     "-filter_complex", "fade=t=in:st=0:d=0.14",
+                     "-frames:v", str(n), "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast",
+                     "-crf", "16", "-pix_fmt", "yuv420p", "-an", str(outp)])
+            else:
+                run([FF, "-y", "-t", f"{dur:.3f}", "-i", str(OUTRO),
+                     "-filter_complex",
+                     f"fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,"
+                     f"crop={W}:{H},setsar=1,fade=t=in:st=0:d=0.14,format=yuv420p",
+                     "-frames:v", str(n), "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast",
+                     "-crf", "16", "-pix_fmt", "yuv420p", "-an", str(outp)])
         elif mode == "black":
             run([FF, "-y", "-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}",
                  "-filter_complex", POST.lstrip(",") + f",fade=t=in:st=0:d=0.14",

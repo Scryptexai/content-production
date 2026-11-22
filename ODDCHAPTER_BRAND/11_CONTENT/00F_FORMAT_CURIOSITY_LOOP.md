@@ -129,6 +129,15 @@ Aturan turunan:
    9:16**. Berlaku untuk semua episode berikutnya. Gaya lama (jendela + blur)
    masih bisa dipakai per-shot dengan `extra={"window": True}` di `case_cfg.py`
    (implementasi: `clip_filter()` di `tools/build_short_case.py`).
+6. **Kartu akhir = animasi logo Remotion** (22 Nov 2026, permintaan pemilik:
+   "di akhir video gunakan logo dan wordmark ini sebagai watermark design dengan
+   remotion"): segmen terakhir video memakai klip `mode: "outro"` — lockup OC +
+   wordmark + garis oranye + tagline yang dianimasikan (monogram → wordmark →
+   rule → tagline → fade hitam). Sumber: `10_FILM/remotion/output/short_outro_9x16.mp4`
+   (5,00 s; render: `node scripts/render-outro.mjs`; komposisi `SHORT-OUTRO-9X16`).
+   Cara pakai di `case_cfg.py`: SHOTS terakhir = `(END - 5.00, END, None, "outro", 1, 1, {})`,
+   OVL untuk segmen itu **hanya baris kredit kecil** (Big/Kicker "ODDCHAPTER" tidak
+   perlu lagi — sudah ada di klip). Tanpa grade agar warna brand persis.
 
 ## 7. Episode uji: AK-EP05 — Andes 1972
 
