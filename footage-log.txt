@@ -1,32 +1,34 @@
-  ok: s1_pasar_ikan_india (2254 KB)
-  ok: s1_jalan_hujan (3945 KB)
-  ok: s2_jalan_atap (3020 KB)
-  ok: s2_awan_timelapse (2869 KB)
-  ok: s3_genangan_hujan (2795 KB)
-  ok: s4_jalan_berawan (3394 KB)
-  ok: s5_awan_gelap (2282 KB)
-  ok: s5_ikan_dijual (2125 KB)
-  ok: s6_permukiman (2462 KB)
-  ok: s7_sungai (7286 KB)
-  ok: s7_kolam_ikan (3355 KB)
-  ok: s7_jalan_ladang (3726 KB)
-  ok: s8_jalan_hujan_warga (1744 KB)
-  ok: s9_pasar_ikan2 (3019 KB)
-  ok: s9_ikan_merah (4023 KB)
-  ok: s10_danau (2018 KB)
-  ok: s10_desa_pesisir (3572 KB)
-  ok: s11_tornado (2220 KB)
-  ok: s11_gelombang_laut (7524 KB)
-  ok: s12_ombak_batu (3687 KB)
-  ok: s12_awan_berputar (3589 KB)
-  ok: s12_air_pasang (3186 KB)
-  ok: s13_koran (3386 KB)
-  ok: s13_nelayan (5576 KB)
-  ok: s14_jalan_kosong (2376 KB)
-  ok: s14_sungai_jalan (3648 KB)
-  ok: s15_kota_gelap (2374 KB)
-  ok: s15_aquarium (2409 KB)
-  ok: s15_awan_gelap2 (2368 KB)
-  ok: s16_alam (1331 KB)
-  ok: s16_ladang_hijau (3720 KB)
-{"ok": 31, "failed": 0}
+  ada: s1_pasar_ikan_india
+  ada: s1_jalan_hujan
+  ada: s2_jalan_atap
+  ada: s2_awan_timelapse
+  ada: s3_genangan_hujan
+  ada: s4_jalan_berawan
+  ada: s5_awan_gelap
+  ada: s5_ikan_dijual
+  ada: s6_permukiman
+  ada: s7_sungai
+  ada: s7_kolam_ikan
+  ada: s7_jalan_ladang
+  ada: s8_jalan_hujan_warga
+  ada: s9_pasar_ikan2
+  ada: s9_ikan_merah
+  ada: s10_danau
+  ada: s10_desa_pesisir
+  ada: s11_tornado
+  ada: s11_gelombang_laut
+  ada: s12_ombak_batu
+  ada: s12_awan_berputar
+  ada: s12_air_pasang
+  ada: s13_koran
+  ada: s13_nelayan
+  ada: s14_jalan_kosong
+  ada: s14_sungai_jalan
+  ada: s15_kota_gelap
+  ada: s15_aquarium
+  ada: s15_awan_gelap2
+  ada: s16_alam
+  ada: s16_ladang_hijau
+  ok: s3_hujan_kaca (2459 KB)
+  ok: s8_hujan_kota (2282 KB)
+{"ok": 33, "failed": 0}
