@@ -1,0 +1,1628 @@
+{
+ "sky": {
+  "hits": [
+   {
+    "title": "Cloudy sky",
+    "base": "coverr-cloudy-sky-2765",
+    "dur": 18.0,
+    "playback": "cgEXo02oZWglwx1bzWK3qMd0091G029YI00k"
+   },
+   {
+    "title": "A spectacular view of the endless horizon",
+    "base": "coverr-a-spectacular-view-of-the-endless-horizon-4469",
+    "dur": 16.1,
+    "playback": "Yn2jXSeZZ3rfedFzKdIhdDjPOIqTSf51"
+   },
+   {
+    "title": "Marina Bay",
+    "base": "coverr-marina-bay-308",
+    "dur": 11.8,
+    "playback": "zhB6FwjvUMLn01XR02EbFDH1inYm3zDe02c"
+   },
+   {
+    "title": "Grass in the wind ",
+    "base": "coverr-grass-in-the-wind-4936",
+    "dur": 12.0,
+    "playback": "aq7gNDr7MO7ccqD7Wi37f4czpePKVG4n"
+   },
+   {
+    "title": "View of clouds from an airplane",
+    "base": "coverr-view-of-clouds-from-an-airplane-6487",
+    "dur": 14.5,
+    "playback": "qOziBvcrayWu5oG02kuINw16J2MBewQGZ"
+   },
+   {
+    "title": "Skyscrapers in New York",
+    "base": "coverr-skyscrapers-in-new-york-2093",
+    "dur": 12.4,
+    "playback": "WhtlJFaD02pKsBpSwFuZKVyjOKVMOUIZl"
+   },
+   {
+    "title": "A lake in Panama City",
+    "base": "coverr-a-lake-in-panama-city-4651",
+    "dur": 10.3,
+    "playback": "CzZPn021JP1ncfQ029AmBxaqcwhwtr6n36"
+   },
+   {
+    "title": "A bird sitting on a streetlight",
+    "base": "coverr-a-bird-sitting-on-a-streetlight-8677",
+    "dur": 13.8,
+    "playback": "NQayC02nQWpUzgdpTz17nzFI46Fvhkmys"
+   },
+   {
+    "title": "Tree branch in the desert",
+    "base": "coverr-tree-branch-in-the-desert-3507",
+    "dur": 9.2,
+    "playback": "BZPSFrBO9x8auH024BdZBbvnWHdJo00ICN"
+   },
+   {
+    "title": "Trees blowing in the wind",
+    "base": "coverr-trees-blowing-in-the-wind-1487",
+    "dur": 19.1,
+    "playback": "9Pr1vLykRg501N4gYcFK2Rofbe02v1VGBe"
+   },
+   {
+    "title": "Family going back home",
+    "base": "coverr-family-going-back-home-1629",
+    "dur": 14.9,
+    "playback": "YCwP34nFHXWMCUYj00dGaVvl9rZ3UsjkE"
+   },
+   {
+    "title": "A lighthouse",
+    "base": "coverr-a-lighthouse-7309",
+    "dur": 14.3,
+    "playback": "sfkNglnQYRHKCeTzEZQO4g202V6gEIWwW"
+   }
+  ]
+ },
+ "dark clouds": {
+  "hits": [
+   {
+    "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+    "base": "user-ai-generation-B84ybsW2lE2E",
+    "dur": 10.0,
+    "playback": null
+   },
+   {
+    "title": "Timelapse from day to night",
+    "base": "coverr-timelapse-from-day-to-night-7560",
+    "dur": 13.8,
+    "playback": "qSlN3Q01z1L00Aww00ho2yKtZoKh5TPAQn01"
+   },
+   {
+    "title": "Storm in Vilnius, Lithuania",
+    "base": "coverr-storm-in-vilnius-lithuania-5273",
+    "dur": 20.0,
+    "playback": "LS5Xg02NXZo5gsJumnYr5APde4ficZy800"
+   },
+   {
+    "title": "Woods covered by fog",
+    "base": "coverr-woods-covered-by-fog-8066",
+    "dur": 15.3,
+    "playback": "ACiy88h95spDjx53YiYaaECzee9iFR53"
+   },
+   {
+    "title": "A guy putting socks on his feet",
+    "base": "coverr-a-guy-putting-socks-on-his-feet-1810",
+    "dur": 16.5,
+    "playback": "bb72ubsq1c4AP12TF1JytrCj7mkKrRZt"
+   },
+   {
+    "title": "Man standing at a platform edge",
+    "base": "coverr-man-standing-at-a-platform-edge-1567",
+    "dur": 12.0,
+    "playback": "uUrWw01x472IGNgxnxaSVMZJ00DZiGW00qF"
+   },
+   {
+    "title": "Forest covered by a thick fog",
+    "base": "coverr-forest-covered-by-a-thick-fog-3180",
+    "dur": 12.9,
+    "playback": "aS2hSgq5zanVxnazhC3mkLPMIoyYee4M"
+   },
+   {
+    "title": "A man emptying the sand from his shoes so he can put them on",
+    "base": "coverr-a-man-emptying-the-sand-from-his-shoes-so-he-can-put-them-on-1206",
+    "dur": 23.6,
+    "playback": "mmpRcMlCgVPsGJgideQ6X1ttPASzbyQS"
+   },
+   {
+    "title": "Friends meeting at the beach",
+    "base": "coverr-friends-meeting-at-the-beach-3106",
+    "dur": 17.2,
+    "playback": "rOxqBG600Qdo92qlBgF2mYePbDDiz9j00f"
+   },
+   {
+    "title": "Friends happily hugging each other on the beach",
+    "base": "coverr-friends-happily-hugging-each-other-on-the-beach-8000",
+    "dur": 17.1,
+    "playback": "4etIhGGw00D8xJY4WWmyCX01knbe6J0200sy"
+   },
+   {
+    "title": "Friends walking on the beach",
+    "base": "coverr-friends-walking-on-the-beach-9140",
+    "dur": 11.8,
+    "playback": "p01Q9fjhiALrhfnTaUt9lQvMRE01knux3y"
+   },
+   {
+    "title": "Friends giving each other a high-five on the beach",
+    "base": "coverr-friends-giving-each-other-a-high-five-on-the-beach-3936",
+    "dur": 18.7,
+    "playback": "02bm2cWXYM00GRgLdRVh24QxCiXF4zWy63"
+   }
+  ]
+ },
+ "storm clouds": {
+  "hits": [
+   {
+    "title": "Stormy Sea Waves Crashing on Pier",
+    "base": "coverr-stormy-sea-waves-crashing-on-pier",
+    "dur": 14.8,
+    "playback": null
+   },
+   {
+    "title": "Storm in Vilnius, Lithuania",
+    "base": "coverr-storm-in-vilnius-lithuania-5273",
+    "dur": 20.0,
+    "playback": "LS5Xg02NXZo5gsJumnYr5APde4ficZy800"
+   },
+   {
+    "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+    "base": "user-ai-generation-B84ybsW2lE2E",
+    "dur": 10.0,
+    "playback": null
+   },
+   {
+    "title": "Girl sitting on her boyfriend's shoulders",
+    "base": "coverr-girl-sitting-on-her-boyfriend-s-shoulders-372",
+    "dur": 13.9,
+    "playback": "9e3Sg9RdAkYEXjHDwtEA9GIJ9axOyFv9"
+   },
+   {
+    "title": "A Focused Man on a Stormy Day",
+    "base": "coverr-a-focused-man-on-a-stormy-day",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Couple smiling and running",
+    "base": "coverr-couple-smiling-and-running-6812",
+    "dur": 12.1,
+    "playback": "IKs02401HPQuxwzfNi2W3GC7y4uGmxTL71"
+   },
+   {
+    "title": "Couple kissing in a meadow ",
+    "base": "coverr-couple-kissing-in-a-meadow-1054",
+    "dur": 10.3,
+    "playback": "6wuKUsYjA2RAWvovSmiJeN5XoLglSbyo"
+   },
+   {
+    "title": "Couple running and holding hands",
+    "base": "coverr-couple-running-and-holding-hands-1164",
+    "dur": 14.6,
+    "playback": "LbyulTKYxOmXV14EN02DJ02UDqLqu02BcW01"
+   },
+   {
+    "title": "Couple running through a meadow",
+    "base": "coverr-couple-running-through-a-meadow-4471",
+    "dur": 12.5,
+    "playback": "pM3dPpixtEKV4tpwIuJx6JMkdh3hZqGF"
+   },
+   {
+    "title": "Guy carrying a girl on his shoulders",
+    "base": "coverr-guy-carrying-a-girl-on-his-shoulders-2668",
+    "dur": 17.3,
+    "playback": "T3ZfdoYa71EMCSisl9OupYwRiQFIPvB8"
+   },
+   {
+    "title": "Couple walking through the meadow",
+    "base": "coverr-couple-walking-through-the-meadow-761",
+    "dur": 19.7,
+    "playback": "TB02u7Xb3kLps5azoaboXX00oqllgKBG5s"
+   }
+  ]
+ },
+ "thunderstorm": {
+  "hits": []
+ },
+ "lightning": {
+  "hits": [
+   {
+    "title": "Behind the scenes of an interview",
+    "base": "coverr-behind-the-scenes-of-an-interview-3806",
+    "dur": 11.2,
+    "playback": "h6NDwTfIWSxVXoOwCN600OlvREf00bDGM7"
+   },
+   {
+    "title": "Lighting a candle ",
+    "base": "coverr-lighting-a-candle-4842",
+    "dur": 29.7,
+    "playback": "fO81IhY65UsVja4R88r3SflcpClW12oc"
+   },
+   {
+    "title": "Neon Glow Night Drive",
+    "base": "coverr-temp-my-movie-1-mov-7779",
+    "dur": 11.1,
+    "playback": null
+   },
+   {
+    "title": "Lighting up a match",
+    "base": "coverr-lighting-up-a-match-8674",
+    "dur": 18.0,
+    "playback": "Sr027N3ccj7PEjskGf9dmJpPHg0101aoYlu"
+   },
+   {
+    "title": "Mystery Figure in Dimly Lit Space",
+    "base": "user-ai-generation-0SMDt0kaqM5v",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Mysterious Nun with Tattoos in Smoky Bar",
+    "base": "user-ai-generation-dr4jciQBM79H",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Exploring Emotions Through Hand Movements",
+    "base": "user-ai-generation-210AEJbveENF",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Sleek Matte Black Earbud Charging Case on Concrete",
+    "base": "user-ai-generation-ytweOGcu70fX",
+    "dur": 15.0,
+    "playback": null
+   },
+   {
+    "title": "Woman Turning on Wi-Fi Router and Placing It in Cupboard",
+    "base": "coverr-woman-searching-cupboard-with-flashlight",
+    "dur": 12.3,
+    "playback": null
+   },
+   {
+    "title": "Young Woman Walking Through Office Corridor to Work",
+    "base": "coverr-walking-to-work-office-corridor-stroll",
+    "dur": 11.8,
+    "playback": null
+   }
+  ]
+ },
+ "clouds timelapse": {
+  "hits": [
+   {
+    "title": "Timelapse of the clouds ",
+    "base": "coverr-timelapse-of-the-clouds-8020",
+    "dur": 16.4,
+    "playback": "STGCDNDz2bG1wn01N22Z3JHauO931im1t"
+   },
+   {
+    "title": "Timelapse of clouds",
+    "base": "coverr-timelapse-of-clouds-8883",
+    "dur": 14.8,
+    "playback": "lpv4g1Ib02msh98UIGdUXVsyqmPdqIYu01"
+   },
+   {
+    "title": "Cloudy sky",
+    "base": "coverr-cloudy-sky-2765",
+    "dur": 18.0,
+    "playback": "cgEXo02oZWglwx1bzWK3qMd0091G029YI00k"
+   },
+   {
+    "title": "Cloud timelapse",
+    "base": "coverr-cloud-timelapse-8383",
+    "dur": 16.6,
+    "playback": "pWj5n1UJwSbfYXxZLNNK8pNFU29D02X2b"
+   },
+   {
+    "title": "Clouds above a road",
+    "base": "coverr-clouds-above-a-road-8760",
+    "dur": 15.1,
+    "playback": "H53IWD718gjDxzvkjUy9101UcrdbPwsU00"
+   },
+   {
+    "title": "Watch timelapse",
+    "base": "coverr-watch-timelapse-3561",
+    "dur": 28.7,
+    "playback": "Th016ucHQ8ijQH4NOR3dto02K6g00iEgWdk"
+   },
+   {
+    "title": "Washington DC timelapse",
+    "base": "coverr-washington-dc-timelapse-7632",
+    "dur": 11.5,
+    "playback": "wlD7eoyqaQbffEgs020182tjeqHg00zPt2w"
+   },
+   {
+    "title": "Timelapse from day to night",
+    "base": "coverr-timelapse-from-day-to-night-7560",
+    "dur": 13.8,
+    "playback": "qSlN3Q01z1L00Aww00ho2yKtZoKh5TPAQn01"
+   },
+   {
+    "title": "Timelapse of a day at the park",
+    "base": "coverr-timelapse-of-a-day-at-the-park-5979",
+    "dur": 12.8,
+    "playback": "hGf3Qdv0000vXeegVhB8BDvWkA66ODLWZw"
+   },
+   {
+    "title": "The moon during the day ",
+    "base": "coverr-the-moon-during-the-day-5565",
+    "dur": 10.0,
+    "playback": "3NZEeEb3VdqSqzC8iWN00008xHSVxSxoxw"
+   }
+  ]
+ },
+ "new york": {
+  "hits": [
+   {
+    "title": "Traffic in downtown NYC",
+    "base": "coverr-traffic-in-downtown-nyc-7224",
+    "dur": 12.3,
+    "playback": "8YuLPWPlKiv02QBB8tvStSETJJQGWIF85"
+   },
+   {
+    "title": "Times Square timelapse",
+    "base": "coverr-times-square-timelapse-8064",
+    "dur": 10.2,
+    "playback": "EbXMSq4VhklAYZ01I4MymKUkxrfBxktPZ"
+   },
+   {
+    "title": "New York City at night",
+    "base": "coverr-new-york-city-at-night-6481",
+    "dur": 14.6,
+    "playback": "7N3IoxrnQYJqsygOvQvUUIqNBZ02BS2I00"
+   },
+   {
+    "title": "Woman walking in New York ",
+    "base": "coverr-woman-walking-in-new-york-2250",
+    "dur": 20.9,
+    "playback": "aFtlweBD2Dpm02BR3LFyBFs65BjDFWGSy"
+   },
+   {
+    "title": "Timelapse of Grand Central Station",
+    "base": "coverr-timelapse-of-grand-central-station-7681",
+    "dur": 10.4,
+    "playback": "xt00yJkbVXrwB01A4Uj1100AcIBtOyV6VPS"
+   },
+   {
+    "title": "Times Square billboards ",
+    "base": "coverr-times-square-billboards-8783",
+    "dur": 11.3,
+    "playback": "CRku69NwCpGWoH00x00nE02LvkBDXdxE3SQ"
+   },
+   {
+    "title": "Scrolling through coronavirus news ",
+    "base": "coverr-scrolling-through-coronavirus-news-6170",
+    "dur": 24.9,
+    "playback": "7mdOMPoKtaZ2I3lc1iXCyJjOg01AXYOyr"
+   },
+   {
+    "title": "Skyscrapers in New York",
+    "base": "coverr-skyscrapers-in-new-york-2093",
+    "dur": 12.4,
+    "playback": "WhtlJFaD02pKsBpSwFuZKVyjOKVMOUIZl"
+   },
+   {
+    "title": "New York City traffic",
+    "base": "coverr-new-york-city-traffic-9472",
+    "dur": 10.0,
+    "playback": "XftTkp01t5Qu7EJRawXf02EnCJHDrEFRin"
+   },
+   {
+    "title": "Timelapse Vessel New York City",
+    "base": "coverr-timelapse-vessel-new-york-city-2963",
+    "dur": 9.3,
+    "playback": "d39dShxK9Eew6arFYaLTsGMPKB5aAyQF"
+   }
+  ]
+ },
+ "city skyline": {
+  "hits": [
+   {
+    "title": "Elegant Nightscape: A Woman on a Balcony",
+    "base": "user-ai-generation-ljTS1usGLCWg",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Urban Oasis: Magnificent Skyline Beyond the Trees",
+    "base": "coverr-urban-oasis-skyline-beyond-the-trees",
+    "dur": 12.3,
+    "playback": null
+   },
+   {
+    "title": "Panoramic Urban Oasis: Cityscape Beyond Lush Trees",
+    "base": "coverr-urban-oasis-city-beyond-the-trees",
+    "dur": 16.4,
+    "playback": null
+   },
+   {
+    "title": "New York City skyline ",
+    "base": "coverr-new-york-city-skyline-2410",
+    "dur": 15.4,
+    "playback": "tkR3TXlbBlK02dDQR3Zu8yYC3lFL1tsLS"
+   },
+   {
+    "title": "New York City skyline",
+    "base": "coverr-new-york-city-skyline-4563",
+    "dur": 13.6,
+    "playback": "eyihkTLY8gaHBQxRvwYLAoob6DMgc3bb"
+   },
+   {
+    "title": "Yacht sailing on the River Thames in London",
+    "base": "coverr-yacht-sailing-on-the-river-thames-in-london-2708",
+    "dur": 24.1,
+    "playback": "UssOCAWnlYwlpjYYQ01Ue01uSCXei00tgHr"
+   },
+   {
+    "title": "Pride flags ",
+    "base": "coverr-pride-flags-2721",
+    "dur": 15.4,
+    "playback": "00ApelxFzrH34aYADxKn62lpA62KBktXM"
+   },
+   {
+    "title": "A city view through a window",
+    "base": "coverr-a-city-view-through-a-window-1190",
+    "dur": 6.8,
+    "playback": "dgHAu01swh8TpNuEhHde6SMgSJV02yJM5C"
+   },
+   {
+    "title": "Evening city landscape",
+    "base": "coverr-evening-city-landscape-4349",
+    "dur": 12.4,
+    "playback": "koWplit4zKrayxONa5LvFHEszFOKD3Fp"
+   },
+   {
+    "title": "CN Tower ",
+    "base": "coverr-cn-tower-3708",
+    "dur": 10.6,
+    "playback": "2UF3mTty2vsAXbIPxLH5vZ1cIQyYyCza"
+   }
+  ]
+ },
+ "coastal town": {
+  "hits": [
+   {
+    "title": "Coastal town in the evening",
+    "base": "coverr-coastal-town-in-the-evening-1169",
+    "dur": 10.3,
+    "playback": "00mQLv4RjI69siHY8ZjkZ7p01IojDww5bJ"
+   },
+   {
+    "title": "A town by the coast ",
+    "base": "coverr-a-town-by-the-coast-1825",
+    "dur": 25.1,
+    "playback": "YDkQHy005ZWOJLOQCOuaPVhYSeeFoXydR"
+   },
+   {
+    "title": "Yachts docked at the harbor",
+    "base": "coverr-yachts-docked-at-the-harbor-369",
+    "dur": 10.7,
+    "playback": "PrnH1qcw021caf901JpKfOZNVNDONHmzLf"
+   },
+   {
+    "title": "Yachts at the marina",
+    "base": "coverr-yachts-at-the-marina-9554",
+    "dur": 13.1,
+    "playback": "7ddCE2wYbyqCcL8B01bAjbs6AUZSH7WJY"
+   },
+   {
+    "title": "View of the harbor",
+    "base": "coverr-view-of-the-harbor-8599",
+    "dur": 12.6,
+    "playback": "0100xseXLh7j1H00vCOnIEDhT7dSardiGcw"
+   },
+   {
+    "title": "Yachts and a Ferris wheel",
+    "base": "coverr-yachts-and-a-ferris-wheel-4977",
+    "dur": 11.3,
+    "playback": "t9m4wd02grUvBV4OPwkp8mbsaGMh00g6yg"
+   },
+   {
+    "title": "Marina De Lagos",
+    "base": "coverr-marina-de-lagos-689",
+    "dur": 10.8,
+    "playback": "rso02WtPSA3cJNz5OqagUhRBjFX016xPOA"
+   },
+   {
+    "title": "Golden Gate Bridge",
+    "base": "coverr-golden-gate-bridge-4635",
+    "dur": 23.4,
+    "playback": "4XQEegWILM6EAsiNXDlOvRPpd1NX2Rkq"
+   },
+   {
+    "title": "Golden Gate Bridge at sunset",
+    "base": "coverr-golden-gate-bridge-at-sunset-5420",
+    "dur": 29.4,
+    "playback": "ATJ4XD4KymHlH00eg01724qTyOSI5p9XxL"
+   },
+   {
+    "title": "Woman Descending Concrete Steps Leading to the Beach",
+    "base": "coverr-contemplative-stroll-on-a-beach",
+    "dur": 12.3,
+    "playback": null
+   }
+  ]
+ },
+ "beach town": {
+  "hits": [
+   {
+    "title": "A town by the coast ",
+    "base": "coverr-a-town-by-the-coast-1825",
+    "dur": 25.1,
+    "playback": "YDkQHy005ZWOJLOQCOuaPVhYSeeFoXydR"
+   },
+   {
+    "title": "A girl walking on a beach and sitting down under a straw umbrella",
+    "base": "coverr-a-girl-walking-on-a-beach-and-sitting-down-under-a-straw-umbrella-4415",
+    "dur": 17.5,
+    "playback": "EpDvaWvbDJmaSwa1XbrSe01Xrp02Onrcw8"
+   },
+   {
+    "title": "Woman holding a surfboard ",
+    "base": "coverr-woman-holding-a-surfboard-527",
+    "dur": 23.7,
+    "playback": "jjcny5y02em6ZS8VHELOgfgYkAhTlnI01b"
+   },
+   {
+    "title": "Woman sitting down and texting ",
+    "base": "coverr-woman-sitting-down-and-texting-4125",
+    "dur": 12.5,
+    "playback": "LOUQI6yPAh02XBtiVXsgS01P7CNklZV7cB"
+   },
+   {
+    "title": "Walking down steps to the beach",
+    "base": "coverr-walking-down-steps-to-the-beach-7591",
+    "dur": 10.4,
+    "playback": "xtLKqetfPQGxunc7hY4qpawxvZF2RVZo"
+   },
+   {
+    "title": "Young Woman Walking Down Stone Stairs Towards the Beach",
+    "base": "coverr-tranquil-beachside-stroll",
+    "dur": 12.4,
+    "playback": null
+   },
+   {
+    "title": "Walking along a beach in India",
+    "base": "coverr-walking-along-a-beach-in-india-3451",
+    "dur": 12.7,
+    "playback": "shXhN7I3dupNfKmXkF1DoCufN6aJ8IWN"
+   },
+   {
+    "title": "Woman Descending Concrete Steps Leading to the Beach",
+    "base": "coverr-contemplative-stroll-on-a-beach",
+    "dur": 12.3,
+    "playback": null
+   },
+   {
+    "title": "Man carrying a surfboard down the steps",
+    "base": "coverr-man-carrying-a-surfboard-down-the-steps-6359",
+    "dur": 10.9,
+    "playback": "02yuYe9fji29KwG005oA02Ud5MyCIk4502Pz"
+   }
+  ]
+ },
+ "ocean waves": {
+  "hits": [
+   {
+    "title": "Serene Beachside Journaling Session on a Cloudy Day",
+    "base": "coverr-serene-beachside-journaling",
+    "dur": 12.8,
+    "playback": null
+   },
+   {
+    "title": "Foamy ocean waves at night",
+    "base": "coverr-foamy-ocean-waves-at-night-2122",
+    "dur": 21.8,
+    "playback": "PnubLOoJWCqRd02kmd4J5jSuANvixCb2A"
+   },
+   {
+    "title": "Sunset on the beach",
+    "base": "coverr-sunset-on-the-beach-8361",
+    "dur": 10.7,
+    "playback": "61n43SZx021Pgtmz401MLcYOl9cbkQBaHr"
+   },
+   {
+    "title": "Surfer Walking Towards the Ocean Waves with Surfboard",
+    "base": "coverr-surfer-walks-towards-waves",
+    "dur": 9.6,
+    "playback": null
+   },
+   {
+    "title": "Ocean waves",
+    "base": "coverr-ocean-waves-3953",
+    "dur": 27.2,
+    "playback": "IvftfeoGs2027B028yCoqFa1C02qmZQcg01v"
+   },
+   {
+    "title": "The incoming waves of the ocean gently splash onto the shore",
+    "base": "coverr-the-incoming-waves-of-the-ocean-gently-splash-onto-the-shore-3079",
+    "dur": 23.5,
+    "playback": "K7ee4qxEM01rOyJ5ETBOonDIZqJdurXrA"
+   },
+   {
+    "title": "Ocean waves ",
+    "base": "coverr-ocean-waves-3983",
+    "dur": 18.5,
+    "playback": "PDolZIrwdONTFJd005VOT4qvFsyxVfB01N"
+   },
+   {
+    "title": "Surfing through the ocean waves",
+    "base": "coverr-surfing-through-the-ocean-waves-4214",
+    "dur": 25.7,
+    "playback": "UEUncMoePzPiuyS8CzFKj3PGTizkqq01K"
+   },
+   {
+    "title": "A coastline village",
+    "base": "coverr-a-coastline-village-5975",
+    "dur": 14.7,
+    "playback": "OfDOgqdRmyJn6m8011X011jOokaqnCUiUX"
+   },
+   {
+    "title": "Riding the ocean waves",
+    "base": "coverr-riding-the-ocean-waves-7627",
+    "dur": 8.5,
+    "playback": "Kj01tvZnFa7KC4z2hSZ02Kj01T00fLHSC6fQ"
+   }
+  ]
+ },
+ "stormy sea": {
+  "hits": [
+   {
+    "title": "Stormy Sea Waves Crashing on Pier",
+    "base": "coverr-stormy-sea-waves-crashing-on-pier",
+    "dur": 14.8,
+    "playback": null
+   },
+   {
+    "title": "Sea under a stone bridge",
+    "base": "coverr-sea-under-a-stone-bridge-385",
+    "dur": 11.2,
+    "playback": "oIeyGVfPcCeycMatMMw8gsyvGHJ00myF2"
+   },
+   {
+    "title": "A Man Sits on a Railing near a Stormy Sea",
+    "base": "coverr-a-man-sits-on-a-railing-near-a-stormy-sea",
+    "dur": 8.8,
+    "playback": null
+   },
+   {
+    "title": "A Man Takes a Selfie near a Stormy Sea",
+    "base": "coverr-a-man-takes-a-selfie-near-a-stormy-sea",
+    "dur": 10.4,
+    "playback": null
+   },
+   {
+    "title": "Waves hitting the cliffs",
+    "base": "coverr-waves-hitting-the-cliffs-3795",
+    "dur": 14.2,
+    "playback": "PTGfZrufNN3wrBWcHYvlvRQc9RBV029uV"
+   },
+   {
+    "title": "A Man Checks a Phone by the Sea",
+    "base": "coverr-a-man-checks-a-phone-by-the-sea",
+    "dur": 9.3,
+    "playback": null
+   },
+   {
+    "title": "Loving Couple Kissing on a Date - Free Stock Video | Coverr",
+    "base": "coverr-loving-couple-kissing-on-a-date-free-stock-video-coverr-6097",
+    "dur": 10.1,
+    "playback": "neDfIpo00DKBQVbAJScB1KJ7EbebTg02dR"
+   },
+   {
+    "title": "A couple looking at something on a smartphone",
+    "base": "coverr-a-couple-looking-at-something-on-a-smartphone-7757",
+    "dur": 14.9,
+    "playback": "1cbGA01WMG8TAxx4iUebqWAi01N02nzyOr1"
+   },
+   {
+    "title": "Couple kissing in a meadow ",
+    "base": "coverr-couple-kissing-in-a-meadow-1054",
+    "dur": 10.3,
+    "playback": "6wuKUsYjA2RAWvovSmiJeN5XoLglSbyo"
+   },
+   {
+    "title": "Couple smiling and running",
+    "base": "coverr-couple-smiling-and-running-6812",
+    "dur": 12.1,
+    "playback": "IKs02401HPQuxwzfNi2W3GC7y4uGmxTL71"
+   }
+  ]
+ },
+ "lighthouse": {
+  "hits": [
+   {
+    "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+    "base": "user-ai-generation-B84ybsW2lE2E",
+    "dur": 10.0,
+    "playback": null
+   },
+   {
+    "title": "Golden Hour Lighthouse Over Misty Rocks and Rolling Waves",
+    "base": "user-ai-generation-mOui8ej6YVKX",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "A lighthouse",
+    "base": "coverr-a-lighthouse-7309",
+    "dur": 14.3,
+    "playback": "sfkNglnQYRHKCeTzEZQO4g202V6gEIWwW"
+   },
+   {
+    "title": "Man running on the deck near the ocean ",
+    "base": "coverr-man-running-on-the-deck-near-the-ocean-5846",
+    "dur": 12.8,
+    "playback": "Qdk300bqcVSqAWJwF1cicc9L3pbehX1t7"
+   }
+  ]
+ },
+ "old town street": {
+  "hits": [
+   {
+    "title": "Empty streets of Barcelona",
+    "base": "coverr-empty-streets-of-barcelona-6584",
+    "dur": 18.0,
+    "playback": "lCvt95JKNu4jdvsp8kc5IuQmfDIK7WDW"
+   },
+   {
+    "title": "Old man walking in a park",
+    "base": "coverr-old-man-walking-in-a-park-6589",
+    "dur": 22.2,
+    "playback": "jUlKpi02qGl5XvxTOW27RMk3c3DC7NPhr"
+   },
+   {
+    "title": "Friends walking down an old city street",
+    "base": "coverr-friends-walking-down-an-old-city-street-3377",
+    "dur": 16.9,
+    "playback": "XlaHPyJ6r2bxr1r8ePEQNZYtSFkejCGr"
+   }
+  ]
+ },
+ "brick building": {
+  "hits": [
+   {
+    "title": "Construction elevator",
+    "base": "coverr-construction-elevator-7469",
+    "dur": 15.2,
+    "playback": "GOpZAguInX9uBv0202Q88vwXRtNKaUBAkQ"
+   },
+   {
+    "title": "Water fountain near house",
+    "base": "coverr-water-fountain-near-house-7599",
+    "dur": 21.9,
+    "playback": "4801LP5IBycLe02A51ogGaw01l7pZra444d"
+   },
+   {
+    "title": "House ruins",
+    "base": "coverr-house-ruins-2268",
+    "dur": 25.7,
+    "playback": "mMyWBedmuCU1k7pIJvXjlfXwpspqk7RS"
+   },
+   {
+    "title": "Window covered with branches",
+    "base": "coverr-window-covered-with-branches-3026",
+    "dur": 19.4,
+    "playback": "4PuaWHtklddMgTm1Ma371ro2P02vtcleW"
+   },
+   {
+    "title": "Church windows",
+    "base": "coverr-church-windows-3422",
+    "dur": 28.9,
+    "playback": "KN28UcV02qmOqvSzMf2p9MzMT4uPUIRF8"
+   },
+   {
+    "title": "Building partially covered in snow",
+    "base": "coverr-building-partially-covered-in-snow-9911",
+    "dur": 16.6,
+    "playback": "ZMTgC01zdQLa4rrvLqkEunbVlWpPahBqp"
+   },
+   {
+    "title": "Hot water being poured into a cup of tea",
+    "base": "coverr-hot-water-being-poured-into-a-cup-of-tea-8891",
+    "dur": 13.0,
+    "playback": "VrBwecD2gHbXqHv7213sh4wj3g6sK2zL"
+   }
+  ]
+ },
+ "house interior": {
+  "hits": [
+   {
+    "title": "Interior design of a mobile home",
+    "base": "coverr-interior-design-of-a-mobile-home-4233",
+    "dur": 14.0,
+    "playback": "q901Dyk6Z00CqMSHjZrnDjLUz4YOxIYgfT"
+   },
+   {
+    "title": "A backyard",
+    "base": "coverr-a-backyard-8812",
+    "dur": 29.2,
+    "playback": "N8CRrp2cIk01gAZuMtk02a202S9Z01byDAeC"
+   },
+   {
+    "title": "Bathroom interior design",
+    "base": "coverr-bathroom-interior-design-4234",
+    "dur": 24.1,
+    "playback": "K5cWaNV006k00cMZsjBX02ZincWI01x1ewAl"
+   },
+   {
+    "title": "Unconventional workplace",
+    "base": "coverr-unconventional-workplace-7625",
+    "dur": 12.5,
+    "playback": "EPtHvuYlJGVJxhf1Y97OT9VKCqL02fbeG"
+   },
+   {
+    "title": "House by a lake ",
+    "base": "coverr-house-by-a-lake-7549",
+    "dur": 9.9,
+    "playback": "WLfoNeAbE00vSrV02ZL401LZZUk9Kdv5p01U"
+   },
+   {
+    "title": "Second floor of a mobile home",
+    "base": "coverr-second-floor-of-a-mobile-home-3632",
+    "dur": 8.3,
+    "playback": "4YLcZ4eENOZh00xAoNij401B02NHvAE101pY"
+   },
+   {
+    "title": "Kitchen in a house",
+    "base": "coverr-kitchen-in-a-house-6113",
+    "dur": 13.0,
+    "playback": "00P7XkoH7SBZgiep2jJ2gqj2IZyE6rEZ9"
+   },
+   {
+    "title": "Entrance of a small house",
+    "base": "coverr-entrance-of-a-small-house-6455",
+    "dur": 20.3,
+    "playback": "pD4Jp02Zue213ty2XM4O6X3SAGi3ARFsG"
+   },
+   {
+    "title": "Inside an abandoned house",
+    "base": "coverr-inside-an-abandoned-house-6115",
+    "dur": 24.1,
+    "playback": "9GXobmkg6LEA0102vl00KnLDHT61gx5KzBW"
+   }
+  ]
+ },
+ "window curtain": {
+  "hits": [
+   {
+    "title": "White window with tree reflection",
+    "base": "coverr-white-window-with-tree-reflection-998",
+    "dur": 12.4,
+    "playback": "uKrkL7x01Kq1300u82bf2qUw9KGI1pKrrj"
+   },
+   {
+    "title": "Curtain blowing in the wind",
+    "base": "coverr-curtain-blowing-in-the-wind-1618",
+    "dur": 12.7,
+    "playback": "ba21g02uIih01OZfcJBEaRoee9Pr231LnK"
+   },
+   {
+    "title": "Woman posing behind curtains",
+    "base": "coverr-woman-posing-behind-curtains-7898",
+    "dur": 8.5,
+    "playback": "VXVg5TpjGFCqzd2LYznlSMj5sP61kKuB"
+   },
+   {
+    "title": "Woman posing by the window",
+    "base": "coverr-woman-posing-by-the-window-6038",
+    "dur": 9.3,
+    "playback": "Auefbnmrzyh02Y4yLvky7YEzgnsDGu2bj"
+   },
+   {
+    "title": "Woman with mask looking through window",
+    "base": "coverr-woman-with-mask-looking-through-window-2681",
+    "dur": 21.2,
+    "playback": "RbYcYDdi8S7hdWHzfEIRq3JlpnvWhxnV"
+   },
+   {
+    "title": "Woman wearing a medical mask",
+    "base": "coverr-woman-wearing-a-medical-mask-2345",
+    "dur": 30.4,
+    "playback": "SbjV8zF004XyHaImMvOkdpLLmnJHyf1MV"
+   },
+   {
+    "title": "Snow falling in front of a building",
+    "base": "coverr-snow-falling-in-front-of-a-building-2741",
+    "dur": 11.9,
+    "playback": "nj01oYvnFLcnbh2eo6icGvy01FL8S800OyQ"
+   }
+  ]
+ },
+ "rumble": {
+  "hits": [
+   {
+    "title": "Girl going on a terrace",
+    "base": "coverr-girl-going-on-a-terrace-1089",
+    "dur": 21.5,
+    "playback": "7kxYdNLganF78YhDb5l13m02yq7tcYTCU"
+   },
+   {
+    "title": "Resilient Stance Amidst Urban Ruins",
+    "base": "user-ai-generation-Y9PbDqqk98uB",
+    "dur": 8.0,
+    "playback": null
+   }
+  ]
+ },
+ "explosion": {
+  "hits": [
+   {
+    "title": "Chaos Erupts in the Streets: Explosive Moments",
+    "base": "user-ai-generation-Vwe87ySKMj6L",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Friends giving each other a fist bump",
+    "base": "coverr-friends-giving-each-other-a-fist-bump-5866",
+    "dur": 12.1,
+    "playback": "YmWD9psGdIXQIr8IkknrlkxLJQ7K00qIt"
+   },
+   {
+    "title": "People walking on a rocky coast",
+    "base": "coverr-people-walking-on-a-rocky-coast-6670",
+    "dur": 11.3,
+    "playback": "a1V2JYqeQW4tNzRy6KP902Gt00C2UscR8N"
+   },
+   {
+    "title": "A girl walking on the rocky coast",
+    "base": "coverr-a-girl-walking-on-the-rocky-coast-1504",
+    "dur": 13.5,
+    "playback": "SR64RPc8BjzLik9FHl3ME01lwKVJJOtbt"
+   },
+   {
+    "title": "A beautiful girl standing on the rocky coast",
+    "base": "coverr-a-beautiful-girl-standing-on-the-rocky-coast-5017",
+    "dur": 11.9,
+    "playback": "HvSWHCrbioyzjVBa72GZy66o00DNbZi1d"
+   },
+   {
+    "title": "Man talking and smiling ",
+    "base": "coverr-man-talking-and-smiling-6058",
+    "dur": 18.2,
+    "playback": "R54OB4xkpFS8Zrhnc7y101fdFDLRQjmAs"
+   },
+   {
+    "title": "Contemplative Woman with Windswept Hair Listening to Music",
+    "base": "coverr-contemplative-woman-with-windswept-hair",
+    "dur": 19.2,
+    "playback": null
+   },
+   {
+    "title": "Old man's face",
+    "base": "coverr-old-man-s-face-3379",
+    "dur": 12.1,
+    "playback": "gMedILLUVhojUVY8joV7wdHynqKfkCqU"
+   }
+  ]
+ },
+ "cannon": {
+  "hits": [
+   {
+    "title": "Majestic Bald Eagle Watching Fireworks over the Grand Canyon",
+    "base": "coverr-temp-uuwygen-3-alpha-3366463484-over-the-shoulder-sh-mp4-7806",
+    "dur": 10.7,
+    "playback": null
+   },
+   {
+    "title": "Woman taking photos of the beach ",
+    "base": "coverr-woman-taking-photos-of-the-beach-9050",
+    "dur": 15.0,
+    "playback": "kSMURvNaISR5jxxN502IRO7xxmZI102Vtf"
+   },
+   {
+    "title": "Surfer on Sandy Beach Films a Video with Hand-Held Camera",
+    "base": "coverr-surfer-films-a-video",
+    "dur": 8.1,
+    "playback": null
+   },
+   {
+    "title": "Bull Creek",
+    "base": "coverr-bull-creek-7744",
+    "dur": 11.8,
+    "playback": "009Ovol4H02021K301hKkuj7SARfNcfGpXaq"
+   },
+   {
+    "title": "Man taking a video camera out of a bag",
+    "base": "coverr-man-taking-a-video-camera-out-of-a-bag-7338",
+    "dur": 16.5,
+    "playback": "migYDgcxH75GN6Yp0202vbZqK5GT5mcLnH"
+   },
+   {
+    "title": "A guy filming a video",
+    "base": "coverr-a-guy-filming-a-video-4288",
+    "dur": 16.9,
+    "playback": "jVWaNmgltds7coLER8MyeFn6G6F263C5"
+   }
+  ]
+ },
+ "newspaper": {
+  "hits": [
+   {
+    "title": "Queue to a newspaper store",
+    "base": "coverr-queue-to-a-newspaper-store-568",
+    "dur": 10.7,
+    "playback": "U3iQ2aKvdBiOtUWEeOkNtlezivx5UHR5"
+   },
+   {
+    "title": "Man puts away his laptop and reads a newspaper",
+    "base": "coverr-man-puts-away-his-laptop-and-reads-a-newspaper-3710",
+    "dur": 20.4,
+    "playback": "6PWMYAmu45DgyTogRiX4IeOZuPUf01mkj"
+   },
+   {
+    "title": "Scrolling through coronavirus news ",
+    "base": "coverr-scrolling-through-coronavirus-news-6170",
+    "dur": 24.9,
+    "playback": "7mdOMPoKtaZ2I3lc1iXCyJjOg01AXYOyr"
+   },
+   {
+    "title": "Local, Dutch newspapers",
+    "base": "coverr-local-dutch-newspapers-8257",
+    "dur": 29.9,
+    "playback": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV"
+   }
+  ]
+ },
+ "old paper": {
+  "hits": [
+   {
+    "title": "Old man writing in his notebook",
+    "base": "coverr-old-man-writing-in-his-notebook-9925",
+    "dur": 20.5,
+    "playback": "2hkez4epsbnayXDLrZRwCiB0218xK016Bk"
+   },
+   {
+    "title": "Sharpening a pencil",
+    "base": "coverr-sharpening-a-pencil-6026",
+    "dur": 15.8,
+    "playback": "A4qqbsXDDuM4C8qpyYWMqiI8UIF534b01"
+   },
+   {
+    "title": "Old man writing in a notebook",
+    "base": "coverr-old-man-writing-in-a-notebook-8741",
+    "dur": 25.2,
+    "playback": "Cwn7BW1KWXGgYyNC01L7TOaZFtbBWye00s"
+   }
+  ]
+ },
+ "seismograph": {
+  "hits": []
+ },
+ "sound wave": {
+  "hits": [
+   {
+    "title": "Seaside Meditation",
+    "base": "coverr-seaside-meditation-for-serenity",
+    "dur": 11.4,
+    "playback": null
+   },
+   {
+    "title": "Swinging microphone",
+    "base": "coverr-swinging-microphone-7144",
+    "dur": 30.0,
+    "playback": "qa5cOcM02nJ2xOjlKPcXucEZrtvz4SPUN"
+   },
+   {
+    "title": "Hands playing the guitar",
+    "base": "coverr-hands-playing-the-guitar-551",
+    "dur": 18.5,
+    "playback": "eGOu3SROElE01deH4auziINtkBzeu5Ov02"
+   },
+   {
+    "title": "Record player",
+    "base": "coverr-record-player-1916",
+    "dur": 20.5,
+    "playback": "adsCfEFB02r9yUpIt9GODZ00ksBURWZZ01R"
+   },
+   {
+    "title": "Guitar strings",
+    "base": "coverr-guitar-strings-3067",
+    "dur": 9.3,
+    "playback": "KRhLjTU5aCyTOQ8J2BB9S4CkSa1z02zb3"
+   },
+   {
+    "title": "Mic drop",
+    "base": "coverr-mic-drop-5208",
+    "dur": 13.2,
+    "playback": "slbnslljB2qHvLJ02X7QrCZzbHJEh1dm6"
+   },
+   {
+    "title": "Savasana by the Sea",
+    "base": "coverr-savasana-by-the-sea",
+    "dur": 9.8,
+    "playback": null
+   },
+   {
+    "title": "Photoshopped ocean on a woman",
+    "base": "coverr-photoshopped-ocean-on-a-woman-5430",
+    "dur": 13.8,
+    "playback": "ob1hmMOow5DzsCoj9swyhwRZ4juczEqB"
+   }
+  ]
+ },
+ "microphone": {
+  "hits": [
+   {
+    "title": "Swinging microphone",
+    "base": "coverr-swinging-microphone-7144",
+    "dur": 30.0,
+    "playback": "qa5cOcM02nJ2xOjlKPcXucEZrtvz4SPUN"
+   },
+   {
+    "title": "Microphone near a laptop",
+    "base": "coverr-microphone-near-a-laptop-6829",
+    "dur": 17.9,
+    "playback": "9RUmZ3I3PptTMj7puJBj4zRL9400DYmU5"
+   },
+   {
+    "title": "Picking up a microphone",
+    "base": "coverr-picking-up-a-microphone-699",
+    "dur": 21.4,
+    "playback": "4arFLPkyai6xEHVUJEGjtbInU485dYg00"
+   },
+   {
+    "title": "Mic drop",
+    "base": "coverr-mic-drop-5208",
+    "dur": 13.2,
+    "playback": "slbnslljB2qHvLJ02X7QrCZzbHJEh1dm6"
+   },
+   {
+    "title": "A guy fixes a flexible desk stand for his studio microphone ",
+    "base": "coverr-a-guy-fixes-a-flexible-desk-stand-for-his-studio-microphone-5761",
+    "dur": 12.1,
+    "playback": "PA00UlyyouQRYz7l5fipDMCGGt8DHgnQz"
+   },
+   {
+    "title": "Laptop near a window",
+    "base": "coverr-laptop-near-a-window-9261",
+    "dur": 17.7,
+    "playback": "A02GRQJmb9lB4OpdCjrXJ00rXMrkaViwLo"
+   },
+   {
+    "title": "Close-Up of a Man Talking on a Virtual Meeting",
+    "base": "coverr-close-up-of-a-man-talking-on-a-virtual-meeting-4792",
+    "dur": 18.9,
+    "playback": null
+   },
+   {
+    "title": "A guy singing into a microphone",
+    "base": "coverr-a-guy-singing-into-a-microphone-745",
+    "dur": 13.8,
+    "playback": "900oM95PgpqN6ca5f02ALbPCyKbibjCe00G"
+   }
+  ]
+ },
+ "church": {
+  "hits": [
+   {
+    "title": "Church windows",
+    "base": "coverr-church-windows-3422",
+    "dur": 28.9,
+    "playback": "KN28UcV02qmOqvSzMf2p9MzMT4uPUIRF8"
+   },
+   {
+    "title": "The Daraga Church",
+    "base": "coverr-the-daraga-church-384",
+    "dur": 12.6,
+    "playback": "xQbQGPNXYx896RHIksrsKSVRm2DO4r00l"
+   },
+   {
+    "title": "The ancient sculptures of the Jeronimos Monastery",
+    "base": "coverr-the-ancient-sculptures-of-the-jeronimos-monastery-5886",
+    "dur": 8.9,
+    "playback": "qpCrlEeR3J1PH5ENkgSn8x4JqYNVAyrC"
+   },
+   {
+    "title": "Jeronimos Monastery in Lisbon, Portugal",
+    "base": "coverr-jeronimos-monastery-in-lisbon-portugal-6360",
+    "dur": 11.5,
+    "playback": "KOMIjqTcYNcWDLMHwq2jl2sJQmeQNEma"
+   },
+   {
+    "title": "The architecture of the Jeronimos Monastery",
+    "base": "coverr-the-architecture-of-the-jeronimos-monastery-856",
+    "dur": 15.1,
+    "playback": "wN6ATsK02hN3MfgMDhrIGDPuNGz3E4CGR"
+   },
+   {
+    "title": "Architectural details on the Jeronimos Monastery",
+    "base": "coverr-architectural-details-on-the-jeronimos-monastery-773",
+    "dur": 15.5,
+    "playback": "jF801Z128b02f6n1NXgAJBYxCEeIHKCsFs"
+   },
+   {
+    "title": "Historical church",
+    "base": "coverr-historical-church-2125",
+    "dur": 12.0,
+    "playback": "Dwhlj6gyItCkEqPvlfG01wwh5I1EtD83d"
+   },
+   {
+    "title": "Jeronimos Monastery showing prominent Late Gothic styled architecture",
+    "base": "coverr-jeronimos-monastery-showing-prominent-late-gothic-styled-architecture-6401",
+    "dur": 21.4,
+    "playback": "iEtH8bCvj02W5vWQp1TY00bZtM1wSrUsLm"
+   },
+   {
+    "title": "Jeronimos Monastery in Lisbon",
+    "base": "coverr-jeronimos-monastery-in-lisbon-3848",
+    "dur": 29.5,
+    "playback": "8WZDW02seuk6jvOAqUPZygcQLQaiztAPq"
+   }
+  ]
+ },
+ "bell tower": {
+  "hits": [
+   {
+    "title": "Soccer match with a view",
+    "base": "coverr-soccer-match-with-a-view-4337",
+    "dur": 11.7,
+    "playback": "TU02OAvffqasTMoLP8sJaRkVYsYL6sh02v"
+   }
+  ]
+ },
+ "trumpet": {
+  "hits": [
+   {
+    "title": "Dancing puppets ",
+    "base": "coverr-dancing-puppets-1939",
+    "dur": 11.3,
+    "playback": "nhbpx8a6SGm5btOQQUBRE02GWn3WvNWzj"
+   }
+  ]
+ },
+ "night sky": {
+  "hits": [
+   {
+    "title": "Starry Night Sky Over Pine Forest",
+    "base": "user-ai-generation-69Bz5voDn7EW",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "A city at night",
+    "base": "coverr-a-city-at-night-8720",
+    "dur": 26.3,
+    "playback": "IIM00VkDLxZtURLX00g3RHnLejFplPdy1C"
+   },
+   {
+    "title": "Mysterious Figure Under a Starlit Sky",
+    "base": "user-ai-generation-0b4ZdNtmzT9q",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Bar neon sign",
+    "base": "coverr-bar-neon-sign-1956",
+    "dur": 10.8,
+    "playback": "UBkuSKVPVniLIry2kg7xlqz00TQ6YTW02E"
+   },
+   {
+    "title": "Blurred car lights ",
+    "base": "coverr-blurred-car-lights-297",
+    "dur": 13.0,
+    "playback": "Y4Fs8ijS637opIjqV6cJyfFYFX9NC5VA"
+   },
+   {
+    "title": "Woman in front of the clouds",
+    "base": "coverr-woman-in-front-of-the-clouds-5888",
+    "dur": 8.7,
+    "playback": "SsGaNLoK00ewJSnlii8KgLoIRI4hzm02da"
+   },
+   {
+    "title": "Palm trees at night",
+    "base": "coverr-palm-trees-at-night-821",
+    "dur": 6.8,
+    "playback": "Z3HlIA00lXO2rXbIgDM5A3VkMs02KMY3Kb"
+   },
+   {
+    "title": "Sun-setting on the coast ",
+    "base": "coverr-sun-setting-on-the-coast-1318",
+    "dur": 16.6,
+    "playback": "uHlMhg1uQPwDiaxURcJl0274NBrxoY3w4"
+   },
+   {
+    "title": "The streets at sunset ",
+    "base": "coverr-the-streets-at-sunset-6456",
+    "dur": 16.7,
+    "playback": "KP78n9EWQAje1fm6Xr02N6zm7V01xxNRNK"
+   },
+   {
+    "title": "Asian man walking next to a river quay",
+    "base": "coverr-asian-man-walking-next-to-a-river-quay-7914",
+    "dur": 21.4,
+    "playback": "arkH9SOcFtR2sVg4yrH41BL00dhLsDEHk"
+   }
+  ]
+ },
+ "stars": {
+  "hits": [
+   {
+    "title": "Starry Night Sky Over Pine Forest",
+    "base": "user-ai-generation-69Bz5voDn7EW",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "American flag in a town",
+    "base": "coverr-american-flag-in-a-town-1959",
+    "dur": 7.0,
+    "playback": "P6r5a5yA1SB1Yh3oJ200aFIFbldpllgfg"
+   },
+   {
+    "title": "United States flag in the sky ",
+    "base": "coverr-united-states-flag-in-the-sky-1325",
+    "dur": 11.2,
+    "playback": "E8h5g200Yrc600jAh6c5FFSFafgAq9WcO2"
+   },
+   {
+    "title": "USA Flag ",
+    "base": "coverr-usa-flag-4487",
+    "dur": 10.9,
+    "playback": "4SJVav5PRBlfvZvy9MvDzOJsxFOxYcku"
+   },
+   {
+    "title": "Rocket ship launch animation",
+    "base": "coverr-rocket-ship-launch-animation-9901",
+    "dur": 20.0,
+    "playback": "BRFN4FuXREUYeC013QiOQygrbdwMWqHMt"
+   },
+   {
+    "title": "Ripped USA flag",
+    "base": "coverr-ripped-usa-flag-683",
+    "dur": 11.3,
+    "playback": "ws01DY00qbBBWyr1RSqBpdX3YsQYBuRbmi"
+   },
+   {
+    "title": "Grand Central Clock",
+    "base": "coverr-grand-central-clock-1793",
+    "dur": 14.2,
+    "playback": "McKBMY1vl1p6Oyjp8gIN3f5R7oeUQLV6"
+   },
+   {
+    "title": "US Flag near the Chrysler Building",
+    "base": "coverr-us-flag-near-the-chrysler-building-223",
+    "dur": 22.9,
+    "playback": "WiN4MANiVXAVg01C44AeH01rZ7TaMiCxiN"
+   },
+   {
+    "title": "American flags on a building",
+    "base": "coverr-american-flags-on-a-building-1649",
+    "dur": 15.4,
+    "playback": "AOzvR5I5TfIJ56VtO02doejwFv1JQjq7i"
+   }
+  ]
+ },
+ "meteor": {
+  "hits": [
+   {
+    "title": "Young Man Paying with Credit Card at Parking Meter",
+    "base": "coverr-man-paying-at-parking-meter",
+    "dur": 13.3,
+    "playback": null
+   }
+  ]
+ },
+ "airplane sky": {
+  "hits": [
+   {
+    "title": "Airplane in the sky",
+    "base": "coverr-airplane-in-the-sky-187",
+    "dur": 10.6,
+    "playback": "MnkvEUAZwap8WpvZ02urvogJ7XYSsmGab"
+   },
+   {
+    "title": "Airplane passenger",
+    "base": "coverr-airplane-passenger-6516",
+    "dur": 13.9,
+    "playback": "ytEseAQoqf502eXdXsJ4Y01jPFIGbANFjS"
+   },
+   {
+    "title": "Airplane flying through the clouds",
+    "base": "coverr-airplane-flying-through-the-clouds-1025",
+    "dur": 13.1,
+    "playback": "eDqZLgsdpuHbQD6ZRepNittlikuypsQE"
+   },
+   {
+    "title": "View of clouds from an airplane",
+    "base": "coverr-view-of-clouds-from-an-airplane-6487",
+    "dur": 14.5,
+    "playback": "qOziBvcrayWu5oG02kuINw16J2MBewQGZ"
+   },
+   {
+    "title": "Sunset on a flight",
+    "base": "coverr-sunset-on-a-flight-5299",
+    "dur": 13.3,
+    "playback": "k5VXbLp398vE1VFVb1zivKDG02Q33qNM02"
+   },
+   {
+    "title": "Private jets at an airport",
+    "base": "coverr-private-jets-at-an-airport-2971",
+    "dur": 11.7,
+    "playback": "J2FSsxkiXatu00mAQkpQNAXsENZdGYcx2"
+   },
+   {
+    "title": "Flying through the clouds",
+    "base": "coverr-flying-through-the-clouds-5275",
+    "dur": 13.7,
+    "playback": "67zbdUzKxw201Buz2dSHLzaG701ZAhcTgt"
+   },
+   {
+    "title": "Serene Aerial View from Airplane Window at Twilight",
+    "base": "coverr-serenity-in-the-skies",
+    "dur": 11.0,
+    "playback": null
+   },
+   {
+    "title": "Airplane Soaring Above Clouds and Mountains at Twilight",
+    "base": "coverr-soaring-above-the-clouds-and-mountains",
+    "dur": 12.8,
+    "playback": null
+   }
+  ]
+ },
+ "snow winter": {
+  "hits": [
+   {
+    "title": "Snow in a winter wonderland",
+    "base": "coverr-snow-in-a-winter-wonderland-2549",
+    "dur": 11.4,
+    "playback": "2uVv8JQVlPxIylXMYtbB2jUs9zkq02802X"
+   },
+   {
+    "title": "Two gondolas/ski lifts",
+    "base": "coverr-two-gondolas-ski-lifts-1817",
+    "dur": 10.4,
+    "playback": "TcVpKnCyHb01i3KGe1002P965Xc02ibqUh9"
+   },
+   {
+    "title": "Snowy garden with bench",
+    "base": "coverr-snowy-garden-with-bench-2324",
+    "dur": 18.2,
+    "playback": "iegvnEl7fDayOdV6I4715400RANE700MG01"
+   },
+   {
+    "title": "Stream next to the road",
+    "base": "coverr-stream-next-to-the-road-4482",
+    "dur": 15.1,
+    "playback": "yRSaHFgEF6bf9hwDcVm5Y9QELbxxlJDv"
+   },
+   {
+    "title": "Woman walking in New York ",
+    "base": "coverr-woman-walking-in-new-york-2250",
+    "dur": 20.9,
+    "playback": "aFtlweBD2Dpm02BR3LFyBFs65BjDFWGSy"
+   },
+   {
+    "title": "Winter woods",
+    "base": "coverr-winter-woods-3670",
+    "dur": 21.2,
+    "playback": "QSr01WVLBto00Ea5TKx4C12fjm3ZeqWXb8"
+   },
+   {
+    "title": "Campervan driving on snow ",
+    "base": "coverr-campervan-driving-on-snow-4864",
+    "dur": 10.6,
+    "playback": "AKKpawVeOMXCMBqIeepZ84cV01ZfMOmYf"
+   },
+   {
+    "title": "Snow on a tree branch",
+    "base": "coverr-snow-on-a-tree-branch-83",
+    "dur": 18.9,
+    "playback": "QI3pcoed7uJqbW9R1bkSa3qw6KTwCT7F"
+   },
+   {
+    "title": "Snow falling by the trees",
+    "base": "coverr-snow-falling-by-the-trees-1832",
+    "dur": 11.3,
+    "playback": "6VbwNBdIRusE02ZoKzwtwJSTfOaJrd5N6"
+   },
+   {
+    "title": "Woman walks her dog in front of snow-covered houses",
+    "base": "coverr-woman-walks-her-dog-in-front-of-snow-covered-houses-7410",
+    "dur": 20.4,
+    "playback": "wTwMuLvKCzW01GzcWqOjYV1qTHRWjwhwy"
+   }
+  ]
+ },
+ "frost": {
+  "hits": [
+   {
+    "title": "Colorful tree Parallax",
+    "base": "coverr-colorful-tree-parallax-9011",
+    "dur": 9.6,
+    "playback": "7dj6F00RgVAX2fYSJBRMnLkNHlHsARyly"
+   },
+   {
+    "title": "Sunrise in the woods",
+    "base": "coverr-sunrise-in-the-woods-4490",
+    "dur": 23.4,
+    "playback": "ufIdpa3Oky8r1nJ00J6btRoK8xIrKn7Wz"
+   },
+   {
+    "title": "Woman in the forest",
+    "base": "coverr-woman-in-the-forest-5341",
+    "dur": 13.5,
+    "playback": "Ucqm8LK5YTeFvvtUcVYmBIpFVUhEUtMd"
+   },
+   {
+    "title": "Snow falling in a forest",
+    "base": "coverr-snow-falling-in-a-forest-2150",
+    "dur": 12.1,
+    "playback": "YVt4YnckHGTOTVdf834iS2fDbnBcAZ01r"
+   },
+   {
+    "title": "Child skiing",
+    "base": "coverr-child-skiing-3312",
+    "dur": 24.4,
+    "playback": "cQ8FRStCHKW8ZreDqQn902DLrW2eN7202y"
+   },
+   {
+    "title": "Ski tricks",
+    "base": "coverr-ski-tricks-3266",
+    "dur": 12.6,
+    "playback": "Yjq7tak8pXfgVqPGlLtphrtafiq6rAK3"
+   },
+   {
+    "title": "Albino reindeer",
+    "base": "coverr-albino-reindeer-886",
+    "dur": 6.0,
+    "playback": "QJLOuCPAS0101zKXSKSbH9jTmIwbs01Z29N"
+   },
+   {
+    "title": "Taking a selfie in the sunlight",
+    "base": "coverr-taking-a-selfie-in-the-sunlight-3787",
+    "dur": 12.4,
+    "playback": "G00LTn14UweOiKjuVW9FPDUiQeHitNF00u"
+   }
+  ]
+ },
+ "ice lake": {
+  "hits": [
+   {
+    "title": "Golden Sunset Over Floating Icebergs and Calm Polar Sea",
+    "base": "user-ai-generation-hHkqxIlwFV7r",
+    "dur": 12.0,
+    "playback": null
+   }
+  ]
+ },
+ "cracked earth": {
+  "hits": [
+   {
+    "title": "Dancing Silhouette Against a Desert Sunset",
+    "base": "user-ai-generation-0MDLZ15KcLdr",
+    "dur": 8.0,
+    "playback": null
+   }
+  ]
+ },
+ "fog village": {
+  "hits": [
+   {
+    "title": "A settlement in the mountains",
+    "base": "coverr-a-settlement-in-the-mountains-5585",
+    "dur": 15.5,
+    "playback": "o01bfV001DvpCCeYal5yUD01IKme02Kahtyc"
+   }
+  ]
+ },
+ "house shaking": {
+  "hits": [
+   {
+    "title": "A woman shakes a rug on the balcony",
+    "base": "coverr-a-woman-shakes-a-rug-on-the-balcony-5896",
+    "dur": 19.5,
+    "playback": "01dIwdOhxKqWIDEP6fR1EW42bMQx7aLmK"
+   },
+   {
+    "title": "Turning on the hose",
+    "base": "coverr-turning-on-the-hose-8285",
+    "dur": 11.3,
+    "playback": "MPMzKeuV4rvEtqQnduMeAJVBCnzicP9P"
+   }
+  ]
+ }
+}

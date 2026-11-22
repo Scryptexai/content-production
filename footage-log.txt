@@ -1,34 +1,39 @@
-  ada: s1_pasar_ikan_india
-  ada: s1_jalan_hujan
-  ada: s2_jalan_atap
-  ada: s2_awan_timelapse
-  ada: s3_genangan_hujan
-  ada: s4_jalan_berawan
-  ada: s5_awan_gelap
-  ada: s5_ikan_dijual
-  ada: s6_permukiman
-  ada: s7_sungai
-  ada: s7_kolam_ikan
-  ada: s7_jalan_ladang
-  ada: s8_jalan_hujan_warga
-  ada: s9_pasar_ikan2
-  ada: s9_ikan_merah
-  ada: s10_danau
-  ada: s10_desa_pesisir
-  ada: s11_tornado
-  ada: s11_gelombang_laut
-  ada: s12_ombak_batu
-  ada: s12_awan_berputar
-  ada: s12_air_pasang
-  ada: s13_koran
-  ada: s13_nelayan
-  ada: s14_jalan_kosong
-  ada: s14_sungai_jalan
-  ada: s15_kota_gelap
-  ada: s15_aquarium
-  ada: s15_awan_gelap2
-  ada: s16_alam
-  ada: s16_ladang_hijau
-  ok: s3_hujan_kaca (2459 KB)
-  ok: s8_hujan_kota (2282 KB)
-{"ok": 33, "failed": 0}
+sky: 21 kandidat
+dark clouds: 17 kandidat
+storm clouds: 11 kandidat
+thunderstorm: 0 kandidat
+lightning: 10 kandidat
+clouds timelapse: 17 kandidat
+new york: 23 kandidat
+city skyline: 16 kandidat
+coastal town: 10 kandidat
+beach town: 21 kandidat
+ocean waves: 18 kandidat
+stormy sea: 10 kandidat
+lighthouse: 4 kandidat
+old town street: 3 kandidat
+brick building: 7 kandidat
+house interior: 23 kandidat
+window curtain: 7 kandidat
+rumble: 2 kandidat
+explosion: 19 kandidat
+cannon: 6 kandidat
+newspaper: 4 kandidat
+old paper: 3 kandidat
+seismograph: 0 kandidat
+sound wave: 8 kandidat
+microphone: 17 kandidat
+church: 24 kandidat
+bell tower: 1 kandidat
+trumpet: 1 kandidat
+night sky: 15 kandidat
+stars: 16 kandidat
+meteor: 1 kandidat
+airplane sky: 23 kandidat
+snow winter: 19 kandidat
+frost: 21 kandidat
+ice lake: 1 kandidat
+cracked earth: 1 kandidat
+fog village: 1 kandidat
+house shaking: 2 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep03.json
