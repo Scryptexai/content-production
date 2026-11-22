@@ -2,10 +2,10 @@
   "episode": "OS-EP02_P1",
   "slug": "ikan-jatuh-langit",
   "status": "requested",
-  "approved": false,
+  "approved": true,
   "file": "work/ikan-jatuh-langit/out/OS-EP02_P1_ikan-jatuh-langit_feed.mp4",
   "master_sha256": "120c118ed51ede013efb9ae86a626e14f9ccc88dc9049eff10399185994f37f7",
   "drive_video_id": "16emQHQk5kGGCAC9BWJq59DvHnWohHuk7",
   "catatan": "Part1/2 OS-EP02 (potong96,35 s + outro;101,33 s <3 menit). Master penuh diganti2 part. BELUM ADA IZIN TAYANG — approved:false sampai perintah user. Tayang satu per satu: set approved:true hanya di satu file per push.",
-  "izin": null
+  "izin": "user: tayang part1 sekarang (2026-11-22)"
 }
