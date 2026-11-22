@@ -37,10 +37,15 @@ jobs:
           set -euo pipefail
           git config user.name "oddchapter-assets"
           git config user.email "actions@users.noreply.github.com"
-          git add -f assets/maps/*.svg assets/maps/*.png 2>/dev/null || true
+          # Pakai direktori (bukan glob): satu pathspec yang tak cocok membuat
+          # seluruh `git add` gagal atomik — itulah bug "tidak ada berkas baru".
+          git add -f assets/maps/
           if git diff --cached --quiet; then
             echo "::notice::Tidak ada berkas peta baru."
             exit 0
           fi
-          git commit -m "assets(maps): unduh peta asli dari Wikimedia Commons [skip ci]"
-          git push
+          git commit -m "assets(maps): peta OSM dirakit dari tile [skip ci]"
+          git fetch origin "${GITHUB_REF_NAME}"
+          git reset --soft "origin/${GITHUB_REF_NAME}"
+          git commit --allow-empty -m "assets(maps): peta OSM dirakit dari tile [skip ci]"
+          git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
