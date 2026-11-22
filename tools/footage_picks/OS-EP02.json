@@ -1,6 +1,6 @@
 {
  "episode": "OS-EP02-IKAN-JATUH",
- "catatan": "Picks OS-EP02 per section (00G): pasar/jalan hujan (hook), atap+awan, genangan (CTA), jalan berawan (sebelum MAP-ZOOM A), awan+ikan (badai 1928), permukiman (atap), sungai/kolam/jalan (negasi), jalan hujan (kesimpulan warga), pasar+ikan merah (bukti), danau (sebelum MAP-ZOOM B), desa pesisir, tornado+ombak (waterspout), ombak/awan/pasang (mekanisme), koran+nelayan (laporan global), jalan kosong+sungai jalan (tak ada rekaman), kota gelap+aqium+awan (kutukan vs sains), alam+ladang (penutup). Nol reuse lintas episode. Pengganti QC: s3_hujan_kaca & s8_hujan_kota; s15_awan_gelap2 dibuang (isi aneh).",
+ "catatan": "(v2) Picks OS-EP02 per section (00G): pasar/jalan hujan (hook), atap+awan, genangan (CTA), jalan berawan (sebelum MAP-ZOOM A), awan+ikan (badai 1928), permukiman (atap), sungai/kolam/jalan (negasi), jalan hujan (kesimpulan warga), pasar+ikan merah (bukti), danau (sebelum MAP-ZOOM B), desa pesisir, tornado+ombak (waterspout), ombak/awan/pasang (mekanisme), koran+nelayan (laporan global), jalan kosong+sungai jalan (tak ada rekaman), kota gelap+aqium+awan (kutukan vs sains), alam+ladang (penutup). Nol reuse lintas episode. Pengganti QC: s3_hujan_kaca & s8_hujan_kota; s15_awan_gelap2 dibuang (isi aneh).",
  "picks": [
   {
    "name": "s1_pasar_ikan_india",
