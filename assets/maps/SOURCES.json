@@ -1,5 +1,6 @@
 {
  "cat": "Peta asli untuk shot MAP-ZOOM (koreksi pemilik22 Nov2026 —00G §1b). Diunduh runner (sandbox tidak bisa akses upload.wikimedia.org). Bounds dipakai tools/render_mapzoom untuk ubah lat/lon → persen.",
+ "_retry": "run-45002869626 gagal tanpa log; picu ulang",
  "assets": [
   {
    "file": "ireland_location_map.svg",
