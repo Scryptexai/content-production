@@ -1,5 +1,5 @@
 {
- "cat": "Peta asli untuk shot MAP-ZOOM (koreksi pemilik 22 Nov 2026 — 00G §1b). Dirakit di runner dari tile OpenStreetMap (Wikimedia memblokir IP cloud: HTTP 429). Bounds dihitung presisi dari rentang tile → dipakai tools/render_mapzoom untuk ubah lat/lon ke persen. Kredit wajib: © OpenStreetMap contributors.",
+ "cat": "Peta asli untuk shot MAP-ZOOM (koreksi pemilik 22 Nov 2026 — 00G §1b). Dirakit di runner dari tile OpenStreetMap (Wikimedia memblokir IP cloud: HTTP 429). Bounds dihitung presisi dari rentang tile → dipakai tools/render_mapzoom untuk ubah lat/lon ke persen. Kredit wajib: © OpenStreetMap contributors. Retry: run45077846233 osm.org blokir (103 B), run45078490323 DNS runner gagal — fallback per-tile sudah dipasang.",
  "provider": {
   "name": "OpenStreetMap",
   "tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -10,25 +10,45 @@
   {
    "file": "ireland_map.png",
    "role": "job A — zoom nasional (1928 · Drumherg)",
-   "bbox": [55.6, 51.2, -11.0, -5.0],
+   "bbox": [
+    55.6,
+    51.2,
+    -11.0,
+    -5.0
+   ],
    "zoom": 7
   },
   {
    "file": "county_down_map.png",
    "role": "job B — zoom county (Strangford Lough + Comber)",
-   "bbox": [54.6849, 54.0094, -6.3721, -5.4163],
+   "bbox": [
+    54.6849,
+    54.0094,
+    -6.3721,
+    -5.4163
+   ],
    "zoom": 10
   },
   {
    "file": "useast_map.png",
    "role": "OS-EP03 job A+B — AS timur (Dan Seneca NY + pesisir NC/SC/VA)",
-   "bbox": [46.5, 35.5, -83.0, -69.5],
+   "bbox": [
+    46.5,
+    35.5,
+    -83.0,
+    -69.5
+   ],
    "zoom": 7
   },
   {
    "file": "charleston_map.png",
    "role": "OS-EP03 job C — zoom Charleston SC (gempa1886)",
-   "bbox": [33.05, 32.55, -80.45, -79.45],
+   "bbox": [
+    33.05,
+    32.55,
+    -80.45,
+    -79.45
+   ],
    "zoom": 10
   }
  ]
