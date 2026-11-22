@@ -201,7 +201,7 @@ jobs:
           LEDGER=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/published.json
           POSTS=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/zernio-posts.json
           ACCTS=ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/zernio-accounts.json
-          if git diff --quiet -- "$LEDGER" "$POSTS" "$ACCTS" 2>/dev/null && [ ! -f "$POSTS" ]; then
+          if [ -z "$(git status --porcelain -- "$LEDGER" "$POSTS" "$ACCTS")" ]; then
             echo "::notice::Buku besar tidak berubah."
             exit 0
           fi

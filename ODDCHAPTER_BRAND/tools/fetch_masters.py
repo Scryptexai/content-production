@@ -29,8 +29,10 @@ THUMB_DIR = META_DIR / "thumbs"
 
 
 def selected_episodes(sel):
-    # Dua pola: seri lama "EPxx.json" dan seri ANGKER "AK-EPxx.json".
-    eps = sorted({p.stem for pat in ("EP*.json", "AK-*.json") for p in META_DIR.glob(pat)})
+    # Tiga pola: seri lama "EPxx.json", seri ANGKER "AK-EPxx.json",
+    # dan seri SURPRISE "OS-EPxx.json".
+    eps = sorted({p.stem for pat in ("EP*.json", "AK-*.json", "OS-*.json")
+                  for p in META_DIR.glob(pat)})
     if sel.upper() == "ALL":
         return eps
     if sel not in eps:
