@@ -2,7 +2,7 @@
   "episode": "OS-EP01",
   "slug": "ball-lightning",
   "status": "requested",
-  "approved": false,
+  "approved": true,
   "file": "work/ball-lightning/out/OS-EP01_ball-lightning_feed.mp4",
   "master_sha256": "42eacc399e9cdc05df2a6d9cd6bdedbc7a3d1db671a74dc8f1b20a67a67c2d22",
   "drive_video_id": "1JG4wC5Ws9XPlJl7TFt8bvYfW4SLaEvSn",
