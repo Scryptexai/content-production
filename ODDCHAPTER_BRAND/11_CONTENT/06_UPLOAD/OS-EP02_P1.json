@@ -1,0 +1,51 @@
+{
+  "episode": "OS-EP02_P1",
+  "series": "OS-EP02",
+  "kind": "short",
+  "video": "OS-EP02_P1_ikan-jatuh-langit_feed.mp4",
+  "thumbnail": "OS-EP02_thumbnail_16x9.jpg",
+  "poster": "OS-EP02_poster_9x16.jpg",
+  "title": "Hujan Ikan di Drumherg 1928 (Part 1/2): Ikan Jatuh dari Langit",
+  "title_alt": [
+    "Puluhan Ikan Berserakan di Jalan — Tanpa Sungai, Tanpa Truk",
+    "Ikan di Atap Bungalow: Misteri Drumherg, Irlandia Utara",
+    "Di Desa Ini, Ikan Jatuh dari Langit (1/2)"
+  ],
+  "hook": "Pagi itu, warga keluar rumah dan menemukan puluhan ikan berserakan di jalan.",
+  "description": "Pagi itu, warga keluar rumah dan menemukan puluhan ikan berserakan di jalan. Tidak ada sungai di dekat sana. Tidak ada truk yang terguling. Ikan-ikan itu, katanya, jatuh dari langit.\n\nPeristiwanya tercatat pada tahun1928, di daerah Drumherg dekat Comber, County Down, Irlandia Utara. Setelah badai petir yang sangat kuat, warga menemukan puluhan ikan kecil berwarna kemerahan — sebagian di tanah, sebagian di atas atap sebuah bungalow. Tak ada sungai besar, tak ada kolam ikan yang jebol, tak ada kendaraan yang membawa ikan lewat. Warga menyimpulkan ikan itu turun bersama hujan — tapi tidak ada seorang pun yang melihatnya jatuh.\n\nCukup bukti? Belum tentu. Lanjut ke Part2: jarak ke sumber air terdekat dan penjelasan waterspout.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile OpenStreetMap — © OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "hujan ikan",
+    "ikan jatuh dari langit",
+    "Drumherg",
+    "Comber",
+    "County Down",
+    "Irlandia Utara1928",
+    "fenomena alam",
+    "misteri",
+    "kisah nyata",
+    "part1",
+    "oddchapter"
+  ],
+  "first_comment": "Puluhan ikan di jalan dan di atap bungalow, tanpa sungai dan tanpa truk — Drumherg1928. Part1 dari2: buktinya cukup? Lanjut ke Part2.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "16emQHQk5kGGCAC9BWJq59DvHnWohHuk7",
+  "drive_ids": {
+    "video": "16emQHQk5kGGCAC9BWJq59DvHnWohHuk7",
+    "thumbnail": "1QthtNZkEyDcghoKFLCLoaEPIS75MNspQ",
+    "poster": "1ZhkDkUhuP8xOErPyluNbWnBwdp7BW7af",
+    "folder": "1Xn7t5VS3pqjOBiHXXeFZED3X8BHXfS56"
+  },
+  "duration_seconds": 101.33,
+  "size_bytes": 66865682,
+  "sha256": "120c118ed51ede013efb9ae86a626e14f9ccc88dc9049eff10399185994f37f7",
+  "cut_from": {
+    "master_drive_file_id": "1rBGIs_32DmKx4BuCHGFynVdtR8g-8b6B",
+    "master_sha256": "d6e4f930903128af917713962168450cafd7d476a433af56b640dea84502da55",
+    "cut_seconds": 96.35,
+    "outro_appended": true
+  },
+  "catatan": "Part1/2 dari OS-EP02 (master penuh225,19 s masuk long-form → dipecah jadi2 file <3 menit). Potongan pada96,35 s (setelah cue 'Belum tentu.', sebelum 'Namun ada detail lain…'), outro animasi5 dtk disisipkan di akhir Part1. SRT: OS-EP02_P1.id.srt (96 cue). QC: durasi101,33 s,1080×1920@30, AAC44,1, −14,9 LUFS; frame batas identik dengan master. Status: BELUM TAYANG (queue approved:false)."
+}

@@ -1,0 +1,49 @@
+{
+  "episode": "OS-EP02_P2",
+  "series": "OS-EP02",
+  "kind": "short",
+  "video": "OS-EP02_P2_ikan-jatuh-langit_feed.mp4",
+  "thumbnail": "OS-EP02_thumbnail_16x9.jpg",
+  "poster": "OS-EP02_poster_9x16.jpg",
+  "title": "Hujan Ikan di Drumherg (Part 2/2): Waterspout & Jarak3 Km",
+  "title_alt": [
+    "3 Km dari Air: Bisa Berpindah Sejauh Itu? (2/2)",
+    "Waterspout: Penjelasan untuk Hujan Ikan Drumherg",
+    "Ikan Jatuh dari Langit — Penjelasan Ilmiahnya (2/2)"
+  ],
+  "hook": "Namun ada detail lain yang membuat kasus ini menarik: sumber air terdekat jaraknya sekitar3 km.",
+  "description": "Lanjutan dari Part1. Sumber air terdekat dari lokasi kejadian adalah Strangford Lough — jaraknya sekitar3 km. Cukup jauh untuk membuat siapa pun bertanya: bagaimana ikan-ikan kecil itu bisa berpindah sejauh itu?\n\nPenjelasan yang paling masuk akal: waterspout — pusaran angin di atas permukaan air, mirip tapi terbentuk di atas laut atau danau. Jika pusarannya cukup kuat, air beserta ikan kecil ikut terangkat, lalu jatuh kembali jauh dari tempat asalnya. Itulah sebabnya hujan ikan dan hujan katak pernah dilaporkan di berbagai tempat.\n\nTapi untuk kasus Drumherg, waterspout tetap bukan bukti final: tidak ada rekaman, tidak ada saksi yang melihat ikan terangkat, tidak ada laporan yang memastikan prosesnya. Menurut lo, penjelasan sudah cukup? Tulis pendapat lo di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile OpenStreetMap — © OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "hujan ikan",
+    "waterspout",
+    "Strangford Lough",
+    "Drumherg",
+    "Irlandia Utara1928",
+    "fenomena alam",
+    "kisah nyata",
+    "penjelasan ilmiah",
+    "part2",
+    "oddchapter"
+  ],
+  "first_comment": "Part2: sumber air terdekat3 km dari lokasi — waterspout sudah cukup menjelaskan, atau masih ada yang janggal? Tulis pendapat lo.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1TeZxQKsXhptYbodMO0Pqe-cl6z1hO_8Z",
+  "drive_ids": {
+    "video": "1TeZxQKsXhptYbodMO0Pqe-cl6z1hO_8Z",
+    "thumbnail": "1QthtNZkEyDcghoKFLCLoaEPIS75MNspQ",
+    "poster": "1ZhkDkUhuP8xOErPyluNbWnBwdp7BW7af",
+    "folder": "1Xn7t5VS3pqjOBiHXXeFZED3X8BHXfS56"
+  },
+  "duration_seconds": 128.83,
+  "size_bytes": 94765735,
+  "sha256": "aea1ba717ce52b6169722cb735599d0262c9cee2c56a63db3b368ca6f268a1fc",
+  "cut_from": {
+    "master_drive_file_id": "1rBGIs_32DmKx4BuCHGFynVdtR8g-8b6B",
+    "master_sha256": "d6e4f930903128af917713962168450cafd7d476a433af56b640dea84502da55",
+    "cut_seconds": 96.35
+  },
+  "catatan": "Part2/2 dari OS-EP02 (cut pada96,35 s → berakhir pada outro animasi master225,19 s). Isi: Strangford Lough ±3 km (shot peta B), waterspout, recap, CTA komentar, outro. SRT: OS-EP02_P2.id.srt (127 cue, waktu sudah digeser −96,35). QC: durasi128,83 s,1080×1920@30, AAC44,1, −15,1 LUFS. Status: BELUM TAYANG (queue approved:false)."
+}
