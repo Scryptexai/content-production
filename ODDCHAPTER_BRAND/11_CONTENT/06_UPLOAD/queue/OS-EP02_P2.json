@@ -1,0 +1,11 @@
+{
+  "episode": "OS-EP02_P2",
+  "slug": "ikan-jatuh-langit",
+  "status": "requested",
+  "approved": false,
+  "file": "work/ikan-jatuh-langit/out/OS-EP02_P2_ikan-jatuh-langit_feed.mp4",
+  "master_sha256": "aea1ba717ce52b6169722cb735599d0262c9cee2c56a63db3b368ca6f268a1fc",
+  "drive_video_id": "1TeZxQKsXhptYbodMO0Pqe-cl6z1hO_8Z",
+  "catatan": "Part2/2 OS-EP02 (dari96,35 s sampai outro;128,83 s <3 menit). BELUM ADA IZIN TAYANG — approved:false sampai perintah user. Tayang SETELAH P1: set approved:true di push terpisah.",
+  "izin": null
+}
