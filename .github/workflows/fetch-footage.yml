@@ -9,6 +9,12 @@ on:
       - ".github/workflows/fetch-footage.yml"
 permissions:
   contents: write
+
+# Satu group dengan fetch-map-assets — dua runner tidak boleh
+# men-push cabang yang sama secara bersamaan (race = push ditolak).
+concurrency:
+  group: asset-runners
+  cancel-in-progress: false
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -60,7 +66,14 @@ jobs:
           find footage -name "_tmp_*" -print0 2>/dev/null | xargs -0 -r git rm -f --ignore-unmatch -q || true
           # Ambil tip remote dulu (tanpa rebase): kalau ada push baru di tengah run,
           # staged = hasil kerja ini di atas tip terbaru, lalu commit + push.
-          git fetch origin "${GITHUB_REF_NAME}"
-          git reset --soft "origin/${GITHUB_REF_NAME}"
-          git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]"
-          git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
+          # Satu retry — kalau tetap ditolak, annotasi menyebut tahap mana yang gagal.
+          ok=0
+          for i in 1 2; do
+            git fetch origin "${GITHUB_REF_NAME}" || { echo "::error::fetch gagal"; break; }
+            git reset --soft "origin/${GITHUB_REF_NAME}" || { echo "::error::reset gagal"; break; }
+            git commit --allow-empty -m "footage: klip coverr hasil actions [skip ci]" || { echo "::error::commit gagal"; break; }
+            if git push origin HEAD:refs/heads/${GITHUB_REF_NAME}; then ok=1; break; fi
+            echo "::warning::push ditolak, coba lagi ($i)"
+            sleep 8
+          done
+          if [ "$ok" != "1" ]; then echo "::error::push footage gagal setelah retry"; exit 1; fi

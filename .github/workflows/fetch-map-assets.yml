@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: fetch-map-assets
+  group: asset-runners
   cancel-in-progress: false
 
 jobs:
@@ -44,8 +44,13 @@ jobs:
             echo "::notice::Tidak ada berkas peta baru."
             exit 0
           fi
-          git commit -m "assets(maps): peta OSM dirakit dari tile [skip ci]"
-          git fetch origin "${GITHUB_REF_NAME}"
-          git reset --soft "origin/${GITHUB_REF_NAME}"
-          git commit --allow-empty -m "assets(maps): peta OSM dirakit dari tile [skip ci]"
-          git push origin HEAD:refs/heads/${GITHUB_REF_NAME}
+          ok=0
+          for i in 1 2; do
+            git fetch origin "${GITHUB_REF_NAME}" || { echo "::error::fetch gagal"; break; }
+            git reset --soft "origin/${GITHUB_REF_NAME}" || { echo "::error::reset gagal"; break; }
+            git commit --allow-empty -m "assets(maps): peta OSM dirakit dari tile [skip ci]" || { echo "::error::commit gagal"; break; }
+            if git push origin HEAD:refs/heads/${GITHUB_REF_NAME}; then ok=1; break; fi
+            echo "::warning::push ditolak, coba lagi ($i)"
+            sleep 8
+          done
+          if [ "$ok" != "1" ]; then echo "::error::push peta gagal setelah retry"; exit 1; fi
