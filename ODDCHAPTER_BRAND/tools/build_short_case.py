@@ -153,7 +153,9 @@ def build_captions(words):
         parts = []
         for tok in g:
             up = tok["w"].upper()
-            parts.append(f"{{\\c{RED}}}{up}{{\\c&H00FFFFFF&}}" if up in KEYWORDS else up)
+            # cocokkan KEYWORDS tanpa tanda baca di ujung ("KUGELBLITZ," = KUGELBLITZ)
+            hit = up.rstrip(",.") in KEYWORDS
+            parts.append(f"{{\\c{RED}}}{up}{{\\c&H00FFFFFF&}}" if hit else up)
         plain = " ".join(w["w"].upper() for w in g)
         est = len(plain) * 0.427 * 100          # lebar perkiraan @ fs 100
         if est > 860:                            # baris kepanjangan -> kecilkan font

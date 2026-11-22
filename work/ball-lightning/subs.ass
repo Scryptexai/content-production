@@ -1,0 +1,271 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Barlow Condensed ExtraBold,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1.5,0,1,8,3,2,60,60,672,1
+Style: Kicker,Barlow Condensed ExtraBold,74,&H00E0ECF0,&H00E0ECF0,&H00000000,&H80000000,0,0,0,0,100,100,6,0,1,6,2,5,60,60,0,1
+Style: Big,Anton,170,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,0,0,0,100,100,0,0,1,10,4,5,40,40,0,1
+Style: Stamp,Anton,120,&H00000000,&H00000000,&H002A2AD8,&H00000000,0,0,0,0,100,100,0,0,3,14,0,5,40,40,0,1
+Style: Tag,Barlow Condensed ExtraBold,34,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1.2,0,1,3,1,7,60,60,300,1
+Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,3,1,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.85,0:00:05.67,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:06.02,0:00:08.35,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:08.70,0:00:11.33,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:11.68,0:00:17.79,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:18.14,0:00:20.45,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:20.80,0:00:23.47,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:23.82,0:00:26.35,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:26.70,0:00:30.03,Tag,,0,0,0,,ARSIP · WIKIMEDIA COMMONS · PD ABAD-19
+Dialogue: 0,0:00:26.70,0:00:30.03,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:30.38,0:00:36.61,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:36.96,0:00:42.27,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:42.62,0:00:46.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:46.75,0:00:50.77,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:51.12,0:00:53.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:54.25,0:00:56.93,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:57.28,0:00:59.93,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:00.28,0:01:05.47,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:05.82,0:01:13.39,Tag,,0,0,0,,PETA · TSCHUBBY · CC BY-SA3.0
+Dialogue: 0,0:01:05.82,0:01:13.39,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:13.74,0:01:19.47,Tag,,0,0,0,,FOTO · RIBAX · CC BY-SA4.0
+Dialogue: 0,0:01:13.74,0:01:19.47,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:19.82,0:01:22.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:23.25,0:01:26.47,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:26.82,0:01:30.83,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:31.18,0:01:36.43,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:36.78,0:01:41.69,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:42.04,0:01:45.25,Tag,,0,0,0,,ARSIP · WIKIMEDIA COMMONS · PD ABAD-19
+Dialogue: 0,0:01:42.04,0:01:45.25,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:45.60,0:01:50.51,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:50.86,0:01:55.31,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:01:55.66,0:02:00.79,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:02:01.14,0:02:04.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:04.75,0:02:07.68,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:08.03,0:02:13.29,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:13.64,0:02:16.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:17.25,0:02:20.19,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:02:20.54,0:02:23.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:23.75,0:02:26.27,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:26.62,0:02:29.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:29.75,0:02:32.93,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:33.28,0:02:35.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:36.25,0:02:39.23,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:39.58,0:02:42.57,Tag,,0,0,0,,FOTO · RIBAX · CC BY-SA4.0
+Dialogue: 0,0:02:39.58,0:02:42.57,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:02:42.92,0:02:46.90,Tag,,0,0,0,,ARSIP · WIKIMEDIA COMMONS · PD ABAD-19
+Dialogue: 0,0:02:42.92,0:02:46.90,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:02:47.25,0:02:52.15,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:52.50,0:02:56.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:02:56.75,0:03:00.45,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:03:00.80,0:03:02.26,Tag,,0,0,0,,FOOTAGE STOK · COVERR
+Dialogue: 0,0:00:01.10,0:00:05.60,Stamp,,0,0,0,,{\pos(540,520)\an5\fs56\frz-4\fad(160,150)}BOLA CAHAYA DI RESTORAN
+Dialogue: 0,0:00:12.00,0:00:17.60,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}MASUK LEWAT PINTU YANG TERBUKA
+Dialogue: 0,0:00:30.60,0:00:36.40,Stamp,,0,0,0,,{\pos(540,520)\an5\fs60\frz-4\fad(160,150)}MELEDAK SEPERTI TEMBAKAN
+Dialogue: 0,0:00:37.00,0:00:41.60,Kicker,,0,0,0,,{\pos(540,700)\an5\fs46\c&H002A2AD8&\fad(220,160)}TIDAK ADA YANG TERBAKAR
+Dialogue: 0,0:00:43.00,0:00:49.80,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}DISEBUT JIN, IBLIS, ATAU TANDA DUNIA LAIN
+Dialogue: 0,0:01:00.60,0:01:05.30,Stamp,,0,0,0,,{\pos(540,520)\an5\fs64\frz-4\fad(160,150)}SEPTEMBER 1963 · PUKUL 11
+Dialogue: 0,0:01:06.20,0:01:12.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs44\fad(220,160)}PLÖCKENHAUS · PLÖCKENPASS · ALPEN, AUSTRIA
+Dialogue: 0,0:01:14.00,0:01:19.30,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}MAHASISWA GEOLOGI — UNIVERSITÄT HEIDELBERG
+Dialogue: 0,0:01:20.00,0:01:25.90,Stamp,,0,0,0,,{\pos(540,520)\an5\fs56\frz-4\fad(160,150)}LAPORAN SAKSI: GÜNTHER A. WAGNER
+Dialogue: 0,0:01:27.00,0:01:30.70,Stamp,,0,0,0,,{\pos(540,520)\an5\fs64\frz-4\fad(160,150)}SEBESAR BOLA TENIS
+Dialogue: 0,0:01:31.20,0:01:35.60,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}KECEPATANNYA SEPERTI ORANG BERJALAN
+Dialogue: 0,0:01:37.00,0:01:41.50,Kicker,,0,0,0,,{\pos(540,700)\an5\fs48\fad(220,160)}SULIT DIANGGAP ILUSI — JUMLAH SAKSI
+Dialogue: 0,0:01:42.00,0:01:45.20,Stamp,,0,0,0,,{\pos(540,520)\an5\fs68\frz-4\fad(160,150)}5 ORANG MELIHAT LANGSUNG
+Dialogue: 0,0:01:45.80,0:01:50.40,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}RUANGAN SEBELAH MENDENGAR LEDAKAN
+Dialogue: 0,0:01:51.00,0:01:55.20,Kicker,,0,0,0,,{\pos(540,700)\an5\fs48\fad(220,160)}ANJING BEREAKSI TERHADAP BENDA ITU
+Dialogue: 0,0:01:55.90,0:02:00.60,Stamp,,0,0,0,,{\pos(540,520)\an5\fs80\frz-4\fad(160,150)}KUGELBLITZ
+Dialogue: 0,0:02:01.20,0:02:07.00,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\c&H002A2AD8&\fad(220,160)}BALL LIGHTNING — FENOMENA BADAI PETIR
+Dialogue: 0,0:02:08.20,0:02:13.20,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}ILMUWAN BELUM PUNYA SATU PENJELASAN
+Dialogue: 0,0:02:13.80,0:02:20.00,Kicker,,0,0,0,,{\pos(540,700)\an5\fs44\fad(220,160)}TEORI: PLASMA · TANAH MENGUAP · MEDAN LISTRIK
+Dialogue: 0,0:02:20.60,0:02:25.70,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(220,160)}MASIH MODEL ILMIAH — BUKAN JAWABAN FINAL
+Dialogue: 0,0:02:26.80,0:02:32.80,Stamp,,0,0,0,,{\pos(540,520)\an5\fs66\frz-4\fad(160,150)}IBLIS ATAU SAINS?
+Dialogue: 0,0:02:33.40,0:02:38.80,Kicker,,0,0,0,,{\pos(540,700)\an5\fs50\c&H002A2AD8&\fad(240,170)}JAWABANNYA: BELUM
+Dialogue: 0,0:02:39.60,0:02:42.50,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs50\fad(220,160)}SATU KESAKSIAN NYATA
+Dialogue: 0,0:02:43.00,0:02:46.80,Stamp,,0,0,0,,{\pos(540,520)\an5\fs54\frz-4\fad(160,150)}TERCATAT DALAM JURNAL ILMIAH
+Dialogue: 0,0:02:52.80,0:03:00.30,Stamp,,0,0,0,,{\pos(540,520)\an5\fs60\frz-4\fad(160,150)}FENOMENA ALAM — ATAU LAIN?
+Dialogue: 0,0:03:02.90,0:03:07.36,Big,,0,0,0,,{\pos(540,640)\an5\fs110\fad(260,0)}ODDCHAPTER
+Dialogue: 0,0:03:03.20,0:03:07.36,Kicker,,0,0,0,,{\pos(540,740)\an5\fs42\c&H002A2AD8&\fad(300,0)}ODDCHAPTER SURPRISE · OS-EP01
+Dialogue: 0,0:03:03.50,0:03:07.36,Credit,,0,0,0,,{\pos(540,1000)\an5\fs26\c&H00D0D0D0&\fad(360,0)}Footage stok: Coverr\NArsip: Wikimedia Commons — ukiran PD · peta CC BY-SA · foto Ribax CC BY-SA\N@oddchapter7 · FENOMENA NYATA · LAPORAN SAKSI1963
+Dialogue: 0,0:00:00.37,0:00:01.38,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BAYANGKAN LO
+Dialogue: 0,0:00:01.34,0:00:02.60,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEDANG BERLINDUNG
+Dialogue: 0,0:00:02.56,0:00:03.61,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARI BADAI DI
+Dialogue: 0,0:00:03.57,0:00:04.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBUAH RESTORAN
+Dialogue: 0,0:00:04.54,0:00:05.39,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PEGUNUNGAN
+Dialogue: 0,0:00:05.71,0:00:06.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI LUAR
+Dialogue: 0,0:00:06.42,0:00:08.07,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HUJAN TURUN DERAS
+Dialogue: 0,0:00:08.39,0:00:09.67,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PETIR MENYAMBAR
+Dialogue: 0,0:00:09.63,0:00:10.89,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERKALI-KALI
+Dialogue: 0,0:00:11.37,0:00:12.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU DARI PINTU
+Dialogue: 0,0:00:12.69,0:00:13.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG TERBUKA
+Dialogue: 0,0:00:13.76,0:00:15.27,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MUNCUL SEBUAH BOLA
+Dialogue: 0,0:00:15.23,0:00:16.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CAHAYA BERWARNA
+Dialogue: 0,0:00:16.24,0:00:17.57,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUTIH KEKUNINGAN
+Dialogue: 0,0:00:17.83,0:00:18.83,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA ITU BERGERAK
+Dialogue: 0,0:00:18.79,0:00:19.65,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RENDAH DI ATAS
+Dialogue: 0,0:00:19.61,0:00:20.23,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LANTAI
+Dialogue: 0,0:00:20.49,0:00:21.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERLAHAN MENDEKATI
+Dialogue: 0,0:00:21.86,0:00:23.11,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEEKOR ANJING
+Dialogue: 0,0:00:23.51,0:00:24.30,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ANJING ITU
+Dialogue: 0,0:00:24.26,0:00:25.49,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LANGSUNG BERDIRI
+Dialogue: 0,0:00:25.45,0:00:26.43,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU MENJAUH
+Dialogue: 0,0:00:26.39,0:00:27.39,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEBERAPA ORANG DI
+Dialogue: 0,0:00:27.35,0:00:28.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALAM RUANGAN
+Dialogue: 0,0:00:28.10,0:00:29.15,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MELIHAT BENDA YANG
+Dialogue: 0,0:00:29.11,0:00:29.65,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAMA
+Dialogue: 0,0:00:30.07,0:00:31.55,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA ITU BERGERAK
+Dialogue: 0,0:00:31.51,0:00:32.91,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKITAR 2 METER
+Dialogue: 0,0:00:32.87,0:00:34.23,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMUDIAN MELEDAK
+Dialogue: 0,0:00:34.19,0:00:35.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DENGAN SUARA KERAS
+Dialogue: 0,0:00:35.12,0:00:36.19,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEPERTI TEMBAKAN
+Dialogue: 0,0:00:36.65,0:00:37.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK ADA ORANG
+Dialogue: 0,0:00:37.28,0:00:38.21,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG MENYENTUHNYA
+Dialogue: 0,0:00:38.53,0:00:39.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK ADA KABEL
+Dialogue: 0,0:00:39.28,0:00:40.03,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG PUTUS
+Dialogue: 0,0:00:40.23,0:00:41.05,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK ADA BENDA
+Dialogue: 0,0:00:41.01,0:00:41.93,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG TERBAKAR
+Dialogue: 0,0:00:42.31,0:00:43.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU KEJADIAN INI
+Dialogue: 0,0:00:43.44,0:00:44.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERJADI DI SEBUAH
+Dialogue: 0,0:00:44.52,0:00:45.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DESA MUNGKIN ORANG
+Dialogue: 0,0:00:45.84,0:00:47.25,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AKAN MENYEBUTNYA
+Dialogue: 0,0:00:47.21,0:00:48.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JIN IBLIS
+Dialogue: 0,0:00:48.20,0:00:49.57,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ATAU TANDA DARI
+Dialogue: 0,0:00:49.53,0:00:50.45,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DUNIA LAIN
+Dialogue: 0,0:00:50.81,0:00:51.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBELUM KITA
+Dialogue: 0,0:00:51.62,0:00:52.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LANJUT KLIK LIKE
+Dialogue: 0,0:00:52.74,0:00:53.67,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DULU KALAU LO
+Dialogue: 0,0:00:53.63,0:00:54.61,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERNAH MENDENGAR
+Dialogue: 0,0:00:54.57,0:00:55.45,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CERITA TENTANG
+Dialogue: 0,0:00:55.41,0:00:56.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CAHAYA ANEH SAAT
+Dialogue: 0,0:00:56.38,0:00:56.97,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BADAI
+Dialogue: 0,0:00:56.97,0:00:58.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KARENA KEJADIAN
+Dialogue: 0,0:00:58.00,0:00:59.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}INI BUKAN CERITA
+Dialogue: 0,0:00:59.12,0:00:59.77,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}FIKSI
+Dialogue: 0,0:00:59.97,0:01:00.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERISTIWA INI
+Dialogue: 0,0:01:00.84,0:01:01.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERJADI SEKITAR
+Dialogue: 0,0:01:01.82,0:01:03.07,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PUKUL 11 PAGI PADA
+Dialogue: 0,0:01:03.03,0:01:04.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEPTEMBER
+Dialogue: 0,0:01:04.10,0:01:05.63,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAHUN 1963
+Dialogue: 0,0:01:06.51,0:01:07.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LOKASINYA BERADA
+Dialogue: 0,0:01:07.50,0:01:08.47,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI {\c&H002A2AD8&}PLÖCKENHAUS{\c&H00FFFFFF&}
+Dialogue: 0,0:01:08.43,0:01:09.59,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBUAH RESTORAN DI
+Dialogue: 0,0:01:09.55,0:01:10.71,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BAWAH PLÖCKENPASS
+Dialogue: 0,0:01:10.67,0:01:11.63,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI PEGUNUNGAN
+Dialogue: 0,0:01:11.59,0:01:12.83,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ALPEN AUSTRIA
+Dialogue: 0,0:01:13.43,0:01:14.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAAT ITU
+Dialogue: 0,0:01:14.04,0:01:15.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEBERAPA MAHASISWA
+Dialogue: 0,0:01:15.14,0:01:15.95,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GEOLOGI DARI
+Dialogue: 0,0:01:15.91,0:01:16.64,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}UNIVERSITAS
+Dialogue: 0,0:01:16.60,0:01:17.69,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}HEIDELBERG{\c&H00FFFFFF&} SEDANG
+Dialogue: 0,0:01:17.65,0:01:18.53,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERTEDUH DARI
+Dialogue: 0,0:01:18.49,0:01:19.11,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BADAI
+Dialogue: 0,0:01:19.51,0:01:20.37,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SALAH SATU SAKSI
+Dialogue: 0,0:01:20.33,0:01:21.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG KEMUDIAN
+Dialogue: 0,0:01:21.00,0:01:21.93,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENULISKAN LAPORAN
+Dialogue: 0,0:01:21.89,0:01:22.91,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERSEBUT ADALAH
+Dialogue: 0,0:01:22.87,0:01:23.95,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GÜNTHER A
+Dialogue: 0,0:01:23.91,0:01:25.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}WAGNER{\c&H00FFFFFF&} SEORANG
+Dialogue: 0,0:01:25.02,0:01:26.19,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AHLI GEOLOGI
+Dialogue: 0,0:01:26.51,0:01:27.75,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENURUT CATATANNYA
+Dialogue: 0,0:01:27.70,0:01:28.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA ITU SEDIKIT
+Dialogue: 0,0:01:28.76,0:01:29.85,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LEBIH BESAR DARI
+Dialogue: 0,0:01:29.81,0:01:30.71,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA TENIS
+Dialogue: 0,0:01:30.87,0:01:31.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}WARNANYA PUTIH
+Dialogue: 0,0:01:31.84,0:01:32.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEKUNINGAN DAN
+Dialogue: 0,0:01:32.88,0:01:33.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KECEPATANNYA
+Dialogue: 0,0:01:33.69,0:01:34.89,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KIRA-KIRA SEPERTI
+Dialogue: 0,0:01:34.85,0:01:36.03,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ORANG BERJALAN
+Dialogue: 0,0:01:36.47,0:01:37.19,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG MEMBUAT
+Dialogue: 0,0:01:37.15,0:01:38.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEJADIAN INI SULIT
+Dialogue: 0,0:01:38.14,0:01:39.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIANGGAP SEBAGAI
+Dialogue: 0,0:01:39.02,0:01:39.89,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ILUSI ADALAH
+Dialogue: 0,0:01:39.85,0:01:41.31,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JUMLAH SAKSINYA
+Dialogue: 0,0:01:41.73,0:01:42.81,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKITAR 5 ORANG
+Dialogue: 0,0:01:42.77,0:01:43.75,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MELIHAT BOLA ITU
+Dialogue: 0,0:01:43.71,0:01:44.83,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SECARA LANGSUNG
+Dialogue: 0,0:01:45.29,0:01:46.01,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ORANG-ORANG DI
+Dialogue: 0,0:01:45.97,0:01:46.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RUANGAN SEBELAH
+Dialogue: 0,0:01:46.69,0:01:47.37,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK MELIHAT
+Dialogue: 0,0:01:47.33,0:01:47.93,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLANYA
+Dialogue: 0,0:01:48.13,0:01:48.99,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TETAPI MEREKA
+Dialogue: 0,0:01:48.95,0:01:49.91,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENDENGAR SUARA
+Dialogue: 0,0:01:49.87,0:01:50.59,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LEDAKANNYA
+Dialogue: 0,0:01:50.55,0:01:51.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BAHKAN ANJING DI
+Dialogue: 0,0:01:51.69,0:01:52.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALAM RUANGAN
+Dialogue: 0,0:01:52.62,0:01:53.83,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEREAKSI TERHADAP
+Dialogue: 0,0:01:53.79,0:01:54.95,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BENDA TERSEBUT
+Dialogue: 0,0:01:55.35,0:01:56.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PARA SAKSI
+Dialogue: 0,0:01:56.04,0:01:56.79,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENYEBUTNYA
+Dialogue: 0,0:01:56.75,0:01:57.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}KUGELBLITZ{\c&H00FFFFFF&} ATAU
+Dialogue: 0,0:01:57.78,0:01:58.63,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DALAM BAHASA
+Dialogue: 0,0:01:58.59,0:01:59.33,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}INGGRIS
+Dialogue: 0,0:01:59.43,0:02:00.29,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BALL LIGHTNING{\c&H00FFFFFF&}
+Dialogue: 0,0:02:00.83,0:02:01.77,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BALL LIGHTNING{\c&H00FFFFFF&}
+Dialogue: 0,0:02:01.73,0:02:02.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADALAH FENOMENA
+Dialogue: 0,0:02:02.68,0:02:03.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CAHAYA BERBENTUK
+Dialogue: 0,0:02:03.69,0:02:04.79,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA YANG KADANG
+Dialogue: 0,0:02:04.75,0:02:05.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MUNCUL SAAT ATAU
+Dialogue: 0,0:02:05.82,0:02:06.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SETELAH BADAI
+Dialogue: 0,0:02:06.69,0:02:07.33,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PETIR
+Dialogue: 0,0:02:07.73,0:02:08.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}NAMUN SAMPAI
+Dialogue: 0,0:02:08.50,0:02:09.59,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEKARANG ILMUWAN
+Dialogue: 0,0:02:09.55,0:02:10.47,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BELUM MEMILIKI
+Dialogue: 0,0:02:10.43,0:02:11.41,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SATU PENJELASAN
+Dialogue: 0,0:02:11.37,0:02:12.23,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG DITERIMA
+Dialogue: 0,0:02:12.19,0:02:13.15,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEMUA PIHAK
+Dialogue: 0,0:02:13.33,0:02:14.25,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADA TEORI YANG
+Dialogue: 0,0:02:14.21,0:02:15.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGAITKANNYA
+Dialogue: 0,0:02:14.98,0:02:15.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DENGAN PLASMA
+Dialogue: 0,0:02:15.84,0:02:16.73,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PARTIKEL TANAH
+Dialogue: 0,0:02:16.69,0:02:17.59,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG MENGUAP
+Dialogue: 0,0:02:17.55,0:02:18.76,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ATAU MEDAN LISTRIK
+Dialogue: 0,0:02:18.72,0:02:19.87,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG SANGAT KUAT
+Dialogue: 0,0:02:19.83,0:02:21.25,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TETAPI SEMUA ITU
+Dialogue: 0,0:02:21.21,0:02:22.79,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MASIH BERUPA MODEL
+Dialogue: 0,0:02:22.75,0:02:23.91,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ILMIAH BUKAN
+Dialogue: 0,0:02:23.87,0:02:24.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JAWABAN FINAL
+Dialogue: 0,0:02:24.64,0:02:25.40,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}UNTUK SETIAP
+Dialogue: 0,0:02:25.36,0:02:26.05,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAPORAN
+Dialogue: 0,0:02:26.31,0:02:27.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JADI APAKAH BOLA
+Dialogue: 0,0:02:27.64,0:02:28.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI RESTORAN ITU
+Dialogue: 0,0:02:28.84,0:02:29.55,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}IBLIS?
+Dialogue: 0,0:02:29.91,0:02:30.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BUKTI YANG
+Dialogue: 0,0:02:30.48,0:02:31.29,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERSEDIA TIDAK
+Dialogue: 0,0:02:31.25,0:02:32.11,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENUNJUKKAN HAL
+Dialogue: 0,0:02:32.07,0:02:32.77,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERSEBUT
+Dialogue: 0,0:02:32.97,0:02:34.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TETAPI APAKAH
+Dialogue: 0,0:02:33.98,0:02:34.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAINS SUDAH
+Dialogue: 0,0:02:34.74,0:02:35.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BENAR-BENAR
+Dialogue: 0,0:02:35.52,0:02:36.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMAHAMI
+Dialogue: 0,0:02:36.12,0:02:37.05,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BALL LIGHTNING{\c&H00FFFFFF&}
+Dialogue: 0,0:02:37.41,0:02:38.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JAWABANNYA JUGA
+Dialogue: 0,0:02:38.47,0:02:39.13,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BELUM
+Dialogue: 0,0:02:39.27,0:02:40.35,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG KITA PUNYA
+Dialogue: 0,0:02:40.31,0:02:41.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADALAH SATU
+Dialogue: 0,0:02:41.08,0:02:42.35,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KESAKSIAN NYATA
+Dialogue: 0,0:02:42.61,0:02:43.40,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DISAKSIKAN
+Dialogue: 0,0:02:43.36,0:02:44.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEBERAPA ORANG
+Dialogue: 0,0:02:44.48,0:02:45.57,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERCATAT DALAM
+Dialogue: 0,0:02:45.53,0:02:46.61,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JURNAL ILMIAH
+Dialogue: 0,0:02:46.57,0:02:47.43,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DAN SEBUAH
+Dialogue: 0,0:02:47.39,0:02:48.85,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}FENOMENA ALAM YANG
+Dialogue: 0,0:02:48.81,0:02:50.06,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SAMPAI HARI INI
+Dialogue: 0,0:02:50.02,0:02:50.97,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MASIH MENYISAKAN
+Dialogue: 0,0:02:50.93,0:02:51.63,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PERTANYAAN
+Dialogue: 0,0:02:52.19,0:02:53.14,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU LO MELIHAT
+Dialogue: 0,0:02:53.10,0:02:53.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BOLA CAHAYA
+Dialogue: 0,0:02:53.74,0:02:54.69,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEPERTI INI SAAT
+Dialogue: 0,0:02:54.65,0:02:55.93,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BADAI LO AKAN
+Dialogue: 0,0:02:55.89,0:02:57.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGANGGAPNYA
+Dialogue: 0,0:02:56.98,0:02:58.39,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}FENOMENA ALAM?
+Dialogue: 0,0:02:58.57,0:02:59.66,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ATAU SESUATU YANG
+Dialogue: 0,0:02:59.62,0:03:00.17,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LAIN?
+Dialogue: 0,0:03:00.49,0:03:01.37,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TULIS PENDAPAT LO
+Dialogue: 0,0:03:01.33,0:03:02.13,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DI KOMENTAR

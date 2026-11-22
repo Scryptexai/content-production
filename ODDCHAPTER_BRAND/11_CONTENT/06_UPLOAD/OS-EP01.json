@@ -1,0 +1,44 @@
+{
+  "episode": "OS-EP01",
+  "video": "OS-EP01_ball-lightning_feed.mp4",
+  "thumbnail": "OS-EP01_thumbnail_16x9.jpg",
+  "poster": "OS-EP01_poster_9x16.jpg",
+  "title": "Kugelblitz 1963: Bola Cahaya Masuk Restoran di Pegunungan Alpen",
+  "title_alt": [
+    "5 Saksi Melihat Bola Cahaya Meledak Seperti Tembakan",
+    "Laporan Saksi 1963: Fenomena yang Belum Dijelaskan Sains",
+    "Bayangkan Badai di Restoran, Lalu Bola Cahaya Itu Masuk"
+  ],
+  "hook": "Bayangkan, lo sedang berlindung dari badai di sebuah restoran pegunungan.",
+  "description": "Bayangkan, lo sedang berlindung dari badai di sebuah restoran pegunungan. Di luar hujan deras, petir menyambar — lalu dari pintu yang terbuka muncul bola cahaya putih kekuningan. Bola itu bergerak rendah di atas lantai, mendekati seekor anjing, bergerak sekitar 2 meter, lalu meledak dengan suara seperti tembakan. Tidak ada yang menyentuhnya. Tidak ada kabel putus. Tidak ada yang terbakar.\n\nSeptember 1963, pukul 11 pagi, di Plöckenhaus — restoran di bawah Plöckenpass, pegunungan Alpen, Austria. Beberapa mahasiswa geologi Universitas Heidelberg sedang berteduh dari badai. Salah satu saksi, Günther A. Wagner, menuliskan laporan: bolanya sedikit lebih besar dari bola tenis, warnanya putih kekuningan, kecepatannya seperti orang berjalan. Sekitar 5 orang melihat langsung; ruangan sebelah mendengar ledakannya; anjing bereaksi.\n\nPara saksi menyebutnya kugelblitz — ball lightning. Fenomena cahaya berbentuk bola yang kadang muncul saat atau setelah badai. Sampai sekarang ilmuwan belum punya satu penjelasan yang diterima semua pihak: ada teori plasma, tanah yang menguap, dan medan listrik — semuanya masih model, bukan jawaban final.\n\nJadi: iblis, atau sains? Bukti tidak menunjukkan yang pertama; sains pun belum selesai. Yang kita punya satu kesaksian nyata — tercatat dalam jurnal ilmiah.\n\nKalau lo melihat bola cahaya seperti ini saat badai, lo akan menganggapnya fenomena alam? Atau sesuatu yang lain? Tulis pendapat lo di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang untuk adegan bola cahaya. Sumber visual arsip: ukiran 19-an (Wikimedia Commons, public domain), Reliefkarte Österreich (Tschubby, CC BY-SA 3.0), foto Alte Universität Heidelberg (Ribax, CC BY-SA 4.0). Mengandung media sintetis (AI). @oddchapter7",
+  "tags": [
+    "kugelblitz",
+    "ball lightning",
+    "bola cahaya",
+    "fenomena alam",
+    "badai petir",
+    "Alpen Austria",
+    "Plöckenhaus",
+    "Günther A. Wagner",
+    "misteri1963",
+    "kisah nyata",
+    "oddchapter"
+  ],
+  "first_comment": "Bola cahaya yang meledak tanpa membakar apa pun —5 saksi di sebuah restoran Alpen,1963. Menurut lo, ini fenomena alam atau bukan? Tulis di komentar.",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1JG4wC5Ws9XPlJl7TFt8bvYfW4SLaEvSn",
+  "drive_ids": {
+    "video": "1JG4wC5Ws9XPlJl7TFt8bvYfW4SLaEvSn",
+    "thumbnail": "1rdYrKx7OF-YwcQMb5zOl53zBafg2k4dn",
+    "poster": "1-jvPx05v7uxjOY2zDsAmSQWHSWb9lY6c",
+    "srt": "1nDPnxhEExClCqD5Q73BK2em-6XduJR6D",
+    "folder": "1Xn7t5VS3pqjOBiHXXeFZED3X8BHXfS56"
+  },
+  "duration_seconds": 187.36,
+  "size_bytes": 50722017,
+  "sha256": "42eacc399e9cdc05df2a6d9cd6bdedbc7a3d1db671a74dc8f1b20a67a67c2d22",
+  "catatan": "OS-EP01 Ball lightning (seri baru ODDCHAPTER SURPRISE, kode dipilih pemilik; format feed9:16 durasi bebas — VO3:02,36 lewat batas Shorts3 menit, jadi bukan Shorts). VO PEMILIK apa adanya (vo_owner/vo_ball-lightning.mp3,182,36 s,65 cue ElevenLabs; alignment = distribusi timing cue → vo_alignment.json,373 kata; faster-whisper tidak tersedia/egress HF terblokir). Kebijakan visual00G:18 klip Coverr BARU khusus episode ini (nol reuse lintas episode),4 foto AI (adegan tak mungkin difoto),3 source document (ukiran PD, peta CC BY-SA, foto Heidelberg CC BY-SA) — tidak ada section yang hanya foto. END187,36 s = VO + outro animasi5 dtk (short_outro_9x16). QC:46 shot, durasi pas187,37 s; master −15,01 LUFS / −1,50 dBTP; caption bersih (watermark TurboScribe dirapikan; Günther/Sains/pukul11/tahun1963/sekitar2 difix; KEYWORDS merah KUGELBLITZ/BALL LIGHTNING/1963/WAGNER/PLÖCKENHAUS/HEIDELBERG). Sumber fakta: laporan saksi G. A. Wagner (1963) sebagaimana dikutip literatur ball lightning. Status: BELUM TAYANG — menunggu izin eksplisit pemilik (queue approved:false)."
+}
