@@ -1,0 +1,551 @@
+{
+ "storm": {
+  "hits": [
+   {
+    "title": "Stormy Sea Waves Crashing on Pier",
+    "base": "coverr-stormy-sea-waves-crashing-on-pier",
+    "dur": 14.8,
+    "playback": null
+   },
+   {
+    "title": "Storm in Vilnius, Lithuania",
+    "base": "coverr-storm-in-vilnius-lithuania-5273",
+    "dur": 20.0,
+    "playback": "LS5Xg02NXZo5gsJumnYr5APde4ficZy800"
+   },
+   {
+    "title": "Stormy Night Lighthouse Beacon Over Crashing Atlantic Waves",
+    "base": "user-ai-generation-B84ybsW2lE2E",
+    "dur": 10.0,
+    "playback": null
+   },
+   {
+    "title": "Raindrops falling on a hand",
+    "base": "coverr-raindrops-falling-on-a-hand-5811",
+    "dur": 9.5,
+    "playback": "KiPI3DcZmoZJAgNCla4HEKMTHKgoccjV"
+   },
+   {
+    "title": "Slow motion of snow falling on a bench",
+    "base": "coverr-slow-motion-of-snow-falling-on-a-bench-3906",
+    "dur": 20.2,
+    "playback": "byYfUJgFkcAajtVvC2XjCF01zrW302Ip02G"
+   },
+   {
+    "title": "An empty desert",
+    "base": "coverr-an-empty-desert-2948",
+    "dur": 13.4,
+    "playback": "6sNAoI2j02M00XQOC8Et66nXqTWCVM1L7W"
+   },
+   {
+    "title": "Large ocean wave",
+    "base": "coverr-large-ocean-wave-5169",
+    "dur": 20.8,
+    "playback": "3rsZuD02mSXvHRqk6NG6VASYXrg602Z8mN"
+   },
+   {
+    "title": "Large waves crashing near the coast",
+    "base": "coverr-large-waves-crashing-near-the-coast-5201",
+    "dur": 21.7,
+    "playback": "kg9qxfl2st9hkpHUEjO3JaZBW9zx025Ku"
+   },
+   {
+    "title": "Large waves crashing on the rocky shore",
+    "base": "coverr-large-waves-crashing-on-the-rocky-shore-8765",
+    "dur": 10.3,
+    "playback": "fh7ZhGajjSqobZBXEpOUfWsALSzlgLkg"
+   },
+   {
+    "title": "Retail worker adjusts clothes",
+    "base": "coverr-retail-worker-adjusts-clothes-5281",
+    "dur": 21.8,
+    "playback": "yQU02lkmL83wsWzgl00f36Kiw3zm8XFXDl"
+   },
+   {
+    "title": "A Man Enters a Mini Market",
+    "base": "coverr-a-man-enters-a-mini-market-7284",
+    "dur": 14.2,
+    "playback": null
+   },
+   {
+    "title": "Grocery store ",
+    "base": "coverr-grocery-store-74",
+    "dur": 14.9,
+    "playback": "kpd9EdAMiC00fS7668cg6021f13CO8wkOr"
+   }
+  ]
+ },
+ "rain": {
+  "hits": [
+   {
+    "title": "Raindrops falling on a hand",
+    "base": "coverr-raindrops-falling-on-a-hand-5811",
+    "dur": 9.5,
+    "playback": "KiPI3DcZmoZJAgNCla4HEKMTHKgoccjV"
+   },
+   {
+    "title": "Rain falling on windshield",
+    "base": "coverr-rain-falling-on-windshield-6625",
+    "dur": 11.9,
+    "playback": "cltjRC9A3SxSbfd02OnZZSUeKbHGAiSrs"
+   },
+   {
+    "title": "Rain in a palm tree garden",
+    "base": "coverr-rain-in-a-palm-tree-garden-1143",
+    "dur": 15.0,
+    "playback": "jd8wYt02HezB5ZqD4MrXmjCD00jXt1lbeE"
+   },
+   {
+    "title": "Cozy Rainy Evening: Warm Lamp and Mug by Window — Quiet Coffee Moment",
+    "base": "user-ai-generation-BCHZqmfTpSvX",
+    "dur": 8.0,
+    "playback": null
+   },
+   {
+    "title": "Garage door closing ",
+    "base": "coverr-garage-door-closing-5485",
+    "dur": 30.3,
+    "playback": "n02w01o1MRR02mjU18LW02V2Mej1WuNLMifr"
+   },
+   {
+    "title": "Girl wearing tinsel ",
+    "base": "coverr-girl-wearing-tinsel-8457",
+    "dur": 10.2,
+    "playback": "22irJNoVp5g33slgw2pZWCFgeoBxnjw01"
+   },
+   {
+    "title": "Raindrops on the window ",
+    "base": "coverr-raindrops-on-the-window-7102",
+    "dur": 7.9,
+    "playback": "L87Xe1esEznJjltwt02kcxtktNvvF4x4Z"
+   },
+   {
+    "title": "Gloomy city at night",
+    "base": "coverr-gloomy-city-at-night-6099",
+    "dur": 18.5,
+    "playback": "G5jJsqbVst9RYvpSbjF813lk3TCKhC8a"
+   },
+   {
+    "title": "Rain on a puddle",
+    "base": "coverr-rain-on-a-puddle-4247",
+    "dur": 11.4,
+    "playback": "qQ02WXUctcM8V5zx01pBCapiu3IWsCL5Xo"
+   },
+   {
+    "title": "Woman walks with an umbrella",
+    "base": "coverr-woman-walks-with-an-umbrella-8565",
+    "dur": 14.9,
+    "playback": "RafB7PZTBFXR7hhOexfGY7218tsU01tos"
+   },
+   {
+    "title": "Rain in the city",
+    "base": "coverr-rain-in-the-city-430",
+    "dur": 16.2,
+    "playback": "h7WWzOxozqXiEt229yLF8dIBG7tMvvJk"
+   },
+   {
+    "title": "Hiding from the rain",
+    "base": "coverr-hiding-from-the-rain-5467",
+    "dur": 14.2,
+    "playback": "9i018vqlM007HsWYPRKCwNWBmFxcE024IKM"
+   }
+  ]
+ },
+ "clouds": {
+  "hits": [
+   {
+    "title": "The window seat",
+    "base": "coverr-the-window-seat-7587",
+    "dur": 15.5,
+    "playback": "7ZVbXByojHokLaOxpsAG258PwH4ko4HB"
+   },
+   {
+    "title": "Cloud timelapse",
+    "base": "coverr-cloud-timelapse-8383",
+    "dur": 16.6,
+    "playback": "pWj5n1UJwSbfYXxZLNNK8pNFU29D02X2b"
+   },
+   {
+    "title": "Timelapse of clouds",
+    "base": "coverr-timelapse-of-clouds-8883",
+    "dur": 14.8,
+    "playback": "lpv4g1Ib02msh98UIGdUXVsyqmPdqIYu01"
+   },
+   {
+    "title": "Rusty metal by the beach ",
+    "base": "coverr-rusty-metal-by-the-beach-6651",
+    "dur": 14.3,
+    "playback": "jiwfYAMeYvzJx021IqxE028topCKcw01Tk8"
+   },
+   {
+    "title": "Cloudy sky",
+    "base": "coverr-cloudy-sky-2765",
+    "dur": 18.0,
+    "playback": "cgEXo02oZWglwx1bzWK3qMd0091G029YI00k"
+   },
+   {
+    "title": "Timelapse of the clouds ",
+    "base": "coverr-timelapse-of-the-clouds-8020",
+    "dur": 16.4,
+    "playback": "STGCDNDz2bG1wn01N22Z3JHauO931im1t"
+   },
+   {
+    "title": "Airplane flying through the clouds",
+    "base": "coverr-airplane-flying-through-the-clouds-1025",
+    "dur": 13.1,
+    "playback": "eDqZLgsdpuHbQD6ZRepNittlikuypsQE"
+   },
+   {
+    "title": "A lighthouse",
+    "base": "coverr-a-lighthouse-7309",
+    "dur": 14.3,
+    "playback": "sfkNglnQYRHKCeTzEZQO4g202V6gEIWwW"
+   },
+   {
+    "title": "Birds in the sky",
+    "base": "coverr-birds-in-the-sky-219",
+    "dur": 10.2,
+    "playback": "GCAd02ceUhbw9y29ZeEXGlKjb3DkqCpNa"
+   },
+   {
+    "title": "A day by the ocean ",
+    "base": "coverr-a-day-by-the-ocean-3770",
+    "dur": 14.0,
+    "playback": "TshMk8LcLdS02bRY8X6X2dSPkt8BKqSaJ"
+   },
+   {
+    "title": "Airplane flying through clouds",
+    "base": "coverr-airplane-flying-through-clouds-415",
+    "dur": 10.4,
+    "playback": "L1mLsNDxCjGmLj9Squ8uvE37BT6EvORQ"
+   },
+   {
+    "title": "Slow-mo basketball hoop",
+    "base": "coverr-slow-mo-basketball-hoop-5187",
+    "dur": 12.6,
+    "playback": "9bITBJBMwltKP6LjKTkDB02buiW5e6On5"
+   }
+  ]
+ },
+ "wave": {
+  "hits": [
+   {
+    "title": "Large waves crashing on the rocky shore",
+    "base": "coverr-large-waves-crashing-on-the-rocky-shore-8765",
+    "dur": 10.3,
+    "playback": "fh7ZhGajjSqobZBXEpOUfWsALSzlgLkg"
+   },
+   {
+    "title": "Large waves crashing near the coast",
+    "base": "coverr-large-waves-crashing-near-the-coast-5201",
+    "dur": 21.7,
+    "playback": "kg9qxfl2st9hkpHUEjO3JaZBW9zx025Ku"
+   },
+   {
+    "title": "Tourists on motorboats catching waves",
+    "base": "coverr-tourists-on-motorboats-catching-waves-7967",
+    "dur": 13.3,
+    "playback": "00wmmH968wHml02rrM2n4U2k7cJfvtsRQV"
+   },
+   {
+    "title": "Large waves break onto a rocky shore",
+    "base": "coverr-large-waves-break-onto-a-rocky-shore-3257",
+    "dur": 18.0,
+    "playback": "dUWi6ycKHlN58ue01b4P025rr6fpfBUVNS"
+   },
+   {
+    "title": "A tide of foamy waves",
+    "base": "coverr-a-tide-of-foamy-waves-4378",
+    "dur": 14.3,
+    "playback": "TXfjxFeVOQMoEjGJETRIXZj9nQ2pzDsM"
+   },
+   {
+    "title": "Raglan Beach in New Zealand ",
+    "base": "coverr-raglan-beach-in-new-zealand-958",
+    "dur": 19.6,
+    "playback": "Xhl8tCC6v00N7nGed4DpxpbKIivXRETH7"
+   },
+   {
+    "title": "Large ocean wave",
+    "base": "coverr-large-ocean-wave-5169",
+    "dur": 20.8,
+    "playback": "3rsZuD02mSXvHRqk6NG6VASYXrg602Z8mN"
+   },
+   {
+    "title": "Paddling in the sea",
+    "base": "coverr-paddling-in-the-sea-3158",
+    "dur": 28.5,
+    "playback": "02yrYHp00lkc9zui25DeIb00X9g2uD1TFvs"
+   },
+   {
+    "title": "Gloomy day at the beach",
+    "base": "coverr-gloomy-day-at-the-beach-5530",
+    "dur": 15.7,
+    "playback": "lAmQO02sDsrN9RQl00ta3dEbaiQOPzySZC"
+   },
+   {
+    "title": "Big waves",
+    "base": "coverr-big-waves-12",
+    "dur": 9.5,
+    "playback": "3rpeiRl00u018SyJvtxbHYvezZxhLovmmA"
+   }
+  ]
+ },
+ "newspaper": {
+  "hits": [
+   {
+    "title": "Queue to a newspaper store",
+    "base": "coverr-queue-to-a-newspaper-store-568",
+    "dur": 10.7,
+    "playback": "U3iQ2aKvdBiOtUWEeOkNtlezivx5UHR5"
+   },
+   {
+    "title": "Man puts away his laptop and reads a newspaper",
+    "base": "coverr-man-puts-away-his-laptop-and-reads-a-newspaper-3710",
+    "dur": 20.4,
+    "playback": "6PWMYAmu45DgyTogRiX4IeOZuPUf01mkj"
+   },
+   {
+    "title": "Scrolling through coronavirus news ",
+    "base": "coverr-scrolling-through-coronavirus-news-6170",
+    "dur": 24.9,
+    "playback": "7mdOMPoKtaZ2I3lc1iXCyJjOg01AXYOyr"
+   },
+   {
+    "title": "Local, Dutch newspapers",
+    "base": "coverr-local-dutch-newspapers-8257",
+    "dur": 29.9,
+    "playback": "2nSGbWFwq4E25uL02PjCK027CvKRUDthBV"
+   }
+  ]
+ },
+ "bungalow": {
+  "hits": []
+ },
+ "river": {
+  "hits": [
+   {
+    "title": "A man taking photos of a river quay",
+    "base": "coverr-a-man-taking-photos-of-a-river-quay-3999",
+    "dur": 13.2,
+    "playback": "iv8W8g6T0058dIeOGyI87dV01sTFN4wvjf"
+   },
+   {
+    "title": "Asian man walking next to a river quay",
+    "base": "coverr-asian-man-walking-next-to-a-river-quay-7914",
+    "dur": 21.4,
+    "playback": "arkH9SOcFtR2sVg4yrH41BL00dhLsDEHk"
+   },
+   {
+    "title": "Asian man standing on the river quay",
+    "base": "coverr-asian-man-standing-on-the-river-quay-4517",
+    "dur": 16.0,
+    "playback": "6qlwMvTLQOOmv7Y3yyrHgc1xhi3D8K81"
+   },
+   {
+    "title": "A man walks on a river quay",
+    "base": "coverr-a-man-walks-on-a-river-quay-6391",
+    "dur": 11.4,
+    "playback": "XsG7WPOc8YQfbBDLtCyrDDvzOtWLil01p"
+   },
+   {
+    "title": "A view of a river",
+    "base": "coverr-a-view-of-a-river-8460",
+    "dur": 11.8,
+    "playback": "5D8KLE02E7ghzttOvoRNkPYpNvFctoWK5"
+   },
+   {
+    "title": "Asian man talking on a smartphone",
+    "base": "coverr-asian-man-talking-on-a-smartphone-8505",
+    "dur": 26.4,
+    "playback": "YDYVUiwe5kyQCInTghg119Q4i1Tz9YZR"
+   },
+   {
+    "title": "A girl straightening her boyfriend's shirt",
+    "base": "coverr-a-girl-straightening-her-boyfriend-s-shirt-3272",
+    "dur": 16.9,
+    "playback": "PeCsRwHybvwOS00otF5fozab6olZ01NTIh"
+   },
+   {
+    "title": "River between mountains",
+    "base": "coverr-river-between-mountains-8046",
+    "dur": 20.6,
+    "playback": "IsyQi49aRO5VU8P6i02k4SaNoo3f01exCI"
+   },
+   {
+    "title": "A girl seductively whispering something into her boyfriend's ear",
+    "base": "coverr-a-girl-seductively-whispering-something-into-her-boyfriend-s-ear-3521",
+    "dur": 15.3,
+    "playback": "rr00Dl7l01svJ9nfkI1PwY014aMTBW7JNn5"
+   }
+  ]
+ },
+ "stream": {
+  "hits": [
+   {
+    "title": "Aerial View of a Snowy Forest Stream in Tierra Del Fuego Argentina",
+    "base": "coverr-aerial-view-of-a-snowy-forest-stream-in-tierra-del-fuego-argentina",
+    "dur": 19.5,
+    "playback": null
+   },
+   {
+    "title": "Stream next to the road",
+    "base": "coverr-stream-next-to-the-road-4482",
+    "dur": 15.1,
+    "playback": "yRSaHFgEF6bf9hwDcVm5Y9QELbxxlJDv"
+   },
+   {
+    "title": "Close-up of a stream",
+    "base": "coverr-close-up-of-a-stream-5033",
+    "dur": 15.7,
+    "playback": "w7mc0001Y004KMQX02CEvG01BegiAcmQuSid8"
+   },
+   {
+    "title": "A stream in Norway ",
+    "base": "coverr-a-stream-in-norway-6095",
+    "dur": 13.5,
+    "playback": "YOX5yC3pM02TPFgO1Q01h01012AywEoRTdIu"
+   },
+   {
+    "title": "Flowing water ",
+    "base": "coverr-flowing-water-753",
+    "dur": 10.0,
+    "playback": "gUAoPpXnaN3nJacvTEXEcZXHAE6vUsZb"
+   },
+   {
+    "title": "Filling up a water bottle",
+    "base": "coverr-filling-up-a-water-bottle-5014",
+    "dur": 17.9,
+    "playback": "yCGIAMvkgt3HNX01yBvOyPJosUBRp6Abz"
+   },
+   {
+    "title": "A stream in the glade",
+    "base": "coverr-a-stream-in-the-glade-9228",
+    "dur": 12.3,
+    "playback": "ujWFw1J4aK8mr201ak02KjiRZn02it8Kx8I"
+   },
+   {
+    "title": "A frozen stream",
+    "base": "coverr-a-frozen-stream-7817",
+    "dur": 10.7,
+    "playback": "cuFQ00ZXenkFqPAq1Cw5lOG7V7H01IesEh"
+   }
+  ]
+ },
+ "hail": {
+  "hits": [
+   {
+    "title": "Barber cutting hair ",
+    "base": "coverr-barber-cutting-hair-8748",
+    "dur": 30.5,
+    "playback": "twONAYmlfc8qM6JeBPfK7eB01c6qv01rqj"
+   },
+   {
+    "title": "Girl looking at the sea",
+    "base": "coverr-girl-looking-at-the-sea-2119",
+    "dur": 10.5,
+    "playback": "A300lffE1rTiNzEcMhIQ00tvASMEezysu8"
+   },
+   {
+    "title": "Blonde guy tying his hair into a bun",
+    "base": "coverr-blonde-guy-tying-his-hair-into-a-bun-9528",
+    "dur": 28.8,
+    "playback": "ruLkgURORspcLsUslk9uh2ByvuXhdUq2"
+   },
+   {
+    "title": "Woman walking near the ocean",
+    "base": "coverr-woman-walking-near-the-ocean-944",
+    "dur": 20.9,
+    "playback": "ZlvSeH6DA6p6Q4MUxbw2QJO8Kh5k75id"
+   },
+   {
+    "title": "Combing a man's hair",
+    "base": "coverr-combing-a-man-s-hair-2623",
+    "dur": 10.1,
+    "playback": "9qvRMqEbkzwHKoRe8YmawAiAJpUmLys02"
+   },
+   {
+    "title": "Girl tying her hair up",
+    "base": "coverr-girl-tying-her-hair-up-1735",
+    "dur": 20.3,
+    "playback": "00v8833KRjgpkFrrJlkyPx6H1rdz6mBM00"
+   },
+   {
+    "title": "A blonde man tying his hair into a bun",
+    "base": "coverr-a-blonde-man-tying-his-hair-into-a-bun-8449",
+    "dur": 28.8,
+    "playback": "SgCNZJ8V017yv028zA6E9qGf62Z40201HStX"
+   },
+   {
+    "title": "Walking down a hallway",
+    "base": "coverr-walking-down-a-hallway-7053",
+    "dur": 10.6,
+    "playback": "9TSg44TVCXsKwFixYTrdF9nZprwFErJg"
+   }
+  ]
+ },
+ "field": {
+  "hits": [
+   {
+    "title": "Running with a kite",
+    "base": "coverr-running-with-a-kite-8106",
+    "dur": 22.8,
+    "playback": "Nv4Gqow7scn9XalkdfhPSLNjwNWrYYpE"
+   },
+   {
+    "title": "A man can't fall asleep on a bed in the middle of a field",
+    "base": "coverr-a-man-can-t-fall-asleep-on-a-bed-in-the-middle-of-a-field-9469",
+    "dur": 10.1,
+    "playback": "MQsWCPDhTtNoUx4wPx2RqO2nnPEYqqmb"
+   },
+   {
+    "title": "Rice field",
+    "base": "coverr-rice-field-2717",
+    "dur": 11.8,
+    "playback": "xGbWxDJzo1rBe3G2recN7ot01s5sDdN1O"
+   },
+   {
+    "title": "Man running and holding a kite",
+    "base": "coverr-man-running-and-holding-a-kite-9253",
+    "dur": 15.4,
+    "playback": "IyyZhdG00QltX4B416ATZoKv55C00R7e3S"
+   },
+   {
+    "title": "A man waking up in a field of dry grass with a girl in the background",
+    "base": "coverr-a-man-waking-up-in-a-field-of-dry-grass-with-a-girl-in-the-background-6169",
+    "dur": 10.3,
+    "playback": "iSCwB1eKx6jrVa3BCgIg01mpQhA7hKipg"
+   },
+   {
+    "title": "Road near a field",
+    "base": "coverr-road-near-a-field-6275",
+    "dur": 14.7,
+    "playback": "01tymZAju1Jogc3iJHF02FtzghVHc7nAM4"
+   },
+   {
+    "title": "Man walking down a hill",
+    "base": "coverr-man-walking-down-a-hill-6482",
+    "dur": 13.9,
+    "playback": "p6UEEbyoPKcHOYpsHiaXO5BQWBOJmX02j"
+   },
+   {
+    "title": "Man putting a yellow shirt on",
+    "base": "coverr-man-putting-a-yellow-shirt-on-7936",
+    "dur": 50.2,
+    "playback": "u02KMlLNeGKJs2SksJAG517g02tq1bz00mU"
+   },
+   {
+    "title": "Looking at a field through binoculars",
+    "base": "coverr-looking-at-a-field-through-binoculars-6577",
+    "dur": 17.0,
+    "playback": "XRBuFIEC00HWvZTIXZg00yJXvAnyBt02Lu00"
+   },
+   {
+    "title": "Farming field",
+    "base": "coverr-farming-field-50",
+    "dur": 12.8,
+    "playback": "s00jTPj3Lw1sNuF2g168700PobuW801CbJZ"
+   }
+  ]
+ }
+}
