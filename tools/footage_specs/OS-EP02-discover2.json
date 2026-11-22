@@ -1,0 +1,19 @@
+{
+ "episode": "OS-EP02-IKAN-JATUH",
+ "mode": "discover",
+ "target_dir": "footage/os-ep02",
+ "candidates_out": "footage-candidates-os-ep02-r2.json",
+ "catatan": "R2 — isi lubang r1: badai/hujan/awan (S1,S5,S8), gelombang (S11,S12), sungai/kolam (S7 negasi), bungalow/roof (S6), koran (S13 arsip), ladang (S4).",
+ "queries": [
+  {"q": "storm", "want": 8},
+  {"q": "rain", "want": 8},
+  {"q": "clouds", "want": 8},
+  {"q": "wave", "want": 6},
+  {"q": "newspaper", "want": 5},
+  {"q": "bungalow", "want": 4},
+  {"q": "river", "want": 5},
+  {"q": "stream", "want": 4},
+  {"q": "hail", "want": 4},
+  {"q": "field", "want": 6}
+ ]
+}
