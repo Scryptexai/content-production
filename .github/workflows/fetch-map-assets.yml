@@ -1,0 +1,43 @@
+name: Fetch map assets (peta asli → assets/maps/)
+
+# Shot peta Remotion (00G §1b) butuh peta asli Wikimedia yang tidak bisa
+# diunduh dari sandbox. Runner mengunduh lalu meng-commit berkasnya.
+# Dipicu oleh perubahan assets/maps/SOURCES.json atau workflow ini.
+
+on:
+  push:
+    paths:
+      - "assets/maps/SOURCES.json"
+      - ".github/workflows/fetch-map-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-map-assets
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    name: Unduh peta asli
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unduh aset peta
+        run: python3 tools/fetch_map_assets.py
+
+      - name: Commit berkas peta
+        run: |
+          set -euo pipefail
+          git config user.name "oddchapter-assets"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f assets/maps/*.svg assets/maps/*.png 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::notice::Tidak ada berkas peta baru."
+            exit 0
+          fi
+          git commit -m "assets(maps): unduh peta asli dari Wikimedia Commons [skip ci]"
+          git push

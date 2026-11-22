@@ -13,6 +13,7 @@ import longformJson from "./longform.generated.json";
 import { BRAND_BEZIER, C, FPS, H, T, W } from "./theme";
 import { Monogram, Wordmark } from "./components/Marks";
 import { ShortOutro, OUTRO_FRAMES } from "./scenes/ShortOutro";
+import { MapZoom, MapZoomProps } from "./scenes/MapZoom";
 
 const ease = Easing.bezier(...BRAND_BEZIER);
 
@@ -155,6 +156,37 @@ export const RemotionRoot: React.FC = () => (
       fps={FPS}
       width={W}
       height={H}
+    />
+    {/* Shot peta asli zoom-in ke lokasi kejadian (00G §1b) — props datang
+        dari job JSON lewat scripts/render-mapzoom.mjs; frameRange dipakai
+        untuk memotong ke durasi narasi. */}
+    <Composition
+      id="MAP-ZOOM"
+      component={MapZoom}
+      durationInFrames={400}
+      fps={FPS}
+      width={W}
+      height={H}
+      defaultProps={
+        {
+          src: "maps/ireland_location_map.svg",
+          natural: { w: 1450, h: 1807 },
+          bounds: { n: 55.6, s: 51.2, w: -11.0, e: -5.0 },
+          target: { lat: 54.545, lon: -5.717 },
+          fromScale: 1,
+          toScale: 6,
+          zoomIn: 20,
+          zoomOut: 110,
+          zone: { lat: 54.545, lon: -5.717, r: 74 },
+          zoneFrame: 128,
+          points: [{ lat: 54.545, lon: -5.717, label: "DRUMHERG · DEKAT COMBER" }],
+          pointsFrame: 126,
+          headline: "1928 · DRUMHERG",
+          sub: "Irlandia Utara",
+          credit: "Peta: NordNordWest · Wikimedia Commons · CC BY-SA",
+          durationInFrames: 217,
+        } as MapZoomProps
+      }
     />
     <Composition id="PLATE-GALLERY" component={PlateGallery} durationInFrames={KINDS.length} fps={FPS} width={W} height={H} />
     <Composition id="TEST-FRAME" component={TestFrame} durationInFrames={1} fps={FPS} width={W} height={H} />
