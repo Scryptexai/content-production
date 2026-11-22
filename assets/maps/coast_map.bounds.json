@@ -1,0 +1,13 @@
+{
+ "north": 40.97989806962013,
+ "south": 29.535229562948455,
+ "west": -81.5625,
+ "east": -67.5,
+ "zoom": 7,
+ "size": [
+  1280,
+  1280
+ ],
+ "credit": "\u00a9 Esri \u00b7 HERE \u00b7 Garmin \u00b7 OpenStreetMap contributors",
+ "provider": "esri-street"
+}
