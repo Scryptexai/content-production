@@ -61,14 +61,14 @@ PROVIDERS = [
         "credit": "\u00a9 OpenStreetMap contributors",
     },
     {
-        "name": "carto-light",
-        "url": "https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
-        "credit": "\u00a9 OpenStreetMap contributors \u00b7 \u00a9 CARTO",
-    },
-    {
         "name": "openstreetmap.de",
         "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
         "credit": "\u00a9 OpenStreetMap contributors",
+    },
+    {
+        "name": "cyclosm",
+        "url": "https://tile.cyclosm.org/{z}/{x}/{y}.png",
+        "credit": "\u00a9 OpenStreetMap contributors \u00b7 CyclOSM",
     },
 ]
 
@@ -147,6 +147,16 @@ def render(entry: dict) -> None:
             if n % 5 == 0 or n == total:
                 print(f"  tile {n}/{total}", flush=True)
             time.sleep(0.7)
+
+    # validasi: tile placeholder (mis. "API KEY REQUIRED") hampir seragam — tolak
+    import statistics
+    sample = canvas.resize((64, 64)).convert("L")
+    stdev = statistics.pstdev(sample.getdata())
+    if stdev < 14:
+        raise RuntimeError(
+            f"raster seragam (stdev={stdev:.1f}) — provider mengembalikan placeholder"
+        )
+    print(f"  variance OK (stdev={stdev:.1f})", flush=True)
 
     dst = OUT / entry["file"]
     dst.parent.mkdir(parents=True, exist_ok=True)
