@@ -1,0 +1,33 @@
+{
+ "episode": "OS-EP02-IKAN-JATUH",
+ "mode": "discover",
+ "target_dir": "footage/os-ep02",
+ "candidates_out": "footage-candidates-os-ep02.json",
+ "catatan": "Discover OS-EP02 Ikan jatuh dari langit (Drumherg dekat Comber, Irlandia Utara,1928). Kueri per section: ikan (hook/ikan kemerahan), hujan/jalan (ikan berserakan), badai petir, atap bungalow, ladang pertanian, Irlandia pedesaan, sumber air/Strangford, waterspout/tornado laut, hujan katak, kesimpulan/awan, CTA komentar.",
+ "queries": [
+  {"q": "fish", "want": 8},
+  {"q": "fish market", "want": 6},
+  {"q": "fishing boat", "want": 6},
+  {"q": "rain street", "want": 8},
+  {"q": "rain drops", "want": 6},
+  {"q": "puddle", "want": 6},
+  {"q": "thunderstorm", "want": 8},
+  {"q": "lightning", "want": 6},
+  {"q": "storm clouds", "want": 8},
+  {"q": "dark sky", "want": 6},
+  {"q": "rain roof", "want": 6},
+  {"q": "roof", "want": 5},
+  {"q": "cottage", "want": 6},
+  {"q": "ireland", "want": 6},
+  {"q": "farmland", "want": 6},
+  {"q": "green field", "want": 6},
+  {"q": "village street", "want": 6},
+  {"q": "coastal storm", "want": 6},
+  {"q": "sea storm", "want": 8},
+  {"q": "whirlpool", "want": 4},
+  {"q": "tornado", "want": 4},
+  {"q": "wind trees", "want": 6},
+  {"q": "frog", "want": 4},
+  {"q": "hujan", "want": 5}
+ ]
+}

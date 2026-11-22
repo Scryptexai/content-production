@@ -35,6 +35,27 @@ berikutnya). Mengganti aturan lama yang memakai ulang klip bank antar episode.
    cocok, lebih baik foto AI spesifik daripada klip yang maksa (klip yang tidak
    sesuai narasi merusak kepercayaan penonton).
 
+## 1b · Peta lokasi kejadian — WAJIB Remotion, bukan kartu statis
+
+(Koreksi pemilik,22 Nov2026 — berlaku untuk semua episode berikutnya.)
+
+Peta tempat kejadian **jangan** ditampilkan sebagai kartu diam. Bangun shot
+peta dengan **Remotion** dari **peta asli** (Wikimedia/OSM berlisensi — bukan
+peta karangan AI):
+
+- komposisi `MAP-ZOOM` di `ODDCHAPTER_BRAND/10_FILM/remotion` → render lewat
+  `scripts/render-mapzoom.mjs`;
+- choreography: **zoom-in** dari luas wilayah → tepat ke titik kejadian,
+  dengan **animasi zona** (lingkaran highlight berdenyut) dan **titik
+  kejadian** (pin + label nama tempat);
+- **sinkronisasi wajib**: shot mulai tepat saat narasi mulai menyebut
+  lokasi, dan zona/titik muncul tepat saat nama tempat diucapkan — "saat
+  narasi masuk ke tempat kejadian, visual harus menyunting tepat ke
+  tempatnya";
+- untuk fakta jarak (mis. sumber air ±3 km), animasi **dua titik + garis
+  jarak berlabel**;
+- kredit sumber peta tetap wajib (label per shot + kartu akhir).
+
 ## 2 · Perimbangan sumber (target per episode)
 
 | sumber | peran | catatan |
