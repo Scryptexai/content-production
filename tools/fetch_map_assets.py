@@ -98,21 +98,28 @@ def pick_provider(z: int, x: int, y: int) -> dict:
     raise RuntimeError("semua provider gagal -> " + " | ".join(errs))
 
 
-def fetch_tile(url_tpl: str, z: int, x: int, y: int, tries: int = 3) -> bytes:
+def fetch_tile(url_tpls: list, z: int, x: int, y: int, tries: int = 2) -> bytes:
+    """Coba tiap provider bergiliran sampai tile valid (>1 KB) datang.
+
+    Probe sekali di awal dulu pernah memilih osm.org lalu diblokir di tengah
+    burst — sekarang tile gagal otomatis jatuh ke provider berikutnya (osm.de
+    gaya standar sama; cyclosm cadangan terakhir).
+    """
     last: Exception | None = None
-    url = url_tpl.format(z=z, x=x, y=y)
-    for attempt in range(tries):
-        try:
-            data = _get(url)
-            if len(data) < 1000:
-                body = data[:160].decode("utf-8", "replace").replace("\n", " ")
-                raise RuntimeError(f"resp {len(data)} B: {body}")
-            return data
-        except Exception as e:  # noqa: BLE001
-            last = e
-            wait = 4 * (attempt + 1)
-            print(f"    tile gagal ({e}); tunggu {wait}s", flush=True)
-            time.sleep(wait)
+    for url_tpl in url_tpls:
+        url = url_tpl.format(z=z, x=x, y=y)
+        for attempt in range(tries):
+            try:
+                data = _get(url)
+                if len(data) < 1000:
+                    body = data[:160].decode("utf-8", "replace").replace("\n", " ")
+                    raise RuntimeError(f"resp {len(data)} B: {body}")
+                return data
+            except Exception as e:  # noqa: BLE001
+                last = e
+                wait = 4 * (attempt + 1)
+                print(f"    tile gagal ({e}); tunggu {wait}s", flush=True)
+                time.sleep(wait)
     assert last is not None
     raise last
 
@@ -138,9 +145,11 @@ def render(entry: dict) -> None:
     canvas = Image.new("RGB", (w_tiles * TILE, h_tiles * TILE), (240, 240, 240))
     total = w_tiles * h_tiles
     prov = pick_provider(z, x0, y0)
+    order = [prov] + [p for p in PROVIDERS if p["name"] != prov["name"]]
+    urls = [p["url"] for p in order]
     for i, ty in enumerate(range(y0, y1)):
         for j, tx in enumerate(range(x0, x1)):
-            data = fetch_tile(prov["url"], z, tx, ty)
+            data = fetch_tile(urls, z, tx, ty)
             img = Image.open(BytesIO(data)).convert("RGB")
             canvas.paste(img, (j * TILE, i * TILE))
             n = i * w_tiles + j + 1
