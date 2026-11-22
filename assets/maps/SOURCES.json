@@ -18,6 +18,18 @@
    "role": "job B — zoom county (Strangford Lough + Comber)",
    "bbox": [54.6849, 54.0094, -6.3721, -5.4163],
    "zoom": 10
+  },
+  {
+   "file": "useast_map.png",
+   "role": "OS-EP03 job A+B — AS timur (Dan Seneca NY + pesisir NC/SC/VA)",
+   "bbox": [46.5, 35.5, -83.0, -69.5],
+   "zoom": 7
+  },
+  {
+   "file": "charleston_map.png",
+   "role": "OS-EP03 job C — zoom Charleston SC (gempa1886)",
+   "bbox": [33.05, 32.55, -80.45, -79.45],
+   "zoom": 10
   }
  ]
 }
