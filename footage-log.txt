@@ -1,21 +1,19 @@
-storm: 17 kandidat
-rain: 22 kandidat
-lightning: 10 kandidat
-thunder: 0 kandidat
-mountains: 22 kandidat
-alps: 22 kandidat
-mountain road: 21 kandidat
-fog: 21 kandidat
-candles: 22 kandidat
-church: 24 kandidat
-smoke: 23 kandidat
-electricity: 8 kandidat
-laboratory: 3 kandidat
-map: 12 kandidat
-newspaper: 4 kandidat
-clouds: 18 kandidat
-rainy: 24 kandidat
-cabin interior: 2 kandidat
-wooden cabin: 0 kandidat
-valley: 21 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep01-r2.json
+  ok: badai_vilnius (1284 KB)
+  ok: hujan_jendela (2459 KB)
+  ok: restoran_perapian (2615 KB)
+  ok: anjing_kafe (2523 KB)
+  ok: api_gelap (2446 KB)
+  ok: gereja_jendela (3697 KB)
+  ok: lilin_bokeh (975 KB)
+  ok: jalan_pass_kabut (2454 KB)
+  ok: alpen_kabut (5336 KB)
+  ok: wagner_menulis (1707 KB)
+  ok: anjing_lihat (3245 KB)
+  ok: pensil_tajam (3150 KB)
+  ok: awan_timelapse (2869 KB)
+  ok: eksperimen_lab (3029 KB)
+  ok: menara_listrik (2003 KB)
+  ok: gereja_sejarah (3414 KB)
+  ok: buku_halaman (2282 KB)
+  ok: awan_redup (2368 KB)
+{"ok": 18, "failed": 0}
