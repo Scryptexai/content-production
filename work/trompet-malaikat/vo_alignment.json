@@ -1,49 +1,44 @@
 {
- "source": "vo_owner/vo_elevenlabs.srt (cue → kata, proporsional)",
+ "source": "vo_owner/vo_elevenlabs.srt (teks sudah diperbaiki; cue → kata proporsional)",
  "words": [
   {
    "word": "Warga",
    "start": 0.11,
-   "end": 0.451
+   "end": 0.457
   },
   {
    "word": "mendengar",
-   "start": 0.451,
-   "end": 1.065
+   "start": 0.457,
+   "end": 1.082
   },
   {
    "word": "suara",
-   "start": 1.065,
-   "end": 1.405
+   "start": 1.082,
+   "end": 1.429
   },
   {
    "word": "seperti",
-   "start": 1.405,
-   "end": 1.883
+   "start": 1.429,
+   "end": 1.916
   },
   {
    "word": "trompet",
-   "start": 1.883,
-   "end": 2.36
+   "start": 1.916,
+   "end": 2.402
   },
   {
-   "word": "sangka",
-   "start": 2.36,
-   "end": 2.769
-  },
-  {
-   "word": "kalah",
-   "start": 2.769,
-   "end": 3.11
+   "word": "sangkakala",
+   "start": 2.402,
+   "end": 3.096
   },
   {
    "word": "dari",
-   "start": 3.11,
-   "end": 3.383
+   "start": 3.096,
+   "end": 3.374
   },
   {
    "word": "langit.",
-   "start": 3.383,
+   "start": 3.374,
    "end": 3.86
   },
   {
@@ -179,46 +174,46 @@
   {
    "word": "Sebagian",
    "start": 18.74,
-   "end": 19.316
+   "end": 19.307
   },
   {
    "word": "lainnya",
-   "start": 19.316,
-   "end": 19.82
+   "start": 19.307,
+   "end": 19.802
   },
   {
    "word": "mungkin",
-   "start": 19.82,
-   "end": 20.324
+   "start": 19.802,
+   "end": 20.298
   },
   {
    "word": "akan",
-   "start": 20.324,
-   "end": 20.612
+   "start": 20.298,
+   "end": 20.581
   },
   {
    "word": "teringat",
-   "start": 20.612,
-   "end": 21.188
+   "start": 20.581,
+   "end": 21.148
   },
   {
    "word": "pada",
-   "start": 21.188,
-   "end": 21.476
+   "start": 21.148,
+   "end": 21.431
   },
   {
    "word": "trompet",
-   "start": 21.476,
-   "end": 21.98
+   "start": 21.431,
+   "end": 21.927
   },
   {
-   "word": "malekat",
-   "start": 21.98,
-   "end": 22.484
+   "word": "malaikat",
+   "start": 21.927,
+   "end": 22.493
   },
   {
-   "word": "israfil.",
-   "start": 22.484,
+   "word": "Israfil.",
+   "start": 22.493,
    "end": 23.06
   },
   {
@@ -264,91 +259,91 @@
   {
    "word": "Sebelum",
    "start": 26.77,
-   "end": 27.269
+   "end": 27.274
   },
   {
    "word": "gue",
-   "start": 27.269,
-   "end": 27.483
+   "start": 27.274,
+   "end": 27.49
   },
   {
    "word": "lanjut,",
-   "start": 27.483,
-   "end": 27.982
+   "start": 27.49,
+   "end": 27.995
   },
   {
    "word": "klik",
-   "start": 27.982,
-   "end": 28.268
+   "start": 27.995,
+   "end": 28.283
   },
   {
    "word": "like",
-   "start": 28.268,
-   "end": 28.553
+   "start": 28.283,
+   "end": 28.571
   },
   {
    "word": "dulu,",
-   "start": 28.553,
-   "end": 28.909
+   "start": 28.571,
+   "end": 28.931
   },
   {
    "word": "kalau",
-   "start": 28.909,
-   "end": 29.266
+   "start": 28.931,
+   "end": 29.291
   },
   {
    "word": "lo",
-   "start": 29.266,
-   "end": 29.409
+   "start": 29.291,
+   "end": 29.436
   },
   {
    "word": "pernah",
-   "start": 29.409,
-   "end": 29.836
+   "start": 29.436,
+   "end": 29.868
   },
   {
    "word": "mendengar",
-   "start": 29.836,
-   "end": 30.478
+   "start": 29.868,
+   "end": 30.516
   },
   {
    "word": "suara",
-   "start": 30.478,
-   "end": 30.835
+   "start": 30.516,
+   "end": 30.876
   },
   {
    "word": "aneh",
-   "start": 30.835,
-   "end": 31.12
+   "start": 30.876,
+   "end": 31.164
   },
   {
    "word": "dari",
-   "start": 31.12,
-   "end": 31.405
+   "start": 31.164,
+   "end": 31.453
   },
   {
    "word": "langit",
-   "start": 31.405,
-   "end": 31.833
+   "start": 31.453,
+   "end": 31.885
   },
   {
    "word": "dan",
-   "start": 31.833,
-   "end": 32.047
+   "start": 31.885,
+   "end": 32.101
   },
   {
    "word": "tidak",
-   "start": 32.047,
-   "end": 32.404
+   "start": 32.101,
+   "end": 32.461
   },
   {
-   "word": "mendemukan",
-   "start": 32.404,
-   "end": 33.117
+   "word": "menemukan",
+   "start": 32.461,
+   "end": 33.11
   },
   {
    "word": "sumbernya.",
-   "start": 33.117,
+   "start": 33.11,
    "end": 33.83
   },
   {
@@ -407,13 +402,13 @@
    "end": 39.053
   },
   {
-   "word": "ratus",
+   "word": "ratusan",
    "start": 39.053,
-   "end": 39.413
+   "end": 39.557
   },
   {
-   "word": "antahun.",
-   "start": 39.413,
+   "word": "tahun.",
+   "start": 39.557,
    "end": 39.99
   },
   {
@@ -464,56 +459,56 @@
   {
    "word": "Laporan",
    "start": 43.82,
-   "end": 44.345
+   "end": 44.355
   },
   {
    "word": "tentang",
-   "start": 44.345,
-   "end": 44.87
+   "start": 44.355,
+   "end": 44.889
   },
   {
    "word": "suara",
-   "start": 44.87,
-   "end": 45.245
+   "start": 44.889,
+   "end": 45.271
   },
   {
    "word": "ini",
-   "start": 45.245,
-   "end": 45.47
+   "start": 45.271,
+   "end": 45.5
   },
   {
    "word": "muncul",
-   "start": 45.47,
-   "end": 45.92
+   "start": 45.5,
+   "end": 45.958
   },
   {
    "word": "di",
-   "start": 45.92,
-   "end": 46.07
+   "start": 45.958,
+   "end": 46.111
   },
   {
    "word": "sekitar",
-   "start": 46.07,
-   "end": 46.595
+   "start": 46.111,
+   "end": 46.645
   },
   {
-   "word": "Dano",
-   "start": 46.595,
-   "end": 46.895
+   "word": "Dan",
+   "start": 46.645,
+   "end": 46.875
   },
   {
    "word": "Seneca,",
-   "start": 46.895,
-   "end": 47.42
+   "start": 46.875,
+   "end": 47.409
   },
   {
    "word": "New",
-   "start": 47.42,
-   "end": 47.645
+   "start": 47.409,
+   "end": 47.638
   },
   {
    "word": "York.",
-   "start": 47.645,
+   "start": 47.638,
    "end": 48.02
   },
   {
@@ -804,181 +799,181 @@
   {
    "word": "Pada",
    "start": 73.82,
-   "end": 74.209
+   "end": 74.215
   },
   {
    "word": "tahun",
-   "start": 74.209,
-   "end": 74.695
+   "start": 74.215,
+   "end": 74.709
   },
   {
    "word": "1886,",
-   "start": 74.695,
-   "end": 75.182
+   "start": 74.709,
+   "end": 75.203
   },
   {
    "word": "ketika",
-   "start": 75.182,
-   "end": 75.765
+   "start": 75.203,
+   "end": 75.795
   },
   {
-   "word": "gempah",
-   "start": 75.765,
-   "end": 76.349
+   "word": "gempa",
+   "start": 75.795,
+   "end": 76.289
   },
   {
    "word": "besar",
-   "start": 76.349,
-   "end": 76.835
+   "start": 76.289,
+   "end": 76.783
   },
   {
    "word": "mengguncang",
-   "start": 76.835,
-   "end": 77.905
+   "start": 76.783,
+   "end": 77.87
   },
   {
    "word": "Charleston",
-   "start": 77.905,
-   "end": 78.878
+   "start": 77.87,
+   "end": 78.857
   },
   {
    "word": "South",
-   "start": 78.878,
-   "end": 79.365
+   "start": 78.857,
+   "end": 79.351
   },
   {
    "word": "Carolina,",
-   "start": 79.365,
+   "start": 79.351,
    "end": 80.24
   },
   {
    "word": "orang-orang",
    "start": 80.24,
-   "end": 80.94
+   "end": 80.948
   },
   {
    "word": "melaporkan",
-   "start": 80.94,
-   "end": 81.577
+   "start": 80.948,
+   "end": 81.591
   },
   {
    "word": "suara",
-   "start": 81.577,
-   "end": 81.895
+   "start": 81.591,
+   "end": 81.913
   },
   {
    "word": "gemuruh",
-   "start": 81.895,
-   "end": 82.341
+   "start": 81.913,
+   "end": 82.363
   },
   {
    "word": "dan",
-   "start": 82.341,
-   "end": 82.532
+   "start": 82.363,
+   "end": 82.557
   },
   {
    "word": "dentuman",
-   "start": 82.532,
-   "end": 83.041
+   "start": 82.557,
+   "end": 83.071
   },
   {
    "word": "keras",
-   "start": 83.041,
-   "end": 83.359
+   "start": 83.071,
+   "end": 83.393
   },
   {
    "word": "yang",
-   "start": 83.359,
-   "end": 83.614
+   "start": 83.393,
+   "end": 83.65
   },
   {
    "word": "terdengar",
-   "start": 83.614,
-   "end": 84.187
+   "start": 83.65,
+   "end": 84.23
   },
   {
    "word": "bersamaan",
-   "start": 84.187,
-   "end": 84.76
+   "start": 84.23,
+   "end": 84.809
   },
   {
    "word": "dengan",
-   "start": 84.76,
-   "end": 85.142
+   "start": 84.809,
+   "end": 85.195
   },
   {
    "word": "gelombang",
-   "start": 85.142,
-   "end": 85.714
+   "start": 85.195,
+   "end": 85.774
   },
   {
-   "word": "gempah.",
-   "start": 85.714,
+   "word": "gempa.",
+   "start": 85.774,
    "end": 86.16
   },
   {
    "word": "Beberapa",
    "start": 86.16,
-   "end": 86.74
+   "end": 86.755
   },
   {
    "word": "minggu",
-   "start": 86.74,
-   "end": 87.175
+   "start": 86.755,
+   "end": 87.2
   },
   {
-   "word": "sekelah",
-   "start": 87.175,
-   "end": 87.683
+   "word": "sesudah",
+   "start": 87.2,
+   "end": 87.721
   },
   {
-   "word": "gempah",
-   "start": 87.683,
-   "end": 88.118
+   "word": "gempa",
+   "start": 87.721,
+   "end": 88.092
   },
   {
    "word": "utama,",
-   "start": 88.118,
-   "end": 88.553
+   "start": 88.092,
+   "end": 88.538
   },
   {
    "word": "suara",
-   "start": 88.553,
-   "end": 88.916
+   "start": 88.538,
+   "end": 88.91
   },
   {
    "word": "ledakan",
-   "start": 88.916,
-   "end": 89.424
+   "start": 88.91,
+   "end": 89.43
   },
   {
    "word": "juga",
-   "start": 89.424,
-   "end": 89.714
+   "start": 89.43,
+   "end": 89.727
   },
   {
    "word": "dilaporkan",
-   "start": 89.714,
-   "end": 90.439
+   "start": 89.727,
+   "end": 90.471
   },
   {
    "word": "muncul",
-   "start": 90.439,
-   "end": 90.874
+   "start": 90.471,
+   "end": 90.917
   },
   {
    "word": "saat",
-   "start": 90.874,
-   "end": 91.165
+   "start": 90.917,
+   "end": 91.214
   },
   {
-   "word": "gempah",
-   "start": 91.165,
-   "end": 91.6
+   "word": "gempa",
+   "start": 91.214,
+   "end": 91.585
   },
   {
    "word": "susulan.",
-   "start": 91.6,
+   "start": 91.585,
    "end": 92.18
   },
   {
@@ -1069,51 +1064,46 @@
   {
    "word": "Mereka",
    "start": 98.67,
-   "end": 99.108
+   "end": 99.115
   },
   {
    "word": "tidak",
-   "start": 99.108,
-   "end": 99.472
+   "start": 99.115,
+   "end": 99.486
   },
   {
    "word": "memiliki",
-   "start": 99.472,
-   "end": 100.056
+   "start": 99.486,
+   "end": 100.08
   },
   {
-   "word": "saya",
-   "start": 100.056,
-   "end": 100.347
-  },
-  {
-   "word": "smograf",
-   "start": 100.347,
-   "end": 100.858
+   "word": "seismograf",
+   "start": 100.08,
+   "end": 100.822
   },
   {
    "word": "modern,",
-   "start": 100.858,
-   "end": 101.368
+   "start": 100.822,
+   "end": 101.342
   },
   {
    "word": "tidak",
-   "start": 101.368,
-   "end": 101.733
+   "start": 101.342,
+   "end": 101.713
   },
   {
    "word": "punya",
-   "start": 101.733,
-   "end": 102.098
+   "start": 101.713,
+   "end": 102.084
   },
   {
    "word": "radar",
-   "start": 102.098,
-   "end": 102.462
+   "start": 102.084,
+   "end": 102.455
   },
   {
    "word": "cuaca,",
-   "start": 102.462,
+   "start": 102.455,
    "end": 102.9
   },
   {
@@ -1282,13 +1272,13 @@
    "end": 116.953
   },
   {
-   "word": "suarama",
+   "word": "suara",
    "start": 116.953,
-   "end": 117.459
+   "end": 117.314
   },
   {
-   "word": "laikat,",
-   "start": 117.459,
+   "word": "malaikat,",
+   "start": 117.314,
    "end": 117.964
   },
   {
@@ -1334,151 +1324,151 @@
   {
    "word": "Namun",
    "start": 121.36,
-   "end": 121.717
+   "end": 121.724
   },
   {
    "word": "laporan",
-   "start": 121.717,
-   "end": 122.216
+   "start": 121.724,
+   "end": 122.235
   },
   {
    "word": "ilmiah",
-   "start": 122.216,
-   "end": 122.643
+   "start": 122.235,
+   "end": 122.672
   },
   {
-   "word": "modernen",
-   "start": 122.643,
-   "end": 123.214
+   "word": "modern",
+   "start": 122.672,
+   "end": 123.109
   },
   {
    "word": "menunjukkan",
-   "start": 123.214,
-   "end": 123.998
+   "start": 123.109,
+   "end": 123.911
   },
   {
    "word": "bahwa",
-   "start": 123.998,
-   "end": 124.355
+   "start": 123.911,
+   "end": 124.276
   },
   {
    "word": "suara",
-   "start": 124.355,
-   "end": 124.711
+   "start": 124.276,
+   "end": 124.64
   },
   {
    "word": "semacam",
-   "start": 124.711,
-   "end": 125.21
+   "start": 124.64,
+   "end": 125.15
   },
   {
    "word": "ini",
-   "start": 125.21,
-   "end": 125.424
+   "start": 125.15,
+   "end": 125.369
   },
   {
    "word": "tidak",
-   "start": 125.424,
-   "end": 125.781
+   "start": 125.369,
+   "end": 125.733
   },
   {
    "word": "selalu",
-   "start": 125.781,
-   "end": 126.209
+   "start": 125.733,
+   "end": 126.171
   },
   {
    "word": "berasal",
-   "start": 126.209,
-   "end": 126.708
+   "start": 126.171,
+   "end": 126.681
   },
   {
    "word": "dari",
-   "start": 126.708,
-   "end": 126.993
+   "start": 126.681,
+   "end": 126.972
   },
   {
    "word": "satu",
-   "start": 126.993,
-   "end": 127.278
+   "start": 126.972,
+   "end": 127.264
   },
   {
    "word": "penyebab.",
-   "start": 127.278,
+   "start": 127.264,
    "end": 127.92
   },
   {
    "word": "Sebagian",
    "start": 127.92,
-   "end": 128.513
+   "end": 128.528
   },
   {
    "word": "dapat",
-   "start": 128.513,
-   "end": 128.884
+   "start": 128.528,
+   "end": 128.908
   },
   {
    "word": "dihasilkan",
-   "start": 128.884,
-   "end": 129.625
+   "start": 128.908,
+   "end": 129.668
   },
   {
    "word": "oleh",
-   "start": 129.625,
-   "end": 129.922
+   "start": 129.668,
+   "end": 129.972
   },
   {
-   "word": "gempah",
-   "start": 129.922,
-   "end": 130.367
+   "word": "gempa",
+   "start": 129.972,
+   "end": 130.352
   },
   {
    "word": "dangkal.",
-   "start": 130.367,
+   "start": 130.352,
    "end": 130.96
   },
   {
    "word": "Getaran",
    "start": 130.96,
-   "end": 131.456
+   "end": 131.464
   },
   {
    "word": "berfrekuensi",
-   "start": 131.456,
-   "end": 132.307
+   "start": 131.464,
+   "end": 132.327
   },
   {
    "word": "tinggi",
-   "start": 132.307,
-   "end": 132.732
+   "start": 132.327,
+   "end": 132.759
   },
   {
    "word": "dari",
-   "start": 132.732,
-   "end": 133.016
+   "start": 132.759,
+   "end": 133.046
   },
   {
-   "word": "gempah",
-   "start": 133.016,
-   "end": 133.441
+   "word": "gempa",
+   "start": 133.046,
+   "end": 133.406
   },
   {
    "word": "bisa",
-   "start": 133.441,
-   "end": 133.724
+   "start": 133.406,
+   "end": 133.694
   },
   {
    "word": "menghasilkan",
-   "start": 133.724,
-   "end": 134.575
+   "start": 133.694,
+   "end": 134.557
   },
   {
    "word": "suara",
-   "start": 134.575,
-   "end": 134.929
+   "start": 134.557,
+   "end": 134.917
   },
   {
    "word": "menggelegar,",
-   "start": 134.929,
+   "start": 134.917,
    "end": 135.78
   },
   {
@@ -1727,13 +1717,8 @@
    "end": 157.676
   },
   {
-   "word": "sini",
+   "word": "sinilah,",
    "start": 157.676,
-   "end": 158.0
-  },
-  {
-   "word": "lah,",
-   "start": 158.0,
    "end": 158.324
   },
   {
@@ -1754,186 +1739,181 @@
   {
    "word": "Istilah",
    "start": 160.19,
-   "end": 160.731
+   "end": 160.739
   },
   {
    "word": "trompet",
-   "start": 160.731,
-   "end": 161.273
+   "start": 160.739,
+   "end": 161.287
   },
   {
-   "word": "sangka-kala",
-   "start": 161.273,
-   "end": 162.123
+   "word": "sangkakala",
+   "start": 161.287,
+   "end": 162.071
   },
   {
    "word": "adalah",
-   "start": 162.123,
-   "end": 162.587
+   "start": 162.071,
+   "end": 162.541
   },
   {
    "word": "tafsir",
-   "start": 162.587,
-   "end": 163.051
+   "start": 162.541,
+   "end": 163.012
   },
   {
    "word": "manusia",
-   "start": 163.051,
-   "end": 163.593
+   "start": 163.012,
+   "end": 163.56
   },
   {
    "word": "terhadap",
-   "start": 163.593,
-   "end": 164.211
+   "start": 163.56,
+   "end": 164.187
   },
   {
    "word": "suara",
-   "start": 164.211,
-   "end": 164.598
+   "start": 164.187,
+   "end": 164.579
   },
   {
    "word": "yang",
-   "start": 164.598,
-   "end": 164.907
+   "start": 164.579,
+   "end": 164.893
   },
   {
    "word": "belum",
-   "start": 164.907,
-   "end": 165.294
+   "start": 164.893,
+   "end": 165.285
   },
   {
    "word": "dipahami.",
-   "start": 165.294,
+   "start": 165.285,
    "end": 165.99
   },
   {
    "word": "Sementara",
    "start": 165.99,
-   "end": 166.728
+   "end": 166.721
   },
   {
    "word": "dalam",
-   "start": 166.728,
-   "end": 167.138
+   "start": 166.721,
+   "end": 167.127
   },
   {
    "word": "laporan",
-   "start": 167.138,
-   "end": 167.712
+   "start": 167.127,
+   "end": 167.696
   },
   {
    "word": "aslinya,",
-   "start": 167.712,
-   "end": 168.369
+   "start": 167.696,
+   "end": 168.346
   },
   {
    "word": "yang",
-   "start": 168.369,
-   "end": 168.697
+   "start": 168.346,
+   "end": 168.671
   },
   {
-   "word": "percata",
-   "start": 168.697,
-   "end": 169.271
+   "word": "tercatat",
+   "start": 168.671,
+   "end": 169.321
   },
   {
-   "word": "tanya",
-   "start": 169.271,
-   "end": 169.681
-  },
-  {
-   "word": "lah",
-   "start": 169.681,
-   "end": 169.927
+   "word": "hanyalah",
+   "start": 169.321,
+   "end": 169.971
   },
   {
    "word": "suara,",
-   "start": 169.927,
-   "end": 170.419
+   "start": 169.971,
+   "end": 170.458
   },
   {
    "word": "waktu,",
-   "start": 170.419,
-   "end": 170.911
+   "start": 170.458,
+   "end": 170.946
   },
   {
    "word": "lokasi,",
-   "start": 170.911,
-   "end": 171.485
+   "start": 170.946,
+   "end": 171.514
   },
   {
    "word": "dan",
-   "start": 171.485,
-   "end": 171.731
+   "start": 171.514,
+   "end": 171.758
   },
   {
    "word": "reaksi",
-   "start": 171.731,
-   "end": 172.223
+   "start": 171.758,
+   "end": 172.245
   },
   {
    "word": "orang-orang",
-   "start": 172.223,
-   "end": 173.126
+   "start": 172.245,
+   "end": 173.139
   },
   {
    "word": "yang",
-   "start": 173.126,
-   "end": 173.454
+   "start": 173.139,
+   "end": 173.464
   },
   {
    "word": "mendengarnya.",
-   "start": 173.454,
+   "start": 173.464,
    "end": 174.52
   },
   {
    "word": "Tidak",
    "start": 174.52,
-   "end": 174.888
+   "end": 174.881
   },
   {
    "word": "ada",
-   "start": 174.888,
-   "end": 175.109
+   "start": 174.881,
+   "end": 175.098
   },
   {
    "word": "bukti",
-   "start": 175.109,
-   "end": 175.478
+   "start": 175.098,
+   "end": 175.459
   },
   {
    "word": "bahwa",
-   "start": 175.478,
-   "end": 175.846
+   "start": 175.459,
+   "end": 175.821
   },
   {
    "word": "suara",
-   "start": 175.846,
-   "end": 176.214
+   "start": 175.821,
+   "end": 176.182
   },
   {
    "word": "itu",
-   "start": 176.214,
-   "end": 176.435
+   "start": 176.182,
+   "end": 176.399
   },
   {
    "word": "berasal",
-   "start": 176.435,
-   "end": 176.951
+   "start": 176.399,
+   "end": 176.905
   },
   {
    "word": "dari",
-   "start": 176.951,
-   "end": 177.245
+   "start": 176.905,
+   "end": 177.194
   },
   {
-   "word": "malekat",
-   "start": 177.245,
-   "end": 177.761
+   "word": "malaikat",
+   "start": 177.194,
+   "end": 177.772
   },
   {
-   "word": "israfil.",
-   "start": 177.761,
+   "word": "Israfil.",
+   "start": 177.772,
    "end": 178.35
   },
   {
@@ -1994,56 +1974,46 @@
   {
    "word": "Yang",
    "start": 182.84,
-   "end": 183.18
+   "end": 183.174
   },
   {
    "word": "kita",
-   "start": 183.18,
-   "end": 183.52
+   "start": 183.174,
+   "end": 183.508
   },
   {
    "word": "tahu,",
-   "start": 183.52,
-   "end": 183.945
+   "start": 183.508,
+   "end": 183.926
   },
   {
-   "word": "suara",
-   "start": 183.945,
-   "end": 184.37
-  },
-  {
-   "word": "suara",
-   "start": 184.37,
-   "end": 184.795
+   "word": "suara-suara",
+   "start": 183.926,
+   "end": 184.844
   },
   {
    "word": "aneh",
-   "start": 184.795,
-   "end": 185.135
+   "start": 184.844,
+   "end": 185.178
   },
   {
    "word": "itu",
-   "start": 185.135,
-   "end": 185.39
+   "start": 185.178,
+   "end": 185.429
   },
   {
    "word": "benar-benar",
-   "start": 185.39,
-   "end": 186.325
+   "start": 185.429,
+   "end": 186.347
   },
   {
    "word": "pernah",
-   "start": 186.325,
-   "end": 186.835
+   "start": 186.347,
+   "end": 186.848
   },
   {
-   "word": "di",
-   "start": 186.835,
-   "end": 187.005
-  },
-  {
-   "word": "dengar.",
-   "start": 187.005,
+   "word": "didengar.",
+   "start": 186.848,
    "end": 187.6
   },
   {
