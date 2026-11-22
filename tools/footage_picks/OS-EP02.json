@@ -1,6 +1,6 @@
 {
  "episode": "OS-EP02-IKAN-JATUH",
- "catatan": "Picks OS-EP02 per section (00G): pasar/jalan hujan (hook), atap+awan, genangan (CTA), jalan berawan (sebelum MAP-ZOOM A), awan+ikan (badai 1928), permukiman (atap), sungai/kolam/jalan (negasi), jalan hujan (kesimpulan warga), pasar+ikan merah (bukti), danau (sebelum MAP-ZOOM B), desa pesisir, tornado+ombak (waterspout), ombak/awan/pasang (mekanisme), koran+nelayan (laporan global), jalan kosong+sungai jalan (tak ada rekaman), kota gelap+aqium+awan (kutukan vs sains), alam+ladang (penutup). Nol reuse lintas episode.",
+ "catatan": "Picks OS-EP02 per section (00G): pasar/jalan hujan (hook), atap+awan, genangan (CTA), jalan berawan (sebelum MAP-ZOOM A), awan+ikan (badai 1928), permukiman (atap), sungai/kolam/jalan (negasi), jalan hujan (kesimpulan warga), pasar+ikan merah (bukti), danau (sebelum MAP-ZOOM B), desa pesisir, tornado+ombak (waterspout), ombak/awan/pasang (mekanisme), koran+nelayan (laporan global), jalan kosong+sungai jalan (tak ada rekaman), kota gelap+aqium+awan (kutukan vs sains), alam+ladang (penutup). Nol reuse lintas episode. Pengganti QC: s3_hujan_kaca & s8_hujan_kota; s15_awan_gelap2 dibuang (isi aneh).",
  "picks": [
   {
    "name": "s1_pasar_ikan_india",
@@ -187,6 +187,18 @@
    "title": "A beautiful green field",
    "base": "coverr-a-beautiful-green-field-6427",
    "playback": "7oviKzqUHZpjPp7OL2ZeMmMsf024M8ABu"
+  },
+  {
+   "name": "s3_hujan_kaca",
+   "title": "Raindrops on the window",
+   "base": "coverr-raindrops-on-the-window-7102",
+   "playback": "L87Xe1esEznJjltwt02kcxtktNvvF4x4Z"
+  },
+  {
+   "name": "s8_hujan_kota",
+   "title": "Rain in the city",
+   "base": "coverr-rain-in-the-city-430",
+   "playback": "h7WWzOxozqXiEt229yLF8dIBG7tMvvJk"
   }
  ]
 }
