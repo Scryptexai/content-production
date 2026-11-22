@@ -1,0 +1,8 @@
+{
+ "episode": "OS-EP01-BALL-LIGHTNING",
+ "mode": "picks",
+ "picks": "tools/footage_picks/OS-EP01.json",
+ "target_dir": "footage/os-ep01",
+ "report": "footage-report-os-ep01.json",
+ "catatan": "Unduh18 klip pilihan OS-EP01 (per section, semua klip baru — tidak reuse episode lain)."
+}

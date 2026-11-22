@@ -1,0 +1,114 @@
+{
+ "episode": "OS-EP01-BALL-LIGHTNING",
+ "catatan": "Picks OS-EP01 per section (00G): badai/jendela/restoran (hook), anjing, api, gereja, lilin, pass Alpen, Wagner menulis, saksi/pensil, awan, lab, listrik, gereja sejarah, buku jurnal, awan penutup.",
+ "picks": [
+  {
+   "name": "badai_vilnius",
+   "title": "Storm in Vilnius, Lithuania",
+   "base": "coverr-storm-in-vilnius-lithuania-5273",
+   "playback": "LS5Xg02NXZo5gsJumnYr5APde4ficZy800"
+  },
+  {
+   "name": "hujan_jendela",
+   "title": "Raindrops on the window ",
+   "base": "coverr-raindrops-on-the-window-7102",
+   "playback": "L87Xe1esEznJjltwt02kcxtktNvvF4x4Z"
+  },
+  {
+   "name": "restoran_perapian",
+   "title": "AI-Generated Cozy Cabin Interior with Crackling Fireplace",
+   "base": "coverr-ai-generated-cozy-cabin-interior-with-crackling-fireplace",
+   "playback": null
+  },
+  {
+   "name": "anjing_kafe",
+   "title": "Dog staring at a latte",
+   "base": "coverr-dog-staring-at-a-latte-5538",
+   "playback": "N9Eqn2ydQSWIBxH7NMYorJGwMf39hdQU"
+  },
+  {
+   "name": "api_gelap",
+   "title": "Using a lighter in the dark ",
+   "base": "coverr-using-a-lighter-in-the-dark-7305",
+   "playback": "S01qF7gwbqboCk2Dd7802CGGIHHF5DUQUX"
+  },
+  {
+   "name": "gereja_jendela",
+   "title": "Church windows",
+   "base": "coverr-church-windows-3422",
+   "playback": "KN28UcV02qmOqvSzMf2p9MzMT4uPUIRF8"
+  },
+  {
+   "name": "lilin_bokeh",
+   "title": "Bokeh lit candle ",
+   "base": "coverr-bokeh-lit-candle-2345",
+   "playback": "mXfyb8JsBRBrZpj2IPXsCZayQk1H2kpB"
+  },
+  {
+   "name": "jalan_pass_kabut",
+   "title": "Misty Mountain Road Journey",
+   "base": "coverr-misty-mountain-road-journey",
+   "playback": null
+  },
+  {
+   "name": "alpen_kabut",
+   "title": "Mountains in the fog",
+   "base": "coverr-mountains-in-the-fog-2696",
+   "playback": "TEerln00m5BX5hsDYavm12mzBSO3YPlKR"
+  },
+  {
+   "name": "wagner_menulis",
+   "title": "Old man writing in his notebook",
+   "base": "coverr-old-man-writing-in-his-notebook-9925",
+   "playback": "2hkez4epsbnayXDLrZRwCiB0218xK016Bk"
+  },
+  {
+   "name": "anjing_lihat",
+   "title": "Dog looking into the camera",
+   "base": "coverr-dog-looking-into-the-camera-2211",
+   "playback": "iFmpCvDaSb56nboCH3gfV900RGtGbf46X"
+  },
+  {
+   "name": "pensil_tajam",
+   "title": "Sharpening a pencil",
+   "base": "coverr-sharpening-a-pencil-6026",
+   "playback": "A4qqbsXDDuM4C8qpyYWMqiI8UIF534b01"
+  },
+  {
+   "name": "awan_timelapse",
+   "title": "Cloud timelapse",
+   "base": "coverr-cloud-timelapse-8383",
+   "playback": "pWj5n1UJwSbfYXxZLNNK8pNFU29D02X2b"
+  },
+  {
+   "name": "eksperimen_lab",
+   "title": "Science experiment",
+   "base": "coverr-science-experiment-6978",
+   "playback": "2vWsTHDwqbdZMonqFhPR700dEytxsfqJz"
+  },
+  {
+   "name": "menara_listrik",
+   "title": "High Voltage Power Line Tower Against a Clear Blue Sky",
+   "base": "coverr-high-voltage-power-line-tower-against-blue-sky",
+   "playback": null
+  },
+  {
+   "name": "gereja_sejarah",
+   "title": "Historical church",
+   "base": "coverr-historical-church-2125",
+   "playback": "Dwhlj6gyItCkEqPvlfG01wwh5I1EtD83d"
+  },
+  {
+   "name": "buku_halaman",
+   "title": "Flicking through a book ",
+   "base": "coverr-flicking-through-a-book-9807",
+   "playback": "pVfVT7wrCon8r1201Qz2XEVnkUpIVo01mk"
+  },
+  {
+   "name": "awan_redup",
+   "title": "Timelapse of the clouds ",
+   "base": "coverr-timelapse-of-the-clouds-8020",
+   "playback": "STGCDNDz2bG1wn01N22Z3JHauO931im1t"
+  }
+ ]
+}
