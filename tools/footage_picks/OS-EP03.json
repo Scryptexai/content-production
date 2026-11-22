@@ -1,0 +1,240 @@
+{
+ "episode": "OS-EP03-TROMPET",
+ "catatan": "Picks OS-EP03 per section (00G): langit/awan+pesawat (hook), mic+malam (CTA), bendera+NY (sebelum MAP-A), tirai+rumah (deskripsi suara), laut/jangkar (negasi), kota tua+reruntuhan+jendela (Charleston1886, MAP-C di tengah), koran (masa tanpa alat), gereja (pertanda suara malaikat), gitar/plate/mic (frekuensi gempa), pesawat/roket/salju (penyebab lain), horizon+taman (ragu), koran+lama (tafsir vs laporan), kabut (batas), kota malam (yang tahu), matahari terbenam (CTA). Nol reuse lintas episode (dicek otomatis); MAP-A/B/C render terpisah.",
+ "picks": [
+  {
+   "name": "s1_clouds_road",
+   "title": "Clouds above a road",
+   "base": "coverr-clouds-above-a-road-8760",
+   "playback": "H53IWD718gjDxzvkjUy9101UcrdbPwsU00"
+  },
+  {
+   "name": "s1_timelapse_night",
+   "title": "Timelapse from day to night",
+   "base": "coverr-timelapse-from-day-to-night-7560",
+   "playback": "qSlN3Q01z1L00Aww00ho2yKtZoKh5TPAQn01"
+  },
+  {
+   "name": "s1_clouds_plane",
+   "title": "View of clouds from an airplane",
+   "base": "coverr-view-of-clouds-from-an-airplane-6487",
+   "playback": "qOziBvcrayWu5oG02kuINw16J2MBewQGZ"
+  },
+  {
+   "name": "s1_marina",
+   "title": "Marina Bay",
+   "base": "coverr-marina-bay-308",
+   "playback": "zhB6FwjvUMLn01XR02EbFDH1inYm3zDe02c"
+  },
+  {
+   "name": "s2_mic_swing",
+   "title": "Swinging microphone",
+   "base": "coverr-swinging-microphone-7144",
+   "playback": "qa5cOcM02nJ2xOjlKPcXucEZrtvz4SPUN"
+  },
+  {
+   "name": "s2_car_lights",
+   "title": "Blurred car lights ",
+   "base": "coverr-blurred-car-lights-297",
+   "playback": "Y4Fs8ijS637opIjqV6cJyfFYFX9NC5VA"
+  },
+  {
+   "name": "s3_usa_flag",
+   "title": "United States flag in the sky ",
+   "base": "coverr-united-states-flag-in-the-sky-1325",
+   "playback": "E8h5g200Yrc600jAh6c5FFSFafgAq9WcO2"
+  },
+  {
+   "name": "s3_ny_traffic",
+   "title": "Traffic in downtown NYC",
+   "base": "coverr-traffic-in-downtown-nyc-7224",
+   "playback": "8YuLPWPlKiv02QBB8tvStSETJJQGWIF85"
+  },
+  {
+   "name": "s5_curtain",
+   "title": "Curtain blowing in the wind",
+   "base": "coverr-curtain-blowing-in-the-wind-1618",
+   "playback": "ba21g02uIih01OZfcJBEaRoee9Pr231LnK"
+  },
+  {
+   "name": "s5_house_lake",
+   "title": "House by a lake ",
+   "base": "coverr-house-by-a-lake-7549",
+   "playback": "WLfoNeAbE00vSrV02ZL401LZZUk9Kdv5p01U"
+  },
+  {
+   "name": "s6_waves_calm",
+   "title": "Foamy ocean waves at night",
+   "base": "coverr-foamy-ocean-waves-at-night-2122",
+   "playback": "PnubLOoJWCqRd02kmd4J5jSuANvixCb2A"
+  },
+  {
+   "name": "s6_yachts",
+   "title": "Yachts docked at the harbor",
+   "base": "coverr-yachts-docked-at-the-harbor-369",
+   "playback": "PrnH1qcw021caf901JpKfOZNVNDONHmzLf"
+  },
+  {
+   "name": "s6_sea_bridge",
+   "title": "Sea under a stone bridge",
+   "base": "coverr-sea-under-a-stone-bridge-385",
+   "playback": "oIeyGVfPcCeycMatMMw8gsyvGHJ00myF2"
+  },
+  {
+   "name": "s7_bcn_streets",
+   "title": "Empty streets of Barcelona",
+   "base": "coverr-empty-streets-of-barcelona-6584",
+   "playback": "lCvt95JKNu4jdvsp8kc5IuQmfDIK7WDW"
+  },
+  {
+   "name": "s7_ruins",
+   "title": "House ruins",
+   "base": "coverr-house-ruins-2268",
+   "playback": "mMyWBedmuCU1k7pIJvXjlfXwpspqk7RS"
+  },
+  {
+   "name": "s7_window_branch",
+   "title": "Window covered with branches",
+   "base": "coverr-window-covered-with-branches-3026",
+   "playback": "4PuaWHtklddMgTm1Ma371ro2P02vtcleW"
+  },
+  {
+   "name": "s8_newspaper_queue",
+   "title": "Queue to a newspaper store",
+   "base": "coverr-queue-to-a-newspaper-store-568",
+   "playback": "U3iQ2aKvdBiOtUWEeOkNtlezivx5UHR5"
+  },
+  {
+   "name": "s8_news_scroll",
+   "title": "Scrolling through coronavirus news ",
+   "base": "coverr-scrolling-through-coronavirus-news-6170",
+   "playback": "7mdOMPoKtaZ2I3lc1iXCyJjOg01AXYOyr"
+  },
+  {
+   "name": "s8_grand_central_clock",
+   "title": "Grand Central Clock",
+   "base": "coverr-grand-central-clock-1793",
+   "playback": "McKBMY1vl1p6Oyjp8gIN3f5R7oeUQLV6"
+  },
+  {
+   "name": "s9_daraga_church",
+   "title": "The Daraga Church",
+   "base": "coverr-the-daraga-church-384",
+   "playback": "xQbQGPNXYx896RHIksrsKSVRm2DO4r00l"
+  },
+  {
+   "name": "s9_jeronimos",
+   "title": "Jeronimos Monastery in Lisbon, Portugal",
+   "base": "coverr-jeronimos-monastery-in-lisbon-portugal-6360",
+   "playback": "KOMIjqTcYNcWDLMHwq2jl2sJQmeQNEma"
+  },
+  {
+   "name": "s9_jeronimos_arch",
+   "title": "The architecture of the Jeronimos Monastery",
+   "base": "coverr-the-architecture-of-the-jeronimos-monastery-856",
+   "playback": "wN6ATsK02hN3MfgMDhrIGDPuNGz3E4CGR"
+  },
+  {
+   "name": "s10_guitar_strings",
+   "title": "Guitar strings",
+   "base": "coverr-guitar-strings-3067",
+   "playback": "KRhLjTU5aCyTOQ8J2BB9S4CkSa1z02zb3"
+  },
+  {
+   "name": "s10_record_player",
+   "title": "Record player",
+   "base": "coverr-record-player-1916",
+   "playback": "adsCfEFB02r9yUpIt9GODZ00ksBURWZZ01R"
+  },
+  {
+   "name": "s10_mic_drop",
+   "title": "Mic drop",
+   "base": "coverr-mic-drop-5208",
+   "playback": "slbnslljB2qHvLJ02X7QrCZzbHJEh1dm6"
+  },
+  {
+   "name": "s11_airplane",
+   "title": "Airplane in the sky",
+   "base": "coverr-airplane-in-the-sky-187",
+   "playback": "MnkvEUAZwap8WpvZ02urvogJ7XYSsmGab"
+  },
+  {
+   "name": "s11_rocket",
+   "title": "Rocket ship launch animation",
+   "base": "coverr-rocket-ship-launch-animation-9901",
+   "playback": "BRFN4FuXREUYeC013QiOQygrbdwMWqHMt"
+  },
+  {
+   "name": "s11_snow_branch",
+   "title": "Snow on a tree branch",
+   "base": "coverr-snow-on-a-tree-branch-83",
+   "playback": "QI3pcoed7uJqbW9R1bkSa3qw6KTwCT7F"
+  },
+  {
+   "name": "s12_horizon",
+   "title": "A spectacular view of the endless horizon",
+   "base": "coverr-a-spectacular-view-of-the-endless-horizon-4469",
+   "playback": "Yn2jXSeZZ3rfedFzKdIhdDjPOIqTSf51"
+  },
+  {
+   "name": "s12_park_tl",
+   "title": "Timelapse of a day at the park",
+   "base": "coverr-timelapse-of-a-day-at-the-park-5979",
+   "playback": "hGf3Qdv0000vXeegVhB8BDvWkA66ODLWZw"
+  },
+  {
+   "name": "s13_newspaper_man",
+   "title": "Man puts away his laptop and reads a newspaper",
+   "base": "coverr-man-puts-away-his-laptop-and-reads-a-newspaper-3710",
+   "playback": "6PWMYAmu45DgyTogRiX4IeOZuPUf01mkj"
+  },
+  {
+   "name": "s13_oldman_park",
+   "title": "Old man walking in a park",
+   "base": "coverr-old-man-walking-in-a-park-6589",
+   "playback": "jUlKpi02qGl5XvxTOW27RMk3c3DC7NPhr"
+  },
+  {
+   "name": "s13_oldman_writing",
+   "title": "Old man writing in a notebook",
+   "base": "coverr-old-man-writing-in-a-notebook-8741",
+   "playback": "Cwn7BW1KWXGgYyNC01L7TOaZFtbBWye00s"
+  },
+  {
+   "name": "s14_fog_woods",
+   "title": "Woods covered by fog",
+   "base": "coverr-woods-covered-by-fog-8066",
+   "playback": "ACiy88h95spDjx53YiYaaECzee9iFR53"
+  },
+  {
+   "name": "s15_city_night",
+   "title": "A city at night",
+   "base": "coverr-a-city-at-night-8720",
+   "playback": "IIM00VkDLxZtURLX00g3RHnLejFplPdy1C"
+  },
+  {
+   "name": "s15_evening_city",
+   "title": "Evening city landscape",
+   "base": "coverr-evening-city-landscape-4349",
+   "playback": "koWplit4zKrayxONa5LvFHEszFOKD3Fp"
+  },
+  {
+   "name": "s16_streets_sunset",
+   "title": "The streets at sunset ",
+   "base": "coverr-the-streets-at-sunset-6456",
+   "playback": "KP78n9EWQAje1fm6Xr02N6zm7V01xxNRNK"
+  },
+  {
+   "name": "s16_trees_wind",
+   "title": "Trees blowing in the wind",
+   "base": "coverr-trees-blowing-in-the-wind-1487",
+   "playback": "9Pr1vLykRg501N4gYcFK2Rofbe02v1VGBe"
+  },
+  {
+   "name": "s16_sun_coast",
+   "title": "Sun-setting on the coast ",
+   "base": "coverr-sun-setting-on-the-coast-1318",
+   "playback": "uHlMhg1uQPwDiaxURcJl0274NBrxoY3w4"
+  }
+ ]
+}
