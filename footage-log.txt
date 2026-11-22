@@ -1,19 +1,25 @@
-  ok: badai_vilnius (1284 KB)
-  ok: hujan_jendela (2459 KB)
-  ok: restoran_perapian (2615 KB)
-  ok: anjing_kafe (2523 KB)
-  ok: api_gelap (2446 KB)
-  ok: gereja_jendela (3697 KB)
-  ok: lilin_bokeh (975 KB)
-  ok: jalan_pass_kabut (2454 KB)
-  ok: alpen_kabut (5336 KB)
-  ok: wagner_menulis (1707 KB)
-  ok: anjing_lihat (3245 KB)
-  ok: pensil_tajam (3150 KB)
-  ok: awan_timelapse (2869 KB)
-  ok: eksperimen_lab (3029 KB)
-  ok: menara_listrik (2003 KB)
-  ok: gereja_sejarah (3414 KB)
-  ok: buku_halaman (2282 KB)
-  ok: awan_redup (2368 KB)
-{"ok": 18, "failed": 0}
+fish: 23 kandidat
+fish market: 8 kandidat
+fishing boat: 9 kandidat
+rain street: 22 kandidat
+rain drops: 24 kandidat
+puddle: 23 kandidat
+thunderstorm: 0 kandidat
+lightning: 10 kandidat
+storm clouds: 11 kandidat
+dark sky: 14 kandidat
+rain roof: 4 kandidat
+roof: 21 kandidat
+cottage: 13 kandidat
+ireland: 5 kandidat
+farmland: 24 kandidat
+green field: 22 kandidat
+village street: 2 kandidat
+coastal storm: 1 kandidat
+sea storm: 13 kandidat
+whirlpool: 0 kandidat
+tornado: 2 kandidat
+wind trees: 22 kandidat
+frog: 22 kandidat
+hujan: 23 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep02.json
