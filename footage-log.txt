@@ -1,39 +1,40 @@
-sky: 21 kandidat
-dark clouds: 17 kandidat
-storm clouds: 11 kandidat
-thunderstorm: 0 kandidat
-lightning: 10 kandidat
-clouds timelapse: 17 kandidat
-new york: 23 kandidat
-city skyline: 16 kandidat
-coastal town: 10 kandidat
-beach town: 21 kandidat
-ocean waves: 18 kandidat
-stormy sea: 10 kandidat
-lighthouse: 4 kandidat
-old town street: 3 kandidat
-brick building: 7 kandidat
-house interior: 23 kandidat
-window curtain: 7 kandidat
-rumble: 2 kandidat
-explosion: 19 kandidat
-cannon: 6 kandidat
-newspaper: 4 kandidat
-old paper: 3 kandidat
-seismograph: 0 kandidat
-sound wave: 8 kandidat
-microphone: 17 kandidat
-church: 24 kandidat
-bell tower: 1 kandidat
-trumpet: 1 kandidat
-night sky: 15 kandidat
-stars: 16 kandidat
-meteor: 1 kandidat
-airplane sky: 23 kandidat
-snow winter: 19 kandidat
-frost: 21 kandidat
-ice lake: 1 kandidat
-cracked earth: 1 kandidat
-fog village: 1 kandidat
-house shaking: 2 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep03.json
+  ok: s1_clouds_road (1771 KB)
+  ok: s1_timelapse_night (2547 KB)
+  ok: s1_clouds_plane (1081 KB)
+  ok: s1_marina (2382 KB)
+  ok: s2_mic_swing (2289 KB)
+  ok: s2_car_lights (2713 KB)
+  ok: s3_usa_flag (2439 KB)
+  ok: s3_ny_traffic (1541 KB)
+  ok: s5_curtain (2664 KB)
+  ok: s5_house_lake (7681 KB)
+  ok: s6_waves_calm (3259 KB)
+  ok: s6_yachts (2609 KB)
+  ok: s6_sea_bridge (4927 KB)
+  ok: s7_bcn_streets (2711 KB)
+  ok: s7_ruins (2410 KB)
+  ok: s7_window_branch (3652 KB)
+  ok: s8_newspaper_queue (1897 KB)
+  ok: s8_news_scroll (2685 KB)
+  ok: s8_grand_central_clock (2023 KB)
+  ok: s9_daraga_church (2271 KB)
+  ok: s9_jeronimos (3773 KB)
+  ok: s9_jeronimos_arch (4771 KB)
+  ok: s10_guitar_strings (3049 KB)
+  ok: s10_record_player (2642 KB)
+  ok: s10_mic_drop (2721 KB)
+  ok: s11_airplane (2214 KB)
+  ok: s11_rocket (962 KB)
+  ok: s11_snow_branch (1239 KB)
+  ok: s12_horizon (1196 KB)
+  ok: s12_park_tl (2616 KB)
+  ok: s13_newspaper_man (1040 KB)
+  ok: s13_oldman_park (3164 KB)
+  ok: s13_oldman_writing (2118 KB)
+  ok: s14_fog_woods (2216 KB)
+  ok: s15_city_night (1611 KB)
+  ok: s15_evening_city (1549 KB)
+  ok: s16_streets_sunset (2557 KB)
+  ok: s16_trees_wind (7309 KB)
+  ok: s16_sun_coast (3330 KB)
+{"ok": 39, "failed": 0}
