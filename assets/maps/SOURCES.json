@@ -1,22 +1,23 @@
 {
- "cat": "Peta asli untuk shot MAP-ZOOM (koreksi pemilik22 Nov2026 —00G §1b). Diunduh runner (sandbox tidak bisa akses upload.wikimedia.org). Bounds dipakai tools/render_mapzoom untuk ubah lat/lon → persen.",
- "_retry": "run-45002869626 gagal tanpa log; picu ulang",
+ "cat": "Peta asli untuk shot MAP-ZOOM (koreksi pemilik 22 Nov 2026 — 00G §1b). Dirakit di runner dari tile OpenStreetMap (Wikimedia memblokir IP cloud: HTTP 429). Bounds dihitung presisi dari rentang tile → dipakai tools/render_mapzoom untuk ubah lat/lon ke persen. Kredit wajib: © OpenStreetMap contributors.",
+ "provider": {
+  "name": "OpenStreetMap",
+  "tile_url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "license": "ODbL 1.0 — https://www.openstreetmap.org/copyright",
+  "credit": "© OpenStreetMap contributors"
+ },
  "assets": [
   {
-   "file": "ireland_location_map.svg",
-   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ireland_location_map.svg",
-   "bounds": {"n": 55.6, "s": 51.2, "w": -11.0, "e": -5.0},
-   "credit": "NordNordWest · Wikimedia Commons",
-   "license": "CC BY-SA3.0 / GFDL (multi)",
-   "note": "Location map Irlandia — vektor, untuk zoom lebar → Irlandia Utara. N/S stretching170% (equirectangular, koordinat tetap linier terhadap bounds)."
+   "file": "ireland_map.png",
+   "role": "job A — zoom nasional (1928 · Drumherg)",
+   "bbox": [55.6, 51.2, -11.0, -5.0],
+   "zoom": 7
   },
   {
    "file": "county_down_map.png",
-   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Location_map_Northern_Ireland_County_Down.png",
-   "bounds": {"n": 54.6849, "s": 54.0094, "w": -6.3721, "e": -5.4163},
-   "credit": "JohnArmagh / Wikimapia · Wikimedia Commons",
-   "license": "CC BY-SA4.0",
-   "note": "Peta detail County Down (jalan, kota, Strangford Lough) — zoom Comber/Drumherg + jarak ke Strangford Low."
+   "role": "job B — zoom county (Strangford Lough + Comber)",
+   "bbox": [54.6849, 54.0094, -6.3721, -5.4163],
+   "zoom": 10
   }
  ]
 }

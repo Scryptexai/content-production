@@ -26,6 +26,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: pasang pillow
+        run: python3 -m pip install -q pillow
 
       - name: Unduh aset peta
         run: python3 tools/fetch_map_assets.py
