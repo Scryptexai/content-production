@@ -1,25 +1,25 @@
-  ok: gunung_snow (4079 KB)
-  ok: gunung_salju (3483 KB)
-  ok: argentina_tierra (2560 KB)
-  ok: argentina_valley (4223 KB)
-  ok: gunung_kabut (5336 KB)
-  ok: sisa_salju (3772 KB)
-  ok: salju_hutan (3908 KB)
-  ok: hutan_dingin (3378 KB)
-  ok: hutan_salju (3037 KB)
-  ok: pesawat_awan (2436 KB)
-  ok: pesawat_gunung (1215 KB)
-  ok: jendela_pesawat (1927 KB)
-  ok: naik_pesawat (2236 KB)
-  ok: senja_salju (4668 KB)
-  ok: api_gelap (2446 KB)
-  ok: lilin_gelap (1363 KB)
-  ok: salib_gunung (2627 KB)
-  ok: trek_mountain (3205 KB)
-  ok: puncak_jalan (2800 KB)
-  ok: lembah (2426 KB)
-  ok: lembah_aerial (2587 KB)
-  ok: koran (3386 KB)
-  ok: tenda_dingin (2812 KB)
-  ok: pesawat_pencari (2212 KB)
-{"ok": 24, "failed": 0}
+thunderstorm mountains: 0 kandidat
+lightning night: 19 kandidat
+heavy rain window: 0 kandidat
+restaurant interior cozy: 1 kandidat
+dog floor indoor: 0 kandidat
+dog looking up: 11 kandidat
+sparks dark: 4 kandidat
+flash light darkness: 0 kandidat
+candles church dark: 0 kandidat
+incense smoke church: 0 kandidat
+alpine pass road: 0 kandidat
+austria mountains village: 0 kandidat
+foggy mountains dawn: 0 kandidat
+writing journal pen: 1 kandidat
+old notebook paper: 3 kandidat
+geology rocks hands: 0 kandidat
+scientist laboratory: 1 kandidat
+electricity arc: 0 kandidat
+plasma globe: 0 kandidat
+open book pages: 6 kandidat
+old map europe: 0 kandidat
+newspaper old: 0 kandidat
+storm clouds time lapse: 0 kandidat
+rain stopping street: 0 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep01.json
