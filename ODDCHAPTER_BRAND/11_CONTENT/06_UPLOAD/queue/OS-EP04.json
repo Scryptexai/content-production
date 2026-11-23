@@ -1,11 +1,11 @@
 {
   "episode": "OS-EP04",
   "slug": "kutukan-tutankhamun",
-  "status": "draft",
-  "approved": false,
+  "status": "requested",
+  "approved": true,
   "visibility": "public",
   "file": "work/kutukan-tutankhamun/out/OS-EP04_kutukan-tutankhamun_feed.mp4",
   "master_sha256": "d4b9de717c7df30ccbc1ee0d66d91ad24892468b4f6cd8cd1c1f7b8c6182b409",
   "drive_video_id": "1f_DV9P-JI26PbaajrPiR3MR0dxFJvlWH",
-  "catatan": "Paket unggah revisi hook/caption siap: cold open memakai salinan payoff, voice-08 baru menekan asumsi di detik 3–10, caption 141 cue memakai anchor VAD tanpa lead, dan bed ambience tersambung sampai akhir outro. Master Drive v3 telah diunggah dan ukuran/hash lokal dicatat di metadata. Jangan ubah ke status requested atau approved:true tanpa perintah publikasi eksplisit dari pemilik. Sebelum unggah, master Drive harus dibuat anyone-with-link → Viewer agar workflow dapat memverifikasi ukuran/hash."
+  "catatan": "Disetujui pemilik pada 2026-11-23 untuk tayang sekarang. Cold open memakai salinan payoff, voice-08 menekan asumsi di detik 3–10, caption 141 cue memakai anchor VAD tanpa lead, dan bed ambience tersambung sampai akhir outro. Master Drive v3 adalah master yang harus diverifikasi workflow sebelum unggah."
 }
