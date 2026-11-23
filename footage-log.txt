@@ -1,21 +1,21 @@
-  ok: s1_desert_view (5945 KB)
-  ok: s1_hallway (2764 KB)
-  ok: s2_old_book (2904 KB)
-  ok: s2_pages (3009 KB)
-  ok: s2_writing_fire (1906 KB)
-  ok: s3_desert_rocks (5777 KB)
-  ok: s3_cappadocia (2147 KB)
-  ok: s3_stone_sculpture (2496 KB)
-  ok: s3_stone_mountains (2801 KB)
-  ok: s3_ruins (4357 KB)
-  ok: s4_arch (2463 KB)
-  ok: s4_candle (1920 KB)
-  ok: s5_watch (1810 KB)
-  ok: s5_diary (3267 KB)
-  ok: s5_notes (3036 KB)
-  ok: s6_louvre (576 KB)
-  ok: s6_louvre_tuileries (1906 KB)
-  ok: s6_empty_desert (2200 KB)
-  ok: s7_old_door (2549 KB)
-  ok: s7_road_california (5355 KB)
-{"ok": 20, "failed": 0}
+old map hands: 0 kandidat
+antique map desk: 0 kandidat
+compass map: 0 kandidat
+nautical map: 0 kandidat
+sailing ship sea: 19 kandidat
+ocean horizon: 22 kandidat
+old manuscript: 0 kandidat
+archive library: 0 kandidat
+istanbul skyline: 0 kandidat
+hands turning pages: 2 kandidat
+pottery workshop: 0 kandidat
+ceramic pottery close up: 1 kandidat
+copper metal workshop: 0 kandidat
+metal craftsman: 2 kandidat
+science laboratory experiment: 1 kandidat
+electrical experiment: 0 kandidat
+writing notebook close up: 22 kandidat
+old document desk: 0 kandidat
+baghdad city: 0 kandidat
+tigris river: 0 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep05-06.json
