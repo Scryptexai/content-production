@@ -1,0 +1,7 @@
+{
+ "mode": "picks",
+ "picks": "tools/footage_picks/OS-EP04.json",
+ "report": "footage-report-os-ep04.json",
+ "target_dir": "footage/os-ep04",
+ "catatan": "Unduh 22 picks OS-EP04 (per section, nol reuse lintas episode)."
+}

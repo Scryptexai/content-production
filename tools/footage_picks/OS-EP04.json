@@ -1,0 +1,116 @@
+{
+ "episode": "OS-EP04-TUTANKHAMUN",
+ "catatan": "Picks OS-EP04 per section: gurun/batuan/pintu/lampu untuk pencarian makam; buku dan catatan untuk Carter; koran/mesin waktu/kertas untuk legenda media; museum dan lorong untuk bukti; gurun senja untuk resolusi. Semua base baru dibandingkan dengan picks OS-EP01–03 sebelum unduh. Dokumen sejarah asli Harry Burton + MAP-ZOOM KV62 dan foto AI dipakai terpisah, bukan diganti footage generik.",
+ "picks": [
+  {
+   "name": "s1_desert_view",
+   "title": "Desert view",
+   "base": "coverr-desert-view-2798"
+  },
+  {
+   "name": "s1_hallway",
+   "title": "Scary hallway",
+   "base": "coverr-scary-hallway-7141"
+  },
+  {
+   "name": "s2_old_book",
+   "title": "Old Bible covered in dust",
+   "base": "coverr-old-bible-covered-in-dust-9476"
+  },
+  {
+   "name": "s2_pages",
+   "title": "Flicking through Bible pages",
+   "base": "coverr-flicking-through-bible-pages-3558"
+  },
+  {
+   "name": "s2_writing_fire",
+   "title": "Writing by the fire",
+   "base": "coverr-writing-by-the-fire-3522"
+  },
+  {
+   "name": "s3_desert_rocks",
+   "title": "Desert rocks in Salta, Argentina",
+   "base": "coverr-desert-rocks-in-salta-argentina-8208"
+  },
+  {
+   "name": "s3_cappadocia",
+   "title": "Cappadocia",
+   "base": "coverr-cappadocia-9404"
+  },
+  {
+   "name": "s3_stone_sculpture",
+   "title": "A stone sculpture",
+   "base": "coverr-a-stone-sculpture-9460"
+  },
+  {
+   "name": "s3_stone_mountains",
+   "title": "Stone sculpture in the mountains",
+   "base": "coverr-stone-sculpture-in-the-mountains-4245"
+  },
+  {
+   "name": "s3_ruins",
+   "title": "Ruins near fortress",
+   "base": "coverr-ruins-near-fortress-4068"
+  },
+  {
+   "name": "s4_arch",
+   "title": "Walking under an arch",
+   "base": "coverr-walking-under-an-arch-5488"
+  },
+  {
+   "name": "s4_candle",
+   "title": "Burning church candles",
+   "base": "coverr-burning-church-candles-4154"
+  },
+  {
+   "name": "s5_newspapers",
+   "title": "Local, Dutch newspapers",
+   "base": "coverr-local-dutch-newspapers-8257"
+  },
+  {
+   "name": "s5_watch",
+   "title": "Watch timelapse",
+   "base": "coverr-watch-timelapse-3561"
+  },
+  {
+   "name": "s5_clock",
+   "title": "Grand Central Clock",
+   "base": "coverr-grand-central-clock-1793"
+  },
+  {
+   "name": "s5_diary",
+   "title": "Writing in a diary",
+   "base": "coverr-writing-in-a-diary-2746"
+  },
+  {
+   "name": "s5_notes",
+   "title": "Writing notes in notebook",
+   "base": "coverr-writing-notes-in-notebook-4403"
+  },
+  {
+   "name": "s6_louvre",
+   "title": "Louvre Museum",
+   "base": "coverr-louvre-museum-387"
+  },
+  {
+   "name": "s6_louvre_tuileries",
+   "title": "Louvre and Tuileries Palace",
+   "base": "coverr-louvre-and-tuileries-palace-2126"
+  },
+  {
+   "name": "s6_empty_desert",
+   "title": "An empty desert",
+   "base": "coverr-an-empty-desert-2948"
+  },
+  {
+   "name": "s7_old_door",
+   "title": "Old man closing a door",
+   "base": "coverr-old-man-closing-a-door-240"
+  },
+  {
+   "name": "s7_road_california",
+   "title": "Road in California",
+   "base": "coverr-road-in-california-1634"
+  }
+ ]
+}
