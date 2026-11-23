@@ -1,0 +1,21 @@
+{
+ "name": "valley_of_kings_kv62",
+ "props": {
+  "src": "maps/egypt_valley_map.png",
+  "natural": {"w": 768, "h": 512},
+  "bounds": {"n": 27.059125784374054, "s": 21.943045533438177, "w": 28.125, "e": 36.5625},
+  "target": {"lat": 25.7402, "lon": 32.6014},
+  "fromScale": 1,
+  "toScale": 2.5,
+  "zoomIn": 15,
+  "zoomOut": 150,
+  "zone": {"lat": 25.7402, "lon": 32.6014, "r": 62},
+  "zoneFrame": 100,
+  "points": [{"lat": 25.7402, "lon": 32.6014, "label": "KV62"}],
+  "pointsFrame": 108,
+  "headline": "LEMBAH PARA RAJA",
+  "sub": "KV62 · MESIR",
+  "credit": "© OpenStreetMap contributors",
+  "durationInFrames": 192
+ }
+}
