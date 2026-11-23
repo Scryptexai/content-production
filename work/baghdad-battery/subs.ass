@@ -1,0 +1,150 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Barlow Condensed ExtraBold,100,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1.5,0,1,8,3,2,60,60,672,1
+Style: Kicker,Barlow Condensed ExtraBold,74,&H00E0ECF0,&H00E0ECF0,&H00000000,&H80000000,0,0,0,0,100,100,6,0,1,6,2,5,60,60,0,1
+Style: Big,Anton,170,&H00FFFFFF,&H00FFFFFF,&H00000000,&H60000000,0,0,0,0,100,100,0,0,1,10,4,5,40,40,0,1
+Style: Stamp,Anton,120,&H00000000,&H00000000,&H002A2AD8,&H00000000,0,0,0,0,100,100,0,0,3,14,0,5,40,40,0,1
+Style: Tag,Barlow Condensed ExtraBold,34,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1.2,0,1,3,1,7,60,60,300,1
+Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,3,1,5,60,60,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.49,0:00:05.80,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:06.15,0:00:10.20,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:10.55,0:00:15.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:22.25,0:00:26.50,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:26.85,0:00:31.40,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:31.75,0:00:37.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
+Dialogue: 0,0:00:37.75,0:00:46.90,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:47.25,0:00:52.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
+Dialogue: 0,0:00:53.25,0:01:02.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:02.45,0:01:08.10,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
+Dialogue: 0,0:01:08.45,0:01:16.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:16.45,0:01:22.10,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
+Dialogue: 0,0:01:22.45,0:01:32.10,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:01:32.45,0:01:37.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
+Dialogue: 0,0:01:38.25,0:01:43.42,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:00.60,0:00:05.60,Big,,0,0,0,,{\pos(540,560)\an5\fs76\fad(160,150)}KABELNYA\NDI MANA?
+Dialogue: 0,0:00:06.20,0:00:10.00,Kicker,,0,0,0,,{\pos(540,1040)\an5\fs48\fad(180,150)}REPLIKA BISA ≠ FUNGSI ASLI TERBUKTI
+Dialogue: 0,0:00:10.80,0:00:15.30,Stamp,,0,0,0,,{\pos(540,510)\an5\fs56\frz-4\fad(160,150)}KERAMIK · TEMBAGA · BESI
+Dialogue: 0,0:00:22.40,0:00:26.20,Kicker,,0,0,0,,{\pos(540,1040)\an5\fs44\fad(180,150)}SKEMA MODERN · BUKAN FOTO ARTEFAK
+Dialogue: 0,0:00:26.90,0:00:31.20,Stamp,,0,0,0,,{\pos(540,510)\an5\fs56\frz-4\fad(160,150)}1938 · HIPOTESIS KÖNIG
+Dialogue: 0,0:00:39.50,0:00:46.60,Kicker,,0,0,0,,{\pos(540,1040)\an5\fs46\fad(180,150)}ELEKTROLIT DITAMBAHKAN KE REPLIKA
+Dialogue: 0,0:00:54.70,0:01:01.80,Stamp,,0,0,0,,{\pos(540,510)\an5\fs50\frz-4\fad(160,150)}JEJAK PEMAKAIAN?
+Dialogue: 0,0:01:09.90,0:01:15.80,Kicker,,0,0,0,,{\pos(540,1050)\an5\fs44\fad(180,150)}WADAH GULUNGAN ATAU RITUAL JUGA MUNGKIN
+Dialogue: 0,0:01:24.50,0:01:31.60,Kicker,,0,0,0,,{\pos(540,1050)\an5\fs44\fad(180,150)}KEMUNGKINAN RANGKAIAN ≠ BUKTI PEMAKAIAN
+Dialogue: 0,0:01:38.40,0:01:43.20,Kicker,,0,0,0,,{\pos(540,760)\an5\fs42\fad(180,120)}EKSPERIMEN BUKAN MESIN WAKTU.
+Dialogue: 0,0:01:44.00,0:01:48.40,Big,,0,0,0,,{\pos(540,640)\an5\fs105\fad(260,0)}ODDCHAPTER
+Dialogue: 0,0:01:44.30,0:01:48.40,Credit,,0,0,0,,{\pos(540,1000)\an5\fs25\c&H00D0D0D0&\fad(360,0)}Skema: Ironie, Pile Bagdad · Wikimedia Commons · CC BY-SA 2.5\NSkema modern, bukan foto artefak · Footage stok: Coverr\NPeta: © OpenStreetMap contributors · ODbL
+Dialogue: 0,0:00:00.24,0:00:00.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BATERAI{\c&H00FFFFFF&} {\c&H002A2AD8&}BAGHDAD{\c&H00FFFFFF&}
+Dialogue: 0,0:00:01.00,0:00:01.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}VIRAL SEBAGAI
+Dialogue: 0,0:00:01.76,0:00:02.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LISTRIK KUNO
+Dialogue: 0,0:00:02.52,0:00:04.15,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BUKTI YANG HILANG
+Dialogue: 0,0:00:04.17,0:00:04.91,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JUSTRU KABELNYA
+Dialogue: 0,0:00:04.93,0:00:06.31,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU {\c&H002A2AD8&}REPLIKA{\c&H00FFFFFF&}
+Dialogue: 0,0:00:06.33,0:00:07.69,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENYALA APAKAH ITU
+Dialogue: 0,0:00:07.71,0:00:08.45,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}OTOMATIS FUNGSI
+Dialogue: 0,0:00:08.47,0:00:09.21,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BENDA ASLINYA?
+Dialogue: 0,0:00:09.23,0:00:10.61,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LIHAT BENDANYA
+Dialogue: 0,0:00:10.63,0:00:12.25,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}INI KENDI TANAH
+Dialogue: 0,0:00:12.27,0:00:13.47,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LIAT TABUNG
+Dialogue: 0,0:00:13.49,0:00:14.58,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}TEMBAGA{\c&H00FFFFFF&} BATANG
+Dialogue: 0,0:00:14.60,0:00:15.96,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BESI{\c&H00FFFFFF&} DAN SUMBAT
+Dialogue: 0,0:00:15.98,0:00:16.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ASPAL
+Dialogue: 0,0:00:16.36,0:00:17.92,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BENDA SEPERTI INI
+Dialogue: 0,0:00:17.94,0:00:18.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERASAL DARI
+Dialogue: 0,0:00:18.70,0:00:19.44,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}KHUJUT{\c&H00FFFFFF&} {\c&H002A2AD8&}RABU{\c&H00FFFFFF&}
+Dialogue: 0,0:00:19.46,0:00:20.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DEKAT {\c&H002A2AD8&}BAGHDAD{\c&H00FFFFFF&}
+Dialogue: 0,0:00:20.52,0:00:21.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAHUN SERIBU
+Dialogue: 0,0:00:21.74,0:00:22.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEMBILAN RATUS
+Dialogue: 0,0:00:22.50,0:00:23.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIGA PULUH ENAM
+Dialogue: 0,0:00:23.64,0:00:24.77,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KENDI ITU MASUK
+Dialogue: 0,0:00:24.79,0:00:25.53,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KE CERITA
+Dialogue: 0,0:00:25.55,0:00:26.43,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}ARKEOLOGI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:26.45,0:00:27.75,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DUA TAHUN KEMUDIAN
+Dialogue: 0,0:00:27.77,0:00:28.51,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}WILHELM {\c&H002A2AD8&}KÖNIG{\c&H00FFFFFF&}
+Dialogue: 0,0:00:28.53,0:00:29.27,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGAJUKAN IDE
+Dialogue: 0,0:00:29.29,0:00:30.85,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERANI KALAU KENDI
+Dialogue: 0,0:00:30.87,0:00:32.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}INI DIISI CAIRAN
+Dialogue: 0,0:00:32.02,0:00:33.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ASAM IA MUNGKIN
+Dialogue: 0,0:00:33.34,0:00:34.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENJADI SEL
+Dialogue: 0,0:00:34.10,0:00:35.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LISTRIK KECIL
+Dialogue: 0,0:00:35.52,0:00:36.47,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SECARA KIMIA
+Dialogue: 0,0:00:36.49,0:00:37.23,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}REPLIKA{\c&H00FFFFFF&} MEMANG
+Dialogue: 0,0:00:37.26,0:00:38.00,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BISA MEMBERI
+Dialogue: 0,0:00:38.02,0:00:39.18,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}VOLTASE KECIL
+Dialogue: 0,0:00:39.20,0:00:40.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAMU BISA MENUANG
+Dialogue: 0,0:00:40.34,0:00:41.46,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}CUKA ATAU CAIRAN
+Dialogue: 0,0:00:41.48,0:00:42.61,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ASAM KE SUSUNAN
+Dialogue: 0,0:00:42.63,0:00:44.01,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}TEMBAGA{\c&H00FFFFFF&} DAN {\c&H002A2AD8&}BESI{\c&H00FFFFFF&}
+Dialogue: 0,0:00:44.03,0:00:45.56,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LALU ALAT UKUR
+Dialogue: 0,0:00:45.58,0:00:45.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERGERAK
+Dialogue: 0,0:00:45.96,0:00:47.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITU EKSPERIMEN
+Dialogue: 0,0:00:47.36,0:00:48.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG NYATA
+Dialogue: 0,0:00:48.12,0:00:48.87,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TAPI PERHATIKAN
+Dialogue: 0,0:00:48.89,0:00:49.79,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LOMPATAN
+Dialogue: 0,0:00:49.81,0:00:50.17,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERIKUTNYA
+Dialogue: 0,0:00:50.20,0:00:50.94,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}REPLIKA{\c&H00FFFFFF&} BEKERJA
+Dialogue: 0,0:00:50.96,0:00:52.08,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HARI INI TIDAK
+Dialogue: 0,0:00:52.10,0:00:53.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMBERI TAHU KITA
+Dialogue: 0,0:00:53.24,0:00:54.99,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KENAPA ORANG DULU
+Dialogue: 0,0:00:55.01,0:00:56.13,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMBUAT BENDA ITU
+Dialogue: 0,0:00:56.16,0:00:57.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU BENDA INI
+Dialogue: 0,0:00:57.30,0:00:58.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DIPAKAI SEBAGAI
+Dialogue: 0,0:00:58.06,0:00:59.02,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}BATERAI{\c&H00FFFFFF&} UNTUK
+Dialogue: 0,0:00:59.04,0:00:59.78,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MELAPISI LOGAM
+Dialogue: 0,0:00:59.80,0:01:00.74,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KITA BERHARAP
+Dialogue: 0,0:01:00.76,0:01:01.50,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENEMUKAN {\c&H002A2AD8&}KABEL{\c&H00FFFFFF&}
+Dialogue: 0,0:01:01.52,0:01:01.88,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PENGHUBUNG
+Dialogue: 0,0:01:01.91,0:01:02.84,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RANGKAIAN BEBERAPA
+Dialogue: 0,0:01:02.86,0:01:03.98,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KENDI ATAU BARANG
+Dialogue: 0,0:01:04.00,0:01:05.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARI MASA SAMA
+Dialogue: 0,0:01:05.14,0:01:06.42,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG TERBUKTI
+Dialogue: 0,0:01:06.44,0:01:07.68,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BERLAPIS LISTRIK
+Dialogue: 0,0:01:07.70,0:01:08.82,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BUKTI ITU BELUM
+Dialogue: 0,0:01:08.84,0:01:09.20,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADA
+Dialogue: 0,0:01:09.22,0:01:10.55,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADA PULA KENDI
+Dialogue: 0,0:01:10.57,0:01:11.31,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SERUPA DARI
+Dialogue: 0,0:01:11.33,0:01:12.07,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KAWASAN DEKATNYA
+Dialogue: 0,0:01:12.09,0:01:12.83,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}YANG DIBACA
+Dialogue: 0,0:01:12.85,0:01:13.59,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SEBAGAI WADAH
+Dialogue: 0,0:01:13.61,0:01:14.87,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}GULUNGAN ATAU
+Dialogue: 0,0:01:14.89,0:01:15.63,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BENDA RITUAL
+Dialogue: 0,0:01:15.65,0:01:16.89,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}FUNGSI TEPATNYA
+Dialogue: 0,0:01:16.91,0:01:17.65,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMANG BELUM
+Dialogue: 0,0:01:17.67,0:01:18.03,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}SELESAI
+Dialogue: 0,0:01:18.05,0:01:19.27,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}JADI KAMU
+Dialogue: 0,0:01:19.28,0:01:20.34,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENDENGAR YANG
+Dialogue: 0,0:01:20.36,0:01:20.72,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MANA?
+Dialogue: 0,0:01:20.74,0:01:21.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}REPLIKA{\c&H00FFFFFF&} BEKERJA
+Dialogue: 0,0:01:21.50,0:01:23.16,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ATAU FUNGSI ASLI
+Dialogue: 0,0:01:23.18,0:01:23.54,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TERBUKTI?
+Dialogue: 0,0:01:23.56,0:01:25.33,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DUA KALIMAT ITU
+Dialogue: 0,0:01:25.35,0:01:26.10,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}TIDAK SAMA
+Dialogue: 0,0:01:26.12,0:01:26.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KITA SERING
+Dialogue: 0,0:01:26.88,0:01:28.12,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENGIRA EKSPERIMEN
+Dialogue: 0,0:01:28.14,0:01:29.27,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ADALAH MESIN WAKTU
+Dialogue: 0,0:01:29.29,0:01:30.03,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PADAHAL EKSPERIMEN
+Dialogue: 0,0:01:30.05,0:01:30.79,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}HANYA MENUNJUKKAN
+Dialogue: 0,0:01:30.81,0:01:32.48,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}APA YANG MUNGKIN
+Dialogue: 0,0:01:32.50,0:01:32.86,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}REPLIKA{\c&H00FFFFFF&}
+Dialogue: 0,0:01:32.88,0:01:33.24,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMBUKTIKAN
+Dialogue: 0,0:01:33.26,0:01:33.62,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KEMUNGKINAN
+Dialogue: 0,0:01:33.64,0:01:34.52,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}RANGKAIAN
+Dialogue: 0,0:01:34.54,0:01:34.90,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}{\c&H002A2AD8&}ARKEOLOGI{\c&H00FFFFFF&}
+Dialogue: 0,0:01:34.92,0:01:35.67,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MEMBUTUHKAN JEJAK
+Dialogue: 0,0:01:35.69,0:01:36.05,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}PEMAKAIAN
+Dialogue: 0,0:01:36.07,0:01:37.77,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}KALAU BENDA LAMA
+Dialogue: 0,0:01:37.79,0:01:38.53,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BISA DIBUAT
+Dialogue: 0,0:01:38.55,0:01:39.67,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}BEKERJA HARI INI
+Dialogue: 0,0:01:39.69,0:01:41.28,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}APAKAH KAMU AKAN
+Dialogue: 0,0:01:41.30,0:01:42.04,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LANGSUNG PERCAYA
+Dialogue: 0,0:01:42.06,0:01:42.80,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}ITULAH FUNGSI
+Dialogue: 0,0:01:42.82,0:01:43.32,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}AWALNYA?

@@ -1,0 +1,46 @@
+{
+  "episode": "OS-EP06",
+  "series": "ODDCHAPTER SURPRISE",
+  "kind": "short",
+  "video": "OS-EP06_baghdad-battery_feed.mp4",
+  "thumbnail": "OS-EP06_thumbnail_16x9.jpg",
+  "poster": "OS-EP06_poster_9x16.jpg",
+  "title": "1938: Baterai Baghdad Bisa Menyala. Fungsi Aslinya Belum Terbukti",
+  "title_alt": [
+    "Baterai Baghdad: Replika Bekerja, Tapi Buktinya Mana?",
+    "1938: Hipotesis Baterai Baghdad yang Kehilangan Kabel",
+    "Kendi Tembaga dan Besi Ini Bisa Menghasilkan Voltase. Lalu?"
+  ],
+  "hook": "1938: Baterai Baghdad diusulkan sebagai listrik kuno. Bukti yang hilang justru kabelnya.",
+  "description": "1938: Baterai Baghdad diusulkan sebagai listrik kuno. Bukti yang hilang justru kabelnya.\n\nBenda dari Khujut Rabu dekat Baghdad ini berupa kendi tanah liat, tabung tembaga, batang besi, dan sumbat aspal. Pada 1938, Wilhelm König mengusulkan bahwa susunan itu mungkin menjadi sel listrik kecil bila diisi elektrolit. Replika modern memang bisa menghasilkan voltase kecil saat cairan asam ditambahkan.\n\nNamun replika yang bekerja hari ini belum menjelaskan fungsi benda aslinya. Jika dipakai sebagai baterai untuk pelapisan logam, kita berharap ada kabel penghubung, rangkaian beberapa kendi, atau artefak sezaman yang terbukti dilapisi listrik. Bukti-bukti itu belum ada. Ada pembacaan lain untuk wadah serupa, sehingga fungsi tepatnya tetap terbuka.\n\nVisual sumber episode adalah skema modern, bukan foto artefak: Ironie, “Pile Bagdad”, via Wikimedia Commons · CC BY-SA 2.5. Footage stok Coverr hanya ilustrasi dan diberi label. Peta lokasi: © OpenStreetMap contributors, data ODbL. Narasi internal sintetis; tidak ada rekonstruksi AI yang dipakai sebagai bukti. @oddchapter7",
+  "tags": [
+    "Baterai Baghdad",
+    "Baghdad Battery",
+    "Khujut Rabu",
+    "Wilhelm Konig",
+    "arkeologi",
+    "listrik kuno",
+    "elektroplating",
+    "sejarah kuno",
+    "literasi media",
+    "oddchapter"
+  ],
+  "first_comment": "Replika menunjukkan sesuatu mungkin bekerja. Menurut kamu, bukti pemakaian apa yang paling perlu ditemukan sebelum fungsi benda aslinya boleh dianggap terbukti?",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "16ezSoeRCBdGb6nGQiYBt_Y0A0x0Q7S6Q",
+  "drive_ids": {
+    "video": "16ezSoeRCBdGb6nGQiYBt_Y0A0x0Q7S6Q",
+    "thumbnail": "1e0uPN-AxUQg437ndUbgUI2TvlgauPW6h",
+    "poster": "1e9OnqwZx2-J3xHuDVqCAY72dezHQdtK4",
+    "endcard": "1XVByhSwkRoyY0v1DJFdEAS3-U_R-WSl5",
+    "srt": "1xDctdecz_YmHdORaaJQ9hGfXrAp9USOK",
+    "folder": "1On49gInPOAPQIoAMU6fOnpX3XU16Acpu"
+  },
+  "duration_seconds": 108.53,
+  "size_bytes": 23568636,
+  "sha256": "df9f9dec3968387a1b18735cacfb5fd5746ba33b62803400238a34cced887a7d",
+  "catatan": "Master final setelah QC: 1080×1920 @30 fps, H.264 High/yuv420p bt709, AAC stereo 44,1 kHz; loudnorm -15,08 LUFS / -1,13 dBTP; 105 cue SRT dari token naskah yang diproyeksikan pada active span VAD (bukan ASR forced alignment). Timeline video 108,53 dtk termasuk outro 5 dtk dan bed audio berlanjut sampai outro; tidak ada span hening ≥1 dtk pada ambang -50 dB. Diagram berlisensi CC BY-SA 2.5 disebut sebagai skema modern, bukan foto artefak. Siap dijadwalkan sesuai izin user."
+}

@@ -1,0 +1,23 @@
+{
+  "name": "istanbul_topkapi",
+  "props": {
+    "src": "maps/istanbul_topkapi_map.png",
+    "natural": { "w": 768, "h": 512 },
+    "bounds": { "n": 41.244772343082076, "s": 40.713955826286046, "w": 28.4765625, "e": 29.53125 },
+    "target": { "lat": 41.0115, "lon": 28.9834 },
+    "fromScale": 1,
+    "toScale": 4.2,
+    "zoomIn": 16,
+    "zoomOut": 148,
+    "zone": { "lat": 41.0115, "lon": 28.9834, "r": 74 },
+    "zoneFrame": 118,
+    "points": [
+      { "lat": 41.0115, "lon": 28.9834, "label": "TOPKAPI · ISTANBUL" }
+    ],
+    "pointsFrame": 121,
+    "headline": "PETA PIRI REIS",
+    "sub": "TOPKAPI PALACE MUSEUM LIBRARY",
+    "credit": "© OpenStreetMap contributors",
+    "durationInFrames": 192
+  }
+}

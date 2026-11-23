@@ -1,0 +1,23 @@
+{
+  "name": "khujut_rabu",
+  "props": {
+    "src": "maps/khujut_rabu_map.png",
+    "natural": { "w": 1024, "h": 512 },
+    "bounds": { "n": 33.43144133557529, "s": 32.84267363195431, "w": 43.9453125, "e": 45.3515625 },
+    "target": { "lat": 33.05, "lon": 44.55 },
+    "fromScale": 1,
+    "toScale": 3.7,
+    "zoomIn": 16,
+    "zoomOut": 148,
+    "zone": { "lat": 33.05, "lon": 44.55, "r": 74 },
+    "zoneFrame": 118,
+    "points": [
+      { "lat": 33.05, "lon": 44.55, "label": "SEKITAR KHUJUT RABU" }
+    ],
+    "pointsFrame": 121,
+    "headline": "KHUJUT RABU",
+    "sub": "DEKAT BAGHDAD · IRAK",
+    "credit": "© OpenStreetMap contributors",
+    "durationInFrames": 192
+  }
+}

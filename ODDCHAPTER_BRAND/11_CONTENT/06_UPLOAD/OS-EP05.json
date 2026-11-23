@@ -1,0 +1,46 @@
+{
+  "episode": "OS-EP05",
+  "series": "ODDCHAPTER SURPRISE",
+  "kind": "short",
+  "video": "OS-EP05_peta-piri-reis_feed.mp4",
+  "thumbnail": "OS-EP05_thumbnail_16x9.jpg",
+  "poster": "OS-EP05_poster_9x16.jpg",
+  "title": "Peta 1513 Ini Bukan Bukti Antartika. Baca Catatan Pinggirnya",
+  "title_alt": [
+    "Peta Piri Reis: Antartika, atau Garis Amerika Selatan?",
+    "1513: Peta Ottoman yang Sering Diklaim Memetakan Antartika",
+    "Satu Garis di Peta Piri Reis Menghapus Catatan Pinggirnya"
+  ],
+  "hook": "1513: Peta Piri Reis bukan bukti Antartika.",
+  "description": "1513: Peta Piri Reis bukan bukti Antartika.\n\nPeta 1513 ini nyata: fragmen yang tersisa disimpan di Topkapı Palace Museum Library, Istanbul. Tetapi di pinggir peta, Piri Reis sendiri menulis bahwa ia menyatukan kira-kira dua puluh peta dan bagan, termasuk sumber Portugis, Arab, dan bahan Columbus yang ia sebut. Itu adalah petunjuk cara peta ini dibuat, bukan bukti seseorang memotret bumi dari langit.\n\nGaris selatan yang sering disebut Antartika menyambung ke Amerika Selatan dan dibaca dalam sejarah kartografi sebagai kelanjutan/distorsi garis pantai atau tanah selatan dugaan. Antartika baru tercatat dalam pelayaran modern pada 1820. Ketidakpastian detail sumber bukan alasan untuk melewati catatan pembuat petanya sendiri.\n\nDokumen sumber: Piri Reis World Map, 1513 · Topkapı Palace Museum Library H 1824 · via Wikimedia Commons · Public Domain. Konteks institusional: UNESCO, The Piri Reis World Map (1513) in the Topkapı Palace Museum Library.\n\nFootage stok: Coverr (Free License; selalu diberi label sebagai ilustrasi). Peta lokasi: © OpenStreetMap contributors, data ODbL. Narasi internal sintetis; tidak ada visual AI yang dipakai sebagai bukti. @oddchapter7",
+  "tags": [
+    "Piri Reis",
+    "peta Piri Reis",
+    "Antartika",
+    "peta 1513",
+    "Topkapi",
+    "kartografi Ottoman",
+    "sejarah peta",
+    "literasi media",
+    "sejarah dunia",
+    "oddchapter"
+  ],
+  "first_comment": "Kalau satu garis pada peta tampak cocok dengan klaim viral, bagian mana yang kamu periksa lebih dulu: bentuk garisnya, atau catatan pembuat petanya?",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "public",
+  "drive_file_id": "1V1-j4Zf90j4pFK8uUeIwb_xxiafLkon-",
+  "drive_ids": {
+    "video": "1V1-j4Zf90j4pFK8uUeIwb_xxiafLkon-",
+    "thumbnail": "1cYk-8ShWmzArJfNBpKvWD5-8YJwSnLme",
+    "poster": "1rXjEkNXXyVoWTPra7xdAfgrtcWXFtEKH",
+    "endcard": "14I42jqB5Yp0WqLFHW63xNwaWuJAsvRKu",
+    "srt": "1QL_2Z_DQxUNoTiyntdX86rPSpOK1J-Z3",
+    "folder": "1On49gInPOAPQIoAMU6fOnpX3XU16Acpu"
+  },
+  "duration_seconds": 111.9,
+  "size_bytes": 32483568,
+  "sha256": "c1ef1a09fa26f579557954f170eef1349045667feaa9d4dfc6e9395725626658",
+  "catatan": "Master final setelah QC: 1080×1920 @30 fps, H.264 High/yuv420p bt709, AAC stereo 44,1 kHz; loudnorm -15,09 LUFS / -1,42 dBTP; 114 cue SRT dari token naskah yang diproyeksikan pada active span VAD (bukan ASR forced alignment). Timeline video 111,90 dtk termasuk outro 5 dtk dan bed audio berlanjut sampai outro; tidak ada span hening ≥1 dtk pada ambang -50 dB. Sumber visual bukti adalah scan public-domain beratribusi; klip Coverr dilabel ilustrasi; peta OSM diberi kredit. Siap dijadwalkan sesuai izin user."
+}

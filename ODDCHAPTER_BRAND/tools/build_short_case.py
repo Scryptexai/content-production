@@ -316,6 +316,11 @@ def render_shots(force=False):
         n = max(2, round(dur * FPS))
         if mode == "clip":
             fn, cs, cd = CLIPS[img]
+            if dur > cd + 1e-3:
+                raise SystemExit(
+                    f"shot {i:02d} meminta {dur:.2f}s dari {img}, tetapi sumber hanya {cd:.2f}s — "
+                    "pecah shot atau sediakan klip lebih panjang; jangan hasilkan timeline terpotong"
+                )
             src = CLIP_DIR / fn
             filt = clip_filter(img, dur, extra)
             run([FF, "-y", "-ss", f"{cs:.3f}", "-t", f"{min(cd, dur):.3f}", "-i", str(src),
@@ -324,6 +329,11 @@ def render_shots(force=False):
                  "-an", str(outp)])
         elif mode == "clipfill":
             fn, cs, cd = CLIPS[img]
+            if dur > cd + 1e-3:
+                raise SystemExit(
+                    f"shot {i:02d} meminta {dur:.2f}s dari {img}, tetapi sumber hanya {cd:.2f}s — "
+                    "pecah shot atau sediakan klip lebih panjang; jangan hasilkan timeline terpotong"
+                )
             src = CLIP_DIR / fn
             filt = clip_fill_filter(img, dur, extra)
             run([FF, "-y", "-ss", f"{cs:.3f}", "-t", f"{min(cd, dur):.3f}", "-i", str(src),
@@ -457,13 +467,18 @@ def synth_bed():
 def mix_audio():
     vo = CASE / CFG.VO_FILE
     bed = AUD / "bed.wav"
+    # Pad VO through END before it becomes the side-chain. Without this, the
+    # sidechain filter ends as soon as narration ends and cuts the music bed
+    # before the branded outro (a real silent-tail failure in OS-EP05/06).
     filt = (
         "[0:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
         "volume=2.4,highpass=f=70,lowpass=f=13000,"
-        "acompressor=threshold=0.12:ratio=3:attack=15:release=180,asplit=2[vo][sc];"
-        "[1:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[bed];"
+        "acompressor=threshold=0.12:ratio=3:attack=15:release=180,"
+        f"apad=whole_dur={END:.3f},atrim=duration={END:.3f},asplit=2[vo][sc];"
+        "[1:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
+        f"apad=whole_dur={END:.3f},atrim=duration={END:.3f}[bed];"
         "[bed][sc]sidechaincompress=threshold=0.045:ratio=7:attack=25:release=380[bedd];"
-        "[vo][bedd]amix=inputs=2:normalize=0:dropout_transition=0,"
+        "[vo][bedd]amix=inputs=2:duration=longest:normalize=0:dropout_transition=0,"
         "alimiter=limit=0.84:level=false[out]"
     )
     raw = AUD / "mix_raw.wav"
