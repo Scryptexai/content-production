@@ -1,27 +1,23 @@
-egypt desert: 1 kandidat
-desert mountains: 12 kandidat
-desert valley: 3 kandidat
-ancient stone: 7 kandidat
-stone stairs: 14 kandidat
-old door: 5 kandidat
-dark hallway: 3 kandidat
-candle flame: 6 kandidat
-dust light: 18 kandidat
-old book: 9 kandidat
-archive documents: 0 kandidat
-old map: 0 kandidat
-magnifying glass book: 0 kandidat
-old newspaper: 0 kandidat
-newspaper printing: 1 kandidat
-printing press: 2 kandidat
-typewriter: 0 kandidat
-paper stack: 1 kandidat
-clock close up: 18 kandidat
-calendar pages: 1 kandidat
-writing notebook: 22 kandidat
-library shelves: 0 kandidat
-empty museum: 5 kandidat
-museum artifact: 0 kandidat
-desert sunset: 13 kandidat
-silhouette desert: 1 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep04.json
+  ok: s1_desert_view (5945 KB)
+  ok: s1_hallway (2767 KB)
+  ok: s2_old_book (2905 KB)
+  ok: s2_pages (3008 KB)
+  ok: s2_writing_fire (1906 KB)
+  ok: s3_desert_rocks (5777 KB)
+  ok: s3_cappadocia (2148 KB)
+  ok: s3_stone_sculpture (2498 KB)
+  ok: s3_stone_mountains (2800 KB)
+  ok: s3_ruins (4356 KB)
+  ok: s4_arch (2463 KB)
+  ok: s4_candle (1920 KB)
+  ok: s5_newspapers (3386 KB)
+  ok: s5_watch (1811 KB)
+  ok: s5_clock (2025 KB)
+  ok: s5_diary (3266 KB)
+  ok: s5_notes (3036 KB)
+  ok: s6_louvre (576 KB)
+  ok: s6_louvre_tuileries (1903 KB)
+  ok: s6_empty_desert (2200 KB)
+  ok: s7_old_door (2549 KB)
+  ok: s7_road_california (5355 KB)
+{"ok": 22, "failed": 0}

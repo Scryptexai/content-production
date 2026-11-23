@@ -1,6 +1,6 @@
 {
  "episode": "OS-EP04-TUTANKHAMUN",
- "catatan": "Picks OS-EP04 per section: gurun/batuan/pintu/lampu untuk pencarian makam; buku dan catatan untuk Carter; jam/kertas dan foto AI mesin cetak untuk legenda media; museum dan lorong untuk bukti; gurun senja untuk resolusi. Semua base baru dibandingkan dengan picks OS-EP01–03 sebelum unduh. Dokumen sejarah asli Harry Burton + MAP-ZOOM KV62 dan foto AI dipakai terpisah, bukan diganti footage generik.",
+ "catatan": "Picks OS-EP04 per section: gurun/batuan/pintu/lampu untuk pencarian makam; buku dan catatan untuk Carter; koran/mesin waktu/kertas untuk legenda media; museum dan lorong untuk bukti; gurun senja untuk resolusi. Semua base baru dibandingkan dengan picks OS-EP01–03 sebelum unduh. Dokumen sejarah asli Harry Burton + MAP-ZOOM KV62 dan foto AI dipakai terpisah, bukan diganti footage generik.",
  "picks": [
   {
    "name": "s1_desert_view",
@@ -63,9 +63,19 @@
    "base": "coverr-burning-church-candles-4154"
   },
   {
+   "name": "s5_newspapers",
+   "title": "Local, Dutch newspapers",
+   "base": "coverr-local-dutch-newspapers-8257"
+  },
+  {
    "name": "s5_watch",
    "title": "Watch timelapse",
    "base": "coverr-watch-timelapse-3561"
+  },
+  {
+   "name": "s5_clock",
+   "title": "Grand Central Clock",
+   "base": "coverr-grand-central-clock-1793"
   },
   {
    "name": "s5_diary",
