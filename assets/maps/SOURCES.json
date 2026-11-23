@@ -73,6 +73,30 @@
    ],
    "zoom": 7,
    "cat": "Target KV62 25.7402,32.6014 ditempatkan dekat tengah raster agar zoom tidak bocor hitam."
+  },
+  {
+   "file": "istanbul_topkapi_map.png",
+   "role": "OS-EP05 MAP-A — zoom Istanbul menuju Topkapı Palace Museum Library, lokasi penyimpanan Peta Piri Reis",
+   "bbox": [
+    41.16,
+    40.88,
+    28.68,
+    29.3
+   ],
+   "zoom": 10,
+   "cat": "Target Topkapı Palace 41.0115, 28.9834 dekat tengah raster agar zoom bersih."
+  },
+  {
+   "file": "khujut_rabu_map.png",
+   "role": "OS-EP06 MAP-A — zoom Irak menuju Khujut Rabu dekat Baghdad/Ctesiphon, findspot yang diasosiasikan dengan Baghdad Battery",
+   "bbox": [
+    33.34,
+    32.86,
+    44.1,
+    45.02
+   ],
+   "zoom": 10,
+   "cat": "Target Khujut Rabu aproksimasi 33.10, 44.58; label memakai “dekat Baghdad” dan tidak mengklaim titik ekskavasi milimeter."
   }
  ]
 }
