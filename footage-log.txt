@@ -1,21 +1,11 @@
-old map hands: 0 kandidat
-antique map desk: 0 kandidat
-compass map: 0 kandidat
-nautical map: 0 kandidat
-sailing ship sea: 19 kandidat
-ocean horizon: 22 kandidat
-old manuscript: 0 kandidat
-archive library: 0 kandidat
-istanbul skyline: 0 kandidat
-hands turning pages: 2 kandidat
-pottery workshop: 0 kandidat
-ceramic pottery close up: 1 kandidat
-copper metal workshop: 0 kandidat
-metal craftsman: 2 kandidat
-science laboratory experiment: 1 kandidat
-electrical experiment: 0 kandidat
-writing notebook close up: 22 kandidat
-old document desk: 0 kandidat
-baghdad city: 0 kandidat
-tigris river: 0 kandidat
-kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep05-06.json
+  ok: piri_boats_sailing (6577 KB)
+  ok: piri_sea_sao_vicente (2121 KB)
+  ok: piri_atlantic_sunset (1959 KB)
+  ok: piri_pages_notebook (2442 KB)
+  ok: piri_reading_night (1629 KB)
+  ok: baghdad_pottery (4796 KB)
+  ok: baghdad_writing_notebook (1723 KB)
+  ok: baghdad_oldman_writing (2116 KB)
+  ok: baghdad_elder_writing (1954 KB)
+  ok: baghdad_writing_coffee (2316 KB)
+{"ok": 10, "failed": 0}
