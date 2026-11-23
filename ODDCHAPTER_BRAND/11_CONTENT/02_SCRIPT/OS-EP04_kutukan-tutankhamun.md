@@ -55,7 +55,7 @@
 >
 > Kita melakukan hal yang sama sampai sekarang. Kita melihat dua peristiwa berdekatan, lalu merasa sudah menemukan penyebabnya. Padahal kita belum menghitung semua orang yang tidak masuk cerita.
 >
-> Kutukan itu bukan tulisan di dinding makam. Ia adalah daftar kematian yang kehilangan daftar orang yang selamat. Kalau tiga kematian setelah satu berita terasa seperti bukti, siapa yang kita lupa hitung?
+> Kutukan itu bukan tulisan di dinding makam. Ia adalah daftar kematian yang kehilangan daftar orang yang selamat. Kalau satu kematian setelah satu penemuan terasa seperti bukti, siapa yang kita lupa hitung?
 
 ## Batas fakta dan klaim
 
