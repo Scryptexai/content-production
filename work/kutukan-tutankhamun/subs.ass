@@ -17,14 +17,14 @@ Style: Credit,Barlow Condensed ExtraBold,40,&H00D0D0D0,&H00D0D0D0,&H00000000,&H8
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:00.50,0:00:04.90,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
-Dialogue: 0,0:00:05.25,0:00:09.55,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:05.25,0:00:09.55,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
 Dialogue: 0,0:00:09.90,0:00:14.30,Tag,,0,0,0,,FOOTAGE STOK · COVERR
 Dialogue: 0,0:00:14.65,0:00:18.57,Tag,,0,0,0,,FOOTAGE STOK · COVERR
 Dialogue: 0,0:00:18.92,0:00:23.40,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
 Dialogue: 0,0:00:30.15,0:00:34.40,Tag,,0,0,0,,FOOTAGE STOK · COVERR
 Dialogue: 0,0:00:34.75,0:00:38.90,Tag,,0,0,0,,FOOTAGE STOK · COVERR
 Dialogue: 0,0:00:39.25,0:00:43.70,Tag,,0,0,0,,FOOTAGE STOK · COVERR
-Dialogue: 0,0:00:44.05,0:00:47.80,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
+Dialogue: 0,0:00:44.05,0:00:47.80,Tag,,0,0,0,,FOOTAGE STOK · COVERR · ILUSTRASI
 Dialogue: 0,0:00:48.15,0:00:52.70,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
 Dialogue: 0,0:00:53.05,0:00:57.10,Tag,,0,0,0,,FOOTAGE STOK · COVERR
 Dialogue: 0,0:00:57.45,0:01:01.70,Tag,,0,0,0,,{\an9\pos(1020,300)\fs26\fsp4\c&H00D0D0D0&\alpha&H60&}ODDCHAPTER
@@ -65,7 +65,7 @@ Dialogue: 0,0:02:23.00,0:02:26.20,Kicker,,0,0,0,,{\pos(540,1010)\an5\fs46\fad(22
 Dialogue: 0,0:02:31.60,0:02:37.60,Kicker,,0,0,0,,{\pos(540,700)\an5\fs44\fad(220,120)}SIAPA YANG KITA LUPA HITUNG?
 Dialogue: 0,0:02:38.50,0:02:42.90,Big,,0,0,0,,{\pos(540,640)\an5\fs110\fad(260,0)}ODDCHAPTER
 Dialogue: 0,0:02:38.80,0:02:42.90,Kicker,,0,0,0,,{\pos(540,740)\an5\fs42\c&H002A2AD8&\fad(300,0)}ODDCHAPTER SURPRISE · OS-EP04
-Dialogue: 0,0:02:39.10,0:02:42.90,Credit,,0,0,0,,{\pos(540,1000)\an5\fs26\c&H00D0D0D0&\fad(360,0)}Footage stok: Coverr\NFoto arsip: Harry Burton · PD\NPeta: © OpenStreetMap contributors\NFoto AI tanpa orang · Mengandung media sintetis
+Dialogue: 0,0:02:39.10,0:02:42.90,Credit,,0,0,0,,{\pos(540,1000)\an5\fs26\c&H00D0D0D0&\fad(360,0)}Footage stok: Coverr\NPeta lokasi: © OpenStreetMap contributors · ODbL\NVisual AI tanpa orang · Mengandung media sintetis
 Dialogue: 0,0:00:00.00,0:00:01.03,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}LORD {\c&H002A2AD8&}CARNARVON{\c&H00FFFFFF&}
 Dialogue: 0,0:00:00.99,0:00:02.25,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}MENINGGAL KURANG
 Dialogue: 0,0:00:02.21,0:00:03.22,Sub,,0,0,0,,{\fscx118\fscy118\t(0,90,\fscx100\fscy100)}DARI DUA BULAN

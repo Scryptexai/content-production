@@ -8,8 +8,8 @@ master, bukan dianggap forced alignment ASR.
 
 Sudut bukti: makam KV62 dan kematian Carnarvon adalah fakta; klaim hubungan
 sebab-akibat supernatural tidak terbukti. Kartu tanggal + kartu tiga penyintas
-adalah bukti visual turn. Source document nyata: foto Harry Burton (PD). Peta
-asli: Remotion MAP-ZOOM OSM ke KV62, kredit dibakar pada shot.
+adalah bukti visual turn. Sumber lokasi nyata: peta OpenStreetMap berlisensi
+ODbL, dianimasikan sebagai MAP-ZOOM ke KV62 dan diberi kredit pada shot.
 
 00G: footage Coverr baru di footage/os-ep04 (nol reuse lintas episode), foto
 AI hanya untuk adegan historis yang tak dapat direkam, dokumen sumber nyata,
@@ -26,7 +26,6 @@ IMAGES = {
     "DOOR": ("tomb_sealed_door.png", 768, 1376),
     "VALLEY": ("valley_excavation_empty.png", 768, 1376),
     "PRESS": ("newspaper_press_empty.png", 768, 1376),
-    "BURTON": ("harry_burton_carter_sarcophagus.jpg", 500, 335),
     "TIMELINE": ("timeline_1922_1923.png", 1080, 1920),
     "SURVIVORS": ("survivors_counterevidence.png", 1080, 1920),
     "VERDICT": ("verdict_two_facts.png", 1080, 1920),
@@ -43,7 +42,7 @@ CLIPS = {
     "S3_CAPPA": ("os-ep04/s3_cappadocia.mp4", 0.0, 6.0),
     "S3_RUINS": ("os-ep04/s3_ruins.mp4", 0.0, 6.0),
     "S3_STONE": ("os-ep04/s3_stone_sculpture.mp4", 0.0, 6.0),
-    "S3_MOUNTS": ("os-ep04/s3_stone_mountains.mp4", 0.0, 6.0),
+    "S3_STONE_MOUNTS": ("os-ep04/s3_stone_mountains.mp4", 0.0, 6.0),
     "S4_ARCH": ("os-ep04/s4_arch.mp4", 0.0, 6.0),
     "S4_CANDLE": ("os-ep04/s4_candle.mp4", 0.0, 6.0),
     "S5_DIARY": ("os-ep04/s5_diary.mp4", 0.0, 6.0),
@@ -64,7 +63,8 @@ SHOTS = [
     (0.00,   0.25, None,        "black", 1.0, 1.0, {}),
     # S1 — Carnarvon meninggal; pertanyaan kutukan
     (0.25,   5.00, "DOOR",      "fill",  1.0, 1.09, {}),
-    (5.00,   9.65, "BURTON",    "canvas",1.0, 1.08, {"top": True}),
+    (5.00,   9.65, "S3_STONE_MOUNTS", "clip", 1.0, 1.0,
+     {"tag": "FOOTAGE STOK · COVERR · ILUSTRASI"}),
     (9.65,  14.40, "S1_HALL",   "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     (14.40, 18.67, "S1_DESERT", "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     # S2 — Carter dan Lembah Para Raja
@@ -73,7 +73,8 @@ SHOTS = [
     (29.90, 34.50, "S2_BOOK",   "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     (34.50, 39.00, "S2_PAGES",  "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     (39.00, 43.80, "S2_WRITE",  "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
-    (43.80, 47.90, "BURTON",    "canvas",1.04, 1.12, {}),
+    (43.80, 47.90, "S3_RUINS", "clip", 1.0, 1.0,
+     {"tag": "FOOTAGE STOK · COVERR · ILUSTRASI"}),
     # S3 — pembukaan bertahap; sakit dan kematian Carnarvon
     (47.90, 52.80, "TIMELINE",  "fill",  1.0, 1.02, {}),
     (52.80, 57.20, "S4_ARCH",   "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
@@ -116,9 +117,8 @@ MERGE = []
 WORD_FIX = {"tutankhamun": "Tutankhamun", "carnarvon": "Carnarvon", "howard": "Howard", "carter": "Carter", "evelyn": "Evelyn", "herbert": "Herbert", "douglas": "Douglas", "derry": "Derry", "firaun": "Firaun"}
 
 CREDITS = ("Footage stok: Coverr\\N"
-           "Foto arsip: Harry Burton · PD\\N"
-           "Peta: © OpenStreetMap contributors\\N"
-           "Foto AI tanpa orang · Mengandung media sintetis")
+           "Peta lokasi: © OpenStreetMap contributors · ODbL\\N"
+           "Visual AI tanpa orang · Mengandung media sintetis")
 
 OVL = [
     (0.70,  4.80, "Stamp",  "{\\pos(540,510)\\an5\\fs62\\frz-4\\fad(160,150)}KUTUKAN FIRAUN?"),

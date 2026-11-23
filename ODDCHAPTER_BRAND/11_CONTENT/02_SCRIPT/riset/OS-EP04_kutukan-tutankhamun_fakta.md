@@ -31,8 +31,9 @@ pengulangan mitos.
 
 ## Struktur bukti di layar
 
-1. **Dokumen sejarah:** foto/scan publik tangga KV62 atau halaman *The Tomb of
-   Tutankhamen*, dengan kredit sumber dan tanggal 1922.
+1. **Dokumen lokasi nyata:** peta OpenStreetMap (data berlisensi ODbL) yang di-zoom
+   ke KV62, dengan kredit `© OpenStreetMap contributors` di layar. Foto arsip KV62
+   tidak dipakai sebelum institusi koleksi dan lisensinya dapat diverifikasi.
 2. **Kartu waktu:** `NOV 1922` — tangga ditemukan; `FEB 1923` — ruang makam dibuka;
    `5 APR 1923` — Carnarvon meninggal.
 3. **Kartu perbandingan:** Carter `+16 tahun`; Evelyn Herbert `+57 tahun`; Douglas

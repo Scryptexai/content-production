@@ -24,9 +24,9 @@
 | # | Fungsi | Visual wajib |
 |---|---|---|
 | S1 | Hook | Foto/ilustrasi makam + kartu `5 APR 1923`, bukan simbol kutukan karangan. |
-| S2 | Awal pencarian | Dokumen/foto tangga KV62, dengan kredit sumber primer. |
-| S3 | Kronologi | Peta Remotion Mesir → Lembah Para Raja → KV62. |
-| S4 | Kematian Carnarvon | Kartu waktu + dokumen koran arsip, kredit sumber. |
+| S2 | Awal pencarian | Footage stok berlabel ilustrasi; tidak boleh dipresentasikan sebagai foto tangga KV62. |
+| S3 | Kronologi | Peta Remotion asli: Mesir → Lembah Para Raja → KV62; kredit `© OpenStreetMap contributors · ODbL`. |
+| S4 | Kematian Carnarvon | Kartu waktu + visual mesin cetak/koran berlabel ilustrasi; tidak diklaim sebagai arsip 1923. |
 | S5 | Media membentuk legenda | Montase halaman koran/mesin cetak; footage Coverr baru yang sesuai. |
 | S6 | Turn | Kartu tiga penyintas: Carter, Evelyn Herbert, Douglas Derry. |
 | S7 | Resolusi | Daftar dua kolom: “yang dihitung” versus “yang diabaikan”, lalu outro. |
