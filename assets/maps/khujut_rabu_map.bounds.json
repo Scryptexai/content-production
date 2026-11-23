@@ -1,0 +1,13 @@
+{
+ "north": 33.43144133557529,
+ "south": 32.84267363195431,
+ "west": 43.9453125,
+ "east": 45.3515625,
+ "zoom": 10,
+ "size": [
+  1024,
+  512
+ ],
+ "credit": "\u00a9 OpenStreetMap contributors",
+ "provider": "openstreetmap.org"
+}
