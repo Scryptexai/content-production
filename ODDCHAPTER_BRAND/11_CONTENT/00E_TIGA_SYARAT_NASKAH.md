@@ -83,6 +83,14 @@ Aturan tambahan:
 3. **Jangan pakai angka yang tidak muncul lagi.** Angka di hook harus dipakai lagi di bab
    pembuktian.
 4. **Hook tidak boleh lebih panjang dari 6 baris ucap.** Kalau lebih, itu sudah bab, bukan hook.
+5. **Detik 3–10 harus menyerang asumsi penonton.** Buka dengan frasa keras yang
+   menguji keyakinan populer atau cara penonton menarik kesimpulan — bukan sekadar
+   tanggal atau suasana. Kalimat keras itu harus segera punya standar pembuktian di
+   dalam episode; serang kebiasaan berpikirnya, bukan menghina penontonnya.
+6. **Salin payoff ke depan bila perlu.** Kalau kartu/kalimat paling tajam baru ada
+   di klimaks tengah atau akhir, buat *cold open* yang menyalin kontras buktinya ke
+   awal, lalu kembali ke kronologi. Payoff asli tetap dipertahankan agar konteks dan
+   bukti lengkap tidak hilang.
 
 ---
 

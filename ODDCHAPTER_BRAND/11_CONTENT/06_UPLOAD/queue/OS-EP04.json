@@ -5,7 +5,7 @@
   "approved": false,
   "visibility": "public",
   "file": "work/kutukan-tutankhamun/out/OS-EP04_kutukan-tutankhamun_feed.mp4",
-  "master_sha256": "ba853b0a1a280ba5f060f4ab933bde627382d7da8b066cfe6f21e7d0bfe310f3",
-  "drive_video_id": "11q-uHE8c8MObHj_z7n_SMbrl0HkQGO9h",
-  "catatan": "Paket unggah siap. QC final 162,63 dtk; caption 140 cue; foto arsip Harry Burton yang lisensinya belum tervalidasi sudah dikeluarkan dari final dan diganti footage Coverr berlabel ilustrasi. Jangan ubah ke status requested atau approved:true tanpa perintah publikasi eksplisit dari pemilik. Sebelum unggah, master Drive harus dibuat anyone-with-link → Viewer agar workflow dapat memverifikasi ukuran/hash."
+  "master_sha256": "d4b9de717c7df30ccbc1ee0d66d91ad24892468b4f6cd8cd1c1f7b8c6182b409",
+  "drive_video_id": "1f_DV9P-JI26PbaajrPiR3MR0dxFJvlWH",
+  "catatan": "Paket unggah revisi hook/caption siap: cold open memakai salinan payoff, voice-08 baru menekan asumsi di detik 3–10, caption 141 cue memakai anchor VAD tanpa lead, dan bed ambience tersambung sampai akhir outro. Master Drive v3 telah diunggah dan ukuran/hash lokal dicatat di metadata. Jangan ubah ke status requested atau approved:true tanpa perintah publikasi eksplisit dari pemilik. Sebelum unggah, master Drive harus dibuat anyone-with-link → Viewer agar workflow dapat memverifikasi ukuran/hash."
 }

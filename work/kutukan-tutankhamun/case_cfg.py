@@ -2,9 +2,9 @@
 
 VO internal perempuan voice-08, disetujui pemilik sebagai suara internal yang
 mendekati karakter Riri. Sumber: vo_internal/vo_kutukan-tutankhamun.m4a
-(157,98 dtk); END = 162,98 dtk dengan outro brand 5 dtk. Caption memakai
-alignment kata proporsional per kalimat dari durasi TTS — QC dilakukan terhadap
-master, bukan dianggap forced alignment ASR.
+(157,96 dtk); END = 162,63 dtk dengan outro brand 4,67 dtk. Caption memakai
+anchor jeda audio/VAD per frasa lalu distribusi proporsional di dalam frasa;
+bukan dipresentasikan sebagai forced alignment ASR.
 
 Sudut bukti: makam KV62 dan kematian Carnarvon adalah fakta; klaim hubungan
 sebab-akibat supernatural tidak terbukti. Kartu tanggal + kartu tiga penyintas
@@ -18,9 +18,12 @@ dan peta asli. Semua klip Coverr diberi label di layar.
 
 SLUG = "kutukan-tutankhamun"
 VO_FILE = "vo_internal/vo_kutukan-tutankhamun.m4a"
-END = 162.98
+END = 162.63
 OUT_NAME = "OS-EP04_kutukan-tutankhamun_feed.mp4"
 SRT_NAME = "OS-EP04.id.srt"
+# Anchor VAD sudah berada di awal suara kata; jangan mendahului ucapan lagi.
+CAPTION_LEAD = 0.0
+CAPTION_TAIL = 0.14
 
 IMAGES = {
     "DOOR": ("tomb_sealed_door.png", 768, 1376),
@@ -61,12 +64,13 @@ TAG_STOK_C = "FOOTAGE STOK · COVERR"
 # (mulai, selesai, asset, mode, z0, z1, extra)
 SHOTS = [
     (0.00,   0.25, None,        "black", 1.0, 1.0, {}),
-    # S1 — Carnarvon meninggal; pertanyaan kutukan
-    (0.25,   5.00, "DOOR",      "fill",  1.0, 1.09, {}),
-    (5.00,   9.65, "S3_STONE_MOUNTS", "clip", 1.0, 1.0,
-     {"tag": "FOOTAGE STOK · COVERR · ILUSTRASI"}),
-    (9.65,  14.40, "S1_HALL",   "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
-    (14.40, 18.67, "S1_DESERT", "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
+    # S1 — cold open: payoff/kontra-bukti dari klimaks disalin ke depan.
+    # Sesudah itu cerita kembali ke awal pencarian Carter (18,67 dtk).
+    (0.25,   5.00, "DOOR",      "fill",  1.0, 1.09,
+     {"tag": "ILUSTRASI AI · BUKAN FOTO KV62"}),
+    (5.00,   9.65, "VERDICT",   "fill",  1.0, 1.03, {}),
+    (9.65,  14.40, "SURVIVORS", "fill",  1.0, 1.02, {}),
+    (14.40, 18.67, "S1_HALL",   "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     # S2 — Carter dan Lembah Para Raja
     (18.67, 23.50, "VALLEY",    "fill",  1.0, 1.07, {}),
     (23.50, 29.90, "MAP_KV62",  "clip",  1.0, 1.0, {"raw": True}),
@@ -101,7 +105,7 @@ SHOTS = [
     (142.00,146.50,"SURVIVORS", "fill",  1.12, 1.17, {"focusy": 0.78}),
     (146.50,151.00,"S3_ROCKS",  "clip",  1.0, 1.0, {"tag": TAG_STOK_C}),
     (151.00,157.98,"DOOR",      "fill",  1.08, 1.16, {}),
-    (157.98,162.98,None,         "outro", 1.0, 1.0, {}),
+    (157.98,162.63,None,         "outro", 1.0, 1.0, {}),
 ]
 
 KEYWORDS = {"TUTANKHAMUN", "CARNARVON", "HOWARD", "CARTER", "KV62", "FIRAUN", "KUTUKAN"}
@@ -121,9 +125,7 @@ CREDITS = ("Footage stok: Coverr\\N"
            "Visual AI tanpa orang · Mengandung media sintetis")
 
 OVL = [
-    (0.70,  4.80, "Stamp",  "{\\pos(540,510)\\an5\\fs62\\frz-4\\fad(160,150)}KUTUKAN FIRAUN?"),
-    (5.30,  9.30, "Kicker", "{\\pos(540,1010)\\an5\\fs48\\fad(220,150)}5 APRIL 1923 · CARNARVON MENINGGAL"),
-    (10.20,14.20, "Kicker", "{\\pos(540,700)\\an5\\fs48\\fad(200,140)}KALAU KUTUKAN, KENAPA YANG LAIN HIDUP LAMA?"),
+    (0.60,  4.85, "Big",    "{\\pos(540,620)\\an5\\fs78\\fad(160,150)}KUTUKAN FIRAUN?\\NPEMBODOHAN PUBLIK."),
     (19.10,23.20, "Stamp",  "{\\pos(540,520)\\an5\\fs54\\frz-4\\fad(160,140)}HOWARD CARTER"),
     # MAP memiliki title dan credit sendiri
     (30.30,34.30, "Kicker", "{\\pos(540,1010)\\an5\\fs46\\fad(220,160)}NOVEMBER 1922 · TANGGA DITEMUKAN"),

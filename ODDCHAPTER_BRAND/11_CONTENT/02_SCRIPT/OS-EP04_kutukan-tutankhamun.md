@@ -10,7 +10,7 @@
 
 | Elemen | Isi |
 |---|---|
-| Hook + mesin | “Carnarvon meninggal setelah makam dibuka; koran menyebut kutukan.” — salah sangka |
+| Hook + mesin | “Kutukan Firaun itu bukan bukti sejarah; satu kematian dijual sementara para penyintas dihapus.” — salah sangka / membalik kepercayaan |
 | Protagonis + mau | Howard Carter ingin menemukan makam utuh; Carnarvon mendanai penggalian terakhirnya. |
 | Tanaman | Daftar kematian. Di turn, daftar itu berubah arti karena daftar penyintas dihilangkan. |
 | Awareness | Otak kita masih mudah menganggap urutan dua peristiwa sebagai sebab-akibat. |
@@ -23,7 +23,7 @@
 
 | # | Fungsi | Visual wajib |
 |---|---|---|
-| S1 | Hook | Foto/ilustrasi makam + kartu `5 APR 1923`, bukan simbol kutukan karangan. |
+| S1 | Cold open / hook | Ilustrasi makam berlabel AI → salinan kartu putusan dan daftar penyintas dari klimaks. Teks serangannya dibayar bukti di tengah; tidak ada klaim supernatural. |
 | S2 | Awal pencarian | Footage stok berlabel ilustrasi; tidak boleh dipresentasikan sebagai foto tangga KV62. |
 | S3 | Kronologi | Peta Remotion asli: Mesir → Lembah Para Raja → KV62; kredit `© OpenStreetMap contributors · ODbL`. |
 | S4 | Kematian Carnarvon | Kartu waktu + visual mesin cetak/koran berlabel ilustrasi; tidak diklaim sebagai arsip 1923. |
@@ -33,9 +33,7 @@
 
 ## Teks VO final untuk TTS
 
-> Lord Carnarvon meninggal kurang dari dua bulan setelah ruang makam Tutankhamun dibuka. Koran lalu memberi nama yang jauh lebih besar dari kematiannya: kutukan Firaun.
->
-> Kalau itu benar kutukan, kenapa orang yang masuk makam bersamanya hidup puluhan tahun?
+> Kutukan Firaun itu bukan bukti sejarah. Itu pembodohan publik: satu kematian dijual sebagai kutukan, sementara orang-orang yang hidup puluhan tahun dihilangkan dari cerita. Kalau kamu percaya, lihat dulu daftar yang sengaja tidak dicetak.
 >
 > Sebelumnya, Howard Carter hampir kehabisan waktu. Bertahun-tahun ia mencari makam seorang raja muda di Lembah Para Raja. Lord Carnarvon membiayai satu musim penggalian terakhir.
 >

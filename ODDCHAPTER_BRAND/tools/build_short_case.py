@@ -50,6 +50,10 @@ KEYWORDS = getattr(CFG, "KEYWORDS", set())
 NUM_PHRASES = getattr(CFG, "NUM_PHRASES", [])
 MERGE = getattr(CFG, "MERGE", [])
 WORD_FIX = getattr(CFG, "WORD_FIX", {})
+# Default lama memberi lead 60 ms. Kasus dengan anchor VAD dapat meminta 0 agar
+# caption tidak mendahului ucapan yang sedang dibuktikan oleh anchor audio.
+CAPTION_LEAD = float(getattr(CFG, "CAPTION_LEAD", 0.06))
+CAPTION_TAIL = float(getattr(CFG, "CAPTION_TAIL", 0.14))
 CREDITS = getattr(CFG, "CREDITS", "")
 OUT_NAME = getattr(CFG, "OUT_NAME", "short.mp4")
 CLIPS = getattr(CFG, "CLIPS", {})          # key -> (file, start, dur) di work/<slug>/footage/
@@ -146,8 +150,8 @@ def build_captions(words):
 
     lines = []
     for gi, g in enumerate(events):
-        t0 = g[0]["t0"] - 0.06
-        t1 = g[-1]["t1"] + 0.14
+        t0 = g[0]["t0"] - CAPTION_LEAD
+        t1 = g[-1]["t1"] + CAPTION_TAIL
         if gi + 1 < len(events):
             t1 = min(t1, events[gi + 1][0]["t0"] - 0.02)
         parts = []
@@ -497,8 +501,8 @@ def write_srt():
         return f"{h:02d}:{m:02d}:{sec:06.3f}".replace(".", ",")
     out = []
     for i, g in enumerate(groups, 1):
-        t0 = max(0.0, g[0]["t0"] - 0.06)
-        t1 = g[-1]["t1"] + 0.14
+        t0 = max(0.0, g[0]["t0"] - CAPTION_LEAD)
+        t1 = g[-1]["t1"] + CAPTION_TAIL
         if i < len(groups):
             t1 = min(t1, groups[i][0]["t0"] - 0.02)
         out.append(f"{i}\n{ts(t0)} --> {ts(t1)}\n" + " ".join(w["w"].upper() for w in g) + "\n")
