@@ -169,15 +169,22 @@ def render(entry: dict) -> None:
                 print(f"  tile {n}/{total} (via {PROVIDERS[used]['name']})", flush=True)
             time.sleep(1.0)
 
-    # validasi: tile placeholder hampir seragam — tolak
+    # Validasi placeholder: peta kota pada z10 lazimnya didominasi blok jalan
+    # pucat, jadi simpangan luminansinya bisa 9–12 (Istanbul/Khujut Rabu).
+    # Ambang lama 14 salah menolak raster OSM sah. Placeholder sungguhan hampir
+    # datar *dan* punya sangat sedikit warna; pakai dua sinyal agar tile kosong
+    # tetap tertolak tanpa memaksa peta kota terlihat seperti citra satelit.
     import statistics
-    sample = canvas.resize((64, 64)).convert("L")
-    stdev = statistics.pstdev(sample.getdata())
-    if stdev < 14:
+    sample = canvas.resize((64, 64)).convert("RGB")
+    luma = sample.convert("L")
+    stdev = statistics.pstdev(luma.getdata())
+    colors = len(sample.getcolors(maxcolors=1_000_000) or [])
+    if stdev < 4.0 or (stdev < 7.0 and colors < 64):
         raise RuntimeError(
-            f"raster seragam (stdev={stdev:.1f}) — provider mengembalikan placeholder"
+            f"raster nyaris seragam (stdev={stdev:.1f}, colors={colors}) — "
+            "provider mengembalikan placeholder"
         )
-    print(f"  variance OK (stdev={stdev:.1f})", flush=True)
+    print(f"  variance OK (stdev={stdev:.1f}, colors={colors})", flush=True)
 
     dst = OUT / entry["file"]
     dst.parent.mkdir(parents=True, exist_ok=True)
