@@ -1,40 +1,27 @@
-  ok: s1_clouds_road (1771 KB)
-  ok: s1_timelapse_night (2547 KB)
-  ok: s1_clouds_plane (1081 KB)
-  ok: s1_marina (2382 KB)
-  ok: s2_mic_swing (2289 KB)
-  ok: s2_car_lights (2713 KB)
-  ok: s3_usa_flag (2439 KB)
-  ok: s3_ny_traffic (1541 KB)
-  ok: s5_curtain (2664 KB)
-  ok: s5_house_lake (7681 KB)
-  ok: s6_waves_calm (3259 KB)
-  ok: s6_yachts (2609 KB)
-  ok: s6_sea_bridge (4927 KB)
-  ok: s7_bcn_streets (2711 KB)
-  ok: s7_ruins (2410 KB)
-  ok: s7_window_branch (3652 KB)
-  ok: s8_newspaper_queue (1897 KB)
-  ok: s8_news_scroll (2685 KB)
-  ok: s8_grand_central_clock (2023 KB)
-  ok: s9_daraga_church (2271 KB)
-  ok: s9_jeronimos (3773 KB)
-  ok: s9_jeronimos_arch (4771 KB)
-  ok: s10_guitar_strings (3049 KB)
-  ok: s10_record_player (2642 KB)
-  ok: s10_mic_drop (2721 KB)
-  ok: s11_airplane (2214 KB)
-  ok: s11_rocket (962 KB)
-  ok: s11_snow_branch (1239 KB)
-  ok: s12_horizon (1196 KB)
-  ok: s12_park_tl (2616 KB)
-  ok: s13_newspaper_man (1040 KB)
-  ok: s13_oldman_park (3164 KB)
-  ok: s13_oldman_writing (2118 KB)
-  ok: s14_fog_woods (2216 KB)
-  ok: s15_city_night (1611 KB)
-  ok: s15_evening_city (1549 KB)
-  ok: s16_streets_sunset (2557 KB)
-  ok: s16_trees_wind (7309 KB)
-  ok: s16_sun_coast (3330 KB)
-{"ok": 39, "failed": 0}
+egypt desert: 1 kandidat
+desert mountains: 12 kandidat
+desert valley: 3 kandidat
+ancient stone: 7 kandidat
+stone stairs: 14 kandidat
+old door: 5 kandidat
+dark hallway: 3 kandidat
+candle flame: 6 kandidat
+dust light: 18 kandidat
+old book: 9 kandidat
+archive documents: 0 kandidat
+old map: 0 kandidat
+magnifying glass book: 0 kandidat
+old newspaper: 0 kandidat
+newspaper printing: 1 kandidat
+printing press: 2 kandidat
+typewriter: 0 kandidat
+paper stack: 1 kandidat
+clock close up: 18 kandidat
+calendar pages: 1 kandidat
+writing notebook: 22 kandidat
+library shelves: 0 kandidat
+empty museum: 5 kandidat
+museum artifact: 0 kandidat
+desert sunset: 13 kandidat
+silhouette desert: 1 kandidat
+kandidat -> /home/runner/work/content-production/content-production/footage-candidates-os-ep04.json
