@@ -61,6 +61,18 @@
    ],
    "zoom": 7,
    "cat": "EP03 shot MAP-B: zona pesisir NC·SC·Virginia — zona di TENGAH raster supaya zoom bersih tanpa bocor hitam (useast bbox lama: zona di tepi selatan → gagal coverage)"
+  },
+  {
+   "file": "egypt_valley_map.png",
+   "role": "OS-EP04 MAP-A — zoom Mesir menuju KV62, Lembah Para Raja",
+   "bbox": [
+    27.0,
+    24.4,
+    30.5,
+    34.5
+   ],
+   "zoom": 7,
+   "cat": "Target KV62 25.7402,32.6014 ditempatkan dekat tengah raster agar zoom tidak bocor hitam."
   }
  ]
 }
