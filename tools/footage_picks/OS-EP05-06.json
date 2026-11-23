@@ -1,0 +1,66 @@
+{
+  "episode": "OS-EP05-06",
+  "catatan": "Pilihan manual dari discovery untuk dua episode baru. Semua base_filename diperiksa terhadap picks episode sebelumnya untuk menghindari reuse lintas episode. Piri memakai laut/kapal/halaman sebagai ilustrasi pelayaran dan sumber kompilasi; Baghdad memakai keramik dan catatan sebagai ilustrasi kerja bahan/hipotesis. Tidak satu pun dipresentasikan sebagai rekaman historis atau foto artefak.",
+  "picks": [
+    {
+      "name": "piri_boats_sailing",
+      "title": "Boats sailing in the sea",
+      "base": "coverr-boats-sailing-in-the-sea-8828",
+      "playback": "02ETmGf2cm01TrEdjxkc600Ubfo4QUa8yVG"
+    },
+    {
+      "name": "piri_sea_sao_vicente",
+      "title": "A sea in Sao Vicente, Portugal",
+      "base": "coverr-a-sea-in-sao-vicente-portugal-8538",
+      "playback": "Lbg12npdqazDHTat5O6A6TzUFpu5c00dL"
+    },
+    {
+      "name": "piri_atlantic_sunset",
+      "title": "Sunset over the Atlantic Ocean",
+      "base": "coverr-sunset-over-the-atlantic-ocean-1409",
+      "playback": "uev502IBnU6nOPVHKhWwS01v4yfQMxegrR"
+    },
+    {
+      "name": "piri_pages_notebook",
+      "title": "Hands turning pages in a notebook",
+      "base": "coverr-hands-turning-pages-in-a-notebook-8881",
+      "playback": "h99w4ap66cCPbeaqAayJ8VvrMTsAxjkn"
+    },
+    {
+      "name": "piri_reading_night",
+      "title": "A man reading a book at home late at night",
+      "base": "coverr-a-man-reading-a-book-at-home-late-at-night-5580",
+      "playback": "OOm4Zba4bmKx02P00Cc01Wbecw4QDrsrBTe"
+    },
+    {
+      "name": "baghdad_pottery",
+      "title": "Woman making a clay pot",
+      "base": "coverr-woman-making-a-clay-pot-190",
+      "playback": "3qtH4cCFkk0001XPNSmlO5GpZJ3Q002a3Pu"
+    },
+    {
+      "name": "baghdad_writing_notebook",
+      "title": "Woman writing in notebook",
+      "base": "coverr-woman-writing-in-notebook-3282",
+      "playback": "mNdvOMh8l01Oc53jumcAelaGZDVEeWh7K"
+    },
+    {
+      "name": "baghdad_oldman_writing",
+      "title": "Old man writing in a notebook",
+      "base": "coverr-old-man-writing-in-a-notebook-8741",
+      "playback": "Cwn7BW1KWXGgYyNC01L7TOaZFtbBWye00s"
+    },
+    {
+      "name": "baghdad_elder_writing",
+      "title": "Elderly man writing in a notebook",
+      "base": "coverr-elderly-man-writing-in-a-notebook-2757",
+      "playback": "I701bXiHmo5XkMLZUkuPsRg8xKGRYk3ts"
+    },
+    {
+      "name": "baghdad_writing_coffee",
+      "title": "Writing in a notebook at a coffee shop",
+      "base": "coverr-writing-in-a-notebook-at-a-coffee-shop-3323",
+      "playback": "9YABWY3EHZ34h5NmaTytK00PmFrQorhvJ"
+    }
+  ]
+}

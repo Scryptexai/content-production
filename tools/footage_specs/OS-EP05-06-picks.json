@@ -1,0 +1,8 @@
+{
+  "episode": "OS-EP05-06",
+  "mode": "picks",
+  "picks": "tools/footage_picks/OS-EP05-06.json",
+  "target_dir": "footage/os-ep05-06",
+  "report": "footage-report-os-ep05-06.json",
+  "catatan": "Unduh 10 footage Coverr pilihan, baru dan berlabel ilustrasi, untuk OS-EP05 Piri Reis dan OS-EP06 Baghdad Battery. Dibagi ke work/<slug>/footage setelah runner selesai."
+}
