@@ -1,0 +1,29 @@
+{
+  "episode": "OS-EP05-06",
+  "mode": "discover",
+  "target_dir": "footage/os-ep05-06",
+  "candidates_out": "footage-candidates-os-ep05-06.json",
+  "catatan": "Discover gabungan dua episode sejarah kontroversial dengan nol reuse terhadap semua episode terdahulu. OS-EP05 Piri Reis memerlukan laut Atlantik, kapal layar, meja peta, kompas, buku/manuskrip, perpustakaan, dan kota Istanbul. OS-EP06 Baghdad Battery memerlukan keramik, tembaga, bengkel logam, eksperimen lab yang netral, catatan/arsip, sungai/kota Baghdad, serta tangan menulis. Semua footage hanyalah ilustrasi dan harus diberi label on-screen; dokumen sejarah/diagram serta peta lokasi dibedakan pada edit.",
+  "queries": [
+    {"q": "old map hands", "want": 8},
+    {"q": "antique map desk", "want": 8},
+    {"q": "compass map", "want": 8},
+    {"q": "nautical map", "want": 8},
+    {"q": "sailing ship sea", "want": 8},
+    {"q": "ocean horizon", "want": 8},
+    {"q": "old manuscript", "want": 8},
+    {"q": "archive library", "want": 8},
+    {"q": "istanbul skyline", "want": 8},
+    {"q": "hands turning pages", "want": 8},
+    {"q": "pottery workshop", "want": 8},
+    {"q": "ceramic pottery close up", "want": 8},
+    {"q": "copper metal workshop", "want": 8},
+    {"q": "metal craftsman", "want": 8},
+    {"q": "science laboratory experiment", "want": 8},
+    {"q": "electrical experiment", "want": 8},
+    {"q": "writing notebook close up", "want": 8},
+    {"q": "old document desk", "want": 8},
+    {"q": "baghdad city", "want": 8},
+    {"q": "tigris river", "want": 8}
+  ]
+}
