@@ -1,34 +1,40 @@
 {
-  "fetched_at": "2026-11-15T14:47:53Z",
+  "fetched_at": "2026-11-24T02:46:55Z",
   "raw": {
     "posts": [
       {
-        "_id": "6af9c5a14cb7b88c916124d8",
+        "_id": "6b041789ba5094d98ce0d5bb",
         "userId": {
           "_id": "6aedd4b7c678af6f05c6c0e4",
           "name": "Jamadi",
           "email": "jamadianur@gmail.com",
           "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
         },
+        "workspaceId": "6b005030db5770c0e8033bd3",
         "title": "",
-        "content": "Dua kardus di trotoar Sudirman, 1981. Isinya tubuh tanpa nama.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
+        "content": "1938: Baterai Baghdad diusulkan sebagai listrik kuno. Bukti yang hilang justru kabelnya.\n\nBenda dari Khujut Rabu dekat Baghdad ini berupa kendi tanah liat, tabung tembaga, batang besi, dan sumbat aspal. Pada 1938, Wilhelm König mengusulkan bahwa susunan itu mungkin menjadi sel listrik kecil bila diisi elektrolit. Replika modern memang bisa menghasilkan voltase kecil saat cairan asam ditambahkan.\n\nNamun replika yang bekerja hari ini belum menjelaskan fungsi benda aslinya. Jika dipakai sebagai baterai untuk pelapisan logam, kita berharap ada kabel penghubung, rangkaian beberapa kendi, atau artefak sezaman yang terbukti dilapisi listrik. Bukti-bukti itu belum ada. Ada pembacaan lain untuk wadah serupa, sehingga fungsi tepatnya tetap terbuka.\n\nVisual sumber episode adalah skema modern, bukan foto artefak: Ironie, “Pile Bagdad”, via Wikimedia Commons · CC BY-SA 2.5. Footage stok Coverr hanya ilustrasi dan diberi label. Peta lokasi: © OpenStreetMap contributors, data ODbL. Narasi internal sintetis; tidak ada rekonstruksi AI yang dipakai sebagai bukti. @oddchapter7",
         "mediaItems": [
           {
-            "_id": "6af9c5a84cb7b88c91612513",
-            "url": "https://media.zernio.com/media/1794753948989_0381bdb776ff2076_EP10_1080x1920_master.mp4",
+            "_id": "6b04178bba5094d98ce0d5c6",
+            "url": "https://media.zernio.com/media/1795430278754_49e7ea7de8aa8847_OS-EP06_baghdad-battery_feed.mp4",
             "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794753952841_93c73ba51fb136d5_EP10_thumbnail.jpg"
+            "thumbnail": "https://media.zernio.com/media/1795430280438_b45575be30881a0c_OS-EP06_thumbnail_16x9.jpg"
           }
         ],
-        "scheduledFor": "2026-11-15T14:45:53.923Z",
+        "scheduledFor": "2026-11-23T15:34:08.000Z",
         "timezone": "UTC",
         "status": "published",
         "tags": [
-          "misteri",
-          "true crime",
-          "kasus tak terpecahkan",
-          "setiabudi",
-          "setia budi 13"
+          "Baterai Baghdad",
+          "Baghdad Battery",
+          "Khujut Rabu",
+          "Wilhelm Konig",
+          "arkeologi",
+          "listrik kuno",
+          "elektroplating",
+          "sejarah kuno",
+          "literasi media",
+          "oddchapter"
         ],
         "hashtags": [],
         "mentions": [],
@@ -37,7 +43,6 @@
         "metadata": {
           "usageCounted": true
         },
-        "publishingClaimedAt": "2026-11-15T14:46:00.478Z",
         "recycling": {
           "enabled": false,
           "gapFreq": "month",
@@ -45,92 +50,12 @@
           "contentVariations": [],
           "contentVariationIndex": 0
         },
-        "createdAt": "2026-11-15T14:46:00.265Z",
-        "updatedAt": "2026-11-15T14:47:07.225Z",
+        "lastEnqueuedAt": "2026-11-23T15:19:20.957Z",
+        "createdAt": "2026-11-23T10:38:03.170Z",
+        "updatedAt": "2026-11-23T15:36:39.974Z",
         "platforms": [
           {
-            "_id": "6af9c5a84cb7b88c91612510",
-            "platform": "tiktok",
-            "accountId": {
-              "_id": "6aeddf6a0b5ec69b89139f4e",
-              "platform": "tiktok",
-              "username": "oddchapter7",
-              "displayName": "oddchapter7",
-              "profilePicture": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/66440808f2b7dc1df17071a16f07cf25~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=0604c7d9&x-expires=1794819600&x-signature=yfJQYBw5nUSXbQFJD0nP5i0x048%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my3",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-15T14:45:53.923Z",
-            "platformSpecificData": {
-              "title": "Dua kardus di trotoar Sudirman, 1981. Isinya tubuh tanpa nama.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
-              "privacyLevel": "PUBLIC_TO_EVERYONE",
-              "tiktokBusinessPublishId": "v_pub_url~v2.7708409358442842120"
-            },
-            "status": "published",
-            "publishedAt": "2026-11-15T14:46:19.625Z",
-            "platformPostId": "7708409619067997441",
-            "platformPostUrl": "https://www.tiktok.com/@oddchapter7/video/7708409619067997441",
-            "publishAttempts": 1,
-            "contentHash": "6974499224c514a75a34fddc058845eb"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af9c511615d6b707b81a203",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Dua kardus di Trotoar Sudirman 1981. Isinya potongan tubuh manusia tanpa nama.\n\nPagi 23 November 1981, di trotoar Jalan Jenderal Sudirman, Setiabudi, Jakarta, dua satpam menemukan dua kardus yang berbau anyir dan dikerubungi lalat. Mereka tidak berani membukanya. Dua gelandangan yang akhirnya membuka kardus itu menemukan kepala dan potongan tubuh manusia.\n\nYang membuat kasus ini bertahan lebih dari empat puluh tahun:\n• Identitas korban tidak pernah ditemukan. Pria, perkiraan usia 18–21 tahun.\n• Sidik jari, telapak tangan, telapak kaki, dan wajahnya tidak dihilangkan pelaku.\n• Ratusan orang datang mengaku kehilangan kerabat. Tidak satu pun cocok.\n• 27 November 1981 jasadnya dimakamkan tanpa nama di TPU Tegal Alur, Jakarta Barat.\n\nKasus ini dikenal sebagai Setia Budi 13. Pelakunya belum diketahui, dan nama korbannya masih kosong.\n\nTapi siapa yang mengingat namanya?\n\nSumber: arsip pemberitaan 1981 dan sesudahnya, keterangan autopsi yang dikutip pemberitaan (tim forensik RS Cipto Mangunkusumo), catatan kasus Polda Metro Jaya. Detail mutilasi sengaja tidak dijelaskan di video. Kasus ini tidak pernah terpecahkan; semua yang tidak dikonfirmasi resmi ditulis sebagai dugaan. Beberapa angka berbeda antar pemberitaan dan disebut sebagai perkiraan.\n\n#shorts #misteri #truecrime #kasustakterpecahkan #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af9c516615d6b707b81a22e",
-            "url": "https://media.zernio.com/media/1794753805615_a32bec6ac37899ba_EP10_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794753808716_5e25bd578939aa5a_EP10_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-15T14:43:29.958Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "misteri",
-          "true crime",
-          "kasus tak terpecahkan",
-          "setiabudi",
-          "setia budi 13",
-          "jakarta 1981",
-          "sudirman",
-          "kardus",
-          "oddchapter",
-          "shorts"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-15T14:43:34.873Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-15T14:43:34.817Z",
-        "updatedAt": "2026-11-15T14:43:45.322Z",
-        "platforms": [
-          {
-            "_id": "6af9c516615d6b707b81a22c",
+            "_id": "6b04178bba5094d98ce0d5c4",
             "platform": "youtube",
             "accountId": {
               "_id": "6aedd61c503bf8b0c2751429",
@@ -143,306 +68,59 @@
             },
             "profileId": "6aedd4b7c678af6f05c6c0e6",
             "customMedia": [],
-            "scheduledFor": "2026-11-15T14:43:29.958Z",
+            "scheduledFor": "2026-11-23T15:34:08.000Z",
             "platformSpecificData": {
-              "title": "Dua Kardus di Trotoar Sudirman. Isinya Tubuh Tanpa Nama.",
-              "categoryId": "24",
+              "title": "1938: Baterai Baghdad Bisa Menyala. Fungsi Aslinya Belum Terbukti",
+              "categoryId": "27",
               "visibility": "public",
               "madeForKids": false,
-              "firstComment": "Sidik jarinya masih utuh, wajahnya masih ada, ratusan orang datang mencari. Tetap nol nama.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-15T14:43:45.236Z",
-            "platformPostId": "KQR0s52rbCE",
-            "platformPostUrl": "https://www.youtube.com/watch?v=KQR0s52rbCE",
-            "publishAttempts": 1,
-            "contentHash": "aaa2c14cd6f9d011194c9284235f0082"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af9af0d1ce3b59aa97bc8da",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Tasnya berisi batu, bukan alasan untuk hilang. Mahasiswa itu ditemukan di danau kampus.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af9af131ce3b59aa97bc901",
-            "url": "https://media.zernio.com/media/1794748169839_048dc606a86498e2_EP09_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794748171737_65ec4ea74a6a3f5c_EP09_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-15T13:09:35.746Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "misteri",
-          "true crime",
-          "kasus tak terpecahkan",
-          "danau kenanga",
-          "universitas indonesia"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-15T13:09:39.266Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-15T13:09:39.027Z",
-        "updatedAt": "2026-11-15T13:16:15.177Z",
-        "platforms": [
-          {
-            "_id": "6af9af121ce3b59aa97bc8ff",
-            "platform": "tiktok",
-            "accountId": {
-              "_id": "6aeddf6a0b5ec69b89139f4e",
-              "platform": "tiktok",
-              "username": "oddchapter7",
-              "displayName": "oddchapter7",
-              "profilePicture": "https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/66440808f2b7dc1df17071a16f07cf25~tplv-tiktokx-cropcenter:168:168.jpeg?dr=14577&refresh_token=0604c7d9&x-expires=1794819600&x-signature=yfJQYBw5nUSXbQFJD0nP5i0x048%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=my3",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-15T13:09:35.746Z",
-            "platformSpecificData": {
-              "title": "Tasnya berisi batu, bukan alasan untuk hilang. Mahasiswa itu ditemukan di danau kampus.\n#misteri #truecrime #kasustakterpecahkan #oddchapter",
-              "privacyLevel": "PUBLIC_TO_EVERYONE",
-              "tiktokUploadTimeoutAt": "2026-11-15T13:09:54.267Z",
-              "tiktokBusinessPublishId": "v_pub_url~v2.7708384446446487573",
-              "tiktokBusinessReconciledAt": "2026-11-15T13:15:26.315Z",
-              "tiktokBusinessReconciledReason": "already-resolved",
-              "tiktokBusinessReconcileAttempts": 1
-            },
-            "status": "published",
-            "publishedAt": "2026-11-15T13:10:06.263Z",
-            "platformPostId": "7708384803367734546",
-            "platformPostUrl": "https://www.tiktok.com/@oddchapter7/video/7708384803367734546",
-            "publishAttempts": 1,
-            "contentHash": "05cce51fd11d557a9d79f46723a537fd"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af9ad63febdc55cc7b5e9bc",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Tas di punggungnya berisi batu konblok, dan dia ditemukan di danau kampus.\n\nMaret 2015, Danau Kenanga, Kampus UI Depok. Seorang mahasiswa biologi berusia 18 tahun ditemukan mengambang dengan pakaian lengkap dan ransel berisi batu konblok.\n\nYang tidak cocok dengan cerita bunuh diri:\n• Di kamar kosnya ada surat: “Jangan cari aku.”\n• Ada memar di tubuhnya, dan air di paru-parunya.\n• Pemeriksa tulisan tangan menyebut surat itu ditulis dua orang berbeda.\n• Ransel itu dipakai di punggung, bukan diikatkan ke kaki.\n\nStatus kasusnya berubah dari bunuh diri menjadi dugaan pembunuhan. Sampai sekarang belum ada tersangka. Ayahnya datang setiap bulan Maret, menuntut satu nama.\n\nMenurut kamu, siapa yang menggendong tas itu ke danau?\n\nSumber: penyelidikan Polres Metro Depok 2015, autopsi RS Polri (via pemberitaan), analisis grafologi, arsip pemberitaan 2015–2024. Kasus ini masih terbuka; semua yang tidak dikonfirmasi resmi ditulis sebagai dugaan.\n\n#shorts #misteri #truecrime #kasustakterpecahkan #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af9ad69febdc55cc7b5e9ce",
-            "url": "https://media.zernio.com/media/1794747742701_43fbff83a153d125_EP09_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794747745942_4b2b89312801ca05_EP09_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-15T13:02:27.294Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "misteri",
-          "true crime",
-          "kasus tak terpecahkan",
-          "danau kenanga",
-          "universitas indonesia",
-          "depok",
-          "mahasiswa",
-          "2015",
-          "oddchapter",
-          "shorts"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-15T13:02:34.530Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-15T13:02:33.418Z",
-        "updatedAt": "2026-11-15T13:02:50.614Z",
-        "platforms": [
-          {
-            "_id": "6af9ad68febdc55cc7b5e9cc",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-15T13:02:27.294Z",
-            "platformSpecificData": {
-              "title": "Tas Berisi Batu di Punggungnya. Mahasiswa Itu Ditemukan di Danau Kampus.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Dua tulisan di surat, memar di punggung, dan batu di dalam tas. Kalau memang mau menghilang, kenapa batunya harus di punggung?",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-15T13:02:50.419Z",
-            "platformPostId": "xyK0qZFEAtE",
-            "platformPostUrl": "https://www.youtube.com/watch?v=xyK0qZFEAtE",
-            "publishAttempts": 1,
-            "contentHash": "f1014a672cd476b2fbf7df20c0500a35"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af8ebde26409c28f9b3285f",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Semua label di bajunya dipotong. Sebelum dia hilang.\n\nTahun 1970, di lembah Isdalen dekat Bergen, Norwegia, seorang ayah dan dua anaknya menemukan tubuh perempuan yang terbakar dari depan. Punggungnya utuh. Rambutnya hangus.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya:\n• Semua label pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, uang asing, dan catatan berkode.\n• Ada jelaga di paru-parunya. Dia masih hidup waktu api menyala.\n\nPolisi menyebut kemungkinan bunuh diri. Banyak yang tidak percaya: orang yang mau mati tidak menghapus namanya serapi itu. Kasus dibuka lagi tahun 2016; isotop giginya mengarah ke sekitar Jerman selatan. Namanya tetap tidak ada.\n\nMenurut kamu, apa yang sebenarnya terjadi di lembah itu? Tulis di komentar.\n\nSumber: BBC News, NRK \"Death in Ice Valley\", arsip kepolisian Bergen.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
-        "mediaItems": [
-          {
-            "_id": "6af8ebe026409c28f9b3286a",
-            "url": "https://media.zernio.com/media/1794698204698_a207d0dd4cf85a67_EP08_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794698205812_5b7aa322cbc347c9_EP08_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-15T00:30:00.000Z",
-        "timezone": "Asia/Jakarta",
-        "status": "published",
-        "tags": [
-          "misteri",
-          "true crime",
-          "cold case",
-          "isdal woman",
-          "norwegia",
-          "1970",
-          "kasus tak terpecahkan",
-          "sejarah",
-          "oddchapter",
-          "shorts"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "lastEnqueuedAt": "2026-11-15T00:16:17.485Z",
-        "createdAt": "2026-11-14T23:16:48.288Z",
-        "updatedAt": "2026-11-15T00:30:50.095Z",
-        "platforms": [
-          {
-            "_id": "6af8ebe026409c28f9b32868",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-15T00:30:00.000Z",
-            "platformSpecificData": {
-              "title": "Label di Bajunya Dipotong. 1970: Dia Hilang Tanpa Nama.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Delapan nama di kopernya, dan tidak satu pun yang asli. Kalau semua jejak namamu dihapus, kamu masih bisa dicari?",
+              "firstComment": "Replika menunjukkan sesuatu mungkin bekerja. Menurut kamu, bukti pemakaian apa yang paling perlu ditemukan sebelum fungsi benda aslinya boleh dianggap terbukti?",
               "containsSyntheticMedia": true,
-              "youtubeUploadSessionId": "6af8f9ed22b6bc9976df23e9"
+              "youtubeUploadSessionId": "6b04597df12a0ed891556abf"
             },
             "status": "published",
-            "publishedAt": "2026-11-15T00:30:00.000Z",
-            "platformPostId": "heyMdxZPVgA",
-            "platformPostUrl": "https://www.youtube.com/watch?v=heyMdxZPVgA",
+            "publishedAt": "2026-11-23T15:34:08.000Z",
+            "platformPostId": "UEvg7E-wetg",
+            "platformPostUrl": "https://www.youtube.com/watch?v=UEvg7E-wetg",
             "publishAttempts": 1,
-            "contentHash": "7e12d1f230a2b0c2af2eb62b0aff8f35"
+            "contentHash": "ed75ce470dc3a2ec7c601961b2d341a6"
           }
         ],
         "origin": "zernio"
       },
       {
-        "_id": "6af880002c9f6025a255dbf8",
+        "_id": "6b041733fab67d8356d1abd0",
         "userId": {
           "_id": "6aedd4b7c678af6f05c6c0e4",
           "name": "Jamadi",
           "email": "jamadianur@gmail.com",
           "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
         },
+        "workspaceId": "6b005030db5770c0e8033bd3",
         "title": "",
-        "content": "Kenapa semua label di bajunya dipotong, sebelum dia hilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+        "content": "1513: Peta Piri Reis bukan bukti Antartika.\n\nPeta 1513 ini nyata: fragmen yang tersisa disimpan di Topkapı Palace Museum Library, Istanbul. Tetapi di pinggir peta, Piri Reis sendiri menulis bahwa ia menyatukan kira-kira dua puluh peta dan bagan, termasuk sumber Portugis, Arab, dan bahan Columbus yang ia sebut. Itu adalah petunjuk cara peta ini dibuat, bukan bukti seseorang memotret bumi dari langit.\n\nGaris selatan yang sering disebut Antartika menyambung ke Amerika Selatan dan dibaca dalam sejarah kartografi sebagai kelanjutan/distorsi garis pantai atau tanah selatan dugaan. Antartika baru tercatat dalam pelayaran modern pada 1820. Ketidakpastian detail sumber bukan alasan untuk melewati catatan pembuat petanya sendiri.\n\nDokumen sumber: Piri Reis World Map, 1513 · Topkapı Palace Museum Library H 1824 · via Wikimedia Commons · Public Domain. Konteks institusional: UNESCO, The Piri Reis World Map (1513) in the Topkapı Palace Museum Library.\n\nFootage stok: Coverr (Free License; selalu diberi label sebagai ilustrasi). Peta lokasi: © OpenStreetMap contributors, data ODbL. Narasi internal sintetis; tidak ada visual AI yang dipakai sebagai bukti. @oddchapter7",
         "mediaItems": [
           {
-            "_id": "6af880022c9f6025a255dc11",
-            "url": "https://media.zernio.com/media/1794670590113_889aa1957ad68542_EP08_1080x1920_master.mp4",
+            "_id": "6b041735fab67d8356d1abda",
+            "url": "https://media.zernio.com/media/1795430192137_cbcc71889f5a4b89_OS-EP05_peta-piri-reis_feed.mp4",
             "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794670591803_b338084bd6e9c5b0_EP08_thumbnail.jpg"
+            "thumbnail": "https://media.zernio.com/media/1795430194225_970df0dee3c19ca6_OS-EP05_thumbnail_16x9.jpg"
           }
         ],
-        "scheduledFor": "2026-11-14T15:36:32.693Z",
+        "scheduledFor": "2026-11-23T12:34:08.000Z",
         "timezone": "UTC",
         "status": "published",
         "tags": [
-          "misteri",
-          "true crime",
-          "cold case",
-          "isdal woman",
-          "norwegia",
-          "1970",
-          "kasus tak terpecahkan",
-          "sejarah",
-          "oddchapter",
-          "shorts"
+          "Piri Reis",
+          "peta Piri Reis",
+          "Antartika",
+          "peta 1513",
+          "Topkapi",
+          "kartografi Ottoman",
+          "sejarah peta",
+          "literasi media",
+          "sejarah dunia",
+          "oddchapter"
         ],
         "hashtags": [],
         "mentions": [],
@@ -451,7 +129,6 @@
         "metadata": {
           "usageCounted": true
         },
-        "publishingClaimedAt": "2026-11-14T15:36:34.842Z",
         "recycling": {
           "enabled": false,
           "gapFreq": "month",
@@ -459,11 +136,12 @@
           "contentVariations": [],
           "contentVariationIndex": 0
         },
-        "createdAt": "2026-11-14T15:36:34.800Z",
-        "updatedAt": "2026-11-14T15:36:41.824Z",
+        "lastEnqueuedAt": "2026-11-23T12:19:15.717Z",
+        "createdAt": "2026-11-23T10:36:37.374Z",
+        "updatedAt": "2026-11-23T12:36:39.159Z",
         "platforms": [
           {
-            "_id": "6af880022c9f6025a255dc0f",
+            "_id": "6b041735fab67d8356d1abd8",
             "platform": "youtube",
             "accountId": {
               "_id": "6aedd61c503bf8b0c2751429",
@@ -476,383 +154,59 @@
             },
             "profileId": "6aedd4b7c678af6f05c6c0e6",
             "customMedia": [],
-            "scheduledFor": "2026-11-14T15:36:32.693Z",
+            "scheduledFor": "2026-11-23T12:34:08.000Z",
             "platformSpecificData": {
-              "title": "1970: Dia Memotong Semua Label di Pakaiannya, Lalu Menghilang.",
-              "categoryId": "24",
+              "title": "Peta 1513 Ini Bukan Bukti Antartika. Baca Catatan Pinggirnya",
+              "categoryId": "27",
               "visibility": "public",
               "madeForKids": false,
-              "firstComment": "Label dipotong, tanda botol dikerok, delapan nama. Satu perempuan, tanpa nama sampai sekarang.",
-              "containsSyntheticMedia": true
+              "firstComment": "Kalau satu garis pada peta tampak cocok dengan klaim viral, bagian mana yang kamu periksa lebih dulu: bentuk garisnya, atau catatan pembuat petanya?",
+              "containsSyntheticMedia": true,
+              "youtubeUploadSessionId": "6b042f46085be7ac6f9d7486"
             },
             "status": "published",
-            "publishedAt": "2026-11-14T15:36:41.787Z",
-            "platformPostId": "3E2ekjMZPkc",
-            "platformPostUrl": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
+            "publishedAt": "2026-11-23T12:34:08.000Z",
+            "platformPostId": "nPLOvu4bvQs",
+            "platformPostUrl": "https://www.youtube.com/watch?v=nPLOvu4bvQs",
             "publishAttempts": 1,
-            "contentHash": "9fd3c2d8c275e191690efea9a0db288d"
+            "contentHash": "2a677169289894fc7a4dd1b450fea755"
           }
         ],
         "origin": "zernio"
       },
       {
-        "_id": "6af869870e77952e44d8fe64",
+        "_id": "6b0408840095d39bf58ff51d",
         "userId": {
           "_id": "6aedd4b7c678af6f05c6c0e4",
           "name": "Jamadi",
           "email": "jamadianur@gmail.com",
           "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
         },
+        "workspaceId": "6b005030db5770c0e8033bd3",
         "title": "",
-        "content": "Kenapa seseorang memotong semua label dari pakaiannya sendiri, lalu menghilang?\n\nIsdalen, lembah berbatu di kaki Gunung Ulriken dekat Bergen, Norwegia. 29 November 1970, seorang ayah bersama dua anaknya menemukan tubuh perempuan yang terbakar hebat. Wajahnya tidak bisa dikenali lagi.\n\nYang membuat kasus ini tidak pernah selesai bukan kematiannya, tapi persiapannya:\n• Semua label di pakaiannya dipotong, bukan disobek.\n• Tanda pada botol di sekitarnya dikerok habis.\n• Dua kopernya ditemukan di stasiun Bergen: wig, kacamata tanpa resep, krim eksim yang nama dokternya dihapus, lima lembar 100 Deutsche Mark di lapisan kain, dan buku catatan berisi kode.\n• Dia memakai beberapa nama berbeda di hotel-hotel di Norwegia.\n\nOtopsi menyimpulkan kematian akibat keracunan karbon monoksida dan fenobarbital. Ada jelaga di paru-parunya, artinya dia masih hidup saat api menyala. Polisi menyebutnya kemungkinan bunuh diri. Banyak yang tidak percaya, karena orang yang mau mati tidak perlu menghapus namanya serapi itu.\n\nKasus dibuka kembali pada 2016. Analisis isotop pada giginya menunjukkan dia tumbuh di sekitar Jerman selatan, dekat Nuremberg, atau di perbatasan Prancis–Jerman. Namanya tetap tidak ada. Dia dimakamkan di Mollendal, di dalam peti seng, di makam tanpa nama.\n\nKalau semua jejak namamu dihapus, kamu masih bisa dicari?\n\nSumber: BBC News (2017), NRK/BBC \"Death in Ice Valley\", arsip kepolisian Bergen (kasus 134/70), Wikipedia.\n\n#shorts #misteri #truecrime #norwegia #coldcase",
+        "content": "1 kematian dijual sebagai kutukan. Itu pembodohan publik—lihat daftar penyintas yang sengaja dihapus dari cerita.\n\nCarnarvon wafat di Kairo pada 5 April 1923, kurang dari dua bulan setelah akses penting ke ruang makam Tutankhamun pada Februari 1923. Dua peristiwa itu nyata. Yang tidak pernah terbukti adalah hubungan supernatural di antara keduanya. Riwayat medisnya berbicara tentang infeksi serius; media lalu menghubungkan kematian itu dengan makam yang baru ditemukan.\n\nCoba lihat daftar yang sering hilang dari legenda ini: Howard Carter meninggal pada 1939, sekitar 16 tahun kemudian. Lady Evelyn Herbert meninggal pada 1980, sekitar 57 tahun kemudian. Dr Douglas Derry meninggal pada 1969, sekitar 46 tahun kemudian. Ketika hanya nama yang meninggal dihitung, urutan peristiwa terasa seperti bukti.\n\nSumber cerita: Howard Carter & Arthur C. Mace, The Tomb of Tutankhamen Vol. I (1923); Howard Carter, The Tomb of Tutankhamen Vol. II (1927); T. G. H. James, Howard Carter: The Path to Tutankhamun (1992).\n\nFootage stok: Coverr (Free License; setiap footage diberi label di layar). Peta lokasi: © OpenStreetMap contributors, data ODbL, dianimasikan dengan Remotion MAP-ZOOM ke KV62. Visual AI tanpa orang dipakai hanya sebagai ilustrasi dan ditandai. Mengandung media sintetis (AI). @oddchapter7",
         "mediaItems": [
           {
-            "_id": "6af8698a0e77952e44d8fe73",
-            "url": "https://media.zernio.com/media/1794664836787_32f2123c91a5425b_EP08_1080x1920_master.mp4",
+            "_id": "6b0408860095d39bf58ff52c",
+            "url": "https://media.zernio.com/media/1795426432934_8c901cc59ee1bba4_OS-EP04_kutukan-tutankhamun_feed.mp4",
             "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794664838499_75700da72fe485a1_EP08_thumbnail.jpg"
+            "thumbnail": "https://media.zernio.com/media/1795426435358_263b21839a798eb9_OS-EP04_thumbnail_16x9.jpg"
           }
         ],
-        "scheduledFor": "2026-11-14T14:00:39.693Z",
+        "scheduledFor": "2026-11-23T09:33:56.233Z",
         "timezone": "UTC",
         "status": "published",
         "tags": [
-          "misteri",
-          "true crime",
-          "cold case",
-          "isdal woman",
-          "norwegia",
-          "1970",
-          "kasus tak terpecahkan",
-          "sejarah",
-          "oddchapter",
-          "shorts"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-14T14:00:42.310Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-14T14:00:42.065Z",
-        "updatedAt": "2026-11-14T14:00:52.125Z",
-        "platforms": [
-          {
-            "_id": "6af8698a0e77952e44d8fe71",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-14T14:00:39.693Z",
-            "platformSpecificData": {
-              "title": "1970: Dia Memotong Semua Label di Pakaiannya, Lalu Menghilang.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Label dipotong, tanda botol dikerok, delapan nama. Satu perempuan, tanpa nama sampai sekarang.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-14T14:00:51.895Z",
-            "platformPostId": "F6BGrQhYmaA",
-            "platformPostUrl": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
-            "publishAttempts": 1,
-            "contentHash": "d1445cfbd16dc02ba33762536696342f"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af83b0fb4c091a0ee790fc1",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Kalau semua jejak di salju itu mengarah masuk, siapa yang keluar?\n\nHinterkaifeck, pertanian terpencil di Bavaria, sekitar 70 km utara Munich. Malam 31 Maret 1922, enam orang tinggal di sana: Andreas Gruber, istrinya Cäzilia, anak mereka Viktoria, dua cucu berusia 7 tahun dan 2 tahun, dan seorang pembantu yang baru tiba hari itu.\n\nYang sudah terjadi sebelum malam itu:\n• Ada jejak kaki di salju dari tepi hutan menuju rumah, tanpa jejak yang kembali.\n• Kunci rumah hilang.\n• Langkah kaki terdengar di loteng, dan tidak ada siapa pun di sana.\n• Pembantu sebelumnya berhenti karena merasa rumah itu tidak tenang.\n\nEmpat hari kemudian tetangga curiga: tidak ada aktivitas di rumah, tetapi asap masih keluar dari cerobong dan ternak sudah diberi makan. Di dalam rumah, tidak ada satu pun pintu yang dibuka paksa.\n\nPertaniannya dibongkar setahun kemudian. Tengkorak korban dikirim ke Munich dan hilang pada masa Perang Dunia II. Kasus ini tidak pernah selesai — tinjauan akademi polisi Jerman 2007 menyimpulkan bukti yang tersisa tidak cukup.\n\nSumber: ringkasan kasus Hinterkaifeck (True Crime Atlas, Defrosting Cold Cases, Anomalien, Christian Hardinghaus) dan tinjauan 2007. Berkas polisi asli belum dibaca langsung; nama tersangka sengaja tidak disebut karena tidak ada putusan pengadilan.\n\nKalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal?\n\n#shorts #sejarah #hinterkaifeck #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af83b11b4c091a0ee790fd2",
-            "url": "https://media.zernio.com/media/1794652937910_fb275f5aaea00f4b_EP07_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794652942287_cce28c3cdddabacc_EP07_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-14T10:42:23.747Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "hinterkaifeck",
-          "1922",
-          "bavaria",
-          "kasus terbuka",
-          "sejarah",
-          "kisah nyata",
-          "oddchapter",
-          "jejak kaki"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-14T10:42:25.728Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-14T10:42:25.666Z",
-        "updatedAt": "2026-11-14T10:42:32.989Z",
-        "platforms": [
-          {
-            "_id": "6af83b11b4c091a0ee790fd0",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-14T10:42:23.747Z",
-            "platformSpecificData": {
-              "title": "1922: Semua Jejak di Salju Itu Masuk. Tidak Ada Satu pun yang Keluar.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Kalau kamu menemukan jejak kaki menuju rumahmu dan tidak ada yang kembali, kamu akan tinggal? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-14T10:42:32.951Z",
-            "platformPostId": "bU__lL-K6Kc",
-            "platformPostUrl": "https://www.youtube.com/watch?v=bU__lL-K6Kc",
-            "publishAttempts": 1,
-            "contentHash": "e2aa373cd0524bff2fe468d87393fa46"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af7f006208448cdcf245de2",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "Pernah membayangkan tinggal di kota yang apinya tidak bisa dimatikan?\n\nMei 1962, dewan kota kecil di Pennsylvania menyuruh lima anggota pemadam sukarela membersihkan tumpukan sampah di lubang bekas tambang terbuka. Api masuk lewat celah di batu dan menyala di lapisan batu bara di bawah kota.\n\nYang terjadi sesudahnya:\n• Tiga bulan kemudian, karbon monoksida terdeteksi di bawah tanah.\n• 1981: seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya — lubangnya sekitar 45 meter.\n• 1984: Kongres menyetujui sekitar 42 juta dolar untuk memindahkan warga.\n• 1992: negara mengambil seluruh properti kota; yang tinggal dianggap bukan pemilik.\n• Sensus 2020: lima orang masih tinggal di sana.\n\nApi itu tidak pernah dipadamkan. Ia masih membara di bawah jalan yang kosong, dan perkiraan resmi menyebut masih bisa menyala ratusan tahun lagi.\n\nSumber: Pennsylvania Center for the Book, centraliapa.org, laporan yang mengutip Pennsylvania DEP, dan ringkasan media (World Atlas, Discovery UK, Boing Boing). Buku David DeKok “Fire Underground” dan laporan resmi DEP belum dibaca langsung, jadi angka perkiraan disebut sebagai perkiraan.\n\nKalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?\n\n#shorts #sejarah #centralia #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af7f008208448cdcf245deb",
-            "url": "https://media.zernio.com/media/1794633731879_20d8a4b1c409c86f_EP06_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794633733988_c5ca2683f68ad6f6_EP06_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-14T05:22:15.029Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "centralia",
-          "mine fire",
-          "pennsylvania",
-          "1962",
-          "sejarah",
-          "kisah nyata",
-          "oddchapter",
-          "kota hilang"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-14T05:22:16.483Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-14T05:22:16.361Z",
-        "updatedAt": "2026-11-14T05:22:23.346Z",
-        "platforms": [
-          {
-            "_id": "6af7f008208448cdcf245de9",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-14T05:22:15.029Z",
-            "platformSpecificData": {
-              "title": "Mereka Membakar Sampah di Atas Tambang Tahun 1962. Api Itu Masih Menyala.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-14T05:22:23.298Z",
-            "platformPostId": "_HB37ngpGg0",
-            "platformPostUrl": "https://www.youtube.com/watch?v=_HB37ngpGg0",
-            "publishAttempts": 1,
-            "contentHash": "3f83ad5f664417e2418c245c3b6e9191"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af794b6325c9d8126ba9279",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "1962. Api ini dinyalakan di bawah sebuah kota. Sekarang lihat rumahnya.\n\nMei 1962, dewan kota kecil di Pennsylvania menyuruh lima anggota pemadam sukarela membersihkan tumpukan sampah di lubang bekas tambang terbuka. Api masuk lewat celah di batu dan menyala di lapisan batu bara di bawah kota.\n\nYang terjadi sesudahnya:\n• Tiga bulan kemudian, karbon monoksida terdeteksi di bawah tanah.\n• 1981: seorang anak hampir jatuh ke lubang uap di halaman rumah neneknya — lubangnya sekitar 45 meter.\n• 1984: Kongres menyetujui sekitar 42 juta dolar untuk memindahkan warga.\n• 1992: negara mengambil seluruh properti kota; yang tinggal dianggap bukan pemilik.\n• Sensus 2020: lima orang masih tinggal di sana.\n\nApi itu tidak pernah dipadamkan. Ia masih membara di bawah jalan yang kosong, dan perkiraan resmi menyebut masih bisa menyala ratusan tahun lagi.\n\nSumber: Pennsylvania Center for the Book, centraliapa.org, laporan yang mengutip Pennsylvania DEP, dan ringkasan media (World Atlas, Discovery UK, Boing Boing). Buku David DeKok “Fire Underground” dan laporan resmi DEP belum dibaca langsung, jadi angka perkiraan disebut sebagai perkiraan.\n\nKalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan?\n\n#shorts #sejarah #centralia #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af794b8325c9d8126ba927e",
-            "url": "https://media.zernio.com/media/1794610355869_0501706f43244190_EP06_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794610357447_19e87323979484f0_EP06_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-13T22:52:38.510Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "centralia",
-          "mine fire",
-          "pennsylvania",
-          "1962",
-          "sejarah",
-          "kisah nyata",
-          "oddchapter",
-          "kota hilang"
-        ],
-        "hashtags": [],
-        "mentions": [],
-        "visibility": "public",
-        "crosspostingEnabled": true,
-        "metadata": {
-          "usageCounted": true
-        },
-        "publishingClaimedAt": "2026-11-13T22:52:40.474Z",
-        "recycling": {
-          "enabled": false,
-          "gapFreq": "month",
-          "recycleCount": 0,
-          "contentVariations": [],
-          "contentVariationIndex": 0
-        },
-        "createdAt": "2026-11-13T22:52:40.433Z",
-        "updatedAt": "2026-11-13T22:52:46.906Z",
-        "platforms": [
-          {
-            "_id": "6af794b8325c9d8126ba927c",
-            "platform": "youtube",
-            "accountId": {
-              "_id": "6aedd61c503bf8b0c2751429",
-              "platform": "youtube",
-              "username": "oddchapter7",
-              "displayName": "ODDCHAPTER",
-              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
-              "isActive": true,
-              "profileId": "6aedd4b7c678af6f05c6c0e6"
-            },
-            "profileId": "6aedd4b7c678af6f05c6c0e6",
-            "customMedia": [],
-            "scheduledFor": "2026-11-13T22:52:38.510Z",
-            "platformSpecificData": {
-              "title": "Mereka Membakar Sampah di Atas Tambang Tahun 1962. Api Itu Masih Menyala.",
-              "categoryId": "24",
-              "visibility": "public",
-              "madeForKids": false,
-              "firstComment": "Kalau rumahmu berdiri di atas api yang tidak bisa dipadamkan, kamu akan pindah atau bertahan? Episode berikutnya: kota yang hilang dari peta, bukan karena perang.",
-              "containsSyntheticMedia": true
-            },
-            "status": "published",
-            "publishedAt": "2026-11-13T22:52:46.855Z",
-            "platformPostId": "zFxJeWguVgg",
-            "platformPostUrl": "https://www.youtube.com/watch?v=zFxJeWguVgg",
-            "publishAttempts": 1,
-            "contentHash": "518f6bd42171950ebf090136e666449d"
-          }
-        ],
-        "origin": "zernio"
-      },
-      {
-        "_id": "6af725e0b82ff83cf1ebabf2",
-        "userId": {
-          "_id": "6aedd4b7c678af6f05c6c0e4",
-          "name": "Jamadi",
-          "email": "jamadianur@gmail.com",
-          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
-        },
-        "title": "",
-        "content": "1590. Seratus lima belas orang hilang dari Roanoke. Rumah mereka dibongkar rapi, bukan dihancurkan.\n\nGubernur John White berlayar ke Inggris mengambil bahan makanan. Perang dengan Spanyol menahan kapal. Dia baru kembali pada 18 Agustus 1590 — tiga tahun kemudian.\n\nYang ia temukan:\n• Rumah-rumah sudah dibongkar rapi, bukan runtuh atau terbakar.\n• Di tiang pagar, terpahat satu kata: CROATOAN.\n• Mereka sudah sepakat: kalau pergi karena terpaksa, ukir salib di atas nama itu. Tidak ada salib.\n• Tidak ada satu pun tulang. Tidak ada kuburan.\n\nCroatoan adalah nama pulau (kini Hatteras) sekitar 50 mil ke selatan, dan nama orang yang tinggal di sana. Itu alamat, bukan peringatan.\n\nSumber: Encyclopedia Virginia, National Park Service, dan ringkasan First Colony Foundation. Laporan asli White belum dibaca langsung; hipotesis asimilasi tidak diucapkan sebagai fakta.\n\nKalau kamu yang menemukan kata itu tanpa salib, kamu akan menyeberang mencarinya?\n\n#shorts #sejarah #roanoke #oddchapter",
-        "mediaItems": [
-          {
-            "_id": "6af725e3b82ff83cf1ebac18",
-            "url": "https://media.zernio.com/media/1794581982112_db8db0ee844cf928_EP05_1080x1920_master.mp4",
-            "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794581983399_fe5d19957a0cf179_EP05_thumbnail.jpg"
-          }
-        ],
-        "scheduledFor": "2026-11-13T14:59:44.249Z",
-        "timezone": "UTC",
-        "status": "published",
-        "tags": [
-          "roanoke",
-          "lost colony",
-          "croatoan",
-          "john white",
-          "1587",
-          "sejarah",
+          "Tutankhamun",
+          "kutukan Tutankhamun",
+          "kutukan Firaun",
+          "Lord Carnarvon",
+          "Howard Carter",
+          "KV62",
+          "Lembah Para Raja",
+          "Mesir kuno",
+          "sejarah Mesir",
+          "literasi media",
           "kisah nyata",
           "oddchapter"
         ],
@@ -863,7 +217,7 @@
         "metadata": {
           "usageCounted": true
         },
-        "publishingClaimedAt": "2026-11-13T14:59:47.629Z",
+        "publishingClaimedAt": "2026-11-23T09:33:58.382Z",
         "recycling": {
           "enabled": false,
           "gapFreq": "month",
@@ -871,11 +225,11 @@
           "contentVariations": [],
           "contentVariationIndex": 0
         },
-        "createdAt": "2026-11-13T14:59:47.586Z",
-        "updatedAt": "2026-11-13T14:59:54.506Z",
+        "createdAt": "2026-11-23T09:33:58.259Z",
+        "updatedAt": "2026-11-23T09:34:08.125Z",
         "platforms": [
           {
-            "_id": "6af725e3b82ff83cf1ebac16",
+            "_id": "6b0408850095d39bf58ff52a",
             "platform": "youtube",
             "accountId": {
               "_id": "6aedd61c503bf8b0c2751429",
@@ -888,54 +242,400 @@
             },
             "profileId": "6aedd4b7c678af6f05c6c0e6",
             "customMedia": [],
-            "scheduledFor": "2026-11-13T14:59:44.249Z",
+            "scheduledFor": "2026-11-23T09:33:56.233Z",
             "platformSpecificData": {
-              "title": "115 Orang Menghilang dari Roanoke. Rumahnya Dibongkar Rapi, Tanpa Satu Mayat.",
-              "categoryId": "24",
+              "title": "1 Kematian Dijual Jadi Kutukan Firaun",
+              "categoryId": "27",
               "visibility": "public",
               "madeForKids": false,
-              "firstComment": "Kalau kamu yang menemukan kata itu tanpa salib, kamu akan menyeberang mencarinya? Bukti terbaru soal ke mana mereka pergi saya bahas di episode berikutnya.",
+              "firstComment": "Dua peristiwa berurutan memang terasa seperti sebab-akibat. Menurut kamu, siapa yang paling sering hilang dari daftar cerita seperti ini: orang yang selamat, atau detail penyebabnya?",
               "containsSyntheticMedia": true
             },
             "status": "published",
-            "publishedAt": "2026-11-13T14:59:54.447Z",
-            "platformPostId": "6b4fNdsEvho",
-            "platformPostUrl": "https://www.youtube.com/watch?v=6b4fNdsEvho",
+            "publishedAt": "2026-11-23T09:34:08.058Z",
+            "platformPostId": "B3TCfpTt5QA",
+            "platformPostUrl": "https://www.youtube.com/watch?v=B3TCfpTt5QA",
             "publishAttempts": 1,
-            "contentHash": "a905b2751e4627f1b1961ba7a8409339"
+            "contentHash": "8163f78e246b8d1d5e1b9d0378e837dd"
           }
         ],
         "origin": "zernio"
       },
       {
-        "_id": "6af472b35f14f7aaf5d65b9b",
+        "_id": "6b037ec8170f97b7ea5f9f10",
         "userId": {
           "_id": "6aedd4b7c678af6f05c6c0e4",
           "name": "Jamadi",
           "email": "jamadianur@gmail.com",
           "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
         },
+        "workspaceId": "6b005030db5770c0e8033bd3",
         "title": "",
-        "content": "Februari 1978. Lima pria berjalan ke atas, meninggalkan mobil yang kuncinya masih di kontak.\n\nEmpat hari kemudian mobil mereka ditemukan di jalan salju Plumas National Forest, sekitar 70 mil ke arah yang salah. Tidak ada kerusakan. Kuncinya masih di lubang kontak.\n\nYang ditemukan kemudian:\n• Juni 1978, Ted Weiher ditemukan di dalam trailer penjaga hutan, bertahan berminggu-minggu.\n• Di trailer itu ada makanan, selimut, dan pemanas. Hampir tidak ada yang dipakai.\n• Tiga lainnya ditemukan di luar, di salju.\n• Gary Mathias tidak pernah ditemukan.\n\nSumber: ringkasan kasus Yuba County Five 1978 (anomalydesk.com, morbidology.com, icecoldcases.com). Dokumen primer belum dibaca langsung; tiga klaim di naskah dikoreksi setelah sumber diperiksa.\n\nKalau kamu di mobil itu, kamu akan menunggu sampai terang atau ikut berjalan ke atas?\n\n#shorts #sejarah #misteri #oddchapter",
+        "content": "Suara trompet dari langit itu ternyata berkaitan dengan gempa — benarkah? Pada 1886, gempa besar mengguncang Charleston, South Carolina — gemuruh dan dentuman terdengar bersamaan dengan guncangan, lalu gempa susulan menyusul.\n\nDi masa itu orang belum punya seismograf modern, belum punya radar cuaca — tak bisa membedakan suara dari udara atau dari batuan. Suara Seneca Guns pun ditafsirkan sebagai pertanda: suara malaikat, peringatan dari dunia lain.\n\nPart 2 dari 2: penjelasan sainsnya — gempa dangkal, gelombang sonik, dan meteor yang menembus atmosfer. Lanjutannya ada di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile peta asli — © Esri · HERE · Garmin · OpenStreetMap contributors (ODbL) dan © OpenStreetMap contributors. Mengandung media sintetis (AI). @oddchapter7",
         "mediaItems": [
           {
-            "_id": "6af472b55f14f7aaf5d65bb9",
-            "url": "https://media.zernio.com/media/1794405040708_52f485ea4c1a1647_EP04_1080x1920_master.mp4",
+            "_id": "6b037ecb170f97b7ea5f9f1f",
+            "url": "https://media.zernio.com/media/1795391173472_30f5d12865d81d9b_OS-EP03_P2_trompet-malaikat_feed.mp4",
             "type": "video",
-            "thumbnail": "https://media.zernio.com/media/1794405042312_75858609c47324da_EP04_thumbnail.jpg"
+            "thumbnail": "https://media.zernio.com/media/1795391175857_f83b5fab2403b1a1_OS-EP03_thumbnail_16x9.jpg"
           }
         ],
-        "scheduledFor": "2026-11-11T13:50:43.574Z",
+        "scheduledFor": "2026-11-23T00:00:00.000Z",
         "timezone": "UTC",
         "status": "published",
         "tags": [
-          "yuba county five",
-          "1978",
-          "plumas national forest",
-          "gary mathias",
-          "ted weiher",
+          "seneca guns",
+          "gempa charleston",
+          "charleston 1886",
+          "gempa bumi",
+          "seismograf",
+          "misteri terpecahkan",
+          "fenomena alam",
+          "kisah nyata",
+          "part2",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "lastEnqueuedAt": "2026-11-22T23:48:36.665Z",
+        "createdAt": "2026-11-22T23:46:19.726Z",
+        "updatedAt": "2026-11-23T00:01:07.388Z",
+        "platforms": [
+          {
+            "_id": "6b037ecb170f97b7ea5f9f1d",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-23T00:00:00.000Z",
+            "platformSpecificData": {
+              "title": "Penjelasan Seneca Guns: Gempa Charleston 1886 (Part 2/2)",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Gempa Charleston 1886: gemuruh dan dentuman terdengar bersamaan dengan guncangan. Part 2 dari 2 — penjelasan sains Seneca Guns.",
+              "containsSyntheticMedia": true,
+              "youtubeUploadSessionId": "6b037f621150b684621cfe9e"
+            },
+            "status": "published",
+            "publishedAt": "2026-11-23T00:00:00.000Z",
+            "platformPostId": "9MLwHspRGWU",
+            "platformPostUrl": "https://www.youtube.com/watch?v=9MLwHspRGWU",
+            "publishAttempts": 1,
+            "contentHash": "2a65983f1573668b5a2815b5fb2e5bf9"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b037e815b7cb3d46f884ac2",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "Warga mendengar suara trompet dari langit — tanpa pesawat, tanpa meriam. Dari mana asalnya? Suara itu menggelegar, seperti meriam jauh, seperti ledakan — tapi tak ada pesawat di udara, tak ada kapal yang meledak, tak ada bangunan yang runtuh. Banyak yang menyebutnya trompet malaikat Israfil, tanda sangkakala.\n\nFenomena ini dikenal sebagai Seneca Guns — dilaporkan ratusan tahun di sekitar Dan Seneca, New York, dan sepanjang pesisir North Carolina, South Carolina, hingga Virginia. Suaranya sering terdengar tanpa perang, tanpa badai, tanpa sebab yang terlihat.\n\nPart 1 dari 2: laporannya, lokasinya, dan kenapa suara itu begitu aneh. Lanjut ke Part 2: gempa Charleston 1886 dan penjelasan sainsnya.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile peta asli — © Esri · HERE · Garmin · OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b037e835b7cb3d46f884ac9",
+            "url": "https://media.zernio.com/media/1795391100914_ed19972ae85434ea_OS-EP03_P1_trompet-malaikat_feed.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795391103988_a43a8ea868291ea2_OS-EP03_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-22T23:45:05.434Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "trompet malaikat",
+          "seneca guns",
+          "suara dari langit",
           "misteri",
-          "sejarah",
+          "kisah nyata",
+          "fenomena alam",
+          "dan seneca",
+          "new york",
+          "part1",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-22T23:45:07.248Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-22T23:45:07.115Z",
+        "updatedAt": "2026-11-22T23:45:16.089Z",
+        "platforms": [
+          {
+            "_id": "6b037e835b7cb3d46f884ac7",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-22T23:45:05.434Z",
+            "platformSpecificData": {
+              "title": "Suara Trompet dari Langit: Misteri Seneca Guns (Part 1/2)",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Suara trompet dari langit tanpa pesawat dan tanpa meriam — Seneca Guns, dilaporkan ratusan tahun. Part 1 dari 2: laporannya dan lokasinya. Lanjut ke Part 2.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-22T23:45:15.999Z",
+            "platformPostId": "qqSi2gNEjoo",
+            "platformPostUrl": "https://www.youtube.com/watch?v=qqSi2gNEjoo",
+            "publishAttempts": 1,
+            "contentHash": "936c8a6cad44798abbae962d0a484da7"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b02ede17066e84d137a767c",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "Namun ada detail lain yang membuat kasus ini menarik: sumber air terdekat jaraknya sekitar3 km.\n\nLanjutan dari Part1. Sumber air terdekat dari lokasi kejadian adalah Strangford Lough — jaraknya sekitar3 km. Cukup jauh untuk membuat siapa pun bertanya: bagaimana ikan-ikan kecil itu bisa berpindah sejauh itu?\n\nPenjelasan yang paling masuk akal: waterspout — pusaran angin di atas permukaan air, mirip tapi terbentuk di atas laut atau danau. Jika pusarannya cukup kuat, air beserta ikan kecil ikut terangkat, lalu jatuh kembali jauh dari tempat asalnya. Itulah sebabnya hujan ikan dan hujan katak pernah dilaporkan di berbagai tempat.\n\nTapi untuk kasus Drumherg, waterspout tetap bukan bukti final: tidak ada rekaman, tidak ada saksi yang melihat ikan terangkat, tidak ada laporan yang memastikan prosesnya. Menurut lo, penjelasan sudah cukup? Tulis pendapat lo di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile OpenStreetMap — © OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b02ede57066e84d137a768d",
+            "url": "https://media.zernio.com/media/1795354077908_cde22c40bd6f27eb_OS-EP02_P2_ikan-jatuh-langit_feed.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795354080957_b175273acd7d3dfa_OS-EP02_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-22T13:41:27.000Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "hujan ikan",
+          "waterspout",
+          "Strangford Lough",
+          "Drumherg",
+          "Irlandia Utara1928",
+          "fenomena alam",
+          "kisah nyata",
+          "penjelasan ilmiah",
+          "part2",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "lastEnqueuedAt": "2026-11-22T13:28:17.820Z",
+        "createdAt": "2026-11-22T13:28:05.697Z",
+        "updatedAt": "2026-11-22T13:42:39.160Z",
+        "platforms": [
+          {
+            "_id": "6b02ede57066e84d137a768b",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-22T13:41:27.000Z",
+            "platformSpecificData": {
+              "title": "Hujan Ikan di Drumherg (Part 2/2): Waterspout & Jarak3 Km",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Part2: sumber air terdekat3 km dari lokasi — waterspout sudah cukup menjelaskan, atau masih ada yang janggal? Tulis pendapat lo.",
+              "containsSyntheticMedia": true,
+              "youtubeUploadSessionId": "6b02edf92446ada7f638c188"
+            },
+            "status": "published",
+            "publishedAt": "2026-11-22T13:41:27.000Z",
+            "platformPostId": "NXWjoz38Hz4",
+            "platformPostUrl": "https://www.youtube.com/watch?v=NXWjoz38Hz4",
+            "publishAttempts": 1,
+            "contentHash": "f062eafbf6af48f663b9578001715d08"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b02ed75760df69f0c524ed4",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "Pagi itu, warga keluar rumah dan menemukan puluhan ikan berserakan di jalan. Dari mana asalnya? Tidak ada sungai di dekat sana. Tidak ada truk yang terguling. Ikan-ikan itu, katanya, jatuh dari langit.\n\nPeristiwanya tercatat pada tahun1928, di daerah Drumherg dekat Comber, County Down, Irlandia Utara. Setelah badai petir yang sangat kuat, warga menemukan puluhan ikan kecil berwarna kemerahan — sebagian di tanah, sebagian di atas atap sebuah bungalow. Tak ada sungai besar, tak ada kolam ikan yang jebol, tak ada kendaraan yang membawa ikan lewat. Warga menyimpulkan ikan itu turun bersama hujan — tapi tidak ada seorang pun yang melihatnya jatuh.\n\nCukup bukti? Belum tentu. Lanjut ke Part2: jarak ke sumber air terdekat dan penjelasan waterspout.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang. Shot peta: Remotion MAP-ZOOM dari tile OpenStreetMap — © OpenStreetMap contributors (ODbL). Mengandung media sintetis (AI). @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b02ed78760df69f0c524ef3",
+            "url": "https://media.zernio.com/media/1795353970701_9d89552b6c191766_OS-EP02_P1_ikan-jatuh-langit_feed.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795353973005_a630dbba106abb9e_OS-EP02_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-22T13:26:13.947Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "hujan ikan",
+          "ikan jatuh dari langit",
+          "Drumherg",
+          "Comber",
+          "County Down",
+          "Irlandia Utara1928",
+          "fenomena alam",
+          "misteri",
+          "kisah nyata",
+          "part1",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-22T13:26:16.710Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-22T13:26:16.528Z",
+        "updatedAt": "2026-11-22T13:26:27.831Z",
+        "platforms": [
+          {
+            "_id": "6b02ed78760df69f0c524ef1",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-22T13:26:13.947Z",
+            "platformSpecificData": {
+              "title": "Hujan Ikan di Drumherg 1928 (Part 1/2): Ikan Jatuh dari Langit",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Puluhan ikan di jalan dan di atap bungalow, tanpa sungai dan tanpa truk — Drumherg1928. Part1 dari2: buktinya cukup? Lanjut ke Part2.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-22T13:26:27.774Z",
+            "platformPostId": "5vAbm3me58A",
+            "platformPostUrl": "https://www.youtube.com/watch?v=5vAbm3me58A",
+            "publishAttempts": 1,
+            "contentHash": "9ea0f28ca787f1f8ce108d630b400bc4"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b02a4a81b7397c0cb093d4b",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "Bayangkan, lo sedang berlindung dari badai di sebuah restoran pegunungan. Di luar hujan deras, petir menyambar — lalu dari pintu yang terbuka muncul bola cahaya putih kekuningan. Bola itu bergerak rendah di atas lantai, mendekati seekor anjing, bergerak sekitar 2 meter, lalu meledak dengan suara seperti tembakan. Tidak ada yang menyentuhnya. Tidak ada kabel putus. Tidak ada yang terbakar.\n\nSeptember 1963, pukul 11 pagi, di Plöckenhaus — restoran di bawah Plöckenpass, pegunungan Alpen, Austria. Beberapa mahasiswa geologi Universitas Heidelberg sedang berteduh dari badai. Salah satu saksi, Günther A. Wagner, menuliskan laporan: bolanya sedikit lebih besar dari bola tenis, warnanya putih kekuningan, kecepatannya seperti orang berjalan. Sekitar 5 orang melihat langsung; ruangan sebelah mendengar ledakannya; anjing bereaksi.\n\nPara saksi menyebutnya kugelblitz — ball lightning. Fenomena cahaya berbentuk bola yang kadang muncul saat atau setelah badai. Sampai sekarang ilmuwan belum punya satu penjelasan yang diterima semua pihak: ada teori plasma, tanah yang menguap, dan medan listrik — semuanya masih model, bukan jawaban final.\n\nJadi: iblis, atau sains? Bukti tidak menunjukkan yang pertama; sains pun belum selesai. Yang kita punya satu kesaksian nyata — tercatat dalam jurnal ilmiah.\n\nKalau lo melihat bola cahaya seperti ini saat badai, lo akan menganggapnya fenomena alam? Atau sesuatu yang lain? Tulis pendapat lo di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar). Foto AI tanpa orang untuk adegan bola cahaya. Sumber visual arsip: ukiran 19-an (Wikimedia Commons, public domain), Reliefkarte Österreich (Tschubby, CC BY-SA 3.0), foto Alte Universität Heidelberg (Ribax, CC BY-SA 4.0). Mengandung media sintetis (AI). @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b02a4aa1b7397c0cb093d53",
+            "url": "https://media.zernio.com/media/1795335332674_936864d865676b4f_OS-EP01_ball-lightning_feed.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795335335982_0852ce986898359c_OS-EP01_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-22T08:15:36.921Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "kugelblitz",
+          "ball lightning",
+          "bola cahaya",
+          "fenomena alam",
+          "badai petir",
+          "Alpen Austria",
+          "Plöckenhaus",
+          "Günther A. Wagner",
+          "misteri1963",
           "kisah nyata",
           "oddchapter"
         ],
@@ -946,7 +646,7 @@
         "metadata": {
           "usageCounted": true
         },
-        "publishingClaimedAt": "2026-11-11T13:50:45.860Z",
+        "publishingClaimedAt": "2026-11-22T08:15:38.576Z",
         "recycling": {
           "enabled": false,
           "gapFreq": "month",
@@ -954,11 +654,11 @@
           "contentVariations": [],
           "contentVariationIndex": 0
         },
-        "createdAt": "2026-11-11T13:50:45.723Z",
-        "updatedAt": "2026-11-11T13:50:53.930Z",
+        "createdAt": "2026-11-22T08:15:38.435Z",
+        "updatedAt": "2026-11-22T08:15:52.703Z",
         "platforms": [
           {
-            "_id": "6af472b55f14f7aaf5d65bb7",
+            "_id": "6b02a4aa1b7397c0cb093d51",
             "platform": "youtube",
             "accountId": {
               "_id": "6aedd61c503bf8b0c2751429",
@@ -971,21 +671,361 @@
             },
             "profileId": "6aedd4b7c678af6f05c6c0e6",
             "customMedia": [],
-            "scheduledFor": "2026-11-11T13:50:43.574Z",
+            "scheduledFor": "2026-11-22T08:15:36.921Z",
             "platformSpecificData": {
-              "title": "5 Pria Berjalan ke Atas, Meninggalkan Mobil Berkunci Kontak. 1 Tak Pernah Kembali.",
-              "categoryId": "24",
+              "title": "Kugelblitz 1963: Bola Cahaya Masuk Restoran di Pegunungan Alpen",
+              "categoryId": "27",
               "visibility": "public",
               "madeForKids": false,
-              "firstComment": "Kalau kamu di mobil itu, kamu akan menunggu sampai terang atau ikut berjalan ke atas? Yang paling masuk akal akan dibahas di episode berikutnya.",
+              "firstComment": "Bola cahaya yang meledak tanpa membakar apa pun —5 saksi di sebuah restoran Alpen,1963. Menurut lo, ini fenomena alam atau bukan? Tulis di komentar.",
               "containsSyntheticMedia": true
             },
             "status": "published",
-            "publishedAt": "2026-11-11T13:50:53.876Z",
-            "platformPostId": "bQ_uJgtBSGc",
-            "platformPostUrl": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
+            "publishedAt": "2026-11-22T08:15:52.320Z",
+            "platformPostId": "iY29XEnp48w",
+            "platformPostUrl": "https://www.youtube.com/watch?v=iY29XEnp48w",
             "publishAttempts": 1,
-            "contentHash": "5f3d3652fbf018aba34d37d42cc1d0d6"
+            "contentHash": "188ed99a574fc7c986b21de9f61e2e0b"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b021a39193f2baf722a46a1",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "Rp1.000 masuk amplop. Dibuka, jadi Rp5.000. Dari trik murahan inilah, 9 orang kehilangan nyawa — dan pelakunya, Wowon Erawan, seorang dalang yang pandai mengubah suara.\n\nIa menciptakan satu tokoh: Aki Banyu, sosok sakti penghuni dasar laut yang menjanjikan siapa pun yang menurut akan sukses dan kaya. Aki Banyu tidak pernah menunjukkan diri — ia hanya bicara lewat telepon. Dan ternyata, Aki Banyu adalah Wowon sendiri.\n\nKorbannya: 11 pekerja migran perempuan yang menyetor uang setiap bulan, bertahun-tahun, dari luar negeri. Tak satu pun menerima untung. Yang bertanya, diancam. Menurut polisi, korban yang menagih janji itu dihabisi — begitu pula anggota keluarga sendiri yang dianggap mengganggu.\n\nNovember 2023, tiga pelaku divonis penjara seumur hidup; jaksa menuntut hukuman mati. Seorang kriminolog menduga korbannya lebih dari sembilan. Tak ada yang tahu pasti.\n\nAki Banyu tidak pernah ada. Yang ada hanya orang-orang yang butuh percaya. Kapan terakhir kali kamu percaya pada janji yang tidak bisa kamu cek?\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar, kredit di kartu akhir) + still AI tanpa orang. Tanpa footage berita; pelaku disebut sebagai terdakwa/divonis; tanpa nama korban.\nSumber: Tempo · BBC Indonesia · detik. @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b021a3a193f2baf722a46ab",
+            "url": "https://media.zernio.com/media/1795299895122_9be8c23c16dc03c2_AK-EP10_wowon-krimo_short.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795299896640_db1b4e033eb8d9f5_AK-EP10_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-21T22:24:57.493Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "Wowon Erawan",
+          "Aki Banyu",
+          "pengganda uang",
+          "penipuan",
+          "pekerja migran Indonesia",
+          "kriminolog",
+          "vonis 2023",
+          "kasus kriminal",
+          "kisah nyata",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-21T22:24:58.881Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-21T22:24:58.810Z",
+        "updatedAt": "2026-11-21T22:25:08.328Z",
+        "platforms": [
+          {
+            "_id": "6b021a3a193f2baf722a46a9",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-21T22:24:57.493Z",
+            "platformSpecificData": {
+              "title": "Wowon 2023: Janji Uang Berlipat, 9 Orang Kehilangan Nyawa",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Janji uang berlipat yang tidak bisa dicek — 9 orang kehilangan nyawa. Menurutmu, apa yang membuat orang tetap percaya bertahun-tahun? Tulis di komentar.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-21T22:25:08.249Z",
+            "platformPostId": "wOw7V3L4GOE",
+            "platformPostUrl": "https://www.youtube.com/watch?v=wOw7V3L4GOE",
+            "publishAttempts": 1,
+            "contentHash": "2c4c46fb85cbfd42104a94fdb6d7d010"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b0177301fe7602f25cf7e8e",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "11 Juni 1983. Tengah hari di Jawa mendadak menjadi malam — dan semua orang sudah diperintahkan masuk rumah.\n\nSebulan sebelumnya, Presiden Soeharto memerintahkan Menteri Penerangan menyiapkan peringatan lewat TVRI dan RRI. Isinya satu: jangan menatap gerhana. Kamu bisa buta.\n\nRakyat patuh. Jendela ditutup rapat, lubang angin disumbat, mata sapi ditutup kain, burung perkutut disembunyikan. Di sejumlah daerah, perempuan hamil disuruh bersembunyi di kolong tempat tidur. Aparat bahkan menyuruh masuk lagi mereka yang berani keluar — di Jawa Timur, polisi menyita 20 teropong.\n\nSementara itu, para astronom dari berbagai negara datang justru untuk menyaksikannya. Rakyat hanya boleh menonton lewat TVRI — satu-satunya televisi saat itu. Seorang ayah di Semarang ingin membuktikan sendiri: ia menatap langsung, dan penglihatannya tak kembali selama satu jam.\n\nDi Yogyakarta, 446 orang memeriksakan mata; 14 mengalami peradangan. Ilmuwan LIPI berkata: larangan tanpa penjelasan, hanya menyesatkan.\n\nPertanyaannya bukan apakah gerhana berbahaya. Tapi kenapa rakyat hanya diperintah bersembunyi — bukan diajari cara melihatnya? Tulis pendapatmu di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar, kredit di kartu akhir) + still AI tanpa orang. Tanpa teori konspirasi.\nSumber: CNN Indonesia (8 Mar 2016) · Tirto mengutip Kompas (15 Mei 1983). @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b0177311fe7602f25cf7e92",
+            "url": "https://media.zernio.com/media/1795258157229_bdf952dc3ac6e0d4_AK-EP09_gerhana-1983_short.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795258159121_146698d62e0f9694_AK-EP09_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-21T10:49:20.265Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "Gerhana 1983",
+          "gerhana matahari",
+          "Jawa 1983",
+          "TVRI",
+          "RRI",
+          "ketaatan massal",
+          "sejarah Indonesia",
+          "Soeharto",
+          "kisah nyata",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-21T10:49:21.595Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-21T10:49:21.525Z",
+        "updatedAt": "2026-11-21T10:49:30.084Z",
+        "platforms": [
+          {
+            "_id": "6b0177311fe7602f25cf7e90",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-21T10:49:20.265Z",
+            "platformSpecificData": {
+              "title": "11 Juni 1983: Siang Mendadak Malam, Semua Masuk Rumah",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kenapa saat gerhana 1983 rakyat diperintah bersembunyi, bukan diajari cara melihatnya dengan aman? Kalau kamu zaman itu — patuh, atau buka jendela? Tulis di komentar.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-21T10:49:30.013Z",
+            "platformPostId": "oivojM-w_P8",
+            "platformPostUrl": "https://www.youtube.com/watch?v=oivojM-w_P8",
+            "publishAttempts": 1,
+            "contentHash": "a76dcee9934953fcd40c788c3dfa1bbb"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b014dc18e32fcb188cb0e91",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "2009: puluhan ribu nomor antrean setiap hari — untuk segelas air yang dicelup sebuah batu.\n\nJombang, Jawa Timur, awal 2009. Muhammad Ponari, 9 tahun, konon menemukan sebuah batu setelah tersambar petir. Air celupan batu itu, kata orang, bisa menyembuhkan. Dalam hitungan hari, desa kecil Balongsari penuh sesak — orang datang dari berbagai kota membawa gelas dan botol, ada yang menunggu dua hari, tidur di rumah warga.\n\nLalu kerumunan itu menelan korban. Empat orang meninggal di tengah desakan, dan polisi menutup praktiknya. Tapi orang-orang tidak pulang. Ribuan tetap menunggu di luar; ada yang minum air sumur di depan rumah itu, ada yang menadah air bekas mandi sang anak.\n\nKenapa? Di desa itu, pengangguran disebut mencapai 70 persen — dan berobat ke dokter... mahal. Akhir Maret, korban kelima meninggal: seorang pemuda 19 tahun, yang kelelahan menunggu.\n\nOrang bertanya, kenapa mereka percaya pada sebuah batu? Mungkin pertanyaan yang lebih jujur: kalau bukan ke sana, mereka harus ke mana? Tulis jawabanmu di komentar.\n\nCatatan: Ponari — yang saat itu masih anak-anak — adalah korban eksploitasi lingkungannya, bukan pelaku. Kami tidak menyebut nama korban (sumber tidak sepakat) dan tidak menampilkan foto jenazah.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar, kredit di kartu akhir) + still AI tanpa orang.\nSumber: ANTARA · Inside Indonesia · Liputan6. @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b014dc28e32fcb188cb0e99",
+            "url": "https://media.zernio.com/media/1795247550168_67fd233b56a8ff39_AK-EP08_ponari-antrean_short.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795247552027_79b64490125b6c21_AK-EP08_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-21T07:52:33.138Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "Ponari",
+          "Jombang 2009",
+          "Balongsari",
+          "antrean",
+          "kesehatan masyarakat",
+          "kisah nyata",
+          "kasus Indonesia",
+          "eksploitasi anak",
+          "desa Jawa",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-21T07:52:34.305Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-21T07:52:34.208Z",
+        "updatedAt": "2026-11-21T07:52:44.163Z",
+        "platforms": [
+          {
+            "_id": "6b014dc28e32fcb188cb0e97",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-21T07:52:33.138Z",
+            "platformSpecificData": {
+              "title": "Ponari 2009: Antrean Tak Berhenti Setelah Polisi Menutup",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Kalau di desamu ada air celupan batu yang dipercaya menyembuhkan, sementara dokter jauh dan mahal — kamu ikut antre, atau menabung ke dokter? Tulis jujur di komentar.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-21T07:52:43.965Z",
+            "platformPostId": "-1wAWtd3sA0",
+            "platformPostUrl": "https://www.youtube.com/watch?v=-1wAWtd3sA0",
+            "publishAttempts": 1,
+            "contentHash": "12a5f0342becd78c66360056a918ef4f"
+          }
+        ],
+        "origin": "zernio"
+      },
+      {
+        "_id": "6b012b0348307d41191a01cc",
+        "userId": {
+          "_id": "6aedd4b7c678af6f05c6c0e4",
+          "name": "Jamadi",
+          "email": "jamadianur@gmail.com",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocITX20gu5-_6tGs5_hk5biW7uuWQtlekeE10yqCju4tM88bJXA=s96-c"
+        },
+        "workspaceId": "6b005030db5770c0e8033bd3",
+        "title": "",
+        "content": "November 1961. Seorang pemuda Amerika berenang menuju pantai Papua — rekannya hanya sempat melihat tiga titik di permukaan laut: dua jeriken, dan satu kepala.\n\nMichael Rockefeller, 23 tahun, putra Gubernur New York. Perahunya terbalik di lepas pantai Asmat; setelah sehari semalam hanyut, ia memutuskan berenang ke daratan. Belanda dan Australia mengirim pesawat dan helikopter, Amerika menawarkan armadanya, ayahnya terbang ke Merauke. Sepuluh hari kemudian pencarian dihentikan. Tidak ada jasad. Kabar resminya: tenggelam, atau diserang hewan laut.\n\nTapi sebulan kemudian seorang misionaris Belanda menerima pengakuan dari warga desa Otsjanep: menurut mereka Michael tidak tenggelam — ia dibunuh. Alasannya, kata para misionaris, bukan soal Michael. Beberapa tahun sebelumnya polisi kolonial Belanda menembak mati lima pria Otsjanep, dan Michael datang ke desa yang masih menyimpan dendam.\n\nLaporan itu ditulis, dikirim, dan tenggelam. Menurut wartawan Carl Hoffman, yang menelusuri kasus ini puluhan tahun kemudian, laporan itu dikubur — Belanda tak mau citranya di Papua rusak. Tidak ada bukti yang pernah menjawabnya. Keluarga Rockefeller tetap meyakini ia tenggelam; Michael dinyatakan meninggal secara hukum pada 1964.\n\nPertanyaannya bukan lagi apa yang terjadi di laut — tapi siapa yang lebih nyaman dengan jawaban, tenggelam? Tulis pendapatmu di komentar.\n\nFootage stok: Coverr (Free License; label \"FOOTAGE STOK · COVERR\" di layar, kredit di kartu akhir). Nada menghormati semua pihak; tanpa sensasi, tanpa foto jenazah.\nSumber: Wikipedia (Michael Rockefeller) · Carl Hoffman, Savage Harvest (2014) · Stichting Papua Erfgoed · KITLV. @oddchapter7",
+        "mediaItems": [
+          {
+            "_id": "6b012b0448307d41191a01d4",
+            "url": "https://media.zernio.com/media/1795238655375_3b17706ad468f2f7_AK-EP07_rockefeller-otsjanep_short.mp4",
+            "type": "video",
+            "thumbnail": "https://media.zernio.com/media/1795238658573_4b6ebc4c7b38f154_AK-EP07_thumbnail_16x9.jpg"
+          }
+        ],
+        "scheduledFor": "2026-11-21T05:24:19.628Z",
+        "timezone": "UTC",
+        "status": "published",
+        "tags": [
+          "Michael Rockefeller",
+          "Papua 1961",
+          "Otsjanep",
+          "Asmat",
+          "kasus misteri",
+          "sejarah kolonial",
+          "kisah nyata",
+          "Savage Harvest",
+          "dokumen arsip",
+          "oddchapter"
+        ],
+        "hashtags": [],
+        "mentions": [],
+        "visibility": "public",
+        "crosspostingEnabled": true,
+        "metadata": {
+          "usageCounted": true
+        },
+        "publishingClaimedAt": "2026-11-21T05:24:20.701Z",
+        "recycling": {
+          "enabled": false,
+          "gapFreq": "month",
+          "recycleCount": 0,
+          "contentVariations": [],
+          "contentVariationIndex": 0
+        },
+        "createdAt": "2026-11-21T05:24:20.598Z",
+        "updatedAt": "2026-11-21T05:24:30.357Z",
+        "platforms": [
+          {
+            "_id": "6b012b0448307d41191a01d2",
+            "platform": "youtube",
+            "accountId": {
+              "_id": "6aedd61c503bf8b0c2751429",
+              "platform": "youtube",
+              "username": "oddchapter7",
+              "displayName": "ODDCHAPTER",
+              "profilePicture": "https://yt3.ggpht.com/Wj5d5po1856WdfFJS135gIdnZiLkhGXyDTOOKkTYZ-7REp5ZfLRnk0kzrxdTSVUZ5lsMIudJ7ho=s88-c-k-c0x00ffffff-no-rj",
+              "isActive": true,
+              "profileId": "6aedd4b7c678af6f05c6c0e6"
+            },
+            "profileId": "6aedd4b7c678af6f05c6c0e6",
+            "customMedia": [],
+            "scheduledFor": "2026-11-21T05:24:19.628Z",
+            "platformSpecificData": {
+              "title": "Michael Rockefeller 1961: Dua Jeriken, Satu Kepala di Laut",
+              "categoryId": "27",
+              "visibility": "public",
+              "madeForKids": false,
+              "firstComment": "Menurutmu laporan para misionaris soal Otsjanep dikubur karena politik, atau karena memang tidak ada bukti? Tulis di komentar.",
+              "containsSyntheticMedia": true
+            },
+            "status": "published",
+            "publishedAt": "2026-11-21T05:24:30.297Z",
+            "platformPostId": "-NhbL7pE1VA",
+            "platformPostUrl": "https://www.youtube.com/watch?v=-NhbL7pE1VA",
+            "publishAttempts": 1,
+            "contentHash": "47fb135436b839ed761d3922233ba441"
           }
         ],
         "origin": "zernio"
@@ -994,189 +1034,189 @@
     "pagination": {
       "page": 1,
       "limit": 12,
-      "total": 15,
-      "pages": 2,
-      "nextCursor": "v1.WyJzY2hlZHVsZWQtZGVzYyIsIjIwMjYtMTEtMTFUMTM6NTA6NDMuNTc0WiIsIjZhZjQ3MmIzNWYxNGY3YWFmNWQ2NWI5YiJd"
+      "total": 37,
+      "pages": 4,
+      "nextCursor": "v1.WyJzY2hlZHVsZWQtZGVzYyIsIjIwMjYtMTEtMjFUMDU6MjQ6MTkuNjI4WiIsIjZiMDEyYjAzNDgzMDdkNDExOTFhMDFjYyJd"
     }
   },
   "posts": [
     {
-      "id": "6af9c5a14cb7b88c916124d8",
+      "id": "6b041789ba5094d98ce0d5bb",
       "status": "published",
-      "createdAt": "2026-11-15T14:46:00.265Z",
+      "createdAt": "2026-11-23T10:38:03.170Z",
       "title": null,
-      "url": null,
-      "platform_status": null,
-      "platforms": [
-        {
-          "platform": "tiktok",
-          "status": "published",
-          "url": "https://www.tiktok.com/@oddchapter7/video/7708409619067997441"
-        }
-      ]
-    },
-    {
-      "id": "6af9c511615d6b707b81a203",
-      "status": "published",
-      "createdAt": "2026-11-15T14:43:34.817Z",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=KQR0s52rbCE",
+      "url": "https://www.youtube.com/watch?v=UEvg7E-wetg",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=KQR0s52rbCE"
+          "url": "https://www.youtube.com/watch?v=UEvg7E-wetg"
         }
       ]
     },
     {
-      "id": "6af9af0d1ce3b59aa97bc8da",
+      "id": "6b041733fab67d8356d1abd0",
       "status": "published",
-      "createdAt": "2026-11-15T13:09:39.027Z",
+      "createdAt": "2026-11-23T10:36:37.374Z",
       "title": null,
-      "url": null,
-      "platform_status": null,
-      "platforms": [
-        {
-          "platform": "tiktok",
-          "status": "published",
-          "url": "https://www.tiktok.com/@oddchapter7/video/7708384803367734546"
-        }
-      ]
-    },
-    {
-      "id": "6af9ad63febdc55cc7b5e9bc",
-      "status": "published",
-      "createdAt": "2026-11-15T13:02:33.418Z",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=xyK0qZFEAtE",
+      "url": "https://www.youtube.com/watch?v=nPLOvu4bvQs",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=xyK0qZFEAtE"
+          "url": "https://www.youtube.com/watch?v=nPLOvu4bvQs"
         }
       ]
     },
     {
-      "id": "6af8ebde26409c28f9b3285f",
+      "id": "6b0408840095d39bf58ff51d",
       "status": "published",
-      "createdAt": "2026-11-14T23:16:48.288Z",
+      "createdAt": "2026-11-23T09:33:58.259Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=heyMdxZPVgA",
+      "url": "https://www.youtube.com/watch?v=B3TCfpTt5QA",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=heyMdxZPVgA"
+          "url": "https://www.youtube.com/watch?v=B3TCfpTt5QA"
         }
       ]
     },
     {
-      "id": "6af880002c9f6025a255dbf8",
+      "id": "6b037ec8170f97b7ea5f9f10",
       "status": "published",
-      "createdAt": "2026-11-14T15:36:34.800Z",
+      "createdAt": "2026-11-22T23:46:19.726Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=3E2ekjMZPkc",
+      "url": "https://www.youtube.com/watch?v=9MLwHspRGWU",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=3E2ekjMZPkc"
+          "url": "https://www.youtube.com/watch?v=9MLwHspRGWU"
         }
       ]
     },
     {
-      "id": "6af869870e77952e44d8fe64",
+      "id": "6b037e815b7cb3d46f884ac2",
       "status": "published",
-      "createdAt": "2026-11-14T14:00:42.065Z",
+      "createdAt": "2026-11-22T23:45:07.115Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=F6BGrQhYmaA",
+      "url": "https://www.youtube.com/watch?v=qqSi2gNEjoo",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=F6BGrQhYmaA"
+          "url": "https://www.youtube.com/watch?v=qqSi2gNEjoo"
         }
       ]
     },
     {
-      "id": "6af83b0fb4c091a0ee790fc1",
+      "id": "6b02ede17066e84d137a767c",
       "status": "published",
-      "createdAt": "2026-11-14T10:42:25.666Z",
+      "createdAt": "2026-11-22T13:28:05.697Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=bU__lL-K6Kc",
+      "url": "https://www.youtube.com/watch?v=NXWjoz38Hz4",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=bU__lL-K6Kc"
+          "url": "https://www.youtube.com/watch?v=NXWjoz38Hz4"
         }
       ]
     },
     {
-      "id": "6af7f006208448cdcf245de2",
+      "id": "6b02ed75760df69f0c524ed4",
       "status": "published",
-      "createdAt": "2026-11-14T05:22:16.361Z",
+      "createdAt": "2026-11-22T13:26:16.528Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=_HB37ngpGg0",
+      "url": "https://www.youtube.com/watch?v=5vAbm3me58A",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=_HB37ngpGg0"
+          "url": "https://www.youtube.com/watch?v=5vAbm3me58A"
         }
       ]
     },
     {
-      "id": "6af794b6325c9d8126ba9279",
+      "id": "6b02a4a81b7397c0cb093d4b",
       "status": "published",
-      "createdAt": "2026-11-13T22:52:40.433Z",
+      "createdAt": "2026-11-22T08:15:38.435Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=zFxJeWguVgg",
+      "url": "https://www.youtube.com/watch?v=iY29XEnp48w",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=zFxJeWguVgg"
+          "url": "https://www.youtube.com/watch?v=iY29XEnp48w"
         }
       ]
     },
     {
-      "id": "6af725e0b82ff83cf1ebabf2",
+      "id": "6b021a39193f2baf722a46a1",
       "status": "published",
-      "createdAt": "2026-11-13T14:59:47.586Z",
+      "createdAt": "2026-11-21T22:24:58.810Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=6b4fNdsEvho",
+      "url": "https://www.youtube.com/watch?v=wOw7V3L4GOE",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=6b4fNdsEvho"
+          "url": "https://www.youtube.com/watch?v=wOw7V3L4GOE"
         }
       ]
     },
     {
-      "id": "6af472b35f14f7aaf5d65b9b",
+      "id": "6b0177301fe7602f25cf7e8e",
       "status": "published",
-      "createdAt": "2026-11-11T13:50:45.723Z",
+      "createdAt": "2026-11-21T10:49:21.525Z",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc",
+      "url": "https://www.youtube.com/watch?v=oivojM-w_P8",
       "platform_status": "published",
       "platforms": [
         {
           "platform": "youtube",
           "status": "published",
-          "url": "https://www.youtube.com/watch?v=bQ_uJgtBSGc"
+          "url": "https://www.youtube.com/watch?v=oivojM-w_P8"
+        }
+      ]
+    },
+    {
+      "id": "6b014dc18e32fcb188cb0e91",
+      "status": "published",
+      "createdAt": "2026-11-21T07:52:34.208Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-1wAWtd3sA0",
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=-1wAWtd3sA0"
+        }
+      ]
+    },
+    {
+      "id": "6b012b0348307d41191a01cc",
+      "status": "published",
+      "createdAt": "2026-11-21T05:24:20.598Z",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-NhbL7pE1VA",
+      "platform_status": "published",
+      "platforms": [
+        {
+          "platform": "youtube",
+          "status": "published",
+          "url": "https://www.youtube.com/watch?v=-NhbL7pE1VA"
         }
       ]
     }
