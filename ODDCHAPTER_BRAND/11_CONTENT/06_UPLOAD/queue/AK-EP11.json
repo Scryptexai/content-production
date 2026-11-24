@@ -1,12 +1,15 @@
 {
   "episode": "AK-EP11",
   "slug": "smong-simeulue",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "visibility": "public",
   "file": "work/smong-simeulue/out/AK-EP11_smong-simeulue_feed.mp4",
   "master_sha256": "fa87584c1e2c57028b8f14e30413eb9588adfa9a97b58145414eb073e283c384",
   "drive_video_id": "1LN4FxxM0BLfgGazZfBZQBesi7-rriDGE",
   "izin": "user: lanjutkan sampai tayang langsung",
-  "catatan": "Publikasi langsung YouTube. Master Drive public-reader sudah diverifikasi ukuran 9226861 byte dan SHA-256; metadata, thumbnail, poster, SRT, sumber/lisensi, dan uploader dry-run sudah lolos. Jangan jadwalkan atau menunda."
+  "post_id": "6b05120de76f86724f82c020",
+  "youtube_url": "https://www.youtube.com/watch?v=49JZU3Iu0ws",
+  "uploaded_at": "2026-11-24T04:27:03Z",
+  "catatan": "Tayang publik. Master Drive public-reader diverifikasi ukuran 9226861 byte dan SHA-256; metadata, thumbnail, poster, SRT, sumber/lisensi, dan uploader dry-run lolos. Workflow 45326387987 mengunggah dan mencatat status published."
 }
