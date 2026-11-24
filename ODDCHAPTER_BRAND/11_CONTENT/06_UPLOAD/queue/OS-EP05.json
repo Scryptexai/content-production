@@ -1,15 +1,16 @@
 {
   "episode": "OS-EP05",
   "slug": "piri-reis",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "visibility": "public",
-  "lookup": true,
   "scheduledFor": "2026-11-23T12:34:08.000Z",
   "timezone": "UTC",
   "file": "work/piri-reis/out/OS-EP05_peta-piri-reis_feed.mp4",
   "master_sha256": "c1ef1a09fa26f579557954f170eef1349045667feaa9d4dfc6e9395725626658",
   "drive_video_id": "1V1-j4Zf90j4pFK8uUeIwb_xxiafLkon-",
   "izin": "user: post OS-EP04 now; schedule two completed follow-ups at +3 hours and +6 hours (2026-11-23)",
-  "catatan": "STATUS VERIFICATION ONLY: permintaan tunda datang setelah jam jadwal berlalu. Upaya cancel menolak dengan aman karena Zernio menyatakan post sudah published; workflow ini hanya lookup tanpa unggah atau penghapusan."
+  "youtube_url": "https://www.youtube.com/watch?v=nPLOvu4bvQs",
+  "posted_status_checked_at": "2026-11-24T02:46:55Z",
+  "catatan": "Tayang. Permintaan tunda datang setelah jam jadwal berlalu; Zernio menolak cancel dengan aman karena post sudah published. Lookup menegaskan status published tanpa unggah atau penghapusan tambahan."
 }

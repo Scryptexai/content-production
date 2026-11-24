@@ -1,7 +1,7 @@
 {
   "episode": "OS-EP06",
   "slug": "baghdad-battery",
-  "status": "requested",
+  "status": "done",
   "approved": true,
   "visibility": "public",
   "scheduledFor": "2026-11-23T15:34:08.000Z",
@@ -10,5 +10,7 @@
   "master_sha256": "df9f9dec3968387a1b18735cacfb5fd5746ba33b62803400238a34cced887a7d",
   "drive_video_id": "16ezSoeRCBdGb6nGQiYBt_Y0A0x0Q7S6Q",
   "izin": "user: post OS-EP04 now; schedule two completed follow-ups at +3 hours and +6 hours (2026-11-23)",
-  "catatan": "OS-EP06 siap rilis terjadwal +6 jam setelah post OS-EP04 pada 2026-11-23T09:34:08Z. Master Drive public-reader diverifikasi terhadap hash/ukuran metadata; diagram sumber CC BY-SA 2.5 selalu disebut skema modern, bukan foto artefak."
+  "youtube_url": "https://www.youtube.com/watch?v=UEvg7E-wetg",
+  "posted_status_checked_at": "2026-11-24T02:46:55Z",
+  "catatan": "Tayang. Zernio lookup menegaskan status published. Master Drive sudah diverifikasi terhadap hash/ukuran metadata; diagram sumber CC BY-SA 2.5 disebut sebagai skema modern, bukan foto artefak."
 }
