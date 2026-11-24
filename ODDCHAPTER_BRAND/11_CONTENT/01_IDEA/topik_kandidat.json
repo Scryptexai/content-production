@@ -112,15 +112,15 @@
     },
     {
       "id": "T04",
-      "judul_kerja": "Izin yang tidak pernah ada",
+      "judul_kerja": "188 nama yang dihitung sesudah kapal tenggelam",
       "topik": "Tenggelamnya KM Sinar Bangun, Danau Toba, 2018",
       "tier": "kontroversi",
-      "pov": "Bukan kapalnya yang jadi masalah, tapi selembar izin yang tidak pernah dikeluarkan, dan penumpang yang tidak pernah dihitung.",
-      "satu_pertanyaan": "Kenapa kapal tanpa izin bisa berlayar dengan 150 penumpang?",
+      "pov": "Ini bukan semata cerita tentang angin, tetapi tentang nama penumpang yang baru dikumpulkan setelah kapal tenggelam.",
+      "satu_pertanyaan": "Bagaimana jumlah penumpang sebuah kapal baru dapat dihitung sesudah kapal itu tenggelam?",
       "dokumen": [
-        "laporan akhir KNKT 2018",
-        "daftar manifest vs jumlah korban",
-        "putusan pengadilan"
+        "laporan final KNKT 2018",
+        "data verifikasi posko korban pada hari kesembilan",
+        "rekomendasi keselamatan KNKT"
       ],
       "indikator": {
         "kejanggalan": 1,
@@ -136,7 +136,19 @@
         "satu_pertanyaan": 2,
         "bahan_visual": 2
       },
-      "status": "perlu verifikasi"
+      "status": "dipakai",
+      "dipakai_episode": "LF03 / AK-EP12 (draf; belum produksi)",
+      "dokumen_dibaca": [
+        "Laporan final KNKT.18.06.21.03: pengantar, sinopsis, kronologi, dan SAR dibaca langsung dari PDF resmi",
+        "cuplikan terindeks bagian teknis laporan resmi, dipakai hanya sebagai pelengkap beratribusi",
+        "ringkasan rilis hasil KNKT ANTARA Sumut, 14 Agustus 2018",
+        "rekomendasi KNKT yang disalin INSA"
+      ],
+      "dokumen_belum_dibaca": [
+        "salinan putusan pidana final (tidak dipakai dalam naskah)",
+        "lisensi setiap foto atau footage media 2018"
+      ],
+      "catatan_riset": "11_CONTENT/02_SCRIPT/riset/AK-EP12_sinar-bangun_fakta.md"
     },
     {
       "id": "T05",
