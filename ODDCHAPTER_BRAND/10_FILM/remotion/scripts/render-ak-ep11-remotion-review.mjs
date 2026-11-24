@@ -30,6 +30,7 @@ const compositionId = "ODDCHAPTER-AK-EP11-REMOTION-REVIEW";
 const entrypoint = "ODDCHAPTER_BRAND/10_FILM/remotion/src/index.ts";
 const renderScript = "ODDCHAPTER_BRAND/10_FILM/remotion/scripts/render-ak-ep11-remotion-review.mjs";
 const mapAsset = path.join(publicDir, "ak-ep11", "simeulue_topography_cc-by-sa-3.png");
+const tsunamiAsset = path.join(publicDir, "ak-ep11", "noaa_2004_tsunami_pd.gif");
 const audioSource = path.join(work, "audio", "master.wav");
 const audioStatic = path.join(publicDir, "audio", "ak-ep11-smong-review.wav");
 const targetLufs = -15;
@@ -83,6 +84,7 @@ fs.mkdirSync(output, { recursive: true });
 fs.mkdirSync(qc, { recursive: true });
 fs.mkdirSync(provenance, { recursive: true });
 assert(fs.existsSync(mapAsset), `peta berlisensi harus tersedia di repo: ${path.relative(repoRoot, mapAsset)}`);
+assert(fs.existsSync(tsunamiAsset), `simulasi NOAA harus tersedia di repo: ${path.relative(repoRoot, tsunamiAsset)}`);
 copy(audioSource, audioStatic);
 
 const browser = await resolveChromium();
@@ -99,7 +101,7 @@ assert(comp.width === 1080 && comp.height === 1920 && comp.fps === 30 && comp.du
   `komposisi tidak sesuai kontrak 1080×1920 / 30 fps / 1065 frame: ${JSON.stringify(comp)}`);
 console.log(`composition: ${comp.id} · ${comp.width}x${comp.height} · ${comp.durationInFrames} frames`);
 
-for (const [name, frame] of Object.entries({ hook: 18, rule: 345, time: 470, langi: 720, cta: 1005 })) {
+for (const [name, frame] of Object.entries({ hook: 45, map: 205, memory: 325, signs: 455, time: 585, tsunami: 680, langi: 790, action: 900, cta: 1020 })) {
   const dest = path.join(qc, `${name}.png`);
   await renderStill({ composition: comp, serveUrl, output: dest, frame, ...browserOptions });
   console.log("still:", path.relative(repoRoot, dest));
@@ -157,7 +159,7 @@ assert(silences.every((duration) => duration < 0.75), `ditemukan hening panjang:
 
 const qcReport = {
   result: "pass",
-  frame_review: ["hook", "rule", "time", "langi", "cta"].map((name) => `work/smong-simeulue/qc/remotion-review/${name}.png`),
+  frame_review: ["hook", "map", "memory", "signs", "time", "tsunami", "langi", "action", "cta"].map((name) => `work/smong-simeulue/qc/remotion-review/${name}.png`),
   raw_remotion_video_sha256: rawVideoHash,
   final_video_stream_sha256: finalVideoHash,
   video_stream_preserved_after_audio_container_postprocess: rawVideoHash === finalVideoHash,
@@ -195,6 +197,12 @@ const manifest = {
       path: "ODDCHAPTER_BRAND/10_FILM/remotion/public/ak-ep11/simeulue_topography_cc-by-sa-3.png",
       sha256: sha256(mapAsset),
       attribution: "Sadalmelik, Simeulue Topography, CC BY-SA 3.0",
+    },
+    tsunami_simulation: {
+      path: "ODDCHAPTER_BRAND/10_FILM/remotion/public/ak-ep11/noaa_2004_tsunami_pd.gif",
+      sha256: sha256(tsunamiAsset),
+      attribution: "NOAA Center for Tsunami Research, 2004 Indonesia Tsunami simulation, public domain",
+      editorial_label: "regional simulation; not footage of Langi",
     },
     audio: {
       source_path: "work/smong-simeulue/audio/master.wav",

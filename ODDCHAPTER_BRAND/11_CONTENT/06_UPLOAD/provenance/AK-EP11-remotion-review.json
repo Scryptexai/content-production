@@ -8,13 +8,19 @@
   "render_script": "ODDCHAPTER_BRAND/10_FILM/remotion/scripts/render-ak-ep11-remotion-review.mjs",
   "visual_output": "work/smong-simeulue/remotion-review/AK-EP11_smong-simeulue_remotion-review_raw.mp4",
   "master_output": "work/smong-simeulue/remotion-review/AK-EP11_smong-simeulue_remotion-review.mp4",
-  "master_sha256": "1c8e2ac8213ef8a7384281d15d1646dd030e607ccdf0141379f567946c9ada84",
-  "size_bytes": 4728275,
+  "master_sha256": "812b64f2a70a867d45c69fc52c424740ead6fcd9d35b3241866359d4d350b872",
+  "size_bytes": 10424220,
   "assets": {
     "map": {
       "path": "ODDCHAPTER_BRAND/10_FILM/remotion/public/ak-ep11/simeulue_topography_cc-by-sa-3.png",
       "sha256": "32ccd0607990c53d9021d1da8d0da8e2e771701ac49be94b5f4ed92c4f1f6633",
       "attribution": "Sadalmelik, Simeulue Topography, CC BY-SA 3.0"
+    },
+    "tsunami_simulation": {
+      "path": "ODDCHAPTER_BRAND/10_FILM/remotion/public/ak-ep11/noaa_2004_tsunami_pd.gif",
+      "sha256": "40ec924ef7bb8feda3de794a90601b4908cce91db13d58f7c522bb02c851d861",
+      "attribution": "NOAA Center for Tsunami Research, 2004 Indonesia Tsunami simulation, public domain",
+      "editorial_label": "regional simulation; not footage of Langi"
     },
     "audio": {
       "source_path": "work/smong-simeulue/audio/master.wav",
@@ -39,13 +45,17 @@
     "result": "pass",
     "frame_review": [
       "work/smong-simeulue/qc/remotion-review/hook.png",
-      "work/smong-simeulue/qc/remotion-review/rule.png",
+      "work/smong-simeulue/qc/remotion-review/map.png",
+      "work/smong-simeulue/qc/remotion-review/memory.png",
+      "work/smong-simeulue/qc/remotion-review/signs.png",
       "work/smong-simeulue/qc/remotion-review/time.png",
+      "work/smong-simeulue/qc/remotion-review/tsunami.png",
       "work/smong-simeulue/qc/remotion-review/langi.png",
+      "work/smong-simeulue/qc/remotion-review/action.png",
       "work/smong-simeulue/qc/remotion-review/cta.png"
     ],
-    "raw_remotion_video_sha256": "6f0516a26dc7903e2789e8e8aeeed1f89d35cc5b2a10f424656727c09b0b25cb",
-    "final_video_stream_sha256": "6f0516a26dc7903e2789e8e8aeeed1f89d35cc5b2a10f424656727c09b0b25cb",
+    "raw_remotion_video_sha256": "4f8e7864b3aaf6b735f21a4f663eb646af3062314deca6efca3c5ec8e6c9d1f2",
+    "final_video_stream_sha256": "4f8e7864b3aaf6b735f21a4f663eb646af3062314deca6efca3c5ec8e6c9d1f2",
     "video_stream_preserved_after_audio_container_postprocess": true,
     "audio_loudness_lufs": -15,
     "audio_true_peak_db": -1.53,
@@ -83,8 +93,8 @@
     ],
     "format": {
       "duration": "35.520000",
-      "size": "4728275",
-      "bit_rate": "1064926"
+      "size": "10424220",
+      "bit_rate": "2347797"
     }
   },
   "publish_intent": "review-only; do not upload, queue, schedule, unlist, or delete the live video"
