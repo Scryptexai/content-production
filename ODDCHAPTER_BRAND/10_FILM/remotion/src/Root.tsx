@@ -14,6 +14,7 @@ import { BRAND_BEZIER, C, FPS, H, T, W } from "./theme";
 import { Monogram, Wordmark } from "./components/Marks";
 import { ShortOutro, OUTRO_FRAMES } from "./scenes/ShortOutro";
 import { MapZoom, MapZoomProps } from "./scenes/MapZoom";
+import { SmongReview } from "./scenes/SmongReview";
 
 const ease = Easing.bezier(...BRAND_BEZIER);
 
@@ -148,6 +149,14 @@ export const RemotionRoot: React.FC = () => (
       fps={FPS}
       width={(longformJson as any).width ?? 1920}
       height={(longformJson as any).height ?? 1080}
+    />
+    <Composition
+      id="ODDCHAPTER-AK-EP11-REMOTION-REVIEW"
+      component={SmongReview}
+      durationInFrames={1065}
+      fps={FPS}
+      width={W}
+      height={H}
     />
     <Composition
       id="SHORT-OUTRO-9X16"
