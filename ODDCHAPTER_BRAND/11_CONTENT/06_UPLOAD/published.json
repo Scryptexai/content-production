@@ -69,6 +69,13 @@
     "uploaded_at": "2026-11-21T22:25:08Z",
     "youtube_url": "https://www.youtube.com/watch?v=wOw7V3L4GOE"
   },
+  "AK-EP11": {
+    "post_id": "6b05120de76f86724f82c020",
+    "status": "published",
+    "title": "2004: Laut Surut di Simeulue, Warga Langsung ke Bukit",
+    "uploaded_at": "2026-11-24T04:27:03Z",
+    "youtube_url": "https://www.youtube.com/watch?v=49JZU3Iu0ws"
+  },
   "EP01": {
     "extra": [
       {
@@ -271,20 +278,20 @@
     "post_id": "6b041733fab67d8356d1abd0",
     "scheduled_for": "2026-11-23T12:34:08.000Z",
     "status": "published",
+    "status_checked_at": "2026-11-24T02:46:55Z",
     "timezone": "UTC",
     "title": "Peta 1513 Ini Bukan Bukti Antartika. Baca Catatan Pinggirnya",
-    "youtube_url": "https://www.youtube.com/watch?v=nPLOvu4bvQs",
     "uploaded_at": "2026-11-23T10:36:37Z",
-    "status_checked_at": "2026-11-24T02:46:55Z"
+    "youtube_url": "https://www.youtube.com/watch?v=nPLOvu4bvQs"
   },
   "OS-EP06": {
     "post_id": "6b041789ba5094d98ce0d5bb",
     "scheduled_for": "2026-11-23T15:34:08.000Z",
     "status": "published",
+    "status_checked_at": "2026-11-24T02:46:55Z",
     "timezone": "UTC",
     "title": "1938: Baterai Baghdad Bisa Menyala. Fungsi Aslinya Belum Terbukti",
-    "youtube_url": "https://www.youtube.com/watch?v=UEvg7E-wetg",
     "uploaded_at": "2026-11-23T10:38:03Z",
-    "status_checked_at": "2026-11-24T02:46:55Z"
+    "youtube_url": "https://www.youtube.com/watch?v=UEvg7E-wetg"
   }
 }
