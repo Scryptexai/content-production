@@ -29,7 +29,7 @@ import pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
-from content_data import EPISODES  # noqa: E402
+from content_data import AK_EPISODES, EPISODES  # noqa: E402
 
 RISET = ROOT / "11_CONTENT" / "02_SCRIPT" / "riset"
 GATE = RISET / "_GATE.json"
@@ -54,7 +54,10 @@ BUKAN_NAMA = {
 }
 
 NUM = re.compile(r"\b\d[\d.,]*\b")
-NAMA = re.compile(r"\b([A-Z][a-zA-Z'’\-]{2,})\b")
+# Nama diri dan singkatan lembaga (misalnya KNKT) sama-sama dapat menjadi token
+# fakta. Tanpa kelompok huruf kapital, baris yang sah tentang lembaga sumber akan
+# salah terbaca sebagai generik.
+NAMA = re.compile(r"\b([A-Z]{2,}|[A-Z][a-zA-Z'’\-]{2,})\b")
 
 
 def facts(ep_id):
@@ -122,7 +125,7 @@ def main():
     gate = json.loads(GATE.read_text()) if GATE.exists() else {}
     want = args or [k for k, v in gate.items() if v]
     nfail, nskip, rows = 0, 0, []
-    for e in EPISODES:
+    for e in EPISODES + AK_EPISODES:
         if e["ep"] not in want:
             continue
         res = check(e, verbose)

@@ -13,7 +13,7 @@ import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from content_data import EPISODES  # noqa: E402
+from content_data import AK_EPISODES, EPISODES  # noqa: E402
 
 # kata yang "meminta" perhatian alih-alih menunjukkan sesuatu
 BANNED = {"misteri", "rahasia", "aneh", "menakjubkan", "mengerikan", "terpecahkan", "misterius"}
@@ -383,9 +383,10 @@ def check(e):
 
 
 def main():
-    want = sys.argv[1:] or [e["ep"] for e in EPISODES]
+    episodes = EPISODES + AK_EPISODES
+    want = sys.argv[1:] or [e["ep"] for e in episodes]
     rows, nfail = [], 0
-    for e in EPISODES:
+    for e in episodes:
         if e["ep"] not in want:
             continue
         fails, notes, sh, secs = check(e)

@@ -22,7 +22,7 @@ import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from content_data import EPISODES  # noqa: E402
+from content_data import AK_EPISODES, EPISODES  # noqa: E402
 
 BULAN = r"(januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember)"
 KRONOLOGI = re.compile(rf"\b(1[89]|20)\d\d\b|\b{BULAN}\b", re.I)
@@ -166,7 +166,8 @@ def main():
     want = args[0] if args else None
     rows, failed = [], 0
 
-    for e in EPISODES if not want else [x for x in EPISODES if x["ep"] == want]:
+    episodes = EPISODES + AK_EPISODES
+    for e in episodes if not want else [x for x in episodes if x["ep"] == want]:
         res = evaluate(e)
         score = sum(1 for _, ok, _ in res if ok)
         failed += score < len(res)

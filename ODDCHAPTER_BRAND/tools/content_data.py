@@ -2417,3 +2417,67 @@ _LADDER = {
 
 for _e in EPISODES:
     _e.update(_LADDER.get(_e["ep"], {}))
+
+# ══════════════════════════════════════════════════════════════════════════
+# EPISODE PILOT TERPISAH — tidak masuk generator kalender 21 episode.
+#
+# AK-EP12 hanya dipakai oleh pemeriksa naskah. Ia sengaja berada di koleksi
+# terpisah agar generator program 21 episode tidak menciptakan aset/tayangan
+# otomatis untuk draf yang masih menunggu persetujuan pra-produksi.
+# ══════════════════════════════════════════════════════════════════════════
+
+AK_EPISODES = [
+    dict(
+        ep="AK-EP12", voice_legacy=False, day=0, slot="review", jam="—",
+        series="KASUS NYATA", pov="D", tier="kontroversi", topik_status="draf-short",
+        fokus="L2 bukti terukur: 45, 188, 21, 3, dan 164 muncul bersama label konteks.",
+        perbaikan=("Tidak mengulang narasi 100+ detik: satu pertanyaan, sembilan segmen, "
+                   "dan nomor korban tidak disamakan dengan kematian pasti."),
+        short_parent="11_CONTENT/07_LONGFORM/LF03_sinar-bangun/SCRIPT.md",
+        title="188 NAMA YANG DIHITUNG SESUDAH KAPAL TENGGELAM",
+        struktur="klimaks-awal", thumb=["188", "NAMA"], thumb_text="188 NAMA",
+        durasi=40, plate="vessel", photos=[],
+        protagonis="Angka 188 yang baru disusun di posko sembilan hari setelah kapal tenggelam.",
+        mau="Menjawab siapa yang perlu dicari sebelum daftar dapat dipastikan.",
+        hambatan="Jumlah penumpang baru diverifikasi setelah kecelakaan.",
+        tanaman="Angka 188: hasil posko hari kesembilan, bukan angka keberangkatan.",
+        hook="Angka 188 baru muncul sembilan hari sesudah kapal tenggelam.",
+        hook_alt="Kapal itu berangkat. Angka 188 baru selesai sembilan hari kemudian.",
+        tanya="Menurut kamu, kenapa 188 baru ada sesudah kapal tenggelam?",
+        entitas="angka",
+        relate="Kita kira 188 dihitung di dermaga.",
+        diskusi="Apakah jumlah penumpang harus diumumkan sebelum kapal berangkat?",
+        celah="Mengapa angka 188 baru ada sesudah kapal tenggelam?",
+        gambar_melekat="Angka 188 muncul di posko sembilan hari setelah kapal hilang.",
+        beats=[
+            ("tanya", "Menurut kamu, kenapa 188 baru ada sesudah kapal tenggelam?"),
+            ("relate", "Kita kira 188 dihitung di dermaga."),
+            ("setup", "18 Juni 2018, Sinar Bangun 4 berangkat pukul 16.50."),
+            ("tension", "Dua puluh menit, gelombang 1,5 sampai 2 meter membalikkan kapal."),
+            ("tension", "Lihat angka ini: 45 di dokumen; 21 selamat; 3 meninggal; 164 hilang."),
+            ("turn", "Coba baca laporan KNKT: 188, tapi bukan angka dermaga."),
+            ("consequence", "KNKT meminta manifest sebelum kapal berangkat."),
+        ],
+        turn_quote="“188 adalah angka keberangkatan.”",
+        turn_verdict=("Laporan KNKT menjelaskan 188 berasal dari verifikasi posko hari "
+                      "kesembilan, bukan manifest keberangkatan."),
+        loop="Sebelum kapal berangkat, kamu menghitung 188 atau mencarinya?",
+        cues=["HARI KE-9", "188", "45 KE 188", "16.50 KE 17.10"],
+        captions=["", "Kenapa 188?", "188 di dermaga?", "18 Juni 2018.",
+                  "Dua puluh menit.", "45. 21. 3. 164.", "Bukan angka dermaga.",
+                  "Manifest.", "Hitung atau cari?"],
+        caption_hi=["", "188", "188", "2018", "dua puluh", "164", "188", "manifest", "188"],
+        stamps=[["188", 0], ["45", 5]],
+        sfx={},
+        visual=("Penghitung posko 188, peta Simanindo–Tigaras, timeline 16.50–17.10, "
+                "dan diagram dokumen 45 versus posko 188. Semua frame final Remotion."),
+        sumber=(
+            "TERVERIFIKASI 2026-11-06 — KNKT.18.06.21.03, bagian sinopsis, kronologi, "
+            "dan SAR dibaca langsung; ringkasan rilis hasil KNKT ANTARA Sumut serta rekomendasi "
+            "KNKT melalui INSA dipakai dengan atribusi. 188 adalah verifikasi posko hari kesembilan: "
+            "21 selamat, 3 meninggal, 164 hilang. Tidak memakai klaim SPB/izin atau tuduhan pidana. "
+            "Fakta: 11_CONTENT/02_SCRIPT/riset/AK-EP12_sinar-bangun_fakta.md. Induk: "
+            "11_CONTENT/07_LONGFORM/LF03_sinar-bangun/SCRIPT.md."
+        ),
+    ),
+]
