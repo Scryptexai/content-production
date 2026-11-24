@@ -1,7 +1,8 @@
 # LF03 · rencana produksi — Sinar Bangun 4
 
-**Status:** pra-produksi editorial. Naskah panjang harus disetujui pemilik dan
-short harus diturunkan darinya sebelum rekam/render.
+**Status:** pra-produksi terbatas. Naskah panjang dan Short turunan telah disetujui
+pemilik untuk perencanaan Remotion serta paket VO/aset; tidak ada izin take audio,
+render, master, Drive, antrean, atau publikasi.
 
 **Tesis:** Angin memukul kapal, tetapi daftar keselamatan sudah gagal sebelum
 keberangkatan: kapasitas 45, verifikasi 188, dan nama korban yang baru dikumpulkan
@@ -48,15 +49,17 @@ setelah kapal tenggelam.
 
 ## Gerbang sebelum rekam/render
 
-- [ ] `python3 ODDCHAPTER_BRAND/tools/check_longform.py LF03_sinar-bangun` lulus.
-- [ ] Pemilik menyetujui tesis, kalimat hook, dan batas etika naskah panjang.
-- [ ] Short diturunkan kata-per-kata dari babak 1, 4, 6, dan 7; tabel pasangan baris
-      disertakan di berkas Short.
-- [ ] Script Short lulus `check_story.py` / `check_research.py` jika entry data
-      terdaftar, atau audit setara dicatat khusus format AK.
-- [ ] Satu suara kanal yang telah disetujui dipakai konsisten; tidak memakai
-      voice-06 atau voice-07.
-- [ ] Setiap aset visual memiliki sumber/lisensi/provenance; render mencatat
-      `@remotion/renderer`.
-- [ ] Tidak ada upload, antrean `requested`, jadwal, atau publikasi sebelum persetujuan
-      eksplisit untuk master yang telah direview.
+- [x] `python3 ODDCHAPTER_BRAND/tools/check_longform.py LF03_sinar-bangun` lulus.
+- [x] Pemilik menyetujui tesis, kalimat hook, dan batas etika naskah panjang.
+- [x] Short diturunkan dari babak induk dengan tabel pasangan baris dan fakta di
+      `02_SCRIPT/AK-EP12_sinar-bangun.md`.
+- [x] Script Short lulus `check_story.py` / `check_research.py` /
+      `check_info_design.py`; audit format AK tercatat khusus.
+- [x] Pemilik mengizinkan rencana scene serta manifest VO/aset dalam
+      `02_SCRIPT/AK-EP12_sinar-bangun_PREPRODUCTION.md`, tanpa media master.
+- [ ] Satu suara kanal yang disetujui dipakai konsisten; tidak memakai `voice-06`
+      atau `voice-07`; take dan timing nyata masih harus diukur.
+- [ ] Setelah persetujuan pre-render/master, setiap aset dan output mendapat
+      sumber/lisensi/provenance; render mencatat `@remotion/renderer`.
+- [ ] Tidak ada upload, antrean `requested`, jadwal, atau publikasi sebelum
+      persetujuan eksplisit untuk master yang telah direview.

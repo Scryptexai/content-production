@@ -1,7 +1,7 @@
 # Audit editorial — LF03 · Sinar Bangun 4
 
-**Status:** `NASKAH PANJANG DISETUJUI — Short turunan sudah diaudit; menunggu
-persetujuan terpisah untuk Short sebelum rekaman, aset, atau render.`
+**Status:** `NASKAH PANJANG DISETUJUI — Short turunan sudah diaudit dan disetujui
+untuk pra-produksi terbatas; belum ada izin rekam/take, render, master, atau publikasi.`
 
 **Tanggal audit:** 6 November 2026
 
@@ -73,9 +73,15 @@ dari kronologi, verifikasi korban, dan rekomendasi KNKT.
       `02_SCRIPT/AK-EP12_sinar-bangun.md`.
 - [x] Metadata episode dan tiga gerbang Short diregistrasikan; audit ada di
       `02_SCRIPT/AK-EP12_sinar-bangun_AUDIT.md`.
-- [ ] Persetujuan terpisah atas naskah Short, aset, suara kanal, serta master Remotion.
-- [ ] Render, Drive, antrean unggah, atau penerbitan.
+- [x] Pemilik menyetujui naskah Short/kartu angka/arah visual untuk **pra-produksi
+      terbatas**. Paket `02_SCRIPT/AK-EP12_sinar-bangun_PREPRODUCTION.md` mencatat
+      scene Remotion, cue VO, dan manifest aset; tidak membuat media master.
+- [ ] Suara kanal dipilih pemilik dan take VO terukur diaudit; waktu scene hanya boleh
+      disesuaikan terhadap take itu tanpa mengubah fakta/batas sumber secara diam-diam.
+- [ ] Persetujuan pre-render/render-master terpisah diberikan sebelum Remotion
+      dibundel/dirender atau QC media dibuat.
+- [ ] Render, Drive, antrean unggah, penjadwalan, atau penerbitan.
 
-**Keputusan berikutnya:** minta persetujuan pemilik untuk Short yang diturunkan.
-Sampai persetujuan itu ada, pekerjaan berhenti di dokumen; tidak ada VO, tidak ada
-render, dan tidak ada tindakan upload.
+**Keputusan berikutnya:** pemilik meninjau paket pra-produksi dan memilih suara kanal
+bila tahap audio diteruskan. Render maupun tindakan distribusi tetap berhenti sampai
+ada persetujuan master yang eksplisit dan terpisah.

@@ -15,6 +15,7 @@ import { Monogram, Wordmark } from "./components/Marks";
 import { ShortOutro, OUTRO_FRAMES } from "./scenes/ShortOutro";
 import { MapZoom, MapZoomProps } from "./scenes/MapZoom";
 import { SmongReview } from "./scenes/SmongReview";
+import { AK_EP12_PREPROD_FRAMES, SinarBangunPreprod } from "./scenes/SinarBangunPreprod";
 
 const ease = Easing.bezier(...BRAND_BEZIER);
 
@@ -154,6 +155,15 @@ export const RemotionRoot: React.FC = () => (
       id="ODDCHAPTER-AK-EP11-REMOTION-REVIEW"
       component={SmongReview}
       durationInFrames={1065}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
+    {/* Planning composition only: no audio/master/renderer invocation is authorized yet. */}
+    <Composition
+      id="ODDCHAPTER-AK-EP12-SINAR-BANGUN-PREPROD"
+      component={SinarBangunPreprod}
+      durationInFrames={AK_EP12_PREPROD_FRAMES}
       fps={FPS}
       width={W}
       height={H}

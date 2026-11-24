@@ -1,7 +1,12 @@
 # Audit naskah Short — AK-EP12 · Sinar Bangun 4
 
-**Status:** `LULUS QC NASKAH — menunggu review pemilik atas Short. Belum ada VO,
-aset, render, antrean, Drive, atau unggahan.`
+**Status:** `PRA-PRODUKSI DISETUJUI — naskah/gate tetap LULUS; perencanaan Remotion
+dan paket VO/aset dapat disiapkan. Belum ada take VO, render, master, antrean, Drive,
+atau unggahan.`
+
+**Persetujuan pemilik:** Short disetujui untuk **pra-produksi saja** setelah review
+naskah, kartu angka, dan arah visual. Persetujuan ini tidak mencakup render, transfer,
+queue, penjadwalan, upload, publikasi, atau perubahan episode kanonik `EP12`.
 
 ## Hubungan dengan naskah panjang
 
@@ -46,13 +51,25 @@ kata dari naskah; audio tidak boleh dipercepat secara buta.
 
 ## Keputusan visual pra-produksi
 
-Produksi berikutnya hanya boleh memakai scene desain informasi Remotion yang sudah
-tercantum dalam naskah: meja posko, titik data, garis rute, timeline, potongan kapal,
-dan kartu angka. Tidak perlu mencari stock footage untuk meloloskan gate visual.
+Rencana yang diizinkan sekarang hanya memakai scene desain informasi Remotion: meja
+posko, titik data, garis rute skematis, timeline, siluet kapal generik, dan kartu
+angka. Implementasi source-nya ada di
+`10_FILM/remotion/src/scenes/SinarBangunPreprod.tsx`; paket cue, manifest, sumber,
+dan hash font ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
+
+Tidak perlu mencari stock footage untuk meloloskan gate visual. Scene tidak mengimpor
+foto, video, audio, URL, atau visual generatif; ia memakai SVG/CSS/data motion lokal.
+Tidak ada bundel, render still, `renderMedia`, FFmpeg, atau media master yang
+dijalankan/dihasilkan ketika pra-produksi ini disiapkan.
 
 ## Gerbang berikutnya
 
-- [ ] Pemilik menyetujui Short, kartu angka, judul kandidat, dan rencana visual.
-- [ ] Teks rekam berangka diuji/dibaca oleh suara internal kanal yang disetujui.
-- [ ] Timing nyata, caption, lisensi aset jika ada, dan render Remotion diaudit.
-- [ ] Review master terpisah sebelum Drive, queue, atau unggah.
+- [x] Pemilik menyetujui Short, kartu angka, dan arah visual **sebatas
+      pra-produksi**.
+- [x] Cue VO, baseline frame, manifest aset, source mapping, dan batas etik dicatat
+      dalam `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
+- [ ] Pemilik memilih satu suara internal kanal; teks rekam berangka diuji/dibaca dan
+      durasi nyata setiap cue dicatat.
+- [ ] Persetujuan pre-render/render-master terpisah diterima sebelum bundle/renderer,
+      caption, render Remotion, atau QC teknis dijalankan.
+- [ ] Review master terpisah sebelum Drive, queue, jadwal, atau unggah.

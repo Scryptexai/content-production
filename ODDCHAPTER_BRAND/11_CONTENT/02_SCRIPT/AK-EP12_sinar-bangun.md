@@ -1,8 +1,12 @@
 # AK-EP12 — 188 NAMA YANG DIHITUNG SESUDAH KAPAL TENGGELAM
 
 **Format:** Short Indonesia, uji format pengganti · **Target:** 35–45 detik
-**Status:** `DRAF TURUNAN — naskah panjang disetujui pemilik; belum direkam, belum
-membuat aset, belum dirender, belum diantrekan, dan belum diunggah.`
+**Status:** `PRA-PRODUKSI DISETUJUI — perencanaan Remotion dan paket VO/aset
+terverifikasi boleh disiapkan; belum ada rekaman/take audio, render, master, Drive,
+antrean, jadwal, atau unggahan.`
+
+**Paket pra-produksi:** `AK-EP12_sinar-bangun_PREPRODUCTION.md` mengunci cue VO,
+manifest aset, jejak fakta per scene, dan batas `40,0` detik yang masih sementara.
 
 **Induk yang disetujui:** `07_LONGFORM/LF03_sinar-bangun/SCRIPT.md`
 
@@ -80,8 +84,9 @@ Tidak ada markup, tag, atau SSML.
 
 ## 3 · Rencana visual Remotion 9:16
 
-Semua frame final kelak dirender oleh **Remotion / `@remotion/renderer`**. Pada tahap
-ini tidak ada master atau aset media yang dibuat.
+Semua frame final kelak dirender oleh **Remotion / `@remotion/renderer`**. Paket
+pra-produksi scene dan aset ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`; tidak ada
+master, render frame, take audio, atau aset media eksternal yang dibuat pada tahap ini.
 
 | Segmen | Gerak / informasi | Kartu sumber di layar |
 |---|---|---|
@@ -126,6 +131,9 @@ ada satu pun yang boleh disalin menjadi antrean unggah pada tahap ini.
 - [x] Short dipasangkan dengan babak induk dan fakta berlabel di atas.
 - [x] `check_story.py` lulus 35 detik; `check_research.py` lulus untuk setiap baris; dan
       `check_info_design.py` lulus 7/7 setelah metadata Short diregistrasikan.
-- [ ] Review pemilik atas naskah Short, kartu angka, dan rencana visual.
-- [ ] VO internal kanal, pengukuran tempo/prosodi, aset berlisensi, render Remotion,
-      QC, Drive, antrean unggah, atau publikasi.
+- [x] Pemilik menyetujui naskah Short, kartu angka, dan arah visual **untuk
+      pra-produksi saja**; rincian scene/VO/aset tercatat di paket pra-produksi.
+- [ ] Pemilihan suara internal kanal dan take VO terukur; perubahan timing dari take
+      harus diaudit.
+- [ ] Persetujuan terpisah untuk pre-render/render master, lalu QC, Drive, antrean
+      unggah, atau publikasi.
