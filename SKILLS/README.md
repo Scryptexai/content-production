@@ -53,6 +53,13 @@ dipasang. Dokumen root adalah bahan pemikiran; 00B/00C/00E adalah undang-undang.
 - `ODDCHAPTER_BRAND/tools/check_story.py` — gerbang lima efek + gerbang TTS.
 - `ODDCHAPTER_BRAND/11_CONTENT/00C_MESIN_5_EFEK.md` — lima efek yang harus terasa.
 
+## Referensi skill eksternal (opsional, selalu terakhir)
+
+`SKILLS/EXTERNAL_VIDEO_SKILLS.md` dan `.agents/skills/` berisi referensi eksternal
+yang telah diaudit dan dipin terbatas. Keduanya **hanya** dibaca setelah urutan di
+atas dan tidak boleh mengubah gerbang kanal. Lihat dokumen tersebut untuk izin,
+lisensi, commit sumber, serta larangan API/dependensi/renderer eksternal.
+
 ## Aturan pemeliharaan
 
 - Dokumen root tidak disunting tanpa perintah pemilik; kalau ada yang bertentangan

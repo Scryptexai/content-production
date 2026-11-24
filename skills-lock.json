@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "skills": {
+    "add-captions": {
+      "source": "DojoCodingLabs/remotion-superpowers",
+      "commit": "970efd2d2f4ce2492231a31ee684c2ead883f4bc",
+      "sourceType": "github",
+      "skillPath": "skills/add-captions/SKILL.md",
+      "computedHash": "057c90160d67cfd830d0a11a3b1938aa44a679efe1856074b1919020cd51c426",
+      "installMode": "copy"
+    },
+    "create-short": {
+      "source": "DojoCodingLabs/remotion-superpowers",
+      "commit": "970efd2d2f4ce2492231a31ee684c2ead883f4bc",
+      "sourceType": "github",
+      "skillPath": "skills/create-short/SKILL.md",
+      "computedHash": "fff1351dbde24adbdf89246dc4af8e6016036970a8a06b93f997ea994923b17d",
+      "installMode": "copy"
+    },
+    "review-video": {
+      "source": "DojoCodingLabs/remotion-superpowers",
+      "commit": "970efd2d2f4ce2492231a31ee684c2ead883f4bc",
+      "sourceType": "github",
+      "skillPath": "skills/review-video/SKILL.md",
+      "computedHash": "ad398b4359d42f227c01bf52d5b58db6aeb7d52acbe0aad124ddfb7178f5eaf4",
+      "installMode": "copy"
+    },
+    "video-motion": {
+      "source": "Amal-David/awesome-video-skills",
+      "commit": "99cab1eb6c6d8742d1b074d9ab0d2f1987ec01d3",
+      "sourceType": "github",
+      "skillPath": "skills/video-motion/SKILL.md",
+      "computedHash": "19576a9c425d2b11b6ea5bba062805c45048d80d7c942a46a224ac550518fe76",
+      "installMode": "copy"
+    },
+    "video-quality-review": {
+      "source": "Amal-David/awesome-video-skills",
+      "commit": "99cab1eb6c6d8742d1b074d9ab0d2f1987ec01d3",
+      "sourceType": "github",
+      "skillPath": "skills/video-quality-review/SKILL.md",
+      "computedHash": "a89ae49a480d4a78c48e65de8a888d9339d836b5d4258aee1672ea095fcea739",
+      "installMode": "copy"
+    }
+  }
+}

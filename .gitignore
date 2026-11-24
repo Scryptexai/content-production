@@ -94,3 +94,9 @@ work/*/out/*.mp4
 work/*/audio/*.wav
 work/*/cat.mp4
 work/*/footage/
+
+# curated, pinned project-local agent skill references are source documentation
+!.agents/
+!.agents/skills/
+!.agents/skills/**
+!skills-lock.json
