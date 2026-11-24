@@ -398,9 +398,63 @@ def style(title):
     return w
 
 
-def validate(meta, media_dir, check_media=True):
-    """Yang gagal di sini adalah yang ditolak YouTube, bukan selera kita."""
+def validate_remotion_provenance(meta):
+    """Return hard errors if a publish master lacks Remotion provenance.
+
+    Every newly uploaded video must be visually rendered by Remotion. ffmpeg may
+    still post-process a Remotion render (audio, loudness, mux, faststart), but it
+    must never be the visual renderer. The committed manifest makes that gate
+    reviewable before the upload workflow touches Zernio.
+    """
     errs = []
+    prov = meta.get("render_provenance")
+    if not isinstance(prov, dict):
+        return ["render_provenance wajib ada: hanya master yang dirender Remotion boleh diunggah"]
+    required = ("engine", "engine_version", "composition", "entrypoint", "renderer", "manifest")
+    missing = [key for key in required if not isinstance(prov.get(key), str) or not prov[key].strip()]
+    if missing:
+        errs.append("render_provenance tidak lengkap: " + ", ".join(missing))
+    if prov.get("engine") != "remotion":
+        errs.append("engine render wajib 'remotion'; FFmpeg-only atau renderer lain dilarang")
+    if prov.get("renderer") != "@remotion/renderer":
+        errs.append("renderer wajib '@remotion/renderer'")
+    repo_root = ROOT.parent
+    entrypoint = prov.get("entrypoint")
+    if isinstance(entrypoint, str) and not (repo_root / entrypoint).is_file():
+        errs.append(f"entrypoint Remotion tidak ditemukan: {entrypoint}")
+    manifest_rel = prov.get("manifest")
+    if not isinstance(manifest_rel, str) or not manifest_rel.strip():
+        return errs
+    manifest_path = (repo_root / manifest_rel).resolve()
+    try:
+        manifest_path.relative_to(repo_root.resolve())
+    except ValueError:
+        return errs + ["manifest Remotion harus berada di dalam repository"]
+    if not manifest_path.is_file():
+        return errs + [f"manifest Remotion tidak ditemukan: {manifest_rel}"]
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return errs + [f"manifest Remotion tidak valid: {exc}"]
+    if manifest.get("engine") != "remotion" or manifest.get("renderer") != "@remotion/renderer":
+        errs.append("manifest tidak membuktikan render @remotion/renderer")
+    for key in ("episode", "composition", "entrypoint", "master_sha256"):
+        if not isinstance(manifest.get(key), str) or not manifest[key].strip():
+            errs.append(f"manifest Remotion tidak memiliki {key}")
+    if manifest.get("episode") not in (None, meta.get("episode")):
+        errs.append("episode di manifest tidak sama dengan metadata")
+    if manifest.get("composition") not in (None, prov.get("composition")):
+        errs.append("composition di manifest tidak sama dengan metadata")
+    if manifest.get("entrypoint") not in (None, prov.get("entrypoint")):
+        errs.append("entrypoint di manifest tidak sama dengan metadata")
+    if manifest.get("master_sha256") != meta.get("sha256"):
+        errs.append("sha256 master di manifest Remotion tidak sama dengan metadata")
+    return errs
+
+
+def validate(meta, media_dir, check_media=True):
+    """Yang gagal di sini adalah yang ditolak YouTube atau melanggar gate kanal."""
+    errs = validate_remotion_provenance(meta)
     title = meta.get("title", "")
     if not title.strip():
         errs.append("judul kosong")

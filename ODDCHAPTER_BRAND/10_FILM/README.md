@@ -5,6 +5,12 @@ A real, rendered vertical film: **1080×1920, 29.2 s, 30 fps, H.264 / AAC**,
 It is a **brand pilot**, not an episode: it makes no factual claim, and the
 diagram plate is explicitly labelled as a mechanism illustration.
 
+> **Gate kanal:** setiap publish master baru wajib dirender visualnya dengan
+> Remotion (`@remotion/renderer`). FFmpeg hanya boleh menjadi tahap pasca-render
+> untuk audio/container/QC, bukan renderer visual. Lihat
+> [`REMOTION_REQUIRED.md`](REMOTION_REQUIRED.md); `upload_zernio.py` menolak
+> metadata tanpa bukti render Remotion.
+
 | cut | file | use |
 |---|---|---|
 | clean | `final/ODDCHAPTER_PILOT_001_1080x1920_29s.mp4` | YouTube long-form, embeds, press |
