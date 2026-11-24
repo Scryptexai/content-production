@@ -1,8 +1,8 @@
 # LF03 · rencana produksi — Sinar Bangun 4
 
 **Status:** pra-produksi terbatas. Naskah panjang dan Short turunan telah disetujui
-pemilik untuk perencanaan Remotion serta paket VO/aset; tidak ada izin take audio,
-render, master, Drive, antrean, atau publikasi.
+pemilik untuk perencanaan Remotion serta paket VO/aset. Uji VO ada, tetapi belum ada
+take final, render, master, Drive, antrean, atau publikasi.
 
 **Tesis:** Angin memukul kapal, tetapi daftar keselamatan sudah gagal sebelum
 keberangkatan: kapasitas 45, verifikasi 188, dan nama korban yang baru dikumpulkan
@@ -57,8 +57,10 @@ setelah kapal tenggelam.
       `check_info_design.py`; audit format AK tercatat khusus.
 - [x] Pemilik mengizinkan rencana scene serta manifest VO/aset dalam
       `02_SCRIPT/AK-EP12_sinar-bangun_PREPRODUCTION.md`, tanpa media master.
-- [ ] Satu suara kanal yang disetujui dipakai konsisten; tidak memakai `voice-06`
-      atau `voice-07`; take dan timing nyata masih harus diukur.
+- [x] Pemilik memilih narator feminin Indonesia; baca sumber diukur 55,080 detik dan
+      dikarantina, sedangkan tes pemadatan 41,920 detik dicatat tanpa percepatan.
+- [ ] Pemilik menyetujui/revisi Kandidat Pemadatan B sebelum copy, ketiga gate, dan
+      sembilan cue final diperbarui; `voice-06` dan `voice-07` tetap dilarang.
 - [ ] Setelah persetujuan pre-render/master, setiap aset dan output mendapat
       sumber/lisensi/provenance; render mencatat `@remotion/renderer`.
 - [ ] Tidak ada upload, antrean `requested`, jadwal, atau publikasi sebelum

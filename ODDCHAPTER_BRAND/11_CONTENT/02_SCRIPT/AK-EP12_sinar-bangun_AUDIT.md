@@ -1,8 +1,8 @@
 # Audit naskah Short — AK-EP12 · Sinar Bangun 4
 
-**Status:** `PRA-PRODUKSI DISETUJUI — naskah/gate tetap LULUS; perencanaan Remotion
-dan paket VO/aset dapat disiapkan. Belum ada take VO, render, master, antrean, Drive,
-atau unggahan.`
+**Status:** `PRA-PRODUKSI DISETUJUI — naskah/gate tetap LULUS; rencana Remotion dan
+paket VO/aset disiapkan. Uji durasi VO ada, tetapi belum ada take final, render,
+master, antrean, Drive, atau unggahan.`
 
 **Persetujuan pemilik:** Short disetujui untuk **pra-produksi saja** setelah review
 naskah, kartu angka, dan arah visual. Persetujuan ini tidak mencakup render, transfer,
@@ -45,9 +45,12 @@ dalam satu baris yang tidak membawa angka; sebelumnya tokeniser hanya mengenali 
 dengan huruf awal kapital seperti `Sinar` atau `Bangun`.
 
 Pemeriksa Short membaca digit sebagai satu token dan menghitung rancangan ini sebagai
-35 detik. Rekaman final **wajib** tetap mengukur tempo Indonesia sebenarnya, sebab
-angka akan dibaca sebagai kata. Jika hasil nyata melewati 45 detik, penulis memotong
-kata dari naskah; audio tidak boleh dipercepat secara buta.
+35 detik. Uji aktual memakai narator feminin yang dipilih pemilik menunjukkan bahwa
+baca penuh angka sebagai kata berjumlah **55,080 detik** (gagal target). Audio itu
+dikarantina dan tidak dipercepat. Satu tes pemadatan terpisah mencapai **41,920
+detik**, tetapi belum menggantikan copy yang digate. Detail cue, PCM 24 kHz mono,
+hash, dan keputusan editorial yang masih dibutuhkan ada di
+`AK-EP12_sinar-bangun_PREPRODUCTION.md` §2a.
 
 ## Keputusan visual pra-produksi
 
@@ -68,8 +71,10 @@ dijalankan/dihasilkan ketika pra-produksi ini disiapkan.
       pra-produksi**.
 - [x] Cue VO, baseline frame, manifest aset, source mapping, dan batas etik dicatat
       dalam `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
-- [ ] Pemilik memilih satu suara internal kanal; teks rekam berangka diuji/dibaca dan
-      durasi nyata setiap cue dicatat.
+- [x] Pemilik memilih narator feminin Indonesia; pembacaan sumber sembilan cue diuji
+      dan gagal 55,080 detik tanpa time-stretch. Tes pemadatan 41,920 detik dicatat.
+- [ ] Pemilik menyetujui atau merevisi Kandidat Pemadatan B sebelum naskah/cue final
+      diperbarui, ketiga gate diulang, dan total cue final diukur.
 - [ ] Persetujuan pre-render/render-master terpisah diterima sebelum bundle/renderer,
       caption, render Remotion, atau QC teknis dijalankan.
 - [ ] Review master terpisah sebelum Drive, queue, jadwal, atau unggah.

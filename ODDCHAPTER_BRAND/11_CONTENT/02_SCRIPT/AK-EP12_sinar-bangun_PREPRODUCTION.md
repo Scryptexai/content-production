@@ -40,8 +40,9 @@ sebagai desain informasi tanpa mencari foto kapal atau footage tragedi.
 ## 2 · Peta VO yang siap direkam
 
 Teks di bawah identik secara makna dengan naskah Short yang sudah lulus gate. Tanda
-waktu adalah **cue editing sementara**, bukan hasil pengukuran suara atau klaim bahwa
-file audio sudah ada.
+waktu adalah **cue editing sementara**. Pembacaan sumber sudah diuji setelah pemilik
+memilih narator feminin berbahasa Indonesia; hasilnya dicatat di §2a dan tidak
+mengubah naskah terkunci tanpa keputusan editorial berikutnya.
 
 | Cue | Waktu rencana | Teks rekam yang diverifikasi | Frame / scene | Fakta |
 |---|---:|---|---|---|
@@ -61,14 +62,49 @@ file audio sudah ada.
 delapan*, `16.50` dibaca *enam belas lima puluh*, dan `1,5–2 meter` dibaca *satu
 setengah sampai dua meter*. Tidak ada SSML/markup pada naskah rekam.
 2. Gunakan satu suara internal kanal yang **dipilih/disetujui pemilik**; rencana
-   produksi induk melarang `voice-06` dan `voice-07`. Belum ada voice ID, file WAV,
-   atau take sintetis yang dibuat untuk AK-EP12.
-3. Setelah suara dipilih, buat take bersih dari sembilan cue ini, ukur durasi setiap
-   cue dan totalnya, lalu sesuaikan `from/until` scene. Bila total melampaui 45
-detik, potong kata dengan audit editorial—jangan mempercepat audio secara buta.
+   produksi induk melarang `voice-06` dan `voice-07`. Pemilik telah memilih kandidat
+   **feminin / id-ID** pada audisi. ID penyedia bersifat sesi dan tidak dicatat sebagai
+   kredensial/pengganti persetujuan editorial.
+3. Pembacaan sumber sembilan cue telah diukur (lihat §2a) dan melampaui 45 detik.
+   Karena itu ia dikarantina sebagai bukti timing gagal—bukan take final. Bila total
+   melampaui 45 detik, potong kata dengan audit editorial—jangan mempercepat audio
+   secara buta.
 4. Sebelum render, pemeriksa mengonfirmasi kata `hilang` pada V06 dan bahwa V07
    tidak mengubah `188` menjadi manifest. Tidak ada nama orang, tuduhan, SPB, atau
    angka kematian pasti di VO.
+
+### 2a · Hasil audisi dan uji waktu — belum menjadi VO final
+
+Pemilik memilih kandidat **narator feminin Indonesia** pada audisi. Audio berikut
+adalah bahan pra-produksi lokal, bukan media master, dan tidak ditambahkan ke
+komposisi, dibundel, dirender, atau dipindah ke Drive.
+
+| Uji | Materi | Hasil ukur `ffprobe` | Putusan |
+|---|---|---:|---|
+| A · baca naskah sumber | Sembilan cue persis seperti tabel V01–V09; PCM S16LE, 24 kHz, mono | **55,080 detik** tanpa jeda tambahan | **GAGAL** target 35–45 detik. Dikarantina; tidak boleh dipercepat atau dipakai sebagai master. |
+| B · tes pemadatan | Satu take kontigu dari teks kandidat di bawah; PCM S16LE, 24 kHz, mono | **41,920 detik** | Lulus durasi sebagai **tes saja**. Teksnya belum menggantikan naskah/gate dan menunggu persetujuan editorial pemilik. |
+
+Take A dipindahkan ke `work/sinar-bangun/vo_internal/rejected-original-read/` agar
+tidak tertukar dengan kandidat berikutnya. File uji B berada di
+`work/sinar-bangun/vo_internal/AK-EP12_cut-B_duration-test.wav`; SHA-256-nya adalah
+`9c759824d9e9f7d46443cd06f7fa6cab28af766f50a92d1286f25acb3135a66f`.
+Tidak ada file audio yang dipentaskan sebagai `master`.
+
+**Kandidat pemadatan B — hanya untuk keputusan editorial**
+
+> Angka 188 muncul sembilan hari sesudah kapal tenggelam. Kenapa baru muncul
+> sesudahnya? Kita kira dihitung di dermaga. Pada 18 Juni 2018, kapal berangkat pukul
+> 16.50. Dua puluh menit kemudian, gelombang 1,5 sampai 2 meter membalikkan kapal.
+> Dokumen: 45. Posko: 188. 21 selamat, 3 meninggal, 164 hilang. Di KNKT, 188 bukan
+> angka dermaga. KNKT meminta manifest sebelum berangkat. Hitung sebelum berangkat,
+> atau cari sesudahnya?
+
+Pemadatan B tidak menambah fakta: F01, F02, F04, F05, F14, dan F19 tetap satu-satunya
+landasannya. Namun ia mengubah redaksi hook, pertanyaan, dan setup; karena itu ia
+**belum** boleh menggantikan naskah sumber sampai pemilik menyetujuinya dan ketiga
+gate Short dijalankan ulang. Jika disetujui, pertanyaan B akan ditulis menjadi
+`Kenapa 188 baru muncul sesudahnya?` agar tetap membawa token fakta eksplisit sebelum
+pembuatan ulang take terpisah.
 
 ---
 
@@ -134,14 +170,18 @@ aa9045eb0c6e0f64d5803d15cb131bd049c854007f3f44ed88dcc41065f5fac8  inter-latin-50
   / 30 fps / 1.200 frame.
 - Scene dibaca secara statis terhadap naskah dan lembar fakta: label `188`, `45`,
   `21`, `3`, dan `164 HILANG` mempertahankan batas sumbernya.
-- Tidak ada aset media baru, master, screenshot, bundel Remotion runtime, render
-  still, `renderMedia`, FFmpeg, Drive, Zernio, queue, jadwal, atau upload yang
-dijalankan untuk AK-EP12.
+- Tidak ada aset visual eksternal, master, screenshot, bundel Remotion runtime,
+  render still, `renderMedia`, FFmpeg, Drive, Zernio, queue, jadwal, atau upload yang
+  dijalankan untuk AK-EP12. Satu-satunya media baru adalah test VO lokal yang diukur
+  dan dikarantina di §2a.
 
-### Wajib selesai **sesudah** persetujuan pra-render/master yang terpisah
+### Wajib selesai **sebelum meminta** persetujuan pra-render/master yang terpisah
 
-- [ ] Pemilik memilih/menyetujui satu suara kanal; take VO sembilan cue direkam atau
-disintesis sesuai keputusan itu, lalu durasinya diukur.
+- [x] Pemilik memilih narator feminin Indonesia; pembacaan sumber dan tes pemadatan
+  diukur tanpa percepatan audio.
+- [ ] Pemilik menyetujui/menolak Kandidat Pemadatan B. Jika disetujui, editor
+  memperbarui naskah/metadata, menjalankan tiga gate, lalu membuat ulang sembilan cue
+  final yang terpisah dan mengukur ulang totalnya.
 - [ ] Editor menandatangani perubahan cue/frame yang mungkin dibutuhkan oleh VO
   terukur dan melakukan pembacaan ulang etik/fakta.
 - [ ] Bundle/renderer preflight, render review/master Remotion, caption, loudness,
@@ -149,6 +189,7 @@ disintesis sesuai keputusan itu, lalu durasinya diukur.
 - [ ] Persetujuan master diberikan sebelum tindakan Drive, queue, jadwal, upload,
   unlist, penghapusan, atau publikasi apa pun.
 
-**Permintaan keputusan berikutnya:** setujui atau revisi paket pra-produksi ini dan,
-jika dilanjutkan ke tahap audio, pilih suara kanalnya. Persetujuan pra-render/master
-harus disebut terpisah dan tidak tersirat dari persetujuan ini.
+**Permintaan keputusan berikutnya:** pilih apakah Kandidat Pemadatan B boleh
+menggantikan copy VO sumber. Sesudah itu barulah sembilan cue final dan timing scene
+dapat dikunci. Persetujuan pra-render/master harus disebut terpisah dan tidak tersirat
+dari persetujuan ini.

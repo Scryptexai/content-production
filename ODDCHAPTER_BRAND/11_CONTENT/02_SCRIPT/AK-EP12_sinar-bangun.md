@@ -2,8 +2,8 @@
 
 **Format:** Short Indonesia, uji format pengganti · **Target:** 35–45 detik
 **Status:** `PRA-PRODUKSI DISETUJUI — perencanaan Remotion dan paket VO/aset
-terverifikasi boleh disiapkan; belum ada rekaman/take audio, render, master, Drive,
-antrean, jadwal, atau unggahan.`
+terverifikasi boleh disiapkan; uji durasi VO ada, tetapi belum ada take final, render,
+master, Drive, antrean, jadwal, atau unggahan.`
 
 **Paket pra-produksi:** `AK-EP12_sinar-bangun_PREPRODUCTION.md` mengunci cue VO,
 manifest aset, jejak fakta per scene, dan batas `40,0` detik yang masih sementara.
@@ -55,8 +55,11 @@ naskah panjang; sumber, batas, dan atribusi tetap mengikuti lembar fakta.
 >
 > Sebelum kapal berangkat, kamu menghitung 188 atau mencarinya?
 
-**Perkiraan mesin:** 39 detik dengan 9 segmen. Durasi nyata baru diputuskan dari
-VO terukur; bila melebihi 45 detik, potong kata—bukan percepat audio secara buta.
+**Perkiraan mesin:** 39 detik dengan 9 segmen. Uji baca penuh pertama oleh narator
+feminin terpilih berjumlah **55,080 detik** sehingga **gagal** target 35–45 detik dan
+tidak boleh dipercepat. Kandidat pemadatan 41,920 detik serta keputusan yang diperlukan
+ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md` §2a; naskah sumber di halaman ini belum
+diubah sampai pemilik menyetujuinya dan gate diulang.
 
 ### Copy baca untuk suara
 
@@ -86,7 +89,8 @@ Tidak ada markup, tag, atau SSML.
 
 Semua frame final kelak dirender oleh **Remotion / `@remotion/renderer`**. Paket
 pra-produksi scene dan aset ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`; tidak ada
-master, render frame, take audio, atau aset media eksternal yang dibuat pada tahap ini.
+master, render frame, take audio final, atau aset media eksternal. Uji VO lokal yang
+gagal/pemadatan hanya dicatat sebagai QC pra-produksi dan tidak ditempel ke komposisi.
 
 | Segmen | Gerak / informasi | Kartu sumber di layar |
 |---|---|---|
@@ -133,7 +137,9 @@ ada satu pun yang boleh disalin menjadi antrean unggah pada tahap ini.
       `check_info_design.py` lulus 7/7 setelah metadata Short diregistrasikan.
 - [x] Pemilik menyetujui naskah Short, kartu angka, dan arah visual **untuk
       pra-produksi saja**; rincian scene/VO/aset tercatat di paket pra-produksi.
-- [ ] Pemilihan suara internal kanal dan take VO terukur; perubahan timing dari take
-      harus diaudit.
+- [x] Pemilik memilih narator feminin Indonesia; baca naskah sumber terukur 55,080
+      detik dan dikarantina karena gagal batas durasi tanpa percepatan audio.
+- [ ] Pemilik menyetujui/revisi Kandidat Pemadatan B (41,920 detik) sebelum ia dapat
+      menggantikan copy ini, lulus gate ulang, dan direkam sebagai sembilan cue final.
 - [ ] Persetujuan terpisah untuk pre-render/render master, lalu QC, Drive, antrean
       unggah, atau publikasi.
