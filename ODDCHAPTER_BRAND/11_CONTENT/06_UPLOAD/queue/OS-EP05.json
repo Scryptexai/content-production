@@ -4,11 +4,13 @@
   "status": "requested",
   "approved": true,
   "visibility": "public",
+  "action": "cancel",
+  "post_id": "6b041733fab67d8356d1abd0",
   "scheduledFor": "2026-11-23T12:34:08.000Z",
   "timezone": "UTC",
   "file": "work/piri-reis/out/OS-EP05_peta-piri-reis_feed.mp4",
   "master_sha256": "c1ef1a09fa26f579557954f170eef1349045667feaa9d4dfc6e9395725626658",
   "drive_video_id": "1V1-j4Zf90j4pFK8uUeIwb_xxiafLkon-",
   "izin": "user: post OS-EP04 now; schedule two completed follow-ups at +3 hours and +6 hours (2026-11-23)",
-  "catatan": "OS-EP05 siap rilis terjadwal +3 jam setelah post OS-EP04 pada 2026-11-23T09:34:08Z. Master Drive public-reader diverifikasi terhadap hash/ukuran metadata; visual bukti memakai scan Piri Reis 1513 public-domain dan peta OSM beratribusi."
+  "catatan": "TUNDA ATAS ARAHAN USER: jadwal Zernio +3 jam dibatalkan sebelum tayang untuk mengevaluasi distribusi Shorts dan menguji ulang format. Master Drive, hash, subtitle, serta paket sumber tetap dipertahankan; ini bukan penghapusan episode."
 }
