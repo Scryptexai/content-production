@@ -1,12 +1,13 @@
 # AK-EP12 — 188 NAMA YANG DIHITUNG SESUDAH KAPAL TENGGELAM
 
 **Format:** Short Indonesia, uji format pengganti · **Target:** 35–45 detik
-**Status:** `PRA-PRODUKSI DISETUJUI — perencanaan Remotion dan paket VO/aset
-terverifikasi boleh disiapkan; uji durasi VO ada, tetapi belum ada take final, render,
-master, Drive, antrean, jadwal, atau unggahan.`
+**Status:** `PRA-PRODUKSI DISETUJUI — copy C final, take VO terukur, dan scene
+Remotion siap untuk review pra-render; belum ada render, master video, Drive, antrean,
+jadwal, atau unggahan.`
 
-**Paket pra-produksi:** `AK-EP12_sinar-bangun_PREPRODUCTION.md` mengunci cue VO,
-manifest aset, jejak fakta per scene, dan batas `40,0` detik yang masih sementara.
+**Paket pra-produksi:** `AK-EP12_sinar-bangun_PREPRODUCTION.md` mengunci VO kontigu
+41,360 detik, manifest aset, jejak fakta per scene, serta timing scene 42,0 detik
+(termasuk hold visual 0,640 detik).
 
 **Induk yang disetujui:** `07_LONGFORM/LF03_sinar-bangun/SCRIPT.md`
 
@@ -37,29 +38,30 @@ naskah panjang; sumber, batas, dan atribusi tetap mengikuti lembar fakta.
 
 ## 1 · Naskah VO
 
-> Angka 188 baru muncul sembilan hari sesudah kapal tenggelam.
+> Angka 188 muncul sembilan hari sesudah kapal tenggelam.
 >
-> Menurut kamu, kenapa 188 baru ada sesudah kapal tenggelam?
+> Kenapa 188 muncul belakangan?
 >
 > Kita kira 188 dihitung di dermaga.
 >
-> 18 Juni 2018, Sinar Bangun 4 berangkat pukul 16.50.
+> 18 Juni 2018, kapal berangkat 16.50.
 >
 > Dua puluh menit, gelombang 1,5 sampai 2 meter membalikkan kapal.
 >
-> Lihat angka ini: 45 di dokumen; 21 selamat; 3 meninggal; 164 hilang.
+> Dokumen 45, posko 188: 21 selamat, 3 meninggal, 164 hilang.
 >
-> Coba baca KNKT: 188, tapi bukan angka dermaga.
+> KNKT: 188 bukan angka dermaga.
 >
-> KNKT meminta manifest sebelum kapal berangkat.
+> KNKT meminta manifest sebelum berangkat.
 >
-> Sebelum kapal berangkat, kamu menghitung 188 atau mencarinya?
+> Hitung 188 sebelum kapal berangkat, atau cari?
 
-**Perkiraan mesin:** 39 detik dengan 9 segmen. Uji baca penuh pertama oleh narator
-feminin terpilih berjumlah **55,080 detik** sehingga **gagal** target 35–45 detik dan
-tidak boleh dipercepat. Kandidat pemadatan 41,920 detik serta keputusan yang diperlukan
-ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md` §2a; naskah sumber di halaman ini belum
-diubah sampai pemilik menyetujuinya dan gate diulang.
+**Uji timing:** baca sumber penuh berjumlah **55,080 detik** dan Pemadatan B versi
+tepat **45,800 detik**—keduanya gagal tanpa time-stretch. Setelah Pemadatan C dan
+pembetulan token gerbang, take kontigu C final di atas mengukur **41,360 detik**
+(PCM 24 kHz mono); ia berada dalam target 35–45 detik. Riwayat hash dan pengukuran
+ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md` §2a. Ini adalah aset VO pra-produksi,
+bukan izin render atau master video.
 
 ### Copy baca untuk suara
 
@@ -75,13 +77,13 @@ Tidak ada markup, tag, atau SSML.
 
 | Kebutuhan | Isi AK-EP12 |
 |---|---|
-| 1. Hook + mesin | `Angka 188 baru muncul sembilan hari sesudah kapal tenggelam.` · **salah sangka:** angka yang kita kira ada di dermaga baru disusun di posko. |
+| 1. Hook + mesin | `Angka 188 muncul sembilan hari sesudah kapal tenggelam.` · **salah sangka:** angka yang kita kira ada di dermaga baru disusun di posko. |
 | 2. Awareness | `Kita kira 188 dihitung di dermaga.` Keselamatan dimulai sebelum kapal bergerak. |
 | 3. Pertanyaan tengah | `45 di dokumen` **atau** `188 di posko` — angka mana yang seharusnya sudah menjawab jumlah orang sebelum berangkat? |
-| 4. Penutup + loop | `kamu menghitung 188 atau mencarinya?` kembali ke kapal dan angka hook. |
+| 4. Penutup + loop | `Hitung 188 sebelum kapal berangkat, atau cari?` kembali ke kapal dan angka hook. |
 | 5. Kalimat tanda tangan | `188 bukan angka kapal. Ia angka posko.` Muncul di kartu visual; VO memadatkannya. |
 | 6. Kartu angka | `16.50`, `17.10`, `45`, `188`, `21 / 3 / 164`; kartu terakhir harus tetap berbunyi `164 HILANG`, bukan `164 MENINGGAL`. |
-| 7. Batas potong | 0,0–3,5 · 3,5–7,0 · 7,0–10,5 · 10,5–15,0 · 15,0–20,0 · 20,0–27,0 · 27,0–32,0 · 32,0–36,0 · 36,0–40,0. Timing ini hanya rancangan sampai VO diukur. |
+| 7. Batas potong | 0,0–5,3 · 5,3–8,2 · 8,2–11,8 · 11,8–15,9 · 15,9–20,9 · 20,9–30,2 · 30,2–33,7 · 33,7–37,5 · 37,5–42,0. Take berakhir 41,360; 0,640 detik terakhir adalah hold visual. |
 
 ---
 
@@ -89,20 +91,20 @@ Tidak ada markup, tag, atau SSML.
 
 Semua frame final kelak dirender oleh **Remotion / `@remotion/renderer`**. Paket
 pra-produksi scene dan aset ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`; tidak ada
-master, render frame, take audio final, atau aset media eksternal. Uji VO lokal yang
-gagal/pemadatan hanya dicatat sebagai QC pra-produksi dan tidak ditempel ke komposisi.
+master, render frame, atau aset media eksternal. Take VO C final terukur tersedia lokal
+namun belum ditempel ke komposisi; take gagal tetap hanya catatan QC pra-produksi.
 
 | Segmen | Gerak / informasi | Kartu sumber di layar |
 |---|---|---|
-| 0,0–3,5 | Titik data jatuh ke meja posko, lalu mengunci di `188`; kamera data menekan angka, bukan logo. | `KNKT · HARI KE-9` |
-| 3,5–7,0 | `188` mundur menjadi deretan titik tak bernama; pertanyaan memotong ke peta rute. | `SIMANINDO → TIGARAS` |
-| 7,0–10,5 | Diagram dermaga bergerak: titik masuk, tanpa meniru orang atau korban. | `DATA POSKO` |
-| 10,5–15,0 | Timeline menggeser `16.50` ke `17.10`; garis rute berhenti sebelum tujuan. | `18 JUNI 2018 · KNKT I.1` |
-| 15,0–20,0 | Gelombang abstrak dari kiri memiringkan siluet kapal; label `1,5–2 METER`. | `KNKT I.1` |
-| 20,0–27,0 | Kartu `45` berhadapan dengan `188`; lalu empat kartu kecil `21 / 3 / 164 HILANG`. | `45: RILIS HASIL KNKT` / `188: VERIFIKASI POSKO` |
-| 27,0–32,0 | Kartu `188` digeser ke label `HARI KE-9`, bukan ke kolom manifest; garis putus-putus menunjukkan perbedaan. | `BUKAN MANIFEST` |
-| 32,0–36,0 | Lembar rekomendasi abstrak membuka baris `MANIFEST SEBELUM BERANGKAT`. | `REKOMENDASI KNKT` |
-| 36,0–40,0 | `188` dan siluet kapal kembali; pertanyaan akhir tetap diam 1 detik setelah VO. | `SEBELUM BERANGKAT?` |
+| 0,0–5,3 | Titik data jatuh ke meja posko, lalu mengunci di `188`; kamera data menekan angka, bukan logo. | `KNKT · HARI KE-9` |
+| 5,3–8,2 | `188` mundur menjadi deretan titik tak bernama; pertanyaan memotong ke peta rute. | `SIMANINDO → TIGARAS` |
+| 8,2–11,8 | Diagram dermaga bergerak: titik masuk, tanpa meniru orang atau korban. | `DATA POSKO` |
+| 11,8–15,9 | Timeline menggeser `16.50` ke `17.10`; garis rute berhenti sebelum tujuan. | `18 JUNI 2018 · KNKT I.1` |
+| 15,9–20,9 | Gelombang abstrak dari kiri memiringkan siluet kapal; label `1,5–2 METER`. | `KNKT I.1` |
+| 20,9–30,2 | Kartu `45` berhadapan dengan `188`; lalu empat kartu kecil `21 / 3 / 164 HILANG`. | `45: RILIS HASIL KNKT` / `188: VERIFIKASI POSKO` |
+| 30,2–33,7 | Kartu `188` digeser ke label `HARI KE-9`, bukan ke kolom manifest; garis putus-putus menunjukkan perbedaan. | `BUKAN MANIFEST` |
+| 33,7–37,5 | Lembar rekomendasi abstrak membuka baris `MANIFEST SEBELUM BERANGKAT`. | `REKOMENDASI KNKT` |
+| 37,5–42,0 | `188` dan siluet kapal kembali; pertanyaan akhir berhenti 0,640 detik sesudah VO. | `HITUNG 188 ATAU CARI?` |
 
 **Larangan visual:** tidak ada jenazah, wajah korban, keluarga, footage bencana dari
 lokasi lain, foto kapal yang belum diverifikasi, atau simulasi yang disajikan sebagai
@@ -137,9 +139,9 @@ ada satu pun yang boleh disalin menjadi antrean unggah pada tahap ini.
       `check_info_design.py` lulus 7/7 setelah metadata Short diregistrasikan.
 - [x] Pemilik menyetujui naskah Short, kartu angka, dan arah visual **untuk
       pra-produksi saja**; rincian scene/VO/aset tercatat di paket pra-produksi.
-- [x] Pemilik memilih narator feminin Indonesia; baca naskah sumber terukur 55,080
-      detik dan dikarantina karena gagal batas durasi tanpa percepatan audio.
-- [ ] Pemilik menyetujui/revisi Kandidat Pemadatan B (41,920 detik) sebelum ia dapat
-      menggantikan copy ini, lulus gate ulang, dan direkam sebagai sembilan cue final.
+- [x] Pemilik memilih narator feminin Indonesia dan menyetujui Pemadatan B/C; take
+      gagal dikarantina tanpa time-stretch, sedangkan take C final kontigu lulus 41,360 detik.
+- [x] Copy C final dan metadata lulus ulang `check_story.py` (41,36 dtk terukur),
+      `check_research.py` (0 isu), dan `check_info_design.py` (7/7).
 - [ ] Persetujuan terpisah untuk pre-render/render master, lalu QC, Drive, antrean
       unggah, atau publikasi.

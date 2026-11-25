@@ -10,7 +10,7 @@ tujuh hal yang bisa dibuktikan dari teks naskah:
   D  pertanyaan tertahan   — hook bertanya / loop bertanya, celah tidak dijawab
   E  tesis–antitesis–sintesis — turn memuat klaim, lawan klaim, dan pembacaan
   F  bukti bisa ditunjuk   — ≥3 beat memuat angka/tanggal/jarak/nominal
-  G  suara penyelidik      — ≥2 sapaan, dan tidak ada tuduhan mutlak pada nama
+  G  suara penyelidik      — ≥2 sapaan/ajakan langsung, dan tidak ada tuduhan mutlak pada nama
 
     python3 tools/check_info_design.py             # tabel semua episode
     python3 tools/check_info_design.py EP11 -v     # satu episode, rincian
@@ -48,6 +48,9 @@ TUDUHAN = re.compile(
     r"tersangka\s+adalah)\b", re.I)
 
 SAPA = re.compile(r"\b(kamu|kita|anda)\b", re.I)
+# Pertanyaan langsung serta imperatif mental juga menyapa penonton; copy ringkas
+# tidak harus mengulang pronoun jika penonton jelas diminta menghitung/mencari.
+AJAK_AKTIF = re.compile(r"^\s*(lihat|coba|bayangkan|ingat|hitung|cari|bandingkan|pilih|jawab)\b", re.I)
 
 NAMA_CEK = ("A", "B", "C", "D", "E", "F", "G")
 
@@ -139,13 +142,19 @@ def check_f(e):
 
 def check_g(e):
     """Suara penyelidik, bukan hakim."""
-    n = sum(len(SAPA.findall(t)) for t in scripts(e))
-    if n < 2:
-        return False, f"sapaan hanya {n} — penonton tidak diajak"
+    utterances = []
+    for text in scripts(e):
+        utterances.extend(x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x)
+    invitations = [
+        sentence for sentence in utterances
+        if SAPA.search(sentence) or sentence.rstrip().endswith("?") or AJAK_AKTIF.search(sentence)
+    ]
+    if len(invitations) < 2:
+        return False, f"sapaan/ajakan hanya {len(invitations)} — penonton tidak diajak"
     bad = [t for t in scripts(e) if TUDUHAN.search(t)]
     if bad:
         return False, f"tuduhan mutlak: {bad[0][:60]}…"
-    return True, f"{n} sapaan, tanpa tuduhan mutlak"
+    return True, f"{len(invitations)} sapaan/ajakan, tanpa tuduhan mutlak"
 
 
 CHECKS = [check_a, check_b, check_c, check_d, check_e, check_f, check_g]

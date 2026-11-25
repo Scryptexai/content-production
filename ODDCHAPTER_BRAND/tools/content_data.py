@@ -2423,7 +2423,7 @@ for _e in EPISODES:
 #
 # AK-EP12 hanya dipakai oleh pemeriksa naskah. Ia sengaja berada di koleksi
 # terpisah agar generator program 21 episode tidak menciptakan aset/tayangan
-# otomatis untuk draf yang masih menunggu persetujuan pra-produksi.
+# otomatis untuk pilot yang tetap memerlukan persetujuan render/master dan publikasi terpisah.
 # ══════════════════════════════════════════════════════════════════════════
 
 AK_EPISODES = [
@@ -2436,32 +2436,33 @@ AK_EPISODES = [
         short_parent="11_CONTENT/07_LONGFORM/LF03_sinar-bangun/SCRIPT.md",
         title="188 NAMA YANG DIHITUNG SESUDAH KAPAL TENGGELAM",
         struktur="klimaks-awal", thumb=["188", "NAMA"], thumb_text="188 NAMA",
-        durasi=40, plate="vessel", photos=[],
+        durasi=42, plate="vessel", photos=[],
+        measured_duration_seconds=41.36,
         protagonis="Angka 188 yang baru disusun di posko sembilan hari setelah kapal tenggelam.",
         mau="Menjawab siapa yang perlu dicari sebelum daftar dapat dipastikan.",
         hambatan="Jumlah penumpang baru diverifikasi setelah kecelakaan.",
         tanaman="Angka 188: hasil posko hari kesembilan, bukan angka keberangkatan.",
-        hook="Angka 188 baru muncul sembilan hari sesudah kapal tenggelam.",
-        hook_alt="Kapal itu berangkat. Angka 188 baru selesai sembilan hari kemudian.",
-        tanya="Menurut kamu, kenapa 188 baru ada sesudah kapal tenggelam?",
+        hook="Angka 188 muncul sembilan hari sesudah kapal tenggelam.",
+        hook_alt="Kapal berangkat. Angka 188 muncul sembilan hari kemudian.",
+        tanya="Kenapa 188 muncul belakangan?",
         entitas="angka",
         relate="Kita kira 188 dihitung di dermaga.",
         diskusi="Apakah jumlah penumpang harus diumumkan sebelum kapal berangkat?",
-        celah="Mengapa angka 188 baru ada sesudah kapal tenggelam?",
+        celah="Mengapa 188 baru muncul sesudah kapal tenggelam?",
         gambar_melekat="Angka 188 muncul di posko sembilan hari setelah kapal hilang.",
         beats=[
-            ("tanya", "Menurut kamu, kenapa 188 baru ada sesudah kapal tenggelam?"),
+            ("tanya", "Kenapa 188 muncul belakangan?"),
             ("relate", "Kita kira 188 dihitung di dermaga."),
-            ("setup", "18 Juni 2018, Sinar Bangun 4 berangkat pukul 16.50."),
+            ("setup", "18 Juni 2018, kapal berangkat 16.50."),
             ("tension", "Dua puluh menit, gelombang 1,5 sampai 2 meter membalikkan kapal."),
-            ("tension", "Lihat angka ini: 45 di dokumen; 21 selamat; 3 meninggal; 164 hilang."),
-            ("turn", "Coba baca laporan KNKT: 188, tapi bukan angka dermaga."),
-            ("consequence", "KNKT meminta manifest sebelum kapal berangkat."),
+            ("tension", "Dokumen 45, posko 188: 21 selamat, 3 meninggal, 164 hilang."),
+            ("turn", "KNKT: 188 bukan angka dermaga."),
+            ("consequence", "KNKT meminta manifest sebelum berangkat."),
         ],
         turn_quote="“188 adalah angka keberangkatan.”",
         turn_verdict=("Laporan KNKT menjelaskan 188 berasal dari verifikasi posko hari "
                       "kesembilan, bukan manifest keberangkatan."),
-        loop="Sebelum kapal berangkat, kamu menghitung 188 atau mencarinya?",
+        loop="Hitung 188 sebelum kapal berangkat, atau cari?",
         cues=["HARI KE-9", "188", "45 KE 188", "16.50 KE 17.10"],
         captions=["", "Kenapa 188?", "188 di dermaga?", "18 Juni 2018.",
                   "Dua puluh menit.", "45. 21. 3. 164.", "Bukan angka dermaga.",

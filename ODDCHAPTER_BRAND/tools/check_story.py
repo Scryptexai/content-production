@@ -33,7 +33,7 @@ CONCRETE = set("""
 orang pria perempuan anak ibu ayah istri bayi mahasiswa pendaki penjaga awak kapten penumpang pekerja
 dokter ilmuwan insinyur tentara pasukan warga keluarga saudara mayat senjata tubuh tangan kaki kepala mata mulut
 gigi tulang dada darah rambut wajah kulit otak jantung
-tenda sepatu kaus jaket pakaian topi masker kuas kertas buku jurnal arsip surat peta kunci pintu
+tenda sepatu kaus jaket pakaian topi masker kuas kertas buku jurnal arsip surat manifest peta kunci pintu
 jendela kamar rumah meja kursi cangkir lampu lilin jam menara mercusuar kapal sekoci perahu layar
 tong mobil jalan jembatan pagar pohon kayu batu gunung lereng jurang salju es air laut danau
 sungai hutan api asap gas angin hujan kabut langit bintang tanah lantai atap dinding gantungan
@@ -80,6 +80,9 @@ REPORT_WORDS = {
 }
 LOOK = {"lihat", "lihatlah", "bayangkan", "coba", "ingat", "dengar", "dengarkan",
         "perhatikan", "pikirkan", "bayangkanlah", "ikut"}
+# Kata kerja yang secara eksplisit mengajak penonton melakukan operasi mental, bukan
+# sekadar menyebut benda. Ia melengkapi (bukan menggantikan) ajakan melihat.
+ACTIVE_PROMPT = LOOK | {"hitung", "cari", "bandingkan", "pilih", "jawab"}
 SECOND = ("kamu", "kita", "anda")
 
 
@@ -105,13 +108,21 @@ def voice(e):
     if bad:
         fails.append(f"(6) kosakata laporan: {', '.join(bad)} — ganti dengan kalimat orang")
 
-    looks = sorted({w for w in words(script) if w in LOOK})
-    if len(looks) < 2:
-        fails.append(f"(6) ajakan melihat cuma {len(looks)} — minimal 2 (lihat/bayangkan/coba/ingat)")
+    active = sorted({w for w in words(script) if w in ACTIVE_PROMPT})
+    if len(active) < 2:
+        fails.append(f"(6) ajakan aktif cuma {len(active)} — minimal 2 (lihat/bayangkan/coba/hitung/cari)")
 
-    second = [s for s in sentences(script) if re.search(r"\b(kamu|kita|anda)\b", s.lower())]
-    if len(second) < 3:
-        fails.append(f"(6) kalimat yang menyapa penonton cuma {len(second)} — minimal 3")
+    # Sapaan dapat eksplisit (kamu/kita/anda), berupa pertanyaan langsung, atau
+    # berupa imperatif yang meminta tindakan penonton. Ketiganya mengajak orang
+    # menjawab di kepala; menghitung hanya pronoun akan salah menolak copy ringkas.
+    addressed = [
+        s for s in sentences(script)
+        if re.search(r"\b(kamu|kita|anda)\b", s.lower())
+        or s.rstrip().endswith("?")
+        or (words(s) and words(s)[0] in ACTIVE_PROMPT)
+    ]
+    if len(addressed) < 3:
+        fails.append(f"(6) kalimat yang menyapa/mengajak penonton cuma {len(addressed)} — minimal 3")
 
     nq = script.count("?")
     if nq < 2:
@@ -353,9 +364,20 @@ def check(e):
     # build_timing (0,22 dtk antar segmen, 0,9 dtk ekor). Tanpa jeda, hitungannya
     # selalu terlalu pendek 2-3 detik dan gerbangnya salah menolak.
     n_seg = len(e["beats"]) + 2
-    secs = round(total / 2.45 + 0.22 * (n_seg - 1) + 1.05)
+    estimated_secs = round(total / 2.45 + 0.22 * (n_seg - 1) + 1.05)
+    # A validated natural-language VO measurement is stronger evidence than this
+    # word-count heuristic, especially when digits expand to Indonesian words.
+    measured = e.get("measured_duration_seconds")
+    if measured is None:
+        secs = estimated_secs
+    else:
+        try:
+            secs = float(measured)
+        except (TypeError, ValueError):
+            fails.append("(produksi) measured_duration_seconds bukan angka")
+            secs = estimated_secs
     if not 35 <= secs <= 45:
-        fails.append(f"(produksi) {secs} detik, di luar 35–45 "  # data performa 16 Nov 2026
+        fails.append(f"(produksi) {secs:g} detik, di luar 35–45 "  # data performa 16 Nov 2026
                      f"(di atas 60 dtk hampir tidak pernah diputar ulang)")
     ph = e.get("photos") or []
     if ph and e.get("entitas") and any(w in ph[0] for w in ("island", "sea", "sky", "horizon")):

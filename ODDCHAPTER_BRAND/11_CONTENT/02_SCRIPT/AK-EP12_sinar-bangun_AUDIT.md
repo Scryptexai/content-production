@@ -1,8 +1,8 @@
 # Audit naskah Short — AK-EP12 · Sinar Bangun 4
 
-**Status:** `PRA-PRODUKSI DISETUJUI — naskah/gate tetap LULUS; rencana Remotion dan
-paket VO/aset disiapkan. Uji durasi VO ada, tetapi belum ada take final, render,
-master, antrean, Drive, atau unggahan.`
+**Status:** `PRA-PRODUKSI LENGKAP — copy C final, take VO terukur, scene, dan aset
+sudah siap untuk review pra-render; belum ada render, master video, antrean, Drive,
+atau unggahan.`
 
 **Persetujuan pemilik:** Short disetujui untuk **pra-produksi saja** setelah review
 naskah, kartu angka, dan arah visual. Persetujuan ini tidak mencakup render, transfer,
@@ -31,9 +31,9 @@ queue, penjadwalan, upload, publikasi, atau perubahan episode kanonik `EP12`.
 
 | Perintah | Hasil |
 |---|---|
-| `python3 ODDCHAPTER_BRAND/tools/check_story.py AK-EP12` | **LULUS** — 35 detik, echo `kapal`, tanpa kegagalan. |
-| `python3 ODDCHAPTER_BRAND/tools/check_research.py AK-EP12 -v` | **LULUS** — hook, seluruh beat, dan loop memiliki token fakta dari `AK-EP12_sinar-bangun_fakta.md`. |
-| `python3 ODDCHAPTER_BRAND/tools/check_info_design.py AK-EP12 -v` | **LULUS 7/7** — kronologi, karantina putusan, celah, tesis–antitesis–sintesis, angka, dan suara penyelidik. |
+| `python3 ODDCHAPTER_BRAND/tools/check_story.py AK-EP12` | **LULUS** — 41,36 detik dari pengukuran VO, echo `kapal`, tanpa kegagalan. |
+| `python3 ODDCHAPTER_BRAND/tools/check_research.py AK-EP12 -v` | **LULUS** — hook, seluruh beat, dan loop copy C final memiliki token fakta dari `AK-EP12_sinar-bangun_fakta.md`. |
+| `python3 ODDCHAPTER_BRAND/tools/check_info_design.py AK-EP12 -v` | **LULUS 7/7** — kronologi, karantina putusan, celah, tesis–antitesis–sintesis, angka, dan suara penyelidik/ajakan langsung. |
 | `python3 ODDCHAPTER_BRAND/tools/check_longform.py LF03_sinar-bangun` | **LULUS** — regresi induk tetap 1.424 kata / sekitar 9,5 menit. |
 | `python3 -m py_compile ...` dan JSON gate | Lulus sebelum commit. |
 
@@ -44,13 +44,19 @@ sebagai token fakta. Perubahan itu diperlukan karena Short memakai rekomendasi K
 dalam satu baris yang tidak membawa angka; sebelumnya tokeniser hanya mengenali nama
 dengan huruf awal kapital seperti `Sinar` atau `Bangun`.
 
-Pemeriksa Short membaca digit sebagai satu token dan menghitung rancangan ini sebagai
-35 detik. Uji aktual memakai narator feminin yang dipilih pemilik menunjukkan bahwa
-baca penuh angka sebagai kata berjumlah **55,080 detik** (gagal target). Audio itu
-dikarantina dan tidak dipercepat. Satu tes pemadatan terpisah mencapai **41,920
-detik**, tetapi belum menggantikan copy yang digate. Detail cue, PCM 24 kHz mono,
-hash, dan keputusan editorial yang masih dibutuhkan ada di
+Heuristik kata sebelumnya menghitung digit sebagai satu token dan terlalu pendek saat
+angka dibaca penuh dalam bahasa Indonesia. `check_story.py` kini menerima
+`measured_duration_seconds` tervalidasi sebagai bukti yang lebih kuat daripada
+heuristik; tanpa pengukuran field itu tetap memakai estimasi lama. Copy C final,
+dibaca natural oleh narator feminin terpilih, mengukur **41,360 detik** (PCM S16LE,
+24 kHz, mono) dan lulus target 35–45 detik. Baca sumber 55,080 detik, B tepat 45,800
+detik, B cue terpisah 49,160 detik, serta C token-gated 45,080 detik dikarantina tanpa
+time-stretch. Detail hash dan jalur aset ada di
 `AK-EP12_sinar-bangun_PREPRODUCTION.md` §2a.
+
+Pemeriksa story/info-design juga mengakui pertanyaan langsung dan imperatif mental
+seperti `hitung`/`cari` sebagai ajakan penonton, selain `kamu`/`kita`/`anda`; perubahan
+ini mempertahankan tuntutan suara penyelidik pada copy ringkas dan regresi EP11 lulus.
 
 ## Keputusan visual pra-produksi
 
@@ -62,8 +68,9 @@ dan hash font ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
 
 Tidak perlu mencari stock footage untuk meloloskan gate visual. Scene tidak mengimpor
 foto, video, audio, URL, atau visual generatif; ia memakai SVG/CSS/data motion lokal.
-Tidak ada bundel, render still, `renderMedia`, FFmpeg, atau media master yang
-dijalankan/dihasilkan ketika pra-produksi ini disiapkan.
+Tidak ada bundel Remotion runtime, render still, `renderMedia`, FFmpeg, atau media
+master yang dijalankan/dihasilkan. Esbuild hanya memeriksa source statis; ia tidak
+memanggil renderer atau menghasilkan media.
 
 ## Gerbang berikutnya
 
@@ -71,10 +78,10 @@ dijalankan/dihasilkan ketika pra-produksi ini disiapkan.
       pra-produksi**.
 - [x] Cue VO, baseline frame, manifest aset, source mapping, dan batas etik dicatat
       dalam `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
-- [x] Pemilik memilih narator feminin Indonesia; pembacaan sumber sembilan cue diuji
-      dan gagal 55,080 detik tanpa time-stretch. Tes pemadatan 41,920 detik dicatat.
-- [ ] Pemilik menyetujui atau merevisi Kandidat Pemadatan B sebelum naskah/cue final
-      diperbarui, ketiga gate diulang, dan total cue final diukur.
+- [x] Pemilik memilih narator feminin Indonesia dan menyetujui Pemadatan B/C; seluruh
+      take yang melewati 45 detik dikarantina tanpa time-stretch.
+- [x] Copy C final, VO kontigu 41,360 detik, source/visual timing, dan tiga gate
+      diperbarui serta lulus; static bundle check tidak memanggil renderer.
 - [ ] Persetujuan pre-render/render-master terpisah diterima sebelum bundle/renderer,
       caption, render Remotion, atau QC teknis dijalankan.
 - [ ] Review master terpisah sebelum Drive, queue, jadwal, atau unggah.

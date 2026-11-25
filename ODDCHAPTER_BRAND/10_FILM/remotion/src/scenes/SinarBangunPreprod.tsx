@@ -9,9 +9,9 @@ import { C, H, W } from "../theme";
  * likeness, casualty image, or reconstruction treated as documentary footage.
  * This stays deliberately silent until the approved VO is recorded and measured.
  */
-// A 40-second timing bench, inside the approved 35–45 s format window. The
-// duration is deliberately provisional until the selected Indonesian VO is measured.
-export const AK_EP12_PREPROD_FRAMES = 1200; // 40 s at 30 fps
+// 41.36 s is the measured, approved-C Indonesian VO. Nineteen frames keep a
+// 0.64 s visual closing hold, so the silent planning composition is 42.0 s.
+export const AK_EP12_PREPROD_FRAMES = 1260; // 42 s at 30 fps
 
 const ease = Easing.bezier(0.2, 0.7, 0.2, 1);
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -217,13 +217,15 @@ const ManifestPage: React.FC<{ from: number }> = ({ from }) => {
  */
 export const SinarBangunPreprod: React.FC = () => {
   const frame = useCurrentFrame();
+  // Measured-C cue layout (30 fps), followed by a 19-frame visual hold:
+  // 5.30 / 2.90 / 3.60 / 4.10 / 5.00 / 9.27 / 3.50 / 3.80 / 4.53 seconds.
   const scenes = [
-    [0, 105], [105, 210], [210, 315], [315, 450], [450, 600],
-    [600, 810], [810, 960], [960, 1080], [1080, AK_EP12_PREPROD_FRAMES],
+    [0, 159], [159, 246], [246, 354], [354, 477], [477, 627],
+    [627, 905], [905, 1010], [1010, 1124], [1124, AK_EP12_PREPROD_FRAMES],
   ] as const;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
-      <DataField density={56} danger={frame >= 450 && frame < 600} />
+      <DataField density={56} danger={frame >= 477 && frame < 627} />
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[0]) }}>
         <Label>Danau Toba · data posko</Label>
@@ -233,8 +235,8 @@ export const SinarBangunPreprod: React.FC = () => {
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[1]) }}>
         <Label>Angka yang datang terlambat</Label>
-        <RouteMap from={105} />
-        <div style={{ position: "absolute", left: 62, right: 62, top: 330, ...rise(frame, 123) }}>
+        <RouteMap from={159} />
+        <div style={{ position: "absolute", left: 62, right: 62, top: 330, ...rise(frame, 177) }}>
           <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 101, lineHeight: 0.88, letterSpacing: "-0.075em", color: C.ivory }}>KAPAN ANGKA INI ADA?</div>
           <div style={{ marginTop: 36, fontFamily: "Inter", fontWeight: 700, fontSize: 25, letterSpacing: "0.12em", color: C.sage }}>SIMANINDO → TIGARAS</div>
         </div>
@@ -246,17 +248,17 @@ export const SinarBangunPreprod: React.FC = () => {
         {Array.from({ length: 23 }, (_, i) => {
           const x = 120 + (i % 6) * 152;
           const y = 620 + Math.floor(i / 6) * 128;
-          const lift = Math.max(0, frame - 230 - i * 2) * -1.6;
+          const lift = Math.max(0, frame - 266 - i * 2) * -1.6;
           return <div key={i} style={{ position: "absolute", left: x, top: y + lift, width: 58, height: 58, borderRadius: 99, border: `3px solid ${i > 17 ? C.orange : C.sage}`, opacity: 0.48 + (i % 3) * 0.14 }} />;
         })}
-        <div style={{ position: "absolute", top: 1318, left: 62, right: 62, fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 78, lineHeight: 0.9, letterSpacing: "-0.07em", color: C.ivory, ...rise(frame, 235) }}>KITA KIRA 188<br />DIHITUNG DI DERMAGA.</div>
+        <div style={{ position: "absolute", top: 1318, left: 62, right: 62, fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 78, lineHeight: 0.9, letterSpacing: "-0.07em", color: C.ivory, ...rise(frame, 271) }}>KITA KIRA 188<br />DIHITUNG DI DERMAGA.</div>
         <Footer source="KNKT I.1" />
       </AbsoluteFill>
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[3]) }}>
         <Label>18 Juni 2018 · dua puluh menit</Label>
-        <Timeline from={315} />
-        <div style={{ position: "absolute", top: 1200, left: 62, right: 62, ...rise(frame, 360) }}>
+        <Timeline from={354} />
+        <div style={{ position: "absolute", top: 1200, left: 62, right: 62, ...rise(frame, 399) }}>
           <div style={{ fontFamily: "Inter", fontWeight: 800, fontSize: 24, letterSpacing: "0.14em", color: C.sage }}>DARI DERMAGA KE GELOMBANG</div>
           <div style={{ marginTop: 25, fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 82, lineHeight: 0.9, letterSpacing: "-0.07em", color: C.ivory }}>30 MENIT RUTE NORMAL.</div>
         </div>
@@ -265,8 +267,8 @@ export const SinarBangunPreprod: React.FC = () => {
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[4]) }}>
         <Label>Gelombang dari kiri · diagram</Label>
-        <WaveAndHull from={450} />
-        <div style={{ position: "absolute", top: 410, left: 62, right: 62, ...rise(frame, 470) }}>
+        <WaveAndHull from={477} />
+        <div style={{ position: "absolute", top: 410, left: 62, right: 62, ...rise(frame, 497) }}>
           <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 150, lineHeight: 0.8, letterSpacing: "-0.095em", color: C.orange }}>1,5–2 M</div>
           <div style={{ marginTop: 48, fontFamily: "Inter", fontWeight: 800, fontSize: 24, letterSpacing: "0.15em", color: C.sage }}>GELOMBANG · BUKAN ARSIP KEJADIAN</div>
         </div>
@@ -275,22 +277,22 @@ export const SinarBangunPreprod: React.FC = () => {
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[5]) }}>
         <Label>Dokumen dan posko</Label>
-        <CountCards from={600} />
-        <div style={{ position: "absolute", top: 1228, left: 72, right: 72, fontFamily: "Inter", fontWeight: 800, fontSize: 21, color: C.sage, letterSpacing: "0.11em", textAlign: "center", ...rise(frame, 708) }}>45 · RINGKASAN HASIL KNKT &nbsp;&nbsp; 188 · VERIFIKASI POSKO</div>
+        <CountCards from={627} />
+        <div style={{ position: "absolute", top: 1228, left: 72, right: 72, fontFamily: "Inter", fontWeight: 800, fontSize: 21, color: C.sage, letterSpacing: "0.11em", textAlign: "center", ...rise(frame, 735) }}>45 · RINGKASAN HASIL KNKT &nbsp;&nbsp; 188 · VERIFIKASI POSKO</div>
         <Footer source="KNKT · RILIS HASIL" />
       </AbsoluteFill>
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[6]) }}>
         <Label>Kalimat tandatangan</Label>
-        <BigNumber number="188" caption="BUKAN ANGKA KAPAL. IA ANGKA POSKO." from={824} accent />
-        <div style={{ position: "absolute", top: 1010, left: 62, right: 62, fontFamily: "Inter", fontWeight: 800, color: C.sage, fontSize: 22, letterSpacing: "0.14em", textAlign: "center", ...rise(frame, 850) }}>HASIL VERIFIKASI PADA HARI KESEMBILAN</div>
+        <BigNumber number="188" caption="BUKAN ANGKA KAPAL. IA ANGKA POSKO." from={919} accent />
+        <div style={{ position: "absolute", top: 1010, left: 62, right: 62, fontFamily: "Inter", fontWeight: 800, color: C.sage, fontSize: 22, letterSpacing: "0.14em", textAlign: "center", ...rise(frame, 945) }}>HASIL VERIFIKASI PADA HARI KESEMBILAN</div>
         <Footer source="KNKT I.2.2" />
       </AbsoluteFill>
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[7]) }}>
         <Label>Yang seharusnya ada sebelum berangkat</Label>
-        <ManifestPage from={960} />
-        <div style={{ position: "absolute", left: 62, right: 62, top: 1240, textAlign: "center", ...rise(frame, 990) }}>
+        <ManifestPage from={1010} />
+        <div style={{ position: "absolute", left: 62, right: 62, top: 1240, textAlign: "center", ...rise(frame, 1040) }}>
           <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 69, lineHeight: 0.92, letterSpacing: "-0.065em", color: C.ivory }}>MANIFEST<br />SEBELUM BERANGKAT.</div>
         </div>
         <Footer source="REKOMENDASI KNKT" />
@@ -298,9 +300,9 @@ export const SinarBangunPreprod: React.FC = () => {
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[8]) }}>
         <Label>Penutup · kembali ke angka</Label>
-        <BigNumber number="188" caption="HITUNG SEBELUM BERANGKAT." from={1090} accent />
-        <div style={{ position: "absolute", left: 62, right: 62, top: 1170, textAlign: "center", ...rise(frame, 1112) }}>
-          <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 65, lineHeight: 0.92, letterSpacing: "-0.065em", color: C.ivory }}>HITUNG 188<br />ATAU CARI SESUDAHNYA?</div>
+        <BigNumber number="188" caption="HITUNG 188 SEBELUM BERANGKAT." from={1134} accent />
+        <div style={{ position: "absolute", left: 62, right: 62, top: 1170, textAlign: "center", ...rise(frame, 1156) }}>
+          <div style={{ fontFamily: "Space Grotesk", fontWeight: 700, fontSize: 65, lineHeight: 0.92, letterSpacing: "-0.065em", color: C.ivory }}>HITUNG 188<br />ATAU CARI?</div>
         </div>
         <Footer source="KNKT I.2.2 · REKOMENDASI KNKT" />
       </AbsoluteFill>

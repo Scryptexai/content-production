@@ -159,7 +159,7 @@ export const RemotionRoot: React.FC = () => (
       width={W}
       height={H}
     />
-    {/* Planning composition only: no audio/master/renderer invocation is authorized yet. */}
+    {/* Planning composition only: no Remotion render or master is authorized yet. */}
     <Composition
       id="ODDCHAPTER-AK-EP12-SINAR-BANGUN-PREPROD"
       component={SinarBangunPreprod}
