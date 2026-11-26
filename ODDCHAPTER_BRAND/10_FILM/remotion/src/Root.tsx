@@ -6,10 +6,11 @@ import "./fonts";
 import { Film } from "./Film";
 import { Captions } from "./scenes/Captions";
 import { Episode } from "./scenes/Episode";
-import { LongForm } from "./scenes/LongForm";
+import { LongForm, LongFormDoc } from "./scenes/LongForm";
 import { KINDS, PlateGallery } from "./scenes/PlateGallery";
 import timingJson from "./timing.generated.json";
 import longformJson from "./longform.generated.json";
+import longformLf04Json from "./longform.lf04.generated.json";
 import { BRAND_BEZIER, C, FPS, H, T, W } from "./theme";
 import { Monogram, Wordmark } from "./components/Marks";
 import { ShortOutro, OUTRO_FRAMES } from "./scenes/ShortOutro";
@@ -146,10 +147,34 @@ export const RemotionRoot: React.FC = () => (
     <Composition
       id="ODDCHAPTER-LONGFORM-EP01"
       component={LongForm}
+      defaultProps={{ data: longformJson as unknown as LongFormDoc }}
       durationInFrames={(longformJson as any).totalFrames}
       fps={FPS}
       width={(longformJson as any).width ?? 1920}
       height={(longformJson as any).height ?? 1080}
+    />
+    {/* LF04 carries its own sealed timing/visual document; it never borrows EP01 input. */}
+    <Composition
+      id="ODDCHAPTER-LONGFORM-LF04-TAMBORA"
+      component={LongForm}
+      defaultProps={{ data: longformLf04Json as unknown as LongFormDoc }}
+      durationInFrames={(longformLf04Json as any).totalFrames}
+      fps={(longformLf04Json as any).fps ?? FPS}
+      width={(longformLf04Json as any).width ?? 1920}
+      height={(longformLf04Json as any).height ?? 1080}
+    />
+    {/* Slow data diagrams are sampled in Remotion at 6 fps, then exact frames are
+        duplicated (never interpolated) into the 30-fps delivery master. This
+        keeps full-HD long-form rendering feasible on the two-core sandbox while
+        preserving the 1920×1080 / 30-fps deliverable. */}
+    <Composition
+      id="ODDCHAPTER-LONGFORM-LF04-TAMBORA-6FPS"
+      component={LongForm}
+      defaultProps={{ data: longformLf04Json as unknown as LongFormDoc }}
+      durationInFrames={Math.round((longformLf04Json as any).duration * 6)}
+      fps={6}
+      width={(longformLf04Json as any).width ?? 1920}
+      height={(longformLf04Json as any).height ?? 1080}
     />
     <Composition
       id="ODDCHAPTER-AK-EP11-REMOTION-REVIEW"

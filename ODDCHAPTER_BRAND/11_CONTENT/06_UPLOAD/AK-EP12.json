@@ -1,0 +1,40 @@
+{
+  "episode": "AK-EP12",
+  "video": "AK-EP12_Sinar-Bangun_1080x1920_master.mp4",
+  "thumbnail": "AK-EP12_Sinar-Bangun_thumbnail_16x9.jpg",
+  "title": "188 Orang Baru Dihitung Setelah Kapal Tenggelam",
+  "title_alt": [
+    "Angka 188 Ini Baru Ada 9 Hari Kemudian",
+    "188 Bukan Manifest Kapal. Ini Hasil Verifikasi Posko"
+  ],
+  "hook": "Angka 188 muncul sembilan hari sesudah kapal tenggelam.",
+  "description": "Angka 188 muncul sembilan hari sesudah kapal tenggelam.\n\nDalam laporan KNKT, 188 adalah hasil verifikasi posko pada hari kesembilan: 21 selamat, 3 meninggal, dan 164 hilang. Ini bukan angka manifest keberangkatan.\n\nVideo ini mengikuti perbedaan antara angka di dokumen dan angka yang perlu diverifikasi setelah kapal tenggelam. Rekomendasi KNKT yang dibahas adalah pentingnya manifest sebelum berangkat. Tidak ada klaim tentang izin/SPB, nama individu, atau angka kematian pasti.\n\nSumber: laporan KNKT tentang KM Sinar Bangun; pemetaan fakta dan batas editorial ada dalam produksi ODDCHAPTER. Visual adalah diagram informasi original; tidak ada visual korban atau rekonstruksi kejadian yang disajikan sebagai arsip.\n\n#DanauToba #KNKT #KeselamatanPelayaran #KisahNyata #Shorts",
+  "tags": [
+    "Sinar Bangun",
+    "Danau Toba",
+    "KNKT",
+    "keselamatan pelayaran",
+    "manifest kapal",
+    "data posko",
+    "kapal tenggelam",
+    "Kisah Nyata",
+    "ODDCHAPTER"
+  ],
+  "first_comment": "Sebelum kapal berangkat, jumlah orang harus dihitung atau baru dicari sesudahnya?",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "unlisted",
+  "drive_file_id": "16kTSK6JmbhsupulPlJASXo8SY9K_NQ1S",
+  "duration_seconds": 42.005,
+  "size_bytes": 6876909,
+  "sha256": "4703c687c35cf8155de3ed4a3318f93685f524ec28d353b03627582ba0531623",
+  "render_provenance": {
+    "engine": "remotion",
+    "engine_version": "4.0.541",
+    "composition": "ODDCHAPTER-AK-EP12-SINAR-BANGUN-PREPROD",
+    "entrypoint": "ODDCHAPTER_BRAND/10_FILM/remotion/src/index.ts",
+    "renderer": "@remotion/renderer",
+    "manifest": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/provenance/AK-EP12-sinar-bangun-remotion-review.json"
+  }
+}

@@ -1,0 +1,1943 @@
+{
+  "id": "LF04-TAMBORA-1815",
+  "series": "KASUS NYATA",
+  "title": "Tambora 1815: Lima Lapisan Abu dan Tahun Tanpa Musim Panas",
+  "vo": "audio/LF04/lf04_tambora_voice-09.wav",
+  "fps": 30,
+  "duration": 674.36,
+  "totalFrames": 20231,
+  "width": 1920,
+  "height": 1080,
+  "cards": [],
+  "segments": [
+    {
+      "i": 0,
+      "chapter": "BABAK 1 · LIMA LAPISAN",
+      "start": 0.0,
+      "end": 30.613,
+      "startFrame": 0,
+      "endFrame": 918,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 0.0,
+          "t1": 3.549,
+          "text": "Di Doro Bente di Semenanjung Tambora, satu kotak"
+        },
+        {
+          "t0": 3.549,
+          "t1": 8.656,
+          "text": "ekskavasi memperlihatkan lima lapisan material vulkanik dari tahun"
+        },
+        {
+          "t0": 8.656,
+          "t1": 9.089,
+          "text": "1815."
+        },
+        {
+          "t0": 9.089,
+          "t1": 12.724,
+          "text": "Di bawahnya ada tiga lapisan lebih tua, terbentuk"
+        },
+        {
+          "t0": 12.724,
+          "t1": 16.014,
+          "text": "ketika tempat itu masih berupa laut dangkal."
+        },
+        {
+          "t0": 16.014,
+          "t1": 19.649,
+          "text": "Di atasnya tanah berubah, bukan hanya oleh cerita"
+        },
+        {
+          "t0": 19.649,
+          "t1": 23.717,
+          "text": "lisan, melainkan oleh material yang dapat dibaca lapis"
+        },
+        {
+          "t0": 23.717,
+          "t1": 24.583,
+          "text": "demi lapis."
+        },
+        {
+          "t0": 24.583,
+          "t1": 28.824,
+          "text": "Setahun sesudah tanggal pada lapisan itu, Eropa mencatat"
+        },
+        {
+          "t0": 28.824,
+          "t1": 30.613,
+          "text": "musim panas yang gagal datang."
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Kotak B28U18",
+        "kicker": "STRATIGRAFI · BRIN 2024",
+        "cards": [
+          {
+            "plate": "lf04/01-01.svg",
+            "label": "TIGA LAPISAN",
+            "sub": "lingkungan laut lebih tua",
+            "num": 1
+          },
+          {
+            "plate": "lf04/01-02.svg",
+            "label": "LIMA LAPISAN",
+            "sub": "material piroklastik · 1815",
+            "num": 2
+          },
+          {
+            "plate": "lf04/01-03.svg",
+            "label": "DORO BENTE",
+            "sub": "satu situs · bukti khusus",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 1,
+      "chapter": "BABAK 1 · LIMA LAPISAN",
+      "start": 30.613,
+      "end": 61.227,
+      "startFrame": 918,
+      "endFrame": 1837,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 31.075,
+          "t1": 34.797,
+          "text": "Dua tempat ini dipisahkan laut, bahasa, dan ribuan"
+        },
+        {
+          "t0": 34.797,
+          "t1": 35.663,
+          "text": "kilometer."
+        },
+        {
+          "t0": 35.663,
+          "t1": 38.779,
+          "text": "Namun keduanya masuk ke satu rantai bukti."
+        },
+        {
+          "t0": 38.779,
+          "t1": 42.068,
+          "text": "Rantai itu tidak berupa satu gambar tunggal."
+        },
+        {
+          "t0": 42.068,
+          "t1": 44.578,
+          "text": "Tanah menyimpan urutan material."
+        },
+        {
+          "t0": 44.578,
+          "t1": 48.127,
+          "text": "Arsip menyimpan kabar yang tidak tiba serentak."
+        },
+        {
+          "t0": 48.127,
+          "t1": 51.936,
+          "text": "Catatan iklim menyimpan suhu dan hujan dari wilayah"
+        },
+        {
+          "t0": 51.936,
+          "t1": 52.715,
+          "text": "tertentu."
+        },
+        {
+          "t0": 52.715,
+          "t1": 56.004,
+          "text": "Setiap bagian menjawab pertanyaan berbeda:"
+        },
+        {
+          "t0": 56.004,
+          "t1": 60.159,
+          "text": "apa yang menutup lanskap, kapan kabar dapat dipastikan,"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Satu rantai, tiga arsip",
+        "kicker": "CARA MEMBACA BUKTI",
+        "cards": [
+          {
+            "plate": "lf04/02-01.svg",
+            "label": "TANAH",
+            "sub": "urutan material",
+            "num": 1
+          },
+          {
+            "plate": "lf04/02-02.svg",
+            "label": "ARSIP",
+            "sub": "kabar tidak serentak",
+            "num": 2
+          },
+          {
+            "plate": "lf04/02-03.svg",
+            "label": "IKLIM",
+            "sub": "suhu dan hujan setempat",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 2,
+      "chapter": "BABAK 1 · LIMA LAPISAN",
+      "start": 61.227,
+      "end": 91.84,
+      "startFrame": 1837,
+      "endFrame": 2755,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 61.227,
+          "t1": 62.929,
+          "text": "dan bagaimana perubahan iklim diuji."
+        },
+        {
+          "t0": 62.929,
+          "t1": 67.257,
+          "text": "Cerita Tambora sering diringkas sebagai gunung di Sumbawa"
+        },
+        {
+          "t0": 67.257,
+          "t1": 69.508,
+          "text": "yang membuat dunia mendingin."
+        },
+        {
+          "t0": 69.508,
+          "t1": 73.316,
+          "text": "Arah kalimat itu benar, tetapi terlalu pendek untuk"
+        },
+        {
+          "t0": 73.316,
+          "t1": 78.25,
+          "text": "menjelaskan dampak awal, perjalanan kabar, dan ukuran ilmiahnya."
+        },
+        {
+          "t0": 78.25,
+          "t1": 81.712,
+          "text": "Karena itu cerita ini dimulai dari lima lapisan"
+        },
+        {
+          "t0": 81.712,
+          "t1": 84.396,
+          "text": "di Sumbawa, bukan dari langit Eropa."
+        },
+        {
+          "t0": 84.396,
+          "t1": 87.945,
+          "text": "Apa yang dapat dibuktikan oleh lima lapisan itu,"
+        },
+        {
+          "t0": 87.945,
+          "t1": 91.234,
+          "text": "dan bagian mana yang tidak boleh diisi dengan"
+        },
+        {
+          "t0": 91.234,
+          "t1": 91.84,
+          "text": "dugaan?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Batas kesimpulan",
+        "kicker": "PERTANYAAN PEMBUKA",
+        "cards": [
+          {
+            "plate": "lf04/03-01.svg",
+            "label": "APA YANG TERTUTUP?",
+            "sub": "lapisan dapat dibaca",
+            "num": 1
+          },
+          {
+            "plate": "lf04/03-02.svg",
+            "label": "KAPAN KABAR TIBA?",
+            "sub": "tanggal terbit ≠ waktu bahaya",
+            "num": 2
+          },
+          {
+            "plate": "lf04/03-03.svg",
+            "label": "BAGAIMANA DIUJI?",
+            "sub": "peluang, bukan cuaca seragam",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 3,
+      "chapter": "BABAK 2 · KABAR YANG TIBA TERLAMBAT",
+      "start": 91.84,
+      "end": 125.8,
+      "startFrame": 2755,
+      "endFrame": 3774,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 91.84,
+          "t1": 95.476,
+          "text": "Pada April 1815, Tambora memasuki fase letusan yang"
+        },
+        {
+          "t0": 95.476,
+          "t1": 99.111,
+          "text": "akan dicatat sebagai VEI 7 oleh katalog Smithsonian"
+        },
+        {
+          "t0": 99.111,
+          "t1": 101.012,
+          "text": "Global Volcanism Program."
+        },
+        {
+          "t0": 101.012,
+          "t1": 104.813,
+          "text": "Namun orang di Batavia tidak memperoleh peta satelit,"
+        },
+        {
+          "t0": 104.813,
+          "t1": 108.366,
+          "text": "sensor gas, atau notifikasi dalam hitungan detik."
+        },
+        {
+          "t0": 108.366,
+          "t1": 112.58,
+          "text": "Badan Geologi menelusuri halaman Java Government Gazette."
+        },
+        {
+          "t0": 112.58,
+          "t1": 114.893,
+          "text": "Edisi 6, 13, 20, dan 27 Mei membawa"
+        },
+        {
+          "t0": 114.893,
+          "t1": 116.876,
+          "text": "kabar yang datang bertahap."
+        },
+        {
+          "t0": 116.876,
+          "t1": 119.768,
+          "text": "Pada 11 Mei, Kapal Benares tiba di Batavia"
+        },
+        {
+          "t0": 119.768,
+          "t1": 120.842,
+          "text": "dari Makassar."
+        },
+        {
+          "t0": 120.842,
+          "t1": 125.8,
+          "text": "Dalam rekonstruksi sejarah itu, kedatangannya membantu memperjelas sumber"
+        }
+      ],
+      "diagram": {
+        "style": "timeline",
+        "title": "April sampai Mei 1815",
+        "kicker": "REKONSTRUKSI ARSIP · BADAN GEOLOGI 2020",
+        "cards": [
+          {
+            "plate": "lf04/04-01.svg",
+            "label": "APRIL 1815",
+            "sub": "fase letusan · VEI 7",
+            "num": 1
+          },
+          {
+            "plate": "lf04/04-02.svg",
+            "label": "11 MEI",
+            "sub": "Benares tiba di Batavia",
+            "num": 2
+          },
+          {
+            "plate": "lf04/04-03.svg",
+            "label": "6 · 13 · 20 · 27 MEI",
+            "sub": "edisi Gazette bertahap",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 4,
+      "chapter": "BABAK 2 · KABAR YANG TIBA TERLAMBAT",
+      "start": 125.8,
+      "end": 159.76,
+      "startFrame": 3774,
+      "endFrame": 4793,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 126.296,
+          "t1": 127.039,
+          "text": "dentuman."
+        },
+        {
+          "t0": 127.039,
+          "t1": 130.923,
+          "text": "Catatan Kapal Dispatch yang dikutip Badan Geologi juga"
+        },
+        {
+          "t0": 130.923,
+          "t1": 134.228,
+          "text": "merekam dentuman pada malam 11 April dari jarak"
+        },
+        {
+          "t0": 134.228,
+          "t1": 134.641,
+          "text": "jauh."
+        },
+        {
+          "t0": 134.641,
+          "t1": 138.607,
+          "text": "Berita bergerak lewat kapal, surat, catatan pelaut, dan"
+        },
+        {
+          "t0": 138.607,
+          "t1": 139.847,
+          "text": "salinan laporan."
+        },
+        {
+          "t0": 139.847,
+          "t1": 143.317,
+          "text": "Sebelum sebuah peristiwa punya nama yang pasti di"
+        },
+        {
+          "t0": 143.317,
+          "t1": 147.035,
+          "text": "pusat pemerintahan, suara dan abu sudah lebih dahulu"
+        },
+        {
+          "t0": 147.035,
+          "t1": 149.514,
+          "text": "menjadi pengalaman di tempat lain."
+        },
+        {
+          "t0": 149.514,
+          "t1": 152.902,
+          "text": "Urutan laporan tidak sama dengan urutan bahaya."
+        },
+        {
+          "t0": 152.902,
+          "t1": 156.951,
+          "text": "Tanggal terbit koran memberi tahu kapan pembaca menerima"
+        },
+        {
+          "t0": 156.951,
+          "t1": 157.446,
+          "text": "kabar;"
+        },
+        {
+          "t0": 157.446,
+          "t1": 159.76,
+          "text": "ia tidak boleh dipakai sebagai jam ketika letusan"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Rute informasi",
+        "kicker": "KAPAL · SURAT · SALINAN LAPORAN",
+        "cards": [
+          {
+            "plate": "lf04/05-01.svg",
+            "label": "BENARES",
+            "sub": "Makassar → Batavia",
+            "num": 1
+          },
+          {
+            "plate": "lf04/05-02.svg",
+            "label": "DISPATCH",
+            "sub": "dentuman malam 11 April",
+            "num": 2
+          },
+          {
+            "plate": "lf04/05-03.svg",
+            "label": "BO’ SANGAJI KAI",
+            "sub": "rekaman Bima yang disebut",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 5,
+      "chapter": "BABAK 2 · KABAR YANG TIBA TERLAMBAT",
+      "start": 159.76,
+      "end": 193.72,
+      "startFrame": 4793,
+      "endFrame": 5812,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 160.917,
+          "t1": 162.9,
+          "text": "mulai memukul suatu tempat."
+        },
+        {
+          "t0": 162.9,
+          "t1": 166.205,
+          "text": "Arsip Bima, Bo’ Sangaji Kai, juga disebut Badan"
+        },
+        {
+          "t0": 166.205,
+          "t1": 169.675,
+          "text": "Geologi sebagai salah satu rekaman Tambora 1815."
+        },
+        {
+          "t0": 169.675,
+          "t1": 171.658,
+          "text": "Ini bukan detail dekoratif."
+        },
+        {
+          "t0": 171.658,
+          "t1": 175.707,
+          "text": "Jeda antara kejadian dan berita menjelaskan mengapa kita"
+        },
+        {
+          "t0": 175.707,
+          "t1": 179.839,
+          "text": "tidak boleh menceritakan 1815 seolah semua orang memahami"
+        },
+        {
+          "t0": 179.839,
+          "t1": 182.978,
+          "text": "apa yang sedang terjadi pada malam yang sama."
+        },
+        {
+          "t0": 182.978,
+          "t1": 187.606,
+          "text": "Jika nama gunungnya sendiri membutuhkan waktu untuk dipastikan,"
+        },
+        {
+          "t0": 187.606,
+          "t1": 191.82,
+          "text": "bagaimana kita bisa jujur tentang pengalaman manusia tanpa"
+        },
+        {
+          "t0": 191.82,
+          "t1": 193.72,
+          "text": "mengisi kekosongan arsip?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Dua urutan berbeda",
+        "kicker": "JANGAN DISAMAKAN",
+        "cards": [
+          {
+            "plate": "lf04/06-01.svg",
+            "label": "KEJADIAN",
+            "sub": "bahaya di tempat tertentu",
+            "num": 1
+          },
+          {
+            "plate": "lf04/06-02.svg",
+            "label": "LAPORAN",
+            "sub": "kabar bergerak bertahap",
+            "num": 2
+          },
+          {
+            "plate": "lf04/06-03.svg",
+            "label": "TANGGAL TERBIT",
+            "sub": "waktu pembaca menerima kabar",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 6,
+      "chapter": "BABAK 3 · BENTUK YANG TERTINGGAL",
+      "start": 193.72,
+      "end": 227.387,
+      "startFrame": 5812,
+      "endFrame": 6822,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 193.72,
+          "t1": 197.25,
+          "text": "Bukti fisik memberi ukuran tanpa perlu memaksa kita"
+        },
+        {
+          "t0": 197.25,
+          "t1": 200.058,
+          "text": "membayangkan semua yang tidak terlihat."
+        },
+        {
+          "t0": 200.058,
+          "t1": 204.791,
+          "text": "Profil Smithsonian mencatat kaldera Tambora yang sekarang lebarnya"
+        },
+        {
+          "t0": 204.791,
+          "t1": 206.235,
+          "text": "sekitar 6 kilometer."
+        },
+        {
+          "t0": 206.235,
+          "t1": 210.005,
+          "text": "Salah satu foto beranotasi GVP menyebut rimnya sekitar"
+        },
+        {
+          "t0": 210.005,
+          "t1": 212.412,
+          "text": "1.250 meter di atas lantai kaldera."
+        },
+        {
+          "t0": 212.412,
+          "t1": 216.102,
+          "text": "Pada bagian dinding lain, unit hasil 1815 digambarkan"
+        },
+        {
+          "t0": 216.102,
+          "t1": 217.947,
+          "text": "setebal sekitar 200 meter:"
+        },
+        {
+          "t0": 217.947,
+          "t1": 220.835,
+          "text": "batu apung dari plume di bawah, lalu urutan"
+        },
+        {
+          "t0": 220.835,
+          "t1": 223.563,
+          "text": "endapan aliran piroklastik di atasnya."
+        },
+        {
+          "t0": 223.563,
+          "t1": 227.387,
+          "text": "Studi geoarkeologi Indonesia tahun 2006 juga memisahkan urutan"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Kaldera sebagai jejak",
+        "kicker": "GVP · TAMBORA",
+        "cards": [
+          {
+            "plate": "lf04/07-01.svg",
+            "label": "SEKITAR 6 KM",
+            "sub": "lebar kaldera",
+            "num": 1
+          },
+          {
+            "plate": "lf04/07-02.svg",
+            "label": "SEKITAR 1.250 M",
+            "sub": "rim di atas lantai",
+            "num": 2
+          },
+          {
+            "plate": "lf04/07-03.svg",
+            "label": "BENTUK BERUBAH",
+            "sub": "jejak geologi, bukan drama",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 7,
+      "chapter": "BABAK 3 · BENTUK YANG TERTINGGAL",
+      "start": 227.387,
+      "end": 261.053,
+      "startFrame": 6822,
+      "endFrame": 7832,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 227.975,
+          "t1": 231.906,
+          "text": "itu menjadi setidaknya empat episode jatuhan tefra, lalu"
+        },
+        {
+          "t0": 231.906,
+          "t1": 234.313,
+          "text": "fase aliran dan surge piroklastik."
+        },
+        {
+          "t0": 234.313,
+          "t1": 238.003,
+          "text": "Aliran 1815 mencapai laut di seluruh sisi Semenanjung"
+        },
+        {
+          "t0": 238.003,
+          "t1": 240.169,
+          "text": "Sanggar menurut deskripsi GVP."
+        },
+        {
+          "t0": 240.169,
+          "t1": 244.501,
+          "text": "Angka-angka ini bukan perlombaan untuk mencari letusan paling"
+        },
+        {
+          "t0": 244.501,
+          "t1": 244.982,
+          "text": "besar."
+        },
+        {
+          "t0": 244.982,
+          "t1": 249.073,
+          "text": "Mereka menjelaskan mengapa sebuah gunung tidak berhenti di"
+        },
+        {
+          "t0": 249.073,
+          "t1": 249.795,
+          "text": "kawahnya."
+        },
+        {
+          "t0": 249.795,
+          "t1": 253.085,
+          "text": "Material bergerak ke lereng, ke pantai, ke laut,"
+        },
+        {
+          "t0": 253.085,
+          "t1": 253.967,
+          "text": "dan ke udara."
+        },
+        {
+          "t0": 253.967,
+          "t1": 257.497,
+          "text": "Setiap arah meninggalkan jenis bukti yang berbeda."
+        },
+        {
+          "t0": 257.497,
+          "t1": 260.946,
+          "text": "Endapan di lapangan memberi urutan dan jangkauan."
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Urutan endapan",
+        "kicker": "GVP · SUTAWIDJAJA ET AL. 2006",
+        "cards": [
+          {
+            "plate": "lf04/08-01.svg",
+            "label": "SEKITAR 200 M",
+            "sub": "unit 1815 di satu dinding",
+            "num": 1
+          },
+          {
+            "plate": "lf04/08-02.svg",
+            "label": "≥ 4 JATUHAN TEFRA",
+            "sub": "sebelum aliran dan surge",
+            "num": 2
+          },
+          {
+            "plate": "lf04/08-03.svg",
+            "label": "URUTAN",
+            "sub": "endapan memberi waktu & jangkauan",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 8,
+      "chapter": "BABAK 3 · BENTUK YANG TERTINGGAL",
+      "start": 261.053,
+      "end": 294.72,
+      "startFrame": 7832,
+      "endFrame": 8842,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 261.053,
+          "t1": 264.235,
+          "text": "Kaldera memberi jejak perubahan bentuk gunung."
+        },
+        {
+          "t0": 264.235,
+          "t1": 267.765,
+          "text": "Catatan kapal memberi jejak apa yang terdengar atau"
+        },
+        {
+          "t0": 267.765,
+          "t1": 269.851,
+          "text": "dilihat dari posisi tertentu."
+        },
+        {
+          "t0": 269.851,
+          "t1": 273.622,
+          "text": "Tidak satu pun berdiri sendiri sebagai seluruh cerita."
+        },
+        {
+          "t0": 273.622,
+          "t1": 277.954,
+          "text": "Tetapi bentuk kaldera tidak otomatis menjawab kehidupan orang"
+        },
+        {
+          "t0": 277.954,
+          "t1": 278.996,
+          "text": "di sekitarnya."
+        },
+        {
+          "t0": 278.996,
+          "t1": 282.526,
+          "text": "Untuk itu, bukti harus bergeser dari dinding gunung"
+        },
+        {
+          "t0": 282.526,
+          "t1": 285.414,
+          "text": "ke tanah tempat permukiman pernah berada."
+        },
+        {
+          "t0": 285.414,
+          "t1": 289.506,
+          "text": "Apa yang ditemukan peneliti ketika mereka berhenti melihat"
+        },
+        {
+          "t0": 289.506,
+          "t1": 293.035,
+          "text": "Tambora sebagai satu lubang besar dan mulai membaca"
+        },
+        {
+          "t0": 293.035,
+          "t1": 294.72,
+          "text": "tanah di sekelilingnya?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Arah material",
+        "kicker": "DESKRIPSI ENDAPAN · GVP",
+        "cards": [
+          {
+            "plate": "lf04/09-01.svg",
+            "label": "LERENG",
+            "sub": "material mengikuti permukaan",
+            "num": 1
+          },
+          {
+            "plate": "lf04/09-02.svg",
+            "label": "PANTAI & LAUT",
+            "sub": "mencapai sisi Sanggar",
+            "num": 2
+          },
+          {
+            "plate": "lf04/09-03.svg",
+            "label": "UDARA",
+            "sub": "jalur bukti lain",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 9,
+      "chapter": "BABAK 4 · SITUS, BUKAN KOTA REKAAN",
+      "start": 294.72,
+      "end": 320.14,
+      "startFrame": 8842,
+      "endFrame": 9604,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 294.72,
+          "t1": 299.297,
+          "text": "Sebelum 1815, studi 2006 mencatat keterangan masyarakat Sanggar"
+        },
+        {
+          "t0": 299.297,
+          "t1": 302.24,
+          "text": "tentang tiga kerajaan di sekitar Tambora:"
+        },
+        {
+          "t0": 302.24,
+          "t1": 304.283,
+          "text": "Sanggar, Tambora, dan Pekat."
+        },
+        {
+          "t0": 304.283,
+          "t1": 308.288,
+          "text": "Kalimat itu penting, tetapi tidak cukup untuk menggambar"
+        },
+        {
+          "t0": 308.288,
+          "t1": 311.394,
+          "text": "jalan, wajah, atau menit terakhir siapa pun."
+        },
+        {
+          "t0": 311.394,
+          "t1": 315.808,
+          "text": "Penelitian arkeologi di Semenanjung Tambora dimulai pada 2006"
+        },
+        {
+          "t0": 315.808,
+          "t1": 319.323,
+          "text": "dan diteruskan sejak 2008 sampai 2021 oleh lembaga"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Nama dalam studi",
+        "kicker": "SUTAWIDJAJA ET AL. 2006",
+        "cards": [
+          {
+            "plate": "lf04/10-01.svg",
+            "label": "SANGGAR",
+            "sub": "keterangan masyarakat",
+            "num": 1
+          },
+          {
+            "plate": "lf04/10-02.svg",
+            "label": "TAMBORA",
+            "sub": "keterangan masyarakat",
+            "num": 2
+          },
+          {
+            "plate": "lf04/10-03.svg",
+            "label": "PEKAT",
+            "sub": "keterangan masyarakat",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 10,
+      "chapter": "BABAK 4 · SITUS, BUKAN KOTA REKAAN",
+      "start": 320.14,
+      "end": 345.56,
+      "startFrame": 9604,
+      "endFrame": 10367,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 320.14,
+          "t1": 322.919,
+          "text": "arkeologi di Bali, menurut artikel BRIN tahun 2024."
+        },
+        {
+          "t0": 322.919,
+          "t1": 327.251,
+          "text": "Di Doro Bente, peneliti melaporkan fragmen keramik, gerabah,"
+        },
+        {
+          "t0": 327.251,
+          "t1": 329.213,
+          "text": "tulang hewan, dan cangkang."
+        },
+        {
+          "t0": 329.213,
+          "t1": 334.035,
+          "text": "Temuan-temuan itu menunjukkan aktivitas manusia dan memberi alasan"
+        },
+        {
+          "t0": 334.035,
+          "t1": 336.079,
+          "text": "untuk terus membaca lanskap."
+        },
+        {
+          "t0": 336.079,
+          "t1": 339.512,
+          "text": "Mereka tidak memberi izin untuk membuat satu kota"
+        },
+        {
+          "t0": 339.512,
+          "t1": 340.983,
+          "text": "utuh dari imajinasi."
+        },
+        {
+          "t0": 340.983,
+          "t1": 343.844,
+          "text": "Justru kekuatan bukti ada pada batasnya."
+        }
+      ],
+      "diagram": {
+        "style": "timeline",
+        "title": "Kerja lapangan",
+        "kicker": "PENELITIAN ARKEOLOGI · BRIN 2024",
+        "cards": [
+          {
+            "plate": "lf04/11-01.svg",
+            "label": "2006",
+            "sub": "penelitian dimulai",
+            "num": 1
+          },
+          {
+            "plate": "lf04/11-02.svg",
+            "label": "2008 → 2021",
+            "sub": "penelitian diteruskan",
+            "num": 2
+          },
+          {
+            "plate": "lf04/11-03.svg",
+            "label": "DORO BENTE",
+            "sub": "lokasi dengan temuan khusus",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 11,
+      "chapter": "BABAK 4 · SITUS, BUKAN KOTA REKAAN",
+      "start": 345.56,
+      "end": 370.98,
+      "startFrame": 10367,
+      "endFrame": 11129,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 345.56,
+          "t1": 347.603,
+          "text": "Tiga lapisan bawah menunjukkan lingkungan lebih tua."
+        },
+        {
+          "t0": 347.603,
+          "t1": 351.69,
+          "text": "Lima lapisan di atasnya adalah material piroklastik 1815."
+        },
+        {
+          "t0": 351.69,
+          "t1": 355.614,
+          "text": "Perubahan ini dapat ditunjukkan di tanah, bahkan ketika"
+        },
+        {
+          "t0": 355.614,
+          "t1": 359.128,
+          "text": "nama, rute, atau nasib setiap penghuni tidak dapat"
+        },
+        {
+          "t0": 359.128,
+          "t1": 360.354,
+          "text": "disusun kembali."
+        },
+        {
+          "t0": 360.354,
+          "t1": 364.032,
+          "text": "Batas itu juga melindungi cerita dari satu kesalahan"
+        },
+        {
+          "t0": 364.032,
+          "t1": 364.441,
+          "text": "umum:"
+        },
+        {
+          "t0": 364.441,
+          "t1": 368.201,
+          "text": "mengubah temuan di satu kotak ekskavasi menjadi klaim"
+        },
+        {
+          "t0": 368.201,
+          "t1": 369.999,
+          "text": "tentang seluruh Sumbawa."
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Yang ditemukan",
+        "kicker": "DORO BENTE · BRIN 2024",
+        "cards": [
+          {
+            "plate": "lf04/12-01.svg",
+            "label": "FRAGMEN KERAMIK",
+            "sub": "artefak yang dilaporkan",
+            "num": 1
+          },
+          {
+            "plate": "lf04/12-02.svg",
+            "label": "GERABAH",
+            "sub": "artefak yang dilaporkan",
+            "num": 2
+          },
+          {
+            "plate": "lf04/12-03.svg",
+            "label": "TULANG & CANGKANG",
+            "sub": "material yang dilaporkan",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 12,
+      "chapter": "BABAK 4 · SITUS, BUKAN KOTA REKAAN",
+      "start": 370.98,
+      "end": 396.4,
+      "startFrame": 11129,
+      "endFrame": 11892,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 370.98,
+          "t1": 373.514,
+          "text": "Doro Bente adalah situs dengan bukti khusus, bukan"
+        },
+        {
+          "t0": 373.514,
+          "t1": 376.702,
+          "text": "miniatur lengkap semua pengalaman pada 1815."
+        },
+        {
+          "t0": 376.702,
+          "t1": 379.154,
+          "text": "Di sinilah cerita Tambora berubah."
+        },
+        {
+          "t0": 379.154,
+          "t1": 382.505,
+          "text": "Bukan kisah “kota beku” yang siap diputar ulang,"
+        },
+        {
+          "t0": 382.505,
+          "t1": 387.818,
+          "text": "melainkan pekerjaan panjang menghubungkan artefak, sedimen, catatan, dan"
+        },
+        {
+          "t0": 387.818,
+          "t1": 388.308,
+          "text": "waktu."
+        },
+        {
+          "t0": 388.308,
+          "t1": 391.986,
+          "text": "Apa yang berubah ketika kita berhenti mencari gambar"
+        },
+        {
+          "t0": 391.986,
+          "t1": 395.256,
+          "text": "sempurna masa lalu dan mulai membaca bukti yang"
+        },
+        {
+          "t0": 395.256,
+          "t1": 396.4,
+          "text": "memang tersisa?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Kekuatan batas",
+        "kicker": "BUKTI ≠ REKONSTRUKSI",
+        "cards": [
+          {
+            "plate": "lf04/13-01.svg",
+            "label": "SATU KOTAK",
+            "sub": "bukan seluruh Sumbawa",
+            "num": 1
+          },
+          {
+            "plate": "lf04/13-02.svg",
+            "label": "AKTIVITAS MANUSIA",
+            "sub": "bukan kota utuh dari imajinasi",
+            "num": 2
+          },
+          {
+            "plate": "lf04/13-03.svg",
+            "label": "TIDAK DIREKONSTRUKSI",
+            "sub": "wajah, rute, menit terakhir",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 13,
+      "chapter": "BABAK 5 · JALAN KE STRATOSFER",
+      "start": 396.4,
+      "end": 427.053,
+      "startFrame": 11892,
+      "endFrame": 12812,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 396.4,
+          "t1": 399.41,
+          "text": "Dampak dekat gunung adalah satu bagian rantai."
+        },
+        {
+          "t0": 399.41,
+          "t1": 402.195,
+          "text": "Bagian berikutnya terjadi jauh di atasnya."
+        },
+        {
+          "t0": 402.195,
+          "t1": 406.484,
+          "text": "Artikel ilmiah tahun 2019 menjelaskan bahwa Tambora menyuntikkan"
+        },
+        {
+          "t0": 406.484,
+          "t1": 408.516,
+          "text": "sulfur dioksida ke stratosfer."
+        },
+        {
+          "t0": 408.516,
+          "t1": 411.225,
+          "text": "Di sana, gas itu membentuk aerosol sulfat."
+        },
+        {
+          "t0": 411.225,
+          "t1": 415.514,
+          "text": "Aerosol mengurangi radiasi gelombang pendek bersih yang mencapai"
+        },
+        {
+          "t0": 415.514,
+          "t1": 419.578,
+          "text": "permukaan dan dapat mendorong pendinginan yang bertahan lebih"
+        },
+        {
+          "t0": 419.578,
+          "t1": 419.954,
+          "text": "lama."
+        },
+        {
+          "t0": 419.954,
+          "t1": 422.287,
+          "text": "Itu mekanisme, bukan kalimat sihir."
+        },
+        {
+          "t0": 422.287,
+          "t1": 425.373,
+          "text": "Ia tidak berarti setiap kota menerima cuaca yang"
+        },
+        {
+          "t0": 425.373,
+          "t1": 427.053,
+          "text": "sama, pada hari yang sama, dengan akibat yang"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Mekanisme atmosfer",
+        "kicker": "SCHURER ET AL. 2019",
+        "cards": [
+          {
+            "plate": "lf04/14-01.svg",
+            "label": "SO₂",
+            "sub": "masuk ke stratosfer",
+            "num": 1
+          },
+          {
+            "plate": "lf04/14-02.svg",
+            "label": "AEROSOL SULFAT",
+            "sub": "terbentuk di stratosfer",
+            "num": 2
+          },
+          {
+            "plate": "lf04/14-03.svg",
+            "label": "RADIASI PENDEK ↓",
+            "sub": "energi bersih ke permukaan",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 14,
+      "chapter": "BABAK 5 · JALAN KE STRATOSFER",
+      "start": 427.053,
+      "end": 457.707,
+      "startFrame": 12812,
+      "endFrame": 13731,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 428.232,
+          "t1": 428.609,
+          "text": "sama."
+        },
+        {
+          "t0": 428.609,
+          "t1": 431.995,
+          "text": "Sirkulasi atmosfer dan laut tetap ikut menentukan di"
+        },
+        {
+          "t0": 431.995,
+          "t1": 435.607,
+          "text": "mana dingin, hujan, atau kekeringan terasa paling kuat."
+        },
+        {
+          "t0": 435.607,
+          "t1": 439.295,
+          "text": "Inilah perbedaan antara proses fisika dan judul sejarah."
+        },
+        {
+          "t0": 439.295,
+          "t1": 443.434,
+          "text": "Prosesnya dapat bekerja lintas atmosfer, tetapi catatan dampak"
+        },
+        {
+          "t0": 443.434,
+          "t1": 447.271,
+          "text": "selalu datang dari tempat, musim, dan masyarakat tertentu."
+        },
+        {
+          "t0": 447.271,
+          "t1": 450.432,
+          "text": "Karena itu, label “Tahun Tanpa Musim Panas” perlu"
+        },
+        {
+          "t0": 450.432,
+          "t1": 452.163,
+          "text": "ditempatkan dengan tepat."
+        },
+        {
+          "t0": 452.163,
+          "t1": 455.625,
+          "text": "Artikel 2019 membahas terutama Eropa Tengah dan Barat"
+        },
+        {
+          "t0": 455.625,
+          "t1": 457.707,
+          "text": "pada musim panas 1816 yang dingin dan basah,"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Mekanisme bukan cuaca seragam",
+        "kicker": "SISTEM IKLIM",
+        "cards": [
+          {
+            "plate": "lf04/15-01.svg",
+            "label": "PROSES FISIKA",
+            "sub": "dapat bekerja lintas atmosfer",
+            "num": 1
+          },
+          {
+            "plate": "lf04/15-02.svg",
+            "label": "SIRKULASI",
+            "sub": "ikut menentukan pola setempat",
+            "num": 2
+          },
+          {
+            "plate": "lf04/15-03.svg",
+            "label": "DAMPAK TERCATAT",
+            "sub": "tempat · musim · masyarakat",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 15,
+      "chapter": "BABAK 5 · JALAN KE STRATOSFER",
+      "start": 457.707,
+      "end": 488.36,
+      "startFrame": 13731,
+      "endFrame": 14651,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 458.409,
+          "t1": 461.193,
+          "text": "terkait kegagalan panen dan krisis pangan."
+        },
+        {
+          "t0": 461.193,
+          "t1": 464.128,
+          "text": "Label itu juga dikenal dalam konteks Eropa dan"
+        },
+        {
+          "t0": 464.128,
+          "t1": 465.107,
+          "text": "Amerika Utara."
+        },
+        {
+          "t0": 465.107,
+          "t1": 467.665,
+          "text": "Ia bukan nama untuk satu musim seragam di"
+        },
+        {
+          "t0": 467.665,
+          "t1": 468.493,
+          "text": "semua benua."
+        },
+        {
+          "t0": 468.493,
+          "t1": 471.729,
+          "text": "Tambora memberi dorongan besar pada sistem iklim."
+        },
+        {
+          "t0": 471.729,
+          "t1": 476.319,
+          "text": "Tetapi untuk mengukur seberapa besar, penelitian harus membandingkan"
+        },
+        {
+          "t0": 476.319,
+          "t1": 479.706,
+          "text": "dunia yang diberi forcing vulkanik dengan dunia yang"
+        },
+        {
+          "t0": 479.706,
+          "t1": 481.361,
+          "text": "tidak diberi forcing itu."
+        },
+        {
+          "t0": 481.361,
+          "t1": 484.597,
+          "text": "Sejauh mana dingin 1816 dapat dijelaskan oleh pola"
+        },
+        {
+          "t0": 484.597,
+          "t1": 488.36,
+          "text": "cuaca biasa, dan sejauh mana Tambora mengubah peluangnya?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Konteks 1816",
+        "kicker": "WILAYAH KAJIAN · SCHURER ET AL. 2019",
+        "cards": [
+          {
+            "plate": "lf04/16-01.svg",
+            "label": "EROPA TENGAH & BARAT",
+            "sub": "musim panas 1816",
+            "num": 1
+          },
+          {
+            "plate": "lf04/16-02.svg",
+            "label": "DINGIN & BASAH",
+            "sub": "anomali regional yang diuji",
+            "num": 2
+          },
+          {
+            "plate": "lf04/16-03.svg",
+            "label": "BUKAN LABEL GLOBAL",
+            "sub": "tidak semua benua seragam",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 16,
+      "chapter": "BABAK 6 · PEMBALIKAN: BUKAN SATU TOMBOL CUACA",
+      "start": 488.36,
+      "end": 517.613,
+      "startFrame": 14651,
+      "endFrame": 15528,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 488.36,
+          "t1": 492.079,
+          "text": "Di titik ini, cerita mudah tergelincir menjadi slogan:"
+        },
+        {
+          "t0": 492.079,
+          "t1": 494.532,
+          "text": "Tambora meletus, lalu Eropa dingin."
+        },
+        {
+          "t0": 494.532,
+          "t1": 495.166,
+          "text": "Selesai."
+        },
+        {
+          "t0": 495.166,
+          "t1": 498.885,
+          "text": "Studi Schurer dan rekan-rekan pada 2019 justru menguji"
+        },
+        {
+          "t0": 498.885,
+          "t1": 500.942,
+          "text": "bagian yang tidak selesai itu."
+        },
+        {
+          "t0": 500.942,
+          "t1": 504.741,
+          "text": "Mereka memakai data instrumental awal dan simulasi dari"
+        },
+        {
+          "t0": 504.741,
+          "t1": 505.849,
+          "text": "dua model iklim."
+        },
+        {
+          "t0": 505.849,
+          "t1": 511.072,
+          "text": "Mereka membandingkan peran forcing letusan dengan variabilitas sirkulasi."
+        },
+        {
+          "t0": 511.072,
+          "t1": 514.474,
+          "text": "Hasilnya memisahkan dua hal yang sering dicampur."
+        },
+        {
+          "t0": 514.474,
+          "t1": 517.613,
+          "text": "Pola sirkulasi dapat mereproduksi anomali presipitasi tanpa forcing"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Cara menguji 1816",
+        "kicker": "SCHURER ET AL. 2019",
+        "cards": [
+          {
+            "plate": "lf04/17-01.svg",
+            "label": "DATA INSTRUMENTAL AWAL",
+            "sub": "merekam anomali",
+            "num": 1
+          },
+          {
+            "plate": "lf04/17-02.svg",
+            "label": "DUA MODEL IKLIM",
+            "sub": "simulasi pembanding",
+            "num": 2
+          },
+          {
+            "plate": "lf04/17-03.svg",
+            "label": "FORCING vs SIRKULASI",
+            "sub": "dua peran dipisahkan",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 17,
+      "chapter": "BABAK 6 · PEMBALIKAN: BUKAN SATU TOMBOL CUACA",
+      "start": 517.613,
+      "end": 546.867,
+      "startFrame": 15528,
+      "endFrame": 16406,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 519.222,
+          "t1": 520.014,
+          "text": "eksternal."
+        },
+        {
+          "t0": 520.014,
+          "t1": 523.97,
+          "text": "Tetapi pola itu hanya menjelaskan sekitar seperempat dari"
+        },
+        {
+          "t0": 523.97,
+          "t1": 525.949,
+          "text": "anomali dingin yang diamati."
+        },
+        {
+          "t0": 525.949,
+          "t1": 529.985,
+          "text": "Ketika forcing Tambora dimasukkan ke model, anomali dingin"
+        },
+        {
+          "t0": 529.985,
+          "t1": 532.992,
+          "text": "Eropa menjadi hingga 100 kali lebih mungkin."
+        },
+        {
+          "t0": 532.992,
+          "t1": 536.79,
+          "text": "Untuk kondisi basah, peluangnya naik sekitar 1,5 sampai"
+        },
+        {
+          "t0": 536.79,
+          "t1": 537.265,
+          "text": "3 kali."
+        },
+        {
+          "t0": 537.265,
+          "t1": 540.826,
+          "text": "Jadi pembaliknya bukan bahwa Tambora tidak penting."
+        },
+        {
+          "t0": 540.826,
+          "t1": 543.912,
+          "text": "Pembaliknya adalah cara pentingnya bekerja:"
+        },
+        {
+          "t0": 543.912,
+          "t1": 546.867,
+          "text": "bukan tombol tunggal yang menentukan seluruh cuaca, melainkan"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Apa yang bisa dijelaskan",
+        "kicker": "HASIL ATRIBUSI · SCHURER ET AL. 2019",
+        "cards": [
+          {
+            "plate": "lf04/18-01.svg",
+            "label": "PRESIPITASI",
+            "sub": "sirkulasi dapat mereproduksi pola",
+            "num": 1
+          },
+          {
+            "plate": "lf04/18-02.svg",
+            "label": "SEKITAR ¼",
+            "sub": "anomali dingin yang dijelaskan",
+            "num": 2
+          },
+          {
+            "plate": "lf04/18-03.svg",
+            "label": "SISA PERTANYAAN",
+            "sub": "bukan satu sebab tunggal",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 18,
+      "chapter": "BABAK 6 · PEMBALIKAN: BUKAN SATU TOMBOL CUACA",
+      "start": 546.867,
+      "end": 576.12,
+      "startFrame": 16406,
+      "endFrame": 17284,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 548.186,
+          "t1": 551.826,
+          "text": "forcing besar yang mengubah peluang dalam sistem yang"
+        },
+        {
+          "t0": 551.826,
+          "t1": 553.408,
+          "text": "juga bergerak sendiri."
+        },
+        {
+          "t0": 553.408,
+          "t1": 555.941,
+          "text": "Model tidak menggantikan arsip 1816."
+        },
+        {
+          "t0": 555.941,
+          "t1": 559.106,
+          "text": "Model menguji apakah arsip itu masuk akal tanpa"
+        },
+        {
+          "t0": 559.106,
+          "t1": 564.092,
+          "text": "letusan, lalu memperlihatkan betapa sulitnya memperoleh dingin sebesar"
+        },
+        {
+          "t0": 564.092,
+          "t1": 565.991,
+          "text": "itu tanpa forcing vulkanik."
+        },
+        {
+          "t0": 565.991,
+          "t1": 568.207,
+          "text": "Mengapa ketelitian ini penting?"
+        },
+        {
+          "t0": 568.207,
+          "t1": 571.609,
+          "text": "Karena tanpa itu, satu gunung bisa berubah menjadi"
+        },
+        {
+          "t0": 571.609,
+          "t1": 574.696,
+          "text": "cerita serba sebab, dan bukti yang kuat justru"
+        },
+        {
+          "t0": 574.696,
+          "t1": 576.12,
+          "text": "menjadi lebih lemah."
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Peluang berubah",
+        "kicker": "HASIL ATRIBUSI · SCHURER ET AL. 2019",
+        "cards": [
+          {
+            "plate": "lf04/19-01.svg",
+            "label": "HINGGA 100×",
+            "sub": "dingin Eropa lebih mungkin",
+            "num": 1
+          },
+          {
+            "plate": "lf04/19-02.svg",
+            "label": "1,5 → 3×",
+            "sub": "kondisi basah lebih mungkin",
+            "num": 2
+          },
+          {
+            "plate": "lf04/19-03.svg",
+            "label": "FORCING BESAR",
+            "sub": "mengubah peluang dalam sistem",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 19,
+      "chapter": "BABAK 7 · KEMBALI KE LIMA LAPISAN",
+      "start": 576.12,
+      "end": 608.867,
+      "startFrame": 17284,
+      "endFrame": 18266,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 576.12,
+          "t1": 579.167,
+          "text": "Setelah semua peta dan model, kita kembali ke"
+        },
+        {
+          "t0": 579.167,
+          "t1": 579.969,
+          "text": "Doro Bente."
+        },
+        {
+          "t0": 579.969,
+          "t1": 584.059,
+          "text": "Lima lapisan 1815 tidak menjelaskan seluruh sejarah dunia."
+        },
+        {
+          "t0": 584.059,
+          "t1": 587.187,
+          "text": "Mereka melakukan sesuatu yang lebih berguna:"
+        },
+        {
+          "t0": 587.187,
+          "t1": 589.994,
+          "text": "memberi titik awal yang dapat diperiksa."
+        },
+        {
+          "t0": 589.994,
+          "t1": 594.244,
+          "text": "Dari titik itu, arsip Badan Geologi memperlihatkan bagaimana"
+        },
+        {
+          "t0": 594.244,
+          "t1": 597.452,
+          "text": "kabar bergerak lambat melalui kapal dan surat."
+        },
+        {
+          "t0": 597.452,
+          "t1": 601.783,
+          "text": "Katalog gunung api memperlihatkan kaldera, endapan, dan jalur"
+        },
+        {
+          "t0": 601.783,
+          "t1": 603.788,
+          "text": "material ke laut serta udara."
+        },
+        {
+          "t0": 603.788,
+          "t1": 608.279,
+          "text": "Penelitian arkeologi membatasi apa yang dapat dikatakan tentang"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Empat mata rantai",
+        "kicker": "BUKTI YANG SALING MENGUJI",
+        "cards": [
+          {
+            "plate": "lf04/20-01.svg",
+            "label": "TANAH",
+            "sub": "lapisan 1815 di Doro Bente",
+            "num": 1
+          },
+          {
+            "plate": "lf04/20-02.svg",
+            "label": "ARSIP",
+            "sub": "kabar kapal dan surat",
+            "num": 2
+          },
+          {
+            "plate": "lf04/20-03.svg",
+            "label": "ATMOSFER",
+            "sub": "mekanisme aerosol sulfat",
+            "num": 3
+          },
+          {
+            "plate": "lf04/20-04.svg",
+            "label": "MODEL",
+            "sub": "peluang dingin diuji",
+            "num": 4
+          }
+        ]
+      }
+    },
+    {
+      "i": 20,
+      "chapter": "BABAK 7 · KEMBALI KE LIMA LAPISAN",
+      "start": 608.867,
+      "end": 641.613,
+      "startFrame": 18266,
+      "endFrame": 19248,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 608.867,
+          "t1": 612.048,
+          "text": "permukiman tanpa mengubah tanah menjadi drama rekaan."
+        },
+        {
+          "t0": 612.048,
+          "t1": 616.298,
+          "text": "Lalu penelitian iklim mengukur perbedaan antara “cuaca dapat"
+        },
+        {
+          "t0": 616.298,
+          "t1": 620.148,
+          "text": "berubah” dan “letusan membuat dingin ekstrem jauh lebih"
+        },
+        {
+          "t0": 620.148,
+          "t1": 624.398,
+          "text": "mungkin.” Itulah alasan Tambora layak dibongkar lebih dalam."
+        },
+        {
+          "t0": 624.398,
+          "t1": 628.007,
+          "text": "Bukan karena ia memberi satu jawaban raksasa, tetapi"
+        },
+        {
+          "t0": 628.007,
+          "t1": 631.776,
+          "text": "karena ia memaksa kita menyambungkan bukti dari tanah,"
+        },
+        {
+          "t0": 631.776,
+          "t1": 635.305,
+          "text": "arsip, atmosfer, dan model tanpa melewati satu mata"
+        },
+        {
+          "t0": 635.305,
+          "t1": 636.107,
+          "text": "rantai pun."
+        },
+        {
+          "t0": 636.107,
+          "t1": 639.314,
+          "text": "Pada 1816, musim panas gagal terasa normal bagi"
+        },
+        {
+          "t0": 639.314,
+          "t1": 640.838,
+          "text": "banyak orang di Eropa."
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Batas di setiap mata rantai",
+        "kicker": "TIDAK MELONCAT",
+        "cards": [
+          {
+            "plate": "lf04/21-01.svg",
+            "label": "SITUS",
+            "sub": "bukti khusus, bukan seluruh pulau",
+            "num": 1
+          },
+          {
+            "plate": "lf04/21-02.svg",
+            "label": "ARSIP",
+            "sub": "jeda kabar, bukan jam bahaya",
+            "num": 2
+          },
+          {
+            "plate": "lf04/21-03.svg",
+            "label": "IKLIM",
+            "sub": "peluang regional, bukan seragam",
+            "num": 3
+          }
+        ]
+      }
+    },
+    {
+      "i": 21,
+      "chapter": "BABAK 7 · KEMBALI KE LIMA LAPISAN",
+      "start": 641.613,
+      "end": 674.36,
+      "startFrame": 19248,
+      "endFrame": 20231,
+      "layout": "diagram",
+      "captions": [
+        {
+          "t0": 641.613,
+          "t1": 644.367,
+          "text": "Pada 1815, material Tambora sudah mengubah tanah di"
+        },
+        {
+          "t0": 644.367,
+          "t1": 645.008,
+          "text": "Sumbawa."
+        },
+        {
+          "t0": 645.008,
+          "t1": 648.938,
+          "text": "Dua peristiwa itu tidak perlu disambungkan oleh legenda."
+        },
+        {
+          "t0": 648.938,
+          "t1": 652.867,
+          "text": "Rantai buktinya sudah ada, tetapi setiap bagiannya punya"
+        },
+        {
+          "t0": 652.867,
+          "t1": 653.349,
+          "text": "batas."
+        },
+        {
+          "t0": 653.349,
+          "t1": 656.637,
+          "text": "Jadi ketika lima lapisan itu dibaca, yang muncul"
+        },
+        {
+          "t0": 656.637,
+          "t1": 658.241,
+          "text": "bukan sekadar abu lama."
+        },
+        {
+          "t0": 658.241,
+          "t1": 662.17,
+          "text": "Yang muncul adalah cara sebuah letusan dapat dibuktikan,"
+        },
+        {
+          "t0": 662.17,
+          "t1": 665.859,
+          "text": "dari Sumbawa sampai perubahan peluang cuaca di tempat"
+        },
+        {
+          "t0": 665.859,
+          "t1": 666.581,
+          "text": "yang jauh."
+        },
+        {
+          "t0": 666.581,
+          "t1": 669.949,
+          "text": "Jika satu lapisan tanah dapat membuka satu rantai"
+        },
+        {
+          "t0": 669.949,
+          "t1": 672.756,
+          "text": "dunia, bukti apa lagi yang selama ini kita"
+        },
+        {
+          "t0": 672.756,
+          "t1": 674.36,
+          "text": "ringkas terlalu cepat?"
+        }
+      ],
+      "diagram": {
+        "style": "cards",
+        "title": "Membaca tanpa mengisi dugaan",
+        "kicker": "PERTANYAAN PENUTUP",
+        "cards": [
+          {
+            "plate": "lf04/22-01.svg",
+            "label": "LIMA LAPISAN",
+            "sub": "titik awal yang dapat diperiksa",
+            "num": 1
+          },
+          {
+            "plate": "lf04/22-02.svg",
+            "label": "RANTAI BUKTI",
+            "sub": "tanah → arsip → atmosfer → model",
+            "num": 2
+          },
+          {
+            "plate": "lf04/22-03.svg",
+            "label": "APA YANG DIRINGKAS?",
+            "sub": "bukti apa yang perlu dibaca lagi?",
+            "num": 3
+          }
+        ]
+      }
+    }
+  ],
+  "source_boundary": "Original diagrams only; no disaster reconstruction, victim imagery, or unlicensed archival/photographic asset."
+}

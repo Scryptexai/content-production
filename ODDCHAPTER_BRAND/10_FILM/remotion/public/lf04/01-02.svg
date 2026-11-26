@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-label="LIMA LAPISAN">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10181C"/><stop offset="1" stop-color="#071012"/></linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#AAB7A1" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="760" height="640" fill="url(#bg)"/>
+  <rect width="760" height="640" fill="url(#grid)"/>
+  <path d="M0 584 C160 540 292 628 460 574 S660 540 760 570 V640 H0Z" fill="#0B0F12" opacity=".75"/>
+  <text x="112" y="54" fill="#C46A34" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">BRIN 2024</text><text x="112" y="105" fill="#EDE7D6" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start">LIMA LAPISAN</text><path d="M94 180 C230 158 470 204 665 175 L665 232 C460 256 230 216 94 238Z" fill="#4E443A" opacity="0.94"/><path d="M94 246 C230 224 470 270 665 241 L665 298 C460 322 230 282 94 304Z" fill="#8F5E3C" opacity="0.94"/><path d="M94 312 C230 290 470 336 665 307 L665 364 C460 388 230 348 94 370Z" fill="#C46A34" opacity="0.94"/><path d="M94 378 C230 356 470 402 665 373 L665 430 C460 454 230 414 94 436Z" fill="#DEC08B" opacity="0.94"/><path d="M94 444 C230 422 470 468 665 439 L665 496 C460 520 230 480 94 502Z" fill="#B16D46" opacity="0.94"/><line x1="94" y1="160" x2="665" y2="160" stroke="#AAB7A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".38"/>
+  <rect x="48" y="554" width="664" height="1" fill="#AAB7A1" opacity=".35"/>
+  <text x="112" y="594" fill="#C9D1C2" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start">material piroklastik · 1815</text>
+</svg>

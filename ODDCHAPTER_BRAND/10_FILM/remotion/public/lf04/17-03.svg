@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-label="FORCING vs SIRKULASI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10181C"/><stop offset="1" stop-color="#071012"/></linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#AAB7A1" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="760" height="640" fill="url(#bg)"/>
+  <rect width="760" height="640" fill="url(#grid)"/>
+  <path d="M0 584 C160 540 292 628 460 574 S660 540 760 570 V640 H0Z" fill="#0B0F12" opacity=".75"/>
+  <text x="112" y="54" fill="#C46A34" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">SCHURER ET AL. 2019</text><text x="112" y="105" fill="#EDE7D6" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start">FORCING vs SIRKULASI</text><rect x="114" y="156" width="532" height="330" rx="16" fill="#0F171B" stroke="#AAB7A1" stroke-width="6"/> <path d="M156 418 L244 346 L338 382 L432 250 L548 300 L610 202" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#C46A34"/> <path d="M156 348 L244 308 L338 328 L432 334 L548 270 L610 292" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#EDE7D6" opacity=".75"/>
+  <rect x="48" y="554" width="664" height="1" fill="#AAB7A1" opacity=".35"/>
+  <text x="112" y="594" fill="#C9D1C2" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start">dua peran dipisahkan</text>
+</svg>

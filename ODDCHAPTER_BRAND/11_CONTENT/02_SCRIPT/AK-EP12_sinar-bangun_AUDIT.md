@@ -1,11 +1,18 @@
 # Audit naskah Short — AK-EP12 · Sinar Bangun 4
 
-**Status:** `REVIEW MASTER LOKAL LULUS — tidak ada distribusi, antrean, Drive, atau unggahan.`
+**Status:** `MASTER REMOTION LULUS QC — pemilik kemudian mengotorisasi satu unggahan
+YouTube baru yang terpisah dengan visibilitas unlisted.`
 
-**Persetujuan pemilik:** Setelah menyetujui pra-produksi, pemilik memberi persetujuan
+**Riwayat persetujuan:** Setelah menyetujui pra-produksi, pemilik memberi persetujuan
 **terpisah** untuk tepat satu render review lokal Remotion serta QC/provenance lokal.
-Persetujuan itu tidak mencakup transfer, queue, penjadwalan, upload, publikasi, unlist,
-penghapusan, atau perubahan episode kanonik `EP12`; tidak satu pun tindakan itu dilakukan.
+Persetujuan awal itu tidak mencakup transfer, queue, penjadwalan, upload, publikasi,
+unlist, penghapusan, atau perubahan episode kanonik `EP12`; tidak satu pun tindakan itu
+sudah dilakukan pada tahap review lokal.
+
+**Otorisasi distribusi terkini:** Setelah LF04 lulus QC final, pemilik mengotorisasi
+master AK-EP12 yang sama untuk **satu** unggahan YouTube baru yang terpisah,
+**unlisted**. Otorisasi ini tidak mengizinkan rilis publik, penjadwalan, penghapusan,
+penggantian video yang sudah ada, atau perubahan kalender kanonik.
 
 ## Hubungan dengan naskah panjang
 
@@ -95,5 +102,7 @@ layanan distribusi.
 - [x] Persetujuan render review lokal terpisah diterima; bundle/renderer, still QC,
       render Remotion, loudness, dan QC teknis selesai serta lulus.
 - [x] Satu review master lokal dibuat dengan provenance Remotion dan tanpa distribusi.
-- [ ] Persetujuan eksplisit baru diperlukan sebelum Drive, queue, jadwal, unggah,
-      publikasi, unlist, penghapusan, atau perubahan episode kanonik apa pun.
+- [x] Setelah LF04 lulus QC final, pemilik memberi persetujuan eksplisit untuk Drive,
+      antrean, dan satu unggahan YouTube **unlisted** baru yang terpisah.
+- [ ] Jangan menjadwalkan, merilis publik, menghapus/mengganti unggahan, atau mengubah
+      episode kanonik tanpa otorisasi baru.

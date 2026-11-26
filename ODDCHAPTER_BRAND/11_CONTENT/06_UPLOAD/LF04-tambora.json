@@ -1,0 +1,42 @@
+{
+  "episode": "LF04-tambora",
+  "video": "LF04_Tambora-1815_1920x1080_master.mp4",
+  "thumbnail": "LF04_Tambora-1815_thumbnail_16x9.jpg",
+  "title": "Tambora 1815: Lima Lapisan Abu dan Tahun Tanpa Musim Panas",
+  "title_alt": [
+    "Tambora 1815 Tidak Cukup Dijelaskan dalam Satu Kalimat",
+    "Lima Lapisan Abu Tambora dan Cara Membaca Tahun 1816"
+  ],
+  "hook": "Di Doro Bente, lima lapisan piroklastik 1815 memberi titik awal untuk membaca Tambora tanpa mengisi kekosongan dengan dugaan.",
+  "description": "Di Doro Bente, lima lapisan piroklastik 1815 memberi titik awal untuk membaca Tambora tanpa mengisi kekosongan dengan dugaan.\n\nVideo ini mengikuti rantai bukti: stratigrafi dan artefak di Semenanjung Tambora; berita 1815 yang bergerak melalui kapal, surat, dan koran; mekanisme SO2 serta aerosol sulfat di stratosfer; lalu studi atribusi iklim tentang anomali Eropa 1816.\n\nKesimpulannya dibatasi sumber. Satu kotak ekskavasi bukan seluruh Sumbawa. Tidak ada angka korban tunggal atau rekonstruksi pengalaman korban. “Tahun Tanpa Musim Panas” adalah konteks anomali regional, bukan label cuaca seragam untuk seluruh planet. Tambora mengubah peluang dalam sistem iklim yang juga dipengaruhi sirkulasi.\n\nSumber utama: Smithsonian Global Volcanism Program, Haribuana et al. (BRIN, 2024), Sutawidjaja, Sigurdsson & Abrams (2006), Badan Geologi (2020), dan Schurer et al. (2019), Environmental Research Letters. Daftar klaim dan tautan sumber tersedia di SOURCES.md produksi.\n\nVisualnya adalah diagram SVG original dan narasi sintetis; tidak ada foto korban, footage bencana, atau rekonstruksi fotorealistik yang dipakai sebagai bukti.\n\n#Tambora #SejarahIndonesia #Vulkanologi #Iklim #ODDCHAPTER",
+  "tags": [
+    "Tambora 1815",
+    "Gunung Tambora",
+    "Sumbawa",
+    "Doro Bente",
+    "stratigrafi",
+    "letusan gunung api",
+    "vulkanologi",
+    "tahun tanpa musim panas",
+    "sejarah iklim",
+    "sejarah Indonesia",
+    "ODDCHAPTER"
+  ],
+  "first_comment": "Saat satu klaim sejarah terdengar terlalu rapi, bukti mana yang kamu periksa lebih dulu: tanah, arsip, atau model?",
+  "categoryId": "27",
+  "madeForKids": false,
+  "containsSyntheticMedia": true,
+  "visibility": "unlisted",
+  "drive_file_id": "1H1zsYLzjY2IpjveSbPHyMLqMGEH8JZrz",
+  "duration_seconds": 674.366667,
+  "size_bytes": 77512448,
+  "sha256": "41044439821a7700d460fbfa978d42be7ab44c3f02402169a99fd19fd93e5b3c",
+  "render_provenance": {
+    "engine": "remotion",
+    "engine_version": "4.0.541",
+    "composition": "ODDCHAPTER-LONGFORM-LF04-TAMBORA-6FPS",
+    "entrypoint": "ODDCHAPTER_BRAND/10_FILM/remotion/src/index.ts",
+    "renderer": "@remotion/renderer",
+    "manifest": "ODDCHAPTER_BRAND/11_CONTENT/06_UPLOAD/provenance/LF04-tambora-remotion-master.json"
+  }
+}

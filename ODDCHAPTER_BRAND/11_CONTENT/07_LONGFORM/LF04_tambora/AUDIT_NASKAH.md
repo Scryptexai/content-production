@@ -1,6 +1,6 @@
 # Audit editorial — LF04 · Tambora 1815
 
-**Status:** `DRAF LONG-FORM BERBASIS SUMBER — MENUNGGU REVIEW EDITORIAL PEMILIK`
+**Status:** `MASTER LONG-FORM REMOTION LULUS QC — pemilik mengotorisasi satu unggahan YouTube baru dengan visibilitas unlisted setelah QC final.`
 
 ## Mandat dan pilihan topik
 
@@ -80,12 +80,14 @@ sirkulasi tetap penting untuk membaca presipitasi dan sebaran dampak regional.
 - [x] Riset sumber, peta klaim, dan draf long-form diselesaikan.
 - [x] Format panjang dipertahankan; **tidak ada Short turunan** dibuat atau
       dijadwalkan oleh pekerjaan ini.
-- [ ] Pemilik mereview dan menyetujui judul, tesis, struktur, serta batas ilmiah
-      sebelum naskah dianggap final.
-- [ ] Asset audit, VO, scene/plate, bundling Remotion, render, QC media, Drive,
-      antrean, jadwal, upload, atau publikasi memerlukan persetujuan terpisah.
+- [x] Pemilik menyetujui judul, tesis, struktur, dan batas ilmiah untuk produksi penuh.
+- [x] Asset audit, VO, scene/plate, bundling Remotion, render, dan QC media selesai;
+      master 1920×1080/30 fps memiliki tepat 20.231 frame.
+- [x] Setelah QC final, pemilik mengotorisasi satu unggahan YouTube baru yang terpisah
+      dengan visibilitas **unlisted**.
+- [ ] Jangan menjadwalkan, merilis publik, menghapus/mengganti unggahan, atau mengubah
+      episode kanonik tanpa otorisasi baru.
 
 **Catatan kalender:** ide lama EP18 tentang Tambora adalah proposal Short berstatus
 `NEEDS-SOURCE`. LF04 ini adalah episode panjang yang berdiri sendiri; ia tidak
-mengubah episode kalender, tidak mengambil nomor EP12 kanonik, dan tidak mengizinkan
-aksi distribusi apa pun.
+mengubah episode kalender dan tidak mengambil nomor EP12 kanonik.

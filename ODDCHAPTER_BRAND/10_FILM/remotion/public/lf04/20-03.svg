@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-label="ATMOSFER">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10181C"/><stop offset="1" stop-color="#071012"/></linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#AAB7A1" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="760" height="640" fill="url(#bg)"/>
+  <rect width="760" height="640" fill="url(#grid)"/>
+  <path d="M0 584 C160 540 292 628 460 574 S660 540 760 570 V640 H0Z" fill="#0B0F12" opacity=".75"/>
+  <text x="112" y="54" fill="#C46A34" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">SCHURER ET AL. 2019</text><text x="112" y="105" fill="#EDE7D6" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start">ATMOSFER</text><path d="M330 482 C330 388 355 328 380 198" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#C46A34"/> <path d="M326 236 L380 160 L432 236" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="#C46A34"/> <circle cx="160" cy="226" r="9" fill="#EDE7D6" opacity=".4"/><circle cx="268" cy="226" r="14" fill="#EDE7D6" opacity=".5"/><circle cx="376" cy="226" r="19" fill="#EDE7D6" opacity=".6"/><circle cx="484" cy="226" r="9" fill="#EDE7D6" opacity=".7"/><circle cx="592" cy="226" r="14" fill="#EDE7D6" opacity=".8"/><circle cx="160" cy="292" r="19" fill="#EDE7D6" opacity=".4"/><circle cx="268" cy="292" r="9" fill="#EDE7D6" opacity=".5"/><circle cx="376" cy="292" r="14" fill="#EDE7D6" opacity=".6"/><circle cx="484" cy="292" r="19" fill="#EDE7D6" opacity=".7"/><circle cx="592" cy="292" r="9" fill="#EDE7D6" opacity=".8"/><circle cx="160" cy="358" r="14" fill="#EDE7D6" opacity=".4"/><circle cx="268" cy="358" r="19" fill="#EDE7D6" opacity=".5"/><circle cx="376" cy="358" r="9" fill="#EDE7D6" opacity=".6"/><circle cx="484" cy="358" r="14" fill="#EDE7D6" opacity=".7"/><circle cx="592" cy="358" r="19" fill="#EDE7D6" opacity=".8"/> <path d="M105 480 H655" stroke="#AAB7A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".5"/>
+  <rect x="48" y="554" width="664" height="1" fill="#AAB7A1" opacity=".35"/>
+  <text x="112" y="594" fill="#C9D1C2" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start">mekanisme aerosol sulfat</text>
+</svg>

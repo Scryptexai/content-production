@@ -24,19 +24,20 @@ type FootCut = { clip: string; start: number; end: number; offset: number; motio
 type DgCard = { plate: string; label: string; sub: string; num: number };
 type Diagram = { style?: "cards" | "timeline"; title?: string; kicker?: string; cards: DgCard[] };
 type Seg = {
-  i: number; chapter: string; start: number; end: number; startFrame: number;
+  i: number; chapter: string; start: number; end: number; startFrame: number; endFrame: number;
   layout: "footage" | "diagram"; captions: Cap[]; footage?: FootCut[]; diagram?: Diagram;
 };
 type Card = {
   type: "chapter" | "interstitial"; num: number; kicker: string; title: string;
   sub: string; start: number; end: number; dur: number;
 };
-type Doc = {
+export type LongFormDoc = {
   id: string; series: string; title: string; vo: string; fps: number;
   duration: number; totalFrames: number; cards: Card[]; segments: Seg[];
 };
 
-const D = data as unknown as Doc;
+const defaultData = data as unknown as LongFormDoc;
+const LongFormDataContext = React.createContext<LongFormDoc>(defaultData);
 
 const W = 1920;
 const H = 1080;
@@ -80,6 +81,7 @@ const Scrim: React.FC = () => (
 /* ───────────────────────────── footage ───────────────────────────── */
 
 const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ cut, born, durFrames }) => {
+  const { fps } = useVideoConfig();
   const prog = Math.min(1, born / Math.max(1, durFrames));
   const m = cut.motion % 4;
   const scale = m === 2 ? 1.14 - prog * 0.05 : 1.06 + prog * 0.05;
@@ -91,7 +93,7 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
           tools/bake_overlay.py — lihat catatan di sana soal biaya filter CSS */}
       <OffthreadVideo
         src={staticFile(cut.clip)}
-        trimBefore={Math.round(cut.offset * D.fps)}
+        trimBefore={Math.round(cut.offset * fps)}
         muted
         style={{
           width: "100%", height: "100%", objectFit: "cover", opacity: flicker,
@@ -107,6 +109,7 @@ const Footage: React.FC<{ cut: FootCut; born: number; durFrames: number }> = ({ 
 /* ─────────────────────── diagram: kartu berfoto ─────────────────────── */
 
 const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({ seg, born, durFrames }) => {
+  const { fps } = useVideoConfig();
   const dg = seg.diagram!;
   const n = Math.max(1, dg.cards.length);
   const drift = Math.min(1, born / Math.max(1, durFrames));
@@ -118,9 +121,9 @@ const DiagramScene: React.FC<{ seg: Seg; born: number; durFrames: number }> = ({
   // bersama narasi (bukan gambar diam yang menunggu VO selesai).
   const totalF = Math.max(1, durFrames);
   const revealSpan = isTimeline
-    ? Math.min(4.5 * D.fps, Math.max(30, totalF * 0.4))
-    : Math.min(9 * D.fps, Math.max(40, totalF * 0.4));
-  const focusEvery = Math.max(4, Math.round((6 * D.fps)));
+    ? Math.min(4.5 * fps, Math.max(8, totalF * 0.4))
+    : Math.min(9 * fps, Math.max(12, totalF * 0.4));
+  const focusEvery = Math.max(4, Math.round(6 * fps));
   const focusIdx = Math.floor(born / focusEvery) % n;
 
   const cardW = isTimeline ? 470 : 366;
@@ -353,7 +356,8 @@ const ChapterTag: React.FC<{ text: string; born: number; hold: number }> = ({ te
 
 /* ─────────────────────────────── root ─────────────────────────────── */
 
-export const LongForm: React.FC = () => {
+const LongFormScene: React.FC = () => {
+  const D = React.useContext(LongFormDataContext);
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -364,7 +368,12 @@ export const LongForm: React.FC = () => {
   const cut = seg?.footage?.find((c) => t >= c.start && t < c.end) ?? seg?.footage?.[seg.footage.length - 1];
   const cap = seg ? seg.captions.find((c) => t >= c.t0 && t < c.t1) ?? null : null;
 
-  const segBorn = seg ? frame - seg.startFrame : 0;
+  // Generated JSON also carries 30-fps frame indexes for legacy long-form jobs.
+  // Derive frame positions from seconds at runtime so the audited LF04 6-fps
+  // source composition keeps the same real-time scene/caption timing.
+  const segStartFrame = seg ? Math.round(seg.start * fps) : 0;
+  const segEndFrame = seg ? Math.round(seg.end * fps) : 0;
+  const segBorn = seg ? frame - segStartFrame : 0;
   const cutBorn = cut ? frame - Math.round(cut.start * fps) : 0;
   const flash = cut ? interpolate(cutBorn, [0, 4], [0.14, 0], clamp) : 0;
 
@@ -382,9 +391,9 @@ export const LongForm: React.FC = () => {
 
       {seg && seg.layout === "diagram" && seg.diagram ? (
         <>
-          <DiagramScene seg={seg} born={segBorn} durFrames={seg.endFrame - seg.startFrame} />
+          <DiagramScene seg={seg} born={segBorn} durFrames={segEndFrame - segStartFrame} />
           <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(8,10,12,0.72) 0%, rgba(8,10,12,0.12) 16%, rgba(8,10,12,0) 38%, rgba(8,10,12,0.55) 74%, rgba(8,10,12,0.95) 100%)", pointerEvents: "none" }} />
-          <ChapterTag text={seg.chapter} born={seg.startFrame} hold={Math.round(2.2 * fps)} />
+          <ChapterTag text={seg.chapter} born={segStartFrame} hold={Math.round(2.2 * fps)} />
           {cap ? <Caption cap={cap} born={Math.round(cap.t0 * fps)} hold={Math.max(1, Math.round((cap.t1 - cap.t0) * fps))} /> : null}
         </>
       ) : null}
@@ -393,7 +402,7 @@ export const LongForm: React.FC = () => {
         <>
           <Footage cut={cut} born={cutBorn} durFrames={Math.max(1, Math.round((cut.end - cut.start) * fps))} />
           <Scrim />
-          <ChapterTag text={seg.chapter} born={seg.startFrame} hold={Math.round(2.2 * fps)} />
+          <ChapterTag text={seg.chapter} born={segStartFrame} hold={Math.round(2.2 * fps)} />
           {cap ? <Caption cap={cap} born={Math.round(cap.t0 * fps)} hold={Math.max(1, Math.round((cap.t1 - cap.t0) * fps))} /> : null}
           {flash > 0.002 ? <AbsoluteFill style={{ backgroundColor: C.ivory, opacity: flash, pointerEvents: "none" }} /> : null}
         </>
@@ -410,8 +419,19 @@ export const LongForm: React.FC = () => {
       ) : null}
 
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 5, backgroundColor: "rgba(214,222,208,0.14)" }}>
-        <div style={{ width: `${Math.min(1, frame / D.totalFrames) * 100}%`, height: "100%", backgroundColor: C.orange }} />
+        <div style={{ width: `${Math.min(1, frame / Math.max(1, Math.round(D.duration * fps))) * 100}%`, height: "100%", backgroundColor: C.orange }} />
       </div>
     </AbsoluteFill>
   );
 };
+
+/**
+ * A long-form composition can select a sealed data document through props.
+ * Keeping EP01 as the default preserves older renders while new investigations
+ * cannot accidentally inherit its timing, plates, or narration.
+ */
+export const LongForm: React.FC<{ data?: LongFormDoc }> = ({ data: selectedData }) => (
+  <LongFormDataContext.Provider value={selectedData ?? defaultData}>
+    <LongFormScene />
+  </LongFormDataContext.Provider>
+);

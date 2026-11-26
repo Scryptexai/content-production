@@ -1,6 +1,6 @@
 {
-  "episode": "AK-EP12-sinar-bangun-remotion-review",
-  "authorization": "owner approved one local review render only; no distribution",
+  "episode": "AK-EP12",
+  "authorization": "owner approved the QC-passed review master for one new, separate YouTube upload with visibility unlisted; no public release, scheduling, deletion, replacement, or canonical-calendar alteration",
   "engine": "remotion",
   "engine_version": "4.0.541",
   "renderer": "@remotion/renderer",
@@ -165,5 +165,5 @@
       "duration_seconds": 42.005
     }
   },
-  "publish_intent": "review-only; do not upload, queue, schedule, transfer to Drive, unlist, delete, or alter any live video"
+  "publish_intent": "Owner-authorized new YouTube upload after passed local QC. Visibility must remain unlisted; do not schedule, publish publicly, delete, replace, or alter any canonical episode."
 }

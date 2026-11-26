@@ -1,11 +1,13 @@
 # LF04 · rencana produksi — Tambora 1815
 
-**Status:** draf naskah panjang dan audit sumber selesai; belum ada aset, VO, scene,
-render, master, Drive, antrean, jadwal, atau publikasi.
+**Status:** produksi dan QC final selesai. Master 1920×1080/30 fps lulus dengan tepat
+20.231 frame; master tercatat di Drive untuk satu unggahan YouTube baru **unlisted**
+yang diotorisasi pemilik. Tidak ada rilis publik atau penjadwalan.
 
-**Kanvas panjang yang direncanakan:** 1920×1080, 30 fps. Semua frame master masa
-depan wajib berasal dari Remotion / `@remotion/renderer`; FFmpeg hanya boleh dipakai
-pasca-render untuk audio/container/QC sesuai kebijakan kanal.
+**Kanvas panjang yang dipakai:** 1920×1080, 30 fps. Semua visual frame berasal dari
+Remotion / `@remotion/renderer`; FFmpeg dipakai pasca-render hanya untuk duplikasi
+frame exact 6→30 fps, satu clone frame terminal hasil pembulatan, koreksi rentang JPEG,
+audio/container, dan QC.
 
 ## Kontrak editorial
 
@@ -48,8 +50,11 @@ pasca-render untuk audio/container/QC sesuai kebijakan kanal.
 
 - [x] Naskah panjang melewati pemeriksaan mekanis format dan sumber awal.
 - [x] Rencana mengunci visual data-led dan batas etik sebelum pencarian aset.
-- [ ] Pemilik menyetujui naskah panjang final sebelum VO, aset, scene, atau render.
-- [ ] Setiap aset visual/audio lolos provenance/lisensi sebelum dimasukkan ke proyek.
-- [ ] Persetujuan render/master terpisah sebelum bundling atau `@remotion/renderer`.
-- [ ] Persetujuan distribusi terpisah sebelum Drive, queue, jadwal, upload, atau
-      publikasi.
+- [x] Pemilik menyetujui naskah panjang final sebelum VO, aset, scene, atau render.
+- [x] Setiap aset visual/audio memiliki provenance; baseline memakai diagram SVG
+      original tanpa foto/footage/rekonstruksi korban.
+- [x] Persetujuan render/master terpisah diterima sebelum bundling atau
+      `@remotion/renderer`; QC final media lulus.
+- [x] Persetujuan distribusi terpisah diterima untuk Drive dan satu unggahan YouTube
+      **unlisted** baru.
+- [ ] Jangan menjadwalkan atau merilis publik tanpa persetujuan baru.

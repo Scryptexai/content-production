@@ -1,9 +1,9 @@
 # AK-EP12 — 188 NAMA YANG DIHITUNG SESUDAH KAPAL TENGGELAM
 
 **Format:** Short Indonesia, uji format pengganti · **Target:** 35–45 detik
-**Status:** `PRA-PRODUKSI DISETUJUI — copy C final, take VO terukur, dan scene
-Remotion siap untuk review pra-render; belum ada render, master video, Drive, antrean,
-jadwal, atau unggahan.`
+**Status:** `MASTER REMOTION DAN QC LULUS — pemilik mengizinkan satu unggahan
+YouTube baru yang terpisah dengan visibilitas unlisted. Tidak ada rilis publik,
+penjadwalan, penghapusan/penggantian unggahan, atau perubahan episode kanonik.`
 
 **Paket pra-produksi:** `AK-EP12_sinar-bangun_PREPRODUCTION.md` mengunci VO kontigu
 41,360 detik, manifest aset, jejak fakta per scene, serta timing scene 42,0 detik

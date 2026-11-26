@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 640" role="img" aria-label="2008 → 2021">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10181C"/><stop offset="1" stop-color="#071012"/></linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#AAB7A1" stroke-opacity=".12" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="760" height="640" fill="url(#bg)"/>
+  <rect width="760" height="640" fill="url(#grid)"/>
+  <path d="M0 584 C160 540 292 628 460 574 S660 540 760 570 V640 H0Z" fill="#0B0F12" opacity=".75"/>
+  <text x="112" y="54" fill="#C46A34" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" text-anchor="start">BRIN 2024</text><text x="112" y="105" fill="#EDE7D6" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700" text-anchor="start">2008 → 2021</text><path d="M115 212 H645 M115 320 H645 M115 428 H645" stroke="#AAB7A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".45"/> <path d="M206 152 V488 M380 152 V488 M554 152 V488" stroke="#AAB7A1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".45"/> <rect x="210" y="216" width="164" height="100" fill="#284149" stroke="#C46A34" stroke-width="8"/>
+  <rect x="48" y="554" width="664" height="1" fill="#AAB7A1" opacity=".35"/>
+  <text x="112" y="594" fill="#C9D1C2" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="500" text-anchor="start">penelitian diteruskan</text>
+</svg>
