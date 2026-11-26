@@ -4,5 +4,7 @@
   "approved": true,
   "visibility": "unlisted",
   "requested_at": "2026-11-06T00:00:00Z",
+  "retry_of_run": "45805058138",
+  "retry_reason": "The prior request failed before any media upload or YouTube post because fetch_masters.py did not yet enumerate LF metadata; long-form selection support is now fixed and verified.",
   "catatan": "Owner explicitly authorized this QC-passed LF04 master as the second of two new, separate YouTube uploads. AK-EP12 completed first at https://www.youtube.com/watch?v=uUfbcbxa1pI. Keep this new LF04 upload unlisted. Do not schedule, publish publicly, delete, replace an existing upload, or alter the canonical calendar. Drive: 1H1zsYLzjY2IpjveSbPHyMLqMGEH8JZrz; SHA-256: 41044439821a7700d460fbfa978d42be7ab44c3f02402169a99fd19fd93e5b3c; final technical QC: 1920×1080, 30 fps, 20,231 frames."
 }
