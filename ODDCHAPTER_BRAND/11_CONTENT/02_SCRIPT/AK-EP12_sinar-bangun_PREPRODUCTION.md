@@ -1,11 +1,12 @@
 # AK-EP12 — paket pra-produksi Remotion / VO / aset
 
-**Status:** `PRA-PRODUKSI LENGKAP — MENUNGGU PERSETUJUAN PRA-RENDER/MASTER TERPISAH`
+**Status:** `REVIEW MASTER LOKAL LULUS — TIDAK ADA DISTRIBUSI`
 
-Persetujuan pemilik atas Short mengizinkan dua hal saja: perencanaan scene 9:16
-Remotion dan penyiapan VO/aset yang dapat diverifikasi. Tidak ada master video,
-frame render, transfer Drive, queue, jadwal, unggahan, atau perubahan pada episode
-kanonik `EP12` (MV Joyita) yang dibuat atau diizinkan oleh berkas ini.
+Setelah persetujuan pra-produksi, pemilik memberi persetujuan **terpisah dan sempit**
+untuk satu render review lokal Remotion beserta QC/provenance lokalnya. Persetujuan
+itu menghasilkan satu review master lokal; ia **tidak** mengizinkan transfer Drive,
+queue, jadwal, unggahan, publikasi, unlist, penghapusan, atau perubahan episode
+kanonik `EP12` (MV Joyita). Tidak ada tindakan distribusi dilakukan oleh pekerjaan ini.
 
 **Induk editorial:** `07_LONGFORM/LF03_sinar-bangun/SCRIPT.md`
 
@@ -25,15 +26,17 @@ kanonik `EP12` (MV Joyita) yang dibuat atau diizinkan oleh berkas ini.
 |---|---|---|
 | Kanvas | `1080 × 1920` / 9:16 | Tidak ada versi 16:9 atau pengganti EP12 kanonik. |
 | Frame rate | `30 fps` | Mengikuti `theme.ts`. |
-| Timing bench | `1.260` frame / **42,0 detik** | Take C final terukur 41,360 detik; 19 frame (0,640 detik) adalah hold visual penutup. Baseline berada dalam target 35–45 detik; bukan durasi master. |
-| Mesin visual | React + Remotion SVG/CSS/data motion | Saat master disetujui, seluruh frame harus keluar dari `@remotion/renderer`; FFmpeg, bila kelak dipakai, hanya post-render audio/container/QC. |
-| Audio pada komposisi | **Tidak ada** | File scene tetap silent; take VO C final ada sebagai aset pra-produksi lokal, tetapi belum ditempel, dibundel, atau dirender. |
+| Timing bench | `1.260` frame / **42,0 detik visual** | Take C final terukur 41,360 detik; 19 frame (0,640 detik) adalah hold visual penutup. Kontainer review terukur 42,005 detik karena padding AAC; video tetap tepat 1.260 frame / 30 fps. |
+| Mesin visual | React + Remotion SVG/CSS/data motion | Seluruh frame review keluar dari `@remotion/renderer`; FFmpeg dipakai sesudah render hanya untuk normalisasi/encode audio, faststart, container, dan QC—stream video disalin tanpa perubahan dan diverifikasi hash-nya. |
+| Audio pada komposisi | VO C final lokal, melalui Remotion `Audio` | Skrip review menyalin take terverifikasi ke `public/audio/ak-ep12-sinar-bangun-review.wav` sebelum bundling; audio itu hanya dipakai pada satu review master lokal. |
 | Gaya potong | Hard cut dengan masuk/keluar 10–18 frame | Tidak ada dissolves, footage bencana, atau rekonstruksi yang diklaim arsip. |
 
-`SinarBangunPreprod.tsx` memakai hanya bentuk SVG, teks, CSS gradient, dan titik
-data deterministik. Tidak ada `Img`, `Video`, `Audio`, `staticFile` media, API,
-atau aset web eksternal di scene tersebut. Karena itu implementasi dapat ditinjau
-sebagai desain informasi tanpa mencari foto kapal atau footage tragedi.
+`SinarBangunPreprod.tsx` memakai bentuk SVG, teks, CSS gradient, dan titik data
+deterministik untuk seluruh visualnya. Satu-satunya media adalah `Audio` +
+`staticFile` untuk take C final lokal yang disalin oleh skrip review; tidak ada `Img`,
+`Video`, API, aset web eksternal, foto kapal, maupun footage tragedi. Karena itu
+implementasi tetap dapat ditinjau sebagai desain informasi tanpa menyarukan arsip atau
+rekonstruksi sebagai dokumentasi.
 
 ---
 
@@ -76,11 +79,12 @@ setengah sampai dua meter*. Tidak ada SSML/markup pada naskah rekam.
    tidak mengubah `188` menjadi manifest. Tidak ada nama orang, tuduhan, SPB, atau
    angka kematian pasti di VO.
 
-### 2a · Hasil audisi dan uji waktu — take C final siap, belum master video
+### 2a · Hasil audisi dan uji waktu — take C final siap untuk review lokal, bukan master publik
 
 Pemilik memilih kandidat **narator feminin Indonesia** pada audisi dan menyetujui
-Pemadatan B lalu C. Audio berikut adalah bahan pra-produksi lokal, bukan media master,
-dan tidak ditambahkan ke komposisi, dibundel, dirender, atau dipindah ke Drive.
+Pemadatan B lalu C. Take final berikut digunakan hanya pada satu komposisi dan master
+**review lokal** yang telah disetujui terpisah; ia bukan master publik dan tidak
+dipindah ke Drive, queue, jadwal, atau unggahan.
 
 | Uji | Materi | Hasil ukur `ffprobe` | Putusan |
 |---|---|---:|---|
@@ -88,7 +92,7 @@ dan tidak ditambahkan ke komposisi, dibundel, dirender, atau dipindah ke Drive.
 | B · tes awal / copy tepat | Tes kata B 41,920 dtk, lalu copy B tepat kontigu dan cue terpisah | **45,800 / 49,160 detik** | **GAGAL**. Batas file dan kata yang diperlukan tidak boleh diakali dengan time-stretch. |
 | C · tes pertama | Copy C sebelum token/gerbang final | **44,160 detik** | Dalam rentang, tetapi perlu pembetulan token fakta/gerbang. |
 | C · token-gated | Copy C dengan `188` eksplisit di relate | **45,080 detik** | **GAGAL** 0,080 detik; dikarantina, tidak dipercepat. |
-| C · **final** | Copy C final yang ada pada tabel V01–V09 | **41,360 detik** | **LULUS** target 35–45 detik. Dipakai sebagai aset VO pra-render, belum sebagai master video. |
+| C · **final** | Copy C final yang ada pada tabel V01–V09 | **41,360 detik** | **LULUS** target 35–45 detik. Dipakai sebagai VO untuk satu review master lokal, bukan master publik. |
 
 Take A dipindahkan ke `work/sinar-bangun/vo_internal/rejected-original-read/` agar
 tidak tertukar dengan aset final. Take kontigu yang lolos berada di
@@ -165,16 +169,24 @@ aa9045eb0c6e0f64d5803d15cb131bd049c854007f3f44ed88dcc41065f5fac8  inter-latin-50
 
 ### Sudah dilakukan pada tahap ini
 
-- Komposisi didaftarkan di `src/Root.tsx` dengan ID eksplisit dan kontrak `1080×1920`
-  / 30 fps / 1.260 frame (42,0 detik; termasuk hold 0,640 detik).
+- Komposisi terdaftar di `src/Root.tsx` dengan ID eksplisit dan kontrak `1080×1920`
+  / 30 fps / 1.260 frame (42,0 detik visual; termasuk hold 0,640 detik).
 - Scene dibaca secara statis terhadap naskah dan lembar fakta: label `188`, `45`,
   `21`, `3`, dan `164 HILANG` mempertahankan batas sumbernya.
-- Tidak ada aset visual eksternal, master video, screenshot, bundel Remotion runtime,
-  render still, `renderMedia`, FFmpeg, Drive, Zernio, queue, jadwal, atau upload yang
-  dijalankan untuk AK-EP12. Media baru hanya take VO pra-produksi lokal C final dan
-  riwayat take gagal yang dikarantina di §2a.
+- Setelah persetujuan render terpisah, `scripts/render-ak-ep12-sinar-bangun-review.mjs`
+  membundel komposisi dan menghasilkan raw video melalui `@remotion/renderer`.
+  Sepuluh still QC mencakup semua sembilan scene serta hold akhir.
+- Review master lokal melewati QC: H.264 `1080×1920`, `30/1 fps`, `yuv420p`, 1.260
+  frame; audio AAC stereo 48 kHz; 42,005 detik kontainer; `−15 LUFS`, `−2,96 dBTP`.
+  Hash elementary video raw/final identik (`1628a773…fe69191`), sehingga FFmpeg hanya
+  mengubah audio/container dan tidak merender ulang visual.
+- Manifest provenance review lokal berada di
+  `11_CONTENT/06_UPLOAD/provenance/AK-EP12-sinar-bangun-remotion-review.json`; sumber
+  visualnya native React/SVG/CSS/data motion, tanpa footage/foto eksternal.
+- Tidak ada Drive, Zernio, queue, jadwal, unggahan, unlist, penghapusan, atau tindakan
+  distribusi/publikasi yang dijalankan untuk AK-EP12.
 
-### Wajib selesai **sebelum meminta** persetujuan pra-render/master yang terpisah
+### Gate render review lokal — selesai dengan persetujuan terpisah
 
 - [x] Pemilik memilih narator feminin Indonesia; pembacaan sumber dan tes pemadatan
   diukur tanpa percepatan audio.
@@ -185,12 +197,14 @@ aa9045eb0c6e0f64d5803d15cb131bd049c854007f3f44ed88dcc41065f5fac8  inter-latin-50
   dijalankan ulang dengan hasil lulus.
 - [x] Editor memeriksa ulang batas fakta/etik C: `164 HILANG`, 45 beratribusi,
   188 bukan manifest, tanpa nama/tuduhan/SPB/izin.
-- [ ] Bundle/renderer preflight, render review/master Remotion, caption, loudness,
-  QC frame, serta provenance dijalankan **hanya** dengan persetujuan terpisah.
-- [ ] Persetujuan master diberikan sebelum tindakan Drive, queue, jadwal, upload,
-  unlist, penghapusan, atau publikasi apa pun.
+- [x] Persetujuan terpisah untuk satu render review lokal dicatat; preflight browser,
+  bundle, renderer Remotion, frame QC, loudness, dan provenance lokal telah lulus.
+- [x] Master review lokal dan raw visual Remotion tetap di `work/sinar-bangun/`; tidak
+  ada transfer atau tindakan distribusi.
+- [ ] Persetujuan distribusi/master publik yang eksplisit diperlukan **sebelum** Drive,
+  queue, jadwal, upload, unlist, penghapusan, atau publikasi apa pun. Persetujuan itu
+  belum diberikan.
 
-**Permintaan keputusan berikutnya:** paket pra-produksi—copy C final, take VO
-terukur, timing scene, dan manifest aset—siap ditinjau untuk **persetujuan
-pra-render/master yang terpisah**. Persetujuan itu tidak tersirat dari persetujuan
-pra-produksi ini dan belum diberikan.
+**Batas berikutnya:** review master sudah tersedia secara lokal untuk peninjauan
+pemilik. Tidak ada tindakan lebih lanjut terhadap distribusi atau kalender episode
+kanonik sampai ada persetujuan eksplisit yang baru.

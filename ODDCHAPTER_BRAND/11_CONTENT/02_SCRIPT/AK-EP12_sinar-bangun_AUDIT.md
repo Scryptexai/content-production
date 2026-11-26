@@ -1,12 +1,11 @@
 # Audit naskah Short — AK-EP12 · Sinar Bangun 4
 
-**Status:** `PRA-PRODUKSI LENGKAP — copy C final, take VO terukur, scene, dan aset
-sudah siap untuk review pra-render; belum ada render, master video, antrean, Drive,
-atau unggahan.`
+**Status:** `REVIEW MASTER LOKAL LULUS — tidak ada distribusi, antrean, Drive, atau unggahan.`
 
-**Persetujuan pemilik:** Short disetujui untuk **pra-produksi saja** setelah review
-naskah, kartu angka, dan arah visual. Persetujuan ini tidak mencakup render, transfer,
-queue, penjadwalan, upload, publikasi, atau perubahan episode kanonik `EP12`.
+**Persetujuan pemilik:** Setelah menyetujui pra-produksi, pemilik memberi persetujuan
+**terpisah** untuk tepat satu render review lokal Remotion serta QC/provenance lokal.
+Persetujuan itu tidak mencakup transfer, queue, penjadwalan, upload, publikasi, unlist,
+penghapusan, atau perubahan episode kanonik `EP12`; tidak satu pun tindakan itu dilakukan.
 
 ## Hubungan dengan naskah panjang
 
@@ -36,6 +35,13 @@ queue, penjadwalan, upload, publikasi, atau perubahan episode kanonik `EP12`.
 | `python3 ODDCHAPTER_BRAND/tools/check_info_design.py AK-EP12 -v` | **LULUS 7/7** — kronologi, karantina putusan, celah, tesis–antitesis–sintesis, angka, dan suara penyelidik/ajakan langsung. |
 | `python3 ODDCHAPTER_BRAND/tools/check_longform.py LF03_sinar-bangun` | **LULUS** — regresi induk tetap 1.424 kata / sekitar 9,5 menit. |
 | `python3 -m py_compile ...` dan JSON gate | Lulus sebelum commit. |
+| `npm run test:browser` | **LULUS** — Chromium `153.0.8010.0` membuat screenshot lokal 1080×1920 sebelum render review. |
+| `render-ak-ep12-sinar-bangun-review.mjs` | **LULUS** — raw visual `@remotion/renderer`, 10 still QC (9 scene + hold), master lokal 1.260 frame / H.264 1080×1920 30 fps `yuv420p`; AAC stereo 48 kHz; 42,005 detik. |
+| QC audio/video review | **LULUS** — `−15 LUFS`, `−2,96 dBTP`, tanpa hening internal ≥0,75 dtk; hening terminal 0,905 dtk berada dalam tail VO 0,307 dtk + hold visual 0,640 dtk. Stream video raw/final SHA-256 sama. |
+
+Provenance lengkap, hash master `4703c687c35cf8155de3ed4a3318f93685f524ec28d353b03627582ba0531623`,
+dan larangan distribusi tercatat di
+`11_CONTENT/06_UPLOAD/provenance/AK-EP12-sinar-bangun-remotion-review.json`.
 
 ## Catatan mekanis
 
@@ -66,11 +72,15 @@ angka. Implementasi source-nya ada di
 `10_FILM/remotion/src/scenes/SinarBangunPreprod.tsx`; paket cue, manifest, sumber,
 dan hash font ada di `AK-EP12_sinar-bangun_PREPRODUCTION.md`.
 
-Tidak perlu mencari stock footage untuk meloloskan gate visual. Scene tidak mengimpor
-foto, video, audio, URL, atau visual generatif; ia memakai SVG/CSS/data motion lokal.
-Tidak ada bundel Remotion runtime, render still, `renderMedia`, FFmpeg, atau media
-master yang dijalankan/dihasilkan. Esbuild hanya memeriksa source statis; ia tidak
-memanggil renderer atau menghasilkan media.
+Tidak perlu mencari stock footage untuk meloloskan gate visual. Seluruh visual scene
+memakai SVG/CSS/data motion lokal; satu-satunya media terpasang adalah take VO C final
+lokal melalui `Audio`/`staticFile`. Tidak ada foto, video, URL, atau visual generatif.
+
+Dengan persetujuan review terpisah, bundle, `@remotion/renderer`, sepuluh render still,
+dan `renderMedia` sudah dijalankan sekali untuk review lokal. FFmpeg lalu hanya
+menormalisasi/encode audio, faststart, container, dan QC; hash stream video membuktikan
+video H.264 dari raw Remotion tidak berubah. Tidak ada media dipindah ke Drive atau
+layanan distribusi.
 
 ## Gerbang berikutnya
 
@@ -82,6 +92,8 @@ memanggil renderer atau menghasilkan media.
       take yang melewati 45 detik dikarantina tanpa time-stretch.
 - [x] Copy C final, VO kontigu 41,360 detik, source/visual timing, dan tiga gate
       diperbarui serta lulus; static bundle check tidak memanggil renderer.
-- [ ] Persetujuan pre-render/render-master terpisah diterima sebelum bundle/renderer,
-      caption, render Remotion, atau QC teknis dijalankan.
-- [ ] Review master terpisah sebelum Drive, queue, jadwal, atau unggah.
+- [x] Persetujuan render review lokal terpisah diterima; bundle/renderer, still QC,
+      render Remotion, loudness, dan QC teknis selesai serta lulus.
+- [x] Satu review master lokal dibuat dengan provenance Remotion dan tanpa distribusi.
+- [ ] Persetujuan eksplisit baru diperlukan sebelum Drive, queue, jadwal, unggah,
+      publikasi, unlist, penghapusan, atau perubahan episode kanonik apa pun.

@@ -10,6 +10,7 @@
     "test:browser": "node scripts/chromium-test.mjs",
     "render": "npm run assets && node scripts/render.mjs",
     "render:ak-ep11-review": "node scripts/render-ak-ep11-remotion-review.mjs",
+    "render:ak-ep12-review": "node scripts/render-ak-ep12-sinar-bangun-review.mjs",
     "validate": "node scripts/validate.mjs",
     "validate:ak-ep11-review": "node scripts/validate.mjs ../../../work/smong-simeulue/remotion-review/AK-EP11_smong-simeulue_remotion-review.mp4"
   },

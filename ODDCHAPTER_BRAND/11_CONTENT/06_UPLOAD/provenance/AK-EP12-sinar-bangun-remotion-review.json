@@ -1,0 +1,169 @@
+{
+  "episode": "AK-EP12-sinar-bangun-remotion-review",
+  "authorization": "owner approved one local review render only; no distribution",
+  "engine": "remotion",
+  "engine_version": "4.0.541",
+  "renderer": "@remotion/renderer",
+  "composition": "ODDCHAPTER-AK-EP12-SINAR-BANGUN-PREPROD",
+  "entrypoint": "ODDCHAPTER_BRAND/10_FILM/remotion/src/index.ts",
+  "render_script": "ODDCHAPTER_BRAND/10_FILM/remotion/scripts/render-ak-ep12-sinar-bangun-review.mjs",
+  "visual_output": "work/sinar-bangun/remotion-review/AK-EP12_sinar-bangun_remotion-review_raw.mp4",
+  "master_output": "work/sinar-bangun/remotion-review/AK-EP12_sinar-bangun_remotion-review.mp4",
+  "master_sha256": "4703c687c35cf8155de3ed4a3318f93685f524ec28d353b03627582ba0531623",
+  "size_bytes": 6876909,
+  "assets": {
+    "voice": {
+      "source_path": "work/sinar-bangun/vo_internal/AK-EP12_cut-C-final-contiguous.wav",
+      "static_path": "ODDCHAPTER_BRAND/10_FILM/remotion/public/audio/ak-ep12-sinar-bangun-review.wav",
+      "sha256": "3a4a5e99d4f2e475c3f1c9b9c931443d5ef79f63bfb7b5703e02a4fd3a4e9ff4",
+      "language": "id-ID",
+      "measured_duration_seconds": 41.36
+    },
+    "visual": {
+      "type": "native React/SVG/CSS data motion",
+      "source": "ODDCHAPTER_BRAND/10_FILM/remotion/src/scenes/SinarBangunPreprod.tsx",
+      "external_footage_or_photo": false
+    }
+  },
+  "browser": {
+    "engine": "@sparticuz/chromium (checked-in npm binary)",
+    "version": "153.0.8010.0"
+  },
+  "post_render": {
+    "tool": "ffmpeg",
+    "allowed_operations": [
+      "audio loudness normalization",
+      "audio encode",
+      "MP4 faststart",
+      "container remux"
+    ],
+    "video_operation": "stream copy only; verified unchanged against Remotion raw output"
+  },
+  "qc": {
+    "result": "pass",
+    "rendered_by": "@remotion/renderer",
+    "frame_review": [
+      "work/sinar-bangun/qc/remotion-review/hook.png",
+      "work/sinar-bangun/qc/remotion-review/route.png",
+      "work/sinar-bangun/qc/remotion-review/quay.png",
+      "work/sinar-bangun/qc/remotion-review/timeline.png",
+      "work/sinar-bangun/qc/remotion-review/wave.png",
+      "work/sinar-bangun/qc/remotion-review/counts.png",
+      "work/sinar-bangun/qc/remotion-review/turn.png",
+      "work/sinar-bangun/qc/remotion-review/manifest.png",
+      "work/sinar-bangun/qc/remotion-review/loop.png",
+      "work/sinar-bangun/qc/remotion-review/hold.png"
+    ],
+    "raw_remotion_video_sha256": "1628a77306fbc80427f63fba1af1d20ee4ec914e314184b497b4f7f82fe69191",
+    "final_video_stream_sha256": "1628a77306fbc80427f63fba1af1d20ee4ec914e314184b497b4f7f82fe69191",
+    "video_stream_preserved_after_audio_container_postprocess": true,
+    "audio_loudness_lufs": -15,
+    "audio_true_peak_db": -2.96,
+    "silence_qc": {
+      "source_terminal_silence_seconds": 0.306667,
+      "planned_visual_hold_seconds": 0.6400000000000006,
+      "terminal_silence_seconds": 0.904937,
+      "maximum_allowed_terminal_silence_seconds": 1.0966670000000005,
+      "interior_silences_seconds": [
+        {
+          "start": 0,
+          "end": 0.284479,
+          "duration": 0.284479
+        },
+        {
+          "start": 5.44367,
+          "end": 5.62442,
+          "duration": 0.18075
+        },
+        {
+          "start": 8.36142,
+          "end": 8.64179,
+          "duration": 0.280375
+        },
+        {
+          "start": 11.82,
+          "end": 12.3887,
+          "duration": 0.56875
+        },
+        {
+          "start": 16.8621,
+          "end": 17.1217,
+          "duration": 0.259646
+        },
+        {
+          "start": 18.0316,
+          "end": 18.1325,
+          "duration": 0.100958
+        },
+        {
+          "start": 21.476,
+          "end": 22.0289,
+          "duration": 0.552854
+        },
+        {
+          "start": 23.3149,
+          "end": 23.4165,
+          "duration": 0.101604
+        },
+        {
+          "start": 23.4177,
+          "end": 23.5244,
+          "duration": 0.106667
+        },
+        {
+          "start": 25.5794,
+          "end": 25.8671,
+          "duration": 0.287687
+        },
+        {
+          "start": 27.0684,
+          "end": 27.2558,
+          "duration": 0.187417
+        },
+        {
+          "start": 28.1325,
+          "end": 28.2547,
+          "duration": 0.122292
+        },
+        {
+          "start": 29.8008,
+          "end": 30.4723,
+          "duration": 0.671521
+        },
+        {
+          "start": 31.3167,
+          "end": 31.4214,
+          "duration": 0.104604
+        },
+        {
+          "start": 34.0807,
+          "end": 34.3934,
+          "duration": 0.312646
+        },
+        {
+          "start": 36.9597,
+          "end": 37.3287,
+          "duration": 0.369
+        },
+        {
+          "start": 40.25,
+          "end": 40.3545,
+          "duration": 0.104521
+        }
+      ],
+      "long_interior_silences_seconds": []
+    },
+    "technical": {
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "pixel_format": "yuv420p",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_sample_rate": "48000",
+      "audio_channels": 2,
+      "duration_seconds": 42.005
+    }
+  },
+  "publish_intent": "review-only; do not upload, queue, schedule, transfer to Drive, unlist, delete, or alter any live video"
+}

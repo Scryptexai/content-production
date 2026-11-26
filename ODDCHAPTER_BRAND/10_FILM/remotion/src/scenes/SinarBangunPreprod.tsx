@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Easing, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { C, H, W } from "../theme";
 
 /**
@@ -7,7 +7,8 @@ import { C, H, W } from "../theme";
  *
  * Every visible element is native Remotion SVG/CSS/data motion — no stock image,
  * likeness, casualty image, or reconstruction treated as documentary footage.
- * This stays deliberately silent until the approved VO is recorded and measured.
+ * The reviewed local renderer script supplies the approved C VO at the static path
+ * below; no external media, likeness, or reconstruction is introduced.
  */
 // 41.36 s is the measured, approved-C Indonesian VO. Nineteen frames keep a
 // 0.64 s visual closing hold, so the silent planning composition is 42.0 s.
@@ -211,9 +212,9 @@ const ManifestPage: React.FC<{ from: number }> = ({ from }) => {
 };
 
 /**
- * Silent data-motion storyboard. It is an implementation-ready planning
- * composition, not an approved master: do not invoke a renderer until a measured
- * VO and a separate master/render approval have been recorded.
+ * Review-only data-motion composition. The owner separately approved one local
+ * Remotion review render with the measured C VO; it is not an approved public
+ * master and must not be transferred, queued, scheduled, uploaded, or published.
  */
 export const SinarBangunPreprod: React.FC = () => {
   const frame = useCurrentFrame();
@@ -225,6 +226,7 @@ export const SinarBangunPreprod: React.FC = () => {
   ] as const;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: C.ink }}>
+      <Audio src={staticFile("audio/ak-ep12-sinar-bangun-review.wav")} />
       <DataField density={56} danger={frame >= 477 && frame < 627} />
 
       <AbsoluteFill style={{ opacity: inScene(frame, ...scenes[0]) }}>
