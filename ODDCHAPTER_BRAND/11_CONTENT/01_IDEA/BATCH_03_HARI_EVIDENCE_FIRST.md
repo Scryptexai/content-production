@@ -1,13 +1,14 @@
 # Batch berikutnya — 3 hari × 1 long-form + 3 Shorts
 
-**Status:** riset dan daftar ide saja. Dokumen ini **bukan** izin naskah final,
+**Status:** **DITAHAN pada 6 November 2026.** Pemilik mengarahkan pivot ke
+penjajakan seri bergaya **Angker Bot** setelah menilai distribusi awal seri
+Tambora/AK tidak bekerja. Dokumen ini tetap arsip riset; **bukan** izin naskah final,
 render, Drive, antrean, penjadwalan, atau unggah.
 
-**Pilihan batch:** campuran Indonesia + global; setiap hari memuat satu long-form,
-dua Short pendamping dari long-form tersebut, dan satu Short mandiri. Totalnya adalah
-**3 long-form + 9 Shorts**. Ritme “1 long + 3 Short per hari” diperlakukan sebagai
-**cadence rilis setelah buffer produksi selesai**, bukan alasan untuk memotong riset,
-verifikasi, atau QC.
+**Catatan pivot:** pilihan batch Indonesia + global di bawah **tidak akan diproduksi
+atau dijadwalkan** sebelum strategi seri Angker Bot dan kandidat barunya disetujui.
+Tidak ada video, unggahan, kalender, atau aset yang dibatalkan/dihapus oleh penandaan
+ini.
 
 ## Prinsip pemilihan
 
