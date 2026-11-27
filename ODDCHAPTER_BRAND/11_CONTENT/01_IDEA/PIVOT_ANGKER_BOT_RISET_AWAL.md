@@ -132,7 +132,8 @@ terasa cukup nyata untuk disebarkan.
   Richard Adams Locke sebagai fakta tunggal di bagian awal tanpa menyajikan tingkat
   kepastian atribusinya dari sumber yang dibaca.
 - **Status riset:** kandidat global paling bersih untuk uji format setelah scan
-  edisi 25–31 Agustus 1835 dan respons/koreksi sezaman dihimpun.
+  edisi 25–31 Agustus 1835 dan respons/koreksi sezaman dihimpun. Dossier tahap 1
+  tersedia di `RISET_GREAT_MOON_HOAX_1835.md`; itu tetap riset sumber, bukan naskah.
 
 **Jejak sumber awal (belum cukup untuk naskah):**
 
