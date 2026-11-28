@@ -2,15 +2,16 @@
 
 **Batch:** B04 · 16 Shorts mandiri
 **Tanggal pemeriksaan awal:** 6 November 2026
-**Status batch:** `RISET SAJA — TIDAK ADA NASKAH / PRODUKSI / UPLOAD`
+**Status batch:** `RISET + 5 DRAF SKRIP — BELUM ADA PRODUKSI / UPLOAD`
 **Hubungan dengan jadwal:** lihat `BATCH_04_SCHEDULE_DRAFT.json`. Semua baris
 berstatus `DO_NOT_QUEUE` sampai pagar di dokumen ini dan QC produksi dipenuhi.
 
 Dokumen ini menyimpan apa yang **benar-benar sudah dibuka/dibaca pada
 pemeriksaan awal**, bukan daftar hasil pencarian. “Sumber A” adalah artefak,
 arsip, institusi, atau teks primer yang terbuka; “Sumber B” adalah pembanding
-wajib sebelum skrip. Sumber A saja **tidak** membuat sebuah episode layak
-produksi.
+wajib sebelum skrip. Lima topik yang kini memiliki dua jalur pembuktian yang
+cukup sempit telah memperoleh **draf skrip**, tercatat di
+`02_SCRIPT/BATCH_04_SCRIPT_GATE.md`; ini tetap tidak membuatnya layak produksi.
 
 ## Aturan membaca register
 
@@ -338,9 +339,12 @@ produksi.
 
 ## Kesimpulan kelayakan tahap ini
 
-**Tidak ada** dari 16 baris yang berstatus `GO PRODUKSI`. Register ini baru
-menutup langkah paling awal: mengubah daftar ide menjadi jalur artefak yang
-bisa diuji dan menandai klaim yang belum boleh diucapkan. Langkah selanjutnya
-adalah membuat ledger klaim berhalaman untuk tiap kandidat yang dapat memenuhi
-setidaknya dua sumber langsung yang kompatibel serta lolos etik—bukan menulis
-naskah demi slot kalender.
+Lima kandidat—B04-S02, B04-S06, B04-S07, B04-S15, dan B04-S16—telah menerima
+draf skrip yang sengaja hanya memakai klaim dalam ledgernya. Lihat
+`02_SCRIPT/BATCH_04_SCRIPT_GATE.md` dan lima file `B04-S*.md` terkait.
+
+**Tidak ada** dari 16 baris yang berstatus `GO PRODUKSI`. Draf skrip bukan
+master produksi: aset berhak/lisensi, VO final, manifest Remotion, QC teknis,
+verifikasi Drive, dan otorisasi unggah masih belum ada. Sebelas kandidat lain
+tetap di riset sampai dapat memenuhi dua sumber langsung yang kompatibel serta
+lolos etik—bukan dipaksakan demi slot kalender.

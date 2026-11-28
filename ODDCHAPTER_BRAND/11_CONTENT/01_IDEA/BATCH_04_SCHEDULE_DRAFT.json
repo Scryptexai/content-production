@@ -8,16 +8,16 @@
   "approval": {
     "ownerDecision": "source_then_script_then_production_then_schedule",
     "status": "NOT_APPROVED_FOR_UPLOAD",
-    "reason": "No row has completed source verification, asset-rights review, script approval, Remotion render provenance, technical QC, Drive master validation, or upload authorization."
+    "reason": "Five rows have source-bounded script drafts, but no row has completed asset-rights review, final script approval, Remotion render provenance, technical QC, Drive master validation, or upload authorization."
   },
   "slots": [
     {"slotId":"B04-S01","episodeId":null,"scheduledFor":"2026-11-28T07:00:00+07:00","scheduledForUtc":"2026-11-28T00:00:00Z","workingTopic":"Great Moon Hoax (1835)","researchStatus":"RESEARCH_CONTINUES","queueStatus":"DO_NOT_QUEUE"},
-    {"slotId":"B04-S02","episodeId":null,"scheduledFor":"2026-11-28T12:00:00+07:00","scheduledForUtc":"2026-11-28T05:00:00Z","workingTopic":"Cottingley Fairies","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
+    {"slotId":"B04-S02","episodeId":null,"scheduledFor":"2026-11-28T12:00:00+07:00","scheduledForUtc":"2026-11-28T05:00:00Z","workingTopic":"Cottingley Fairies","researchStatus":"SCRIPT_DRAFT_READY_ASSET_RIGHTS_PENDING","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S03","episodeId":null,"scheduledFor":"2026-11-28T18:00:00+07:00","scheduledForUtc":"2026-11-28T11:00:00Z","workingTopic":"Cardiff Giant","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S04","episodeId":null,"scheduledFor":"2026-11-28T21:00:00+07:00","scheduledForUtc":"2026-11-28T14:00:00Z","workingTopic":"Loch Ness Surgeon’s Photograph","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S05","episodeId":null,"scheduledFor":"2026-11-29T07:00:00+07:00","scheduledForUtc":"2026-11-29T00:00:00Z","workingTopic":"Mary Toft","researchStatus":"ETHICS_REVIEW_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
-    {"slotId":"B04-S06","episodeId":null,"scheduledFor":"2026-11-29T12:00:00+07:00","scheduledForUtc":"2026-11-29T05:00:00Z","workingTopic":"Clever Hans","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
-    {"slotId":"B04-S07","episodeId":null,"scheduledFor":"2026-11-29T18:00:00+07:00","scheduledForUtc":"2026-11-29T11:00:00Z","workingTopic":"Piltdown Man","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
+    {"slotId":"B04-S06","episodeId":null,"scheduledFor":"2026-11-29T12:00:00+07:00","scheduledForUtc":"2026-11-29T05:00:00Z","workingTopic":"Clever Hans","researchStatus":"SCRIPT_DRAFT_READY_ASSET_RIGHTS_PENDING","queueStatus":"DO_NOT_QUEUE"},
+    {"slotId":"B04-S07","episodeId":null,"scheduledFor":"2026-11-29T18:00:00+07:00","scheduledForUtc":"2026-11-29T11:00:00Z","workingTopic":"Piltdown Man","researchStatus":"SCRIPT_DRAFT_READY_ASSET_RIGHTS_PENDING","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S08","episodeId":null,"scheduledFor":"2026-11-29T21:00:00+07:00","scheduledForUtc":"2026-11-29T14:00:00Z","workingTopic":"Mechanical Turk","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S09","episodeId":null,"scheduledFor":"2026-11-30T07:00:00+07:00","scheduledForUtc":"2026-11-30T00:00:00Z","workingTopic":"Fox Sisters","researchStatus":"ETHICS_REVIEW_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S10","episodeId":null,"scheduledFor":"2026-11-30T12:00:00+07:00","scheduledForUtc":"2026-11-30T05:00:00Z","workingTopic":"Feejee Mermaid","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
@@ -25,8 +25,8 @@
     {"slotId":"B04-S12","episodeId":null,"scheduledFor":"2026-11-30T21:00:00+07:00","scheduledForUtc":"2026-11-30T14:00:00Z","workingTopic":"Princess Caraboo","researchStatus":"ETHICS_REVIEW_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S13","episodeId":null,"scheduledFor":"2026-12-01T07:00:00+07:00","scheduledForUtc":"2026-12-01T00:00:00Z","workingTopic":"Tjut Zahara Fonna","researchStatus":"ETHICS_REVIEW_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
     {"slotId":"B04-S14","episodeId":null,"scheduledFor":"2026-12-01T12:00:00+07:00","scheduledForUtc":"2026-12-01T05:00:00Z","workingTopic":"Babi Ngepet Depok","researchStatus":"ETHICS_REVIEW_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
-    {"slotId":"B04-S15","episodeId":null,"scheduledFor":"2026-12-01T18:00:00+07:00","scheduledForUtc":"2026-12-01T11:00:00Z","workingTopic":"Hitler Diaries","researchStatus":"SENSITIVE_RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"},
-    {"slotId":"B04-S16","episodeId":null,"scheduledFor":"2026-12-01T21:00:00+07:00","scheduledForUtc":"2026-12-01T14:00:00Z","workingTopic":"Sokal Affair","researchStatus":"RESEARCH_REQUIRED","queueStatus":"DO_NOT_QUEUE"}
+    {"slotId":"B04-S15","episodeId":null,"scheduledFor":"2026-12-01T18:00:00+07:00","scheduledForUtc":"2026-12-01T11:00:00Z","workingTopic":"Hitler Diaries","researchStatus":"SCRIPT_DRAFT_READY_ASSET_RIGHTS_PENDING","queueStatus":"DO_NOT_QUEUE"},
+    {"slotId":"B04-S16","episodeId":null,"scheduledFor":"2026-12-01T21:00:00+07:00","scheduledForUtc":"2026-12-01T14:00:00Z","workingTopic":"Sokal Affair","researchStatus":"SCRIPT_DRAFT_READY_ASSET_RIGHTS_PENDING","queueStatus":"DO_NOT_QUEUE"}
   ],
   "schedulingRule": "Convert a slot to a real upload request only after an individual source packet, approved final script, rights-cleared assets, Remotion provenance, QC report, Drive master verification, and explicit upload authorization. Submit only one approved queue request per push."
 }
