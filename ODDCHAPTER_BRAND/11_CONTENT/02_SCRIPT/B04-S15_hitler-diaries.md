@@ -16,7 +16,7 @@ teks yang teliti.
 > April 1983. Majalah *Stern* mengumumkan puluhan buku yang mereka sebut buku
 > harian Hitler. Sensasinya langsung mendunia.
 >
-> Tapi saat jilid-jilid itu akhirnya bisa diperiksa, tiga jalur bekerja bersamaan:
+> Tapi saat jilid-jilid itu akhirnya bisa diperiksa, ada tiga jalur pemeriksaan:
 > uji bahan, pemeriksaan kriminalistik, dan pembacaan arsip.
 >
 > Hasilnya tidak perlu teori rumit. Kertas, benang, dan tinta pada banyak bagian
@@ -30,7 +30,7 @@ teks yang teliti.
 > Pelajaran kasus ini bukan soal tulisan tangan yang mirip. Dokumen harus lolos
 > tiga hal sekaligus: bahannya, asal-usulnya, dan ceritanya sendiri.
 
-**Perkiraan:** 105 kata; ±44–52 detik pada pembacaan Indonesia yang jelas.
+**Perkiraan:** 103 kata; ±44–52 detik pada pembacaan Indonesia yang jelas.
 
 ## Ledger klaim narasi
 

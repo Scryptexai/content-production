@@ -19,25 +19,22 @@ argumen teknis, praktik editorial, kepercayaan antarbidang, dan etika hoaks.
 > Lalu Sokal membuka rahasianya: ia sengaja menulisnya sebagai parodi untuk
 > menguji standar editorial.
 >
-> Kedengarannya seperti kemenangan mudah. Tapi respons editornya membuat cerita
-> ini lebih rumit. Mereka mengatakan artikel itu mereka baca sebagai usaha serius
-> seorang fisikawan untuk berdialog dengan studi budaya—bukan sebagai naskah
-> fisika yang harus diuji ahli fisika.
->
-> Mereka juga menyebut cara Sokal sebagai pelanggaran kepercayaan editorial.
+> Kedengarannya seperti kemenangan mudah. Tapi respons yang dimuat sesudahnya
+> memperlihatkan persoalan yang lebih rumit: jargon, dialog lintas bidang, dan
+> etika hoaks.
 >
 > Jadi pelajarannya bukan “semua humaniora palsu.” Pelajarannya lebih tidak
 > nyaman: jika sebuah argumen memakai bahasa yang tidak bisa kita cek, kita harus
 > bertanya—siapa yang seharusnya memeriksanya, dan apakah kita sungguh mengerti?
 
-**Perkiraan:** 109 kata; ±42–50 detik pada pembacaan Indonesia yang jelas.
+**Perkiraan:** 81 kata; ±42–50 detik pada pembacaan Indonesia yang jelas.
 
 ## Ledger klaim narasi
 
 | Klaim dalam VO | Status | Sumber yang dibaca |
 |---|---|---|
 | Artikel diterbitkan dan Sokal menyatakan ia menulisnya sebagai parodi. | Boleh | Sokal, 1996; situs arsip NYU. |
-| Editor memandangnya sebagai usaha serius/dialog lintas bidang dan mengkritik metode Sokal. | Boleh | Respons Robbins/Ross dan editorial *Lingua Franca*, 1996. |
+| Respons yang dimuat sesudahnya memperlihatkan perdebatan tentang jargon, lintas disiplin, dan kepatutan hoaks. | Boleh | *Lingua Franca*, “Mystery Science Theater,” 1996. |
 | Artikel harus dianggap bukti bahwa satu bidang seluruhnya palsu. | Dilarang | Tidak ada di VO. |
 | Kegagalan pasti murni karena “jargon” atau satu pihak saja. | Dilarang | Tidak ada di VO. |
 
@@ -60,7 +57,7 @@ argumen teknis, praktik editorial, kepercayaan antarbidang, dan etika hoaks.
 |---|---|---|---|
 | 0–6 dtk | `1996 · ARTIKEL INI TERBIT.` | Halaman jurnal abstrak/typography, bukan scan berhak cipta. | Jangan memalsukan halaman jurnal sebagai arsip. |
 | 6–15 dtk | `TERNYATA PARODI.` | Kata `PARODI` dan panah dari manuskrip ke pengungkapan. | Jangan mengutip panjang dari artikel tanpa izin. |
-| 15–28 dtk | `RESPONS EDITOR: LEBIH RUMIT.` | Dua kolom: `SOKAL` / `EDITOR`, masing-masing berlabel atribusi. | Jangan membuat ejekan terhadap akademisi. |
+| 15–28 dtk | `PERDEBATAN BERLANJUT.` | Tiga kata kunci: `JARGON` / `LINTAS BIDANG` / `ETIKA HOAKS`, berlabel konteks. | Jangan membuat ejekan terhadap akademisi. |
 | 28–39 dtk | `KEPERCAYAAN EDITORIAL` | Diagram jalur submit → edit → pembaca. | Jangan mengklaim jurnal melakukan/ tidak melakukan peer review di luar sumber. |
 | 39–50 dtk | `SIAPA YANG MEMERIKSA?` | Pertanyaan akhir dengan teks minimal. | Tidak ada framing “ilmu vs musuh”. |
 
