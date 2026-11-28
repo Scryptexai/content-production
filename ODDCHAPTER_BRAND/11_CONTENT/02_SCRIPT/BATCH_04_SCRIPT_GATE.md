@@ -9,11 +9,11 @@ metadata unggah, queue Zernio, atau jadwal YouTube sebelum master dan QC lengkap
 
 | Slot | ID draf | Topik | Alasan lolos ke draf | Status sesudah skrip |
 |---|---|---|---|---|
-| B04-S02 | `B04-S02` | Cottingley Fairies | Museum pemegang objek menyajikan foto, kamera, surat Elsie 1983, dan batas sengketa foto kelima. | Draf skrip; aset dan VO belum ada. |
-| B04-S06 | `B04-S06` | Clever Hans | Buku Pfungst 1907/1911 dan telaah ilmiah modern sama-sama membatasi kesimpulan pada isyarat manusia tak disengaja. | Draf skrip; aset dan VO belum ada. |
-| B04-S07 | `B04-S07` | Piltdown Man | Koleksi Natural History Museum dan publikasi/rekam 1953 mengunci jalur bukti material, tanpa perlu berspekulasi pelaku. | Draf skrip; aset dan VO belum ada. |
-| B04-S15 | `B04-S15` | Hitler Diaries | Bundesarchiv memegang dokumentasi pemeriksaan dan kronologi pengungkapan; skrip membahas verifikasi dokumen, bukan tokoh Nazi. | Draf skrip; aset dan VO belum ada. |
-| B04-S16 | `B04-S16` | Sokal Affair | Artikel asli, pengungkapan Sokal, serta respons editor tersedia dan memungkinkan konteks dua sisi. | Draf skrip; aset dan VO belum ada. |
+| B04-S02 | `B04-S02` | Cottingley Fairies | Museum pemegang objek menyajikan foto, kamera, surat Elsie 1983, dan batas sengketa foto kelima. | Draf skrip; VO review ada, durasi belum direkonsiliasi; aset belum ada. |
+| B04-S06 | `B04-S06` | Clever Hans | Buku Pfungst 1907/1911 dan telaah ilmiah modern sama-sama membatasi kesimpulan pada isyarat manusia tak disengaja. | Draf skrip; VO review ada, durasi belum direkonsiliasi; aset belum ada. |
+| B04-S07 | `B04-S07` | Piltdown Man | Koleksi Natural History Museum dan publikasi/rekam 1953 mengunci jalur bukti material, tanpa perlu berspekulasi pelaku. | Draf skrip; VO review ada, durasi belum direkonsiliasi; aset belum ada. |
+| B04-S15 | `B04-S15` | Hitler Diaries | Bundesarchiv memegang dokumentasi pemeriksaan dan kronologi pengungkapan; skrip membahas verifikasi dokumen, bukan tokoh Nazi. | Draf skrip; VO review ada, durasi belum direkonsiliasi; aset belum ada. |
+| B04-S16 | `B04-S16` | Sokal Affair | Artikel asli, pengungkapan Sokal, serta respons editor tersedia dan memungkinkan konteks dua sisi. | Draf skrip; VO review ada, durasi belum direkonsiliasi; aset belum ada. |
 
 ## Kandidat yang tetap tertahan di riset
 
